@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-11",
+  "agentCount": 20,
+  "astraAgentCount": 4,
+  "auditedBaselineCommit": "ea63a1081acedf87209ebb9121e461f971452773",
+  "finalSourceSha256": "fdee53843d3be67b266d177633a229a4420ab684f6b8ae534beffbdb142d8d79",
+  "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
+  "entrypoint": "index.tsx",
+  "recordCount": 7968,
+  "recordTypes": 37,
+  "exactCopper": {
+    "pcb_trace": 636,
+    "pcb_via": 434,
+    "pcb_copper_pour": 31
+  },
+  "routingSolverStarts": 0,
+  "nativePourSolvers": 1,
+  "regressionsFoundAndFixed": [
+    "Root-global once flags skipped late via ownership and same-ID route replacements",
+    "Partial via dimensions were skipped or overwritten;missing fields now filled and conflicting/ambiguous matches rejected",
+    "Record whitelist omitted26 full record types and most silk metadata;all37 types now compared",
+    "Normalizer string coercion accepted malformed arrays;strict type guards now reject them",
+    "Historical metadata and moved-ground regeneration advice clarified",
+    "Dev startup watched generated checks/dist;JSON ignore settings now exclude them while TS supplier cache remains active"
+  ],
+  "assertedMetadataExceptions": [
+    "J_USB explicit insertion direction and derived cable insertion center",
+    "Unreferenced allocated IDs on silkscreen paths/text and supplier warnings",
+    "Supplier warning runtime component instance numbers",
+    "CLI source_project_metadata exact two-field filesystem-hash record"
+  ],
+  "agents": [
+    {
+      "name": "saved_routing_api",
+      "model": "inherited",
+      "scope": "Ground0 coverage and fail-closed replay",
+      "result": "88 unique saved paths cover 88 live connections; stale/missing/duplicate path probes reject"
+    },
+    {
+      "name": "source_audit",
+      "model": "inherited",
+      "scope": "Supplier footprints and placement",
+      "result": "220 components, 552 pads, 574 paste, 22 PTH, 6 holes, 220 courtyards, 194 CAD preserved"
+    },
+    {
+      "name": "all_records",
+      "model": "inherited",
+      "scope": "Every Circuit JSON record and field",
+      "result": "37 types / 7968 records; 12 semantic/schema negatives and foreign-ID reference rejected"
+    },
+    {
+      "name": "via_ownership",
+      "model": "gpt-6-astra",
+      "scope": "Manual via port and net ownership",
+      "result": "317 hosts /783 owned ports preserved;141 evaluator memberships repaired"
+    },
+    {
+      "name": "inline_vias",
+      "model": "inherited",
+      "scope": "Inline via dimensions and repeated callbacks",
+      "result": "117 transitions exact; 15 post-fix partial/conflicting/ambiguous/repeated probes pass"
+    },
+    {
+      "name": "route_contacts",
+      "model": "gpt-6-astra",
+      "scope": "Endpoint copper contact and source identity",
+      "result": "515 two-port routes and 1182 endpoint annotations pass; 121 fanouts accounted for"
+    },
+    {
+      "name": "route_continuity",
+      "model": "inherited",
+      "scope": "Route continuity and layer transitions",
+      "result": "548 manual + 88 saved paths independently reconstructed; 117 transitions have barrels"
+    },
+    {
+      "name": "manual_copper",
+      "model": "inherited",
+      "scope": "Preplaced copper source attribution",
+      "result": "434 barrels = 317 named + 29 inline + 88 Ground0; no static JSON fallback"
+    },
+    {
+      "name": "net_connectivity",
+      "model": "inherited",
+      "scope": "Source graph and physical net evidence",
+      "result": "104 nets;450/450 historical joins retained by exact copper hashes"
+    },
+    {
+      "name": "clearance",
+      "model": "inherited",
+      "scope": "Shorts, foreign clearances and drill gaps",
+      "result": "Fresh all-layer Gerber pass; 1525 foreign near pairs audited and injected shorts detected on all 4 layers"
+    },
+    {
+      "name": "copper_pours",
+      "model": "inherited",
+      "scope": "Pour geometry, holes and connectivity",
+      "result": "31 valid pours, 263 rings, 15,829 vertices;each poured net has one contact component"
+    },
+    {
+      "name": "lifecycle",
+      "model": "gpt-6-astra",
+      "scope": "Board refs, idempotency and repeated source metadata",
+      "result": "Fresh/repeated Board setup passes;late memberships and same-ID route repairs pass"
+    },
+    {
+      "name": "live_updates",
+      "model": "inherited",
+      "scope": "Edited geometry and stale saved routes",
+      "result": "Moved origins/net changes/missing coverage reject;fresh source rebuild creates new Circuit"
+    },
+    {
+      "name": "offline_browser",
+      "model": "inherited",
+      "scope": "Browser graph and duplicated-core offline evaluation",
+      "result": "Zero fetches;317 source vias preserved;forced duplicate core repairs 141 memberships"
+    },
+    {
+      "name": "cli_repro",
+      "model": "inherited",
+      "scope": "CLI dependencies and source reproducibility",
+      "result": "62 published package files match;root core 0.0.2124 and CLI core 0.0.2123 tested"
+    },
+    {
+      "name": "regeneration",
+      "model": "inherited",
+      "scope": "Routing extraction and phase-prefix compatibility",
+      "result": "25 stages preserved;prefixes 0/2/6/24 and watchdog probes pass"
+    },
+    {
+      "name": "test_coverage",
+      "model": "inherited",
+      "scope": "Negative controls and useful regression coverage",
+      "result": "Original helper fails partial/repeated cases;patched helper passes;all-record mutants rejected"
+    },
+    {
+      "name": "manufacturing_export",
+      "model": "inherited",
+      "scope": "Gerber, drill, KiCad and 3D equivalence",
+      "result": "All 434 via pads/drills survive Gerber;physical exports preserve capture"
+    },
+    {
+      "name": "provenance",
+      "model": "inherited",
+      "scope": "Source hashes and historical/runtime attribution",
+      "result": "159 source files hashed; 126 runtime imports from index; no captured-board/runtime dependency"
+    },
+    {
+      "name": "challenge_review",
+      "model": "gpt-6-astra",
+      "scope": "Independent final challenge review",
+      "result": "No current-board geometry blocker;documentation and complete semantic checks strengthened"
+    }
+  ],
+  "validation": {
+    "typecheck": true,
+    "defaultCliBuild": true,
+    "allRecordParity": true,
+    "offlineDuplicateCore": true,
+    "allLayerGerberShorts": 0,
+    "negativeControlShortsDetectedOnAllLayers": true,
+    "negativeSemanticCasesRejected": 12,
+    "foreignGeneratedIdReferencesRejected": true,
+    "browserDevServerConnected": true,
+    "browserSettledPcbErrors": 0,
+    "standardDevCommand": true
+  },
+  "knownInheritedLimits": [
+    "KiCad0.0.230 adds88 duplicate route vias/UUIDs in both capture and TSX exports",
+    "3D substrate exporter omits via drill holes in both capture and TSX",
+    "Native saved selector reader accepts ambiguous multi-match selectors;all current88 selectors are unique",
+    "Native symbol-parent port selector prevents optional route-cache re-export;final build remains exact",
+    "Circular washer pour exclusions use32-sided polygons with.019261mm inward approximation",
+    "Saved Ground0 routes are absolute in both default and regeneration entries;update them when moving connected parts",
+    "Native renderUntilSettled can resolve with database errors;the checker explicitly rejects error records",
+    "Gerber shorts use35um raster;hardware and manufacturing tolerance acceptance are pending"
+  ],
+  "upstreamReproductionWorkflow": "Separate Codex chats are verifying upstream issues with Bun test.failing, actual failure/pass snapshots and stacked draft PRs."
+}

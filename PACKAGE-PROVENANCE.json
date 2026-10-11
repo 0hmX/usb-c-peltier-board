@@ -1,7 +1,7 @@
 {
   "scope": "Editable Source24 TSX preview with saved ground fanout replay; routing solvers are isolated in explicit regeneration. Saved copper remains unchanged.",
-  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
-  "publicationSourceFileCount": 156,
+  "publicationSourceSha256": "fdee53843d3be67b266d177633a229a4420ab684f6b8ae534beffbdb142d8d79",
+  "publicationSourceFileCount": 159,
   "sourceManifest": [
     {
       "file": "bun.lock",
@@ -17,7 +17,7 @@
     },
     {
       "file": "package.json",
-      "sha256": "d17e125c7b92ef6bf5eb2c186ce3c70f65828ae962250a87111295f1892fb865"
+      "sha256": "0815c39b804f73a41342cccafa7fb788f0a878b21d50c076e1664428f45684e8"
     },
     {
       "file": "regenerate.config.ts",
@@ -26,6 +26,10 @@
     {
       "file": "regenerate.tsx",
       "sha256": "e2ffa6825881df9d253628b55fe9922bec1344b05a959e53feb8a26c2823990c"
+    },
+    {
+      "file": "scripts/assert-saved-circuit.ts",
+      "sha256": "82bdb4a1b6bb4bb3f97481dddab9087177bc0822c3ebca855abea7d494c3db10"
     },
     {
       "file": "scripts/build-local.ts",
@@ -37,7 +41,11 @@
     },
     {
       "file": "scripts/check-saved-routes.tsx",
-      "sha256": "cdf5ab8950ebdf4c3b303e49e6465047770b0b9fbfe177c77404aa01d1da82a6"
+      "sha256": "0c87be6817582441f46a4cf274a1dd81e2fa4e9b664c326e47d230f7e1d27dae"
+    },
+    {
+      "file": "scripts/check-source-evaluator.ts",
+      "sha256": "62a0bb97705196954257c11d122d55294c7e865bb4900e79e30700242043431b"
     },
     {
       "file": "scripts/phase-checkpoints.ts",
@@ -589,7 +597,7 @@
     },
     {
       "file": "src/source-via-metadata.ts",
-      "sha256": "8bc6bbfe68d8d0efa0d85ff41f09d6e763a15632add7917b65857d905f0c3d55"
+      "sha256": "33a5e629e6b7124273b90623053297db930322b2a7d41876907deae186b86b04"
     },
     {
       "file": "src/source16-routes.tsx",
@@ -620,6 +628,10 @@
       "sha256": "94505e0a12968a764fbf1567a24a343f2f09b3fa0650cf83909b8f98b3b24c6b"
     },
     {
+      "file": "tscircuit.config.json",
+      "sha256": "d636f46a3a5fafcb13475710cb821c8365b568e1c6c6a8a41b22f769111e09c3"
+    },
+    {
       "file": "tscircuit.config.ts",
       "sha256": "3c148313141f96adf61047ad8cb96414bedbfc7773abd7c9e6f98e1a22eab846"
     },
@@ -634,7 +646,6 @@
   "originalRoutingProvenance": "docs/source24-routing-provenance.json",
   "originalNativeBuildManifest": "captured-pcb/build-manifest.json",
   "defaultPreviewEntrypoint": "index.tsx",
-  "defaultDataExport": "captured-pcb/circuit.json",
   "regenerationEntrypoint": "regenerate.tsx",
   "defaultRuntimeRoutingAlgorithms": 0,
   "importGraphFiles": [
@@ -757,8 +768,6 @@
     "src/parts/index.ts",
     "src/parts/supplier-footprints.json",
     "src/parts/supplier-parts-engine.ts",
-    "src/source-bus-connections.ts",
-    "src/source-pad-connections.ts",
     "src/source-via-metadata.ts",
     "src/source16-routes.tsx",
     "src/source18-routes.tsx",
@@ -779,11 +788,30 @@
     "package.json",
     "regenerate.config.ts",
     "regenerate.tsx",
+    "scripts/assert-saved-circuit.ts",
     "scripts/build-local.ts",
+    "scripts/check-saved-routes.tsx",
+    "scripts/check-source-evaluator.ts",
     "src/bus-routing.tsx",
     "src/component-port-anchors.ts",
     "src/parts/C165948.tsx",
+    "src/regeneration-routing.tsx",
+    "src/source-via-metadata.ts",
+    "tscircuit.config.json",
     "tscircuit.config.ts",
     "tsconfig.json"
+  ],
+  "defaultBuildOutput": "dist/index/circuit.json",
+  "savedCircuitReference": "captured-pcb/circuit.json",
+  "importGraphScope": "Runtime imports after TypeScript erases type-only imports",
+  "currentRuntime": {
+    "directCoreVersion": "0.0.2124",
+    "cliCoreVersion": "0.0.2123",
+    "requiresCapturedRuntime": false
+  },
+  "teamAudit": "publication-checks/tsx-team-audit.json",
+  "runtimeConfigurationFiles": [
+    "tscircuit.config.ts",
+    "tscircuit.config.json"
   ]
 }

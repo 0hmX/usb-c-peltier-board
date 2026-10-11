@@ -7,29 +7,101 @@
   ],
   "routingSolverStarts": 0,
   "pourSolvers": 1,
-  "exactSavedGeometry": {
-    "source_port": 1354,
-    "source_trace": 1029,
-    "pcb_port": 1354,
-    "pcb_trace": 636,
-    "pcb_via": 434,
-    "pcb_smtpad": 552,
-    "pcb_plated_hole": 22,
+  "comparedRecordTypes": 37,
+  "comparedRecords": 7968,
+  "silkscreenTextUnchanged": true,
+  "restoredMemberships": 141,
+  "repeatedViaMetadataRepair": true,
+  "partialViaSizesRepaired": true,
+  "conflictingViaSizesRejected": true,
+  "comparedRecordCounts": {
+    "cad_component": 194,
+    "pcb_board": 1,
+    "pcb_component": 537,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_copper_pour": 31,
+    "pcb_courtyard_outline": 194,
+    "pcb_courtyard_rect": 26,
+    "pcb_fabrication_note_path": 79,
+    "pcb_group": 2,
     "pcb_hole": 6,
     "pcb_keepout": 10,
-    "pcb_copper_pour": 31
+    "pcb_plated_hole": 22,
+    "pcb_port": 1354,
+    "pcb_silkscreen_circle": 31,
+    "pcb_silkscreen_path": 111,
+    "pcb_silkscreen_rect": 5,
+    "pcb_silkscreen_text": 22,
+    "pcb_smtpad": 552,
+    "pcb_solder_paste": 574,
+    "pcb_trace": 636,
+    "pcb_trace_warning": 44,
+    "pcb_via": 434,
+    "source_board": 1,
+    "source_bus": 1,
+    "source_component": 220,
+    "source_component_pins_underspecified_warning": 12,
+    "source_group": 3,
+    "source_manually_placed_via": 317,
+    "source_net": 104,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_no_power_pin_defined_warning": 14,
+    "source_pin_missing_trace_warning": 6,
+    "source_port": 1354,
+    "source_project_metadata": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1029,
+    "supplier_footprint_mismatch_warning": 6
   },
-  "silkscreenTextUnchanged": true,
-  "date": "2026-10-11",
-  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
-  "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
   "typecheckPass": true,
   "defaultCliBuildPass": true,
   "cliSavedCopperAndConnectivityExact": true,
   "allLayerGerberShorts": 0,
   "browserPcbViewerObserved": true,
   "browserPcbViewerReportedErrors": 0,
-  "offlineEvaluatorFetchCalls": 0,
-  "simulatedInteriorViaPortRepairs": 141,
-  "notes": "The real TSX board uses saved Ground0 fanouts and source-owned manual paths. The native pour pipeline reproduces the saved copper. USB connector insertion direction is now explicit after silkscreen cleanup; its non-copper direction metadata differs from the historical capture."
+  "date": "2026-10-11",
+  "publicationSourceSha256": "fdee53843d3be67b266d177633a229a4420ab684f6b8ae534beffbdb142d8d79",
+  "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
+  "cliComparedRecords": 7968,
+  "cliComparedRecordTypes": 37,
+  "offlineEvaluator": {
+    "pass": true,
+    "fetchCalls": 0,
+    "stoppedBeforeRoutingAndPouring": true,
+    "probes": [
+      {
+        "duplicateCore": false,
+        "repairedMemberships": 0,
+        "sourceVias": 317,
+        "manualTraces": 548,
+        "inlineVias": 29
+      },
+      {
+        "duplicateCore": true,
+        "repairedMemberships": 141,
+        "sourceVias": 317,
+        "manualTraces": 548,
+        "inlineVias": 29
+      }
+    ]
+  },
+  "teamAudit": "publication-checks/tsx-team-audit.json",
+  "metadataExceptions": {
+    "J_USB": {
+      "insertion_direction": "from_left",
+      "cable_insertion_center": {
+        "x": -49.28727663999999,
+        "y": 12
+      }
+    },
+    "allocatedIds": [
+      "pcb_silkscreen_path_id",
+      "pcb_silkscreen_text_id",
+      "supplier_footprint_mismatch_warning_id"
+    ],
+    "warningRuntimeInstanceNumbers": true,
+    "cliProjectMetadata": "Exact two-field shape with valid filesystem MD5; native preview software/version metadata remains capture-exact"
+  },
+  "notes": "Full record semantics match after the asserted metadata exceptions; all saved copper and connectivity records remain exactly equal. Repeat via callbacks, partial dimensions and conflicting dimensions are tested; no dependency patches or routing solvers.",
+  "devServerIgnoresGeneratedFiles": true
 }

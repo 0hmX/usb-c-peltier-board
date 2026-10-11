@@ -2,23 +2,21 @@
   "packageName": "0hmX/tec-usbc-board",
   "version": "0.1.5",
   "sourceRevision": "source24f-tsx-saved-routes",
-  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
+  "publicationSourceSha256": "fdee53843d3be67b266d177633a229a4420ab684f6b8ae534beffbdb142d8d79",
   "capturedRoutingSourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
-  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
   "circuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
-  "publicationSourceFileCount": 156,
-  "canonicalPackageJsonSha256": "d17e125c7b92ef6bf5eb2c186ce3c70f65828ae962250a87111295f1892fb865",
+  "publicationSourceFileCount": 159,
+  "canonicalPackageJsonSha256": "0815c39b804f73a41342cccafa7fb788f0a878b21d50c076e1664428f45684e8",
   "metadataOverrides": {
     "file": "package.json",
     "name": "tec-usbc-board",
     "version": "0.1.5"
   },
   "previewEntrypoint": "index.tsx",
-  "dataExport": "captured-pcb/circuit.json",
   "regenerationEntrypoint": "regenerate.tsx",
   "previewRoutingAlgorithmImports": 0,
   "previewExternalRuntimeImports": 2,
-  "note": "The default entry renders the editable TSX board with 548 manual traces and 88 saved Ground0 fanouts. No routing solvers run; the native pour pipeline reproduces the saved copper. Reviewed port anchors and via metadata use public lifecycle/DB APIs. Captured JSON and runtime archives remain historical evidence; this repository change does not republish the tscircuit package.",
+  "note": "The default entry renders the editable TSX board with 548 manual traces and 88 saved Ground0 fanouts. No routing solvers run; the native pour pipeline reproduces the saved copper. Reviewed port anchors and via metadata use public lifecycle/DB APIs. Captured JSON and runtime archives remain historical evidence; no manual tscircuit package release is performed by these repository scripts.",
   "runtimeArchive": "captured-runtime.zip",
   "runtimeArchiveSha256": "eb43840c50e1714b4fb7f1b8db9ba599e36790ebe0bfdd4afe476451268dab19",
   "runtimeArchiveBytes": 1877450,
@@ -26,5 +24,9 @@
   "unroutedConnections": 0,
   "manufacturingReleaseAccepted": false,
   "hardwareBenchValidationAccepted": false,
-  "verification": "publication-checks/tsx-preview.json"
+  "verification": "publication-checks/tsx-preview.json",
+  "capturedRuntimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "buildOutput": "dist/index/circuit.json",
+  "savedCircuitReference": "captured-pcb/circuit.json",
+  "teamAudit": "publication-checks/tsx-team-audit.json"
 }
