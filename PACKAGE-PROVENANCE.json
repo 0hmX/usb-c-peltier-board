@@ -1,27 +1,35 @@
 {
-  "scope": "Source24d canonical source and freshly regenerated prototype CAD copper, with 20 exact-capture reviews and independent full geometry/Gerber checks. Manufacturing and hardware qualification remain pending.",
-  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
-  "source23Sha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
-  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
-  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
-  "sourceFileCount": 150,
-  "runtimeFileCount": 6,
+  "scope": "Static saved-PCB publication. The default preview reads the previously checked native capture directly. Regeneration source and routing algorithms are retained under a separate entry and explicit commands.",
+  "publicationSourceSha256": "aa003a0a1616ffbfa2b1f411e8ec04f41014b5ab9c858acf53ebd8a3c56c36f6",
+  "publicationSourceFileCount": 153,
   "sourceManifest": [
     {
       "file": "bun.lock",
-      "sha256": "725d0f092f65d8ce7369fe86ceb5f5fb6803f28b263dfe85614ed7bb0048cb8a"
+      "sha256": "2f23a756990a7ff2a7f6c7efd71418ac9e5ed5515cad22c81dae8917f9170316"
+    },
+    {
+      "file": "captured-pcb/circuit.json",
+      "sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6"
     },
     {
       "file": "index.tsx",
-      "sha256": "bcf3dfbe30e79e629dcd7c4b011f0b387ef6ce0035c625e5f8707df001e2b58c"
+      "sha256": "f09f1c2cec146c04c89f209fee28bdd426c26f6d5eb82a2fe29f67b91c9fdfdd"
     },
     {
       "file": "package.json",
-      "sha256": "66007099388550c6103ab0e4a50c6289be736a4ee257110086498b7c51b72fd8"
+      "sha256": "61af4b47a34cffe4794edbacfd96ac2413c4044af9b5f6f8f9703e1eb939cd10"
+    },
+    {
+      "file": "regenerate.config.ts",
+      "sha256": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e"
+    },
+    {
+      "file": "regenerate.tsx",
+      "sha256": "bcf3dfbe30e79e629dcd7c4b011f0b387ef6ce0035c625e5f8707df001e2b58c"
     },
     {
       "file": "scripts/build-local.ts",
-      "sha256": "bd8f268f05e4e2b12296b9daaf21f8338901ee01e5597b518a57c5ba88d0df33"
+      "sha256": "0bf11afaf881de04bd0e653ba41f9e2f968c439e484634e3d77f139f6a32a027"
     },
     {
       "file": "scripts/build-with-watchdog.ts",
@@ -117,7 +125,7 @@
     },
     {
       "file": "src/guarded-router.ts",
-      "sha256": "975ac46a33a59fadc3023e0bbb522a48e8040ae35b64773b0c8882f119d26c38"
+      "sha256": "1a493f2c62ea6245d53567aad78a95f1e3875a83f13ef3ff498d932146ebd29b"
     },
     {
       "file": "src/i2c-branch-routes.tsx",
@@ -593,7 +601,7 @@
     },
     {
       "file": "src/supply-router.ts",
-      "sha256": "aee4664f4e70b173b86cd5efc08db2d3c0bfb2454924430a400f8dba7eeb41aa"
+      "sha256": "39b8a9bcff2e73bb9822946c92f4985952a3f88fd23ce50a5200517065adf1f3"
     },
     {
       "file": "src/supply-source-routes.tsx",
@@ -601,111 +609,29 @@
     },
     {
       "file": "tscircuit.config.ts",
-      "sha256": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e"
+      "sha256": "3a7416dcbbbf0bf33069048bf14495d4d4237d2d0fe829bf687659a48cfe174c"
     },
     {
       "file": "tsconfig.json",
-      "sha256": "40cf249a92f8e67ab55d71f7b8a3ab4f68f394e378b91d8f67ed9eecf4880a88"
+      "sha256": "032385c9ae59c94ff291d0075011cb535bfa7819f78b7e04c895a80838494db8"
     }
   ],
-  "runtimeManifest": [
-    {
-      "file": "node_modules/@tscircuit/core/package.json",
-      "sha256": "4f032bf178fe0ea6502ee3b15d5f9deef607deba96e36931020ef50878d8574b"
-    },
-    {
-      "file": "node_modules/@tscircuit/core/dist/index.js",
-      "sha256": "436e548925512b53cc47371bb3c2328fb420baab2310c7d279c2bb0f589e323b"
-    },
-    {
-      "file": "node_modules/@tscircuit/capacity-autorouter/package.json",
-      "sha256": "8fcd58bbbdc28c88db26d0c0e05356a38ad14f4039301920e04290ae0c437a2a"
-    },
-    {
-      "file": "node_modules/@tscircuit/capacity-autorouter/dist/index.js",
-      "sha256": "83b5162c5dfe8b0c058870550caa84fb1ce594dbb45622e1abf387d3c5b2a3a6"
-    },
-    {
-      "file": "node_modules/circuit-json-to-connectivity-map/package.json",
-      "sha256": "441a9d2144f6f47102cdacb5146e861f62f9800d0fa4bcc191421c201a48928a"
-    },
-    {
-      "file": "node_modules/circuit-json-to-connectivity-map/dist/index.js",
-      "sha256": "40f28a9fa682f2abbb7519ef56b31258cdff27665fc4e48727bf6466395e034c"
-    }
+  "savedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "capturedRoutingSourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "capturedRuntimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "originalRoutingProvenance": "docs/source24-routing-provenance.json",
+  "originalNativeBuildManifest": "captured-pcb/build-manifest.json",
+  "defaultPreviewEntrypoint": "captured-pcb/circuit.json",
+  "defaultDataExport": "index.tsx",
+  "regenerationEntrypoint": "regenerate.tsx",
+  "defaultRuntimeRoutingAlgorithms": 0,
+  "importGraphFiles": [
+    "index.tsx",
+    "captured-pcb/circuit.json"
   ],
-  "changedSourceFiles": [
-    {
-      "file": "src/blocks/debug-data.ts",
-      "source23Sha256": "e895a21426ee837681da45cbb8ad4ad23b83507de805e7200ce99cdda30538ad",
-      "source24Sha256": "6e4e90f1d5573d9dcbc3b551658e84b3221e993b2d79f449fad712adc12b84f5"
-    },
-    {
-      "file": "src/blocks/pd-input.tsx",
-      "source23Sha256": "c99a64fca0a5afb12fd069c687e0969f2193d9b6c21137f4b1d4586162259e72",
-      "source24Sha256": "937a16582fbbe1c86d2a17be7e519431a2b180e59bdfaf5150997208e8e9108e"
-    },
-    {
-      "file": "src/blocks/tec-power.tsx",
-      "source23Sha256": "8211b26279586b0447f92697168b830221d048dde314fa57780c0f984adebd88",
-      "source24Sha256": "6a100760cdee61ad68a88bbd27ea2cfec0c7a23e32eba47f0fd87e319b2f3304"
-    },
-    {
-      "file": "src/bus-routing.tsx",
-      "source23Sha256": "27b7530c5ac92af78662e6e3aaacbbf536122460ab50a26492b08efe9b04ae14",
-      "source24Sha256": "c85154aa2c87e6e2a26346d946d2490e19a54f3e13d9ab80d040fb28c6bc5a4f"
-    },
-    {
-      "file": "src/ground-trace-paths.ts",
-      "source23Sha256": "a12aa2f4078f7e63bda1e1e21c0f242a457c9d7b3c301a6ee11e663f4ad561f9",
-      "source24Sha256": "8e41d2edfa25aaadcae5a9aec82938ea5a46b20cc05d0bbf0daa8dfda8b20d08"
-    },
-    {
-      "file": "src/i2c-branch-routes.tsx",
-      "source23Sha256": "1ab55740f3033ca3f8bd5602b17e3046140a31a46020db18c5c2aba1440718e8",
-      "source24Sha256": "8aeac0228b6da01e0d2b9c719f919047dc45aa776cb0cd288057f584b3b5fc37"
-    },
-    {
-      "file": "src/source-pad-connections.ts",
-      "source23Sha256": "29afaa701920e7ba17cfa7ed8edc8fb9c293b3f681484a48ad7755259e28021c",
-      "source24Sha256": "2445257882bee99b9751687c21abd6cb57925876c490b86e1f12bd40dde3a311"
-    },
-    {
-      "file": "src/source-terminal-escapes.ts",
-      "source23Sha256": "d4e85d212a305a31d8fe6c41b3e9dac356c0333127034d3a4f6a80fbc8c389d1",
-      "source24Sha256": "7b53314fb9ee93d3d864d836348478f04c42a0020e25f6c397b799038ce99569"
-    },
-    {
-      "file": "src/source16-routes.tsx",
-      "source23Sha256": "7082f959b6022272a5eaa1c89efc8fb8c8e45f8ab2476801dfced329a601481b",
-      "source24Sha256": "3c07014384c06d92ff09b3b2d59099252606f5155495dbf2b15f76933ccfb790"
-    },
-    {
-      "file": "src/source20-routes.tsx",
-      "source23Sha256": "ec0084178779146937ba2401d87d073114c298ebd698ac8497ad15ea38e1bded",
-      "source24Sha256": "9acd79e2173cc2ac75be18e77a5900464c87eb8f9a0a5b4883594b1a73248854"
-    },
-    {
-      "file": "src/source22-routes.tsx",
-      "source23Sha256": "fcb3668250d39416ba345ad038a214e06decc8f436ab5a3613ce3edfe1392141",
-      "source24Sha256": "85fcb03c1777c947d80727cfbd44f9b99000b06f4bb4a47452b9f8463bf37b29"
-    },
-    {
-      "file": "src/supply-source-routes.tsx",
-      "source23Sha256": "4da4699586016c108baad3fcb740eb171e31b1a406c3386c2c9e2a52378c926b",
-      "source24Sha256": "94505e0a12968a764fbf1567a24a343f2f09b3fa0650cf83909b8f98b3b24c6b"
-    }
-  ],
-  "libraryImportFilesUnchanged": 105,
-  "source23OriginalPackageProvenance": "docs/source23-package-provenance.json",
-  "cadRoutingQualified": true,
-  "manufacturingAccepted": false,
+  "unchangedImportedPartFiles": 105,
+  "unchangedRoutingSourceFiles": true,
+  "verification": "publication-checks/static-preview.json",
   "hardwareBenchValidated": false,
-  "sourceUnchangedDuringBuild": true,
-  "runtimeUnchangedDuringBuild": true,
-  "freshPourSolverRuns": 1,
-  "traceSolverRuns": 0,
-  "sourceGroundPaths": 88,
-  "ratingReport": "routing-review/source24/rating-report.json",
-  "qualificationReport": "routing-review/source24/qualification.json"
+  "manufacturingAccepted": false
 }

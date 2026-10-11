@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "bun run scripts/build-with-watchdog.ts",
-    "build:local": "bun run scripts/build-with-watchdog.ts",
-    "dev": "bun run node_modules/tscircuit/cli.mjs dev index.tsx",
+    "build": "bun run node_modules/tscircuit/cli.mjs build captured-pcb/circuit.json",
+    "build:local": "bun run build",
+    "dev": "bun run node_modules/tscircuit/cli.mjs dev captured-pcb/circuit.json",
     "check:style": "bun run node_modules/tscircuit/cli.mjs check pcb-style dist/index/circuit.json --json --svg dist/index/pcb-style.svg",
     "check:shorts": "bun run node_modules/tscircuit/cli.mjs check shorts dist/index/circuit.json --mode gerber --layer all",
     "export:jlcpcb": "bun run scripts/export-manufacturing.ts",
@@ -18,9 +18,11 @@
     "prepare:assembly": "bun run scripts/prepare-assembly.ts",
     "export:previews": "bun run scripts/export-previews.ts",
     "check:physical": "bun run scripts/check-physical.ts",
-    "build:cli": "bun run node_modules/tscircuit/cli.mjs build index.tsx --svgs --autorouter-debug --autorouter-dump-srj all --autorouter-timeout 6m"
+    "build:regenerate": "bun run scripts/build-with-watchdog.ts",
+    "build:regenerate:cli": "bun run node_modules/tscircuit/cli.mjs build regenerate.tsx --svgs --autorouter-debug --autorouter-dump-srj all --autorouter-timeout 6m"
   },
   "dependencies": {
+    "eventemitter3": "5.0.4",
     "tscircuit": "0.0.2809"
   },
   "devDependencies": {

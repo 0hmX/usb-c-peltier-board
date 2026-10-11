@@ -1,6 +1,10 @@
 # USB-C Peltier development board
 
-An editable tscircuit prototype targeting **15/20 V USB-C PD input and an 11.2 V TEC output**, with cooling-only control, 8 debug LEDs and 26 test points. All 194 fitted components retain their reviewed JLCPCB mappings and imported footprint geometry.
+A tscircuit prototype targeting **15/20 V USB-C PD input and an 11.2 V TEC output**, with cooling-only control, 8 debug LEDs and 26 test points. All 194 fitted components retain their reviewed JLCPCB mappings and imported footprint geometry.
+
+The default entry displays the checked `captured-pcb/circuit.json` directly. `index.tsx` imports and exports that JSON; the preview uses the native static Circuit JSON viewer. Viewing or building the publication runs no routing algorithms. The saved capture preserves all 636 traces, 434 through vias and 31 actual pours.
+
+The editable board is retained in `regenerate.tsx`. Its algorithms, source paths and original configuration remain available for explicit regeneration. Both router helpers use the declared `eventemitter3@5.0.4` runtime dependency.
 
 ![Top and inner2 copper](captured-pcb/19-source-routing-improved-top-inner2.png)
 
@@ -21,32 +25,32 @@ The output-cap move lengthens its permission pickup by 10.586 mm; this cost is i
 
 This remains a static CAD prototype. Hardware bench validation and manufacturing exports/tolerances are pending. Long gate/fan/UART paths, a remote raw-input bypass and remaining inner1 corridors are documented in the reviews. The closest foreign via pair is 0.175 mm against the established 0.15 mm rule; several other routes retain tight nominal margins.
 
-- [Editable board](index.tsx), [checked circuit JSON](captured-pcb/circuit.json) and [ground-plane view](captured-pcb/19-source-routing-improved-ground-inner1.png)
+- [Saved JSON export](index.tsx), [checked circuit JSON](captured-pcb/circuit.json), [regeneration board](regenerate.tsx) and [ground-plane view](captured-pcb/19-source-routing-improved-ground-inner1.png)
 - [All 20 exact-capture routing reviews](routing-review/source24/README.md), [qualification](routing-review/source24/qualification.json) and [checks](routing-review/source24/checks)
 - [Source23 review](routing-review/rating-report.txt) and [original crossing annotation](routing-review/suspected-short-net-review.png); the crossing is intentional shared V3V3 copper
 - [Published tscircuit package](https://tscircuit.com/0hmX/tec-usbc-board)
 
-Clone and open the board:
+Clone and preview the saved board:
 
 ```sh
 git clone https://github.com/0hmX/usb-c-peltier-board.git
 cd usb-c-peltier-board
 bun install --frozen-lockfile
-python3 restore-captured-runtime.py
 bun run typecheck
 bun run dev
 ```
 
-Restore the six captured runtime files after installation. They contain the routing/via fixes used by the capture; the helper verifies package versions and every file hash before copying.
+The saved preview needs no captured runtime patches. For explicit regeneration, restore the six captured runtime files after installation; the helper verifies package versions and every file hash before copying.
 
-Regenerate the source routes and pours:
+`bun run build` also reads and copies the saved JSON. To explicitly regenerate the source routes and pours:
 
 ```sh
-bun run build -- --placement-only --pcb-only --phase-timeout-seconds 900
+python3 restore-captured-runtime.py
+bun run build:regenerate -- --placement-only --pcb-only --phase-timeout-seconds 900
 ```
 
 A new capture needs fresh geometry checks. Original package scripts are preserved; these aliases require tooling outside this compact repository: `check:guarded`, `check:physical`, `check:routed`, `export:jlcpcb`, `export:kicad`, `export:previews` and `prepare:assembly`.
 
-All 150 canonical source files and six runtime payloads are retained. Twelve source files changed; all 105 part/import files and every runtime byte match Source23. [Current provenance](PACKAGE-PROVENANCE.json) identifies the new capture; [original Source23 provenance](docs/source23-package-provenance.json) and [original package README](docs/captured-source-package-README.md) remain historical evidence. Supplier snapshots record stock observed on their stated dates.
+The original board and configuration are preserved byte for byte as `regenerate.tsx` and `regenerate.config.ts`. All 105 part/import files and six captured runtime payloads remain unchanged. [Publication verification](publication-checks/static-preview.json) records the two-file browser import graph and byte-identical default build. [Current provenance](PACKAGE-PROVENANCE.json), [Source24 routing provenance](docs/source24-routing-provenance.json), [Source23 provenance](docs/source23-package-provenance.json) and [original package README](docs/captured-source-package-README.md) distinguish the publication wrapper from the checked CAD capture. Supplier snapshots record stock observed on their stated dates.
 
 The project retains its declared MIT license. Captured runtime packages retain their [upstream license notices](docs/third-party-licenses).

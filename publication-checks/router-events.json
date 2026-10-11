@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "browserSourceGraphHasNoNodeImports": true,
+  "routers": [
+    {
+      "router": "supply",
+      "completeDelivered": true,
+      "onceDeliveredOnce": true,
+      "removedListenerNotCalled": true,
+      "traces": 1
+    }
+  ]
+}

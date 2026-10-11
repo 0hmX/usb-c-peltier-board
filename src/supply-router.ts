@@ -1,4 +1,4 @@
-import {EventEmitter} from "node:events"
+import {EventEmitter} from "eventemitter3"
 import {AUTOROUTER_VERSION,AutoroutingPipelineSolver9_PreloadedTraceGraph as Solver,
   type SimpleRouteJson} from "@tscircuit/capacity-autorouter"
 import {selectSourceTerminalRepresentatives,type TerminalRepresentative} from "./source-terminal-escapes"
