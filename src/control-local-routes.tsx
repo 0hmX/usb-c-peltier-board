@@ -1,3 +1,5 @@
+import { Fragment } from "react"
+
 const routes = [
   { name: "PERMISSION_PNP_BASE_LOCAL", net: "TEC_PERMISSION_PNP_BASE", from: "Q22.pin1", to: "R35.pin2", points: [{ x: -2.3, y: -0.95 }] },
   { name: "PERMISSION_NPN_BASE_LOCAL", net: "TEC_PERMISSION_NPN_BASE", from: "R37.pin2", to: "R38.pin1", points: [{ x: 1.8, y: 1 }] },
@@ -23,6 +25,6 @@ export const controlLocalConnectionPlans = [
 ] as const
 
 export function ControlLocalRoutes() {
-  return <>{routes.map(({ name, from, to, points }) => <trace key={name} name={name}
-    from={from} to={to} thickness={0.2} pcbPathRelativeTo={from} pcbPath={[from, ...points, to]} />)}</>
+  return <>{routes.map(({ name, from, to, points }) => <Fragment key={name}><trace name={name}
+    from={from} to={to} thickness={0.2} pcbPathRelativeTo={from} pcbPath={[from, ...points, to]} /></Fragment>)}</>
 }

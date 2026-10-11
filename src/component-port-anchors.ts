@@ -1,4 +1,4 @@
-import {PrimitiveComponent, type Board, type RootCircuit} from "@tscircuit/core"
+import {PrimitiveComponent, type Board, type Port, type RootCircuit} from "@tscircuit/core"
 import type {CircuitJson} from "circuit-json"
 import {tps25947CornerPortAnchors} from "./parts/C3662799"
 
@@ -28,6 +28,24 @@ export function attachSupplierPortAnchors(board:Board|null,install?: (circuit:Ro
   attachedBoards.add(board)
 }
 
+// Imported symbol ports are nested below <symbol>, so core's direct-child
+// selector misses them. Keep the public selector tied to the same physical port.
+export function repairSymbolPortSelectors(circuit:RootCircuit){
+  for(const port of circuit.selectAll("port") as Port[]){
+    if(!port.pcb_port_id||port.parent?.componentName!=="Symbol")continue
+    const scope=port.getSubcircuit()
+    if(scope.selectOne(port.getPortSelector(),{type:"port"})===port)continue
+    const sourcePort=circuit.db.source_port.get(port.source_port_id!)
+    const component=sourcePort?.source_component_id&&circuit.db.source_component.get(sourcePort.source_component_id)
+    const selector=component&&`${component.name}.${sourcePort!.name}`
+    const matches=selector?scope.selectAll(selector):[]
+    const pcbPort=circuit.db.pcb_port.get(port.pcb_port_id)
+    if(!selector||matches.length!==1||matches[0]!==port||pcbPort?.source_port_id!==sourcePort?.source_port_id)
+      throw new Error(`Cannot resolve symbol PCB port ${port.pcb_port_id}`)
+    port.getPortSelector=()=>selector
+  }
+}
+
 function copperMargin({point,polygon,radius}:{point:Point;polygon:Point[];radius:number}){
   let inside=false,distance=Infinity
   for(let i=0,j=polygon.length-1;i<polygon.length;j=i++){
@@ -51,6 +69,7 @@ export function installSupplierPortAnchors(circuit:RootCircuit){
   installed.set(circuit,corrections)
   const applied=new Set<string>()
   circuit.on("renderable:renderLifecycle:PcbPortAttachment:end",()=>{
+    repairSymbolPortSelectors(circuit)
     const recipe=tps25947CornerPortAnchors
     for(const source of circuit.db.source_component.list().filter(s=>s.supplier_part_numbers?.jlcpcb?.includes(recipe.jlcpcbPartNumber))){
       const part=circuit.db.pcb_component.list().find(p=>p.source_component_id===source.source_component_id)

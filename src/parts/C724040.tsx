@@ -28,7 +28,8 @@ const pinLabels = {
 } as const
 
 const pinAttributes = {
-  pin4: {requiresPower: true}
+  pin4: {requiresPower: true},
+  pin5: {requiresGround: true}
 } as const
 
 export const STM32G030F6P6 = (props: ChipProps<typeof pinLabels>) => {

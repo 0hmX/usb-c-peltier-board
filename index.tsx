@@ -16,31 +16,33 @@ import type { ReactNode } from "react"
 import type { Board } from "@tscircuit/core"
 import { attachSupplierPortAnchors } from "./src/component-port-anchors"
 import { installSourceViaMetadata } from "./src/source-via-metadata"
+import { installTraceWidthDiagnostics } from "./src/trace-width-diagnostics"
+import { installSchematicRouteInput } from "./src/schematic-route-input"
 import { BusRouting, GroundPlaneFanout, SignalNets } from "./src/bus-routing"
 import { boardLayoutProps, GroundCopper, MainPowerFeatures, MechanicalFeatures } from "./src/layout"
-import { supplierPartsEngine } from "./src/parts/supplier-parts-engine"
+import { installSupplierOrientationCache, supplierPartsEngine } from "./src/parts/supplier-parts-engine"
 
-export default function TecUsbCBoard({ signalRouting = <SignalNets />, busRouting = <BusRouting />, schematicDisabled = true }: {
+export default function TecUsbCBoard({ signalRouting = <SignalNets />, busRouting = <BusRouting />, schematicDisabled = false }: {
   signalRouting?: ReactNode; busRouting?: ReactNode; schematicDisabled?: boolean
 } = {}) {
   return (
-    <board {...{ ref: (board: Board | null) => attachSupplierPortAnchors(board, installSourceViaMetadata) }} {...boardLayoutProps} minViaHoleDiameter={.2} minViaPadDiameter={.5} routeRemaining={false} schematicDisabled={schematicDisabled} partsEngine={supplierPartsEngine} schLayout={{ layoutMode: "none" }} autorouter="auto_local" autorouterVersion="latest">
+    <board {...{ ref: (board: Board | null) => attachSupplierPortAnchors(board, circuit => { installSupplierOrientationCache(circuit); installSourceViaMetadata(circuit); installSchematicRouteInput(circuit); installTraceWidthDiagnostics(circuit) }) }} {...boardLayoutProps} minViaHoleDiameter={.2} minViaPadDiameter={.5} routeRemaining={false} schematicDisabled={schematicDisabled} partsEngine={supplierPartsEngine} schLayout={{ layoutMode: "none" }} autorouter="auto_local" autorouterVersion="latest">
       <net name="GND" isGroundNet />
       {signalRouting}
       <MechanicalFeatures />
-      <schematicsheet name="PD_INPUT" displayName="USB-C PD and protected power" sheetSize="ANSI_B">
+      <schematicsheet name="PD_INPUT" displayName="USB-C PD and protected power" sheetSize="A4">
         <PdInput />
       </schematicsheet>
-      <schematicsheet name="TEC_POWER" displayName="Current-controlled TEC converter" sheetSize="ANSI_B">
+      <schematicsheet name="TEC_POWER" displayName="Current-controlled TEC converter" sheetSize="A4">
         <TecPower />
       </schematicsheet>
-      <schematicsheet name="CONTROL" displayName="Control, sensors and fail-off protection" sheetSize="ANSI_B">
+      <schematicsheet name="CONTROL" displayName="Control, sensors and fail-off protection" sheetSize="A4">
         <group name="CONTROL_LAYOUT" schLayout={{ layoutMode: "none" }}>
           <ControlBlock />
         </group>
       </schematicsheet>
       <GroundPlaneFanout />
-      <schematicsheet name="DEBUG" displayName="Power indicators and probe access" sheetSize="ANSI_B">
+      <schematicsheet name="DEBUG" displayName="Power indicators and probe access" sheetSize="A4">
         <group name="DEBUG_LAYOUT" schLayout={{ layoutMode: "none" }}>
           <DebugBlock />
         </group>

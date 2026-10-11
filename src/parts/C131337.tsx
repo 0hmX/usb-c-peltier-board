@@ -23,7 +23,7 @@ export const B2B_PH_K_S_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {
   ]
 }}
       manufacturerPartNumber="B2B-PH-K-S(LF)(SN)"
-      footprint={<footprint>
+      footprint={<footprint insertionDirection="from_above">
         <platedhole  portHints={["pin2"]} pcbX="-0.999998mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.90mm" shape="circle" />
 <platedhole  portHints={["pin1"]} pcbX="0.999998mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.90mm" shape="circle" />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-2.921000000000049,"y":-0.2960369999999557},{"x":-2.413000000000011,"y":-0.2960369999999557},{"x":-2.413000000000011,"y":1.608963000000017},{"x":2.53999999999985,"y":1.608963000000017},{"x":2.53999999999985,"y":-0.2960369999999557},{"x":2.9209999999998217,"y":-0.2960369999999557}]} />

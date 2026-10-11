@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import type { SourcePadConnectionPlan } from "./source-pad-connections"
 import { Port, type Via } from "@tscircuit/core"
 import { attachLogicSupplyInner2Port } from "./logic-supply-links"
@@ -170,8 +171,8 @@ export function attachInputDvdtInner1Port(via: Via | null) {
 }
 export function Source20Routes() {
   return <>
-    {source20ViaSpecs.map(({props,inner1,inner2}) => <via {...props}
-      {...{ref:(via:Via|null)=>{if(inner1)attachInputDvdtInner1Port(via);else if(inner2)attachLogicSupplyInner2Port(via);attachSource22ExistingViaLayers(via)}}} />)}
-    {source20TraceProps.map(props => <trace {...props} pcbPath={[...props.pcbPath]} />)}
+    {source20ViaSpecs.map(({props,inner1,inner2}) => <Fragment key={props.name}><via {...props}
+      {...{ref:(via:Via|null)=>{if(inner1)attachInputDvdtInner1Port(via);else if(inner2)attachLogicSupplyInner2Port(via);attachSource22ExistingViaLayers(via)}}} /></Fragment>)}
+    {source20TraceProps.map(props => <Fragment key={props.name}><trace {...props} pcbPath={[...props.pcbPath]} /></Fragment>)}
   </>
 }

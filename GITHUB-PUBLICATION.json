@@ -17,6 +17,5 @@
   "verification": "publication-checks/silkscreen-cleanup.json",
   "originalReadmeSavedAt": "docs/captured-source-package-README.md",
   "manufacturingReleaseAccepted": false,
-  "hardwareBenchValidationAccepted": false,
-  "scope": "Historical source24e package publication; current editable TSX source differs and is tracked in PACKAGE-PROVENANCE.json"
+  "hardwareBenchValidationAccepted": false
 }

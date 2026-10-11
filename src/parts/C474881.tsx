@@ -19,7 +19,7 @@ export const KF301_5_0_2P = (props: ChipProps<typeof pinLabels>) => {
   ]
 }}
       manufacturerPartNumber="KF301-5.0-2P"
-      footprint={<footprint>
+      footprint={<footprint insertionDirection="from_bottom">
         <platedhole  portHints={["pin1"]} pcbX="-2.499995mm" pcbY="0mm" outerDiameter="2.1999956mm" holeDiameter="1.3mm" shape="circle" />
 <platedhole  portHints={["pin2"]} pcbX="2.499995mm" pcbY="0mm" outerDiameter="2.1999956mm" holeDiameter="1.3mm" shape="circle" />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-3.468878000000018,"y":-3.700805399999922},{"x":-3.468878000000018,"y":-1.5011908000000176},{"x":-1.5486888000000363,"y":-1.5011908000000176},{"x":-1.5486888000000363,"y":-3.700805399999922}]} />

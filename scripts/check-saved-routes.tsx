@@ -1,33 +1,47 @@
 import { deepStrictEqual, equal, throws } from "node:assert/strict"
 import { mkdirSync } from "node:fs"
 import { Circuit } from "@tscircuit/core"
+import { runAllSchematicChecks } from "@tscircuit/checks"
 import Board from "../index"
-import savedCircuit from "../captured-pcb/circuit.json"
 import { supplierOrientationCache } from "../src/parts/supplier-parts-engine"
-import { assertSavedCircuit } from "./assert-saved-circuit"
+import { assertSavedCircuit, assertSavedRecordTypes } from "./assert-saved-circuit"
+import { assertSchematicParity } from "./schematic-parity"
 
 const circuit = new Circuit({ platform: { localCacheEngine: supplierOrientationCache } })
 const replayedPhases: string[] = []
 let pourSolvers = 0
+let schematicSolvers = 0
 circuit.on("autorouting:start", event => {
   equal(event.autorouterName, "precomputed", "Default preview must replay saved routes")
   equal(event.phaseName, "GROUND_ESCAPES")
   replayedPhases.push(event.phaseName)
 })
 circuit.on("solver:started", event => {
+  if (event.solverName === "SchematicTracePipelineSolver") { schematicSolvers++; return }
   equal(event.solverName, "CopperPourPipelineSolver", "Default preview must not solve routes")
   pourSolvers++
 })
+const consoleDiagnostics: unknown[][] = []
+const originalWarn = console.warn, originalError = console.error
+console.warn = (...args) => { consoleDiagnostics.push(args); originalWarn(...args) }
+console.error = (...args) => { consoleDiagnostics.push(args); originalError(...args) }
 const board = Board()
 equal(board.type, "board", "Default entry must return real TSX")
+equal(board.props.schematicDisabled, false, "Default entry must render native schematics")
 circuit.add(board)
 await circuit.renderUntilSettled()
 const rendered: ReturnType<typeof circuit.getCircuitJson> = JSON.parse(JSON.stringify(circuit.getCircuitJson()))
 mkdirSync("checks", { recursive: true })
 await Bun.write("checks/tsx-preview.circuit.json", JSON.stringify(rendered, null, 2))
-deepStrictEqual(rendered.filter(element => element.type.endsWith("_error")), [])
+deepStrictEqual(consoleDiagnostics, [], "Preview emitted console warnings or errors")
+deepStrictEqual(rendered.filter(element => /_(warning|error)$/.test(element.type)), [], "Preview emitted diagnostic records")
+deepStrictEqual(await runAllSchematicChecks(structuredClone(rendered)), [], "Native schematic validator emitted diagnostics")
 deepStrictEqual(replayedPhases, ["GROUND_ESCAPES"])
 equal(pourSolvers, 1)
+equal(schematicSolvers > 0, true, "Native schematic routing must run")
+equal(rendered.filter(element => element.type === "pcb_trace").length, 636)
+equal(rendered.filter(element => element.type === "pcb_via").length, 434)
+const schematic = assertSchematicParity(rendered)
 const counts = assertSavedCircuit(rendered)
 // Repeated lifecycle passes must repair lost interior ports and route metadata,
 // including a route replacement that retains its allocated trace ID.
@@ -37,7 +51,7 @@ for (const via of circuit.db.pcb_via.list()) if ((via.pcb_port_ids?.length ?? 0)
   restoredMemberships++
 }
 circuit.emit("renderable:renderLifecycle:PcbManualTraceRender:start")
-deepStrictEqual(JSON.parse(JSON.stringify(circuit.db.pcb_via.list())), savedCircuit.filter(element => element.type === "pcb_via"))
+assertSavedRecordTypes(JSON.parse(JSON.stringify(circuit.getCircuitJson())), ["pcb_via"])
 equal(restoredMemberships, 141)
 const trace = circuit.db.pcb_trace.list().find(trace => trace.route.some(point => point.route_type === "via"))!
 const index = trace.route.findIndex(point => point.route_type === "via")
@@ -56,8 +70,11 @@ circuit.db.pcb_trace.update(trace.pcb_trace_id, { route: conflicting })
 throws(() => circuit.emit("renderable:renderLifecycle:PcbManualTraceRender:end"), /Conflicting source via sizes/)
 circuit.db.pcb_trace.update(trace.pcb_trace_id, { route: original })
 assertSavedCircuit(JSON.parse(JSON.stringify(circuit.getCircuitJson())))
+deepStrictEqual(consoleDiagnostics, [], "Repeated lifecycle passes emitted console warnings or errors")
+console.warn = originalWarn; console.error = originalError
 const report = { pass: true, entrypoint: "index.tsx", requiresCapturedRuntime: false, replayedPhases,
-  routingSolverStarts: 0, pourSolvers, comparedRecordCounts: counts, comparedRecordTypes: Object.keys(counts).length,
+  routingSolverStarts: 0, pourSolvers, schematicSolvers, schematic, warnings: 0, errors: 0,
+  consoleDiagnostics: 0, nativeSchematicValidatorDiagnostics: 0, comparedRecordCounts: counts, comparedRecordTypes: Object.keys(counts).length,
   comparedRecords: rendered.length, silkscreenTextUnchanged: true, restoredMemberships,
   repeatedViaMetadataRepair: true, partialViaSizesRepaired: true, conflictingViaSizesRejected: true }
 await Bun.write("checks/tsx-preview.json", JSON.stringify(report, null, 2) + "\n")

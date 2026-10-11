@@ -51,7 +51,7 @@ type Passive = readonly [string, string, number, number, number, string, string,
 const resistors: readonly Passive[] = [
   ["R_PD_RESET", "100k", -26, 2.5, 0, "PD_RESET", "GND", -24, 7],
   ["R_PD_VS", "470", -28.5, 22, 0, "VBUS_RAW", "PD_VS", -30, 18],
-  ["R_PD_DISCH", "1k", -28, 17.5, 0, "VBUS_TEC", "PD_DISCH", -20, 10],
+  ["R_PD_DISCH", "1k", -28, 17.5, 0, "VBUS_TEC", "PD_DISCH", -18, 10],
   ["R_PD_SCL", "4.7k", -22, 4, 90, "V3V3", "I2C_SCL", -19, 6],
   ["R_PD_SDA", "4.7k", -22, 0.5, 90, "V3V3", "I2C_SDA", -17, 6],
   ["R_PD_ALERT", "10k", -29, 14, 0, "V3V3", "PD_ALERT", -31, 15],
@@ -110,7 +110,7 @@ const wires: readonly (readonly [string, string, string, number?])[] = [
 export function PdInput() {
   return <>
     <silkscreentext text="USB-C" pcbX={-45} pcbY={21} fontSize={1.7} />
-    <UsbC name="J_USB" pcbX={-45.11557} pcbY={12} pcbRotation={270} schX={-37} schY={12} />
+    <UsbC noConnect={["SBU2", "DN2", "DP1", "DN1", "DP2", "SBU1"]} name="J_USB" pcbX={-45.11557} pcbY={12} pcbRotation={270} schX={-13.32} schY={-1.0} />
     {usbGroundReturns.map(([pin, pcbX, pcbY]) => <Fragment key={`USB_GND_${pin}`}>
       <via name={`USB_GND_${pin}_VIA`} pcbX={pcbX} pcbY={pcbY} holeDiameter={0.3} outerDiameter={0.7}
         fromLayer="top" toLayer="bottom" connectsTo="net.GND" tented />
@@ -145,9 +145,9 @@ export function PdInput() {
       pcbPath={["J_USB.pin3", { x: -5.75, y: -2.7741308 }]} />
     <via name="USB_ENTRY_GND_VIA" pcbX={-37.5} pcbY={19} holeDiameter={0.3} outerDiameter={0.7}
       fromLayer="top" toLayer="bottom" connectsTo="net.GND" tented />
-    <Stusb4500 name="U_PD" pcbX={-26} pcbY={7} schX={-24} schY={12}
+    <Stusb4500 name="U_PD" pcbX={-26} pcbY={7} schX={-3.96} schY={-1.0} schPinStyle={{ pin16: { marginBottom: .6 }, pin18: { marginBottom: .4 } }}
       connections={{ pin7: N("I2C_SCL"), pin8: N("I2C_SDA") }} />
-    <Tps259470 name="U_INPUT" pcbX={-18} pcbY={15} schX={-8} schY={13} />
+    <Tps259470 name="U_INPUT" pcbX={-18} pcbY={15} schX={7.56} schY={0.0} />
     {/* Start at the reviewed L-land copper anchors. The short 0.20 mm
         escapes reach ordinary full-through barrels clear of every SMT land;
         native routing can continue from these outside-package contacts. */}
@@ -182,8 +182,8 @@ export function PdInput() {
       fromLayer="top" toLayer="bottom" connectsTo="net.GND" tented />
     <trace name="INPUT_DVDT_LOCAL_GROUND" from="C_INPUT_DVDT.pin2" to="INPUT_DVDT_GND_VIA.top" thickness={0.2} maxLength={1}
       pcbPath={["C_INPUT_DVDT.pin2", "INPUT_DVDT_GND_VIA.top"]} />
-    <Npn name="Q_PD_INHIBIT" pcbX={-19.5} pcbY={9} schX={-13} schY={12} />
-    <TwoN7002 name="Q_INPUT_HIGH" pcbX={-13.5} pcbY={12} schX={0} schY={12} />
+    <Npn name="Q_PD_INHIBIT" pcbX={-19.5} pcbY={9} schX={3.96} schY={-1.0} />
+    <TwoN7002 name="Q_INPUT_HIGH" pcbX={-13.5} pcbY={12} schX={13.32} schY={-1.0} />
     {/* Ground enters the common exposed pad and exits through grounded pin10,
         keeping both left-side regulator escape corridors open. */}
     <via name="PD_VDD_RETURN_VIA" pcbX={-31.21} pcbY={7.885} holeDiameter={0.3} outerDiameter={0.7}
@@ -270,7 +270,7 @@ export function PdInput() {
         "C_INPUT_OUT.pin1", { x: -16.8, y: 17.7 }, { x: -17.75, y: 16.75 }, "U_INPUT.pin6",
       ], origin: { x: -16, y: 17.7 } })} />
     {resistors.map(([name, resistance, pcbX, pcbY, pcbRotation, a, b, schX, schY]) => <Fragment key={name}>
-      <R key={name} name={name} resistance={resistance} partId={name === "R_PD_VS" ? "C513643" : name === "R_PD_DISCH" ? "C54315" : undefined} pcbX={pcbX} pcbY={pcbY} pcbRotation={pcbRotation} schX={schX} schY={schY} />
+      <R key={name} name={name} resistance={resistance} partId={name === "R_PD_VS" ? "C513643" : name === "R_PD_DISCH" ? "C54315" : undefined} pcbX={pcbX} pcbY={pcbY} pcbRotation={pcbRotation} schX={(schX + 18.5) * .72} schY={schY - 13} schRotation={["R_PD_SCL", "R_PD_SDA"].includes(name) ? 270 : 0} />
       <trace name={`${name}_A`} from={`.${name} > .pin1`} to={pdV3Vias[name] ? `${pdV3Vias[name]}.top` : N(a)}
         {...(pdV3Vias[name] ? { thickness: 0.2, pcbPathRelativeTo: `${name}.pin1`, pcbPath: name === "R_PD_VALID"
           ? localPath({ path: [`${name}.pin1`, { x: -26.7, y: 11.4 }, `${pdV3Vias[name]}.top`], origin: { x: pcbX, y: pcbY }, rotation: pcbRotation })
@@ -280,7 +280,7 @@ export function PdInput() {
     </Fragment>)}
     {capacitors.map(([name, capacitance, pcbX, pcbY, pcbRotation, a, b, schX, schY]) => <Fragment key={name}>
       <C key={name} name={name} capacitance={capacitance} partId={name === "C_PD_VDD" ? "C28323" : capacitance === "1uF" ? "C15849" : undefined}
-        pcbX={pcbX} pcbY={pcbY} pcbRotation={pcbRotation} schX={schX} schY={schY}
+        pcbX={pcbX} pcbY={pcbY} pcbRotation={pcbRotation} schX={(schX + 18.5) * .72} schY={schY - 13}
         {...(name === "C_PD_1V2" ? { maxDecouplingTraceLength: 3.5 } : {})} />
       {name !== "C_PD_2V7" && <trace name={`${name}_A`} from={`.${name} > .pin1`} to={N(a)}
         {...(name === "C_PD_VDD" ? { maxLength: 2.5 } : {})} />}
@@ -290,7 +290,7 @@ export function PdInput() {
         {...(name === "C_USB_IN" ? { thickness: 0.2, pcbPathRelativeTo: "C_USB_IN.pin2",
           pcbPath: ["C_USB_IN.pin2", { x: 1.5, y: 0 }] } : {})} />
     </Fragment>)}
-    {wires.map(([name, from, to, width]) => <trace key={name} name={name} from={from} to={to} width={width ?? 0.2} />)}
+    {wires.map(([name, from, to, width]) => <Fragment key={name}><trace name={name} from={from} to={to} width={width ?? 0.2} /></Fragment>)}
     {/* Keep the main ground layer intact: cross to inner2 before the raw-power column. */}
     <via name="PD_CC1_IC_VIA" pcbX={-28.4} pcbY={4.9} holeDiameter={0.3} outerDiameter={0.7}
       fromLayer="top" toLayer="bottom" connectsTo="net.USB_CC1" tented />

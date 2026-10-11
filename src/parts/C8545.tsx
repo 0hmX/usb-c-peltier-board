@@ -10,7 +10,7 @@ const pinLabels = {
 
 export const A_2N7002 = (props: ChipProps<typeof pinLabels>) => {
   return (
-    <chip
+    <mosfet channelType="n" mosfetMode="enhancement"
       pinLabels={pinLabels}
       symbol={
         <symbol>

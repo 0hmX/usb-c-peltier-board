@@ -1,5 +1,6 @@
 // Source-owned paired I2C trees. Ordinary full vias share the PD/bypass/monitor branches.
 // Core numeric waypoints are relative to a real named via, including pad launches.
+import { Fragment } from "react"
 import { attachLogicSupplyInner2Port } from "./logic-supply-links"
 
 export const i2cBranchBarrels = [
@@ -33,10 +34,10 @@ export const i2cBranchConnectionPlans = [
 
 export function I2cBranchRoutes() {
   return <>
-    {i2cBranchBarrels.map(v => <via name={v.name} pcbX={v.x} pcbY={v.y}
+    {i2cBranchBarrels.map(v => <Fragment key={v.name}><via name={v.name} pcbX={v.x} pcbY={v.y}
       holeDiameter={0.3} outerDiameter={0.7} fromLayer="top" toLayer="bottom"
-      connectsTo={`net.${v.net}`} tented {...{ ref: attachLogicSupplyInner2Port }} />)}
-    {i2cBranchPaths.map(p => <trace name={p.name} from={p.start} to={p.end} thickness={0.2}
-      pcbPathRelativeTo={p.anchor} pcbPath={[p.start, ...p.relativeWaypoints, p.end]} />)}
+      connectsTo={`net.${v.net}`} tented {...{ ref: attachLogicSupplyInner2Port }} /></Fragment>)}
+    {i2cBranchPaths.map(p => <Fragment key={p.name}><trace name={p.name} from={p.start} to={p.end} thickness={0.2}
+      pcbPathRelativeTo={p.anchor} pcbPath={[p.start, ...p.relativeWaypoints, p.end]} /></Fragment>)}
   </>
 }

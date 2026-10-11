@@ -16,7 +16,8 @@ const pinLabels = {
 } as const
 
 const pinAttributes = {
-  pin4: {requiresGround: true}
+  pin4: {requiresGround: true},
+  pin8: {requiresPower: true}
 } as const
 
 export const LMV393IDR = (props: ChipProps<typeof pinLabels>) => {

@@ -1,3 +1,5 @@
+import { Fragment } from "react"
+
 // Local V3 copper connects genuine supply pads before the native distribution route.
 const controlV3Routes = [
   {"name":"LATCH_STATIC_V3_78","from":"U_LATCH.pin7","to":"U_LATCH.pin8","maxLength":0.6,"points":[]},
@@ -11,7 +13,7 @@ const controlV3Routes = [
 ] as const
 
 export function ControlV3Routes() {
-  return <>{controlV3Routes.map(route => <trace key={route.name} name={route.name}
+  return <>{controlV3Routes.map(route => <Fragment key={route.name}><trace name={route.name}
     from={route.from} to={route.to} thickness={0.2} maxLength={route.maxLength} pcbPathRelativeTo={route.from}
-    pcbPath={[route.from, ...route.points, route.to]} />)}</>
+    pcbPath={[route.from, ...route.points, route.to]} /></Fragment>)}</>
 }

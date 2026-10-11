@@ -72,6 +72,8 @@ const pinLabels = {
 } as const
 
 const pinAttributes = {
+  pin5: {requiresPower: true},
+  pin6: {providesPower: true},
   pin8: {requiresGround: true}
 } as const
 

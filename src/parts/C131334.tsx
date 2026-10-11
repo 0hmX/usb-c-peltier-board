@@ -25,7 +25,7 @@ export const B4B_PH_K_S_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {
   ]
 }}
       manufacturerPartNumber="B4B-PH-K-S(LF)(SN)"
-      footprint={<footprint>
+      footprint={<footprint insertionDirection="from_above">
         <platedhole  portHints={["pin2"]} pcbX="0.999998mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.95mm" shape="circle" />
 <platedhole  portHints={["pin1"]} pcbX="2.999994mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.95mm" shape="circle" />
 <platedhole  portHints={["pin3"]} pcbX="-0.999998mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.95mm" shape="circle" />
