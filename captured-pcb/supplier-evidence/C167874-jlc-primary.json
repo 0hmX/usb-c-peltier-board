@@ -1,0 +1,66 @@
+{
+  "observed_at": "2026-10-10T06:26:18.165545+00:00",
+  "url": "https://jlcpcb.com/partdetail/C167874",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "FNR4030S4R7MT",
+    "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+    "componentCode": "C167874",
+    "describe": "2.3A 3.2A 4.7uH 78mΩ Magnetic Shielded Inductor ±20% SMD,4x4mm Power Inductors ROHS",
+    "componentSpecificationEn": "SMD,4x4mm",
+    "lcscComponentId": 179257,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_cjiang--Changjiang-Microelectronics-Tech-FNR4030S4R7MT_C167874.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 221,
+    "encapsulationNumber": 2000,
+    "canPresaleNumber": 90397,
+    "overseasStockCount": 92726,
+    "initialPrice": 0.0501,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Current - Saturation(Isat)",
+        "component_code": "C167874",
+        "attribute_value_name": "3.2A"
+      },
+      {
+        "attribute_name_en": "Inductance",
+        "component_code": "C167874",
+        "attribute_value_name": "4.7uH"
+      },
+      {
+        "attribute_name_en": "Type",
+        "component_code": "C167874",
+        "attribute_value_name": "Magnetic Shielded Inductor"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C167874",
+        "attribute_value_name": "±20%"
+      },
+      {
+        "attribute_name_en": "Current Rating",
+        "component_code": "C167874",
+        "attribute_value_name": "2.3A"
+      },
+      {
+        "attribute_name_en": "DC Resistance(DCR)",
+        "component_code": "C167874",
+        "attribute_value_name": "78mΩ"
+      }
+    ]
+  }
+}

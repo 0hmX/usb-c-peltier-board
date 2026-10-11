@@ -1,0 +1,86 @@
+{
+  "observed_at": "2026-10-10T04:57:45.845247+00:00",
+  "url": "https://jlcpcb.com/partdetail/C144198",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "MCP4725A0T-E/CH",
+    "componentBrandEn": "Microchip Tech",
+    "componentCode": "C144198",
+    "describe": "-40℃~+125℃ 1 12 2.7V~5.5V 210uA 2LSB 6us I2C Integrated buffer、Power-on reset、Power-down mode Voltage Buffer SOT-23-6 Digital to Analog Converters (DAC) ROHS",
+    "componentSpecificationEn": "SOT-23-6",
+    "lcscComponentId": 155530,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151442_Microchip-Tech-MCP4725A0T-E-CH_C144198.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 11,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 18898,
+    "overseasStockCount": 19899,
+    "initialPrice": 0.9463,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Function",
+        "component_code": "C144198",
+        "attribute_value_name": "Integrated buffer、Power-on reset、Power-down mode"
+      },
+      {
+        "attribute_name_en": "Integral non - linearity",
+        "component_code": "C144198",
+        "attribute_value_name": "2LSB"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C144198",
+        "attribute_value_name": "-40℃~+125℃"
+      },
+      {
+        "attribute_name_en": "Number of Channels",
+        "component_code": "C144198",
+        "attribute_value_name": "1"
+      },
+      {
+        "attribute_name_en": "Output Type",
+        "component_code": "C144198",
+        "attribute_value_name": "Voltage Buffer"
+      },
+      {
+        "attribute_name_en": "Voltage - Supply",
+        "component_code": "C144198",
+        "attribute_value_name": "2.7V~5.5V"
+      },
+      {
+        "attribute_name_en": "Quiescent Current (Iq)",
+        "component_code": "C144198",
+        "attribute_value_name": "210uA"
+      },
+      {
+        "attribute_name_en": "Settling Time",
+        "component_code": "C144198",
+        "attribute_value_name": "6us"
+      },
+      {
+        "attribute_name_en": "Resolution (Bits)",
+        "component_code": "C144198",
+        "attribute_value_name": "12"
+      },
+      {
+        "attribute_name_en": "Interface",
+        "component_code": "C144198",
+        "attribute_value_name": "I2C"
+      }
+    ]
+  }
+}

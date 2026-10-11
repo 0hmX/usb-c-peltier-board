@@ -1,0 +1,144 @@
+{
+  "scope": "Owned independent settled23 same-capture R206 real heads/imported tip, unchanged UART and installed ADC carry closeout. No baseline full sweep, Source changes, Core/native execution, global reference/plane/power/DRC/export or finished manufacturing acceptance.",
+  "boundFiles": [
+    {
+      "path": "reviews/discrete-debug/source23-settled-r206-real-emitted-head-and-fitted-review.json",
+      "sha256": "e927d8a5d64211a37e42e64f6851b31b55b0a3934e59e7c8fd72d2c6edac18d9"
+    },
+    {
+      "path": "reviews/discrete-debug/source23-settled-uart-eight-six-retained-head-and-import-review.json",
+      "sha256": "e5412f353eaf85c02d8e374eeeb0fc61ea61afc99cc770031f72c2eef7f6a547"
+    },
+    {
+      "path": "reviews/discrete-debug/source23-settled-retained-adc-five-bound-and-21-branch-review.json",
+      "sha256": "b693e802388ef120059c1a1471417ae51f5ee47d76a0734871c333363d909ab4"
+    },
+    {
+      "path": "reviews/discrete-debug/source23-fast-r206-uart-adc-physical-pass-and-strict-metadata-hold-classification.json",
+      "sha256": "1ca3264a9aa67adc4f28ed7a1a73380df03e69c77bdb764f6bbd054fd1658059"
+    },
+    {
+      "path": "dist/debug-source-placement-23/circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "path": "dist/debug-source-placement-23/build-manifest.json",
+      "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+    },
+    {
+      "path": "reviews/toolchain-checkpoints/source23-settled-capture/handoff.json",
+      "sha256": "92525c2e60c91c222b7d0e2761d0fdfa2f8dc871798bfc9c88186b524e2717a3"
+    }
+  ],
+  "sameCaptureSourceHash": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "sameCaptureRuntimeHash": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "sameCaptureRunId": "4648d3f4-b889-4e58-a432-8b532b191512",
+  "actualCaptureCounts": {
+    "pcb_trace": 633,
+    "pcb_via": 433,
+    "pcb_copper_pour": 29,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_hole": 6
+  },
+  "ownedChecksPass": true,
+  "findings": [],
+  "r206TwoNewSourceWorldsLimitsFourGenuineFineHeadsAndSevenOldSpansPass": true,
+  "actualNewARealSourceVia": "source_manually_placed_via_220",
+  "actualNewAPcbBarrel": "pcb_via_220",
+  "actualNewAVirtualPcbParent": "pcb_component_440",
+  "actualNewACenterMm": {
+    "x": -22.8,
+    "y": 10
+  },
+  "actualNewAFull4TentedBore": {
+    "holeDiameterMm": 0.3,
+    "outerDiameterMm": 0.7,
+    "fromLayer": "top",
+    "toLayer": "bottom",
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "tentedTop": true,
+    "tentedBottom": true
+  },
+  "actualNewASupportedRegisteredLayerHeads": [
+    {
+      "layer": "top",
+      "sourcePortId": "source_port_1150",
+      "sourceOwnerId": "source_manually_placed_via_220"
+    },
+    {
+      "layer": "bottom",
+      "sourcePortId": "source_port_1151",
+      "sourceOwnerId": "source_manually_placed_via_220"
+    },
+    {
+      "layer": "inner1",
+      "sourcePortId": "source_port_1152",
+      "sourceOwnerId": "source_manually_placed_via_220"
+    }
+  ],
+  "actualNewAMinimumFiniteIncomingAnnularContactMm2": 0.041436271739912406,
+  "newEntryInner2HeadAdded": false,
+  "retainedR206C2906982ImportedCuMaskPastePoseAndSupplierPin1MapExact": true,
+  "UART8Worlds6GenuineFullHosts12FineHeadsAndFourImportedPadsExact": true,
+  "ADC5Worlds2GenuineFullHosts21OtherBranchesExact": true,
+  "allFiveInstalledADCMaxima": [
+    8.1,
+    11.6,
+    4.7,
+    16.2,
+    6.6
+  ],
+  "genuineSettledSupplierMapsClosingOnlyFiveFastMissingRows": [
+    {
+      "selector": "R206.pin1",
+      "sourceId": "source_component_113",
+      "pcbId": "pcb_component_158",
+      "actualSupplierPin1LocationMap": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "selector": "U_MCU.pin10",
+      "sourceId": "source_component_86",
+      "pcbId": "pcb_component_122",
+      "actualSupplierPin1LocationMap": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "selector": "R231.pin2",
+      "sourceId": "source_component_137",
+      "pcbId": "pcb_component_182",
+      "actualSupplierPin1LocationMap": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "selector": "U_MCU.pin9",
+      "sourceId": "source_component_86",
+      "pcbId": "pcb_component_122",
+      "actualSupplierPin1LocationMap": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "selector": "J_UART.pin2",
+      "sourceId": "source_component_106",
+      "pcbId": "pcb_component_147",
+      "actualSupplierPin1LocationMap": {
+        "jlcpcb": "bottomside_right"
+      }
+    }
+  ],
+  "fastStrictFalseReceiptsFrozenAndNotRewritten": true,
+  "fastOnlyOwnedSupplierMapHoldNowGenuinelyClosed": true,
+  "all194SupplierMapsGlobalReviewIndependent": true,
+  "actualReference166Graph450CurrentPowerWholeBoardAcceptanceIndependent": true,
+  "noCoreNativeSourceProductionFootprintOrSupplierCacheWrites": true
+}

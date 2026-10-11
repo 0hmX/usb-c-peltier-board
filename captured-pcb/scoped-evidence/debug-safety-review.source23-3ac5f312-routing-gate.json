@@ -1,0 +1,94 @@
+{
+  "scope": "Fresh Source23 routing-safety gate using its immutable settled graph.\n\nRequires Shapely2.0.7. No Core/solver/source writes. Ideal CAD routing only;\nno firmware, manufacturing release, or bench qualification is inferred.\n",
+  "pass": true,
+  "circuit": {
+    "path": "dist/debug-source-placement-23/circuit.json",
+    "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+  },
+  "manifest": {
+    "path": "dist/debug-source-placement-23/build-manifest.json",
+    "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+  },
+  "physicalGraph": {
+    "path": "reviews/debug-safety-review.source23-3ac5f312-physical.json",
+    "sha256": "64d192dbdd0cd6fcae198760ae0715a904cc32d895daacec71e4ef525d1566fd"
+  },
+  "priorGraphSha256": "d91c5ba03027d1758bc7c0b4799c5c1b4f2d891503dba6a1b103e7b45722eb60",
+  "rawSourceSha256": "970e48edfb31833f9f0726a853b8d07eb6a68b04664f898bb21b7faa03bf8380",
+  "actualSourceProofSha256": "37687c5d650dafe20d2c45efe6fab9fa6f3b5bfb6bf52283ffa11b9b085b1ec7",
+  "oldBoundFaultCarrySha256": "8025901b1d3daf72a2c014298d4d5fcce5dae4663ca675c25ab3cec10b3ef060",
+  "reviewScriptSha256": "ccdb7b54f65c56a3c196ffa06e93fff8097305061ad6a542fca5ac38b3a62bf5",
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "runId": "4648d3f4-b889-4e58-a432-8b532b191512",
+  "checks": [
+    {
+      "name": "Immutable fresh Source23 graph/settled capture and stable declared runtime",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "All633 raw SOURCE paths/width/finite limits/actual world geometry survive fresh settlement",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "All433 actual full-span barrel dimensions/tenting/owners/heads survive settlement",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent newR206 owner/head and631 oldpaths432 oldbarrels proof binds qualified fast input",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Original398 bounds/574 fitted lands/147 Source returns/11 fault paths remain protected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "All121 prior real SOURCE memberships and physical joined partitions remain",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "All147 genuine returns share fresh C28 main-inner1 reference and all166 barrels contact its largest region",
+      "pass": true,
+      "details": {
+        "targetPads": 147,
+        "padIslands": 1,
+        "padsConnectedToReference": 147,
+        "referenceLayerViaCount": 166,
+        "viasDirectlyContactingReferenceRegion": 166,
+        "referenceRegionAreaMm2": 6613.744485
+      }
+    },
+    {
+      "name": "No unassigned or typed orphan pour/barrel/trace copper in any121 actual groups",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "PD permission and nine raw/base/conditioned fault signal roots stay exclusive",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Every450 real fitted-pad join remains physically complete",
+      "pass": true,
+      "details": {
+        "actual": 450,
+        "required": 450,
+        "remaining": 0
+      }
+    }
+  ],
+  "actualJoins": 450,
+  "requiredJoins": 450,
+  "raw1055DiagnosticProducerAccepted": false,
+  "actualNativeCompletion": false,
+  "manufacturingAccepted": false,
+  "benchQualified": false,
+  "CoreExecutedByReviewer": false
+}

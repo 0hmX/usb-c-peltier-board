@@ -1,0 +1,61 @@
+{
+  "observed_at": "2026-10-10T04:57:47.574554+00:00",
+  "url": "https://jlcpcb.com/partdetail/C2678061",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "STUSB4500QTR",
+    "componentBrandEn": "STMicroelectronics",
+    "componentCode": "C2678061",
+    "describe": "-40℃~+105℃ 160uA 3V、5.5V Controller PD 3.0、PD 2.0 QFN-24-EP(4x4) USB Converters ROHS",
+    "componentSpecificationEn": "QFN-24-EP(4x4)",
+    "lcscComponentId": 2769977,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2106070703_STMicroelectronics-STUSB4500QTR_C2678061.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 3",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 4,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 4510,
+    "overseasStockCount": 4747,
+    "initialPrice": 2.6613,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C2678061",
+        "attribute_value_name": "-40℃~+105℃"
+      },
+      {
+        "attribute_name_en": "Applications Function",
+        "component_code": "C2678061",
+        "attribute_value_name": "Controller"
+      },
+      {
+        "attribute_name_en": "Voltage - Supply",
+        "component_code": "C2678061",
+        "attribute_value_name": "3V、5.5V"
+      },
+      {
+        "attribute_name_en": "USB Protocol",
+        "component_code": "C2678061",
+        "attribute_value_name": "PD 3.0、PD 2.0"
+      },
+      {
+        "attribute_name_en": "Current - Supply",
+        "component_code": "C2678061",
+        "attribute_value_name": "160uA"
+      }
+    ]
+  }
+}

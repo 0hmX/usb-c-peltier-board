@@ -1,0 +1,779 @@
+{
+  "role": "layer-transition/via economy reviewer",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 7.0,
+  "confidence": "medium",
+  "inspectedArtifacts": [
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-rating-source23/BRIEF.md"
+  ],
+  "directChecks": {
+    "viaCount": 433,
+    "resolvedNetCount": 73,
+    "all433AreFullFourLayerThroughBarrels": true,
+    "viaPurposeBreakdown": {
+      "GND": 166,
+      "main_power_rails_and_output": 76,
+      "V3V3": 11,
+      "TEC_SW": 2,
+      "other_control_sense_debug": 178
+    },
+    "viaNetCounts": {
+      "GND": 166,
+      "USB_CC1": 3,
+      "USB_CC2": 3,
+      "V3V3": 11,
+      "INPUT_ENABLE": 5,
+      "INPUT_FAULT_N": 7,
+      "INPUT_DVDT": 2,
+      "PD_2V7": 2,
+      "VBUS_TEC": 25,
+      "TEC_RT": 2,
+      "TEC_BOOT": 3,
+      "D501_A": 2,
+      "D502_A": 2,
+      "D503_A": 2,
+      "D504_A": 2,
+      "D505_A": 2,
+      "DBG_HW_INHIBIT": 2,
+      "HOT_ADC": 3,
+      "COLD_ADC": 3,
+      "VBUS_ADC": 3,
+      "VOUT_ADC": 3,
+      "TEC_FB": 2,
+      "TEC_VC": 2,
+      "DBG_TEC_PERMIT": 2,
+      "TEC_DAC": 4,
+      "INPUT_FAULT_NPN_BASE": 2,
+      "HOT_HIGH": 2,
+      "INPUT_CLEAR_RAW": 2,
+      "TEC_CLEAR_RAW": 3,
+      "SWCLK": 1,
+      "SWDIO": 1,
+      "TEC_MON_SENSE_P": 2,
+      "TEC_HIGH_GATE": 2,
+      "TEC_PERMISSION_PNP_BASE": 2,
+      "TEC_REQUEST": 4,
+      "LOGIC_SW": 2,
+      "LOGIC_BST": 2,
+      "FAN_BST": 2,
+      "FAN_FB": 2,
+      "TEC_LOW_GATE": 2,
+      "INPUT_CURRENT_MON": 2,
+      "INPUT_OVLO": 2,
+      "MCU_ARM": 3,
+      "MCU_RUN": 8,
+      "FAULT_SOURCE": 2,
+      "TEC_EN_UVLO": 3,
+      "TEC_VREF": 2,
+      "TEC_CURRENT_COMMAND": 2,
+      "TEC_HARD_LIMIT": 3,
+      "COLD_RAW": 2,
+      "FAN_PWM_BASE": 2,
+      "MCU_NRST": 3,
+      "ARM_CLK": 2,
+      "FAN_TACH": 2,
+      "PD_ALERT": 2,
+      "FAN_TACH_MCU": 4,
+      "PD_VALID_N": 5,
+      "INPUT_CLEAR_N": 4,
+      "FAN_PWM_DRIVE": 2,
+      "TEC_CLEAR_N": 2,
+      "PD_DISCH": 3,
+      "POWER_BUDGET_HIGH": 5,
+      "HOT_RAW": 3,
+      "TEC_SAFE_EN": 4,
+      "UART_RX_MCU": 4,
+      "UART_TX": 2,
+      "I2C_SCL": 3,
+      "I2C_SDA": 3,
+      "TEC_INDUCTOR_OUT": 11,
+      "TEC_POS": 13,
+      "VBUS_RAW": 27,
+      "TEC_SW": 2,
+      "TEC_SENSE_N_FILTERED": 2
+    },
+    "ordinaryViaSizeCount": 431,
+    "smallViaSizeCount": 2,
+    "foreignNetViaPairsChecked": 78793,
+    "foreignNetViaCopperOverlapCount": 0,
+    "minimumForeignNetViaCopperGapMm": 0.15420430811369723,
+    "minimumForeignNetViaDrillEdgeGapMm": 0.5332973476019143,
+    "nearestForeignNetViaPairs": [
+      {
+        "copperGapMm": 0.15420430811369723,
+        "drillEdgeGapMm": 0.5542043081136971,
+        "a": {
+          "id": "pcb_via_148",
+          "net": "TEC_CURRENT_COMMAND",
+          "x": -3.21,
+          "y": 8.063
+        },
+        "b": {
+          "id": "pcb_via_401",
+          "net": "GND",
+          "x": -2.4490000000000003,
+          "y": 7.675
+        }
+      },
+      {
+        "copperGapMm": 0.15607768339094086,
+        "drillEdgeGapMm": 0.5560776833909409,
+        "a": {
+          "id": "pcb_via_148",
+          "net": "TEC_CURRENT_COMMAND",
+          "x": -3.21,
+          "y": 8.063
+        },
+        "b": {
+          "id": "pcb_via_387",
+          "net": "GND",
+          "x": -4.025,
+          "y": 8.325
+        }
+      },
+      {
+        "copperGapMm": 0.17500000000000004,
+        "drillEdgeGapMm": 0.575,
+        "a": {
+          "id": "pcb_via_191",
+          "net": "VOUT_ADC",
+          "x": 1.625,
+          "y": -7.275
+        },
+        "b": {
+          "id": "pcb_via_218",
+          "net": "UART_TX",
+          "x": 1.625,
+          "y": -8.15
+        }
+      },
+      {
+        "copperGapMm": 0.17535707000057998,
+        "drillEdgeGapMm": 0.5753570700005799,
+        "a": {
+          "id": "pcb_via_97",
+          "net": "HOT_ADC",
+          "x": 1.6,
+          "y": -9.025
+        },
+        "b": {
+          "id": "pcb_via_218",
+          "net": "UART_TX",
+          "x": 1.625,
+          "y": -8.15
+        }
+      },
+      {
+        "copperGapMm": 0.17535707000057998,
+        "drillEdgeGapMm": 0.5753570700005799,
+        "a": {
+          "id": "pcb_via_190",
+          "net": "VBUS_ADC",
+          "x": 1.65,
+          "y": -6.4
+        },
+        "b": {
+          "id": "pcb_via_191",
+          "net": "VOUT_ADC",
+          "x": 1.625,
+          "y": -7.275
+        }
+      },
+      {
+        "copperGapMm": 0.17642740714790528,
+        "drillEdgeGapMm": 0.5764274071479052,
+        "a": {
+          "id": "pcb_via_165",
+          "net": "PD_ALERT",
+          "x": -0.7,
+          "y": -11.625
+        },
+        "b": {
+          "id": "pcb_via_204",
+          "net": "POWER_BUDGET_HIGH",
+          "x": -0.75,
+          "y": -12.5
+        }
+      },
+      {
+        "copperGapMm": 0.18153332324989535,
+        "drillEdgeGapMm": 0.5815333232498954,
+        "a": {
+          "id": "pcb_via_164",
+          "net": "PD_ALERT",
+          "x": -28.15,
+          "y": 11.325
+        },
+        "b": {
+          "id": "pcb_via_379",
+          "net": "GND",
+          "x": -29.024,
+          "y": 11.440000000000001
+        }
+      },
+      {
+        "copperGapMm": 0.1828363381737299,
+        "drillEdgeGapMm": 0.5828363381737298,
+        "a": {
+          "id": "pcb_via_89",
+          "net": "TEC_FB",
+          "x": -0.65,
+          "y": 7.53
+        },
+        "b": {
+          "id": "pcb_via_242",
+          "net": "GND",
+          "x": -0.5,
+          "y": 8.4
+        }
+      },
+      {
+        "copperGapMm": 0.18459030064770643,
+        "drillEdgeGapMm": 0.5845903006477065,
+        "a": {
+          "id": "pcb_via_146",
+          "net": "TEC_VREF",
+          "x": -2.5,
+          "y": 10.4
+        },
+        "b": {
+          "id": "pcb_via_239",
+          "net": "GND",
+          "x": -1.85,
+          "y": 11
+        }
+      },
+      {
+        "copperGapMm": 0.1944271909999168,
+        "drillEdgeGapMm": 0.5944271909999168,
+        "a": {
+          "id": "pcb_via_10",
+          "net": "INPUT_FAULT_N",
+          "x": -20,
+          "y": 13.6
+        },
+        "b": {
+          "id": "pcb_via_189",
+          "net": "MCU_RUN",
+          "x": -20.8,
+          "y": 13.2
+        }
+      },
+      {
+        "copperGapMm": 0.19493016487321635,
+        "drillEdgeGapMm": 0.5949301648732164,
+        "a": {
+          "id": "pcb_via_10",
+          "net": "INPUT_FAULT_N",
+          "x": -20,
+          "y": 13.6
+        },
+        "b": {
+          "id": "pcb_via_167",
+          "net": "INPUT_ENABLE",
+          "x": -19.15,
+          "y": 13.32
+        }
+      },
+      {
+        "copperGapMm": 0.20545899962394787,
+        "drillEdgeGapMm": 0.6054589996239479,
+        "a": {
+          "id": "pcb_via_95",
+          "net": "TEC_DAC",
+          "x": -1.465,
+          "y": -21.62
+        },
+        "b": {
+          "id": "pcb_via_453",
+          "net": "GND",
+          "x": -1.8489999999999998,
+          "y": -20.8
+        }
+      }
+    ],
+    "shortControlViaToViaTrunksUnder2Mm": [
+      {
+        "traceId": "pcb_trace_396",
+        "sourceName": "HARD_LIMIT_U2_INNER2",
+        "net": "TEC_HARD_LIMIT",
+        "layer": "inner2",
+        "viaIds": [
+          "pcb_via_152",
+          "pcb_via_151"
+        ],
+        "start": [
+          -4,
+          4.9
+        ],
+        "end": [
+          -2.7,
+          4.5
+        ],
+        "viaSeparationMm": 1.3601470508735443,
+        "routedLengthMm": 1.4656854249492381
+      },
+      {
+        "traceId": "pcb_trace_441",
+        "sourceName": "PD_VALID_SOURCE_BIAS_TRUNK",
+        "net": "PD_VALID_N",
+        "layer": "inner2",
+        "viaIds": [
+          "pcb_via_176",
+          "pcb_via_177"
+        ],
+        "start": [
+          -26,
+          9.75
+        ],
+        "end": [
+          -25,
+          10.75
+        ],
+        "viaSeparationMm": 1.4142135623730951,
+        "routedLengthMm": 1.4142135623730951
+      },
+      {
+        "traceId": "pcb_trace_450",
+        "sourceName": "INPUT_CLEAR_DEBUG_SHARED_INNER2",
+        "net": "INPUT_CLEAR_N",
+        "layer": "inner2",
+        "viaIds": [
+          "pcb_via_179",
+          "pcb_via_181"
+        ],
+        "start": [
+          -19.6,
+          -12.8
+        ],
+        "end": [
+          -19.6,
+          -14.5
+        ],
+        "viaSeparationMm": 1.6999999999999993,
+        "routedLengthMm": 1.6999999999999993
+      },
+      {
+        "traceId": "pcb_trace_161",
+        "sourceName": "TP06_FILTERED_TRUNK",
+        "net": "HOT_ADC",
+        "layer": "inner2",
+        "viaIds": [
+          "pcb_via_63",
+          "pcb_via_64"
+        ],
+        "start": [
+          4.05,
+          -3.5
+        ],
+        "end": [
+          4.8,
+          -1.85
+        ],
+        "viaSeparationMm": 1.8124568960391856,
+        "routedLengthMm": 1.9606601717798213
+      },
+      {
+        "traceId": "pcb_trace_274",
+        "sourceName": "TP12_DAC_TRUNK",
+        "net": "TEC_DAC",
+        "layer": "inner2",
+        "viaIds": [
+          "pcb_via_95",
+          "pcb_via_96"
+        ],
+        "start": [
+          -1.465,
+          -21.62
+        ],
+        "end": [
+          -2.3,
+          -23.3
+        ],
+        "viaSeparationMm": 1.8760663634317414,
+        "routedLengthMm": 2.0258683245815337
+      },
+      {
+        "traceId": "pcb_trace_429",
+        "sourceName": "INPUT_ENABLE_PERMISSION_BOTTOM",
+        "net": "INPUT_ENABLE",
+        "layer": "bottom",
+        "viaIds": [
+          "pcb_via_169",
+          "pcb_via_168"
+        ],
+        "start": [
+          -11.8,
+          -15.3
+        ],
+        "end": [
+          -11.6,
+          -17.2
+        ],
+        "viaSeparationMm": 1.9104973174542788,
+        "routedLengthMm": 1.9828427124746186
+      }
+    ],
+    "sourceManualViaCount": 313,
+    "captureInsertedViaCount": 120,
+    "captureInsertedGroundViaCount": 89
+  },
+  "strengths": [
+    "166 ground and 76 main power/output vias have a recognizable return/stitching/current-sharing purpose. Together with 11 V3V3 and 2 switch-node vias, 255 of 433 belong to ground or power domains; the raw 433 count is not evidence of bad routing.",
+    "All 433 vias are unambiguous four-layer through barrels. The 89 top-to-inner1 metadata entries remain full through vias rather than unsupported blind vias.",
+    "Independent annular-disk geometry found no foreign-net via-to-via copper overlaps across 78,793 pairs. Minimum foreign-net drill-edge gap 0.554204308 mm exceeds the board stated 0.3 mm via hole-edge requirement.",
+    "I2C SCL and SDA each use three distributed launch vias for MCU/DAC, PD and monitor branches rather than repeated arbitrary hops along a single trunk."
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "kind": "efficiency/style concern",
+      "explanation": "178 control/sense/debug vias remain after separating ground and power. Six control via-to-via trunks are shorter than 2 mm; these are worthwhile local placement/top-copper simplification candidates, especially debug taps. The current geometry proves short double-transfer sections, but no alternate route has been DRC-validated, so none is labeled definitely removable.",
+      "evidence": {
+        "shortTrunks": [
+          {
+            "traceId": "pcb_trace_396",
+            "sourceName": "HARD_LIMIT_U2_INNER2",
+            "net": "TEC_HARD_LIMIT",
+            "layer": "inner2",
+            "viaIds": [
+              "pcb_via_152",
+              "pcb_via_151"
+            ],
+            "start": [
+              -4,
+              4.9
+            ],
+            "end": [
+              -2.7,
+              4.5
+            ],
+            "viaSeparationMm": 1.3601470508735443,
+            "routedLengthMm": 1.4656854249492381
+          },
+          {
+            "traceId": "pcb_trace_441",
+            "sourceName": "PD_VALID_SOURCE_BIAS_TRUNK",
+            "net": "PD_VALID_N",
+            "layer": "inner2",
+            "viaIds": [
+              "pcb_via_176",
+              "pcb_via_177"
+            ],
+            "start": [
+              -26,
+              9.75
+            ],
+            "end": [
+              -25,
+              10.75
+            ],
+            "viaSeparationMm": 1.4142135623730951,
+            "routedLengthMm": 1.4142135623730951
+          },
+          {
+            "traceId": "pcb_trace_450",
+            "sourceName": "INPUT_CLEAR_DEBUG_SHARED_INNER2",
+            "net": "INPUT_CLEAR_N",
+            "layer": "inner2",
+            "viaIds": [
+              "pcb_via_179",
+              "pcb_via_181"
+            ],
+            "start": [
+              -19.6,
+              -12.8
+            ],
+            "end": [
+              -19.6,
+              -14.5
+            ],
+            "viaSeparationMm": 1.6999999999999993,
+            "routedLengthMm": 1.6999999999999993
+          },
+          {
+            "traceId": "pcb_trace_161",
+            "sourceName": "TP06_FILTERED_TRUNK",
+            "net": "HOT_ADC",
+            "layer": "inner2",
+            "viaIds": [
+              "pcb_via_63",
+              "pcb_via_64"
+            ],
+            "start": [
+              4.05,
+              -3.5
+            ],
+            "end": [
+              4.8,
+              -1.85
+            ],
+            "viaSeparationMm": 1.8124568960391856,
+            "routedLengthMm": 1.9606601717798213
+          },
+          {
+            "traceId": "pcb_trace_274",
+            "sourceName": "TP12_DAC_TRUNK",
+            "net": "TEC_DAC",
+            "layer": "inner2",
+            "viaIds": [
+              "pcb_via_95",
+              "pcb_via_96"
+            ],
+            "start": [
+              -1.465,
+              -21.62
+            ],
+            "end": [
+              -2.3,
+              -23.3
+            ],
+            "viaSeparationMm": 1.8760663634317414,
+            "routedLengthMm": 2.0258683245815337
+          },
+          {
+            "traceId": "pcb_trace_429",
+            "sourceName": "INPUT_ENABLE_PERMISSION_BOTTOM",
+            "net": "INPUT_ENABLE",
+            "layer": "bottom",
+            "viaIds": [
+              "pcb_via_169",
+              "pcb_via_168"
+            ],
+            "start": [
+              -11.8,
+              -15.3
+            ],
+            "end": [
+              -11.6,
+              -17.2
+            ],
+            "viaSeparationMm": 1.9104973174542788,
+            "routedLengthMm": 1.9828427124746186
+          }
+        ]
+      },
+      "nets": [
+        "HOT_ADC",
+        "INPUT_CLEAR_N",
+        "INPUT_ENABLE",
+        "PD_VALID_N",
+        "TEC_DAC",
+        "TEC_HARD_LIMIT"
+      ],
+      "layers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [
+        {
+          "net": "HOT_ADC",
+          "start": [
+            4.05,
+            -3.5
+          ],
+          "end": [
+            4.8,
+            -1.85
+          ]
+        },
+        {
+          "net": "TEC_DAC",
+          "start": [
+            -1.465,
+            -21.62
+          ],
+          "end": [
+            -2.3,
+            -23.3
+          ]
+        },
+        {
+          "net": "TEC_HARD_LIMIT",
+          "start": [
+            -4,
+            4.9
+          ],
+          "end": [
+            -2.7,
+            4.5
+          ]
+        },
+        {
+          "net": "INPUT_ENABLE",
+          "start": [
+            -11.8,
+            -15.3
+          ],
+          "end": [
+            -11.6,
+            -17.2
+          ]
+        },
+        {
+          "net": "PD_VALID_N",
+          "start": [
+            -26,
+            9.75
+          ],
+          "end": [
+            -25,
+            10.75
+          ]
+        },
+        {
+          "net": "INPUT_CLEAR_N",
+          "start": [
+            -19.6,
+            -12.8
+          ],
+          "end": [
+            -19.6,
+            -14.5
+          ]
+        }
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "tight geometry headroom",
+      "explanation": "The nearest foreign-net annuli have only 0.154204308 mm and 0.156077683 mm copper separation around TEC_CURRENT_COMMAND. This is not an overlap and meets the explicit via drill-edge rule. A generic 0.15 mm copper target would have only 4.2 and 6.1 micrometers CAD headroom; move nearby ground stitching if an increased target can preserve the return path. No unverified 0.2 mm via-to-via rule is asserted.",
+      "evidence": [
+        {
+          "copperGapMm": 0.15420430811369723,
+          "drillEdgeGapMm": 0.5542043081136971,
+          "a": {
+            "id": "pcb_via_148",
+            "net": "TEC_CURRENT_COMMAND",
+            "x": -3.21,
+            "y": 8.063
+          },
+          "b": {
+            "id": "pcb_via_401",
+            "net": "GND",
+            "x": -2.4490000000000003,
+            "y": 7.675
+          }
+        },
+        {
+          "copperGapMm": 0.15607768339094086,
+          "drillEdgeGapMm": 0.5560776833909409,
+          "a": {
+            "id": "pcb_via_148",
+            "net": "TEC_CURRENT_COMMAND",
+            "x": -3.21,
+            "y": 8.063
+          },
+          "b": {
+            "id": "pcb_via_387",
+            "net": "GND",
+            "x": -4.025,
+            "y": 8.325
+          }
+        }
+      ],
+      "nets": [
+        "TEC_CURRENT_COMMAND",
+        "GND"
+      ],
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [
+        [
+          -3.21,
+          8.063
+        ],
+        [
+          -2.449,
+          7.675
+        ],
+        [
+          -4.025,
+          8.325
+        ]
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "transition complexity",
+      "explanation": "MCU_RUN uses eight vias, including the inner2 to bottom to inner2 underpass at (-18,7.125) to (-22,11.125). USB_CC1 and USB_CC2 each use three vias and a bottom launch before inner2. These transitions are measured, and the current layer paths may be justified by obstacles; a placement revision should evaluate fewer layer changes without reducing clearances.",
+      "evidence": {
+        "MCU_RUNViaCount": 8,
+        "MCU_RUNUnderpassTrace": "pcb_trace_463",
+        "MCU_RUNUnderpassLengthMm": 5.656854249492381,
+        "USB_CC1ViaIds": [
+          "pcb_via_3",
+          "pcb_via_18",
+          "pcb_via_19"
+        ],
+        "USB_CC2ViaIds": [
+          "pcb_via_4",
+          "pcb_via_20",
+          "pcb_via_21"
+        ]
+      },
+      "nets": [
+        "MCU_RUN",
+        "USB_CC1",
+        "USB_CC2"
+      ],
+      "layers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [
+        [
+          -18,
+          7.125
+        ],
+        [
+          -22,
+          11.125
+        ],
+        [
+          -28.4,
+          4.9
+        ],
+        [
+          -32.7,
+          3.4
+        ],
+        [
+          -26.3,
+          4.1
+        ],
+        [
+          -34.2,
+          2.7
+        ]
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "status": "No foreign-net via-to-via short found in this scope.",
+    "measuredEvidence": "All 78,793 foreign-net via-pair annuli checked; none overlaps. Screenshot trace/pad/pour intersections are outside this pair-only test and need the separate clearance/short reviewers.",
+    "screenshotAloneInsufficient": true
+  },
+  "topImprovements": [
+    "Try moving TP06/TP12 and their launch points to eliminate very short inner2 debug-tap double transfers, but retain them unless a complete clearance check passes.",
+    "Evaluate MCU_RUN branching/placement to reduce the eight-via distribution while preserving its existing functional connections.",
+    "Increase TEC_CURRENT_COMMAND to adjacent ground via spacing where physically feasible; preserve local return/stitching coverage.",
+    "Keep current-sharing arrays and ground stitches unless a electrical/current/return-path analysis justifies removing them."
+  ],
+  "limitations": [
+    "Via purpose classification follows actual net membership; it does not independently prove thermal/current sizing or that every power/ground via is indispensable.",
+    "No source edits, builds, alternative router or autorouter trials were run; simplification feasibility is inferred, not proven.",
+    "The short circuit check here covers via annulus pairs only, not via-to-trace, via-to-pad, trace-to-trace or pours.",
+    "PCB copper and connectivity are static; this score makes no fabrication or bench-ready claim."
+  ]
+}

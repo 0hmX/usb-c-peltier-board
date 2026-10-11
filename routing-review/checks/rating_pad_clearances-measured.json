@@ -1,0 +1,2533 @@
+{
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "tracePrimitiveCount": 3466,
+  "padPrimitiveCount": 637,
+  "unassignedElectricalPrimitives": [],
+  "ambiguousConnectivityKeys": [],
+  "foreignViaPadOverlaps": [],
+  "foreignViaPadNearest": [
+    {
+      "via": "pcb_via_230",
+      "pin": "R21.pin2",
+      "viaNet": "GND",
+      "padNet": "TEC_HIGH_GATE",
+      "layer": "top",
+      "gapMm": 0.20056927856601656,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -3.4720376494572758,
+          18.72944634132304
+        ],
+        [
+          -3.6,
+          18.575
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_227",
+      "pin": "C24.pin1",
+      "viaNet": "GND",
+      "padNet": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.21217730298637044,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.521820410930657,
+          7.75186183617292
+        ],
+        [
+          -7.67,
+          7.6000000000000005
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_436",
+      "pin": "R208.pin2",
+      "viaNet": "GND",
+      "padNet": "HOT_RAW",
+      "layer": "top",
+      "gapMm": 0.2126529846545943,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          14.830301252162602,
+          -27.562750833039516
+        ],
+        [
+          14.65,
+          -27.45
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_463",
+      "pin": "C219.pin1",
+      "viaNet": "GND",
+      "padNet": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.21289703388492243,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          33.08328086642432,
+          -17.7990933976751
+        ],
+        [
+          32.875,
+          -17.755000000000003
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_462",
+      "pin": "C213.pin1",
+      "viaNet": "GND",
+      "padNet": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.21289703388492362,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          33.08328086642432,
+          -12.299093397675108
+        ],
+        [
+          32.875,
+          -12.254999999999999
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_176",
+      "pin": "U_PD.GPIO",
+      "viaNet": "PD_VALID_N",
+      "padNet": "source_port_52",
+      "layer": "top",
+      "gapMm": 0.21402878643173112,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -25.923314565945095,
+          9.408504254486514
+        ],
+        [
+          -25.875,
+          9.200000000000001
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_387",
+      "pin": "U2.CTRL2",
+      "viaNet": "GND",
+      "padNet": "TEC_HARD_LIMIT",
+      "layer": "top",
+      "gapMm": 0.21681523862508378,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -4.287575813858663,
+          8.556378165112765
+        ],
+        [
+          -4.45,
+          8.7
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_387",
+      "pin": "U2.CTRL1",
+      "viaNet": "GND",
+      "padNet": "TEC_CURRENT_COMMAND",
+      "layer": "top",
+      "gapMm": 0.2168152386250843,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -3.762424186141344,
+          8.55637816511277
+        ],
+        [
+          -3.6,
+          8.7
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_377",
+      "pin": "R_INPUT_OV_BOTTOM.pin1",
+      "viaNet": "GND",
+      "padNet": "INPUT_OVLO",
+      "layer": "top",
+      "gapMm": 0.22008892658506224,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -22.82407875033069,
+          17.91533105670322
+        ],
+        [
+          -22.650000000000002,
+          18.05
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_175",
+      "pin": "Q_FAULT_SOURCE.pin1",
+      "viaNet": "INPUT_FAULT_N",
+      "padNet": "FAULT_PNP_BASE",
+      "layer": "top",
+      "gapMm": 0.22008892658506615,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          13.415331056703218,
+          -21.524078750330688
+        ],
+        [
+          13.55,
+          -21.349999999999998
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_349",
+      "pin": "R_INPUT_RUN.pin2",
+      "viaNet": "VBUS_TEC",
+      "padNet": "INPUT_ENABLE",
+      "layer": "top",
+      "gapMm": 0.22009401430727643,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.793349465116215,
+          11.837321623028403
+        ],
+        [
+          -18.849999999999998,
+          12.05
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_190",
+      "pin": "R210.pin1",
+      "viaNet": "VBUS_ADC",
+      "padNet": "HOT_RAW",
+      "layer": "top",
+      "gapMm": 0.2206619387757614,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          1.8186003940068047,
+          -6.09331532548862
+        ],
+        [
+          1.925,
+          -5.9
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_201",
+      "pin": "C203.pin2",
+      "viaNet": "PD_VALID_N",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22120933550731572,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          6.803316564387925,
+          -11.037154717377081
+        ],
+        [
+          6.6000000000000005,
+          -10.95
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_193",
+      "pin": "R208.pin1",
+      "viaNet": "FAN_PWM_DRIVE",
+      "padNet": "V3V3",
+      "layer": "top",
+      "gapMm": 0.22499999999999784,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          12.75,
+          -26.325000000000003
+        ],
+        [
+          12.75,
+          -26.55
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_216",
+      "pin": "R234.pin1",
+      "viaNet": "UART_RX_MCU",
+      "padNet": "FAULT_SOURCE",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          15.75,
+          -19.674999999999997
+        ],
+        [
+          15.75,
+          -19.45
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_196",
+      "pin": "R202.pin2",
+      "viaNet": "TEC_CLEAR_N",
+      "padNet": "TEC_CLEAR_RAW",
+      "layer": "top",
+      "gapMm": 0.22499999999999964,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          5.3,
+          -18.385
+        ],
+        [
+          5.075,
+          -18.385
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_191",
+      "pin": "U_MCU.PA3",
+      "viaNet": "VOUT_ADC",
+      "padNet": "UART_RX_MCU",
+      "layer": "top",
+      "gapMm": 0.2250000000000001,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          1.975,
+          -7.275
+        ],
+        [
+          2.2,
+          -7.275
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_196",
+      "pin": "U_LATCH.Q",
+      "viaNet": "TEC_CLEAR_N",
+      "padNet": "TEC_SAFE_EN",
+      "layer": "top",
+      "gapMm": 0.22500000000000053,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          5.8,
+          -18.385
+        ],
+        [
+          6.025,
+          -18.385
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_216",
+      "pin": "R233.pin1",
+      "viaNet": "UART_RX_MCU",
+      "padNet": "V3V3",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          15.75,
+          -20.375
+        ],
+        [
+          15.75,
+          -20.6
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_218",
+      "pin": "U_MCU.PA1",
+      "viaNet": "UART_TX",
+      "padNet": "COLD_ADC",
+      "layer": "top",
+      "gapMm": 0.22555690606813444,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          1.9745959347676214,
+          -8.166697876672394
+        ],
+        [
+          2.2,
+          -8.175
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_157",
+      "pin": "U_MCU.VSS",
+      "viaNet": "MCU_NRST",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22719571768197153,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          1.9834129499911697,
+          -10.056385541600196
+        ],
+        [
+          2.2,
+          -10.125
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_89",
+      "pin": "C34.pin2",
+      "viaNet": "TEC_FB",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.2300000000000004,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -0.65,
+          7.180000000000001
+        ],
+        [
+          -0.65,
+          6.95
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_438",
+      "pin": "TP13.pin1",
+      "viaNet": "GND",
+      "padNet": "MCU_NRST",
+      "layer": "top",
+      "gapMm": 0.2332492583761657,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          20.04128588017461,
+          -4.781779937484113
+        ],
+        [
+          20.268223402471104,
+          -4.835674069882348
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_367",
+      "pin": "U2.VC",
+      "viaNet": "TEC_SENSE_N_FILTERED",
+      "padNet": "TEC_VC",
+      "layer": "top",
+      "gapMm": 0.23364481893525657,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -2.9788191253529654,
+          14.090981103102918
+        ],
+        [
+          -3.15,
+          14.25
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_367",
+      "pin": "U2.SENSE_POS",
+      "viaNet": "TEC_SENSE_N_FILTERED",
+      "padNet": "TEC_SENSE_P_FILTERED",
+      "layer": "top",
+      "gapMm": 0.23364481893525685,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -2.4711808746470343,
+          14.090981103102918
+        ],
+        [
+          -2.3,
+          14.25
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_33",
+      "pin": "U2.LG",
+      "viaNet": "TEC_BOOT",
+      "padNet": "TEC_LG",
+      "layer": "top",
+      "gapMm": 0.2336448189352569,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.52881912535296,
+          14.090981103102923
+        ],
+        [
+          -7.700000000000001,
+          14.25
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_33",
+      "pin": "U2.SW",
+      "viaNet": "TEC_BOOT",
+      "padNet": "TEC_SW",
+      "layer": "top",
+      "gapMm": 0.23364481893525754,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.021180874647029,
+          14.09098110310291
+        ],
+        [
+          -6.85,
+          14.25
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_156",
+      "pin": "R232.pin2",
+      "viaNet": "FAN_PWM_BASE",
+      "padNet": "FAULT_PNP_BASE",
+      "layer": "top",
+      "gapMm": 0.23524654695810193,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          14.36803570857555,
+          -23.670505765881526
+        ],
+        [
+          14.450000000000001,
+          -23.45
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_167",
+      "pin": "U_INPUT.N_FLT",
+      "viaNet": "INPUT_ENABLE",
+      "padNet": "INPUT_FAULT_N",
+      "layer": "top",
+      "gapMm": 0.23608921205704764,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.95555041844314,
+          13.611014364305891
+        ],
+        [
+          -18.824386279887186,
+          13.807315369923776
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_16",
+      "pin": "U_PD.VSYS",
+      "viaNet": "PD_2V7",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.2397669031077348,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -28.427665136792438,
+          6.549788609139612
+        ],
+        [
+          -28.2,
+          6.625
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_16",
+      "pin": "C_PD_VDD.pin1",
+      "viaNet": "PD_2V7",
+      "padNet": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.23999999999999846,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -29.110000000000003,
+          6.44
+        ],
+        [
+          -29.35,
+          6.44
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_129",
+      "pin": "Q_INPUT_HIGH.pin1",
+      "viaNet": "INPUT_CURRENT_MON",
+      "padNet": "POWER_BUDGET_HIGH",
+      "layer": "top",
+      "gapMm": 0.24000000000000019,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -11.85,
+          11.0
+        ],
+        [
+          -12.09,
+          11.0
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_367",
+      "pin": "U2.GND4",
+      "viaNet": "TEC_SENSE_N_FILTERED",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.2411460703400148,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -2.9287371486607845,
+          13.565438568537395
+        ],
+        [
+          -3.0700000000000003,
+          13.370000000000001
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_33",
+      "pin": "U2.GND4",
+      "viaNet": "TEC_BOOT",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.24114607034001517,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.071262851339221,
+          13.565438568537392
+        ],
+        [
+          -6.93,
+          13.370000000000001
+        ]
+      ]
+    },
+    {
+      "via": "pcb_via_154",
+      "pin": "R213.pin2",
+      "viaNet": "COLD_RAW",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.24425138563712162,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          24.66606079867222,
+          -25.62664216362105
+        ],
+        [
+          24.575,
+          -25.4
+        ]
+      ]
+    }
+  ],
+  "foreignTracePadOverlaps": [],
+  "foreignTracePadGapBelow0p1": [],
+  "foreignTracePadNearest": [
+    {
+      "trace": "pcb_trace_47",
+      "pad": "pcb_smtpad_104",
+      "pin": "U2.VREF",
+      "traceNet": "VBUS_TEC",
+      "padNet": "TEC_VREF",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -5.55,
+          8.5
+        ],
+        [
+          -5.55,
+          8.7
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_47",
+      "pad": "pcb_smtpad_103",
+      "pin": "U2.EN",
+      "traceNet": "VBUS_TEC",
+      "padNet": "TEC_EN_UVLO",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -6.199999999999999,
+          8.5
+        ],
+        [
+          -6.199999999999999,
+          8.7
+        ]
+      ]
+    },
+    {
+      "trace": "saved_phase_null_0_24",
+      "pad": "pcb_smtpad_184",
+      "pin": "C33.pin1",
+      "traceNet": "GND",
+      "padNet": "TEC_COMP_RC",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -14.0,
+          22.425
+        ],
+        [
+          -14.0,
+          22.625
+        ]
+      ]
+    },
+    {
+      "trace": "saved_phase_null_0_61",
+      "pad": "pcb_smtpad_361",
+      "pin": "R208.pin1",
+      "traceNet": "GND",
+      "padNet": "V3V3",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          12.35,
+          -27.65
+        ],
+        [
+          12.35,
+          -27.45
+        ]
+      ]
+    },
+    {
+      "trace": "saved_phase_null_0_61",
+      "pad": "pcb_smtpad_360",
+      "pin": "R208.pin2",
+      "traceNet": "GND",
+      "padNet": "HOT_RAW",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          13.950000000000001,
+          -27.65
+        ],
+        [
+          13.950000000000001,
+          -27.45
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_449",
+      "pin": "C209.pin1",
+      "traceNet": "TEC_POS",
+      "padNet": "HOT_ADC",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          4.399999999999999,
+          -2.85
+        ],
+        [
+          4.3999999999999995,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_451",
+      "pin": "C210.pin1",
+      "traceNet": "TEC_POS",
+      "padNet": "COLD_ADC",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          7.399999999999999,
+          -2.85
+        ],
+        [
+          7.3999999999999995,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_450",
+      "pin": "C210.pin2",
+      "traceNet": "TEC_POS",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          8.8,
+          -2.85
+        ],
+        [
+          8.799999999999999,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_453",
+      "pin": "C211.pin1",
+      "traceNet": "TEC_POS",
+      "padNet": "VBUS_ADC",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          10.400000000000002,
+          -2.85
+        ],
+        [
+          10.4,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_455",
+      "pin": "C212.pin1",
+      "traceNet": "TEC_POS",
+      "padNet": "VOUT_ADC",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          13.399999999999999,
+          -2.85
+        ],
+        [
+          13.4,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_454",
+      "pin": "C212.pin2",
+      "traceNet": "TEC_POS",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          14.799999999999999,
+          -2.85
+        ],
+        [
+          14.799999999999999,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_452",
+      "pin": "C211.pin2",
+      "traceNet": "TEC_POS",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          11.799999999999997,
+          -2.85
+        ],
+        [
+          11.799999999999999,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_52",
+      "pad": "pcb_smtpad_448",
+      "pin": "C209.pin2",
+      "traceNet": "TEC_POS",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          5.800000000000001,
+          -2.85
+        ],
+        [
+          5.8,
+          -3.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_53",
+      "pad": "pcb_smtpad_138",
+      "pin": "R22.pin1",
+      "traceNet": "TEC_SW",
+      "padNet": "TEC_LG",
+      "layer": "top",
+      "gapMm": 0.20000000000000015,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.3999999999999995,
+          17.075
+        ],
+        [
+          -7.6,
+          17.075
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_53",
+      "pad": "pcb_smtpad_137",
+      "pin": "R22.pin2",
+      "traceNet": "TEC_SW",
+      "padNet": "TEC_LOW_GATE",
+      "layer": "top",
+      "gapMm": 0.20000000000000015,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.3999999999999995,
+          18.575
+        ],
+        [
+          -7.6,
+          18.575
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_163",
+      "pad": "pcb_smtpad_344",
+      "pin": "R200.pin2",
+      "traceNet": "COLD_ADC",
+      "padNet": "MCU_NRST",
+      "layer": "top",
+      "gapMm": 0.20000000000000107,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          7.3500000000000005,
+          -6.05
+        ],
+        [
+          7.1499999999999995,
+          -6.05
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_163",
+      "pad": "pcb_smtpad_367",
+      "pin": "R211.pin1",
+      "traceNet": "COLD_ADC",
+      "padNet": "COLD_RAW",
+      "layer": "top",
+      "gapMm": 0.20104321938191033,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          7.775183980747898,
+          -4.965934581510007
+        ],
+        [
+          7.925,
+          -5.1
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_395",
+      "pad": "pcb_smtpad_190",
+      "pin": "C35.pin1",
+      "traceNet": "TEC_HARD_LIMIT",
+      "padNet": "TEC_VREF",
+      "layer": "top",
+      "gapMm": 0.20105298485513948,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -4.333569734119886,
+          7.575380510734626
+        ],
+        [
+          -4.35,
+          7.375
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_364",
+      "pad": "pcb_smtpad_266",
+      "pin": "U_MCU.PA12_PA10_",
+      "traceNet": "MCU_ARM",
+      "padNet": "POWER_BUDGET_HIGH",
+      "layer": "top",
+      "gapMm": 0.20517296648529457,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -3.666763965157137,
+          -10.606292790263254
+        ],
+        [
+          -3.55,
+          -10.775
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_60",
+      "pad": "pcb_smtpad_121",
+      "pin": "Q20.D",
+      "traceNet": "TEC_SW",
+      "padNet": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.21499999999999986,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          5.4975000000000005,
+          16.095
+        ],
+        [
+          5.282500000000001,
+          16.095
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_237",
+      "pad": "pcb_smtpad_310",
+      "pin": "U_CLEAR_BUFFER.2Y",
+      "traceNet": "V3V3",
+      "padNet": "INPUT_CLEAR_N",
+      "layer": "top",
+      "gapMm": 0.21819805153394484,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -21.504289321881345,
+          -12.995710678118655
+        ],
+        [
+          -21.35,
+          -13.149999999999999
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_227",
+      "pad": "pcb_smtpad_312",
+      "pin": "U_CLEAR_BUFFER.1Y",
+      "traceNet": "V3V3",
+      "padNet": "TEC_CLEAR_N",
+      "layer": "top",
+      "gapMm": 0.2181980515339459,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -22.49571067811865,
+          -14.404289321881345
+        ],
+        [
+          -22.65,
+          -14.25
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_227",
+      "pad": "pcb_smtpad_307",
+      "pin": "U_CLEAR_BUFFER.1A",
+      "traceNet": "V3V3",
+      "padNet": "TEC_CLEAR_RAW",
+      "layer": "top",
+      "gapMm": 0.21819805153394609,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -23.404289321881347,
+          -15.595710678118655
+        ],
+        [
+          -23.25,
+          -15.75
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_288",
+      "pad": "pcb_smtpad_261",
+      "pin": "U_MCU.PA2",
+      "traceNet": "COLD_ADC",
+      "padNet": "UART_TX",
+      "layer": "top",
+      "gapMm": 0.2181980515339467,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          3.7042893218813453,
+          -8.079289321881346
+        ],
+        [
+          3.55,
+          -7.925
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_226",
+      "pad": "pcb_smtpad_331",
+      "pin": "U_THERMAL.2IN_NEG",
+      "traceNet": "V3V3",
+      "padNet": "HOT_HALF",
+      "layer": "top",
+      "gapMm": 0.22000000000000242,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          21.335,
+          -16.305
+        ],
+        [
+          21.335,
+          -16.525000000000002
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_226",
+      "pad": "pcb_smtpad_330",
+      "pin": "U_THERMAL.2OUT",
+      "traceNet": "V3V3",
+      "padNet": "INPUT_FAULT_N",
+      "layer": "top",
+      "gapMm": 0.22000000000000242,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          20.064999999999998,
+          -16.305
+        ],
+        [
+          20.064999999999998,
+          -16.525000000000002
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_226",
+      "pad": "pcb_smtpad_332",
+      "pin": "U_THERMAL.2IN_POS",
+      "traceNet": "V3V3",
+      "padNet": "HOT_HIGH",
+      "layer": "top",
+      "gapMm": 0.220156372235441,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          22.598271908282175,
+          -16.304946458747636
+        ],
+        [
+          22.605,
+          -16.525000000000002
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_18",
+      "pad": "pcb_smtpad_40",
+      "pin": "U_INPUT.OVLO",
+      "traceNet": "VBUS_RAW",
+      "padNet": "INPUT_OVLO",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.375,
+          15.299999999999999
+        ],
+        [
+          -18.599999999999998,
+          15.299999999999999
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_27",
+      "pad": "pcb_smtpad_43",
+      "pin": "U_INPUT.GND",
+      "traceNet": "VBUS_TEC",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.625,
+          14.700000000000001
+        ],
+        [
+          -17.400000000000002,
+          14.700000000000001
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_28",
+      "pad": "pcb_smtpad_43",
+      "pin": "U_INPUT.GND",
+      "traceNet": "VBUS_TEC",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.625,
+          14.700000000000001
+        ],
+        [
+          -17.400000000000002,
+          14.700000000000001
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_225",
+      "pad": "pcb_smtpad_442",
+      "pin": "C206.pin2",
+      "traceNet": "V3V3",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -3.1999999999999997,
+          -22.174999999999997
+        ],
+        [
+          -3.1999999999999997,
+          -21.95
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_225",
+      "pad": "pcb_smtpad_320",
+      "pin": "U_DAC.VSS",
+      "traceNet": "V3V3",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -0.2999999999999998,
+          -22.174999999999997
+        ],
+        [
+          -0.3,
+          -21.95
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_225",
+      "pad": "pcb_smtpad_319",
+      "pin": "U_DAC.VOUT",
+      "traceNet": "V3V3",
+      "padNet": "TEC_DAC",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -1.25,
+          -22.174999999999997
+        ],
+        [
+          -1.25,
+          -21.95
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_227",
+      "pad": "pcb_smtpad_422",
+      "pin": "R240.pin2",
+      "traceNet": "V3V3",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -25.299999999999997,
+          -18.9
+        ],
+        [
+          -25.075,
+          -18.9
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_263",
+      "pad": "pcb_smtpad_428",
+      "pin": "R243.pin2",
+      "traceNet": "ARM_CLK",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999787,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -25.299999999999997,
+          -25.4
+        ],
+        [
+          -25.075,
+          -25.4
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_15",
+      "pad": "pcb_smtpad_42",
+      "pin": "U_INPUT.ILM",
+      "traceNet": "GND",
+      "padNet": "INPUT_CURRENT_MON",
+      "layer": "top",
+      "gapMm": 0.22499999999999962,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -16.85,
+          14.875
+        ],
+        [
+          -16.85,
+          15.1
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_249",
+      "pad": "pcb_smtpad_43",
+      "pin": "U_INPUT.GND",
+      "traceNet": "INPUT_CURRENT_MON",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22499999999999964,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.1,
+          15.125
+        ],
+        [
+          -17.1,
+          14.9
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_359",
+      "pad": "pcb_smtpad_41",
+      "pin": "U_INPUT.PG",
+      "traceNet": "INPUT_OVLO",
+      "padNet": "source_port_65",
+      "layer": "top",
+      "gapMm": 0.22499999999999964,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.9,
+          15.125
+        ],
+        [
+          -18.9,
+          14.9
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_180",
+      "pad": "pcb_smtpad_221",
+      "pin": "R39.pin2",
+      "traceNet": "VBUS_TEC",
+      "padNet": "TEC_EN_UVLO",
+      "layer": "top",
+      "gapMm": 0.22500000000000053,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -7.699999999999999,
+          28.4
+        ],
+        [
+          -7.925,
+          28.4
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_231",
+      "pad": "pcb_smtpad_278",
+      "pin": "U_LATCH.N_CLR",
+      "traceNet": "V3V3",
+      "padNet": "TEC_CLEAR_N",
+      "layer": "top",
+      "gapMm": 0.22500000000000053,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          7.1000000000000005,
+          -18.6
+        ],
+        [
+          6.875,
+          -18.6
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_231",
+      "pad": "pcb_smtpad_277",
+      "pin": "U_LATCH.Q",
+      "traceNet": "V3V3",
+      "padNet": "TEC_SAFE_EN",
+      "layer": "top",
+      "gapMm": 0.22500000000000053,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          7.1000000000000005,
+          -18.1
+        ],
+        [
+          6.875,
+          -18.1
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_27",
+      "pad": "pcb_smtpad_48",
+      "pin": "U_INPUT.IN",
+      "traceNet": "VBUS_TEC",
+      "padNet": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.2250000000000014,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.875,
+          13.85
+        ],
+        [
+          -18.1,
+          13.85
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_28",
+      "pad": "pcb_smtpad_48",
+      "pin": "U_INPUT.IN",
+      "traceNet": "VBUS_TEC",
+      "padNet": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.2250000000000014,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.875,
+          13.85
+        ],
+        [
+          -18.1,
+          13.85
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_541",
+      "pad": "pcb_smtpad_388",
+      "pin": "R222.pin2",
+      "traceNet": "GND",
+      "padNet": "VBUS_ADC",
+      "layer": "top",
+      "gapMm": 0.2250000000000014,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          13.3,
+          -5.1
+        ],
+        [
+          13.075,
+          -5.1
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_15",
+      "pad": "pcb_smtpad_46",
+      "pin": "U_INPUT.DVDT",
+      "traceNet": "GND",
+      "padNet": "INPUT_DVDT",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.1,
+          14.675
+        ],
+        [
+          -17.1,
+          14.45
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_18",
+      "pad": "pcb_smtpad_49",
+      "pin": "U_INPUT.OUT",
+      "traceNet": "VBUS_RAW",
+      "padNet": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.125,
+          16.15
+        ],
+        [
+          -17.9,
+          16.15
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_18",
+      "pad": "pcb_smtpad_44",
+      "pin": "U_INPUT.EN",
+      "traceNet": "VBUS_RAW",
+      "padNet": "INPUT_ENABLE",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.375,
+          16.15
+        ],
+        [
+          -18.6,
+          16.15
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_249",
+      "pad": "pcb_smtpad_47",
+      "pin": "U_INPUT.ITIMER",
+      "traceNet": "INPUT_CURRENT_MON",
+      "padNet": "source_port_72",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.1,
+          15.325
+        ],
+        [
+          -17.1,
+          15.55
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_359",
+      "pad": "pcb_smtpad_44",
+      "pin": "U_INPUT.EN",
+      "traceNet": "INPUT_OVLO",
+      "padNet": "INPUT_ENABLE",
+      "layer": "top",
+      "gapMm": 0.22500000000000142,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -18.9,
+          15.325
+        ],
+        [
+          -18.9,
+          15.55
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_27",
+      "pad": "pcb_smtpad_46",
+      "pin": "U_INPUT.DVDT",
+      "traceNet": "VBUS_TEC",
+      "padNet": "INPUT_DVDT",
+      "layer": "top",
+      "gapMm": 0.22500000000000145,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.625,
+          13.85
+        ],
+        [
+          -17.4,
+          13.85
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_28",
+      "pad": "pcb_smtpad_46",
+      "pin": "U_INPUT.DVDT",
+      "traceNet": "VBUS_TEC",
+      "padNet": "INPUT_DVDT",
+      "layer": "top",
+      "gapMm": 0.22500000000000145,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          -17.625,
+          13.85
+        ],
+        [
+          -17.4,
+          13.85
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_108",
+      "pad": "pcb_smtpad_468",
+      "pin": "C219.pin2",
+      "traceNet": "VBUS_TEC",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22500000000000145,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          29.9,
+          -14.625
+        ],
+        [
+          30.125,
+          -14.625
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_109",
+      "pad": "pcb_smtpad_470",
+      "pin": "C220.pin2",
+      "traceNet": "VBUS_TEC",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.22500000000000145,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          29.9,
+          -20.125
+        ],
+        [
+          30.125,
+          -20.125
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_477",
+      "pad": "pcb_smtpad_277",
+      "pin": "U_LATCH.Q",
+      "traceNet": "TEC_CLEAR_N",
+      "padNet": "TEC_SAFE_EN",
+      "layer": "top",
+      "gapMm": 0.22526911934581367,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          5.8657106781186545,
+          -18.559289321881344
+        ],
+        [
+          6.025,
+          -18.4
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_223",
+      "pad": "pcb_smtpad_410",
+      "pin": "R234.pin2",
+      "traceNet": "V3V3",
+      "padNet": "FAULT_NPN_BASE",
+      "layer": "top",
+      "gapMm": 0.23000000000000043,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          16.97,
+          -19.68
+        ],
+        [
+          16.97,
+          -19.45
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_224",
+      "pad": "pcb_smtpad_362",
+      "pin": "R209.pin2",
+      "traceNet": "V3V3",
+      "padNet": "COLD_RAW",
+      "layer": "top",
+      "gapMm": 0.23000000000000045,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          24.45,
+          -27.68
+        ],
+        [
+          24.45,
+          -27.45
+        ]
+      ]
+    },
+    {
+      "trace": "saved_phase_null_0_34",
+      "pad": "pcb_smtpad_227",
+      "pin": "U_TEC_MON.VIN_NEG",
+      "traceNet": "GND",
+      "padNet": "TEC_MON_SENSE_N",
+      "layer": "top",
+      "gapMm": 0.23499999999999588,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          29.1,
+          20.075
+        ],
+        [
+          29.334999999999997,
+          20.075
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_511",
+      "pad": "pcb_smtpad_301",
+      "pin": "Q_FAULT_CLEAR.pin1",
+      "traceNet": "UART_RX_MCU",
+      "padNet": "FAULT_NPN_BASE",
+      "layer": "top",
+      "gapMm": 0.235000000000003,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          16.375,
+          -17.25
+        ],
+        [
+          16.610000000000003,
+          -17.25
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_511",
+      "pad": "pcb_smtpad_302",
+      "pin": "Q_FAULT_CLEAR.pin2",
+      "traceNet": "UART_RX_MCU",
+      "padNet": "GND",
+      "layer": "top",
+      "gapMm": 0.235000000000003,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          16.375,
+          -15.350000000000001
+        ],
+        [
+          16.610000000000003,
+          -15.350000000000001
+        ]
+      ]
+    },
+    {
+      "trace": "pcb_trace_511",
+      "pad": "pcb_smtpad_411",
+      "pin": "R234.pin1",
+      "traceNet": "UART_RX_MCU",
+      "padNet": "FAULT_SOURCE",
+      "layer": "top",
+      "gapMm": 0.23587572106360877,
+      "overlapAreaMm2": 0.0,
+      "nearestPoints": [
+        [
+          16.216789321881343,
+          -18.383210678118658
+        ],
+        [
+          16.05,
+          -18.55
+        ]
+      ]
+    }
+  ],
+  "foreignPadPadNearest": [
+    {
+      "pinA": "J_USB.DP2",
+      "pinB": "J_USB.SBU1",
+      "netA": "source_port_9",
+      "netB": "source_port_10",
+      "layer": "top",
+      "gapMm": 0.1996185999999991,
+      "coordinates": [
+        [
+          -43.7100028,
+          11.0999383
+        ],
+        [
+          -43.7100028,
+          10.9003197
+        ]
+      ]
+    },
+    {
+      "pinA": "J_USB.GND2",
+      "pinB": "J_USB.VBUS1",
+      "netA": "GND",
+      "netB": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.1998218000000005,
+      "coordinates": [
+        [
+          -43.7100028,
+          9.1000058
+        ],
+        [
+          -43.7100028,
+          9.2998276
+        ]
+      ]
+    },
+    {
+      "pinA": "J_USB.CC1",
+      "pinB": "J_USB.DN2",
+      "netA": "USB_CC1",
+      "netB": "source_port_6",
+      "layer": "top",
+      "gapMm": 0.19987259999999907,
+      "coordinates": [
+        [
+          -43.7100028,
+          13.0999343
+        ],
+        [
+          -43.7100028,
+          12.9000617
+        ]
+      ]
+    },
+    {
+      "pinA": "J_USB.DP1",
+      "pinB": "J_USB.DN1",
+      "netA": "source_port_7",
+      "netB": "source_port_8",
+      "layer": "top",
+      "gapMm": 0.19987259999999907,
+      "coordinates": [
+        [
+          -43.7100028,
+          12.0999363
+        ],
+        [
+          -43.7100028,
+          11.9000637
+        ]
+      ]
+    },
+    {
+      "pinA": "J_USB.SBU2",
+      "pinB": "J_USB.VBUS2",
+      "netA": "source_port_4",
+      "netB": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.19991070000000022,
+      "coordinates": [
+        [
+          -43.7100028,
+          13.9000597
+        ],
+        [
+          -43.7100028,
+          14.0999704
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.SCL",
+      "pinB": "U_PD.EP",
+      "netA": "I2C_SCL",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -24.400000000000002,
+          5.625
+        ],
+        [
+          -24.6,
+          5.625
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.SDA",
+      "pinB": "U_PD.EP",
+      "netA": "I2C_SDA",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -24.400000000000002,
+          6.125
+        ],
+        [
+          -24.6,
+          6.125
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.DISCH",
+      "pinB": "U_PD.EP",
+      "netA": "PD_DISCH",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -24.400000000000002,
+          6.625
+        ],
+        [
+          -24.6,
+          6.625
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.ATTACH",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_48",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -24.400000000000002,
+          7.625
+        ],
+        [
+          -24.6,
+          7.625
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.POWER_OK3",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_51",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -25.375,
+          8.6
+        ],
+        [
+          -25.375,
+          8.4
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.GPIO",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_52",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -25.875,
+          8.6
+        ],
+        [
+          -25.875,
+          8.4
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.VBUS_EN_SNK",
+      "pinB": "U_PD.EP",
+      "netA": "PD_VALID_N",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -26.375,
+          8.6
+        ],
+        [
+          -26.375,
+          8.4
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.A_B_SIDE",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_54",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -26.875,
+          8.6
+        ],
+        [
+          -26.875,
+          8.4
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.VBUS_VS_DISCH",
+      "pinB": "U_PD.EP",
+      "netA": "PD_VS",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.375,
+          8.6
+        ],
+        [
+          -27.375,
+          8.4
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.ALERT",
+      "pinB": "U_PD.EP",
+      "netA": "PD_ALERT",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.599999999999998,
+          8.375
+        ],
+        [
+          -27.4,
+          8.375
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.POWER_OK2",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_57",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.599999999999998,
+          7.875
+        ],
+        [
+          -27.4,
+          7.875
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.VREG_1V2",
+      "pinB": "U_PD.EP",
+      "netA": "PD_1V2",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.599999999999998,
+          7.375
+        ],
+        [
+          -27.4,
+          7.375
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.VREG_2V7",
+      "pinB": "U_PD.EP",
+      "netA": "PD_2V7",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.599999999999998,
+          6.375
+        ],
+        [
+          -27.4,
+          6.375
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.VDD",
+      "pinB": "U_PD.EP",
+      "netA": "VBUS_RAW",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -27.599999999999998,
+          5.875
+        ],
+        [
+          -27.4,
+          5.875
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.OVLO",
+      "pinB": "U_INPUT.PG",
+      "netA": "INPUT_OVLO",
+      "netB": "source_port_65",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -19.15,
+          15.1
+        ],
+        [
+          -19.15,
+          14.9
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.OVLO",
+      "pinB": "U_INPUT.IN",
+      "netA": "INPUT_OVLO",
+      "netB": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -18.599999999999998,
+          15.299999999999999
+        ],
+        [
+          -18.4,
+          15.299999999999999
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.PG",
+      "pinB": "U_INPUT.IN",
+      "netA": "source_port_65",
+      "netB": "VBUS_RAW",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -18.599999999999998,
+          14.85
+        ],
+        [
+          -18.4,
+          14.85
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.ILM",
+      "pinB": "U_INPUT.GND",
+      "netA": "INPUT_CURRENT_MON",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -17.35,
+          15.1
+        ],
+        [
+          -17.35,
+          14.9
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.ILM",
+      "pinB": "U_INPUT.OUT",
+      "netA": "INPUT_CURRENT_MON",
+      "netB": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -17.400000000000002,
+          15.15
+        ],
+        [
+          -17.6,
+          15.15
+        ]
+      ]
+    },
+    {
+      "pinA": "U_INPUT.GND",
+      "pinB": "U_INPUT.OUT",
+      "netA": "GND",
+      "netB": "VBUS_TEC",
+      "layer": "top",
+      "gapMm": 0.1999999999999993,
+      "coordinates": [
+        [
+          -17.400000000000002,
+          14.700000000000001
+        ],
+        [
+          -17.6,
+          14.700000000000001
+        ]
+      ]
+    },
+    {
+      "pinA": "U2.CTRL1",
+      "pinB": "U2.SS",
+      "netA": "TEC_CURRENT_COMMAND",
+      "netB": "TEC_SS",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "coordinates": [
+        [
+          -3.15,
+          9.75
+        ],
+        [
+          -2.95,
+          9.75
+        ]
+      ]
+    },
+    {
+      "pinA": "U2.VC",
+      "pinB": "U2.SENSE_NEG",
+      "netA": "TEC_VC",
+      "netB": "TEC_SENSE_N_FILTERED",
+      "layer": "top",
+      "gapMm": 0.19999999999999973,
+      "coordinates": [
+        [
+          -3.15,
+          15.3
+        ],
+        [
+          -2.95,
+          15.3
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.CC1DB",
+      "pinB": "U_PD.EP",
+      "netA": "USB_CC1",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -27.375,
+          5.3999999999999995
+        ],
+        [
+          -27.375,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.CC1",
+      "pinB": "U_PD.EP",
+      "netA": "USB_CC1",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -26.875,
+          5.3999999999999995
+        ],
+        [
+          -26.875,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.NC",
+      "pinB": "U_PD.EP",
+      "netA": "source_port_40",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -26.375,
+          5.3999999999999995
+        ],
+        [
+          -26.375,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.CC2",
+      "pinB": "U_PD.EP",
+      "netA": "USB_CC2",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -25.875,
+          5.3999999999999995
+        ],
+        [
+          -25.875,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.CC2DB",
+      "pinB": "U_PD.EP",
+      "netA": "USB_CC2",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -25.375,
+          5.3999999999999995
+        ],
+        [
+          -25.375,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U_PD.RESET",
+      "pinB": "U_PD.EP",
+      "netA": "PD_RESET",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -24.875,
+          5.3999999999999995
+        ],
+        [
+          -24.875,
+          5.6
+        ]
+      ]
+    },
+    {
+      "pinA": "U2.EN",
+      "pinB": "U2.VREF",
+      "netA": "TEC_EN_UVLO",
+      "netB": "TEC_VREF",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -5.75,
+          9.75
+        ],
+        [
+          -5.55,
+          9.75
+        ]
+      ]
+    },
+    {
+      "pinA": "U2.CTRL2",
+      "pinB": "U2.GND2",
+      "netA": "TEC_HARD_LIMIT",
+      "netB": "GND",
+      "layer": "top",
+      "gapMm": 0.20000000000000018,
+      "coordinates": [
+        [
+          -4.45,
+          9.75
+        ],
+        [
+          -4.25,
+          9.75
+        ]
+      ]
+    }
+  ],
+  "topComponentsPadCounts": {
+    "U_PD": 25,
+    "U2": 21,
+    "U_MCU": 20,
+    "J_USB": 16,
+    "U_INPUT": 10,
+    "U_TEC_MON": 8,
+    "U_LATCH": 8,
+    "U_INPUT_LATCH": 8,
+    "U_THERMAL": 8,
+    "U_LOGIC": 6,
+    "U_CLEAR_BUFFER": 6,
+    "U_CLOCK_BUFFER": 6,
+    "U_DAC": 6,
+    "U_FAN": 6,
+    "U_DBG1": 6,
+    "U_DBG2": 6,
+    "Q20": 5,
+    "Q21": 5,
+    "J_FAN": 4,
+    "J_SWD": 4
+  }
+}

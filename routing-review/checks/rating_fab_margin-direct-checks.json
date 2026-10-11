@@ -1,0 +1,1958 @@
+{
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "viaClassCounts": [
+    {
+      "hole": 0.3,
+      "pad": 0.7,
+      "count": 431,
+      "radialAnnulus": 0.19999999999999998
+    },
+    {
+      "hole": 0.2,
+      "pad": 0.5,
+      "count": 2,
+      "radialAnnulus": 0.15
+    }
+  ],
+  "allViasFourLayer": true,
+  "minPadEdges": [
+    {
+      "id": "pcb_plated_hole_0",
+      "gapMm": 1.2102991999999944,
+      "x": -47.8897008,
+      "y": 7.674888000000001,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    },
+    {
+      "id": "pcb_plated_hole_3",
+      "gapMm": 1.2102991999999944,
+      "x": -47.8897008,
+      "y": 16.325112,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    },
+    {
+      "id": "pcb_smtpad_466",
+      "gapMm": 2.6250000000000004,
+      "x": 46,
+      "y": -15.435,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    },
+    {
+      "id": "pcb_smtpad_467",
+      "gapMm": 2.6250000000000004,
+      "x": 46,
+      "y": -18.565,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "V12_FAN"
+        ],
+        "componentTerminals": [
+          "C215.pin1",
+          "C218.pin1",
+          "C221.pin1",
+          "J_FAN.pin2",
+          "L_FAN.pin2",
+          "R228.pin1",
+          "R504.pin1",
+          "TP04.pin1"
+        ]
+      }
+    },
+    {
+      "id": "pcb_smtpad_219",
+      "gapMm": 3.100000000000001,
+      "x": -12.25,
+      "y": 34,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    }
+  ],
+  "minViaEdges": [
+    {
+      "id": "pcb_via_426",
+      "gapMm": 0.5999729999999929,
+      "x": 22.999996000000003,
+      "y": -36.55002700000001,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    },
+    {
+      "id": "pcb_via_425",
+      "gapMm": 0.599973,
+      "x": 14.999996,
+      "y": -36.550027,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "GND"
+        ],
+        "componentTerminals": [
+          "C200.pin2",
+          "C202.pin2",
+          "C203.pin2",
+          "C204.pin2",
+          "C205.pin2",
+          "C206.pin2",
+          "C207.pin2",
+          "C208.pin2",
+          "C209.pin2",
+          "C21.pin2",
+          "C210.pin2",
+          "C211.pin2",
+          "C212.pin2",
+          "C213.pin2",
+          "C215.pin2",
+          "C216.pin2",
+          "C217.pin2",
+          "C218.pin2",
+          "C219.pin2",
+          "C22.pin2",
+          "C220.pin2",
+          "C222.pin2",
+          "C223.pin2",
+          "C24.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "C27.pin2",
+          "C28.pin2",
+          "C29.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C33.pin2",
+          "C34.pin2",
+          "C35.pin2",
+          "C36.pin2",
+          "C37.pin2",
+          "C38.pin2",
+          "C39.pin2",
+          "C40.pin2",
+          "C41.pin2",
+          "C43.pin2",
+          "C44.pin2",
+          "C_DBG1.pin2",
+          "C_DBG2.pin2",
+          "C_INPUT_DVDT.pin2",
+          "C_INPUT_OUT.pin2",
+          "C_PD_1V2.pin2",
+          "C_PD_2V7.pin2",
+          "C_PD_VDD.pin2",
+          "C_USB_IN.pin2",
+          "D501.pin1",
+          "D502.pin1",
+          "D503.pin1",
+          "D504.pin1",
+          "D505.pin1",
+          "D507.pin1",
+          "J_COLD.pin2",
+          "J_FAN.pin1",
+          "J_HOT.pin2",
+          "J_SWD.pin4",
+          "J_TEC.pin2",
+          "J_UART.pin1",
+          "J_USB.pin1",
+          "J_USB.pin13",
+          "J_USB.pin14",
+          "J_USB.pin2",
+          "J_USB.pin3",
+          "J_USB.pin4",
+          "Q21.pin1",
+          "Q21.pin2",
+          "Q21.pin3",
+          "Q23.pin2",
+          "Q_FAN_PWM.pin2",
+          "Q_FAULT_CLEAR.pin2",
+          "Q_INPUT_CLEAR.pin2",
+          "Q_INPUT_HIGH.pin2",
+          "Q_PD_INHIBIT.pin2",
+          "Q_PD_LATCH.pin2",
+          "R201.pin2",
+          "R203.pin2",
+          "R204.pin2",
+          "R205.pin2",
+          "R207.pin2",
+          "R213.pin2",
+          "R215.pin2",
+          "R217.pin2",
+          "R219.pin2",
+          "R223.pin2",
+          "R225.pin2",
+          "R226.pin2",
+          "R227.pin2",
+          "R229.pin2",
+          "R235.pin2",
+          "R236.pin2",
+          "R239.pin2",
+          "R24.pin2",
+          "R240.pin2",
+          "R241.pin2",
+          "R242.pin2",
+          "R243.pin2",
+          "R28.pin2",
+          "R30.pin2",
+          "R32.pin2",
+          "R34.pin2",
+          "R38.pin2",
+          "R40.pin2",
+          "R45.pin2",
+          "R_INPUT_HIGH_OFF.pin2",
+          "R_INPUT_ILIM.pin2",
+          "R_INPUT_OFF.pin2",
+          "R_INPUT_OV_BOTTOM.pin2",
+          "R_PD_RESET.pin2",
+          "TPG1.pin1",
+          "TPG2.pin1",
+          "TPG3.pin1",
+          "TPG4.pin1",
+          "TPG5.pin1",
+          "TPG6.pin1",
+          "TPG7.pin1",
+          "TPG8.pin1",
+          "U2.pin15",
+          "U2.pin16",
+          "U2.pin2",
+          "U2.pin21",
+          "U2.pin7",
+          "U_CLEAR_BUFFER.pin2",
+          "U_CLOCK_BUFFER.pin2",
+          "U_DAC.pin2",
+          "U_DAC.pin6",
+          "U_DBG1.pin2",
+          "U_DBG2.pin2",
+          "U_FAN.pin1",
+          "U_INPUT.pin8",
+          "U_INPUT_LATCH.pin4",
+          "U_LATCH.pin4",
+          "U_LOGIC.pin4",
+          "U_MCU.pin5",
+          "U_PD.pin10",
+          "U_PD.pin12",
+          "U_PD.pin13",
+          "U_PD.pin22",
+          "U_PD.pin25",
+          "U_SUPERVISOR.pin1",
+          "U_TEC_MON.pin1",
+          "U_TEC_MON.pin2",
+          "U_TEC_MON.pin6",
+          "U_THERMAL.pin4"
+        ]
+      }
+    },
+    {
+      "id": "pcb_via_362",
+      "gapMm": 0.8500000000000029,
+      "x": 48.8,
+      "y": -8.100000000000001,
+      "sourceOwner": {
+        "known": true,
+        "declaredNets": [
+          "VBUS_TEC"
+        ],
+        "componentTerminals": [
+          "C213.pin1",
+          "C219.pin1",
+          "C220.pin1",
+          "C24.pin1",
+          "C25.pin1",
+          "C26.pin1",
+          "C27.pin1",
+          "C28.pin1",
+          "C38.pin1",
+          "C39.pin1",
+          "C40.pin1",
+          "C44.pin1",
+          "C_INPUT_OUT.pin1",
+          "Q20.pin5",
+          "Q22.pin2",
+          "R222.pin1",
+          "R35.pin1",
+          "R502.pin1",
+          "R_PD_DISCH.pin1",
+          "TP02.pin1",
+          "U2.pin3",
+          "U_FAN.pin3",
+          "U_INPUT.pin6"
+        ]
+      }
+    }
+  ],
+  "padViaBoardEdgeFailures": [],
+  "viaDrillPairCount": 93528,
+  "minViaDrillPairs": [
+    {
+      "a": "pcb_via_280",
+      "b": "pcb_via_281",
+      "gapMm": 0.49999999999999717,
+      "xyA": [
+        24.1,
+        15.2
+      ],
+      "xyB": [
+        24.9,
+        15.2
+      ]
+    },
+    {
+      "a": "pcb_via_242",
+      "b": "pcb_via_245",
+      "gapMm": 0.5,
+      "xyA": [
+        -0.5,
+        8.4
+      ],
+      "xyB": [
+        0.3,
+        8.4
+      ]
+    },
+    {
+      "a": "pcb_via_243",
+      "b": "pcb_via_246",
+      "gapMm": 0.5,
+      "xyA": [
+        -0.5,
+        9.4
+      ],
+      "xyB": [
+        0.3,
+        9.4
+      ]
+    },
+    {
+      "a": "pcb_via_244",
+      "b": "pcb_via_247",
+      "gapMm": 0.5,
+      "xyA": [
+        -0.5,
+        10.4
+      ],
+      "xyB": [
+        0.3,
+        10.4
+      ]
+    },
+    {
+      "a": "pcb_via_264",
+      "b": "pcb_via_265",
+      "gapMm": 0.5000000000000007,
+      "xyA": [
+        -17.7,
+        12.2
+      ],
+      "xyB": [
+        -17.7,
+        13
+      ]
+    }
+  ],
+  "viaDrillFailures": [],
+  "viaPthDrillPairCount": 9526,
+  "minViaPthDrillPairs": [
+    {
+      "via": "pcb_via_0",
+      "pth": "pcb_plated_hole_1",
+      "gapMm": 0.8598767999999979,
+      "xyVia": [
+        -41.85,
+        7.674888
+      ],
+      "xyPth": [
+        -43.709876799999996,
+        7.674888
+      ]
+    },
+    {
+      "via": "pcb_via_1",
+      "pth": "pcb_plated_hole_0",
+      "gapMm": 0.8748880000000032,
+      "xyVia": [
+        -47.8897008,
+        6.35
+      ],
+      "xyPth": [
+        -47.8897008,
+        7.674888000000001
+      ]
+    },
+    {
+      "via": "pcb_via_7",
+      "pth": "pcb_plated_hole_3",
+      "gapMm": 0.9748879999999993,
+      "xyVia": [
+        -47.8897008,
+        17.75
+      ],
+      "xyPth": [
+        -47.8897008,
+        16.325112
+      ]
+    },
+    {
+      "via": "pcb_via_428",
+      "pth": "pcb_plated_hole_19",
+      "gapMm": 1.055830948312936,
+      "xyVia": [
+        -11.6490076,
+        -30.550038999999998
+      ],
+      "xyPth": [
+        -13.000005999999999,
+        -31.550037
+      ]
+    },
+    {
+      "via": "pcb_via_424",
+      "pth": "pcb_plated_hole_7",
+      "gapMm": 1.0558309483129373,
+      "xyVia": [
+        36.3509924,
+        -30.550038999999998
+      ],
+      "xyPth": [
+        34.999994,
+        -31.550037
+      ]
+    }
+  ],
+  "viaPthDrillFailures": [],
+  "traceSegmentCount": 1639,
+  "minTraceEdges": [
+    {
+      "id": "pcb_trace_116",
+      "gapMm": 0.6499999999999985,
+      "layer": "top",
+      "a": [
+        46,
+        -10.75
+      ],
+      "b": [
+        49.1,
+        -10.75
+      ]
+    },
+    {
+      "id": "pcb_trace_116",
+      "gapMm": 0.6499999999999985,
+      "layer": "top",
+      "a": [
+        49.1,
+        -10.75
+      ],
+      "b": [
+        49.1,
+        -15.465
+      ]
+    },
+    {
+      "id": "pcb_trace_116",
+      "gapMm": 0.6499999999999985,
+      "layer": "top",
+      "a": [
+        49.1,
+        -15.465
+      ],
+      "b": [
+        46,
+        -18.565
+      ]
+    },
+    {
+      "id": "pcb_trace_56",
+      "gapMm": 0.8000000000000028,
+      "layer": "top",
+      "a": [
+        47.8,
+        26.3
+      ],
+      "b": [
+        48.8,
+        25.3
+      ]
+    },
+    {
+      "id": "pcb_trace_56",
+      "gapMm": 0.8000000000000028,
+      "layer": "top",
+      "a": [
+        48.8,
+        25.3
+      ],
+      "b": [
+        48.8,
+        -8.100000000000001
+      ]
+    }
+  ],
+  "traceBoardEdgeFailures": [],
+  "minTraceNpthGaps": [
+    {
+      "trace": "pcb_trace_2",
+      "hole": "pcb_hole_5",
+      "gapMm": 0.561284986553186,
+      "layer": "top",
+      "a": [
+        -43.1400028,
+        8.7999937
+      ],
+      "b": [
+        -41.65,
+        8.7999937
+      ],
+      "holeXY": [
+        -44.2100028,
+        9.100082
+      ]
+    },
+    {
+      "trace": "pcb_trace_6",
+      "hole": "pcb_hole_4",
+      "gapMm": 0.6612712697318393,
+      "layer": "top",
+      "a": [
+        -43.1400028,
+        15.1999555
+      ],
+      "b": [
+        -43.1400028,
+        15.755237999999999
+      ],
+      "holeXY": [
+        -44.2100028,
+        14.899918
+      ]
+    },
+    {
+      "trace": "pcb_trace_4",
+      "hole": "pcb_hole_5",
+      "gapMm": 0.7498585999999997,
+      "layer": "top",
+      "a": [
+        -43.1400028,
+        10.249939999999999
+      ],
+      "b": [
+        -44.3,
+        10.24994
+      ],
+      "holeXY": [
+        -44.2100028,
+        9.100082
+      ]
+    },
+    {
+      "trace": "pcb_trace_41",
+      "hole": "pcb_hole_5",
+      "gapMm": 0.7498585999999999,
+      "layer": "inner2",
+      "a": [
+        -42.60006,
+        10.24994
+      ],
+      "b": [
+        -44.3,
+        10.24994
+      ],
+      "holeXY": [
+        -44.2100028,
+        9.100082
+      ]
+    },
+    {
+      "trace": "pcb_trace_6",
+      "hole": "pcb_hole_4",
+      "gapMm": 0.9114074279540839,
+      "layer": "top",
+      "a": [
+        -43.1400028,
+        15.755237999999999
+      ],
+      "b": [
+        -43.709876799999996,
+        16.325112
+      ],
+      "holeXY": [
+        -44.2100028,
+        14.899918
+      ]
+    }
+  ],
+  "traceNpthFailures": [],
+  "viaBoreRequestedMaskMinima": [
+    {
+      "via": "pcb_via_95",
+      "pad": "pcb_smtpad_319",
+      "gapMm": 0.015000000000000041,
+      "viaXY": [
+        -1.465,
+        -21.62
+      ],
+      "padXY": [
+        -0.95,
+        -21.4
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_DAC"
+        ],
+        "componentTerminals": [
+          "R33.pin1",
+          "TP12.pin1",
+          "U_DAC.pin1"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_DAC"
+        ],
+        "componentTerminals": [
+          "R33.pin1",
+          "TP12.pin1",
+          "U_DAC.pin1"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_153",
+      "pad": "pcb_smtpad_367",
+      "gapMm": 0.025000000000000716,
+      "viaXY": [
+        8.8,
+        -5.85
+      ],
+      "padXY": [
+        8.25,
+        -5.5
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "COLD_RAW"
+        ],
+        "componentTerminals": [
+          "J_COLD.pin1",
+          "R209.pin2",
+          "R211.pin1"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "COLD_RAW"
+        ],
+        "componentTerminals": [
+          "J_COLD.pin1",
+          "R209.pin2",
+          "R211.pin1"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_201",
+      "pad": "pcb_smtpad_357",
+      "gapMm": 0.025000000000000716,
+      "viaXY": [
+        7.125,
+        -11.175
+      ],
+      "padXY": [
+        7.7,
+        -11
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "PD_VALID_N"
+        ],
+        "componentTerminals": [
+          "R206.pin1",
+          "R_PD_INHIBIT.pin1",
+          "R_PD_VALID.pin2",
+          "U_DBG1.pin1",
+          "U_PD.pin16"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "PD_VALID_N"
+        ],
+        "componentTerminals": [
+          "R206.pin1",
+          "R_PD_INHIBIT.pin1",
+          "R_PD_VALID.pin2",
+          "U_DBG1.pin1",
+          "U_PD.pin16"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_96",
+      "pad": "pcb_smtpad_537",
+      "gapMm": 0.0399494936611661,
+      "viaXY": [
+        -2.3,
+        -23.3
+      ],
+      "padXY": [
+        -3,
+        -24
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_DAC"
+        ],
+        "componentTerminals": [
+          "R33.pin1",
+          "TP12.pin1",
+          "U_DAC.pin1"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_DAC"
+        ],
+        "componentTerminals": [
+          "R33.pin1",
+          "TP12.pin1",
+          "U_DAC.pin1"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_109",
+      "pad": "pcb_smtpad_233",
+      "gapMm": 0.049999999999999295,
+      "viaXY": [
+        28.325,
+        17.5
+      ],
+      "padXY": [
+        27.75,
+        17.5
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_MON_SENSE_P"
+        ],
+        "componentTerminals": [
+          "C42.pin1",
+          "R41.pin2",
+          "U_TEC_MON.pin8"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_MON_SENSE_P"
+        ],
+        "componentTerminals": [
+          "C42.pin1",
+          "R41.pin2",
+          "U_TEC_MON.pin8"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_171",
+      "pad": "pcb_smtpad_386",
+      "gapMm": 0.049999999999999295,
+      "viaXY": [
+        27.75,
+        -24.35
+      ],
+      "padXY": [
+        27.75,
+        -25
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "FAN_TACH_MCU"
+        ],
+        "componentTerminals": [
+          "R221.pin2",
+          "TP18.pin1",
+          "U_MCU.pin14"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "FAN_TACH_MCU"
+        ],
+        "componentTerminals": [
+          "R221.pin2",
+          "TP18.pin1",
+          "U_MCU.pin14"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_189",
+      "pad": "pcb_smtpad_71",
+      "gapMm": 0.049999999999999295,
+      "viaXY": [
+        -20.8,
+        13.2
+      ],
+      "padXY": [
+        -20.8,
+        12.5
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "MCU_RUN"
+        ],
+        "componentTerminals": [
+          "R226.pin1",
+          "R_INPUT_RUN.pin1",
+          "U_CLOCK_BUFFER.pin3",
+          "U_DBG2.pin3",
+          "U_MCU.pin15"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "MCU_RUN"
+        ],
+        "componentTerminals": [
+          "R226.pin1",
+          "R_INPUT_RUN.pin1",
+          "U_CLOCK_BUFFER.pin3",
+          "U_DBG2.pin3",
+          "U_MCU.pin15"
+        ]
+      },
+      "sameNet": true
+    },
+    {
+      "via": "pcb_via_158",
+      "pad": "pcb_smtpad_344",
+      "gapMm": 0.05000000000000018,
+      "viaXY": [
+        6.2,
+        -5.8
+      ],
+      "padXY": [
+        6.8,
+        -6
+      ],
+      "viaOwner": {
+        "known": true,
+        "declaredNets": [
+          "MCU_NRST"
+        ],
+        "componentTerminals": [
+          "C205.pin1",
+          "R200.pin2",
+          "TP13.pin1",
+          "U_MCU.pin6"
+        ]
+      },
+      "padOwner": {
+        "known": true,
+        "declaredNets": [
+          "MCU_NRST"
+        ],
+        "componentTerminals": [
+          "C205.pin1",
+          "R200.pin2",
+          "TP13.pin1",
+          "U_MCU.pin6"
+        ]
+      },
+      "sameNet": true
+    }
+  ],
+  "viaBoreMaskBelow025Count": 1,
+  "smallVias": [
+    {
+      "record": {
+        "type": "pcb_via",
+        "pcb_via_id": "pcb_via_196",
+        "x": 5.55,
+        "y": -18.385,
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.5,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net70",
+        "tented_on_top": true,
+        "tented_on_bottom": true,
+        "source_net_id": "source_net_49",
+        "pcb_port_ids": [
+          "pcb_port_1080",
+          "pcb_port_1081",
+          "pcb_port_1082"
+        ]
+      },
+      "owner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_CLEAR_N"
+        ],
+        "componentTerminals": [
+          "R240.pin1",
+          "U_CLEAR_BUFFER.pin6",
+          "U_LATCH.pin6"
+        ]
+      },
+      "maskMinima": [
+        {
+          "via": "pcb_via_196",
+          "pad": "pcb_smtpad_348",
+          "gapMm": 0.32499999999999984,
+          "viaXY": [
+            5.55,
+            -18.385
+          ],
+          "padXY": [
+            4.75,
+            -18
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_N"
+            ],
+            "componentTerminals": [
+              "R240.pin1",
+              "U_CLEAR_BUFFER.pin6",
+              "U_LATCH.pin6"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_RAW"
+            ],
+            "componentTerminals": [
+              "Q_FAULT_CLEAR.pin3",
+              "R202.pin2",
+              "R203.pin1",
+              "U_CLEAR_BUFFER.pin1"
+            ]
+          },
+          "sameNet": false
+        },
+        {
+          "via": "pcb_via_196",
+          "pad": "pcb_smtpad_277",
+          "gapMm": 0.32500000000000073,
+          "viaXY": [
+            5.55,
+            -18.385
+          ],
+          "padXY": [
+            6.45,
+            -18.25
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_N"
+            ],
+            "componentTerminals": [
+              "R240.pin1",
+              "U_CLEAR_BUFFER.pin6",
+              "U_LATCH.pin6"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_SAFE_EN"
+            ],
+            "componentTerminals": [
+              "R205.pin1",
+              "R37.pin1",
+              "U_DBG1.pin3",
+              "U_LATCH.pin5"
+            ]
+          },
+          "sameNet": false
+        },
+        {
+          "via": "pcb_via_196",
+          "pad": "pcb_smtpad_278",
+          "gapMm": 0.355905692002195,
+          "viaXY": [
+            5.55,
+            -18.385
+          ],
+          "padXY": [
+            6.45,
+            -18.75
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_N"
+            ],
+            "componentTerminals": [
+              "R240.pin1",
+              "U_CLEAR_BUFFER.pin6",
+              "U_LATCH.pin6"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_N"
+            ],
+            "componentTerminals": [
+              "R240.pin1",
+              "U_CLEAR_BUFFER.pin6",
+              "U_LATCH.pin6"
+            ]
+          },
+          "sameNet": true
+        }
+      ]
+    },
+    {
+      "record": {
+        "type": "pcb_via",
+        "pcb_via_id": "pcb_via_210",
+        "x": 6.1,
+        "y": -17.9,
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.5,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net51",
+        "tented_on_top": true,
+        "tented_on_bottom": true,
+        "source_net_id": "source_net_47",
+        "pcb_port_ids": [
+          "pcb_port_1122",
+          "pcb_port_1123",
+          "pcb_port_1124",
+          "pcb_port_1125"
+        ]
+      },
+      "owner": {
+        "known": true,
+        "declaredNets": [
+          "TEC_SAFE_EN"
+        ],
+        "componentTerminals": [
+          "R205.pin1",
+          "R37.pin1",
+          "U_DBG1.pin3",
+          "U_LATCH.pin5"
+        ]
+      },
+      "maskMinima": [
+        {
+          "via": "pcb_via_210",
+          "pad": "pcb_smtpad_277",
+          "gapMm": 0.050000000000002154,
+          "viaXY": [
+            6.1,
+            -17.9
+          ],
+          "padXY": [
+            6.45,
+            -18.25
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_SAFE_EN"
+            ],
+            "componentTerminals": [
+              "R205.pin1",
+              "R37.pin1",
+              "U_DBG1.pin3",
+              "U_LATCH.pin5"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_SAFE_EN"
+            ],
+            "componentTerminals": [
+              "R205.pin1",
+              "R37.pin1",
+              "U_DBG1.pin3",
+              "U_LATCH.pin5"
+            ]
+          },
+          "sameNet": true
+        },
+        {
+          "via": "pcb_via_210",
+          "pad": "pcb_smtpad_278",
+          "gapMm": 0.5500000000000022,
+          "viaXY": [
+            6.1,
+            -17.9
+          ],
+          "padXY": [
+            6.45,
+            -18.75
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_SAFE_EN"
+            ],
+            "componentTerminals": [
+              "R205.pin1",
+              "R37.pin1",
+              "U_DBG1.pin3",
+              "U_LATCH.pin5"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_N"
+            ],
+            "componentTerminals": [
+              "R240.pin1",
+              "U_CLEAR_BUFFER.pin6",
+              "U_LATCH.pin6"
+            ]
+          },
+          "sameNet": false
+        },
+        {
+          "via": "pcb_via_210",
+          "pad": "pcb_smtpad_348",
+          "gapMm": 0.8749999999999998,
+          "viaXY": [
+            6.1,
+            -17.9
+          ],
+          "padXY": [
+            4.75,
+            -18
+          ],
+          "viaOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_SAFE_EN"
+            ],
+            "componentTerminals": [
+              "R205.pin1",
+              "R37.pin1",
+              "U_DBG1.pin3",
+              "U_LATCH.pin5"
+            ]
+          },
+          "padOwner": {
+            "known": true,
+            "declaredNets": [
+              "TEC_CLEAR_RAW"
+            ],
+            "componentTerminals": [
+              "Q_FAULT_CLEAR.pin3",
+              "R202.pin2",
+              "R203.pin1",
+              "U_CLEAR_BUFFER.pin1"
+            ]
+          },
+          "sameNet": false
+        }
+      ]
+    }
+  ]
+}

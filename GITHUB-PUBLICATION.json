@@ -1,0 +1,15 @@
+{
+  "sourceRevision": "Source23",
+  "originalSourceArchiveSha256": "66f79d7689d30390d39ff6d37d7b815cb354d8bfa92526cb9232693836588164",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "sourceFiles": 150,
+  "runtimePayloadFiles": 6,
+  "sourceAndRuntimeUnmodified": true,
+  "routingReviewerCount": 20,
+  "routingMeanScore": 7.195,
+  "routingDisplayScore": 7.2,
+  "repositoryReadmeReplacesOriginalPackageReadme": true,
+  "originalReadmeSavedAt": "docs/captured-source-package-README.md",
+  "manufacturingReleaseAccepted": false,
+  "hardwareBenchValidationAccepted": false
+}

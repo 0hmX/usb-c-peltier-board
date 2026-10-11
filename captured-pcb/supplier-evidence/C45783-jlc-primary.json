@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T04:57:44.077347+00:00",
+  "url": "https://jlcpcb.com/partdetail/C45783",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "CL21A226MAQNNNE",
+    "componentBrandEn": "Samsung Electro-Mechanics",
+    "componentCode": "C45783",
+    "describe": "22uF 25V X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "0805",
+    "lcscComponentId": 46786,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 41,
+    "encapsulationNumber": 2000,
+    "canPresaleNumber": 2804220,
+    "overseasStockCount": 3716845,
+    "initialPrice": 0.2206,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C45783",
+        "attribute_value_name": "25V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C45783",
+        "attribute_value_name": "±20%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C45783",
+        "attribute_value_name": "22uF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C45783",
+        "attribute_value_name": "X5R"
+      }
+    ]
+  }
+}

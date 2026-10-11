@@ -1,0 +1,181 @@
+{
+  "role": "fabrication-margin reviewer",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 7.4,
+  "confidence": "high",
+  "inspectedArtifacts": [
+    "work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "work/board-debug-revision/reviews/manufacturing-debug/placement23-3ac5-local-mask-readiness.json",
+    "work/board-debug-revision/reviews/clearance-route-audits/source23-3ac5f312-all-current-copper-and-reference-gates.json",
+    "work/board-debug-revision/reviews/routing-source-pad-links/source23-final-same-capture-routing-readiness.json",
+    "work/routing-rating-source23/rating_fab_margin-direct-checks.json",
+    "user attached crop"
+  ],
+  "directChecks": {
+    "method": "Read-only Shapely 2.0.7 primitive-core/radius distances with circuit source graph net union; exact circles and rotated slot cores; no export/build/autorouter. Reproducible script rating_fab_margin-check.py and checked witnesses rating_fab_margin-direct-checks.json.",
+    "viaClasses": [
+      {
+        "hole": 0.3,
+        "pad": 0.7,
+        "count": 431,
+        "radialAnnulus": 0.19999999999999998
+      },
+      {
+        "hole": 0.2,
+        "pad": 0.5,
+        "count": 2,
+        "radialAnnulus": 0.15
+      }
+    ],
+    "allViasFourLayer": true,
+    "viaDrillPairs": 93528,
+    "viaDrillMinimumMm": 0.49999999999999717,
+    "viaDrillFailures": 0,
+    "viaPthDrillPairs": 9526,
+    "viaPthDrillMinimumMm": 0.8598767999999979,
+    "viaPthFailures": 0,
+    "wireSegments": 1639,
+    "traceToNpthMinimumMm": 0.561284986553186,
+    "traceNpthFailures": 0,
+    "viaBoardEdgeMinimumMm": 0.5999729999999929,
+    "padBoardEdgeMinimumMm": 1.2102991999999944,
+    "traceBoardEdgeMinimumMm": 0.6499999999999985,
+    "padViaTraceBoardEdgeFailures": 0,
+    "nominalViaBoreToRequestedMaskMinimumMm": 0.015000000000000041,
+    "maskBelow025Count": 1,
+    "finishedMaskOrFabricationAccepted": false
+  },
+  "strengths": [
+    "All 433 vias are conventional through barrels; 431 have generous 0.30 mm bore / 0.70 mm copper and 0.20 mm radial annulus. Only two need the denser 0.20 / 0.50 mm geometry.",
+    "All 93,528 via drill pairs and 9,526 via/PTH drill pairs pass their declared spacing with meaningful spare room (minima 0.500 and 0.860 mm).",
+    "The rectangular outline has no pad, via or trace copper-edge failure; minimum trace 0.650 mm, via 0.600 mm and imported PTH pad 1.210 mm.",
+    "All 1,639 nonzero planar wire segments checked against six NPTHs pass the declared 0.5 mm trace-to-bore rule; even the closest USB locator escape has 0.561 mm."
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "kind": "measured nominal mask process-margin weakness",
+      "explanation": "An ordinary TEC_DAC via bore is only 0.015 mm from the U_DAC pin1 requested solder-mask opening, narrower than the inherited 0.025 mm minimum cited in final local-mask summary. These features are the same net. There is no foreign-net short here, but source tenting intent alone cannot establish a robust finished tent or prevent solder access to the bore. Its 0.35 mm annulus extends 0.185 mm into that requested pad opening in this nominal model.",
+      "evidence": {
+        "via": "pcb_via_95",
+        "pad": "pcb_smtpad_319",
+        "component": "U_DAC.pin1 (MCP4725A0T-E/CH, C144198)",
+        "viaBoreRadiusMm": 0.15,
+        "viaCopperRadiusMm": 0.35,
+        "padWidthMm": 0.6,
+        "padHeightMm": 1.1,
+        "padSoldermaskMarginMm": 0.05,
+        "directChecksArtifact": "work/routing-rating-source23/rating_fab_margin-direct-checks.json",
+        "formula": "Mask left edge=-0.95-0.6/2-0.05=-1.30; bore right edge=-1.465+0.15=-1.315; gap=0.015 mm. Bore y=-21.62 lies within mask y range [-22.0,-20.8]."
+      },
+      "nets": [
+        "TEC_DAC"
+      ],
+      "layers": [
+        "top"
+      ],
+      "coordinates": [
+        {
+          "x": -1.465,
+          "y": -21.62
+        },
+        {
+          "x": -0.95,
+          "y": -21.4
+        }
+      ],
+      "rerouteRequired": false,
+      "rerouteRecommended": true
+    },
+    {
+      "severity": "low",
+      "kind": "measured nominal mask margin weakness",
+      "explanation": "Two additional same-net pad-adjacent ordinary vias retain only 0.025 mm nominal bore-to-requested-opening margin (R211/COLD_RAW and R206/PD_VALID_N). These are assembly-process concerns rather than copper-clearance failures; move their drill centers away from pad openings if route clearance permits.",
+      "evidence": {
+        "pairs": [
+          {
+            "via": "pcb_via_153",
+            "pad": "pcb_smtpad_367",
+            "gapMm": 0.025000000000000716
+          },
+          {
+            "via": "pcb_via_201",
+            "pad": "pcb_smtpad_357",
+            "gapMm": 0.025000000000000716
+          }
+        ],
+        "directChecksArtifact": "work/routing-rating-source23/rating_fab_margin-direct-checks.json"
+      },
+      "nets": [
+        "COLD_RAW",
+        "PD_VALID_N"
+      ],
+      "layers": [
+        "top"
+      ],
+      "coordinates": [
+        {
+          "x": 8.8,
+          "y": -5.85
+        },
+        {
+          "x": 7.125,
+          "y": -11.175
+        }
+      ],
+      "rerouteRequired": false,
+      "rerouteRecommended": true
+    },
+    {
+      "severity": "low",
+      "kind": "measured dense escape process tradeoff",
+      "explanation": "The two named 0.20/0.50 mm vias reduce radial annulus to 0.15 mm. Their mutual drill spacing is 0.5333 mm, and copper spacing is 0.2333 mm, so this is not a drilling or copper-clearance failure. The SAFE_EN via is 0.05 mm from its same-net requested pin opening, so tenting/assembly margin remains tighter than the bulk 0.30/0.70 mm layout.",
+      "evidence": {
+        "vias": [
+          "pcb_via_196",
+          "pcb_via_210"
+        ],
+        "drillGapMm": 0.5332973476019143,
+        "copperGapMm": 0.23329734760191423,
+        "tecSafeEnBoreRequestedMaskGapMm": 0.050000000000002154,
+        "directChecksArtifact": "work/routing-rating-source23/rating_fab_margin-direct-checks.json"
+      },
+      "nets": [
+        "TEC_CLEAR_N",
+        "TEC_SAFE_EN"
+      ],
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [
+        {
+          "x": 5.55,
+          "y": -18.385
+        },
+        {
+          "x": 6.1,
+          "y": -17.9
+        }
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "assessment": "No confirmed short in this fabrication drill/edge/mask scope. The measured narrow mask pairs are same-net copper. The user crop alone is insufficient to map the crossing confidently; parent reviewers covering crop registration and full foreign-net copper geometry must decide the pictured crossing.",
+    "confirmedForeignNetShortFound": false
+  },
+  "topImprovements": [
+    "Increase U_DAC.pin1 / TEC_DAC bore-to-requested-mask distance from 0.015 mm while preserving genuine electrical endpoint contact; optimize R211 and R206 adjacent-via positions too.",
+    "Keep the two smaller via classes explicit and narrowly owned; use ordinary 0.30/0.70 mm dimensions elsewhere.",
+    "Perform a separate finished-mask/profile/CPL/Gerber qualification before manufacturing; this is a qualification gap and not itself a static routing score penalty."
+  ],
+  "limitations": [
+    "Full foreign-net copper-to-copper and full BREP topology are covered by other agents; this report independently scans drills, board edges, NPTH and nominal requested pad openings only.",
+    "The board is assessed as the exact frozen Source23 circuit; registry/cloud preview may use a different regenerated capture.",
+    "Distance checks are nominal source geometry and do not include registration, etch/drill tolerances, plating thickness or fabrication house acceptance.",
+    "A mask margin below 0.025 mm is not asserted as a declared DRC failure: the present report treats it as a process margin weakness and corrects the summary minimum."
+  ]
+}

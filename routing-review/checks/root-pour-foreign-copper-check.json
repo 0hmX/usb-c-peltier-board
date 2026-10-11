@@ -1,0 +1,48 @@
+{
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scope": "Native BREP copper pour versus foreign trace/pad/pour; vias and PTH assigned to dedicated reviewer. Shared imported geometry reader and source-net reconstruction disclosed.",
+  "foreignNearbyPairs": 985,
+  "confirmedOverlaps": [],
+  "gapsBelowPoint2MinusTolerance": [],
+  "minimumByPrimitiveKind": {
+    "pcb_trace": {
+      "pour": "pcb_copper_pour_14",
+      "other": "pcb_trace_56",
+      "kind": "pcb_trace",
+      "segment": 7,
+      "nets": [
+        "GND",
+        "VBUS_TEC"
+      ],
+      "layer": "bottom",
+      "gapMm": 0.2070624581229582,
+      "overlapMm2": 0.0
+    },
+    "pcb_copper_pour": {
+      "pour": "pcb_copper_pour_14",
+      "other": "pcb_copper_pour_69",
+      "kind": "pcb_copper_pour",
+      "segment": null,
+      "nets": [
+        "GND",
+        "VBUS_RAW"
+      ],
+      "layer": "bottom",
+      "gapMm": 0.24999957119840818,
+      "overlapMm2": 0.0
+    },
+    "pcb_smtpad": {
+      "pour": "pcb_copper_pour_63",
+      "other": "pcb_smtpad_548",
+      "kind": "pcb_smtpad",
+      "segment": null,
+      "nets": [
+        "TEC_POS",
+        "GND"
+      ],
+      "layer": "top",
+      "gapMm": 0.2451845713636006,
+      "overlapMm2": 0.0
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "role": "Bus-routing specialist: actual CONTROL_I2C trunks and SDA/SCL branches",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 7.8,
+  "confidence": "high",
+  "inspectedArtifacts": [
+    "work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "work/board-debug-revision/src/bus-routing.tsx",
+    "work/board-debug-revision/src/i2c-branch-routes.tsx",
+    "work/board-debug-revision/src/source-bus-connections.ts",
+    "work/board-debug-revision/src/blocks/pd-input.tsx",
+    "work/board-debug-revision/src/blocks/control.tsx",
+    "work/board-debug-revision/src/blocks/tec-power.tsx",
+    "work/routing-rating-source23/rating_i2c_bus_measurements.json",
+    "/var/folders/xk/l37dvfnx3mv7pl1j4grm9wkc0000gn/T/codex-clipboard-415f75e6-1959-48ff-953d-f8092ed0ada1.png"
+  ],
+  "directChecks": [
+    {
+      "check": "Capture identity",
+      "result": "PASS",
+      "evidence": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "check": "Real source_bus identity",
+      "result": "PASS",
+      "evidence": "source_bus_0 CONTROL_I2C contains source_trace_1024 and source_trace_1025; actual pcb_trace_542 and pcb_trace_543 own the corresponding two source traces."
+    },
+    {
+      "check": "Source net ownership",
+      "result": "PASS",
+      "evidence": "SCL source_net_59 connectivity_net4; SDA source_net_60 connectivity_net5. All 16 actual copper paths resolve to their intended net through source_trace connectivity keys."
+    },
+    {
+      "check": "Trace-vs-trace bus-scope overlaps",
+      "result": "NONE FOUND",
+      "evidence": "Exhaustive nonzero same-layer line-segment pairs against all PCB traces using segment intersection / minimum endpoint-to-segment distance, then subtracting half trace widths. Global bus-scope minimum foreign copper-edge trace gap 0.2631549416771887 mm."
+    },
+    {
+      "check": "Trace-vs-via bus-scope overlaps",
+      "result": "NONE FOUND",
+      "evidence": "Exhaustive I2C segment-to-via comparisons on shared layers, with via outer copper diameter and wire halfwidth subtracted. Minimum gap 0.20000000000000015 mm."
+    },
+    {
+      "check": "Paired main top bus spacing",
+      "result": "PASS",
+      "evidence": "I2C_MCU_DAC_SCL / I2C_MCU_DAC_SDA are 0.20 mm wide, top only, with no layer changes and at least 0.75 mm edge spacing."
+    },
+    {
+      "check": "Branch organization",
+      "result": "PASS WITH REFINEMENTS",
+      "evidence": "Six named 0.30/0.70 mm full-stack vias: one launch for each net at DAC, PD, monitor. Long PD branches remain bottom; long monitor branches remain inner2. No intermediate meandering layer swaps."
+    },
+    {
+      "check": "Test point stubs",
+      "result": "PASS",
+      "evidence": "TP10_I2C_TAP and TP11_I2C_TAP are each 1.50 mm actual top copper and meet same-net vertical DAC trunk at (0, -16.5) and (0.95, -16.5)."
+    }
+  ],
+  "strengths": [
+    "The two real main bus trunks are short, simple, ordered and entirely on top; 6.8659 mm SCL and 6.4724 mm SDA, each approximately 1.08 times the straight pad-to-pad distance.",
+    "The branches use deliberate source-owned layer assignments and six common launch barrels; there is no repeated midspan bouncing between layers.",
+    "The monitor branches are close to an octilinear minimum: 49.2068 and 49.3657 mm, only 1.062 and 1.061 times their straight-line distances.",
+    "Debug test points create short deliberate 1.5 mm stubs, avoiding long side excursions.",
+    "This review did not find a same-layer foreign-net overlap in the actual I2C trace/via geometry."
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "kind": "spacing-and-organization refinement",
+      "explanation": "The beautiful declared CONTROL_I2C bus is only the short MCU-to-DAC trunk. The longer inner2 monitor branches use nonuniform pairing; their closest SCL/SDA copper-edge spacing is 0.263155 mm. This does not violate the top-only bus setting, but the visual consistency and routing margin could be improved by routing the whole monitor branch as an intentional pair.",
+      "evidence": {
+        "measured": true,
+        "minimumEdgeClearanceMm": 0.2631549416771887,
+        "traceIds": [
+          "pcb_trace_526",
+          "pcb_trace_528"
+        ],
+        "source": "rating_i2c_bus_measurements.json"
+      },
+      "nets": [
+        "I2C_SCL",
+        "I2C_SDA"
+      ],
+      "layers": [
+        "inner2"
+      ],
+      "coordinates": [
+        [
+          0,
+          -3.895
+        ],
+        [
+          23,
+          19.105
+        ],
+        [
+          0.95,
+          -3.6
+        ],
+        [
+          22,
+          17.45
+        ]
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "tight foreign-via routing margin",
+      "explanation": "The long SDA vertical branch passes a full-stack HOT_ADC via at exactly 0.20 mm copper-edge margin on both bottom and inner2. There is no overlap, but this is a denser and less forgiving bus corridor than the main top bus.",
+      "evidence": {
+        "measured": true,
+        "minimumEdgeClearanceMm": 0.20000000000000015,
+        "viaId": "pcb_via_97",
+        "outerDiameterMm": 0.7,
+        "i2cTraceIds": [
+          "pcb_trace_527",
+          "pcb_trace_528"
+        ]
+      },
+      "nets": [
+        "I2C_SDA",
+        "HOT_ADC"
+      ],
+      "layers": [
+        "bottom",
+        "inner2"
+      ],
+      "coordinates": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.6
+        ],
+        [
+          1.6,
+          -9.025
+        ]
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "local pullup placement detour",
+      "explanation": "The SDA pullup connection walks 6.1627 mm while the SCL pullup link is 0.8828 mm. This is not a blocking electrical issue for the intended low-speed bus, but moving the pullup beside the PD SDA launch would improve local organization and shorten the pullup branch. Electrical speed or RC compliance was not established here.",
+      "evidence": {
+        "measured": true,
+        "sdaLengthMm": 6.162741699796953,
+        "sclLengthMm": 0.8828427124746201,
+        "traceIds": [
+          "pcb_trace_522",
+          "pcb_trace_520"
+        ],
+        "routeStretchSda": 1.2323
+      },
+      "nets": [
+        "I2C_SDA",
+        "I2C_SCL"
+      ],
+      "layers": [
+        "top"
+      ],
+      "coordinates": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -21.6,
+          6.25
+        ],
+        [
+          -21,
+          5.65
+        ],
+        [
+          -21,
+          2.25
+        ],
+        [
+          -22,
+          1.25
+        ]
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "scope": "Actual I2C copper geometry",
+    "confirmedShort": false,
+    "result": "No foreign-net overlap found among the I2C traces and shared-layer vias. The image crop alone is not enough to identify ownership/layer; its particular location was not identified by this role, so no board-wide short claim is made.",
+    "minimumMeasuredForeignTraceClearanceMm": 0.2631549416771887,
+    "minimumMeasuredForeignViaClearanceMm": 0.20000000000000015
+  },
+  "topImprovements": [
+    "Extend deliberate bus pairing to the long monitor branches with a more consistent gap, while preserving existing foreign-net clearances.",
+    "Give the SDA corridor additional room around HOT_ADC / VOUT_ADC launch barrels if placement permits.",
+    "Place PD pullups together at their SDA/SCL launch vias to avoid the asymmetric 6.16 mm SDA pullup excursion."
+  ],
+  "limitations": [
+    "This role checks bus routing, not the full board.",
+    "The exhaustive clearance checks include traces and vias, but do not independently expand pads, polygons/pours, or fabrication mask geometries.",
+    "No bus pullup capacitance, rise time, operating speed, switching-noise waveform, manufacturing or bench readiness claim is made.",
+    "101.8154 mm SCL / 109.3358 mm SDA totals are sums of route records and include same-net shared/overlapping top copper; they are not unique conductor lengths."
+  ]
+}

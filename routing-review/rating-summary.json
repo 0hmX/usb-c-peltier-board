@@ -1,0 +1,232 @@
+{
+  "reviewedAtUtc": "2026-10-11T07:10:51.413060+00:00",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "reviewerCount": 20,
+  "meanScoreOutOf10": 7.195,
+  "displayScoreOutOf10": 7.2,
+  "medianScoreOutOf10": 7.2,
+  "scoreRange": [
+    6.4,
+    8.2
+  ],
+  "scoreMeaning": "Equal-weight subjective assessments by 20 role-specific reviewers of static CAD routing. Not a reliability probability or manufacturing acceptance score.",
+  "source150AndRuntime6Unchanged": true,
+  "suspectedShort": {
+    "result": "SAME_NET_JUNCTION",
+    "layer": "inner2",
+    "coordinateMm": {
+      "x": -25.638,
+      "y": 26.637
+    },
+    "traceIds": [
+      "pcb_trace_193",
+      "pcb_trace_246"
+    ],
+    "sourceTraceIds": [
+      "source_trace_675",
+      "source_trace_728"
+    ],
+    "sourceNetId": "source_net_1",
+    "net": "V3V3",
+    "sourceEvidence": [
+      "src/logic-supply-links.tsx:13",
+      "src/blocks/pd-input.tsx:58",
+      "src/blocks/pd-input.tsx:68"
+    ],
+    "meaning": "The crossing joins the 3.3 V supply sides of pull-up resistors. PD_ALERT and INPUT_FAULT_N remain different signal nets on their other resistor pins.",
+    "annotatedActualCjsImage": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/suspected-short-net-review.png"
+  },
+  "shortChecks": {
+    "gerberAllLayerDetector": {
+      "exitCode": 0,
+      "pixelsPerMm": 50,
+      "result": "No shorts detected in circuit.json"
+    },
+    "independentForeignTracePairs": 2337410,
+    "foreignTraceOverlaps": 0,
+    "viaPthCopperOverlaps": 0,
+    "padCopperOverlaps": 0,
+    "nativePourNearbyForeignPairs": 985,
+    "nativePourOverlaps": 0,
+    "netOwnershipConflicts": 0,
+    "qualifications": "Checks apply to the exact CAD capture; some geometry readers and net reconstruction helpers are shared. They do not establish fabricated-board behavior."
+  },
+  "strengths": [
+    "450/450 physical pad joins; no missing joins",
+    "Zero fresh route-angle lint issues",
+    "Orderly I2C trunks with verified ownership",
+    "Wide main TEC copper and parallel power/ground via banks",
+    "Eight LEDs and 26 exposed test pads"
+  ],
+  "priorityImprovements": [
+    {
+      "priority": 1,
+      "item": "Tighten converter and eFuse placement/routing",
+      "measuredExamples": "Complete gate paths 24.148 / 28.335 mm; gate-resistor-to-FET paths 19.610 / 26.329 mm. eFuse output bypass designated trace path 23.026 mm, two transfers. VC compensation route 15.185 mm.",
+      "recommendation": "Move bypass/timing/compensation components close to their pins and shorten gate/return loops. Any replacement needs a new clearance and reference-path check.",
+      "primarySource": "https://www.ti.com/lit/ds/symlink/tps25947.pdf#page=62"
+    },
+    {
+      "priority": 2,
+      "item": "Reduce routing through the main ground plane",
+      "measuredExamples": "327.930 mm of non-ground signals on inner1; two TEC_SAFE_EN trunks total 124.012 mm.",
+      "recommendation": "Relocate avoidable signal corridors off the principal reference plane and verify return continuity."
+    },
+    {
+      "priority": 3,
+      "item": "Reduce avoidable detours and transfers",
+      "measuredExamples": "Fan feed 90.592 mm vs 36.989 mm endpoint distance; UART_TX 56.079 mm vs 31.546 mm.",
+      "recommendation": "Explore shorter legal routes while preserving intentional analog/switching isolation. Geometric chord is not proof a direct legal route exists."
+    },
+    {
+      "priority": 4,
+      "item": "Increase tight clearance and debug-probe margins where space permits",
+      "measuredExamples": "Closest foreign via copper gap 0.154204 mm; some pad escapes at 0.200 mm. ADC/I2C probes lack close ground partners in several locations.",
+      "recommendation": "Increase available spacing, improve probe-ground access and simplify redundant same-rail branches."
+    }
+  ],
+  "manufacturingReleaseAccepted": false,
+  "benchValidated": false,
+  "reviews": [
+    {
+      "role": "Analog/Kelvin measurement layout reviewer",
+      "scoreOutOf10": 6.5,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_analog_kelvin.json",
+      "reportSha256": "eda670e9ddaabaa0deedea313f510c53aa323a82fcee8de4c39a6b00891982b2"
+    },
+    {
+      "role": "Switching-converter EMI/layout engineer",
+      "scoreOutOf10": 6.8,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_converter_loops.json",
+      "reportSha256": "e4be767861dbe633c795034ecdd7df0a44c4c4dde1411fd586e1ee865ae200be"
+    },
+    {
+      "role": "Image forensics: locate and electrically classify the suspected screenshot short",
+      "scoreOutOf10": 7.2,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_crop_forensics.json",
+      "reportSha256": "3483d200ce4f32bf835aaab3d9cf94ca1752c6d2157ec639f1f3f857e819fe58"
+    },
+    {
+      "role": "Debug/service PCB engineer",
+      "scoreOutOf10": 7.7,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_debug_access.json",
+      "reportSha256": "889234dd0ba186024a5cabc440386cb6e67b48135993ab30db145e10439af1ef"
+    },
+    {
+      "role": "fabrication-margin reviewer",
+      "scoreOutOf10": 7.4,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_fab_margin.json",
+      "reportSha256": "2bfe9e5c9940350506349b6aa8e198c0e86a945196979b4dd2931159154a29ef"
+    },
+    {
+      "role": "Ground-reference and return-path engineer",
+      "scoreOutOf10": 7.0,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_ground_returns.json",
+      "reportSha256": "606b83dd21a16115b357db8c443f4f54032240b038c8e69eccf39de856cf1d0f"
+    },
+    {
+      "role": "Independent senior PCB reviewer; strict routing economy, power geometry and plane integrity perspective",
+      "scoreOutOf10": 6.5,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_harsh_layout.json",
+      "reportSha256": "1b8925e2d6070792c24d9b717a05e1153c4c2cd42e72eb3276f11a09d52bfc2a"
+    },
+    {
+      "role": "Bus-routing specialist: actual CONTROL_I2C trunks and SDA/SCL branches",
+      "scoreOutOf10": 7.8,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_i2c_bus.json",
+      "reportSha256": "7a0bd26853c4543fdb60f76246ba221f8bbfef23e34599aa67289d6bc7ea4360"
+    },
+    {
+      "role": "Four-layer stack and layer allocation reviewer",
+      "scoreOutOf10": 6.5,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_layer_strategy.json",
+      "reportSha256": "736b3536af063c9c22ce85f73232fcc6ca596323dc6e54fa0d7a00d0f1ba4850"
+    },
+    {
+      "role": "Net isolation and logical-net reviewer",
+      "scoreOutOf10": 8.0,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_net_isolation.json",
+      "reportSha256": "26d73125e7ad4965cbe7be577f4f3c7c6b59081094bbdd6c6a26fea191089d90"
+    },
+    {
+      "role": "Fine-pitch pads and copper escape examiner",
+      "scoreOutOf10": 8.2,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_pad_clearances.json",
+      "reportSha256": "603aa6bec9c6c6490c3bf8f8129f7f60e6fa7a1bca29f652dea3ebc925aaa8f4"
+    },
+    {
+      "role": "USB-C PD/input protection layout specialist",
+      "scoreOutOf10": 6.4,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_pd_input.json",
+      "reportSha256": "38d514ce796c79ebed01434c4343cf46bfcf382125a2af9110d12c71da4fabad"
+    },
+    {
+      "role": "High-current routing engineer: TEC, input and fan current distribution",
+      "scoreOutOf10": 7.2,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_power_capacity.json",
+      "reportSha256": "965631c4eaa9da7cf14aaced56e7a1014c278a4906c8046ec3355db0fd039453"
+    },
+    {
+      "role": "Independent route-efficiency optimizer",
+      "scoreOutOf10": 7.4,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_route_economy.json",
+      "reportSha256": "ed49ca4a68758af374f175b09222a1ad1d4e99cac8668cf269c5ad451cc1db0c"
+    },
+    {
+      "role": "route-lint and angle skeptic",
+      "scoreOutOf10": 7.2,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_route_lint.json",
+      "reportSha256": "29a66994f956219f450aa6a004362686d05ef27c6ec05db95d2dcf7eb45ddbf5"
+    },
+    {
+      "role": "Skeptical independent same-layer foreign-net trace examiner",
+      "scoreOutOf10": 8.0,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_trace_shorts.json",
+      "reportSha256": "298ee9c1819e74cbae74d939463d2da96c180846d255d1d81c22bc416ce36c28"
+    },
+    {
+      "role": "layer-transition/via economy reviewer",
+      "scoreOutOf10": 7.0,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_via_economy.json",
+      "reportSha256": "bbf348122126a6df84ff494878bb9cd727689eba4b6db68ca0a01408fbc08fe1"
+    },
+    {
+      "role": "Via and through-hole short examiner",
+      "scoreOutOf10": 7.6,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_via_shorts.json",
+      "reportSha256": "f92daf88fdf02efe5c1baad9e4821b5c8b0f0edf69e179e134031ead465ec9e7"
+    },
+    {
+      "role": "PCB craft and aesthetics reviewer",
+      "scoreOutOf10": 6.5,
+      "confidence": "high",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_visual_layout.json",
+      "reportSha256": "fa6cc7f383431d6831b76b7bdc7fcf39f915671591ab058c88ee1bb043dd5d8b"
+    },
+    {
+      "role": "Adversarial reviewer of retained CAD warnings, prior clearance evidence and false-negative classes",
+      "scoreOutOf10": 7.0,
+      "confidence": "medium",
+      "report": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/routing-review-source23/reviews/rating_warning_adversary.json",
+      "reportSha256": "5a96aca9b98befc704ac3fe9c30f790fbe87f5794584283d2ae24bfbc6c513b3"
+    }
+  ]
+}

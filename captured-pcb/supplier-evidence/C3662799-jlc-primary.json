@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-10T04:57:48.089643+00:00",
+  "url": "https://jlcpcb.com/partdetail/C3662799",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "TPS259470ARPWR",
+    "componentBrandEn": "Texas Instruments",
+    "componentCode": "C3662799",
+    "describe": "-40℃~+125℃ 1 1mm 2.7V~23V 28.3mΩ 2mm 2mm Integrated FET Surface Mount QFN-10(2x2) Surge Protection Devices (SPDs) ROHS",
+    "componentSpecificationEn": "QFN-10(2x2)",
+    "lcscComponentId": 4230598,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121729_Texas-Instruments-TPS259470ARPWR_C3662799.pdf",
+    "dataManualOfficialLink": "https://www.ti.com/cn/lit/gpn/tps25947",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 8,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 320,
+    "overseasStockCount": 470,
+    "initialPrice": 1.2802,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C3662799",
+        "attribute_value_name": "2.7V~23V"
+      },
+      {
+        "attribute_name_en": "FET Type",
+        "component_code": "C3662799",
+        "attribute_value_name": "Integrated FET"
+      },
+      {
+        "attribute_name_en": "Trigger Current",
+        "component_code": "C3662799",
+        "attribute_value_name": "500mA~6A"
+      },
+      {
+        "attribute_name_en": "Mounting Type",
+        "component_code": "C3662799",
+        "attribute_value_name": "Surface Mount"
+      },
+      {
+        "attribute_name_en": "RDS(on)",
+        "component_code": "C3662799",
+        "attribute_value_name": "28.3mΩ"
+      },
+      {
+        "attribute_name_en": "Length",
+        "component_code": "C3662799",
+        "attribute_value_name": "2mm"
+      },
+      {
+        "attribute_name_en": "Number of Lines",
+        "component_code": "C3662799",
+        "attribute_value_name": "1"
+      },
+      {
+        "attribute_name_en": "Features",
+        "component_code": "C3662799",
+        "attribute_value_name": "Overcurrent Protection、Short-Circuit  Protection、Under-voltage lockout、Thermal Protection、Overvoltage clamping protection"
+      },
+      {
+        "attribute_name_en": "Height",
+        "component_code": "C3662799",
+        "attribute_value_name": "1mm"
+      },
+      {
+        "attribute_name_en": "Width",
+        "component_code": "C3662799",
+        "attribute_value_name": "2mm"
+      },
+      {
+        "attribute_name_en": "Operating temperature",
+        "component_code": "C3662799",
+        "attribute_value_name": "-40℃~+125℃"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-10T14:01:37.782802+00:00",
+  "url": "https://jlcpcb.com/partdetail/C125094",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "LTST-C190KGKT",
+    "componentBrandEn": "Lite-On",
+    "componentCode": "C125094",
+    "describe": "-30℃~+85℃ 130° 20mA 2V 35mcd 567.5nm~576.5nm 574nm 75mW Discrete Diode Water Clear Yellow Green 0603 LED Indication - Discrete ROHS",
+    "componentSpecificationEn": "0603",
+    "lcscComponentId": 136370,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231512_Lite-On-LTST-C190KGKT_C125094.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 3",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 722,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 152499,
+    "overseasStockCount": 159974,
+    "initialPrice": 0.0167,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Wavelength - Dominant",
+        "component_code": "C125094",
+        "attribute_value_name": "567.5nm~576.5nm"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C125094",
+        "attribute_value_name": "-30℃~+85℃"
+      },
+      {
+        "attribute_name_en": "Test Current",
+        "component_code": "C125094",
+        "attribute_value_name": "20mA"
+      },
+      {
+        "attribute_name_en": "Viewing Angle",
+        "component_code": "C125094",
+        "attribute_value_name": "130°"
+      },
+      {
+        "attribute_name_en": "Luminous Intensity",
+        "component_code": "C125094",
+        "attribute_value_name": "35mcd"
+      },
+      {
+        "attribute_name_en": "Power(Watts)",
+        "component_code": "C125094",
+        "attribute_value_name": "75mW"
+      },
+      {
+        "attribute_name_en": "Diode Configuration",
+        "component_code": "C125094",
+        "attribute_value_name": "Discrete Diode"
+      },
+      {
+        "attribute_name_en": "Illumination Color",
+        "component_code": "C125094",
+        "attribute_value_name": "Yellow Green"
+      },
+      {
+        "attribute_name_en": "Lens Color",
+        "component_code": "C125094",
+        "attribute_value_name": "Water Clear"
+      },
+      {
+        "attribute_name_en": "Peak Wavelength",
+        "component_code": "C125094",
+        "attribute_value_name": "574nm"
+      },
+      {
+        "attribute_name_en": "Voltage - Forward(Vf)",
+        "component_code": "C125094",
+        "attribute_value_name": "2V"
+      }
+    ]
+  }
+}

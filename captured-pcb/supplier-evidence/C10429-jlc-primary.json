@@ -1,0 +1,96 @@
+{
+  "observed_at": "2026-10-10T06:24:06.989156+00:00",
+  "url": "https://jlcpcb.com/partdetail/C10429",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "SN74LVC2G17DBVR",
+    "componentBrandEn": "Texas Instruments",
+    "componentCode": "C10429",
+    "describe": "-40℃~+85℃ 1 1.65V~5.5V 10uA 2 32mA 32mA 5.4ns@3.3V,50pF 74LVC Schmitt trigger SOT-23-6 Buffers, Drivers, Receivers, Transceivers ROHS",
+    "componentSpecificationEn": "SOT-23-6",
+    "lcscComponentId": 10972,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1809200013_Texas-Instruments-SN74LVC2G17DBVR_C10429.pdf",
+    "dataManualOfficialLink": "https://www.ti.com/cn/lit/gpn/sn74lvc2g17",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 39,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 40677,
+    "overseasStockCount": 42073,
+    "initialPrice": 0.2356,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Input type",
+        "component_code": "C10429",
+        "attribute_value_name": "Schmitt trigger"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C10429",
+        "attribute_value_name": "-40℃~+85℃"
+      },
+      {
+        "attribute_name_en": "Propagation Delay",
+        "component_code": "C10429",
+        "attribute_value_name": "5.4ns@3.3V,50pF"
+      },
+      {
+        "attribute_name_en": "Number of Bits per Element",
+        "component_code": "C10429",
+        "attribute_value_name": "1"
+      },
+      {
+        "attribute_name_en": "Voltage - Supply",
+        "component_code": "C10429",
+        "attribute_value_name": "1.65V~5.5V"
+      },
+      {
+        "attribute_name_en": "Channel Type",
+        "component_code": "C10429",
+        "attribute_value_name": "Unidirectional"
+      },
+      {
+        "attribute_name_en": "Quiescent Current",
+        "component_code": "C10429",
+        "attribute_value_name": "10uA"
+      },
+      {
+        "attribute_name_en": "Current - Output High(IOH)",
+        "component_code": "C10429",
+        "attribute_value_name": "32mA"
+      },
+      {
+        "attribute_name_en": "Features",
+        "component_code": "C10429",
+        "attribute_value_name": "Power-off isolation"
+      },
+      {
+        "attribute_name_en": "Number of Elements",
+        "component_code": "C10429",
+        "attribute_value_name": "2"
+      },
+      {
+        "attribute_name_en": "Logic Family",
+        "component_code": "C10429",
+        "attribute_value_name": "74LVC"
+      },
+      {
+        "attribute_name_en": "Current - Output Low(IOL)",
+        "component_code": "C10429",
+        "attribute_value_name": "32mA"
+      }
+    ]
+  }
+}

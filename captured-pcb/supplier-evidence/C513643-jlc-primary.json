@@ -1,0 +1,71 @@
+{
+  "observed_at": "2026-10-10T06:13:31.957589+00:00",
+  "url": "https://jlcpcb.com/partdetail/C513643",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "RC2512FK-07470RL",
+    "componentBrandEn": "YAGEO",
+    "componentCode": "C513643",
+    "describe": "-55℃~+155℃ 1W 200V 470Ω Thick Film Resistor ±1% ±100ppm/℃ 2512 Chip Resistor - Surface Mount ROHS",
+    "componentSpecificationEn": "2512",
+    "lcscComponentId": 528470,
+    "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC2512FK-07470RL_C513643.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 116,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 55,
+    "overseasStockCount": 63,
+    "initialPrice": 0.0971,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Resistance",
+        "component_code": "C513643",
+        "attribute_value_name": "470Ω"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C513643",
+        "attribute_value_name": "-55℃~+155℃"
+      },
+      {
+        "attribute_name_en": "Power(Watts)",
+        "component_code": "C513643",
+        "attribute_value_name": "1W"
+      },
+      {
+        "attribute_name_en": "Type",
+        "component_code": "C513643",
+        "attribute_value_name": "Thick Film Resistor"
+      },
+      {
+        "attribute_name_en": "Voltage-Supply(Max)",
+        "component_code": "C513643",
+        "attribute_value_name": "200V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C513643",
+        "attribute_value_name": "±1%"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C513643",
+        "attribute_value_name": "±100ppm/℃"
+      }
+    ]
+  }
+}

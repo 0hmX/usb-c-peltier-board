@@ -1,0 +1,96 @@
+{
+  "observed_at": "2026-10-10T06:26:45.687110+00:00",
+  "url": "https://jlcpcb.com/partdetail/C191884",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "TPS54202DDCR",
+    "componentBrandEn": "Texas Instruments",
+    "componentCode": "C191884",
+    "describe": "-40℃~+125℃@(TJ) 1 2A 4.5V~28V 45uA 500kHz Adjustable Buck Buck Built-in Yes SOT-23-6 DC-DC Converters ROHS",
+    "componentSpecificationEn": "SOT-23-6",
+    "lcscComponentId": 218471,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121324_Texas-Instruments-TPS54202DDCR_C191884.pdf",
+    "dataManualOfficialLink": "https://www.ti.com/cn/lit/gpn/tps54202",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 65,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 279537,
+    "overseasStockCount": 282827,
+    "initialPrice": 0.1774,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C191884",
+        "attribute_value_name": "-40℃~+125℃@(TJ)"
+      },
+      {
+        "attribute_name_en": "Function",
+        "component_code": "C191884",
+        "attribute_value_name": "Step-down type"
+      },
+      {
+        "attribute_name_en": "Synchronous Rectifier",
+        "component_code": "C191884",
+        "attribute_value_name": "Yes"
+      },
+      {
+        "attribute_name_en": "Frequency - Switching",
+        "component_code": "C191884",
+        "attribute_value_name": "500kHz"
+      },
+      {
+        "attribute_name_en": "Output Type",
+        "component_code": "C191884",
+        "attribute_value_name": "Adjustable"
+      },
+      {
+        "attribute_name_en": "Voltage - Supply",
+        "component_code": "C191884",
+        "attribute_value_name": "4.5V~28V"
+      },
+      {
+        "attribute_name_en": "Output Current",
+        "component_code": "C191884",
+        "attribute_value_name": "2A"
+      },
+      {
+        "attribute_name_en": "Quiescent Current",
+        "component_code": "C191884",
+        "attribute_value_name": "45uA"
+      },
+      {
+        "attribute_name_en": "Features",
+        "component_code": "C191884",
+        "attribute_value_name": "Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum)"
+      },
+      {
+        "attribute_name_en": "Switch tube (built-in/external)",
+        "component_code": "C191884",
+        "attribute_value_name": "Built-in"
+      },
+      {
+        "attribute_name_en": "Topology",
+        "component_code": "C191884",
+        "attribute_value_name": "Buck"
+      },
+      {
+        "attribute_name_en": "Number of Outputs",
+        "component_code": "C191884",
+        "attribute_value_name": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T06:29:17.752700+00:00",
+  "url": "https://jlcpcb.com/partdetail/C237304",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "GRM31CC72A475KE11L",
+    "componentBrandEn": "Murata Electronics",
+    "componentCode": "C237304",
+    "describe": "100V 4.7uF X7S ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "1206",
+    "lcscComponentId": 236748,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2006220932_Murata-Electronics-GRM31CC72A475KE11L_C237304.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 23,
+    "encapsulationNumber": 2000,
+    "canPresaleNumber": 206559,
+    "overseasStockCount": 243374,
+    "initialPrice": 0.3924,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C237304",
+        "attribute_value_name": "100V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C237304",
+        "attribute_value_name": "±10%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C237304",
+        "attribute_value_name": "4.7uF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C237304",
+        "attribute_value_name": "X7S"
+      }
+    ]
+  }
+}

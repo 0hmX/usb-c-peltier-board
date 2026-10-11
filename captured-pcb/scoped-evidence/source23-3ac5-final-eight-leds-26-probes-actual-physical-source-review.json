@@ -1,0 +1,2398 @@
+{
+  "scope": "Final genuine settled Source23 eight fitted LEDs/26 real bare probes: narrow exact imported/source role projection carry plus new same-CJS independent physical571-pad/500-head map. Real K1/A2/series/isolated buffer roles and power/status/calibration memberships verified without historical semantic replay or second geometry/DSU scan. Current166/166 direct main reference is graph-bound; complete manufacturing/release remains separate.",
+  "boundFiles": [
+    {
+      "path": "dist/debug-source-placement-23/circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "path": "reviews/progress-connectivity/source-placement-23-3ac5-physical-nets.json",
+      "sha256": "63d344cebf918a2e17961cf2f50817e42eae69356bffda11a277368bcdfc7b25"
+    },
+    {
+      "path": "reviews/progress-connectivity/source23-current-3ac5-pad-island-and-attached-head-map.json",
+      "sha256": "dc27968ac837fe2c571b8b93e05f001d69c9605c12448e18299af6b94dc11752"
+    },
+    {
+      "path": "dist/debug-source-placement-23-evidence/source-owned-copper-proof.json",
+      "sha256": "1363c9e8e67a81fa56da1a931185fa39bb35e79c47e606fd4d2b10306f96233f"
+    },
+    {
+      "path": "reviews/debug/source22-a822-final-eight-leds-26-probes-actual-physical-source-review.json",
+      "sha256": "f2d0e191ddea0efb836f2d5c794ff8603b7c0130a185dcd555e8c1c6deded06f"
+    },
+    {
+      "path": "reviews/debug/source23-settled-3ac5-safe-actual-tree-support-gate.json",
+      "sha256": "b6f33b811d9784943330e7dab5e18126d4a760839ade0a583ffa5c5c9241ea72"
+    },
+    {
+      "path": "reviews/debug/source23-settled-3ac5-pd-valid-shared-five-path-owned-carry-v2.json",
+      "sha256": "43528b35a83ff244e4b08f6a171d2fba7b29ee9d89749fe113be386611ba8327"
+    },
+    {
+      "path": "reviews/toolchain-checkpoints/source23-settled-capture/handoff.json",
+      "sha256": "92525c2e60c91c222b7d0e2761d0fdfa2f8dc871798bfc9c88186b524e2717a3"
+    }
+  ],
+  "pass": true,
+  "errors": [],
+  "fittedDebugLedCount": 8,
+  "realBareProbeCount": 26,
+  "signalPowerStatusProbeCount": 18,
+  "mainReferenceGroundProbeCount": 8,
+  "fittedIndicators": [
+    {
+      "led": "D501",
+      "fitted": true,
+      "limitingResistor": "R501",
+      "actualOhms": 22000,
+      "feedNet": "VBUS_RAW",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_port_604:ace2387e11a3",
+      "actualFeedPad": {
+        "selector": "R501.pin1",
+        "aliases": [
+          "R501.1",
+          "R501.anode",
+          "R501.left",
+          "R501.pin1",
+          "R501.pos"
+        ],
+        "padId": "pcb_smtpad_479",
+        "net": "VBUS_RAW",
+        "sourceGraphRoot": "source_port_550",
+        "physicalPadIslandId": "source_port_550:1bd42779f1be",
+        "pcbPortId": "pcb_port_598",
+        "sourcePortId": "source_port_598",
+        "worldMm": [
+          -41.75,
+          19
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R501.pin2",
+        "aliases": [
+          "R501.2",
+          "R501.cathode",
+          "R501.neg",
+          "R501.pin2",
+          "R501.right"
+        ],
+        "padId": "pcb_smtpad_478",
+        "net": "D501_A",
+        "sourceGraphRoot": "source_port_604",
+        "physicalPadIslandId": "source_port_604:ace2387e11a3",
+        "pcbPortId": "pcb_port_599",
+        "sourcePortId": "source_port_599",
+        "worldMm": [
+          -43.25,
+          19
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D501.pin2",
+        "aliases": [
+          "D501.2",
+          "D501.anode",
+          "D501.pin2",
+          "D501.pos"
+        ],
+        "padId": "pcb_smtpad_480",
+        "net": "D501_A",
+        "sourceGraphRoot": "source_port_604",
+        "physicalPadIslandId": "source_port_604:ace2387e11a3",
+        "pcbPortId": "pcb_port_601",
+        "sourcePortId": "source_port_601",
+        "worldMm": [
+          -44.25,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D501.pin1",
+        "aliases": [
+          "D501.1",
+          "D501.cathode",
+          "D501.neg",
+          "D501.pin1"
+        ],
+        "padId": "pcb_smtpad_481",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_600",
+        "sourcePortId": "source_port_600",
+        "worldMm": [
+          -45.75,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D502",
+      "fitted": true,
+      "limitingResistor": "R502",
+      "actualOhms": 22000,
+      "feedNet": "VBUS_TEC",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_port_616:9445b80d198b",
+      "actualFeedPad": {
+        "selector": "R502.pin1",
+        "aliases": [
+          "R502.1",
+          "R502.anode",
+          "R502.left",
+          "R502.pin1",
+          "R502.pos"
+        ],
+        "padId": "pcb_smtpad_483",
+        "net": "VBUS_TEC",
+        "sourceGraphRoot": "source_port_461",
+        "physicalPadIslandId": "source_port_461:0ab35210131a",
+        "pcbPortId": "pcb_port_610",
+        "sourcePortId": "source_port_610",
+        "worldMm": [
+          -7.6,
+          25.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R502.pin2",
+        "aliases": [
+          "R502.2",
+          "R502.cathode",
+          "R502.neg",
+          "R502.pin2",
+          "R502.right"
+        ],
+        "padId": "pcb_smtpad_482",
+        "net": "D502_A",
+        "sourceGraphRoot": "source_port_616",
+        "physicalPadIslandId": "source_port_616:9445b80d198b",
+        "pcbPortId": "pcb_port_611",
+        "sourcePortId": "source_port_611",
+        "worldMm": [
+          -9.1,
+          25.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D502.pin2",
+        "aliases": [
+          "D502.2",
+          "D502.anode",
+          "D502.pin2",
+          "D502.pos"
+        ],
+        "padId": "pcb_smtpad_484",
+        "net": "D502_A",
+        "sourceGraphRoot": "source_port_616",
+        "physicalPadIslandId": "source_port_616:9445b80d198b",
+        "pcbPortId": "pcb_port_613",
+        "sourcePortId": "source_port_613",
+        "worldMm": [
+          -38.25,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D502.pin1",
+        "aliases": [
+          "D502.1",
+          "D502.cathode",
+          "D502.neg",
+          "D502.pin1"
+        ],
+        "padId": "pcb_smtpad_485",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_612",
+        "sourcePortId": "source_port_612",
+        "worldMm": [
+          -39.75,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D503",
+      "fitted": true,
+      "limitingResistor": "R503",
+      "actualOhms": 2490,
+      "feedNet": "V3V3",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_port_628:567923aeb33d",
+      "actualFeedPad": {
+        "selector": "R503.pin1",
+        "aliases": [
+          "R503.1",
+          "R503.anode",
+          "R503.left",
+          "R503.pin1",
+          "R503.pos"
+        ],
+        "padId": "pcb_smtpad_487",
+        "net": "V3V3",
+        "sourceGraphRoot": "source_port_778",
+        "physicalPadIslandId": "source_port_778:790868533966",
+        "pcbPortId": "pcb_port_622",
+        "sourcePortId": "source_port_622",
+        "worldMm": [
+          -6.55,
+          -8.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R503.pin2",
+        "aliases": [
+          "R503.2",
+          "R503.cathode",
+          "R503.neg",
+          "R503.pin2",
+          "R503.right"
+        ],
+        "padId": "pcb_smtpad_486",
+        "net": "D503_A",
+        "sourceGraphRoot": "source_port_628",
+        "physicalPadIslandId": "source_port_628:567923aeb33d",
+        "pcbPortId": "pcb_port_623",
+        "sourcePortId": "source_port_623",
+        "worldMm": [
+          -5.05,
+          -8.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D503.pin2",
+        "aliases": [
+          "D503.2",
+          "D503.anode",
+          "D503.pin2",
+          "D503.pos"
+        ],
+        "padId": "pcb_smtpad_488",
+        "net": "D503_A",
+        "sourceGraphRoot": "source_port_628",
+        "physicalPadIslandId": "source_port_628:567923aeb33d",
+        "pcbPortId": "pcb_port_625",
+        "sourcePortId": "source_port_625",
+        "worldMm": [
+          -32.25,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D503.pin1",
+        "aliases": [
+          "D503.1",
+          "D503.cathode",
+          "D503.neg",
+          "D503.pin1"
+        ],
+        "padId": "pcb_smtpad_489",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_624",
+        "sourcePortId": "source_port_624",
+        "worldMm": [
+          -33.75,
+          -6
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D504",
+      "fitted": true,
+      "limitingResistor": "R504",
+      "actualOhms": 15000,
+      "feedNet": "V12_FAN",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_port_638:8c783f4db2f7",
+      "actualFeedPad": {
+        "selector": "R504.pin1",
+        "aliases": [
+          "R504.1",
+          "R504.anode",
+          "R504.left",
+          "R504.pin1",
+          "R504.pos"
+        ],
+        "padId": "pcb_smtpad_491",
+        "net": "V12_FAN",
+        "sourceGraphRoot": "source_port_580",
+        "physicalPadIslandId": "source_port_580:9570fa309620",
+        "pcbPortId": "pcb_port_632",
+        "sourcePortId": "source_port_632",
+        "worldMm": [
+          43.2,
+          -20.45
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R504.pin2",
+        "aliases": [
+          "R504.2",
+          "R504.cathode",
+          "R504.neg",
+          "R504.pin2",
+          "R504.right"
+        ],
+        "padId": "pcb_smtpad_490",
+        "net": "D504_A",
+        "sourceGraphRoot": "source_port_638",
+        "physicalPadIslandId": "source_port_638:8c783f4db2f7",
+        "pcbPortId": "pcb_port_633",
+        "sourcePortId": "source_port_633",
+        "worldMm": [
+          43.2,
+          -21.95
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D504.pin2",
+        "aliases": [
+          "D504.2",
+          "D504.anode",
+          "D504.pin2",
+          "D504.pos"
+        ],
+        "padId": "pcb_smtpad_492",
+        "net": "D504_A",
+        "sourceGraphRoot": "source_port_638",
+        "physicalPadIslandId": "source_port_638:8c783f4db2f7",
+        "pcbPortId": "pcb_port_635",
+        "sourcePortId": "source_port_635",
+        "worldMm": [
+          -44.25,
+          -12
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D504.pin1",
+        "aliases": [
+          "D504.1",
+          "D504.cathode",
+          "D504.neg",
+          "D504.pin1"
+        ],
+        "padId": "pcb_smtpad_493",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_634",
+        "sourcePortId": "source_port_634",
+        "worldMm": [
+          -45.75,
+          -12
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D505",
+      "fitted": true,
+      "limitingResistor": "R505",
+      "actualOhms": 15000,
+      "feedNet": "TEC_POS",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_port_650:cb1f90b30096",
+      "actualFeedPad": {
+        "selector": "R505.pin1",
+        "aliases": [
+          "R505.1",
+          "R505.anode",
+          "R505.left",
+          "R505.pin1",
+          "R505.pos"
+        ],
+        "padId": "pcb_smtpad_495",
+        "net": "TEC_POS",
+        "sourceGraphRoot": "source_net_5",
+        "physicalPadIslandId": "source_net_5:eed8acd2c436",
+        "pcbPortId": "pcb_port_644",
+        "sourcePortId": "source_port_644",
+        "worldMm": [
+          28.4,
+          -7.65
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R505.pin2",
+        "aliases": [
+          "R505.2",
+          "R505.cathode",
+          "R505.neg",
+          "R505.pin2",
+          "R505.right"
+        ],
+        "padId": "pcb_smtpad_494",
+        "net": "D505_A",
+        "sourceGraphRoot": "source_port_650",
+        "physicalPadIslandId": "source_port_650:cb1f90b30096",
+        "pcbPortId": "pcb_port_645",
+        "sourcePortId": "source_port_645",
+        "worldMm": [
+          28.4,
+          -9.15
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D505.pin2",
+        "aliases": [
+          "D505.2",
+          "D505.anode",
+          "D505.pin2",
+          "D505.pos"
+        ],
+        "padId": "pcb_smtpad_496",
+        "net": "D505_A",
+        "sourceGraphRoot": "source_port_650",
+        "physicalPadIslandId": "source_port_650:cb1f90b30096",
+        "pcbPortId": "pcb_port_647",
+        "sourcePortId": "source_port_647",
+        "worldMm": [
+          -38.25,
+          -12
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D505.pin1",
+        "aliases": [
+          "D505.1",
+          "D505.cathode",
+          "D505.neg",
+          "D505.pin1"
+        ],
+        "padId": "pcb_smtpad_497",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_646",
+        "sourcePortId": "source_port_646",
+        "worldMm": [
+          -39.75,
+          -12
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D506",
+      "fitted": true,
+      "limitingResistor": "R506",
+      "actualOhms": 2490,
+      "feedNet": "V3V3",
+      "cathodeNet": "DBG_PD_GATE",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_net_97:99413a9eebb1",
+      "actualFeedPad": {
+        "selector": "R506.pin1",
+        "aliases": [
+          "R506.1",
+          "R506.anode",
+          "R506.left",
+          "R506.pin1",
+          "R506.pos"
+        ],
+        "padId": "pcb_smtpad_499",
+        "net": "V3V3",
+        "sourceGraphRoot": "source_port_778",
+        "physicalPadIslandId": "source_port_778:790868533966",
+        "pcbPortId": "pcb_port_656",
+        "sourcePortId": "source_port_656",
+        "worldMm": [
+          -45,
+          -21.25
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R506.pin2",
+        "aliases": [
+          "R506.2",
+          "R506.cathode",
+          "R506.neg",
+          "R506.pin2",
+          "R506.right"
+        ],
+        "padId": "pcb_smtpad_498",
+        "net": "D506_A",
+        "sourceGraphRoot": "source_net_97",
+        "physicalPadIslandId": "source_net_97:99413a9eebb1",
+        "pcbPortId": "pcb_port_657",
+        "sourcePortId": "source_port_657",
+        "worldMm": [
+          -45,
+          -19.75
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D506.pin2",
+        "aliases": [
+          "D506.2",
+          "D506.anode",
+          "D506.pin2",
+          "D506.pos"
+        ],
+        "padId": "pcb_smtpad_500",
+        "net": "D506_A",
+        "sourceGraphRoot": "source_net_97",
+        "physicalPadIslandId": "source_net_97:99413a9eebb1",
+        "pcbPortId": "pcb_port_659",
+        "sourcePortId": "source_port_659",
+        "worldMm": [
+          -44.25,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D506.pin1",
+        "aliases": [
+          "D506.1",
+          "D506.cathode",
+          "D506.neg",
+          "D506.pin1"
+        ],
+        "padId": "pcb_smtpad_501",
+        "net": "DBG_PD_GATE",
+        "sourceGraphRoot": "source_port_737",
+        "physicalPadIslandId": "source_port_737:326c1dd85bd7",
+        "pcbPortId": "pcb_port_658",
+        "sourcePortId": "source_port_658",
+        "worldMm": [
+          -45.75,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D507",
+      "fitted": true,
+      "limitingResistor": "R507",
+      "actualOhms": 2490,
+      "feedNet": "DBG_TEC_PERMIT",
+      "cathodeNet": "GND",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_net_98:af61e1c82550",
+      "actualFeedPad": {
+        "selector": "R507.pin1",
+        "aliases": [
+          "R507.1",
+          "R507.anode",
+          "R507.left",
+          "R507.pin1",
+          "R507.pos"
+        ],
+        "padId": "pcb_smtpad_503",
+        "net": "DBG_TEC_PERMIT",
+        "sourceGraphRoot": "source_port_794",
+        "physicalPadIslandId": "source_port_794:ec89ddf9c855",
+        "pcbPortId": "pcb_port_660",
+        "sourcePortId": "source_port_660",
+        "worldMm": [
+          -39,
+          -21.25
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R507.pin2",
+        "aliases": [
+          "R507.2",
+          "R507.cathode",
+          "R507.neg",
+          "R507.pin2",
+          "R507.right"
+        ],
+        "padId": "pcb_smtpad_502",
+        "net": "D507_A",
+        "sourceGraphRoot": "source_net_98",
+        "physicalPadIslandId": "source_net_98:af61e1c82550",
+        "pcbPortId": "pcb_port_661",
+        "sourcePortId": "source_port_661",
+        "worldMm": [
+          -39,
+          -19.75
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D507.pin2",
+        "aliases": [
+          "D507.2",
+          "D507.anode",
+          "D507.pin2",
+          "D507.pos"
+        ],
+        "padId": "pcb_smtpad_504",
+        "net": "D507_A",
+        "sourceGraphRoot": "source_net_98",
+        "physicalPadIslandId": "source_net_98:af61e1c82550",
+        "pcbPortId": "pcb_port_663",
+        "sourcePortId": "source_port_663",
+        "worldMm": [
+          -38.25,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D507.pin1",
+        "aliases": [
+          "D507.1",
+          "D507.cathode",
+          "D507.neg",
+          "D507.pin1"
+        ],
+        "padId": "pcb_smtpad_505",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_662",
+        "sourcePortId": "source_port_662",
+        "worldMm": [
+          -39.75,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    },
+    {
+      "led": "D508",
+      "fitted": true,
+      "limitingResistor": "R508",
+      "actualOhms": 2490,
+      "feedNet": "V3V3",
+      "cathodeNet": "DBG_HW_INHIBIT",
+      "cathodePin": 1,
+      "anodePin": 2,
+      "physicalSeriesIslandId": "source_net_99:4bc32f6ba698",
+      "actualFeedPad": {
+        "selector": "R508.pin1",
+        "aliases": [
+          "R508.1",
+          "R508.anode",
+          "R508.left",
+          "R508.pin1",
+          "R508.pos"
+        ],
+        "padId": "pcb_smtpad_507",
+        "net": "V3V3",
+        "sourceGraphRoot": "source_port_778",
+        "physicalPadIslandId": "source_port_778:790868533966",
+        "pcbPortId": "pcb_port_666",
+        "sourcePortId": "source_port_666",
+        "worldMm": [
+          -31,
+          -21.25
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualLimitedPad": {
+        "selector": "R508.pin2",
+        "aliases": [
+          "R508.2",
+          "R508.cathode",
+          "R508.neg",
+          "R508.pin2",
+          "R508.right"
+        ],
+        "padId": "pcb_smtpad_506",
+        "net": "D508_A",
+        "sourceGraphRoot": "source_net_99",
+        "physicalPadIslandId": "source_net_99:4bc32f6ba698",
+        "pcbPortId": "pcb_port_667",
+        "sourcePortId": "source_port_667",
+        "worldMm": [
+          -31,
+          -19.75
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualAnodePad": {
+        "selector": "D508.pin2",
+        "aliases": [
+          "D508.2",
+          "D508.anode",
+          "D508.pin2",
+          "D508.pos"
+        ],
+        "padId": "pcb_smtpad_509",
+        "net": "D508_A",
+        "sourceGraphRoot": "source_net_99",
+        "physicalPadIslandId": "source_net_99:4bc32f6ba698",
+        "pcbPortId": "pcb_port_669",
+        "sourcePortId": "source_port_669",
+        "worldMm": [
+          -30.25,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "actualCathodePad": {
+        "selector": "D508.pin1",
+        "aliases": [
+          "D508.1",
+          "D508.cathode",
+          "D508.neg",
+          "D508.pin1"
+        ],
+        "padId": "pcb_smtpad_508",
+        "net": "DBG_HW_INHIBIT",
+        "sourceGraphRoot": "source_port_739",
+        "physicalPadIslandId": "source_port_739:eef876451bd8",
+        "pcbPortId": "pcb_port_668",
+        "sourcePortId": "source_port_668",
+        "worldMm": [
+          -31.75,
+          -18
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "sourceSeriesAndReturnObligationsRetained": true
+    }
+  ],
+  "bufferInputOutputChannels": [
+    {
+      "buffer": "U_DBG1",
+      "inputPin": 1,
+      "inputNet": "PD_VALID_N",
+      "outputPin": 6,
+      "outputNet": "DBG_PD_GATE",
+      "inputActualCommonIsland": "source_port_1150:f16b356330fc",
+      "outputActualCommonIsland": "source_port_737:326c1dd85bd7",
+      "sourceRolesDistinct": true
+    },
+    {
+      "buffer": "U_DBG1",
+      "inputPin": 3,
+      "inputNet": "TEC_SAFE_EN",
+      "outputPin": 4,
+      "outputNet": "DBG_TEC_PERMIT",
+      "inputActualCommonIsland": "source_port_1133:6a9bbebe0a41",
+      "outputActualCommonIsland": "source_port_794:ec89ddf9c855",
+      "sourceRolesDistinct": true
+    },
+    {
+      "buffer": "U_DBG2",
+      "inputPin": 1,
+      "inputNet": "INPUT_CLEAR_N",
+      "outputPin": 6,
+      "outputNet": "DBG_HW_INHIBIT",
+      "inputActualCommonIsland": "source_port_1036:984cec508e82",
+      "outputActualCommonIsland": "source_port_739:eef876451bd8",
+      "sourceRolesDistinct": true
+    },
+    {
+      "buffer": "U_DBG2",
+      "inputPin": 3,
+      "inputNet": "MCU_RUN",
+      "outputPin": 4,
+      "outputNet": "DBG_MCU_RUN",
+      "inputActualCommonIsland": "source_port_1057:f7db1e7466d3",
+      "outputActualCommonIsland": "source_net_103:9f3b7bfb4980",
+      "sourceRolesDistinct": true
+    }
+  ],
+  "probes": [
+    {
+      "probe": "TP01",
+      "net": "VBUS_RAW",
+      "actualPad": {
+        "selector": "TP01.pin1",
+        "aliases": [
+          "TP01.1",
+          "TP01.pin1"
+        ],
+        "padId": "pcb_smtpad_526",
+        "net": "VBUS_RAW",
+        "sourceGraphRoot": "source_port_550",
+        "physicalPadIslandId": "source_port_550:1bd42779f1be",
+        "pcbPortId": "pcb_port_724",
+        "sourcePortId": "source_port_724",
+        "worldMm": [
+          -39.72,
+          22
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 13,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP01_BULK_PICKUP",
+          "displayName": "TP01.pin1 to C_USB_IN.pin1",
+          "sourceTraceId": "source_trace_646",
+          "pcbTraceId": "pcb_trace_179",
+          "sourceMaxMm": null
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TP02",
+      "net": "VBUS_TEC",
+      "actualPad": {
+        "selector": "TP02.pin1",
+        "aliases": [
+          "TP02.1",
+          "TP02.pin1"
+        ],
+        "padId": "pcb_smtpad_527",
+        "net": "VBUS_TEC",
+        "sourceGraphRoot": "source_port_461",
+        "physicalPadIslandId": "source_port_461:0ab35210131a",
+        "pcbPortId": "pcb_port_725",
+        "sourcePortId": "source_port_725",
+        "worldMm": [
+          -8,
+          32
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 23,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP02_BULK_PICKUP",
+          "displayName": "TP02.pin1 to C25.pin1",
+          "sourceTraceId": "source_trace_648",
+          "pcbTraceId": "pcb_trace_180",
+          "sourceMaxMm": null
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TP03",
+      "net": "V3V3",
+      "actualPad": {
+        "selector": "TP03.pin1",
+        "aliases": [
+          "TP03.1",
+          "TP03.pin1"
+        ],
+        "padId": "pcb_smtpad_528",
+        "net": "V3V3",
+        "sourceGraphRoot": "source_port_778",
+        "physicalPadIslandId": "source_port_778:790868533966",
+        "pcbPortId": "pcb_port_726",
+        "sourcePortId": "source_port_726",
+        "worldMm": [
+          -28,
+          -13
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 51,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "CLEAR_BUFFER_V3_TRUNK",
+          "displayName": "TP03.pin1 to U_CLEAR_BUFFER.pin5",
+          "sourceTraceId": "source_trace_362",
+          "pcbTraceId": "pcb_trace_101",
+          "sourceMaxMm": null
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "V3_COMPLETE_SOURCE_RAIL"
+      ]
+    },
+    {
+      "probe": "TP04",
+      "net": "V12_FAN",
+      "actualPad": {
+        "selector": "TP04.pin1",
+        "aliases": [
+          "TP04.1",
+          "TP04.pin1"
+        ],
+        "padId": "pcb_smtpad_529",
+        "net": "V12_FAN",
+        "sourceGraphRoot": "source_port_580",
+        "physicalPadIslandId": "source_port_580:9570fa309620",
+        "pcbPortId": "pcb_port_727",
+        "sourcePortId": "source_port_727",
+        "worldMm": [
+          40,
+          -21.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 8,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "SUPPLY_FAN_MST0_0_SPAN_0",
+          "displayName": "R504.pin1 to TP04.pin1",
+          "sourceTraceId": "source_trace_695",
+          "pcbTraceId": "pcb_trace_213",
+          "sourceMaxMm": 3.6449999999999996
+        },
+        {
+          "name": "SUPPLY_FAN_MST1_0_SPAN_0",
+          "displayName": "C221.pin1 to TP04.pin1",
+          "sourceTraceId": "source_trace_696",
+          "pcbTraceId": "pcb_trace_214",
+          "sourceMaxMm": 6.749
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "FAN_COMPLETE_SOURCE_RAIL"
+      ]
+    },
+    {
+      "probe": "TP05",
+      "net": "TEC_POS",
+      "actualPad": {
+        "selector": "TP05.pin1",
+        "aliases": [
+          "TP05.1",
+          "TP05.pin1"
+        ],
+        "padId": "pcb_smtpad_530",
+        "net": "TEC_POS",
+        "sourceGraphRoot": "source_net_5",
+        "physicalPadIslandId": "source_net_5:eed8acd2c436",
+        "pcbPortId": "pcb_port_728",
+        "sourcePortId": "source_port_728",
+        "worldMm": [
+          34,
+          -4.669921
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 12,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP05_BULK_PICKUP",
+          "displayName": "TP05.pin1 to C29.pin1",
+          "sourceTraceId": "source_trace_652",
+          "pcbTraceId": "pcb_trace_181",
+          "sourceMaxMm": null
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TP06",
+      "net": "HOT_ADC",
+      "actualPad": {
+        "selector": "TP06.pin1",
+        "aliases": [
+          "TP06.1",
+          "TP06.pin1"
+        ],
+        "padId": "pcb_smtpad_531",
+        "net": "HOT_ADC",
+        "sourceGraphRoot": "source_port_806",
+        "physicalPadIslandId": "source_port_806:e1369accbd75",
+        "pcbPortId": "pcb_port_729",
+        "sourcePortId": "source_port_729",
+        "worldMm": [
+          4.8,
+          -0.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 4,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP06_FILTERED_TO",
+          "displayName": "TP06_ADC_TO_VIA.top to TP06.pin1",
+          "sourceTraceId": "source_trace_618",
+          "pcbTraceId": "pcb_trace_162",
+          "sourceMaxMm": 1.1600000000000001
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP06_FILTERED_TAP"
+      ]
+    },
+    {
+      "probe": "TP07",
+      "net": "COLD_ADC",
+      "actualPad": {
+        "selector": "TP07.pin1",
+        "aliases": [
+          "TP07.1",
+          "TP07.pin1"
+        ],
+        "padId": "pcb_smtpad_532",
+        "net": "COLD_ADC",
+        "sourceGraphRoot": "source_port_808",
+        "physicalPadIslandId": "source_port_808:5c92b706b9fa",
+        "pcbPortId": "pcb_port_730",
+        "sourcePortId": "source_port_730",
+        "worldMm": [
+          7.8,
+          -0.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 4,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP07_FILTERED_TO",
+          "displayName": "TP07_ADC_TO_VIA.top to TP07.pin1",
+          "sourceTraceId": "source_trace_621",
+          "pcbTraceId": "pcb_trace_165",
+          "sourceMaxMm": 1.5999999999999999
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP07_FILTERED_TAP"
+      ]
+    },
+    {
+      "probe": "TP08",
+      "net": "VBUS_ADC",
+      "actualPad": {
+        "selector": "TP08.pin1",
+        "aliases": [
+          "TP08.1",
+          "TP08.pin1"
+        ],
+        "padId": "pcb_smtpad_533",
+        "net": "VBUS_ADC",
+        "sourceGraphRoot": "source_port_1064",
+        "physicalPadIslandId": "source_port_1064:4da561662a74",
+        "pcbPortId": "pcb_port_731",
+        "sourcePortId": "source_port_731",
+        "worldMm": [
+          10.8,
+          -0.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 5,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP08_FILTERED_TO",
+          "displayName": "TP08_ADC_TO_VIA.top to TP08.pin1",
+          "sourceTraceId": "source_trace_624",
+          "pcbTraceId": "pcb_trace_168",
+          "sourceMaxMm": 1.5999999999999999
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP08_FILTERED_TAP"
+      ]
+    },
+    {
+      "probe": "TP09",
+      "net": "VOUT_ADC",
+      "actualPad": {
+        "selector": "TP09.pin1",
+        "aliases": [
+          "TP09.1",
+          "TP09.pin1"
+        ],
+        "padId": "pcb_smtpad_534",
+        "net": "VOUT_ADC",
+        "sourceGraphRoot": "source_port_1067",
+        "physicalPadIslandId": "source_port_1067:2eebf00af784",
+        "pcbPortId": "pcb_port_732",
+        "sourcePortId": "source_port_732",
+        "worldMm": [
+          13.8,
+          -0.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 5,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP09_FILTERED_TO",
+          "displayName": "TP09_ADC_TO_VIA.top to TP09.pin1",
+          "sourceTraceId": "source_trace_627",
+          "pcbTraceId": "pcb_trace_171",
+          "sourceMaxMm": 1.5999999999999999
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP09_FILTERED_TAP"
+      ]
+    },
+    {
+      "probe": "TP10",
+      "net": "I2C_SCL",
+      "actualPad": {
+        "selector": "TP10.pin1",
+        "aliases": [
+          "TP10.1",
+          "TP10.pin1"
+        ],
+        "padId": "pcb_smtpad_535",
+        "net": "I2C_SCL",
+        "sourceGraphRoot": "source_net_59",
+        "physicalPadIslandId": "source_net_59:fd0133b916f4",
+        "pcbPortId": "pcb_port_733",
+        "sourcePortId": "source_port_733",
+        "worldMm": [
+          -1.5,
+          -16.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 6,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP10_I2C_TAP",
+          "displayName": "TP10.pin1 to net.I2C_SCL",
+          "sourceTraceId": "source_trace_657",
+          "pcbTraceId": "pcb_trace_182",
+          "sourceMaxMm": 2.6
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TP11",
+      "net": "I2C_SDA",
+      "actualPad": {
+        "selector": "TP11.pin1",
+        "aliases": [
+          "TP11.1",
+          "TP11.pin1"
+        ],
+        "padId": "pcb_smtpad_536",
+        "net": "I2C_SDA",
+        "sourceGraphRoot": "source_net_60",
+        "physicalPadIslandId": "source_net_60:c2f4eddfecec",
+        "pcbPortId": "pcb_port_734",
+        "sourcePortId": "source_port_734",
+        "worldMm": [
+          2.45,
+          -16.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 6,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP11_I2C_TAP",
+          "displayName": "TP11.pin1 to net.I2C_SDA",
+          "sourceTraceId": "source_trace_658",
+          "pcbTraceId": "pcb_trace_183",
+          "sourceMaxMm": 2.6
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TP12",
+      "net": "TEC_DAC",
+      "actualPad": {
+        "selector": "TP12.pin1",
+        "aliases": [
+          "TP12.1",
+          "TP12.pin1"
+        ],
+        "padId": "pcb_smtpad_537",
+        "net": "TEC_DAC",
+        "sourceGraphRoot": "source_port_1074",
+        "physicalPadIslandId": "source_port_1074:afe7c12354f2",
+        "pcbPortId": "pcb_port_735",
+        "sourcePortId": "source_port_735",
+        "worldMm": [
+          -3,
+          -24
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 3,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP12_DAC_TO",
+          "displayName": "TP12_DAC_TO_VIA.top to TP12.pin1",
+          "sourceTraceId": "source_trace_757",
+          "pcbTraceId": "pcb_trace_275",
+          "sourceMaxMm": 0.9999494936611661
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP12_DAC_OUTPUT_TAP"
+      ]
+    },
+    {
+      "probe": "TP13",
+      "net": "MCU_NRST",
+      "actualPad": {
+        "selector": "TP13.pin1",
+        "aliases": [
+          "TP13.1",
+          "TP13.pin1"
+        ],
+        "padId": "pcb_smtpad_538",
+        "net": "MCU_NRST",
+        "sourceGraphRoot": "source_port_978",
+        "physicalPadIslandId": "source_port_978:b86dc5cb7519",
+        "pcbPortId": "pcb_port_736",
+        "sourcePortId": "source_port_736",
+        "worldMm": [
+          21,
+          -5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 4,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "SOURCE20_NRST_TP13_ESCAPE_TOP",
+          "displayName": "TP13.pin1 to SOURCE20_NRST_TP13.top",
+          "sourceTraceId": "source_trace_890",
+          "pcbTraceId": "pcb_trace_408",
+          "sourceMaxMm": 1.25
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "SOURCE20_MCU_NRST_COMPLETE"
+      ]
+    },
+    {
+      "probe": "TP14",
+      "net": "DBG_PD_GATE",
+      "actualPad": {
+        "selector": "TP14.pin1",
+        "aliases": [
+          "TP14.1",
+          "TP14.pin1"
+        ],
+        "padId": "pcb_smtpad_539",
+        "net": "DBG_PD_GATE",
+        "sourceGraphRoot": "source_port_737",
+        "physicalPadIslandId": "source_port_737:326c1dd85bd7",
+        "pcbPortId": "pcb_port_737",
+        "sourcePortId": "source_port_737",
+        "worldMm": [
+          -46,
+          -23.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 3,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP14_BUFFERED_BRANCH",
+          "displayName": "U_DBG1.pin6 to TP14.pin1",
+          "sourceTraceId": "source_trace_611",
+          "pcbTraceId": "pcb_trace_155",
+          "sourceMaxMm": 3.3913708498984745
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "D506_BUFFERED_CATHODE"
+      ]
+    },
+    {
+      "probe": "TP15",
+      "net": "DBG_TEC_PERMIT",
+      "actualPad": {
+        "selector": "TP15.pin1",
+        "aliases": [
+          "TP15.1",
+          "TP15.pin1"
+        ],
+        "padId": "pcb_smtpad_540",
+        "net": "DBG_TEC_PERMIT",
+        "sourceGraphRoot": "source_port_794",
+        "physicalPadIslandId": "source_port_794:ec89ddf9c855",
+        "pcbPortId": "pcb_port_738",
+        "sourcePortId": "source_port_738",
+        "worldMm": [
+          -38,
+          -23.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 3,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP15_PERMIT_TAP",
+          "displayName": "TP15.pin1 to DBG_PERMIT_FROM_VIA.top",
+          "sourceTraceId": "source_trace_754",
+          "pcbTraceId": "pcb_trace_272",
+          "sourceMaxMm": 2.5171067811865475
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "DBG_TEC_PERMIT_LOCAL_GROUP"
+      ]
+    },
+    {
+      "probe": "TP16",
+      "net": "DBG_HW_INHIBIT",
+      "actualPad": {
+        "selector": "TP16.pin1",
+        "aliases": [
+          "TP16.1",
+          "TP16.pin1"
+        ],
+        "padId": "pcb_smtpad_541",
+        "net": "DBG_HW_INHIBIT",
+        "sourceGraphRoot": "source_port_739",
+        "physicalPadIslandId": "source_port_739:eef876451bd8",
+        "pcbPortId": "pcb_port_739",
+        "sourcePortId": "source_port_739",
+        "worldMm": [
+          -35,
+          -28
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 3,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP16_BUFFERED_BRANCH",
+          "displayName": "LOCAL_HW_BUFFER_EXIT.top to TP16.pin1",
+          "sourceTraceId": "source_trace_615",
+          "pcbTraceId": "pcb_trace_159",
+          "sourceMaxMm": 5.581320343559641
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "D508_BUFFERED_CATHODE"
+      ]
+    },
+    {
+      "probe": "TP17",
+      "net": "DBG_MCU_RUN",
+      "actualPad": {
+        "selector": "TP17.pin1",
+        "aliases": [
+          "TP17.1",
+          "TP17.pin1"
+        ],
+        "padId": "pcb_smtpad_542",
+        "net": "DBG_MCU_RUN",
+        "sourceGraphRoot": "source_net_103",
+        "physicalPadIslandId": "source_net_103:9f3b7bfb4980",
+        "pcbPortId": "pcb_port_740",
+        "sourcePortId": "source_port_740",
+        "worldMm": [
+          -31,
+          -28
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 2,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TP17_BUFFERED_RUN_TAP",
+          "displayName": "U_DBG2.pin4 to TP17.pin1",
+          "sourceTraceId": "source_trace_758",
+          "pcbTraceId": "pcb_trace_276",
+          "sourceMaxMm": 6.2
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "TP17_BUFFERED_RUN_TAP"
+      ]
+    },
+    {
+      "probe": "TP18",
+      "net": "FAN_TACH_MCU",
+      "actualPad": {
+        "selector": "TP18.pin1",
+        "aliases": [
+          "TP18.1",
+          "TP18.pin1"
+        ],
+        "padId": "pcb_smtpad_543",
+        "net": "FAN_TACH_MCU",
+        "sourceGraphRoot": "source_port_1010",
+        "physicalPadIslandId": "source_port_1010:6d75cc45d56b",
+        "pcbPortId": "pcb_port_741",
+        "sourcePortId": "source_port_741",
+        "worldMm": [
+          32,
+          -27
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 3,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "FAN_FILTER_PROBE_TOP",
+          "displayName": "TP18.pin1 to FAN_FILTER_PROBE_ENTRY.top",
+          "sourceTraceId": "source_trace_917",
+          "pcbTraceId": "pcb_trace_435",
+          "sourceMaxMm": 1.1813708498984772
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": [
+        "FILTERED_FAN_TACH_COMPLETE"
+      ]
+    },
+    {
+      "probe": "TPG1",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG1.pin1",
+        "aliases": [
+          "TPG1.1",
+          "TPG1.pin1"
+        ],
+        "padId": "pcb_smtpad_544",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_742",
+        "sourcePortId": "source_port_742",
+        "worldMm": [
+          -34,
+          29.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG1_GROUND",
+          "displayName": "TPG1.pin1 to TPG1_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_666",
+          "pcbTraceId": "pcb_trace_184",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG2",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG2.pin1",
+        "aliases": [
+          "TPG2.1",
+          "TPG2.pin1"
+        ],
+        "padId": "pcb_smtpad_545",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_745",
+        "sourcePortId": "source_port_745",
+        "worldMm": [
+          -10,
+          30
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG2_GROUND",
+          "displayName": "TPG2.pin1 to TPG2_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_667",
+          "pcbTraceId": "pcb_trace_185",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG3",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG3.pin1",
+        "aliases": [
+          "TPG3.1",
+          "TPG3.pin1"
+        ],
+        "padId": "pcb_smtpad_546",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_748",
+        "sourcePortId": "source_port_748",
+        "worldMm": [
+          -29.5,
+          -10.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG3_GROUND",
+          "displayName": "TPG3.pin1 to TPG3_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_668",
+          "pcbTraceId": "pcb_trace_186",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG4",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG4.pin1",
+        "aliases": [
+          "TPG4.1",
+          "TPG4.pin1"
+        ],
+        "padId": "pcb_smtpad_547",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_751",
+        "sourcePortId": "source_port_751",
+        "worldMm": [
+          38,
+          -23
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG4_GROUND",
+          "displayName": "TPG4.pin1 to TPG4_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_669",
+          "pcbTraceId": "pcb_trace_187",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG5",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG5.pin1",
+        "aliases": [
+          "TPG5.1",
+          "TPG5.pin1"
+        ],
+        "padId": "pcb_smtpad_548",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_754",
+        "sourcePortId": "source_port_754",
+        "worldMm": [
+          38,
+          0
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG5_GROUND",
+          "displayName": "TPG5.pin1 to TPG5_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_670",
+          "pcbTraceId": "pcb_trace_188",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG6",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG6.pin1",
+        "aliases": [
+          "TPG6.1",
+          "TPG6.pin1"
+        ],
+        "padId": "pcb_smtpad_549",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_757",
+        "sourcePortId": "source_port_757",
+        "worldMm": [
+          18.5,
+          -0.7
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG6_GROUND",
+          "displayName": "TPG6.pin1 to TPG6_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_671",
+          "pcbTraceId": "pcb_trace_189",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG7",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG7.pin1",
+        "aliases": [
+          "TPG7.1",
+          "TPG7.pin1"
+        ],
+        "padId": "pcb_smtpad_550",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_760",
+        "sourcePortId": "source_port_760",
+        "worldMm": [
+          -5,
+          -26.5
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG7_GROUND",
+          "displayName": "TPG7.pin1 to TPG7_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_672",
+          "pcbTraceId": "pcb_trace_190",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    },
+    {
+      "probe": "TPG8",
+      "net": "GND",
+      "actualPad": {
+        "selector": "TPG8.pin1",
+        "aliases": [
+          "TPG8.1",
+          "TPG8.pin1"
+        ],
+        "padId": "pcb_smtpad_551",
+        "net": "GND",
+        "sourceGraphRoot": "source_port_410",
+        "physicalPadIslandId": "source_port_410:990feb1c26cf",
+        "pcbPortId": "pcb_port_763",
+        "sourcePortId": "source_port_763",
+        "worldMm": [
+          -40,
+          -28
+        ],
+        "layers": [
+          "top"
+        ]
+      },
+      "bareDiameterMm": 1.5,
+      "hasOwnSolderPaste": false,
+      "physicalNetTargetPads": 147,
+      "physicalNetIslands": 1,
+      "allActualSameNetPadsConnected": true,
+      "allCopperAttachedToPads": true,
+      "actualSourceOwnedCopper": [
+        {
+          "name": "TPG8_GROUND",
+          "displayName": "TPG8.pin1 to TPG8_GROUND_VIA.top",
+          "sourceTraceId": "source_trace_673",
+          "pcbTraceId": "pcb_trace_191",
+          "sourceMaxMm": 5
+        }
+      ],
+      "actualRequiredCompleteSourceGroups": []
+    }
+  ],
+  "criticalPowerAndCalibrationNets": [
+    {
+      "net": "VBUS_RAW",
+      "actualPadTargets": 13,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "VBUS_TEC",
+      "actualPadTargets": 23,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "V3V3",
+      "actualPadTargets": 51,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "V12_FAN",
+      "actualPadTargets": 8,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "TEC_POS",
+      "actualPadTargets": 12,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "I2C_SCL",
+      "actualPadTargets": 6,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "I2C_SDA",
+      "actualPadTargets": 6,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "HOT_ADC",
+      "actualPadTargets": 4,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "COLD_ADC",
+      "actualPadTargets": 4,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "VBUS_ADC",
+      "actualPadTargets": 5,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    },
+    {
+      "net": "VOUT_ADC",
+      "actualPadTargets": 5,
+      "physicalPadIslands": 1,
+      "allPadsConnected": true
+    }
+  ],
+  "fourFilteredAdcProbeCapMcuPhysicalChains": [
+    {
+      "probe": "TP06",
+      "net": "HOT_ADC",
+      "filterCapacitorPositive": "C209.pin1",
+      "mcuNumericPin": 7,
+      "threeRealPadsOneActualIsland": true,
+      "islandId": "source_port_806:e1369accbd75",
+      "sourceFilteredThreeSpanTwoBarrelPathRetained": true
+    },
+    {
+      "probe": "TP07",
+      "net": "COLD_ADC",
+      "filterCapacitorPositive": "C210.pin1",
+      "mcuNumericPin": 8,
+      "threeRealPadsOneActualIsland": true,
+      "islandId": "source_port_808:5c92b706b9fa",
+      "sourceFilteredThreeSpanTwoBarrelPathRetained": true
+    },
+    {
+      "probe": "TP08",
+      "net": "VBUS_ADC",
+      "filterCapacitorPositive": "C211.pin1",
+      "mcuNumericPin": 12,
+      "threeRealPadsOneActualIsland": true,
+      "islandId": "source_port_1064:4da561662a74",
+      "sourceFilteredThreeSpanTwoBarrelPathRetained": true
+    },
+    {
+      "probe": "TP09",
+      "net": "VOUT_ADC",
+      "filterCapacitorPositive": "C212.pin1",
+      "mcuNumericPin": 11,
+      "threeRealPadsOneActualIsland": true,
+      "islandId": "source_port_1067:2eebf00af784",
+      "sourceFilteredThreeSpanTwoBarrelPathRetained": true
+    }
+  ],
+  "actualSourceObligations": {
+    "all90CompleteInstalledPlans": true,
+    "branchCount": 409,
+    "requiredRealPortCount": 355,
+    "allOriginal398PriorPositiveSourceConstraintsRetained": true,
+    "fullFourPadSafeTreeScopePass": true,
+    "18DebugReturnsFiniteMainInner1Entries": true,
+    "noScheduledDebugPhysicalJoinsPendingOnThisActualGraph": true
+  },
+  "actualPhysicalJoinedJoins": 450,
+  "actualRequiredJoins": 450,
+  "all571RequiredTargetsPresent": true,
+  "actualGroundReference": {
+    "qualifiedPadCount": 147,
+    "allPadsCommonC28MainInner1": true,
+    "directLargestReferenceBarrels": 166,
+    "requestedDirectLargestReferenceBarrels": 166,
+    "separateDirectLargestReferenceQualityGateHeld": false
+  },
+  "wholeBoardReleaseAcceptedByThisScopedReader": false,
+  "limitations": [
+    "No second physical geometry/DSU scan; current graph63d344/mapdc279 are authoritative.",
+    "This owned debug scope does not claim full-board clearance, fabrication exports, or manufacturing release."
+  ],
+  "geometryRescanRun": false,
+  "coreExecuted": false,
+  "productionWritten": false,
+  "baselineSemanticChecksRepeated": false,
+  "exactActualImportSupportCarry": [
+    {
+      "name": "C_DBG1",
+      "sourceComponentId": "source_component_192",
+      "pcbComponentId": "pcb_component_263",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "C_DBG2",
+      "sourceComponentId": "source_component_193",
+      "pcbComponentId": "pcb_component_266",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D501",
+      "sourceComponentId": "source_component_175",
+      "pcbComponentId": "pcb_component_220",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D502",
+      "sourceComponentId": "source_component_177",
+      "pcbComponentId": "pcb_component_225",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D503",
+      "sourceComponentId": "source_component_179",
+      "pcbComponentId": "pcb_component_230",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D504",
+      "sourceComponentId": "source_component_181",
+      "pcbComponentId": "pcb_component_235",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D505",
+      "sourceComponentId": "source_component_183",
+      "pcbComponentId": "pcb_component_240",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D506",
+      "sourceComponentId": "source_component_185",
+      "pcbComponentId": "pcb_component_245",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D507",
+      "sourceComponentId": "source_component_187",
+      "pcbComponentId": "pcb_component_247",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "D508",
+      "sourceComponentId": "source_component_189",
+      "pcbComponentId": "pcb_component_250",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R501",
+      "sourceComponentId": "source_component_174",
+      "pcbComponentId": "pcb_component_219",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R502",
+      "sourceComponentId": "source_component_176",
+      "pcbComponentId": "pcb_component_224",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R503",
+      "sourceComponentId": "source_component_178",
+      "pcbComponentId": "pcb_component_229",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R504",
+      "sourceComponentId": "source_component_180",
+      "pcbComponentId": "pcb_component_234",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R505",
+      "sourceComponentId": "source_component_182",
+      "pcbComponentId": "pcb_component_239",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R506",
+      "sourceComponentId": "source_component_184",
+      "pcbComponentId": "pcb_component_244",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R507",
+      "sourceComponentId": "source_component_186",
+      "pcbComponentId": "pcb_component_246",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "R508",
+      "sourceComponentId": "source_component_188",
+      "pcbComponentId": "pcb_component_249",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP01",
+      "sourceComponentId": "source_component_194",
+      "pcbComponentId": "pcb_component_269",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP02",
+      "sourceComponentId": "source_component_195",
+      "pcbComponentId": "pcb_component_270",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP03",
+      "sourceComponentId": "source_component_196",
+      "pcbComponentId": "pcb_component_271",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP04",
+      "sourceComponentId": "source_component_197",
+      "pcbComponentId": "pcb_component_272",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP05",
+      "sourceComponentId": "source_component_198",
+      "pcbComponentId": "pcb_component_273",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP06",
+      "sourceComponentId": "source_component_199",
+      "pcbComponentId": "pcb_component_274",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP07",
+      "sourceComponentId": "source_component_200",
+      "pcbComponentId": "pcb_component_275",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP08",
+      "sourceComponentId": "source_component_201",
+      "pcbComponentId": "pcb_component_276",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP09",
+      "sourceComponentId": "source_component_202",
+      "pcbComponentId": "pcb_component_277",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP10",
+      "sourceComponentId": "source_component_203",
+      "pcbComponentId": "pcb_component_278",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP11",
+      "sourceComponentId": "source_component_204",
+      "pcbComponentId": "pcb_component_279",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP12",
+      "sourceComponentId": "source_component_205",
+      "pcbComponentId": "pcb_component_280",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP13",
+      "sourceComponentId": "source_component_206",
+      "pcbComponentId": "pcb_component_281",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP14",
+      "sourceComponentId": "source_component_207",
+      "pcbComponentId": "pcb_component_282",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP15",
+      "sourceComponentId": "source_component_208",
+      "pcbComponentId": "pcb_component_283",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP16",
+      "sourceComponentId": "source_component_209",
+      "pcbComponentId": "pcb_component_284",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP17",
+      "sourceComponentId": "source_component_210",
+      "pcbComponentId": "pcb_component_285",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TP18",
+      "sourceComponentId": "source_component_211",
+      "pcbComponentId": "pcb_component_286",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG1",
+      "sourceComponentId": "source_component_212",
+      "pcbComponentId": "pcb_component_287",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG2",
+      "sourceComponentId": "source_component_213",
+      "pcbComponentId": "pcb_component_289",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG3",
+      "sourceComponentId": "source_component_214",
+      "pcbComponentId": "pcb_component_291",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG4",
+      "sourceComponentId": "source_component_215",
+      "pcbComponentId": "pcb_component_293",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG5",
+      "sourceComponentId": "source_component_216",
+      "pcbComponentId": "pcb_component_295",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG6",
+      "sourceComponentId": "source_component_217",
+      "pcbComponentId": "pcb_component_297",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG7",
+      "sourceComponentId": "source_component_218",
+      "pcbComponentId": "pcb_component_299",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "TPG8",
+      "sourceComponentId": "source_component_219",
+      "pcbComponentId": "pcb_component_301",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "U_DBG1",
+      "sourceComponentId": "source_component_190",
+      "pcbComponentId": "pcb_component_261",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    },
+    {
+      "name": "U_DBG2",
+      "sourceComponentId": "source_component_191",
+      "pcbComponentId": "pcb_component_262",
+      "importBOMPoseDnpCuMaskPasteByteExact": true
+    }
+  ],
+  "actualDisconnectedNetGroupCount": 0,
+  "actualUnassignedPrimitiveCount": 0,
+  "narrowReaderSchemaCorrection": {
+    "priorDiagnosticPath": "reviews/debug/source23-3ac5-led-probe-reader-count-schema-diagnostic.json",
+    "priorDiagnosticSha256": "38292a79f51c08e8aebf13e58a14ed76d537dc76438e2c0161e625a39745e909",
+    "reason": "Physical graph disconnectedNetGroups is an integer count0, not a list. Exact graph bytes unchanged; all physical joins and target memberships already verified.",
+    "correctRequiredValue": 0
+  }
+}

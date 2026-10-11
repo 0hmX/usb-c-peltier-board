@@ -1,0 +1,772 @@
+{
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "warningTypeCounts": {
+    "source_refdes_convention_warning": 19,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_trace_warning": 44
+  },
+  "traceCount": 633,
+  "allTraceSourcesResolved": true,
+  "sourceWidthFailures": [],
+  "boundedTraces": 446,
+  "sourceMaxLengthFailures": [],
+  "widthWarningCount": 44,
+  "widthWarningsPointToDifferentSourceCount": 44,
+  "widthWarningTargetsSameLogicalNetCount": 44,
+  "allWarnedActualSourceBranchesMeetWidth": true,
+  "widthWarningRows": [
+    {
+      "warningId": "pcb_trace_warning_0",
+      "requestedSourceTrace": "source_trace_0",
+      "name": "USB_GND_1",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_0",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_1",
+      "requestedSourceTrace": "source_trace_1",
+      "name": "USB_GND_2",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_1",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_2",
+      "requestedSourceTrace": "source_trace_2",
+      "name": "USB_GND_14",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_2",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_3",
+      "requestedSourceTrace": "source_trace_21",
+      "name": "PD_RAW_MONITOR_FEED",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_16",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_4",
+      "requestedSourceTrace": "source_trace_22",
+      "name": "PD_RAW_OVLO_FEED",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_17",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_5",
+      "requestedSourceTrace": "source_trace_23",
+      "name": "PD_RAW_IN_SUPPORT",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_18",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_6",
+      "requestedSourceTrace": "source_trace_24",
+      "name": "PD_RAW_BYPASS_FEED",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_19",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_7",
+      "requestedSourceTrace": "source_trace_32",
+      "name": "PD_PROTECTED_DISCHARGE_FEED",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_27",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_8",
+      "requestedSourceTrace": "source_trace_33",
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_28",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_9",
+      "requestedSourceTrace": "source_trace_232",
+      "name": "TEC_LOCAL_COMMUTATION_VIN",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_43",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_10",
+      "requestedSourceTrace": "source_trace_239",
+      "name": "TEC_PERMISSION_POWER",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_50",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_11",
+      "requestedSourceTrace": "source_trace_240",
+      "name": "TEC_PERMISSION_PULLUP",
+      "requiredWidthMm": 0.25,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_51",
+          "minWidthMm": 0.25
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_12",
+      "requestedSourceTrace": "source_trace_245",
+      "name": "FAN_PROTECTED_POWER_FEED",
+      "requiredWidthMm": 0.8,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_56",
+          "minWidthMm": 0.8
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_13",
+      "requestedSourceTrace": "source_trace_250",
+      "name": "TEC_OUTPUT_TERMINAL",
+      "requiredWidthMm": 3,
+      "warningSelectedPcbTrace": "pcb_trace_46",
+      "warningSelectedSourceTrace": "source_trace_235",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_58",
+          "minWidthMm": 3
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_14",
+      "requestedSourceTrace": "source_trace_251",
+      "name": "TEC_INPUT_HOT_LOOP",
+      "requiredWidthMm": 3,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_59",
+          "minWidthMm": 3
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_15",
+      "requestedSourceTrace": "source_trace_252",
+      "name": "TEC_HIGH_SOURCE_SW",
+      "requiredWidthMm": 2.5,
+      "warningSelectedPcbTrace": "pcb_trace_54",
+      "warningSelectedSourceTrace": "source_trace_243",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_60",
+          "minWidthMm": 2.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_16",
+      "requestedSourceTrace": "source_trace_253",
+      "name": "TEC_LOW_DRAIN_SW",
+      "requiredWidthMm": 3,
+      "warningSelectedPcbTrace": "pcb_trace_54",
+      "warningSelectedSourceTrace": "source_trace_243",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_61",
+          "minWidthMm": 3
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_17",
+      "requestedSourceTrace": "source_trace_254",
+      "name": "TEC_INDUCTOR_TO_SHUNT",
+      "requiredWidthMm": 3,
+      "warningSelectedPcbTrace": "pcb_trace_45",
+      "warningSelectedSourceTrace": "source_trace_234",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_62",
+          "minWidthMm": 3
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_18",
+      "requestedSourceTrace": "source_trace_255",
+      "name": "TEC_SHUNT_TO_FILTER",
+      "requiredWidthMm": 3,
+      "warningSelectedPcbTrace": "pcb_trace_46",
+      "warningSelectedSourceTrace": "source_trace_235",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_63",
+          "minWidthMm": 3
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_19",
+      "requestedSourceTrace": "source_trace_256",
+      "name": "TEC_HIGH_SOURCE_12",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_53",
+      "warningSelectedSourceTrace": "source_trace_242",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_64",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_20",
+      "requestedSourceTrace": "source_trace_257",
+      "name": "TEC_HIGH_SOURCE_23",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_53",
+      "warningSelectedSourceTrace": "source_trace_242",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_65",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_21",
+      "requestedSourceTrace": "source_trace_270",
+      "name": "TEC_INPUT_RETURN_EAST_1_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_78",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_22",
+      "requestedSourceTrace": "source_trace_271",
+      "name": "TEC_INPUT_RETURN_EAST_2_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_79",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_23",
+      "requestedSourceTrace": "source_trace_272",
+      "name": "TEC_INPUT_RETURN_EAST_3_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_80",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_24",
+      "requestedSourceTrace": "source_trace_273",
+      "name": "TEC_OUTPUT_RETURN_MID_1_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_81",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_25",
+      "requestedSourceTrace": "source_trace_274",
+      "name": "TEC_OUTPUT_RETURN_MID_2_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_82",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_26",
+      "requestedSourceTrace": "source_trace_275",
+      "name": "TEC_OUTPUT_RETURN_EAST_1_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_83",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_27",
+      "requestedSourceTrace": "source_trace_276",
+      "name": "TEC_OUTPUT_RETURN_EAST_2_FEED",
+      "requiredWidthMm": 0.6,
+      "warningSelectedPcbTrace": "pcb_trace_14",
+      "warningSelectedSourceTrace": "source_trace_19",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_84",
+          "minWidthMm": 0.6
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_28",
+      "requestedSourceTrace": "source_trace_412",
+      "name": "FAN_INPUT_CAP_BANK_12",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_108",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_29",
+      "requestedSourceTrace": "source_trace_413",
+      "name": "FAN_INPUT_CAP_BANK_23",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_109",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_30",
+      "requestedSourceTrace": "source_trace_417",
+      "name": "FAN_INPUT_PICKUP_TO_CAP",
+      "requiredWidthMm": 0.8,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_113",
+          "minWidthMm": 0.8
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_31",
+      "requestedSourceTrace": "source_trace_418",
+      "name": "FAN_LOCAL_VIN",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_47",
+      "warningSelectedSourceTrace": "source_trace_236",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_114",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_32",
+      "requestedSourceTrace": "source_trace_420",
+      "name": "FAN_OUTPUT_TO_CAP_BANK",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_115",
+      "warningSelectedSourceTrace": "source_trace_419",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_116",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_33",
+      "requestedSourceTrace": "source_trace_421",
+      "name": "FAN_OUTPUT_CAP_BANK",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_115",
+      "warningSelectedSourceTrace": "source_trace_419",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_117",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_34",
+      "requestedSourceTrace": "source_trace_422",
+      "name": "FAN_OUTPUT_LOAD_FEED",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_115",
+      "warningSelectedSourceTrace": "source_trace_419",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_118",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_35",
+      "requestedSourceTrace": "source_trace_424",
+      "name": "LOGIC_RAW_INPUT_FEED",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_120",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_36",
+      "requestedSourceTrace": "source_trace_425",
+      "name": "LOGIC_LOCAL_VIN",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_121",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_37",
+      "requestedSourceTrace": "source_trace_428",
+      "name": "LOGIC_LOCAL_ENABLE",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_20",
+      "warningSelectedSourceTrace": "source_trace_25",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_124",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_38",
+      "requestedSourceTrace": "source_trace_695",
+      "name": "SUPPLY_FAN_MST0_0_SPAN_0",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_115",
+      "warningSelectedSourceTrace": "source_trace_419",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_213",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_39",
+      "requestedSourceTrace": "source_trace_696",
+      "name": "SUPPLY_FAN_MST1_0_SPAN_0",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_115",
+      "warningSelectedSourceTrace": "source_trace_419",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_214",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_40",
+      "requestedSourceTrace": "source_trace_817",
+      "name": "LOGIC_SW_HEAD",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_338",
+      "warningSelectedSourceTrace": "source_trace_820",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_335",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_41",
+      "requestedSourceTrace": "source_trace_818",
+      "name": "LOGIC_SW_TRUNK",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_338",
+      "warningSelectedSourceTrace": "source_trace_820",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_336",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_42",
+      "requestedSourceTrace": "source_trace_819",
+      "name": "LOGIC_SW_TAIL",
+      "requiredWidthMm": 0.4,
+      "warningSelectedPcbTrace": "pcb_trace_338",
+      "warningSelectedSourceTrace": "source_trace_820",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_337",
+          "minWidthMm": 0.4
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    },
+    {
+      "warningId": "pcb_trace_warning_43",
+      "requestedSourceTrace": "source_trace_824",
+      "name": "FAN_SW_LOAD",
+      "requiredWidthMm": 0.5,
+      "warningSelectedPcbTrace": "pcb_trace_343",
+      "warningSelectedSourceTrace": "source_trace_825",
+      "warningSelectsDifferentSource": true,
+      "sameLogicalNet": true,
+      "actualSourceBranches": [
+        {
+          "pcbTrace": "pcb_trace_342",
+          "minWidthMm": 0.5
+        }
+      ],
+      "actualSourceBranchesMeetWidth": true
+    }
+  ]
+}

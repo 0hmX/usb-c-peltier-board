@@ -1,0 +1,1790 @@
+{
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "paths": [
+    {
+      "name": "TP10_I2C_TAP",
+      "pcbTraceId": "pcb_trace_182",
+      "net": "I2C_SCL",
+      "lengthMm": 1.5,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -1.5,
+          "y": -16.5,
+          "layer": "top"
+        },
+        {
+          "x": -1.5,
+          "y": -16.5,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -16.5,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "TP11_I2C_TAP",
+      "pcbTraceId": "pcb_trace_183",
+      "net": "I2C_SDA",
+      "lengthMm": 1.5,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 2.45,
+          "y": -16.5,
+          "layer": "top"
+        },
+        {
+          "x": 2.45,
+          "y": -16.5,
+          "layer": "top"
+        },
+        {
+          "x": 0.9500000000000002,
+          "y": -16.5,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_DAC_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_517",
+      "net": "I2C_SCL",
+      "lengthMm": 4.200000000000001,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -18.6,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -18.6,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_DAC_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_518",
+      "net": "I2C_SDA",
+      "lengthMm": 4.200000000000001,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "top"
+        },
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "top"
+        },
+        {
+          "x": 0.95,
+          "y": -18.6,
+          "layer": "top"
+        },
+        {
+          "x": 0.95,
+          "y": -18.6,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_PD_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_519",
+      "net": "I2C_SCL",
+      "lengthMm": 1.6313708498984765,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "top"
+        },
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "top"
+        },
+        {
+          "x": -23.6,
+          "y": 5.75,
+          "layer": "top"
+        },
+        {
+          "x": -24.1,
+          "y": 5.75,
+          "layer": "top"
+        },
+        {
+          "x": -24.1,
+          "y": 5.75,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_PULLUP_TO_PD_VIA",
+      "pcbTraceId": "pcb_trace_520",
+      "net": "I2C_SCL",
+      "lengthMm": 0.8828427124746201,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "top"
+        },
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "top"
+        },
+        {
+          "x": -22.6,
+          "y": 4.75,
+          "layer": "top"
+        },
+        {
+          "x": -22,
+          "y": 4.75,
+          "layer": "top"
+        },
+        {
+          "x": -22,
+          "y": 4.75,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_PD_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_521",
+      "net": "I2C_SDA",
+      "lengthMm": 2.0,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -24.1,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -24.1,
+          "y": 6.25,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_PULLUP_TO_PD_VIA",
+      "pcbTraceId": "pcb_trace_522",
+      "net": "I2C_SDA",
+      "lengthMm": 6.162741699796953,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -21.6,
+          "y": 6.25,
+          "layer": "top"
+        },
+        {
+          "x": -21,
+          "y": 5.65,
+          "layer": "top"
+        },
+        {
+          "x": -21,
+          "y": 2.25,
+          "layer": "top"
+        },
+        {
+          "x": -22,
+          "y": 1.25,
+          "layer": "top"
+        },
+        {
+          "x": -22,
+          "y": 1.25,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_MON_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_523",
+      "net": "I2C_SCL",
+      "lengthMm": 1.5,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 27.095,
+          "y": 23.2,
+          "layer": "top"
+        },
+        {
+          "x": 27.095,
+          "y": 23.2,
+          "layer": "top"
+        },
+        {
+          "x": 27.095,
+          "y": 24.7,
+          "layer": "top"
+        },
+        {
+          "x": 27.095,
+          "y": 24.7,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_MON_PAD_TO_VIA",
+      "pcbTraceId": "pcb_trace_524",
+      "net": "I2C_SDA",
+      "lengthMm": 1.5,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 28.365,
+          "y": 23.2,
+          "layer": "top"
+        },
+        {
+          "x": 28.365,
+          "y": 23.2,
+          "layer": "top"
+        },
+        {
+          "x": 28.365000000000002,
+          "y": 24.7,
+          "layer": "top"
+        },
+        {
+          "x": 28.365000000000002,
+          "y": 24.7,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_PD_BOTTOM_TRUNK",
+      "pcbTraceId": "pcb_trace_525",
+      "net": "I2C_SCL",
+      "lengthMm": 36.028531726798846,
+      "layers": [
+        "bottom"
+      ],
+      "vertices": [
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "bottom"
+        },
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "bottom"
+        },
+        {
+          "x": 0,
+          "y": -5.5,
+          "layer": "bottom"
+        },
+        {
+          "x": -10.45,
+          "y": 4.950000000000001,
+          "layer": "bottom"
+        },
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "bottom"
+        },
+        {
+          "x": -22.8,
+          "y": 4.95,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SCL_MON_INNER2_TRUNK",
+      "pcbTraceId": "pcb_trace_526",
+      "net": "I2C_SCL",
+      "lengthMm": 49.206806589144634,
+      "layers": [
+        "inner2"
+      ],
+      "vertices": [
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 0,
+          "y": -14.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 0,
+          "y": -3.8949999999999996,
+          "layer": "inner2"
+        },
+        {
+          "x": 23,
+          "y": 19.105000000000004,
+          "layer": "inner2"
+        },
+        {
+          "x": 23.655,
+          "y": 19.105000000000004,
+          "layer": "inner2"
+        },
+        {
+          "x": 27.095,
+          "y": 22.545,
+          "layer": "inner2"
+        },
+        {
+          "x": 27.095,
+          "y": 23.2,
+          "layer": "inner2"
+        },
+        {
+          "x": 27.095,
+          "y": 23.2,
+          "layer": "inner2"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "pcbTraceId": "pcb_trace_527",
+      "net": "I2C_SDA",
+      "lengthMm": 38.1350288425444,
+      "layers": [
+        "bottom"
+      ],
+      "vertices": [
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "bottom"
+        },
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "bottom"
+        },
+        {
+          "x": 0.95,
+          "y": -3.25,
+          "layer": "bottom"
+        },
+        {
+          "x": -8.55,
+          "y": 6.249999999999998,
+          "layer": "bottom"
+        },
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "bottom"
+        },
+        {
+          "x": -22.1,
+          "y": 6.25,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "name": "I2C_SDA_MON_INNER2_TRUNK",
+      "pcbTraceId": "pcb_trace_528",
+      "net": "I2C_SDA",
+      "lengthMm": 49.36571531879723,
+      "layers": [
+        "inner2"
+      ],
+      "vertices": [
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 0.95,
+          "y": -14.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 0.95,
+          "y": -3.5999999999999996,
+          "layer": "inner2"
+        },
+        {
+          "x": 22,
+          "y": 17.450000000000003,
+          "layer": "inner2"
+        },
+        {
+          "x": 22.7,
+          "y": 17.450000000000003,
+          "layer": "inner2"
+        },
+        {
+          "x": 28.365,
+          "y": 23.115000000000002,
+          "layer": "inner2"
+        },
+        {
+          "x": 28.365,
+          "y": 23.2,
+          "layer": "inner2"
+        },
+        {
+          "x": 28.365,
+          "y": 23.2,
+          "layer": "inner2"
+        }
+      ]
+    },
+    {
+      "name": "I2C_MCU_DAC_SCL",
+      "pcbTraceId": "pcb_trace_542",
+      "net": "I2C_SCL",
+      "lengthMm": 6.865863991822649,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": -2.875,
+          "y": -12.925,
+          "layer": "top"
+        },
+        {
+          "x": -2.875,
+          "y": -12.925,
+          "layer": "top"
+        },
+        {
+          "x": -3.5514757175273243e-16,
+          "y": -15.8,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -18.6,
+          "layer": "top"
+        },
+        {
+          "x": 0,
+          "y": -18.6,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "name": "I2C_MCU_DAC_SDA",
+      "pcbTraceId": "pcb_trace_543",
+      "net": "I2C_SDA",
+      "lengthMm": 6.472361107568209,
+      "layers": [
+        "top"
+      ],
+      "vertices": [
+        {
+          "x": 2.875,
+          "y": -12.925,
+          "layer": "top"
+        },
+        {
+          "x": 2.875,
+          "y": -12.925,
+          "layer": "top"
+        },
+        {
+          "x": 0.9499999999999996,
+          "y": -14.85,
+          "layer": "top"
+        },
+        {
+          "x": 0.95,
+          "y": -18.6,
+          "layer": "top"
+        },
+        {
+          "x": 0.95,
+          "y": -18.6,
+          "layer": "top"
+        }
+      ]
+    }
+  ],
+  "pathCount": 16,
+  "pathLengthMmByNet": {
+    "I2C_SCL": 101.81541587013923,
+    "I2C_SDA": 109.33584696870679
+  },
+  "minimumSclSdaEdgeClearanceByLayer": {
+    "top": {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SCL_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_519",
+      "otherTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "otherPcbTraceId": "pcb_trace_521",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          -22.8,
+          4.95
+        ],
+        [
+          -23.6,
+          5.75
+        ]
+      ],
+      "otherSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ]
+    },
+    "bottom": {
+      "edgeClearanceMm": 0.75,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SCL_PD_BOTTOM_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_525",
+      "otherTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "otherPcbTraceId": "pcb_trace_527",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          0,
+          -14.4
+        ],
+        [
+          0,
+          -5.5
+        ]
+      ],
+      "otherSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ]
+    },
+    "inner2": {
+      "edgeClearanceMm": 0.2631549416771887,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ],
+      "otherSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ]
+    }
+  },
+  "nearestForeignTraceClearances": [
+    {
+      "edgeClearanceMm": 0.2631549416771887,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ],
+      "otherSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2631549416771887,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ],
+      "otherSegment": [
+        [
+          0.95,
+          -3.5999999999999996
+        ],
+        [
+          22,
+          17.450000000000003
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2631549416771887,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "otherSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2631549416771887,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          0.95,
+          -3.5999999999999996
+        ],
+        [
+          22,
+          17.450000000000003
+        ]
+      ],
+      "otherSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2631549416771894,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ],
+      "otherSegment": [
+        [
+          22,
+          17.450000000000003
+        ],
+        [
+          22.7,
+          17.450000000000003
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2631549416771894,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          22,
+          17.450000000000003
+        ],
+        [
+          22.7,
+          17.450000000000003
+        ]
+      ],
+      "otherSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305827,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          23.655,
+          19.105000000000004
+        ],
+        [
+          27.095,
+          22.545
+        ]
+      ],
+      "otherSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305827,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          27.095,
+          22.545
+        ],
+        [
+          27.095,
+          23.2
+        ]
+      ],
+      "otherSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305827,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ],
+      "otherSegment": [
+        [
+          23.655,
+          19.105000000000004
+        ],
+        [
+          27.095,
+          22.545
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305827,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ],
+      "otherSegment": [
+        [
+          27.095,
+          22.545
+        ],
+        [
+          27.095,
+          23.2
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305853,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_526",
+      "otherTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_528",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          23,
+          19.105000000000004
+        ],
+        [
+          23.655,
+          19.105000000000004
+        ]
+      ],
+      "otherSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.2949747468305853,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cPcbTraceId": "pcb_trace_528",
+      "otherTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "otherPcbTraceId": "pcb_trace_526",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          22.7,
+          17.450000000000003
+        ],
+        [
+          28.365,
+          23.115000000000002
+        ]
+      ],
+      "otherSegment": [
+        [
+          23,
+          19.105000000000004
+        ],
+        [
+          23.655,
+          19.105000000000004
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SCL_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_519",
+      "otherTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "otherPcbTraceId": "pcb_trace_521",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          -22.8,
+          4.95
+        ],
+        [
+          -23.6,
+          5.75
+        ]
+      ],
+      "otherSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SCL_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_519",
+      "otherTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "otherPcbTraceId": "pcb_trace_521",
+      "otherNet": "I2C_SDA",
+      "i2cSegment": [
+        [
+          -23.6,
+          5.75
+        ],
+        [
+          -24.1,
+          5.75
+        ]
+      ],
+      "otherSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_521",
+      "otherTrace": "PD_DISCH_CONTROLLER_ESCAPE",
+      "otherPcbTraceId": "pcb_trace_480",
+      "otherNet": "PD_DISCH",
+      "i2cSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ],
+      "otherSegment": [
+        [
+          -24.1,
+          6.75
+        ],
+        [
+          -22.65,
+          6.75
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_521",
+      "otherTrace": "PD_DISCH_CONTROLLER_ESCAPE",
+      "otherPcbTraceId": "pcb_trace_480",
+      "otherNet": "PD_DISCH",
+      "i2cSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ],
+      "otherSegment": [
+        [
+          -22.65,
+          6.75
+        ],
+        [
+          -22.1,
+          7.3
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_521",
+      "otherTrace": "I2C_SCL_PD_PAD_TO_VIA",
+      "otherPcbTraceId": "pcb_trace_519",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ],
+      "otherSegment": [
+        [
+          -22.8,
+          4.95
+        ],
+        [
+          -23.6,
+          5.75
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PD_PAD_TO_VIA",
+      "i2cPcbTraceId": "pcb_trace_521",
+      "otherTrace": "I2C_SCL_PD_PAD_TO_VIA",
+      "otherPcbTraceId": "pcb_trace_519",
+      "otherNet": "I2C_SCL",
+      "i2cSegment": [
+        [
+          -22.1,
+          6.25
+        ],
+        [
+          -24.1,
+          6.25
+        ]
+      ],
+      "otherSegment": [
+        [
+          -23.6,
+          5.75
+        ],
+        [
+          -24.1,
+          5.75
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PULLUP_TO_PD_VIA",
+      "i2cPcbTraceId": "pcb_trace_522",
+      "otherTrace": "SUPPLY_V3_MST25_0_SPAN_0",
+      "otherPcbTraceId": "pcb_trace_240",
+      "otherNet": "V3V3",
+      "i2cSegment": [
+        [
+          -21.6,
+          6.25
+        ],
+        [
+          -21,
+          5.65
+        ]
+      ],
+      "otherSegment": [
+        [
+          -20.5,
+          1.25
+        ],
+        [
+          -20.5,
+          6.75
+        ]
+      ]
+    },
+    {
+      "edgeClearanceMm": 0.3,
+      "layer": "top",
+      "i2cTrace": "I2C_SDA_PULLUP_TO_PD_VIA",
+      "i2cPcbTraceId": "pcb_trace_522",
+      "otherTrace": "SUPPLY_V3_MST25_0_SPAN_0",
+      "otherPcbTraceId": "pcb_trace_240",
+      "otherNet": "V3V3",
+      "i2cSegment": [
+        [
+          -21,
+          5.65
+        ],
+        [
+          -21,
+          2.25
+        ]
+      ],
+      "otherSegment": [
+        [
+          -20.5,
+          1.25
+        ],
+        [
+          -20.5,
+          6.75
+        ]
+      ]
+    }
+  ],
+  "nearestForeignViaClearances": [
+    {
+      "edgeClearanceMm": 0.20000000000000015,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_97",
+      "viaNet": "HOT_ADC",
+      "viaCenter": [
+        1.6,
+        -9.025
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.20000000000000015,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_97",
+      "viaNet": "HOT_ADC",
+      "viaCenter": [
+        1.6,
+        -9.025
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.22500000000000006,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_191",
+      "viaNet": "VOUT_ADC",
+      "viaCenter": [
+        1.625,
+        -7.275
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.22500000000000006,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_218",
+      "viaNet": "UART_TX",
+      "viaCenter": [
+        1.625,
+        -8.15
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.22500000000000006,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_191",
+      "viaNet": "VOUT_ADC",
+      "viaCenter": [
+        1.625,
+        -7.275
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.22500000000000006,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_218",
+      "viaNet": "UART_TX",
+      "viaCenter": [
+        1.625,
+        -8.15
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SCL_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0,
+          -14.4
+        ],
+        [
+          0,
+          -5.5
+        ]
+      ],
+      "viaId": "pcb_via_165",
+      "viaNet": "PD_ALERT",
+      "viaCenter": [
+        -0.7,
+        -11.625
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0,
+          -14.4
+        ],
+        [
+          0,
+          -3.8949999999999996
+        ]
+      ],
+      "viaId": "pcb_via_165",
+      "viaNet": "PD_ALERT",
+      "viaCenter": [
+        -0.7,
+        -11.625
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_157",
+      "viaNet": "MCU_NRST",
+      "viaCenter": [
+        1.65,
+        -9.95
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_190",
+      "viaNet": "VBUS_ADC",
+      "viaCenter": [
+        1.65,
+        -6.4
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_157",
+      "viaNet": "MCU_NRST",
+      "viaCenter": [
+        1.65,
+        -9.95
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.24999999999999997,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_190",
+      "viaNet": "VBUS_ADC",
+      "viaCenter": [
+        1.65,
+        -6.4
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.2500000000000011,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          -8.55,
+          6.249999999999998
+        ],
+        [
+          -22.1,
+          6.25
+        ]
+      ],
+      "viaId": "pcb_via_149",
+      "viaNet": "TEC_CURRENT_COMMAND",
+      "viaCenter": [
+        -13.1,
+        6.95
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.250000000000002,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          -8.55,
+          6.249999999999998
+        ],
+        [
+          -22.1,
+          6.25
+        ]
+      ],
+      "viaId": "pcb_via_23",
+      "viaNet": "VBUS_TEC",
+      "viaCenter": [
+        -9.3,
+        6.95
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.27054181002909083,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0,
+          -3.8949999999999996
+        ],
+        [
+          23,
+          19.105000000000004
+        ]
+      ],
+      "viaId": "pcb_via_402",
+      "viaNet": "GND",
+      "viaCenter": [
+        4.626,
+        1.75
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.30000000000000004,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SCL_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0,
+          -14.4
+        ],
+        [
+          0,
+          -5.5
+        ]
+      ],
+      "viaId": "pcb_via_204",
+      "viaNet": "POWER_BUDGET_HIGH",
+      "viaCenter": [
+        -0.75,
+        -12.5
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.30000000000000004,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SCL_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0,
+          -14.4
+        ],
+        [
+          0,
+          -3.8949999999999996
+        ]
+      ],
+      "viaId": "pcb_via_204",
+      "viaNet": "POWER_BUDGET_HIGH",
+      "viaCenter": [
+        -0.75,
+        -12.5
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.3500000000000001,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.25
+        ]
+      ],
+      "viaId": "pcb_via_115",
+      "viaNet": "TEC_REQUEST",
+      "viaCenter": [
+        1.75,
+        -12.275
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.3500000000000001,
+      "layer": "inner2",
+      "i2cTrace": "I2C_SDA_MON_INNER2_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -14.4
+        ],
+        [
+          0.95,
+          -3.5999999999999996
+        ]
+      ],
+      "viaId": "pcb_via_115",
+      "viaNet": "TEC_REQUEST",
+      "viaCenter": [
+        1.75,
+        -12.275
+      ],
+      "diameter": 0.7
+    },
+    {
+      "edgeClearanceMm": 0.3631727983645292,
+      "layer": "bottom",
+      "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK",
+      "i2cSegment": [
+        [
+          0.95,
+          -3.25
+        ],
+        [
+          -8.55,
+          6.249999999999998
+        ]
+      ],
+      "viaId": "pcb_via_231",
+      "viaNet": "GND",
+      "viaCenter": [
+        -4.25,
+        0.8
+      ],
+      "diameter": 0.7
+    }
+  ],
+  "i2cVias": [
+    {
+      "pcb_via_id": "pcb_via_221",
+      "x": 0,
+      "y": -14.4,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_59"
+    },
+    {
+      "pcb_via_id": "pcb_via_222",
+      "x": 0.95,
+      "y": -14.4,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_60"
+    },
+    {
+      "pcb_via_id": "pcb_via_223",
+      "x": -22.8,
+      "y": 4.95,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_59"
+    },
+    {
+      "pcb_via_id": "pcb_via_224",
+      "x": -22.1,
+      "y": 6.25,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_60"
+    },
+    {
+      "pcb_via_id": "pcb_via_225",
+      "x": 27.095,
+      "y": 23.2,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_59"
+    },
+    {
+      "pcb_via_id": "pcb_via_226",
+      "x": 28.365,
+      "y": 23.2,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "source_net_id": "source_net_60"
+    }
+  ]
+}

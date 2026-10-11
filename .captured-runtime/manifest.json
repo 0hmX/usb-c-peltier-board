@@ -1,0 +1,74 @@
+{
+  "scope": "Six exact captured runtime files only, prepared for an approved standalone TypeScript project package. This overlay alone does not establish board geometry or routing acceptance.",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "runtimeManifest": [
+    {
+      "file": "node_modules/@tscircuit/core/package.json",
+      "sha256": "4f032bf178fe0ea6502ee3b15d5f9deef607deba96e36931020ef50878d8574b"
+    },
+    {
+      "file": "node_modules/@tscircuit/core/dist/index.js",
+      "sha256": "436e548925512b53cc47371bb3c2328fb420baab2310c7d279c2bb0f589e323b"
+    },
+    {
+      "file": "node_modules/@tscircuit/capacity-autorouter/package.json",
+      "sha256": "8fcd58bbbdc28c88db26d0c0e05356a38ad14f4039301920e04290ae0c437a2a"
+    },
+    {
+      "file": "node_modules/@tscircuit/capacity-autorouter/dist/index.js",
+      "sha256": "83b5162c5dfe8b0c058870550caa84fb1ce594dbb45622e1abf387d3c5b2a3a6"
+    },
+    {
+      "file": "node_modules/circuit-json-to-connectivity-map/package.json",
+      "sha256": "441a9d2144f6f47102cdacb5146e861f62f9800d0fa4bcc191421c201a48928a"
+    },
+    {
+      "file": "node_modules/circuit-json-to-connectivity-map/dist/index.js",
+      "sha256": "40f28a9fa682f2abbb7519ef56b31258cdff27665fc4e48727bf6466395e034c"
+    }
+  ],
+  "inventory": [
+    {
+      "file": "node_modules/@tscircuit/core/package.json",
+      "sha256": "4f032bf178fe0ea6502ee3b15d5f9deef607deba96e36931020ef50878d8574b",
+      "bytes": 6029
+    },
+    {
+      "file": "node_modules/@tscircuit/core/dist/index.js",
+      "sha256": "436e548925512b53cc47371bb3c2328fb420baab2310c7d279c2bb0f589e323b",
+      "bytes": 5537473
+    },
+    {
+      "file": "node_modules/@tscircuit/capacity-autorouter/package.json",
+      "sha256": "8fcd58bbbdc28c88db26d0c0e05356a38ad14f4039301920e04290ae0c437a2a",
+      "bytes": 7776
+    },
+    {
+      "file": "node_modules/@tscircuit/capacity-autorouter/dist/index.js",
+      "sha256": "83b5162c5dfe8b0c058870550caa84fb1ce594dbb45622e1abf387d3c5b2a3a6",
+      "bytes": 3125783
+    },
+    {
+      "file": "node_modules/circuit-json-to-connectivity-map/package.json",
+      "sha256": "441a9d2144f6f47102cdacb5146e861f62f9800d0fa4bcc191421c201a48928a",
+      "bytes": 695
+    },
+    {
+      "file": "node_modules/circuit-json-to-connectivity-map/dist/index.js",
+      "sha256": "40f28a9fa682f2abbb7519ef56b31258cdff27665fc4e48727bf6466395e034c",
+      "bytes": 11851
+    }
+  ],
+  "archivePath": "reviews/route-visuals/prototype-source-package-preparation/runtime-bde872769d68-six-file-overlay.zip",
+  "archiveSha256": "14fea509ff54d45d6d5d0a5adf6fc957e13c2012b9183996fe0511c138a84267",
+  "bindingCaptureOrApplyReceipt": {
+    "path": "reviews/toolchain-checkpoints/core-inline-via-dimensions-applied-v3/source-and-runtime-manifest.json",
+    "sha256": "1cd0cb6bf4cf3c4848a9ac956facaecb214d8b72b9fb2c12cbfe229e5794fb6c"
+  },
+  "allSixLiveBytesEqualCapturedRuntime": true,
+  "allSixArchivedBytesVerified": true,
+  "productionRuntimeChanged": false,
+  "CoreOrNativeExecuted": false,
+  "newSource22CaptureInferred": false,
+  "userFacingPackagePublicationPending": true
+}

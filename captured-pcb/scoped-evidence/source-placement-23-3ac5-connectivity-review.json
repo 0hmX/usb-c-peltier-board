@@ -1,0 +1,835 @@
+{
+  "status": "ACTUAL_SETTLED_SOURCE23_PHYSICAL_CONNECTIVITY_AND_DIRECT_REFERENCE_SCOPES_PASS",
+  "connectivityProgressScopePass": true,
+  "mainDirectReferenceQualityScopePass": true,
+  "fullBoardAccepted": false,
+  "acceptedForManufacture": false,
+  "actualCircuit": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+  },
+  "buildManifest": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/build-manifest.json",
+    "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+  },
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "runId": "4648d3f4-b889-4e58-a432-8b532b191512",
+  "sourceAndRuntimeStableAndManifestsIndependentlyVerified": true,
+  "summary": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source-placement-23-3ac5-summary.json",
+    "sha256": "ca2cdaea4d9083b5bdba94e4859ce41f7ea1f1f02897c9e8dccbd282a83a681b"
+  },
+  "physicalGraph": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source-placement-23-3ac5-physical-nets.json",
+    "sha256": "63d344cebf918a2e17961cf2f50817e42eae69356bffda11a277368bcdfc7b25"
+  },
+  "geometryRecordHashes": {
+    "pcb_trace": {
+      "count": 633,
+      "canonicalRecordsSha256": "b0958d7071640945923265d9479a9aabadb80b3b4911c78e06f02a2faaa67f5d"
+    },
+    "pcb_via": {
+      "count": 433,
+      "canonicalRecordsSha256": "0d4545d82184f1f5c17d9250b35b3b035ae5da893fdaaf40d83bf43fae74ae3c"
+    },
+    "pcb_copper_pour": {
+      "count": 29,
+      "canonicalRecordsSha256": "22ef25fb70e4a435f4a8078e28322c2ffcfbc484998b65213c8289a1ec0db04a"
+    },
+    "pcb_smtpad": {
+      "count": 552,
+      "canonicalRecordsSha256": "cc961c978c607d684d0b86ecd5ae71bcd22b0c339f50a35c82fbc9ea8b2adff7"
+    },
+    "pcb_plated_hole": {
+      "count": 22,
+      "canonicalRecordsSha256": "6702cbb5b06162235f50d1cabd3ed695e3167b1e7283ec78e3ef163f40392591"
+    },
+    "pcb_hole": {
+      "count": 6,
+      "canonicalRecordsSha256": "80d70ac55a05f6b427902d7b086981df56cf0938487b7f0db333a5ea2e491858"
+    }
+  },
+  "prior450PadPartitionRetention": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/placement22-a822-to-placement23-3ac5-legacy-comparison.json",
+    "sha256": "4e86fe8075ab744076d7589bdcf3c29ddace2926e9f19a6fda2ee777ac303e1f"
+  },
+  "prior426PadPartitionRetention": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/placement21-e98d-to-placement23-3ac5-legacy-comparison.json",
+    "sha256": "11839048d58af0c5cc74728039454707e79f1e142b144dd349504520e8bf6a54"
+  },
+  "original497TargetProjection": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/placement23-3ac5-original-projection-legacy-comparison.json",
+    "sha256": "56ec171135312ef82be622735217634f4823d2e2c810a0e6fa888732dd229571"
+  },
+  "controlledPriorCopperRetention": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/placement22-a822-to-placement23-3ac5-single-trunk-copper-comparison.json",
+    "sha256": "92c667a87b4ba9205c39e4964a63efb6ecb1439eed78444545b370e01c7734f4"
+  },
+  "controlledRetentionComparator": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/compare-source23-single-trunk-copper.py",
+    "sha256": "f9dcf704c35f0f621b52e3da6806895a62c12b99b8e8d7d6d3ed36e967965338"
+  },
+  "sameSource633Path433BarrelPublicationRetention": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source23-970e-to-placement23-3ac5-same-source-physical-publication-retention.json",
+    "sha256": "de6d0939101936e1b1274d638c6862f20478ce198904677fbff61fb6d50433f2"
+  },
+  "actualRequiredPadIslandMap": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source23-current-3ac5-required-pad-island-map.json",
+    "sha256": "da4bb33a2682bbc4ec703a2dfda4bf931705c5fc652b8e2925a6c1fe6d211a77"
+  },
+  "actualPadAndAttachedNamedHeadMap": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source23-current-3ac5-pad-island-and-attached-head-map.json",
+    "sha256": "dc27968ac837fe2c571b8b93e05f001d69c9605c12448e18299af6b94dc11752"
+  },
+  "actualMapPublicationRetentionBinding": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source23-3ac5-actual-map-publication-retention-binding.json",
+    "sha256": "5bf315a7475835c0576c7449f0b808412f6d4fdaa3b648f24c12e255df63411f"
+  },
+  "obligationsTable": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/routing-obligations-placement23-3ac5.json",
+    "sha256": "85b95b979a05fe10fa832ee9699d862ef1a1ac77e20d9ff5280a7344f472c49d"
+  },
+  "exactChosenWorkGeometryAuthority": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/pd-escapes/r206-source23-top-transfer-reference-selected-work.packet.json",
+    "sha256": "8413b65676ecbe3d7e04d24c476bfde2e4a0ba0fcb5338ba4c1545d27b478c8f"
+  },
+  "narrowChosenWorkFiniteEdgeProof": {
+    "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/progress-connectivity/source23-r206-8413-selected-finite-endpoint-retention-review.json",
+    "sha256": "fc3501bd1b6c8708c4422a82b00b5f74d365503025be9f36aafada877ce29bd1"
+  },
+  "actualRequiredJoins": 450,
+  "actualJoinedJoins": 450,
+  "actualMissingJoins": 0,
+  "joinedGainVersusActualSource22": 0,
+  "joinedGainVersusPriorQualifiedSource21": 24,
+  "originalCohort": {
+    "requiredJoins": 388,
+    "joined": 388,
+    "missing": 0
+  },
+  "newDebugCohort": {
+    "requiredJoins": 62,
+    "joined": 62,
+    "missing": 0
+  },
+  "all571RequiredTargetsAnd121PadNetGroupsPreserved": true,
+  "allPrior450And426ConnectedPadGroupsPreserved": true,
+  "priorGroupsSplit": [],
+  "fullyConnectedMultiPadNets": 104,
+  "partiallyConnectedMultiPadNets": 0,
+  "untouchedMultiPadNets": 0,
+  "ground": {
+    "net": "GND",
+    "sourceGraphRoot": "source_port_410",
+    "targetPads": 147,
+    "padIslands": 1,
+    "allPadsConnected": true,
+    "allPadsConnectedToReference": true,
+    "allCopperConnectedToPads": true,
+    "padsConnectedToReference": 147,
+    "referenceLayer": "inner1",
+    "referenceRegionAreaMm2": 6613.744485,
+    "referenceLayerViaCount": 166,
+    "viasDirectlyContactingReferenceRegion": 166,
+    "allReferenceLayerViasDirectlyContactReference": true,
+    "orphanPourRegions": [],
+    "orphanVias": [],
+    "orphanTraces": []
+  },
+  "criticalSameMainGroundPlanePads": [
+    {
+      "selector": "C28.pin2",
+      "padId": "pcb_smtpad_167",
+      "physicalPadIslandId": "source_port_410:990feb1c26cf",
+      "worldMm": [
+        21.669921,
+        23
+      ]
+    },
+    {
+      "selector": "C211.pin2",
+      "padId": "pcb_smtpad_452",
+      "physicalPadIslandId": "source_port_410:990feb1c26cf",
+      "worldMm": [
+        12.2,
+        -3.5
+      ]
+    },
+    {
+      "selector": "C212.pin2",
+      "padId": "pcb_smtpad_454",
+      "physicalPadIslandId": "source_port_410:990feb1c26cf",
+      "worldMm": [
+        15.2,
+        -3.5
+      ]
+    },
+    {
+      "selector": "U2.pin7",
+      "padId": "pcb_smtpad_106",
+      "physicalPadIslandId": "source_port_410:990feb1c26cf",
+      "worldMm": [
+        -4.025,
+        9.225
+      ]
+    },
+    {
+      "selector": "C43.pin2",
+      "padId": "pcb_smtpad_239",
+      "physicalPadIslandId": "source_port_410:990feb1c26cf",
+      "worldMm": [
+        25,
+        20.7
+      ]
+    }
+  ],
+  "mainDirectReferenceQualification": {
+    "requiredDistinctReturnBarrels": 166,
+    "actualDistinctReturnBarrels": 166,
+    "actualDirectLargestInner1ReferenceBarrels": 166,
+    "actualIndirectCommonReferenceBarrels": 0,
+    "all147FittedGroundPadsShareC28Reference": true,
+    "directLargestReferencePass": true,
+    "qualityHold": false,
+    "referenceRegionAreaMm2": 6613.744485,
+    "earlierActualSource22Direct157of166FailureRestoredInGenuineFreshRecut": true
+  },
+  "all631OtherPhysicalPaths432OldBarrelsAnd461OtherPositiveSourceBoundsPreserved": true,
+  "authorizedChangedTrunk": {
+    "exactOldActualPcbTrace": "pcb_trace_484",
+    "exactOldActualSourceTrace": "source_trace_966",
+    "twoActualSelectedSourceNames": [
+      "PD_VALID_R206_BIAS_TO_TRANSFER_TOP",
+      "PD_VALID_R206_TRANSFER_TO_ENTRY_INNER1"
+    ],
+    "newActualOrdinaryHost": {
+      "type": "pcb_via",
+      "pcb_via_id": "pcb_via_220",
+      "x": -22.8,
+      "y": 10,
+      "hole_diameter": 0.3,
+      "outer_diameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "from_layer": "top",
+      "to_layer": "bottom",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net17",
+      "tented_on_top": true,
+      "tented_on_bottom": true,
+      "source_net_id": "source_net_20",
+      "pcb_port_ids": [
+        "pcb_port_1150",
+        "pcb_port_1151",
+        "pcb_port_1152"
+      ]
+    },
+    "newGenuineSourceManualParent": {
+      "type": "source_manually_placed_via",
+      "source_manually_placed_via_id": "source_manually_placed_via_220",
+      "source_group_id": "source_group_2",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_net_id": "source_net_20"
+    },
+    "newGenuineTopInner1Ports": [
+      {
+        "type": "source_port",
+        "source_port_id": "source_port_1150",
+        "name": "top",
+        "port_hints": [
+          "top"
+        ],
+        "source_component_id": "source_manually_placed_via_220",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net17"
+      },
+      {
+        "type": "source_port",
+        "source_port_id": "source_port_1152",
+        "name": "inner1",
+        "port_hints": [
+          "inner1"
+        ],
+        "source_component_id": "source_manually_placed_via_220",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net17"
+      }
+    ],
+    "defaultBottomRegisteredInActualHeadMap": true,
+    "newInner2PortInvented": false,
+    "zeroJoinGainFromReferenceRepair": true
+  },
+  "actualNativeBrepPourInventory": [
+    {
+      "id": "pcb_copper_pour_0",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "inner1",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 6633.613674041867,
+      "boundsMm": [
+        -49.5,
+        -37.0,
+        49.5,
+        37.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_14",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 5028.531592386742,
+      "boundsMm": [
+        -49.5,
+        -37.0,
+        49.5,
+        37.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_20",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 1.492769216037999,
+      "boundsMm": [
+        12.602497,
+        -16.172503,
+        14.584097,
+        -14.190903
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_30",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 158.10355619346694,
+      "boundsMm": [
+        -0.113705,
+        -30.09,
+        19.065,
+        -6.865514
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_34",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 89.22025388178301,
+      "boundsMm": [
+        -22.733175,
+        -11.224112,
+        -0.31,
+        4.64
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_35",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 43.06129995244748,
+      "boundsMm": [
+        -21.978693,
+        6.56,
+        -9.700888,
+        11.49
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_38",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 0.42610269239799947,
+      "boundsMm": [
+        -16.14879,
+        14.359543,
+        -15.31,
+        15.12379
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_41",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 1.3506216362994996,
+      "boundsMm": [
+        -6.315,
+        15.41,
+        -4.355156,
+        16.25
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_44",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 0.39166582666149924,
+      "boundsMm": [
+        -14.897376,
+        16.80121,
+        -14.15121,
+        17.49879
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_45",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 0.380686702161501,
+      "boundsMm": [
+        -3.59879,
+        18.65121,
+        -2.90121,
+        19.34879
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_46",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 3.9754963052079995,
+      "boundsMm": [
+        -38.25,
+        18.335,
+        -35.41,
+        19.79
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_47",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 147.60799736207397,
+      "boundsMm": [
+        -38.25,
+        11.11,
+        -16.738406,
+        23.55
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_49",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 22.018132127848002,
+      "boundsMm": [
+        -9.1,
+        10.5,
+        -1.1,
+        13.5
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_50",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 9.058427945292499,
+      "boundsMm": [
+        -0.9,
+        7.85,
+        1.75,
+        11.45
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_51",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 65.27999999999999,
+      "boundsMm": [
+        -6.4,
+        25.8,
+        14.0,
+        29.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_52",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 9.817499999999997,
+      "boundsMm": [
+        20.8,
+        22.4,
+        24.65,
+        24.95
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_53",
+      "net": "TEC_SW",
+      "sourceNetId": "source_net_6",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 65.520382989662,
+      "boundsMm": [
+        2.72,
+        6.2,
+        12.5,
+        19.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_54",
+      "net": "VBUS_TEC",
+      "sourceNetId": "source_net_4",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 109.49585944100204,
+      "boundsMm": [
+        -6.4,
+        15.2,
+        18.1,
+        24.3
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_59",
+      "net": "VBUS_TEC",
+      "sourceNetId": "source_net_4",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 347.384053715412,
+      "boundsMm": [
+        -17.5,
+        11.6,
+        18.1,
+        24.3
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_60",
+      "net": "VBUS_TEC",
+      "sourceNetId": "source_net_4",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 3.327264876072002,
+      "boundsMm": [
+        -18.2,
+        11.5,
+        -16.4,
+        15.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_61",
+      "net": "TEC_INDUCTOR_OUT",
+      "sourceNetId": "source_net_7",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 35.65087809943801,
+      "boundsMm": [
+        20.5,
+        9.5,
+        26.3,
+        15.65
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_62",
+      "net": "TEC_INDUCTOR_OUT",
+      "sourceNetId": "source_net_7",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 35.67000000000001,
+      "boundsMm": [
+        20.5,
+        9.5,
+        26.3,
+        15.65
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_63",
+      "net": "TEC_POS",
+      "sourceNetId": "source_net_5",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 209.9841684490851,
+      "boundsMm": [
+        25.0,
+        -7.0,
+        46.0,
+        13.84
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_64",
+      "net": "TEC_POS",
+      "sourceNetId": "source_net_5",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 211.04480000000007,
+      "boundsMm": [
+        25.0,
+        -7.0,
+        46.0,
+        13.84
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_65",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 12.462499999999995,
+      "boundsMm": [
+        24.7,
+        7.9,
+        32.4,
+        9.95
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_66",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 15.050000000000002,
+      "boundsMm": [
+        26.9,
+        -0.5,
+        31.2,
+        3.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_67",
+      "net": "GND",
+      "sourceNetId": "source_net_0",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 32.0,
+      "boundsMm": [
+        40.0,
+        1.0,
+        48.0,
+        5.0
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_68",
+      "net": "VBUS_RAW",
+      "sourceNetId": "source_net_3",
+      "layer": "top",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 144.0801502009724,
+      "boundsMm": [
+        -43.3,
+        8.8,
+        -17.8,
+        27.1
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    },
+    {
+      "id": "pcb_copper_pour_69",
+      "net": "VBUS_RAW",
+      "sourceNetId": "source_net_3",
+      "layer": "bottom",
+      "nativeBrepAreaBeforeAdditionalDrillSubtractionMm2": 146.50503858442937,
+      "boundsMm": [
+        -43.3,
+        8.8,
+        -17.8,
+        27.1
+      ],
+      "regionAttachedToRequiredPadsByActualFiniteGraph": true
+    }
+  ],
+  "actualNativeBrepPourCountsByNetLayer": [
+    {
+      "net": "GND",
+      "layer": "bottom",
+      "regions": 11
+    },
+    {
+      "net": "GND",
+      "layer": "inner1",
+      "regions": 1
+    },
+    {
+      "net": "GND",
+      "layer": "top",
+      "regions": 7
+    },
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "layer": "bottom",
+      "regions": 1
+    },
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "layer": "top",
+      "regions": 1
+    },
+    {
+      "net": "TEC_POS",
+      "layer": "bottom",
+      "regions": 1
+    },
+    {
+      "net": "TEC_POS",
+      "layer": "top",
+      "regions": 1
+    },
+    {
+      "net": "TEC_SW",
+      "layer": "top",
+      "regions": 1
+    },
+    {
+      "net": "VBUS_RAW",
+      "layer": "bottom",
+      "regions": 1
+    },
+    {
+      "net": "VBUS_RAW",
+      "layer": "top",
+      "regions": 1
+    },
+    {
+      "net": "VBUS_TEC",
+      "layer": "bottom",
+      "regions": 1
+    },
+    {
+      "net": "VBUS_TEC",
+      "layer": "top",
+      "regions": 2
+    }
+  ],
+  "typedOrphanPourRegions": [],
+  "typedOrphanTraceIds": [],
+  "typedOrphanBarrelIds": [],
+  "targetlessElectricalCopperNets": [],
+  "unassignedElectricalPhysicalPrimitives": [],
+  "all29NativeBrepRegionsAssignedAndAttachedToRequiredPads": true,
+  "threeIntentionalNonElectricalAssemblyFiducials": {
+    "sourceLayout": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/layout.ts",
+      "sha256": "6f70cae0b722453757736801b2461f02a0f3c7a3e5d68470035bfce57e2c8536"
+    },
+    "actualPads": [
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "pcb_component_id": null,
+        "layer": "top",
+        "shape": "circle",
+        "radius": 0.5,
+        "port_hints": [],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.5,
+        "x": -38,
+        "y": 32.5,
+        "subcircuit_id": "subcircuit_source_group_2"
+      },
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "pcb_component_id": null,
+        "layer": "top",
+        "shape": "circle",
+        "radius": 0.5,
+        "port_hints": [],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.5,
+        "x": 38,
+        "y": 32.5,
+        "subcircuit_id": "subcircuit_source_group_2"
+      },
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_2",
+        "pcb_component_id": null,
+        "layer": "top",
+        "shape": "circle",
+        "radius": 0.5,
+        "port_hints": [],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.5,
+        "x": -38,
+        "y": -32.5,
+        "subcircuit_id": "subcircuit_source_group_2"
+      }
+    ],
+    "excludedFromElectricalTargetAndOrphanCountsByDesign": true
+  },
+  "genuineProvenance": {
+    "physicalTraceCount": 633,
+    "physicalFullBarrelCount": 433,
+    "nativeBrepPourCount": 29,
+    "manualSourcePathCount": 544,
+    "manualSourceBarrelCount": 344,
+    "authenticPrecomputedGroundPathAndBarrelCount": 89,
+    "freshNativeSolverStarts": 0,
+    "freshNativeCopperAdded": 0,
+    "freshPublicPourSolverStarts": 1,
+    "sameRunStrictSourceInitial": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23-evidence/initial-source-copper.circuit.json",
+      "sha256": "4dd4bb368974a5fce9e031a238bb795d95779d0568659bcbf3a368c524897e71"
+    },
+    "sameRunGroundMaterializedPrePour": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23-evidence/placement-initial-source-copper.circuit.json",
+      "sha256": "970e48edfb31833f9f0726a853b8d07eb6a68b04664f898bb21b7faa03bf8380"
+    },
+    "settledCaptureHandoff": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/toolchain-checkpoints/source23-settled-capture/handoff.json",
+      "sha256": "92525c2e60c91c222b7d0e2761d0fdfa2f8dc871798bfc9c88186b524e2717a3"
+    },
+    "source150Archive": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/toolchain-checkpoints/source23-source-archive/source-files.zip",
+      "sha256": "efdc2daf11526a86ba27bd6a65b34cb78ebaa895606418c25be6601cadfb68de"
+    },
+    "source150ArchiveReceipt": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/toolchain-checkpoints/source23-source-archive/source-archive-receipt.json",
+      "sha256": "25918e930653523052b3c93268910b91f9dabf13ad8ab551553e9faba486f007"
+    }
+  },
+  "separateFinalAllScopeReadinessRequired": [
+    "actual SOURCE-domain, safe buffer and LED/probe roles",
+    "actual nonpour and BREP copper clearances",
+    "all166 direct-reference quiet-return and ground successor witnesses",
+    "current-carrying widths and feed barrels",
+    "imported package/footprint, pad-stack, tent/mask and body clearances",
+    "route quality and complete world-frame/whole-length contract gates"
+  ],
+  "sourceOrCadEditedByAudit": false,
+  "coreOrNativeSolverLaunchedByAudit": false
+}

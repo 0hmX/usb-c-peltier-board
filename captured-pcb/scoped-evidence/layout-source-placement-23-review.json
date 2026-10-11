@@ -1,0 +1,1010 @@
+{
+  "scope": "Actual Source23 regenerated copper only. All166 direct-largest inner1 and bottom return contacts, common147 Ground targets, physical450 joins, zero typed orphans, current and clearance gates pass on the same immutable actual CJS. Forecast evidence supplies no acceptance credit. Dynamic/HF, exported masks, fabrication and whole-board release remain separate.",
+  "input": "dist/debug-source-placement-23/circuit.json",
+  "inputSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "manifest": "dist/debug-source-placement-23/build-manifest.json",
+  "manifestSha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab",
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "runId": "4648d3f4-b889-4e58-a432-8b532b191512",
+  "sourceUnchanged": true,
+  "runtimeUnchanged": true,
+  "sourceSolverStartCount": 0,
+  "sourcePourSolverStartCount": 1,
+  "actualCounts": {
+    "pcb_trace": 633,
+    "pcb_via": 433,
+    "pcb_copper_pour": 29
+  },
+  "storedErrors": 0,
+  "boundReviews": [
+    {
+      "role": "handoff",
+      "path": "reviews/toolchain-checkpoints/source23-settled-capture/handoff.json",
+      "sha256": "92525c2e60c91c222b7d0e2761d0fdfa2f8dc871798bfc9c88186b524e2717a3"
+    },
+    {
+      "role": "direct-ground-contacts",
+      "path": "reviews/layout-source-placement-23-ground-contacts.json",
+      "sha256": "53b65bb959524abbfdab9652db8096929115a45943a384ed7e97b8e51ac55d2e"
+    },
+    {
+      "role": "actual-support",
+      "path": "reviews/layout-source-placement-23-support.json",
+      "sha256": "a26f3a8eacb0511b8606db0885ffe37d0107f3586cdb2a654335e820b567d114"
+    },
+    {
+      "role": "pours",
+      "path": "reviews/layout-source-placement-23-pours.json",
+      "sha256": "17351a0de8fbe957be4221a5e3ab970460b890abe4766452d0ca2f15069a039e"
+    },
+    {
+      "role": "cap-returns",
+      "path": "reviews/layout-source-placement-23-cap-returns.json",
+      "sha256": "963bf49a28171a97975a35abe2d4dc6f9c15b4d9e6c15916d8de788c58f916ce"
+    },
+    {
+      "role": "current",
+      "path": "reviews/layout-source-placement-23-current.json",
+      "sha256": "12c5723b7a658912105b8e66062f8ff7ed9159908d932929e344a0022fff256b"
+    },
+    {
+      "role": "output-pads-pours",
+      "path": "reviews/layout-source-placement-23-output-pads-pours.json",
+      "sha256": "badd98272eb647d642968489b30742edb62f207cc4c14a6b756d393f00a20afa"
+    },
+    {
+      "role": "accessibility",
+      "path": "reviews/layout-source-placement-23-accessibility.json",
+      "sha256": "f13c5458358cfeeb15e80d61ad426d8b81f0531d72339c684d244bd0d9a65067"
+    },
+    {
+      "role": "physical-nets",
+      "path": "reviews/progress-connectivity/source-placement-23-3ac5-physical-nets.json",
+      "sha256": "63d344cebf918a2e17961cf2f50817e42eae69356bffda11a277368bcdfc7b25"
+    },
+    {
+      "role": "pad-pour-complement",
+      "path": "reviews/clearance-route-audits/source23-3ac5f312-pads-and-pour-pairs.json",
+      "sha256": "b38b19778a3d1d48afde7a5c0edc4dfd0a281212ed15eeef5101cbbf39dfdb4c"
+    },
+    {
+      "role": "nonpour-record-rebind",
+      "path": "reviews/clearance-route-audits/source23-3ac5f312-restored-start-end-nonpour-record-rebind.json",
+      "sha256": "e065c4638edc07a598204bf80ca6ff47efae90e257f3fe1936fc267819f94379"
+    },
+    {
+      "role": "actual-source-fast-carry",
+      "path": "reviews/clearance-route-audits/source23-970e48ed-actual-r206-source-geometry-head-retention.json",
+      "sha256": "8eba6e2a3193657e4f8588085a770343da0e8ca222003997c9d9e4db0b2a608c"
+    }
+  ],
+  "all147GroundPadsCommonC28Reference": true,
+  "actualLargestDrilledInner1RegionAreaMm2": 6613.744484734938,
+  "exact166SelectedGroundHosts": true,
+  "all166GroundDimensionsAndFullSpanPass": true,
+  "all166GroundBarrelsFiniteBottomContactsPass": true,
+  "directLargestInner1GroundHostCount": 166,
+  "requiredDirectLargestInner1GroundHostCount": 166,
+  "all166GroundBarrelsDirectlyContactMainInner1": true,
+  "minimumRequiredFiniteContactMm2": 0.05,
+  "ninePreviouslyHeldReferenceReturns": [
+    {
+      "viaId": "pcb_via_13",
+      "center": [
+        -23.1,
+        7.5
+      ],
+      "mainInner1ContactMm2": 0.314165758200465,
+      "bottomContactMm2": 0.314165758200465,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": true,
+      "tentedOnBottomLiteral": true,
+      "bothLiteralTentFlagsAbsent": false,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_44",
+      "center": [
+        -6.4,
+        -10.425
+      ],
+      "mainInner1ContactMm2": 0.31416575820046533,
+      "bottomContactMm2": 0.31416575820046533,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": true,
+      "tentedOnBottomLiteral": true,
+      "bothLiteralTentFlagsAbsent": false,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_378",
+      "center": [
+        -17.374,
+        3.75
+      ],
+      "mainInner1ContactMm2": 0.3141657582004643,
+      "bottomContactMm2": 0.3141657582004643,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_383",
+      "center": [
+        -23.249000000000002,
+        8.5
+      ],
+      "mainInner1ContactMm2": 0.3141657582004652,
+      "bottomContactMm2": 0.3141657582004652,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_384",
+      "center": [
+        -24,
+        9.15
+      ],
+      "mainInner1ContactMm2": 0.31416575820046516,
+      "bottomContactMm2": 0.31416575820046516,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_390",
+      "center": [
+        -7.964,
+        0.379999999999999
+      ],
+      "mainInner1ContactMm2": 0.31416575820046494,
+      "bottomContactMm2": 0.31416575820046494,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_404",
+      "center": [
+        -13.299,
+        3.8000000000000007
+      ],
+      "mainInner1ContactMm2": 0.3141657582004645,
+      "bottomContactMm2": 0.3141657582004645,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_405",
+      "center": [
+        -8.949000000000002,
+        -1.0999999999999979
+      ],
+      "mainInner1ContactMm2": 0.314165758200465,
+      "bottomContactMm2": 0.314165758200465,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    },
+    {
+      "viaId": "pcb_via_449",
+      "center": [
+        -6.7490000000000006,
+        -4.16
+      ],
+      "mainInner1ContactMm2": 0.31416575820046355,
+      "bottomContactMm2": 0.31416575820046355,
+      "minimumContactMm2": 0.05,
+      "ordinaryGroundDimensionsAndFullSpanPass": true,
+      "tentedOnTopLiteral": null,
+      "tentedOnBottomLiteral": null,
+      "bothLiteralTentFlagsAbsent": true,
+      "pass": true
+    }
+  ],
+  "sameOriginGround12Ground43Ground13SourceAndFinitePathPass": true,
+  "groundSuccessors": [
+    {
+      "name": "GROUND12_RETAINED",
+      "component": "U2",
+      "pin": 7,
+      "sourcePortId": "source_port_160",
+      "pcbPortId": "pcb_port_160",
+      "hostCenter": [
+        -4.025,
+        8.325
+      ],
+      "uniqueRealPathAndGroundHost": true,
+      "pcbTraceId": "saved_phase_null_0_12",
+      "sourceTraceId": "source_trace_110",
+      "hostViaId": "pcb_via_387",
+      "trueGroundSourceMembership": true,
+      "finiteRealPadContactMm2": 0.12070793862638574,
+      "finiteTrueHostContactMm2": 0.04143798877026929,
+      "planarLengthMm": 0.9000000000000004,
+      "pdMaximumRemainsAbsent": true,
+      "pass": true
+    },
+    {
+      "name": "GROUND43_SHARED39",
+      "component": "U_CLEAR_BUFFER",
+      "pin": 2,
+      "sourcePortId": "source_port_392",
+      "pcbPortId": "pcb_port_392",
+      "hostCenter": [
+        -22.9,
+        -17.8
+      ],
+      "uniqueRealPathAndGroundHost": true,
+      "pcbTraceId": "pcb_trace_459",
+      "sourceTraceId": "source_trace_941",
+      "hostViaId": "pcb_via_39",
+      "trueGroundSourceMembership": true,
+      "finiteRealPadContactMm2": 0.1257079386263875,
+      "finiteTrueHostContactMm2": 0.041437988770268955,
+      "planarLengthMm": 1.8727922061357838,
+      "pdMaximumRemainsAbsent": true,
+      "pass": true
+    },
+    {
+      "name": "PD_GROUND_SAME_OWNER_REPOSE",
+      "component": "U_PD",
+      "pin": 10,
+      "sourcePortId": "source_port_47",
+      "pcbPortId": "pcb_port_47",
+      "hostCenter": [
+        -23.1,
+        7.5
+      ],
+      "uniqueRealPathAndGroundHost": true,
+      "pcbTraceId": "pcb_trace_14",
+      "sourceTraceId": "source_trace_19",
+      "hostViaId": "pcb_via_13",
+      "trueGroundSourceMembership": true,
+      "finiteRealPadContactMm2": 0.07570793862638575,
+      "finiteTrueHostContactMm2": 0.04164363917560407,
+      "planarLengthMm": 1.1035533905932737,
+      "pdMaximumRemainsAbsent": true,
+      "pass": true
+    }
+  ],
+  "eightQuietReturnsPass": true,
+  "quietReturnResults": [
+    {
+      "name": "GROUND12_U2_PIN7",
+      "center": [
+        -4.025,
+        8.325
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_387",
+          "center": [
+            -4.025,
+            8.325
+          ],
+          "mainInner1ContactMm2": 0.30389675814049555,
+          "bottomContactMm2": 0.3027860506212563,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": null,
+          "tentedOnBottomLiteral": null,
+          "bothLiteralTentFlagsAbsent": true,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "INPUT_DEVICE_GND",
+      "center": [
+        -15.8,
+        14.775
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_14",
+          "center": [
+            -15.8,
+            14.775
+          ],
+          "mainInner1ContactMm2": 0.3141657582004655,
+          "bottomContactMm2": 0.31078796708623024,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": true,
+          "tentedOnBottomLiteral": true,
+          "bothLiteralTentFlagsAbsent": false,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "DVDT_CAP_GND",
+      "center": [
+        -26.356,
+        15.5
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_381",
+          "center": [
+            -26.355999999999998,
+            15.499999999999998
+          ],
+          "mainInner1ContactMm2": 0.3141657582004651,
+          "bottomContactMm2": 0.3141657582004651,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": null,
+          "tentedOnBottomLiteral": null,
+          "bothLiteralTentFlagsAbsent": true,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "PROTECTED_CAP_GND",
+      "center": [
+        -19.024,
+        31.44
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_382",
+          "center": [
+            -19.024,
+            31.439999999999998
+          ],
+          "mainInner1ContactMm2": 0.3141657582004647,
+          "bottomContactMm2": 0.3141657582004647,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": null,
+          "tentedOnBottomLiteral": null,
+          "bothLiteralTentFlagsAbsent": true,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "STUSB_EVENT_GND_REPOSE",
+      "center": [
+        -23.1,
+        7.5
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_13",
+          "center": [
+            -23.1,
+            7.5
+          ],
+          "mainInner1ContactMm2": 0.314165758200465,
+          "bottomContactMm2": 0.314165758200465,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": true,
+          "tentedOnBottomLiteral": true,
+          "bothLiteralTentFlagsAbsent": false,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "MCU_VSS_SHORT",
+      "center": [
+        4.4,
+        -9.35
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_411",
+          "center": [
+            4.4,
+            -9.35
+          ],
+          "mainInner1ContactMm2": 0.3141657582004655,
+          "bottomContactMm2": 0.3141657582004655,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": null,
+          "tentedOnBottomLiteral": null,
+          "bothLiteralTentFlagsAbsent": true,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "ADC_FILTER_GND",
+      "center": [
+        13.4,
+        -6.5
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_234",
+          "center": [
+            13.4,
+            -6.5
+          ],
+          "mainInner1ContactMm2": 0.31416575820046494,
+          "bottomContactMm2": 0.31416575820046494,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": true,
+          "tentedOnBottomLiteral": true,
+          "bothLiteralTentFlagsAbsent": false,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "C43_MONITOR_GND",
+      "center": [
+        25,
+        21.65
+      ],
+      "contacts": [
+        {
+          "viaId": "pcb_via_22",
+          "center": [
+            25,
+            21.65
+          ],
+          "mainInner1ContactMm2": 0.3141657582004647,
+          "bottomContactMm2": 0.3141657582004647,
+          "minimumContactMm2": 0.05,
+          "ordinaryGroundDimensionsAndFullSpanPass": true,
+          "tentedOnTopLiteral": true,
+          "tentedOnBottomLiteral": true,
+          "bothLiteralTentFlagsAbsent": false,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "all60MainPowerTargetsPhysicallyCommonPerNet": true,
+  "mainPowerTargetResults": [
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "targets": 4,
+      "padIslands": 1,
+      "pass_": true
+    },
+    {
+      "net": "TEC_POS",
+      "targets": 12,
+      "padIslands": 1,
+      "pass_": true
+    },
+    {
+      "net": "TEC_SW",
+      "targets": 8,
+      "padIslands": 1,
+      "pass_": true
+    },
+    {
+      "net": "VBUS_RAW",
+      "targets": 13,
+      "padIslands": 1,
+      "pass_": true
+    },
+    {
+      "net": "VBUS_TEC",
+      "targets": 23,
+      "padIslands": 1,
+      "pass_": true
+    }
+  ],
+  "all15CurrentSectionsAnd78FeedContactsPass": true,
+  "currentSectionResults": [
+    {
+      "name": "raw column",
+      "net": "VBUS_RAW",
+      "layer": "top",
+      "widthMm": 3.3,
+      "requiredMm": 3,
+      "pass": true
+    },
+    {
+      "name": "raw column",
+      "net": "VBUS_RAW",
+      "layer": "bottom",
+      "widthMm": 3.3,
+      "requiredMm": 3,
+      "pass": true
+    },
+    {
+      "name": "raw bridge",
+      "net": "VBUS_RAW",
+      "layer": "top",
+      "widthMm": 3.3,
+      "requiredMm": 3,
+      "pass": true
+    },
+    {
+      "name": "raw bridge",
+      "net": "VBUS_RAW",
+      "layer": "bottom",
+      "widthMm": 3.3,
+      "requiredMm": 3,
+      "pass": true
+    },
+    {
+      "name": "protected bridge",
+      "net": "VBUS_TEC",
+      "layer": "bottom",
+      "widthMm": 8.902,
+      "requiredMm": 8,
+      "pass": true
+    },
+    {
+      "name": "protected span above switch-reference opening",
+      "net": "VBUS_TEC",
+      "layer": "bottom",
+      "widthMm": 7.802,
+      "requiredMm": 7.5,
+      "pass": true
+    },
+    {
+      "name": "switch source collector",
+      "net": "TEC_SW",
+      "layer": "top",
+      "widthMm": 2.998,
+      "requiredMm": 2,
+      "pass": true
+    },
+    {
+      "name": "inductor shunt bridge",
+      "net": "TEC_INDUCTOR_OUT",
+      "layer": "top",
+      "widthMm": 6.15,
+      "requiredMm": 5.5,
+      "pass": true
+    },
+    {
+      "name": "inductor shunt bridge",
+      "net": "TEC_INDUCTOR_OUT",
+      "layer": "bottom",
+      "widthMm": 6.15,
+      "requiredMm": 5.5,
+      "pass": true
+    },
+    {
+      "name": "output column",
+      "net": "TEC_POS",
+      "layer": "top",
+      "widthMm": 4,
+      "requiredMm": 3.7,
+      "pass": true
+    },
+    {
+      "name": "output column",
+      "net": "TEC_POS",
+      "layer": "bottom",
+      "widthMm": 4,
+      "requiredMm": 3.7,
+      "pass": true
+    },
+    {
+      "name": "output terminal rail",
+      "net": "TEC_POS",
+      "layer": "top",
+      "widthMm": 6.2,
+      "requiredMm": 6,
+      "pass": true
+    },
+    {
+      "name": "output terminal rail",
+      "net": "TEC_POS",
+      "layer": "bottom",
+      "widthMm": 6.2,
+      "requiredMm": 6,
+      "pass": true
+    },
+    {
+      "name": "eFuse IN short neck",
+      "net": "VBUS_RAW",
+      "layer": "top",
+      "widthMm": 0.3,
+      "requiredMm": 0.2,
+      "pass": true
+    },
+    {
+      "name": "eFuse OUT short neck",
+      "net": "VBUS_TEC",
+      "layer": "top",
+      "widthMm": 0.3,
+      "requiredMm": 0.2,
+      "pass": true
+    }
+  ],
+  "feedContactCount": 78,
+  "fanFeedAndLocalStubMinimumWidthMm": 0.8,
+  "fanFeedAndLocalStubPass": true,
+  "fourDrilledWideGroundCapSectionsPass": true,
+  "capSectionResults": [
+    {
+      "name": "input bulk external return",
+      "endpoints": [
+        [
+          23.75,
+          22.4
+        ],
+        [
+          23.75,
+          24.95
+        ]
+      ],
+      "actualContiguousCopperSpanMm": 2.5500000000000007,
+      "combinedCopperSpanMm": 2.5500000000000007,
+      "minimumMm": 2.5,
+      "pass": true
+    },
+    {
+      "name": "left output cap shared return",
+      "endpoints": [
+        [
+          27.5,
+          7.9
+        ],
+        [
+          27.5,
+          9.2
+        ]
+      ],
+      "actualContiguousCopperSpanMm": 1.299999999999999,
+      "combinedCopperSpanMm": 1.299999999999999,
+      "minimumMm": 1.25,
+      "pass": true
+    },
+    {
+      "name": "right output cap external return",
+      "endpoints": [
+        [
+          31.75,
+          7.9
+        ],
+        [
+          31.75,
+          9.65
+        ]
+      ],
+      "actualContiguousCopperSpanMm": 1.75,
+      "combinedCopperSpanMm": 1.75,
+      "minimumMm": 1.7,
+      "pass": true
+    },
+    {
+      "name": "shared upper barrel tongue",
+      "endpoints": [
+        [
+          27.55,
+          9.4
+        ],
+        [
+          28.45,
+          9.4
+        ]
+      ],
+      "actualContiguousCopperSpanMm": 0.8999999999999986,
+      "combinedCopperSpanMm": 0.8999999999999986,
+      "minimumMm": 0.85,
+      "pass": true
+    }
+  ],
+  "fiveIndicatorOutputPadsForeignPourPass": true,
+  "all26ProbesAccessPass": true,
+  "freshTraceViaTo29BrepsPass": true,
+  "freshTraceViaForeignPairsMeasured": 38075,
+  "freshPadForeignPourPairsMeasured": 6581,
+  "freshForeignPourPairsMeasured": 106,
+  "all29ActualPoursAttached": true,
+  "typedOrphanRegions": {},
+  "unassignedCopper": [],
+  "allPhysicalTargetsJoined": true,
+  "physicalTargetPads": 571,
+  "physicalNetGroups": 121,
+  "physicalJoined": 450,
+  "physicalMissing": 0,
+  "retainedActualPathCount": 631,
+  "retainedActualFullBarrelCount": 432,
+  "replacementPathCount": 2,
+  "newOrdinaryFullBarrelCount": 1,
+  "all22CriticalTraceWorldsRetained": true,
+  "noNewActualCriticalSupportLoss": true,
+  "retainedCriticalActualSupportObservations": [
+    {
+      "name": "PD_RAW_MONITOR_FEED",
+      "actualTraceId": "pcb_trace_16",
+      "prior22UnionSupportMm2": 4.045560358724199,
+      "actual23UnionSupportMm2": 4.045560358724199,
+      "actual23LargestSupportMm2": 4.045560358724199,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "PD_RAW_BYPASS_FEED",
+      "actualTraceId": "pcb_trace_19",
+      "prior22UnionSupportMm2": 4.937849313843759,
+      "actual23UnionSupportMm2": 4.937849313843759,
+      "actual23LargestSupportMm2": 4.937849313843759,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "PD_VBUS_SENSE",
+      "actualTraceId": "pcb_trace_22",
+      "prior22UnionSupportMm2": 2.993337186287772,
+      "actual23UnionSupportMm2": 2.993337186287772,
+      "actual23LargestSupportMm2": 2.993337186287772,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "PD_PROTECTED_DISCHARGE_FEED",
+      "actualTraceId": "pcb_trace_27",
+      "prior22UnionSupportMm2": 4.619735983473085,
+      "actual23UnionSupportMm2": 4.619735983473085,
+      "actual23LargestSupportMm2": 4.619735983473085,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.34176537829136944,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "actualTraceId": "pcb_trace_28",
+      "prior22UnionSupportMm2": 4.397640271425645,
+      "actual23UnionSupportMm2": 4.397640271425645,
+      "actual23LargestSupportMm2": 4.397640271425645,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_MON_C43_GND_RETURN",
+      "actualTraceId": "pcb_trace_42",
+      "prior22UnionSupportMm2": 0.17811037997353873,
+      "actual23UnionSupportMm2": 0.17811037997353873,
+      "actual23LargestSupportMm2": 0.17811037997353873,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_MON_KELVIN_P",
+      "actualTraceId": "pcb_trace_45",
+      "prior22UnionSupportMm2": 1.2966257172324698,
+      "actual23UnionSupportMm2": 1.2966257172324698,
+      "actual23LargestSupportMm2": 1.2966257172324698,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_MON_KELVIN_N",
+      "actualTraceId": "pcb_trace_46",
+      "prior22UnionSupportMm2": 0.8749150063928777,
+      "actual23UnionSupportMm2": 0.8749150063928777,
+      "actual23LargestSupportMm2": 0.8749150063928777,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_SW_BOOT_RETURN",
+      "actualTraceId": "pcb_trace_53",
+      "prior22UnionSupportMm2": 0.9673341885252913,
+      "actual23UnionSupportMm2": 0.9673341885252913,
+      "actual23LargestSupportMm2": 0.9673341885252913,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_HIGH_GATE_PULLDOWN_RETURN",
+      "actualTraceId": "pcb_trace_55",
+      "prior22UnionSupportMm2": 1.3546238158791553,
+      "actual23UnionSupportMm2": 1.3546238158791553,
+      "actual23LargestSupportMm2": 1.3546238158791553,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_P",
+      "actualTraceId": "pcb_trace_68",
+      "prior22UnionSupportMm2": 6.45124938367687,
+      "actual23UnionSupportMm2": 6.45124938367687,
+      "actual23LargestSupportMm2": 6.45124938367687,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_N",
+      "actualTraceId": "pcb_trace_69",
+      "prior22UnionSupportMm2": 6.93318025037416,
+      "actual23UnionSupportMm2": 6.93318025037416,
+      "actual23LargestSupportMm2": 6.93318025037416,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_U2",
+      "actualTraceId": "pcb_trace_70",
+      "prior22UnionSupportMm2": 0.8074741043046008,
+      "actual23UnionSupportMm2": 0.8074741043046008,
+      "actual23LargestSupportMm2": 0.8074741043046008,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_FILTER",
+      "actualTraceId": "pcb_trace_71",
+      "prior22UnionSupportMm2": 0.3378281432836053,
+      "actual23UnionSupportMm2": 0.3378281432836053,
+      "actual23LargestSupportMm2": 0.3378281432836053,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "actualTraceId": "pcb_trace_72",
+      "prior22UnionSupportMm2": 0.7105165719701126,
+      "actual23UnionSupportMm2": 0.7105165719701126,
+      "actual23LargestSupportMm2": 0.7105165719701126,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_FILTER",
+      "actualTraceId": "pcb_trace_73",
+      "prior22UnionSupportMm2": 0.3411418517825903,
+      "actual23UnionSupportMm2": 0.3411418517825903,
+      "actual23LargestSupportMm2": 0.3411418517825903,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_HG_LOCAL_U2",
+      "actualTraceId": "pcb_trace_74",
+      "prior22UnionSupportMm2": 0.9374506067022031,
+      "actual23UnionSupportMm2": 0.9374506067022031,
+      "actual23LargestSupportMm2": 0.9374506067022031,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "TEC_LG_LOCAL_U2",
+      "actualTraceId": "pcb_trace_75",
+      "prior22UnionSupportMm2": 0.43241392972123377,
+      "actual23UnionSupportMm2": 0.43241392972123377,
+      "actual23LargestSupportMm2": 0.43241392972123377,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "MON_C43_BYPASS",
+      "actualTraceId": "pcb_trace_195",
+      "prior22UnionSupportMm2": 0.48312266030835327,
+      "actual23UnionSupportMm2": 0.48312266030835327,
+      "actual23LargestSupportMm2": 0.48312266030835327,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "INPUT_CURRENT_MON_LOCAL",
+      "actualTraceId": "pcb_trace_249",
+      "prior22UnionSupportMm2": 0.648110611509045,
+      "actual23UnionSupportMm2": 0.648110611509045,
+      "actual23LargestSupportMm2": 0.648110611509045,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "LOGIC_SW_BOOT_RETURN",
+      "actualTraceId": "pcb_trace_338",
+      "prior22UnionSupportMm2": 0.8388962525026394,
+      "actual23UnionSupportMm2": 0.8388962525026394,
+      "actual23LargestSupportMm2": 0.8388962525026394,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    },
+    {
+      "name": "FAN_SW_BOOT_RETURN",
+      "actualTraceId": "pcb_trace_343",
+      "prior22UnionSupportMm2": 0.5191906250178696,
+      "actual23UnionSupportMm2": 0.5191906250178696,
+      "actual23LargestSupportMm2": 0.5191906250178696,
+      "newActualSupportLossMm2": 0.0,
+      "actualRecoveredSupportMm2": 0.0,
+      "inheritedPreSource22SupportLossMm2": 0.0,
+      "affectedLossSegments": []
+    }
+  ],
+  "actualFormerWallOpening": {
+    "old484ArcIntervalMm": [
+      3.5,
+      6
+    ],
+    "minimumSampledInscribedDiameterMm": 0.3659101544761227,
+    "continuousLocalDiameterLowerBoundMm": 0.3159101544761227,
+    "metric": "Actual drilled main-region boundary distance sampled every .05 mm; 1-Lipschitz continuous diameter lower bound is minimum sample minus .05 mm. Local window only, no global bottleneck/dynamic/fabrication certification."
+  },
+  "inheritedDischargeSupportLimitationMm2": 0.34176537829136944,
+  "retainedDvdTPrototypeDispositionAndDischargeBypassLimitations": true,
+  "inlineTentingMetadataRequiresSourceDefaultAndExportedMaskReview": true,
+  "actualReferenceGatePass": true,
+  "scopedLayoutAccepted": true,
+  "sourceLevelReferenceRepairRequired": false,
+  "forecastUsedForAcceptance": false,
+  "dynamicReturnQualified": false,
+  "exportedMasksAccepted": false,
+  "fullBoardAccepted": false
+}

@@ -1,0 +1,181 @@
+{
+  "role": "Skeptical independent same-layer foreign-net trace examiner",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 8.0,
+  "confidence": "high",
+  "inspectedArtifacts": [
+    "work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "outputs/pcb-progress/18-source-routing-complete-top-inner2.png",
+    "user attached crop",
+    "work/routing-rating-source23/rating_trace_shorts.py"
+  ],
+  "directChecks": [
+    {
+      "check": "Independent source-net DSU from every source_trace connected_source_port_ids and connected_source_net_ids; no prior clearance pass flags used",
+      "result": "633 traces assigned to source graph roots, 0 unassigned"
+    },
+    {
+      "check": "Analytic segment-to-segment centerline distances minus both copper radii, treating every consecutive same-layer native route primitive, including zero-length round caps and explicit wire/via transitions",
+      "result": {
+        "nativePrimitives": 3130,
+        "sameLayerPairs": 2569682,
+        "foreignNetSameLayerPairs": 2337410,
+        "bboxCandidatesWithin0point25mm": 905,
+        "overlaps": 0,
+        "tangencies": 0,
+        "gapsBelow0point20mm": 0,
+        "minimumGapMm": 0.21139610299999864
+      }
+    },
+    {
+      "check": "Widths use maximum adjacent wire widths, conservatively broader than minimum-width model; no trace taper fields or alternate thickness mode observed",
+      "result": "No overlap even with conservative swept copper"
+    },
+    {
+      "check": "Adjacent explicit wire points checked for naked layer changes",
+      "result": "0 unplated wire layer jumps"
+    },
+    {
+      "check": "User crop candidate region inner2 x[-31,-20], y[13,29], including full selected route primitives",
+      "result": {
+        "segments": 31,
+        "foreignPairs": 387,
+        "minimumGapAcrossFullSelectedSegmentsMm": 0.26315494167718945,
+        "note": "Minimum closest points lie just below crop window; this is a bound on all selected full primitives, not a crop-only clipped measurement."
+      }
+    }
+  ],
+  "strengths": [
+    "No confirmed same-layer foreign-net trace overlap across every routed trace, independently measured.",
+    "Dense control and debug routes preserve positive copper clearance; conservative global minimum is 0.211396103 mm.",
+    "Apparent adjacent upper-left inner2 supply branches map to V3V3 source-net membership, so common supply connections are intentional."
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "kind": "Clearance refinement; not a short or established DRC violation",
+      "explanation": "The closest foreign trace pair has only 0.011396103 mm headroom above the independent 0.20 mm screening level. The PCB does not declare a trace-to-trace minimum field, so this screening level is not asserted as a manufacturing rule. A wider gap would make the layout more comfortable to inspect and fabricate.",
+      "evidence": {
+        "measurementFile": "rating_trace_shorts_measurements.json",
+        "minimumPair": {
+          "gapMmConservativeMaxWidth": 0.21139610299999864,
+          "gapMmMinAdjacentWidth": 0.21139610299999864,
+          "layer": "bottom",
+          "traces": [
+            "pcb_trace_137",
+            "pcb_trace_419"
+          ],
+          "segmentIndices": [
+            1,
+            5
+          ],
+          "nets": [
+            "D503_A",
+            "PD_ALERT"
+          ],
+          "endpoints": [
+            [
+              -6.110660171779821,
+              -7.639339828220178
+            ],
+            [
+              -7.113603897,
+              -6.636396103
+            ],
+            [
+              -8.349999999999998,
+              -6.225000000000001
+            ],
+            [
+              -2.1999999999999993,
+              -6.225000000000001
+            ]
+          ],
+          "closestPoints": [
+            [
+              -7.113603897,
+              -6.636396103
+            ],
+            [
+              -7.113603897,
+              -6.225000000000001
+            ]
+          ],
+          "halfWidthsMm": [
+            0.1,
+            0.1
+          ]
+        }
+      },
+      "nets": [
+        "D503_A",
+        "PD_ALERT"
+      ],
+      "layers": [
+        "bottom"
+      ],
+      "coordinates": [
+        [
+          -7.113603897,
+          -6.636396103
+        ],
+        [
+          -7.113603897,
+          -6.225000000000001
+        ]
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "confirmedTraceShort": false,
+    "measured": "Zero same-layer foreign-net trace overlaps or tangencies throughout exact CJS. This includes upper-left inner2 routes.",
+    "inferredCropMatch": {
+      "confidence": "medium",
+      "layer": "inner2",
+      "traces": [
+        "pcb_trace_193",
+        "pcb_trace_246"
+      ],
+      "sourceNet": "V3V3",
+      "coordinates": [
+        [
+          -29.167,
+          16.267
+        ],
+        [
+          -29.167,
+          23.108
+        ],
+        [
+          -24.525,
+          27.75
+        ],
+        [
+          -24.903,
+          14.139
+        ],
+        [
+          -25.638,
+          14.874
+        ],
+        [
+          -25.638,
+          27.75
+        ]
+      ]
+    },
+    "importantScope": "This examiner tested trace-to-trace only; via, pad, plated-hole, pour and drilled copper interactions require the separate reviewers. Screenshot identification is an inference; source net and layer measurements are direct."
+  },
+  "topImprovements": [
+    "Increase D503_A versus PD_ALERT bottom clearance beyond 0.25 mm where practical.",
+    "Use layer-isolated net-highlighted crops so intentional same-net links are visually distinguishable from adjacent foreign nets.",
+    "Combine this independent trace result with full trace-to-via/pad/pour copper testing before ruling out every short class."
+  ],
+  "limitations": [
+    "Ideal CAD capsule geometry with float precision tolerance 1e-8 mm; no fabricated etching or solder bridge measurement.",
+    "Pads, vias, drills and pours excluded from this trace-only short test.",
+    "No route-efficiency scoring from trace-only evidence; 8/10 reflects solid static trace separation without claiming exceptional engineering economy.",
+    "No fabrication, assembly, dynamic converter or bench readiness claim."
+  ]
+}

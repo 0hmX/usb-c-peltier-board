@@ -1,0 +1,3193 @@
+{
+  "scope": "Read-only package carry for the settled Source23 files and dated JLC evidence.\n\nNo rendering, routing, stock refresh, Source edits or archive extraction occurs.\n",
+  "observedAtUtc": "2026-10-11T02:30:12.970330+00:00",
+  "pass": true,
+  "finalZipReviewed": false,
+  "findings": [],
+  "bindings": [
+    {
+      "path": "reviews/toolchain-checkpoints/source23-source-archive/source-files.zip",
+      "sha256": "efdc2daf11526a86ba27bd6a65b34cb78ebaa895606418c25be6601cadfb68de"
+    },
+    {
+      "path": "reviews/toolchain-checkpoints/source23-source-archive/source-archive-receipt.json",
+      "sha256": "25918e930653523052b3c93268910b91f9dabf13ad8ab551553e9faba486f007"
+    },
+    {
+      "path": "dist/debug-source-placement-23/build-manifest.json",
+      "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+    },
+    {
+      "path": "dist/debug-source-placement-23/circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "path": "reviews/pad-escape-routing/final-union-current21-imported-pin-and-via-baseline.json",
+      "sha256": "d7574805c86bb6debfa1f654a8c2e831d078d547e03a875254ad4c6ddf626410"
+    },
+    {
+      "path": "reviews/pad-escape-routing/source23-settled3ac5f312-actual-one-host-delta-review.json",
+      "sha256": "cfab895a7aa35d6d819fa63f8addab97a9556d24e98ce05f52a33fcaf4cfb250"
+    },
+    {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/pad-escape-routing/audit-source23-package-part-integrity.py",
+      "sha256": "ff7ff3e93193859aa2b93a7b9ae95f064a9d47a268f0971232d85ed2ff64ca8a"
+    }
+  ],
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "sourceArchive150ExactBytes": {
+    "bun.lock": "725d0f092f65d8ce7369fe86ceb5f5fb6803f28b263dfe85614ed7bb0048cb8a",
+    "index.tsx": "bcf3dfbe30e79e629dcd7c4b011f0b387ef6ce0035c625e5f8707df001e2b58c",
+    "package.json": "66007099388550c6103ab0e4a50c6289be736a4ee257110086498b7c51b72fd8",
+    "scripts/build-local.ts": "bd8f268f05e4e2b12296b9daaf21f8338901ee01e5597b518a57c5ba88d0df33",
+    "scripts/build-with-watchdog.ts": "02f78a690f12e71e2782c65781e76a4a886de8b6a9035ac92225d6c940e61a0f",
+    "scripts/phase-checkpoints.ts": "9c3a150079e0fdee6cb0814904818438caa3204655e3ee8e687261dcc66e8ccf",
+    "scripts/phase6-region-override.ts": "0681932dbc3fbdf1a3fa0847561593ebbca1487bebdb397067cb26dee102310e",
+    "scripts/preserved-manual-copper.ts": "d7044f13093c1ea597dcccb7040f5df6658f51c1f94b45858eb6008335ed3b9a",
+    "scripts/resolve-source-trace-endpoints.ts": "a1035117263dff624fe31cab034769d4d829fe860f3bc16c557491d2a5d2d91f",
+    "scripts/source-ground-materialization-proof.ts": "e9d120e71c1ae688df10901d50fa9caf1b0bcfe0db81054bd5f9b9a1a431cf1f",
+    "scripts/source-ground-pad-copper.ts": "58e2143c32197d14ef0a0601e7919f23a740f0edba75e08085665b08273e04bc",
+    "scripts/source-preflight.ts": "a723fd571473e3978c4326e1a7677238333245beca5e21ec181fa59a67896cc0",
+    "scripts/source-trace-widths.ts": "b9b9d99081eeed94218bb963e6eed957d888842ef1f998cd25655ef3e04ceffd",
+    "src/blocks/control.tsx": "c040a438cbacd792afe7386ced4605ca861354576086e753fee6b2943c8d7b36",
+    "src/blocks/debug-data.ts": "e895a21426ee837681da45cbb8ad4ad23b83507de805e7200ce99cdda30538ad",
+    "src/blocks/debug.tsx": "943cee7e6b75db625be729e45c2dd4430a3b3ad5c225939088d729297c6df058",
+    "src/blocks/pd-input.tsx": "c99a64fca0a5afb12fd069c687e0969f2193d9b6c21137f4b1d4586162259e72",
+    "src/blocks/tec-power.tsx": "8211b26279586b0447f92697168b830221d048dde314fa57780c0f984adebd88",
+    "src/bus-routing.tsx": "27b7530c5ac92af78662e6e3aaacbbf536122460ab50a26492b08efe9b04ae14",
+    "src/compact-exact-axis-aligned-obstacles.ts": "a321c7052af5a9b92e6e8f26883c6f8417e9f6c9493d64bbb94726a1120e5c76",
+    "src/component-port-anchors.ts": "ef038693cf7256acb3d7ed50fa697e90e5399b6812124d1f579a0f0eb279c457",
+    "src/control-local-routes.tsx": "e8ee50ef0c623c0177eb020dd3c09228780ea7d736762c7d711d9f47bf3fea30",
+    "src/control-v3-routes.tsx": "448c6f33c181369ddae9752009836cf82aa38b533c1771447156b8431fb76d52",
+    "src/current-ground-barrels.ts": "c84255b52a93e41e07acc7901df9fe4f6ef1157862c8e88b437af641e40f55fe",
+    "src/ground-escapes.tsx": "52c1ff72f034cb6c0042ef85db093a6cab775fa1a3fdd9bcab3b761dd90becae",
+    "src/ground-fanout-ports.ts": "4cac6dcd4cae4e95733a43b1c4d8d488bf7ead88ca21062b5399eb0a248b79ef",
+    "src/ground-trace-paths.ts": "a12aa2f4078f7e63bda1e1e21c0f242a457c9d7b3c301a6ee11e663f4ad561f9",
+    "src/guarded-router.ts": "975ac46a33a59fadc3023e0bbb522a48e8040ae35b64773b0c8882f119d26c38",
+    "src/i2c-branch-routes.tsx": "1ab55740f3033ca3f8bd5602b17e3046140a31a46020db18c5c2aba1440718e8",
+    "src/layout.ts": "6f70cae0b722453757736801b2461f02a0f3c7a3e5d68470035bfce57e2c8536",
+    "src/logic-supply-links.tsx": "5a8136f256af2d50b09a7fcfb9195830cbebc80d8760188cdfc9970e16189c39",
+    "src/parts/C10429.tsx": "a0705d3f689ec4f60116fad010e8c42726c005bcbd79f27f5984be5ec1d20eab",
+    "src/parts/C125094.tsx": "969d712e29335c76b32471753f757f29371eea9ace76400bee6979b25f71acaa",
+    "src/parts/C12891.tsx": "b6c95cfc1af233f135e6352981ec197d44b7a531dae0e4602ce0492b3d9c905b",
+    "src/parts/C130910.tsx": "a22f35222a1fc98d5d94838fd2b389d3293ee23a7f2e9930f71f04aa9f5e0d5b",
+    "src/parts/C131334.tsx": "8e535b614b2ae19c344f5b9aa3651c6a3a19e24e09a63bab89514c21a29a8ab3",
+    "src/parts/C131337.tsx": "87e8d5ef622394a4206ccd69ee0fd32bf0e21f58b7c04d6f64e565e3961d1379",
+    "src/parts/C132016.tsx": "375cfc5f51642980b7c0fb2a7232acb861b8250810f8740b353c16f103eee7a4",
+    "src/parts/C13585.tsx": "a713b542c4dc902bfa347468113c5c40dc507377386db16efcaeb62b0dacedfd",
+    "src/parts/C138706.tsx": "c7fe859e7d0f4de7e523c9af3b1384eb6c154c647eb6b31fc9fc6f86af2eec54",
+    "src/parts/C144198.tsx": "741c062d776ee33b3ec43671c471bbef36ddfa6c144050278a56a64109fa7fce",
+    "src/parts/C14663.tsx": "e22722b3bba7d1dfdde75b9567f27510f49c57d95b720e239d604ff8c5869100",
+    "src/parts/C14858.tsx": "6e4cafa4cbb5fb8165eae8b8d949dd99fb0da2886516d188b9387588350b9ea6",
+    "src/parts/C15127.tsx": "5af8e36f42640f74c9597768f8ee241d91ac9b8c78621e402905510adc550f1d",
+    "src/parts/C158004.tsx": "4668124368146ebc953030e61f1b27a1ab9a5cf5dcb6b22102f4d5a4859d9cf3",
+    "src/parts/C15849.tsx": "fdb5d1c2d7bdb5314e284d8ed00c171f9ed86130e0b1a9ff8e3df7f9881027a6",
+    "src/parts/C1591.tsx": "dcf8971e2cad2b4d64d907709b4adf626a3d20385c1d424cbf24fcfbfe1632df",
+    "src/parts/C1613.tsx": "247dded1a6f31411d6dd1c422f373f9759cde282ec75f124e35a75b3fe8a8708",
+    "src/parts/C165948.tsx": "c1b1d0e1b7c62152f2cac677ea0e335dca872d59cc0523c5188cd6390037c4be",
+    "src/parts/C167874.tsx": "f2c3450ab3f2f8dbe7b0c63c08b461f675c70a4665cc4cb952e17d16dcd6d684",
+    "src/parts/C179626.tsx": "2d2c29e02724ce566d12ddeb9829056390a67e05153a37caea90568dc8f55c05",
+    "src/parts/C18739.tsx": "83d011f4d185518f8c99b0d79b4e2b148e15d08086d092b0f227ba1832c6793f",
+    "src/parts/C191884.tsx": "a677b2882707ad4650f4abadaa9157e172b88fd81c6bcb6963e9786845b2c5c7",
+    "src/parts/C19270707.tsx": "bf8563664946d5a18ce904c3f1a3654b2a6928d77b297256499fd88ef8c59f20",
+    "src/parts/C19270709.tsx": "3cb17c0e05fc55e7d98d069ed7179b03ae21a469a66040312a9a822fa399ccb8",
+    "src/parts/C19666.tsx": "ba0d6fadaa902b32330e0af12aa23d23103092cbef2d57652fac827da6a95200",
+    "src/parts/C20526.tsx": "3a7c56048f7615f01d1222862e5c75ba801d613d29ed541175f3840c67fd7106",
+    "src/parts/C20527.tsx": "29c58e8e19469111280c27ed3db1e9d11c68ef3dd329a8ee0ef7b4679fb32fca",
+    "src/parts/C2071044.tsx": "c47c52a3304b1cc229074c48dbddd8ac76d52f9a461edcc5f0ad4302a700f53e",
+    "src/parts/C2071868.tsx": "d4e67e727506e8be2510df0b89ab0a3d104d830eee06be6603fa33c8ec830466",
+    "src/parts/C21117.tsx": "358554b9a06183c721a94ff0e4fb4538aca96e541555f02a9d5a0d4e018774cf",
+    "src/parts/C21189.tsx": "a6ec13a9fe2b32505ae62500035e1ca0b97645af5a11ab8d302cce5a4710724f",
+    "src/parts/C21190.tsx": "a9b3fbd81f554d7079ae3d12a2a5531d7d3f0b72b263d6975dbea3960a9535af",
+    "src/parts/C22809.tsx": "48ebef9f390df2a1b01745d1fe476fc8cae3b9ad9e7219d65fee141a1528d001",
+    "src/parts/C22836.tsx": "09dc73b60f4f3f2702539501af33a2b5ea8f9edf388fc08ac4c845af454cf060",
+    "src/parts/C22858.tsx": "9988c6d5d9f841c9555f49c60d830a305186d5b0bbc6ed963c10469eb262e0b0",
+    "src/parts/C22859.tsx": "2499c91d551ad9f22392aba1220931f2fb20454c80d75189f1bc7e768495280b",
+    "src/parts/C22864.tsx": "5955f7e638933d63947deaa96878cea9b4468f3405a54baace8f3eb222376a12",
+    "src/parts/C22875.tsx": "fa00092a94bd0a8d9fcd69a8aea7701406805accf0392bd5a4960ebbfea04001",
+    "src/parts/C22890.tsx": "8a976ada7afa3f8d2f3e94d4a51f6c23fb3dcafe757cd2dd5be97b2df2755de9",
+    "src/parts/C22908.tsx": "e2339ad54ff382ad49a410ae6f5dd7257687198c18bce85caf905535d045d18a",
+    "src/parts/C22939.tsx": "353af0347f9cc4727100607deec87ad9e363f40ca277c057d90d9f1c112e8afe",
+    "src/parts/C22962.tsx": "9b191492e4ea5e60f9e100f93c3d028f5d8d36ccd9c4e46a728dcf831149f98f",
+    "src/parts/C22964.tsx": "e48efd4ea76c97773954ee43f0a551c1a0f3ea650eaa884b62bb6ce0a7124f2c",
+    "src/parts/C23003.tsx": "e05caa5715bd80699810589fd1768589d59b4bfeb32a1b2df4e21a5677ed0cca",
+    "src/parts/C23068.tsx": "35f08825e570dad72e53fa02da4b5be2733d8c28de8a090d1d83e9e03ea9ccf4",
+    "src/parts/C23080.tsx": "1bed60da412d6f2cc17e0492a5878ae34564ede3f5e672fbe29e24226c716bd9",
+    "src/parts/C23091.tsx": "850ba115a93e858b55636730acdac544cbc3fd9f820d19dbf9da1e7ce3e03ef2",
+    "src/parts/C23138.tsx": "0f3d819d6862b02e9eb0715da42c6ecd4e673ec4656dc4877fd9361fefe1c5ae",
+    "src/parts/C23162.tsx": "906e5702e41de4f649905804192f14d54765e52d52fd55077535231dd815efc2",
+    "src/parts/C23186.tsx": "2ee08dd185803ed490e7a8956be2bc361ba08cf1742f5ff75ba08fdc144dc1d2",
+    "src/parts/C23242.tsx": "111625a70e8376299dccfae06dd0c2b4e97ea64b2ca3938a5c28c181b8fa2afb",
+    "src/parts/C23251.tsx": "9117f181f1038f676acc47449081440ffdc216de4093e21e0add3148388e433a",
+    "src/parts/C237304.tsx": "e44b6f6f5cbe96e76802d1425d3a246cef5536b3156b03ab4e048c104559b7a5",
+    "src/parts/C2480.tsx": "abaf6abc89b664fe34823c46c5cef58c14d0660291e8a19a2c1a250af02a6118",
+    "src/parts/C25803.tsx": "c3ba5598ebfff925a7da5be3e7447c8528a41a5440e8c7a2ef99711d9ccf5edd",
+    "src/parts/C25819.tsx": "cf30aa3c8fe28ecf19f5043113f08748faddb47e2daf2f9f46c46e020758ceb3",
+    "src/parts/C25954.tsx": "2486878ecffb54e95f2cddcd0c2c5f12528e21ab0738424a06eda224ccc78479",
+    "src/parts/C2678061.tsx": "fdc72c2056d91739ce15ed01a8f07d268d68cbc09a3d22239417735cc1934c58",
+    "src/parts/C2762602.tsx": "e77d456f2a18289cbfae49f894e4fb1bc46e95068fabfed771773f0eb27546bc",
+    "src/parts/C28323.tsx": "7a04250b38a0f4a7875ee0043ffa1f30fa9dd45e371c0f1260bcf1b97ae38c50",
+    "src/parts/C2906982.tsx": "8283c3ae1116b50ff5e2ae0a32b8e612164481da6ee5e75ed1e8d62993724d4b",
+    "src/parts/C2930048.tsx": "d8519d384dd707e1a355967c39a02a744155a4c3c7ac32e1e85ae4ea5408f7a0",
+    "src/parts/C2933140.tsx": "c6881a50eba137e4c66144c05317a8eb9e716872dd4c069c0f8c394ad7109767",
+    "src/parts/C2933200.tsx": "ed12aebc5aff4d5f446b9ef4e65605e355b0b92e214b0e5441ad33356b1987c2",
+    "src/parts/C29823.tsx": "245aeaec02f027573f14730d854ac11939eb62e1bdee42d8442f039b28d5ec41",
+    "src/parts/C2984759.tsx": "0c3972fd6eeb869342b282e7968289520c2fd05ae116ca00742dd35c6224be9a",
+    "src/parts/C309062.tsx": "7d6231e07eaa33da19ec2c871f7f829c46f46fd3a807b26f8db15557abc8dca7",
+    "src/parts/C31850.tsx": "6c8cee164c65b17c7bb0c62542536f1d7130d7af06425d3c786f5e3954752cfb",
+    "src/parts/C3662799.tsx": "c490bfbd659f5155a9739cdfb309871c659c7a135a27593a9271bbce4f6b3eb4",
+    "src/parts/C377773.tsx": "d9975ba01b4b6b1842ce81c0cff55a96ace553d50b4436cad22af53997119d8a",
+    "src/parts/C380537.tsx": "ad024969f4c6498713e5bffbb906275934c6f3ec720574baf5dae756dff914d4",
+    "src/parts/C397609.tsx": "f6e5e3f9ed8a571aff2ba638ee80fb1bee8273360c9709079af7822c0be2a0c0",
+    "src/parts/C4184.tsx": "49455b1884d21ca4f35d3aa46e7699de6dfa65569e469ac912e46251ea0431b9",
+    "src/parts/C45783.tsx": "f67e3478dfcbe9b2c7e7d4dd0fdb4d30a201926a64c21fec237b08f2967e1f23",
+    "src/parts/C466636.tsx": "68835166f727f40bd3a84824c0b074aac0c8c9e6fd13b86e145386017704f6dd",
+    "src/parts/C474881.tsx": "7182ebb0640c01dcb998b6648d54569b90a0b1134410669fb6741f8dd86b78c5",
+    "src/parts/C49073699.tsx": "2f22f78cf3f5b237cbf3b0521b59b9ad2d19f2835491a7aea091f072b1a77c01",
+    "src/parts/C497873.tsx": "63465319bdb139b03f7c4cbbabf319ff0c9eed67a492e2a3f66f62d6697a4edf",
+    "src/parts/C51205.tsx": "0d70d3337d7095222f52ab0085502200b509ff9617c65d1fd85c1243869d15a6",
+    "src/parts/C513643.tsx": "2e9da33ba73b67e7d1096b89aa0b22d77431d58d9a747085c019f178246c0ce9",
+    "src/parts/C52306.tsx": "2d91a3cce5ded5c794f5d10283ba05a2125c6914514e3ef6db5c4dd0e68c3f56",
+    "src/parts/C53987.tsx": "1c2f26c1aaaa2464eb3be7c31e68354f5dcdcc04a7473fba7d18a24d98675766",
+    "src/parts/C54315.tsx": "377a43978fc864f5ede0cece4d954fb0c533e22751af2c1b9d557ab106d656df",
+    "src/parts/C57112.tsx": "b76c72118dc35e876b8fc47d67a5ffc10201154eff0fac36982f3108cc4ef366",
+    "src/parts/C576517.tsx": "a6a1c3fb14eb65f689543c9a16b8cc293c65579bfad56bb9f05bb8cf1667dc88",
+    "src/parts/C5824006.tsx": "eb7542ee0f71d05c1ab5fb3678d33ce99565b97df3455167434cecbacb83c3f1",
+    "src/parts/C602037.tsx": "0823fbb002eec64137ec6336e290d536ff1e5ccead75b8c554a09c54a2c95cca",
+    "src/parts/C64705.tsx": "09f6ce0e240bf5de53265c8c2963701b96c909843a94840700dc8cba0acde371",
+    "src/parts/C671324.tsx": "30e078952fc74afe359ae2b780561b80e54fdbc1e5a3102935e5c25154f78162",
+    "src/parts/C70285.tsx": "f669cdbe0ac2b332c9cefba63858c37aeadeda992d705056aec286a83a11f75f",
+    "src/parts/C724040.tsx": "498cf56c2b7470deec3b82af59e3c7e04720169fe2d089388911a5e0b3397bcf",
+    "src/parts/C7420354.tsx": "5374ea9b3b9ccac20818dd4b11080ccc36bb770a56d1a1c7e6e13c30eb4f9960",
+    "src/parts/C76589.tsx": "f14f4aef221c112d6ed83ad5422a9e3513e4230b029dbf2115f8cf63ba663005",
+    "src/parts/C780769.tsx": "21696c6609f9b2c00d638248d7c5fa1a4f7201b81d5f850ef483a2abeadda311",
+    "src/parts/C7984.tsx": "0a26cf2dc34da439bff8c2664b69af30b2ab4102b8789f660763b39a01299583",
+    "src/parts/C8545.tsx": "6bf1ae475ef18cf11fc4210c64dbd1d51211135a6c00c7ac8c0fcdb0f999c1d1",
+    "src/parts/C8591.tsx": "81ad6fd2e692a8c8bf5b04ccf155be66187c6ce39979b5cf786e01cbbc194839",
+    "src/parts/C916375.tsx": "83825cae5681a1a507c785b000a2e0f1709ad0e3885b2048b9f9ad59b971b429",
+    "src/parts/C94869.tsx": "76377293a01c27b32a4d9af4bf8f5872226ae8ecd97135a38abd17e40903c33d",
+    "src/parts/catalog.tsx": "973a850532901e8eef7131f1d85e5ce5432ae1d789373dde089f39d33d7f1287",
+    "src/parts/import-manifest.json": "e8556581b34c49482e88d87d6e5b55855cda25cf8742b004909a6a339e868ae4",
+    "src/parts/index.ts": "743807d18bf2019893335550bcc8463875c3c4cb3a8067b0ece5646ad5f21fa1",
+    "src/parts/supplier-footprints-provenance.json": "296954369d0d8af37e052f5eff2db2112bed8348e80e838729089e3ceeefd8f5",
+    "src/parts/supplier-footprints.json": "d5f9c6ecd70e7fe8de215a46a89878471a2a5187611863092351c449f6b7b7ba",
+    "src/parts/supplier-parts-engine.ts": "fd8452b7388c534e86f3370406ed802a5acbcc6f7eb143e68d708645ecd84812",
+    "src/power-budget.ts": "2e7e6a8bab96e9ed14bfeb3b8312aeb7c187bbb7a4995f077f3384c0811aa621",
+    "src/regional-routing.ts": "3a15bf8c20d91cd19b20517a6d97694399296ed8d44a16067c2601ffa67f1b90",
+    "src/source-bus-connections.ts": "08ef6f59a6bd03661ebf01f0d3c8b3b0ac2a617df6fd29bd52ae14aa97fe9b46",
+    "src/source-pad-connections.ts": "29afaa701920e7ba17cfa7ed8edc8fb9c293b3f681484a48ad7755259e28021c",
+    "src/source-terminal-escapes.ts": "d4e85d212a305a31d8fe6c41b3e9dac356c0333127034d3a4f6a80fbc8c389d1",
+    "src/source16-routes.tsx": "7082f959b6022272a5eaa1c89efc8fb8c8e45f8ab2476801dfced329a601481b",
+    "src/source18-routes.tsx": "a35a5ba191477591f67a43bb0817b0b00e99077098459d4f7435eb818b32b629",
+    "src/source20-routes.tsx": "ec0084178779146937ba2401d87d073114c298ebd698ac8497ad15ea38e1bded",
+    "src/source21-routes.tsx": "fa59a58dc38e01cc12c429ddcf4d7f225d4d947a75752957053c99336eb56d38",
+    "src/source22-routes.tsx": "fcb3668250d39416ba345ad038a214e06decc8f436ab5a3613ce3edfe1392141",
+    "src/supply-router.ts": "aee4664f4e70b173b86cd5efc08db2d3c0bfb2454924430a400f8dba7eeb41aa",
+    "src/supply-source-routes.tsx": "4da4699586016c108baad3fcb740eb171e31b1a406c3386c2c9e2a52378c926b",
+    "tscircuit.config.ts": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e",
+    "tsconfig.json": "40cf249a92f8e67ab55d71f7b8a3ab4f68f394e378b91d8f67ed9eecf4880a88"
+  },
+  "correctedPartLibrary105Files": [
+    {
+      "path": "src/parts/C10429.tsx",
+      "sha256": "a0705d3f689ec4f60116fad010e8c42726c005bcbd79f27f5984be5ec1d20eab",
+      "reviewedSha256": "a0705d3f689ec4f60116fad010e8c42726c005bcbd79f27f5984be5ec1d20eab"
+    },
+    {
+      "path": "src/parts/C125094.tsx",
+      "sha256": "969d712e29335c76b32471753f757f29371eea9ace76400bee6979b25f71acaa",
+      "reviewedSha256": "969d712e29335c76b32471753f757f29371eea9ace76400bee6979b25f71acaa"
+    },
+    {
+      "path": "src/parts/C12891.tsx",
+      "sha256": "b6c95cfc1af233f135e6352981ec197d44b7a531dae0e4602ce0492b3d9c905b",
+      "reviewedSha256": "b6c95cfc1af233f135e6352981ec197d44b7a531dae0e4602ce0492b3d9c905b"
+    },
+    {
+      "path": "src/parts/C130910.tsx",
+      "sha256": "a22f35222a1fc98d5d94838fd2b389d3293ee23a7f2e9930f71f04aa9f5e0d5b",
+      "reviewedSha256": "a22f35222a1fc98d5d94838fd2b389d3293ee23a7f2e9930f71f04aa9f5e0d5b"
+    },
+    {
+      "path": "src/parts/C131334.tsx",
+      "sha256": "8e535b614b2ae19c344f5b9aa3651c6a3a19e24e09a63bab89514c21a29a8ab3",
+      "reviewedSha256": "8e535b614b2ae19c344f5b9aa3651c6a3a19e24e09a63bab89514c21a29a8ab3"
+    },
+    {
+      "path": "src/parts/C131337.tsx",
+      "sha256": "87e8d5ef622394a4206ccd69ee0fd32bf0e21f58b7c04d6f64e565e3961d1379",
+      "reviewedSha256": "87e8d5ef622394a4206ccd69ee0fd32bf0e21f58b7c04d6f64e565e3961d1379"
+    },
+    {
+      "path": "src/parts/C132016.tsx",
+      "sha256": "375cfc5f51642980b7c0fb2a7232acb861b8250810f8740b353c16f103eee7a4",
+      "reviewedSha256": "375cfc5f51642980b7c0fb2a7232acb861b8250810f8740b353c16f103eee7a4"
+    },
+    {
+      "path": "src/parts/C13585.tsx",
+      "sha256": "a713b542c4dc902bfa347468113c5c40dc507377386db16efcaeb62b0dacedfd",
+      "reviewedSha256": "a713b542c4dc902bfa347468113c5c40dc507377386db16efcaeb62b0dacedfd"
+    },
+    {
+      "path": "src/parts/C138706.tsx",
+      "sha256": "c7fe859e7d0f4de7e523c9af3b1384eb6c154c647eb6b31fc9fc6f86af2eec54",
+      "reviewedSha256": "c7fe859e7d0f4de7e523c9af3b1384eb6c154c647eb6b31fc9fc6f86af2eec54"
+    },
+    {
+      "path": "src/parts/C144198.tsx",
+      "sha256": "741c062d776ee33b3ec43671c471bbef36ddfa6c144050278a56a64109fa7fce",
+      "reviewedSha256": "741c062d776ee33b3ec43671c471bbef36ddfa6c144050278a56a64109fa7fce"
+    },
+    {
+      "path": "src/parts/C14663.tsx",
+      "sha256": "e22722b3bba7d1dfdde75b9567f27510f49c57d95b720e239d604ff8c5869100",
+      "reviewedSha256": "e22722b3bba7d1dfdde75b9567f27510f49c57d95b720e239d604ff8c5869100"
+    },
+    {
+      "path": "src/parts/C14858.tsx",
+      "sha256": "6e4cafa4cbb5fb8165eae8b8d949dd99fb0da2886516d188b9387588350b9ea6",
+      "reviewedSha256": "6e4cafa4cbb5fb8165eae8b8d949dd99fb0da2886516d188b9387588350b9ea6"
+    },
+    {
+      "path": "src/parts/C15127.tsx",
+      "sha256": "5af8e36f42640f74c9597768f8ee241d91ac9b8c78621e402905510adc550f1d",
+      "reviewedSha256": "5af8e36f42640f74c9597768f8ee241d91ac9b8c78621e402905510adc550f1d"
+    },
+    {
+      "path": "src/parts/C158004.tsx",
+      "sha256": "4668124368146ebc953030e61f1b27a1ab9a5cf5dcb6b22102f4d5a4859d9cf3",
+      "reviewedSha256": "4668124368146ebc953030e61f1b27a1ab9a5cf5dcb6b22102f4d5a4859d9cf3"
+    },
+    {
+      "path": "src/parts/C15849.tsx",
+      "sha256": "fdb5d1c2d7bdb5314e284d8ed00c171f9ed86130e0b1a9ff8e3df7f9881027a6",
+      "reviewedSha256": "fdb5d1c2d7bdb5314e284d8ed00c171f9ed86130e0b1a9ff8e3df7f9881027a6"
+    },
+    {
+      "path": "src/parts/C1591.tsx",
+      "sha256": "dcf8971e2cad2b4d64d907709b4adf626a3d20385c1d424cbf24fcfbfe1632df",
+      "reviewedSha256": "dcf8971e2cad2b4d64d907709b4adf626a3d20385c1d424cbf24fcfbfe1632df"
+    },
+    {
+      "path": "src/parts/C1613.tsx",
+      "sha256": "247dded1a6f31411d6dd1c422f373f9759cde282ec75f124e35a75b3fe8a8708",
+      "reviewedSha256": "247dded1a6f31411d6dd1c422f373f9759cde282ec75f124e35a75b3fe8a8708"
+    },
+    {
+      "path": "src/parts/C165948.tsx",
+      "sha256": "c1b1d0e1b7c62152f2cac677ea0e335dca872d59cc0523c5188cd6390037c4be",
+      "reviewedSha256": "c1b1d0e1b7c62152f2cac677ea0e335dca872d59cc0523c5188cd6390037c4be"
+    },
+    {
+      "path": "src/parts/C167874.tsx",
+      "sha256": "f2c3450ab3f2f8dbe7b0c63c08b461f675c70a4665cc4cb952e17d16dcd6d684",
+      "reviewedSha256": "f2c3450ab3f2f8dbe7b0c63c08b461f675c70a4665cc4cb952e17d16dcd6d684"
+    },
+    {
+      "path": "src/parts/C179626.tsx",
+      "sha256": "2d2c29e02724ce566d12ddeb9829056390a67e05153a37caea90568dc8f55c05",
+      "reviewedSha256": "2d2c29e02724ce566d12ddeb9829056390a67e05153a37caea90568dc8f55c05"
+    },
+    {
+      "path": "src/parts/C18739.tsx",
+      "sha256": "83d011f4d185518f8c99b0d79b4e2b148e15d08086d092b0f227ba1832c6793f",
+      "reviewedSha256": "83d011f4d185518f8c99b0d79b4e2b148e15d08086d092b0f227ba1832c6793f"
+    },
+    {
+      "path": "src/parts/C191884.tsx",
+      "sha256": "a677b2882707ad4650f4abadaa9157e172b88fd81c6bcb6963e9786845b2c5c7",
+      "reviewedSha256": "a677b2882707ad4650f4abadaa9157e172b88fd81c6bcb6963e9786845b2c5c7"
+    },
+    {
+      "path": "src/parts/C19270707.tsx",
+      "sha256": "bf8563664946d5a18ce904c3f1a3654b2a6928d77b297256499fd88ef8c59f20",
+      "reviewedSha256": "bf8563664946d5a18ce904c3f1a3654b2a6928d77b297256499fd88ef8c59f20"
+    },
+    {
+      "path": "src/parts/C19270709.tsx",
+      "sha256": "3cb17c0e05fc55e7d98d069ed7179b03ae21a469a66040312a9a822fa399ccb8",
+      "reviewedSha256": "3cb17c0e05fc55e7d98d069ed7179b03ae21a469a66040312a9a822fa399ccb8"
+    },
+    {
+      "path": "src/parts/C19666.tsx",
+      "sha256": "ba0d6fadaa902b32330e0af12aa23d23103092cbef2d57652fac827da6a95200",
+      "reviewedSha256": "ba0d6fadaa902b32330e0af12aa23d23103092cbef2d57652fac827da6a95200"
+    },
+    {
+      "path": "src/parts/C20526.tsx",
+      "sha256": "3a7c56048f7615f01d1222862e5c75ba801d613d29ed541175f3840c67fd7106",
+      "reviewedSha256": "3a7c56048f7615f01d1222862e5c75ba801d613d29ed541175f3840c67fd7106"
+    },
+    {
+      "path": "src/parts/C20527.tsx",
+      "sha256": "29c58e8e19469111280c27ed3db1e9d11c68ef3dd329a8ee0ef7b4679fb32fca",
+      "reviewedSha256": "29c58e8e19469111280c27ed3db1e9d11c68ef3dd329a8ee0ef7b4679fb32fca"
+    },
+    {
+      "path": "src/parts/C2071044.tsx",
+      "sha256": "c47c52a3304b1cc229074c48dbddd8ac76d52f9a461edcc5f0ad4302a700f53e",
+      "reviewedSha256": "c47c52a3304b1cc229074c48dbddd8ac76d52f9a461edcc5f0ad4302a700f53e"
+    },
+    {
+      "path": "src/parts/C2071868.tsx",
+      "sha256": "d4e67e727506e8be2510df0b89ab0a3d104d830eee06be6603fa33c8ec830466",
+      "reviewedSha256": "d4e67e727506e8be2510df0b89ab0a3d104d830eee06be6603fa33c8ec830466"
+    },
+    {
+      "path": "src/parts/C21117.tsx",
+      "sha256": "358554b9a06183c721a94ff0e4fb4538aca96e541555f02a9d5a0d4e018774cf",
+      "reviewedSha256": "358554b9a06183c721a94ff0e4fb4538aca96e541555f02a9d5a0d4e018774cf"
+    },
+    {
+      "path": "src/parts/C21189.tsx",
+      "sha256": "a6ec13a9fe2b32505ae62500035e1ca0b97645af5a11ab8d302cce5a4710724f",
+      "reviewedSha256": "a6ec13a9fe2b32505ae62500035e1ca0b97645af5a11ab8d302cce5a4710724f"
+    },
+    {
+      "path": "src/parts/C21190.tsx",
+      "sha256": "a9b3fbd81f554d7079ae3d12a2a5531d7d3f0b72b263d6975dbea3960a9535af",
+      "reviewedSha256": "a9b3fbd81f554d7079ae3d12a2a5531d7d3f0b72b263d6975dbea3960a9535af"
+    },
+    {
+      "path": "src/parts/C22809.tsx",
+      "sha256": "48ebef9f390df2a1b01745d1fe476fc8cae3b9ad9e7219d65fee141a1528d001",
+      "reviewedSha256": "48ebef9f390df2a1b01745d1fe476fc8cae3b9ad9e7219d65fee141a1528d001"
+    },
+    {
+      "path": "src/parts/C22836.tsx",
+      "sha256": "09dc73b60f4f3f2702539501af33a2b5ea8f9edf388fc08ac4c845af454cf060",
+      "reviewedSha256": "09dc73b60f4f3f2702539501af33a2b5ea8f9edf388fc08ac4c845af454cf060"
+    },
+    {
+      "path": "src/parts/C22858.tsx",
+      "sha256": "9988c6d5d9f841c9555f49c60d830a305186d5b0bbc6ed963c10469eb262e0b0",
+      "reviewedSha256": "9988c6d5d9f841c9555f49c60d830a305186d5b0bbc6ed963c10469eb262e0b0"
+    },
+    {
+      "path": "src/parts/C22859.tsx",
+      "sha256": "2499c91d551ad9f22392aba1220931f2fb20454c80d75189f1bc7e768495280b",
+      "reviewedSha256": "2499c91d551ad9f22392aba1220931f2fb20454c80d75189f1bc7e768495280b"
+    },
+    {
+      "path": "src/parts/C22864.tsx",
+      "sha256": "5955f7e638933d63947deaa96878cea9b4468f3405a54baace8f3eb222376a12",
+      "reviewedSha256": "5955f7e638933d63947deaa96878cea9b4468f3405a54baace8f3eb222376a12"
+    },
+    {
+      "path": "src/parts/C22875.tsx",
+      "sha256": "fa00092a94bd0a8d9fcd69a8aea7701406805accf0392bd5a4960ebbfea04001",
+      "reviewedSha256": "fa00092a94bd0a8d9fcd69a8aea7701406805accf0392bd5a4960ebbfea04001"
+    },
+    {
+      "path": "src/parts/C22890.tsx",
+      "sha256": "8a976ada7afa3f8d2f3e94d4a51f6c23fb3dcafe757cd2dd5be97b2df2755de9",
+      "reviewedSha256": "8a976ada7afa3f8d2f3e94d4a51f6c23fb3dcafe757cd2dd5be97b2df2755de9"
+    },
+    {
+      "path": "src/parts/C22908.tsx",
+      "sha256": "e2339ad54ff382ad49a410ae6f5dd7257687198c18bce85caf905535d045d18a",
+      "reviewedSha256": "e2339ad54ff382ad49a410ae6f5dd7257687198c18bce85caf905535d045d18a"
+    },
+    {
+      "path": "src/parts/C22939.tsx",
+      "sha256": "353af0347f9cc4727100607deec87ad9e363f40ca277c057d90d9f1c112e8afe",
+      "reviewedSha256": "353af0347f9cc4727100607deec87ad9e363f40ca277c057d90d9f1c112e8afe"
+    },
+    {
+      "path": "src/parts/C22962.tsx",
+      "sha256": "9b191492e4ea5e60f9e100f93c3d028f5d8d36ccd9c4e46a728dcf831149f98f",
+      "reviewedSha256": "9b191492e4ea5e60f9e100f93c3d028f5d8d36ccd9c4e46a728dcf831149f98f"
+    },
+    {
+      "path": "src/parts/C22964.tsx",
+      "sha256": "e48efd4ea76c97773954ee43f0a551c1a0f3ea650eaa884b62bb6ce0a7124f2c",
+      "reviewedSha256": "e48efd4ea76c97773954ee43f0a551c1a0f3ea650eaa884b62bb6ce0a7124f2c"
+    },
+    {
+      "path": "src/parts/C23003.tsx",
+      "sha256": "e05caa5715bd80699810589fd1768589d59b4bfeb32a1b2df4e21a5677ed0cca",
+      "reviewedSha256": "e05caa5715bd80699810589fd1768589d59b4bfeb32a1b2df4e21a5677ed0cca"
+    },
+    {
+      "path": "src/parts/C23068.tsx",
+      "sha256": "35f08825e570dad72e53fa02da4b5be2733d8c28de8a090d1d83e9e03ea9ccf4",
+      "reviewedSha256": "35f08825e570dad72e53fa02da4b5be2733d8c28de8a090d1d83e9e03ea9ccf4"
+    },
+    {
+      "path": "src/parts/C23080.tsx",
+      "sha256": "1bed60da412d6f2cc17e0492a5878ae34564ede3f5e672fbe29e24226c716bd9",
+      "reviewedSha256": "1bed60da412d6f2cc17e0492a5878ae34564ede3f5e672fbe29e24226c716bd9"
+    },
+    {
+      "path": "src/parts/C23091.tsx",
+      "sha256": "850ba115a93e858b55636730acdac544cbc3fd9f820d19dbf9da1e7ce3e03ef2",
+      "reviewedSha256": "850ba115a93e858b55636730acdac544cbc3fd9f820d19dbf9da1e7ce3e03ef2"
+    },
+    {
+      "path": "src/parts/C23138.tsx",
+      "sha256": "0f3d819d6862b02e9eb0715da42c6ecd4e673ec4656dc4877fd9361fefe1c5ae",
+      "reviewedSha256": "0f3d819d6862b02e9eb0715da42c6ecd4e673ec4656dc4877fd9361fefe1c5ae"
+    },
+    {
+      "path": "src/parts/C23162.tsx",
+      "sha256": "906e5702e41de4f649905804192f14d54765e52d52fd55077535231dd815efc2",
+      "reviewedSha256": "906e5702e41de4f649905804192f14d54765e52d52fd55077535231dd815efc2"
+    },
+    {
+      "path": "src/parts/C23186.tsx",
+      "sha256": "2ee08dd185803ed490e7a8956be2bc361ba08cf1742f5ff75ba08fdc144dc1d2",
+      "reviewedSha256": "2ee08dd185803ed490e7a8956be2bc361ba08cf1742f5ff75ba08fdc144dc1d2"
+    },
+    {
+      "path": "src/parts/C23242.tsx",
+      "sha256": "111625a70e8376299dccfae06dd0c2b4e97ea64b2ca3938a5c28c181b8fa2afb",
+      "reviewedSha256": "111625a70e8376299dccfae06dd0c2b4e97ea64b2ca3938a5c28c181b8fa2afb"
+    },
+    {
+      "path": "src/parts/C23251.tsx",
+      "sha256": "9117f181f1038f676acc47449081440ffdc216de4093e21e0add3148388e433a",
+      "reviewedSha256": "9117f181f1038f676acc47449081440ffdc216de4093e21e0add3148388e433a"
+    },
+    {
+      "path": "src/parts/C237304.tsx",
+      "sha256": "e44b6f6f5cbe96e76802d1425d3a246cef5536b3156b03ab4e048c104559b7a5",
+      "reviewedSha256": "e44b6f6f5cbe96e76802d1425d3a246cef5536b3156b03ab4e048c104559b7a5"
+    },
+    {
+      "path": "src/parts/C2480.tsx",
+      "sha256": "abaf6abc89b664fe34823c46c5cef58c14d0660291e8a19a2c1a250af02a6118",
+      "reviewedSha256": "abaf6abc89b664fe34823c46c5cef58c14d0660291e8a19a2c1a250af02a6118"
+    },
+    {
+      "path": "src/parts/C25803.tsx",
+      "sha256": "c3ba5598ebfff925a7da5be3e7447c8528a41a5440e8c7a2ef99711d9ccf5edd",
+      "reviewedSha256": "c3ba5598ebfff925a7da5be3e7447c8528a41a5440e8c7a2ef99711d9ccf5edd"
+    },
+    {
+      "path": "src/parts/C25819.tsx",
+      "sha256": "cf30aa3c8fe28ecf19f5043113f08748faddb47e2daf2f9f46c46e020758ceb3",
+      "reviewedSha256": "cf30aa3c8fe28ecf19f5043113f08748faddb47e2daf2f9f46c46e020758ceb3"
+    },
+    {
+      "path": "src/parts/C25954.tsx",
+      "sha256": "2486878ecffb54e95f2cddcd0c2c5f12528e21ab0738424a06eda224ccc78479",
+      "reviewedSha256": "2486878ecffb54e95f2cddcd0c2c5f12528e21ab0738424a06eda224ccc78479"
+    },
+    {
+      "path": "src/parts/C2678061.tsx",
+      "sha256": "fdc72c2056d91739ce15ed01a8f07d268d68cbc09a3d22239417735cc1934c58",
+      "reviewedSha256": "fdc72c2056d91739ce15ed01a8f07d268d68cbc09a3d22239417735cc1934c58"
+    },
+    {
+      "path": "src/parts/C2762602.tsx",
+      "sha256": "e77d456f2a18289cbfae49f894e4fb1bc46e95068fabfed771773f0eb27546bc",
+      "reviewedSha256": "e77d456f2a18289cbfae49f894e4fb1bc46e95068fabfed771773f0eb27546bc"
+    },
+    {
+      "path": "src/parts/C28323.tsx",
+      "sha256": "7a04250b38a0f4a7875ee0043ffa1f30fa9dd45e371c0f1260bcf1b97ae38c50",
+      "reviewedSha256": "7a04250b38a0f4a7875ee0043ffa1f30fa9dd45e371c0f1260bcf1b97ae38c50"
+    },
+    {
+      "path": "src/parts/C2906982.tsx",
+      "sha256": "8283c3ae1116b50ff5e2ae0a32b8e612164481da6ee5e75ed1e8d62993724d4b",
+      "reviewedSha256": "8283c3ae1116b50ff5e2ae0a32b8e612164481da6ee5e75ed1e8d62993724d4b"
+    },
+    {
+      "path": "src/parts/C2930048.tsx",
+      "sha256": "d8519d384dd707e1a355967c39a02a744155a4c3c7ac32e1e85ae4ea5408f7a0",
+      "reviewedSha256": "d8519d384dd707e1a355967c39a02a744155a4c3c7ac32e1e85ae4ea5408f7a0"
+    },
+    {
+      "path": "src/parts/C2933140.tsx",
+      "sha256": "c6881a50eba137e4c66144c05317a8eb9e716872dd4c069c0f8c394ad7109767",
+      "reviewedSha256": "c6881a50eba137e4c66144c05317a8eb9e716872dd4c069c0f8c394ad7109767"
+    },
+    {
+      "path": "src/parts/C2933200.tsx",
+      "sha256": "ed12aebc5aff4d5f446b9ef4e65605e355b0b92e214b0e5441ad33356b1987c2",
+      "reviewedSha256": "ed12aebc5aff4d5f446b9ef4e65605e355b0b92e214b0e5441ad33356b1987c2"
+    },
+    {
+      "path": "src/parts/C29823.tsx",
+      "sha256": "245aeaec02f027573f14730d854ac11939eb62e1bdee42d8442f039b28d5ec41",
+      "reviewedSha256": "245aeaec02f027573f14730d854ac11939eb62e1bdee42d8442f039b28d5ec41"
+    },
+    {
+      "path": "src/parts/C2984759.tsx",
+      "sha256": "0c3972fd6eeb869342b282e7968289520c2fd05ae116ca00742dd35c6224be9a",
+      "reviewedSha256": "0c3972fd6eeb869342b282e7968289520c2fd05ae116ca00742dd35c6224be9a"
+    },
+    {
+      "path": "src/parts/C309062.tsx",
+      "sha256": "7d6231e07eaa33da19ec2c871f7f829c46f46fd3a807b26f8db15557abc8dca7",
+      "reviewedSha256": "7d6231e07eaa33da19ec2c871f7f829c46f46fd3a807b26f8db15557abc8dca7"
+    },
+    {
+      "path": "src/parts/C31850.tsx",
+      "sha256": "6c8cee164c65b17c7bb0c62542536f1d7130d7af06425d3c786f5e3954752cfb",
+      "reviewedSha256": "6c8cee164c65b17c7bb0c62542536f1d7130d7af06425d3c786f5e3954752cfb"
+    },
+    {
+      "path": "src/parts/C3662799.tsx",
+      "sha256": "c490bfbd659f5155a9739cdfb309871c659c7a135a27593a9271bbce4f6b3eb4",
+      "reviewedSha256": "c490bfbd659f5155a9739cdfb309871c659c7a135a27593a9271bbce4f6b3eb4"
+    },
+    {
+      "path": "src/parts/C377773.tsx",
+      "sha256": "d9975ba01b4b6b1842ce81c0cff55a96ace553d50b4436cad22af53997119d8a",
+      "reviewedSha256": "d9975ba01b4b6b1842ce81c0cff55a96ace553d50b4436cad22af53997119d8a"
+    },
+    {
+      "path": "src/parts/C380537.tsx",
+      "sha256": "ad024969f4c6498713e5bffbb906275934c6f3ec720574baf5dae756dff914d4",
+      "reviewedSha256": "ad024969f4c6498713e5bffbb906275934c6f3ec720574baf5dae756dff914d4"
+    },
+    {
+      "path": "src/parts/C397609.tsx",
+      "sha256": "f6e5e3f9ed8a571aff2ba638ee80fb1bee8273360c9709079af7822c0be2a0c0",
+      "reviewedSha256": "f6e5e3f9ed8a571aff2ba638ee80fb1bee8273360c9709079af7822c0be2a0c0"
+    },
+    {
+      "path": "src/parts/C4184.tsx",
+      "sha256": "49455b1884d21ca4f35d3aa46e7699de6dfa65569e469ac912e46251ea0431b9",
+      "reviewedSha256": "49455b1884d21ca4f35d3aa46e7699de6dfa65569e469ac912e46251ea0431b9"
+    },
+    {
+      "path": "src/parts/C45783.tsx",
+      "sha256": "f67e3478dfcbe9b2c7e7d4dd0fdb4d30a201926a64c21fec237b08f2967e1f23",
+      "reviewedSha256": "f67e3478dfcbe9b2c7e7d4dd0fdb4d30a201926a64c21fec237b08f2967e1f23"
+    },
+    {
+      "path": "src/parts/C466636.tsx",
+      "sha256": "68835166f727f40bd3a84824c0b074aac0c8c9e6fd13b86e145386017704f6dd",
+      "reviewedSha256": "68835166f727f40bd3a84824c0b074aac0c8c9e6fd13b86e145386017704f6dd"
+    },
+    {
+      "path": "src/parts/C474881.tsx",
+      "sha256": "7182ebb0640c01dcb998b6648d54569b90a0b1134410669fb6741f8dd86b78c5",
+      "reviewedSha256": "7182ebb0640c01dcb998b6648d54569b90a0b1134410669fb6741f8dd86b78c5"
+    },
+    {
+      "path": "src/parts/C49073699.tsx",
+      "sha256": "2f22f78cf3f5b237cbf3b0521b59b9ad2d19f2835491a7aea091f072b1a77c01",
+      "reviewedSha256": "2f22f78cf3f5b237cbf3b0521b59b9ad2d19f2835491a7aea091f072b1a77c01"
+    },
+    {
+      "path": "src/parts/C497873.tsx",
+      "sha256": "63465319bdb139b03f7c4cbbabf319ff0c9eed67a492e2a3f66f62d6697a4edf",
+      "reviewedSha256": "63465319bdb139b03f7c4cbbabf319ff0c9eed67a492e2a3f66f62d6697a4edf"
+    },
+    {
+      "path": "src/parts/C51205.tsx",
+      "sha256": "0d70d3337d7095222f52ab0085502200b509ff9617c65d1fd85c1243869d15a6",
+      "reviewedSha256": "0d70d3337d7095222f52ab0085502200b509ff9617c65d1fd85c1243869d15a6"
+    },
+    {
+      "path": "src/parts/C513643.tsx",
+      "sha256": "2e9da33ba73b67e7d1096b89aa0b22d77431d58d9a747085c019f178246c0ce9",
+      "reviewedSha256": "2e9da33ba73b67e7d1096b89aa0b22d77431d58d9a747085c019f178246c0ce9"
+    },
+    {
+      "path": "src/parts/C52306.tsx",
+      "sha256": "2d91a3cce5ded5c794f5d10283ba05a2125c6914514e3ef6db5c4dd0e68c3f56",
+      "reviewedSha256": "2d91a3cce5ded5c794f5d10283ba05a2125c6914514e3ef6db5c4dd0e68c3f56"
+    },
+    {
+      "path": "src/parts/C53987.tsx",
+      "sha256": "1c2f26c1aaaa2464eb3be7c31e68354f5dcdcc04a7473fba7d18a24d98675766",
+      "reviewedSha256": "1c2f26c1aaaa2464eb3be7c31e68354f5dcdcc04a7473fba7d18a24d98675766"
+    },
+    {
+      "path": "src/parts/C54315.tsx",
+      "sha256": "377a43978fc864f5ede0cece4d954fb0c533e22751af2c1b9d557ab106d656df",
+      "reviewedSha256": "377a43978fc864f5ede0cece4d954fb0c533e22751af2c1b9d557ab106d656df"
+    },
+    {
+      "path": "src/parts/C57112.tsx",
+      "sha256": "b76c72118dc35e876b8fc47d67a5ffc10201154eff0fac36982f3108cc4ef366",
+      "reviewedSha256": "b76c72118dc35e876b8fc47d67a5ffc10201154eff0fac36982f3108cc4ef366"
+    },
+    {
+      "path": "src/parts/C576517.tsx",
+      "sha256": "a6a1c3fb14eb65f689543c9a16b8cc293c65579bfad56bb9f05bb8cf1667dc88",
+      "reviewedSha256": "a6a1c3fb14eb65f689543c9a16b8cc293c65579bfad56bb9f05bb8cf1667dc88"
+    },
+    {
+      "path": "src/parts/C5824006.tsx",
+      "sha256": "eb7542ee0f71d05c1ab5fb3678d33ce99565b97df3455167434cecbacb83c3f1",
+      "reviewedSha256": "eb7542ee0f71d05c1ab5fb3678d33ce99565b97df3455167434cecbacb83c3f1"
+    },
+    {
+      "path": "src/parts/C602037.tsx",
+      "sha256": "0823fbb002eec64137ec6336e290d536ff1e5ccead75b8c554a09c54a2c95cca",
+      "reviewedSha256": "0823fbb002eec64137ec6336e290d536ff1e5ccead75b8c554a09c54a2c95cca"
+    },
+    {
+      "path": "src/parts/C64705.tsx",
+      "sha256": "09f6ce0e240bf5de53265c8c2963701b96c909843a94840700dc8cba0acde371",
+      "reviewedSha256": "09f6ce0e240bf5de53265c8c2963701b96c909843a94840700dc8cba0acde371"
+    },
+    {
+      "path": "src/parts/C671324.tsx",
+      "sha256": "30e078952fc74afe359ae2b780561b80e54fdbc1e5a3102935e5c25154f78162",
+      "reviewedSha256": "30e078952fc74afe359ae2b780561b80e54fdbc1e5a3102935e5c25154f78162"
+    },
+    {
+      "path": "src/parts/C70285.tsx",
+      "sha256": "f669cdbe0ac2b332c9cefba63858c37aeadeda992d705056aec286a83a11f75f",
+      "reviewedSha256": "f669cdbe0ac2b332c9cefba63858c37aeadeda992d705056aec286a83a11f75f"
+    },
+    {
+      "path": "src/parts/C724040.tsx",
+      "sha256": "498cf56c2b7470deec3b82af59e3c7e04720169fe2d089388911a5e0b3397bcf",
+      "reviewedSha256": "498cf56c2b7470deec3b82af59e3c7e04720169fe2d089388911a5e0b3397bcf"
+    },
+    {
+      "path": "src/parts/C7420354.tsx",
+      "sha256": "5374ea9b3b9ccac20818dd4b11080ccc36bb770a56d1a1c7e6e13c30eb4f9960",
+      "reviewedSha256": "5374ea9b3b9ccac20818dd4b11080ccc36bb770a56d1a1c7e6e13c30eb4f9960"
+    },
+    {
+      "path": "src/parts/C76589.tsx",
+      "sha256": "f14f4aef221c112d6ed83ad5422a9e3513e4230b029dbf2115f8cf63ba663005",
+      "reviewedSha256": "f14f4aef221c112d6ed83ad5422a9e3513e4230b029dbf2115f8cf63ba663005"
+    },
+    {
+      "path": "src/parts/C780769.tsx",
+      "sha256": "21696c6609f9b2c00d638248d7c5fa1a4f7201b81d5f850ef483a2abeadda311",
+      "reviewedSha256": "21696c6609f9b2c00d638248d7c5fa1a4f7201b81d5f850ef483a2abeadda311"
+    },
+    {
+      "path": "src/parts/C7984.tsx",
+      "sha256": "0a26cf2dc34da439bff8c2664b69af30b2ab4102b8789f660763b39a01299583",
+      "reviewedSha256": "0a26cf2dc34da439bff8c2664b69af30b2ab4102b8789f660763b39a01299583"
+    },
+    {
+      "path": "src/parts/C8545.tsx",
+      "sha256": "6bf1ae475ef18cf11fc4210c64dbd1d51211135a6c00c7ac8c0fcdb0f999c1d1",
+      "reviewedSha256": "6bf1ae475ef18cf11fc4210c64dbd1d51211135a6c00c7ac8c0fcdb0f999c1d1"
+    },
+    {
+      "path": "src/parts/C8591.tsx",
+      "sha256": "81ad6fd2e692a8c8bf5b04ccf155be66187c6ce39979b5cf786e01cbbc194839",
+      "reviewedSha256": "81ad6fd2e692a8c8bf5b04ccf155be66187c6ce39979b5cf786e01cbbc194839"
+    },
+    {
+      "path": "src/parts/C916375.tsx",
+      "sha256": "83825cae5681a1a507c785b000a2e0f1709ad0e3885b2048b9f9ad59b971b429",
+      "reviewedSha256": "83825cae5681a1a507c785b000a2e0f1709ad0e3885b2048b9f9ad59b971b429"
+    },
+    {
+      "path": "src/parts/C94869.tsx",
+      "sha256": "76377293a01c27b32a4d9af4bf8f5872226ae8ecd97135a38abd17e40903c33d",
+      "reviewedSha256": "76377293a01c27b32a4d9af4bf8f5872226ae8ecd97135a38abd17e40903c33d"
+    },
+    {
+      "path": "src/parts/catalog.tsx",
+      "sha256": "973a850532901e8eef7131f1d85e5ce5432ae1d789373dde089f39d33d7f1287",
+      "reviewedSha256": "973a850532901e8eef7131f1d85e5ce5432ae1d789373dde089f39d33d7f1287"
+    },
+    {
+      "path": "src/parts/import-manifest.json",
+      "sha256": "e8556581b34c49482e88d87d6e5b55855cda25cf8742b004909a6a339e868ae4",
+      "reviewedSha256": "e8556581b34c49482e88d87d6e5b55855cda25cf8742b004909a6a339e868ae4"
+    },
+    {
+      "path": "src/parts/index.ts",
+      "sha256": "743807d18bf2019893335550bcc8463875c3c4cb3a8067b0ece5646ad5f21fa1",
+      "reviewedSha256": "743807d18bf2019893335550bcc8463875c3c4cb3a8067b0ece5646ad5f21fa1"
+    },
+    {
+      "path": "src/parts/supplier-footprints-provenance.json",
+      "sha256": "296954369d0d8af37e052f5eff2db2112bed8348e80e838729089e3ceeefd8f5",
+      "reviewedSha256": "296954369d0d8af37e052f5eff2db2112bed8348e80e838729089e3ceeefd8f5"
+    },
+    {
+      "path": "src/parts/supplier-footprints.json",
+      "sha256": "d5f9c6ecd70e7fe8de215a46a89878471a2a5187611863092351c449f6b7b7ba",
+      "reviewedSha256": "d5f9c6ecd70e7fe8de215a46a89878471a2a5187611863092351c449f6b7b7ba"
+    },
+    {
+      "path": "src/parts/supplier-parts-engine.ts",
+      "sha256": "fd8452b7388c534e86f3370406ed802a5acbcc6f7eb143e68d708645ecd84812",
+      "reviewedSha256": "fd8452b7388c534e86f3370406ed802a5acbcc6f7eb143e68d708645ecd84812"
+    }
+  ],
+  "exactCNumberFootprints": 99,
+  "authenticRawImport99Evidence": [
+    {
+      "id": "C2678061",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2678061-easyeda.json",
+      "sha256": "fdea48a3b91ddc1aec6cc26f08ecca4ba3961e9de5713e4e4ed74d7c7631e942",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2678061",
+      "observedAtUtc": "2026-10-10T03:14:10.465883+00:00"
+    },
+    {
+      "id": "C671324",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C671324-easyeda.json",
+      "sha256": "7acc50d1b180747fcb641f14c5c0b99647692d551174fc191d0a8a15b99fd4ef",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C671324",
+      "observedAtUtc": "2026-10-10T03:14:09.170910+00:00"
+    },
+    {
+      "id": "C3662799",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C3662799-easyeda.json",
+      "sha256": "723c7d4b990e09e0b96a5a4643570ffe689a9b751b10c115c47b101cc42c6d10",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C3662799",
+      "observedAtUtc": "2026-10-10T03:14:10.216742+00:00"
+    },
+    {
+      "id": "C724040",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C724040-easyeda.json",
+      "sha256": "bd888c30f7040da908ce33fcd32543da22cedd0ba45bcb5963c646d0fd56abd4",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C724040",
+      "observedAtUtc": "2026-10-10T03:14:11.085104+00:00"
+    },
+    {
+      "id": "C144198",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C144198-easyeda.json",
+      "sha256": "99f076a2a477aaeb6b41cf38fcd8615166a687b487669f1e780fe4f7501b5e10",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C144198",
+      "observedAtUtc": "2026-10-10T03:14:11.325488+00:00"
+    },
+    {
+      "id": "C165948",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C165948-easyeda.json",
+      "sha256": "7fc73d44d24bc9f9e9e1a0986aaa6885172db5d8d26212e3767fce5600a305ab",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C165948",
+      "observedAtUtc": "2026-10-10T03:14:11.325936+00:00"
+    },
+    {
+      "id": "C131334",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131334-easyeda.json",
+      "sha256": "ac679c2d8246eda038026fee1066daecc9a62b1bdb590ceffb5963d0b2c3217b",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C131334",
+      "observedAtUtc": "2026-10-10T03:20:59.295651+00:00"
+    },
+    {
+      "id": "C19270707",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270707-easyeda.json",
+      "sha256": "8c1a48472f2e15dd0da986c798964f06541e3f268840d6c9151d68bebda24b65",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19270707",
+      "observedAtUtc": "2026-10-10T03:20:59.905777+00:00"
+    },
+    {
+      "id": "C309062",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C309062-easyeda.json",
+      "sha256": "5e444d29d8edf6246a5f487caf5cd8d6e53b8e1668f1c3e5b3d2a87fe75f5f8c",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C309062",
+      "observedAtUtc": "2026-10-10T03:21:01.404873+00:00"
+    },
+    {
+      "id": "C49073699",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C49073699-easyeda.json",
+      "sha256": "76c5b8b88d2de225cfd32914a8c7af855ed71b47d92f4fda29da56be18189ff7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C49073699",
+      "observedAtUtc": "2026-10-10T03:20:58.806660+00:00"
+    },
+    {
+      "id": "C15849",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C15849-easyeda.json",
+      "sha256": "eb0291fb852a54d327de86d715a4d786a39642b0493a3c6d51e1dab4b9c9f114",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C15849",
+      "observedAtUtc": "2026-10-10T03:21:00.777268+00:00"
+    },
+    {
+      "id": "C20526",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C20526-easyeda.json",
+      "sha256": "0319b3bc8318a4e2883dfd05e3d8cb4e31c394bcb5b5c3ab6817d91fa4fc44af",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C20526",
+      "observedAtUtc": "2026-10-10T03:20:57.600274+00:00"
+    },
+    {
+      "id": "C57112",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C57112-easyeda.json",
+      "sha256": "172726836cb9a39d1b1a84596660c5d014752030adf844b688480df21bf70aa4",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C57112",
+      "observedAtUtc": "2026-10-10T03:21:00.986864+00:00"
+    },
+    {
+      "id": "C8545",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C8545-easyeda.json",
+      "sha256": "beaa7bdf570cec1da929d6fc044e4a2001ee190348689c0dd86db68a026fdd0a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C8545",
+      "observedAtUtc": "2026-10-10T03:21:00.041283+00:00"
+    },
+    {
+      "id": "C2071868",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2071868-easyeda.json",
+      "sha256": "a9a9e96240f1b994a494bc033194c49fa796d6fbbe572dbe4cd122b650e39fd4",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2071868",
+      "observedAtUtc": "2026-10-10T03:20:58.472787+00:00"
+    },
+    {
+      "id": "C179626",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C179626-easyeda.json",
+      "sha256": "e22e17ecc436d42f47db729aac4bc5adfbbb4dbf81b3ae6c4481fc5b04c67185",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C179626",
+      "observedAtUtc": "2026-10-10T03:21:00.027208+00:00"
+    },
+    {
+      "id": "C7984",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7984-easyeda.json",
+      "sha256": "906c0888b59688dbd199f3e603c2e2b0b0b1fa2d8374ee1c95aa47844297a3fe",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C7984",
+      "observedAtUtc": "2026-10-10T03:21:00.312369+00:00"
+    },
+    {
+      "id": "C1591",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C1591-easyeda.json",
+      "sha256": "bc0f028e3912692f0f2a65b08c5d1029e96ba302b7ac15c2436ebb7d401ddd7e",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C1591",
+      "observedAtUtc": "2026-10-10T03:21:00.824001+00:00"
+    },
+    {
+      "id": "C19270709",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270709-easyeda.json",
+      "sha256": "d06156eb42f8f30851648067cbaadbc5fc29801287a4a37d5248a0e8cbace3a2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19270709",
+      "observedAtUtc": "2026-10-10T03:20:59.925835+00:00"
+    },
+    {
+      "id": "C8591",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C8591-easyeda.json",
+      "sha256": "0db4aa7819cbb5d626cd8c0a043c6d0a009597d61e4c73f31637e76b9c4792ca",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C8591",
+      "observedAtUtc": "2026-10-10T03:21:00.597861+00:00"
+    },
+    {
+      "id": "C5824006",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C5824006-easyeda.json",
+      "sha256": "77818449afc85efd5628c0e5be9fbca0951e76d84c6f367314f52bef80bf554b",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C5824006",
+      "observedAtUtc": "2026-10-10T03:21:00.008403+00:00"
+    },
+    {
+      "id": "C132016",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C132016-easyeda.json",
+      "sha256": "1d51b1b8a2e700a1effc4487ebf66624343c6e2ecac97dcec88236d0b8a746a7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C132016",
+      "observedAtUtc": "2026-10-10T03:20:59.089357+00:00"
+    },
+    {
+      "id": "C12891",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C12891-easyeda.json",
+      "sha256": "bad1db9b08202006924ba413772942b48784886a54c989b3a3ac3bb636225258",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C12891",
+      "observedAtUtc": "2026-10-10T03:21:01.708800+00:00"
+    },
+    {
+      "id": "C14663",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14663-easyeda.json",
+      "sha256": "39cebd7b10bc8e4f903d0e066a33dce2b60a4cf1073cd2c9bda39dee0aa16b58",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C14663",
+      "observedAtUtc": "2026-10-10T03:21:00.696553+00:00"
+    },
+    {
+      "id": "C780769",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C780769-easyeda.json",
+      "sha256": "df7bfaebbeb48c35b0990d166dcaab86d1980f6c14f4e38e544b19cb68f1c8b1",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C780769",
+      "observedAtUtc": "2026-10-10T03:20:57.528583+00:00"
+    },
+    {
+      "id": "C19666",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19666-easyeda.json",
+      "sha256": "9bdbbd5e7b67f8bc6c144a7ee1042b6a16d3d1981013b0f250e72de6334ed191",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19666",
+      "observedAtUtc": "2026-10-10T03:21:01.518953+00:00"
+    },
+    {
+      "id": "C52306",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C52306-easyeda.json",
+      "sha256": "b057e9eed7441d66b71240a0518ee5769440ece808bd126018d010a966270163",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C52306",
+      "observedAtUtc": "2026-10-10T03:21:02.635887+00:00"
+    },
+    {
+      "id": "C70285",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C70285-easyeda.json",
+      "sha256": "c90c92c76716484cc7cb0e2de250da9efbbab16893c9640780c80e4ced471a6a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C70285",
+      "observedAtUtc": "2026-10-10T03:20:57.503150+00:00"
+    },
+    {
+      "id": "C474881",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C474881-easyeda.json",
+      "sha256": "7a76907853a35c98381a467755c28d0b2d7f1cc315e6b1012c38de110fc72e2b",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C474881",
+      "observedAtUtc": "2026-10-10T03:20:59.408046+00:00"
+    },
+    {
+      "id": "C76589",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C76589-easyeda.json",
+      "sha256": "867a1b8ad8c67d72400c9217aa4ecf76729cea51a28ecf23e9bd219a300109bd",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C76589",
+      "observedAtUtc": "2026-10-10T03:21:01.430583+00:00"
+    },
+    {
+      "id": "C13585",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C13585-easyeda.json",
+      "sha256": "b8c95f90d4351f76646ddade76b760c1bc30886a598e418131d303a6f1a5f386",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C13585",
+      "observedAtUtc": "2026-10-10T03:21:01.647441+00:00"
+    },
+    {
+      "id": "C23162",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23162-easyeda.json",
+      "sha256": "5ef345431d5c7dc2d5149d651a19af33f1a34df74b95fac6e7e9a2a04d406ece",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23162",
+      "observedAtUtc": "2026-10-10T03:23:02.020839+00:00"
+    },
+    {
+      "id": "C25819",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25819-easyeda.json",
+      "sha256": "ba84c6b9f561fba6acb1c88b4383040c4b0492de62c4e02aaa19e2d91a0e006c",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25819",
+      "observedAtUtc": "2026-10-10T03:23:01.222138+00:00"
+    },
+    {
+      "id": "C21117",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21117-easyeda.json",
+      "sha256": "cd22ed339ee98dbe9c97100224c704234e9ded247807ad6218cc8c999691e4e2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21117",
+      "observedAtUtc": "2026-10-10T03:23:03.421605+00:00"
+    },
+    {
+      "id": "C22858",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22858-easyeda.json",
+      "sha256": "a7419c0d41f62f2d49d9df644bf96488ab2db890a2f173afd3b1a6b776b3d958",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22858",
+      "observedAtUtc": "2026-10-10T03:23:00.306833+00:00"
+    },
+    {
+      "id": "C130910",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C130910-easyeda.json",
+      "sha256": "017677d52f6c4d5b25df8ae31eb2a7d9fa28b66bb0521f5a31f875d97b8960d6",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C130910",
+      "observedAtUtc": "2026-10-10T03:23:57.281177+00:00"
+    },
+    {
+      "id": "C4184",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C4184-easyeda.json",
+      "sha256": "adb21a3548fa6737aee6b0443d03abee2d70fed50989c8664b3b361efc4e499a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C4184",
+      "observedAtUtc": "2026-10-10T03:23:02.967468+00:00"
+    },
+    {
+      "id": "C22890",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22890-easyeda.json",
+      "sha256": "c0fc60eb156bc830f7d5c0189f0a4abee1a43c190c7372e57106c531851c080b",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22890",
+      "observedAtUtc": "2026-10-10T03:23:01.974542+00:00"
+    },
+    {
+      "id": "C513643",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C513643-easyeda.json",
+      "sha256": "24cfd41ee895e07de1311f1965553dd05cd4903ede628d0ed669cacd5bb61a39",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C513643",
+      "observedAtUtc": "2026-10-10T03:23:04.012289+00:00"
+    },
+    {
+      "id": "C22859",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22859-easyeda.json",
+      "sha256": "7e63ce71fffe1710e327f5e3f7c1a3325261fb4a40314fbdd08c10a995b3e33d",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22859",
+      "observedAtUtc": "2026-10-10T03:23:01.488330+00:00"
+    },
+    {
+      "id": "C497873",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C497873-easyeda.json",
+      "sha256": "c5d6129dc5b86a8409c75b6ae72853adc1b96bd0c9dcd8ab2c9ff0b88448237a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C497873",
+      "observedAtUtc": "2026-10-10T03:23:04.655161+00:00"
+    },
+    {
+      "id": "C25954",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25954-easyeda.json",
+      "sha256": "9eb6bb1c37bedd185c7821532a143201e72167314598f9c3ef5d32a25d310d3b",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25954",
+      "observedAtUtc": "2026-10-10T03:23:00.577736+00:00"
+    },
+    {
+      "id": "C2762602",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2762602-easyeda.json",
+      "sha256": "c37ac565d2be810d5eb5e8d11b2b7df73f75f8f15abde4b6dc3e5c6aa0c0c6d4",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2762602",
+      "observedAtUtc": "2026-10-10T03:23:04.418121+00:00"
+    },
+    {
+      "id": "C377773",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C377773-easyeda.json",
+      "sha256": "4507461ec48281a1fedcc52d696afce7f1982c98a68e03499181c2f5dbd8a8f1",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C377773",
+      "observedAtUtc": "2026-10-10T03:48:28.240847+00:00"
+    },
+    {
+      "id": "C15127",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C15127-easyeda.json",
+      "sha256": "7c8d90bd4c5ffc4340ce2e61da9e5b70e275542fb06ebd80720e9a7e77705cd7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C15127",
+      "observedAtUtc": "2026-10-10T03:23:56.761937+00:00"
+    },
+    {
+      "id": "C22962",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22962-easyeda.json",
+      "sha256": "6a0d5cd6bf390e8f5d4f4a469d22a9edc49a9d0ff07be942cd1d4a16329c90f6",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22962",
+      "observedAtUtc": "2026-10-10T03:23:02.646596+00:00"
+    },
+    {
+      "id": "C53987",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C53987-easyeda.json",
+      "sha256": "b41a85aaaea49ff2e7ad4cf40909cd48281fb87add3d99ece80d70a77fa85f5f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C53987",
+      "observedAtUtc": "2026-10-10T03:23:03.439878+00:00"
+    },
+    {
+      "id": "C167874",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C167874-easyeda.json",
+      "sha256": "cbcd33604bae0eb80785d2ff80c6f01218d206c6d636137f9f4b75200e50cf9e",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C167874",
+      "observedAtUtc": "2026-10-10T03:23:04.958047+00:00"
+    },
+    {
+      "id": "C2906982",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2906982-easyeda.json",
+      "sha256": "fecb24830761296dcf22bb897d37ada7c4763a7f998b1a5cf3a5cbf5bfedec01",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2906982",
+      "observedAtUtc": "2026-10-10T03:23:00.800757+00:00"
+    },
+    {
+      "id": "C22864",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22864-easyeda.json",
+      "sha256": "eb4d28eeb5df67d5cff986490fed8abd9151c9724c7b1f20bc9858d29a8ff786",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22864",
+      "observedAtUtc": "2026-10-10T03:23:00.363572+00:00"
+    },
+    {
+      "id": "C22836",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22836-easyeda.json",
+      "sha256": "c0c9c5730e5f412657a12bd3e409edc35daa43ebc518b9f1fad36fa78782e5ab",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22836",
+      "observedAtUtc": "2026-10-10T03:23:01.632081+00:00"
+    },
+    {
+      "id": "C1613",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C1613-easyeda.json",
+      "sha256": "edf5125663814e8f445dfa1823dfc55c5d79b4b85e1ce3fadbc2e9f637429bd5",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C1613",
+      "observedAtUtc": "2026-10-10T03:23:03.858349+00:00"
+    },
+    {
+      "id": "C45783",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C45783-easyeda.json",
+      "sha256": "6b7fac16f86e62da758e22d9c213d8d30d865498f05f714f5d43db03b3bc6f5d",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C45783",
+      "observedAtUtc": "2026-10-10T03:23:04.280912+00:00"
+    },
+    {
+      "id": "C25803",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25803-easyeda.json",
+      "sha256": "7720fc09c43c94afe3c4aab4044d190842572d3b502368829bff52d0925fb0fd",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25803",
+      "observedAtUtc": "2026-10-10T03:23:00.221938+00:00"
+    },
+    {
+      "id": "C23138",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23138-easyeda.json",
+      "sha256": "617e5d970cc746073bc6acbe9ba884d16155f2b5167603da9f37a952b9ddf058",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23138",
+      "observedAtUtc": "2026-10-10T03:23:02.874742+00:00"
+    },
+    {
+      "id": "C23080",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23080-easyeda.json",
+      "sha256": "e775b2c05a7e9c9e9542267fdd5608abe7576947bb52b0e54dfae5a3ca26fcc2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23080",
+      "observedAtUtc": "2026-10-10T03:23:00.409727+00:00"
+    },
+    {
+      "id": "C21190",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21190-easyeda.json",
+      "sha256": "67d2a5101829f9c9fbf19ce8a45c7313dbf6c265898e2598c2c2449435e96a9f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21190",
+      "observedAtUtc": "2026-10-10T03:23:02.390150+00:00"
+    },
+    {
+      "id": "C23251",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23251-easyeda.json",
+      "sha256": "22d89298ead00f9eead6024fd13a7eff37eee58cf51dcf12706e27206ee31c40",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23251",
+      "observedAtUtc": "2026-10-10T03:23:00.213779+00:00"
+    },
+    {
+      "id": "C23186",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23186-easyeda.json",
+      "sha256": "31bddb19277eaceecb95a99af1731601002952c7447769a3190fdab64590541f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23186",
+      "observedAtUtc": "2026-10-10T03:23:03.561922+00:00"
+    },
+    {
+      "id": "C23003",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23003-easyeda.json",
+      "sha256": "f702d156f6a0c8b476dee46b9ad78cbfe8e27bd8e11a4faccae96f90b6051fd0",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23003",
+      "observedAtUtc": "2026-10-10T03:23:01.169066+00:00"
+    },
+    {
+      "id": "C22908",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22908-easyeda.json",
+      "sha256": "3552dac1f43f1917dfda214df5a0b0635c8e5fd4c43c16138c8c3fafdd74eeb9",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22908",
+      "observedAtUtc": "2026-10-10T03:23:01.806621+00:00"
+    },
+    {
+      "id": "C2480",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2480-easyeda.json",
+      "sha256": "e11c835894397a19acb78eef81994014c3f8f5700f19e2bf1c2b5949b323d6a2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2480",
+      "observedAtUtc": "2026-10-10T03:23:56.840191+00:00"
+    },
+    {
+      "id": "C131337",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131337-easyeda.json",
+      "sha256": "b1edf2bf0a8fd702280d657b4fd360851200a506e75bb74f7aaeffe93b92791d",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C131337",
+      "observedAtUtc": "2026-10-10T03:23:04.760866+00:00"
+    },
+    {
+      "id": "C22939",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22939-easyeda.json",
+      "sha256": "c6bb71f13e4ca826628a25f1811455e6fe01af08459bb399c4d2a62fd452880f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22939",
+      "observedAtUtc": "2026-10-10T03:23:01.378929+00:00"
+    },
+    {
+      "id": "C21189",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21189-easyeda.json",
+      "sha256": "94ad258dc69b3e66a16bbcafe4f78fd4581841a0f4714e6b51996ca8e57c8795",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21189",
+      "observedAtUtc": "2026-10-10T03:23:02.568427+00:00"
+    },
+    {
+      "id": "C64705",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C64705-easyeda.json",
+      "sha256": "cbd4e944837d487f7bf1bca625d232a9d1c251875743ebd20d17dc6118c0c676",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C64705",
+      "observedAtUtc": "2026-10-10T03:23:04.404977+00:00"
+    },
+    {
+      "id": "C29823",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C29823-easyeda.json",
+      "sha256": "e09521a22c01548c3f23907641efe2b47f40fa9df1c98b63885ec780e4e5f9e7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C29823",
+      "observedAtUtc": "2026-10-10T03:23:03.883638+00:00"
+    },
+    {
+      "id": "C20527",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C20527-easyeda.json",
+      "sha256": "632be5f8a2dad4fd697ef233290202fb296d549fa6116d5857c8c7c614528da9",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C20527",
+      "observedAtUtc": "2026-10-10T03:24:23.520805+00:00"
+    },
+    {
+      "id": "C7420354",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7420354-easyeda.json",
+      "sha256": "55c0234130bf82937d120707326acfd6c8b1dd04a522c9a747ecd9aa083efd03",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C7420354",
+      "observedAtUtc": "2026-10-10T03:24:23.140178+00:00"
+    },
+    {
+      "id": "C916375",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C916375-easyeda.json",
+      "sha256": "a191a2107a7b305865dc73aaa9dd803bc4c53868021d0ade8a26d70cd9330f48",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C916375",
+      "observedAtUtc": "2026-10-10T03:24:24.581379+00:00"
+    },
+    {
+      "id": "C22964",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22964-easyeda.json",
+      "sha256": "b1ef14e43eea6979235023efc7fd6d23a0bd76d266a70a45aa4590e31f0f056f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22964",
+      "observedAtUtc": "2026-10-10T03:24:23.071487+00:00"
+    },
+    {
+      "id": "C2984759",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2984759-easyeda.json",
+      "sha256": "53c418fb074ff0d36e46f50202da259bda1906e59a28dde6e3495f867d7e1fc3",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2984759",
+      "observedAtUtc": "2026-10-10T03:24:24.475434+00:00"
+    },
+    {
+      "id": "C23091",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23091-easyeda.json",
+      "sha256": "bf4a3c8f1201c93095ab1fdf90ae32306f3341a8a8ab6280aabec963dc78e3ec",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23091",
+      "observedAtUtc": "2026-10-10T03:24:23.603393+00:00"
+    },
+    {
+      "id": "C397609",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C397609-easyeda.json",
+      "sha256": "f8aaf43eff194ecf4b071e2194b3341024d33132a07c10a51286e1625be9e4d8",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C397609",
+      "observedAtUtc": "2026-10-10T03:23:57.870514+00:00"
+    },
+    {
+      "id": "C158004",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C158004-easyeda.json",
+      "sha256": "4578ff302ab62426fbfbef9c5b168d0549549a14e41d9a2433e9d51b0efc7e56",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C158004",
+      "observedAtUtc": "2026-10-10T03:23:59.166107+00:00"
+    },
+    {
+      "id": "C54315",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C54315-easyeda.json",
+      "sha256": "10e31e5e81ee740082fdc6ec825a4fe6d664d5538550ad8808cdf15c89178d98",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C54315",
+      "observedAtUtc": "2026-10-10T03:25:19.686637+00:00"
+    },
+    {
+      "id": "C466636",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C466636-easyeda.json",
+      "sha256": "44261c13f1b52d828e67a3b0c63e9abe9524ec53300d6c3933d61716038fa16c",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C466636",
+      "observedAtUtc": "2026-10-10T03:23:58.006780+00:00"
+    },
+    {
+      "id": "C31850",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C31850-easyeda.json",
+      "sha256": "b37f4a071d12865ddd2425ba4c36fca892a72f2ed82cc1fce1f4e57e23336bd2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C31850",
+      "observedAtUtc": "2026-10-10T03:26:49.251860+00:00"
+    },
+    {
+      "id": "C602037",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C602037-easyeda.json",
+      "sha256": "e1754d1c20040c612e61fe331282986e81cd8bdeb2864caabce324a4b7bbfb4a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C602037",
+      "observedAtUtc": "2026-10-10T03:26:49.307306+00:00"
+    },
+    {
+      "id": "C22875",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22875-easyeda.json",
+      "sha256": "5ec951dd592e958561a8e292d8f41ad5a394ce61c6b9da87c443be2205f2c6a9",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22875",
+      "observedAtUtc": "2026-10-10T03:26:49.180088+00:00"
+    },
+    {
+      "id": "C22809",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22809-easyeda.json",
+      "sha256": "a82ac0b236fca7004baf17a7d8c9993f57c682a756c9c5f23939d3291cbfd2cf",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22809",
+      "observedAtUtc": "2026-10-10T03:26:49.196061+00:00"
+    },
+    {
+      "id": "C576517",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C576517-easyeda.json",
+      "sha256": "bcd307bea4e07535ec48ea268269276670f9686e8e070a1e3c3f7dcae7cbe5f0",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C576517",
+      "observedAtUtc": "2026-10-10T03:28:47.973259+00:00"
+    },
+    {
+      "id": "C380537",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C380537-easyeda.json",
+      "sha256": "a7930fb339046bbd874e620a1e3485a94c0fe46a18038fee2ba4bdf2333b5673",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C380537",
+      "observedAtUtc": "2026-10-10T03:28:46.249789+00:00"
+    },
+    {
+      "id": "C18739",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C18739-easyeda.json",
+      "sha256": "d2bddf1717ae7c091f4e4bfedeb6be188aa90152bcf43c86ff953d3752a81ee2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C18739",
+      "observedAtUtc": "2026-10-10T03:28:46.272035+00:00"
+    },
+    {
+      "id": "C138706",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C138706-easyeda.json",
+      "sha256": "943100243caf108a2094e540e795b47ecb71cf95b7b6d73b678f73a41dc92068",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C138706",
+      "observedAtUtc": "2026-10-10T03:29:26.403149+00:00"
+    },
+    {
+      "id": "C2930048",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2930048-easyeda.json",
+      "sha256": "efa643a6f21cd44ebb2f7056525dc1e3ca9ca5522050f9208bc7f47a4e651c56",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2930048",
+      "observedAtUtc": "2026-10-10T03:35:27.478899+00:00"
+    },
+    {
+      "id": "C23068",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23068-easyeda.json",
+      "sha256": "8061051af991f69b9767cf0b2c851814357615423bd2baadc66b214b9c983781",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23068",
+      "observedAtUtc": "2026-10-10T03:39:33.970750+00:00"
+    },
+    {
+      "id": "C2933200",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2933200-easyeda.json",
+      "sha256": "ca9b2a9d7391e4e3893de707d504a763768af7c06b9caa4847d014c3e5f9e78f",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2933200",
+      "observedAtUtc": "2026-10-10T03:35:27.683458+00:00"
+    },
+    {
+      "id": "C14858",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14858-easyeda.json",
+      "sha256": "ca68b6e2d2f8a9cdc76a45b1799e3b78ad52b1eddf073827395cc6c34c4fa0b7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C14858",
+      "observedAtUtc": "2026-10-10T03:39:34.011677+00:00"
+    },
+    {
+      "id": "C191884",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C191884-easyeda.json",
+      "sha256": "6fcaba1d50442415fcd605e88a3a0ebad03cccefc089177ececf9ee6fa9b84cb",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C191884",
+      "observedAtUtc": "2026-10-10T03:35:29.731410+00:00"
+    },
+    {
+      "id": "C2071044",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2071044-easyeda.json",
+      "sha256": "999e922583434d11928bf4caf7491dc3797c2679d15870564694a6aad1e5a24a",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2071044",
+      "observedAtUtc": "2026-10-10T03:35:28.685189+00:00"
+    },
+    {
+      "id": "C2933140",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2933140-easyeda.json",
+      "sha256": "b8c1472555eff5e8fd07f4ef5686f0bcbaf502aca617b731f036a1d3b6de5536",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2933140",
+      "observedAtUtc": "2026-10-10T03:47:51.994388+00:00"
+    },
+    {
+      "id": "C51205",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C51205-easyeda.json",
+      "sha256": "e5bcdc5a51e7439be69281b4098c7dab94df7f91e00815da35a456fcb1bed5b7",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C51205",
+      "observedAtUtc": "2026-10-10T03:49:59.336517+00:00"
+    },
+    {
+      "id": "C237304",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C237304-easyeda.json",
+      "sha256": "72f8ab89f8c2535409e8a0f331cf260f8712d42ef6f2dd8d1e6c5cef5adf49a3",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C237304",
+      "observedAtUtc": "2026-10-10T03:58:55.723558+00:00"
+    },
+    {
+      "id": "C23242",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23242-easyeda.json",
+      "sha256": "da4d6c301f217d17260deee6ae8bc559d555d8514f58dab526cb66c3e048c262",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23242",
+      "observedAtUtc": "2026-10-10T04:30:44.360111+00:00"
+    },
+    {
+      "id": "C28323",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C28323-easyeda.json",
+      "sha256": "ee358e0bdd18dd9d4bfaa5bcf2a602caf72ce9953bfc8d31f0a8c9cd6fad02d2",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C28323",
+      "observedAtUtc": "2026-10-10T04:58:36.972204+00:00"
+    },
+    {
+      "id": "C10429",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C10429-easyeda.json",
+      "sha256": "8ba840e8a390713717510694528e29fa7714a024bf3b5b3362f90c5a259e5c97",
+      "source": "https://jlcsearch.tscircuit.com/api/easyeda_components/C10429",
+      "observedAtUtc": "2026-10-10T05:16:39.252664+00:00"
+    },
+    {
+      "id": "C94869",
+      "path": "reviews/debug-source-evidence/C94869-easyeda.json",
+      "sha256": "c1eef360464a0528ddb98857656ad5d69cbce496eca5f648edb11457fb9f6a1b",
+      "source": "https://easyeda.com/api/components/2bee172c845e4c718f8f9be12cb7f925?version=6.4.7&uuid=2bee172c845e4c718f8f9be12cb7f925&datastrid=",
+      "observedAtUtc": "2026-10-10T13:59:12.427Z"
+    },
+    {
+      "id": "C125094",
+      "path": "reviews/debug-source-evidence/C125094-easyeda.json",
+      "sha256": "1155ff795748f7f399872ff75213ff0106493513668e73b6f2a0e1e94b1fe6c8",
+      "source": "https://easyeda.com/api/components/7c039eec51c34103baa6d38347752d87?version=6.4.7&uuid=7c039eec51c34103baa6d38347752d87&datastrid=",
+      "observedAtUtc": "2026-10-10T14:01:49.068Z"
+    }
+  ],
+  "194FittedSupplierReceipts": [
+    {
+      "name": "J_USB",
+      "id": "C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "correctedImportPath": "src/parts/C165948.tsx"
+    },
+    {
+      "name": "U_PD",
+      "id": "C2678061",
+      "mpn": "STUSB4500QTR",
+      "correctedImportPath": "src/parts/C2678061.tsx"
+    },
+    {
+      "name": "U_INPUT",
+      "id": "C3662799",
+      "mpn": "TPS259470ARPWR",
+      "correctedImportPath": "src/parts/C3662799.tsx"
+    },
+    {
+      "name": "Q_PD_INHIBIT",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "Q_INPUT_HIGH",
+      "id": "C8545",
+      "mpn": "2N7002",
+      "correctedImportPath": "src/parts/C8545.tsx"
+    },
+    {
+      "name": "R_PD_RESET",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R_PD_VS",
+      "id": "C513643",
+      "mpn": "RC2512FK-07470RL",
+      "correctedImportPath": "src/parts/C513643.tsx"
+    },
+    {
+      "name": "R_PD_DISCH",
+      "id": "C54315",
+      "mpn": "25121WF1001T4E",
+      "correctedImportPath": "src/parts/C54315.tsx"
+    },
+    {
+      "name": "R_PD_SCL",
+      "id": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "correctedImportPath": "src/parts/C23162.tsx"
+    },
+    {
+      "name": "R_PD_SDA",
+      "id": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "correctedImportPath": "src/parts/C23162.tsx"
+    },
+    {
+      "name": "R_PD_ALERT",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R_PD_VALID",
+      "id": "C2930048",
+      "mpn": "FRC0603F1271TS",
+      "correctedImportPath": "src/parts/C2930048.tsx"
+    },
+    {
+      "name": "R_INPUT_RUN",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R_INPUT_OFF",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R_PD_INHIBIT",
+      "id": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "correctedImportPath": "src/parts/C25819.tsx"
+    },
+    {
+      "name": "R_INPUT_OV_TOP",
+      "id": "C22890",
+      "mpn": "0603WAF1743T5E",
+      "correctedImportPath": "src/parts/C22890.tsx"
+    },
+    {
+      "name": "R_INPUT_OV_BOTTOM",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R_INPUT_ILIM",
+      "id": "C2930048",
+      "mpn": "FRC0603F1271TS",
+      "correctedImportPath": "src/parts/C2930048.tsx"
+    },
+    {
+      "name": "R_INPUT_ILIM_HIGH",
+      "id": "C22908",
+      "mpn": "0603WAF2491T5E",
+      "correctedImportPath": "src/parts/C22908.tsx"
+    },
+    {
+      "name": "R_INPUT_HIGH_OFF",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R_INPUT_FAULT",
+      "id": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "correctedImportPath": "src/parts/C25819.tsx"
+    },
+    {
+      "name": "C_PD_VDD",
+      "id": "C28323",
+      "mpn": "CL21B105KBFNNNE",
+      "correctedImportPath": "src/parts/C28323.tsx"
+    },
+    {
+      "name": "C_PD_1V2",
+      "id": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "correctedImportPath": "src/parts/C15849.tsx"
+    },
+    {
+      "name": "C_PD_2V7",
+      "id": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "correctedImportPath": "src/parts/C15849.tsx"
+    },
+    {
+      "name": "C_USB_IN",
+      "id": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "correctedImportPath": "src/parts/C15849.tsx"
+    },
+    {
+      "name": "C_INPUT_DVDT",
+      "id": "C1613",
+      "mpn": "CL10B332KB8NNNC",
+      "correctedImportPath": "src/parts/C1613.tsx"
+    },
+    {
+      "name": "C_INPUT_OUT",
+      "id": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "correctedImportPath": "src/parts/C15849.tsx"
+    },
+    {
+      "name": "U2",
+      "id": "C671324",
+      "mpn": "LT3741EFE-1#PBF",
+      "correctedImportPath": "src/parts/C671324.tsx"
+    },
+    {
+      "name": "Q20",
+      "id": "C179626",
+      "mpn": "NTMFS5C670NLT1G",
+      "correctedImportPath": "src/parts/C179626.tsx"
+    },
+    {
+      "name": "Q21",
+      "id": "C179626",
+      "mpn": "NTMFS5C670NLT1G",
+      "correctedImportPath": "src/parts/C179626.tsx"
+    },
+    {
+      "name": "L2",
+      "id": "C49073699",
+      "mpn": "APS1360M6R8H",
+      "correctedImportPath": "src/parts/C49073699.tsx"
+    },
+    {
+      "name": "R20",
+      "id": "C5824006",
+      "mpn": "PA2512FKE7W0R008E",
+      "correctedImportPath": "src/parts/C5824006.tsx"
+    },
+    {
+      "name": "R21",
+      "id": "C22939",
+      "mpn": "0603WAF220KT5E",
+      "correctedImportPath": "src/parts/C22939.tsx"
+    },
+    {
+      "name": "R22",
+      "id": "C22939",
+      "mpn": "0603WAF220KT5E",
+      "correctedImportPath": "src/parts/C22939.tsx"
+    },
+    {
+      "name": "R23",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R24",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "D20",
+      "id": "C2480",
+      "mpn": "SS14",
+      "correctedImportPath": "src/parts/C2480.tsx"
+    },
+    {
+      "name": "C20",
+      "id": "C64705",
+      "mpn": "CL10B224KB8NNNC",
+      "correctedImportPath": "src/parts/C64705.tsx"
+    },
+    {
+      "name": "C21",
+      "id": "C45783",
+      "mpn": "CL21A226MAQNNNE",
+      "correctedImportPath": "src/parts/C45783.tsx"
+    },
+    {
+      "name": "C41",
+      "id": "C45783",
+      "mpn": "CL21A226MAQNNNE",
+      "correctedImportPath": "src/parts/C45783.tsx"
+    },
+    {
+      "name": "C22",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C24",
+      "id": "C28323",
+      "mpn": "CL21B105KBFNNNE",
+      "correctedImportPath": "src/parts/C28323.tsx"
+    },
+    {
+      "name": "C25",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C26",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C27",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C38",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C39",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C40",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C28",
+      "id": "C19270709",
+      "mpn": "JBLM2101M035C077RTM 100UF 35V",
+      "correctedImportPath": "src/parts/C19270709.tsx"
+    },
+    {
+      "name": "C29",
+      "id": "C19270707",
+      "mpn": "JBLM2221M025C090RTM 220UF 25V",
+      "correctedImportPath": "src/parts/C19270707.tsx"
+    },
+    {
+      "name": "C30",
+      "id": "C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "correctedImportPath": "src/parts/C309062.tsx"
+    },
+    {
+      "name": "C31",
+      "id": "C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "correctedImportPath": "src/parts/C309062.tsx"
+    },
+    {
+      "name": "R25",
+      "id": "C22859",
+      "mpn": "0603WAF100JT5E",
+      "correctedImportPath": "src/parts/C22859.tsx"
+    },
+    {
+      "name": "R26",
+      "id": "C22859",
+      "mpn": "0603WAF100JT5E",
+      "correctedImportPath": "src/parts/C22859.tsx"
+    },
+    {
+      "name": "C32",
+      "id": "C21117",
+      "mpn": "CL10B333KB8NNNC",
+      "correctedImportPath": "src/parts/C21117.tsx"
+    },
+    {
+      "name": "R27",
+      "id": "C31850",
+      "mpn": "0603WAF2202T5E",
+      "correctedImportPath": "src/parts/C31850.tsx"
+    },
+    {
+      "name": "C33",
+      "id": "C53987",
+      "mpn": "0603B472K500NT",
+      "correctedImportPath": "src/parts/C53987.tsx"
+    },
+    {
+      "name": "R28",
+      "id": "C23251",
+      "mpn": "0603WAF8252T5E",
+      "correctedImportPath": "src/parts/C23251.tsx"
+    },
+    {
+      "name": "C34",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C35",
+      "id": "C57112",
+      "mpn": "0603B103K500NT",
+      "correctedImportPath": "src/parts/C57112.tsx"
+    },
+    {
+      "name": "R29",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R30",
+      "id": "C22864",
+      "mpn": "0603WAF1212T5E",
+      "correctedImportPath": "src/parts/C22864.tsx"
+    },
+    {
+      "name": "R31",
+      "id": "C23091",
+      "mpn": "0603WAF6192T5E",
+      "correctedImportPath": "src/parts/C23091.tsx"
+    },
+    {
+      "name": "R32",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "C36",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "R33",
+      "id": "C25954",
+      "mpn": "0603WAF1692T5E",
+      "correctedImportPath": "src/parts/C25954.tsx"
+    },
+    {
+      "name": "R34",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "C37",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "Q22",
+      "id": "C7420354",
+      "mpn": "MMBT3906",
+      "correctedImportPath": "src/parts/C7420354.tsx"
+    },
+    {
+      "name": "Q23",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "R35",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R36",
+      "id": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "correctedImportPath": "src/parts/C25819.tsx"
+    },
+    {
+      "name": "R37",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R38",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R39",
+      "id": "C23242",
+      "mpn": "0603WAF7502T5E",
+      "correctedImportPath": "src/parts/C23242.tsx"
+    },
+    {
+      "name": "R40",
+      "id": "C22864",
+      "mpn": "0603WAF1212T5E",
+      "correctedImportPath": "src/parts/C22864.tsx"
+    },
+    {
+      "name": "U_TEC_MON",
+      "id": "C138706",
+      "mpn": "INA219AIDR",
+      "correctedImportPath": "src/parts/C138706.tsx"
+    },
+    {
+      "name": "R41",
+      "id": "C22859",
+      "mpn": "0603WAF100JT5E",
+      "correctedImportPath": "src/parts/C22859.tsx"
+    },
+    {
+      "name": "R42",
+      "id": "C22859",
+      "mpn": "0603WAF100JT5E",
+      "correctedImportPath": "src/parts/C22859.tsx"
+    },
+    {
+      "name": "C42",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C43",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C44",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "R45",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "J_TEC",
+      "id": "C474881",
+      "mpn": "KF301-5.0-2P",
+      "correctedImportPath": "src/parts/C474881.tsx"
+    },
+    {
+      "name": "U_LOGIC",
+      "id": "C780769",
+      "mpn": "AP63203WU-7",
+      "correctedImportPath": "src/parts/C780769.tsx"
+    },
+    {
+      "name": "L_LOGIC",
+      "id": "C167874",
+      "mpn": "FNR4030S4R7MT",
+      "correctedImportPath": "src/parts/C167874.tsx"
+    },
+    {
+      "name": "U_MCU",
+      "id": "C724040",
+      "mpn": "STM32G030F6P6",
+      "correctedImportPath": "src/parts/C724040.tsx"
+    },
+    {
+      "name": "U_LATCH",
+      "id": "C70285",
+      "mpn": "SN74LVC1G74DCUR",
+      "correctedImportPath": "src/parts/C70285.tsx"
+    },
+    {
+      "name": "U_SUPERVISOR",
+      "id": "C132016",
+      "mpn": "TLV803SDBZR",
+      "correctedImportPath": "src/parts/C132016.tsx"
+    },
+    {
+      "name": "U_INPUT_LATCH",
+      "id": "C70285",
+      "mpn": "SN74LVC1G74DCUR",
+      "correctedImportPath": "src/parts/C70285.tsx"
+    },
+    {
+      "name": "D_INPUT_PERMISSION",
+      "id": "C130910",
+      "mpn": "BAT54A,215",
+      "correctedImportPath": "src/parts/C130910.tsx"
+    },
+    {
+      "name": "Q_PD_LATCH",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "Q_FAULT_SOURCE",
+      "id": "C7420354",
+      "mpn": "MMBT3906",
+      "correctedImportPath": "src/parts/C7420354.tsx"
+    },
+    {
+      "name": "Q_FAULT_CLEAR",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "Q_INPUT_CLEAR",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "U_CLEAR_BUFFER",
+      "id": "C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "correctedImportPath": "src/parts/C10429.tsx"
+    },
+    {
+      "name": "U_CLOCK_BUFFER",
+      "id": "C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "correctedImportPath": "src/parts/C10429.tsx"
+    },
+    {
+      "name": "U_DAC",
+      "id": "C144198",
+      "mpn": "MCP4725A0T-E/CH",
+      "correctedImportPath": "src/parts/C144198.tsx"
+    },
+    {
+      "name": "U_THERMAL",
+      "id": "C7984",
+      "mpn": "LMV393IDR",
+      "correctedImportPath": "src/parts/C7984.tsx"
+    },
+    {
+      "name": "U_FAN",
+      "id": "C191884",
+      "mpn": "TPS54202DDCR",
+      "correctedImportPath": "src/parts/C191884.tsx"
+    },
+    {
+      "name": "L_FAN",
+      "id": "C497873",
+      "mpn": "YSPI0630A-220M",
+      "correctedImportPath": "src/parts/C497873.tsx"
+    },
+    {
+      "name": "Q_FAN_PWM",
+      "id": "C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "correctedImportPath": "src/parts/C20526.tsx"
+    },
+    {
+      "name": "J_FAN",
+      "id": "C131334",
+      "mpn": "B4B-PH-K-S(LF)(SN)",
+      "correctedImportPath": "src/parts/C131334.tsx"
+    },
+    {
+      "name": "J_HOT",
+      "id": "C131337",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "correctedImportPath": "src/parts/C131337.tsx"
+    },
+    {
+      "name": "J_COLD",
+      "id": "C131337",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "correctedImportPath": "src/parts/C131337.tsx"
+    },
+    {
+      "name": "J_SWD",
+      "id": "C131334",
+      "mpn": "B4B-PH-K-S(LF)(SN)",
+      "correctedImportPath": "src/parts/C131334.tsx"
+    },
+    {
+      "name": "J_UART",
+      "id": "C131334",
+      "mpn": "B4B-PH-K-S(LF)(SN)",
+      "correctedImportPath": "src/parts/C131334.tsx"
+    },
+    {
+      "name": "R200",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R201",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R202",
+      "id": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "correctedImportPath": "src/parts/C23162.tsx"
+    },
+    {
+      "name": "R203",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R204",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R205",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R206",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R207",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R208",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R209",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R210",
+      "id": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "correctedImportPath": "src/parts/C21190.tsx"
+    },
+    {
+      "name": "R211",
+      "id": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "correctedImportPath": "src/parts/C21190.tsx"
+    },
+    {
+      "name": "R212",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R213",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R214",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R215",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R216",
+      "id": "C2933140",
+      "mpn": "FRC0603F1332TS",
+      "correctedImportPath": "src/parts/C2933140.tsx"
+    },
+    {
+      "name": "R217",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R218",
+      "id": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "correctedImportPath": "src/parts/C23162.tsx"
+    },
+    {
+      "name": "R219",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R220",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R221",
+      "id": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "correctedImportPath": "src/parts/C21190.tsx"
+    },
+    {
+      "name": "R222",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R223",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R224",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R225",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R226",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R227",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R228",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R229",
+      "id": "C23068",
+      "mpn": "0603WAF5231T5E",
+      "correctedImportPath": "src/parts/C23068.tsx"
+    },
+    {
+      "name": "R231",
+      "id": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "correctedImportPath": "src/parts/C21190.tsx"
+    },
+    {
+      "name": "R232",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R233",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R234",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R235",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R236",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R237",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R238",
+      "id": "C2906982",
+      "mpn": "FRC0603F1002TS",
+      "correctedImportPath": "src/parts/C2906982.tsx"
+    },
+    {
+      "name": "R239",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R240",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R241",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R242",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "R243",
+      "id": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "correctedImportPath": "src/parts/C25803.tsx"
+    },
+    {
+      "name": "C200",
+      "id": "C237304",
+      "mpn": "GRM31CC72A475KE11L",
+      "correctedImportPath": "src/parts/C237304.tsx"
+    },
+    {
+      "name": "C201",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C202",
+      "id": "C602037",
+      "mpn": "CL21A226MAYNNNE",
+      "correctedImportPath": "src/parts/C602037.tsx"
+    },
+    {
+      "name": "C203",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C204",
+      "id": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "correctedImportPath": "src/parts/C19666.tsx"
+    },
+    {
+      "name": "C205",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C206",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C207",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C208",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C209",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C210",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C211",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C212",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C213",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C214",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C215",
+      "id": "C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "correctedImportPath": "src/parts/C309062.tsx"
+    },
+    {
+      "name": "C216",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C217",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C218",
+      "id": "C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "correctedImportPath": "src/parts/C309062.tsx"
+    },
+    {
+      "name": "C219",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C220",
+      "id": "C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "correctedImportPath": "src/parts/C380537.tsx"
+    },
+    {
+      "name": "C221",
+      "id": "C14858",
+      "mpn": "CL10C101JB8NNNC",
+      "correctedImportPath": "src/parts/C14858.tsx"
+    },
+    {
+      "name": "C222",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C223",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "R501",
+      "id": "C31850",
+      "mpn": "0603WAF2202T5E",
+      "correctedImportPath": "src/parts/C31850.tsx"
+    },
+    {
+      "name": "D501",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R502",
+      "id": "C31850",
+      "mpn": "0603WAF2202T5E",
+      "correctedImportPath": "src/parts/C31850.tsx"
+    },
+    {
+      "name": "D502",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R503",
+      "id": "C22908",
+      "mpn": "0603WAF2491T5E",
+      "correctedImportPath": "src/parts/C22908.tsx"
+    },
+    {
+      "name": "D503",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R504",
+      "id": "C22809",
+      "mpn": "0603WAF1502T5E",
+      "correctedImportPath": "src/parts/C22809.tsx"
+    },
+    {
+      "name": "D504",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R505",
+      "id": "C22809",
+      "mpn": "0603WAF1502T5E",
+      "correctedImportPath": "src/parts/C22809.tsx"
+    },
+    {
+      "name": "D505",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R506",
+      "id": "C22908",
+      "mpn": "0603WAF2491T5E",
+      "correctedImportPath": "src/parts/C22908.tsx"
+    },
+    {
+      "name": "D506",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R507",
+      "id": "C22908",
+      "mpn": "0603WAF2491T5E",
+      "correctedImportPath": "src/parts/C22908.tsx"
+    },
+    {
+      "name": "D507",
+      "id": "C125094",
+      "mpn": "LTST-C190KGKT",
+      "correctedImportPath": "src/parts/C125094.tsx"
+    },
+    {
+      "name": "R508",
+      "id": "C22908",
+      "mpn": "0603WAF2491T5E",
+      "correctedImportPath": "src/parts/C22908.tsx"
+    },
+    {
+      "name": "D508",
+      "id": "C94869",
+      "mpn": "LTST-C190KRKT",
+      "correctedImportPath": "src/parts/C94869.tsx"
+    },
+    {
+      "name": "U_DBG1",
+      "id": "C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "correctedImportPath": "src/parts/C10429.tsx"
+    },
+    {
+      "name": "U_DBG2",
+      "id": "C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "correctedImportPath": "src/parts/C10429.tsx"
+    },
+    {
+      "name": "C_DBG1",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    },
+    {
+      "name": "C_DBG2",
+      "id": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "correctedImportPath": "src/parts/C14663.tsx"
+    }
+  ],
+  "66SelectedOfficialJlcEvidence": {
+    "C165948": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C165948-jlc-primary.json",
+      "sha256": "c682e03d7f07e555947067343e68b4e0853707e6aa2e65149aebf86d9b00ea75",
+      "observedAtUtc": "2026-10-10T04:57:45.774761+00:00",
+      "url": "https://jlcpcb.com/partdetail/C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "manufacturer": "Korean Hroparts Elec",
+      "package": "SMD"
+    },
+    "C2678061": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2678061-jlc-primary.json",
+      "sha256": "e79be8e2ac6aa34b17ac3a275c8b2a50862de617c971c96bc7296d3f0d2e41a0",
+      "observedAtUtc": "2026-10-10T04:57:47.574554+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2678061",
+      "mpn": "STUSB4500QTR",
+      "manufacturer": "STMicroelectronics",
+      "package": "QFN-24-EP(4x4)"
+    },
+    "C3662799": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C3662799-jlc-primary.json",
+      "sha256": "37a1394f4be144444af40f6dfd5f81b476df890026537b0309d10a87b0b4a1d0",
+      "observedAtUtc": "2026-10-10T04:57:48.089643+00:00",
+      "url": "https://jlcpcb.com/partdetail/C3662799",
+      "mpn": "TPS259470ARPWR",
+      "manufacturer": "Texas Instruments",
+      "package": "QFN-10(2x2)"
+    },
+    "C20526": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C20526-jlc-primary.json",
+      "sha256": "fdd311959c8002d4ef5e2e1a0d5ee6d28ad87d6c65053a418c396b3255269653",
+      "observedAtUtc": "2026-10-10T04:57:42.198558+00:00",
+      "url": "https://jlcpcb.com/partdetail/C20526",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "manufacturer": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+      "package": "SOT-23"
+    },
+    "C8545": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C8545-jlc-primary.json",
+      "sha256": "d9e0c9f5c6947f3146b531a2f27f41284b39d48879fe0cece87a68149d6490fa",
+      "observedAtUtc": "2026-10-10T04:57:41.767056+00:00",
+      "url": "https://jlcpcb.com/partdetail/C8545",
+      "mpn": "2N7002",
+      "manufacturer": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+      "package": "SOT-23"
+    },
+    "C25803": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25803-jlc-primary.json",
+      "sha256": "a4aa956c59627b4ef7505edbe5cf92a467f1b1a890478c39e68b9905087fa655",
+      "observedAtUtc": "2026-10-10T06:29:31.747849+00:00",
+      "url": "https://jlcpcb.com/partdetail/C25803",
+      "mpn": "0603WAF1003T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C513643": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C513643-jlc-primary.json",
+      "sha256": "cf89b28bad9da1f4058b17efa9f2fb8d215598fb15a9f32369b0c4369ef72c82",
+      "observedAtUtc": "2026-10-10T06:13:31.957589+00:00",
+      "url": "https://jlcpcb.com/partdetail/C513643",
+      "mpn": "RC2512FK-07470RL",
+      "manufacturer": "YAGEO",
+      "package": "2512"
+    },
+    "C54315": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C54315-jlc-primary.json",
+      "sha256": "7dfbb82085044aad2f48956a77f466fbaab3fb2f512c2dc387e1212fed48d077",
+      "observedAtUtc": "2026-10-10T04:57:44.831082+00:00",
+      "url": "https://jlcpcb.com/partdetail/C54315",
+      "mpn": "25121WF1001T4E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "2512"
+    },
+    "C23162": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23162-jlc-primary.json",
+      "sha256": "8dbacb109c71628eee4d0ea8f0aecb4870a16d70ba1415eeaec0812b8d752f14",
+      "observedAtUtc": "2026-10-10T06:28:36.309553+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23162",
+      "mpn": "0603WAF4701T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C2906982": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2906982-jlc-primary.json",
+      "sha256": "f6ebe7584e5fda073d900ac573603450568902ad7373b343d432ad96105e4f84",
+      "observedAtUtc": "2026-10-10T05:00:13.253739+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2906982",
+      "mpn": "FRC0603F1002TS",
+      "manufacturer": "FOJAN",
+      "package": "0603"
+    },
+    "C2930048": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2930048-jlc-primary.json",
+      "sha256": "1fb8b520bbf26a64bd865e04b325b66fa65703023a04fb497924454470dba51c",
+      "observedAtUtc": "2026-10-10T04:57:47.890801+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2930048",
+      "mpn": "FRC0603F1271TS",
+      "manufacturer": "FOJAN",
+      "package": "0603"
+    },
+    "C25819": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25819-jlc-primary.json",
+      "sha256": "3caaaaf0bb7bb3c203d6a9ffbbc21251a9afba4f750ab842e0fc3b3058a86c60",
+      "observedAtUtc": "2026-10-10T06:29:47.289596+00:00",
+      "url": "https://jlcpcb.com/partdetail/C25819",
+      "mpn": "0603WAF4702T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C22890": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22890-jlc-primary.json",
+      "sha256": "8d0f8804c04f9b66c8581363b706579aa1f75c6c129e6200fbc47f7764d48ed9",
+      "observedAtUtc": "2026-10-10T06:27:14.057445+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22890",
+      "mpn": "0603WAF1743T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C22908": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22908-jlc-primary.json",
+      "sha256": "b1f9fa95c6aaa70c64b65dd4ef7be13ea45fde95c8db95f895f4a5e3d69e5c84",
+      "observedAtUtc": "2026-10-10T04:57:42.816073+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22908",
+      "mpn": "0603WAF2491T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C28323": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C28323-jlc-primary.json",
+      "sha256": "81d259faa35a3365a7a8b45292ece5823c38b6b72ffb7a1bca2fce314a64c835",
+      "observedAtUtc": "2026-10-10T06:13:33.484711+00:00",
+      "url": "https://jlcpcb.com/partdetail/C28323",
+      "mpn": "CL21B105KBFNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0805"
+    },
+    "C15849": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C15849-jlc-primary.json",
+      "sha256": "1585c70fc8d20b454b131af36ffee274437138c18faeeb50ab88c0300875e1a0",
+      "observedAtUtc": "2026-10-10T06:25:26.063490+00:00",
+      "url": "https://jlcpcb.com/partdetail/C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C1613": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C1613-jlc-primary.json",
+      "sha256": "e332cba28be6632a0dc07d0eedcc76ddc6fed8380c9d093323e85c9a0e0ffd38",
+      "observedAtUtc": "2026-10-10T04:57:41.816224+00:00",
+      "url": "https://jlcpcb.com/partdetail/C1613",
+      "mpn": "CL10B332KB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C671324": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C671324-jlc-primary.json",
+      "sha256": "02c5aeaee72791be8946fa59c346b4d0cbf1c8afdc424e838cc22f213ad73197",
+      "observedAtUtc": "2026-10-10T06:13:31.841086+00:00",
+      "url": "https://jlcpcb.com/partdetail/C671324",
+      "mpn": "LT3741EFE-1#PBF",
+      "manufacturer": "Analog Devices",
+      "package": "TSSOP-20-EP"
+    },
+    "C179626": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C179626-jlc-primary.json",
+      "sha256": "0e8b05c1765f073b4eaa6e95d6322731b25d5880c7da2ebbbb94af31e7ba945f",
+      "observedAtUtc": "2026-10-10T06:26:18.457754+00:00",
+      "url": "https://jlcpcb.com/partdetail/C179626",
+      "mpn": "NTMFS5C670NLT1G",
+      "manufacturer": "onsemi",
+      "package": "SO-8FL"
+    },
+    "C49073699": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C49073699-jlc-primary.json",
+      "sha256": "bf84d6526437280bdbcb38162ea419728889a7c38c64570780341ea3099b85ce",
+      "observedAtUtc": "2026-10-10T04:57:48.404794+00:00",
+      "url": "https://jlcpcb.com/partdetail/C49073699",
+      "mpn": "APS1360M6R8H",
+      "manufacturer": "COILANK INTERNATIONAL",
+      "package": "SMD,14x12.6mm"
+    },
+    "C5824006": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C5824006-jlc-primary.json",
+      "sha256": "eba546e29d7d5469e15b801ef9583b04f938741f5bbb692a3283c5da6d43b539",
+      "observedAtUtc": "2026-10-10T04:57:48.290295+00:00",
+      "url": "https://jlcpcb.com/partdetail/C5824006",
+      "mpn": "PA2512FKE7W0R008E",
+      "manufacturer": "YAGEO",
+      "package": "2512"
+    },
+    "C22939": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22939-jlc-primary.json",
+      "sha256": "a49994108ecef5980271ef952f507ec5d4cadb3d9cd960fd80392dfd1636a9f8",
+      "observedAtUtc": "2026-10-10T04:59:55.281295+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22939",
+      "mpn": "0603WAF220KT5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C2480": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2480-jlc-primary.json",
+      "sha256": "bfeec1ff68199ccf83bd43a9719d8c0b26464416e8f97c12891f1b9962254cd4",
+      "observedAtUtc": "2026-10-10T06:29:26.401204+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2480",
+      "mpn": "SS14",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "package": "SMA(DO-214AC)"
+    },
+    "C64705": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C64705-jlc-primary.json",
+      "sha256": "528c96db4b903686ca0214782850503d2f7a8fcc0df8f5b6ea560b6b7f681500",
+      "observedAtUtc": "2026-10-10T04:57:44.643802+00:00",
+      "url": "https://jlcpcb.com/partdetail/C64705",
+      "mpn": "CL10B224KB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C45783": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C45783-jlc-primary.json",
+      "sha256": "1f83b7a65652679ca1d5b2b5cfaa56295b5924fa61865de2e4ea7d390b057675",
+      "observedAtUtc": "2026-10-10T04:57:44.077347+00:00",
+      "url": "https://jlcpcb.com/partdetail/C45783",
+      "mpn": "CL21A226MAQNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0805"
+    },
+    "C14663": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14663-jlc-primary.json",
+      "sha256": "0b5c757918c4e781d17bbf35446909cd822146f83f9f01dadace55dea0711bc7",
+      "observedAtUtc": "2026-10-10T04:59:53.210231+00:00",
+      "url": "https://jlcpcb.com/partdetail/C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "YAGEO",
+      "package": "0603"
+    },
+    "C380537": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C380537-jlc-primary.json",
+      "sha256": "8d101b1e211e4cf55dfb7df4738db35c09d5969139baf50c7b634380b779d1da",
+      "observedAtUtc": "2026-10-10T04:57:46.613726+00:00",
+      "url": "https://jlcpcb.com/partdetail/C380537",
+      "mpn": "CL32A106KBJNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "1210"
+    },
+    "C19270709": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270709-jlc-primary.json",
+      "sha256": "91bf28587c2ca71076cd9edcdfd503afd1b373c6b92bf2f4d19a48cca9350931",
+      "observedAtUtc": "2026-10-10T04:57:48.455634+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19270709",
+      "mpn": "JBLM2101M035C077RTM 100UF 35V",
+      "manufacturer": "DMBJ",
+      "package": "SMD,D6.3xL7.7mm"
+    },
+    "C19270707": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270707-jlc-primary.json",
+      "sha256": "5f715c98b0d1f72a9557c35dce311f0c56c05a87577850a6d7b15802115026a6",
+      "observedAtUtc": "2026-10-10T05:00:15.954389+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19270707",
+      "mpn": "JBLM2221M025C090RTM 220UF 25V",
+      "manufacturer": "DMBJ",
+      "package": "SMD,D6.3xL9mm"
+    },
+    "C309062": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C309062-jlc-primary.json",
+      "sha256": "6f377551dca3b2086fec85f8d949a09dfe2de86828e5e505b86de335d35b18d7",
+      "observedAtUtc": "2026-10-10T04:57:46.184129+00:00",
+      "url": "https://jlcpcb.com/partdetail/C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "1210"
+    },
+    "C22859": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22859-jlc-primary.json",
+      "sha256": "669f98170e9eaef0010ef4994a2fa814be306cf789544ec7ac9eaa3d61b79398",
+      "observedAtUtc": "2026-10-10T06:26:42.984435+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22859",
+      "mpn": "0603WAF100JT5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C21117": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21117-jlc-primary.json",
+      "sha256": "830192846075f9065330f76bf89c79677ee7cb971e7dee206396e698246ccc1d",
+      "observedAtUtc": "2026-10-10T04:57:42.556057+00:00",
+      "url": "https://jlcpcb.com/partdetail/C21117",
+      "mpn": "CL10B333KB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C31850": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C31850-jlc-primary.json",
+      "sha256": "59f937995f888b02bcf96c603a88cae34f7f0b5b7e77a450c0daec48a9c06cbc",
+      "observedAtUtc": "2026-10-10T04:57:44.044905+00:00",
+      "url": "https://jlcpcb.com/partdetail/C31850",
+      "mpn": "0603WAF2202T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C53987": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C53987-jlc-primary.json",
+      "sha256": "426335fc26fd8c92c9bc2d36b55612d078757de488f47aad853cebe19dcd636f",
+      "observedAtUtc": "2026-10-10T04:57:44.105252+00:00",
+      "url": "https://jlcpcb.com/partdetail/C53987",
+      "mpn": "0603B472K500NT",
+      "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "package": "0603"
+    },
+    "C23251": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23251-jlc-primary.json",
+      "sha256": "13f1f7feb46c478acc348f9883fdbb7a836dfa33638de829d3b64c87f38090ae",
+      "observedAtUtc": "2026-10-10T06:28:57.264749+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23251",
+      "mpn": "0603WAF8252T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C57112": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C57112-jlc-primary.json",
+      "sha256": "8d959c61867c4b935a06b99becde56312ece847f56dadd31980c49a22349965a",
+      "observedAtUtc": "2026-10-10T04:57:44.601018+00:00",
+      "url": "https://jlcpcb.com/partdetail/C57112",
+      "mpn": "0603B103K500NT",
+      "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "package": "0603"
+    },
+    "C22864": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22864-jlc-primary.json",
+      "sha256": "63bb83bab33a664be7e857b121a5da542b965ba450d2e2231c322f7fa0f654f0",
+      "observedAtUtc": "2026-10-10T04:57:42.843372+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22864",
+      "mpn": "0603WAF1212T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C23091": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23091-jlc-primary.json",
+      "sha256": "c624e2c78524903f8ac0393f0b25b1921affd87221284c4dfb9a90752c2ee6a0",
+      "observedAtUtc": "2026-10-10T06:28:15.760357+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23091",
+      "mpn": "0603WAF6192T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C25954": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25954-jlc-primary.json",
+      "sha256": "f1a761f66e8cce1393d409944fb6adfdc99eb9c69cc63cc90612a9848296a508",
+      "observedAtUtc": "2026-10-10T04:57:43.888079+00:00",
+      "url": "https://jlcpcb.com/partdetail/C25954",
+      "mpn": "0603WAF1692T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C7420354": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7420354-jlc-primary.json",
+      "sha256": "33d39994076edc1e08423d27d95a9ed83d4783931c00a4c60729a77251fb3c59",
+      "observedAtUtc": "2026-10-10T04:57:48.329060+00:00",
+      "url": "https://jlcpcb.com/partdetail/C7420354",
+      "mpn": "MMBT3906",
+      "manufacturer": "hongjiacheng",
+      "package": "SOT-23"
+    },
+    "C23242": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23242-jlc-primary.json",
+      "sha256": "d038ecb1c6a4a158ea7121782730c9215edf4d0d2707c9077aaca88ae10d0db9",
+      "observedAtUtc": "2026-10-10T04:57:43.664540+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23242",
+      "mpn": "0603WAF7502T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C138706": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C138706-jlc-primary.json",
+      "sha256": "e2e7320940506c5ec60f6aa32947ad292d3e7f55cffcb18976ea26e901ad4912",
+      "observedAtUtc": "2026-10-10T04:57:45.312448+00:00",
+      "url": "https://jlcpcb.com/partdetail/C138706",
+      "mpn": "INA219AIDR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOIC-8"
+    },
+    "C474881": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C474881-jlc-primary.json",
+      "sha256": "86bb75b243550136bca22e0e2a164ca50db43360b68b110febfc2cd5c9a7e8d6",
+      "observedAtUtc": "2026-10-10T05:00:05.341850+00:00",
+      "url": "https://jlcpcb.com/partdetail/C474881",
+      "mpn": "KF301-5.0-2P",
+      "manufacturer": "Cixi Kefa Elec",
+      "package": "Plugin,P=5mm"
+    },
+    "C780769": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C780769-jlc-primary.json",
+      "sha256": "ee39fbe36decd2830544c47a08c0722d5a77e7b7237f64b5dadb32aa2b0463c9",
+      "observedAtUtc": "2026-10-10T04:57:47.271167+00:00",
+      "url": "https://jlcpcb.com/partdetail/C780769",
+      "mpn": "AP63203WU-7",
+      "manufacturer": "Diodes Incorporated",
+      "package": "TSOT-23-6"
+    },
+    "C167874": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C167874-jlc-primary.json",
+      "sha256": "3dab9714b14532d0fc7e00a2937c27e7dc4e0fbc804cb1aa7fa10e01aab2d14e",
+      "observedAtUtc": "2026-10-10T06:26:18.165545+00:00",
+      "url": "https://jlcpcb.com/partdetail/C167874",
+      "mpn": "FNR4030S4R7MT",
+      "manufacturer": "cjiang (Changjiang Microelectronics Tech)",
+      "package": "SMD,4x4mm"
+    },
+    "C724040": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C724040-jlc-primary.json",
+      "sha256": "7cfa844360e928c9049e4bb0f9ffecc2193552a11c7375d14187e19a5823cf21",
+      "observedAtUtc": "2026-10-10T05:00:10.676183+00:00",
+      "url": "https://jlcpcb.com/partdetail/C724040",
+      "mpn": "STM32G030F6P6",
+      "manufacturer": "STMicroelectronics",
+      "package": "TSSOP-20"
+    },
+    "C70285": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C70285-jlc-primary.json",
+      "sha256": "1748adbcafad13fcbd3df137c5d9c9b7de80f46d76af14983338ae98d29d494a",
+      "observedAtUtc": "2026-10-10T04:57:44.683198+00:00",
+      "url": "https://jlcpcb.com/partdetail/C70285",
+      "mpn": "SN74LVC1G74DCUR",
+      "manufacturer": "Texas Instruments",
+      "package": "VSSOP-8"
+    },
+    "C132016": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C132016-jlc-primary.json",
+      "sha256": "13f4805b95fe14ad0a169e69ad95c700860f622ba99696347e4cb4aa1421bd7c",
+      "observedAtUtc": "2026-10-10T04:59:59.971992+00:00",
+      "url": "https://jlcpcb.com/partdetail/C132016",
+      "mpn": "TLV803SDBZR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23"
+    },
+    "C130910": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C130910-jlc-primary.json",
+      "sha256": "e5c57f83fdd5ca32de1a8dae3d28ee952e18f05cee95854cd5d43efdda33fab1",
+      "observedAtUtc": "2026-10-10T06:24:02.854046+00:00",
+      "url": "https://jlcpcb.com/partdetail/C130910",
+      "mpn": "BAT54A,215",
+      "manufacturer": "Nexperia",
+      "package": "SOT-23"
+    },
+    "C10429": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C10429-jlc-primary.json",
+      "sha256": "2fe32de59cb4a99571bd71b186c95ab99dfcd49faedb31f463a17960b1a7a809",
+      "observedAtUtc": "2026-10-10T06:24:06.989156+00:00",
+      "url": "https://jlcpcb.com/partdetail/C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23-6"
+    },
+    "C144198": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C144198-jlc-primary.json",
+      "sha256": "41f1612016cd16fe92c5e57d2d856fdb9b907018217b08c66fbf874655e8ebc2",
+      "observedAtUtc": "2026-10-10T04:57:45.845247+00:00",
+      "url": "https://jlcpcb.com/partdetail/C144198",
+      "mpn": "MCP4725A0T-E/CH",
+      "manufacturer": "Microchip Tech",
+      "package": "SOT-23-6"
+    },
+    "C7984": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7984-jlc-primary.json",
+      "sha256": "4e0157a58c1d11b9f108e33c51b77c823920b21840482e1d528084adc8759063",
+      "observedAtUtc": "2026-10-10T04:57:41.501407+00:00",
+      "url": "https://jlcpcb.com/partdetail/C7984",
+      "mpn": "LMV393IDR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOIC-8"
+    },
+    "C191884": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C191884-jlc-primary.json",
+      "sha256": "101efc943f7ea52bef1f8b4fdbe68dd4c7513e62ca624ca3c6d8bb6b95d16694",
+      "observedAtUtc": "2026-10-10T06:26:45.687110+00:00",
+      "url": "https://jlcpcb.com/partdetail/C191884",
+      "mpn": "TPS54202DDCR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23-6"
+    },
+    "C497873": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C497873-jlc-primary.json",
+      "sha256": "c370181951aa1c6645699a1778ae11bc3f947ed35f85c969e6428d5cc3d7e555",
+      "observedAtUtc": "2026-10-10T04:57:47.563681+00:00",
+      "url": "https://jlcpcb.com/partdetail/C497873",
+      "mpn": "YSPI0630A-220M",
+      "manufacturer": "YJYCOIN",
+      "package": "SMD,7.1x6.6mm"
+    },
+    "C131334": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131334-jlc-primary.json",
+      "sha256": "6e6b62a61223082c362a88105a86a4c70e6b335c2f4bfe3781ac402601703c3e",
+      "observedAtUtc": "2026-10-10T04:57:45.427099+00:00",
+      "url": "https://jlcpcb.com/partdetail/C131334",
+      "mpn": "B4B-PH-K-S(LF)(SN)",
+      "manufacturer": "JST",
+      "package": "Plugin,P=2mm"
+    },
+    "C131337": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131337-jlc-primary.json",
+      "sha256": "211c91b311fb0eeba3064d3cb14de558c3b27558cfe506c35601e8e77b6815fe",
+      "observedAtUtc": "2026-10-10T04:57:47.144663+00:00",
+      "url": "https://jlcpcb.com/partdetail/C131337",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "manufacturer": "JST",
+      "package": "Plugin,P=2mm"
+    },
+    "C21190": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21190-jlc-primary.json",
+      "sha256": "aec2f6f7a2e89dec94f81d892559c3971ca8532e9623e4904ec6d9e0ea6f08b6",
+      "observedAtUtc": "2026-10-10T06:26:39.688951+00:00",
+      "url": "https://jlcpcb.com/partdetail/C21190",
+      "mpn": "0603WAF1001T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C2933140": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2933140-jlc-primary.json",
+      "sha256": "4600bddb74f18f34542fd2f3bc9407edf4437ec5c28ea680deae989ec3721ca2",
+      "observedAtUtc": "2026-10-10T04:57:48.305395+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2933140",
+      "mpn": "FRC0603F1332TS",
+      "manufacturer": "FOJAN",
+      "package": "0603"
+    },
+    "C23068": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23068-jlc-primary.json",
+      "sha256": "93e2890f57fa937dfcec948dfcd88a192351bf6985c91cd842a29e33798f34e8",
+      "observedAtUtc": "2026-10-10T06:28:08.523196+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23068",
+      "mpn": "0603WAF5231T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C237304": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C237304-jlc-primary.json",
+      "sha256": "acb3cb83bcfc90e76193bd2a8e858636d806e05375598f3e775e23fe9e610db9",
+      "observedAtUtc": "2026-10-10T06:29:17.752700+00:00",
+      "url": "https://jlcpcb.com/partdetail/C237304",
+      "mpn": "GRM31CC72A475KE11L",
+      "manufacturer": "Murata Electronics",
+      "package": "1206"
+    },
+    "C602037": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C602037-jlc-primary.json",
+      "sha256": "3a8305ba7938d186d3e713c462e0f6a3c960ff3a48541df00d5109e401ae5a60",
+      "observedAtUtc": "2026-10-10T04:57:47.514518+00:00",
+      "url": "https://jlcpcb.com/partdetail/C602037",
+      "mpn": "CL21A226MAYNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0805"
+    },
+    "C19666": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19666-jlc-primary.json",
+      "sha256": "4bac7a5c880fe9f4a883ac5d7c40ed36e501c7d6715432aaa5cd80b5300447d3",
+      "observedAtUtc": "2026-10-10T06:26:28.027864+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C14858": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14858-jlc-primary.json",
+      "sha256": "4aed8dadb110547a770ede85357c7ab5d356f8624ce85d20084e6d6e60a4bc7e",
+      "observedAtUtc": "2026-10-10T06:25:05.299309+00:00",
+      "url": "https://jlcpcb.com/partdetail/C14858",
+      "mpn": "CL10C101JB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603"
+    },
+    "C125094": {
+      "path": "reviews/debug-source-evidence/C125094-jlc-primary.json",
+      "sha256": "cf09600679cd73dc96492d00b97be00d2c8183e6cfd2ee08dbff23b6cefb6c5e",
+      "observedAtUtc": "2026-10-10T14:01:37.782802+00:00",
+      "url": "https://jlcpcb.com/partdetail/C125094",
+      "mpn": "LTST-C190KGKT",
+      "manufacturer": "Lite-On",
+      "package": "0603"
+    },
+    "C22809": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22809-jlc-primary.json",
+      "sha256": "b90577446a2e8251ad59e59d3008485f5b3b1c8aead79583e5a5dfe28cabe075",
+      "observedAtUtc": "2026-10-10T03:33:50.236011+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22809",
+      "mpn": "0603WAF1502T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603"
+    },
+    "C94869": {
+      "path": "reviews/debug-source-evidence/C94869-jlc-primary.json",
+      "sha256": "cfade5f08dafda1e89ee9b8e96eb38179c3c03b72fc7ed01f3a9105ebdabb51d",
+      "observedAtUtc": "2026-10-10T13:58:42.375968+00:00",
+      "url": "https://jlcpcb.com/partdetail/C94869",
+      "mpn": "LTST-C190KRKT",
+      "manufacturer": "Lite-On",
+      "package": "0603"
+    }
+  },
+  "stockObservationWindowUtc": {
+    "first": "2026-10-10T03:33:50.236011+00:00",
+    "last": "2026-10-10T14:01:37.782802+00:00"
+  },
+  "stockReservedOrRefreshed": false,
+  "datedAvailabilityIsNotLiveOrderAvailability": true,
+  "canonicalCorrectedRuntime6Members": {
+    "node_modules/@tscircuit/core/package.json": "4f032bf178fe0ea6502ee3b15d5f9deef607deba96e36931020ef50878d8574b",
+    "node_modules/@tscircuit/core/dist/index.js": "436e548925512b53cc47371bb3c2328fb420baab2310c7d279c2bb0f589e323b",
+    "node_modules/@tscircuit/capacity-autorouter/package.json": "8fcd58bbbdc28c88db26d0c0e05356a38ad14f4039301920e04290ae0c437a2a",
+    "node_modules/@tscircuit/capacity-autorouter/dist/index.js": "83b5162c5dfe8b0c058870550caa84fb1ce594dbb45622e1abf387d3c5b2a3a6",
+    "node_modules/circuit-json-to-connectivity-map/package.json": "441a9d2144f6f47102cdacb5146e861f62f9800d0fa4bcc191421c201a48928a",
+    "node_modules/circuit-json-to-connectivity-map/dist/index.js": "40f28a9fa682f2abbb7519ef56b31258cdff27665fc4e48727bf6466395e034c"
+  },
+  "finalZipReview": null,
+  "newCopperOrConnectivityVerificationClaimed": false,
+  "productionSourceRuntimeCadOrArchiveWrites": false
+}

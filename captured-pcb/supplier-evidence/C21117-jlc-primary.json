@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T04:57:42.556057+00:00",
+  "url": "https://jlcpcb.com/partdetail/C21117",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "CL10B333KB8NNNC",
+    "componentBrandEn": "Samsung Electro-Mechanics",
+    "componentCode": "C21117",
+    "describe": "33nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "0603",
+    "lcscComponentId": 21829,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 1088,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 802687,
+    "overseasStockCount": 971203,
+    "initialPrice": 0.0107,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C21117",
+        "attribute_value_name": "50V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C21117",
+        "attribute_value_name": "±10%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C21117",
+        "attribute_value_name": "33nF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C21117",
+        "attribute_value_name": "X7R"
+      }
+    ]
+  }
+}

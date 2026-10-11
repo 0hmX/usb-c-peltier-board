@@ -1,0 +1,415 @@
+{
+  "scope": "Genuine settled Source23 local routing-support readiness: exact fast/capture/Source interfaces and imported aperture/nativepaste carry, one new ordinary transfer and26 bare probes versus29 actual recut pours. Full graph/reference/current and manufacturing exports are independently owned gates.",
+  "scopedLocalSourceMaskAndPourReadinessPass": true,
+  "sourceCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "prePourCircuitSha256": "970e48edfb31833f9f0726a853b8d07eb6a68b04664f898bb21b7faa03bf8380",
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "buildManifestSha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab",
+  "runId": "4648d3f4-b889-4e58-a432-8b532b191512",
+  "actualCounts": {
+    "paths": 633,
+    "barrels": 433,
+    "pours": 29,
+    "smtPads": 552,
+    "nativePasteRecords": 574,
+    "platedHoles": 22,
+    "nonPlatedHoles": 6
+  },
+  "literalViaClasses": [
+    {
+      "holeDiameterMm": 0.2,
+      "outerDiameterMm": 0.5,
+      "count": 2
+    },
+    {
+      "holeDiameterMm": 0.3,
+      "outerDiameterMm": 0.7,
+      "count": 431
+    }
+  ],
+  "newNamedHostCount": 1,
+  "bareProbeCount": 26,
+  "fittedCount": 194,
+  "fittedDistinctJlcIds": 66,
+  "allFittedSupplierMapsPresent": true,
+  "old432PhysicalAndExclusiveSourceOwnershipPass": true,
+  "oldViaNumericAliasChangeCount": 212,
+  "manualPhysicalPreservationPass": true,
+  "newHostGenuineSourcePcbTopBottomInner1InterfacesPass": true,
+  "newHeadPrimaryBodyAndApertureCarryPass": true,
+  "newHostForeignActualPourScopePass": true,
+  "all26ProbeRequestedMaskZeroPasteDrillAndPourScopePass": true,
+  "nominalNewHostRequestedMaskMinimumMm": 1.68932732269164,
+  "minimumNewHostToForeignActualPourMm": 0.2073034912389231,
+  "inheritedNominalRequestedMaskMinimumMm": 0.025,
+  "strictSourceMetadataPass": true,
+  "strictSourceMetadataFindingCount": 0,
+  "storedErrorTypes": {},
+  "currentWarningCounts": {
+    "source_refdes_convention_warning": 19,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_trace_warning": 44
+  },
+  "historicalFastStrictFindingCount": 1055,
+  "sourceSolverStartCount": 0,
+  "sourcePourSolverStartCount": 1,
+  "checks": [
+    {
+      "name": "FastCanonicalIdentityAndPreservation",
+      "pass_": true
+    },
+    {
+      "name": "ActualCaptureAndCourtyardPreservation",
+      "pass_": true
+    },
+    {
+      "name": "OneGenuineActualHeadAnd432SemanticPriorBarrelsAnd26ProbeCarry",
+      "pass_": true
+    },
+    {
+      "name": "OneActualHeadAnd26ProbesAgainst29FreshPours",
+      "pass_": true
+    },
+    {
+      "name": "PrimaryBodiesAndLiteralWorkSourceCarry",
+      "pass_": true
+    },
+    {
+      "name": "SameActualCircuitManifestSourceRuntimeRun",
+      "pass_": true
+    },
+    {
+      "name": "ExactFastSourceIdentityAndLiteralViaMaskPastePortCarry",
+      "pass_": true
+    },
+    {
+      "name": "431OrdinaryAndTwoNamedSmallLiteralClasses",
+      "pass_": true
+    },
+    {
+      "name": "Actual194FittedSupplierMapsAnd26Dnp66Ids",
+      "pass_": true
+    },
+    {
+      "name": "ActualStrictMetadataAndStoredErrorsZero",
+      "pass_": true
+    },
+    {
+      "name": "NoNativeOrExportScopePromotion",
+      "pass_": true
+    },
+    {
+      "name": "HistoricalAndCurrentSourceMembersIndependentlyArchived",
+      "pass_": true
+    },
+    {
+      "name": "AllLinkedFrozenBytesExactWithExplicitArchivedHistoricalProducer",
+      "pass_": true
+    }
+  ],
+  "linkedArtifactHashFailures": [],
+  "archiveBackedHistoricalProducerResolutions": [
+    {
+      "originalReferencedPath": "src/source22-routes.tsx",
+      "expectedSha256": "1accdc25c1b0209d2914a95b96fa4f42302a5bbb085a9d409f6f6a8a1c1676df",
+      "portableExactHistoricalCopy": "reviews/debug-mask-export/source23-970e48ed/source22-routes.historical-preinstallation.tsx",
+      "archive": "reviews/toolchain-checkpoints/source22b-source-archive/source-files.zip",
+      "archiveSha256": "afc96ec98d0699184bca3654915355b0da46333d7cdb2d1af4b3055902bbdd04",
+      "member": "src/source22-routes.tsx",
+      "memberSha256": "1accdc25c1b0209d2914a95b96fa4f42302a5bbb085a9d409f6f6a8a1c1676df"
+    }
+  ],
+  "completeConnectivityAnd166ReferenceAcceptanceClaimedHere": false,
+  "wholeBoardRoutingAccepted": false,
+  "actualGerberReviewed": false,
+  "preparedAssemblyReviewed": false,
+  "finishedSupplierCplAcceptance": false,
+  "finishedMaskRegistrationProfileAndUnderbodySeatingQualified": false,
+  "productionAccepted": false,
+  "limits": [
+    "Current requested openings/native paste and actual native pours are assessed; actual Gerber aperture dimensions, finished registration/profile and supplier CPL are unreviewed.",
+    "Inherited .025 nominal margins and same-net partial exposed annuli remain in frozen baseline leaves without inventing a whole-annulus rule.",
+    "Historical producer1acc bytes are verified in the exact prior archive and portable copy; currentfcb366 source bytes remain a distinct revision.",
+    "All194 supplier maps are present; prepared functional/polarity silk, dynamic current/loop behavior and powered hardware remain separate."
+  ],
+  "reviewFiles": [
+    {
+      "file": "reviews/manufacturing-debug/source23-970e-fast-capture-binding.json",
+      "sha256": "bddee560fdc7aaba7a3b90f2d7314f589e41a1efbeb404f5b342dbdd1c043f98"
+    },
+    {
+      "file": "reviews/manufacturing-debug/placement23-3ac5-capture-binding-v2.json",
+      "sha256": "1d352f223a4c1719e6c86b772fe43766fb9a8a2137a11f1e2a9a7586c6ea8368"
+    },
+    {
+      "file": "reviews/manufacturing-debug/placement23-3ac5-courtyard-capture-binding.json",
+      "sha256": "e76b756cffe3182918947ef7dcfaff5c37f35c990be54233f87fc499e2210b94"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/actual-source23-one-transfer-mask-drill-registered-source-frame-and-probe-retention-review.json",
+      "sha256": "04bdcf9b9e05599abcc4e71dc423b72324b0abb5ce14d3e1028344163596acaf"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/actual-source23-settled-one-transfer-probe-mask-drill-foreign29-pour-binding.json",
+      "sha256": "ed4b93b835e41a79b978ac1ec8948fa92e731941343803045419beb2542113d2"
+    },
+    {
+      "file": "reviews/manufacturing-debug/r206-source23-one-head-literal-source-mask-body-support.json",
+      "sha256": "70cf8cb1a947559fb32f4ed3a310186de2363ad192662e32bc3cc82119083d3e"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/historical-preinstallation-source22-and-actual-source23-archive-member-provenance.json",
+      "sha256": "99196c150b0ad41c58ecffd3f7df02333d376b68823969e2d986f2410af8e67c"
+    },
+    {
+      "file": "dist/debug-source-placement-23/circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "file": "dist/debug-source-placement-23/build-manifest.json",
+      "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+    },
+    {
+      "file": "reviews/manufacturing-debug/combine-source23-local-readiness.py",
+      "sha256": "ddc95696a100c95c4eded123bf95a1c83aff189a8db6a300ada45aba0969c057"
+    },
+    {
+      "file": "reviews/toolchain-checkpoints/source22b-source-archive/source-files.zip",
+      "sha256": "afc96ec98d0699184bca3654915355b0da46333d7cdb2d1af4b3055902bbdd04"
+    },
+    {
+      "file": "reviews/toolchain-checkpoints/source23-source-archive/source-files.zip",
+      "sha256": "efdc2daf11526a86ba27bd6a65b34cb78ebaa895606418c25be6601cadfb68de"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/source22-routes.historical-preinstallation.tsx",
+      "sha256": "1accdc25c1b0209d2914a95b96fa4f42302a5bbb085a9d409f6f6a8a1c1676df"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/source-preflight.circuit.json",
+      "sha256": "970e48edfb31833f9f0726a853b8d07eb6a68b04664f898bb21b7faa03bf8380"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/initial-source-copper.circuit.json",
+      "sha256": "4dd4bb368974a5fce9e031a238bb795d95779d0568659bcbf3a368c524897e71"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/source-preflight-receipt.json",
+      "sha256": "31a47a54a94004d81f0fbb251feda1c1f5b8046f03c25e84c5f52e9a48c92d0c"
+    },
+    {
+      "file": "reviews/toolchain-checkpoints/source23-fast-capture/handoff.json",
+      "sha256": "d00d7fe0576a6d4b1e6b0b0a979487d51fd0b090ba983ba37159780490d583fd"
+    },
+    {
+      "file": "reviews/manufacturing-debug/bind-source23-fast-tuple.py",
+      "sha256": "a812fe36656fa4fdf2003e23ca0fa67965a78cb720d132dc4f6e0abeb17ed42b"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/source-owned-copper-proof.json",
+      "sha256": "1363c9e8e67a81fa56da1a931185fa39bb35e79c47e606fd4d2b10306f96233f"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/phase-0-stage-0.input.simple-route.json",
+      "sha256": "c0793ec0cb838138520dbe04dd0dfa36f8fc56142f6a685e46674df824815aea"
+    },
+    {
+      "file": "dist/debug-source-preflight-23-evidence/phase-0-stage-0.output.simple-route.json",
+      "sha256": "4cef2ca9babe0eaebaa1966b39fd67dcb5fbbc8d03b6a8668d0309e8d915df00"
+    },
+    {
+      "file": "reviews/toolchain-checkpoints/source23-source-archive/source-archive-receipt.json",
+      "sha256": "25918e930653523052b3c93268910b91f9dabf13ad8ab551553e9faba486f007"
+    },
+    {
+      "file": "reviews/manufacturing-debug/bind-settled-capture-v2.py",
+      "sha256": "84f795b15973a784b6b2d8c23f4f52038b0e363da540747c4568e6c2b404d629"
+    },
+    {
+      "file": "reviews/manufacturing-debug/bind-settled-capture.py",
+      "sha256": "8f48eebea7c2181a8caadc3e351b257471d047820cf64fce1a8d206818ecc7b3"
+    },
+    {
+      "file": "reviews/manufacturing-debug/placement20-9a7e-capture-binding.json",
+      "sha256": "dc994d8b12529e69d474933ee97e66ab951f24ba2cc909b17ae00378534997e6"
+    },
+    {
+      "file": "reviews/manufacturing-debug/bind-capture-courtyard-records.py",
+      "sha256": "8ca5b15888b2c1363b433e231b81143bbf632474f82ef92e69a044f7118e87e0"
+    },
+    {
+      "file": "reviews/debug-mask-export/check-native4-output-physical-faces.py",
+      "sha256": "fa75f34e74996dc6dbb4822817d79f8dae0a89a9792cdb21e826b76b9d1c52a9"
+    },
+    {
+      "file": "reviews/debug-mask-export/check-source20-delta.py",
+      "sha256": "9ee33961115ce739d7fc6937ed2d5f4ff806cc63520d2ba305210e374d7b25fb"
+    },
+    {
+      "file": "reviews/debug-mask-export/check-source23-one-actual-transfer.py",
+      "sha256": "6f018fb6efa4c8147f613a4af3252ea47e4e6d919b5a3a4df31086d47faea0e4"
+    },
+    {
+      "file": "reviews/debug-mask-export/check-tp-mask-drills.py",
+      "sha256": "95843535b38d1a1ed162cf5ae4142519c345994edce370592085aa6529dae1f9"
+    },
+    {
+      "file": "reviews/debug-mask-export/pd-valid-source20/C2930048-exact-primary.pdf",
+      "sha256": "56042d128202b5f271f463df25503de8ecb937075b7c2c03a512ccf4e0823d31"
+    },
+    {
+      "file": "reviews/debug-mask-export/prospective-head-geometry.py",
+      "sha256": "bad54548367e61499c18952414cda5fe1cd7a61bb9dd127062cb16ea030d84b5"
+    },
+    {
+      "file": "reviews/debug-mask-export/r206-reference8413-source22/prospective-r206-one-new-transfer-mask-paste-drill-primary-body-and-source-frame-review.json",
+      "sha256": "31402b839cd636ff3012e6d44dac65b8855003306d873ec302ec8dae026dff47"
+    },
+    {
+      "file": "reviews/debug-mask-export/r206-reference8413-source22/selected.packet.json",
+      "sha256": "8413b65676ecbe3d7e04d24c476bfde2e4a0ba0fcb5338ba4c1545d27b478c8f"
+    },
+    {
+      "file": "reviews/debug-mask-export/review-geometry.py",
+      "sha256": "10842b5a730b03644496a98382e9534440a94a22605ee9794474c4b39c0fd69b"
+    },
+    {
+      "file": "reviews/debug-mask-export/safe-power-current16/C25803-uniroyal-datasheet.pdf",
+      "sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef"
+    },
+    {
+      "file": "reviews/debug-mask-export/safe-power-current16/C2906982-fojan-datasheet.pdf",
+      "sha256": "56042d128202b5f271f463df25503de8ecb937075b7c2c03a512ccf4e0823d31"
+    },
+    {
+      "file": "reviews/debug-mask-export/source22b-4bc462d1/settled.circuit.json",
+      "sha256": "a822b32ae2f5d9998dbecda695b55a04db821030c3f8d7bc99a7fda0596bde68"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/actual.circuit.json",
+      "sha256": "970e48edfb31833f9f0726a853b8d07eb6a68b04664f898bb21b7faa03bf8380"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/capture.receipt.json",
+      "sha256": "31a47a54a94004d81f0fbb251feda1c1f5b8046f03c25e84c5f52e9a48c92d0c"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/handoff.json",
+      "sha256": "d00d7fe0576a6d4b1e6b0b0a979487d51fd0b090ba983ba37159780490d583fd"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/initial.circuit.json",
+      "sha256": "4dd4bb368974a5fce9e031a238bb795d95779d0568659bcbf3a368c524897e71"
+    },
+    {
+      "file": "/Users/ankan/Documents/Codex/2026-10-09/per/work/datasheets/stusb4500-v7.pdf",
+      "sha256": "407ee6767128cc4075926e01d945fe846440f932359ed81f45a957485778399e"
+    },
+    {
+      "file": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/discrete-footprints/C20526.pdf",
+      "sha256": "6c2034cb0bd0d85be51c9c4f82aad838a688aa70c20de1a71681be8ec02b659b"
+    },
+    {
+      "file": "reviews/debug-mask-export/bind-source23-settled-one-transfer.py",
+      "sha256": "e2248b923ffa4c95fa191206196dfc6462e8e743a0bfabc5f8d7f21b72e5438d"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/settled.circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/settled.handoff.json",
+      "sha256": "92525c2e60c91c222b7d0e2761d0fdfa2f8dc871798bfc9c88186b524e2717a3"
+    },
+    {
+      "file": "reviews/debug-mask-export/source23-970e48ed/settled.manifest.json",
+      "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab"
+    },
+    {
+      "file": "reviews/pd-escapes/r206-source23-top-transfer-reference-selected-work.packet.json",
+      "sha256": "8413b65676ecbe3d7e04d24c476bfde2e4a0ba0fcb5338ba4c1545d27b478c8f"
+    },
+    {
+      "file": "reviews/pd-escapes/r206-source23-top-reference-annotation-companion.json",
+      "sha256": "a8f0c3aa449db522ff60c2fb058a1605dded6d8b6322253d1f567a0725f169f5"
+    },
+    {
+      "file": "reviews/debug-mask-export/r206-reference8413-source22/selected-one-transfer-annotation-and-immutable-geometry-provenance-companion.json",
+      "sha256": "0465672e7795e1e5797293748d0932594951d1776098dcb1ca61c522a0ce7513"
+    },
+    {
+      "file": "reviews/control-escape-audits/r206-source23-top-inner1-selected-source-and-whole.packet.json",
+      "sha256": "0d2dc62c694912ccb155e5a99a5b34f51fcfba2c9fd9eda0fc7a158ce58af3b9"
+    },
+    {
+      "file": "reviews/control-escape-audits/r206-source23-approved-bounds-and-public-inner1-ref.companion.json",
+      "sha256": "12519af17e8fdfcb3687a28c9589b7d4eb67da5ad071a86515b49e1e4e4709dc"
+    },
+    {
+      "file": "reviews/control-escape-audits/r206-source23-top-inner1-selected-source-props.tsx",
+      "sha256": "f6e455fb1f21448c2eed2fdc33096537d3c686825c0a96cba9b23301dedf78ee"
+    },
+    {
+      "file": "reviews/control-escape-audits/r206-source23-new-transfer-public-inner1-ref.tsx",
+      "sha256": "febb4d75fc0d3f764cc8b2ee83cf26d90a19e4a7fd264c88afbcf10652b2cbba"
+    },
+    {
+      "file": "dist/debug-source-placement-22/circuit.json",
+      "sha256": "a822b32ae2f5d9998dbecda695b55a04db821030c3f8d7bc99a7fda0596bde68"
+    },
+    {
+      "file": "reviews/manufacturing-debug/bind-r206-source23-one-head-support.py",
+      "sha256": "376af1f66b8ca4622d77c7d3be56a79b4e49e021b88d308271ee446e43ffc73f"
+    },
+    {
+      "file": "reviews/routing-source-pad-links/source22-a822-r206-off-inner1-repair-guard-v1.packet.json",
+      "sha256": "3d1d2ca145298c971365334868e5ab5c3a935507c9e05ef4386ada1d7629348d"
+    },
+    {
+      "file": "reviews/pd-escapes/r206-fixed-layer-component-intersection.json",
+      "sha256": "2ac080f71d544f2328f48447092e76b482983168fbee62ba80d0dc3ee1aa48ae"
+    },
+    {
+      "file": "reviews/pd-escapes/scout-r206-entry201-ordinary-transfer-pocket.py",
+      "sha256": "3ddc3b5c203f59769454703cb08dd2807a9bf080498dbaadcd0f09078aa70d0d"
+    },
+    {
+      "file": "reviews/pd-escapes/freeze-r206-top-transfer-reference-geometry.py",
+      "sha256": "93c9448e7e72e5efe53962fa6ababc8d72ed73f698a81a5925950600de4afa0b"
+    },
+    {
+      "file": "reviews/debug-mask-export/check-r206-one-transfer-source23.py",
+      "sha256": "985de7861f71173d8a52fa99abc530fe2c7395ea5b3c157e908144cbade5d942"
+    },
+    {
+      "file": "reviews/debug-mask-export/courtyard-projection-advisories.py",
+      "sha256": "2d0d6a0d57c30e5ad7f1872fa506b8aa3dfe7d23f31b9fea19a426ad2ec21ea8"
+    },
+    {
+      "file": "reviews/debug-mask-export/source22b-4bc462d1/actual-source22-settled22-selected42-probe-foreign31-pour-binding.json",
+      "sha256": "eb095925149dfbf4a29872e0545767d43596c030c56527974c43f778c0df655b"
+    },
+    {
+      "file": "reviews/debug-mask-export/bind-r206-reference-annotation-companion.py",
+      "sha256": "5aa619ac1d625531e5e80fc70708b5ab5fb22db247f6a15d3c07702c041e5df8"
+    },
+    {
+      "file": "reviews/routing-source-pad-links/source23-a822-r206-reference-repair-alternatives-guard-v3.packet.json",
+      "sha256": "0b472a7b633bcc60ccf93ed45b8f63a061e315e11a1a123e24c534bf0d58ff9e"
+    },
+    {
+      "file": "reviews/routing-source-pad-links/source23-current-pd-valid-all-genuine-heads-inventory.json",
+      "sha256": "a98a08f8a901d3ae9c5febc961c392ac01f48f863d46b268a010d2030aba705c"
+    },
+    {
+      "file": "reviews/debug-mask-export/bind-source23-historical-source-provenance.py",
+      "sha256": "698fbbda99606ebbcb71ed97e13b9216bf26c945b0d0d7b1fe683116444c1185"
+    }
+  ]
+}

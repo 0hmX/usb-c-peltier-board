@@ -1,0 +1,130 @@
+{
+  "scope": "Publication metadata adapter of exact final12-scoped Source23 static routing authority and root explicit GO. No new geometric tests or solvers.",
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "existingCopperScopedReady": true,
+  "gates": [
+    {
+      "scope": "physical-connectivity",
+      "file": "reviews/progress-connectivity/source-placement-23-3ac5-connectivity-review.json",
+      "sha256": "76af8b83b020023fffb888e659281e55486ba03320e761fb143c4002626dca48",
+      "passField": "connectivityProgressScopePass",
+      "pass": true
+    },
+    {
+      "scope": "ground-main-current-support",
+      "file": "reviews/layout-source-placement-23-review.json",
+      "sha256": "b04f3c3cc8656ca0ff98998dfcbc5407afae4c5bee3d964e5519ef33e8084287",
+      "passField": "scopedLayoutAccepted",
+      "pass": true
+    },
+    {
+      "scope": "all-current-clearance-source-heads",
+      "file": "reviews/clearance-route-audits/source23-3ac5f312-all-current-copper-and-reference-gates.json",
+      "sha256": "5ee7f240a660ec3efea5df57c23dc656a187f1f59f99f3533ca20af32154c687",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "source-complete-memberships",
+      "file": "reviews/routing-source-pad-links/source23-settled-netlist-actual-source-membership-review.json",
+      "sha256": "c3e22e643bdfbcc8e7e4159c5494b1d56fea602fa7975eb4cd7c93c1ac529208",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "source-groups-bus-and-two-small-classes",
+      "file": "reviews/bus-route-experiments/source23-settled-3ac5f312-actual-groups-bus-v2.json",
+      "sha256": "1e0c1a1068d022b12c1b1f52d905e11665052a9a14290ba6b411a878f1574372",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "imported-identity-old-bounds-ground-retention",
+      "file": "reviews/debug-passive-review.source23-settled-identity-census-closeout.json",
+      "sha256": "4a3194738e4920bc243a083a61c4f6a617a4022ffd81041f95fb7ae614905141",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "r206-uart-adc-real-heads-and-fitted-imports",
+      "file": "reviews/discrete-debug/source23-settled-owned-r206-uart-adc-closeout.json",
+      "sha256": "961c2a30306fe1fb341f2f990dcc54cc4e4dc8bf2992d57f4964e930a3efc072",
+      "passField": "ownedChecksPass",
+      "pass": true
+    },
+    {
+      "scope": "safety-source-roles-and-physical-retention",
+      "file": "reviews/debug-safety-review.source23-3ac5f312-routing-gate.json",
+      "sha256": "49981f9cef7f9aec5736e2ba95897c6f23db228041d867376b9cdc4dec92d48f",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "power-footprints-quiet-returns-and-reference",
+      "file": "reviews/debug-power-footprints-source23-3ac5f312-final-scoped-binding.json",
+      "sha256": "eefd1a6fbabf55922c288ed473ee4ef7e10e66dc2592fcd64070954f6c824251",
+      "passField": "scopedPowerFootprintSourceAndReferenceGatePass",
+      "pass": true
+    },
+    {
+      "scope": "local-requested-mask-body-drill-and-probes",
+      "file": "reviews/manufacturing-debug/placement23-3ac5-local-mask-readiness.json",
+      "sha256": "7de82b55a1499fe2eddf2a6f22ed9950afb992a009b3f17d7670631ef3d61195",
+      "passField": "scopedLocalSourceMaskAndPourReadinessPass",
+      "pass": true
+    },
+    {
+      "scope": "eight-leds-26-probes-and-debug-support",
+      "file": "reviews/debug/source23-3ac5-final-eight-leds-26-probes-actual-physical-source-review.json",
+      "sha256": "c0b120742f14b5450ccde3dd9b07dbb434fbdbabb1291116266d75816ce33c45",
+      "passField": "pass",
+      "pass": true
+    },
+    {
+      "scope": "full633-style-source-width-max-endpoint-quality",
+      "file": "reviews/route-style-optimization/source23-3ac5.final-settled633-style-source-width-max-endpoint-review.json",
+      "sha256": "99f17fc18c22a19056e0bbd8e7cf80669a5e6e8f26d1239f3ef03479dce201c4",
+      "passField": "actualSettledStyleScopePass",
+      "pass": true
+    }
+  ],
+  "counts": {
+    "paths": 633,
+    "barrels": 433,
+    "pours": 29,
+    "joined": 450,
+    "requiredJoins": 450,
+    "missing": 0,
+    "unfinishedPortDiagnostics": 0
+  },
+  "retention": {
+    "priorJoinedPartitions": 450,
+    "priorQualifiedJoinedPartitions": 426,
+    "groundPads": 147,
+    "groundPadIslands": 1,
+    "directGroundReferenceBarrels": 166,
+    "orphanCopperNets": 0,
+    "unassignedPrimitives": [],
+    "priorGroupsSplit": []
+  },
+  "boundFiles": [
+    {
+      "path": "reviews/toolchain-checkpoints/root-source23-final-routing-acceptance-and-publication-go.json",
+      "sha256": "934db679b21a23356be8d7908a066546441ec8b971ca464476fddf9739e21630"
+    },
+    {
+      "path": "reviews/routing-source-pad-links/source23-final-same-capture-routing-readiness.json",
+      "sha256": "fc130d022719eeb6ad17a00f57030336a4b740d93a0f2c7c60aa5fbf06d8adf9"
+    },
+    {
+      "path": "reviews/toolchain-checkpoints/source23-current-scoped-routing-readiness.json",
+      "sha256": "f069ef9a0803da9a45094e6d6b359f5c5812704c69b4303611e59a018e15d3e3"
+    }
+  ],
+  "all12ExactPassFieldsReopened": true,
+  "staticCadRoutingAccepted": true,
+  "manufacturingAccepted": false,
+  "dynamicAndBenchQualified": false,
+  "fabricationExportsAccepted": false
+}

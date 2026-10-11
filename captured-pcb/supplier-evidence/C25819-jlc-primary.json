@@ -1,0 +1,71 @@
+{
+  "observed_at": "2026-10-10T06:29:47.289596+00:00",
+  "url": "https://jlcpcb.com/partdetail/C25819",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "0603WAF4702T5E",
+    "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+    "componentCode": "C25819",
+    "describe": "-55℃~+155℃ 100mW 47kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+    "componentSpecificationEn": "0603",
+    "lcscComponentId": 26562,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF4702T5E_C25819.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 3112,
+    "encapsulationNumber": 5000,
+    "canPresaleNumber": 1587816,
+    "overseasStockCount": 2240671,
+    "initialPrice": 0.0037,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Resistance",
+        "component_code": "C25819",
+        "attribute_value_name": "47kΩ"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C25819",
+        "attribute_value_name": "-55℃~+155℃"
+      },
+      {
+        "attribute_name_en": "Power(Watts)",
+        "component_code": "C25819",
+        "attribute_value_name": "100mW"
+      },
+      {
+        "attribute_name_en": "Type",
+        "component_code": "C25819",
+        "attribute_value_name": "Thick Film Resistor"
+      },
+      {
+        "attribute_name_en": "Voltage-Supply(Max)",
+        "component_code": "C25819",
+        "attribute_value_name": "75V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C25819",
+        "attribute_value_name": "±1%"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C25819",
+        "attribute_value_name": "±100ppm/℃"
+      }
+    ]
+  }
+}

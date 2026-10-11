@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-10T04:57:41.767056+00:00",
+  "url": "https://jlcpcb.com/partdetail/C8545",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "2N7002",
+    "componentBrandEn": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+    "componentCode": "C8545",
+    "describe": "1 N-channel 115mA 2.5V 225mW 25pF 50pF 5pF 5Ω@10V 60V N-Channel ±20V SOT-23 MOSFETs ROHS",
+    "componentSpecificationEn": "SOT-23",
+    "lcscComponentId": 9040,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 636,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 1187626,
+    "overseasStockCount": 1353165,
+    "initialPrice": 0.0178,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Vgs",
+        "component_code": "C8545",
+        "attribute_value_name": "±20V"
+      },
+      {
+        "attribute_name_en": "Reverse Transfer Capacitance (Crss@Vds)",
+        "component_code": "C8545",
+        "attribute_value_name": "5pF"
+      },
+      {
+        "attribute_name_en": "Current - Continuous Drain(Id)",
+        "component_code": "C8545",
+        "attribute_value_name": "115mA"
+      },
+      {
+        "attribute_name_en": "Drain to Source Voltage",
+        "component_code": "C8545",
+        "attribute_value_name": "60V"
+      },
+      {
+        "attribute_name_en": "Output Capacitance(Coss)",
+        "component_code": "C8545",
+        "attribute_value_name": "25pF"
+      },
+      {
+        "attribute_name_en": "RDS(on)",
+        "component_code": "C8545",
+        "attribute_value_name": "5Ω@10V"
+      },
+      {
+        "attribute_name_en": "Input Capacitance(Ciss)",
+        "component_code": "C8545",
+        "attribute_value_name": "50pF"
+      },
+      {
+        "attribute_name_en": "Type",
+        "component_code": "C8545",
+        "attribute_value_name": "N-Channel"
+      },
+      {
+        "attribute_name_en": "Gate Threshold Voltage (Vgs(th))",
+        "component_code": "C8545",
+        "attribute_value_name": "2.5V"
+      },
+      {
+        "attribute_name_en": "Number",
+        "component_code": "C8545",
+        "attribute_value_name": "1 N-channel"
+      },
+      {
+        "attribute_name_en": "Pd - Power Dissipation",
+        "component_code": "C8545",
+        "attribute_value_name": "225mW"
+      }
+    ]
+  }
+}

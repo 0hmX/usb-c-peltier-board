@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T04:57:47.514518+00:00",
+  "url": "https://jlcpcb.com/partdetail/C602037",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "CL21A226MAYNNNE",
+    "componentBrandEn": "Samsung Electro-Mechanics",
+    "componentCode": "C602037",
+    "describe": "22uF 25V X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "0805",
+    "lcscComponentId": 631473,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2006102223_Samsung-Electro-Mechanics-CL21A226MAYNNNE_C602037.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 57,
+    "encapsulationNumber": 2000,
+    "canPresaleNumber": 488159,
+    "overseasStockCount": 586082,
+    "initialPrice": 0.1593,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C602037",
+        "attribute_value_name": "25V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C602037",
+        "attribute_value_name": "±20%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C602037",
+        "attribute_value_name": "22uF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C602037",
+        "attribute_value_name": "X5R"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "observed_at": "2026-10-10T04:57:44.831082+00:00",
+  "url": "https://jlcpcb.com/partdetail/C54315",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "25121WF1001T4E",
+    "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+    "componentCode": "C54315",
+    "describe": "-55℃~+155℃ 1W 1kΩ 200V Thick Film Resistor ±1% ±100ppm/℃ 2512 Chip Resistor - Surface Mount ROHS",
+    "componentSpecificationEn": "2512",
+    "lcscComponentId": 55333,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010000_UNI-ROYAL-Uniroyal-Elec-25121WF1001T4E_C54315.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 332,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 71228,
+    "overseasStockCount": 86016,
+    "initialPrice": 0.0334,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Resistance",
+        "component_code": "C54315",
+        "attribute_value_name": "1kΩ"
+      },
+      {
+        "attribute_name_en": "Operating Temperature",
+        "component_code": "C54315",
+        "attribute_value_name": "-55℃~+155℃"
+      },
+      {
+        "attribute_name_en": "Power(Watts)",
+        "component_code": "C54315",
+        "attribute_value_name": "1W"
+      },
+      {
+        "attribute_name_en": "Type",
+        "component_code": "C54315",
+        "attribute_value_name": "Thick Film Resistor"
+      },
+      {
+        "attribute_name_en": "Voltage-Supply(Max)",
+        "component_code": "C54315",
+        "attribute_value_name": "200V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C54315",
+        "attribute_value_name": "±1%"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C54315",
+        "attribute_value_name": "±100ppm/℃"
+      }
+    ]
+  }
+}

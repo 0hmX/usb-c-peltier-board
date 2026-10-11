@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T04:57:44.105252+00:00",
+  "url": "https://jlcpcb.com/partdetail/C53987",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "0603B472K500NT",
+    "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+    "componentCode": "C53987",
+    "describe": "4.7nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "0603",
+    "lcscComponentId": 55004,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0603B472K500NT_C53987.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 1254,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 604278,
+    "overseasStockCount": 792087,
+    "initialPrice": 0.0093,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C53987",
+        "attribute_value_name": "50V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C53987",
+        "attribute_value_name": "±10%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C53987",
+        "attribute_value_name": "4.7nF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C53987",
+        "attribute_value_name": "X7R"
+      }
+    ]
+  }
+}

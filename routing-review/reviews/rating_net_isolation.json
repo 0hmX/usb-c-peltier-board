@@ -1,0 +1,236 @@
+{
+  "role": "Net isolation and logical-net reviewer",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 8.0,
+  "confidence": "high",
+  "inspectedArtifacts": [
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/blocks/pd-input.tsx",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/logic-supply-links.tsx",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/supply-source-routes.tsx",
+    "/var/folders/xk/l37dvfnx3mv7pl1j4grm9wkc0000gn/T/codex-clipboard-415f75e6-1959-48ff-953d-f8092ed0ada1.png",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-rating-source23/rating_net_isolation_check.py",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-rating-source23/rating_net_isolation_direct_checks.json"
+  ],
+  "directChecks": [
+    {
+      "check": "Exact circuit bytes",
+      "result": "PASS",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872"
+    },
+    {
+      "check": "Union only explicit source trace net/port membership",
+      "result": "PASS",
+      "declaredNetCount": 104,
+      "distinctDeclaredNetMerges": 0,
+      "ambiguousConnectivityKeys": 0,
+      "realElectricalPads": 571,
+      "realPadLogicalNets": 121
+    },
+    {
+      "check": "Cross-check all PCB trace endpoints and all via ownership channels",
+      "result": "PASS",
+      "pcbTraces": 633,
+      "vias": 433,
+      "pours": 29,
+      "crossNetEndpoints": 0,
+      "ambiguousViaOwners": 0,
+      "unownedPours": 0,
+      "referenceTypes": {
+        "pcb_port": 1144,
+        "source_trace_placeholder": 89
+      }
+    },
+    {
+      "check": "Screenshot crossing source ownership and resistor sides",
+      "result": "PASS",
+      "traceIds": [
+        "pcb_trace_193",
+        "pcb_trace_246"
+      ],
+      "sourceTraceIds": [
+        "source_trace_675",
+        "source_trace_728"
+      ],
+      "sourceNetId": "source_net_1",
+      "net": "V3V3",
+      "layer": "inner2",
+      "centerlineIntersectionMm": {
+        "x": -25.638,
+        "y": 26.637
+      },
+      "method": "Intersect x=-25.638 with the 45-degree segment from (-29.167,23.108) to (-24.525,27.75): y=x+52.275. Both intersection parameters lie inside both spans."
+    },
+    {
+      "check": "Pull-up endpoint semantics",
+      "result": "PASS",
+      "evidence": [
+        {
+          "sourceTraceId": "source_trace_44",
+          "name": "R_PD_ALERT_A",
+          "displayName": ".R_PD_ALERT > .pin1 to net.V3V3",
+          "declaredSourceNetIds": [
+            "source_net_1"
+          ],
+          "resolvedNames": [
+            "V3V3"
+          ]
+        },
+        {
+          "sourceTraceId": "source_trace_45",
+          "name": "R_PD_ALERT_B",
+          "displayName": ".R_PD_ALERT > .pin2 to net.PD_ALERT",
+          "declaredSourceNetIds": [
+            "source_net_21"
+          ],
+          "resolvedNames": [
+            "PD_ALERT"
+          ]
+        },
+        {
+          "sourceTraceId": "source_trace_64",
+          "name": "R_INPUT_FAULT_A",
+          "displayName": ".R_INPUT_FAULT > .pin1 to net.V3V3",
+          "declaredSourceNetIds": [
+            "source_net_1"
+          ],
+          "resolvedNames": [
+            "V3V3"
+          ]
+        },
+        {
+          "sourceTraceId": "source_trace_65",
+          "name": "R_INPUT_FAULT_B",
+          "displayName": ".R_INPUT_FAULT > .pin2 to net.INPUT_FAULT_N",
+          "declaredSourceNetIds": [
+            "source_net_23"
+          ],
+          "resolvedNames": [
+            "INPUT_FAULT_N"
+          ]
+        },
+        {
+          "sourceTraceId": "source_trace_675",
+          "name": "ALERT_INNER2_TRUNK",
+          "displayName": "LOGIC_ALERT_PD_VIA.inner2 to LOGIC_ALERT_INPUT_VIA.inner2",
+          "declaredSourceNetIds": [
+            "source_net_1"
+          ],
+          "resolvedNames": [
+            "V3V3"
+          ]
+        },
+        {
+          "sourceTraceId": "source_trace_728",
+          "name": "SUPPLY_V3_MST29_0_SPAN_1",
+          "displayName": "SUPPLY_V3_MST29_0_VIA_0.inner2 to SUPPLY_V3_MST29_0_VIA_1.inner2",
+          "declaredSourceNetIds": [
+            "source_net_1"
+          ],
+          "resolvedNames": [
+            "V3V3"
+          ]
+        }
+      ],
+      "sourceInterpretation": "pd-input.tsx passive array maps a to pin1 and b to pin2. R_PD_ALERT pin1=V3V3, pin2=PD_ALERT; R_INPUT_FAULT pin1=V3V3, pin2=INPUT_FAULT_N. Source_net_1, source_net_21 and source_net_23 remain separate roots."
+    }
+  ],
+  "strengths": [
+    "All declared named nets remain distinct under independent source-trace unioning; no net-key ambiguities conceal foreign-net contacts.",
+    "Every actual via and copper pour resolves to an explicit source net or a trace net, and all actual trace anchors agree after resolving manual-via terminal aliases.",
+    "The photographed same-layer crossing is electrically legal V3V3 copper on both traces; resistor pin2 alert/fault signal sides stay on distinct named nets."
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "kind": "clarity",
+      "explanation": "The name ALERT_INNER2_TRUNK suggests an alert signal even though the copper is a V3V3 supply link feeding pull-up resistor pin1 sides. This materially confuses visual short-circuit review.",
+      "evidence": [
+        "src/logic-supply-links.tsx:13,30",
+        "source_trace_675 declares source_net_1 V3V3",
+        "src/blocks/pd-input.tsx:58,68,264"
+      ],
+      "nets": [
+        "V3V3",
+        "PD_ALERT",
+        "INPUT_FAULT_N"
+      ],
+      "layers": [
+        "inner2"
+      ],
+      "coordinates": [
+        {
+          "x": -25.638,
+          "y": 26.637
+        }
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "metadata_auditability",
+      "explanation": "353 manual-via source-terminal aliases are not joined by a direct source_trace; their correct net must be recovered from the explicit pcb_via barrel owner. Also 89 connectsTo entries reference source traces rather than PCB ports. These are resolvable conventions, not copper shorts, but a simpler checker can misclassify them or miss ownership.",
+      "evidence": [
+        "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-rating-source23/rating_net_isolation_direct_checks.json",
+        "Example: pcb_via_272 explicitly source_net_4 and connectivity net95; source_port_1261 top belongs to source_manually_placed_via_272 and has no direct source key."
+      ],
+      "nets": [
+        "multiple"
+      ],
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "routing_economy",
+      "explanation": "The two V3V3 paths intersect before independently reaching the same R_INPUT_FAULT supply side through separate vias. A single deliberate supply branch could be easier to inspect. The existing contact is permitted and no reroute is required for isolation.",
+      "evidence": [
+        "ALERT_VCC_LINK connects R_PD_ALERT.pin1 to R_INPUT_FAULT.pin1",
+        "SUPPLY_V3_MST29_0_SPAN_2 also ends at R_INPUT_FAULT.pin1",
+        "pcb_trace_193 and pcb_trace_246 intersect on inner2"
+      ],
+      "nets": [
+        "V3V3"
+      ],
+      "layers": [
+        "inner2",
+        "top"
+      ],
+      "coordinates": [
+        {
+          "x": -25.638,
+          "y": 26.637
+        }
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "verdict": "The pictured crossing is an intentional or harmless same-net V3V3 junction, not a foreign-net short.",
+    "confidence": "high",
+    "bothCopperRoutesOnSameLayer": true,
+    "bothCopperRoutesOnSameNet": true,
+    "signalSidesRemainSeparate": true,
+    "coordinatesMm": {
+      "x": -25.638,
+      "y": 26.637
+    },
+    "scope": "This resolves source ownership at the pictured junction. It does not assert whole-board geometric clearance or finished-Gerber equivalence."
+  },
+  "topImprovements": [
+    "Rename ALERT_INNER2_TRUNK and its launches to expose V3V3 supply ownership.",
+    "Represent manual-via terminal net membership explicitly and normalize trace endpoint references so simple netlist audits do not depend on special resolver conventions.",
+    "Consider consolidating the pictured redundant V3V3 branch if the broader routing review shows a shorter simpler option without degrading clearance or supply feed geometry."
+  ],
+  "limitations": [
+    "Independently checked logical isolation and metadata consistency, not a complete geometric foreign-net overlap scan. Other geometry reviewers must evaluate pad/trace/via/pour contact and clearances.",
+    "No fabricated-board, Gerber, soldermask, manufacturing, power-up, or dynamic fault-behavior acceptance is inferred.",
+    "Score is for static net ownership and isolation auditability; complete routing economy and power-current suitability require other assigned reviews."
+  ]
+}

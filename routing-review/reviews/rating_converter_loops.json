@@ -1,0 +1,431 @@
+{
+  "role": "Switching-converter EMI/layout engineer",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "scoreOutOf10": 6.8,
+  "confidence": "high",
+  "inspectedArtifacts": [
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/blocks/tec-power.tsx",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/src/layout.ts",
+    "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/pcb-progress/18-source-routing-complete-top-inner2.png"
+  ],
+  "directChecks": {
+    "measuredFromActualCircuitJson": true,
+    "traceLengthDefinition": "Sum of successive wire-to-wire Euclidean distances on the same layer. Via barrel lengths excluded; duplicated endpoints contribute zero. Trace names resolved through source_trace_id.",
+    "traceMeasurements": {
+      "TEC_INPUT_HOT_LOOP": {
+        "pcbTraceId": "pcb_trace_59",
+        "lengthMm": 7.306209768020456,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOCAL_COMMUTATION_VIN": {
+        "pcbTraceId": "pcb_trace_43",
+        "lengthMm": 4.9282851685912075,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOCAL_COMMUTATION_GND": {
+        "pcbTraceId": "pcb_trace_44",
+        "lengthMm": 1.1000000000000005,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_HIGH_SOURCE_SW": {
+        "pcbTraceId": "pcb_trace_60",
+        "lengthMm": 6.715876618407355,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOW_DRAIN_SW": {
+        "pcbTraceId": "pcb_trace_61",
+        "lengthMm": 7.210140687119285,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_SW_REFERENCE": {
+        "pcbTraceId": "pcb_trace_54",
+        "lengthMm": 17.69964249456123,
+        "wireLayers": [
+          "bottom",
+          "top"
+        ],
+        "viaCount": 2
+      },
+      "TEC_HIGH_R21_ESCAPE": {
+        "pcbTraceId": "pcb_trace_321",
+        "lengthMm": 2.3035533905932737,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_HIGH_BOTTOM_LOCAL": {
+        "pcbTraceId": "pcb_trace_322",
+        "lengthMm": 16.153528137423855,
+        "wireLayers": [
+          "bottom"
+        ],
+        "viaCount": 0
+      },
+      "TEC_HIGH_Q20_ESCAPE": {
+        "pcbTraceId": "pcb_trace_323",
+        "lengthMm": 1.1524999999999999,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_HG_LOCAL_U2": {
+        "pcbTraceId": "pcb_trace_74",
+        "lengthMm": 4.5384776310850246,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LG_LOCAL_U2": {
+        "pcbTraceId": "pcb_trace_75",
+        "lengthMm": 2.0060660171779823,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOW_R22_ESCAPE": {
+        "pcbTraceId": "pcb_trace_352",
+        "lengthMm": 1.3000000000000007,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOW_INNER2_LOCAL": {
+        "pcbTraceId": "pcb_trace_353",
+        "lengthMm": 22.34177848998413,
+        "wireLayers": [
+          "inner2"
+        ],
+        "viaCount": 0
+      },
+      "TEC_LOW_Q21_ESCAPE": {
+        "pcbTraceId": "pcb_trace_354",
+        "lengthMm": 2.687459953866432,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_SENSE_KELVIN_P": {
+        "pcbTraceId": "pcb_trace_68",
+        "lengthMm": 34.333427124746194,
+        "wireLayers": [
+          "bottom",
+          "top"
+        ],
+        "viaCount": 2
+      },
+      "TEC_SENSE_KELVIN_N": {
+        "pcbTraceId": "pcb_trace_69",
+        "lengthMm": 36.73342712474619,
+        "wireLayers": [
+          "bottom",
+          "top"
+        ],
+        "viaCount": 2
+      },
+      "TEC_VC_U2_ESCAPE": {
+        "pcbTraceId": "pcb_trace_259",
+        "lengthMm": 1.904594154601837,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_VC_LOCAL": {
+        "pcbTraceId": "pcb_trace_260",
+        "lengthMm": 10.105929291125635,
+        "wireLayers": [
+          "inner2"
+        ],
+        "viaCount": 0
+      },
+      "TEC_VC_R27_ESCAPE": {
+        "pcbTraceId": "pcb_trace_261",
+        "lengthMm": 3.174873734152916,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_FB_U2_ESCAPE": {
+        "pcbTraceId": "pcb_trace_255",
+        "lengthMm": 2.2852543263816596,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_FB_LOCAL": {
+        "pcbTraceId": "pcb_trace_256",
+        "lengthMm": 6.341269837220809,
+        "wireLayers": [
+          "bottom"
+        ],
+        "viaCount": 0
+      },
+      "TEC_FB_R29_ESCAPE": {
+        "pcbTraceId": "pcb_trace_257",
+        "lengthMm": 1.1,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      },
+      "TEC_FEEDBACK_PICKUP": {
+        "pcbTraceId": "pcb_trace_52",
+        "lengthMm": 33.270131051037836,
+        "wireLayers": [
+          "top"
+        ],
+        "viaCount": 0
+      }
+    },
+    "highGateU2ToQ20ThroughR21Mm": 24.148059159102154,
+    "lowGateU2ToQ21ThroughR22Mm": 28.335304461028546,
+    "vcControllerToR27Mm": 15.185397179880388,
+    "fbDividerToControllerMm": 9.726524163602468,
+    "q20Q21CenterSeparationMm": 9,
+    "tecSwitchTopPourAreaMm2": 65.52038298966201,
+    "switchPourBoundsMm": [
+      2.72,
+      6.2,
+      12.5,
+      19
+    ],
+    "inputCapGroundY": 26.565,
+    "lowSideSourceContact": [
+      1.2525,
+      10.905
+    ],
+    "c44GroundVia": [
+      4.4,
+      12.7
+    ]
+  },
+  "strengths": [
+    "The load-current route is intentional and stout: 3 mm input trace, 2.5/3 mm MOSFET-to-inductor branches, copper islands, and direct 3 mm inductor-to-shunt connection. This is substantially better than routing the switching stage as ordinary thin signals.",
+    "C44 provides a local 100 nF commutation bypass. Its actual VIN branch is 4.928 mm and its GND branch is 1.100 mm to a real through-ground via at (4.4,12.7). Low-side source return has a dedicated top-ground island with six local transfer vias.",
+    "The main shunt sense taps remain separate 0.2 mm Kelvin branches. The long shared bottom-layer central portions run at y=8.0 and y=8.5, with inner1 ground between them and the top switch copper. The filtered C32/R25/R26 nodes are much closer to the controller.",
+    "High-gate bottom trunk at y=15.8 has a nearby SW reference trunk at y=15.1 along much of its main horizontal leg, reducing the loop compared with completely unrelated return routing.",
+    "C30 and C31 are local output MLCCs connected through the broad output copper, so the remote C29 bulk route alone does not describe the output filtering geometry."
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "kind": "routing_geometry_with_inferred_emi_risk",
+      "explanation": "Gate-drive routing is long and transfers layers. The measured complete high-gate path from U2 through R21 to Q20 is 24.148 mm; the low-gate path through R22 to Q21 is 28.335 mm. The series gate resistors sit near U2 while the MOSFETs are about 11\u201315 mm away along their physical routed paths. These increase distributed gate-loop inductance and exposure. Ringing or switching failure has not been measured and is not asserted.",
+      "evidence": {
+        "highGateMm": 24.148059159102154,
+        "lowGateMm": 28.335304461028546,
+        "highPhysicalTraceNames": [
+          "TEC_HG_LOCAL_U2",
+          "TEC_HIGH_R21_ESCAPE",
+          "TEC_HIGH_BOTTOM_LOCAL",
+          "TEC_HIGH_Q20_ESCAPE"
+        ],
+        "lowPhysicalTraceNames": [
+          "TEC_LG_LOCAL_U2",
+          "TEC_LOW_R22_ESCAPE",
+          "TEC_LOW_INNER2_LOCAL",
+          "TEC_LOW_Q21_ESCAPE"
+        ],
+        "highExplicitThroughTransfers": [
+          [
+            -1.8,
+            18.5
+          ],
+          [
+            7.9,
+            19.905
+          ]
+        ],
+        "lowExplicitThroughTransfers": [
+          [
+            -8,
+            19.55
+          ],
+          [
+            3.3,
+            5.55
+          ]
+        ]
+      },
+      "nets": [
+        "TEC_HG",
+        "TEC_HIGH_GATE",
+        "TEC_LG",
+        "TEC_LOW_GATE",
+        "TEC_SW",
+        "GND"
+      ],
+      "layers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "coordinates": [
+        [
+          -5.975,
+          14.775
+        ],
+        [
+          -4,
+          18.25
+        ],
+        [
+          6.7475,
+          19.905
+        ],
+        [
+          -8,
+          18.25
+        ],
+        [
+          1.2525,
+          7.095
+        ]
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "medium",
+      "kind": "placement_driven_hot_loop_compromise",
+      "explanation": "The two power MOSFET centers are 9 mm apart. The main input MLCC ground contacts lie at y=26.565 while Q21 source ground contact is at y=10.905, a 15.660 mm vertical separation. The nearby C44 and ground plane help, but do not make the 10 uF input capacitor commutation loop physically compact. Reducing placement spread would allow shorter return and switch copper. This is a measured geometry concern and an inferred EMI/layout risk, not a proven thermal/current failure.",
+      "evidence": {
+        "q20Center": [
+          4,
+          18
+        ],
+        "q21Center": [
+          4,
+          9
+        ],
+        "c26Ground": [
+          -1.5,
+          26.565
+        ],
+        "q21GroundSource": [
+          1.2525,
+          10.905
+        ],
+        "inputPowerTraceMm": 7.306209768020456,
+        "localC44VinMm": 4.9282851685912075,
+        "switchPourAreaMm2": 65.52038298966201,
+        "switchPourId": "pcb_copper_pour_53"
+      },
+      "nets": [
+        "VBUS_TEC",
+        "TEC_SW",
+        "GND"
+      ],
+      "layers": [
+        "top",
+        "inner1"
+      ],
+      "coordinates": [
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          -1.5,
+          26.565
+        ],
+        [
+          1.2525,
+          10.905
+        ]
+      ],
+      "rerouteRequired": false
+    },
+    {
+      "severity": "low",
+      "kind": "sensitive_control_route_economy",
+      "explanation": "The compensation VC route to R27 is 15.185 mm with an inner2 trunk; the FB route between controller and divider is 9.727 mm with a bottom trunk. Both can be shortened with closer placement of the compensation network and divider. The output pickup is a separate 33.270 mm TEC_POS branch, not all a high-impedance FB node, so these must not be conflated. Existing inner1 ground shields the inner/bottom sections; no oscillation is established.",
+      "evidence": {
+        "vcControllerToR27Mm": 15.185397179880388,
+        "fbDividerToControllerMm": 9.726524163602468,
+        "outputPickupOnTecPosMm": 33.270131051037836,
+        "vcTraceNames": [
+          "TEC_VC_U2_ESCAPE",
+          "TEC_VC_LOCAL",
+          "TEC_VC_R27_ESCAPE"
+        ],
+        "fbTraceNames": [
+          "TEC_FB_U2_ESCAPE",
+          "TEC_FB_LOCAL",
+          "TEC_FB_R29_ESCAPE"
+        ]
+      },
+      "nets": [
+        "TEC_VC",
+        "TEC_FB",
+        "TEC_POS"
+      ],
+      "layers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "coordinates": [
+        [
+          -3.375,
+          14.775
+        ],
+        [
+          -10.75,
+          23
+        ],
+        [
+          -2.075,
+          9.225
+        ],
+        [
+          0.75,
+          1
+        ]
+      ],
+      "rerouteRequired": false
+    }
+  ],
+  "suspectedShortAssessment": {
+    "confirmedShort": false,
+    "scope": "Converter routing/layout inspection only; I did not independently localize the supplied crop. No foreign-net copper short was proven by these length, placement and copper-area measurements. Whole-board same-layer geometry and crop localization belong to the dedicated reviewers.",
+    "screenshotAloneProvesShort": false
+  },
+  "topImprovements": [
+    "Cluster Q20, Q21 and the input MLCCs so their commutation loop and switch island occupy less area. Keep the ground-transfer bank local to low-side source.",
+    "Shorten U2 gate and SW-return paths together, retaining explicit close return/reference routing; choose resistor placement from a measured gate-loop design.",
+    "Move the VC compensation and FB divider closer to their U2 pins and use fewer layer transitions where pad clearance permits."
+  ],
+  "limitations": [
+    "Static routing score only; no switching, EMI, ringing, current-transient, thermal, regulator stability or bench measurement was performed.",
+    "No wholesale copper clearance/short scan was executed by this role, and manufacturing readiness is not asserted.",
+    "Inner1 plane shielding was recognized structurally; field simulation and transfer-impedance analysis were not performed."
+  ]
+}

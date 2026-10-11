@@ -1,0 +1,66 @@
+{
+  "observed_at": "2026-10-10T06:24:02.854046+00:00",
+  "url": "https://jlcpcb.com/partdetail/C130910",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "BAT54A,215",
+    "componentBrandEn": "Nexperia",
+    "componentCode": "C130910",
+    "describe": "1 Pair Common Anode 200mA 2uA@25V 30V 600mA 800mV@100mA SOT-23 Schottky Diodes ROHS",
+    "componentSpecificationEn": "SOT-23",
+    "lcscComponentId": 142199,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241026_Nexperia-BAT54A-215_C130910.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "expand",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 516,
+    "encapsulationNumber": 3000,
+    "canPresaleNumber": 279743,
+    "overseasStockCount": 280253,
+    "initialPrice": 0.0224,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage - Forward(Vf@If)",
+        "component_code": "C130910",
+        "attribute_value_name": "800mV@100mA"
+      },
+      {
+        "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+        "component_code": "C130910",
+        "attribute_value_name": "600mA"
+      },
+      {
+        "attribute_name_en": "Voltage - DC Reverse(Vr)",
+        "component_code": "C130910",
+        "attribute_value_name": "30V"
+      },
+      {
+        "attribute_name_en": "Diode Configuration",
+        "component_code": "C130910",
+        "attribute_value_name": "1 Pair Common Anode"
+      },
+      {
+        "attribute_name_en": "Current - Rectified",
+        "component_code": "C130910",
+        "attribute_value_name": "200mA"
+      },
+      {
+        "attribute_name_en": "Reverse Leakage Current (Ir)",
+        "component_code": "C130910",
+        "attribute_value_name": "2uA@25V"
+      }
+    ]
+  }
+}

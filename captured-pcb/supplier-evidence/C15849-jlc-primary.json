@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-10T06:25:26.063490+00:00",
+  "url": "https://jlcpcb.com/partdetail/C15849",
+  "source": "Official JLCPCB server-rendered part detail",
+  "response": {
+    "componentModelEn": "CL10A105KB8NNNC",
+    "componentBrandEn": "Samsung Electro-Mechanics",
+    "componentCode": "C15849",
+    "describe": "1uF 50V X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "componentSpecificationEn": "0603",
+    "lcscComponentId": 16531,
+    "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf",
+    "dataManualOfficialLink": "",
+    "assemblyMode": "smtWeld",
+    "componentProductType": 0,
+    "fixtureFlag": false,
+    "specialComponentFee": 0,
+    "needAuditFlag": false,
+    "orderInstructionEnglish": "",
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "componentLibraryType": "base",
+    "assemblyComponentFlag": false,
+    "preferredComponentFlag": "$undefined",
+    "isBuyComponent": "1",
+    "allowPostFlag": true,
+    "preMinPurchaseNum": 828,
+    "encapsulationNumber": 4000,
+    "canPresaleNumber": 7018665,
+    "overseasStockCount": 8742762,
+    "initialPrice": 0.014,
+    "noBuyReason": null,
+    "attributes": [
+      {
+        "attribute_name_en": "Voltage Rating",
+        "component_code": "C15849",
+        "attribute_value_name": "50V"
+      },
+      {
+        "attribute_name_en": "Tolerance",
+        "component_code": "C15849",
+        "attribute_value_name": "±10%"
+      },
+      {
+        "attribute_name_en": "Capacitance",
+        "component_code": "C15849",
+        "attribute_value_name": "1uF"
+      },
+      {
+        "attribute_name_en": "Temperature Coefficient",
+        "component_code": "C15849",
+        "attribute_value_name": "X5R"
+      }
+    ]
+  }
+}
