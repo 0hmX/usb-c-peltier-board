@@ -1,24 +1,24 @@
 {
   "packageName": "0hmX/tec-usbc-board",
   "version": "0.1.5",
-  "sourceRevision": "source24e-minimal-silkscreen",
-  "publicationSourceSha256": "4ff8766f0f1fe1f6fbd54a3b0fdc49d32a5280ea60b1557471dbce78f1dc50f2",
+  "sourceRevision": "source24f-tsx-saved-routes",
+  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
   "capturedRoutingSourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
   "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
   "circuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
-  "publicationSourceFileCount": 153,
-  "canonicalPackageJsonSha256": "a3f335887e432bf4d3d19635e091e13eed649f236e1a534e39c41358a9f9a726",
+  "publicationSourceFileCount": 156,
+  "canonicalPackageJsonSha256": "d17e125c7b92ef6bf5eb2c186ce3c70f65828ae962250a87111295f1892fb865",
   "metadataOverrides": {
     "file": "package.json",
     "name": "tec-usbc-board",
     "version": "0.1.5"
   },
-  "previewEntrypoint": "captured-pcb/circuit.json",
-  "dataExport": "index.tsx",
+  "previewEntrypoint": "index.tsx",
+  "dataExport": "captured-pcb/circuit.json",
   "regenerationEntrypoint": "regenerate.tsx",
   "previewRoutingAlgorithmImports": 0,
-  "previewExternalRuntimeImports": 0,
-  "note": "The default entry reads the saved Source24 PCB with 22 useful silk labels. All non-silkscreen records remain identical to the original checked capture. Regeneration source contains matching silk edits. Original routing manifests and historical snapshots remain historical evidence; current verification is publication-checks/silkscreen-cleanup.json.",
+  "previewExternalRuntimeImports": 2,
+  "note": "The default entry renders the editable TSX board with 548 manual traces and 88 saved Ground0 fanouts. No routing solvers run; the native pour pipeline reproduces the saved copper. Reviewed port anchors and via metadata use public lifecycle/DB APIs. Captured JSON and runtime archives remain historical evidence; this repository change does not republish the tscircuit package.",
   "runtimeArchive": "captured-runtime.zip",
   "runtimeArchiveSha256": "eb43840c50e1714b4fb7f1b8db9ba599e36790ebe0bfdd4afe476451268dab19",
   "runtimeArchiveBytes": 1877450,
@@ -26,5 +26,5 @@
   "unroutedConnections": 0,
   "manufacturingReleaseAccepted": false,
   "hardwareBenchValidationAccepted": false,
-  "verification": "publication-checks/silkscreen-cleanup.json"
+  "verification": "publication-checks/tsx-preview.json"
 }

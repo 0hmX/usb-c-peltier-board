@@ -1,7 +1,7 @@
 {
-  "scope": "Source24 saved-PCB publication with silkscreen-only cleanup; routing algorithms, copper, pads, drills, placement and netlist preserved.",
-  "publicationSourceSha256": "4ff8766f0f1fe1f6fbd54a3b0fdc49d32a5280ea60b1557471dbce78f1dc50f2",
-  "publicationSourceFileCount": 153,
+  "scope": "Editable Source24 TSX preview with saved ground fanout replay; routing solvers are isolated in explicit regeneration. Saved copper remains unchanged.",
+  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
+  "publicationSourceFileCount": 156,
   "sourceManifest": [
     {
       "file": "bun.lock",
@@ -13,27 +13,31 @@
     },
     {
       "file": "index.tsx",
-      "sha256": "f09f1c2cec146c04c89f209fee28bdd426c26f6d5eb82a2fe29f67b91c9fdfdd"
+      "sha256": "6f570fd67bb07ccefc86befe3e0ceca5450a3dcce49ac937ca64401e28f97463"
     },
     {
       "file": "package.json",
-      "sha256": "a3f335887e432bf4d3d19635e091e13eed649f236e1a534e39c41358a9f9a726"
+      "sha256": "d17e125c7b92ef6bf5eb2c186ce3c70f65828ae962250a87111295f1892fb865"
     },
     {
       "file": "regenerate.config.ts",
-      "sha256": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e"
+      "sha256": "1757cb46b0e5a5511224afdcc5dfd34dfa1ad0edbe3e653ca517915d4889220a"
     },
     {
       "file": "regenerate.tsx",
-      "sha256": "8a114a37d1995c7b0b2da1dd1df5b0a045a28041ceb40981928e4c0a9eb6d783"
+      "sha256": "e2ffa6825881df9d253628b55fe9922bec1344b05a959e53feb8a26c2823990c"
     },
     {
       "file": "scripts/build-local.ts",
-      "sha256": "0bf11afaf881de04bd0e653ba41f9e2f968c439e484634e3d77f139f6a32a027"
+      "sha256": "1045cde9a11a95e91bb7a987add31835a4508504d96d4cec23dd46c67e7dbb1e"
     },
     {
       "file": "scripts/build-with-watchdog.ts",
       "sha256": "02f78a690f12e71e2782c65781e76a4a886de8b6a9035ac92225d6c940e61a0f"
+    },
+    {
+      "file": "scripts/check-saved-routes.tsx",
+      "sha256": "cdf5ab8950ebdf4c3b303e49e6465047770b0b9fbfe177c77404aa01d1da82a6"
     },
     {
       "file": "scripts/phase-checkpoints.ts",
@@ -89,7 +93,7 @@
     },
     {
       "file": "src/bus-routing.tsx",
-      "sha256": "c85154aa2c87e6e2a26346d946d2490e19a54f3e13d9ab80d040fb28c6bc5a4f"
+      "sha256": "110183a9b0dac6b8d50addd3387ae8cb7dbd69592bfb92d984a3c7b116821ffd"
     },
     {
       "file": "src/compact-exact-axis-aligned-obstacles.ts",
@@ -97,7 +101,7 @@
     },
     {
       "file": "src/component-port-anchors.ts",
-      "sha256": "ef038693cf7256acb3d7ed50fa697e90e5399b6812124d1f579a0f0eb279c457"
+      "sha256": "6012092646ec3a214f8ff91ad9ca308f244283e71f6d40d1b957b09e57051601"
     },
     {
       "file": "src/control-local-routes.tsx",
@@ -209,7 +213,7 @@
     },
     {
       "file": "src/parts/C165948.tsx",
-      "sha256": "88b7ad8fe8c8e4e9413ce872457a4c0873105c3ff885e15c6234fa1c58c81c59"
+      "sha256": "126eb3ac40f969557bd31c148c643ae658c573d80b8e07af6c7219f4c6e83c8c"
     },
     {
       "file": "src/parts/C167874.tsx",
@@ -564,6 +568,10 @@
       "sha256": "2e7e6a8bab96e9ed14bfeb3b8312aeb7c187bbb7a4995f077f3384c0811aa621"
     },
     {
+      "file": "src/regeneration-routing.tsx",
+      "sha256": "2f76abd8b352b9cbcca39b858414b0eff9c8967cbc31c07d4f156cd36d244c45"
+    },
+    {
       "file": "src/regional-routing.ts",
       "sha256": "3a15bf8c20d91cd19b20517a6d97694399296ed8d44a16067c2601ffa67f1b90"
     },
@@ -578,6 +586,10 @@
     {
       "file": "src/source-terminal-escapes.ts",
       "sha256": "7b53314fb9ee93d3d864d836348478f04c42a0020e25f6c397b799038ce99569"
+    },
+    {
+      "file": "src/source-via-metadata.ts",
+      "sha256": "8bc6bbfe68d8d0efa0d85ff41f09d6e763a15632add7917b65857d905f0c3d55"
     },
     {
       "file": "src/source16-routes.tsx",
@@ -609,11 +621,11 @@
     },
     {
       "file": "tscircuit.config.ts",
-      "sha256": "3a7416dcbbbf0bf33069048bf14495d4d4237d2d0fe829bf687659a48cfe174c"
+      "sha256": "3c148313141f96adf61047ad8cb96414bedbfc7773abd7c9e6f98e1a22eab846"
     },
     {
       "file": "tsconfig.json",
-      "sha256": "032385c9ae59c94ff291d0075011cb535bfa7819f78b7e04c895a80838494db8"
+      "sha256": "393b8c1af1461d7b546c5cc609c379c90331179b0d34ef2189470c23c82ab47d"
     }
   ],
   "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
@@ -621,29 +633,27 @@
   "capturedRuntimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
   "originalRoutingProvenance": "docs/source24-routing-provenance.json",
   "originalNativeBuildManifest": "captured-pcb/build-manifest.json",
-  "defaultPreviewEntrypoint": "captured-pcb/circuit.json",
-  "defaultDataExport": "index.tsx",
+  "defaultPreviewEntrypoint": "index.tsx",
+  "defaultDataExport": "captured-pcb/circuit.json",
   "regenerationEntrypoint": "regenerate.tsx",
   "defaultRuntimeRoutingAlgorithms": 0,
   "importGraphFiles": [
     "index.tsx",
-    "captured-pcb/circuit.json"
-  ],
-  "unchangedImportedPartFiles": 6,
-  "unchangedRoutingSourceFiles": false,
-  "verification": "publication-checks/silkscreen-cleanup.json",
-  "hardwareBenchValidated": false,
-  "manufacturingAccepted": false,
-  "originalSavedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
-  "routingAlgorithmsUnchanged": true,
-  "changedSourceFiles": [
-    "captured-pcb/circuit.json",
-    "package.json",
-    "regenerate.tsx",
     "src/blocks/control.tsx",
+    "src/blocks/debug-data.ts",
     "src/blocks/debug.tsx",
     "src/blocks/pd-input.tsx",
     "src/blocks/tec-power.tsx",
+    "src/bus-routing.tsx",
+    "src/component-port-anchors.ts",
+    "src/control-local-routes.tsx",
+    "src/control-v3-routes.tsx",
+    "src/ground-escapes.tsx",
+    "src/ground-fanout-ports.ts",
+    "src/ground-trace-paths.ts",
+    "src/i2c-branch-routes.tsx",
+    "src/layout.ts",
+    "src/logic-supply-links.tsx",
     "src/parts/C10429.tsx",
     "src/parts/C125094.tsx",
     "src/parts/C12891.tsx",
@@ -742,6 +752,38 @@
     "src/parts/C8545.tsx",
     "src/parts/C8591.tsx",
     "src/parts/C916375.tsx",
-    "src/parts/C94869.tsx"
+    "src/parts/C94869.tsx",
+    "src/parts/catalog.tsx",
+    "src/parts/index.ts",
+    "src/parts/supplier-footprints.json",
+    "src/parts/supplier-parts-engine.ts",
+    "src/source-bus-connections.ts",
+    "src/source-pad-connections.ts",
+    "src/source-via-metadata.ts",
+    "src/source16-routes.tsx",
+    "src/source18-routes.tsx",
+    "src/source20-routes.tsx",
+    "src/source21-routes.tsx",
+    "src/source22-routes.tsx",
+    "src/supply-source-routes.tsx"
+  ],
+  "unchangedImportedPartFiles": 6,
+  "unchangedRoutingSourceFiles": false,
+  "verification": "publication-checks/tsx-preview.json",
+  "hardwareBenchValidated": false,
+  "manufacturingAccepted": false,
+  "originalSavedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "routingAlgorithmsUnchanged": true,
+  "changedSourceFiles": [
+    "index.tsx",
+    "package.json",
+    "regenerate.config.ts",
+    "regenerate.tsx",
+    "scripts/build-local.ts",
+    "src/bus-routing.tsx",
+    "src/component-port-anchors.ts",
+    "src/parts/C165948.tsx",
+    "tscircuit.config.ts",
+    "tsconfig.json"
   ]
 }

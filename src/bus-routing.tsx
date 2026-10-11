@@ -1,7 +1,6 @@
 import React from "react"
 import {GroundEscapes} from "./ground-escapes"
 import {groundFanoutPorts} from "./ground-fanout-ports"
-import {routeGuardedNative} from "./guarded-router"
 import {sourceGroundPaths} from "./ground-trace-paths"
 import {debugBufferNets,debugGroundPorts,debugRailIndicators,debugStatusIndicators} from "./blocks/debug-data"
 
@@ -42,15 +41,10 @@ export const signalRoutingGroups = [
   {name:"DEBUG_STATUS_INDICATORS",nets:debugStatusIndicators.map(item=>`${item.led}_A`)},
   {name:"DEBUG_STATUS_BUFFERS",nets:debugBufferNets},
 ] as const
-const powerNetNames=new Set(["VBUS_RAW","VBUS_TEC","V3V3","V12_FAN","TEC_POS"])
-export function PhasedSignalRouting(){
-  return <>{signalRoutingGroups.map((group,index)=><React.Fragment key={group.name}>
-    {/* Reviewed source copper and regenerated pours join every MAIN_POWER terminal. */}
-    {group.nets.map(name=><React.Fragment key={name}><net name={name} routingPhaseIndex={group.name==="MAIN_POWER"?undefined:index+2}
-      isPowerNet={powerNetNames.has(name)||undefined}/></React.Fragment>)}
-    {group.name!=="MAIN_POWER"&&<autoroutingphase name={group.name} phaseIndex={index+2} autorouter="auto_local" minViaHoleDiameter={.30} minViaPadDiameter={.70}
-      algorithmFn={routeGuardedNative}/>}
-  </React.Fragment>)}</>
+export const powerNetNames=new Set(["VBUS_RAW","VBUS_TEC","V3V3","V12_FAN","TEC_POS"])
+export function SignalNets(){
+  return <>{signalRoutingGroups.flatMap(group=>group.nets.map(name=><React.Fragment key={name}><net name={name}
+    isPowerNet={powerNetNames.has(name)||undefined}/></React.Fragment>))}</>
 }
 
 // Source-only GND connections end on the reference plane with short escapes.
@@ -68,7 +62,7 @@ export function GroundPlaneFanout() {
 // Declare real current-setpoint DAC connectivity, then reserve a clean corridor for it.
 // SDA/SCL net branches (PD controller and pullups) remain in their owning circuit blocks.
 // Low-speed I2C needs no serpentine length matching.
-export function BusRouting() {
+export function BusRouting({routingPhaseIndex}:{routingPhaseIndex?:number}={}) {
   return (
     <>
       <GroundEscapes/>
@@ -81,13 +75,12 @@ export function BusRouting() {
       <bus
         name="CONTROL_I2C"
         connections={[...i2cBusTraceNames]}
-        routingPhaseIndex={1}
+        routingPhaseIndex={routingPhaseIndex}
         pcbTraceWidth={0.2}
         pcbAllowedLayers={["top"]}
         pcbTraceSpacing={0.4}
         pcbSpacingToOtherSignals={0.5}
       />
-      <autoroutingphase name="CONTROL_I2C_LANES" phaseIndex={1} autorouter="bus_lanes" minViaHoleDiameter={.30} minViaPadDiameter={.70} />
     </>
   )
 }

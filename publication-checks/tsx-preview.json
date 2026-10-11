@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "entrypoint": "index.tsx",
+  "requiresCapturedRuntime": false,
+  "replayedPhases": [
+    "GROUND_ESCAPES"
+  ],
+  "routingSolverStarts": 0,
+  "pourSolvers": 1,
+  "exactSavedGeometry": {
+    "source_port": 1354,
+    "source_trace": 1029,
+    "pcb_port": 1354,
+    "pcb_trace": 636,
+    "pcb_via": 434,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_hole": 6,
+    "pcb_keepout": 10,
+    "pcb_copper_pour": 31
+  },
+  "silkscreenTextUnchanged": true,
+  "date": "2026-10-11",
+  "publicationSourceSha256": "b6f8689a21f484d196786b1afb03ac845f41c0f99d1e895f77bea304c5c89335",
+  "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
+  "typecheckPass": true,
+  "defaultCliBuildPass": true,
+  "cliSavedCopperAndConnectivityExact": true,
+  "allLayerGerberShorts": 0,
+  "browserPcbViewerObserved": true,
+  "browserPcbViewerReportedErrors": 0,
+  "offlineEvaluatorFetchCalls": 0,
+  "simulatedInteriorViaPortRepairs": 141,
+  "notes": "The real TSX board uses saved Ground0 fanouts and source-owned manual paths. The native pour pipeline reproduces the saved copper. USB connector insertion direction is now explicit after silkscreen cleanup; its non-copper direction metadata differs from the historical capture."
+}

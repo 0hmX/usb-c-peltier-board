@@ -1,4 +1,4 @@
-import type {RootCircuit} from "@tscircuit/core"
+import {PrimitiveComponent, type Board, type RootCircuit} from "@tscircuit/core"
 import type {CircuitJson} from "circuit-json"
 import {tps25947CornerPortAnchors} from "./parts/C3662799"
 
@@ -6,6 +6,27 @@ type Point={x:number;y:number}
 export type PortAnchorCorrection={reference:string;jlcpcbPartNumber:string;pin:number;
   pcbPortId:string;sourcePortId:string;before:Point;after:Point;landingDiameter:number;
   remainingCopperMargin:number;nonPortElementsUnchanged:boolean}
+
+const installed=new WeakMap<RootCircuit,PortAnchorCorrection[]>()
+const attachedBoards=new WeakSet<Board>()
+
+// A React ref runs before the board is attached to its Circuit. Bootstrap the
+// public lifecycle hooks from a geometry-free primitive once its root exists.
+class SupplierPortAnchorSetup extends PrimitiveComponent {
+  constructor(private install?: (circuit:RootCircuit)=>void){super({})}
+  get config(){return {...super.config,componentName:"SupplierPortAnchorSetup"}}
+  doInitialInitializePortsFromChildren(){
+    if(!this.root)throw new Error("Supplier port anchor setup has no Circuit")
+    installSupplierPortAnchors(this.root)
+    this.install?.(this.root)
+  }
+}
+
+export function attachSupplierPortAnchors(board:Board|null,install?: (circuit:RootCircuit)=>void){
+  if(!board||attachedBoards.has(board))return
+  board.add(new SupplierPortAnchorSetup(install))
+  attachedBoards.add(board)
+}
 
 function copperMargin({point,polygon,radius}:{point:Point;polygon:Point[];radius:number}){
   let inside=false,distance=Infinity
@@ -21,9 +42,13 @@ function copperMargin({point,polygon,radius}:{point:Point;polygon:Point[];radius
 
 // Public lifecycle and typed DB API: correct routing metadata after exact
 // footprint ports attach, before manual/automatic routing reads their points.
-// Generic viewers must install this helper before rendering to apply it.
+// attachSupplierPortAnchors installs this from the board's React ref, including
+// generic viewers; explicit build scripts can request the same receipt.
 export function installSupplierPortAnchors(circuit:RootCircuit){
+  const existing=installed.get(circuit)
+  if(existing)return existing
   const corrections:PortAnchorCorrection[]=[]
+  installed.set(circuit,corrections)
   const applied=new Set<string>()
   circuit.on("renderable:renderLifecycle:PcbPortAttachment:end",()=>{
     const recipe=tps25947CornerPortAnchors

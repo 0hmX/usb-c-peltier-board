@@ -1,4 +1,7 @@
+import { supplierOrientationCache } from "./src/parts/supplier-parts-engine"
+
 export default {
-  mainEntrypoint: "captured-pcb/circuit.json",
-  includeBoardFiles: ["captured-pcb/circuit.json"],
+  mainEntrypoint: "index.tsx",
+  includeBoardFiles: ["index.tsx"],
+  platformConfig: { localCacheEngine: supplierOrientationCache },
 }
