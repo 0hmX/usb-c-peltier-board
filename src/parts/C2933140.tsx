@@ -19,7 +19,6 @@ export const FRC0603F1332TS = (props: Omit<ResistorProps, "resistance">) => {
       footprint={<footprint>
         <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin2"]} pcbX="0.8mm" pcbY="0mm" width="0.7mm" height="0.9mm" shape="rect" />
 <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin1"]} pcbX="-0.8mm" pcbY="0mm" width="0.7mm" height="0.9mm" shape="rect" />
-<silkscreentext text="{NAME}" pcbX="-0.0127mm" pcbY="1.6604mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.4066016999998965,"y":0.6820032000000538},{"x":1.4066016999997828,"y":0.6820032000000538},{"x":1.4066016999997828,"y":-0.6820032000000538},{"x":-1.4066016999998965,"y":-0.6820032000000538},{"x":-1.4066016999998965,"y":0.6820032000000538}]} />
       </footprint>}
       cadModel={{

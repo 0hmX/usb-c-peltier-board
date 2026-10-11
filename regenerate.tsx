@@ -52,9 +52,8 @@ export default function TecUsbCBoard() {
       <BusRouting />
       <GroundCopper />
       <MainPowerFeatures />
-      <silkscreentext text="TEC USB-C  /  V0.1" pcbX={0} pcbY={35.5} fontSize={2} />
-      <silkscreentext text="15 / 20 V PD  |  TEC 11.2 V" pcbX={10} pcbY={33} fontSize={2} />
-      <silkscreentext text="COOLING ONLY  -  HEATSINK REQUIRED" pcbX={0} pcbY={-35.5} fontSize={2} />
+      <silkscreentext text="TEC USB-C" pcbX={0} pcbY={35.5} fontSize={1.7} />
+      <silkscreentext text="HEATSINK REQUIRED" pcbX={26} pcbY={35.5} fontSize={1.7} />
     </board>
   )
 }

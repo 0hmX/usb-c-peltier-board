@@ -1,12 +1,24 @@
 # USB-C Peltier development board
 
-A tscircuit prototype targeting **15/20 V USB-C PD input and an 11.2 V TEC output**, with cooling-only control, 8 debug LEDs and 26 test points. All 194 fitted components retain their reviewed JLCPCB mappings and imported footprint geometry.
+A tscircuit prototype targeting **15/20 V USB-C PD input and an 11.2 V TEC output**, with cooling-only control, 8 debug LEDs and 26 test points. All 194 fitted components retain their reviewed JLCPCB mappings, pads, drills, courtyards and placement.
 
 The default entry displays the checked `captured-pcb/circuit.json` directly. `index.tsx` imports and exports that JSON; the preview uses the native static Circuit JSON viewer. Viewing or building the publication runs no routing algorithms. The saved capture preserves all 636 traces, 434 through vias and 31 actual pours.
 
 The editable board is retained in `regenerate.tsx`. Its algorithms, source paths and original configuration remain available for explicit regeneration. Both router helpers use the declared `eventemitter3@5.0.4` runtime dependency.
 
-![Top and inner2 copper](captured-pcb/19-source-routing-improved-top-inner2.png)
+The current silkscreen has 22 text elements, down from 234. Connector names, TEC and capacitor polarity, eight LED functions, board identity and a short heatsink reminder remain. Component names, probe labels and nonpolar capacitor/inductor outlines were removed; all 7,799 non-silkscreen records are identical to the checked Source24 capture. Labels use 1.7 mm font size, and both alphabet and Gerber geometry checks pass with at least 0.15 mm clearance. [Verification](publication-checks/silkscreen-cleanup.json) records the current hashes and checks.
+
+![Reduced top silkscreen](captured-pcb/silkscreen-top.png)
+
+Bottom headers, viewed left to right in the top view:
+
+| Header | Pin order |
+|---|---|
+| FAN | PWM, TACH, +12V, GND |
+| SWD | GND, SWCLK, SWDIO, 3V3 |
+| UART | 3V3, RX, TX, GND |
+
+The small circle marks pin 1, the rightmost header pin. HOT and COLD take two-wire thermistors; TEC+ is the lower output pin. Probe names, nets and coordinates remain in [debug-data.ts](src/blocks/debug-data.ts), with an annotated [probe map](captured-pcb/probe-map.png) for bench work.
 
 Source24 connects **450/450 required pad joins, 0 missing**. Fresh all-layer Gerber shorts, independent native copper checks and routing lint pass. Twenty agent reviewers, including five Astra/high agents, give the whole board **7.7/10** on average (range 7.1–8.4); Source23 averaged 7.2/10.
 
@@ -51,6 +63,6 @@ bun run build:regenerate -- --placement-only --pcb-only --phase-timeout-seconds 
 
 A new capture needs fresh geometry checks. Original package scripts are preserved; these aliases require tooling outside this compact repository: `check:guarded`, `check:physical`, `check:routed`, `export:jlcpcb`, `export:kicad`, `export:previews` and `prepare:assembly`.
 
-The original board and configuration are preserved byte for byte as `regenerate.tsx` and `regenerate.config.ts`. All 105 part/import files and six captured runtime payloads remain unchanged. [Publication verification](publication-checks/static-preview.json) records the two-file browser import graph and byte-identical default build. [Current provenance](PACKAGE-PROVENANCE.json), [Source24 routing provenance](docs/source24-routing-provenance.json), [Source23 provenance](docs/source23-package-provenance.json) and [original package README](docs/captured-source-package-README.md) distinguish the publication wrapper from the checked CAD capture. Supplier snapshots record stock observed on their stated dates.
+The routing algorithms and configuration remain available in `regenerate.tsx` and `regenerate.config.ts`. Regeneration source and imported parts carry the same silkscreen cleanup as the saved preview; all copper geometry and six captured runtime payloads remain unchanged. The default entry retains its two-file browser import graph and builds the current saved JSON unchanged. [Original publication verification](publication-checks/static-preview.json) and historical routing snapshots describe the capture before silkscreen cleanup. [Current provenance](PACKAGE-PROVENANCE.json), [Source24 routing provenance](docs/source24-routing-provenance.json), [Source23 provenance](docs/source23-package-provenance.json) and [original package README](docs/captured-source-package-README.md) distinguish the publication wrapper from the checked CAD capture. Supplier snapshots record stock observed on their stated dates.
 
 The project retains its declared MIT license. Captured runtime packages retain their [upstream license notices](docs/third-party-licenses).

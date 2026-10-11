@@ -57,7 +57,6 @@ export const INA219AIDR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":2.526207799999952,"y":1.5214092000001074},{"x":2.0675599999999577,"y":1.5214092000001074}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-2.526208,"y":-0.43538139999986925},{"x":-2.305139,"y":-0.37614616677331014},{"x":-2.143305,"y":-0.21431250000000546},{"x":-2.08407,"y":0.006756400000085705},{"x":-2.143305,"y":0.22782530000017687},{"x":-2.305139,"y":0.38965896677336787},{"x":-2.526208,"y":0.44889420000004066}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="-1.905mm" pcbY="-1.016mm" radius="0.150114mm" />
-<silkscreentext text="{NAME}" pcbX="0.0127mm" pcbY="4.2004mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.75,"y":3.75},{"x":2.75,"y":3.75},{"x":2.75,"y":-3.75},{"x":-2.75,"y":-3.75},{"x":-2.75,"y":3.75}]} />
       </footprint>}
       cadModel={{

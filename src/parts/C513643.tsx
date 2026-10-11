@@ -20,7 +20,6 @@ export const RC2512FK_07470RL = (props: Omit<ResistorProps, "resistance">) => {
       footprint={<footprint>
         <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin2"]} pcbX="3.1mm" pcbY="0mm" width="1.8mm" height="4mm" shape="rect" />
 <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin1"]} pcbX="-3.1mm" pcbY="0mm" width="1.8mm" height="4mm" shape="rect" />
-<silkscreentext text="{NAME}" pcbX="0mm" pcbY="2.9558mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-4.45,"y":2.35},{"x":4.45,"y":2.35},{"x":4.45,"y":-2.35},{"x":-4.45,"y":-2.35},{"x":-4.45,"y":2.35}]} />
       </footprint>}
       cadModel={{

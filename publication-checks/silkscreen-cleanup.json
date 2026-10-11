@@ -1,0 +1,1589 @@
+{
+  "date": "2026-10-11",
+  "source": "TSCI clone of 0hmX/tec-usbc-board v0.1.4",
+  "objective": "Keep a small useful silkscreen and remove unintended overlaps.",
+  "reviewAgents": {
+    "count": 10,
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "medium"
+  },
+  "originalCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "currentCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
+  "before": {
+    "text": 234,
+    "path": 665,
+    "circle": 31,
+    "rect": 5
+  },
+  "after": {
+    "text": 22,
+    "path": 111,
+    "circle": 31,
+    "rect": 5
+  },
+  "textReductionPercent": 90.6,
+  "nonSilkscreenRecords": 7799,
+  "nonSilkscreenSha256": "c6df9dc8200ab29dde86c3ba18ece17cf0b3475bfab3815b0263f22038df21c8",
+  "allNonSilkscreenRecordsExactlyEqual": true,
+  "staticBuildEqualsSavedCircuit": true,
+  "typecheckPassed": true,
+  "diffWhitespaceCheckPassed": true,
+  "retained": "Connector names and TEC polarity; eight LED functions; four capacitor polarity marks; board identity; heatsink reminder.",
+  "removed": "186 component references, 26 probe labels, voltage caption, 551 nonpolar capacitor/inductor outline paths, two off-board USB shell paths, TEC chevron.",
+  "probeMap": "captured-pcb/probe-map.svg",
+  "geometry": [
+    {
+      "mode": "stroke",
+      "model": "Alphabet glyph strokes in graphics-debug layout; circles/capsules analytic; polygon masks exact. Same-footprint compound symbol contacts reported separately.",
+      "minimum_clearance_mm": 0.15,
+      "counts": {
+        "texts": 22,
+        "graphics": 147,
+        "mask_features": 580,
+        "conflicts": 0,
+        "by_category": {}
+      },
+      "warnings": [],
+      "same_footprint_contacts": [
+        {
+          "a": "pcb_silkscreen_path_79",
+          "b": "pcb_silkscreen_path_80",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_79",
+          "b": "pcb_silkscreen_path_81",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_80",
+          "b": "pcb_silkscreen_path_81",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_82",
+          "b": "pcb_silkscreen_path_87",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_83",
+          "b": "pcb_silkscreen_path_84",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_84",
+          "b": "pcb_silkscreen_path_85",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_86",
+          "b": "pcb_silkscreen_path_87",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_198",
+          "b": "pcb_silkscreen_path_200",
+          "component": "C28",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_289",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_291",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_292",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_293",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_294",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_295",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_290",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_297",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_298",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_299",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_300",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_301",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_289",
+          "b": "pcb_silkscreen_path_291",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_289",
+          "b": "pcb_silkscreen_path_302",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_290",
+          "b": "pcb_silkscreen_path_297",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_290",
+          "b": "pcb_silkscreen_path_302",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_295",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_296",
+          "b": "pcb_silkscreen_path_301",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_333",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_334",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_335",
+          "b": "pcb_silkscreen_path_336",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_335",
+          "b": "pcb_silkscreen_path_337",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_339",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_340",
+          "component": "J_TEC",
+          "clearance_mm": -0.07
+        },
+        {
+          "a": "pcb_silkscreen_path_337",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_337",
+          "b": "pcb_silkscreen_path_339",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_348",
+          "b": "pcb_silkscreen_path_350",
+          "component": "U_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_349",
+          "b": "pcb_silkscreen_path_350",
+          "component": "U_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_355",
+          "b": "pcb_silkscreen_path_357",
+          "component": "U_INPUT_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_356",
+          "b": "pcb_silkscreen_path_357",
+          "component": "U_INPUT_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_374",
+          "b": "pcb_silkscreen_path_376",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_374",
+          "b": "pcb_silkscreen_path_378",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_375",
+          "b": "pcb_silkscreen_path_377",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_375",
+          "b": "pcb_silkscreen_path_378",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_376",
+          "b": "pcb_silkscreen_path_379",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_377",
+          "b": "pcb_silkscreen_path_379",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.1451
+        },
+        {
+          "a": "pcb_silkscreen_path_387",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.123
+        },
+        {
+          "a": "pcb_silkscreen_path_388",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.202
+        },
+        {
+          "a": "pcb_silkscreen_path_389",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.153
+        },
+        {
+          "a": "pcb_silkscreen_path_390",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.123
+        },
+        {
+          "a": "pcb_silkscreen_path_391",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.202
+        },
+        {
+          "a": "pcb_silkscreen_path_392",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.153
+        }
+      ],
+      "conflicts": [],
+      "nearest": [
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "text-mask",
+          "clearance_mm": 0.249,
+          "other": "C40"
+        },
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "text-graphic",
+          "clearance_mm": 0.4843,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "board-edge",
+          "clearance_mm": 12.678
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "text-mask",
+          "clearance_mm": 0.6307,
+          "other": "C28"
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "text-graphic",
+          "clearance_mm": 0.5537,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "board-edge",
+          "clearance_mm": 13.1163
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "text-mask",
+          "clearance_mm": 0.2523,
+          "other": "C29"
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "text-graphic",
+          "clearance_mm": 0.4101,
+          "other": "pcb_silkscreen_path_202"
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "board-edge",
+          "clearance_mm": 21.8523
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "text-mask",
+          "clearance_mm": 0.6307,
+          "other": "C29"
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "text-graphic",
+          "clearance_mm": 0.4852,
+          "other": "pcb_silkscreen_path_202"
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "board-edge",
+          "clearance_mm": 22.2307
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "text-mask",
+          "clearance_mm": 0.8129,
+          "other": "L_FAN"
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "text-graphic",
+          "clearance_mm": 1.0133,
+          "other": "pcb_silkscreen_path_337"
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "board-edge",
+          "clearance_mm": 7.7966
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "text-mask",
+          "clearance_mm": 3.4344,
+          "other": "J_TEC"
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "text-graphic",
+          "clearance_mm": 0.602,
+          "other": "pcb_silkscreen_path_340"
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "board-edge",
+          "clearance_mm": 8.019
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "text-mask",
+          "clearance_mm": 1.2607,
+          "other": "J_HOT"
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "text-graphic",
+          "clearance_mm": 0.2112,
+          "other": "pcb_silkscreen_rect_1"
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "board-edge",
+          "clearance_mm": 2.5629
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "text-mask",
+          "clearance_mm": 1.266,
+          "other": "J_COLD"
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "text-graphic",
+          "clearance_mm": 0.2112,
+          "other": "pcb_silkscreen_rect_2"
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "board-edge",
+          "clearance_mm": 2.5629
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "text-mask",
+          "clearance_mm": 1.2685,
+          "other": "J_FAN"
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "text-graphic",
+          "clearance_mm": 0.2336,
+          "other": "pcb_silkscreen_rect_0"
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "board-edge",
+          "clearance_mm": 2.5838
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "text-mask",
+          "clearance_mm": 1.2554,
+          "other": "J_SWD"
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "text-graphic",
+          "clearance_mm": 0.2112,
+          "other": "pcb_silkscreen_rect_3"
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "board-edge",
+          "clearance_mm": 2.5629
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "text-mask",
+          "clearance_mm": 1.2715,
+          "other": "J_UART"
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "text-graphic",
+          "clearance_mm": 0.2336,
+          "other": "pcb_silkscreen_rect_4"
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "board-edge",
+          "clearance_mm": 2.5614
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "text-mask",
+          "clearance_mm": 0.2632,
+          "other": "D501"
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "text-graphic",
+          "clearance_mm": 0.2856,
+          "other": "pcb_silkscreen_path_633"
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "board-edge",
+          "clearance_mm": 3.2812
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "text-mask",
+          "clearance_mm": 0.2838,
+          "other": "D502"
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "text-graphic",
+          "clearance_mm": 0.7791,
+          "other": "pcb_silkscreen_path_634"
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "board-edge",
+          "clearance_mm": 10.2588
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "text-mask",
+          "clearance_mm": 0.2629,
+          "other": "D503"
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "text-graphic",
+          "clearance_mm": 0.2508,
+          "other": "pcb_silkscreen_path_635"
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "board-edge",
+          "clearance_mm": 15.2795
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "text-mask",
+          "clearance_mm": 0.2838,
+          "other": "D504"
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "text-graphic",
+          "clearance_mm": 0.3208,
+          "other": "pcb_silkscreen_path_636"
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "board-edge",
+          "clearance_mm": 2.1292
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "text-mask",
+          "clearance_mm": 0.2629,
+          "other": "D505"
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "text-graphic",
+          "clearance_mm": 0.3732,
+          "other": "pcb_silkscreen_path_637"
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "board-edge",
+          "clearance_mm": 8.6095
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "text-mask",
+          "clearance_mm": 0.2838,
+          "other": "D506"
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "text-graphic",
+          "clearance_mm": 0.4526,
+          "other": "pcb_silkscreen_path_638"
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "board-edge",
+          "clearance_mm": 3.867
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "text-mask",
+          "clearance_mm": 0.2629,
+          "other": "D507"
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "text-graphic",
+          "clearance_mm": 0.2588,
+          "other": "pcb_silkscreen_path_639"
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "board-edge",
+          "clearance_mm": 8.013
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "text-mask",
+          "clearance_mm": 0.2838,
+          "other": "D508"
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "text-graphic",
+          "clearance_mm": 0.3208,
+          "other": "pcb_silkscreen_path_640"
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "board-edge",
+          "clearance_mm": 16.1292
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "text-mask",
+          "clearance_mm": 3.3092,
+          "other": "TP02"
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "text-graphic",
+          "clearance_mm": 7.5468,
+          "other": "pcb_silkscreen_path_285"
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "board-edge",
+          "clearance_mm": 1.5883
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "text-mask",
+          "clearance_mm": 2.2738,
+          "other": "pcb_smtpad_1"
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "text-graphic",
+          "clearance_mm": 8.186,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "board-edge",
+          "clearance_mm": 1.5883
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "text-mask",
+          "clearance_mm": 0.6452,
+          "other": "R501"
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "text-graphic",
+          "clearance_mm": 3.519,
+          "other": "pcb_silkscreen_path_0"
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "board-edge",
+          "clearance_mm": 2.1047
+        }
+      ]
+    },
+    {
+      "mode": "gerber",
+      "model": "circuit-json-to-gerber renderVectorText: full-size advances, 0.7 glyph scale, exporter anchors; circles/capsules analytic; polygon masks exact. Same-footprint compound symbol contacts reported separately.",
+      "minimum_clearance_mm": 0.15,
+      "counts": {
+        "texts": 22,
+        "graphics": 147,
+        "mask_features": 580,
+        "conflicts": 0,
+        "by_category": {}
+      },
+      "warnings": [],
+      "same_footprint_contacts": [
+        {
+          "a": "pcb_silkscreen_path_79",
+          "b": "pcb_silkscreen_path_80",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_79",
+          "b": "pcb_silkscreen_path_81",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_80",
+          "b": "pcb_silkscreen_path_81",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_82",
+          "b": "pcb_silkscreen_path_87",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_83",
+          "b": "pcb_silkscreen_path_84",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_84",
+          "b": "pcb_silkscreen_path_85",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_86",
+          "b": "pcb_silkscreen_path_87",
+          "component": "D20",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_198",
+          "b": "pcb_silkscreen_path_200",
+          "component": "C28",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_289",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_291",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_292",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_293",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_294",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_295",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_287",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_290",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_297",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_298",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_299",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_300",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_288",
+          "b": "pcb_silkscreen_path_301",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_289",
+          "b": "pcb_silkscreen_path_291",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_289",
+          "b": "pcb_silkscreen_path_302",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_290",
+          "b": "pcb_silkscreen_path_297",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_290",
+          "b": "pcb_silkscreen_path_302",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_295",
+          "b": "pcb_silkscreen_path_296",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_296",
+          "b": "pcb_silkscreen_path_301",
+          "component": "U_TEC_MON",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_333",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_334",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_335",
+          "b": "pcb_silkscreen_path_336",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_335",
+          "b": "pcb_silkscreen_path_337",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_339",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_336",
+          "b": "pcb_silkscreen_path_340",
+          "component": "J_TEC",
+          "clearance_mm": -0.07
+        },
+        {
+          "a": "pcb_silkscreen_path_337",
+          "b": "pcb_silkscreen_path_338",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_337",
+          "b": "pcb_silkscreen_path_339",
+          "component": "J_TEC",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_348",
+          "b": "pcb_silkscreen_path_350",
+          "component": "U_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_349",
+          "b": "pcb_silkscreen_path_350",
+          "component": "U_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_355",
+          "b": "pcb_silkscreen_path_357",
+          "component": "U_INPUT_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_356",
+          "b": "pcb_silkscreen_path_357",
+          "component": "U_INPUT_LATCH",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_374",
+          "b": "pcb_silkscreen_path_376",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_374",
+          "b": "pcb_silkscreen_path_378",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_375",
+          "b": "pcb_silkscreen_path_377",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_375",
+          "b": "pcb_silkscreen_path_378",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_376",
+          "b": "pcb_silkscreen_path_379",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.15
+        },
+        {
+          "a": "pcb_silkscreen_path_377",
+          "b": "pcb_silkscreen_path_379",
+          "component": "U_THERMAL",
+          "clearance_mm": -0.1451
+        },
+        {
+          "a": "pcb_silkscreen_path_387",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.123
+        },
+        {
+          "a": "pcb_silkscreen_path_388",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.202
+        },
+        {
+          "a": "pcb_silkscreen_path_389",
+          "b": "pcb_silkscreen_rect_1",
+          "component": "J_HOT",
+          "clearance_mm": -0.153
+        },
+        {
+          "a": "pcb_silkscreen_path_390",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.123
+        },
+        {
+          "a": "pcb_silkscreen_path_391",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.202
+        },
+        {
+          "a": "pcb_silkscreen_path_392",
+          "b": "pcb_silkscreen_rect_2",
+          "component": "J_COLD",
+          "clearance_mm": -0.153
+        }
+      ],
+      "conflicts": [],
+      "nearest": [
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "text-mask",
+          "clearance_mm": 0.3459,
+          "other": "C40"
+        },
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "text-graphic",
+          "clearance_mm": 0.7695,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_48",
+          "text": "+",
+          "category": "board-edge",
+          "clearance_mm": 12.6381
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "text-mask",
+          "clearance_mm": 0.8021,
+          "other": "C28"
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "text-graphic",
+          "clearance_mm": 0.4651,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_49",
+          "text": "-",
+          "category": "board-edge",
+          "clearance_mm": 12.9449
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "text-mask",
+          "clearance_mm": 0.547,
+          "other": "C29"
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "text-graphic",
+          "clearance_mm": 0.6952,
+          "other": "pcb_silkscreen_path_202"
+        },
+        {
+          "id": "pcb_silkscreen_text_51",
+          "text": "+",
+          "category": "board-edge",
+          "clearance_mm": 22.1372
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "text-mask",
+          "clearance_mm": 0.8021,
+          "other": "C29"
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "text-graphic",
+          "clearance_mm": 0.3961,
+          "other": "pcb_silkscreen_path_202"
+        },
+        {
+          "id": "pcb_silkscreen_text_52",
+          "text": "-",
+          "category": "board-edge",
+          "clearance_mm": 22.4021
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "text-mask",
+          "clearance_mm": 1.1247,
+          "other": "L_FAN"
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "text-graphic",
+          "clearance_mm": 1.0603,
+          "other": "pcb_silkscreen_path_337"
+        },
+        {
+          "id": "pcb_silkscreen_text_88",
+          "text": "TEC+",
+          "category": "board-edge",
+          "clearance_mm": 8.0817
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "text-mask",
+          "clearance_mm": 3.6877,
+          "other": "J_TEC"
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "text-graphic",
+          "clearance_mm": 0.9191,
+          "other": "pcb_silkscreen_path_340"
+        },
+        {
+          "id": "pcb_silkscreen_text_89",
+          "text": "TEC-",
+          "category": "board-edge",
+          "clearance_mm": 8.2374
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "text-mask",
+          "clearance_mm": 1.3009,
+          "other": "J_HOT"
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "text-graphic",
+          "clearance_mm": 0.2582,
+          "other": "pcb_silkscreen_rect_1"
+        },
+        {
+          "id": "pcb_silkscreen_text_111",
+          "text": "HOT",
+          "category": "board-edge",
+          "clearance_mm": 2.8747
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "text-mask",
+          "clearance_mm": 1.2934,
+          "other": "J_COLD"
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "text-graphic",
+          "clearance_mm": 0.2582,
+          "other": "pcb_silkscreen_rect_2"
+        },
+        {
+          "id": "pcb_silkscreen_text_112",
+          "text": "COLD",
+          "category": "board-edge",
+          "clearance_mm": 2.8747
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "text-mask",
+          "clearance_mm": 1.3113,
+          "other": "J_FAN"
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "text-graphic",
+          "clearance_mm": 0.2739,
+          "other": "pcb_silkscreen_rect_0"
+        },
+        {
+          "id": "pcb_silkscreen_text_115",
+          "text": "FAN",
+          "category": "board-edge",
+          "clearance_mm": 2.8892
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "text-mask",
+          "clearance_mm": 1.3061,
+          "other": "J_SWD"
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "text-graphic",
+          "clearance_mm": 0.2582,
+          "other": "pcb_silkscreen_rect_3"
+        },
+        {
+          "id": "pcb_silkscreen_text_116",
+          "text": "SWD",
+          "category": "board-edge",
+          "clearance_mm": 2.8747
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "text-mask",
+          "clearance_mm": 1.3075,
+          "other": "J_UART"
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "text-graphic",
+          "clearance_mm": 0.2739,
+          "other": "pcb_silkscreen_rect_4"
+        },
+        {
+          "id": "pcb_silkscreen_text_117",
+          "text": "UART",
+          "category": "board-edge",
+          "clearance_mm": 2.8736
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "text-mask",
+          "clearance_mm": 0.58,
+          "other": "D501"
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "text-graphic",
+          "clearance_mm": 0.5601,
+          "other": "pcb_silkscreen_path_633"
+        },
+        {
+          "id": "pcb_silkscreen_text_186",
+          "text": "USB",
+          "category": "board-edge",
+          "clearance_mm": 3.2445
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "text-mask",
+          "clearance_mm": 0.5892,
+          "other": "D502"
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "text-graphic",
+          "clearance_mm": 0.8369,
+          "other": "pcb_silkscreen_path_634"
+        },
+        {
+          "id": "pcb_silkscreen_text_188",
+          "text": "IN",
+          "category": "board-edge",
+          "clearance_mm": 10.1052
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "text-mask",
+          "clearance_mm": 0.5747,
+          "other": "D503"
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "text-graphic",
+          "clearance_mm": 0.5517,
+          "other": "pcb_silkscreen_path_635"
+        },
+        {
+          "id": "pcb_silkscreen_text_190",
+          "text": "3V3",
+          "category": "board-edge",
+          "clearance_mm": 15.2433
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "text-mask",
+          "clearance_mm": 0.5892,
+          "other": "D504"
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "text-graphic",
+          "clearance_mm": 0.6044,
+          "other": "pcb_silkscreen_path_636"
+        },
+        {
+          "id": "pcb_silkscreen_text_192",
+          "text": "FAN12",
+          "category": "board-edge",
+          "clearance_mm": 2.0851
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "text-mask",
+          "clearance_mm": 0.5747,
+          "other": "D505"
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "text-graphic",
+          "clearance_mm": 0.6778,
+          "other": "pcb_silkscreen_path_637"
+        },
+        {
+          "id": "pcb_silkscreen_text_194",
+          "text": "TEC+",
+          "category": "board-edge",
+          "clearance_mm": 8.5978
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "text-mask",
+          "clearance_mm": 0.5892,
+          "other": "D506"
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "text-graphic",
+          "clearance_mm": 0.6721,
+          "other": "pcb_silkscreen_path_638"
+        },
+        {
+          "id": "pcb_silkscreen_text_196",
+          "text": "PD",
+          "category": "board-edge",
+          "clearance_mm": 3.831
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "text-mask",
+          "clearance_mm": 0.5747,
+          "other": "D507"
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "text-graphic",
+          "clearance_mm": 0.5642,
+          "other": "pcb_silkscreen_path_639"
+        },
+        {
+          "id": "pcb_silkscreen_text_198",
+          "text": "ALLOW",
+          "category": "board-edge",
+          "clearance_mm": 8.0038
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "text-mask",
+          "clearance_mm": 0.5882,
+          "other": "D508"
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "text-graphic",
+          "clearance_mm": 0.6044,
+          "other": "pcb_silkscreen_path_640"
+        },
+        {
+          "id": "pcb_silkscreen_text_200",
+          "text": "FAULT",
+          "category": "board-edge",
+          "clearance_mm": 16.0851
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "text-mask",
+          "clearance_mm": 3.3948,
+          "other": "TP02"
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "text-graphic",
+          "clearance_mm": 7.5197,
+          "other": "pcb_silkscreen_path_285"
+        },
+        {
+          "id": "pcb_silkscreen_text_231",
+          "text": "TEC USB-C",
+          "category": "board-edge",
+          "clearance_mm": 1.6353
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "text-mask",
+          "clearance_mm": 2.6166,
+          "other": "pcb_smtpad_1"
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "text-graphic",
+          "clearance_mm": 8.4978,
+          "other": "pcb_silkscreen_path_200"
+        },
+        {
+          "id": "pcb_silkscreen_text_233",
+          "text": "HEATSINK REQUIRED",
+          "category": "board-edge",
+          "clearance_mm": 1.6353
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "text-mask",
+          "clearance_mm": 0.9284,
+          "other": "R501"
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "text-graphic",
+          "clearance_mm": 3.8307,
+          "other": "pcb_silkscreen_path_0"
+        },
+        {
+          "id": "pcb_silkscreen_text_usb_c",
+          "text": "USB-C",
+          "category": "board-edge",
+          "clearance_mm": 2.068
+        }
+      ]
+    }
+  ],
+  "validationLimits": "Top-side alphabet and Gerber stroke geometry checked; bottom has no silkscreen. Same-component compound symbols intentionally join. Tented-via icons can obscure silk in previews but do not create exposed mask openings. Existing electrical warnings are unchanged. Full manufacturing qualification and hardware validation remain pending."
+}

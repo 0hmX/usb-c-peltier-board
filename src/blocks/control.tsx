@@ -262,17 +262,17 @@ export function ControlBlock() {
     <NtcConnector name="J_COLD" {...sch("J_COLD")} pcbX={21} pcbY={-31} connections={{
       pin1: "net.COLD_RAW", pin2: "net.GND",
     }} />
-    <silkscreentext text="HOT" pcbX={13} pcbY={-34} fontSize={2} />
-    <silkscreentext text="COLD" pcbX={21} pcbY={-34} fontSize={2} />
+    <silkscreentext text="HOT" pcbX={13} pcbY={-34} fontSize={1.7} />
+    <silkscreentext text="COLD" pcbX={21} pcbY={-34} fontSize={1.7} />
     <FanConnector name="J_SWD" {...sch("J_SWD")} pcbX={-2} pcbY={-31} connections={{
       pin1: "net.V3V3", pin2: "net.SWDIO", pin3: "net.SWCLK", pin4: "net.GND",
     }} />
     <FanConnector name="J_UART" {...sch("J_UART")} pcbX={-16} pcbY={-31} connections={{
       pin1: "net.GND", pin2: "net.UART_TX", pin3: "net.UART_RX", pin4: "net.V3V3",
     }} />
-    <silkscreentext text="FAN" pcbX={32} pcbY={-34} fontSize={2} />
-    <silkscreentext text="SWD" pcbX={-2} pcbY={-34} fontSize={2} />
-    <silkscreentext text="UART" pcbX={-16} pcbY={-34} fontSize={2} />
+    <silkscreentext text="FAN" pcbX={32} pcbY={-34} fontSize={1.7} />
+    <silkscreentext text="SWD" pcbX={-2} pcbY={-34} fontSize={1.7} />
+    <silkscreentext text="UART" pcbX={-16} pcbY={-34} fontSize={1.7} />
     {/* Fan-only input support: 0.5 mm carries the qualified <=0.3 A input
         profile. The 45-degree west corridor avoids alternating GND pads. */}
     <trace name="FAN_INPUT_CAP_BANK_12" from="C213.pin1" to="C219.pin1" thickness={0.5} maxLength={9}

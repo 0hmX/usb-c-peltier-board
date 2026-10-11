@@ -124,7 +124,7 @@ function FilteredProbeRoutes() {
   })}</>
 }
 
-function Probe({ name, net, label, x, y, labelX, labelY, connectedByManualTap = false }: { name: string; net: string; label: string; x: number; y: number; connectedByManualTap?: boolean; labelX?: number; labelY?: number }) {
+function Probe({ name, net, x, y, connectedByManualTap = false }: { name: string; net: string; x: number; y: number; connectedByManualTap?: boolean }) {
   return <>
     <testpoint name={name} footprintVariant="pad" padShape="circle" padDiameter={1.5} doNotPlace
       pcbX={x} pcbY={y} connections={connectedByManualTap ? undefined : { pin1: `net.${net}` }}
@@ -133,7 +133,6 @@ function Probe({ name, net, label, x, y, labelX, labelY, connectedByManualTap = 
           coveredWithSolderMask={false} solderMaskMargin={0.05} solderPasteMargin={-0.75} />
         <courtyardrect width={2} height={2} />
       </footprint>} />
-    <silkscreentext text={label} pcbX={labelX ?? x} pcbY={labelY ?? y + 1.65} fontSize={2} />
   </>
 }
 
@@ -159,14 +158,14 @@ function Indicator({ led, resistor, sourceNet, returnNet = "GND", resistance, x,
   return <>
     <R name={resistor} resistance={resistance} pcbX={resistorOrigin.x} pcbY={resistorOrigin.y} pcbRotation={resistorOrigin.rotation}
       connections={{ pin1: `net.${sourceNet}`, pin2: `net.${led}_A` }} />
-    <Led name={led} pcbX={x} pcbY={y} pcbSx={{ "& silkscreentext": { visibility: "hidden" } }} connections={returnNet === "GND" ? { pin2: `net.${led}_A` } : { pin1: `net.${returnNet}`, pin2: `net.${led}_A` }} />
+    <Led name={led} pcbX={x} pcbY={y} connections={returnNet === "GND" ? { pin2: `net.${led}_A` } : { pin1: `net.${returnNet}`, pin2: `net.${led}_A` }} />
     {manualSeries ? <trace name={`${led}_SERIES`} from={`${resistor}.pin2`} to={`${led}.pin2`} thickness={0.2} maxLength={4}
       pcbPathRelativeTo={`${resistor}.pin2`} pcbPath={[
         `${resistor}.pin2`, relativePoint({ x: x + 0.75, y: y - 1 }, resistorOrigin, resistorOrigin.rotation), `${led}.pin2`,
       ]} /> : null}
     {returnNet === "GND" && <GroundStub name={`${led}_GROUND`} from={`${led}.pin1`} origin={{ x, y }}
       points={led === "D503" ? [{ x: x - 2.05, y: y - 1.3 }, { x: x - 2.8, y: y - 1.3 }] : [{ x: x - 1.85, y: y - 1.1 }, { x: x - 1.85, y: y - 1.3 }]} />}
-    <silkscreentext text={label} pcbX={x} pcbY={y + 1.65} fontSize={2} />
+    <silkscreentext text={label} pcbX={x} pcbY={y + 1.65} fontSize={1.7} />
   </>
 }
 
@@ -221,7 +220,7 @@ export function DebugBlock() {
           ...item.pickupWaypoints.map(point => relativePoint(point, item)), item.pickupSource]} />}
     </React.Fragment>)}
     {debugGroundTestPoints.map(item => <React.Fragment key={item.name}>
-      <Probe {...item} net="GND" label="GND" connectedByManualTap />
+      <Probe {...item} net="GND" connectedByManualTap />
       <GroundStub name={`${item.name}_GROUND`} from={`${item.name}.pin1`} origin={item}
         points={[{ x: item.x, y: item.y + (item.name === "TPG8" ? -1.6 : 1.6) }]} />
     </React.Fragment>)}

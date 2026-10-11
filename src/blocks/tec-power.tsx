@@ -225,9 +225,8 @@ export const TecPower = () => (
 
     <TecTerminal name="J_TEC" pcbX={44} pcbY={0} pcbRotation={90} schX={16} schY={0}
       connections={{ pin1: "net.TEC_POS" }} />
-    <silkscreentext text="TEC+" pcbX={40} pcbY={-6.5} fontSize={2} />
-    <silkscreentext text="TEC−" pcbX={40} pcbY={7} fontSize={2} />
-    <silkscreenpath route={[{ x: 48, y: -1 }, { x: 49, y: 0 }, { x: 48, y: 1 }]} strokeWidth={0.15} />
+    <silkscreentext text="TEC+" pcbX={40} pcbY={-6.5} fontSize={1.7} />
+    <silkscreentext text="TEC-" pcbX={40} pcbY={7} fontSize={1.7} />
     <trace name="TEC_OUTPUT_TERMINAL" from="R20.pin2" to="J_TEC.pin1" thickness={3}
       pcbPathRelativeTo="R20.pin2"
       pcbPath={["R20.pin2", { x: 6.5, y: 0 }, { x: 6.5, y: -14.499995 }, "J_TEC.pin1"]} />

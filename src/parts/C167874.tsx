@@ -17,9 +17,6 @@ export const FNR4030S4R7MT = (props: Omit<InductorProps, "inductance">) => {
       footprint={<footprint>
         <smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-1.5mm" pcbY="0mm" width="1.1mm" height="3.7mm" shape="rect" solderMaskMargin="0.05mm" />
 <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="1.5mm" pcbY="0mm" width="1.1mm" height="3.7mm" shape="rect" solderMaskMargin="0.05mm" />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-2.0000214000002643,"y":2.1314699559999597},{"x":1.9999959999997827,"y":2.131495736999987}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-2.0000214000002643,"y":-2.1314699559999597},{"x":1.9999959999997827,"y":-2.1314957369998715}]} />
-<silkscreentext text="{NAME}" pcbX="0mm" pcbY="3.1082mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.35,"y":2.35},{"x":2.35,"y":2.35},{"x":2.35,"y":-2.35},{"x":-2.35,"y":-2.35},{"x":-2.35,"y":2.35}]} />
       </footprint>}
       cadModel={{

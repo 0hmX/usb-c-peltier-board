@@ -20,7 +20,6 @@ export const A_25121WF1001T4E = (props: Omit<ResistorProps, "resistance">) => {
       footprint={<footprint>
         <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin2"]} pcbX="3.3mm" pcbY="0mm" width="1.6mm" height="3.3mm" shape="rect" />
 <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin1"]} pcbX="-3.3mm" pcbY="0mm" width="1.6mm" height="3.3mm" shape="rect" />
-<silkscreentext text="{NAME}" pcbX="0mm" pcbY="2.9558mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-4.35,"y":2.1},{"x":4.35,"y":2.1},{"x":4.35,"y":-2.1},{"x":-4.35,"y":-2.1},{"x":-4.35,"y":2.1}]} />
       </footprint>}
       cadModel={{

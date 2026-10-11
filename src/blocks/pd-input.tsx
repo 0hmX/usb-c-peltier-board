@@ -109,6 +109,7 @@ const wires: readonly (readonly [string, string, string, number?])[] = [
  */
 export function PdInput() {
   return <>
+    <silkscreentext text="USB-C" pcbX={-45} pcbY={21} fontSize={1.7} />
     <UsbC name="J_USB" pcbX={-45.11557} pcbY={12} pcbRotation={270} schX={-37} schY={12} />
     {usbGroundReturns.map(([pin, pcbX, pcbY]) => <Fragment key={`USB_GND_${pin}`}>
       <via name={`USB_GND_${pin}_VIA`} pcbX={pcbX} pcbY={pcbY} holeDiameter={0.3} outerDiameter={0.7}

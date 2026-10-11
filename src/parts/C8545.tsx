@@ -44,7 +44,6 @@ export const A_2N7002 = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.726211400000011,"y":1.65},{"x":-0.726211400000011,"y":1.65},{"x":-0.726211400000011,"y":0.7}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.726211400000011,"y":-1.65},{"x":-0.726211400000011,"y":-1.65},{"x":-0.726211400000011,"y":-0.7}]} />
 <silkscreencircle pcbX="0mm" pcbY="-0.95mm" radius="0.075mm" strokeWidth="0.15mm" />
-<silkscreentext text="{NAME}" pcbX="0.0254mm" pcbY="2.524mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.75,"y":1.75},{"x":1.75,"y":1.75},{"x":1.75,"y":-1.75},{"x":-1.75,"y":-1.75},{"x":-1.75,"y":1.75}]} />
       </footprint>}
       cadModel={{

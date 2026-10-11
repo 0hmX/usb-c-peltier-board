@@ -90,7 +90,6 @@ export const LT3741EFE_1_PBF = (props: ChipProps<typeof pinLabels>) => {
 <smtpad solderPasteMargin={0} solderMaskMargin={0.04} portHints={["pin11"]} pcbX="2.9250000000000003mm" pcbY="2.775mm" width="0.45mm" height="1.05mm" shape="rect" />
 <silkscreenpath strokeWidth={0.15} route={[{"x":-3.326206200000115,"y":-1.7663921999999275},{"x":-3.326206200000115,"y":1.7663921999999275},{"x":3.3262061999998878,"y":1.7663921999999275},{"x":3.3262061999998878,"y":-1.7663921999999275},{"x":-3.326206200000115,"y":-1.7663921999999275}]} />
 <silkscreencircle strokeWidth={0.15} pcbX="-2.9250000000000003mm" pcbY="-1.013968mm" radius="0.150114mm" />
-<silkscreentext text="{NAME}" pcbX="-0.1778mm" pcbY="4.556mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-3.499980800000003,"y":3.951605499999914},{"x":3.50000620000003,"y":3.951605499999914},{"x":3.50000620000003,"y":-3.951605499999914},{"x":-3.499980800000003,"y":-3.951605499999914},{"x":-3.499980800000003,"y":3.951605499999914}]} />
       </footprint>
     </chip>

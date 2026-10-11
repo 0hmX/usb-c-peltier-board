@@ -36,7 +36,6 @@ export const AP63201WU_7 = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath route={[{"x":0.8760714000001144,"y":1.5262098000000606},{"x":-0.8763253999999279,"y":1.5262098000000606}]} />
 <silkscreenpath route={[{"x":0.8760714000001144,"y":-1.5262097999999469},{"x":-0.8763253999999279,"y":-1.5262097999999469}]} />
 <silkscreencircle pcbX="1.287399mm" pcbY="-1.668526mm" radius="0.150114mm" />
-<silkscreentext text="{NAME}" pcbX="0.101473mm" pcbY="2.524mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.8500222000001258,"y":1.6999844000000621},{"x":1.8500222000001258,"y":1.6999844000000621},{"x":1.8500222000001258,"y":-1.7000097999999753},{"x":-1.8500222000001258,"y":-1.7000097999999753},{"x":-1.8500222000001258,"y":1.6999844000000621}]} />
       </footprint>}
       cadModel={{

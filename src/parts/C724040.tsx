@@ -65,7 +65,6 @@ export const STM32G030F6P6 = (props: ChipProps<typeof pinLabels>) => {
 <smtpad portHints={["pin11"]} pcbX="2.925mm" pcbY="2.875mm" width="0.4mm" height="1.35mm" shape="rect" solderMaskMargin="0.05mm" solderPasteMargin={0} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-3.326206200000115,"y":-1.7713960000000952},{"x":-3.326206200000115,"y":1.7713959999999815},{"x":3.3262061999998878,"y":1.7713959999999815},{"x":3.3262061999998878,"y":-1.7713960000000952},{"x":-3.326206200000115,"y":-1.7713960000000952}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="-2.925064mm" pcbY="-1.019048mm" radius="0.150114mm" />
-<silkscreentext text="{NAME}" pcbX="-0.1905mm" pcbY="4.556mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-3.55,"y":3.992},{"x":3.55,"y":3.992},{"x":3.55,"y":-3.992},{"x":-3.55,"y":-3.992},{"x":-3.55,"y":3.992}]} />
       </footprint>}
       cadModel={{

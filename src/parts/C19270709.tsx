@@ -21,14 +21,13 @@ export const JBLM2101M035C077RTM_100UF_35V = (props: Omit<CapacitorProps, "capac
 }}
       manufacturerPartNumber="JBLM2101M035C077RTM 100UF 35V"
       footprint={<footprint>
-        <silkscreentext text="+" pcbX="-4.3mm" pcbY="1.7mm" fontSize="0.8mm" />
-<silkscreentext text="-" pcbX="4.3mm" pcbY="1.7mm" fontSize="0.8mm" />
+        <silkscreentext text="+" pcbX="-4.3mm" pcbY="1.7mm" fontSize="1.7mm" />
+<silkscreentext text="-" pcbX="4.3mm" pcbY="1.7mm" fontSize="1.7mm" />
         <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
 <smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":3.3020254000001614,"y":0.9},{"x":3.3020254000001614,"y":1.1428983999999218}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-3.301974599999994,"y":-0.9},{"x":-3.301974599999994,"y":-2.0321016000000327},{"x":-2.0319745999998986,"y":-3.3021016000000145},{"x":3.3020254000001614,"y":-3.3021016000000145},{"x":3.3020254000001614,"y":-0.9}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":3.3020254000001614,"y":0.9},{"x":3.3020254000001614,"y":3.3018984000000273},{"x":-1.904974599999946,"y":3.3018984000000273},{"x":-2.0319745999998986,"y":3.3018984000000273},{"x":-3.301974599999994,"y":2.031898399999932},{"x":-3.301974599999994,"y":0.9}]} />
-<silkscreentext text="{NAME}" pcbX="-0.012065mm" pcbY="4.300984mm" anchorAlignment="center" fontSize="1mm" />
 <fabricationnotepath route={[{"x":-2.804972799999973,"y":0.6598920000000135},{"x":-2.804972799999973,"y":-0.6600952000000007},{"x":-2.60697980000009,"y":-0.6600952000000007},{"x":-2.60697980000009,"y":0.6598920000000135},{"x":-2.804972799999973,"y":0.6598920000000135}]} strokeWidth="0mm" isFilled hasStroke={false} />
 <fabricationnotepath route={[{"x":-3.101974999999811,"y":0.09890760000007504},{"x":-3.101974999999811,"y":-0.09911080000006223},{"x":-2.309977599999911,"y":-0.09911080000006223},{"x":-2.309977599999911,"y":0.09890760000007504},{"x":-3.101974999999811,"y":0.09890760000007504}]} strokeWidth="0mm" isFilled hasStroke={false} />
 <fabricationnotepath route={[{"x":3.1020257999999785,"y":0.09890760000007504},{"x":3.1020257999999785,"y":-0.09911080000006223},{"x":2.3100284000000784,"y":-0.09911080000006223},{"x":2.3100284000000784,"y":0.09890760000007504},{"x":3.1020257999999785,"y":0.09890760000007504}]} strokeWidth="0mm" isFilled hasStroke={false} />

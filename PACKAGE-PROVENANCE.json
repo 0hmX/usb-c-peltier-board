@@ -1,6 +1,6 @@
 {
-  "scope": "Static saved-PCB publication. The default preview reads the previously checked native capture directly. Regeneration source and routing algorithms are retained under a separate entry and explicit commands.",
-  "publicationSourceSha256": "aa003a0a1616ffbfa2b1f411e8ec04f41014b5ab9c858acf53ebd8a3c56c36f6",
+  "scope": "Source24 saved-PCB publication with silkscreen-only cleanup; routing algorithms, copper, pads, drills, placement and netlist preserved.",
+  "publicationSourceSha256": "4ff8766f0f1fe1f6fbd54a3b0fdc49d32a5280ea60b1557471dbce78f1dc50f2",
   "publicationSourceFileCount": 153,
   "sourceManifest": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "file": "captured-pcb/circuit.json",
-      "sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6"
+      "sha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2"
     },
     {
       "file": "index.tsx",
@@ -17,7 +17,7 @@
     },
     {
       "file": "package.json",
-      "sha256": "61af4b47a34cffe4794edbacfd96ac2413c4044af9b5f6f8f9703e1eb939cd10"
+      "sha256": "a3f335887e432bf4d3d19635e091e13eed649f236e1a534e39c41358a9f9a726"
     },
     {
       "file": "regenerate.config.ts",
@@ -25,7 +25,7 @@
     },
     {
       "file": "regenerate.tsx",
-      "sha256": "bcf3dfbe30e79e629dcd7c4b011f0b387ef6ce0035c625e5f8707df001e2b58c"
+      "sha256": "8a114a37d1995c7b0b2da1dd1df5b0a045a28041ceb40981928e4c0a9eb6d783"
     },
     {
       "file": "scripts/build-local.ts",
@@ -69,7 +69,7 @@
     },
     {
       "file": "src/blocks/control.tsx",
-      "sha256": "c040a438cbacd792afe7386ced4605ca861354576086e753fee6b2943c8d7b36"
+      "sha256": "19fa6c1a507631c7fc7c1a731c47efbbb47dfeddb5f4066a07cc3c21c2c51835"
     },
     {
       "file": "src/blocks/debug-data.ts",
@@ -77,15 +77,15 @@
     },
     {
       "file": "src/blocks/debug.tsx",
-      "sha256": "943cee7e6b75db625be729e45c2dd4430a3b3ad5c225939088d729297c6df058"
+      "sha256": "d9eb582739ae7d6b0f0aa8e8ae48bed68e9f63643a5766ba9f70da01954458c9"
     },
     {
       "file": "src/blocks/pd-input.tsx",
-      "sha256": "937a16582fbbe1c86d2a17be7e519431a2b180e59bdfaf5150997208e8e9108e"
+      "sha256": "d33db53737c560e5911439fb17789176acc7b051604ca8084fbf8a5199d38c45"
     },
     {
       "file": "src/blocks/tec-power.tsx",
-      "sha256": "6a100760cdee61ad68a88bbd27ea2cfec0c7a23e32eba47f0fd87e319b2f3304"
+      "sha256": "25cc6c5fed254dbf6199ef42d550f4183c876794e42f63f137ea75c2651450c8"
     },
     {
       "file": "src/bus-routing.tsx",
@@ -141,399 +141,399 @@
     },
     {
       "file": "src/parts/C10429.tsx",
-      "sha256": "a0705d3f689ec4f60116fad010e8c42726c005bcbd79f27f5984be5ec1d20eab"
+      "sha256": "3237406a93a5e5e1c70d284cac59f3f6771c18f7c4368fbe57f3b0b46dcdd37f"
     },
     {
       "file": "src/parts/C125094.tsx",
-      "sha256": "969d712e29335c76b32471753f757f29371eea9ace76400bee6979b25f71acaa"
+      "sha256": "906f9e594a9a135d361a0673dd6f539dba36ab24bc6ba5b18aa40b4637017353"
     },
     {
       "file": "src/parts/C12891.tsx",
-      "sha256": "b6c95cfc1af233f135e6352981ec197d44b7a531dae0e4602ce0492b3d9c905b"
+      "sha256": "9b6787a9fdc904b8f4d62aaa1bc298b7f7f5c50f8c6ef91378955ef9fdfe1d04"
     },
     {
       "file": "src/parts/C130910.tsx",
-      "sha256": "a22f35222a1fc98d5d94838fd2b389d3293ee23a7f2e9930f71f04aa9f5e0d5b"
+      "sha256": "76a0b6d3b0c8bc48b322a2c678af39b12caad0bea5237dd2f057429a9fa93d1a"
     },
     {
       "file": "src/parts/C131334.tsx",
-      "sha256": "8e535b614b2ae19c344f5b9aa3651c6a3a19e24e09a63bab89514c21a29a8ab3"
+      "sha256": "75c7f0a80a98cb080cddc67680a569d49839ecf4d7aa2d692f588186ce25d895"
     },
     {
       "file": "src/parts/C131337.tsx",
-      "sha256": "87e8d5ef622394a4206ccd69ee0fd32bf0e21f58b7c04d6f64e565e3961d1379"
+      "sha256": "e33296587ac1a78c2445c432f0ce0aca273e64ac658de57c676951d411ad89f4"
     },
     {
       "file": "src/parts/C132016.tsx",
-      "sha256": "375cfc5f51642980b7c0fb2a7232acb861b8250810f8740b353c16f103eee7a4"
+      "sha256": "9bc91387d302e2d483727e4f210780d65cf552155bf29b66b697cbad2a63b4b1"
     },
     {
       "file": "src/parts/C13585.tsx",
-      "sha256": "a713b542c4dc902bfa347468113c5c40dc507377386db16efcaeb62b0dacedfd"
+      "sha256": "1c6f4fad3ca6e07b611808a16ccbee8ee278358344b59b343b333d5ef0c101b7"
     },
     {
       "file": "src/parts/C138706.tsx",
-      "sha256": "c7fe859e7d0f4de7e523c9af3b1384eb6c154c647eb6b31fc9fc6f86af2eec54"
+      "sha256": "1f9530a24591c5e06af38c854784dd1e6b9cbbbb069a5170706974267875931b"
     },
     {
       "file": "src/parts/C144198.tsx",
-      "sha256": "741c062d776ee33b3ec43671c471bbef36ddfa6c144050278a56a64109fa7fce"
+      "sha256": "42434b7ffde8c5645d7f426ac104d9bf81a22f7efa172023392b5316f8945827"
     },
     {
       "file": "src/parts/C14663.tsx",
-      "sha256": "e22722b3bba7d1dfdde75b9567f27510f49c57d95b720e239d604ff8c5869100"
+      "sha256": "cd737b4142686a0926be9dd69957ae32de7d3716a8d34feb1f1cc6535817c164"
     },
     {
       "file": "src/parts/C14858.tsx",
-      "sha256": "6e4cafa4cbb5fb8165eae8b8d949dd99fb0da2886516d188b9387588350b9ea6"
+      "sha256": "799071e1711c6561087160958f210be2f3b4b101713e88762e4a8d9b3d671d23"
     },
     {
       "file": "src/parts/C15127.tsx",
-      "sha256": "5af8e36f42640f74c9597768f8ee241d91ac9b8c78621e402905510adc550f1d"
+      "sha256": "0ddf68232e031c4be225d477551f028ce64897ca6b34d5fb9701c0af5d1e8cca"
     },
     {
       "file": "src/parts/C158004.tsx",
-      "sha256": "4668124368146ebc953030e61f1b27a1ab9a5cf5dcb6b22102f4d5a4859d9cf3"
+      "sha256": "b18101a67ed005fc31c335a290c19e5bec75504952daad3068846099b0a2236a"
     },
     {
       "file": "src/parts/C15849.tsx",
-      "sha256": "fdb5d1c2d7bdb5314e284d8ed00c171f9ed86130e0b1a9ff8e3df7f9881027a6"
+      "sha256": "f1495de9ae2ab9a41d60348366deba9592ef8575c78feacebeb1e79e5edf5d26"
     },
     {
       "file": "src/parts/C1591.tsx",
-      "sha256": "dcf8971e2cad2b4d64d907709b4adf626a3d20385c1d424cbf24fcfbfe1632df"
+      "sha256": "8fc00f2fdf5ff99a366d7133392b4ac24b1cea443864cd66fef75f4b3d1893b0"
     },
     {
       "file": "src/parts/C1613.tsx",
-      "sha256": "247dded1a6f31411d6dd1c422f373f9759cde282ec75f124e35a75b3fe8a8708"
+      "sha256": "79dd87e5eda097c3e21c6ca23343a222af25cc975175b60f07c516e692156219"
     },
     {
       "file": "src/parts/C165948.tsx",
-      "sha256": "c1b1d0e1b7c62152f2cac677ea0e335dca872d59cc0523c5188cd6390037c4be"
+      "sha256": "88b7ad8fe8c8e4e9413ce872457a4c0873105c3ff885e15c6234fa1c58c81c59"
     },
     {
       "file": "src/parts/C167874.tsx",
-      "sha256": "f2c3450ab3f2f8dbe7b0c63c08b461f675c70a4665cc4cb952e17d16dcd6d684"
+      "sha256": "4e1953cffebf9fe0a0e7f1cc6c7c0fed3d22d2a1721a6eb3d7305741d0778243"
     },
     {
       "file": "src/parts/C179626.tsx",
-      "sha256": "2d2c29e02724ce566d12ddeb9829056390a67e05153a37caea90568dc8f55c05"
+      "sha256": "b22b7821a84608bf43b77319a282d0fa20228220686037e9ddbac1d8525ff981"
     },
     {
       "file": "src/parts/C18739.tsx",
-      "sha256": "83d011f4d185518f8c99b0d79b4e2b148e15d08086d092b0f227ba1832c6793f"
+      "sha256": "483a62c9da0a98753886b7e5d3caf07122dbda55c81bcdd19c7baed5bbadff5f"
     },
     {
       "file": "src/parts/C191884.tsx",
-      "sha256": "a677b2882707ad4650f4abadaa9157e172b88fd81c6bcb6963e9786845b2c5c7"
+      "sha256": "d044199f49738b4ccdbb5b4ed950804e146c135268f1bd5fdfab6875969ee25a"
     },
     {
       "file": "src/parts/C19270707.tsx",
-      "sha256": "bf8563664946d5a18ce904c3f1a3654b2a6928d77b297256499fd88ef8c59f20"
+      "sha256": "6b3d3403b9f0419e78be7107b880bb2316ec68cae60eada9541c0dcdf3c291e0"
     },
     {
       "file": "src/parts/C19270709.tsx",
-      "sha256": "3cb17c0e05fc55e7d98d069ed7179b03ae21a469a66040312a9a822fa399ccb8"
+      "sha256": "d3cb089f60d9406c13a6a02b76d3e9d62545e6cf5ff3f1d8bf772662ba3f9d77"
     },
     {
       "file": "src/parts/C19666.tsx",
-      "sha256": "ba0d6fadaa902b32330e0af12aa23d23103092cbef2d57652fac827da6a95200"
+      "sha256": "7a4e805980752fd280d2d2d10966ebc9e910a4acd909c6905b9d4ae5f62c77a3"
     },
     {
       "file": "src/parts/C20526.tsx",
-      "sha256": "3a7c56048f7615f01d1222862e5c75ba801d613d29ed541175f3840c67fd7106"
+      "sha256": "563534446badb3044a50f646bedb510bd381daddde2534c8f43953fc827947d0"
     },
     {
       "file": "src/parts/C20527.tsx",
-      "sha256": "29c58e8e19469111280c27ed3db1e9d11c68ef3dd329a8ee0ef7b4679fb32fca"
+      "sha256": "d765ca5332c9789b7f4f687539ae2eac00a11dd72c78063971b779963e67ba66"
     },
     {
       "file": "src/parts/C2071044.tsx",
-      "sha256": "c47c52a3304b1cc229074c48dbddd8ac76d52f9a461edcc5f0ad4302a700f53e"
+      "sha256": "1c36cec9e4edee4b2a8cc8a4a77fd36311076ec26ac0ad79f093c18d3ed56a4c"
     },
     {
       "file": "src/parts/C2071868.tsx",
-      "sha256": "d4e67e727506e8be2510df0b89ab0a3d104d830eee06be6603fa33c8ec830466"
+      "sha256": "78b0a4dd2ac1969ce807c2ba7a7b409218f73e84aff0809a2eb557cd29d71eff"
     },
     {
       "file": "src/parts/C21117.tsx",
-      "sha256": "358554b9a06183c721a94ff0e4fb4538aca96e541555f02a9d5a0d4e018774cf"
+      "sha256": "70af1b0745a416613d55cfb359c2e0303f0221f1ec15d61f188d460a31c7e2f0"
     },
     {
       "file": "src/parts/C21189.tsx",
-      "sha256": "a6ec13a9fe2b32505ae62500035e1ca0b97645af5a11ab8d302cce5a4710724f"
+      "sha256": "e2534188dac807dcb0b19ace83267cd60934da3f054e47259b1fe878926228f1"
     },
     {
       "file": "src/parts/C21190.tsx",
-      "sha256": "a9b3fbd81f554d7079ae3d12a2a5531d7d3f0b72b263d6975dbea3960a9535af"
+      "sha256": "7a700e9c289c9abc5ebfa0fda3f054915f81a2e6bcc5620ca3c80fe11172bea4"
     },
     {
       "file": "src/parts/C22809.tsx",
-      "sha256": "48ebef9f390df2a1b01745d1fe476fc8cae3b9ad9e7219d65fee141a1528d001"
+      "sha256": "71ec6aa36fe46daa573f55777b19fdecc6edd214b87174fcb02fa0e6a682b32b"
     },
     {
       "file": "src/parts/C22836.tsx",
-      "sha256": "09dc73b60f4f3f2702539501af33a2b5ea8f9edf388fc08ac4c845af454cf060"
+      "sha256": "f0e400ec6f7ce263a647da8aae3b2123856897142606ea7f57768378e6b7b067"
     },
     {
       "file": "src/parts/C22858.tsx",
-      "sha256": "9988c6d5d9f841c9555f49c60d830a305186d5b0bbc6ed963c10469eb262e0b0"
+      "sha256": "5ff92f4338cd796e61de043dd744f86dc60c130d0703b6581300cb3e2f666af2"
     },
     {
       "file": "src/parts/C22859.tsx",
-      "sha256": "2499c91d551ad9f22392aba1220931f2fb20454c80d75189f1bc7e768495280b"
+      "sha256": "c0ab629100ca5ccf0206fac54dde36734ef2c8706d366227da26a72b9a008b8a"
     },
     {
       "file": "src/parts/C22864.tsx",
-      "sha256": "5955f7e638933d63947deaa96878cea9b4468f3405a54baace8f3eb222376a12"
+      "sha256": "65b64c3c3a76627f577da13a1d7bb7504c84f8cfd92b0344ee866660c37151f8"
     },
     {
       "file": "src/parts/C22875.tsx",
-      "sha256": "fa00092a94bd0a8d9fcd69a8aea7701406805accf0392bd5a4960ebbfea04001"
+      "sha256": "e1d7bfd297ec50a29b72ca6223cc9141e823f551c931eb952e0c6a0b6165ce27"
     },
     {
       "file": "src/parts/C22890.tsx",
-      "sha256": "8a976ada7afa3f8d2f3e94d4a51f6c23fb3dcafe757cd2dd5be97b2df2755de9"
+      "sha256": "0db4da4bd52dd54451fc95260a4f0d7bbd0236e3bc9cdd8ca76e8c0b8f3acbd5"
     },
     {
       "file": "src/parts/C22908.tsx",
-      "sha256": "e2339ad54ff382ad49a410ae6f5dd7257687198c18bce85caf905535d045d18a"
+      "sha256": "fcc54f1509066fe4605371b25efe2b4998ee972f472bab9e8d8b6abd66f3f11a"
     },
     {
       "file": "src/parts/C22939.tsx",
-      "sha256": "353af0347f9cc4727100607deec87ad9e363f40ca277c057d90d9f1c112e8afe"
+      "sha256": "a636712057c6ed29bae813d14bee8773a08b76435d1f8a0f6fe4379b36f5f2e0"
     },
     {
       "file": "src/parts/C22962.tsx",
-      "sha256": "9b191492e4ea5e60f9e100f93c3d028f5d8d36ccd9c4e46a728dcf831149f98f"
+      "sha256": "30a251ed95d9e106bad8c3882587aa5b8e2e331512cfa4c1647091960c097a20"
     },
     {
       "file": "src/parts/C22964.tsx",
-      "sha256": "e48efd4ea76c97773954ee43f0a551c1a0f3ea650eaa884b62bb6ce0a7124f2c"
+      "sha256": "8699b1b484a32b9f7c77808ed13b5adac7abc05f3528c68a228350a6c94951fa"
     },
     {
       "file": "src/parts/C23003.tsx",
-      "sha256": "e05caa5715bd80699810589fd1768589d59b4bfeb32a1b2df4e21a5677ed0cca"
+      "sha256": "e0d7273c68c8bf41e898e534554f9612f91d7e9c802b1fe9a5ba86cd620f65f5"
     },
     {
       "file": "src/parts/C23068.tsx",
-      "sha256": "35f08825e570dad72e53fa02da4b5be2733d8c28de8a090d1d83e9e03ea9ccf4"
+      "sha256": "4f700aa8101cdd80014ef413c84c8116458f42b6a891415277ec5ee3358646db"
     },
     {
       "file": "src/parts/C23080.tsx",
-      "sha256": "1bed60da412d6f2cc17e0492a5878ae34564ede3f5e672fbe29e24226c716bd9"
+      "sha256": "c7b5540c3d6690fc4679b5ae9adbc12f8d65dc94ea58d27960bca35739cfb760"
     },
     {
       "file": "src/parts/C23091.tsx",
-      "sha256": "850ba115a93e858b55636730acdac544cbc3fd9f820d19dbf9da1e7ce3e03ef2"
+      "sha256": "fbde6a2f7d63191a3f4fd6ba0a2fa4122061ab9e07ab18cb87b54aa59e680b09"
     },
     {
       "file": "src/parts/C23138.tsx",
-      "sha256": "0f3d819d6862b02e9eb0715da42c6ecd4e673ec4656dc4877fd9361fefe1c5ae"
+      "sha256": "67139ed350fd54cc78d92a70cc16a27e657767fdcb02480cc590e3d7ef7f5d70"
     },
     {
       "file": "src/parts/C23162.tsx",
-      "sha256": "906e5702e41de4f649905804192f14d54765e52d52fd55077535231dd815efc2"
+      "sha256": "a2b77cdfe6fc39271fcca5222abababdee2bc02023e028884d288f2c98264ec8"
     },
     {
       "file": "src/parts/C23186.tsx",
-      "sha256": "2ee08dd185803ed490e7a8956be2bc361ba08cf1742f5ff75ba08fdc144dc1d2"
+      "sha256": "104de248710d78ce53b05fd0e267dede50d19844394f2115496a05675144e455"
     },
     {
       "file": "src/parts/C23242.tsx",
-      "sha256": "111625a70e8376299dccfae06dd0c2b4e97ea64b2ca3938a5c28c181b8fa2afb"
+      "sha256": "027af1f9d07a9b9eeb3bef283181a98a2b2e5cffd91a711112288aeb0664c7db"
     },
     {
       "file": "src/parts/C23251.tsx",
-      "sha256": "9117f181f1038f676acc47449081440ffdc216de4093e21e0add3148388e433a"
+      "sha256": "565df1f356f791306d5d2ac6612f910340cd0ab189461d0e346e13b02a610f89"
     },
     {
       "file": "src/parts/C237304.tsx",
-      "sha256": "e44b6f6f5cbe96e76802d1425d3a246cef5536b3156b03ab4e048c104559b7a5"
+      "sha256": "6f1c518795c438956e6b5755188ccb006e0452f1622169d4cf15d8c09540ef8f"
     },
     {
       "file": "src/parts/C2480.tsx",
-      "sha256": "abaf6abc89b664fe34823c46c5cef58c14d0660291e8a19a2c1a250af02a6118"
+      "sha256": "ea908cd74fddf35cdaaa9e94970270b8c345d78be7afd0d748e2467437b93975"
     },
     {
       "file": "src/parts/C25803.tsx",
-      "sha256": "c3ba5598ebfff925a7da5be3e7447c8528a41a5440e8c7a2ef99711d9ccf5edd"
+      "sha256": "b7065bcecf6fb49a1b663e8aa2a37c779b8a4fb866e89b5ec1f4874dfe8dd761"
     },
     {
       "file": "src/parts/C25819.tsx",
-      "sha256": "cf30aa3c8fe28ecf19f5043113f08748faddb47e2daf2f9f46c46e020758ceb3"
+      "sha256": "039ca9915b12116b44f114f497150d26856a8b5d8c309da571b953df43e99640"
     },
     {
       "file": "src/parts/C25954.tsx",
-      "sha256": "2486878ecffb54e95f2cddcd0c2c5f12528e21ab0738424a06eda224ccc78479"
+      "sha256": "8f55632fced264b2285b1437a20a41c41ecae9ffd98a95c9484fc328cb99b5e3"
     },
     {
       "file": "src/parts/C2678061.tsx",
-      "sha256": "fdc72c2056d91739ce15ed01a8f07d268d68cbc09a3d22239417735cc1934c58"
+      "sha256": "727a379e257a6efbb2cbf5abb7789473107e2967cda433da8e7b5c849c0b0870"
     },
     {
       "file": "src/parts/C2762602.tsx",
-      "sha256": "e77d456f2a18289cbfae49f894e4fb1bc46e95068fabfed771773f0eb27546bc"
+      "sha256": "9cf5965c9328acab286b8deeeb707df949a342045dd6c7c09b8c9c296ef6758f"
     },
     {
       "file": "src/parts/C28323.tsx",
-      "sha256": "7a04250b38a0f4a7875ee0043ffa1f30fa9dd45e371c0f1260bcf1b97ae38c50"
+      "sha256": "2c3cade688993197ab6f43673d8017c4c8f00830fd3717772c2c2ca4bc87ab8b"
     },
     {
       "file": "src/parts/C2906982.tsx",
-      "sha256": "8283c3ae1116b50ff5e2ae0a32b8e612164481da6ee5e75ed1e8d62993724d4b"
+      "sha256": "4387efb28450c2b916eb7050869b6c55b6d9545ae93a5852dcd28c7414db53c3"
     },
     {
       "file": "src/parts/C2930048.tsx",
-      "sha256": "d8519d384dd707e1a355967c39a02a744155a4c3c7ac32e1e85ae4ea5408f7a0"
+      "sha256": "c13503781cc5d7ccecb8a16aa5094da2dd90fbdd3c5fff0c207c670662766fbe"
     },
     {
       "file": "src/parts/C2933140.tsx",
-      "sha256": "c6881a50eba137e4c66144c05317a8eb9e716872dd4c069c0f8c394ad7109767"
+      "sha256": "dc47f64748f52d247d8770eb982e36652fb5febf72048189c7a344375938d9a0"
     },
     {
       "file": "src/parts/C2933200.tsx",
-      "sha256": "ed12aebc5aff4d5f446b9ef4e65605e355b0b92e214b0e5441ad33356b1987c2"
+      "sha256": "f14756918ed5d4d44b605cb1bf33ef409ad4efd2c30fc8173431a6b1b2f4f64f"
     },
     {
       "file": "src/parts/C29823.tsx",
-      "sha256": "245aeaec02f027573f14730d854ac11939eb62e1bdee42d8442f039b28d5ec41"
+      "sha256": "21608db048834ad6832d0c37aff91fbf4a9ae81f7ec86ed8405b12185ce835fa"
     },
     {
       "file": "src/parts/C2984759.tsx",
-      "sha256": "0c3972fd6eeb869342b282e7968289520c2fd05ae116ca00742dd35c6224be9a"
+      "sha256": "aff07e6ebbdad63f3616eada276ce7c663616ebe726046046542796fe64f7aaf"
     },
     {
       "file": "src/parts/C309062.tsx",
-      "sha256": "7d6231e07eaa33da19ec2c871f7f829c46f46fd3a807b26f8db15557abc8dca7"
+      "sha256": "01a2562da19c2f3dbc3c098ed2d6c4da778c28f91bf71e18249b7d46aa87c604"
     },
     {
       "file": "src/parts/C31850.tsx",
-      "sha256": "6c8cee164c65b17c7bb0c62542536f1d7130d7af06425d3c786f5e3954752cfb"
+      "sha256": "6e1d34ee57e60085aa82958f18799a65dde2b73acfc2b706c34b9dd2ebf8e3d7"
     },
     {
       "file": "src/parts/C3662799.tsx",
-      "sha256": "c490bfbd659f5155a9739cdfb309871c659c7a135a27593a9271bbce4f6b3eb4"
+      "sha256": "fbc3f525028352a4cb218aa0ce98ff483745bc6958268825db981ba45996f9de"
     },
     {
       "file": "src/parts/C377773.tsx",
-      "sha256": "d9975ba01b4b6b1842ce81c0cff55a96ace553d50b4436cad22af53997119d8a"
+      "sha256": "73b838a04e250086b546fa84a45b5b655104afdc878c20012010dc37983b4830"
     },
     {
       "file": "src/parts/C380537.tsx",
-      "sha256": "ad024969f4c6498713e5bffbb906275934c6f3ec720574baf5dae756dff914d4"
+      "sha256": "6b51cc4f4aa2538b50f06c01835e391981503479ab2f89c230c786256e9df6b7"
     },
     {
       "file": "src/parts/C397609.tsx",
-      "sha256": "f6e5e3f9ed8a571aff2ba638ee80fb1bee8273360c9709079af7822c0be2a0c0"
+      "sha256": "4c834c6df6c43209086bb6e970e84f4eb218b79dedcad998894a8e8c42882583"
     },
     {
       "file": "src/parts/C4184.tsx",
-      "sha256": "49455b1884d21ca4f35d3aa46e7699de6dfa65569e469ac912e46251ea0431b9"
+      "sha256": "f0aa7e2d3ddf7b565e3c93f137a50c6c754fc26ecf2bf49ba8a0086b60d361be"
     },
     {
       "file": "src/parts/C45783.tsx",
-      "sha256": "f67e3478dfcbe9b2c7e7d4dd0fdb4d30a201926a64c21fec237b08f2967e1f23"
+      "sha256": "af9e3de2f86dace15ed130b5f11c35be2c31a47d6fcbb33367da8e0c8b182140"
     },
     {
       "file": "src/parts/C466636.tsx",
-      "sha256": "68835166f727f40bd3a84824c0b074aac0c8c9e6fd13b86e145386017704f6dd"
+      "sha256": "dc5b728d79227f1ea8cf4b530185b6fdf0bc7c3323d99c67e34e18a08635a7b0"
     },
     {
       "file": "src/parts/C474881.tsx",
-      "sha256": "7182ebb0640c01dcb998b6648d54569b90a0b1134410669fb6741f8dd86b78c5"
+      "sha256": "701ef93107665a477a53ed96d8494360c5bf9794a7ca3e0a2ec5af8f90f60400"
     },
     {
       "file": "src/parts/C49073699.tsx",
-      "sha256": "2f22f78cf3f5b237cbf3b0521b59b9ad2d19f2835491a7aea091f072b1a77c01"
+      "sha256": "2a8a8a4260df6a9022a4c5d50e0e702653ab9cad646cd89fe25ea70b99aa2ccf"
     },
     {
       "file": "src/parts/C497873.tsx",
-      "sha256": "63465319bdb139b03f7c4cbbabf319ff0c9eed67a492e2a3f66f62d6697a4edf"
+      "sha256": "11e2419e448b6a74cde1f28659c110c2bd9d5125d9cc42b7d8d486086114ed42"
     },
     {
       "file": "src/parts/C51205.tsx",
-      "sha256": "0d70d3337d7095222f52ab0085502200b509ff9617c65d1fd85c1243869d15a6"
+      "sha256": "5faca1eac5178aa1294a073704d5a186aa313657a523b6b151ea345c3936c081"
     },
     {
       "file": "src/parts/C513643.tsx",
-      "sha256": "2e9da33ba73b67e7d1096b89aa0b22d77431d58d9a747085c019f178246c0ce9"
+      "sha256": "ec5750650568d816a47762434443ee197cff64b262be6cbdcba2b53c9d723b30"
     },
     {
       "file": "src/parts/C52306.tsx",
-      "sha256": "2d91a3cce5ded5c794f5d10283ba05a2125c6914514e3ef6db5c4dd0e68c3f56"
+      "sha256": "3479dc8ba3b4feebb9a517bae1cfdbfff30d838b32bf303f4967e1ed4e4fc8de"
     },
     {
       "file": "src/parts/C53987.tsx",
-      "sha256": "1c2f26c1aaaa2464eb3be7c31e68354f5dcdcc04a7473fba7d18a24d98675766"
+      "sha256": "780b10ccd02a32cab492d72e92f4f8019ff9189283a93f599999efe314fd97be"
     },
     {
       "file": "src/parts/C54315.tsx",
-      "sha256": "377a43978fc864f5ede0cece4d954fb0c533e22751af2c1b9d557ab106d656df"
+      "sha256": "e92ad2c39352a45a937fcef4bb3d57251e0156aecbd4142b1a71f2e500e1299e"
     },
     {
       "file": "src/parts/C57112.tsx",
-      "sha256": "b76c72118dc35e876b8fc47d67a5ffc10201154eff0fac36982f3108cc4ef366"
+      "sha256": "95733a82d1dfd691271c235ed0b03f4725227f2166aec3b9807131f30f8fdf1c"
     },
     {
       "file": "src/parts/C576517.tsx",
-      "sha256": "a6a1c3fb14eb65f689543c9a16b8cc293c65579bfad56bb9f05bb8cf1667dc88"
+      "sha256": "365e5dae807522088982c17b3b6605b3c37a01a1828339681d62c47a86a0a64c"
     },
     {
       "file": "src/parts/C5824006.tsx",
-      "sha256": "eb7542ee0f71d05c1ab5fb3678d33ce99565b97df3455167434cecbacb83c3f1"
+      "sha256": "f0658a001417236f4be1a217a0dd4823ba97ea66d9a00a83c768e345014c55e4"
     },
     {
       "file": "src/parts/C602037.tsx",
-      "sha256": "0823fbb002eec64137ec6336e290d536ff1e5ccead75b8c554a09c54a2c95cca"
+      "sha256": "ccb9be088934f8c6341f620698f16b27bc9c52c2d074e70f7f96bbe9b6cac5f3"
     },
     {
       "file": "src/parts/C64705.tsx",
-      "sha256": "09f6ce0e240bf5de53265c8c2963701b96c909843a94840700dc8cba0acde371"
+      "sha256": "67600c75e7f3a556d34626b90de2e00b9f9e584db582bc6d033c918a6f67bfff"
     },
     {
       "file": "src/parts/C671324.tsx",
-      "sha256": "30e078952fc74afe359ae2b780561b80e54fdbc1e5a3102935e5c25154f78162"
+      "sha256": "367a036ca2290e1640d59ce74d59a840c62bc12d884ee46db5f15e413c433583"
     },
     {
       "file": "src/parts/C70285.tsx",
-      "sha256": "f669cdbe0ac2b332c9cefba63858c37aeadeda992d705056aec286a83a11f75f"
+      "sha256": "ba75876d6defb56881b9e0a7c31c1b0c369153b387dab56cd958d61b66c02895"
     },
     {
       "file": "src/parts/C724040.tsx",
-      "sha256": "498cf56c2b7470deec3b82af59e3c7e04720169fe2d089388911a5e0b3397bcf"
+      "sha256": "7117813bc11e8097de9f66307bd98350aa2f320c7723d12efef0a3d6f75a5ad9"
     },
     {
       "file": "src/parts/C7420354.tsx",
-      "sha256": "5374ea9b3b9ccac20818dd4b11080ccc36bb770a56d1a1c7e6e13c30eb4f9960"
+      "sha256": "46bca8d45c9dc9241903aa9849d6b470a6b8803931848e1f4d4aef69e83a4080"
     },
     {
       "file": "src/parts/C76589.tsx",
-      "sha256": "f14f4aef221c112d6ed83ad5422a9e3513e4230b029dbf2115f8cf63ba663005"
+      "sha256": "66c86fbb0c25b67318e37f33f9b2130d7ab6a6e222e1bdf438f74bc121086e23"
     },
     {
       "file": "src/parts/C780769.tsx",
-      "sha256": "21696c6609f9b2c00d638248d7c5fa1a4f7201b81d5f850ef483a2abeadda311"
+      "sha256": "8df99b652ae8dff626718f460de00b076a84918565323fbbf49da550e93d7e91"
     },
     {
       "file": "src/parts/C7984.tsx",
-      "sha256": "0a26cf2dc34da439bff8c2664b69af30b2ab4102b8789f660763b39a01299583"
+      "sha256": "a446b6ba31632a2184c8ef90f87cec77485f8125b2a101884cd8633b7406723d"
     },
     {
       "file": "src/parts/C8545.tsx",
-      "sha256": "6bf1ae475ef18cf11fc4210c64dbd1d51211135a6c00c7ac8c0fcdb0f999c1d1"
+      "sha256": "c46045d4a7c1ac33cac01c4c15700f7a1b3ee24c622512db0ce25687b9958806"
     },
     {
       "file": "src/parts/C8591.tsx",
-      "sha256": "81ad6fd2e692a8c8bf5b04ccf155be66187c6ce39979b5cf786e01cbbc194839"
+      "sha256": "e2ecc8b216c1a8ac2a6950a35ac0cb8d2668783dc15e35951f9b7e46cc3ecafe"
     },
     {
       "file": "src/parts/C916375.tsx",
-      "sha256": "83825cae5681a1a507c785b000a2e0f1709ad0e3885b2048b9f9ad59b971b429"
+      "sha256": "7cec3c535cc0412689cd033d5f7bc9514568bf34aebb9c39bcc6b24b1b5f9f79"
     },
     {
       "file": "src/parts/C94869.tsx",
-      "sha256": "76377293a01c27b32a4d9af4bf8f5872226ae8ecd97135a38abd17e40903c33d"
+      "sha256": "10528cd9af3b0bbba7ef7b88e34a58a91817f94996af72c0f840ff73e2eec334"
     },
     {
       "file": "src/parts/catalog.tsx",
@@ -616,7 +616,7 @@
       "sha256": "032385c9ae59c94ff291d0075011cb535bfa7819f78b7e04c895a80838494db8"
     }
   ],
-  "savedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
   "capturedRoutingSourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
   "capturedRuntimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
   "originalRoutingProvenance": "docs/source24-routing-provenance.json",
@@ -629,9 +629,119 @@
     "index.tsx",
     "captured-pcb/circuit.json"
   ],
-  "unchangedImportedPartFiles": 105,
-  "unchangedRoutingSourceFiles": true,
-  "verification": "publication-checks/static-preview.json",
+  "unchangedImportedPartFiles": 6,
+  "unchangedRoutingSourceFiles": false,
+  "verification": "publication-checks/silkscreen-cleanup.json",
   "hardwareBenchValidated": false,
-  "manufacturingAccepted": false
+  "manufacturingAccepted": false,
+  "originalSavedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "routingAlgorithmsUnchanged": true,
+  "changedSourceFiles": [
+    "captured-pcb/circuit.json",
+    "package.json",
+    "regenerate.tsx",
+    "src/blocks/control.tsx",
+    "src/blocks/debug.tsx",
+    "src/blocks/pd-input.tsx",
+    "src/blocks/tec-power.tsx",
+    "src/parts/C10429.tsx",
+    "src/parts/C125094.tsx",
+    "src/parts/C12891.tsx",
+    "src/parts/C130910.tsx",
+    "src/parts/C131334.tsx",
+    "src/parts/C131337.tsx",
+    "src/parts/C132016.tsx",
+    "src/parts/C13585.tsx",
+    "src/parts/C138706.tsx",
+    "src/parts/C144198.tsx",
+    "src/parts/C14663.tsx",
+    "src/parts/C14858.tsx",
+    "src/parts/C15127.tsx",
+    "src/parts/C158004.tsx",
+    "src/parts/C15849.tsx",
+    "src/parts/C1591.tsx",
+    "src/parts/C1613.tsx",
+    "src/parts/C165948.tsx",
+    "src/parts/C167874.tsx",
+    "src/parts/C179626.tsx",
+    "src/parts/C18739.tsx",
+    "src/parts/C191884.tsx",
+    "src/parts/C19270707.tsx",
+    "src/parts/C19270709.tsx",
+    "src/parts/C19666.tsx",
+    "src/parts/C20526.tsx",
+    "src/parts/C20527.tsx",
+    "src/parts/C2071044.tsx",
+    "src/parts/C2071868.tsx",
+    "src/parts/C21117.tsx",
+    "src/parts/C21189.tsx",
+    "src/parts/C21190.tsx",
+    "src/parts/C22809.tsx",
+    "src/parts/C22836.tsx",
+    "src/parts/C22858.tsx",
+    "src/parts/C22859.tsx",
+    "src/parts/C22864.tsx",
+    "src/parts/C22875.tsx",
+    "src/parts/C22890.tsx",
+    "src/parts/C22908.tsx",
+    "src/parts/C22939.tsx",
+    "src/parts/C22962.tsx",
+    "src/parts/C22964.tsx",
+    "src/parts/C23003.tsx",
+    "src/parts/C23068.tsx",
+    "src/parts/C23080.tsx",
+    "src/parts/C23091.tsx",
+    "src/parts/C23138.tsx",
+    "src/parts/C23162.tsx",
+    "src/parts/C23186.tsx",
+    "src/parts/C23242.tsx",
+    "src/parts/C23251.tsx",
+    "src/parts/C237304.tsx",
+    "src/parts/C2480.tsx",
+    "src/parts/C25803.tsx",
+    "src/parts/C25819.tsx",
+    "src/parts/C25954.tsx",
+    "src/parts/C2678061.tsx",
+    "src/parts/C2762602.tsx",
+    "src/parts/C28323.tsx",
+    "src/parts/C2906982.tsx",
+    "src/parts/C2930048.tsx",
+    "src/parts/C2933140.tsx",
+    "src/parts/C2933200.tsx",
+    "src/parts/C29823.tsx",
+    "src/parts/C2984759.tsx",
+    "src/parts/C309062.tsx",
+    "src/parts/C31850.tsx",
+    "src/parts/C3662799.tsx",
+    "src/parts/C377773.tsx",
+    "src/parts/C380537.tsx",
+    "src/parts/C397609.tsx",
+    "src/parts/C4184.tsx",
+    "src/parts/C45783.tsx",
+    "src/parts/C466636.tsx",
+    "src/parts/C474881.tsx",
+    "src/parts/C49073699.tsx",
+    "src/parts/C497873.tsx",
+    "src/parts/C51205.tsx",
+    "src/parts/C513643.tsx",
+    "src/parts/C52306.tsx",
+    "src/parts/C53987.tsx",
+    "src/parts/C54315.tsx",
+    "src/parts/C57112.tsx",
+    "src/parts/C576517.tsx",
+    "src/parts/C5824006.tsx",
+    "src/parts/C602037.tsx",
+    "src/parts/C64705.tsx",
+    "src/parts/C671324.tsx",
+    "src/parts/C70285.tsx",
+    "src/parts/C724040.tsx",
+    "src/parts/C7420354.tsx",
+    "src/parts/C76589.tsx",
+    "src/parts/C780769.tsx",
+    "src/parts/C7984.tsx",
+    "src/parts/C8545.tsx",
+    "src/parts/C8591.tsx",
+    "src/parts/C916375.tsx",
+    "src/parts/C94869.tsx"
+  ]
 }
