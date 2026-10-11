@@ -1,0 +1,16 @@
+{
+  "padHeadContactAreaMm2": 0.11853685152548682,
+  "barrelTailContactAreaMm2": 0.045785627594026095,
+  "nativeTraceId": "saved_phase_null_0_6",
+  "nativePadId": "pcb_smtpad_98",
+  "nativeViaId": "pcb_via_381",
+  "barrelLayers": [
+    "top",
+    "inner1",
+    "inner2",
+    "bottom"
+  ],
+  "planarLengthMm": 1.2230865786510154,
+  "passed": true,
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6"
+}

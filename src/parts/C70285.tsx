@@ -45,7 +45,6 @@ export const SN74LVC1G74DCUR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.15,"y":-1.20},{"x":-0.2824,"y":-1.20}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-0.2824,"y":-1.20},{"x":0.3326,"y":-1.20}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="1.67005mm" pcbY="-1.35mm" radius="0.143256mm" />
-<silkscreentext text="{NAME}" pcbX="0.040894mm" pcbY="2.08839mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.225,"y":1.6},{"x":2.225,"y":1.6},{"x":2.225,"y":-1.6},{"x":-2.225,"y":-1.6},{"x":-2.225,"y":1.6}]} />
       </footprint>}
       cadModel={{

@@ -1,7 +1,6 @@
 import { Fragment } from "react"
 import { C, Npn, R, Stusb4500, Tps259470, TwoN7002, UsbC } from "../parts"
 import { attachLogicSupplyInner2Port } from "../logic-supply-links"
-import { attachInputDvdtInner1Port } from "../source20-routes"
 import { attachSource22ExistingViaLayers, source22SameOwnedPdGroundTraceProps, source22SameOwnedPdGroundViaProps } from "../source22-routes"
 
 const N = (name: string) => `net.${name}`
@@ -74,8 +73,8 @@ const capacitors: readonly Passive[] = [
   ["C_PD_1V2", "1uF", -30, 10, 90, "PD_1V2", "GND", -32, 12],
   ["C_PD_2V7", "1uF", -30, 4, 90, "PD_2V7", "GND", -30, 7],
   ["C_USB_IN", "1uF", -39, 19, 0, "VBUS_RAW", "GND", -33, 20],
-  ["C_INPUT_DVDT", "3.3nF", -22.5, 15.5, 90, "INPUT_DVDT", "GND", -5, 9],
-  ["C_INPUT_OUT", "1uF", -20, 30, 90, "VBUS_TEC", "GND", -3, 20],
+  ["C_INPUT_DVDT", "3.3nF", -13.05, 16.3, 90, "INPUT_DVDT", "GND", -5, 9],
+  ["C_INPUT_OUT", "1uF", -16, 17.7, 0, "VBUS_TEC", "GND", -3, 20],
 ]
 
 // Intentionally NC: USB data/SBU, STUSB unused status outputs, eFuse AUXOFF and ITIMER.
@@ -110,6 +109,7 @@ const wires: readonly (readonly [string, string, string, number?])[] = [
  */
 export function PdInput() {
   return <>
+    <silkscreentext text="USB-C" pcbX={-45} pcbY={21} fontSize={1.7} />
     <UsbC name="J_USB" pcbX={-45.11557} pcbY={12} pcbRotation={270} schX={-37} schY={12} />
     {usbGroundReturns.map(([pin, pcbX, pcbY]) => <Fragment key={`USB_GND_${pin}`}>
       <via name={`USB_GND_${pin}_VIA`} pcbX={pcbX} pcbY={pcbY} holeDiameter={0.3} outerDiameter={0.7}
@@ -166,12 +166,22 @@ export function PdInput() {
       ], origin: { x: -18, y: 15 } })} />
     <trace name="INPUT_FAULT_CONTINUATION" from="INPUT_FAULT_ESCAPE_VIA.top" to="net.INPUT_FAULT_N" thickness={0.2} />
     <via name="INPUT_DVDT_ESCAPE_VIA" pcbX={-15.7} pcbY={13.8} holeDiameter={0.3} outerDiameter={0.7}
-      fromLayer="top" toLayer="bottom" connectsTo="net.INPUT_DVDT" tented {...{ ref: attachInputDvdtInner1Port }} />
-    <trace name="INPUT_SLEW" from="U_INPUT.pin7" to="INPUT_DVDT_ESCAPE_VIA.top" thickness={0.2}
+      fromLayer="top" toLayer="bottom" connectsTo="net.INPUT_DVDT" tented {...{ ref: attachLogicSupplyInner2Port }} />
+    <via name="INPUT_DVDT_CAP_VIA" pcbX={-13.05} pcbY={14.6} holeDiameter={0.3} outerDiameter={0.7}
+      fromLayer="top" toLayer="bottom" connectsTo="net.INPUT_DVDT" tented {...{ ref: attachLogicSupplyInner2Port }} />
+    <trace name="INPUT_SLEW" from="U_INPUT.pin7" to="INPUT_DVDT_ESCAPE_VIA.top" thickness={0.2} maxLength={1.7}
       pcbPathRelativeTo="U_INPUT.pin7" pcbPath={localPath({ path: [
         "U_INPUT.pin7", { x: -16.5, y: 14.3 }, { x: -16, y: 13.8 }, "INPUT_DVDT_ESCAPE_VIA.top",
       ], origin: { x: -18, y: 15 } })} />
-    <trace name="INPUT_DVDT_CONTINUATION" from="INPUT_DVDT_ESCAPE_VIA.top" to="net.INPUT_DVDT" thickness={0.2} />
+    <trace name="INPUT_DVDT_FULL_TRUNK" from="INPUT_DVDT_ESCAPE_VIA.inner2" to="INPUT_DVDT_CAP_VIA.inner2" thickness={0.2} maxLength={3}
+      pcbPathRelativeTo="INPUT_DVDT_ESCAPE_VIA.inner2"
+      pcbPath={["INPUT_DVDT_ESCAPE_VIA.inner2", { x: 1.85, y: 0 }, "INPUT_DVDT_CAP_VIA.inner2"]} />
+    <trace name="INPUT_DVDT_CAP_ESCAPE" from="INPUT_DVDT_CAP_VIA.top" to="C_INPUT_DVDT.pin1" thickness={0.2} maxLength={1}
+      pcbPath={["INPUT_DVDT_CAP_VIA.top", "C_INPUT_DVDT.pin1"]} />
+    <via name="INPUT_DVDT_GND_VIA" pcbX={-13.05} pcbY={18} holeDiameter={0.3} outerDiameter={0.7}
+      fromLayer="top" toLayer="bottom" connectsTo="net.GND" tented />
+    <trace name="INPUT_DVDT_LOCAL_GROUND" from="C_INPUT_DVDT.pin2" to="INPUT_DVDT_GND_VIA.top" thickness={0.2} maxLength={1}
+      pcbPath={["C_INPUT_DVDT.pin2", "INPUT_DVDT_GND_VIA.top"]} />
     <Npn name="Q_PD_INHIBIT" pcbX={-19.5} pcbY={9} schX={-13} schY={12} />
     <TwoN7002 name="Q_INPUT_HIGH" pcbX={-13.5} pcbY={12} schX={0} schY={12} />
     {/* Ground enters the common exposed pad and exits through grounded pin10,
@@ -255,12 +265,10 @@ export function PdInput() {
         { x: -31, y: 12.3 }, { x: -19.5, y: 12.3 }, ...transfer(-18.7, 11.5, "bottom", "top"),
         { x: -17.75, y: 12.45 }, "U_INPUT.pin6",
       ], origin: { x: -28, y: 17.5 } })} />
-    <trace name="PD_PROTECTED_BYPASS_FEED" from="C_INPUT_OUT.pin1" to="U_INPUT.pin6" thickness={0.25}
+    <trace name="PD_PROTECTED_BYPASS_FEED" from="C_INPUT_OUT.pin1" to="U_INPUT.pin6" thickness={0.25} maxLength={3.2}
       pcbPathRelativeTo="C_INPUT_OUT.pin1" pcbPath={localPath({ path: [
-        "C_INPUT_OUT.pin1", { x: -19.72, y: 29 }, ...transfer(-18.6, 29, "top", "bottom"),
-        { x: -16.6, y: 27 }, { x: -16.6, y: 13.6 }, ...transfer(-15.8, 12.8, "bottom", "top"),
-        { x: -17.75, y: 12.8 }, "U_INPUT.pin6",
-      ], origin: { x: -20, y: 30 }, rotation: 90 })} />
+        "C_INPUT_OUT.pin1", { x: -16.8, y: 17.7 }, { x: -17.75, y: 16.75 }, "U_INPUT.pin6",
+      ], origin: { x: -16, y: 17.7 } })} />
     {resistors.map(([name, resistance, pcbX, pcbY, pcbRotation, a, b, schX, schY]) => <Fragment key={name}>
       <R key={name} name={name} resistance={resistance} partId={name === "R_PD_VS" ? "C513643" : name === "R_PD_DISCH" ? "C54315" : undefined} pcbX={pcbX} pcbY={pcbY} pcbRotation={pcbRotation} schX={schX} schY={schY} />
       <trace name={`${name}_A`} from={`.${name} > .pin1`} to={pdV3Vias[name] ? `${pdV3Vias[name]}.top` : N(a)}

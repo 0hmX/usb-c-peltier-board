@@ -26,7 +26,6 @@ export const BAT54A_215 = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.8586978000000727,"y":1.65},{"x":-0.8586978000000727,"y":1.65},{"x":-0.8586978000000727,"y":0.7}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.8586978000000727,"y":-1.65},{"x":-0.8586978000000727,"y":-1.65},{"x":-0.8586978000000727,"y":-0.7}]} />
 <silkscreencircle pcbX="0mm" pcbY="-0.95mm" radius="0.075mm" strokeWidth="0.15mm" />
-<silkscreentext text="{NAME}" pcbX="0.0635mm" pcbY="2.524mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.87,"y":1.75},{"x":1.87,"y":1.75},{"x":1.87,"y":-1.75},{"x":-1.87,"y":-1.75},{"x":-1.87,"y":1.75}]} />
       </footprint>}
       cadModel={{

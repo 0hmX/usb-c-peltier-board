@@ -83,7 +83,6 @@ export const STUSB4500QTR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.737359999999967,"y":-2.1501353999999537},{"x":-2.137384599999905,"y":-2.1501353999999537},{"x":-2.137384599999905,"y":-1.750085399999989}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":2.1628099999998085,"y":-1.750085399999989},{"x":2.1628099999998085,"y":-2.1501353999999537},{"x":1.7627599999999575,"y":-2.1501353999999537}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="-2.4mm" pcbY="-2.4mm" radius="0.1mm" />
-<silkscreentext text="{NAME}" pcbX="-0mm" pcbY="3.343404mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.599995300000046,"y":2.599995300000046},{"x":2.5999953000001597,"y":2.599995300000046},{"x":2.5999953000001597,"y":-2.599995300000046},{"x":-2.599995300000046,"y":-2.599995300000046},{"x":-2.599995300000046,"y":2.599995300000046}]} />
       </footprint>}
       cadModel={{

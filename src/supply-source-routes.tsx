@@ -809,9 +809,9 @@ export const supplySourceSpans = [
     "name": "SUPPLY_V3_MST29_0_SPAN_1",
     "net": "V3V3",
     "from": "SUPPLY_V3_MST29_0_VIA_0.inner2",
-    "to": "SUPPLY_V3_MST29_0_VIA_1.inner2",
+    "to": "LOGIC_ALERT_INPUT_VIA.inner2",
     "thickness": 0.2,
-    "maxLength": 13.926,
+    "maxLength": 14.426466663,
     "pcbPathRelativeTo": "SUPPLY_V3_MST29_0_VIA_0.inner2",
     "pcbPath": [
       "SUPPLY_V3_MST29_0_VIA_0.inner2",
@@ -819,24 +819,11 @@ export const supplySourceSpans = [
         "x": -0.735000000000003,
         "y": 0.735000000000003
       },
-      "SUPPLY_V3_MST29_0_VIA_1.inner2"
-    ]
-  },
-  {
-    "name": "SUPPLY_V3_MST29_0_SPAN_2",
-    "net": "V3V3",
-    "from": "SUPPLY_V3_MST29_0_VIA_1.top",
-    "to": "R_INPUT_FAULT.pin1",
-    "thickness": 0.2,
-    "maxLength": 2.2089999999999996,
-    "pcbPathRelativeTo": "SUPPLY_V3_MST29_0_VIA_1.top",
-    "pcbPath": [
-      "SUPPLY_V3_MST29_0_VIA_1.top",
       {
-        "x": 0.75,
-        "y": 0.75
+        "x": -0.735,
+        "y": 12.498
       },
-      "R_INPUT_FAULT.pin1"
+      "LOGIC_ALERT_INPUT_VIA.inner2"
     ]
   }
 ]
@@ -854,14 +841,6 @@ const supplySourceBarrels = [
     "name": "SUPPLY_V3_MST29_0_VIA_0",
     "x": -24.903,
     "y": 14.139,
-    "holeDiameter": 0.3,
-    "outerDiameter": 0.7,
-    "net": "V3V3"
-  },
-  {
-    "name": "SUPPLY_V3_MST29_0_VIA_1",
-    "x": -25.638,
-    "y": 27.75,
     "holeDiameter": 0.3,
     "outerDiameter": 0.7,
     "net": "V3V3"
@@ -934,8 +913,7 @@ export const supplyCompleteRailPlans: readonly SourcePadConnectionPlan[] = [
       "SUPPLY_V3_MST27_0_SPAN_1",
       "SUPPLY_V3_MST28_0_SPAN_0",
       "SUPPLY_V3_MST29_0_SPAN_0",
-      "SUPPLY_V3_MST29_0_SPAN_1",
-      "SUPPLY_V3_MST29_0_SPAN_2"
+      "SUPPLY_V3_MST29_0_SPAN_1"
     ],
     "requiredSelectors": [
       "R_PD_SCL.pin1",
@@ -1229,11 +1207,7 @@ export const supplyCompleteRailPlans: readonly SourcePadConnectionPlan[] = [
       ],
       "SUPPLY_V3_MST29_0_SPAN_1": [
         "SUPPLY_V3_MST29_0_VIA_0.inner2",
-        "SUPPLY_V3_MST29_0_VIA_1.inner2"
-      ],
-      "SUPPLY_V3_MST29_0_SPAN_2": [
-        "SUPPLY_V3_MST29_0_VIA_1.top",
-        "R_INPUT_FAULT.pin1"
+        "LOGIC_ALERT_INPUT_VIA.inner2"
       ]
     },
     "traceWidths": {
@@ -1296,8 +1270,7 @@ export const supplyCompleteRailPlans: readonly SourcePadConnectionPlan[] = [
       "SUPPLY_V3_MST27_0_SPAN_1": 0.2,
       "SUPPLY_V3_MST28_0_SPAN_0": 0.2,
       "SUPPLY_V3_MST29_0_SPAN_0": 0.2,
-      "SUPPLY_V3_MST29_0_SPAN_1": 0.2,
-      "SUPPLY_V3_MST29_0_SPAN_2": 0.2
+      "SUPPLY_V3_MST29_0_SPAN_1": 0.2
     }
   },
   {

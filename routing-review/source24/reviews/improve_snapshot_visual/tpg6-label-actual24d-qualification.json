@@ -1,0 +1,154 @@
+{
+  "inputPath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "labelId": "pcb_silkscreen_text_228",
+  "inspectedAnchorMm": {
+    "x": 14.5,
+    "y": 2.75
+  },
+  "actualInstalled": true,
+  "probeAndBarrelPreservedAtQualifiedPose": true,
+  "nativeOldLabelAbsent": true,
+  "installedNativeLabelCorrect": true,
+  "actualProbe": {
+    "type": "pcb_smtpad",
+    "pcb_smtpad_id": "pcb_smtpad_549",
+    "pcb_component_id": "pcb_component_301",
+    "pcb_port_id": "pcb_port_766",
+    "layer": "top",
+    "shape": "circle",
+    "radius": 0.75,
+    "port_hints": [
+      "pin1"
+    ],
+    "is_covered_with_solder_mask": false,
+    "soldermask_margin": 0.05,
+    "x": 11.5,
+    "y": 1.1,
+    "subcircuit_id": "subcircuit_source_group_2"
+  },
+  "actualBarrel": {
+    "type": "pcb_via",
+    "pcb_via_id": "pcb_via_84",
+    "x": 11.5,
+    "y": 2.7,
+    "hole_diameter": 0.3,
+    "outer_diameter": 0.7,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "from_layer": "top",
+    "to_layer": "bottom",
+    "subcircuit_id": "subcircuit_source_group_2",
+    "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net0",
+    "pcb_group_id": "pcb_group_1",
+    "tented_on_top": true,
+    "tented_on_bottom": true,
+    "source_net_id": "source_net_0",
+    "pcb_port_ids": [
+      "pcb_port_767",
+      "pcb_port_768"
+    ]
+  },
+  "glyphInkBoundsMm": {
+    "minX": 12.379999999999999,
+    "maxX": 16.622,
+    "minY": 1.9260000000000002,
+    "maxY": 3.408
+  },
+  "glyphBboxPixelErrorMm": 0.002,
+  "checkedSmtCount": 552,
+  "checkedPlatedLandCount": 22,
+  "unknownMaskShapes": [],
+  "all552RequestedSmtMasksScreened": true,
+  "conservativeGlyphInkBoxClearOfEveryRequestedMask": true,
+  "nearestRequestedMasks": [
+    {
+      "id": "pcb_smtpad_549",
+      "shape": "circle",
+      "labelInkBoundingBoxGapMm": 0.40692943235958945,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_141",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 1.254999999999999,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_534",
+      "shape": "circle",
+      "labelInkBoundingBoxGapMm": 1.8260000000000003,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_533",
+      "shape": "circle",
+      "labelInkBoundingBoxGapMm": 2.264683583837351,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_142",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 2.754999999999999,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_532",
+      "shape": "circle",
+      "labelInkBoundingBoxGapMm": 4.479420470028255,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_452",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 4.926,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_454",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 4.926,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_455",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 4.926,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    },
+    {
+      "id": "pcb_smtpad_453",
+      "shape": "rect",
+      "labelInkBoundingBoxGapMm": 5.053946576686382,
+      "labelInkBoundingBoxMaskIntersectionMm2": 0.0,
+      "requestedMaskMarginMm": 0.05
+    }
+  ],
+  "nativeOtherSilkscreenCheck": {
+    "positiveAlphaGlyphOverlapPixels": 0,
+    "conservativeInkBoxToAllOtherNativeSilkPixelGapMm": 1.8299644805296085,
+    "nearestOtherNativeSilkPixelCenterMm": [
+      10.761,
+      4.261
+    ],
+    "resolutionMm": 0.002,
+    "includesReferenceTextAndFunctionalLegendsAndNativeSilkOutlines": true
+  },
+  "introducedLabelQualified": true,
+  "glyphPngSha256": "2d3a6cb8960b53876286e6b78cfef76ee6b9a169ce60e5ef140808c0b46b3ec1",
+  "otherSilkPngSha256": "e29772b5dd2a26622a5e281f4090c5231f4e9f7683076023ca0da58271b6e985",
+  "scope": "Native font raster ink bounded conservatively at 500px/mm. Whole ink box clears every top requested pad mask. Missing mask margins use conservative 0.05mm. Every other native silkscreen feature is rendered, including component references. Introduced label only; no Gerber clipping or manufacturing claim."
+}

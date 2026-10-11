@@ -12,7 +12,6 @@ export const sourceTerminalEscapePlans=[
   {name:"FAN_ENABLE_VCC_OFF_PAD",net:"V3V3",from:"U_FAN.pin5",to:"FAN_ENABLE_VCC_ESCAPE.top"},
   {name:"USB_CC2_ESCAPE",net:"USB_CC2",from:"J_USB.pin12",to:"USB_CC2_ESCAPE_VIA.top"},
   {name:"USB_CC1_ESCAPE",net:"USB_CC1",from:"J_USB.pin6",to:"USB_CC1_ESCAPE_VIA.top"},
-  {name:"INPUT_SLEW",net:"INPUT_DVDT",from:"U_INPUT.pin7",to:"INPUT_DVDT_ESCAPE_VIA.top"},
 ] as const
 const close=(a:number,b:number)=>Math.abs(a-b)<1e-6
 export type SourceCopperProof={circuitJson:CircuitJson;sourceSha256:string;runtimeSha256:string}

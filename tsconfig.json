@@ -17,9 +17,11 @@
   },
   "include": [
     "index.tsx",
+    "regenerate.tsx",
     "src/**/*.ts",
     "src/**/*.tsx",
     "scripts/**/*.ts",
-    "tscircuit.config.ts"
+    "tscircuit.config.ts",
+    "regenerate.config.ts"
   ]
 }

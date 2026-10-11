@@ -39,7 +39,6 @@ export const MCP4725A0T_E_CH = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":1.5391891999998961,"y":-0.8892031999998835},{"x":1.5391891999998961,"y":0.8892031999999972}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.5391892000000098,"y":-0.8892031999998835},{"x":-1.5391892000000098,"y":0.8892031999999972}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="-1.64mm" pcbY="-2.0mm" radius="0.08mm" />
-<silkscreentext text="{NAME}" pcbX="-0.1524mm" pcbY="2.6764mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.8,"y":2.2},{"x":1.8,"y":2.2},{"x":1.8,"y":-2.2},{"x":-1.8,"y":-2.2},{"x":-1.8,"y":2.2}]} />
       </footprint>}
       cadModel={{

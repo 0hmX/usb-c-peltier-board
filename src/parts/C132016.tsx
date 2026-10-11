@@ -34,7 +34,6 @@ export const TLV803SDBZR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.7262,"y":-1.545},{"x":-0.7262,"y":-1.545},{"x":-0.7262,"y":-0.595}]} />
 <silkscreenpath strokeWidth="0.15mm" route={[{"x":0.7262,"y":0.355},{"x":0.7262,"y":-0.355}]} />
 <silkscreencircle strokeWidth="0.15mm" pcbX="1.75mm" pcbY="-1.635mm" radius="0.08mm" />
-<silkscreentext text="{NAME}" pcbX="0.0254mm" pcbY="2.524mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.95,"y":1.8},{"x":1.95,"y":1.8},{"x":1.95,"y":-1.8},{"x":-1.95,"y":-1.8},{"x":-1.95,"y":1.8}]} />
       </footprint>}
       cadModel={{

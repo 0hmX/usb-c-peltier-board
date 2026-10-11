@@ -15,7 +15,7 @@ export const source16TraceProps = [
   {"name":"TEC_FB_R29_ESCAPE","from":"TEC_FB_R29_TRANSFER.top","to":"R29.pin2","thickness":0.2,"maxLength":1.2,"pcbPath":["TEC_FB_R29_TRANSFER.top","R29.pin2"]},
   {"name":"TEC_FB_DIVIDER_LOCAL","from":"R29.pin2","to":"R30.pin1","thickness":0.2,"maxLength":1.6,"pcbPath":["R29.pin2","R30.pin1"]},
   {"name":"TEC_VC_U2_ESCAPE","from":"U2.pin13","to":"TEC_VC_U2_TRANSFER.top","thickness":0.2,"maxLength":2,"pcbPathRelativeTo":"U2.pin13","pcbPath":["U2.pin13",{"x":1.625,"y":3.425},{"x":2.3,"y":4.1},"TEC_VC_U2_TRANSFER.top"]},
-  {"name":"TEC_VC_LOCAL","from":"TEC_VC_U2_TRANSFER.inner2","to":"TEC_VC_R27_TRANSFER.inner2","thickness":0.2,"maxLength":10.2,"pcbPathRelativeTo":"TEC_VC_U2_TRANSFER.inner2","pcbPath":["TEC_VC_U2_TRANSFER.inner2",{"x":0.115,"y":0.115},{"x":0.115,"y":3.25},{"x":-0.5,"y":3.865},{"x":-0.5,"y":4.6},{"x":-0.75,"y":4.85},"TEC_VC_R27_TRANSFER.inner2"]},
+  {"name":"TEC_VC_LOCAL","from":"TEC_VC_U2_TRANSFER.inner2","to":"TEC_VC_R27_TRANSFER.inner2","thickness":0.2,"maxLength":7.7,"pcbPathRelativeTo":"TEC_VC_U2_TRANSFER.inner2","pcbPath":["TEC_VC_U2_TRANSFER.inner2",{"x":-0.75,"y":0},"TEC_VC_R27_TRANSFER.inner2"]},
   {"name":"TEC_VC_R27_ESCAPE","from":"TEC_VC_R27_TRANSFER.top","to":"R27.pin1","thickness":0.2,"maxLength":3.3,"pcbPathRelativeTo":"TEC_VC_R27_TRANSFER.top","pcbPath":["TEC_VC_R27_TRANSFER.top",{"x":-0.85,"y":0.85},{"x":-1.55,"y":0.85},"R27.pin1"]},
   {"name":"INPUT_CLEAR_PULLUP_COLLECTOR_LOCAL","from":"Q_INPUT_CLEAR.pin3","to":"R237.pin2","thickness":0.2,"maxLength":5.8,"pcbPathRelativeTo":"Q_INPUT_CLEAR.pin3","pcbPath":["Q_INPUT_CLEAR.pin3",{"x":-3.2,"y":0},"R237.pin2"]},
   {"name":"ARM_CLOCK_PULLDOWN_LOCAL","from":"U_CLOCK_BUFFER.pin6","to":"R242.pin1","thickness":0.2,"maxLength":9,"pcbPathRelativeTo":"U_CLOCK_BUFFER.pin6","pcbPath":["U_CLOCK_BUFFER.pin6",{"x":-3.4,"y":-1.15},{"x":-3.4,"y":-3.65},{"x":-1.5,"y":-3.65},"R242.pin1"]},
@@ -28,8 +28,8 @@ export const source16TraceProps = [
   {"name":"DBG_PERMIT_FEED_TRUNK","from":"DBG_PERMIT_FROM_VIA.inner2","to":"DBG_PERMIT_TO_VIA.inner2","thickness":0.2,"maxLength":2.934873734152913,"pcbPathRelativeTo":"DBG_PERMIT_FROM_VIA.inner2","pcbPath":["DBG_PERMIT_FROM_VIA.inner2",{"x":0.45,"y":0},"DBG_PERMIT_TO_VIA.inner2"]},
   {"name":"DBG_PERMIT_FEED_TO","from":"DBG_PERMIT_TO_VIA.top","to":"R507.pin1","thickness":0.2,"maxLength":0.91,"pcbPath":["DBG_PERMIT_TO_VIA.top","R507.pin1"]},
   {"name":"TP15_PERMIT_TAP","from":"TP15.pin1","to":"DBG_PERMIT_FROM_VIA.top","thickness":0.2,"maxLength":2.5171067811865475,"pcbPathRelativeTo":"TP15.pin1","pcbPath":["TP15.pin1",{"x":-1.8,"y":0},"DBG_PERMIT_FROM_VIA.top"]},
-  {"name":"TP12_DAC_FROM","from":"U_DAC.pin1","to":"TP12_DAC_FROM_VIA.top","thickness":0.2,"maxLength":0.6161269837220827,"pcbPathRelativeTo":"U_DAC.pin1","pcbPath":["U_DAC.pin1",{"x":-1.17,"y":-1.62},"TP12_DAC_FROM_VIA.top"]},
-  {"name":"TP12_DAC_TRUNK","from":"TP12_DAC_FROM_VIA.inner2","to":"TP12_DAC_TO_VIA.inner2","thickness":0.2,"maxLength":2.0358683245815348,"pcbPathRelativeTo":"TP12_DAC_FROM_VIA.inner2","pcbPath":["TP12_DAC_FROM_VIA.inner2",{"x":-0.835,"y":-0.835},"TP12_DAC_TO_VIA.inner2"]},
+  {"name":"TP12_DAC_FROM","from":"U_DAC.pin1","to":"TP12_DAC_FROM_VIA.top","thickness":0.2,"maxLength":0.66,"pcbPathRelativeTo":"U_DAC.pin1","pcbPath":["U_DAC.pin1",{"x":-1.15,"y":-1.6},"TP12_DAC_FROM_VIA.top"]},
+  {"name":"TP12_DAC_TRUNK","from":"TP12_DAC_FROM_VIA.inner2","to":"TP12_DAC_TO_VIA.inner2","thickness":0.2,"maxLength":2.0358683245815348,"pcbPathRelativeTo":"TP12_DAC_FROM_VIA.inner2","pcbPath":["TP12_DAC_FROM_VIA.inner2",{"x":-0.785,"y":-0.785},"TP12_DAC_TO_VIA.inner2"]},
   {"name":"TP12_DAC_TO","from":"TP12_DAC_TO_VIA.top","to":"TP12.pin1","thickness":0.2,"maxLength":0.9999494936611661,"pcbPath":["TP12_DAC_TO_VIA.top","TP12.pin1"]},
   {"name":"TP17_BUFFERED_RUN_TAP","from":"U_DBG2.pin4","to":"TP17.pin1","thickness":0.2,"maxLength":6.2,"pcbPathRelativeTo":"U_DBG2.pin4","pcbPath":["U_DBG2.pin4",{"x":3,"y":-0.75},"TP17.pin1"]},
 ] as const
@@ -40,7 +40,7 @@ export const source16ViaProps = [
   {"name":"TEC_VC_R27_TRANSFER","pcbX":-8.3,"pcbY":21.25,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.TEC_VC","tented":true,"inner2":true},
   {"name":"DBG_PERMIT_FROM_VIA","pcbX":-40.3,"pcbY":-23,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.DBG_TEC_PERMIT","tented":true,"inner2":true},
   {"name":"DBG_PERMIT_TO_VIA","pcbX":-38.1,"pcbY":-21.25,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.DBG_TEC_PERMIT","tented":true,"inner2":true},
-  {"name":"TP12_DAC_FROM_VIA","pcbX":-1.465,"pcbY":-21.62,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.TEC_DAC","tented":true,"inner2":true},
+  {"name":"TP12_DAC_FROM_VIA","pcbX":-1.515,"pcbY":-21.6,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.TEC_DAC","tented":true,"inner2":true},
   {"name":"TP12_DAC_TO_VIA","pcbX":-2.3,"pcbY":-23.3,"holeDiameter":0.3,"outerDiameter":0.7,"fromLayer":"top","toLayer":"bottom","connectsTo":"net.TEC_DAC","tented":true,"inner2":true},
 ] as const
 export const source16ConnectionPlans = [
@@ -63,7 +63,7 @@ export const source16ConnectionPlans = [
 ] as const satisfies readonly SourcePadConnectionPlan[]
 export const source16ReviewedWholePaths = [
   { name: "TEC_FB_LOCAL", traces: ["TEC_FB_U2_ESCAPE", "TEC_FB_LOCAL", "TEC_FB_R29_ESCAPE"], barrels: 2, maxMm: 13.4 },
-  { name: "TEC_VC_LOCAL", traces: ["TEC_VC_U2_ESCAPE", "TEC_VC_LOCAL", "TEC_VC_R27_ESCAPE"], barrels: 2, maxMm: 22.3 },
+  { name: "TEC_VC_LOCAL", traces: ["TEC_VC_U2_ESCAPE", "TEC_VC_LOCAL", "TEC_VC_R27_ESCAPE"], barrels: 2, planarMaxMm: 12.8, maxMm: 16.3 },
   { name: "TP12_DAC_OUTPUT_TAP", traces: ["TP12_DAC_FROM", "TP12_DAC_TRUNK", "TP12_DAC_TO"], barrels: 2, planarMaxMm: 3.7, maxMm: 7.2 },
 ] as const
 

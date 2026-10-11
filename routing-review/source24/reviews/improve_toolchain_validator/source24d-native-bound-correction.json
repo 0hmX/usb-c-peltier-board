@@ -1,0 +1,134 @@
+{
+  "scope": "Fresh sense-native-bound correction proof on actual final publisher compared with actual24b. Native nominal includes1.6mm per via; separate conservative full-barrel envelope uses1.76mm. Explicit5.9mm planar scope is retained and independently enforced here. No copper geometry change or clearance waiver.",
+  "input": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "previousPath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24b/circuit.json",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "previousCircuitSha256": "4c143729fa15e533b215dbc366c5cfa167db2722725f9a6418e0f9e7e2b11bab",
+  "checkerSha256": "8e5e54035cd0619e03542abb53d8943056dc92015f0208ad94407516eca7b8ba",
+  "name": "TEC_FILTERED_SENSE_N_U2",
+  "sourceTraceId": "source_trace_266",
+  "traceId": "pcb_trace_75",
+  "previousSourceMaxMm": 5.9,
+  "finalSourceMaxMm": 9.4,
+  "source23PriorSourceMaxMm": 10,
+  "retainedPlanarBoundMm": 5.9,
+  "planarMm": 5.761370849898477,
+  "viaCount": 2,
+  "viaProofs": [
+    {
+      "point": {
+        "route_type": "via",
+        "x": -2.725,
+        "y": 13.85,
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      "via": {
+        "type": "pcb_via",
+        "pcb_via_id": "pcb_via_367",
+        "pcb_trace_id": "pcb_trace_75",
+        "x": -2.725,
+        "y": 13.85,
+        "hole_diameter": 0.3,
+        "outer_diameter": 0.7,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net34"
+      },
+      "valid": true
+    },
+    {
+      "point": {
+        "route_type": "via",
+        "x": -0.75,
+        "y": 11.6,
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      "via": {
+        "type": "pcb_via",
+        "pcb_via_id": "pcb_via_368",
+        "pcb_trace_id": "pcb_trace_75",
+        "x": -0.75,
+        "y": 11.6,
+        "hole_diameter": 0.3,
+        "outer_diameter": 0.7,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "subcircuit_id": "subcircuit_source_group_2",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_2_connectivity_net34"
+      },
+      "valid": true
+    }
+  ],
+  "nominalViaMm": 1.6,
+  "nativeNominalLengthMm": 8.961370849898477,
+  "conservativeViaMm": 1.76,
+  "conservativeUpperMm": 9.281370849898478,
+  "conservativeMarginMm": 0.11862915010152264,
+  "belowOriginal10Mm": true,
+  "geometryRetention": [
+    {
+      "type": "pcb_board",
+      "priorCount": 1,
+      "actualCount": 1,
+      "identical": true
+    },
+    {
+      "type": "pcb_trace",
+      "priorCount": 636,
+      "actualCount": 636,
+      "identical": true
+    },
+    {
+      "type": "pcb_via",
+      "priorCount": 434,
+      "actualCount": 434,
+      "identical": true
+    },
+    {
+      "type": "pcb_port",
+      "priorCount": 1354,
+      "actualCount": 1354,
+      "identical": true
+    },
+    {
+      "type": "pcb_smtpad",
+      "priorCount": 552,
+      "actualCount": 552,
+      "identical": true
+    },
+    {
+      "type": "pcb_plated_hole",
+      "priorCount": 22,
+      "actualCount": 22,
+      "identical": true
+    },
+    {
+      "type": "pcb_copper_pour",
+      "priorCount": 31,
+      "actualCount": 31,
+      "identical": true
+    }
+  ],
+  "nativeFindings": [],
+  "pass": true,
+  "manufacturingAccepted": false
+}

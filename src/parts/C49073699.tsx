@@ -18,13 +18,6 @@ export const APS1360M6R8H = (props: Omit<InductorProps, "inductance">) => {
       footprint={<footprint>
         <smtpad solderPasteMargin={0} solderMaskMargin={0.05} portHints={["pin1"]} pcbX="-5.55mm" pcbY="0mm" width="3.1mm" height="5mm" shape="rect" />
 <smtpad solderPasteMargin={0} solderMaskMargin={0.05} portHints={["pin2"]} pcbX="5.55mm" pcbY="0mm" width="3.1mm" height="5mm" shape="rect" />
-<silkscreenpath strokeWidth={0.15} route={[{"x":6.999960599999895,"y":-2.8},{"x":6.999960599999895,"y":-6.299987399999964}]} />
-<silkscreenpath strokeWidth={0.15} route={[{"x":6.999960599999895,"y":6.299987399999964},{"x":6.999960599999895,"y":2.8}]} />
-<silkscreenpath strokeWidth={0.15} route={[{"x":-6.999986000000035,"y":-2.8},{"x":-6.999986000000035,"y":-6.299987399999964}]} />
-<silkscreenpath strokeWidth={0.15} route={[{"x":-6.999986000000035,"y":6.299987399999964},{"x":-6.999986000000035,"y":2.8}]} />
-<silkscreenpath strokeWidth={0.15} route={[{"x":-6.999986000000035,"y":-6.299987399999964},{"x":6.999960599999895,"y":-6.299987399999964}]} />
-<silkscreenpath strokeWidth={0.15} route={[{"x":-6.999986000000035,"y":6.299987399999964},{"x":6.999960599999895,"y":6.299987399999964}]} />
-<silkscreentext text="{NAME}" pcbX="-0.012827mm" pcbY="7.2992mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-7.806627000000049,"y":6.549200000000155},{"x":7.7809729999999035,"y":6.549200000000155},{"x":7.7809729999999035,"y":-6.574599999999805},{"x":-7.806627000000049,"y":-6.574599999999805},{"x":-7.806627000000049,"y":6.549200000000155}]} />
       </footprint>}
       

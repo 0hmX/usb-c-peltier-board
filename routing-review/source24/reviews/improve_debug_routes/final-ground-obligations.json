@@ -1,0 +1,3136 @@
+{
+  "sourceCircuitPath": "dist/debug-source-placement-24d/circuit.json",
+  "sourceCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "phaseInputPath": "dist/debug-source-placement-24d-evidence/phase-0-stage-0.input.simple-route.json",
+  "phaseInputSha256": "3dd002d3f8e3539dfef1801218fb5a90f43f3071fec57fdd618b69d0b36f5b5f",
+  "checkerSha256": "6cf433dc1673c609e1e9a634dc0c3189e15203483fdf75191bebdf69d685986b",
+  "selectionSourcePath": "src/bus-routing.tsx",
+  "selectionSourceSha256": "c85154aa2c87e6e2a26346d946d2490e19a54f3e13d9ab80d040fb28c6bc5a4f",
+  "groundHelperSha256": "b04d4d92aa42e8872961aa842d04d5368295170e0a76d54dc11daf4dc248f235",
+  "padCopperHelperSha256": "58e2143c32197d14ef0a0601e7919f23a740f0edba75e08085665b08273e04bc",
+  "nativeObligationCount": 88,
+  "nativeInputPending": false,
+  "coverage": {
+    "valid": true,
+    "selectors": [
+      {
+        "selector": "C200.pin2",
+        "sourcePortId": "source_port_560",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C202.pin2",
+        "sourcePortId": "source_port_564",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C203.pin2",
+        "sourcePortId": "source_port_566",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C204.pin2",
+        "sourcePortId": "source_port_568",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C205.pin2",
+        "sourcePortId": "source_port_570",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C206.pin2",
+        "sourcePortId": "source_port_572",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C207.pin2",
+        "sourcePortId": "source_port_574",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C208.pin2",
+        "sourcePortId": "source_port_576",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C209.pin2",
+        "sourcePortId": "source_port_578",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C21.pin2",
+        "sourcePortId": "source_port_207",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C210.pin2",
+        "sourcePortId": "source_port_580",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C211.pin2",
+        "sourcePortId": "source_port_582",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C212.pin2",
+        "sourcePortId": "source_port_584",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C213.pin2",
+        "sourcePortId": "source_port_586",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C215.pin2",
+        "sourcePortId": "source_port_590",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C216.pin2",
+        "sourcePortId": "source_port_592",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C217.pin2",
+        "sourcePortId": "source_port_594",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C218.pin2",
+        "sourcePortId": "source_port_596",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C219.pin2",
+        "sourcePortId": "source_port_598",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C22.pin2",
+        "sourcePortId": "source_port_211",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C220.pin2",
+        "sourcePortId": "source_port_600",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C222.pin2",
+        "sourcePortId": "source_port_604",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C223.pin2",
+        "sourcePortId": "source_port_606",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C24.pin2",
+        "sourcePortId": "source_port_213",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C25.pin2",
+        "sourcePortId": "source_port_215",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C26.pin2",
+        "sourcePortId": "source_port_217",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C27.pin2",
+        "sourcePortId": "source_port_219",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C29.pin2",
+        "sourcePortId": "source_port_228",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C33.pin2",
+        "sourcePortId": "source_port_243",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C34.pin2",
+        "sourcePortId": "source_port_247",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C35.pin2",
+        "sourcePortId": "source_port_249",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C36.pin2",
+        "sourcePortId": "source_port_259",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C37.pin2",
+        "sourcePortId": "source_port_265",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C38.pin2",
+        "sourcePortId": "source_port_221",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C39.pin2",
+        "sourcePortId": "source_port_223",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C40.pin2",
+        "sourcePortId": "source_port_225",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C41.pin2",
+        "sourcePortId": "source_port_209",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C44.pin2",
+        "sourcePortId": "source_port_303",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_INPUT_OUT.pin2",
+        "sourcePortId": "source_port_148",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_1V2.pin2",
+        "sourcePortId": "source_port_140",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_2V7.pin2",
+        "sourcePortId": "source_port_142",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_VDD.pin2",
+        "sourcePortId": "source_port_138",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_USB_IN.pin2",
+        "sourcePortId": "source_port_144",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_COLD.pin2",
+        "sourcePortId": "source_port_456",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_FAN.pin1",
+        "sourcePortId": "source_port_449",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_HOT.pin2",
+        "sourcePortId": "source_port_454",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_SWD.pin4",
+        "sourcePortId": "source_port_460",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_TEC.pin2",
+        "sourcePortId": "source_port_309",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_UART.pin1",
+        "sourcePortId": "source_port_461",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH3",
+        "sourcePortId": "source_port_3",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH4",
+        "sourcePortId": "source_port_2",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.GND1",
+        "sourcePortId": "source_port_12",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S1",
+        "sourcePortId": "source_port_187",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S2",
+        "sourcePortId": "source_port_186",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S3",
+        "sourcePortId": "source_port_185",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q23.pin2",
+        "sourcePortId": "source_port_271",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_FAN_PWM.pin2",
+        "sourcePortId": "source_port_448",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_FAULT_CLEAR.pin2",
+        "sourcePortId": "source_port_396",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_INPUT_CLEAR.pin2",
+        "sourcePortId": "source_port_399",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_INPUT_HIGH.pin2",
+        "sourcePortId": "source_port_92",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_PD_INHIBIT.pin2",
+        "sourcePortId": "source_port_89",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_PD_LATCH.pin2",
+        "sourcePortId": "source_port_390",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R201.pin2",
+        "sourcePortId": "source_port_476",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R203.pin2",
+        "sourcePortId": "source_port_480",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R204.pin2",
+        "sourcePortId": "source_port_482",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R205.pin2",
+        "sourcePortId": "source_port_484",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R207.pin2",
+        "sourcePortId": "source_port_488",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R213.pin2",
+        "sourcePortId": "source_port_500",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R215.pin2",
+        "sourcePortId": "source_port_504",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R217.pin2",
+        "sourcePortId": "source_port_508",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R219.pin2",
+        "sourcePortId": "source_port_512",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R223.pin2",
+        "sourcePortId": "source_port_520",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R225.pin2",
+        "sourcePortId": "source_port_524",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R226.pin2",
+        "sourcePortId": "source_port_526",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R227.pin2",
+        "sourcePortId": "source_port_528",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R229.pin2",
+        "sourcePortId": "source_port_532",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R235.pin2",
+        "sourcePortId": "source_port_542",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R236.pin2",
+        "sourcePortId": "source_port_544",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R239.pin2",
+        "sourcePortId": "source_port_550",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R240.pin2",
+        "sourcePortId": "source_port_552",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R241.pin2",
+        "sourcePortId": "source_port_554",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R242.pin2",
+        "sourcePortId": "source_port_556",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R243.pin2",
+        "sourcePortId": "source_port_558",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R24.pin2",
+        "sourcePortId": "source_port_201",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R28.pin2",
+        "sourcePortId": "source_port_245",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R30.pin2",
+        "sourcePortId": "source_port_253",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R32.pin2",
+        "sourcePortId": "source_port_257",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R34.pin2",
+        "sourcePortId": "source_port_263",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R38.pin2",
+        "sourcePortId": "source_port_279",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R40.pin2",
+        "sourcePortId": "source_port_283",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R45.pin2",
+        "sourcePortId": "source_port_307",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_HIGH_OFF.pin2",
+        "sourcePortId": "source_port_134",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_ILIM.pin2",
+        "sourcePortId": "source_port_130",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_OFF.pin2",
+        "sourcePortId": "source_port_122",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_OV_BOTTOM.pin2",
+        "sourcePortId": "source_port_128",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_PD_RESET.pin2",
+        "sourcePortId": "source_port_106",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND1",
+        "sourcePortId": "source_port_160",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND2",
+        "sourcePortId": "source_port_165",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND3",
+        "sourcePortId": "source_port_174",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND4",
+        "sourcePortId": "source_port_179",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.SYNC",
+        "sourcePortId": "source_port_173",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DAC.A0",
+        "sourcePortId": "source_port_426",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DAC.VSS",
+        "sourcePortId": "source_port_422",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_FAN.GND",
+        "sourcePortId": "source_port_435",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_INPUT.GND",
+        "sourcePortId": "source_port_70",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_CLOCK_BUFFER.pin2",
+        "sourcePortId": "source_port_407",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_INPUT_LATCH.GND",
+        "sourcePortId": "source_port_380",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_LATCH.GND",
+        "sourcePortId": "source_port_369",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_LOGIC.GND",
+        "sourcePortId": "source_port_341",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_MCU.VSS",
+        "sourcePortId": "source_port_350",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.ADDR0",
+        "sourcePortId": "source_port_49",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.ADDR1",
+        "sourcePortId": "source_port_50",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.EP",
+        "sourcePortId": "source_port_62",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.GND",
+        "sourcePortId": "source_port_47",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.VSYS",
+        "sourcePortId": "source_port_59",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_SUPERVISOR.GND",
+        "sourcePortId": "source_port_374",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.A0",
+        "sourcePortId": "source_port_285",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.A1",
+        "sourcePortId": "source_port_284",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.GND",
+        "sourcePortId": "source_port_289",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_THERMAL.GND",
+        "sourcePortId": "source_port_430",
+        "physicalNet": "GND"
+      }
+    ],
+    "requiredGroundSelectors": [
+      {
+        "selector": "C200.pin2",
+        "sourcePortId": "source_port_560",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C202.pin2",
+        "sourcePortId": "source_port_564",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C203.pin2",
+        "sourcePortId": "source_port_566",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C204.pin2",
+        "sourcePortId": "source_port_568",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C205.pin2",
+        "sourcePortId": "source_port_570",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C206.pin2",
+        "sourcePortId": "source_port_572",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C207.pin2",
+        "sourcePortId": "source_port_574",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C208.pin2",
+        "sourcePortId": "source_port_576",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C209.pin2",
+        "sourcePortId": "source_port_578",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C21.pin2",
+        "sourcePortId": "source_port_207",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C210.pin2",
+        "sourcePortId": "source_port_580",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C211.pin2",
+        "sourcePortId": "source_port_582",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C212.pin2",
+        "sourcePortId": "source_port_584",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C213.pin2",
+        "sourcePortId": "source_port_586",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C215.pin2",
+        "sourcePortId": "source_port_590",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C216.pin2",
+        "sourcePortId": "source_port_592",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C217.pin2",
+        "sourcePortId": "source_port_594",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C218.pin2",
+        "sourcePortId": "source_port_596",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C219.pin2",
+        "sourcePortId": "source_port_598",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C22.pin2",
+        "sourcePortId": "source_port_211",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C220.pin2",
+        "sourcePortId": "source_port_600",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C222.pin2",
+        "sourcePortId": "source_port_604",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C223.pin2",
+        "sourcePortId": "source_port_606",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C24.pin2",
+        "sourcePortId": "source_port_213",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C25.pin2",
+        "sourcePortId": "source_port_215",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C26.pin2",
+        "sourcePortId": "source_port_217",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C27.pin2",
+        "sourcePortId": "source_port_219",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C28.pin2",
+        "sourcePortId": "source_port_226",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C29.pin2",
+        "sourcePortId": "source_port_228",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C30.pin2",
+        "sourcePortId": "source_port_231",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C31.pin2",
+        "sourcePortId": "source_port_233",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C33.pin2",
+        "sourcePortId": "source_port_243",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C34.pin2",
+        "sourcePortId": "source_port_247",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C35.pin2",
+        "sourcePortId": "source_port_249",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C36.pin2",
+        "sourcePortId": "source_port_259",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C37.pin2",
+        "sourcePortId": "source_port_265",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C38.pin2",
+        "sourcePortId": "source_port_221",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C39.pin2",
+        "sourcePortId": "source_port_223",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C40.pin2",
+        "sourcePortId": "source_port_225",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C41.pin2",
+        "sourcePortId": "source_port_209",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C43.pin2",
+        "sourcePortId": "source_port_299",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C44.pin2",
+        "sourcePortId": "source_port_303",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_INPUT_DVDT.pin2",
+        "sourcePortId": "source_port_146",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_INPUT_OUT.pin2",
+        "sourcePortId": "source_port_148",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_1V2.pin2",
+        "sourcePortId": "source_port_140",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_2V7.pin2",
+        "sourcePortId": "source_port_142",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_PD_VDD.pin2",
+        "sourcePortId": "source_port_138",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_USB_IN.pin2",
+        "sourcePortId": "source_port_144",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_COLD.pin2",
+        "sourcePortId": "source_port_456",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_FAN.pin1",
+        "sourcePortId": "source_port_449",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_HOT.pin2",
+        "sourcePortId": "source_port_454",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_SWD.pin4",
+        "sourcePortId": "source_port_460",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_TEC.pin2",
+        "sourcePortId": "source_port_309",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_UART.pin1",
+        "sourcePortId": "source_port_461",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH1",
+        "sourcePortId": "source_port_1",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH2",
+        "sourcePortId": "source_port_0",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH3",
+        "sourcePortId": "source_port_3",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH4",
+        "sourcePortId": "source_port_2",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.GND1",
+        "sourcePortId": "source_port_12",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.GND2",
+        "sourcePortId": "source_port_13",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S1",
+        "sourcePortId": "source_port_187",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S2",
+        "sourcePortId": "source_port_186",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q21.S3",
+        "sourcePortId": "source_port_185",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q23.pin2",
+        "sourcePortId": "source_port_271",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_FAN_PWM.pin2",
+        "sourcePortId": "source_port_448",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_FAULT_CLEAR.pin2",
+        "sourcePortId": "source_port_396",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_INPUT_CLEAR.pin2",
+        "sourcePortId": "source_port_399",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_INPUT_HIGH.pin2",
+        "sourcePortId": "source_port_92",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_PD_INHIBIT.pin2",
+        "sourcePortId": "source_port_89",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "Q_PD_LATCH.pin2",
+        "sourcePortId": "source_port_390",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R201.pin2",
+        "sourcePortId": "source_port_476",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R203.pin2",
+        "sourcePortId": "source_port_480",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R204.pin2",
+        "sourcePortId": "source_port_482",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R205.pin2",
+        "sourcePortId": "source_port_484",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R207.pin2",
+        "sourcePortId": "source_port_488",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R213.pin2",
+        "sourcePortId": "source_port_500",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R215.pin2",
+        "sourcePortId": "source_port_504",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R217.pin2",
+        "sourcePortId": "source_port_508",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R219.pin2",
+        "sourcePortId": "source_port_512",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R223.pin2",
+        "sourcePortId": "source_port_520",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R225.pin2",
+        "sourcePortId": "source_port_524",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R226.pin2",
+        "sourcePortId": "source_port_526",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R227.pin2",
+        "sourcePortId": "source_port_528",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R229.pin2",
+        "sourcePortId": "source_port_532",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R235.pin2",
+        "sourcePortId": "source_port_542",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R236.pin2",
+        "sourcePortId": "source_port_544",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R239.pin2",
+        "sourcePortId": "source_port_550",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R240.pin2",
+        "sourcePortId": "source_port_552",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R241.pin2",
+        "sourcePortId": "source_port_554",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R242.pin2",
+        "sourcePortId": "source_port_556",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R243.pin2",
+        "sourcePortId": "source_port_558",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R24.pin2",
+        "sourcePortId": "source_port_201",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R28.pin2",
+        "sourcePortId": "source_port_245",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R30.pin2",
+        "sourcePortId": "source_port_253",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R32.pin2",
+        "sourcePortId": "source_port_257",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R34.pin2",
+        "sourcePortId": "source_port_263",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R38.pin2",
+        "sourcePortId": "source_port_279",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R40.pin2",
+        "sourcePortId": "source_port_283",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R45.pin2",
+        "sourcePortId": "source_port_307",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_HIGH_OFF.pin2",
+        "sourcePortId": "source_port_134",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_ILIM.pin2",
+        "sourcePortId": "source_port_130",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_OFF.pin2",
+        "sourcePortId": "source_port_122",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_INPUT_OV_BOTTOM.pin2",
+        "sourcePortId": "source_port_128",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "R_PD_RESET.pin2",
+        "sourcePortId": "source_port_106",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND1",
+        "sourcePortId": "source_port_160",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND2",
+        "sourcePortId": "source_port_165",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND3",
+        "sourcePortId": "source_port_174",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.GND4",
+        "sourcePortId": "source_port_179",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U2.SYNC",
+        "sourcePortId": "source_port_173",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DAC.A0",
+        "sourcePortId": "source_port_426",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DAC.VSS",
+        "sourcePortId": "source_port_422",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_FAN.GND",
+        "sourcePortId": "source_port_435",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_INPUT.GND",
+        "sourcePortId": "source_port_70",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_CLEAR_BUFFER.pin2",
+        "sourcePortId": "source_port_401",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_CLOCK_BUFFER.pin2",
+        "sourcePortId": "source_port_407",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_INPUT_LATCH.GND",
+        "sourcePortId": "source_port_380",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_LATCH.GND",
+        "sourcePortId": "source_port_369",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_LOGIC.GND",
+        "sourcePortId": "source_port_341",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_MCU.VSS",
+        "sourcePortId": "source_port_350",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.ADDR0",
+        "sourcePortId": "source_port_49",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.ADDR1",
+        "sourcePortId": "source_port_50",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.EP",
+        "sourcePortId": "source_port_62",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.GND",
+        "sourcePortId": "source_port_47",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_PD.VSYS",
+        "sourcePortId": "source_port_59",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_SUPERVISOR.GND",
+        "sourcePortId": "source_port_374",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.A0",
+        "sourcePortId": "source_port_285",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.A1",
+        "sourcePortId": "source_port_284",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_TEC_MON.GND",
+        "sourcePortId": "source_port_289",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_THERMAL.GND",
+        "sourcePortId": "source_port_430",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D501.pin1",
+        "sourcePortId": "source_port_609",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D502.pin1",
+        "sourcePortId": "source_port_621",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D503.pin1",
+        "sourcePortId": "source_port_633",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D504.pin1",
+        "sourcePortId": "source_port_643",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D505.pin1",
+        "sourcePortId": "source_port_655",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D507.pin1",
+        "sourcePortId": "source_port_671",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DBG1.pin2",
+        "sourcePortId": "source_port_710",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DBG2.pin2",
+        "sourcePortId": "source_port_716",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_DBG1.pin2",
+        "sourcePortId": "source_port_722",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_DBG2.pin2",
+        "sourcePortId": "source_port_728",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG1.pin1",
+        "sourcePortId": "source_port_751",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG2.pin1",
+        "sourcePortId": "source_port_754",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG3.pin1",
+        "sourcePortId": "source_port_757",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG4.pin1",
+        "sourcePortId": "source_port_760",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG5.pin1",
+        "sourcePortId": "source_port_763",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG6.pin1",
+        "sourcePortId": "source_port_766",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG7.pin1",
+        "sourcePortId": "source_port_769",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG8.pin1",
+        "sourcePortId": "source_port_772",
+        "physicalNet": "GND"
+      }
+    ],
+    "requiredManualGroundSelectors": [
+      {
+        "selector": "C28.pin2",
+        "sourcePortId": "source_port_226",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C30.pin2",
+        "sourcePortId": "source_port_231",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C31.pin2",
+        "sourcePortId": "source_port_233",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C43.pin2",
+        "sourcePortId": "source_port_299",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_INPUT_DVDT.pin2",
+        "sourcePortId": "source_port_146",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH1",
+        "sourcePortId": "source_port_1",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.EH2",
+        "sourcePortId": "source_port_0",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "J_USB.GND2",
+        "sourcePortId": "source_port_13",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_CLEAR_BUFFER.pin2",
+        "sourcePortId": "source_port_401",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D501.pin1",
+        "sourcePortId": "source_port_609",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D502.pin1",
+        "sourcePortId": "source_port_621",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D503.pin1",
+        "sourcePortId": "source_port_633",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D504.pin1",
+        "sourcePortId": "source_port_643",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D505.pin1",
+        "sourcePortId": "source_port_655",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "D507.pin1",
+        "sourcePortId": "source_port_671",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DBG1.pin2",
+        "sourcePortId": "source_port_710",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "U_DBG2.pin2",
+        "sourcePortId": "source_port_716",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_DBG1.pin2",
+        "sourcePortId": "source_port_722",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "C_DBG2.pin2",
+        "sourcePortId": "source_port_728",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG1.pin1",
+        "sourcePortId": "source_port_751",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG2.pin1",
+        "sourcePortId": "source_port_754",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG3.pin1",
+        "sourcePortId": "source_port_757",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG4.pin1",
+        "sourcePortId": "source_port_760",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG5.pin1",
+        "sourcePortId": "source_port_763",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG6.pin1",
+        "sourcePortId": "source_port_766",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG7.pin1",
+        "sourcePortId": "source_port_769",
+        "physicalNet": "GND"
+      },
+      {
+        "selector": "TPG8.pin1",
+        "sourcePortId": "source_port_772",
+        "physicalNet": "GND"
+      }
+    ],
+    "sourceOwnedGroundCoverage": [
+      {
+        "sourceTraceId": "source_trace_0",
+        "sourcePortId": "source_port_0",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_0",
+            "sourceTraceId": "source_trace_0",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.1089642536986446,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_0"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_1",
+        "sourcePortId": "source_port_1",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_1",
+            "sourceTraceId": "source_trace_1",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09995480919377542,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_1"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_2",
+        "sourcePortId": "source_port_13",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_2",
+            "sourceTraceId": "source_trace_2",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.38313534865483234,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_2"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_18",
+        "sourcePortId": "source_port_146",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_14",
+            "sourceTraceId": "source_trace_18",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09170165578470346,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_13"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_76",
+        "sourcePortId": "source_port_146",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_14",
+            "sourceTraceId": "source_trace_18",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09170165578470346,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_13"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_231",
+        "sourcePortId": "source_port_299",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_45",
+            "sourceTraceId": "source_trace_232",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09570165578509204,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_24"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_232",
+        "sourcePortId": "source_port_299",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_45",
+            "sourceTraceId": "source_trace_232",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09570165578509204,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_24"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_274",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_83",
+            "sourceTraceId": "source_trace_274",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6227619771026127,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_28"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_275",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_84",
+            "sourceTraceId": "source_trace_275",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6227619771025559,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_29"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_276",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_85",
+            "sourceTraceId": "source_trace_276",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6504307662834492,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_30"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_277",
+        "sourcePortId": "source_port_233",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_86",
+            "sourceTraceId": "source_trace_277",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.8853149020630156,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_31"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_278",
+        "sourcePortId": "source_port_233",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_87",
+            "sourceTraceId": "source_trace_278",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.7267993168854048,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_32"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_279",
+        "sourcePortId": "source_port_231",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_88",
+            "sourceTraceId": "source_trace_279",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.867314902062887,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_33"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_280",
+        "sourcePortId": "source_port_231",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_89",
+            "sourceTraceId": "source_trace_280",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.7217608952812782,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_34"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_281",
+        "sourcePortId": "source_port_233",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_86",
+            "sourceTraceId": "source_trace_277",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.8853149020630156,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_31"
+            ],
+            "valid": true
+          },
+          {
+            "pcbTraceId": "pcb_trace_87",
+            "sourceTraceId": "source_trace_278",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.7267993168854048,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_32"
+            ],
+            "valid": true
+          },
+          {
+            "pcbTraceId": "pcb_trace_90",
+            "sourceTraceId": "source_trace_281",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.966314902062976,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_31"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_353",
+        "sourcePortId": "source_port_401",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_461",
+            "sourceTraceId": "source_trace_942",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.12570165578475212,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_43"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_562",
+        "sourcePortId": "source_port_609",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_130",
+            "sourceTraceId": "source_trace_562",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.11883874077474843,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_49"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_570",
+        "sourcePortId": "source_port_621",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_135",
+            "sourceTraceId": "source_trace_570",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.1188387407745779,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_52"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_578",
+        "sourcePortId": "source_port_633",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_140",
+            "sourceTraceId": "source_trace_578",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.11883874077464895,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_55"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_586",
+        "sourcePortId": "source_port_643",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_145",
+            "sourceTraceId": "source_trace_586",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.11883874077449263,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_58"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_594",
+        "sourcePortId": "source_port_655",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_150",
+            "sourceTraceId": "source_trace_594",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.11883874077469159,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_61"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_608",
+        "sourcePortId": "source_port_671",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_157",
+            "sourceTraceId": "source_trace_608",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.11883874077449263,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_64"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_644",
+        "sourcePortId": "source_port_722",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_179",
+            "sourceTraceId": "source_trace_644",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.10570165578485557,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_75"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_645",
+        "sourcePortId": "source_port_710",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_180",
+            "sourceTraceId": "source_trace_645",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.1257016557855195,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_76"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_647",
+        "sourcePortId": "source_port_728",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_182",
+            "sourceTraceId": "source_trace_647",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.1057016557846282,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_77"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_648",
+        "sourcePortId": "source_port_716",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_183",
+            "sourceTraceId": "source_trace_648",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.12570165578455317,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_78"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_670",
+        "sourcePortId": "source_port_751",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_189",
+            "sourceTraceId": "source_trace_670",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507422526,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_79"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_671",
+        "sourcePortId": "source_port_754",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_190",
+            "sourceTraceId": "source_trace_671",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507414,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_80"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_672",
+        "sourcePortId": "source_port_757",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_191",
+            "sourceTraceId": "source_trace_672",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507408315,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_81"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_673",
+        "sourcePortId": "source_port_760",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_192",
+            "sourceTraceId": "source_trace_673",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507422526,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_82"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_674",
+        "sourcePortId": "source_port_763",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_193",
+            "sourceTraceId": "source_trace_674",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507401032,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_83"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_675",
+        "sourcePortId": "source_port_766",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_194",
+            "sourceTraceId": "source_trace_675",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507400677,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_84"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_676",
+        "sourcePortId": "source_port_769",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_195",
+            "sourceTraceId": "source_trace_676",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507404052,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_85"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_677",
+        "sourcePortId": "source_port_772",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_196",
+            "sourceTraceId": "source_trace_677",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.16522481507354314,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_86"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_942",
+        "sourcePortId": "source_port_401",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_461",
+            "sourceTraceId": "source_trace_942",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.12570165578475212,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_43"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_61",
+        "sourcePortId": "source_port_130",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_34",
+            "sourceTraceId": "source_trace_61",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.08570165578477429,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_17"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      {
+        "sourceTraceId": "source_trace_1026",
+        "sourcePortId": "source_port_582",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_545",
+            "sourceTraceId": "source_trace_1026",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.1057016557847561,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_238"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      }
+    ],
+    "missingGroundSelectors": [],
+    "missingManualGroundSelectors": []
+  },
+  "excludedOrigins": [
+    {
+      "selector": "C28.pin2",
+      "sourcePortId": "source_port_226",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C30.pin2",
+      "sourcePortId": "source_port_231",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C31.pin2",
+      "sourcePortId": "source_port_233",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C43.pin2",
+      "sourcePortId": "source_port_299",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C_INPUT_DVDT.pin2",
+      "sourcePortId": "source_port_146",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "J_USB.EH1",
+      "sourcePortId": "source_port_1",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "J_USB.EH2",
+      "sourcePortId": "source_port_0",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "J_USB.GND2",
+      "sourcePortId": "source_port_13",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "U_CLEAR_BUFFER.pin2",
+      "sourcePortId": "source_port_401",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D501.pin1",
+      "sourcePortId": "source_port_609",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D502.pin1",
+      "sourcePortId": "source_port_621",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D503.pin1",
+      "sourcePortId": "source_port_633",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D504.pin1",
+      "sourcePortId": "source_port_643",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D505.pin1",
+      "sourcePortId": "source_port_655",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "D507.pin1",
+      "sourcePortId": "source_port_671",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "U_DBG1.pin2",
+      "sourcePortId": "source_port_710",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "U_DBG2.pin2",
+      "sourcePortId": "source_port_716",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C_DBG1.pin2",
+      "sourcePortId": "source_port_722",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "C_DBG2.pin2",
+      "sourcePortId": "source_port_728",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG1.pin1",
+      "sourcePortId": "source_port_751",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG2.pin1",
+      "sourcePortId": "source_port_754",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG3.pin1",
+      "sourcePortId": "source_port_757",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG4.pin1",
+      "sourcePortId": "source_port_760",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG5.pin1",
+      "sourcePortId": "source_port_763",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG6.pin1",
+      "sourcePortId": "source_port_766",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG7.pin1",
+      "sourcePortId": "source_port_769",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    },
+    {
+      "selector": "TPG8.pin1",
+      "sourcePortId": "source_port_772",
+      "physicalNet": "GND",
+      "requestedByNative": false
+    }
+  ],
+  "ilimProof": {
+    "sourceTraceId": "source_trace_61",
+    "sourcePortId": "source_port_130",
+    "sourceTopologyValid": true,
+    "originHasPhysicalCopper": true,
+    "proofs": [
+      {
+        "pcbTraceId": "pcb_trace_34",
+        "sourceTraceId": "source_trace_61",
+        "startsAtOwnPort": true,
+        "continuousTopCopper": true,
+        "originPadContact": {
+          "supportedActualPadCount": 1,
+          "contactAreaMm2": 0.08570165578477429,
+          "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+          "valid": true
+        },
+        "sameGroundThroughViaIds": [
+          "pcb_via_17"
+        ],
+        "valid": true
+      }
+    ],
+    "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+    "valid": true
+  },
+  "ilimRequestedByNative": false,
+  "requireCapReturns": true,
+  "requireUsbReturns": true,
+  "requireC43Return": true,
+  "c43Excluded": true,
+  "c43Proof": {
+    "sourceTraceId": "source_trace_232",
+    "sourcePortId": "source_port_299",
+    "sourceTopologyValid": true,
+    "originHasPhysicalCopper": true,
+    "proofs": [
+      {
+        "pcbTraceId": "pcb_trace_45",
+        "sourceTraceId": "source_trace_232",
+        "startsAtOwnPort": true,
+        "continuousTopCopper": true,
+        "originPadContact": {
+          "supportedActualPadCount": 1,
+          "contactAreaMm2": 0.09570165578509204,
+          "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+          "valid": true
+        },
+        "sameGroundThroughViaIds": [
+          "pcb_via_24"
+        ],
+        "valid": true
+      }
+    ],
+    "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+    "valid": true
+  },
+  "c43ReturnValid": true,
+  "c43PositiveDuplicateAbsent": true,
+  "c43GroundMapRetained": true,
+  "expectedNativeSelectorCount": 120,
+  "manualGroundReturns": [
+    {
+      "selector": "C_INPUT_DVDT.pin2",
+      "traceName": "INPUT_DVDT_LOCAL_GROUND",
+      "maxLengthMm": 1,
+      "excluded": true,
+      "requiredOrigin": {
+        "selector": "C_INPUT_DVDT.pin2",
+        "sourcePortId": "source_port_146",
+        "physicalNet": "GND"
+      },
+      "sourceTraceId": "source_trace_18",
+      "proof": {
+        "sourceTraceId": "source_trace_18",
+        "sourcePortId": "source_port_146",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_14",
+            "sourceTraceId": "source_trace_18",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.09170165578470346,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_13"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "selector": "U_CLEAR_BUFFER.pin2",
+      "traceName": "CLEAR_BUFFER_GND_TO_EXISTING_C223_HOST",
+      "maxLengthMm": 1.95,
+      "excluded": true,
+      "requiredOrigin": {
+        "selector": "U_CLEAR_BUFFER.pin2",
+        "sourcePortId": "source_port_401",
+        "physicalNet": "GND"
+      },
+      "sourceTraceId": "source_trace_942",
+      "proof": {
+        "sourceTraceId": "source_trace_942",
+        "sourcePortId": "source_port_401",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_461",
+            "sourceTraceId": "source_trace_942",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.12570165578475212,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_43"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "valid": true
+    }
+  ],
+  "capacitorReturns": [
+    {
+      "name": "TEC_INPUT_RETURN_EAST_1_FEED",
+      "capacitor": "C28",
+      "x": 24.25,
+      "y": 22.5,
+      "sourceTraceId": "source_trace_274",
+      "proof": {
+        "sourceTraceId": "source_trace_274",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_83",
+            "sourceTraceId": "source_trace_274",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6227619771026127,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_28"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_INPUT_RETURN_EAST_2_FEED",
+      "capacitor": "C28",
+      "x": 24.25,
+      "y": 23.5,
+      "sourceTraceId": "source_trace_275",
+      "proof": {
+        "sourceTraceId": "source_trace_275",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_84",
+            "sourceTraceId": "source_trace_275",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6227619771025559,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_29"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_INPUT_RETURN_EAST_3_FEED",
+      "capacitor": "C28",
+      "x": 24.25,
+      "y": 24.5,
+      "sourceTraceId": "source_trace_276",
+      "proof": {
+        "sourceTraceId": "source_trace_276",
+        "sourcePortId": "source_port_226",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_85",
+            "sourceTraceId": "source_trace_276",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.6504307662834492,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_30"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_OUTPUT_RETURN_MID_1_FEED",
+      "capacitor": "C31",
+      "x": 28,
+      "y": 8.7,
+      "sourceTraceId": "source_trace_277",
+      "proof": {
+        "sourceTraceId": "source_trace_277",
+        "sourcePortId": "source_port_233",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_86",
+            "sourceTraceId": "source_trace_277",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.8853149020630156,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_31"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_OUTPUT_RETURN_MID_2_FEED",
+      "capacitor": "C31",
+      "x": 28,
+      "y": 9.6,
+      "sourceTraceId": "source_trace_278",
+      "proof": {
+        "sourceTraceId": "source_trace_278",
+        "sourcePortId": "source_port_233",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_87",
+            "sourceTraceId": "source_trace_278",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.7267993168854048,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_32"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_OUTPUT_RETURN_EAST_1_FEED",
+      "capacitor": "C30",
+      "x": 32,
+      "y": 8.4,
+      "sourceTraceId": "source_trace_279",
+      "proof": {
+        "sourceTraceId": "source_trace_279",
+        "sourcePortId": "source_port_231",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_88",
+            "sourceTraceId": "source_trace_279",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.867314902062887,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_33"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    },
+    {
+      "name": "TEC_OUTPUT_RETURN_EAST_2_FEED",
+      "capacitor": "C30",
+      "x": 32,
+      "y": 9.3,
+      "sourceTraceId": "source_trace_280",
+      "proof": {
+        "sourceTraceId": "source_trace_280",
+        "sourcePortId": "source_port_231",
+        "sourceTopologyValid": true,
+        "originHasPhysicalCopper": true,
+        "proofs": [
+          {
+            "pcbTraceId": "pcb_trace_89",
+            "sourceTraceId": "source_trace_280",
+            "startsAtOwnPort": true,
+            "continuousTopCopper": true,
+            "originPadContact": {
+              "supportedActualPadCount": 1,
+              "contactAreaMm2": 0.7217608952812782,
+              "method": "128-segment conservative copper/drill pair intersection; maximum pair area is a lower bound of complete contact area",
+              "valid": true
+            },
+            "sameGroundThroughViaIds": [
+              "pcb_via_34"
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "Own source-port copper to a same-GND full-through via; global plane continuity requires separate physical proof",
+        "valid": true
+      },
+      "actualPath": true,
+      "valid": true
+    }
+  ],
+  "capacitorTieValid": true,
+  "positivePass": true,
+  "controls": [
+    {
+      "name": "excluded-origin-copper-removed",
+      "detected": true,
+      "missingManualSelectors": [
+        "D501.pin1"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_562"
+      ]
+    },
+    {
+      "name": "excluded-origin-entire-fallback-declaration-removed",
+      "detected": true,
+      "missingManualSelectors": [
+        "D501.pin1"
+      ],
+      "missingSourceTraceIds": []
+    },
+    {
+      "name": "named-via-head-owned-by-wrong-port",
+      "detected": true,
+      "missingManualSelectors": [
+        "D501.pin1"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_562"
+      ]
+    },
+    {
+      "name": "barrel-key-contradicts-source-ground",
+      "detected": true,
+      "missingManualSelectors": [
+        "D501.pin1"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_562"
+      ]
+    },
+    {
+      "name": "selected-ilim-manual-copper-removed",
+      "detected": true,
+      "missingManualSelectors": [],
+      "missingSourceTraceIds": [
+        "source_trace_61"
+      ]
+    },
+    {
+      "name": "one-capacitor-branch-removed-with-other-branches-retained",
+      "detected": true,
+      "missingManualSelectors": [],
+      "missingSourceTraceIds": [
+        "source_trace_274"
+      ]
+    },
+    {
+      "name": "c43-fixed-ground-copper-removed-with-implicit-ground-map-retained",
+      "detected": true,
+      "missingManualSelectors": [
+        "C43.pin2"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_231",
+        "source_trace_232"
+      ]
+    },
+    {
+      "name": "C_INPUT_DVDT.pin2-return-copper-removed-with-ground-map-and-barrel-retained",
+      "detected": true,
+      "missingManualSelectors": [
+        "C_INPUT_DVDT.pin2"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_18",
+        "source_trace_76"
+      ]
+    },
+    {
+      "name": "U_CLEAR_BUFFER.pin2-return-copper-removed-with-ground-map-and-barrel-retained",
+      "detected": true,
+      "missingManualSelectors": [
+        "U_CLEAR_BUFFER.pin2"
+      ],
+      "missingSourceTraceIds": [
+        "source_trace_353",
+        "source_trace_942"
+      ]
+    }
+  ],
+  "pass": true,
+  "scope": "Required source-ground origins versus current native selectors, exact excluded-origin copper fallbacks and ILIM/capacitor/CdVdt manual returns; native request coverage pending without an actual phase input",
+  "limitations": "Pad-to-annulus/full-stack-barrel proof only; final via-to-plane and whole-net continuity remain mandatory."
+}

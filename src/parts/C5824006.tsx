@@ -20,7 +20,6 @@ export const PA2512FKE7W0R008E = (props: Omit<ResistorProps, "resistance">) => {
       footprint={<footprint>
         <smtpad solderPasteMargin={0} solderMaskMargin={0.05} portHints={["pin2"]} pcbX="2.855mm" pcbY="0mm" width="1.65mm" height="3.68mm" shape="rect" />
 <smtpad solderPasteMargin={0} solderMaskMargin={0.05} portHints={["pin1"]} pcbX="-2.855mm" pcbY="0mm" width="1.65mm" height="3.68mm" shape="rect" />
-<silkscreentext text="{NAME}" pcbX="0mm" pcbY="2.9558mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-3.957549100000051,"y":1.9780001000000311},{"x":3.9575490999999374,"y":1.9780001000000311},{"x":3.9575490999999374,"y":-1.9780001000000311},{"x":-3.957549100000051,"y":-1.9780001000000311},{"x":-3.957549100000051,"y":1.9780001000000311}]} />
       </footprint>}
       cadModel={{

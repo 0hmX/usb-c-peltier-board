@@ -1,4 +1,4 @@
-import {EventEmitter} from "node:events"
+import {EventEmitter} from "eventemitter3"
 import {AutoroutingPipelineSolver9_PreloadedTraceGraph as Solver,
   AutoroutingPipelineSolver6_PolyHypergraph as PolySolver,
   type SimpleRouteJson,type Obstacle} from "@tscircuit/capacity-autorouter"

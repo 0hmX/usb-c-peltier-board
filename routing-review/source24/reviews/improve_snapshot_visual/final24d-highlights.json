@@ -1,0 +1,96 @@
+{
+  "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "highlights": [
+    {
+      "label": "eFuse bypass: -19.85 mm",
+      "layer": "top",
+      "bounds": {
+        "minX": -18.55,
+        "maxX": -15.919999999999998,
+        "minY": 14.2,
+        "maxY": 18.5
+      },
+      "elementIds": [
+        "pcb_trace_31",
+        "source_trace_35"
+      ],
+      "evidence": {
+        "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+        "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+      }
+    },
+    {
+      "label": "Fan feed: -8.67 mm",
+      "layer": "top",
+      "bounds": {
+        "minX": 15.530079,
+        "maxX": 49.599999999999994,
+        "minY": -8.900000000000002,
+        "maxY": 27.1
+      },
+      "elementIds": [
+        "pcb_trace_59",
+        "source_trace_247"
+      ],
+      "evidence": {
+        "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+        "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+      }
+    },
+    {
+      "label": "VC: 5 to 1 bends",
+      "layer": "inner2",
+      "bounds": {
+        "minX": -9.100000000000001,
+        "maxX": -1.9000000000000001,
+        "minY": 15.599999999999998,
+        "maxY": 22.05
+      },
+      "elementIds": [
+        "pcb_trace_264",
+        "source_trace_745"
+      ],
+      "evidence": {
+        "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+        "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+      }
+    },
+    {
+      "label": "Low gate: -1.93 mm",
+      "layer": "inner2",
+      "bounds": {
+        "minX": -8.8,
+        "maxX": 4.1,
+        "minY": 4.75,
+        "maxY": 20.35
+      },
+      "elementIds": [
+        "pcb_trace_357",
+        "source_trace_838"
+      ],
+      "evidence": {
+        "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+        "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+      }
+    },
+    {
+      "label": "29.94 mm moved off GND",
+      "layer": "inner2",
+      "bounds": {
+        "minX": -19.2,
+        "maxX": 7.2,
+        "minY": -26.55,
+        "maxY": -19.75
+      },
+      "elementIds": [
+        "pcb_trace_510",
+        "source_trace_991"
+      ],
+      "evidence": {
+        "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+        "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+      }
+    }
+  ],
+  "scope": "Actual installed final24d routes only. Boxes/labels are review annotations, not copper. Ground value is old versus complete split route, not an ungrouped-name length claim."
+}

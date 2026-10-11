@@ -1,0 +1,597 @@
+{
+  "role": "Gate-drive and commutation routing review",
+  "scoreOutOf10": 7.5,
+  "scoreScope": "Whole-board routing opinion informed by a detailed gate/VC native-copper review; not a new independent whole-board DRC or manufacturability signoff.",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "freshCapturePassed": true,
+  "confidence": "High on scoped geometry and measured gate improvement; moderate on overall numerical routing score.",
+  "directChecks": {
+    "capture": "work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+    "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "measurements": {
+      "high": {
+        "traceLengths": {
+          "TEC_HG_LOCAL_U2": 4.5384776310850246,
+          "TEC_HIGH_R21_ESCAPE": 2.3035533905932737,
+          "TEC_HIGH_BOTTOM_LOCAL": 16.153528137423855,
+          "TEC_HIGH_Q20_ESCAPE": 1.1524999999999999
+        },
+        "planarMm": 24.148059159102154
+      },
+      "low": {
+        "traceLengths": {
+          "TEC_LG_LOCAL_U2": 2.0060660171779823,
+          "TEC_LOW_R22_ESCAPE": 1.3000000000000007,
+          "TEC_LOW_INNER2_LOCAL": 20.408683245815343,
+          "TEC_LOW_Q21_ESCAPE": 2.687459953866432
+        },
+        "planarMm": 26.40220921685976
+      },
+      "vc": {
+        "traceLengths": {
+          "TEC_VC_U2_ESCAPE": 1.904594154601837,
+          "TEC_VC_LOCAL": 7.6089357775095126,
+          "TEC_VC_R27_ESCAPE": 3.174873734152916
+        },
+        "planarMm": 12.688403666264266
+      },
+      "swReturn": {
+        "traceLengths": {
+          "TEC_SW_REFERENCE": 17.69964249456123
+        },
+        "planarMm": 17.69964249456123
+      }
+    },
+    "checks": {
+      "low": {
+        "name": "TEC_LOW_INNER2_LOCAL",
+        "layer": "inner2",
+        "points": [
+          [
+            -8,
+            19.55
+          ],
+          [
+            -8,
+            19.55
+          ],
+          [
+            -8,
+            16.3
+          ],
+          [
+            -3.2,
+            11.5
+          ],
+          [
+            -3.2,
+            10.100000000000001
+          ],
+          [
+            -1.3499999999999996,
+            8.25
+          ],
+          [
+            -1.3499999999999996,
+            7.25
+          ],
+          [
+            -0.9500000000000002,
+            6.850000000000001
+          ],
+          [
+            2,
+            6.850000000000001
+          ],
+          [
+            3.3,
+            5.55
+          ],
+          [
+            3.3,
+            5.55
+          ]
+        ],
+        "width": 0.2,
+        "length": 20.408683245815343,
+        "baseline": 20.408683245815343,
+        "minGap": 0.22999999999999954,
+        "belowPoint2": []
+      },
+      "vc": {
+        "name": "TEC_VC_LOCAL",
+        "layer": "inner2",
+        "points": [
+          [
+            -2.7,
+            16.4
+          ],
+          [
+            -2.7,
+            16.4
+          ],
+          [
+            -3.45,
+            16.4
+          ],
+          [
+            -8.3,
+            21.25
+          ],
+          [
+            -8.3,
+            21.25
+          ]
+        ],
+        "width": 0.2,
+        "length": 7.6089357775095126,
+        "baseline": 7.6089357775095126,
+        "minGap": 0.3810435659112082,
+        "belowPoint2": []
+      },
+      "mutualVcLowCopperGapMm": 0.7899494936611661,
+      "mutualVcLowOverlapAreaMm2": 0.0,
+      "highAndSwReferenceUnchanged": true
+    },
+    "counts": {
+      "pcb_trace": 636,
+      "pcb_via": 434,
+      "pcb_smtpad": 552,
+      "pcb_copper_pour": 31
+    },
+    "scope": "Exact fresh gate and VC trace geometry with all foreign copper pads/traces/full through barrels/pours on shared layers; high/SW route baseline comparison. Full-board continuity/clearance belongs to independent board validators."
+  },
+  "improvements": [
+    {
+      "item": "Complete low gate U2-to-Q21 via R22",
+      "beforeMm": 28.335304461028546,
+      "afterMm": 26.40220921685976,
+      "reductionMm": 1.9330952441687863,
+      "percentageReduction": 6.8222144809754965,
+      "newBarrels": 0,
+      "componentPlacementsChanged": false
+    },
+    {
+      "item": "Complete compensation U2-to-R27",
+      "beforeMm": 15.185397179880388,
+      "afterMm": 12.688403666264266,
+      "reductionMm": 2.496993513616122
+    },
+    {
+      "item": "Joint gate/VC geometry",
+      "explanation": "The implemented LOW and VC paths were co-routed and checked together; their actual shared-layer copper gap is 0.789949 mm, avoiding the crossing in the first isolated LOW candidate."
+    }
+  ],
+  "residualGateRisk": [
+    {
+      "severity": "medium",
+      "explanation": "Complete high/low planar gate paths remain 24.148/26.402 mm with two through-board transfers per gate. Existing remote MOSFET/driver placement still creates distributed gate-loop inductance and coupling exposure. No ringing or switching malfunction is established by static geometry."
+    },
+    {
+      "severity": "medium",
+      "explanation": "MOSFET and input-MLCC placement, broad switch island and main commutation-loop layout remain unchanged; shortening the LOW signal did not compact the power commutation loop."
+    },
+    {
+      "severity": "low",
+      "explanation": "Minimum changed LOW foreign-copper margin is 0.230 mm to the FB transfer barrel. It passes the 0.200 mm checked clearance, with only 0.030 mm nominal headroom."
+    },
+    {
+      "severity": "low",
+      "explanation": "The unchanged TEC_HG_LOCAL_U2 trace has exactly0.200mm nominal foreign copper spacing. It passes the checked limit but has no additional design margin at that location."
+    }
+  ],
+  "highGateDecision": "Preserved the high gate and SW return exactly. A tested 0.64 mm shorter high path increased separation from its adjacent SW return; the final implementation avoids that adverse tradeoff.",
+  "ratingRationale": "The final board earns credit for real, independently measured shorter LOW/VC paths with unchanged gate via count and compatible copper. Existing long gate loops and placement-driven commutation spread keep the rating below an excellent power-layout score.",
+  "limitations": [
+    "Static native geometry only; no oscilloscope gate-ringdown, EMI, thermal, transient, stability or switching tests.",
+    "Foreign geometry freshly checked on all12 actual gate, VC, and SW-reference trace sweeps using real SMT pads, trace widths, all-through via/barrel copper and24d BREP pours. HIGH/SW paths also compared with Source23.",
+    "Full-board shorts, connectivity, plane contact and pour acceptance are independently owned validation scopes."
+  ],
+  "evidence": [
+    "final-verification.json",
+    "fresh-capture-check.json",
+    "scoped-final-check.json",
+    "fresh-gate-neighbors.json"
+  ],
+  "revision": "24d",
+  "scopedNeighborVerification": {
+    "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "actualSelectedTraces": 12,
+    "checks": {
+      "TEC_HG_LOCAL_U2": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.20000000000000018,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_232",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.20000000000000107,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_360",
+            "foreignNet": [
+              "TEC_SW"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.21774642646591075,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_38",
+            "foreignNet": [
+              "TEC_BOOT"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_HIGH_R21_ESCAPE": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.29999999999999716,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_234",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.6106601717798206,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_234",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 1.5819805153394628,
+            "foreignKind": "pcb_trace",
+            "foreignId": "pcb_trace_62",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_HIGH_BOTTOM_LOCAL": {
+        "nearest": [
+          {
+            "layer": "bottom",
+            "gapMm": 0.2499994719110307,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_62",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "bottom",
+            "gapMm": 0.24999999999999978,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_62",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "bottom",
+            "gapMm": 0.25,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_62",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_HIGH_Q20_ESCAPE": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.8949999999999959,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_57",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.8949999999999959,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_57",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.8949999999999959,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_57",
+            "foreignNet": [
+              "VBUS_TEC"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_LG_LOCAL_U2": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.32500000000000084,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_111",
+            "foreignNet": [
+              "TEC_BOOT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.32500000000000107,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_111",
+            "foreignNet": [
+              "TEC_BOOT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.4250000000000007,
+            "foreignKind": "pcb_trace",
+            "foreignId": "pcb_trace_56",
+            "foreignNet": [
+              "TEC_SW"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_LOW_R22_ESCAPE": {
+        "nearest": [],
+        "belowPoint2": []
+      },
+      "TEC_LOW_INNER2_LOCAL": {
+        "nearest": [
+          {
+            "layer": "inner2",
+            "gapMm": 0.22999999999999954,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_92",
+            "foreignNet": [
+              "TEC_FB"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "inner2",
+            "gapMm": 0.2394291116568846,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_360",
+            "foreignNet": [
+              "TEC_SW"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "inner2",
+            "gapMm": 0.24296464556281605,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_92",
+            "foreignNet": [
+              "TEC_FB"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_LOW_Q21_ESCAPE": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.251767238863997,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_56",
+            "foreignNet": [
+              "TEC_SW"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.2563996744053603,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_399",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.2659277592640386,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_126",
+            "foreignNet": [
+              "TEC_SW"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_VC_U2_ESCAPE": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.2889087296526014,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_118",
+            "foreignNet": [
+              "TEC_SENSE_N_FILTERED"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.30042390582282313,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_35",
+            "foreignNet": [
+              "TEC_RT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.30042390582282347,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_35",
+            "foreignNet": [
+              "TEC_RT"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_VC_LOCAL": {
+        "nearest": [
+          {
+            "layer": "inner2",
+            "gapMm": 0.3810435659112084,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_35",
+            "foreignNet": [
+              "TEC_RT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "inner2",
+            "gapMm": 0.3810435659112084,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_35",
+            "foreignNet": [
+              "TEC_RT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "inner2",
+            "gapMm": 0.5399494936611652,
+            "foreignKind": "pcb_via",
+            "foreignId": "pcb_via_130",
+            "foreignNet": [
+              "TEC_LOW_GATE"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_VC_R27_ESCAPE": {
+        "nearest": [
+          {
+            "layer": "top",
+            "gapMm": 0.2750626000000018,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_143",
+            "foreignNet": [
+              "TEC_VCC_INT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.2750626000000018,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_143",
+            "foreignNet": [
+              "TEC_VCC_INT"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "top",
+            "gapMm": 0.3999999999999986,
+            "foreignKind": "pcb_smtpad",
+            "foreignId": "pcb_smtpad_181",
+            "foreignNet": [
+              "TEC_COMP_RC"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      },
+      "TEC_SW_REFERENCE": {
+        "nearest": [
+          {
+            "layer": "bottom",
+            "gapMm": 0.20850704786123003,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_14",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "bottom",
+            "gapMm": 0.20850704786123003,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_14",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          },
+          {
+            "layer": "bottom",
+            "gapMm": 0.20999999999999996,
+            "foreignKind": "pcb_copper_pour",
+            "foreignId": "pcb_copper_pour_42",
+            "foreignNet": [
+              "GND"
+            ],
+            "overlapArea": 0.0
+          }
+        ],
+        "belowPoint2": []
+      }
+    },
+    "belowPoint2": [],
+    "pass": true
+  },
+  "finalVerification": "final-verification.json"
+}

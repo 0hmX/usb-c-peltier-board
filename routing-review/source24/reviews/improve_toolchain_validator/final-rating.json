@@ -1,0 +1,41 @@
+{
+  "role": "toolchain source endpoint/width/bounds/style validator",
+  "rating": 7.8,
+  "scale": 10,
+  "scope": "Whole-board routing quality from static CAD; source constraints and proof integrity emphasized. No manufacturing or dynamic release claim.",
+  "status": "Final Source24d verified",
+  "finalCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "baselineRating": 7.2,
+  "toolchainPass": true,
+  "evidence": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_toolchain_validator/final-verification.json",
+  "positiveFindings": [
+    "452 positive active source ceilings, all declared and board widths including tapers, 515 real source endpoint pairs and all actual pad/barrel head contacts checked freshly.",
+    "Native length check, strict0.1-degree angles, official style and supplemental lint all run on actual final publisher capture.",
+    "Source/preflight/runtime identities and exact supplier anchors bound to fresh producer output.",
+    "Local output bypass, DVDT, VC, low gate, sense and fan paths improve;38.24mm of signal corridor leaves inner1.",
+    "Native sense-bound mistake was exposed by the genuine24b failure and corrected in source before regeneration; copper remains exact."
+  ],
+  "nativeBoundDisclosure": {
+    "provisional24bRejected": true,
+    "incorrectPlanarOnlyNativeBoundMm": 5.9,
+    "planarScopeRetainedMm": 5.9,
+    "actualPlanarMm": 5.761370849898477,
+    "actualViaTransitions": 2,
+    "nativeNominalLengthMm": 8.961370849898477,
+    "conservativeWholeMm": 9.281370849898478,
+    "correctedSourceMaxMm": 9.4,
+    "priorSource23MaxMm": 10,
+    "all24bToFinalCopperGeometryExact": true
+  },
+  "remainingWeaknesses": [
+    "Fan supply and UART retain large detours; complete gate routes remain long.",
+    "636 traces and434 vias remain dense; SAFE_EN layer migration adds two transfer barrels, and R35 pickup length grows to enable local bypass.",
+    "Local eFuse input bypass and remaining289.687mm inner1 signal corridor still deserve improvement.",
+    "Duplicate historical geometry/length ledgers and native-only90-ground hardcodes increase maintenance coupling; selected source preflight/placement uses current88 paths.",
+    "117 retained warnings include44 misleading net-wide width attributions; every warned source's actual owned routes independently meet declared widths, with all rows retained in evidence."
+  ],
+  "manufacturingOrDynamicReleaseClaimed": false
+}

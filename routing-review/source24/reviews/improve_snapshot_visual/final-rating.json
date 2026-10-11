@@ -1,0 +1,155 @@
+{
+  "role": "improve_snapshot_visual",
+  "circuitFile": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "wholeBoardFinalRatingOutOf10": 7.1,
+  "scoreOutOf10": 7.1,
+  "source23WholeBoardRoleRatingOutOf10": 6.5,
+  "baselineRoleRating": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/baseline-visual-review.json",
+  "scale": {
+    "0": "Unusable routing",
+    "10": "Excellent whole-board craft: direct coherent paths, restrained bends/transfers, readable copper, and strong ground-plane continuity"
+  },
+  "scope": "Independent whole-board visual routing craft and straightness assessment of actual frozen final24d, using all-layer segment measurements and actual top/inner2/inner1 images; not a score of the highlighted routes alone or a hardware release.",
+  "confidence": "High for frozen-capture rendering and measured planar route geometry; medium for whole-board electrical craft because operating waveforms and thermal behavior require hardware validation.",
+  "metrics": {
+    "baseline": {
+      "traceObjects": 633,
+      "viaObjects": 433,
+      "pours": 29,
+      "planarWireLengthMmByLayer": {
+        "top": 1804.0938743253805,
+        "inner2": 1023.1557731007398,
+        "bottom": 923.4028456851777,
+        "inner1": 327.93030321840826
+      },
+      "wireSegments": 1639,
+      "non45DegreeSegments": 0
+    },
+    "final": {
+      "traceObjects": 636,
+      "viaObjects": 434,
+      "pours": 31,
+      "planarWireLengthMmByLayer": {
+        "top": 1787.273402437295,
+        "inner2": 1051.7144100242983,
+        "bottom": 915.6285816164653,
+        "inner1": 289.6865059616386
+      },
+      "wireSegments": 1636,
+      "non45DegreeSegments": 0
+    },
+    "totalPlanarWireLengthReductionMm": 34.27989629000922,
+    "inner1PlanarWireLengthReductionMm": 38.24379725676965,
+    "fanFinalLengthToEndpointChord": 2.2147702904506645,
+    "explicitlyNamedChangedRoutes": 20,
+    "measuredHighlightedAndRepresentativeRoutes": [
+      {
+        "name": "PD_PROTECTED_BYPASS_FEED",
+        "beforeLengthMm": 23.02577777210913,
+        "afterLengthMm": 3.1735028842544413,
+        "beforeBends": 4,
+        "afterBends": 2,
+        "afterMinWidthMm": 0.25
+      },
+      {
+        "name": "FAN_PROTECTED_POWER_FEED",
+        "beforeLengthMm": 90.59177524949237,
+        "afterLengthMm": 81.92213597261417,
+        "beforeBends": 6,
+        "afterBends": 6,
+        "afterMinWidthMm": 0.8
+      },
+      {
+        "name": "TEC_VC_LOCAL",
+        "beforeLengthMm": 10.105929291125635,
+        "afterLengthMm": 7.6089357775095126,
+        "beforeBends": 5,
+        "afterBends": 1,
+        "afterMinWidthMm": 0.2
+      },
+      {
+        "name": "TEC_LOW_INNER2_LOCAL",
+        "beforeLengthMm": 22.34177848998413,
+        "afterLengthMm": 20.408683245815343,
+        "beforeBends": 9,
+        "afterBends": 7,
+        "afterMinWidthMm": 0.2
+      },
+      {
+        "name": "INPUT_DVDT_FULL_TRUNK",
+        "beforeLengthMm": 8.305929291125633,
+        "afterLengthMm": 2.9813708498984743,
+        "beforeBends": 3,
+        "afterBends": 1,
+        "afterMinWidthMm": 0.2
+      },
+      {
+        "name": "UART_TX_MCU_BOTTOM_HEADER",
+        "beforeLengthMm": 56.07935893423776,
+        "afterLengthMm": 55.70509486552584,
+        "beforeBends": 11,
+        "afterBends": 11,
+        "afterMinWidthMm": 0.2
+      },
+      {
+        "name": "UART_RX_MCU_INNER2_TRUNK",
+        "beforeLengthMm": 28.550104602052652,
+        "afterLengthMm": 28.442997820866108,
+        "beforeBends": 6,
+        "afterBends": 8,
+        "afterMinWidthMm": 0.2
+      }
+    ],
+    "groupedSafeEnMigration": {
+      "beforeInner1Mm": 52.349137802864846,
+      "afterInner1HeadAndTailMm": 22.41126983722081,
+      "afterInner2MiddleMm": 29.8278174593052,
+      "inner1RemovedMm": 29.937867965644035,
+      "beforeCompletePathMm": 52.349137802864846,
+      "afterCompleteSplitPathMm": 52.23908729652601,
+      "wholePathReductionMm": 0.11005050633883684
+    },
+    "matchingPhysicalPadJoins": {
+      "required": 450,
+      "joined": 450,
+      "missing": 0
+    }
+  },
+  "reasons": [
+    "The eFuse bypass is visibly compact at 3.17 mm instead of 23.03 mm; VC falls from five bends to one and LOW loses two bends.",
+    "The fan feed replaces part of the perimeter detour with a clear 45-degree shortcut, saving 8.67 mm while retaining the actual 0.8 mm width.",
+    "The GND view visibly removes the central bottom SAFE_EN trench segment and the old DVDT corridor. Inner1 signal length falls 38.24 mm, including 29.94 mm from the complete split SAFE_EN path.",
+    "The moved TPG6 probe has a readable native GND label at (14.5, 2.75), qualified against all requested pad masks and other native legend ink."
+  ],
+  "remainingLimitations": [
+    "Whole-board simplification is modest: total planar copper falls only 34.28 mm (about 0.84%); wire segments fall three and vias increase from 433 to 434.",
+    "The top view remains dense around the power/control clusters, with 1151 nonzero top-layer segments. Further tidying must preserve the real electrical escapes and clearances.",
+    "The fan still spans 81.92 mm, about 2.21 times its endpoint chord, and UART TX remains 55.71 mm with eleven bends.",
+    "The main GND layer still carries 289.69 mm of signal routing and substantial diagonal corridors.",
+    "Zero off-angle segments was already true in Source23. UART RX and CURRENT_COMMAND gain bends in the final route, so these changes are not credited as straightness gains."
+  ],
+  "evidence": {
+    "verification": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final-verification.json",
+      "sha256": "a2ad1dac53c59b9ede0d3de75457f7f54e1585b2d5d5a27d752f5a2c0451f24a"
+    },
+    "comparison": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-comparison.json",
+      "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+    },
+    "renderManifest": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/19-source-routing-improved-top-inner2-manifest.json",
+      "sha256": "a6abc7e2a8636aa144d3fb8ffbad749ac067e9178c1d1e71b128f04e90d2161f"
+    },
+    "nativeLayerAndRasterReceipt": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/final24d-native-payload-check.json",
+      "sha256": "5b7b6ab23df866ec48296cc00aa349d9b8e0b071434dcc6211065cd481253696"
+    },
+    "actualLabelQualification": {
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_snapshot_visual/tpg6-label-actual24d-qualification.json",
+      "sha256": "e53759e506e908ebcf42100792d503a8712465ff41112b9e3358fa252ef1a49f"
+    }
+  },
+  "acceptanceDependency": "Frozen-hash connectivity/shorts/clearance/Gerber and preserved-part checks are separate engineering receipts. Static CAD routing checked; hardware validation pending."
+}

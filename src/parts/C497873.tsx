@@ -17,10 +17,6 @@ export const YSPI0630A_220M = (props: Omit<InductorProps, "inductance">) => {
       footprint={<footprint>
         <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="2.75mm" pcbY="0mm" width="1.8mm" height="3.4mm" shape="rect" solderMaskMargin="0.05mm" />
 <smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-2.75mm" pcbY="0mm" width="1.8mm" height="3.4mm" shape="rect" solderMaskMargin="0.05mm" />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":3.55,"y":1.9889999999999992},{"x":3.55,"y":3.3659999999999983},{"x":-3.55,"y":3.3659999999999983}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-3.55,"y":-1.9889999999999992},{"x":-3.55,"y":-3.3659999999999983},{"x":3.55,"y":-3.3659999999999983},{"x":3.55,"y":-1.9889999999999992}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-3.55,"y":3.3659999999999983},{"x":-3.55,"y":1.9889999999999992}]} />
-<silkscreentext text="{NAME}" pcbX="0mm" pcbY="4.302mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-4.05,"y":3.8},{"x":4.05,"y":3.8},{"x":4.05,"y":-3.8},{"x":-4.05,"y":-3.8},{"x":-4.05,"y":3.8}]} />
       </footprint>}
       cadModel={{

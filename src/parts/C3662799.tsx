@@ -101,7 +101,6 @@ export const TPS259470ARPWR = (props: ChipProps<typeof pinLabels>) => {
 <smtpad solderPasteMargin={0} solderMaskMargin={0.04} portHints={["pin9"]} pcbX="0.9mm" pcbY="0.225mm" width="0.6mm" height="0.25mm" shape="rect" cornerRadius={0.05} />
 <smtpad solderPasteMargin={0} solderMaskMargin={0.04} portHints={["pin8"]} pcbX="0.9mm" pcbY="-0.225mm" width="0.6mm" height="0.25mm" shape="rect" cornerRadius={0.05} />
 <silkscreencircle strokeWidth={0.15} pcbX="-1.7149953mm" pcbY="1.229868mm" radius="0.13462mm" />
-<silkscreentext text="{NAME}" pcbX="-0.2390013mm" pcbY="2.3716mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.4649963000000525,"y":1.4499976000000743},{"x":1.4649963000000525,"y":1.4499976000000743},{"x":1.4649963000000525,"y":-1.4499975999999606},{"x":-1.4649963000000525,"y":-1.4499975999999606},{"x":-1.4649963000000525,"y":1.4499976000000743}]} />
       </footprint>
     </chip>

@@ -44,7 +44,6 @@ export const NTMFS5C670NLT1G = (props: ChipProps<typeof pinLabels>) => {
 <smtpad solderPasteMargin={0} solderMaskMargin={0.076} portHints={["pin2"]} pcbX="-0.635mm" pcbY="-2.7475mm" width="0.75mm" height="1mm" shape="rect" />
 <smtpad solderPasteMargin={0} solderMaskMargin={0.076} portHints={["pin1"]} pcbX="-1.905mm" pcbY="-2.7475mm" width="0.75mm" height="1mm" shape="rect" />
 <silkscreencircle strokeWidth={0.15} pcbX="-2.70mm" pcbY="-3.35mm" radius="0.100076mm" />
-<silkscreentext text="{NAME}" pcbX="0.0127mm" pcbY="4.2622998mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-3.0250008000000435,"y":3.507499199999984},{"x":3.0250008000000435,"y":3.507499199999984},{"x":3.0250008000000435,"y":-3.5074992000000975},{"x":-3.0250008000000435,"y":-3.5074992000000975},{"x":-3.0250008000000435,"y":3.507499199999984}]} />
       </footprint>}
       cadModel={{

@@ -1,0 +1,273 @@
+{
+  "baselineSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "scope": "Fresh actual native BREP + drilled geometric review focused on partial SAFE_EN migration and ground reference, no solver/pass-flag reuse",
+  "metrics": {
+    "baseline": {
+      "layerLengthsMm": {
+        "top": 1804.093874325381,
+        "inner2": 1023.1557731007398,
+        "bottom": 923.4028456851777,
+        "inner1": 327.9303032184082
+      },
+      "inner1Signals": {
+        "INPUT_DVDT_FULL_TRUNK": 8.305929291125633,
+        "TEC_CLEAR_RAW_REMOTE_INNER1": 28.75814754519511,
+        "MCU_ARM_PULLDOWN_INNER1_LINK": 14.296498910433053,
+        "TEC_CLEAR_LATCH_BUFFER_INNER1": 30.966904755831216,
+        "PD_VALID_R206_TRANSFER_TO_ENTRY_INNER1": 38.842418792657014,
+        "INPUT_FAULT_REMOTE_INNER1": 51.324830406564054,
+        "HOT_RAW_FILTER_TRUNK_INNER1": 31.430129855222066,
+        "SAFE_R37_TRUNK": 71.6563058585152,
+        "SAFE_EN_DEBUG_INNER1_TRUNK": 52.349137802864846
+      },
+      "inner1SignalMm": 327.9303032184082,
+      "vias": 433,
+      "traces": 633
+    },
+    "current": {
+      "layerLengthsMm": {
+        "top": 1787.273402437295,
+        "inner2": 1051.7144100242983,
+        "bottom": 915.6285816164655,
+        "inner1": 289.6865059616386
+      },
+      "inner1Signals": {
+        "TEC_CLEAR_RAW_REMOTE_INNER1": 28.75814754519511,
+        "MCU_ARM_PULLDOWN_INNER1_LINK": 14.296498910433053,
+        "TEC_CLEAR_LATCH_BUFFER_INNER1": 30.966904755831216,
+        "PD_VALID_R206_TRANSFER_TO_ENTRY_INNER1": 38.842418792657014,
+        "INPUT_FAULT_REMOTE_INNER1": 51.324830406564054,
+        "HOT_RAW_FILTER_TRUNK_INNER1": 31.430129855222066,
+        "SAFE_R37_TRUNK": 71.6563058585152,
+        "SAFE_EN_DEBUG_INNER1_TRUNK": 2.836396103067895,
+        "SAFE_EN_DEBUG_INNER1_TAIL": 19.574873734152916
+      },
+      "inner1SignalMm": 289.6865059616385,
+      "vias": 434,
+      "traces": 636
+    }
+  },
+  "actualSignalSegments": [
+    {
+      "name": "SAFE_EN_DEBUG_INNER1_TRUNK",
+      "id": "pcb_trace_509",
+      "layer": "inner1",
+      "lengthMm": 2.836396103067895,
+      "actualInner1ReferenceMissingCenterlineMm": null
+    },
+    {
+      "name": "SAFE_EN_DEBUG_INNER2_MIDDLE",
+      "id": "pcb_trace_510",
+      "layer": "inner2",
+      "lengthMm": 29.8278174593052,
+      "actualInner1ReferenceMissingCenterlineMm": 1.1590110285397972
+    },
+    {
+      "name": "SAFE_EN_DEBUG_INNER1_TAIL",
+      "id": "pcb_trace_511",
+      "layer": "inner1",
+      "lengthMm": 19.574873734152916,
+      "actualInner1ReferenceMissingCenterlineMm": null
+    }
+  ],
+  "actualTransferVias": [
+    {
+      "id": "pcb_via_223",
+      "xy": [
+        6.25,
+        -20.55
+      ],
+      "nativePlaneGapMm": 0.20730349124228808,
+      "nativeForeignGroundOverlapMm2": 0.0
+    },
+    {
+      "id": "pcb_via_224",
+      "xy": [
+        -18.4,
+        -25.75
+      ],
+      "nativePlaneGapMm": 0.20730349124228725,
+      "nativeForeignGroundOverlapMm2": 0.0
+    }
+  ],
+  "actualMainInner1AreaMm2": 6636.386718239524,
+  "actualMainInner1Regions": 1,
+  "migrationWindowGroundRecoveredMm2": 17.939840419949675,
+  "migrationWindowGroundLostMm2": 0.6796671748052419,
+  "migrationWindowGroundNetGainMm2": 17.260173245144433,
+  "criticalProjectionCohort": [
+    {
+      "name": "PD_RAW_MONITOR_FEED",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 4.045553081981728
+    },
+    {
+      "name": "PD_RAW_BYPASS_FEED",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 4.937842037101331
+    },
+    {
+      "name": "PD_VBUS_SENSE",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 2.993332529172589
+    },
+    {
+      "name": "PD_PROTECTED_DISCHARGE_FEED",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 4.7747293131258415
+    },
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.8417846185467348
+    },
+    {
+      "name": "TEC_MON_C43_GND_RETURN",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.17810882760181684
+    },
+    {
+      "name": "TEC_MON_KELVIN_P",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 1.2966218363031645
+    },
+    {
+      "name": "TEC_MON_KELVIN_N",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.8749119016494339
+    },
+    {
+      "name": "TEC_SW_BOOT_RETURN",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.9673299195030562
+    },
+    {
+      "name": "TEC_HIGH_GATE_PULLDOWN_RETURN",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 1.3546191587640009
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_P",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 6.451244338468756
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_N",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 6.933175593259019
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_U2",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.807469447189437
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_FILTER",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.33782465044723103
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.6185041421447632
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_FILTER",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.3411383589462163
+    },
+    {
+      "name": "TEC_HG_LOCAL_U2",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.9374463376799674
+    },
+    {
+      "name": "TEC_LG_LOCAL_U2",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.4324104368848585
+    },
+    {
+      "name": "MON_C43_BYPASS",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.4831187793790491
+    },
+    {
+      "name": "INPUT_CURRENT_MON_LOCAL",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.6481063424868081
+    },
+    {
+      "name": "LOGIC_SW_BOOT_RETURN",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.8388927596662649
+    },
+    {
+      "name": "FAN_SW_BOOT_RETURN",
+      "newActualLocalSupportLossMm2": 0.0,
+      "newActualLocalSupportGainMm2": 0.0,
+      "totalCurrentInner1ProjectedSupportMm2": 0.5191871321814956
+    }
+  ],
+  "groundContacts": {
+    "count": 166,
+    "minimumAreaMm2": 0.31037201836234246,
+    "allAbovePoint05": true
+  },
+  "dischargeRemainingProjectionGaps": [
+    {
+      "layer": "top",
+      "segment": [
+        [
+          -23.8,
+          19.6
+        ],
+        [
+          -24.7,
+          19.6
+        ]
+      ],
+      "unsupportedCenterlineMm": 0.8999999999999986
+    },
+    {
+      "layer": "top",
+      "segment": [
+        [
+          -24.7,
+          19.6
+        ],
+        [
+          -24.7,
+          17.5
+        ]
+      ],
+      "unsupportedCenterlineMm": 2.1000000000000014
+    }
+  ],
+  "limitations": [
+    "Copper projection is a geometric return-support measure; no frequency-domain impedance or dynamic converter stability claim.",
+    "This scoped check does not replace whole-net continuity or foreign-net clearance checks.",
+    "Retained SAFE_R37_TRUNK and clear-signal corridors still cut inner1."
+  ]
+}

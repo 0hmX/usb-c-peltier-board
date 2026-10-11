@@ -1,0 +1,3687 @@
+{
+  "scope": "Independent actual Circuit JSON visual geometry comparison. Source name matching only; split/renamed paths require grouped manual assessment. No clearance, ground-contact or manufacturing acceptance claimed.",
+  "baseline": {
+    "inputPath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+    "inputSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+    "counts": {
+      "source_project_metadata": 1,
+      "source_group": 3,
+      "source_net": 104,
+      "source_port": 1343,
+      "source_component": 220,
+      "source_manually_placed_via": 313,
+      "source_board": 1,
+      "source_refdes_convention_warning": 19,
+      "source_trace": 1026,
+      "source_bus": 1,
+      "source_pin_missing_trace_warning": 6,
+      "source_no_power_pin_defined_warning": 14,
+      "source_no_ground_pin_defined_warning": 13,
+      "source_component_pins_underspecified_warning": 12,
+      "pcb_component": 533,
+      "pcb_group": 2,
+      "pcb_board": 1,
+      "pcb_keepout": 10,
+      "pcb_hole": 6,
+      "pcb_smtpad": 552,
+      "pcb_plated_hole": 22,
+      "pcb_solder_paste": 574,
+      "pcb_silkscreen_path": 665,
+      "pcb_silkscreen_text": 234,
+      "pcb_courtyard_outline": 194,
+      "pcb_via": 433,
+      "pcb_silkscreen_circle": 31,
+      "pcb_fabrication_note_path": 79,
+      "pcb_silkscreen_rect": 5,
+      "pcb_courtyard_rect": 26,
+      "pcb_port": 1343,
+      "cad_component": 194,
+      "pcb_connector_not_in_accessible_orientation_warning": 3,
+      "pcb_trace": 633,
+      "supplier_footprint_mismatch_warning": 6,
+      "pcb_copper_pour": 29,
+      "pcb_trace_warning": 44
+    },
+    "wireLengthMmByLayer": {
+      "top": 1804.0938743253805,
+      "inner2": 1023.1557731007398,
+      "bottom": 923.4028456851777,
+      "inner1": 327.93030321840826
+    },
+    "wireSegmentsByLayer": {
+      "top": 1155,
+      "inner2": 235,
+      "bottom": 188,
+      "inner1": 61
+    },
+    "non45DegreeSegments": []
+  },
+  "candidate": {
+    "inputPath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+    "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "counts": {
+      "source_project_metadata": 1,
+      "source_group": 3,
+      "source_net": 104,
+      "source_port": 1354,
+      "source_component": 220,
+      "source_manually_placed_via": 317,
+      "source_board": 1,
+      "source_refdes_convention_warning": 19,
+      "source_trace": 1029,
+      "source_bus": 1,
+      "source_pin_missing_trace_warning": 6,
+      "source_no_power_pin_defined_warning": 14,
+      "source_no_ground_pin_defined_warning": 13,
+      "source_component_pins_underspecified_warning": 12,
+      "pcb_component": 537,
+      "pcb_group": 2,
+      "pcb_board": 1,
+      "pcb_keepout": 10,
+      "pcb_hole": 6,
+      "pcb_smtpad": 552,
+      "pcb_plated_hole": 22,
+      "pcb_solder_paste": 574,
+      "pcb_silkscreen_path": 665,
+      "pcb_silkscreen_text": 234,
+      "pcb_courtyard_outline": 194,
+      "pcb_via": 434,
+      "pcb_silkscreen_circle": 31,
+      "pcb_fabrication_note_path": 79,
+      "pcb_silkscreen_rect": 5,
+      "pcb_courtyard_rect": 26,
+      "pcb_port": 1354,
+      "cad_component": 194,
+      "pcb_connector_not_in_accessible_orientation_warning": 3,
+      "pcb_trace": 636,
+      "supplier_footprint_mismatch_warning": 6,
+      "pcb_copper_pour": 31,
+      "pcb_trace_warning": 44
+    },
+    "wireLengthMmByLayer": {
+      "top": 1787.273402437295,
+      "inner2": 1051.7144100242983,
+      "bottom": 915.6285816164653,
+      "inner1": 289.6865059616386
+    },
+    "wireSegmentsByLayer": {
+      "top": 1151,
+      "inner2": 239,
+      "bottom": 188,
+      "inner1": 58
+    },
+    "non45DegreeSegments": []
+  },
+  "matchedChangedRoutes": [
+    {
+      "name": "SAFE_EN_DEBUG_INNER1_TRUNK",
+      "before": {
+        "name": "SAFE_EN_DEBUG_INNER1_TRUNK",
+        "pcbTraceId": "pcb_trace_507",
+        "sourceTraceId": "source_trace_989",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 52.349137802864846,
+        "endpointChordMm": 43.92758245112062,
+        "lengthToChord": 1.191714519257123,
+        "lengthByLayerMm": {
+          "inner1": 52.349137802864846
+        },
+        "wireSegments": 6,
+        "bends": 5,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            6.1,
+            -17.9,
+            "inner1"
+          ],
+          [
+            -37.25,
+            -25,
+            "inner1"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -37.25,
+          "maxX": 6.4,
+          "minY": -25.75,
+          "maxY": -17.9
+        }
+      },
+      "after": {
+        "name": "SAFE_EN_DEBUG_INNER1_TRUNK",
+        "pcbTraceId": "pcb_trace_509",
+        "sourceTraceId": "source_trace_990",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 2.836396103067895,
+        "endpointChordMm": 2.6542418879974017,
+        "lengthToChord": 1.0686275866168047,
+        "lengthByLayerMm": {
+          "inner1": 2.836396103067895
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            6.1,
+            -17.9,
+            "inner1"
+          ],
+          [
+            6.25,
+            -20.55,
+            "inner1"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 6.1,
+          "maxX": 6.4,
+          "minY": -20.55,
+          "maxY": -17.9
+        }
+      },
+      "lengthReductionMm": 49.51274169979695,
+      "segmentReduction": 3,
+      "bendReduction": 3,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "before": {
+        "name": "PD_PROTECTED_BYPASS_FEED",
+        "pcbTraceId": "pcb_trace_28",
+        "sourceTraceId": "source_trace_33",
+        "explicitSourceName": true,
+        "sourceNetNames": [],
+        "lengthMm": 23.02577777210913,
+        "endpointChordMm": 14.456171692394914,
+        "lengthToChord": 1.5927991353494027,
+        "lengthByLayerMm": {
+          "top": 5.665979797464464,
+          "bottom": 17.359797974644668
+        },
+        "wireSegments": 7,
+        "bends": 4,
+        "minWidthMm": 0.25,
+        "maxWidthMm": 0.25,
+        "endpointsMm": [
+          [
+            -20,
+            29.28,
+            "top"
+          ],
+          [
+            -17.75,
+            15,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -20,
+          "maxX": -15.8,
+          "minY": 12.8,
+          "maxY": 29.28
+        }
+      },
+      "after": {
+        "name": "PD_PROTECTED_BYPASS_FEED",
+        "pcbTraceId": "pcb_trace_31",
+        "sourceTraceId": "source_trace_35",
+        "explicitSourceName": true,
+        "sourceNetNames": [],
+        "lengthMm": 3.1735028842544413,
+        "endpointChordMm": 2.8897923800854617,
+        "lengthToChord": 1.098176777724284,
+        "lengthByLayerMm": {
+          "top": 3.1735028842544413
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.25,
+        "maxWidthMm": 0.25,
+        "endpointsMm": [
+          [
+            -16.72,
+            17.7,
+            "top"
+          ],
+          [
+            -17.75,
+            15,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -17.75,
+          "maxX": -16.72,
+          "minY": 15,
+          "maxY": 17.7
+        }
+      },
+      "lengthReductionMm": 19.85227488785469,
+      "segmentReduction": 4,
+      "bendReduction": 2,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "FAN_PROTECTED_POWER_FEED",
+      "before": {
+        "name": "FAN_PROTECTED_POWER_FEED",
+        "pcbTraceId": "pcb_trace_56",
+        "sourceTraceId": "source_trace_245",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 90.59177524949237,
+        "endpointChordMm": 36.98899896112682,
+        "lengthToChord": 2.4491545538904367,
+        "lengthByLayerMm": {
+          "top": 68.99834812474619,
+          "bottom": 21.593427124746185
+        },
+        "wireSegments": 8,
+        "bends": 6,
+        "minWidthMm": 0.8,
+        "maxWidthMm": 0.8,
+        "endpointsMm": [
+          [
+            16.330079,
+            23,
+            "top"
+          ],
+          [
+            29.5,
+            -11.565,
+            "bottom"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 16.330079,
+          "maxX": 48.8,
+          "minY": -11.565,
+          "maxY": 26.3
+        }
+      },
+      "after": {
+        "name": "FAN_PROTECTED_POWER_FEED",
+        "pcbTraceId": "pcb_trace_59",
+        "sourceTraceId": "source_trace_247",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 81.92213597261417,
+        "endpointChordMm": 36.98899896112682,
+        "lengthToChord": 2.2147702904506645,
+        "lengthByLayerMm": {
+          "top": 60.32870884786799,
+          "bottom": 21.593427124746185
+        },
+        "wireSegments": 8,
+        "bends": 6,
+        "minWidthMm": 0.8,
+        "maxWidthMm": 0.8,
+        "endpointsMm": [
+          [
+            16.330079,
+            23,
+            "top"
+          ],
+          [
+            29.5,
+            -11.565,
+            "bottom"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 16.330079,
+          "maxX": 48.8,
+          "minY": -11.565,
+          "maxY": 26.3
+        }
+      },
+      "lengthReductionMm": 8.6696392768782,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "INPUT_DVDT_FULL_TRUNK",
+      "before": {
+        "name": "INPUT_DVDT_FULL_TRUNK",
+        "pcbTraceId": "pcb_trace_363",
+        "sourceTraceId": "source_trace_845",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "INPUT_DVDT"
+        ],
+        "lengthMm": 8.305929291125633,
+        "endpointChordMm": 7.960552744627727,
+        "lengthToChord": 1.043386000643107,
+        "lengthByLayerMm": {
+          "inner1": 8.305929291125633
+        },
+        "wireSegments": 4,
+        "bends": 3,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -23.6,
+            14.78,
+            "inner1"
+          ],
+          [
+            -15.7,
+            13.8,
+            "inner1"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -23.6,
+          "maxX": -15.7,
+          "minY": 13.8,
+          "maxY": 14.78
+        }
+      },
+      "after": {
+        "name": "INPUT_DVDT_FULL_TRUNK",
+        "pcbTraceId": "pcb_trace_12",
+        "sourceTraceId": "source_trace_16",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "INPUT_DVDT"
+        ],
+        "lengthMm": 2.9813708498984743,
+        "endpointChordMm": 2.76812210713328,
+        "lengthToChord": 1.0770373323545466,
+        "lengthByLayerMm": {
+          "inner2": 2.9813708498984743
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -15.7,
+            13.8,
+            "inner2"
+          ],
+          [
+            -13.05,
+            14.6,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -15.7,
+          "maxX": -13.05,
+          "minY": 13.8,
+          "maxY": 14.6
+        }
+      },
+      "lengthReductionMm": 5.3245584412271585,
+      "segmentReduction": 2,
+      "bendReduction": 2,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TEC_VC_LOCAL",
+      "before": {
+        "name": "TEC_VC_LOCAL",
+        "pcbTraceId": "pcb_trace_260",
+        "sourceTraceId": "source_trace_742",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_VC"
+        ],
+        "lengthMm": 10.105929291125635,
+        "endpointChordMm": 7.408272403199009,
+        "lengthToChord": 1.3641411574933093,
+        "lengthByLayerMm": {
+          "inner2": 10.105929291125635
+        },
+        "wireSegments": 6,
+        "bends": 5,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -2.7,
+            16.4,
+            "inner2"
+          ],
+          [
+            -8.3,
+            21.25,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -8.3,
+          "maxX": -2.585,
+          "minY": 16.4,
+          "maxY": 21.25
+        }
+      },
+      "after": {
+        "name": "TEC_VC_LOCAL",
+        "pcbTraceId": "pcb_trace_264",
+        "sourceTraceId": "source_trace_745",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_VC"
+        ],
+        "lengthMm": 7.6089357775095126,
+        "endpointChordMm": 7.408272403199009,
+        "lengthToChord": 1.0270863925338185,
+        "lengthByLayerMm": {
+          "inner2": 7.6089357775095126
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -2.7,
+            16.4,
+            "inner2"
+          ],
+          [
+            -8.3,
+            21.25,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -8.3,
+          "maxX": -2.7,
+          "minY": 16.4,
+          "maxY": 21.25
+        }
+      },
+      "lengthReductionMm": 2.4969935136161228,
+      "segmentReduction": 4,
+      "bendReduction": 4,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TEC_LOW_INNER2_LOCAL",
+      "before": {
+        "name": "TEC_LOW_INNER2_LOCAL",
+        "pcbTraceId": "pcb_trace_353",
+        "sourceTraceId": "source_trace_835",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_LOW_GATE"
+        ],
+        "lengthMm": 22.34177848998413,
+        "endpointChordMm": 17.991386828146407,
+        "lengthToChord": 1.241804131243057,
+        "lengthByLayerMm": {
+          "inner2": 22.34177848998413
+        },
+        "wireSegments": 10,
+        "bends": 9,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -8,
+            19.55,
+            "inner2"
+          ],
+          [
+            3.3,
+            5.55,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -8,
+          "maxX": 3.3000000000000007,
+          "minY": 5.55,
+          "maxY": 19.55
+        }
+      },
+      "after": {
+        "name": "TEC_LOW_INNER2_LOCAL",
+        "pcbTraceId": "pcb_trace_357",
+        "sourceTraceId": "source_trace_838",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_LOW_GATE"
+        ],
+        "lengthMm": 20.408683245815343,
+        "endpointChordMm": 17.991386828146407,
+        "lengthToChord": 1.134358537268913,
+        "lengthByLayerMm": {
+          "inner2": 20.408683245815343
+        },
+        "wireSegments": 8,
+        "bends": 7,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -8,
+            19.55,
+            "inner2"
+          ],
+          [
+            3.3,
+            5.55,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -8,
+          "maxX": 3.3,
+          "minY": 5.55,
+          "maxY": 19.55
+        }
+      },
+      "lengthReductionMm": 1.9330952441687863,
+      "segmentReduction": 2,
+      "bendReduction": 2,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "before": {
+        "name": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+        "pcbTraceId": "pcb_trace_77",
+        "sourceTraceId": "source_trace_269",
+        "explicitSourceName": true,
+        "sourceNetNames": [],
+        "lengthMm": 3.944213562373096,
+        "endpointChordMm": 3.2032639604003923,
+        "lengthToChord": 1.231310816446138,
+        "lengthByLayerMm": {
+          "top": 3.944213562373096
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -17.75,
+            27,
+            "top"
+          ],
+          [
+            -20,
+            29.28,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -20,
+          "maxX": -17.75,
+          "minY": 27,
+          "maxY": 29.28
+        }
+      },
+      "after": {
+        "name": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+        "pcbTraceId": "pcb_trace_80",
+        "sourceTraceId": "source_trace_271",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 2.3520815280171314,
+        "endpointChordMm": 2.1731313812100734,
+        "lengthToChord": 1.0823466764846092,
+        "lengthByLayerMm": {
+          "top": 2.3520815280171314
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -17.75,
+            27,
+            "top"
+          ],
+          [
+            -18.6,
+            29,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -18.6,
+          "maxX": -17.75,
+          "minY": 27,
+          "maxY": 29
+        }
+      },
+      "lengthReductionMm": 1.5921320343559646,
+      "segmentReduction": 1,
+      "bendReduction": 1,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": false,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "before": {
+        "name": "TEC_FILTERED_SENSE_N_U2",
+        "pcbTraceId": "pcb_trace_72",
+        "sourceTraceId": "source_trace_264",
+        "explicitSourceName": true,
+        "sourceNetNames": [],
+        "lengthMm": 6.23,
+        "endpointChordMm": 2.8791752291237858,
+        "lengthToChord": 2.163814114883159,
+        "lengthByLayerMm": {
+          "top": 2.005000000000001,
+          "bottom": 4.225
+        },
+        "wireSegments": 4,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -2.725,
+            14.775,
+            "top"
+          ],
+          [
+            -0.7500000000000001,
+            12.68,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -2.725,
+          "maxX": -0.75,
+          "minY": 11.6,
+          "maxY": 14.775
+        }
+      },
+      "after": {
+        "name": "TEC_FILTERED_SENSE_N_U2",
+        "pcbTraceId": "pcb_trace_75",
+        "sourceTraceId": "source_trace_266",
+        "explicitSourceName": true,
+        "sourceNetNames": [],
+        "lengthMm": 5.761370849898477,
+        "endpointChordMm": 2.8791752291237858,
+        "lengthToChord": 2.0010490475259557,
+        "lengthByLayerMm": {
+          "top": 2.005000000000001,
+          "bottom": 3.7563708498984765
+        },
+        "wireSegments": 5,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -2.725,
+            14.775,
+            "top"
+          ],
+          [
+            -0.7500000000000001,
+            12.68,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -2.725,
+          "maxX": -0.75,
+          "minY": 11.6,
+          "maxY": 14.775
+        }
+      },
+      "lengthReductionMm": 0.4686291501015232,
+      "segmentReduction": -1,
+      "bendReduction": -1,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "UART_TX_MCU_BOTTOM_HEADER",
+      "before": {
+        "name": "UART_TX_MCU_BOTTOM_HEADER",
+        "pcbTraceId": "pcb_trace_516",
+        "sourceTraceId": "source_trace_998",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "UART_TX"
+        ],
+        "lengthMm": 56.07935893423776,
+        "endpointChordMm": 31.545636149892,
+        "lengthToChord": 1.7777216052252525,
+        "lengthByLayerMm": {
+          "bottom": 56.07935893423776
+        },
+        "wireSegments": 12,
+        "bends": 11,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            9.875,
+            -12.15,
+            "bottom"
+          ],
+          [
+            -15.000002,
+            -31.550037,
+            "bottom"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -15.000002,
+          "maxX": 19.375,
+          "minY": -33.4,
+          "maxY": -12.15
+        }
+      },
+      "after": {
+        "name": "UART_TX_MCU_BOTTOM_HEADER",
+        "pcbTraceId": "pcb_trace_520",
+        "sourceTraceId": "source_trace_1001",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "UART_TX"
+        ],
+        "lengthMm": 55.70509486552584,
+        "endpointChordMm": 31.545636149892,
+        "lengthToChord": 1.765857394691232,
+        "lengthByLayerMm": {
+          "bottom": 55.70509486552584
+        },
+        "wireSegments": 12,
+        "bends": 11,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            9.875,
+            -12.15,
+            "bottom"
+          ],
+          [
+            -15.000002,
+            -31.550037,
+            "bottom"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -15.000002,
+          "maxX": 19.25,
+          "minY": -33.25,
+          "maxY": -12.15
+        }
+      },
+      "lengthReductionMm": 0.3742640687119234,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "I2C_SDA_PULLUP_TO_PD_VIA",
+      "before": {
+        "name": "I2C_SDA_PULLUP_TO_PD_VIA",
+        "pcbTraceId": "pcb_trace_522",
+        "sourceTraceId": "source_trace_1004",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "I2C_SDA"
+        ],
+        "lengthMm": 6.162741699796953,
+        "endpointChordMm": 5.000999900019995,
+        "lengthToChord": 1.2323019042196568,
+        "lengthByLayerMm": {
+          "top": 6.162741699796953
+        },
+        "wireSegments": 4,
+        "bends": 3,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -22.1,
+            6.25,
+            "top"
+          ],
+          [
+            -22,
+            1.25,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -22.1,
+          "maxX": -21,
+          "minY": 1.25,
+          "maxY": 6.25
+        }
+      },
+      "after": {
+        "name": "I2C_SDA_PULLUP_TO_PD_VIA",
+        "pcbTraceId": "pcb_trace_526",
+        "sourceTraceId": "source_trace_1007",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "I2C_SDA"
+        ],
+        "lengthMm": 5.8698484809835,
+        "endpointChordMm": 5.000999900019995,
+        "lengthToChord": 1.1737349726721713,
+        "lengthByLayerMm": {
+          "top": 5.8698484809835
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -22.1,
+            6.25,
+            "top"
+          ],
+          [
+            -22,
+            1.25,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -22.1,
+          "maxX": -21,
+          "minY": 1.25,
+          "maxY": 6.25
+        }
+      },
+      "lengthReductionMm": 0.292893218813453,
+      "segmentReduction": 1,
+      "bendReduction": 1,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "CURRENT_COMMAND_INNER2",
+      "before": {
+        "name": "CURRENT_COMMAND_INNER2",
+        "pcbTraceId": "pcb_trace_389",
+        "sourceTraceId": "source_trace_871",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 11.580918682243588,
+        "endpointChordMm": 9.952430306211646,
+        "lengthToChord": 1.163627207217472,
+        "lengthByLayerMm": {
+          "inner2": 11.580918682243588
+        },
+        "wireSegments": 6,
+        "bends": 5,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -3.21,
+            8.063,
+            "inner2"
+          ],
+          [
+            -13.1,
+            6.95,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -13.1,
+          "maxX": -3.21,
+          "minY": 6.95,
+          "maxY": 8.700000000000001
+        }
+      },
+      "after": {
+        "name": "CURRENT_COMMAND_INNER2",
+        "pcbTraceId": "pcb_trace_391",
+        "sourceTraceId": "source_trace_872",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 11.407253818767382,
+        "endpointChordMm": 9.997210811021242,
+        "lengthToChord": 1.1410436405113777,
+        "lengthByLayerMm": {
+          "inner2": 11.407253818767382
+        },
+        "wireSegments": 7,
+        "bends": 6,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -3.16,
+            8.018,
+            "inner2"
+          ],
+          [
+            -13.1,
+            6.95,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -13.1,
+          "maxX": -3.16,
+          "minY": 6.95,
+          "maxY": 8.700000000000001
+        }
+      },
+      "lengthReductionMm": 0.17366486347620658,
+      "segmentReduction": -1,
+      "bendReduction": -1,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "INPUT_DVDT_CAP_ESCAPE",
+      "before": {
+        "name": "INPUT_DVDT_CAP_ESCAPE",
+        "pcbTraceId": "pcb_trace_362",
+        "sourceTraceId": "source_trace_844",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "INPUT_DVDT"
+        ],
+        "lengthMm": 1.1000000000000014,
+        "endpointChordMm": 1.1000000000000014,
+        "lengthToChord": 1.0,
+        "lengthByLayerMm": {
+          "top": 1.1000000000000014
+        },
+        "wireSegments": 1,
+        "bends": 0,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -22.5,
+            14.78,
+            "top"
+          ],
+          [
+            -23.6,
+            14.78,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -23.6,
+          "maxX": -22.5,
+          "minY": 14.78,
+          "maxY": 14.78
+        }
+      },
+      "after": {
+        "name": "INPUT_DVDT_CAP_ESCAPE",
+        "pcbTraceId": "pcb_trace_13",
+        "sourceTraceId": "source_trace_17",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "INPUT_DVDT"
+        ],
+        "lengthMm": 0.9800000000000004,
+        "endpointChordMm": 0.9800000000000004,
+        "lengthToChord": 1.0,
+        "lengthByLayerMm": {
+          "top": 0.9800000000000004
+        },
+        "wireSegments": 1,
+        "bends": 0,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -13.05,
+            14.6,
+            "top"
+          ],
+          [
+            -13.05,
+            15.58,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -13.05,
+          "maxX": -13.05,
+          "minY": 14.6,
+          "maxY": 15.58
+        }
+      },
+      "lengthReductionMm": 0.120000000000001,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "UART_RX_MCU_INNER2_TRUNK",
+      "before": {
+        "name": "UART_RX_MCU_INNER2_TRUNK",
+        "pcbTraceId": "pcb_trace_510",
+        "sourceTraceId": "source_trace_992",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.550104602052652,
+        "endpointChordMm": 17.767385851610246,
+        "lengthToChord": 1.6068826804628198,
+        "lengthByLayerMm": {
+          "inner2": 28.550104602052652
+        },
+        "wireSegments": 7,
+        "bends": 6,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            2.05,
+            -4.35,
+            "inner2"
+          ],
+          [
+            17.25,
+            -13.55,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 2.05,
+          "maxX": 17.25,
+          "minY": -13.55,
+          "maxY": 0.20000000000000018
+        }
+      },
+      "after": {
+        "name": "UART_RX_MCU_INNER2_TRUNK",
+        "pcbTraceId": "pcb_trace_514",
+        "sourceTraceId": "source_trace_995",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.442997820866108,
+        "endpointChordMm": 17.767385851610246,
+        "lengthToChord": 1.6008544002148937,
+        "lengthByLayerMm": {
+          "inner2": 28.442997820866108
+        },
+        "wireSegments": 9,
+        "bends": 8,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            2.05,
+            -4.35,
+            "inner2"
+          ],
+          [
+            17.25,
+            -13.55,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 2.05,
+          "maxX": 17.25,
+          "minY": -13.55,
+          "maxY": 0
+        }
+      },
+      "lengthReductionMm": 0.10710678118654471,
+      "segmentReduction": -2,
+      "bendReduction": -2,
+      "endpointsPreserved": true,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "C_INPUT_OUT_B",
+      "before": {
+        "name": "C_INPUT_OUT_B",
+        "pcbTraceId": "saved_phase_null_0_7",
+        "sourceTraceId": "source_trace_76",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "GND"
+        ],
+        "lengthMm": 1.274233764908627,
+        "endpointChordMm": 1.2128379941278211,
+        "lengthToChord": 1.0506215760703943,
+        "lengthByLayerMm": {
+          "top": 1.274233764908627
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -20,
+            30.72,
+            "top"
+          ],
+          [
+            -19.024,
+            31.439999999999998,
+            "inner1"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -20,
+          "maxX": -19.024,
+          "minY": 30.72,
+          "maxY": 31.439999999999998
+        }
+      },
+      "after": {
+        "name": "C_INPUT_OUT_B",
+        "pcbTraceId": "saved_phase_null_0_6",
+        "sourceTraceId": "source_trace_78",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "GND"
+        ],
+        "lengthMm": 1.2230865786510154,
+        "endpointChordMm": 1.1909659944767537,
+        "lengthToChord": 1.026970194214801,
+        "lengthByLayerMm": {
+          "top": 1.2230865786510154
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -15.28,
+            17.7,
+            "top"
+          ],
+          [
+            -14.5,
+            18.6,
+            "inner1"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -15.28,
+          "maxX": -14.5,
+          "minY": 17.7,
+          "maxY": 18.6
+        }
+      },
+      "lengthReductionMm": 0.05114718625761161,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TP12_DAC_TRUNK",
+      "before": {
+        "name": "TP12_DAC_TRUNK",
+        "pcbTraceId": "pcb_trace_274",
+        "sourceTraceId": "source_trace_756",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 2.0258683245815337,
+        "endpointChordMm": 1.8760663634317414,
+        "lengthToChord": 1.0798489670033693,
+        "lengthByLayerMm": {
+          "inner2": 2.0258683245815337
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -1.465,
+            -21.62,
+            "inner2"
+          ],
+          [
+            -2.3,
+            -23.3,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -2.3,
+          "maxX": -1.465,
+          "minY": -23.3,
+          "maxY": -21.62
+        }
+      },
+      "after": {
+        "name": "TP12_DAC_TRUNK",
+        "pcbTraceId": "pcb_trace_278",
+        "sourceTraceId": "source_trace_759",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 2.025157646462879,
+        "endpointChordMm": 1.8724916555221274,
+        "lengthToChord": 1.081530932589487,
+        "lengthByLayerMm": {
+          "inner2": 2.025157646462879
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -1.515,
+            -21.6,
+            "inner2"
+          ],
+          [
+            -2.3,
+            -23.3,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -2.3,
+          "maxX": -1.515,
+          "minY": -23.3,
+          "maxY": -21.6
+        }
+      },
+      "lengthReductionMm": 0.0007106781186547728,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TPG6_GROUND",
+      "before": {
+        "name": "TPG6_GROUND",
+        "pcbTraceId": "pcb_trace_189",
+        "sourceTraceId": "source_trace_671",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "GND"
+        ],
+        "lengthMm": 1.6,
+        "endpointChordMm": 1.6,
+        "lengthToChord": 1.0,
+        "lengthByLayerMm": {
+          "top": 1.6
+        },
+        "wireSegments": 1,
+        "bends": 0,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            18.5,
+            -0.7,
+            "top"
+          ],
+          [
+            18.5,
+            0.9000000000000001,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 18.5,
+          "maxX": 18.5,
+          "minY": -0.7,
+          "maxY": 0.9000000000000001
+        }
+      },
+      "after": {
+        "name": "TPG6_GROUND",
+        "pcbTraceId": "pcb_trace_194",
+        "sourceTraceId": "source_trace_675",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "GND"
+        ],
+        "lengthMm": 1.6,
+        "endpointChordMm": 1.6,
+        "lengthToChord": 1.0,
+        "lengthByLayerMm": {
+          "top": 1.6
+        },
+        "wireSegments": 1,
+        "bends": 0,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            11.5,
+            1.1,
+            "top"
+          ],
+          [
+            11.5,
+            2.7,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": 11.5,
+          "maxX": 11.5,
+          "minY": 1.1,
+          "maxY": 2.7
+        }
+      },
+      "lengthReductionMm": 0.0,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TEC_DAC_SOURCE_HEAD_TOP",
+      "before": {
+        "name": "TEC_DAC_SOURCE_HEAD_TOP",
+        "pcbTraceId": "pcb_trace_474",
+        "sourceTraceId": "source_trace_956",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 11.840783899555515,
+        "endpointChordMm": 10.637110744934454,
+        "lengthToChord": 1.1131579038221697,
+        "lengthByLayerMm": {
+          "top": 11.840783899555515
+        },
+        "wireSegments": 6,
+        "bends": 5,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -1.465,
+            -21.62,
+            "top"
+          ],
+          [
+            -6.5,
+            -12.25,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -6.5,
+          "maxX": -1,
+          "minY": -21.62,
+          "maxY": -12.25
+        }
+      },
+      "after": {
+        "name": "TEC_DAC_SOURCE_HEAD_TOP",
+        "pcbTraceId": "pcb_trace_476",
+        "sourceTraceId": "source_trace_957",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 11.841494577674169,
+        "endpointChordMm": 10.595882454991656,
+        "lengthToChord": 1.1175562420566219,
+        "lengthByLayerMm": {
+          "top": 11.841494577674169
+        },
+        "wireSegments": 6,
+        "bends": 5,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -1.515,
+            -21.6,
+            "top"
+          ],
+          [
+            -6.5,
+            -12.25,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -6.5,
+          "maxX": -0.9999999999999999,
+          "minY": -21.6,
+          "maxY": -12.25
+        }
+      },
+      "lengthReductionMm": -0.0007106781186543287,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "TP12_DAC_FROM",
+      "before": {
+        "name": "TP12_DAC_FROM",
+        "pcbTraceId": "pcb_trace_273",
+        "sourceTraceId": "source_trace_755",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 0.6061269837220827,
+        "endpointChordMm": 0.5600223209837275,
+        "lengthToChord": 1.0823264734472877,
+        "lengthByLayerMm": {
+          "top": 0.6061269837220827
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -0.95,
+            -21.4,
+            "top"
+          ],
+          [
+            -1.465,
+            -21.62,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -1.465,
+          "maxX": -0.95,
+          "minY": -21.62,
+          "maxY": -21.4
+        }
+      },
+      "after": {
+        "name": "TP12_DAC_FROM",
+        "pcbTraceId": "pcb_trace_277",
+        "sourceTraceId": "source_trace_758",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 0.647842712474621,
+        "endpointChordMm": 0.599353818708116,
+        "lengthToChord": 1.0809019518237506,
+        "lengthByLayerMm": {
+          "top": 0.647842712474621
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -0.95,
+            -21.4,
+            "top"
+          ],
+          [
+            -1.515,
+            -21.6,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -1.515,
+          "maxX": -0.95,
+          "minY": -21.6,
+          "maxY": -21.4
+        }
+      },
+      "lengthReductionMm": -0.04171572875253826,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "CURRENT_COMMAND_U2_ESCAPE",
+      "before": {
+        "name": "CURRENT_COMMAND_U2_ESCAPE",
+        "pcbTraceId": "pcb_trace_388",
+        "sourceTraceId": "source_trace_870",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 1.2303452377915596,
+        "endpointChordMm": 1.173656252912239,
+        "lengthToChord": 1.0483011825129003,
+        "lengthByLayerMm": {
+          "top": 1.2303452377915596
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -3.375,
+            9.225,
+            "top"
+          ],
+          [
+            -3.21,
+            8.063,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -3.375,
+          "maxX": -3.21,
+          "minY": 8.063,
+          "maxY": 9.225
+        }
+      },
+      "after": {
+        "name": "CURRENT_COMMAND_U2_ESCAPE",
+        "pcbTraceId": "pcb_trace_390",
+        "sourceTraceId": "source_trace_871",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 1.2960559159102143,
+        "endpointChordMm": 1.2259991843390425,
+        "lengthToChord": 1.0571425596901523,
+        "lengthByLayerMm": {
+          "top": 1.2960559159102143
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -3.375,
+            9.225,
+            "top"
+          ],
+          [
+            -3.16,
+            8.018,
+            "top"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -3.375,
+          "maxX": -3.16,
+          "minY": 8.018,
+          "maxY": 9.225
+        }
+      },
+      "lengthReductionMm": -0.06571067811865472,
+      "segmentReduction": 0,
+      "bendReduction": 0,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    },
+    {
+      "name": "SUPPLY_V3_MST29_0_SPAN_1",
+      "before": {
+        "name": "SUPPLY_V3_MST29_0_SPAN_1",
+        "pcbTraceId": "pcb_trace_246",
+        "sourceTraceId": "source_trace_728",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "V3V3"
+        ],
+        "lengthMm": 13.915446968344227,
+        "endpointChordMm": 13.630830715697412,
+        "lengthToChord": 1.0208803306697256,
+        "lengthByLayerMm": {
+          "inner2": 13.915446968344227
+        },
+        "wireSegments": 2,
+        "bends": 1,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -24.903,
+            14.139,
+            "inner2"
+          ],
+          [
+            -25.638,
+            27.75,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -25.638,
+          "maxX": -24.903,
+          "minY": 14.139,
+          "maxY": 27.75
+        }
+      },
+      "after": {
+        "name": "SUPPLY_V3_MST29_0_SPAN_1",
+        "pcbTraceId": "pcb_trace_251",
+        "sourceTraceId": "source_trace_732",
+        "explicitSourceName": true,
+        "sourceNetNames": [
+          "V3V3"
+        ],
+        "lengthMm": 14.376466663265482,
+        "endpointChordMm": 13.616247831175812,
+        "lengthToChord": 1.0558317417188214,
+        "lengthByLayerMm": {
+          "inner2": 14.376466663265482
+        },
+        "wireSegments": 3,
+        "bends": 2,
+        "minWidthMm": 0.2,
+        "maxWidthMm": 0.2,
+        "endpointsMm": [
+          [
+            -24.903,
+            14.139,
+            "inner2"
+          ],
+          [
+            -24.525,
+            27.75,
+            "inner2"
+          ]
+        ],
+        "boundsMm": {
+          "minX": -25.638,
+          "maxX": -24.525,
+          "minY": 14.139,
+          "maxY": 27.75
+        }
+      },
+      "lengthReductionMm": -0.46101969492125505,
+      "segmentReduction": -1,
+      "bendReduction": -1,
+      "endpointsPreserved": false,
+      "explicitNamedNetsPreserved": true,
+      "minWidthPreservedOrRaised": true
+    }
+  ],
+  "nameMatchingScope": "Only explicit source trace names are matched. Generated source_trace_ID names are unstable when source declarations change; their apparent deltas are excluded. Whole-board geometric totals still include all actual traces.",
+  "removedSourceNames": [
+    "C_INPUT_DVDT_B",
+    "SUPPLY_V3_MST29_0_SPAN_2",
+    "source_trace_110",
+    "source_trace_140",
+    "source_trace_146",
+    "source_trace_151",
+    "source_trace_166",
+    "source_trace_178",
+    "source_trace_181",
+    "source_trace_187",
+    "source_trace_192",
+    "source_trace_196",
+    "source_trace_203",
+    "source_trace_212",
+    "source_trace_216",
+    "source_trace_220",
+    "source_trace_247",
+    "source_trace_301",
+    "source_trace_319",
+    "source_trace_324",
+    "source_trace_329",
+    "source_trace_337",
+    "source_trace_343",
+    "source_trace_346",
+    "source_trace_355",
+    "source_trace_371",
+    "source_trace_384",
+    "source_trace_394",
+    "source_trace_396",
+    "source_trace_401",
+    "source_trace_403",
+    "source_trace_408",
+    "source_trace_432",
+    "source_trace_438",
+    "source_trace_456",
+    "source_trace_467",
+    "source_trace_475",
+    "source_trace_481",
+    "source_trace_497",
+    "source_trace_499",
+    "source_trace_504",
+    "source_trace_506",
+    "source_trace_517",
+    "source_trace_519",
+    "source_trace_540",
+    "source_trace_542"
+  ],
+  "addedSourceNames": [
+    "INPUT_DVDT_LOCAL_GROUND",
+    "SAFE_EN_DEBUG_INNER1_TAIL",
+    "SAFE_EN_DEBUG_INNER2_MIDDLE",
+    "TEC_PERMISSION_PICKUP_BOTTOM",
+    "TEC_PERMISSION_PICKUP_CAP",
+    "source_trace_112",
+    "source_trace_142",
+    "source_trace_150",
+    "source_trace_165",
+    "source_trace_168",
+    "source_trace_180",
+    "source_trace_185",
+    "source_trace_189",
+    "source_trace_194",
+    "source_trace_200",
+    "source_trace_205",
+    "source_trace_214",
+    "source_trace_218",
+    "source_trace_222",
+    "source_trace_249",
+    "source_trace_305",
+    "source_trace_323",
+    "source_trace_328",
+    "source_trace_333",
+    "source_trace_341",
+    "source_trace_347",
+    "source_trace_350",
+    "source_trace_359",
+    "source_trace_383",
+    "source_trace_388",
+    "source_trace_398",
+    "source_trace_400",
+    "source_trace_405",
+    "source_trace_411",
+    "source_trace_412",
+    "source_trace_442",
+    "source_trace_448",
+    "source_trace_464",
+    "source_trace_471",
+    "source_trace_485",
+    "source_trace_491",
+    "source_trace_501",
+    "source_trace_503",
+    "source_trace_514",
+    "source_trace_516",
+    "source_trace_535",
+    "source_trace_537",
+    "source_trace_552",
+    "source_trace_554"
+  ],
+  "newSourceRoutes": [
+    {
+      "name": "INPUT_DVDT_LOCAL_GROUND",
+      "pcbTraceId": "pcb_trace_14",
+      "sourceTraceId": "source_trace_18",
+      "explicitSourceName": true,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 0.9800000000000004,
+      "endpointChordMm": 0.9800000000000004,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 0.9800000000000004
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -13.05,
+          17.02,
+          "top"
+        ],
+        [
+          -13.05,
+          18,
+          "top"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -13.05,
+        "maxX": -13.05,
+        "minY": 17.02,
+        "maxY": 18
+      }
+    },
+    {
+      "name": "SAFE_EN_DEBUG_INNER1_TAIL",
+      "pcbTraceId": "pcb_trace_511",
+      "sourceTraceId": "source_trace_992",
+      "explicitSourceName": true,
+      "sourceNetNames": [
+        "TEC_SAFE_EN"
+      ],
+      "lengthMm": 19.574873734152916,
+      "endpointChordMm": 18.864914524057617,
+      "lengthToChord": 1.03763384187031,
+      "lengthByLayerMm": {
+        "inner1": 19.574873734152916
+      },
+      "wireSegments": 4,
+      "bends": 3,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -18.4,
+          -25.75,
+          "inner1"
+        ],
+        [
+          -37.25,
+          -25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -37.25,
+        "maxX": -18.4,
+        "minY": -25.75,
+        "maxY": -24.5
+      }
+    },
+    {
+      "name": "SAFE_EN_DEBUG_INNER2_MIDDLE",
+      "pcbTraceId": "pcb_trace_510",
+      "sourceTraceId": "source_trace_991",
+      "explicitSourceName": true,
+      "sourceNetNames": [
+        "TEC_SAFE_EN"
+      ],
+      "lengthMm": 29.8278174593052,
+      "endpointChordMm": 25.192508807183142,
+      "lengthToChord": 1.1839955157939805,
+      "lengthByLayerMm": {
+        "inner2": 29.8278174593052
+      },
+      "wireSegments": 4,
+      "bends": 3,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          6.25,
+          -20.55,
+          "inner2"
+        ],
+        [
+          -18.4,
+          -25.75,
+          "inner2"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -18.4,
+        "maxX": 6.4,
+        "minY": -25.75,
+        "maxY": -20.55
+      }
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "pcbTraceId": "pcb_trace_81",
+      "sourceTraceId": "source_trace_272",
+      "explicitSourceName": true,
+      "sourceNetNames": [
+        "VBUS_TEC"
+      ],
+      "lengthMm": 10.428427124746191,
+      "endpointChordMm": 9.806120537705011,
+      "lengthToChord": 1.0634610378944844,
+      "lengthByLayerMm": {
+        "bottom": 10.428427124746191
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -18.6,
+          29,
+          "bottom"
+        ],
+        [
+          -16.6,
+          19.4,
+          "bottom"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -18.6,
+        "maxX": -16.6,
+        "minY": 19.4,
+        "maxY": 29
+      }
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_CAP",
+      "pcbTraceId": "pcb_trace_82",
+      "sourceTraceId": "source_trace_273",
+      "explicitSourceName": true,
+      "sourceNetNames": [
+        "VBUS_TEC"
+      ],
+      "lengthMm": 1.7497056274847687,
+      "endpointChordMm": 1.7042300314218137,
+      "lengthToChord": 1.0266839541754909,
+      "lengthByLayerMm": {
+        "top": 1.7497056274847687
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -16.6,
+          19.4,
+          "top"
+        ],
+        [
+          -16.72,
+          17.7,
+          "top"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -16.72,
+        "maxX": -16.6,
+        "minY": 17.7,
+        "maxY": 19.4
+      }
+    },
+    {
+      "name": "source_trace_112",
+      "pcbTraceId": "saved_phase_null_0_11",
+      "sourceTraceId": "source_trace_112",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 0.9000000000000004,
+      "endpointChordMm": 0.9000000000000004,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 0.9000000000000004
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -4.025,
+          9.225,
+          "top"
+        ],
+        [
+          -4.025,
+          8.325,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -4.025,
+        "maxX": -4.025,
+        "minY": 8.325,
+        "maxY": 9.225
+      }
+    },
+    {
+      "name": "source_trace_142",
+      "pcbTraceId": "saved_phase_null_0_12",
+      "sourceTraceId": "source_trace_142",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798209,
+      "endpointChordMm": 1.1532024973958386,
+      "lengthToChord": 1.0290128355250152,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798209
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          10.75,
+          3,
+          "top"
+        ],
+        [
+          11.626,
+          3.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 10.75,
+        "maxX": 11.626,
+        "minY": 3,
+        "maxY": 3.75
+      }
+    },
+    {
+      "name": "source_trace_150",
+      "pcbTraceId": "saved_phase_null_0_14",
+      "sourceTraceId": "source_trace_150",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 6.789519261645366,
+      "endpointChordMm": 5.449121121795698,
+      "lengthToChord": 1.2459842807472694,
+      "lengthByLayerMm": {
+        "top": 6.789519261645366
+      },
+      "wireSegments": 6,
+      "bends": 5,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -11,
+          4.905,
+          "top"
+        ],
+        [
+          -7.964,
+          0.379999999999999,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -11,
+        "maxX": -7.964,
+        "minY": 0.379999999999999,
+        "maxY": 4.905
+      }
+    },
+    {
+      "name": "source_trace_165",
+      "pcbTraceId": "saved_phase_null_0_21",
+      "sourceTraceId": "source_trace_165",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 5.704244225113898,
+      "endpointChordMm": 5.292670497962257,
+      "lengthToChord": 1.0777629605527308,
+      "lengthByLayerMm": {
+        "top": 5.704244225113898
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          12.5,
+          26.565,
+          "top"
+        ],
+        [
+          17.556000000000004,
+          28.130000000000003,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 12.5,
+        "maxX": 17.556000000000004,
+        "minY": 26.565,
+        "maxY": 28.130000000000003
+      }
+    },
+    {
+      "name": "source_trace_168",
+      "pcbTraceId": "saved_phase_null_0_22",
+      "sourceTraceId": "source_trace_168",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.669921000000002,
+      "endpointChordMm": 2.669921000000002,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 2.669921000000002
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          29,
+          0.669921,
+          "top"
+        ],
+        [
+          26.330078999999998,
+          0.669921,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 26.330078999999998,
+        "maxX": 29,
+        "minY": 0.669921,
+        "maxY": 0.669921
+      }
+    },
+    {
+      "name": "source_trace_180",
+      "pcbTraceId": "saved_phase_null_0_23",
+      "sourceTraceId": "source_trace_180",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 6.196431816442582,
+      "endpointChordMm": 3.9358925290205815,
+      "lengthToChord": 1.57433968807693,
+      "lengthByLayerMm": {
+        "top": 6.196431816442582
+      },
+      "wireSegments": 4,
+      "bends": 3,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -12.325,
+          23,
+          "top"
+        ],
+        [
+          -15.700000000000003,
+          25.025000000000002,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -15.700000000000003,
+        "maxX": -12.325,
+        "minY": 22.325,
+        "maxY": 25.025000000000002
+      }
+    },
+    {
+      "name": "source_trace_185",
+      "pcbTraceId": "saved_phase_null_0_25",
+      "sourceTraceId": "source_trace_185",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1227514421272202,
+      "endpointChordMm": 1.0407213844252456,
+      "lengthToChord": 1.0788203826015135,
+      "lengthByLayerMm": {
+        "top": 1.1227514421272202
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -3.325,
+          7,
+          "top"
+        ],
+        [
+          -2.399,
+          7.475,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -3.325,
+        "maxX": -2.399,
+        "minY": 7,
+        "maxY": 7.475
+      }
+    },
+    {
+      "name": "source_trace_189",
+      "pcbTraceId": "saved_phase_null_0_26",
+      "sourceTraceId": "source_trace_189",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798217,
+      "endpointChordMm": 1.1532024973958392,
+      "lengthToChord": 1.0290128355250154,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798217
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          3.75,
+          1,
+          "top"
+        ],
+        [
+          4.626,
+          1.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 3.75,
+        "maxX": 4.626,
+        "minY": 1,
+        "maxY": 1.75
+      }
+    },
+    {
+      "name": "source_trace_194",
+      "pcbTraceId": "saved_phase_null_0_27",
+      "sourceTraceId": "source_trace_194",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.2409494936611667,
+      "endpointChordMm": 1.1808475769547908,
+      "lengthToChord": 1.0508972689442009,
+      "lengthByLayerMm": {
+        "top": 1.2409494936611667
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -1.3,
+          3.5,
+          "top"
+        ],
+        [
+          -0.3490000000000001,
+          4.2,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -1.3,
+        "maxX": -0.3490000000000001,
+        "minY": 3.5,
+        "maxY": 4.2
+      }
+    },
+    {
+      "name": "source_trace_200",
+      "pcbTraceId": "saved_phase_null_0_29",
+      "sourceTraceId": "source_trace_200",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 3.220848480983498,
+      "endpointChordMm": 3.152332628388062,
+      "lengthToChord": 1.0217349692029396,
+      "lengthByLayerMm": {
+        "top": 3.220848480983498
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -11.3,
+          1,
+          "top"
+        ],
+        [
+          -8.949000000000002,
+          -1.0999999999999979,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -11.3,
+        "maxX": -8.949000000000002,
+        "minY": -1.0999999999999979,
+        "maxY": 1
+      }
+    },
+    {
+      "name": "source_trace_205",
+      "pcbTraceId": "saved_phase_null_0_30",
+      "sourceTraceId": "source_trace_205",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.0099999999999998,
+      "endpointChordMm": 1.0099999999999998,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 1.0099999999999998
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -11.99,
+          31.95,
+          "top"
+        ],
+        [
+          -10.98,
+          31.95,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -11.99,
+        "maxX": -10.98,
+        "minY": 31.95,
+        "maxY": 31.95
+      }
+    },
+    {
+      "name": "source_trace_214",
+      "pcbTraceId": "saved_phase_null_0_31",
+      "sourceTraceId": "source_trace_214",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798209,
+      "endpointChordMm": 1.1532024973958386,
+      "lengthToChord": 1.0290128355250152,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798209
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -12.25,
+          34,
+          "top"
+        ],
+        [
+          -11.374,
+          34.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -12.25,
+        "maxX": -11.374,
+        "minY": 34,
+        "maxY": 34.75
+      }
+    },
+    {
+      "name": "source_trace_218",
+      "pcbTraceId": "saved_phase_null_0_32",
+      "sourceTraceId": "source_trace_218",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798217,
+      "endpointChordMm": 1.1532024973958392,
+      "lengthToChord": 1.0290128355250154,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798217
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -5.25,
+          30,
+          "top"
+        ],
+        [
+          -4.374,
+          30.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -5.25,
+        "maxX": -4.374,
+        "minY": 30,
+        "maxY": 30.75
+      }
+    },
+    {
+      "name": "source_trace_222",
+      "pcbTraceId": "saved_phase_null_0_33",
+      "sourceTraceId": "source_trace_222",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.9630256121069154,
+      "endpointChordMm": 2.773666346192346,
+      "lengthToChord": 1.0682703837736358,
+      "lengthByLayerMm": {
+        "top": 2.9630256121069154
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          28.365,
+          19.3,
+          "top"
+        ],
+        [
+          29,
+          22,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 28.365,
+        "maxX": 29,
+        "minY": 19.3,
+        "maxY": 22
+      }
+    },
+    {
+      "name": "source_trace_249",
+      "pcbTraceId": "saved_phase_null_0_34",
+      "sourceTraceId": "source_trace_249",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.2323708498984762,
+      "endpointChordMm": 1.2049070503569976,
+      "lengthToChord": 1.022793293087082,
+      "lengthByLayerMm": {
+        "top": 1.2323708498984762
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          25.8,
+          -8.5,
+          "top"
+        ],
+        [
+          26.701,
+          -7.699999999999999,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 25.8,
+        "maxX": 26.701,
+        "minY": -8.5,
+        "maxY": -7.699999999999999
+      }
+    },
+    {
+      "name": "source_trace_305",
+      "pcbTraceId": "saved_phase_null_0_35",
+      "sourceTraceId": "source_trace_305",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.330121933088198,
+      "endpointChordMm": 1.8100414359897954,
+      "lengthToChord": 1.2873307134065712,
+      "lengthByLayerMm": {
+        "top": 2.330121933088198
+      },
+      "wireSegments": 4,
+      "bends": 3,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          2.875,
+          -10.325,
+          "top"
+        ],
+        [
+          4.4,
+          -9.35,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 2.875,
+        "maxX": 4.4,
+        "minY": -10.325,
+        "maxY": -9.35
+      }
+    },
+    {
+      "name": "source_trace_323",
+      "pcbTraceId": "saved_phase_null_0_36",
+      "sourceTraceId": "source_trace_323",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.5500000000000007,
+      "endpointChordMm": 1.5500000000000007,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 1.5500000000000007
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          9.55,
+          -18.25,
+          "top"
+        ],
+        [
+          11.100000000000001,
+          -18.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 9.55,
+        "maxX": 11.100000000000001,
+        "minY": -18.25,
+        "maxY": -18.25
+      }
+    },
+    {
+      "name": "source_trace_328",
+      "pcbTraceId": "saved_phase_null_0_37",
+      "sourceTraceId": "source_trace_328",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 3.694502884254442,
+      "endpointChordMm": 3.4349819504620416,
+      "lengthToChord": 1.0755523427881455,
+      "lengthByLayerMm": {
+        "top": 3.694502884254442
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          8.05,
+          -24.45,
+          "top"
+        ],
+        [
+          11.351000000000003,
+          -25.4,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 8.05,
+        "maxX": 11.351000000000003,
+        "minY": -25.4,
+        "maxY": -24.45
+      }
+    },
+    {
+      "name": "source_trace_333",
+      "pcbTraceId": "saved_phase_null_0_38",
+      "sourceTraceId": "source_trace_333",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.5500000000000007,
+      "endpointChordMm": 1.5500000000000007,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 1.5500000000000007
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -12.45,
+          -20.25,
+          "top"
+        ],
+        [
+          -10.899999999999999,
+          -20.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -12.45,
+        "maxX": -10.899999999999999,
+        "minY": -20.25,
+        "maxY": -20.25
+      }
+    },
+    {
+      "name": "source_trace_341",
+      "pcbTraceId": "saved_phase_null_0_39",
+      "sourceTraceId": "source_trace_341",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.0099999999999998,
+      "endpointChordMm": 1.0099999999999998,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 1.0099999999999998
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          9.01,
+          -13.05,
+          "top"
+        ],
+        [
+          10.02,
+          -13.05,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 9.01,
+        "maxX": 10.02,
+        "minY": -13.05,
+        "maxY": -13.05
+      }
+    },
+    {
+      "name": "source_trace_347",
+      "pcbTraceId": "saved_phase_null_0_40",
+      "sourceTraceId": "source_trace_347",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 3.817005768508885,
+      "endpointChordMm": 3.57643677422096,
+      "lengthToChord": 1.0672649929175184,
+      "lengthByLayerMm": {
+        "top": 3.817005768508885
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          17.01,
+          -15.05,
+          "top"
+        ],
+        [
+          20.040000000000006,
+          -13.150000000000002,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 17.01,
+        "maxX": 20.040000000000006,
+        "minY": -15.05,
+        "maxY": -13.150000000000002
+      }
+    },
+    {
+      "name": "source_trace_350",
+      "pcbTraceId": "saved_phase_null_0_41",
+      "sourceTraceId": "source_trace_350",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.0100000000000016,
+      "endpointChordMm": 1.0100000000000016,
+      "lengthToChord": 1.0,
+      "lengthByLayerMm": {
+        "top": 1.0100000000000016
+      },
+      "wireSegments": 1,
+      "bends": 0,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -17.99,
+          -5.55,
+          "top"
+        ],
+        [
+          -16.979999999999997,
+          -5.55,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -17.99,
+        "maxX": -16.979999999999997,
+        "minY": -5.55,
+        "maxY": -5.55
+      }
+    },
+    {
+      "name": "source_trace_359",
+      "pcbTraceId": "saved_phase_null_0_42",
+      "sourceTraceId": "source_trace_359",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.4967514421272214,
+      "endpointChordMm": 1.384061053566642,
+      "lengthToChord": 1.0814200994025394,
+      "lengthByLayerMm": {
+        "top": 1.4967514421272214
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -22,
+          -23.400000000000002,
+          "top"
+        ],
+        [
+          -21.525,
+          -22.1,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -22,
+        "maxX": -21.525,
+        "minY": -23.400000000000002,
+        "maxY": -22.1
+      }
+    },
+    {
+      "name": "source_trace_383",
+      "pcbTraceId": "saved_phase_null_0_45",
+      "sourceTraceId": "source_trace_383",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 3.052495741579503,
+      "endpointChordMm": 2.8309364175127625,
+      "lengthToChord": 1.0782636171890434,
+      "lengthByLayerMm": {
+        "top": 3.052495741579503
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          22.905,
+          -22.7,
+          "top"
+        ],
+        [
+          23.756,
+          -20,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 22.905,
+        "maxX": 23.756,
+        "minY": -22.7,
+        "maxY": -20
+      }
+    },
+    {
+      "name": "source_trace_388",
+      "pcbTraceId": "saved_phase_null_0_46",
+      "sourceTraceId": "source_trace_388",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.7024957415795032,
+      "endpointChordMm": 1.59583865099201,
+      "lengthToChord": 1.0668345076873484,
+      "lengthByLayerMm": {
+        "top": 1.7024957415795032
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          34.55,
+          -11.35,
+          "top"
+        ],
+        [
+          33.699,
+          -10,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 33.699,
+        "maxX": 34.55,
+        "minY": -11.35,
+        "maxY": -10
+      }
+    },
+    {
+      "name": "source_trace_398",
+      "pcbTraceId": "saved_phase_null_0_47",
+      "sourceTraceId": "source_trace_398",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 3.817005768508885,
+      "endpointChordMm": 3.57643677422096,
+      "lengthToChord": 1.0672649929175184,
+      "lengthByLayerMm": {
+        "top": 3.817005768508885
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          18.01,
+          -25.05,
+          "top"
+        ],
+        [
+          21.040000000000006,
+          -26.95,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 18.01,
+        "maxX": 21.040000000000006,
+        "minY": -26.95,
+        "maxY": -25.05
+      }
+    },
+    {
+      "name": "source_trace_400",
+      "pcbTraceId": "saved_phase_null_0_48",
+      "sourceTraceId": "source_trace_400",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.7652111339459715,
+      "endpointChordMm": 1.6808309483129371,
+      "lengthToChord": 1.0502014707176397,
+      "lengthByLayerMm": {
+        "top": 1.7652111339459715
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          34.999994,
+          -31.550037,
+          "top"
+        ],
+        [
+          36.3509924,
+          -30.550038999999998,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 34.999994,
+        "maxX": 36.3509924,
+        "minY": -31.550037,
+        "maxY": -30.550038999999998
+      }
+    },
+    {
+      "name": "source_trace_405",
+      "pcbTraceId": "saved_phase_null_0_49",
+      "sourceTraceId": "source_trace_405",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 6.242628201837911,
+      "endpointChordMm": 5.8309402329415105,
+      "lengthToChord": 1.0706040453940167,
+      "lengthByLayerMm": {
+        "top": 6.242628201837911
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          12.000002,
+          -31.550037,
+          "top"
+        ],
+        [
+          14.999996,
+          -36.550027,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 12.000002,
+        "maxX": 14.999996,
+        "minY": -36.550027,
+        "maxY": -31.550037
+      }
+    },
+    {
+      "name": "source_trace_411",
+      "pcbTraceId": "saved_phase_null_0_51",
+      "sourceTraceId": "source_trace_411",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 6.242628201837911,
+      "endpointChordMm": 5.8309402329415105,
+      "lengthToChord": 1.0706040453940167,
+      "lengthByLayerMm": {
+        "top": 6.242628201837911
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -4.999994,
+          -31.550037,
+          "top"
+        ],
+        [
+          -2.0000000000000004,
+          -26.550047,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -4.999994,
+        "maxX": -2.0000000000000004,
+        "minY": -31.550037,
+        "maxY": -26.550047
+      }
+    },
+    {
+      "name": "source_trace_412",
+      "pcbTraceId": "saved_phase_null_0_52",
+      "sourceTraceId": "source_trace_412",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.7652111339459708,
+      "endpointChordMm": 1.6808309483129358,
+      "lengthToChord": 1.0502014707176401,
+      "lengthByLayerMm": {
+        "top": 1.7652111339459708
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -13.000005999999999,
+          -31.550037,
+          "top"
+        ],
+        [
+          -11.6490076,
+          -30.550038999999998,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -13.000005999999999,
+        "maxX": -11.6490076,
+        "minY": -31.550037,
+        "maxY": -30.550038999999998
+      }
+    },
+    {
+      "name": "source_trace_442",
+      "pcbTraceId": "saved_phase_null_0_55",
+      "sourceTraceId": "source_trace_442",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798209,
+      "endpointChordMm": 1.1532024973958386,
+      "lengthToChord": 1.0290128355250152,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798209
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          12.25,
+          -16,
+          "top"
+        ],
+        [
+          13.126,
+          -15.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 12.25,
+        "maxX": 13.126,
+        "minY": -16,
+        "maxY": -15.25
+      }
+    },
+    {
+      "name": "source_trace_448",
+      "pcbTraceId": "saved_phase_null_0_57",
+      "sourceTraceId": "source_trace_448",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798209,
+      "endpointChordMm": 1.1532024973958386,
+      "lengthToChord": 1.0290128355250152,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798209
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          12.25,
+          -11,
+          "top"
+        ],
+        [
+          13.126,
+          -10.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 12.25,
+        "maxX": 13.126,
+        "minY": -11,
+        "maxY": -10.25
+      }
+    },
+    {
+      "name": "source_trace_464",
+      "pcbTraceId": "saved_phase_null_0_59",
+      "sourceTraceId": "source_trace_464",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.832370849898478,
+      "endpointChordMm": 2.6258333915159215,
+      "lengthToChord": 1.0786559646357914,
+      "lengthByLayerMm": {
+        "top": 2.832370849898478
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          30.8,
+          -24.5,
+          "top"
+        ],
+        [
+          33.301,
+          -23.7,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 30.8,
+        "maxX": 33.301,
+        "minY": -24.5,
+        "maxY": -23.7
+      }
+    },
+    {
+      "name": "source_trace_471",
+      "pcbTraceId": "saved_phase_null_0_60",
+      "sourceTraceId": "source_trace_471",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 4.18666017177982,
+      "endpointChordMm": 3.9478951353854366,
+      "lengthToChord": 1.0604790725706732,
+      "lengthByLayerMm": {
+        "top": 4.18666017177982
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          11.25,
+          -27,
+          "top"
+        ],
+        [
+          15.126,
+          -27.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 11.25,
+        "maxX": 15.126,
+        "minY": -27.75,
+        "maxY": -27
+      }
+    },
+    {
+      "name": "source_trace_485",
+      "pcbTraceId": "saved_phase_null_0_63",
+      "sourceTraceId": "source_trace_485",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798217,
+      "endpointChordMm": 1.1532024973958392,
+      "lengthToChord": 1.0290128355250154,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798217
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -6.25,
+          -21,
+          "top"
+        ],
+        [
+          -5.374,
+          -20.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -6.25,
+        "maxX": -5.374,
+        "minY": -21,
+        "maxY": -20.25
+      }
+    },
+    {
+      "name": "source_trace_491",
+      "pcbTraceId": "saved_phase_null_0_65",
+      "sourceTraceId": "source_trace_491",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.186660171779819,
+      "endpointChordMm": 1.1532024973958372,
+      "lengthToChord": 1.029012835525015,
+      "lengthByLayerMm": {
+        "top": 1.186660171779819
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          36.25,
+          -18,
+          "top"
+        ],
+        [
+          37.126,
+          -17.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 36.25,
+        "maxX": 37.126,
+        "minY": -18,
+        "maxY": -17.25
+      }
+    },
+    {
+      "name": "source_trace_501",
+      "pcbTraceId": "saved_phase_null_0_66",
+      "sourceTraceId": "source_trace_501",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798226,
+      "endpointChordMm": 1.15320249739584,
+      "lengthToChord": 1.0290128355250157,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798226
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          20.25,
+          -15,
+          "top"
+        ],
+        [
+          21.126,
+          -14.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 20.25,
+        "maxX": 21.126,
+        "minY": -15,
+        "maxY": -14.25
+      }
+    },
+    {
+      "name": "source_trace_503",
+      "pcbTraceId": "saved_phase_null_0_67",
+      "sourceTraceId": "source_trace_503",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798209,
+      "endpointChordMm": 1.1532024973958386,
+      "lengthToChord": 1.0290128355250152,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798209
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -11.25,
+          -24.5,
+          "top"
+        ],
+        [
+          -10.374,
+          -23.75,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -11.25,
+        "maxX": -10.374,
+        "minY": -24.5,
+        "maxY": -23.75
+      }
+    },
+    {
+      "name": "source_trace_514",
+      "pcbTraceId": "saved_phase_null_0_71",
+      "sourceTraceId": "source_trace_514",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.6866601717798226,
+      "endpointChordMm": 2.4915609565089927,
+      "lengthToChord": 1.0783040104883446,
+      "lengthByLayerMm": {
+        "top": 2.6866601717798226
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -21.25,
+          -25,
+          "top"
+        ],
+        [
+          -18.874,
+          -24.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -21.25,
+        "maxX": -18.874,
+        "minY": -25,
+        "maxY": -24.25
+      }
+    },
+    {
+      "name": "source_trace_516",
+      "pcbTraceId": "saved_phase_null_0_72",
+      "sourceTraceId": "source_trace_516",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.1866601717798226,
+      "endpointChordMm": 1.15320249739584,
+      "lengthToChord": 1.0290128355250157,
+      "lengthByLayerMm": {
+        "top": 1.1866601717798226
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          -24.75,
+          -25,
+          "top"
+        ],
+        [
+          -23.874,
+          -24.25,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": -24.75,
+        "maxX": -23.874,
+        "minY": -25,
+        "maxY": -24.25
+      }
+    },
+    {
+      "name": "source_trace_535",
+      "pcbTraceId": "saved_phase_null_0_80",
+      "sourceTraceId": "source_trace_535",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.290949493661166,
+      "endpointChordMm": 1.2214749281094555,
+      "lengthToChord": 1.0568776026039604,
+      "lengthByLayerMm": {
+        "top": 1.290949493661166
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          6.2,
+          -3.5,
+          "top"
+        ],
+        [
+          6.9,
+          -4.5009999999999994,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 6.2,
+        "maxX": 6.9,
+        "minY": -4.5009999999999994,
+        "maxY": -3.5
+      }
+    },
+    {
+      "name": "source_trace_537",
+      "pcbTraceId": "saved_phase_null_0_81",
+      "sourceTraceId": "source_trace_537",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 1.2909494936611656,
+      "endpointChordMm": 1.221474928109455,
+      "lengthToChord": 1.0568776026039604,
+      "lengthByLayerMm": {
+        "top": 1.2909494936611656
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          9.2,
+          -3.5,
+          "top"
+        ],
+        [
+          8.5,
+          -4.5009999999999994,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 8.5,
+        "maxX": 9.2,
+        "minY": -4.5009999999999994,
+        "maxY": -3.5
+      }
+    },
+    {
+      "name": "source_trace_552",
+      "pcbTraceId": "saved_phase_null_0_86",
+      "sourceTraceId": "source_trace_552",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.574244225113896,
+      "endpointChordMm": 2.481673024393021,
+      "lengthToChord": 1.0373019329343423,
+      "lengthByLayerMm": {
+        "top": 2.574244225113896
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          31.5,
+          -13.935,
+          "top"
+        ],
+        [
+          33.426,
+          -12.370000000000001,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 31.5,
+        "maxX": 33.426,
+        "minY": -13.935,
+        "maxY": -12.370000000000001
+      }
+    },
+    {
+      "name": "source_trace_554",
+      "pcbTraceId": "saved_phase_null_0_87",
+      "sourceTraceId": "source_trace_554",
+      "explicitSourceName": false,
+      "sourceNetNames": [
+        "GND"
+      ],
+      "lengthMm": 2.574244225113896,
+      "endpointChordMm": 2.4816730243930225,
+      "lengthToChord": 1.0373019329343418,
+      "lengthByLayerMm": {
+        "top": 2.574244225113896
+      },
+      "wireSegments": 2,
+      "bends": 1,
+      "minWidthMm": 0.2,
+      "maxWidthMm": 0.2,
+      "endpointsMm": [
+        [
+          31.5,
+          -19.435,
+          "top"
+        ],
+        [
+          33.426,
+          -17.869999999999997,
+          "inner1"
+        ]
+      ],
+      "boundsMm": {
+        "minX": 31.5,
+        "maxX": 33.426,
+        "minY": -19.435,
+        "maxY": -17.869999999999997
+      }
+    }
+  ]
+}

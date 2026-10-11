@@ -20,17 +20,6 @@ export const CL21A226MAYNNNE = (props: Omit<CapacitorProps, "capacitance">) => {
       footprint={<footprint>
         <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="0.92mm" pcbY="0mm" width="0.96mm" height="1.4mm" shape="rect" solderMaskMargin="0.05mm" />
 <smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-0.92mm" pcbY="0mm" width="0.96mm" height="1.4mm" shape="rect" solderMaskMargin="0.05mm" />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":1.8111977999999453,"y":0.9804114249999664},{"x":0.4011929999999211,"y":0.9804114249999664}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":0.4011929999999211,"y":-0.9804114249999664},{"x":1.8111977999999453,"y":-0.9804114249999664}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":1.9635978000000023,"y":-0.8150574250000282},{"x":1.9635978000000023,"y":0.8150574250000282}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.811197800000059,"y":0.9804114249999664},{"x":-0.40119300000003477,"y":0.9804114249999664}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-0.40119300000003477,"y":-0.9804114249999664},{"x":-1.811197800000059,"y":-0.9804114249999664}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.9635978000000023,"y":-0.8150574250000282},{"x":-1.9635978000000023,"y":0.8150574250000282}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":1.8111977999999453,"y":-0.9804114249997196},{"x":1.918960873452761,"y":-0.9319803596960863},{"x":1.9635977999998886,"y":-0.8150574250000282}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":1.9635977999998886,"y":0.8150574250000282},{"x":1.918960873452761,"y":0.9319803596962096},{"x":1.8111977999999453,"y":0.9804114249998429}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.811197800000059,"y":-0.9804114249997196},{"x":-1.9189608734528747,"y":-0.9319803596960863},{"x":-1.9635978000000023,"y":-0.8150574250000282}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":-1.9635978000000023,"y":0.8150574250000282},{"x":-1.9189608734528747,"y":0.9319803596962096},{"x":-1.811197800000059,"y":0.9804114249998429}]} />
-<silkscreentext text="{NAME}" pcbX="0.0127mm" pcbY="1.9144mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-1.65,"y":0.975},{"x":1.65,"y":0.975},{"x":1.65,"y":-0.975},{"x":-1.65,"y":-0.975},{"x":-1.65,"y":0.975}]} />
       </footprint>}
       cadModel={{

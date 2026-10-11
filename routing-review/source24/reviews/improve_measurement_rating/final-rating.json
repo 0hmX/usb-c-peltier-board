@@ -1,0 +1,428 @@
+{
+  "role": "Independent measurement and fresh overall routing rating",
+  "status": "Final independent metric inspection complete on regenerated full Source24d",
+  "scoreOutOf10": 7.6,
+  "baselineScoreOutOf10": 7.2,
+  "confidence": {
+    "numericalGeometry": "high",
+    "overallRoutingJudgment": "medium; subject to separate final DRC/continuity/ground/manufacturing checks"
+  },
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "inspectedCapture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "comparisonReport": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_measurement_rating/comparison-24d.json",
+  "actualGeometryChanged": true,
+  "method": "Actual regenerated pcb_trace wire centerlines and pcb_via coordinates/net assignment, matched by stable source names. Pours measured from actual captured BREP rings. No proposed routing or source bounds are credited.",
+  "overallMetrics": {
+    "traceObjects": {
+      "before": 633,
+      "after": 636
+    },
+    "planarCenterlineMm": {
+      "before": 4078.5827963297043,
+      "after": 4044.302900039696,
+      "delta": -34.27989629000831,
+      "changePercent": -0.8404854823802183
+    },
+    "uniqueSameNetSameLayerCenterlineMm": {
+      "before": 3998.2906213273263,
+      "after": 3966.2107250373174,
+      "delta": -32.079896290008946
+    },
+    "viaCount": {
+      "before": 433,
+      "after": 434,
+      "allFourLayerThroughBarrels": 434,
+      "groundCountUnchanged": 166,
+      "viaNetChanges": {
+        "TEC_SAFE_EN": [
+          4,
+          6
+        ],
+        "V3V3": [
+          11,
+          10
+        ]
+      }
+    },
+    "lengthByLayerMm": {
+      "before": {
+        "top": 1804.093874325378,
+        "inner2": 1023.15577310074,
+        "bottom": 923.4028456851778,
+        "inner1": 327.9303032184082
+      },
+      "after": {
+        "top": 1787.273402437293,
+        "inner2": 1051.7144100242983,
+        "bottom": 915.6285816164658,
+        "inner1": 289.6865059616385
+      },
+      "delta": {
+        "top": -16.820471888084967,
+        "inner1": -38.24379725676971,
+        "inner2": 28.55863692355831,
+        "bottom": -7.774264068712
+      }
+    },
+    "signalLengthByLayerMm": {
+      "before": {
+        "top": 811.962240908788,
+        "bottom": 616.8907259694868,
+        "inner2": 918.0082898054018,
+        "inner1": 327.9303032184082
+      },
+      "after": {
+        "top": 811.6574847749645,
+        "inner2": 946.1059070340392,
+        "bottom": 616.0478327506734,
+        "inner1": 289.6865059616385
+      }
+    },
+    "inner1SignalPercentChange": -11.662172382800065,
+    "weighted45DegreeRatio": {
+      "before": 1.141054310684187,
+      "after": 1.1344433408567742
+    },
+    "weighted45DegreeRatioForRoutesOver10Mm": {
+      "before": 1.1905349199841861,
+      "after": 1.1803139126161033
+    },
+    "routesAbove1_5x45DegreeBound": {
+      "before": 28,
+      "after": 26
+    },
+    "routesAbove2x45DegreeBound": {
+      "before": 9,
+      "after": 8
+    },
+    "non45SegmentsAt0_0001MmTolerance": 0,
+    "unresolvedOrAmbiguousTraceNets": [],
+    "nonzeroPlanarViaOrLayerTransitionAnomalies": 0
+  },
+  "changedScope": {
+    "changedSourceIdentities": 29,
+    "beforeTraceObjects": 24,
+    "afterTraceObjects": 27,
+    "beforeMm": 361.6099081412608,
+    "afterMm": 327.3300118512528,
+    "changePercent": -9.479800060295025
+  },
+  "priorityMeasurements": {
+    "complete_high_gate_driver_to_fet": {
+      "beforeMm": 24.148059159102154,
+      "afterMm": 24.148059159102154,
+      "deltaMm": 0.0,
+      "changePercent": 0.0,
+      "missingSourceNames": []
+    },
+    "complete_low_gate_driver_to_fet": {
+      "beforeMm": 28.335304461028546,
+      "afterMm": 26.40220921685976,
+      "deltaMm": -1.9330952441687863,
+      "changePercent": -6.822214480975499,
+      "missingSourceNames": []
+    },
+    "VC_pin_to_R27": {
+      "beforeMm": 15.185397179880388,
+      "afterMm": 12.688403666264266,
+      "deltaMm": -2.496993513616122,
+      "changePercent": -16.44338626140426,
+      "missingSourceNames": []
+    },
+    "eFuse_output_cap": {
+      "beforeMm": 23.02577777210913,
+      "afterMm": 3.1735028842544413,
+      "deltaMm": -19.85227488785469,
+      "changePercent": -86.21760830116902,
+      "missingSourceNames": []
+    },
+    "eFuse_input_cap_existing_network": {
+      "beforeMm": 43.80553390593273,
+      "afterMm": 43.80553390593273,
+      "deltaMm": 0.0,
+      "changePercent": 0.0,
+      "missingSourceNames": []
+    },
+    "CdVdt_complete": {
+      "beforeMm": 11.013036072312184,
+      "afterMm": 5.568477631085024,
+      "deltaMm": -5.44455844122716,
+      "changePercent": -49.43739769376853,
+      "missingSourceNames": []
+    },
+    "fan_power_feed": {
+      "beforeMm": 90.59177524949237,
+      "afterMm": 81.92213597261417,
+      "deltaMm": -8.6696392768782,
+      "changePercent": -9.570007048655093,
+      "missingSourceNames": []
+    },
+    "UART_TX_bottom_header": {
+      "beforeMm": 56.07935893423776,
+      "afterMm": 55.70509486552584,
+      "deltaMm": -0.3742640687119234,
+      "changePercent": -0.6673829298776567,
+      "missingSourceNames": []
+    },
+    "UART_TX_complete": {
+      "beforeMm": 67.85159377595889,
+      "afterMm": 67.47732970724697,
+      "deltaMm": -0.3742640687119234,
+      "changePercent": -0.5515921555913876,
+      "missingSourceNames": []
+    }
+  },
+  "actualPourComparison": {
+    "before": {
+      "count": 29,
+      "groundBrepRingAreaByLayerMm2": {
+        "top": 165.68656007314044,
+        "inner1": 6633.613674041876,
+        "inner2": 0,
+        "bottom": 5474.542042155275
+      },
+      "inner1GroundVoids": 164,
+      "method": "Signed-ring area from actual captured BREP pours. Same-net via/PTH drills are not separately subtracted. Per-net pour objects sum and may overlap."
+    },
+    "after": {
+      "count": 31,
+      "groundBrepRingAreaByLayerMm2": {
+        "top": 165.68656007314044,
+        "inner1": 6656.255907546466,
+        "inner2": 0,
+        "bottom": 5477.168940926389
+      },
+      "inner1GroundVoids": 169,
+      "method": "Signed-ring area from actual captured BREP pours. Same-net via/PTH drills are not separately subtracted. Per-net pour objects sum and may overlap."
+    },
+    "physicalObjectsRemovedOrChanged": 7,
+    "physicalObjectsAddedOrChanged": 9,
+    "groundBrepRingAreaDeltaByLayerMm2": {
+      "top": 0.0,
+      "inner1": 22.642233504589967,
+      "inner2": 0,
+      "bottom": 2.6268987711137015
+    }
+  },
+  "worstRemainingGeometricDetours": [
+    {
+      "identity": "FAN_PROTECTED_POWER_FEED",
+      "nets": [
+        "VBUS_TEC"
+      ],
+      "lengthMm": 81.92213597261417,
+      "unobstructed45DegreeBoundMm": 40.02015989358223,
+      "ratioTo45DegreeBound": 2.0470217058216074,
+      "excessTo45DegreeBoundMm": 41.90197607903194
+    },
+    {
+      "identity": "LOGIC_RAW_INPUT_FEED",
+      "nets": [
+        "VBUS_RAW"
+      ],
+      "lengthMm": 68.95774169979696,
+      "unobstructed45DegreeBoundMm": 45.71385419847458,
+      "ratioTo45DegreeBound": 1.5084648386986805,
+      "excessTo45DegreeBoundMm": 23.243887501322376
+    },
+    {
+      "identity": "UART_TX_MCU_BOTTOM_HEADER",
+      "nets": [
+        "UART_TX"
+      ],
+      "lengthMm": 55.70509486552584,
+      "unobstructed45DegreeBoundMm": 32.91076043593986,
+      "ratioTo45DegreeBound": 1.6926103841919635,
+      "excessTo45DegreeBoundMm": 22.79433442958598
+    },
+    {
+      "identity": "INPUT_FAULT_PULLUP_INNER2",
+      "nets": [
+        "INPUT_FAULT_N"
+      ],
+      "lengthMm": 30.244826817189065,
+      "unobstructed45DegreeBoundMm": 14.631980515339466,
+      "ratioTo45DegreeBound": 2.067035749909716,
+      "excessTo45DegreeBoundMm": 15.612846301849599
+    },
+    {
+      "identity": "UART_RX_MCU_BOTTOM_TRUNK",
+      "nets": [
+        "UART_RX_MCU"
+      ],
+      "lengthMm": 39.04868504050283,
+      "unobstructed45DegreeBoundMm": 25.13913959755234,
+      "ratioTo45DegreeBound": 1.5533023669714132,
+      "excessTo45DegreeBoundMm": 13.909545442950492
+    },
+    {
+      "identity": "SAFE_R37_TRUNK",
+      "nets": [
+        "TEC_SAFE_EN"
+      ],
+      "lengthMm": 71.6563058585152,
+      "unobstructed45DegreeBoundMm": 61.193207024971414,
+      "ratioTo45DegreeBound": 1.1709846458819204,
+      "excessTo45DegreeBoundMm": 10.463098833543782
+    },
+    {
+      "identity": "TEC_SENSE_KELVIN_P",
+      "nets": [
+        "TEC_INDUCTOR_OUT"
+      ],
+      "lengthMm": 34.333427124746194,
+      "unobstructed45DegreeBoundMm": 24.30626983722081,
+      "ratioTo45DegreeBound": 1.4125337764567454,
+      "excessTo45DegreeBoundMm": 10.027157287525384
+    },
+    {
+      "identity": "PD_PROTECTED_DISCHARGE_FEED",
+      "nets": [
+        "VBUS_TEC"
+      ],
+      "lengthMm": 24.253300858899106,
+      "unobstructed45DegreeBoundMm": 14.585533905932738,
+      "ratioTo45DegreeBound": 1.6628325720071142,
+      "excessTo45DegreeBoundMm": 9.667766952966367
+    }
+  ],
+  "ratingReasoning": [
+    "The gain is real and concentrated in important local geometry: eFuse OUT bypass drops 86.2%, CdVdt drops 49.4%, VC drops 16.4%, and LOW gate drops 6.8%. These matter more than the modest 0.84% total-board length saving.",
+    "Changed routing saves 9.48% planar centerline, while whole-board 45-degree efficiency also improves. Unique centerline decreases 32.08 mm, so the gain is not merely deletion of duplicated route objects.",
+    "Inner1 signal routing decreases 38.24 mm (11.66%) and the regenerated inner1 GND BREP gains 22.64 mm\u00b2. This is actual recovered pour geometry, with area explicitly measured before separate same-net drill subtraction.",
+    "Via economy is a small tradeoff: total count rises by one, from two SAFE_EN transfer barrels added and one V3V3 barrel removed. All 434 are full four-layer barrels. The transfer cost is justified by the ground-corridor relief, not described as a via-count improvement.",
+    "The eFuse cap move also increases its protected permission-supply pickup copper from 3.94 to 14.53 mm, a 10.59 mm collateral cost already included in the board totals. Local-cap improvement is therefore not portrayed as a 19.85 mm net total-board gain by itself.",
+    "Remaining limitations are substantial enough to hold the score at 7.6: HIGH gate stays 24.15 mm, LOW gate remains 26.40 mm, VC remains 12.69 mm, fan stays 81.92 mm with 41.90 mm excess over its unobstructed bound, and UART bottom stays 55.71 mm with 22.79 mm excess.",
+    "The eFuse raw input cap remains physically 21.84 mm from U_INPUT.pin5; its existing named trace-network chain remains 43.81 mm, with no input-cap improvement credit. The chain is not a shortest path through wide pours. Most original inner1 signal length remains: 289.69 mm."
+  ],
+  "limitations": [
+    "Planar sums count overlapping same-net objects separately; no vertical barrel length or extracted parasitics.",
+    "45-degree bound omits obstacles, electrical isolation and return-path constraints; it does not prove a safe reroute.",
+    "Placement moves and removal of efficient short branches change the detour-ratio denominator. A higher aggregate ratio can coexist with shorter critical paths; it is not a routing-score formula.",
+    "Changed identities use source names, with endpoint display for unnamed copper. Added/removed names require semantic pairing.",
+    "Priority metrics sum listed concrete routes and flag missing names; they are not a Dijkstra analysis of wide copper.",
+    "No DRC, net continuity, width/fabrication compliance, or manufacturing acceptance claim follows from these economy metrics.",
+    "This role measures copper economy and offers a subjective routing-quality score; it does not independently certify foreign-net clearance, whole-board physical continuity, drilled ground connectivity, current capacity or manufacturer readiness.",
+    "A failed final specialist check overrides this routing-quality score. This role freshly measured the exact final Source24d capture against Source23. Source bounds and silkscreen metadata earn no improvement credit."
+  ],
+  "collateralRoutingCost": {
+    "permissionProtectedPickupOldMm": 3.944213562373096,
+    "permissionProtectedPickupNewMm": 14.530214280248092,
+    "sourceNames": [
+      "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "TEC_PERMISSION_PICKUP_BOTTOM",
+      "TEC_PERMISSION_PICKUP_CAP"
+    ],
+    "addedPlanarMm": 10.586000717874995,
+    "interpretation": "The local OUT-cap placement requires a longer protected permission-supply feed. Overall and changed-scope totals include this cost."
+  },
+  "directPadSeparationMm": {
+    "inputCapU_INPUT_pin5_to_C_USB_IN_pin1": {
+      "before": 21.839434516488744,
+      "after": 21.839434516488744
+    },
+    "outputCapU_INPUT_pin6_to_C_INPUT_OUT_pin1": {
+      "before": 14.456171692394914,
+      "after": 2.8897923800854617
+    },
+    "CdVdtU_INPUT_pin7_to_C_INPUT_DVDT_pin1": {
+      "before": 5.421291359076727,
+      "after": 4.247458063359779
+    },
+    "method": "Euclidean separation of actual final Source24d PCB port coordinates; not routed length or shortest path through pours."
+  },
+  "captureRegenerationEvidence": {
+    "runId": "ee484fbc-6c80-49d2-ae2c-923607371b45",
+    "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+    "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "sourceUnchanged": true,
+    "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+    "errorCount": 0
+  },
+  "boundMetadataCorrection": {
+    "sourceName": "TEC_FILTERED_SENSE_N_U2",
+    "finalNativeMaxLengthMm": 9.4,
+    "routingScoreCredit": 0
+  },
+  "objectCountsBefore": {
+    "source_project_metadata": 1,
+    "source_group": 3,
+    "source_net": 104,
+    "source_port": 1343,
+    "source_component": 220,
+    "source_manually_placed_via": 313,
+    "source_board": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1026,
+    "source_bus": 1,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_component": 533,
+    "pcb_group": 2,
+    "pcb_board": 1,
+    "pcb_keepout": 10,
+    "pcb_hole": 6,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_solder_paste": 574,
+    "pcb_silkscreen_path": 665,
+    "pcb_silkscreen_text": 234,
+    "pcb_courtyard_outline": 194,
+    "pcb_via": 433,
+    "pcb_silkscreen_circle": 31,
+    "pcb_fabrication_note_path": 79,
+    "pcb_silkscreen_rect": 5,
+    "pcb_courtyard_rect": 26,
+    "pcb_port": 1343,
+    "cad_component": 194,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_trace": 633,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_copper_pour": 29,
+    "pcb_trace_warning": 44
+  },
+  "objectCountsAfter": {
+    "source_project_metadata": 1,
+    "source_group": 3,
+    "source_net": 104,
+    "source_port": 1354,
+    "source_component": 220,
+    "source_manually_placed_via": 317,
+    "source_board": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1029,
+    "source_bus": 1,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_component": 537,
+    "pcb_group": 2,
+    "pcb_board": 1,
+    "pcb_keepout": 10,
+    "pcb_hole": 6,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_solder_paste": 574,
+    "pcb_silkscreen_path": 665,
+    "pcb_silkscreen_text": 234,
+    "pcb_courtyard_outline": 194,
+    "pcb_via": 434,
+    "pcb_silkscreen_circle": 31,
+    "pcb_fabrication_note_path": 79,
+    "pcb_silkscreen_rect": 5,
+    "pcb_courtyard_rect": 26,
+    "pcb_port": 1354,
+    "cad_component": 194,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_trace": 636,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_copper_pour": 31,
+    "pcb_trace_warning": 44
+  },
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "finalVerificationReport": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_measurement_rating/final-verification.json"
+}

@@ -32,7 +32,6 @@ export const B4B_PH_K_S_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {
 <platedhole  portHints={["pin4"]} pcbX="-2.999994mm" pcbY="-0.550037mm" outerDiameter="1.5999968mm" holeDiameter="0.95mm" shape="circle" />
 <silkscreencircle strokeWidth="0.15mm" pcbX="4.285996mm" pcbY="-1.566037mm" radius="0.359156mm" />
 <silkscreenrect pcbX="0mm" pcbY="0mm" width="9.99998mm" height="4.500118mm" strokeWidth="0.254mm" />
-<silkscreentext text="{NAME}" pcbX="0.009398mm" pcbY="3.243963mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-5.200002799999993,"y":2.6999569999999267},{"x":5.199977399999966,"y":2.6999569999999267},{"x":5.199977399999966,"y":-2.500033599999938},{"x":-5.200002799999993,"y":-2.500033599999938},{"x":-5.200002799999993,"y":2.6999569999999267}]} />
       </footprint>}
       cadModel={{
