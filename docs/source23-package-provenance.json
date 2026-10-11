@@ -1,0 +1,3322 @@
+{
+  "scope": "Exact captured tscircuit source, six approved runtime files and an already frozen PCB prototype capture. No dependency installation, native solve, plane solve or manufacturing export was performed during packaging.",
+  "sourceSha256": "6345aa0e58e01062fe91a7bf6dc6dc98614756a618b1ee40c0781f5032c4e98e",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "circuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "sourceFileCount": 150,
+  "additionalSupportFileCount": 0,
+  "additionalSupportFiles": [],
+  "separateSupplierEvidenceFileCount": 165,
+  "separateSupplierEvidenceFiles": [
+    {
+      "id": "C10429",
+      "file": "captured-pcb/supplier-evidence/C10429-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C10429-easyeda.json",
+      "sha256": "8ba840e8a390713717510694528e29fa7714a024bf3b5b3362f90c5a259e5c97",
+      "bytes": 23786,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C10429",
+      "observedAt": "2026-10-10T05:16:39.252664+00:00"
+    },
+    {
+      "id": "C125094",
+      "file": "captured-pcb/supplier-evidence/C125094-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/debug-source-evidence/C125094-easyeda.json",
+      "sha256": "1155ff795748f7f399872ff75213ff0106493513668e73b6f2a0e1e94b1fe6c8",
+      "bytes": 16695,
+      "sourceUrl": "https://easyeda.com/api/components/7c039eec51c34103baa6d38347752d87?version=6.4.7&uuid=7c039eec51c34103baa6d38347752d87&datastrid=",
+      "observedAt": "2026-10-10T14:01:49.068Z"
+    },
+    {
+      "id": "C12891",
+      "file": "captured-pcb/supplier-evidence/C12891-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C12891-easyeda.json",
+      "sha256": "bad1db9b08202006924ba413772942b48784886a54c989b3a3ac3bb636225258",
+      "bytes": 16919,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C12891",
+      "observedAt": "2026-10-10T03:21:01.708800+00:00"
+    },
+    {
+      "id": "C130910",
+      "file": "captured-pcb/supplier-evidence/C130910-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C130910-easyeda.json",
+      "sha256": "017677d52f6c4d5b25df8ae31eb2a7d9fa28b66bb0521f5a31f875d97b8960d6",
+      "bytes": 15187,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C130910",
+      "observedAt": "2026-10-10T03:23:57.281177+00:00"
+    },
+    {
+      "id": "C131334",
+      "file": "captured-pcb/supplier-evidence/C131334-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C131334-easyeda.json",
+      "sha256": "ac679c2d8246eda038026fee1066daecc9a62b1bdb590ceffb5963d0b2c3217b",
+      "bytes": 11454,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C131334",
+      "observedAt": "2026-10-10T03:20:59.295651+00:00"
+    },
+    {
+      "id": "C131337",
+      "file": "captured-pcb/supplier-evidence/C131337-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C131337-easyeda.json",
+      "sha256": "b1edf2bf0a8fd702280d657b4fd360851200a506e75bb74f7aaeffe93b92791d",
+      "bytes": 15169,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C131337",
+      "observedAt": "2026-10-10T03:23:04.760866+00:00"
+    },
+    {
+      "id": "C132016",
+      "file": "captured-pcb/supplier-evidence/C132016-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C132016-easyeda.json",
+      "sha256": "1d51b1b8a2e700a1effc4487ebf66624343c6e2ecac97dcec88236d0b8a746a7",
+      "bytes": 22452,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C132016",
+      "observedAt": "2026-10-10T03:20:59.089357+00:00"
+    },
+    {
+      "id": "C13585",
+      "file": "captured-pcb/supplier-evidence/C13585-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C13585-easyeda.json",
+      "sha256": "b8c95f90d4351f76646ddade76b760c1bc30886a598e418131d303a6f1a5f386",
+      "bytes": 16981,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C13585",
+      "observedAt": "2026-10-10T03:21:01.647441+00:00"
+    },
+    {
+      "id": "C138706",
+      "file": "captured-pcb/supplier-evidence/C138706-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C138706-easyeda.json",
+      "sha256": "943100243caf108a2094e540e795b47ecb71cf95b7b6d73b678f73a41dc92068",
+      "bytes": 22727,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C138706",
+      "observedAt": "2026-10-10T03:29:26.403149+00:00"
+    },
+    {
+      "id": "C144198",
+      "file": "captured-pcb/supplier-evidence/C144198-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C144198-easyeda.json",
+      "sha256": "99f076a2a477aaeb6b41cf38fcd8615166a687b487669f1e780fe4f7501b5e10",
+      "bytes": 28822,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C144198",
+      "observedAt": "2026-10-10T03:14:11.325488+00:00"
+    },
+    {
+      "id": "C14663",
+      "file": "captured-pcb/supplier-evidence/C14663-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C14663-easyeda.json",
+      "sha256": "39cebd7b10bc8e4f903d0e066a33dce2b60a4cf1073cd2c9bda39dee0aa16b58",
+      "bytes": 11995,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C14663",
+      "observedAt": "2026-10-10T03:21:00.696553+00:00"
+    },
+    {
+      "id": "C14858",
+      "file": "captured-pcb/supplier-evidence/C14858-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C14858-easyeda.json",
+      "sha256": "ca68b6e2d2f8a9cdc76a45b1799e3b78ad52b1eddf073827395cc6c34c4fa0b7",
+      "bytes": 12084,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C14858",
+      "observedAt": "2026-10-10T03:39:34.011677+00:00"
+    },
+    {
+      "id": "C15127",
+      "file": "captured-pcb/supplier-evidence/C15127-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C15127-easyeda.json",
+      "sha256": "7c8d90bd4c5ffc4340ce2e61da9e5b70e275542fb06ebd80720e9a7e77705cd7",
+      "bytes": 17246,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C15127",
+      "observedAt": "2026-10-10T03:23:56.761937+00:00"
+    },
+    {
+      "id": "C158004",
+      "file": "captured-pcb/supplier-evidence/C158004-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C158004-easyeda.json",
+      "sha256": "4578ff302ab62426fbfbef9c5b168d0549549a14e41d9a2433e9d51b0efc7e56",
+      "bytes": 18459,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C158004",
+      "observedAt": "2026-10-10T03:23:59.166107+00:00"
+    },
+    {
+      "id": "C15849",
+      "file": "captured-pcb/supplier-evidence/C15849-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C15849-easyeda.json",
+      "sha256": "eb0291fb852a54d327de86d715a4d786a39642b0493a3c6d51e1dab4b9c9f114",
+      "bytes": 12082,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C15849",
+      "observedAt": "2026-10-10T03:21:00.777268+00:00"
+    },
+    {
+      "id": "C1591",
+      "file": "captured-pcb/supplier-evidence/C1591-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C1591-easyeda.json",
+      "sha256": "bc0f028e3912692f0f2a65b08c5d1029e96ba302b7ac15c2436ebb7d401ddd7e",
+      "bytes": 12028,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C1591",
+      "observedAt": "2026-10-10T03:21:00.824001+00:00"
+    },
+    {
+      "id": "C1613",
+      "file": "captured-pcb/supplier-evidence/C1613-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C1613-easyeda.json",
+      "sha256": "edf5125663814e8f445dfa1823dfc55c5d79b4b85e1ce3fadbc2e9f637429bd5",
+      "bytes": 12077,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C1613",
+      "observedAt": "2026-10-10T03:23:03.858349+00:00"
+    },
+    {
+      "id": "C165948",
+      "file": "captured-pcb/supplier-evidence/C165948-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C165948-easyeda.json",
+      "sha256": "7fc73d44d24bc9f9e9e1a0986aaa6885172db5d8d26212e3767fce5600a305ab",
+      "bytes": 39845,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C165948",
+      "observedAt": "2026-10-10T03:14:11.325936+00:00"
+    },
+    {
+      "id": "C167874",
+      "file": "captured-pcb/supplier-evidence/C167874-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C167874-easyeda.json",
+      "sha256": "cbcd33604bae0eb80785d2ff80c6f01218d206c6d636137f9f4b75200e50cf9e",
+      "bytes": 17408,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C167874",
+      "observedAt": "2026-10-10T03:23:04.958047+00:00"
+    },
+    {
+      "id": "C179626",
+      "file": "captured-pcb/supplier-evidence/C179626-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C179626-easyeda.json",
+      "sha256": "e22e17ecc436d42f47db729aac4bc5adfbbb4dbf81b3ae6c4481fc5b04c67185",
+      "bytes": 19306,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C179626",
+      "observedAt": "2026-10-10T03:21:00.027208+00:00"
+    },
+    {
+      "id": "C18739",
+      "file": "captured-pcb/supplier-evidence/C18739-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C18739-easyeda.json",
+      "sha256": "d2bddf1717ae7c091f4e4bfedeb6be188aa90152bcf43c86ff953d3752a81ee2",
+      "bytes": 17323,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C18739",
+      "observedAt": "2026-10-10T03:28:46.272035+00:00"
+    },
+    {
+      "id": "C191884",
+      "file": "captured-pcb/supplier-evidence/C191884-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C191884-easyeda.json",
+      "sha256": "6fcaba1d50442415fcd605e88a3a0ebad03cccefc089177ececf9ee6fa9b84cb",
+      "bytes": 28595,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C191884",
+      "observedAt": "2026-10-10T03:35:29.731410+00:00"
+    },
+    {
+      "id": "C19270707",
+      "file": "captured-pcb/supplier-evidence/C19270707-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C19270707-easyeda.json",
+      "sha256": "8c1a48472f2e15dd0da986c798964f06541e3f268840d6c9151d68bebda24b65",
+      "bytes": 11907,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19270707",
+      "observedAt": "2026-10-10T03:20:59.905777+00:00"
+    },
+    {
+      "id": "C19270709",
+      "file": "captured-pcb/supplier-evidence/C19270709-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C19270709-easyeda.json",
+      "sha256": "d06156eb42f8f30851648067cbaadbc5fc29801287a4a37d5248a0e8cbace3a2",
+      "bytes": 11957,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19270709",
+      "observedAt": "2026-10-10T03:20:59.925835+00:00"
+    },
+    {
+      "id": "C19666",
+      "file": "captured-pcb/supplier-evidence/C19666-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C19666-easyeda.json",
+      "sha256": "9bdbbd5e7b67f8bc6c144a7ee1042b6a16d3d1981013b0f250e72de6334ed191",
+      "bytes": 12100,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C19666",
+      "observedAt": "2026-10-10T03:21:01.518953+00:00"
+    },
+    {
+      "id": "C20526",
+      "file": "captured-pcb/supplier-evidence/C20526-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C20526-easyeda.json",
+      "sha256": "0319b3bc8318a4e2883dfd05e3d8cb4e31c394bcb5b5c3ab6817d91fa4fc44af",
+      "bytes": 17621,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C20526",
+      "observedAt": "2026-10-10T03:20:57.600274+00:00"
+    },
+    {
+      "id": "C20527",
+      "file": "captured-pcb/supplier-evidence/C20527-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C20527-easyeda.json",
+      "sha256": "632be5f8a2dad4fd697ef233290202fb296d549fa6116d5857c8c7c614528da9",
+      "bytes": 17444,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C20527",
+      "observedAt": "2026-10-10T03:24:23.520805+00:00"
+    },
+    {
+      "id": "C2071044",
+      "file": "captured-pcb/supplier-evidence/C2071044-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2071044-easyeda.json",
+      "sha256": "999e922583434d11928bf4caf7491dc3797c2679d15870564694a6aad1e5a24a",
+      "bytes": 29469,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2071044",
+      "observedAt": "2026-10-10T03:35:28.685189+00:00"
+    },
+    {
+      "id": "C2071868",
+      "file": "captured-pcb/supplier-evidence/C2071868-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2071868-easyeda.json",
+      "sha256": "a9a9e96240f1b994a494bc033194c49fa796d6fbbe572dbe4cd122b650e39fd4",
+      "bytes": 23142,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2071868",
+      "observedAt": "2026-10-10T03:20:58.472787+00:00"
+    },
+    {
+      "id": "C21117",
+      "file": "captured-pcb/supplier-evidence/C21117-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C21117-easyeda.json",
+      "sha256": "cd22ed339ee98dbe9c97100224c704234e9ded247807ad6218cc8c999691e4e2",
+      "bytes": 16966,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21117",
+      "observedAt": "2026-10-10T03:23:03.421605+00:00"
+    },
+    {
+      "id": "C21189",
+      "file": "captured-pcb/supplier-evidence/C21189-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C21189-easyeda.json",
+      "sha256": "94ad258dc69b3e66a16bbcafe4f78fd4581841a0f4714e6b51996ca8e57c8795",
+      "bytes": 19583,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21189",
+      "observedAt": "2026-10-10T03:23:02.568427+00:00"
+    },
+    {
+      "id": "C21190",
+      "file": "captured-pcb/supplier-evidence/C21190-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C21190-easyeda.json",
+      "sha256": "67d2a5101829f9c9fbf19ce8a45c7313dbf6c265898e2598c2c2449435e96a9f",
+      "bytes": 19587,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C21190",
+      "observedAt": "2026-10-10T03:23:02.390150+00:00"
+    },
+    {
+      "id": "C22809",
+      "file": "captured-pcb/supplier-evidence/C22809-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22809-easyeda.json",
+      "sha256": "a82ac0b236fca7004baf17a7d8c9993f57c682a756c9c5f23939d3291cbfd2cf",
+      "bytes": 19628,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22809",
+      "observedAt": "2026-10-10T03:26:49.196061+00:00"
+    },
+    {
+      "id": "C22836",
+      "file": "captured-pcb/supplier-evidence/C22836-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22836-easyeda.json",
+      "sha256": "c0c9c5730e5f412657a12bd3e409edc35daa43ebc518b9f1fad36fa78782e5ab",
+      "bytes": 24489,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22836",
+      "observedAt": "2026-10-10T03:23:01.632081+00:00"
+    },
+    {
+      "id": "C22858",
+      "file": "captured-pcb/supplier-evidence/C22858-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22858-easyeda.json",
+      "sha256": "a7419c0d41f62f2d49d9df644bf96488ab2db890a2f173afd3b1a6b776b3d958",
+      "bytes": 19632,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22858",
+      "observedAt": "2026-10-10T03:23:00.306833+00:00"
+    },
+    {
+      "id": "C22859",
+      "file": "captured-pcb/supplier-evidence/C22859-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22859-easyeda.json",
+      "sha256": "7e63ce71fffe1710e327f5e3f7c1a3325261fb4a40314fbdd08c10a995b3e33d",
+      "bytes": 19587,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22859",
+      "observedAt": "2026-10-10T03:23:01.488330+00:00"
+    },
+    {
+      "id": "C22864",
+      "file": "captured-pcb/supplier-evidence/C22864-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22864-easyeda.json",
+      "sha256": "eb4d28eeb5df67d5cff986490fed8abd9151c9724c7b1f20bc9858d29a8ff786",
+      "bytes": 24492,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22864",
+      "observedAt": "2026-10-10T03:23:00.363572+00:00"
+    },
+    {
+      "id": "C22875",
+      "file": "captured-pcb/supplier-evidence/C22875-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22875-easyeda.json",
+      "sha256": "5ec951dd592e958561a8e292d8f41ad5a394ce61c6b9da87c443be2205f2c6a9",
+      "bytes": 24485,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22875",
+      "observedAt": "2026-10-10T03:26:49.180088+00:00"
+    },
+    {
+      "id": "C22890",
+      "file": "captured-pcb/supplier-evidence/C22890-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22890-easyeda.json",
+      "sha256": "c0fc60eb156bc830f7d5c0189f0a4abee1a43c190c7372e57106c531851c080b",
+      "bytes": 19593,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22890",
+      "observedAt": "2026-10-10T03:23:01.974542+00:00"
+    },
+    {
+      "id": "C22908",
+      "file": "captured-pcb/supplier-evidence/C22908-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22908-easyeda.json",
+      "sha256": "3552dac1f43f1917dfda214df5a0b0635c8e5fd4c43c16138c8c3fafdd74eeb9",
+      "bytes": 19598,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22908",
+      "observedAt": "2026-10-10T03:23:01.806621+00:00"
+    },
+    {
+      "id": "C22939",
+      "file": "captured-pcb/supplier-evidence/C22939-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22939-easyeda.json",
+      "sha256": "c6bb71f13e4ca826628a25f1811455e6fe01af08459bb399c4d2a62fd452880f",
+      "bytes": 19589,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22939",
+      "observedAt": "2026-10-10T03:23:01.378929+00:00"
+    },
+    {
+      "id": "C22962",
+      "file": "captured-pcb/supplier-evidence/C22962-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22962-easyeda.json",
+      "sha256": "6a0d5cd6bf390e8f5d4f4a469d22a9edc49a9d0ff07be942cd1d4a16329c90f6",
+      "bytes": 19629,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22962",
+      "observedAt": "2026-10-10T03:23:02.646596+00:00"
+    },
+    {
+      "id": "C22964",
+      "file": "captured-pcb/supplier-evidence/C22964-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C22964-easyeda.json",
+      "sha256": "b1ef14e43eea6979235023efc7fd6d23a0bd76d266a70a45aa4590e31f0f056f",
+      "bytes": 24490,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C22964",
+      "observedAt": "2026-10-10T03:24:23.071487+00:00"
+    },
+    {
+      "id": "C23003",
+      "file": "captured-pcb/supplier-evidence/C23003-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23003-easyeda.json",
+      "sha256": "f702d156f6a0c8b476dee46b9ad78cbfe8e27bd8e11a4faccae96f90b6051fd0",
+      "bytes": 24490,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23003",
+      "observedAt": "2026-10-10T03:23:01.169066+00:00"
+    },
+    {
+      "id": "C23068",
+      "file": "captured-pcb/supplier-evidence/C23068-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23068-easyeda.json",
+      "sha256": "8061051af991f69b9767cf0b2c851814357615423bd2baadc66b214b9c983781",
+      "bytes": 19630,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23068",
+      "observedAt": "2026-10-10T03:39:33.970750+00:00"
+    },
+    {
+      "id": "C23080",
+      "file": "captured-pcb/supplier-evidence/C23080-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23080-easyeda.json",
+      "sha256": "e775b2c05a7e9c9e9542267fdd5608abe7576947bb52b0e54dfae5a3ca26fcc2",
+      "bytes": 19636,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23080",
+      "observedAt": "2026-10-10T03:23:00.409727+00:00"
+    },
+    {
+      "id": "C23091",
+      "file": "captured-pcb/supplier-evidence/C23091-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23091-easyeda.json",
+      "sha256": "bf4a3c8f1201c93095ab1fdf90ae32306f3341a8a8ab6280aabec963dc78e3ec",
+      "bytes": 24531,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23091",
+      "observedAt": "2026-10-10T03:24:23.603393+00:00"
+    },
+    {
+      "id": "C23138",
+      "file": "captured-pcb/supplier-evidence/C23138-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23138-easyeda.json",
+      "sha256": "617e5d970cc746073bc6acbe9ba884d16155f2b5167603da9f37a952b9ddf058",
+      "bytes": 19627,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23138",
+      "observedAt": "2026-10-10T03:23:02.874742+00:00"
+    },
+    {
+      "id": "C23162",
+      "file": "captured-pcb/supplier-evidence/C23162-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23162-easyeda.json",
+      "sha256": "5ef345431d5c7dc2d5149d651a19af33f1a34df74b95fac6e7e9a2a04d406ece",
+      "bytes": 19634,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23162",
+      "observedAt": "2026-10-10T03:23:02.020839+00:00"
+    },
+    {
+      "id": "C23186",
+      "file": "captured-pcb/supplier-evidence/C23186-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23186-easyeda.json",
+      "sha256": "31bddb19277eaceecb95a99af1731601002952c7447769a3190fdab64590541f",
+      "bytes": 19567,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23186",
+      "observedAt": "2026-10-10T03:23:03.561922+00:00"
+    },
+    {
+      "id": "C23242",
+      "file": "captured-pcb/supplier-evidence/C23242-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23242-easyeda.json",
+      "sha256": "da4d6c301f217d17260deee6ae8bc559d555d8514f58dab526cb66c3e048c262",
+      "bytes": 19589,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23242",
+      "observedAt": "2026-10-10T04:30:44.360111+00:00"
+    },
+    {
+      "id": "C23251",
+      "file": "captured-pcb/supplier-evidence/C23251-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C23251-easyeda.json",
+      "sha256": "22d89298ead00f9eead6024fd13a7eff37eee58cf51dcf12706e27206ee31c40",
+      "bytes": 19630,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C23251",
+      "observedAt": "2026-10-10T03:23:00.213779+00:00"
+    },
+    {
+      "id": "C237304",
+      "file": "captured-pcb/supplier-evidence/C237304-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C237304-easyeda.json",
+      "sha256": "72f8ab89f8c2535409e8a0f331cf260f8712d42ef6f2dd8d1e6c5cef5adf49a3",
+      "bytes": 21730,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C237304",
+      "observedAt": "2026-10-10T03:58:55.723558+00:00"
+    },
+    {
+      "id": "C2480",
+      "file": "captured-pcb/supplier-evidence/C2480-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2480-easyeda.json",
+      "sha256": "e11c835894397a19acb78eef81994014c3f8f5700f19e2bf1c2b5949b323d6a2",
+      "bytes": 13067,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2480",
+      "observedAt": "2026-10-10T03:23:56.840191+00:00"
+    },
+    {
+      "id": "C25803",
+      "file": "captured-pcb/supplier-evidence/C25803-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C25803-easyeda.json",
+      "sha256": "7720fc09c43c94afe3c4aab4044d190842572d3b502368829bff52d0925fb0fd",
+      "bytes": 19627,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25803",
+      "observedAt": "2026-10-10T03:23:00.221938+00:00"
+    },
+    {
+      "id": "C25819",
+      "file": "captured-pcb/supplier-evidence/C25819-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C25819-easyeda.json",
+      "sha256": "ba84c6b9f561fba6acb1c88b4383040c4b0492de62c4e02aaa19e2d91a0e006c",
+      "bytes": 19629,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25819",
+      "observedAt": "2026-10-10T03:23:01.222138+00:00"
+    },
+    {
+      "id": "C25954",
+      "file": "captured-pcb/supplier-evidence/C25954-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C25954-easyeda.json",
+      "sha256": "9eb6bb1c37bedd185c7821532a143201e72167314598f9c3ef5d32a25d310d3b",
+      "bytes": 24492,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C25954",
+      "observedAt": "2026-10-10T03:23:00.577736+00:00"
+    },
+    {
+      "id": "C2678061",
+      "file": "captured-pcb/supplier-evidence/C2678061-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2678061-easyeda.json",
+      "sha256": "fdea48a3b91ddc1aec6cc26f08ecca4ba3961e9de5713e4e4ed74d7c7631e942",
+      "bytes": 28105,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2678061",
+      "observedAt": "2026-10-10T03:14:10.465883+00:00"
+    },
+    {
+      "id": "C2762602",
+      "file": "captured-pcb/supplier-evidence/C2762602-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2762602-easyeda.json",
+      "sha256": "c37ac565d2be810d5eb5e8d11b2b7df73f75f8f15abde4b6dc3e5c6aa0c0c6d4",
+      "bytes": 12302,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2762602",
+      "observedAt": "2026-10-10T03:23:04.418121+00:00"
+    },
+    {
+      "id": "C28323",
+      "file": "captured-pcb/supplier-evidence/C28323-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C28323-easyeda.json",
+      "sha256": "ee358e0bdd18dd9d4bfaa5bcf2a602caf72ce9953bfc8d31f0a8c9cd6fad02d2",
+      "bytes": 12851,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C28323",
+      "observedAt": "2026-10-10T04:58:36.972204+00:00"
+    },
+    {
+      "id": "C2906982",
+      "file": "captured-pcb/supplier-evidence/C2906982-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2906982-easyeda.json",
+      "sha256": "fecb24830761296dcf22bb897d37ada7c4763a7f998b1a5cf3a5cbf5bfedec01",
+      "bytes": 19185,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2906982",
+      "observedAt": "2026-10-10T03:23:00.800757+00:00"
+    },
+    {
+      "id": "C2930048",
+      "file": "captured-pcb/supplier-evidence/C2930048-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2930048-easyeda.json",
+      "sha256": "efa643a6f21cd44ebb2f7056525dc1e3ca9ca5522050f9208bc7f47a4e651c56",
+      "bytes": 23961,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2930048",
+      "observedAt": "2026-10-10T03:35:27.478899+00:00"
+    },
+    {
+      "id": "C2933140",
+      "file": "captured-pcb/supplier-evidence/C2933140-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2933140-easyeda.json",
+      "sha256": "b8c1472555eff5e8fd07f4ef5686f0bcbaf502aca617b731f036a1d3b6de5536",
+      "bytes": 19067,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2933140",
+      "observedAt": "2026-10-10T03:47:51.994388+00:00"
+    },
+    {
+      "id": "C2933200",
+      "file": "captured-pcb/supplier-evidence/C2933200-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2933200-easyeda.json",
+      "sha256": "ca9b2a9d7391e4e3893de707d504a763768af7c06b9caa4847d014c3e5f9e78f",
+      "bytes": 23961,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2933200",
+      "observedAt": "2026-10-10T03:35:27.683458+00:00"
+    },
+    {
+      "id": "C29823",
+      "file": "captured-pcb/supplier-evidence/C29823-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C29823-easyeda.json",
+      "sha256": "e09521a22c01548c3f23907641efe2b47f40fa9df1c98b63885ec780e4e5f9e7",
+      "bytes": 21788,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C29823",
+      "observedAt": "2026-10-10T03:23:03.883638+00:00"
+    },
+    {
+      "id": "C2984759",
+      "file": "captured-pcb/supplier-evidence/C2984759-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C2984759-easyeda.json",
+      "sha256": "53c418fb074ff0d36e46f50202da259bda1906e59a28dde6e3495f867d7e1fc3",
+      "bytes": 22085,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C2984759",
+      "observedAt": "2026-10-10T03:24:24.475434+00:00"
+    },
+    {
+      "id": "C309062",
+      "file": "captured-pcb/supplier-evidence/C309062-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C309062-easyeda.json",
+      "sha256": "5e444d29d8edf6246a5f487caf5cd8d6e53b8e1668f1c3e5b3d2a87fe75f5f8c",
+      "bytes": 17304,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C309062",
+      "observedAt": "2026-10-10T03:21:01.404873+00:00"
+    },
+    {
+      "id": "C31850",
+      "file": "captured-pcb/supplier-evidence/C31850-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C31850-easyeda.json",
+      "sha256": "b37f4a071d12865ddd2425ba4c36fca892a72f2ed82cc1fce1f4e57e23336bd2",
+      "bytes": 19588,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C31850",
+      "observedAt": "2026-10-10T03:26:49.251860+00:00"
+    },
+    {
+      "id": "C3662799",
+      "file": "captured-pcb/supplier-evidence/C3662799-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C3662799-easyeda.json",
+      "sha256": "723c7d4b990e09e0b96a5a4643570ffe689a9b751b10c115c47b101cc42c6d10",
+      "bytes": 18063,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C3662799",
+      "observedAt": "2026-10-10T03:14:10.216742+00:00"
+    },
+    {
+      "id": "C377773",
+      "file": "captured-pcb/supplier-evidence/C377773-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C377773-easyeda.json",
+      "sha256": "4507461ec48281a1fedcc52d696afce7f1982c98a68e03499181c2f5dbd8a8f1",
+      "bytes": 12823,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C377773",
+      "observedAt": "2026-10-10T03:48:28.240847+00:00"
+    },
+    {
+      "id": "C380537",
+      "file": "captured-pcb/supplier-evidence/C380537-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C380537-easyeda.json",
+      "sha256": "a7930fb339046bbd874e620a1e3485a94c0fe46a18038fee2ba4bdf2333b5673",
+      "bytes": 17268,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C380537",
+      "observedAt": "2026-10-10T03:28:46.249789+00:00"
+    },
+    {
+      "id": "C397609",
+      "file": "captured-pcb/supplier-evidence/C397609-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C397609-easyeda.json",
+      "sha256": "f8aaf43eff194ecf4b071e2194b3341024d33132a07c10a51286e1625be9e4d8",
+      "bytes": 21802,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C397609",
+      "observedAt": "2026-10-10T03:23:57.870514+00:00"
+    },
+    {
+      "id": "C4184",
+      "file": "captured-pcb/supplier-evidence/C4184-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C4184-easyeda.json",
+      "sha256": "adb21a3548fa6737aee6b0443d03abee2d70fed50989c8664b3b361efc4e499a",
+      "bytes": 19617,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C4184",
+      "observedAt": "2026-10-10T03:23:02.967468+00:00"
+    },
+    {
+      "id": "C45783",
+      "file": "captured-pcb/supplier-evidence/C45783-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C45783-easyeda.json",
+      "sha256": "6b7fac16f86e62da758e22d9c213d8d30d865498f05f714f5d43db03b3bc6f5d",
+      "bytes": 12956,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C45783",
+      "observedAt": "2026-10-10T03:23:04.280912+00:00"
+    },
+    {
+      "id": "C466636",
+      "file": "captured-pcb/supplier-evidence/C466636-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C466636-easyeda.json",
+      "sha256": "44261c13f1b52d828e67a3b0c63e9abe9524ec53300d6c3933d61716038fa16c",
+      "bytes": 20210,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C466636",
+      "observedAt": "2026-10-10T03:23:58.006780+00:00"
+    },
+    {
+      "id": "C474881",
+      "file": "captured-pcb/supplier-evidence/C474881-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C474881-easyeda.json",
+      "sha256": "7a76907853a35c98381a467755c28d0b2d7f1cc315e6b1012c38de110fc72e2b",
+      "bytes": 19989,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C474881",
+      "observedAt": "2026-10-10T03:20:59.408046+00:00"
+    },
+    {
+      "id": "C49073699",
+      "file": "captured-pcb/supplier-evidence/C49073699-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C49073699-easyeda.json",
+      "sha256": "76c5b8b88d2de225cfd32914a8c7af855ed71b47d92f4fda29da56be18189ff7",
+      "bytes": 14611,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C49073699",
+      "observedAt": "2026-10-10T03:20:58.806660+00:00"
+    },
+    {
+      "id": "C497873",
+      "file": "captured-pcb/supplier-evidence/C497873-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C497873-easyeda.json",
+      "sha256": "c5d6129dc5b86a8409c75b6ae72853adc1b96bd0c9dcd8ab2c9ff0b88448237a",
+      "bytes": 14650,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C497873",
+      "observedAt": "2026-10-10T03:23:04.655161+00:00"
+    },
+    {
+      "id": "C51205",
+      "file": "captured-pcb/supplier-evidence/C51205-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C51205-easyeda.json",
+      "sha256": "e5bcdc5a51e7439be69281b4098c7dab94df7f91e00815da35a456fcb1bed5b7",
+      "bytes": 16986,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C51205",
+      "observedAt": "2026-10-10T03:49:59.336517+00:00"
+    },
+    {
+      "id": "C513643",
+      "file": "captured-pcb/supplier-evidence/C513643-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C513643-easyeda.json",
+      "sha256": "24cfd41ee895e07de1311f1965553dd05cd4903ede628d0ed669cacd5bb61a39",
+      "bytes": 16300,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C513643",
+      "observedAt": "2026-10-10T03:23:04.012289+00:00"
+    },
+    {
+      "id": "C52306",
+      "file": "captured-pcb/supplier-evidence/C52306-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C52306-easyeda.json",
+      "sha256": "b057e9eed7441d66b71240a0518ee5769440ece808bd126018d010a966270163",
+      "bytes": 22253,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C52306",
+      "observedAt": "2026-10-10T03:21:02.635887+00:00"
+    },
+    {
+      "id": "C53987",
+      "file": "captured-pcb/supplier-evidence/C53987-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C53987-easyeda.json",
+      "sha256": "b41a85aaaea49ff2e7ad4cf40909cd48281fb87add3d99ece80d70a77fa85f5f",
+      "bytes": 12042,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C53987",
+      "observedAt": "2026-10-10T03:23:03.439878+00:00"
+    },
+    {
+      "id": "C54315",
+      "file": "captured-pcb/supplier-evidence/C54315-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C54315-easyeda.json",
+      "sha256": "10e31e5e81ee740082fdc6ec825a4fe6d664d5538550ad8808cdf15c89178d98",
+      "bytes": 16381,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C54315",
+      "observedAt": "2026-10-10T03:25:19.686637+00:00"
+    },
+    {
+      "id": "C57112",
+      "file": "captured-pcb/supplier-evidence/C57112-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C57112-easyeda.json",
+      "sha256": "172726836cb9a39d1b1a84596660c5d014752030adf844b688480df21bf70aa4",
+      "bytes": 12053,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C57112",
+      "observedAt": "2026-10-10T03:21:00.986864+00:00"
+    },
+    {
+      "id": "C576517",
+      "file": "captured-pcb/supplier-evidence/C576517-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C576517-easyeda.json",
+      "sha256": "bcd307bea4e07535ec48ea268269276670f9686e8e070a1e3c3f7dcae7cbe5f0",
+      "bytes": 21668,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C576517",
+      "observedAt": "2026-10-10T03:28:47.973259+00:00"
+    },
+    {
+      "id": "C5824006",
+      "file": "captured-pcb/supplier-evidence/C5824006-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C5824006-easyeda.json",
+      "sha256": "77818449afc85efd5628c0e5be9fbca0951e76d84c6f367314f52bef80bf554b",
+      "bytes": 15961,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C5824006",
+      "observedAt": "2026-10-10T03:21:00.008403+00:00"
+    },
+    {
+      "id": "C602037",
+      "file": "captured-pcb/supplier-evidence/C602037-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C602037-easyeda.json",
+      "sha256": "e1754d1c20040c612e61fe331282986e81cd8bdeb2864caabce324a4b7bbfb4a",
+      "bytes": 12776,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C602037",
+      "observedAt": "2026-10-10T03:26:49.307306+00:00"
+    },
+    {
+      "id": "C64705",
+      "file": "captured-pcb/supplier-evidence/C64705-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C64705-easyeda.json",
+      "sha256": "cbd4e944837d487f7bf1bca625d232a9d1c251875743ebd20d17dc6118c0c676",
+      "bytes": 16972,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C64705",
+      "observedAt": "2026-10-10T03:23:04.404977+00:00"
+    },
+    {
+      "id": "C671324",
+      "file": "captured-pcb/supplier-evidence/C671324-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C671324-easyeda.json",
+      "sha256": "7acc50d1b180747fcb641f14c5c0b99647692d551174fc191d0a8a15b99fd4ef",
+      "bytes": 47786,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C671324",
+      "observedAt": "2026-10-10T03:14:09.170910+00:00"
+    },
+    {
+      "id": "C70285",
+      "file": "captured-pcb/supplier-evidence/C70285-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C70285-easyeda.json",
+      "sha256": "c90c92c76716484cc7cb0e2de250da9efbbab16893c9640780c80e4ced471a6a",
+      "bytes": 22228,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C70285",
+      "observedAt": "2026-10-10T03:20:57.503150+00:00"
+    },
+    {
+      "id": "C724040",
+      "file": "captured-pcb/supplier-evidence/C724040-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C724040-easyeda.json",
+      "sha256": "bd888c30f7040da908ce33fcd32543da22cedd0ba45bcb5963c646d0fd56abd4",
+      "bytes": 41908,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C724040",
+      "observedAt": "2026-10-10T03:14:11.085104+00:00"
+    },
+    {
+      "id": "C7420354",
+      "file": "captured-pcb/supplier-evidence/C7420354-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C7420354-easyeda.json",
+      "sha256": "55c0234130bf82937d120707326acfd6c8b1dd04a522c9a747ecd9aa083efd03",
+      "bytes": 17185,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C7420354",
+      "observedAt": "2026-10-10T03:24:23.140178+00:00"
+    },
+    {
+      "id": "C76589",
+      "file": "captured-pcb/supplier-evidence/C76589-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C76589-easyeda.json",
+      "sha256": "867a1b8ad8c67d72400c9217aa4ecf76729cea51a28ecf23e9bd219a300109bd",
+      "bytes": 24500,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C76589",
+      "observedAt": "2026-10-10T03:21:01.430583+00:00"
+    },
+    {
+      "id": "C780769",
+      "file": "captured-pcb/supplier-evidence/C780769-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C780769-easyeda.json",
+      "sha256": "df7bfaebbeb48c35b0990d166dcaab86d1980f6c14f4e38e544b19cb68f1c8b1",
+      "bytes": 24027,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C780769",
+      "observedAt": "2026-10-10T03:20:57.528583+00:00"
+    },
+    {
+      "id": "C7984",
+      "file": "captured-pcb/supplier-evidence/C7984-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C7984-easyeda.json",
+      "sha256": "906c0888b59688dbd199f3e603c2e2b0b0b1fa2d8374ee1c95aa47844297a3fe",
+      "bytes": 26443,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C7984",
+      "observedAt": "2026-10-10T03:21:00.312369+00:00"
+    },
+    {
+      "id": "C8545",
+      "file": "captured-pcb/supplier-evidence/C8545-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C8545-easyeda.json",
+      "sha256": "beaa7bdf570cec1da929d6fc044e4a2001ee190348689c0dd86db68a026fdd0a",
+      "bytes": 17858,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C8545",
+      "observedAt": "2026-10-10T03:21:00.041283+00:00"
+    },
+    {
+      "id": "C8591",
+      "file": "captured-pcb/supplier-evidence/C8591-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C8591-easyeda.json",
+      "sha256": "0db4aa7819cbb5d626cd8c0a043c6d0a009597d61e4c73f31637e76b9c4792ca",
+      "bytes": 20139,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C8591",
+      "observedAt": "2026-10-10T03:21:00.597861+00:00"
+    },
+    {
+      "id": "C916375",
+      "file": "captured-pcb/supplier-evidence/C916375-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/engineering/sourcing-api/C916375-easyeda.json",
+      "sha256": "a191a2107a7b305865dc73aaa9dd803bc4c53868021d0ade8a26d70cd9330f48",
+      "bytes": 22434,
+      "sourceUrl": "https://jlcsearch.tscircuit.com/api/easyeda_components/C916375",
+      "observedAt": "2026-10-10T03:24:24.581379+00:00"
+    },
+    {
+      "id": "C94869",
+      "file": "captured-pcb/supplier-evidence/C94869-easyeda.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/reviews/debug-source-evidence/C94869-easyeda.json",
+      "sha256": "c1eef360464a0528ddb98857656ad5d69cbce496eca5f648edb11457fb9f6a1b",
+      "bytes": 16259,
+      "sourceUrl": "https://easyeda.com/api/components/2bee172c845e4c718f8f9be12cb7f925?version=6.4.7&uuid=2bee172c845e4c718f8f9be12cb7f925&datastrid=",
+      "observedAt": "2026-10-10T13:59:12.427Z"
+    },
+    {
+      "id": "C10429",
+      "file": "captured-pcb/supplier-evidence/C10429-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C10429-jlc-primary.json",
+      "sha256": "2fe32de59cb4a99571bd71b186c95ab99dfcd49faedb31f463a17960b1a7a809",
+      "bytes": 3123,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C10429",
+      "observedAt": "2026-10-10T06:24:06.989156+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C125094",
+      "file": "captured-pcb/supplier-evidence/C125094-jlc-primary.json",
+      "path": "reviews/debug-source-evidence/C125094-jlc-primary.json",
+      "sha256": "cf09600679cd73dc96492d00b97be00d2c8183e6cfd2ee08dbff23b6cefb6c5e",
+      "bytes": 2907,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C125094",
+      "observedAt": "2026-10-10T14:01:37.782802+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C130910",
+      "file": "captured-pcb/supplier-evidence/C130910-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C130910-jlc-primary.json",
+      "sha256": "e5c57f83fdd5ca32de1a8dae3d28ee952e18f05cee95854cd5d43efdda33fab1",
+      "bytes": 2177,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C130910",
+      "observedAt": "2026-10-10T06:24:02.854046+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C131334",
+      "file": "captured-pcb/supplier-evidence/C131334-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131334-jlc-primary.json",
+      "sha256": "6e6b62a61223082c362a88105a86a4c70e6b335c2f4bfe3781ac402601703c3e",
+      "bytes": 4060,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C131334",
+      "observedAt": "2026-10-10T04:57:45.427099+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C131337",
+      "file": "captured-pcb/supplier-evidence/C131337-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C131337-jlc-primary.json",
+      "sha256": "211c91b311fb0eeba3064d3cb14de558c3b27558cfe506c35601e8e77b6815fe",
+      "bytes": 4062,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C131337",
+      "observedAt": "2026-10-10T04:57:47.144663+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C132016",
+      "file": "captured-pcb/supplier-evidence/C132016-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C132016-jlc-primary.json",
+      "sha256": "13f4805b95fe14ad0a169e69ad95c700860f622ba99696347e4cb4aa1421bd7c",
+      "bytes": 2653,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C132016",
+      "observedAt": "2026-10-10T04:59:59.971992+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C138706",
+      "file": "captured-pcb/supplier-evidence/C138706-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C138706-jlc-primary.json",
+      "sha256": "e2e7320940506c5ec60f6aa32947ad292d3e7f55cffcb18976ea26e901ad4912",
+      "bytes": 3172,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C138706",
+      "observedAt": "2026-10-10T04:57:45.312448+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C144198",
+      "file": "captured-pcb/supplier-evidence/C144198-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C144198-jlc-primary.json",
+      "sha256": "41f1612016cd16fe92c5e57d2d856fdb9b907018217b08c66fbf874655e8ebc2",
+      "bytes": 2829,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C144198",
+      "observedAt": "2026-10-10T04:57:45.845247+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C14663",
+      "file": "captured-pcb/supplier-evidence/C14663-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14663-jlc-primary.json",
+      "sha256": "0b5c757918c4e781d17bbf35446909cd822146f83f9f01dadace55dea0711bc7",
+      "bytes": 1791,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C14663",
+      "observedAt": "2026-10-10T04:59:53.210231+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C14858",
+      "file": "captured-pcb/supplier-evidence/C14858-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C14858-jlc-primary.json",
+      "sha256": "4aed8dadb110547a770ede85357c7ab5d356f8624ce85d20084e6d6e60a4bc7e",
+      "bytes": 1825,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C14858",
+      "observedAt": "2026-10-10T06:25:05.299309+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C15849",
+      "file": "captured-pcb/supplier-evidence/C15849-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C15849-jlc-primary.json",
+      "sha256": "1585c70fc8d20b454b131af36ffee274437138c18faeeb50ab88c0300875e1a0",
+      "bytes": 1821,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C15849",
+      "observedAt": "2026-10-10T06:25:26.063490+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C1613",
+      "file": "captured-pcb/supplier-evidence/C1613-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C1613-jlc-primary.json",
+      "sha256": "e332cba28be6632a0dc07d0eedcc76ddc6fed8380c9d093323e85c9a0e0ffd38",
+      "bytes": 1817,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C1613",
+      "observedAt": "2026-10-10T04:57:41.816224+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C165948",
+      "file": "captured-pcb/supplier-evidence/C165948-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C165948-jlc-primary.json",
+      "sha256": "c682e03d7f07e555947067343e68b4e0853707e6aa2e65149aebf86d9b00ea75",
+      "bytes": 2745,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C165948",
+      "observedAt": "2026-10-10T04:57:45.774761+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C167874",
+      "file": "captured-pcb/supplier-evidence/C167874-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C167874-jlc-primary.json",
+      "sha256": "3dab9714b14532d0fc7e00a2937c27e7dc4e0fbc804cb1aa7fa10e01aab2d14e",
+      "bytes": 2176,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C167874",
+      "observedAt": "2026-10-10T06:26:18.165545+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C179626",
+      "file": "captured-pcb/supplier-evidence/C179626-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C179626-jlc-primary.json",
+      "sha256": "0e8b05c1765f073b4eaa6e95d6322731b25d5880c7da2ebbbb94af31e7ba945f",
+      "bytes": 3187,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C179626",
+      "observedAt": "2026-10-10T06:26:18.457754+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C191884",
+      "file": "captured-pcb/supplier-evidence/C191884-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C191884-jlc-primary.json",
+      "sha256": "101efc943f7ea52bef1f8b4fdbe68dd4c7513e62ca624ca3c6d8bb6b95d16694",
+      "bytes": 3211,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C191884",
+      "observedAt": "2026-10-10T06:26:45.687110+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C19270707",
+      "file": "captured-pcb/supplier-evidence/C19270707-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270707-jlc-primary.json",
+      "sha256": "5f715c98b0d1f72a9557c35dce311f0c56c05a87577850a6d7b15802115026a6",
+      "bytes": 2637,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C19270707",
+      "observedAt": "2026-10-10T05:00:15.954389+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C19270709",
+      "file": "captured-pcb/supplier-evidence/C19270709-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19270709-jlc-primary.json",
+      "sha256": "91bf28587c2ca71076cd9edcdfd503afd1b373c6b92bf2f4d19a48cca9350931",
+      "bytes": 2648,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C19270709",
+      "observedAt": "2026-10-10T04:57:48.455634+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C19666",
+      "file": "captured-pcb/supplier-evidence/C19666-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C19666-jlc-primary.json",
+      "sha256": "4bac7a5c880fe9f4a883ac5d7c40ed36e501c7d6715432aaa5cd80b5300447d3",
+      "bytes": 1826,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C19666",
+      "observedAt": "2026-10-10T06:26:28.027864+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C20526",
+      "file": "captured-pcb/supplier-evidence/C20526-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C20526-jlc-primary.json",
+      "sha256": "fdd311959c8002d4ef5e2e1a0d5ee6d28ad87d6c65053a418c396b3255269653",
+      "bytes": 2962,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C20526",
+      "observedAt": "2026-10-10T04:57:42.198558+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C21117",
+      "file": "captured-pcb/supplier-evidence/C21117-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21117-jlc-primary.json",
+      "sha256": "830192846075f9065330f76bf89c79677ee7cb971e7dee206396e698246ccc1d",
+      "bytes": 1823,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C21117",
+      "observedAt": "2026-10-10T04:57:42.556057+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C21190",
+      "file": "captured-pcb/supplier-evidence/C21190-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C21190-jlc-primary.json",
+      "sha256": "aec2f6f7a2e89dec94f81d892559c3971ca8532e9623e4904ec6d9e0ea6f08b6",
+      "bytes": 2303,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C21190",
+      "observedAt": "2026-10-10T06:26:39.688951+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22809",
+      "file": "captured-pcb/supplier-evidence/C22809-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22809-jlc-primary.json",
+      "sha256": "b90577446a2e8251ad59e59d3008485f5b3b1c8aead79583e5a5dfe28cabe075",
+      "bytes": 2303,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22809",
+      "observedAt": "2026-10-10T03:33:50.236011+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22859",
+      "file": "captured-pcb/supplier-evidence/C22859-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22859-jlc-primary.json",
+      "sha256": "669f98170e9eaef0010ef4994a2fa814be306cf789544ec7ac9eaa3d61b79398",
+      "bytes": 2301,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22859",
+      "observedAt": "2026-10-10T06:26:42.984435+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22864",
+      "file": "captured-pcb/supplier-evidence/C22864-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22864-jlc-primary.json",
+      "sha256": "63bb83bab33a664be7e857b121a5da542b965ba450d2e2231c322f7fa0f654f0",
+      "bytes": 2304,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22864",
+      "observedAt": "2026-10-10T04:57:42.843372+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22890",
+      "file": "captured-pcb/supplier-evidence/C22890-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22890-jlc-primary.json",
+      "sha256": "8d0f8804c04f9b66c8581363b706579aa1f75c6c129e6200fbc47f7764d48ed9",
+      "bytes": 2303,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22890",
+      "observedAt": "2026-10-10T06:27:14.057445+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22908",
+      "file": "captured-pcb/supplier-evidence/C22908-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22908-jlc-primary.json",
+      "sha256": "b1f9fa95c6aaa70c64b65dd4ef7be13ea45fde95c8db95f895f4a5e3d69e5c84",
+      "bytes": 2307,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22908",
+      "observedAt": "2026-10-10T04:57:42.816073+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C22939",
+      "file": "captured-pcb/supplier-evidence/C22939-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C22939-jlc-primary.json",
+      "sha256": "a49994108ecef5980271ef952f507ec5d4cadb3d9cd960fd80392dfd1636a9f8",
+      "bytes": 2301,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C22939",
+      "observedAt": "2026-10-10T04:59:55.281295+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C23068",
+      "file": "captured-pcb/supplier-evidence/C23068-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23068-jlc-primary.json",
+      "sha256": "93e2890f57fa937dfcec948dfcd88a192351bf6985c91cd842a29e33798f34e8",
+      "bytes": 2304,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C23068",
+      "observedAt": "2026-10-10T06:28:08.523196+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C23091",
+      "file": "captured-pcb/supplier-evidence/C23091-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23091-jlc-primary.json",
+      "sha256": "c624e2c78524903f8ac0393f0b25b1921affd87221284c4dfb9a90752c2ee6a0",
+      "bytes": 2305,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C23091",
+      "observedAt": "2026-10-10T06:28:15.760357+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C23162",
+      "file": "captured-pcb/supplier-evidence/C23162-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23162-jlc-primary.json",
+      "sha256": "8dbacb109c71628eee4d0ea8f0aecb4870a16d70ba1415eeaec0812b8d752f14",
+      "bytes": 2307,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C23162",
+      "observedAt": "2026-10-10T06:28:36.309553+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C23242",
+      "file": "captured-pcb/supplier-evidence/C23242-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23242-jlc-primary.json",
+      "sha256": "d038ecb1c6a4a158ea7121782730c9215edf4d0d2707c9077aaca88ae10d0db9",
+      "bytes": 2302,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C23242",
+      "observedAt": "2026-10-10T04:57:43.664540+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C23251",
+      "file": "captured-pcb/supplier-evidence/C23251-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C23251-jlc-primary.json",
+      "sha256": "13f1f7feb46c478acc348f9883fdbb7a836dfa33638de829d3b64c87f38090ae",
+      "bytes": 2305,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C23251",
+      "observedAt": "2026-10-10T06:28:57.264749+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C237304",
+      "file": "captured-pcb/supplier-evidence/C237304-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C237304-jlc-primary.json",
+      "sha256": "acb3cb83bcfc90e76193bd2a8e858636d806e05375598f3e775e23fe9e610db9",
+      "bytes": 1827,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C237304",
+      "observedAt": "2026-10-10T06:29:17.752700+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C2480",
+      "file": "captured-pcb/supplier-evidence/C2480-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2480-jlc-primary.json",
+      "sha256": "bfeec1ff68199ccf83bd43a9719d8c0b26464416e8f97c12891f1b9962254cd4",
+      "bytes": 2356,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C2480",
+      "observedAt": "2026-10-10T06:29:26.401204+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C25803",
+      "file": "captured-pcb/supplier-evidence/C25803-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25803-jlc-primary.json",
+      "sha256": "a4aa956c59627b4ef7505edbe5cf92a467f1b1a890478c39e68b9905087fa655",
+      "bytes": 2307,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C25803",
+      "observedAt": "2026-10-10T06:29:31.747849+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C25819",
+      "file": "captured-pcb/supplier-evidence/C25819-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25819-jlc-primary.json",
+      "sha256": "3caaaaf0bb7bb3c203d6a9ffbbc21251a9afba4f750ab842e0fc3b3058a86c60",
+      "bytes": 2303,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C25819",
+      "observedAt": "2026-10-10T06:29:47.289596+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C25954",
+      "file": "captured-pcb/supplier-evidence/C25954-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C25954-jlc-primary.json",
+      "sha256": "f1a761f66e8cce1393d409944fb6adfdc99eb9c69cc63cc90612a9848296a508",
+      "bytes": 2307,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C25954",
+      "observedAt": "2026-10-10T04:57:43.888079+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C2678061",
+      "file": "captured-pcb/supplier-evidence/C2678061-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2678061-jlc-primary.json",
+      "sha256": "e79be8e2ac6aa34b17ac3a275c8b2a50862de617c971c96bc7296d3f0d2e41a0",
+      "bytes": 2033,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C2678061",
+      "observedAt": "2026-10-10T04:57:47.574554+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C28323",
+      "file": "captured-pcb/supplier-evidence/C28323-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C28323-jlc-primary.json",
+      "sha256": "81d259faa35a3365a7a8b45292ece5823c38b6b72ffb7a1bca2fce314a64c835",
+      "bytes": 1820,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C28323",
+      "observedAt": "2026-10-10T06:13:33.484711+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C2906982",
+      "file": "captured-pcb/supplier-evidence/C2906982-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2906982-jlc-primary.json",
+      "sha256": "f6ebe7584e5fda073d900ac573603450568902ad7373b343d432ad96105e4f84",
+      "bytes": 2295,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C2906982",
+      "observedAt": "2026-10-10T05:00:13.253739+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C2930048",
+      "file": "captured-pcb/supplier-evidence/C2930048-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2930048-jlc-primary.json",
+      "sha256": "1fb8b520bbf26a64bd865e04b325b66fa65703023a04fb497924454470dba51c",
+      "bytes": 2297,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C2930048",
+      "observedAt": "2026-10-10T04:57:47.890801+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C2933140",
+      "file": "captured-pcb/supplier-evidence/C2933140-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C2933140-jlc-primary.json",
+      "sha256": "4600bddb74f18f34542fd2f3bc9407edf4437ec5c28ea680deae989ec3721ca2",
+      "bytes": 2297,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C2933140",
+      "observedAt": "2026-10-10T04:57:48.305395+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C309062",
+      "file": "captured-pcb/supplier-evidence/C309062-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C309062-jlc-primary.json",
+      "sha256": "6f377551dca3b2086fec85f8d949a09dfe2de86828e5e505b86de335d35b18d7",
+      "bytes": 1830,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C309062",
+      "observedAt": "2026-10-10T04:57:46.184129+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C31850",
+      "file": "captured-pcb/supplier-evidence/C31850-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C31850-jlc-primary.json",
+      "sha256": "59f937995f888b02bcf96c603a88cae34f7f0b5b7e77a450c0daec48a9c06cbc",
+      "bytes": 2303,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C31850",
+      "observedAt": "2026-10-10T04:57:44.044905+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C3662799",
+      "file": "captured-pcb/supplier-evidence/C3662799-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C3662799-jlc-primary.json",
+      "sha256": "37a1394f4be144444af40f6dfd5f81b476df890026537b0309d10a87b0b4a1d0",
+      "bytes": 3014,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C3662799",
+      "observedAt": "2026-10-10T04:57:48.089643+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C380537",
+      "file": "captured-pcb/supplier-evidence/C380537-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C380537-jlc-primary.json",
+      "sha256": "8d101b1e211e4cf55dfb7df4738db35c09d5969139baf50c7b634380b779d1da",
+      "bytes": 1829,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C380537",
+      "observedAt": "2026-10-10T04:57:46.613726+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C45783",
+      "file": "captured-pcb/supplier-evidence/C45783-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C45783-jlc-primary.json",
+      "sha256": "1f83b7a65652679ca1d5b2b5cfaa56295b5924fa61865de2e4ea7d390b057675",
+      "bytes": 1823,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C45783",
+      "observedAt": "2026-10-10T04:57:44.077347+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C474881",
+      "file": "captured-pcb/supplier-evidence/C474881-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C474881-jlc-primary.json",
+      "sha256": "86bb75b243550136bca22e0e2a164ca50db43360b68b110febfc2cd5c9a7e8d6",
+      "bytes": 3279,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C474881",
+      "observedAt": "2026-10-10T05:00:05.341850+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C49073699",
+      "file": "captured-pcb/supplier-evidence/C49073699-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C49073699-jlc-primary.json",
+      "sha256": "bf84d6526437280bdbcb38162ea419728889a7c38c64570780341ea3099b85ce",
+      "bytes": 1873,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C49073699",
+      "observedAt": "2026-10-10T04:57:48.404794+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C497873",
+      "file": "captured-pcb/supplier-evidence/C497873-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C497873-jlc-primary.json",
+      "sha256": "c370181951aa1c6645699a1778ae11bc3f947ed35f85c969e6428d5cc3d7e555",
+      "bytes": 2271,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C497873",
+      "observedAt": "2026-10-10T04:57:47.563681+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C513643",
+      "file": "captured-pcb/supplier-evidence/C513643-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C513643-jlc-primary.json",
+      "sha256": "cf89b28bad9da1f4058b17efa9f2fb8d215598fb15a9f32369b0c4369ef72c82",
+      "bytes": 2276,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C513643",
+      "observedAt": "2026-10-10T06:13:31.957589+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C53987",
+      "file": "captured-pcb/supplier-evidence/C53987-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C53987-jlc-primary.json",
+      "sha256": "426335fc26fd8c92c9bc2d36b55612d078757de488f47aad853cebe19dcd636f",
+      "bytes": 1844,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C53987",
+      "observedAt": "2026-10-10T04:57:44.105252+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C54315",
+      "file": "captured-pcb/supplier-evidence/C54315-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C54315-jlc-primary.json",
+      "sha256": "7dfbb82085044aad2f48956a77f466fbaab3fb2f512c2dc387e1212fed48d077",
+      "bytes": 2294,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C54315",
+      "observedAt": "2026-10-10T04:57:44.831082+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C57112",
+      "file": "captured-pcb/supplier-evidence/C57112-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C57112-jlc-primary.json",
+      "sha256": "8d959c61867c4b935a06b99becde56312ece847f56dadd31980c49a22349965a",
+      "bytes": 1844,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C57112",
+      "observedAt": "2026-10-10T04:57:44.601018+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C5824006",
+      "file": "captured-pcb/supplier-evidence/C5824006-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C5824006-jlc-primary.json",
+      "sha256": "eba546e29d7d5469e15b801ef9583b04f938741f5bbb692a3283c5da6d43b539",
+      "bytes": 1971,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C5824006",
+      "observedAt": "2026-10-10T04:57:48.290295+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C602037",
+      "file": "captured-pcb/supplier-evidence/C602037-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C602037-jlc-primary.json",
+      "sha256": "3a8305ba7938d186d3e713c462e0f6a3c960ff3a48541df00d5109e401ae5a60",
+      "bytes": 1831,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C602037",
+      "observedAt": "2026-10-10T04:57:47.514518+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C64705",
+      "file": "captured-pcb/supplier-evidence/C64705-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C64705-jlc-primary.json",
+      "sha256": "528c96db4b903686ca0214782850503d2f7a8fcc0df8f5b6ea560b6b7f681500",
+      "bytes": 1826,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C64705",
+      "observedAt": "2026-10-10T04:57:44.643802+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C671324",
+      "file": "captured-pcb/supplier-evidence/C671324-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C671324-jlc-primary.json",
+      "sha256": "02c5aeaee72791be8946fa59c346b4d0cbf1c8afdc424e838cc22f213ad73197",
+      "bytes": 3285,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C671324",
+      "observedAt": "2026-10-10T06:13:31.841086+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C70285",
+      "file": "captured-pcb/supplier-evidence/C70285-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C70285-jlc-primary.json",
+      "sha256": "1748adbcafad13fcbd3df137c5d9c9b7de80f46d76af14983338ae98d29d494a",
+      "bytes": 3982,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C70285",
+      "observedAt": "2026-10-10T04:57:44.683198+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C724040",
+      "file": "captured-pcb/supplier-evidence/C724040-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C724040-jlc-primary.json",
+      "sha256": "7cfa844360e928c9049e4bb0f9ffecc2193552a11c7375d14187e19a5823cf21",
+      "bytes": 2889,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C724040",
+      "observedAt": "2026-10-10T05:00:10.676183+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C7420354",
+      "file": "captured-pcb/supplier-evidence/C7420354-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7420354-jlc-primary.json",
+      "sha256": "33d39994076edc1e08423d27d95a9ed83d4783931c00a4c60729a77251fb3c59",
+      "bytes": 3040,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C7420354",
+      "observedAt": "2026-10-10T04:57:48.329060+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C780769",
+      "file": "captured-pcb/supplier-evidence/C780769-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C780769-jlc-primary.json",
+      "sha256": "ee39fbe36decd2830544c47a08c0722d5a77e7b7237f64b5dadb32aa2b0463c9",
+      "bytes": 3464,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C780769",
+      "observedAt": "2026-10-10T04:57:47.271167+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C7984",
+      "file": "captured-pcb/supplier-evidence/C7984-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C7984-jlc-primary.json",
+      "sha256": "4e0157a58c1d11b9f108e33c51b77c823920b21840482e1d528084adc8759063",
+      "bytes": 2925,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C7984",
+      "observedAt": "2026-10-10T04:57:41.501407+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C8545",
+      "file": "captured-pcb/supplier-evidence/C8545-jlc-primary.json",
+      "path": "/Users/ankan/Documents/Codex/2026-10-09/per/outputs/tec-usbc-board/source-evidence/C8545-jlc-primary.json",
+      "sha256": "d9e0c9f5c6947f3146b531a2f27f41284b39d48879fe0cece87a68149d6490fa",
+      "bytes": 2908,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C8545",
+      "observedAt": "2026-10-10T04:57:41.767056+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    },
+    {
+      "id": "C94869",
+      "file": "captured-pcb/supplier-evidence/C94869-jlc-primary.json",
+      "path": "reviews/debug-source-evidence/C94869-jlc-primary.json",
+      "sha256": "cfade5f08dafda1e89ee9b8e96eb38179c3c03b72fc7ed01f3a9105ebdabb51d",
+      "bytes": 2863,
+      "sourceUrl": "https://jlcpcb.com/partdetail/C94869",
+      "observedAt": "2026-10-10T13:58:42.375968+00:00",
+      "snapshotKind": "OFFICIAL_JLCPCB_DATED_OBSERVATION"
+    }
+  ],
+  "supplierDatedObservationWindowUtc": {
+    "from": "2026-10-10T03:33:50.236011+00:00",
+    "through": "2026-10-10T14:01:37.782802+00:00"
+  },
+  "datedFittedPartMappings": 194,
+  "datedDistinctJlcIds": 66,
+  "currentStockOrOrderAvailabilityClaimed": false,
+  "packagingScriptSha256": "d3f44e3fa25dc9298925b8aa1313a40f1676cfdc1f8808cfcea7d8237fecde21",
+  "baseOwnedPackagingScriptSha256": "73d4f6d09e27753ff38ac0939c6c97bbb093993bc6cb633202f6504ef961b2f9",
+  "allLocalRelativeImportsPresent": true,
+  "runtimeFileCount": 6,
+  "minimumRequiredPadJoins": 450,
+  "physicallyJoinedPadJoins": 450,
+  "missingPadJoins": 0,
+  "snapshotManifestSha256": "9b0774ac2546a78af7d7b4a3a117c8be707b6cbf8c4e1c3cc320085a18bfb2ad",
+  "inventory": [
+    {
+      "file": ".captured-runtime/manifest.json",
+      "sha256": "662912e30536250dc6470adf36f05706b3e236de1386cb8254d14695ddd5e080",
+      "bytes": 3145
+    },
+    {
+      "file": ".captured-runtime/node_modules/@tscircuit/capacity-autorouter/dist/index.js",
+      "sha256": "83b5162c5dfe8b0c058870550caa84fb1ce594dbb45622e1abf387d3c5b2a3a6",
+      "bytes": 3125783
+    },
+    {
+      "file": ".captured-runtime/node_modules/@tscircuit/capacity-autorouter/package.json",
+      "sha256": "8fcd58bbbdc28c88db26d0c0e05356a38ad14f4039301920e04290ae0c437a2a",
+      "bytes": 7776
+    },
+    {
+      "file": ".captured-runtime/node_modules/@tscircuit/core/dist/index.js",
+      "sha256": "436e548925512b53cc47371bb3c2328fb420baab2310c7d279c2bb0f589e323b",
+      "bytes": 5537473
+    },
+    {
+      "file": ".captured-runtime/node_modules/@tscircuit/core/package.json",
+      "sha256": "4f032bf178fe0ea6502ee3b15d5f9deef607deba96e36931020ef50878d8574b",
+      "bytes": 6029
+    },
+    {
+      "file": ".captured-runtime/node_modules/circuit-json-to-connectivity-map/dist/index.js",
+      "sha256": "40f28a9fa682f2abbb7519ef56b31258cdff27665fc4e48727bf6466395e034c",
+      "bytes": 11851
+    },
+    {
+      "file": ".captured-runtime/node_modules/circuit-json-to-connectivity-map/package.json",
+      "sha256": "441a9d2144f6f47102cdacb5146e861f62f9800d0fa4bcc191421c201a48928a",
+      "bytes": 695
+    },
+    {
+      "file": "README.md",
+      "sha256": "6bee31e449deeec7c5ed52b607c9fcf1877644cd58f435a06d6852a0e3b33dfe",
+      "bytes": 2081
+    },
+    {
+      "file": "bun.lock",
+      "sha256": "725d0f092f65d8ce7369fe86ceb5f5fb6803f28b263dfe85614ed7bb0048cb8a",
+      "bytes": 100596
+    },
+    {
+      "file": "captured-pcb/18-source-routing-complete-ground-inner1.png",
+      "sha256": "02ece8210967cae000afbbc626d0f231fab15eb7f2df7348903793b11f7946aa",
+      "bytes": 365544
+    },
+    {
+      "file": "captured-pcb/18-source-routing-complete-top-inner2.png",
+      "sha256": "2956baa133fd0095ad487c4461be55e40f28b5aeabc86aaeb6cefe5712e3d5b3",
+      "bytes": 685052
+    },
+    {
+      "file": "captured-pcb/build-manifest.json",
+      "sha256": "6bf392d51103d5d7f926359b7c2d2e0b6c6410b2161a0df8c6573c9fc528cdab",
+      "bytes": 316412
+    },
+    {
+      "file": "captured-pcb/circuit.json",
+      "sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+      "bytes": 5533986
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/debug-passive-review.source23-settled-identity-census-closeout.json",
+      "sha256": "4a3194738e4920bc243a083a61c4f6a617a4022ffd81041f95fb7ae614905141",
+      "bytes": 3050
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/debug-power-footprints-source23-3ac5f312-final-scoped-binding.json",
+      "sha256": "eefd1a6fbabf55922c288ed473ee4ef7e10e66dc2592fcd64070954f6c824251",
+      "bytes": 16877
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/debug-safety-review.source23-3ac5f312-routing-gate.json",
+      "sha256": "49981f9cef7f9aec5736e2ba95897c6f23db228041d867376b9cdc4dec92d48f",
+      "bytes": 3556
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/layout-source-placement-23-review.json",
+      "sha256": "b04f3c3cc8656ca0ff98998dfcbc5407afae4c5bee3d964e5519ef33e8084287",
+      "bytes": 30468
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/placement23-3ac5-local-mask-readiness.json",
+      "sha256": "7de82b55a1499fe2eddf2a6f22ed9950afb992a009b3f17d7670631ef3d61195",
+      "bytes": 18297
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/root-source23-final-routing-acceptance-and-publication-go.json",
+      "sha256": "934db679b21a23356be8d7908a066546441ec8b971ca464476fddf9739e21630",
+      "bytes": 7677
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source-placement-23-3ac5-connectivity-review.json",
+      "sha256": "76af8b83b020023fffb888e659281e55486ba03320e761fb143c4002626dca48",
+      "bytes": 26532
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-3ac5-final-eight-leds-26-probes-actual-physical-source-review.json",
+      "sha256": "c0b120742f14b5450ccde3dd9b07dbb434fbdbabb1291116266d75816ce33c45",
+      "bytes": 66078
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-3ac5.final-settled633-style-source-width-max-endpoint-review.json",
+      "sha256": "99f17fc18c22a19056e0bbd8e7cf80669a5e6e8f26d1239f3ef03479dce201c4",
+      "bytes": 10504
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-3ac5f312-all-current-copper-and-reference-gates.json",
+      "sha256": "5ee7f240a660ec3efea5df57c23dc656a187f1f59f99f3533ca20af32154c687",
+      "bytes": 13507
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-current-scoped-routing-readiness.json",
+      "sha256": "f069ef9a0803da9a45094e6d6b359f5c5812704c69b4303611e59a018e15d3e3",
+      "bytes": 13946
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-final-same-capture-routing-readiness.json",
+      "sha256": "fc130d022719eeb6ad17a00f57030336a4b740d93a0f2c7c60aa5fbf06d8adf9",
+      "bytes": 10977
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-final18-publication-readiness-adapter.json",
+      "sha256": "bfa77380c4cd707c0914260d6a90c1b01d28f1a99094a03255df2d530dab4d37",
+      "bytes": 5343
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-settled-3ac5f312-actual-groups-bus-v2.json",
+      "sha256": "1e0c1a1068d022b12c1b1f52d905e11665052a9a14290ba6b411a878f1574372",
+      "bytes": 43792
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-settled-netlist-actual-source-membership-review.json",
+      "sha256": "c3e22e643bdfbcc8e7e4159c5494b1d56fea602fa7975eb4cd7c93c1ac529208",
+      "bytes": 10329
+    },
+    {
+      "file": "captured-pcb/scoped-evidence/source23-settled-owned-r206-uart-adc-closeout.json",
+      "sha256": "961c2a30306fe1fb341f2f990dcc54cc4e4dc8bf2992d57f4964e930a3efc072",
+      "bytes": 4950
+    },
+    {
+      "file": "captured-pcb/snapshot-manifest.json",
+      "sha256": "9b0774ac2546a78af7d7b4a3a117c8be707b6cbf8c4e1c3cc320085a18bfb2ad",
+      "bytes": 855936
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C10429-easyeda.json",
+      "sha256": "8ba840e8a390713717510694528e29fa7714a024bf3b5b3362f90c5a259e5c97",
+      "bytes": 23786
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C10429-jlc-primary.json",
+      "sha256": "2fe32de59cb4a99571bd71b186c95ab99dfcd49faedb31f463a17960b1a7a809",
+      "bytes": 3123
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C125094-easyeda.json",
+      "sha256": "1155ff795748f7f399872ff75213ff0106493513668e73b6f2a0e1e94b1fe6c8",
+      "bytes": 16695
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C125094-jlc-primary.json",
+      "sha256": "cf09600679cd73dc96492d00b97be00d2c8183e6cfd2ee08dbff23b6cefb6c5e",
+      "bytes": 2907
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C12891-easyeda.json",
+      "sha256": "bad1db9b08202006924ba413772942b48784886a54c989b3a3ac3bb636225258",
+      "bytes": 16919
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C130910-easyeda.json",
+      "sha256": "017677d52f6c4d5b25df8ae31eb2a7d9fa28b66bb0521f5a31f875d97b8960d6",
+      "bytes": 15187
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C130910-jlc-primary.json",
+      "sha256": "e5c57f83fdd5ca32de1a8dae3d28ee952e18f05cee95854cd5d43efdda33fab1",
+      "bytes": 2177
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C131334-easyeda.json",
+      "sha256": "ac679c2d8246eda038026fee1066daecc9a62b1bdb590ceffb5963d0b2c3217b",
+      "bytes": 11454
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C131334-jlc-primary.json",
+      "sha256": "6e6b62a61223082c362a88105a86a4c70e6b335c2f4bfe3781ac402601703c3e",
+      "bytes": 4060
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C131337-easyeda.json",
+      "sha256": "b1edf2bf0a8fd702280d657b4fd360851200a506e75bb74f7aaeffe93b92791d",
+      "bytes": 15169
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C131337-jlc-primary.json",
+      "sha256": "211c91b311fb0eeba3064d3cb14de558c3b27558cfe506c35601e8e77b6815fe",
+      "bytes": 4062
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C132016-easyeda.json",
+      "sha256": "1d51b1b8a2e700a1effc4487ebf66624343c6e2ecac97dcec88236d0b8a746a7",
+      "bytes": 22452
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C132016-jlc-primary.json",
+      "sha256": "13f4805b95fe14ad0a169e69ad95c700860f622ba99696347e4cb4aa1421bd7c",
+      "bytes": 2653
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C13585-easyeda.json",
+      "sha256": "b8c95f90d4351f76646ddade76b760c1bc30886a598e418131d303a6f1a5f386",
+      "bytes": 16981
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C138706-easyeda.json",
+      "sha256": "943100243caf108a2094e540e795b47ecb71cf95b7b6d73b678f73a41dc92068",
+      "bytes": 22727
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C138706-jlc-primary.json",
+      "sha256": "e2e7320940506c5ec60f6aa32947ad292d3e7f55cffcb18976ea26e901ad4912",
+      "bytes": 3172
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C144198-easyeda.json",
+      "sha256": "99f076a2a477aaeb6b41cf38fcd8615166a687b487669f1e780fe4f7501b5e10",
+      "bytes": 28822
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C144198-jlc-primary.json",
+      "sha256": "41f1612016cd16fe92c5e57d2d856fdb9b907018217b08c66fbf874655e8ebc2",
+      "bytes": 2829
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C14663-easyeda.json",
+      "sha256": "39cebd7b10bc8e4f903d0e066a33dce2b60a4cf1073cd2c9bda39dee0aa16b58",
+      "bytes": 11995
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C14663-jlc-primary.json",
+      "sha256": "0b5c757918c4e781d17bbf35446909cd822146f83f9f01dadace55dea0711bc7",
+      "bytes": 1791
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C14858-easyeda.json",
+      "sha256": "ca68b6e2d2f8a9cdc76a45b1799e3b78ad52b1eddf073827395cc6c34c4fa0b7",
+      "bytes": 12084
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C14858-jlc-primary.json",
+      "sha256": "4aed8dadb110547a770ede85357c7ab5d356f8624ce85d20084e6d6e60a4bc7e",
+      "bytes": 1825
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C15127-easyeda.json",
+      "sha256": "7c8d90bd4c5ffc4340ce2e61da9e5b70e275542fb06ebd80720e9a7e77705cd7",
+      "bytes": 17246
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C158004-easyeda.json",
+      "sha256": "4578ff302ab62426fbfbef9c5b168d0549549a14e41d9a2433e9d51b0efc7e56",
+      "bytes": 18459
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C15849-easyeda.json",
+      "sha256": "eb0291fb852a54d327de86d715a4d786a39642b0493a3c6d51e1dab4b9c9f114",
+      "bytes": 12082
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C15849-jlc-primary.json",
+      "sha256": "1585c70fc8d20b454b131af36ffee274437138c18faeeb50ab88c0300875e1a0",
+      "bytes": 1821
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C1591-easyeda.json",
+      "sha256": "bc0f028e3912692f0f2a65b08c5d1029e96ba302b7ac15c2436ebb7d401ddd7e",
+      "bytes": 12028
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C1613-easyeda.json",
+      "sha256": "edf5125663814e8f445dfa1823dfc55c5d79b4b85e1ce3fadbc2e9f637429bd5",
+      "bytes": 12077
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C1613-jlc-primary.json",
+      "sha256": "e332cba28be6632a0dc07d0eedcc76ddc6fed8380c9d093323e85c9a0e0ffd38",
+      "bytes": 1817
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C165948-easyeda.json",
+      "sha256": "7fc73d44d24bc9f9e9e1a0986aaa6885172db5d8d26212e3767fce5600a305ab",
+      "bytes": 39845
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C165948-jlc-primary.json",
+      "sha256": "c682e03d7f07e555947067343e68b4e0853707e6aa2e65149aebf86d9b00ea75",
+      "bytes": 2745
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C167874-easyeda.json",
+      "sha256": "cbcd33604bae0eb80785d2ff80c6f01218d206c6d636137f9f4b75200e50cf9e",
+      "bytes": 17408
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C167874-jlc-primary.json",
+      "sha256": "3dab9714b14532d0fc7e00a2937c27e7dc4e0fbc804cb1aa7fa10e01aab2d14e",
+      "bytes": 2176
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C179626-easyeda.json",
+      "sha256": "e22e17ecc436d42f47db729aac4bc5adfbbb4dbf81b3ae6c4481fc5b04c67185",
+      "bytes": 19306
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C179626-jlc-primary.json",
+      "sha256": "0e8b05c1765f073b4eaa6e95d6322731b25d5880c7da2ebbbb94af31e7ba945f",
+      "bytes": 3187
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C18739-easyeda.json",
+      "sha256": "d2bddf1717ae7c091f4e4bfedeb6be188aa90152bcf43c86ff953d3752a81ee2",
+      "bytes": 17323
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C191884-easyeda.json",
+      "sha256": "6fcaba1d50442415fcd605e88a3a0ebad03cccefc089177ececf9ee6fa9b84cb",
+      "bytes": 28595
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C191884-jlc-primary.json",
+      "sha256": "101efc943f7ea52bef1f8b4fdbe68dd4c7513e62ca624ca3c6d8bb6b95d16694",
+      "bytes": 3211
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19270707-easyeda.json",
+      "sha256": "8c1a48472f2e15dd0da986c798964f06541e3f268840d6c9151d68bebda24b65",
+      "bytes": 11907
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19270707-jlc-primary.json",
+      "sha256": "5f715c98b0d1f72a9557c35dce311f0c56c05a87577850a6d7b15802115026a6",
+      "bytes": 2637
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19270709-easyeda.json",
+      "sha256": "d06156eb42f8f30851648067cbaadbc5fc29801287a4a37d5248a0e8cbace3a2",
+      "bytes": 11957
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19270709-jlc-primary.json",
+      "sha256": "91bf28587c2ca71076cd9edcdfd503afd1b373c6b92bf2f4d19a48cca9350931",
+      "bytes": 2648
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19666-easyeda.json",
+      "sha256": "9bdbbd5e7b67f8bc6c144a7ee1042b6a16d3d1981013b0f250e72de6334ed191",
+      "bytes": 12100
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C19666-jlc-primary.json",
+      "sha256": "4bac7a5c880fe9f4a883ac5d7c40ed36e501c7d6715432aaa5cd80b5300447d3",
+      "bytes": 1826
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C20526-easyeda.json",
+      "sha256": "0319b3bc8318a4e2883dfd05e3d8cb4e31c394bcb5b5c3ab6817d91fa4fc44af",
+      "bytes": 17621
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C20526-jlc-primary.json",
+      "sha256": "fdd311959c8002d4ef5e2e1a0d5ee6d28ad87d6c65053a418c396b3255269653",
+      "bytes": 2962
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C20527-easyeda.json",
+      "sha256": "632be5f8a2dad4fd697ef233290202fb296d549fa6116d5857c8c7c614528da9",
+      "bytes": 17444
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2071044-easyeda.json",
+      "sha256": "999e922583434d11928bf4caf7491dc3797c2679d15870564694a6aad1e5a24a",
+      "bytes": 29469
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2071868-easyeda.json",
+      "sha256": "a9a9e96240f1b994a494bc033194c49fa796d6fbbe572dbe4cd122b650e39fd4",
+      "bytes": 23142
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C21117-easyeda.json",
+      "sha256": "cd22ed339ee98dbe9c97100224c704234e9ded247807ad6218cc8c999691e4e2",
+      "bytes": 16966
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C21117-jlc-primary.json",
+      "sha256": "830192846075f9065330f76bf89c79677ee7cb971e7dee206396e698246ccc1d",
+      "bytes": 1823
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C21189-easyeda.json",
+      "sha256": "94ad258dc69b3e66a16bbcafe4f78fd4581841a0f4714e6b51996ca8e57c8795",
+      "bytes": 19583
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C21190-easyeda.json",
+      "sha256": "67d2a5101829f9c9fbf19ce8a45c7313dbf6c265898e2598c2c2449435e96a9f",
+      "bytes": 19587
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C21190-jlc-primary.json",
+      "sha256": "aec2f6f7a2e89dec94f81d892559c3971ca8532e9623e4904ec6d9e0ea6f08b6",
+      "bytes": 2303
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22809-easyeda.json",
+      "sha256": "a82ac0b236fca7004baf17a7d8c9993f57c682a756c9c5f23939d3291cbfd2cf",
+      "bytes": 19628
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22809-jlc-primary.json",
+      "sha256": "b90577446a2e8251ad59e59d3008485f5b3b1c8aead79583e5a5dfe28cabe075",
+      "bytes": 2303
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22836-easyeda.json",
+      "sha256": "c0c9c5730e5f412657a12bd3e409edc35daa43ebc518b9f1fad36fa78782e5ab",
+      "bytes": 24489
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22858-easyeda.json",
+      "sha256": "a7419c0d41f62f2d49d9df644bf96488ab2db890a2f173afd3b1a6b776b3d958",
+      "bytes": 19632
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22859-easyeda.json",
+      "sha256": "7e63ce71fffe1710e327f5e3f7c1a3325261fb4a40314fbdd08c10a995b3e33d",
+      "bytes": 19587
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22859-jlc-primary.json",
+      "sha256": "669f98170e9eaef0010ef4994a2fa814be306cf789544ec7ac9eaa3d61b79398",
+      "bytes": 2301
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22864-easyeda.json",
+      "sha256": "eb4d28eeb5df67d5cff986490fed8abd9151c9724c7b1f20bc9858d29a8ff786",
+      "bytes": 24492
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22864-jlc-primary.json",
+      "sha256": "63bb83bab33a664be7e857b121a5da542b965ba450d2e2231c322f7fa0f654f0",
+      "bytes": 2304
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22875-easyeda.json",
+      "sha256": "5ec951dd592e958561a8e292d8f41ad5a394ce61c6b9da87c443be2205f2c6a9",
+      "bytes": 24485
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22890-easyeda.json",
+      "sha256": "c0fc60eb156bc830f7d5c0189f0a4abee1a43c190c7372e57106c531851c080b",
+      "bytes": 19593
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22890-jlc-primary.json",
+      "sha256": "8d0f8804c04f9b66c8581363b706579aa1f75c6c129e6200fbc47f7764d48ed9",
+      "bytes": 2303
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22908-easyeda.json",
+      "sha256": "3552dac1f43f1917dfda214df5a0b0635c8e5fd4c43c16138c8c3fafdd74eeb9",
+      "bytes": 19598
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22908-jlc-primary.json",
+      "sha256": "b1f9fa95c6aaa70c64b65dd4ef7be13ea45fde95c8db95f895f4a5e3d69e5c84",
+      "bytes": 2307
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22939-easyeda.json",
+      "sha256": "c6bb71f13e4ca826628a25f1811455e6fe01af08459bb399c4d2a62fd452880f",
+      "bytes": 19589
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22939-jlc-primary.json",
+      "sha256": "a49994108ecef5980271ef952f507ec5d4cadb3d9cd960fd80392dfd1636a9f8",
+      "bytes": 2301
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22962-easyeda.json",
+      "sha256": "6a0d5cd6bf390e8f5d4f4a469d22a9edc49a9d0ff07be942cd1d4a16329c90f6",
+      "bytes": 19629
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C22964-easyeda.json",
+      "sha256": "b1ef14e43eea6979235023efc7fd6d23a0bd76d266a70a45aa4590e31f0f056f",
+      "bytes": 24490
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23003-easyeda.json",
+      "sha256": "f702d156f6a0c8b476dee46b9ad78cbfe8e27bd8e11a4faccae96f90b6051fd0",
+      "bytes": 24490
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23068-easyeda.json",
+      "sha256": "8061051af991f69b9767cf0b2c851814357615423bd2baadc66b214b9c983781",
+      "bytes": 19630
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23068-jlc-primary.json",
+      "sha256": "93e2890f57fa937dfcec948dfcd88a192351bf6985c91cd842a29e33798f34e8",
+      "bytes": 2304
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23080-easyeda.json",
+      "sha256": "e775b2c05a7e9c9e9542267fdd5608abe7576947bb52b0e54dfae5a3ca26fcc2",
+      "bytes": 19636
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23091-easyeda.json",
+      "sha256": "bf4a3c8f1201c93095ab1fdf90ae32306f3341a8a8ab6280aabec963dc78e3ec",
+      "bytes": 24531
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23091-jlc-primary.json",
+      "sha256": "c624e2c78524903f8ac0393f0b25b1921affd87221284c4dfb9a90752c2ee6a0",
+      "bytes": 2305
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23138-easyeda.json",
+      "sha256": "617e5d970cc746073bc6acbe9ba884d16155f2b5167603da9f37a952b9ddf058",
+      "bytes": 19627
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23162-easyeda.json",
+      "sha256": "5ef345431d5c7dc2d5149d651a19af33f1a34df74b95fac6e7e9a2a04d406ece",
+      "bytes": 19634
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23162-jlc-primary.json",
+      "sha256": "8dbacb109c71628eee4d0ea8f0aecb4870a16d70ba1415eeaec0812b8d752f14",
+      "bytes": 2307
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23186-easyeda.json",
+      "sha256": "31bddb19277eaceecb95a99af1731601002952c7447769a3190fdab64590541f",
+      "bytes": 19567
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23242-easyeda.json",
+      "sha256": "da4d6c301f217d17260deee6ae8bc559d555d8514f58dab526cb66c3e048c262",
+      "bytes": 19589
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23242-jlc-primary.json",
+      "sha256": "d038ecb1c6a4a158ea7121782730c9215edf4d0d2707c9077aaca88ae10d0db9",
+      "bytes": 2302
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23251-easyeda.json",
+      "sha256": "22d89298ead00f9eead6024fd13a7eff37eee58cf51dcf12706e27206ee31c40",
+      "bytes": 19630
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C23251-jlc-primary.json",
+      "sha256": "13f1f7feb46c478acc348f9883fdbb7a836dfa33638de829d3b64c87f38090ae",
+      "bytes": 2305
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C237304-easyeda.json",
+      "sha256": "72f8ab89f8c2535409e8a0f331cf260f8712d42ef6f2dd8d1e6c5cef5adf49a3",
+      "bytes": 21730
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C237304-jlc-primary.json",
+      "sha256": "acb3cb83bcfc90e76193bd2a8e858636d806e05375598f3e775e23fe9e610db9",
+      "bytes": 1827
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2480-easyeda.json",
+      "sha256": "e11c835894397a19acb78eef81994014c3f8f5700f19e2bf1c2b5949b323d6a2",
+      "bytes": 13067
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2480-jlc-primary.json",
+      "sha256": "bfeec1ff68199ccf83bd43a9719d8c0b26464416e8f97c12891f1b9962254cd4",
+      "bytes": 2356
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25803-easyeda.json",
+      "sha256": "7720fc09c43c94afe3c4aab4044d190842572d3b502368829bff52d0925fb0fd",
+      "bytes": 19627
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25803-jlc-primary.json",
+      "sha256": "a4aa956c59627b4ef7505edbe5cf92a467f1b1a890478c39e68b9905087fa655",
+      "bytes": 2307
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25819-easyeda.json",
+      "sha256": "ba84c6b9f561fba6acb1c88b4383040c4b0492de62c4e02aaa19e2d91a0e006c",
+      "bytes": 19629
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25819-jlc-primary.json",
+      "sha256": "3caaaaf0bb7bb3c203d6a9ffbbc21251a9afba4f750ab842e0fc3b3058a86c60",
+      "bytes": 2303
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25954-easyeda.json",
+      "sha256": "9eb6bb1c37bedd185c7821532a143201e72167314598f9c3ef5d32a25d310d3b",
+      "bytes": 24492
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C25954-jlc-primary.json",
+      "sha256": "f1a761f66e8cce1393d409944fb6adfdc99eb9c69cc63cc90612a9848296a508",
+      "bytes": 2307
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2678061-easyeda.json",
+      "sha256": "fdea48a3b91ddc1aec6cc26f08ecca4ba3961e9de5713e4e4ed74d7c7631e942",
+      "bytes": 28105
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2678061-jlc-primary.json",
+      "sha256": "e79be8e2ac6aa34b17ac3a275c8b2a50862de617c971c96bc7296d3f0d2e41a0",
+      "bytes": 2033
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2762602-easyeda.json",
+      "sha256": "c37ac565d2be810d5eb5e8d11b2b7df73f75f8f15abde4b6dc3e5c6aa0c0c6d4",
+      "bytes": 12302
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C28323-easyeda.json",
+      "sha256": "ee358e0bdd18dd9d4bfaa5bcf2a602caf72ce9953bfc8d31f0a8c9cd6fad02d2",
+      "bytes": 12851
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C28323-jlc-primary.json",
+      "sha256": "81d259faa35a3365a7a8b45292ece5823c38b6b72ffb7a1bca2fce314a64c835",
+      "bytes": 1820
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2906982-easyeda.json",
+      "sha256": "fecb24830761296dcf22bb897d37ada7c4763a7f998b1a5cf3a5cbf5bfedec01",
+      "bytes": 19185
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2906982-jlc-primary.json",
+      "sha256": "f6ebe7584e5fda073d900ac573603450568902ad7373b343d432ad96105e4f84",
+      "bytes": 2295
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2930048-easyeda.json",
+      "sha256": "efa643a6f21cd44ebb2f7056525dc1e3ca9ca5522050f9208bc7f47a4e651c56",
+      "bytes": 23961
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2930048-jlc-primary.json",
+      "sha256": "1fb8b520bbf26a64bd865e04b325b66fa65703023a04fb497924454470dba51c",
+      "bytes": 2297
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2933140-easyeda.json",
+      "sha256": "b8c1472555eff5e8fd07f4ef5686f0bcbaf502aca617b731f036a1d3b6de5536",
+      "bytes": 19067
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2933140-jlc-primary.json",
+      "sha256": "4600bddb74f18f34542fd2f3bc9407edf4437ec5c28ea680deae989ec3721ca2",
+      "bytes": 2297
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2933200-easyeda.json",
+      "sha256": "ca9b2a9d7391e4e3893de707d504a763768af7c06b9caa4847d014c3e5f9e78f",
+      "bytes": 23961
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C29823-easyeda.json",
+      "sha256": "e09521a22c01548c3f23907641efe2b47f40fa9df1c98b63885ec780e4e5f9e7",
+      "bytes": 21788
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C2984759-easyeda.json",
+      "sha256": "53c418fb074ff0d36e46f50202da259bda1906e59a28dde6e3495f867d7e1fc3",
+      "bytes": 22085
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C309062-easyeda.json",
+      "sha256": "5e444d29d8edf6246a5f487caf5cd8d6e53b8e1668f1c3e5b3d2a87fe75f5f8c",
+      "bytes": 17304
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C309062-jlc-primary.json",
+      "sha256": "6f377551dca3b2086fec85f8d949a09dfe2de86828e5e505b86de335d35b18d7",
+      "bytes": 1830
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C31850-easyeda.json",
+      "sha256": "b37f4a071d12865ddd2425ba4c36fca892a72f2ed82cc1fce1f4e57e23336bd2",
+      "bytes": 19588
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C31850-jlc-primary.json",
+      "sha256": "59f937995f888b02bcf96c603a88cae34f7f0b5b7e77a450c0daec48a9c06cbc",
+      "bytes": 2303
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C3662799-easyeda.json",
+      "sha256": "723c7d4b990e09e0b96a5a4643570ffe689a9b751b10c115c47b101cc42c6d10",
+      "bytes": 18063
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C3662799-jlc-primary.json",
+      "sha256": "37a1394f4be144444af40f6dfd5f81b476df890026537b0309d10a87b0b4a1d0",
+      "bytes": 3014
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C377773-easyeda.json",
+      "sha256": "4507461ec48281a1fedcc52d696afce7f1982c98a68e03499181c2f5dbd8a8f1",
+      "bytes": 12823
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C380537-easyeda.json",
+      "sha256": "a7930fb339046bbd874e620a1e3485a94c0fe46a18038fee2ba4bdf2333b5673",
+      "bytes": 17268
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C380537-jlc-primary.json",
+      "sha256": "8d101b1e211e4cf55dfb7df4738db35c09d5969139baf50c7b634380b779d1da",
+      "bytes": 1829
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C397609-easyeda.json",
+      "sha256": "f8aaf43eff194ecf4b071e2194b3341024d33132a07c10a51286e1625be9e4d8",
+      "bytes": 21802
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C4184-easyeda.json",
+      "sha256": "adb21a3548fa6737aee6b0443d03abee2d70fed50989c8664b3b361efc4e499a",
+      "bytes": 19617
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C45783-easyeda.json",
+      "sha256": "6b7fac16f86e62da758e22d9c213d8d30d865498f05f714f5d43db03b3bc6f5d",
+      "bytes": 12956
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C45783-jlc-primary.json",
+      "sha256": "1f83b7a65652679ca1d5b2b5cfaa56295b5924fa61865de2e4ea7d390b057675",
+      "bytes": 1823
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C466636-easyeda.json",
+      "sha256": "44261c13f1b52d828e67a3b0c63e9abe9524ec53300d6c3933d61716038fa16c",
+      "bytes": 20210
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C474881-easyeda.json",
+      "sha256": "7a76907853a35c98381a467755c28d0b2d7f1cc315e6b1012c38de110fc72e2b",
+      "bytes": 19989
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C474881-jlc-primary.json",
+      "sha256": "86bb75b243550136bca22e0e2a164ca50db43360b68b110febfc2cd5c9a7e8d6",
+      "bytes": 3279
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C49073699-easyeda.json",
+      "sha256": "76c5b8b88d2de225cfd32914a8c7af855ed71b47d92f4fda29da56be18189ff7",
+      "bytes": 14611
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C49073699-jlc-primary.json",
+      "sha256": "bf84d6526437280bdbcb38162ea419728889a7c38c64570780341ea3099b85ce",
+      "bytes": 1873
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C497873-easyeda.json",
+      "sha256": "c5d6129dc5b86a8409c75b6ae72853adc1b96bd0c9dcd8ab2c9ff0b88448237a",
+      "bytes": 14650
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C497873-jlc-primary.json",
+      "sha256": "c370181951aa1c6645699a1778ae11bc3f947ed35f85c969e6428d5cc3d7e555",
+      "bytes": 2271
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C51205-easyeda.json",
+      "sha256": "e5bcdc5a51e7439be69281b4098c7dab94df7f91e00815da35a456fcb1bed5b7",
+      "bytes": 16986
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C513643-easyeda.json",
+      "sha256": "24cfd41ee895e07de1311f1965553dd05cd4903ede628d0ed669cacd5bb61a39",
+      "bytes": 16300
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C513643-jlc-primary.json",
+      "sha256": "cf89b28bad9da1f4058b17efa9f2fb8d215598fb15a9f32369b0c4369ef72c82",
+      "bytes": 2276
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C52306-easyeda.json",
+      "sha256": "b057e9eed7441d66b71240a0518ee5769440ece808bd126018d010a966270163",
+      "bytes": 22253
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C53987-easyeda.json",
+      "sha256": "b41a85aaaea49ff2e7ad4cf40909cd48281fb87add3d99ece80d70a77fa85f5f",
+      "bytes": 12042
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C53987-jlc-primary.json",
+      "sha256": "426335fc26fd8c92c9bc2d36b55612d078757de488f47aad853cebe19dcd636f",
+      "bytes": 1844
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C54315-easyeda.json",
+      "sha256": "10e31e5e81ee740082fdc6ec825a4fe6d664d5538550ad8808cdf15c89178d98",
+      "bytes": 16381
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C54315-jlc-primary.json",
+      "sha256": "7dfbb82085044aad2f48956a77f466fbaab3fb2f512c2dc387e1212fed48d077",
+      "bytes": 2294
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C57112-easyeda.json",
+      "sha256": "172726836cb9a39d1b1a84596660c5d014752030adf844b688480df21bf70aa4",
+      "bytes": 12053
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C57112-jlc-primary.json",
+      "sha256": "8d959c61867c4b935a06b99becde56312ece847f56dadd31980c49a22349965a",
+      "bytes": 1844
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C576517-easyeda.json",
+      "sha256": "bcd307bea4e07535ec48ea268269276670f9686e8e070a1e3c3f7dcae7cbe5f0",
+      "bytes": 21668
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C5824006-easyeda.json",
+      "sha256": "77818449afc85efd5628c0e5be9fbca0951e76d84c6f367314f52bef80bf554b",
+      "bytes": 15961
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C5824006-jlc-primary.json",
+      "sha256": "eba546e29d7d5469e15b801ef9583b04f938741f5bbb692a3283c5da6d43b539",
+      "bytes": 1971
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C602037-easyeda.json",
+      "sha256": "e1754d1c20040c612e61fe331282986e81cd8bdeb2864caabce324a4b7bbfb4a",
+      "bytes": 12776
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C602037-jlc-primary.json",
+      "sha256": "3a8305ba7938d186d3e713c462e0f6a3c960ff3a48541df00d5109e401ae5a60",
+      "bytes": 1831
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C64705-easyeda.json",
+      "sha256": "cbd4e944837d487f7bf1bca625d232a9d1c251875743ebd20d17dc6118c0c676",
+      "bytes": 16972
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C64705-jlc-primary.json",
+      "sha256": "528c96db4b903686ca0214782850503d2f7a8fcc0df8f5b6ea560b6b7f681500",
+      "bytes": 1826
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C671324-easyeda.json",
+      "sha256": "7acc50d1b180747fcb641f14c5c0b99647692d551174fc191d0a8a15b99fd4ef",
+      "bytes": 47786
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C671324-jlc-primary.json",
+      "sha256": "02c5aeaee72791be8946fa59c346b4d0cbf1c8afdc424e838cc22f213ad73197",
+      "bytes": 3285
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C70285-easyeda.json",
+      "sha256": "c90c92c76716484cc7cb0e2de250da9efbbab16893c9640780c80e4ced471a6a",
+      "bytes": 22228
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C70285-jlc-primary.json",
+      "sha256": "1748adbcafad13fcbd3df137c5d9c9b7de80f46d76af14983338ae98d29d494a",
+      "bytes": 3982
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C724040-easyeda.json",
+      "sha256": "bd888c30f7040da908ce33fcd32543da22cedd0ba45bcb5963c646d0fd56abd4",
+      "bytes": 41908
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C724040-jlc-primary.json",
+      "sha256": "7cfa844360e928c9049e4bb0f9ffecc2193552a11c7375d14187e19a5823cf21",
+      "bytes": 2889
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C7420354-easyeda.json",
+      "sha256": "55c0234130bf82937d120707326acfd6c8b1dd04a522c9a747ecd9aa083efd03",
+      "bytes": 17185
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C7420354-jlc-primary.json",
+      "sha256": "33d39994076edc1e08423d27d95a9ed83d4783931c00a4c60729a77251fb3c59",
+      "bytes": 3040
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C76589-easyeda.json",
+      "sha256": "867a1b8ad8c67d72400c9217aa4ecf76729cea51a28ecf23e9bd219a300109bd",
+      "bytes": 24500
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C780769-easyeda.json",
+      "sha256": "df7bfaebbeb48c35b0990d166dcaab86d1980f6c14f4e38e544b19cb68f1c8b1",
+      "bytes": 24027
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C780769-jlc-primary.json",
+      "sha256": "ee39fbe36decd2830544c47a08c0722d5a77e7b7237f64b5dadb32aa2b0463c9",
+      "bytes": 3464
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C7984-easyeda.json",
+      "sha256": "906c0888b59688dbd199f3e603c2e2b0b0b1fa2d8374ee1c95aa47844297a3fe",
+      "bytes": 26443
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C7984-jlc-primary.json",
+      "sha256": "4e0157a58c1d11b9f108e33c51b77c823920b21840482e1d528084adc8759063",
+      "bytes": 2925
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C8545-easyeda.json",
+      "sha256": "beaa7bdf570cec1da929d6fc044e4a2001ee190348689c0dd86db68a026fdd0a",
+      "bytes": 17858
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C8545-jlc-primary.json",
+      "sha256": "d9e0c9f5c6947f3146b531a2f27f41284b39d48879fe0cece87a68149d6490fa",
+      "bytes": 2908
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C8591-easyeda.json",
+      "sha256": "0db4aa7819cbb5d626cd8c0a043c6d0a009597d61e4c73f31637e76b9c4792ca",
+      "bytes": 20139
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C916375-easyeda.json",
+      "sha256": "a191a2107a7b305865dc73aaa9dd803bc4c53868021d0ade8a26d70cd9330f48",
+      "bytes": 22434
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C94869-easyeda.json",
+      "sha256": "c1eef360464a0528ddb98857656ad5d69cbce496eca5f648edb11457fb9f6a1b",
+      "bytes": 16259
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/C94869-jlc-primary.json",
+      "sha256": "cfade5f08dafda1e89ee9b8e96eb38179c3c03b72fc7ed01f3a9105ebdabb51d",
+      "bytes": 2863
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/inventory.json",
+      "sha256": "9bdcbdd30f2f0d3936080b7c72fe6e1c6ef6a3c38caec86e14d23dbf521f996f",
+      "bytes": 108768
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/source23-portable-supplier-raw-evidence-preparation.json",
+      "sha256": "b6dbd0f8707dbd47df4420e68e2ebdcd2ff93dc9640ab149654811cfeba2432a",
+      "bytes": 46704
+    },
+    {
+      "file": "captured-pcb/supplier-evidence/source23-prepared150-archive-part-integrity-review.json",
+      "sha256": "093d5b1844c51daa2290e06909e1c67d87b8d809744aa92c9c43c546b1ad8d65",
+      "bytes": 136624
+    },
+    {
+      "file": "index.tsx",
+      "sha256": "bcf3dfbe30e79e629dcd7c4b011f0b387ef6ce0035c625e5f8707df001e2b58c",
+      "bytes": 2860
+    },
+    {
+      "file": "package.json",
+      "sha256": "66007099388550c6103ab0e4a50c6289be736a4ee257110086498b7c51b72fd8",
+      "bytes": 1755
+    },
+    {
+      "file": "restore-captured-runtime.py",
+      "sha256": "da429e0abc2ab90f8661d3d6a869fbff0324fceee5b80e605731b57f4f22e2e5",
+      "bytes": 1479
+    },
+    {
+      "file": "scripts/build-local.ts",
+      "sha256": "bd8f268f05e4e2b12296b9daaf21f8338901ee01e5597b518a57c5ba88d0df33",
+      "bytes": 46907
+    },
+    {
+      "file": "scripts/build-with-watchdog.ts",
+      "sha256": "02f78a690f12e71e2782c65781e76a4a886de8b6a9035ac92225d6c940e61a0f",
+      "bytes": 4239
+    },
+    {
+      "file": "scripts/phase-checkpoints.ts",
+      "sha256": "9c3a150079e0fdee6cb0814904818438caa3204655e3ee8e687261dcc66e8ccf",
+      "bytes": 7562
+    },
+    {
+      "file": "scripts/phase6-region-override.ts",
+      "sha256": "0681932dbc3fbdf1a3fa0847561593ebbca1487bebdb397067cb26dee102310e",
+      "bytes": 1583
+    },
+    {
+      "file": "scripts/preserved-manual-copper.ts",
+      "sha256": "d7044f13093c1ea597dcccb7040f5df6658f51c1f94b45858eb6008335ed3b9a",
+      "bytes": 19517
+    },
+    {
+      "file": "scripts/resolve-source-trace-endpoints.ts",
+      "sha256": "a1035117263dff624fe31cab034769d4d829fe860f3bc16c557491d2a5d2d91f",
+      "bytes": 4163
+    },
+    {
+      "file": "scripts/source-ground-materialization-proof.ts",
+      "sha256": "e9d120e71c1ae688df10901d50fa9caf1b0bcfe0db81054bd5f9b9a1a431cf1f",
+      "bytes": 3613
+    },
+    {
+      "file": "scripts/source-ground-pad-copper.ts",
+      "sha256": "58e2143c32197d14ef0a0601e7919f23a740f0edba75e08085665b08273e04bc",
+      "bytes": 6554
+    },
+    {
+      "file": "scripts/source-preflight.ts",
+      "sha256": "a723fd571473e3978c4326e1a7677238333245beca5e21ec181fa59a67896cc0",
+      "bytes": 2871
+    },
+    {
+      "file": "scripts/source-trace-widths.ts",
+      "sha256": "b9b9d99081eeed94218bb963e6eed957d888842ef1f998cd25655ef3e04ceffd",
+      "bytes": 4193
+    },
+    {
+      "file": "src/blocks/control.tsx",
+      "sha256": "c040a438cbacd792afe7386ced4605ca861354576086e753fee6b2943c8d7b36",
+      "bytes": 24051
+    },
+    {
+      "file": "src/blocks/debug-data.ts",
+      "sha256": "e895a21426ee837681da45cbb8ad4ad23b83507de805e7200ce99cdda30538ad",
+      "bytes": 4480
+    },
+    {
+      "file": "src/blocks/debug.tsx",
+      "sha256": "943cee7e6b75db625be729e45c2dd4430a3b3ad5c225939088d729297c6df058",
+      "bytes": 16253
+    },
+    {
+      "file": "src/blocks/pd-input.tsx",
+      "sha256": "c99a64fca0a5afb12fd069c687e0969f2193d9b6c21137f4b1d4586162259e72",
+      "bytes": 23976
+    },
+    {
+      "file": "src/blocks/tec-power.tsx",
+      "sha256": "8211b26279586b0447f92697168b830221d048dde314fa57780c0f984adebd88",
+      "bytes": 31014
+    },
+    {
+      "file": "src/bus-routing.tsx",
+      "sha256": "27b7530c5ac92af78662e6e3aaacbbf536122460ab50a26492b08efe9b04ae14",
+      "bytes": 5929
+    },
+    {
+      "file": "src/compact-exact-axis-aligned-obstacles.ts",
+      "sha256": "a321c7052af5a9b92e6e8f26883c6f8417e9f6c9493d64bbb94726a1120e5c76",
+      "bytes": 6125
+    },
+    {
+      "file": "src/component-port-anchors.ts",
+      "sha256": "ef038693cf7256acb3d7ed50fa697e90e5399b6812124d1f579a0f0eb279c457",
+      "bytes": 7204
+    },
+    {
+      "file": "src/control-local-routes.tsx",
+      "sha256": "e8ee50ef0c623c0177eb020dd3c09228780ea7d736762c7d711d9f47bf3fea30",
+      "bytes": 1890
+    },
+    {
+      "file": "src/control-v3-routes.tsx",
+      "sha256": "448c6f33c181369ddae9752009836cf82aa38b533c1771447156b8431fb76d52",
+      "bytes": 1416
+    },
+    {
+      "file": "src/current-ground-barrels.ts",
+      "sha256": "c84255b52a93e41e07acc7901df9fe4f6ef1157862c8e88b437af641e40f55fe",
+      "bytes": 11931
+    },
+    {
+      "file": "src/ground-escapes.tsx",
+      "sha256": "52c1ff72f034cb6c0042ef85db093a6cab775fa1a3fdd9bcab3b761dd90becae",
+      "bytes": 3078
+    },
+    {
+      "file": "src/ground-fanout-ports.ts",
+      "sha256": "4cac6dcd4cae4e95733a43b1c4d8d488bf7ead88ca21062b5399eb0a248b79ef",
+      "bytes": 2071
+    },
+    {
+      "file": "src/ground-trace-paths.ts",
+      "sha256": "a12aa2f4078f7e63bda1e1e21c0f242a457c9d7b3c301a6ee11e663f4ad561f9",
+      "bytes": 8004
+    },
+    {
+      "file": "src/guarded-router.ts",
+      "sha256": "975ac46a33a59fadc3023e0bbb522a48e8040ae35b64773b0c8882f119d26c38",
+      "bytes": 23005
+    },
+    {
+      "file": "src/i2c-branch-routes.tsx",
+      "sha256": "1ab55740f3033ca3f8bd5602b17e3046140a31a46020db18c5c2aba1440718e8",
+      "bytes": 6515
+    },
+    {
+      "file": "src/layout.ts",
+      "sha256": "6f70cae0b722453757736801b2461f02a0f3c7a3e5d68470035bfce57e2c8536",
+      "bytes": 12690
+    },
+    {
+      "file": "src/logic-supply-links.tsx",
+      "sha256": "5a8136f256af2d50b09a7fcfb9195830cbebc80d8760188cdfc9970e16189c39",
+      "bytes": 3173
+    },
+    {
+      "file": "src/parts/C10429.tsx",
+      "sha256": "a0705d3f689ec4f60116fad010e8c42726c005bcbd79f27f5984be5ec1d20eab",
+      "bytes": 3207
+    },
+    {
+      "file": "src/parts/C125094.tsx",
+      "sha256": "969d712e29335c76b32471753f757f29371eea9ace76400bee6979b25f71acaa",
+      "bytes": 2882
+    },
+    {
+      "file": "src/parts/C12891.tsx",
+      "sha256": "b6c95cfc1af233f135e6352981ec197d44b7a531dae0e4602ce0492b3d9c905b",
+      "bytes": 3156
+    },
+    {
+      "file": "src/parts/C130910.tsx",
+      "sha256": "a22f35222a1fc98d5d94838fd2b389d3293ee23a7f2e9930f71f04aa9f5e0d5b",
+      "bytes": 2310
+    },
+    {
+      "file": "src/parts/C131334.tsx",
+      "sha256": "8e535b614b2ae19c344f5b9aa3651c6a3a19e24e09a63bab89514c21a29a8ab3",
+      "bytes": 2807
+    },
+    {
+      "file": "src/parts/C131337.tsx",
+      "sha256": "87e8d5ef622394a4206ccd69ee0fd32bf0e21f58b7c04d6f64e565e3961d1379",
+      "bytes": 4650
+    },
+    {
+      "file": "src/parts/C132016.tsx",
+      "sha256": "375cfc5f51642980b7c0fb2a7232acb861b8250810f8740b353c16f103eee7a4",
+      "bytes": 2704
+    },
+    {
+      "file": "src/parts/C13585.tsx",
+      "sha256": "a713b542c4dc902bfa347468113c5c40dc507377386db16efcaeb62b0dacedfd",
+      "bytes": 3156
+    },
+    {
+      "file": "src/parts/C138706.tsx",
+      "sha256": "c7fe859e7d0f4de7e523c9af3b1384eb6c154c647eb6b31fc9fc6f86af2eec54",
+      "bytes": 5685
+    },
+    {
+      "file": "src/parts/C144198.tsx",
+      "sha256": "741c062d776ee33b3ec43671c471bbef36ddfa6c144050278a56a64109fa7fce",
+      "bytes": 3078
+    },
+    {
+      "file": "src/parts/C14663.tsx",
+      "sha256": "e22722b3bba7d1dfdde75b9567f27510f49c57d95b720e239d604ff8c5869100",
+      "bytes": 3495
+    },
+    {
+      "file": "src/parts/C14858.tsx",
+      "sha256": "6e4cafa4cbb5fb8165eae8b8d949dd99fb0da2886516d188b9387588350b9ea6",
+      "bytes": 3410
+    },
+    {
+      "file": "src/parts/C15127.tsx",
+      "sha256": "5af8e36f42640f74c9597768f8ee241d91ac9b8c78621e402905510adc550f1d",
+      "bytes": 4402
+    },
+    {
+      "file": "src/parts/C158004.tsx",
+      "sha256": "4668124368146ebc953030e61f1b27a1ab9a5cf5dcb6b22102f4d5a4859d9cf3",
+      "bytes": 4807
+    },
+    {
+      "file": "src/parts/C15849.tsx",
+      "sha256": "fdb5d1c2d7bdb5314e284d8ed00c171f9ed86130e0b1a9ff8e3df7f9881027a6",
+      "bytes": 3508
+    },
+    {
+      "file": "src/parts/C1591.tsx",
+      "sha256": "dcf8971e2cad2b4d64d907709b4adf626a3d20385c1d424cbf24fcfbfe1632df",
+      "bytes": 3172
+    },
+    {
+      "file": "src/parts/C1613.tsx",
+      "sha256": "247dded1a6f31411d6dd1c422f373f9759cde282ec75f124e35a75b3fe8a8708",
+      "bytes": 3505
+    },
+    {
+      "file": "src/parts/C165948.tsx",
+      "sha256": "c1b1d0e1b7c62152f2cac677ea0e335dca872d59cc0523c5188cd6390037c4be",
+      "bytes": 7247
+    },
+    {
+      "file": "src/parts/C167874.tsx",
+      "sha256": "f2c3450ab3f2f8dbe7b0c63c08b461f675c70a4665cc4cb952e17d16dcd6d684",
+      "bytes": 2069
+    },
+    {
+      "file": "src/parts/C179626.tsx",
+      "sha256": "2d2c29e02724ce566d12ddeb9829056390a67e05153a37caea90568dc8f55c05",
+      "bytes": 3875
+    },
+    {
+      "file": "src/parts/C18739.tsx",
+      "sha256": "83d011f4d185518f8c99b0d79b4e2b148e15d08086d092b0f227ba1832c6793f",
+      "bytes": 3166
+    },
+    {
+      "file": "src/parts/C191884.tsx",
+      "sha256": "a677b2882707ad4650f4abadaa9157e172b88fd81c6bcb6963e9786845b2c5c7",
+      "bytes": 3044
+    },
+    {
+      "file": "src/parts/C19270707.tsx",
+      "sha256": "bf8563664946d5a18ce904c3f1a3654b2a6928d77b297256499fd88ef8c59f20",
+      "bytes": 3943
+    },
+    {
+      "file": "src/parts/C19270709.tsx",
+      "sha256": "3cb17c0e05fc55e7d98d069ed7179b03ae21a469a66040312a9a822fa399ccb8",
+      "bytes": 4163
+    },
+    {
+      "file": "src/parts/C19666.tsx",
+      "sha256": "ba0d6fadaa902b32330e0af12aa23d23103092cbef2d57652fac827da6a95200",
+      "bytes": 3510
+    },
+    {
+      "file": "src/parts/C20526.tsx",
+      "sha256": "3a7c56048f7615f01d1222862e5c75ba801d613d29ed541175f3840c67fd7106",
+      "bytes": 3256
+    },
+    {
+      "file": "src/parts/C20527.tsx",
+      "sha256": "29c58e8e19469111280c27ed3db1e9d11c68ef3dd329a8ee0ef7b4679fb32fca",
+      "bytes": 3184
+    },
+    {
+      "file": "src/parts/C2071044.tsx",
+      "sha256": "c47c52a3304b1cc229074c48dbddd8ac76d52f9a461edcc5f0ad4302a700f53e",
+      "bytes": 2614
+    },
+    {
+      "file": "src/parts/C2071868.tsx",
+      "sha256": "d4e67e727506e8be2510df0b89ab0a3d104d830eee06be6603fa33c8ec830466",
+      "bytes": 3102
+    },
+    {
+      "file": "src/parts/C21117.tsx",
+      "sha256": "358554b9a06183c721a94ff0e4fb4538aca96e541555f02a9d5a0d4e018774cf",
+      "bytes": 3509
+    },
+    {
+      "file": "src/parts/C21189.tsx",
+      "sha256": "a6ec13a9fe2b32505ae62500035e1ca0b97645af5a11ab8d302cce5a4710724f",
+      "bytes": 1967
+    },
+    {
+      "file": "src/parts/C21190.tsx",
+      "sha256": "a9b3fbd81f554d7079ae3d12a2a5531d7d3f0b72b263d6975dbea3960a9535af",
+      "bytes": 1968
+    },
+    {
+      "file": "src/parts/C22809.tsx",
+      "sha256": "48ebef9f390df2a1b01745d1fe476fc8cae3b9ad9e7219d65fee141a1528d001",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C22836.tsx",
+      "sha256": "09dc73b60f4f3f2702539501af33a2b5ea8f9edf388fc08ac4c845af454cf060",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C22858.tsx",
+      "sha256": "9988c6d5d9f841c9555f49c60d830a305186d5b0bbc6ed963c10469eb262e0b0",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C22859.tsx",
+      "sha256": "2499c91d551ad9f22392aba1220931f2fb20454c80d75189f1bc7e768495280b",
+      "bytes": 1968
+    },
+    {
+      "file": "src/parts/C22864.tsx",
+      "sha256": "5955f7e638933d63947deaa96878cea9b4468f3405a54baace8f3eb222376a12",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C22875.tsx",
+      "sha256": "fa00092a94bd0a8d9fcd69a8aea7701406805accf0392bd5a4960ebbfea04001",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C22890.tsx",
+      "sha256": "8a976ada7afa3f8d2f3e94d4a51f6c23fb3dcafe757cd2dd5be97b2df2755de9",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C22908.tsx",
+      "sha256": "e2339ad54ff382ad49a410ae6f5dd7257687198c18bce85caf905535d045d18a",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C22939.tsx",
+      "sha256": "353af0347f9cc4727100607deec87ad9e363f40ca277c057d90d9f1c112e8afe",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C22962.tsx",
+      "sha256": "9b191492e4ea5e60f9e100f93c3d028f5d8d36ccd9c4e46a728dcf831149f98f",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C22964.tsx",
+      "sha256": "e48efd4ea76c97773954ee43f0a551c1a0f3ea650eaa884b62bb6ce0a7124f2c",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C23003.tsx",
+      "sha256": "e05caa5715bd80699810589fd1768589d59b4bfeb32a1b2df4e21a5677ed0cca",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C23068.tsx",
+      "sha256": "35f08825e570dad72e53fa02da4b5be2733d8c28de8a090d1d83e9e03ea9ccf4",
+      "bytes": 1871
+    },
+    {
+      "file": "src/parts/C23080.tsx",
+      "sha256": "1bed60da412d6f2cc17e0492a5878ae34564ede3f5e672fbe29e24226c716bd9",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C23091.tsx",
+      "sha256": "850ba115a93e858b55636730acdac544cbc3fd9f820d19dbf9da1e7ce3e03ef2",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C23138.tsx",
+      "sha256": "0f3d819d6862b02e9eb0715da42c6ecd4e673ec4656dc4877fd9361fefe1c5ae",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C23162.tsx",
+      "sha256": "906e5702e41de4f649905804192f14d54765e52d52fd55077535231dd815efc2",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C23186.tsx",
+      "sha256": "2ee08dd185803ed490e7a8956be2bc361ba08cf1742f5ff75ba08fdc144dc1d2",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C23242.tsx",
+      "sha256": "111625a70e8376299dccfae06dd0c2b4e97ea64b2ca3938a5c28c181b8fa2afb",
+      "bytes": 1866
+    },
+    {
+      "file": "src/parts/C23251.tsx",
+      "sha256": "9117f181f1038f676acc47449081440ffdc216de4093e21e0add3148388e433a",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C237304.tsx",
+      "sha256": "e44b6f6f5cbe96e76802d1425d3a246cef5536b3156b03ab4e048c104559b7a5",
+      "bytes": 3365
+    },
+    {
+      "file": "src/parts/C2480.tsx",
+      "sha256": "abaf6abc89b664fe34823c46c5cef58c14d0660291e8a19a2c1a250af02a6118",
+      "bytes": 4137
+    },
+    {
+      "file": "src/parts/C25803.tsx",
+      "sha256": "c3ba5598ebfff925a7da5be3e7447c8528a41a5440e8c7a2ef99711d9ccf5edd",
+      "bytes": 1970
+    },
+    {
+      "file": "src/parts/C25819.tsx",
+      "sha256": "cf30aa3c8fe28ecf19f5043113f08748faddb47e2daf2f9f46c46e020758ceb3",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C25954.tsx",
+      "sha256": "2486878ecffb54e95f2cddcd0c2c5f12528e21ab0738424a06eda224ccc78479",
+      "bytes": 1971
+    },
+    {
+      "file": "src/parts/C2678061.tsx",
+      "sha256": "fdc72c2056d91739ce15ed01a8f07d268d68cbc09a3d22239417735cc1934c58",
+      "bytes": 7440
+    },
+    {
+      "file": "src/parts/C2762602.tsx",
+      "sha256": "e77d456f2a18289cbfae49f894e4fb1bc46e95068fabfed771773f0eb27546bc",
+      "bytes": 3340
+    },
+    {
+      "file": "src/parts/C28323.tsx",
+      "sha256": "7a04250b38a0f4a7875ee0043ffa1f30fa9dd45e371c0f1260bcf1b97ae38c50",
+      "bytes": 3461
+    },
+    {
+      "file": "src/parts/C2906982.tsx",
+      "sha256": "8283c3ae1116b50ff5e2ae0a32b8e612164481da6ee5e75ed1e8d62993724d4b",
+      "bytes": 1973
+    },
+    {
+      "file": "src/parts/C2930048.tsx",
+      "sha256": "d8519d384dd707e1a355967c39a02a744155a4c3c7ac32e1e85ae4ea5408f7a0",
+      "bytes": 1875
+    },
+    {
+      "file": "src/parts/C2933140.tsx",
+      "sha256": "c6881a50eba137e4c66144c05317a8eb9e716872dd4c069c0f8c394ad7109767",
+      "bytes": 1853
+    },
+    {
+      "file": "src/parts/C2933200.tsx",
+      "sha256": "ed12aebc5aff4d5f446b9ef4e65605e355b0b92e214b0e5441ad33356b1987c2",
+      "bytes": 1875
+    },
+    {
+      "file": "src/parts/C29823.tsx",
+      "sha256": "245aeaec02f027573f14730d854ac11939eb62e1bdee42d8442f039b28d5ec41",
+      "bytes": 3598
+    },
+    {
+      "file": "src/parts/C2984759.tsx",
+      "sha256": "0c3972fd6eeb869342b282e7968289520c2fd05ae116ca00742dd35c6224be9a",
+      "bytes": 3182
+    },
+    {
+      "file": "src/parts/C309062.tsx",
+      "sha256": "7d6231e07eaa33da19ec2c871f7f829c46f46fd3a807b26f8db15557abc8dca7",
+      "bytes": 3537
+    },
+    {
+      "file": "src/parts/C31850.tsx",
+      "sha256": "6c8cee164c65b17c7bb0c62542536f1d7130d7af06425d3c786f5e3954752cfb",
+      "bytes": 1969
+    },
+    {
+      "file": "src/parts/C3662799.tsx",
+      "sha256": "c490bfbd659f5155a9739cdfb309871c659c7a135a27593a9271bbce4f6b3eb4",
+      "bytes": 6080
+    },
+    {
+      "file": "src/parts/C377773.tsx",
+      "sha256": "d9975ba01b4b6b1842ce81c0cff55a96ace553d50b4436cad22af53997119d8a",
+      "bytes": 3477
+    },
+    {
+      "file": "src/parts/C380537.tsx",
+      "sha256": "ad024969f4c6498713e5bffbb906275934c6f3ec720574baf5dae756dff914d4",
+      "bytes": 3537
+    },
+    {
+      "file": "src/parts/C397609.tsx",
+      "sha256": "f6e5e3f9ed8a571aff2ba638ee80fb1bee8273360c9709079af7822c0be2a0c0",
+      "bytes": 2361
+    },
+    {
+      "file": "src/parts/C4184.tsx",
+      "sha256": "49455b1884d21ca4f35d3aa46e7699de6dfa65569e469ac912e46251ea0431b9",
+      "bytes": 1964
+    },
+    {
+      "file": "src/parts/C45783.tsx",
+      "sha256": "f67e3478dfcbe9b2c7e7d4dd0fdb4d30a201926a64c21fec237b08f2967e1f23",
+      "bytes": 3536
+    },
+    {
+      "file": "src/parts/C466636.tsx",
+      "sha256": "68835166f727f40bd3a84824c0b074aac0c8c9e6fd13b86e145386017704f6dd",
+      "bytes": 2176
+    },
+    {
+      "file": "src/parts/C474881.tsx",
+      "sha256": "7182ebb0640c01dcb998b6648d54569b90a0b1134410669fb6741f8dd86b78c5",
+      "bytes": 5116
+    },
+    {
+      "file": "src/parts/C49073699.tsx",
+      "sha256": "2f22f78cf3f5b237cbf3b0521b59b9ad2d19f2835491a7aea091f072b1a77c01",
+      "bytes": 2364
+    },
+    {
+      "file": "src/parts/C497873.tsx",
+      "sha256": "63465319bdb139b03f7c4cbbabf319ff0c9eed67a492e2a3f66f62d6697a4edf",
+      "bytes": 2249
+    },
+    {
+      "file": "src/parts/C51205.tsx",
+      "sha256": "0d70d3337d7095222f52ab0085502200b509ff9617c65d1fd85c1243869d15a6",
+      "bytes": 3013
+    },
+    {
+      "file": "src/parts/C513643.tsx",
+      "sha256": "2e9da33ba73b67e7d1096b89aa0b22d77431d58d9a747085c019f178246c0ce9",
+      "bytes": 1819
+    },
+    {
+      "file": "src/parts/C52306.tsx",
+      "sha256": "2d91a3cce5ded5c794f5d10283ba05a2125c6914514e3ef6db5c4dd0e68c3f56",
+      "bytes": 3166
+    },
+    {
+      "file": "src/parts/C53987.tsx",
+      "sha256": "1c2f26c1aaaa2464eb3be7c31e68354f5dcdcc04a7473fba7d18a24d98675766",
+      "bytes": 3616
+    },
+    {
+      "file": "src/parts/C54315.tsx",
+      "sha256": "377a43978fc864f5ede0cece4d954fb0c533e22751af2c1b9d557ab106d656df",
+      "bytes": 1810
+    },
+    {
+      "file": "src/parts/C57112.tsx",
+      "sha256": "b76c72118dc35e876b8fc47d67a5ffc10201154eff0fac36982f3108cc4ef366",
+      "bytes": 3615
+    },
+    {
+      "file": "src/parts/C576517.tsx",
+      "sha256": "a6a1c3fb14eb65f689543c9a16b8cc293c65579bfad56bb9f05bb8cf1667dc88",
+      "bytes": 3177
+    },
+    {
+      "file": "src/parts/C5824006.tsx",
+      "sha256": "eb7542ee0f71d05c1ab5fb3678d33ce99565b97df3455167434cecbacb83c3f1",
+      "bytes": 1960
+    },
+    {
+      "file": "src/parts/C602037.tsx",
+      "sha256": "0823fbb002eec64137ec6336e290d536ff1e5ccead75b8c554a09c54a2c95cca",
+      "bytes": 3479
+    },
+    {
+      "file": "src/parts/C64705.tsx",
+      "sha256": "09f6ce0e240bf5de53265c8c2963701b96c909843a94840700dc8cba0acde371",
+      "bytes": 3510
+    },
+    {
+      "file": "src/parts/C671324.tsx",
+      "sha256": "30e078952fc74afe359ae2b780561b80e54fdbc1e5a3102935e5c25154f78162",
+      "bytes": 6894
+    },
+    {
+      "file": "src/parts/C70285.tsx",
+      "sha256": "f669cdbe0ac2b332c9cefba63858c37aeadeda992d705056aec286a83a11f75f",
+      "bytes": 3522
+    },
+    {
+      "file": "src/parts/C724040.tsx",
+      "sha256": "498cf56c2b7470deec3b82af59e3c7e04720169fe2d089388911a5e0b3397bcf",
+      "bytes": 5556
+    },
+    {
+      "file": "src/parts/C7420354.tsx",
+      "sha256": "5374ea9b3b9ccac20818dd4b11080ccc36bb770a56d1a1c7e6e13c30eb4f9960",
+      "bytes": 3154
+    },
+    {
+      "file": "src/parts/C76589.tsx",
+      "sha256": "f14f4aef221c112d6ed83ad5422a9e3513e4230b029dbf2115f8cf63ba663005",
+      "bytes": 2654
+    },
+    {
+      "file": "src/parts/C780769.tsx",
+      "sha256": "21696c6609f9b2c00d638248d7c5fa1a4f7201b81d5f850ef483a2abeadda311",
+      "bytes": 2967
+    },
+    {
+      "file": "src/parts/C7984.tsx",
+      "sha256": "0a26cf2dc34da439bff8c2664b69af30b2ab4102b8789f660763b39a01299583",
+      "bytes": 4408
+    },
+    {
+      "file": "src/parts/C8545.tsx",
+      "sha256": "6bf1ae475ef18cf11fc4210c64dbd1d51211135a6c00c7ac8c0fcdb0f999c1d1",
+      "bytes": 4041
+    },
+    {
+      "file": "src/parts/C8591.tsx",
+      "sha256": "81ad6fd2e692a8c8bf5b04ccf155be66187c6ce39979b5cf786e01cbbc194839",
+      "bytes": 2166
+    },
+    {
+      "file": "src/parts/C916375.tsx",
+      "sha256": "83825cae5681a1a507c785b000a2e0f1709ad0e3885b2048b9f9ad59b971b429",
+      "bytes": 3190
+    },
+    {
+      "file": "src/parts/C94869.tsx",
+      "sha256": "76377293a01c27b32a4d9af4bf8f5872226ae8ecd97135a38abd17e40903c33d",
+      "bytes": 2881
+    },
+    {
+      "file": "src/parts/catalog.tsx",
+      "sha256": "973a850532901e8eef7131f1d85e5ce5432ae1d789373dde089f39d33d7f1287",
+      "bytes": 8853
+    },
+    {
+      "file": "src/parts/import-manifest.json",
+      "sha256": "e8556581b34c49482e88d87d6e5b55855cda25cf8742b004909a6a339e868ae4",
+      "bytes": 64473
+    },
+    {
+      "file": "src/parts/index.ts",
+      "sha256": "743807d18bf2019893335550bcc8463875c3c4cb3a8067b0ece5646ad5f21fa1",
+      "bytes": 5556
+    },
+    {
+      "file": "src/parts/supplier-footprints-provenance.json",
+      "sha256": "296954369d0d8af37e052f5eff2db2112bed8348e80e838729089e3ceeefd8f5",
+      "bytes": 25718
+    },
+    {
+      "file": "src/parts/supplier-footprints.json",
+      "sha256": "d5f9c6ecd70e7fe8de215a46a89878471a2a5187611863092351c449f6b7b7ba",
+      "bytes": 181565
+    },
+    {
+      "file": "src/parts/supplier-parts-engine.ts",
+      "sha256": "fd8452b7388c534e86f3370406ed802a5acbcc6f7eb143e68d708645ecd84812",
+      "bytes": 2837
+    },
+    {
+      "file": "src/power-budget.ts",
+      "sha256": "2e7e6a8bab96e9ed14bfeb3b8312aeb7c187bbb7a4995f077f3384c0811aa621",
+      "bytes": 3755
+    },
+    {
+      "file": "src/regional-routing.ts",
+      "sha256": "3a15bf8c20d91cd19b20517a6d97694399296ed8d44a16067c2601ffa67f1b90",
+      "bytes": 5353
+    },
+    {
+      "file": "src/source-bus-connections.ts",
+      "sha256": "08ef6f59a6bd03661ebf01f0d3c8b3b0ac2a617df6fd29bd52ae14aa97fe9b46",
+      "bytes": 7850
+    },
+    {
+      "file": "src/source-pad-connections.ts",
+      "sha256": "29afaa701920e7ba17cfa7ed8edc8fb9c293b3f681484a48ad7755259e28021c",
+      "bytes": 19204
+    },
+    {
+      "file": "src/source-terminal-escapes.ts",
+      "sha256": "d4e85d212a305a31d8fe6c41b3e9dac356c0333127034d3a4f6a80fbc8c389d1",
+      "bytes": 10727
+    },
+    {
+      "file": "src/source16-routes.tsx",
+      "sha256": "7082f959b6022272a5eaa1c89efc8fb8c8e45f8ab2476801dfced329a601481b",
+      "bytes": 13819
+    },
+    {
+      "file": "src/source18-routes.tsx",
+      "sha256": "a35a5ba191477591f67a43bb0817b0b00e99077098459d4f7435eb818b32b629",
+      "bytes": 42265
+    },
+    {
+      "file": "src/source20-routes.tsx",
+      "sha256": "ec0084178779146937ba2401d87d073114c298ebd698ac8497ad15ea38e1bded",
+      "bytes": 55937
+    },
+    {
+      "file": "src/source21-routes.tsx",
+      "sha256": "fa59a58dc38e01cc12c429ddcf4d7f225d4d947a75752957053c99336eb56d38",
+      "bytes": 20601
+    },
+    {
+      "file": "src/source22-routes.tsx",
+      "sha256": "fcb3668250d39416ba345ad038a214e06decc8f436ab5a3613ce3edfe1392141",
+      "bytes": 140180
+    },
+    {
+      "file": "src/supply-router.ts",
+      "sha256": "aee4664f4e70b173b86cd5efc08db2d3c0bfb2454924430a400f8dba7eeb41aa",
+      "bytes": 3961
+    },
+    {
+      "file": "src/supply-source-routes.tsx",
+      "sha256": "4da4699586016c108baad3fcb740eb171e31b1a406c3386c2c9e2a52378c926b",
+      "bytes": 31164
+    },
+    {
+      "file": "tscircuit.config.ts",
+      "sha256": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e",
+      "bytes": 194
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "40cf249a92f8e67ab55d71f7b8a3ab4f68f394e378b91d8f67ed9eecf4880a88",
+      "bytes": 483
+    }
+  ],
+  "originalSourceBytesModified": false,
+  "manufacturingAccepted": false
+}

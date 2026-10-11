@@ -1,0 +1,124 @@
+{
+  "role": "Independent geometric experiment planner and changed-copper review",
+  "status": "Final Source24d independently rerun and bound to actual native capture and current 150-file source manifest",
+  "scoreOutOf10": 7.6,
+  "baselineScoreOutOf10": 7.2,
+  "scoreScope": "Whole-board routing judgment informed by scoped independent checks of every physically changed/new trace and new/relocated barrel. No duplicate full-board continuity or manufacturability acceptance claim.",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "scopedVerificationReport": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_geometry_planner/final-verification.json",
+  "scopedGeometryPass": true,
+  "confidence": "High on measured changed geometry; moderate on subjective overall routing score.",
+  "directScope": {
+    "changedNativeTraces": 27,
+    "newOrRelocatedNativeBarrels": 11,
+    "nativePoursIncluded": 31,
+    "allFourCopperLayersIncluded": true
+  },
+  "beforeAfter": {
+    "totalPlanarMm": [
+      4078.5827963297043,
+      4044.302900039696
+    ],
+    "nonGroundInner1Mm": [
+      327.9303032184082,
+      289.6865059616385
+    ],
+    "traceObjects": [
+      633,
+      636
+    ],
+    "viaObjects": [
+      433,
+      434
+    ],
+    "focusTracePlanarMm": {
+      "FAN_PROTECTED_POWER_FEED": [
+        90.59177524949237,
+        81.92213597261417
+      ],
+      "PD_PROTECTED_BYPASS_FEED": [
+        23.02577777210913,
+        3.1735028842544413
+      ],
+      "INPUT_DVDT_FULL_TRUNK": [
+        8.305929291125633,
+        2.9813708498984743
+      ],
+      "TEC_LOW_INNER2_LOCAL": [
+        22.34177848998413,
+        20.408683245815343
+      ],
+      "TEC_VC_LOCAL": [
+        10.105929291125635,
+        7.6089357775095126
+      ],
+      "UART_RX_MCU_INNER2_TRUNK": [
+        28.550104602052652,
+        28.442997820866108
+      ],
+      "UART_TX_MCU_BOTTOM_HEADER": [
+        56.07935893423776,
+        55.70509486552584
+      ]
+    }
+  },
+  "ratingReasoning": [
+    "Actual changed copper improves critical local geometry: PD protected bypass span falls from 23.026 to 3.174 mm; CdVdt inner2 trunk falls from 8.306 to 2.981 mm; LOW gate inner2 span falls from 22.342 to 20.409 mm; VC local span falls from 10.106 to 7.609 mm.",
+    "Inner1 non-ground copper decreases 38.244 mm, from 327.930 to 289.687 mm. The implemented SAFE_EN middle migration is physically present and its two all-layer barrels clear regenerated foreign ground copper.",
+    "Whole-board centerline drops 34.280 mm (0.84%); total barrel count rises one to 434. This is useful local improvement with a modest whole-board economy gain, rather than a major placement redesign.",
+    "All 27 physically changed traces and 11 new/relocated barrel positions pass independent analytic foreign-copper, NPTH/drill, endpoint owner, board-edge and octilinear checks against actual final native geometry."
+  ],
+  "residuals": [
+    {
+      "severity": "medium",
+      "item": "CURRENT_COMMAND_INNER2",
+      "geometry": "Exactly 0.200000 mm foreign gap to GND barrel pcb_via_386 on inner2. Passes declared geometry at numerical tolerance but has no nominal clearance margin."
+    },
+    {
+      "severity": "medium",
+      "item": "Fan power feed",
+      "geometry": "Still 81.922 mm planar after 8.670 mm saving; substantial placement/corridor detour remains."
+    },
+    {
+      "severity": "medium",
+      "item": "UART TX bottom header",
+      "geometry": "Still 55.705 mm; only 0.374 mm was removed, and the longer routing architecture remains."
+    },
+    {
+      "severity": "medium",
+      "item": "Ground reference routing",
+      "geometry": "289.687 mm non-ground signal copper remains on inner1. SAFE_EN plane relief adds two full-through signal barrels, so conservative complete path length grows despite slight planar shortening."
+    },
+    {
+      "severity": "medium",
+      "item": "Gate/compensation placement",
+      "geometry": "Shorter affected LOW/VC spans do not compact the unchanged power-component placement or prove electrical switching stability."
+    }
+  ],
+  "limitations": [
+    "Full-board connectivity, whole-board shorts, ground reference/contact, JLC footprint preservation, source contracts and exported copper acceptance are other roles' checks.",
+    "Static ideal native geometry does not establish manufacturing tolerances, thermal/EMI behavior, compensation stability or bench switching behavior."
+  ],
+  "finalNativeGeometryFacts": {
+    "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+    "changedTraceGeometryCount": 27,
+    "removedTraceGeometryCount": 24,
+    "newOrRelocatedBarrelPositions": 11,
+    "removedBarrelPositions": 10,
+    "errorsInFinalCapture": [],
+    "sameNativePhysicalObjectsAs24c": true,
+    "acceptanceMethod": "Fresh Source24d scoped checks; prior acceptance flags are not reused."
+  },
+  "evidence": [
+    "final-verification.json",
+    "verify_changed_geometry.py",
+    "bind_final_source.py",
+    "reroute_helper.py"
+  ],
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "sourceBindingPass": true,
+  "checkedCurrentSourceFiles": 150
+}

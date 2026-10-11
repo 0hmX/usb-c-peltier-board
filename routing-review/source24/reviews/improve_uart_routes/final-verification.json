@@ -1,0 +1,3591 @@
+{
+  "scope": "Scoped exact UART verification; no broad continuity graph or source mutation.",
+  "target_manifest": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/final-target.json",
+  "target_manifest_sha256": "c1fc39468ac8a3259c6312792920ae7328e70c8480c0ed56fe35bb136f6b00d6",
+  "source_package_sha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "capture_sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "preflight_sha256": "1cd79de12ae7372903bbc8aaa1872eb06583faa5376933c05c34be6915e2c7e5",
+  "source_sha256": "85fcb03c1777c947d80727cfbd44f9b99000b06f4bb4a47452b9f8463bf37b29",
+  "baseline_sha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "census": {
+    "source_project_metadata": 1,
+    "source_group": 3,
+    "source_net": 104,
+    "source_port": 1354,
+    "source_component": 220,
+    "source_manually_placed_via": 317,
+    "source_board": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1029,
+    "source_bus": 1,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_component": 537,
+    "pcb_group": 2,
+    "pcb_board": 1,
+    "pcb_keepout": 10,
+    "pcb_hole": 6,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_solder_paste": 574,
+    "pcb_silkscreen_path": 665,
+    "pcb_silkscreen_text": 234,
+    "pcb_courtyard_outline": 194,
+    "pcb_via": 434,
+    "pcb_silkscreen_circle": 31,
+    "pcb_fabrication_note_path": 79,
+    "pcb_silkscreen_rect": 5,
+    "pcb_courtyard_rect": 26,
+    "pcb_port": 1354,
+    "cad_component": 194,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_trace": 636,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_copper_pour": 31,
+    "pcb_trace_warning": 44
+  },
+  "pass": true,
+  "actual_UART_via_counts": {
+    "UART_RX_MCU": 4,
+    "UART_TX": 2
+  },
+  "exactly_six_UART_vias": true,
+  "logical_ownership_notes": "Actual CONTROL_I2C SourceBus is preserved. UART complete connection plans and genuine source-trace/source-net membership are verified; no DEBUG_PORTS source_bus record is claimed.",
+  "trace_checks": [
+    {
+      "name": "UART_RX_MCU_LOCAL_ESCAPE",
+      "pcb_trace_id": "pcb_trace_513",
+      "source_trace_id": "source_trace_994",
+      "net": "UART_RX_MCU",
+      "layer": "top",
+      "length_mm": 3.49601551083915,
+      "baseline_length_mm": 3.49601551083915,
+      "difference_mm": 0.0,
+      "source_max_mm": 3.8,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "U_MCU.pin10",
+          "pcb_port_id": "pcb_port_355",
+          "pass": true,
+          "kind": "componentPad",
+          "position_mm": [
+            2.875,
+            -7.075
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_smtpad_262",
+              "kind": "pad",
+              "finite_area_mm2": 0.09356179705275315
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_RX_MCU_ENTRY.top",
+          "pcb_port_id": "pcb_port_1137",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            2.05,
+            -4.35
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_216",
+              "kind": "via",
+              "finite_area_mm2": 0.045687964859036735
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            2.875,
+            -7.075
+          ],
+          [
+            3.075,
+            -7.075
+          ],
+          [
+            3.0750000000000006,
+            -5.125
+          ],
+          [
+            2.3000000000000003,
+            -4.35
+          ],
+          [
+            2.05,
+            -4.35
+          ]
+        ],
+        "layer": "top",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1137",
+        "ownerLabels": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 3.49601551083915,
+        "bendCount": 3,
+        "turnsDegrees": [
+          90,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 1536,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_355",
+            "pass": true,
+            "center": [
+              2.875,
+              -7.075
+            ],
+            "netRoot": "source_port_1137"
+          },
+          {
+            "pcbPortId": "pcb_port_1137",
+            "pass": true,
+            "center": [
+              2.05,
+              -4.35
+            ],
+            "netRoot": "source_port_1137"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_smtpad_365",
+          "kind": "pad",
+          "layer": "top",
+          "netRoot": "source_port_1124",
+          "netLabels": [
+            "HOT_RAW"
+          ],
+          "gapMm": 0.23587572106361013,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_smtpad_365",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.23587572106361013,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_364",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.24999999999999914,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_261",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1147",
+            "netLabels": [
+              "UART_TX"
+            ],
+            "gapMm": 0.3499999999999993,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_518",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1147",
+            "netLabels": [
+              "UART_TX"
+            ],
+            "gapMm": 0.4499999999999995,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_289",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.4749999999999994,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_498",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.6,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_101",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.675,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.7729574808635007,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.8158988901172164,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_292",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.9249999999999999,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_192",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 0.9486600730699367,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_260",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 1.0000000000000004,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_RX_MCU_INNER2_TRUNK",
+      "pcb_trace_id": "pcb_trace_514",
+      "source_trace_id": "source_trace_995",
+      "net": "UART_RX_MCU",
+      "layer": "inner2",
+      "length_mm": 28.442997820866108,
+      "baseline_length_mm": 28.550104602052652,
+      "difference_mm": -0.10710678118654471,
+      "source_max_mm": 28.49299782086611,
+      "changed": true,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_RX_MCU_ENTRY.inner2",
+          "pcb_port_id": "pcb_port_1139",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            2.05,
+            -4.35
+          ],
+          "layers": [
+            "inner2"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_216",
+              "kind": "via",
+              "finite_area_mm2": 0.04143591002212402
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_RX_LAYER_TRANSFER.inner2",
+          "pcb_port_id": "pcb_port_1142",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            17.25,
+            -13.55
+          ],
+          "layers": [
+            "inner2"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_217",
+              "kind": "via",
+              "finite_area_mm2": 0.04143591002212461
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            2.05,
+            -4.35
+          ],
+          [
+            2.05,
+            -3.45
+          ],
+          [
+            5.5,
+            0.0
+          ],
+          [
+            12.5,
+            0.0
+          ],
+          [
+            15.75,
+            -3.25
+          ],
+          [
+            15.75,
+            -4.0
+          ],
+          [
+            16.5,
+            -4.75
+          ],
+          [
+            16.75,
+            -4.75
+          ],
+          [
+            17.25,
+            -5.25
+          ],
+          [
+            17.25,
+            -13.55
+          ]
+        ],
+        "layer": "inner2",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1137",
+        "ownerLabels": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.442997820866108,
+        "bendCount": 8,
+        "turnsDegrees": [
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 527,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1139",
+            "pass": true,
+            "center": [
+              2.05,
+              -4.35
+            ],
+            "netRoot": "source_port_1137"
+          },
+          {
+            "pcbPortId": "pcb_port_1142",
+            "pass": true,
+            "center": [
+              17.25,
+              -13.55
+            ],
+            "netRoot": "source_port_1137"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_via_70",
+          "kind": "via",
+          "layer": "inner2",
+          "netRoot": "source_port_814",
+          "netLabels": [
+            "COLD_ADC"
+          ],
+          "gapMm": 0.24999999999999997,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_via_70",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.24999999999999997,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_72",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 0.24999999999999997,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_74",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.24999999999999997,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_73",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.2571067811865476,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.27478445071621116,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_237",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.30000000000000004,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_175",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.33033008588991053,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_68",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.36317279836452965,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_532",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.47175144212722053,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_169",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.5,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_172",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 0.5,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_471",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.5071067811865476,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_RX_MCU_SAFE_TOP_UNDERPASS",
+      "pcb_trace_id": "pcb_trace_515",
+      "source_trace_id": "source_trace_996",
+      "net": "UART_RX_MCU",
+      "layer": "top",
+      "length_mm": 7.47916305603426,
+      "baseline_length_mm": 7.47916305603426,
+      "difference_mm": 0.0,
+      "source_max_mm": 7.5291630560342595,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_RX_LAYER_TRANSFER.top",
+          "pcb_port_id": "pcb_port_1140",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            17.25,
+            -13.55
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_217",
+              "kind": "via",
+              "finite_area_mm2": 0.041435910022123906
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_RX_SAFE_UNDERPASS_TRANSFER.top",
+          "pcb_port_id": "pcb_port_1143",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            15.75,
+            -20.025
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_218",
+              "kind": "via",
+              "finite_area_mm2": 0.04352175094873472
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            17.25,
+            -13.55
+          ],
+          [
+            16.275,
+            -14.525
+          ],
+          [
+            16.275,
+            -18.3
+          ],
+          [
+            16.525,
+            -18.55
+          ],
+          [
+            16.525,
+            -19.55
+          ],
+          [
+            16.049999999999997,
+            -20.025
+          ],
+          [
+            15.75,
+            -20.025
+          ]
+        ],
+        "layer": "top",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1137",
+        "ownerLabels": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 7.47916305603426,
+        "bendCount": 5,
+        "turnsDegrees": [
+          45,
+          45,
+          45,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 1536,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1140",
+            "pass": true,
+            "center": [
+              17.25,
+              -13.55
+            ],
+            "netRoot": "source_port_1137"
+          },
+          {
+            "pcbPortId": "pcb_port_1143",
+            "pass": true,
+            "center": [
+              15.75,
+              -20.025
+            ],
+            "netRoot": "source_port_1137"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_smtpad_301",
+          "kind": "pad",
+          "layer": "top",
+          "netRoot": "source_net_71",
+          "netLabels": [
+            "FAULT_NPN_BASE"
+          ],
+          "gapMm": 0.2350000000000044,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_smtpad_301",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 0.2350000000000044,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_302",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.2350000000000044,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_411",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_932",
+            "netLabels": [
+              "FAULT_SOURCE"
+            ],
+            "gapMm": 0.23587572106360857,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_228",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.2772970773009201,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_283",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 0.28500000000000303,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_410",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 0.32500000000000073,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_409",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.47500000000000286,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_221",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.48942911165688485,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_284",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 0.5350000000000029,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_40",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.5350000000000029,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_377",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_932",
+            "netLabels": [
+              "FAULT_SOURCE"
+            ],
+            "gapMm": 0.6249999999999993,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_303",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1052",
+            "netLabels": [
+              "TEC_CLEAR_RAW"
+            ],
+            "gapMm": 0.784999999999998,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_RX_MCU_BOTTOM_TRUNK",
+      "pcb_trace_id": "pcb_trace_516",
+      "source_trace_id": "source_trace_997",
+      "net": "UART_RX_MCU",
+      "layer": "bottom",
+      "length_mm": 39.04868504050283,
+      "baseline_length_mm": 39.04868504050283,
+      "difference_mm": 0.0,
+      "source_max_mm": 39.09868504050283,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_RX_SAFE_UNDERPASS_TRANSFER.bottom",
+          "pcb_port_id": "pcb_port_1144",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            15.75,
+            -20.025
+          ],
+          "layers": [
+            "bottom"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_218",
+              "kind": "via",
+              "finite_area_mm2": 0.041435910022124045
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_RX_MCU_SERIES_TRANSFER.bottom",
+          "pcb_port_id": "pcb_port_1146",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            -6.5,
+            -27
+          ],
+          "layers": [
+            "bottom"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_219",
+              "kind": "via",
+              "finite_area_mm2": 0.041435910022123885
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            15.75,
+            -20.025
+          ],
+          [
+            17.025,
+            -21.3
+          ],
+          [
+            17.25,
+            -21.3
+          ],
+          [
+            18.75,
+            -22.8
+          ],
+          [
+            18.75,
+            -23.3
+          ],
+          [
+            15.0,
+            -27.05
+          ],
+          [
+            7.25,
+            -27.05
+          ],
+          [
+            1.5,
+            -32.8
+          ],
+          [
+            -5.5,
+            -32.8
+          ],
+          [
+            -6.5,
+            -31.799999999999997
+          ],
+          [
+            -6.5,
+            -27.0
+          ]
+        ],
+        "layer": "bottom",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1137",
+        "ownerLabels": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 39.04868504050283,
+        "bendCount": 9,
+        "turnsDegrees": [
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 530,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1144",
+            "pass": true,
+            "center": [
+              15.75,
+              -20.025
+            ],
+            "netRoot": "source_port_1137"
+          },
+          {
+            "pcbPortId": "pcb_port_1146",
+            "pass": true,
+            "center": [
+              -6.5,
+              -27
+            ],
+            "netRoot": "source_port_1137"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_copper_pour_19",
+          "kind": "pour",
+          "layer": "bottom",
+          "netRoot": "source_port_419",
+          "netLabels": [
+            "GND"
+          ],
+          "gapMm": 0.20850704785867022,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_copper_pour_19",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20850704785867022,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_31",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20850704785867022,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20850704785867094,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_175",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1013",
+            "netLabels": [
+              "FAN_TACH_MCU"
+            ],
+            "gapMm": 0.22175144212721962,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_185",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1049",
+            "netLabels": [
+              "INPUT_FAULT_N"
+            ],
+            "gapMm": 0.22175144212721962,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_520",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_1147",
+            "netLabels": [
+              "UART_TX"
+            ],
+            "gapMm": 0.2500000000000028,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_435",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.26124960456930935,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_15",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.33741654676623944,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_17",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.33741654676623967,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_14",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_841",
+            "netLabels": [
+              "SWDIO"
+            ],
+            "gapMm": 0.3499645999999975,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_16",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_839",
+            "netLabels": [
+              "SWCLK"
+            ],
+            "gapMm": 0.3499645999999975,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_157",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_970",
+            "netLabels": [
+              "FAN_PWM_BASE"
+            ],
+            "gapMm": 0.40000000000000147,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_RX_MCU_SERIES_RETURN",
+      "pcb_trace_id": "pcb_trace_517",
+      "source_trace_id": "source_trace_998",
+      "net": "UART_RX_MCU",
+      "layer": "top",
+      "length_mm": 0.75,
+      "baseline_length_mm": 0.75,
+      "difference_mm": 0.0,
+      "source_max_mm": 0.8,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_RX_MCU_SERIES_TRANSFER.top",
+          "pcb_port_id": "pcb_port_1145",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            -6.5,
+            -27
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_219",
+              "kind": "via",
+              "finite_area_mm2": 0.04143591002212463
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "R231.pin2",
+          "pcb_port_id": "pcb_port_534",
+          "pass": true,
+          "kind": "componentPad",
+          "position_mm": [
+            -7.25,
+            -27
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_smtpad_404",
+              "kind": "pad",
+              "finite_area_mm2": 0.08070786470183641
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            -6.5,
+            -27.0
+          ],
+          [
+            -7.25,
+            -27.0
+          ]
+        ],
+        "layer": "top",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1137",
+        "ownerLabels": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 0.75,
+        "bendCount": 0,
+        "turnsDegrees": [],
+        "checkedForeignPrimitiveGroups": 1536,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1145",
+            "pass": true,
+            "center": [
+              -6.5,
+              -27
+            ],
+            "netRoot": "source_port_1137"
+          },
+          {
+            "pcbPortId": "pcb_port_534",
+            "pass": true,
+            "center": [
+              -7.25,
+              -27
+            ],
+            "netRoot": "source_port_1137"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_smtpad_550",
+          "kind": "pad",
+          "layer": "top",
+          "netRoot": "source_port_419",
+          "netLabels": [
+            "GND"
+          ],
+          "gapMm": 0.7311388300841898,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_smtpad_550",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.7311388300841898,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_405",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_88",
+            "netLabels": [
+              "UART_RX"
+            ],
+            "gapMm": 1.0750000000000006,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_315",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_net_88",
+            "netLabels": [
+              "UART_RX"
+            ],
+            "gapMm": 1.2999999999999998,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_195",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.3811388300841896,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.130697580112789,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_51",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.663815697824233,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_398",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 3.000000000000001,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_399",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1109",
+            "netLabels": [
+              "POWER_BUDGET_HIGH"
+            ],
+            "gapMm": 3.0049355870935566,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_496",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1109",
+            "netLabels": [
+              "POWER_BUDGET_HIGH"
+            ],
+            "gapMm": 3.3,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_64",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 3.3089172119045496,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_537",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1077",
+            "netLabels": [
+              "TEC_DAC"
+            ],
+            "gapMm": 3.7597722286464434,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_17",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 3.8909153647639827,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_TX_MCU_LOCAL_ESCAPE",
+      "pcb_trace_id": "pcb_trace_518",
+      "source_trace_id": "source_trace_999",
+      "net": "UART_TX",
+      "layer": "top",
+      "length_mm": 1.426040764008566,
+      "baseline_length_mm": 1.426040764008566,
+      "difference_mm": 0.0,
+      "source_max_mm": 1.5,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "U_MCU.pin9",
+          "pcb_port_id": "pcb_port_354",
+          "pass": true,
+          "kind": "componentPad",
+          "position_mm": [
+            2.875,
+            -7.725
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_smtpad_261",
+              "kind": "pad",
+              "finite_area_mm2": 0.15070887482861145
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_TX_MCU_ENTRY.top",
+          "pcb_port_id": "pcb_port_1147",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            1.625,
+            -8.15
+          ],
+          "layers": [
+            "top"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_220",
+              "kind": "via",
+              "finite_area_mm2": 0.0453720490239055
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            2.875,
+            -7.725
+          ],
+          [
+            2.16,
+            -7.725
+          ],
+          [
+            1.7350000000000003,
+            -8.15
+          ],
+          [
+            1.625,
+            -8.15
+          ]
+        ],
+        "layer": "top",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1147",
+        "ownerLabels": [
+          "UART_TX"
+        ],
+        "lengthMm": 1.426040764008566,
+        "bendCount": 2,
+        "turnsDegrees": [
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 1540,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_354",
+            "pass": true,
+            "center": [
+              2.875,
+              -7.725
+            ],
+            "netRoot": "source_port_1147"
+          },
+          {
+            "pcbPortId": "pcb_port_1147",
+            "pass": true,
+            "center": [
+              1.625,
+              -8.15
+            ],
+            "netRoot": "source_port_1147"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_smtpad_260",
+          "kind": "pad",
+          "layer": "top",
+          "netRoot": "source_port_814",
+          "netLabels": [
+            "COLD_ADC"
+          ],
+          "gapMm": 0.24648232278140877,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_smtpad_260",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.24648232278140877,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.246500179468749,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_262",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1137",
+            "netLabels": [
+              "UART_RX_MCU"
+            ],
+            "gapMm": 0.3499999999999993,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_100",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.4253570700005799,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_513",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1137",
+            "netLabels": [
+              "UART_RX_MCU"
+            ],
+            "gapMm": 0.4499999999999995,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_292",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 0.4500000000000004,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_470",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.496500179468749,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_291",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.675,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_259",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.7196645655388556,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_192",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 0.9697623040495188,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_468",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 1.2197623040495187,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_101",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 1.2251865567750952,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_TX_MCU_INNER2_TRUNK",
+      "pcb_trace_id": "pcb_trace_519",
+      "source_trace_id": "source_trace_1000",
+      "net": "UART_TX",
+      "layer": "inner2",
+      "length_mm": 10.34619407771256,
+      "baseline_length_mm": 10.34619407771256,
+      "difference_mm": 0.0,
+      "source_max_mm": 10.396194077712561,
+      "changed": false,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_TX_MCU_ENTRY.inner2",
+          "pcb_port_id": "pcb_port_1149",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            1.625,
+            -8.15
+          ],
+          "layers": [
+            "inner2"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_220",
+              "kind": "via",
+              "finite_area_mm2": 0.04164148416887795
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "UART_TX_HEADER_TRANSFER.inner2",
+          "pcb_port_id": "pcb_port_1152",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            9.875,
+            -12.15
+          ],
+          "layers": [
+            "inner2"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_221",
+              "kind": "via",
+              "finite_area_mm2": 0.04143591002212384
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 0.0,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            1.625,
+            -8.15
+          ],
+          [
+            1.875,
+            -8.4
+          ],
+          [
+            6.875,
+            -8.4
+          ],
+          [
+            9.875,
+            -11.4
+          ],
+          [
+            9.875,
+            -12.15
+          ]
+        ],
+        "layer": "inner2",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1147",
+        "ownerLabels": [
+          "UART_TX"
+        ],
+        "lengthMm": 10.34619407771256,
+        "bendCount": 3,
+        "turnsDegrees": [
+          45,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 528,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1149",
+            "pass": true,
+            "center": [
+              1.625,
+              -8.15
+            ],
+            "netRoot": "source_port_1147"
+          },
+          {
+            "pcbPortId": "pcb_port_1152",
+            "pass": true,
+            "center": [
+              9.875,
+              -12.15
+            ],
+            "netRoot": "source_port_1147"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_trace_471",
+          "kind": "trace",
+          "layer": "inner2",
+          "netRoot": "source_port_1070",
+          "netLabels": [
+            "VOUT_ADC"
+          ],
+          "gapMm": 0.22499999999999973,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_trace_471",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.22499999999999973,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_100",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.23282501418738308,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_449",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.34478802205367987,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.42500000000000004,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4616057261777158,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_532",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.4750000000000001,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_410",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.49999999999999933,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_469",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 0.7500000000000001,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_159",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_981",
+            "netLabels": [
+              "MCU_NRST"
+            ],
+            "gapMm": 1.1162455107677074,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_101",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_814",
+            "netLabels": [
+              "COLD_ADC"
+            ],
+            "gapMm": 1.25,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_192",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1067",
+            "netLabels": [
+              "VBUS_ADC"
+            ],
+            "gapMm": 1.3001785623187136,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_203",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1153",
+            "netLabels": [
+              "PD_VALID_N"
+            ],
+            "gapMm": 1.3354446224960324,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "UART_TX_MCU_BOTTOM_HEADER",
+      "pcb_trace_id": "pcb_trace_520",
+      "source_trace_id": "source_trace_1001",
+      "net": "UART_TX",
+      "layer": "bottom",
+      "length_mm": 55.70509486552584,
+      "baseline_length_mm": 56.07935893423776,
+      "difference_mm": -0.3742640687119234,
+      "source_max_mm": 55.75509486552583,
+      "changed": true,
+      "widths_pass": true,
+      "bounds_pass": true,
+      "owners_pass": true,
+      "source_endpoints": [
+        {
+          "selector": "UART_TX_HEADER_TRANSFER.bottom",
+          "pcb_port_id": "pcb_port_1151",
+          "pass": true,
+          "kind": "barrelInterface",
+          "position_mm": [
+            9.875,
+            -12.15
+          ],
+          "layers": [
+            "bottom"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_via_221",
+              "kind": "via",
+              "finite_area_mm2": 0.044726817922736244
+            }
+          ],
+          "finite_contact_pass": true
+        },
+        {
+          "selector": "J_UART.pin2",
+          "pcb_port_id": "pcb_port_462",
+          "pass": true,
+          "kind": "componentPad",
+          "position_mm": [
+            -15.000002,
+            -31.550037
+          ],
+          "layers": [
+            "top",
+            "bottom",
+            "inner1",
+            "inner2"
+          ],
+          "finite_copper_contacts": [
+            {
+              "id": "pcb_plated_hole_18",
+              "kind": "pad",
+              "finite_area_mm2": 0.0652877265720634
+            }
+          ],
+          "finite_contact_pass": true
+        }
+      ],
+      "maximum_literal_coordinate_delta_mm": 1.7763568394002505e-15,
+      "literal_or_unchanged_geometry_pass": true,
+      "preflight_geometry_equal": true,
+      "independent_copper_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "points": [
+          [
+            9.875,
+            -12.15
+          ],
+          [
+            10.15,
+            -12.15
+          ],
+          [
+            11.25,
+            -13.25
+          ],
+          [
+            11.25,
+            -15.5
+          ],
+          [
+            15.0,
+            -19.25
+          ],
+          [
+            16.0,
+            -19.25
+          ],
+          [
+            19.25,
+            -22.5
+          ],
+          [
+            19.25,
+            -24.75
+          ],
+          [
+            13.75,
+            -30.25
+          ],
+          [
+            4.75,
+            -30.25
+          ],
+          [
+            1.75,
+            -33.25
+          ],
+          [
+            -13.300038999999998,
+            -33.25
+          ],
+          [
+            -15.000002,
+            -31.550037
+          ]
+        ],
+        "layer": "bottom",
+        "widthMm": 0.2,
+        "ownerRoot": "source_port_1147",
+        "ownerLabels": [
+          "UART_TX"
+        ],
+        "lengthMm": 55.70509486552584,
+        "bendCount": 11,
+        "turnsDegrees": [
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45
+        ],
+        "checkedForeignPrimitiveGroups": 531,
+        "endpointChecks": [
+          {
+            "pcbPortId": "pcb_port_1151",
+            "pass": true,
+            "center": [
+              9.875,
+              -12.15
+            ],
+            "netRoot": "source_port_1147"
+          },
+          {
+            "pcbPortId": "pcb_port_462",
+            "pass": true,
+            "center": [
+              -15.000002,
+              -31.550037
+            ],
+            "netRoot": "source_port_1147"
+          }
+        ],
+        "minimumClearanceMargin": {
+          "id": "pcb_copper_pour_14",
+          "kind": "pour",
+          "layer": "bottom",
+          "netRoot": "source_port_419",
+          "netLabels": [
+            "GND"
+          ],
+          "gapMm": 0.20850704785867022,
+          "requiredMm": 0.2
+        },
+        "nearestObstacles": [
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20850704785867022,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_31",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20850704785867022,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_19",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.2099998555128674,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_516",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_1137",
+            "netLabels": [
+              "UART_RX_MCU"
+            ],
+            "gapMm": 0.2500000000000028,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_218",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1137",
+            "netLabels": [
+              "UART_RX_MCU"
+            ],
+            "gapMm": 0.27478445071621016,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.2783199846221448,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_109",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1052",
+            "netLabels": [
+              "TEC_CLEAR_RAW"
+            ],
+            "gapMm": 0.29246212024587415,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_435",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.34478802205367975,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_10",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4000385999999997,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_402",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_966",
+            "netLabels": [
+              "COLD_RAW"
+            ],
+            "gapMm": 0.4010407640085665,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_11",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.423857786061386,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_plated_hole_19",
+            "kind": "pad",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.5142123339459704,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": [],
+        "limits": [
+          "Unchanged native BREP pours are obstacles; regenerated pour safety remains mandatory.",
+          "Same-net branch contacts along removed copper require whole-board continuity validation.",
+          "Ideal CAD geometry does not establish thermal capacity or stability."
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "six_barrel_checks": [
+    {
+      "name": "UART_RX_MCU_ENTRY",
+      "pcb_via_id": "pcb_via_216",
+      "net": "net.UART_RX_MCU",
+      "position_mm": [
+        2.05,
+        -4.35
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": 2.05,
+        "y": -4.35,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892378,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892378,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_497",
+            "kind": "trace",
+            "layer": "inner1",
+            "netRoot": "source_port_1049",
+            "netLabels": [
+              "INPUT_FAULT_N"
+            ],
+            "gapMm": 0.22175144212721976,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_498",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.35,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_472",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.37006097334283716,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_365",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.40000000000000013,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_531",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.6499999999999999,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_532",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.6499999999999999,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.699330196915653,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.699330196915653,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.699330196915653,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_209",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.699330196915653,
+            "requiredMm": 0.15
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "name": "UART_RX_LAYER_TRANSFER",
+      "pcb_via_id": "pcb_via_217",
+      "net": "net.UART_RX_MCU",
+      "position_mm": [
+        17.25,
+        -13.55
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": 17.25,
+        "y": -13.55,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892466,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892466,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_40",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4409545442950509,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_302",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.8499999999999993,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_413",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 1.2257934509319424,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_284",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 1.6359650045003145,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_499",
+            "kind": "trace",
+            "layer": "inner1",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 1.7999999999999998,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_152",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_659",
+            "netLabels": [
+              "D505_A"
+            ],
+            "gapMm": 2.0500000000000003,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_415",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.118527984604736,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_415",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.118527984604736,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_415",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.118527984604736,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_415",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.118527984604736,
+            "requiredMm": 0.15
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "name": "UART_RX_SAFE_UNDERPASS_TRANSFER",
+      "pcb_via_id": "pcb_via_218",
+      "net": "net.UART_RX_MCU",
+      "position_mm": [
+        15.75,
+        -20.025
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": 15.75,
+        "y": -20.025,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_31",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730344819367985,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892222,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_411",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_932",
+            "netLabels": [
+              "FAULT_SOURCE"
+            ],
+            "gapMm": 0.2249999999999993,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_409",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.22500000000000286,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_221",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.23942911165688485,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_228",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_787",
+            "netLabels": [
+              "V3V3"
+            ],
+            "gapMm": 0.23942911165688485,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_520",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_1147",
+            "netLabels": [
+              "UART_TX"
+            ],
+            "gapMm": 0.27478445071621016,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_499",
+            "kind": "trace",
+            "layer": "inner1",
+            "netRoot": "source_port_1124",
+            "netLabels": [
+              "HOT_RAW"
+            ],
+            "gapMm": 0.30000000000000016,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_377",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_932",
+            "netLabels": [
+              "FAULT_SOURCE"
+            ],
+            "gapMm": 0.5762187875886882,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.68478430622908,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_408",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_70",
+            "netLabels": [
+              "FAULT_PNP_BASE"
+            ],
+            "gapMm": 0.9581475451951148,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_410",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_71",
+            "netLabels": [
+              "FAULT_NPN_BASE"
+            ],
+            "gapMm": 0.9806483382171255,
+            "requiredMm": 0.2
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "name": "UART_RX_MCU_SERIES_TRANSFER",
+      "pcb_via_id": "pcb_via_219",
+      "net": "net.UART_RX_MCU",
+      "position_mm": [
+        -6.5,
+        -27
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": -6.5,
+        "y": -27,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.207303491238925,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.207303491238925,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_550",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4811388300841898,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_510",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_port_1158",
+            "netLabels": [
+              "TEC_SAFE_EN"
+            ],
+            "gapMm": 0.8000000000000002,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_195",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.1311388300841898,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_405",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_88",
+            "netLabels": [
+              "UART_RX"
+            ],
+            "gapMm": 1.5750000000000006,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_315",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_net_88",
+            "netLabels": [
+              "UART_RX"
+            ],
+            "gapMm": 1.7999999999999998,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.880697580112789,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.880697580112789,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.880697580112789,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 1.880697580112789,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_85",
+            "kind": "drillToDrill",
+            "layer": null,
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 2.2806975801127893,
+            "requiredMm": 0.3
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "name": "UART_TX_MCU_ENTRY",
+      "pcb_via_id": "pcb_via_220",
+      "net": "net.UART_TX",
+      "position_mm": [
+        1.625,
+        -8.15
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": 1.625,
+        "y": -8.15,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730316689824269,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_14",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.2073033416558746,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_472",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.2217514421272203,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.17500000000000004,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.17500000000000004,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.17500000000000004,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_193",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_1070",
+            "netLabels": [
+              "VOUT_ADC"
+            ],
+            "gapMm": 0.17500000000000004,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_trace_532",
+            "kind": "trace",
+            "layer": "inner2",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.2250000000000001,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_trace_531",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_net_60",
+            "netLabels": [
+              "I2C_SDA"
+            ],
+            "gapMm": 0.2250000000000002,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_100",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.17535707000057987,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_100",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.17535707000057987,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_100",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_812",
+            "netLabels": [
+              "HOT_ADC"
+            ],
+            "gapMm": 0.17535707000057987,
+            "requiredMm": 0.15
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "name": "UART_TX_HEADER_TRANSFER",
+      "pcb_via_id": "pcb_via_221",
+      "net": "net.UART_TX",
+      "position_mm": [
+        9.875,
+        -12.15
+      ],
+      "dimensions_mm": {
+        "copper": 0.7,
+        "hole": 0.3
+      },
+      "all_four_layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "dimensions_owner_tenting_pass": true,
+      "baseline_physical_geometry_unchanged": true,
+      "clearance_policy_mm": {
+        "foreign_via_to_via": 0.15,
+        "foreign_via_to_trace_pad_pour": 0.2
+      },
+      "independent_all_layer_copper_drill_check": {
+        "pass": true,
+        "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+        "layersChecked": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "x": 9.875,
+        "y": -12.15,
+        "diameterMm": 0.7,
+        "holeMm": 0.3,
+        "nearest": [
+          {
+            "id": "pcb_copper_pour_0",
+            "kind": "pour",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892355,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_copper_pour_31",
+            "kind": "pour",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.20730349123892355,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.21160572617771578,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.21160572617771578,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "inner2",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.21160572617771578,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "via",
+            "layer": "bottom",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.21160572617771578,
+            "requiredMm": 0.15
+          },
+          {
+            "id": "pcb_trace_402",
+            "kind": "trace",
+            "layer": "bottom",
+            "netRoot": "source_port_966",
+            "netLabels": [
+              "COLD_RAW"
+            ],
+            "gapMm": 0.3454951288348673,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_356",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_net_53",
+            "netLabels": [
+              "PD_LATCH_INHIBIT"
+            ],
+            "gapMm": 0.3852720584926381,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_smtpad_296",
+            "kind": "pad",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.40909485573279936,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_39",
+            "kind": "trace",
+            "layer": "top",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4500000000000004,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "saved_phase_null_0_39",
+            "kind": "trace",
+            "layer": "inner1",
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.4616057261777158,
+            "requiredMm": 0.2
+          },
+          {
+            "id": "pcb_via_414",
+            "kind": "drillToDrill",
+            "layer": null,
+            "netRoot": "source_port_419",
+            "netLabels": [
+              "GND"
+            ],
+            "gapMm": 0.6116057261777157,
+            "requiredMm": 0.3
+          }
+        ],
+        "reasons": []
+      }
+    }
+  ],
+  "whole_contract_checks": [
+    {
+      "group": "UART_RX_MCU_COMPLETE_MANUAL_GROUP",
+      "net": "UART_RX_MCU",
+      "trace_names": [
+        "UART_RX_MCU_LOCAL_ESCAPE",
+        "UART_RX_MCU_INNER2_TRUNK",
+        "UART_RX_MCU_SAFE_TOP_UNDERPASS",
+        "UART_RX_MCU_BOTTOM_TRUNK",
+        "UART_RX_MCU_SERIES_RETURN"
+      ],
+      "surface_mm": 79.21686142824235,
+      "ordinaryFullBores": 4,
+      "conservative_envelope_mm": 86.25686142824236,
+      "source_planar_bound_mm": 79.26686142824235,
+      "source_whole_bound_mm": 86.30686142824236,
+      "bound_margin_mm": 0.04999999999999716,
+      "approved_flag": true,
+      "contract_geometry_equal": true,
+      "bounds_pass": true,
+      "duplicated_plan_equal": true,
+      "unobstructed_octile_lower_bound_mm": 24.11891231902759,
+      "routing_stretch_vs_octile": 3.2844292636591073
+    },
+    {
+      "group": "UART_TX_COMPLETE_MANUAL_GROUP",
+      "net": "UART_TX",
+      "trace_names": [
+        "UART_TX_MCU_LOCAL_ESCAPE",
+        "UART_TX_MCU_INNER2_TRUNK",
+        "UART_TX_MCU_BOTTOM_HEADER"
+      ],
+      "surface_mm": 67.47732970724697,
+      "ordinaryFullBores": 2,
+      "conservative_envelope_mm": 70.99732970724696,
+      "source_planar_bound_mm": 67.52732970724695,
+      "source_whole_bound_mm": 71.04732970724696,
+      "bound_margin_mm": 0.04999999999999716,
+      "approved_flag": true,
+      "contract_geometry_equal": true,
+      "bounds_pass": true,
+      "duplicated_plan_equal": true,
+      "unobstructed_octile_lower_bound_mm": 31.229105255846203,
+      "routing_stretch_vs_octile": 2.1607192762788157
+    }
+  ],
+  "TX_regenerated_bottom_pour_checks": [
+    {
+      "id": "pcb_copper_pour_14",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 0.20850704785867022,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_31",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 0.20850704785867022,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_19",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 0.2099998555128674,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_35",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 10.126998268726949,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_67",
+      "net": [
+        "TEC_POS"
+      ],
+      "gap_mm": 15.003807466993216,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_62",
+      "net": [
+        "VBUS_TEC"
+      ],
+      "gap_mm": 23.65,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_65",
+      "net": [
+        "TEC_INDUCTOR_OUT"
+      ],
+      "gap_mm": 23.89677061606415,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_36",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 26.979133867030235,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_42",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 30.949460503985314,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_48",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 33.35340724765011,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_50",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 35.40385019854658,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_39",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 36.66451547561066,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_46",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 37.42769059768813,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_45",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 37.66607385586762,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_47",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 38.79142061555235,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_72",
+      "net": [
+        "VBUS_RAW"
+      ],
+      "gap_mm": 38.88362637056743,
+      "required_mm": 0.2,
+      "pass": true
+    },
+    {
+      "id": "pcb_copper_pour_49",
+      "net": [
+        "GND"
+      ],
+      "gap_mm": 53.79883982843575,
+      "required_mm": 0.2,
+      "pass": true
+    }
+  ],
+  "source_bus_roles_retained": true,
+  "source_bus_actual_names": [
+    "CONTROL_I2C"
+  ],
+  "changed_copper_geometry_matches_preflight": true,
+  "final_clearance_proof_scope": "All eight UART spans and six retained barrels against every actual final24d same-layer foreign trace, pad, full-through via/PTH, drill and BREP pour. Ideal CAD geometry only; whole-board shorts/connectivity acceptance belongs to separate validators."
+}

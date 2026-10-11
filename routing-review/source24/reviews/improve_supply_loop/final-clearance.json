@@ -1,0 +1,107 @@
+{
+  "scope": "Changed actual inner2 V3 supply trace against foreign generated trace strokes, full-through annuli, plated pads and pours. Does not build whole-board physical graph.",
+  "input": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceTrace": "SUPPLY_V3_MST29_0_SPAN_1",
+  "pcbTraceId": "pcb_trace_251",
+  "oneV3LogicalOwner": [
+    "V3V3"
+  ],
+  "foreignGeometryObjectsChecked": 508,
+  "nearestForeign": [
+    {
+      "id": "pcb_trace_364",
+      "kind": "trace",
+      "netLabels": [
+        "INPUT_OVLO"
+      ],
+      "gapMm": 0.4785020712185242,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_trace_137",
+      "kind": "trace",
+      "netLabels": [
+        "D502_A"
+      ],
+      "gapMm": 0.9102499999999977,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_134",
+      "kind": "via",
+      "netLabels": [
+        "INPUT_OVLO"
+      ],
+      "gapMm": 1.1884873859651093,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_202",
+      "kind": "via",
+      "netLabels": [
+        "PD_DISCH"
+      ],
+      "gapMm": 1.3879999999999966,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_trace_484",
+      "kind": "trace",
+      "netLabels": [
+        "PD_DISCH"
+      ],
+      "gapMm": 1.6379999999999966,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_186",
+      "kind": "via",
+      "netLabels": [
+        "INPUT_FAULT_N"
+      ],
+      "gapMm": 1.8690787992906697,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_135",
+      "kind": "via",
+      "netLabels": [
+        "INPUT_OVLO"
+      ],
+      "gapMm": 1.9379999999999977,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_377",
+      "kind": "via",
+      "netLabels": [
+        "GND"
+      ],
+      "gapMm": 2.0879999999999965,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_trace_458",
+      "kind": "trace",
+      "netLabels": [
+        "INPUT_FAULT_N"
+      ],
+      "gapMm": 2.119078605637404,
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "id": "pcb_via_346",
+      "kind": "via",
+      "netLabels": [
+        "VBUS_RAW"
+      ],
+      "gapMm": 2.4379999999999966,
+      "overlapAreaMm2": 0.0
+    }
+  ],
+  "foreignOverlaps": [],
+  "minimumForeignGapMm": 0.4785020712185242,
+  "minimumAtLeastPoint2Mm": true,
+  "pass": true
+}

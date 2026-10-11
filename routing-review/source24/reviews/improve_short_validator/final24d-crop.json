@@ -1,0 +1,436 @@
+{
+  "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "checkerSha256": "3b3eb54046b220e500187c0a5b4859a0b918f5494d112fd970f5745c36b2a112",
+  "window": {
+    "layer": "inner2",
+    "x": [
+      -31,
+      -20
+    ],
+    "y": [
+      13,
+      29
+    ]
+  },
+  "clippedTracePrimitives": 31,
+  "traceObjects": 7,
+  "foreignTraceObjectPairs": 20,
+  "minimumWithinClippedWindow": {
+    "traces": [
+      "pcb_trace_251",
+      "pcb_trace_364"
+    ],
+    "nets": [
+      "V3V3",
+      "INPUT_OVLO"
+    ],
+    "copperGapMm": 0.47847703723769724,
+    "closestPoints": [
+      [
+        -24.814236037959713,
+        14.185053871095823
+      ],
+      [
+        -24.388846814689117,
+        14.40410702420941
+      ]
+    ]
+  },
+  "sameNetPhysicalContacts": [
+    {
+      "traces": [
+        "pcb_trace_198",
+        "pcb_trace_251"
+      ],
+      "net": "V3V3",
+      "overlapAreaMm2": 0.3585809054852755
+    }
+  ],
+  "sourceMembers": [
+    {
+      "pcbTraceId": "pcb_trace_137",
+      "net": "D502_A",
+      "sourceRoot": "source_port_628",
+      "sourceTraceId": "source_trace_572",
+      "sourceName": "D502_SERIES_TRUNK",
+      "sourceNetIds": [
+        "source_net_93"
+      ],
+      "inner2Route": [
+        [
+          -10,
+          25.5
+        ],
+        [
+          -10,
+          25.5
+        ],
+        [
+          -10,
+          25.028750000000002
+        ],
+        [
+          -22,
+          13.028750000000002
+        ],
+        [
+          -25.5,
+          13.028750000000002
+        ],
+        [
+          -29.5,
+          9.028750000000002
+        ],
+        [
+          -29.5,
+          4.728750000000002
+        ],
+        [
+          -32,
+          2.2287500000000016
+        ],
+        [
+          -32.8,
+          2.2287500000000016
+        ],
+        [
+          -37.613603897,
+          -2.584853896999995
+        ],
+        [
+          -37.613603897,
+          -5.363603897
+        ],
+        [
+          -37.613603897,
+          -5.363603897
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_198",
+      "net": "V3V3",
+      "sourceRoot": "source_port_789",
+      "sourceTraceId": "source_trace_679",
+      "sourceName": "ALERT_INNER2_TRUNK",
+      "sourceNetIds": [
+        "source_net_1"
+      ],
+      "inner2Route": [
+        [
+          -29.167,
+          16.267
+        ],
+        [
+          -29.167,
+          16.267
+        ],
+        [
+          -29.167,
+          23.108
+        ],
+        [
+          -24.525,
+          27.75
+        ],
+        [
+          -24.525,
+          27.75
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_251",
+      "net": "V3V3",
+      "sourceRoot": "source_port_789",
+      "sourceTraceId": "source_trace_732",
+      "sourceName": "SUPPLY_V3_MST29_0_SPAN_1",
+      "sourceNetIds": [
+        "source_net_1"
+      ],
+      "inner2Route": [
+        [
+          -24.903,
+          14.139
+        ],
+        [
+          -24.903,
+          14.139
+        ],
+        [
+          -25.638,
+          14.874000000000002
+        ],
+        [
+          -25.637999999999998,
+          26.637
+        ],
+        [
+          -24.525,
+          27.75
+        ],
+        [
+          -24.525,
+          27.75
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_364",
+      "net": "INPUT_OVLO",
+      "sourceRoot": "source_port_910",
+      "sourceTraceId": "source_trace_845",
+      "sourceName": "INPUT_OVLO_INNER2_TRUNK",
+      "sourceNetIds": [
+        "source_net_15"
+      ],
+      "inner2Route": [
+        [
+          -23.3,
+          13.8
+        ],
+        [
+          -23.3,
+          13.8
+        ],
+        [
+          -23.650000000000002,
+          13.8
+        ],
+        [
+          -24.3,
+          14.450000000000001
+        ],
+        [
+          -24.3,
+          17.75
+        ],
+        [
+          -23.25,
+          18.8
+        ],
+        [
+          -23.25,
+          18.8
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_458",
+      "net": "INPUT_FAULT_N",
+      "sourceRoot": "source_port_77",
+      "sourceTraceId": "source_trace_939",
+      "sourceName": "INPUT_FAULT_PULLUP_INNER2",
+      "sourceNetIds": [
+        "source_net_23"
+      ],
+      "inner2Route": [
+        [
+          -22.25,
+          27.3
+        ],
+        [
+          -22.25,
+          27.3
+        ],
+        [
+          -22.05,
+          27.3
+        ],
+        [
+          -21.75,
+          27
+        ],
+        [
+          -21,
+          26.25
+        ],
+        [
+          -9.75,
+          26.25
+        ],
+        [
+          -9.25,
+          25.75
+        ],
+        [
+          -9.25,
+          25.25
+        ],
+        [
+          -9.5,
+          25
+        ],
+        [
+          -9.5,
+          24.75
+        ],
+        [
+          -19.5,
+          14.75
+        ],
+        [
+          -19.5,
+          14.5
+        ],
+        [
+          -19.75,
+          14.25
+        ],
+        [
+          -19.75,
+          14
+        ],
+        [
+          -20,
+          13.75
+        ],
+        [
+          -20,
+          13.6
+        ],
+        [
+          -20,
+          13.6
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_466",
+      "net": "MCU_RUN",
+      "sourceRoot": "source_port_1064",
+      "sourceTraceId": "source_trace_947",
+      "sourceName": "MCU_RUN_INPUT_LAST_INNER2",
+      "sourceNetIds": [
+        "source_net_51"
+      ],
+      "inner2Route": [
+        [
+          -22,
+          11.125
+        ],
+        [
+          -22,
+          11.125
+        ],
+        [
+          -20.8,
+          12.325
+        ],
+        [
+          -20.8,
+          13.2
+        ],
+        [
+          -20.8,
+          13.2
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_484",
+      "net": "PD_DISCH",
+      "sourceRoot": "source_port_1094",
+      "sourceTraceId": "source_trace_965",
+      "sourceName": "PD_DISCH_INNER2_LOCAL",
+      "sourceNetIds": [
+        "source_net_19"
+      ],
+      "inner2Route": [
+        [
+          -15.9,
+          20.1
+        ],
+        [
+          -15.9,
+          20.1
+        ],
+        [
+          -23.3,
+          20.1
+        ],
+        [
+          -23.8,
+          19.6
+        ],
+        [
+          -23.8,
+          19.6
+        ]
+      ]
+    }
+  ],
+  "currentV3CandidatesBySourceName": [
+    {
+      "pcbTraceId": "pcb_trace_198",
+      "net": "V3V3",
+      "sourceRoot": "source_port_789",
+      "sourceTraceId": "source_trace_679",
+      "sourceName": "ALERT_INNER2_TRUNK",
+      "sourceNetIds": [
+        "source_net_1"
+      ],
+      "inner2Route": [
+        [
+          -29.167,
+          16.267
+        ],
+        [
+          -29.167,
+          16.267
+        ],
+        [
+          -29.167,
+          23.108
+        ],
+        [
+          -24.525,
+          27.75
+        ],
+        [
+          -24.525,
+          27.75
+        ]
+      ]
+    },
+    {
+      "pcbTraceId": "pcb_trace_251",
+      "net": "V3V3",
+      "sourceRoot": "source_port_789",
+      "sourceTraceId": "source_trace_732",
+      "sourceName": "SUPPLY_V3_MST29_0_SPAN_1",
+      "sourceNetIds": [
+        "source_net_1"
+      ],
+      "inner2Route": [
+        [
+          -24.903,
+          14.139
+        ],
+        [
+          -24.903,
+          14.139
+        ],
+        [
+          -25.638,
+          14.874000000000002
+        ],
+        [
+          -25.637999999999998,
+          26.637
+        ],
+        [
+          -24.525,
+          27.75
+        ],
+        [
+          -24.525,
+          27.75
+        ]
+      ]
+    }
+  ],
+  "candidateTraceSweepsUnionAreaMm2": 5.260054248937569,
+  "candidateSummedObjectWireLengthMm": 27.78224601980139,
+  "method": "Maximum-width native trace sweeps clipped to the actual crop window. Net roots come from a freshly hash-verified source ownership map; candidates follow source names rather than stale Source23 PCB IDs. Copper union area describes trace sweeps only, not via lands or the drill Boolean model, which are covered by the separate whole-board native audit."
+}

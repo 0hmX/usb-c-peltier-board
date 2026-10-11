@@ -1,0 +1,50 @@
+{
+  "role": "improve_uart_routes",
+  "score": 7.5,
+  "scale": 10,
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "preflightSha256": "1cd79de12ae7372903bbc8aaa1872eb06583faa5376933c05c34be6915e2c7e5",
+  "sourcePackageSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "assessment": "Final24d shows verified incremental routing and clearance improvement. UART remains electrically connected and within declared bounds, but its long detours and inherited crowded transfer area prevent an excellent whole-board routing score.",
+  "validatedScope": "Fresh final24d actual eight UART spans, sixteen finite terminal joins, six full-through UART barrels, strict0.20mm widths and octilinear segment/turn checks, source-net and real endpoint ownership, approved complete length bounds, every actual relevant trace/pad/PTH/via/drill and regenerated BREP pour. Whole-board score is a scoped engineering judgment; separate validators own broad electrical acceptance.",
+  "scopedVerificationPass": true,
+  "actualMeasurements": {
+    "UARTPlanarSavedMm": 0.4813708498984681,
+    "finiteEndpointPassCount": 16,
+    "minimumFiniteEndpointAreaMm2": 0.04143591002212384,
+    "minimumUARTSpanForeignClearanceMm": 0.20850704785867022,
+    "minimumRetainedUARTBarrelForeignClearanceMm": 0.17500000000000004,
+    "minimumTXForeignPourGapMm": 0.20850704785867022,
+    "RXCompletePlanarMm": 79.21686142824235,
+    "RXConservativeWholeMm": 86.25686142824236,
+    "RXPlanarMaximumMm": 79.26686142824235,
+    "RXWholeMaximumMm": 86.30686142824236,
+    "TXCompletePlanarMm": 67.47732970724697,
+    "TXConservativeWholeMm": 70.99732970724696,
+    "TXPlanarMaximumMm": 67.52732970724695,
+    "TXWholeMaximumMm": 71.04732970724696,
+    "RXRoutingStretchVsOctile": 3.2844292636591073,
+    "TXRoutingStretchVsOctile": 2.1607192762788157
+  },
+  "improvements": [
+    "Fresh actual installed UART paths save0.481371mm together with no moved or added UART barrels.",
+    "RX inner2 nearest nonpour clearance improves0.221751\u21920.250000mm.",
+    "Final regenerated TX ground pours pass with0.208507mm minimum clearance.",
+    "All sixteen true terminal interfaces have finite copper overlap; approved tighter complete bounds retain0.05mm margin."
+  ],
+  "remainingConcerns": [
+    "RX surface path remains79.216861mm versus an unobstructed octile lower bound of24.118912mm (3.28\u00d7); four ordinary full bores remain.",
+    "TX surface path remains67.477330mm versus31.229105mm (2.16\u00d7); its55.705095mm bottom-header span remains the main detour.",
+    "Retained UART_TX_MCU_ENTRY has0.175000mm clearance to a VOUT_ADC barrel and0.175357mm to a HOT_ADC barrel. These satisfy the established0.15mm via-to-via rule but leave limited reserve.",
+    "TX-to-ground-pour reserve is0.008507mm above the0.20mm ideal-CAD threshold.",
+    "Larger serial alternatives conflict with selected debug-ground routing or require extra transfers. Placement and shared-corridor redesign would be needed for substantial further shortening."
+  ],
+  "evidence": [
+    "final-verification.json",
+    "final-verify.py",
+    "final-verify-24d.log"
+  ],
+  "freshCaptureUnchangedAfterCheck": true,
+  "prior24b24cAcceptanceReused": false
+}

@@ -1,0 +1,17 @@
+{
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "actualCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "method": "Fresh consecutive same-layer wire planar sums selected by exact source trace names from baseline and final24d capture; no transfer-depth or extracted impedance claim.",
+  "before": {
+    "PD_PROTECTED_BYPASS_FEED": 23.02577777210913,
+    "FAN_PROTECTED_POWER_FEED": 90.59177524949237,
+    "TEC_LOW_INNER2_LOCAL": 22.34177848998413,
+    "UART_TX_MCU_BOTTOM_HEADER": 56.07935893423776
+  },
+  "after": {
+    "PD_PROTECTED_BYPASS_FEED": 3.1735028842544413,
+    "FAN_PROTECTED_POWER_FEED": 81.92213597261417,
+    "TEC_LOW_INNER2_LOCAL": 20.408683245815343,
+    "UART_TX_MCU_BOTTOM_HEADER": 55.70509486552584
+  }
+}

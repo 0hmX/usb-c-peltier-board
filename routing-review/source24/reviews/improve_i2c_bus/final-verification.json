@@ -1,0 +1,124 @@
+{
+  "role": "I2C SourceBus and routing style independent validation",
+  "input": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "passed": true,
+  "issues": [],
+  "sourceBusCount": 1,
+  "actualI2cPathCount": 16,
+  "actualPairedTopLaneCount": 2,
+  "actualFullThroughI2cBarrelCount": 6,
+  "sourceIdentityProofIssues": [],
+  "strictI2cOff45Segments": [],
+  "strictI2cCoordinateToleranceMm": 1e-07,
+  "pairedTopTrunkMinimumEdgeSpacingMm": 0.75,
+  "actualSdaPullup": {
+    "name": "I2C_SDA_PULLUP_TO_PD_VIA",
+    "pcbTraceId": "pcb_trace_526",
+    "net": "I2C_SDA",
+    "vertices": [
+      [
+        -22.1,
+        6.25
+      ],
+      [
+        -21,
+        5.15
+      ],
+      [
+        -21,
+        2.25
+      ],
+      [
+        -22,
+        1.25
+      ]
+    ],
+    "lengthMm": 5.8698484809835,
+    "layers": [
+      "top"
+    ],
+    "widthsMm": [
+      0.2
+    ],
+    "off45Segments": []
+  },
+  "sdaPullupBaselineLengthMm": 6.162741699796953,
+  "sdaPullupLengthSavedMm": 0.292893218813453,
+  "minimumI2cTraceForeignCopper": {
+    "gapMm": 0.19999999999999996,
+    "overlapAreaMm2": 0,
+    "kind": "via",
+    "id": "pcb_via_100",
+    "name": "pcb_via_100",
+    "net": "HOT_ADC",
+    "i2cTrace": "I2C_SDA_PD_BOTTOM_TRUNK"
+  },
+  "minimumI2cBarrelForeignCopper": {
+    "gapMm": 0.20407377259755463,
+    "overlapAreaMm2": 0,
+    "kind": "trace",
+    "id": "pcb_trace_421",
+    "name": "pcb_trace_421",
+    "net": "PD_ALERT",
+    "i2cVia": "pcb_via_227",
+    "layer": "bottom"
+  },
+  "minimumI2cDrillEdgeGapMm": 0.6499999999999999,
+  "foreignCopperViolations": [],
+  "drillViolations": [],
+  "unassignedElectricalPrimitives": [],
+  "lengthMmByNet": {
+    "I2C_SCL": 101.81541587013923,
+    "I2C_SDA": 109.04295374989333
+  },
+  "wholeBoardStyle": {
+    "roundingToleranceMm": 0.0001,
+    "strictToleranceMm": 1e-07,
+    "nonzeroSegments": 1636,
+    "clean45Segments": 1636,
+    "lengthMm": 4044.3029000397023,
+    "clean45LengthMm": 4044.3029000397023,
+    "off45": [],
+    "strictOff45": [
+      {
+        "name": "FAN_OUTPUT_LOAD_FEED",
+        "net": "V12_FAN",
+        "layer": "top",
+        "a": [
+          33,
+          -29
+        ],
+        "b": [
+          32.999998,
+          -31.550037
+        ],
+        "lengthMm": 2.550037000000784,
+        "axisOrDiagonalDeltaMm": 2.0000000020559128e-06
+      },
+      {
+        "name": "SUPPLY_V3_MST19_0_SPAN_0",
+        "net": "V3V3",
+        "layer": "top",
+        "a": [
+          6.050000000000001,
+          -26.5
+        ],
+        "b": [
+          0.999994,
+          -31.550037
+        ],
+        "lengthMm": 7.141808895609361,
+        "axisOrDiagonalDeltaMm": 3.0999999999004046e-05
+      }
+    ]
+  },
+  "method": "Conservative uncut native trace strokes, pad shapes, via discs and native BREP pours. Full barrels apply on every listed layer.",
+  "limitations": [
+    "Clearance model conservatively fills drills; physical continuity and whole-board fabrication clearance are separately verified by their assigned reviewers.",
+    "Whole-board angles include transparent 0.0001 mm tolerance for imported endpoint coordinate rounding; I2C is checked at 0.0000001 mm.",
+    "Ideal CAD geometry does not establish I2C rise time, EMI, converter stability, manufacturing or bench readiness."
+  ],
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "finalTargetManifest": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/final-target.json"
+}

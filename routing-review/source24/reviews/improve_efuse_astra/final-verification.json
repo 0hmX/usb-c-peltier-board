@@ -1,0 +1,645 @@
+{
+  "input": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "scopedPrimitives": 53,
+  "measurements": {
+    "INPUT_SLEW": {
+      "planarLengthMm": 1.6071067811865496,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    },
+    "INPUT_DVDT_FULL_TRUNK": {
+      "planarLengthMm": 2.9813708498984743,
+      "layers": [
+        "inner2"
+      ],
+      "inlineTransfers": 0
+    },
+    "INPUT_DVDT_CAP_ESCAPE": {
+      "planarLengthMm": 0.9800000000000004,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    },
+    "INPUT_DVDT_LOCAL_GROUND": {
+      "planarLengthMm": 0.9800000000000004,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    },
+    "PD_PROTECTED_BYPASS_FEED": {
+      "planarLengthMm": 3.1735028842544413,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    },
+    "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP": {
+      "planarLengthMm": 2.3520815280171314,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    },
+    "TEC_PERMISSION_PICKUP_BOTTOM": {
+      "planarLengthMm": 10.428427124746191,
+      "layers": [
+        "bottom"
+      ],
+      "inlineTransfers": 0
+    },
+    "TEC_PERMISSION_PICKUP_CAP": {
+      "planarLengthMm": 1.7497056274847687,
+      "layers": [
+        "top"
+      ],
+      "inlineTransfers": 0
+    }
+  },
+  "endpointContacts": [
+    {
+      "trace": "INPUT_SLEW",
+      "endpoint": "U_INPUT.DVDT",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.07570515975445255,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_SLEW",
+      "endpoint": [
+        -15.7,
+        13.8
+      ],
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.043519283214800475,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_FULL_TRUNK",
+      "endpoint": [
+        -15.7,
+        13.8
+      ],
+      "layer": "inner2",
+      "sameNet": true,
+      "contactAreaMm2": 0.041434451955176185,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_FULL_TRUNK",
+      "endpoint": [
+        -13.05,
+        14.6
+      ],
+      "layer": "inner2",
+      "sameNet": true,
+      "contactAreaMm2": 0.04143445195517625,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_CAP_ESCAPE",
+      "endpoint": [
+        -13.05,
+        14.6
+      ],
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.04143445195517617,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_CAP_ESCAPE",
+      "endpoint": "C_INPUT_DVDT.pin1",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.0917051597544524,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_LOCAL_GROUND",
+      "endpoint": "C_INPUT_DVDT.pin2",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.09170515975445213,
+      "passed": true
+    },
+    {
+      "trace": "INPUT_DVDT_LOCAL_GROUND",
+      "endpoint": [
+        -13.05,
+        18
+      ],
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.04143445195517625,
+      "passed": true
+    },
+    {
+      "trace": "PD_PROTECTED_BYPASS_FEED",
+      "endpoint": "C_INPUT_OUT.pin1",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.14892765732339774,
+      "passed": true
+    },
+    {
+      "trace": "PD_PROTECTED_BYPASS_FEED",
+      "endpoint": "U_INPUT.OUT",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.32439884539981695,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "endpoint": "R35.pin1",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.09570515975445354,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "endpoint": [
+        -18.6,
+        29
+      ],
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.0414344519551763,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "endpoint": [
+        -18.6,
+        29
+      ],
+      "layer": "bottom",
+      "sameNet": true,
+      "contactAreaMm2": 0.0414344519551763,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "endpoint": [
+        -16.6,
+        19.4
+      ],
+      "layer": "bottom",
+      "sameNet": true,
+      "contactAreaMm2": 0.04143445195517703,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_PICKUP_CAP",
+      "endpoint": [
+        -16.6,
+        19.4
+      ],
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.04143445195517702,
+      "passed": true
+    },
+    {
+      "trace": "TEC_PERMISSION_PICKUP_CAP",
+      "endpoint": "C_INPUT_OUT.pin1",
+      "layer": "top",
+      "sameNet": true,
+      "contactAreaMm2": 0.11043043956628976,
+      "passed": true
+    }
+  ],
+  "placements": {
+    "C_INPUT_DVDT": {
+      "x": -13.05,
+      "y": 16.299999999999997
+    },
+    "C_INPUT_OUT": {
+      "x": -15.999999999999998,
+      "y": 17.7
+    }
+  },
+  "nearestForeignCopper": [
+    {
+      "gapMm": 0.20730349124228498,
+      "layer": "inner1",
+      "a": "pcb_via_27",
+      "b": "pcb_copper_pour_0",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.20730349124228725,
+      "layer": "inner1",
+      "a": "pcb_via_26",
+      "b": "pcb_copper_pour_0",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.20730349124228725,
+      "layer": "bottom",
+      "a": "pcb_via_26",
+      "b": "pcb_copper_pour_14",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.20730349124229003,
+      "layer": "inner1",
+      "a": "pcb_via_11",
+      "b": "pcb_copper_pour_0",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.20730349124229003,
+      "layer": "inner1",
+      "a": "pcb_via_12",
+      "b": "pcb_copper_pour_0",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.2085070478612305,
+      "layer": "bottom",
+      "a": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "b": "pcb_copper_pour_14",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.2085070478612305,
+      "layer": "bottom",
+      "a": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "b": "pcb_copper_pour_14",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.21267208030145746,
+      "layer": "bottom",
+      "a": "pcb_via_11",
+      "b": "pcb_copper_pour_39",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.2249999999999979,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "U_INPUT.ILM",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "INPUT_CURRENT_MON"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.22500000000000142,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "U_INPUT.IN",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.22500000000000142,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "U_INPUT.ITIMER",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.22500000000000148,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "U_INPUT.IN",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.236777461227431,
+      "layer": "inner2",
+      "a": "pcb_via_27",
+      "b": "D502_SERIES_TRUNK",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "D502_A"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24711074281803305,
+      "layer": "bottom",
+      "a": "pcb_via_381",
+      "b": "pcb_copper_pour_62",
+      "aNet": [
+        "GND"
+      ],
+      "bNet": [
+        "VBUS_TEC"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24711074281803402,
+      "layer": "bottom",
+      "a": "pcb_via_12",
+      "b": "pcb_copper_pour_62",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "VBUS_TEC"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24711074281803402,
+      "layer": "bottom",
+      "a": "pcb_via_13",
+      "b": "pcb_copper_pour_62",
+      "aNet": [
+        "GND"
+      ],
+      "bNet": [
+        "VBUS_TEC"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24711074281803574,
+      "layer": "bottom",
+      "a": "pcb_via_11",
+      "b": "pcb_copper_pour_62",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "VBUS_TEC"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.2481940321246496,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "pcb_copper_pour_71",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.2481940321246496,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "pcb_copper_pour_71",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24999999999999822,
+      "layer": "bottom",
+      "a": "pcb_via_11",
+      "b": "PD_DISCH_BOTTOM_LOCAL",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "PD_DISCH"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24999999999999917,
+      "layer": "bottom",
+      "a": "pcb_via_27",
+      "b": "PD_DISCH_BOTTOM_LOCAL",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "PD_DISCH"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.24999999999999997,
+      "layer": "bottom",
+      "a": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "b": "pcb_via_201",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "PD_DISCH"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "INPUT_SLEW",
+      "b": "U_INPUT.GND",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "INPUT_SLEW",
+      "b": "U_INPUT.GND",
+      "aNet": [
+        "INPUT_DVDT"
+      ],
+      "bNet": [
+        "GND"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "PD_RAW_IN_SUPPORT",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "PD_RAW_IN_SUPPORT",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "PD_RAW_IN_SUPPORT",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "PD_RAW_IN_SUPPORT",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25,
+      "layer": "top",
+      "a": "PD_PROTECTED_BYPASS_FEED",
+      "b": "PD_RAW_IN_SUPPORT",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "VBUS_RAW"
+      ],
+      "overlapAreaMm2": 0.0
+    },
+    {
+      "gapMm": 0.25000000000000006,
+      "layer": "inner2",
+      "a": "pcb_via_27",
+      "b": "PD_DISCH_INNER2_LOCAL",
+      "aNet": [
+        "VBUS_TEC"
+      ],
+      "bNet": [
+        "PD_DISCH"
+      ],
+      "overlapAreaMm2": 0.0
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "limitations": [
+    "Global continuity and JLC drill-mask checks remain separate required proofs."
+  ],
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "outputGroundFanoutContact": {
+    "padHeadContactAreaMm2": 0.11853685152548682,
+    "barrelTailContactAreaMm2": 0.045785627594026095,
+    "nativeTraceId": "saved_phase_null_0_6",
+    "nativePadId": "pcb_smtpad_98",
+    "nativeViaId": "pcb_via_381",
+    "barrelLayers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "planarLengthMm": 1.2230865786510154,
+    "passed": true,
+    "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6"
+  },
+  "finiteEndpointContactsVerified": 18,
+  "finalTarget": "24d"
+}

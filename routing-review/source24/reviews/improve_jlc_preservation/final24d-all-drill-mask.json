@@ -1,0 +1,19 @@
+{
+  "scope": "Check every real through-drill against every requested exposed SMT mask, any net.",
+  "input": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "candidateSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "checkerSha256": "ee90bef2916e572476ea6e15964b6ff37d96efecf1a117fc79eda9bb1163592b",
+  "drillCount": 462,
+  "exposedSmtMaskCount": 552,
+  "testedPairCount": 255024,
+  "minimum": {
+    "drillType": "pcb_via",
+    "drillId": "pcb_via_203",
+    "pad": "R206.pin1",
+    "gapMm": 0.024999999999999828
+  },
+  "findings": [],
+  "pass": true,
+  "fullBoardManufacturingAccepted": false,
+  "geometryPolicy": "Circular bores use analytic centre-to-requested-mask distance minus actual radius. Slotted bores use the exact recorded pill dimensions and rotation. No same-net or supplier exemption."
+}

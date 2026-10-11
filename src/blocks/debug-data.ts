@@ -49,7 +49,7 @@ export const debugGroundTestPoints = [
   { name: "TPG3", x: -29.5, y: -10.5 },
   { name: "TPG4", x: 38, y: -23, labelY: -24.65 },
   { name: "TPG5", x: 38, y: 0 },
-  { name: "TPG6", x: 18.5, y: -0.7 },
+  { name: "TPG6", x: 11.5, y: 1.1, labelX: 14.5 },
   { name: "TPG7", x: -5, y: -26.5, labelY: -28.15 },
   { name: "TPG8", x: -40, y: -28, labelX: -39.6, labelY: -29.65 },
 ] as const

@@ -1,0 +1,46 @@
+{
+  "role": "Analog, Kelvin and compensation routing reviewer",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "scoreOutOf10": 7.1,
+  "wholeBoardRoutingScoreOutOf10": 7.1,
+  "scoreScope": "Whole-board routing judged from analog/power-control perspective, not an analog-only subscore",
+  "previousSource23RoleScoreOutOf10": 6.5,
+  "confidence": "medium-high for static geometry, medium for overall routing quality",
+  "verification": "final-verification.json",
+  "strengths": [
+    "VC is reduced 15.1854 \u2192 12.6884 mm with unchanged parts/vias; actual inner 1 GND shields all projected top HG/SW overlaps.",
+    "Filtered-negative controller leg is 6.230 \u2192 5.761 mm; both explicit planar 5.9 mm and conservative native 9.4 mm bounds pass including two barrel heights.",
+    "LOW trunk is 22.3418 \u2192 20.4087 mm, compatible with VC; actual scoped copper checks pass.",
+    "eFuse output bypass is 23.0258 \u2192 3.1735 mm on top with dedicated ground return; DVDT is 11.0130 \u2192 5.5685 mm with 0.98 mm local ground leg.",
+    "Fresh checks of 188 selected native copper primitives against foreign pads/traces/vias/pours find zero violations; changed DVDT drill-to-pad distances are 0.45 mm and output-ground drill-to-pad 0.471 mm."
+  ],
+  "remainingLimitations": [
+    {
+      "topic": "raw Kelvin",
+      "evidence": "Controller raw Kelvin P/N remain 34.3334/36.7334 mm with two layer transfers each. Central pairing is preserved, but the ends remain separated; static geometry does not quantify induced error."
+    },
+    {
+      "topic": "post-filter imbalance",
+      "evidence": "Positive leg remains 3.8846 mm top-only, negative 5.7614 mm uses two vias and bottom. The improvement reduces length but does not create symmetric layer environments."
+    },
+    {
+      "topic": "compensation locality",
+      "evidence": "VC still spans 12.6884 mm to remote R27. R27-to-C33 remains 5.0877 mm; unchanged capacitor return remains comparatively remote. Shortening is real but placement is not optimal."
+    },
+    {
+      "topic": "feedback",
+      "evidence": "Main sensitive FB path remains 9.7265 mm with two transfer vias. Fan divider/compensation legs remain 6.4042/6.3742 mm. Main output pickup 33.2701 mm is on the low-impedance side and is not equated to the sensitive FB node."
+    },
+    {
+      "topic": "input bypass",
+      "evidence": "No dedicated close eFuse IN bypass was added; actual VBUS_RAW capacitor-center distances recorded in verification. Local OUT and DVDT improvements do not solve this remaining input-layout limitation."
+    },
+    {
+      "topic": "switching/reference",
+      "evidence": "Actual GND shielding under VC prevents direct unshielded projected top SW/HG crossings, but does not establish EMI or control-loop stability. Bottom Kelvin routing still lacks an adjacent dedicated inner 2 GND plane."
+    }
+  ],
+  "rationale": "A meaningful improvement over Source 23: shorter sensitive control routes and much better eFuse output/DVDT locality with verified copper. Persistent long Kelvin, feedback and compensation geometry, asymmetric filtered-sense routing and incomplete input bypass locality keep the whole-board routing rating near 7/10 rather than 8\u20139. No deduction is made merely because hardware is unbuilt."
+}

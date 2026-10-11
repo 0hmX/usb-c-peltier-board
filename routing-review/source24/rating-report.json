@@ -1,0 +1,559 @@
+{
+  "scope": "Twenty subjective whole-board routing reviews of exact Source24d; scoped specialist proofs supplement independent full geometry and Gerber gates. This is static CAD qualification, with manufacturing and hardware validation pending.",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "agentCount": 20,
+  "astraHighCount": 5,
+  "meanScoreOutOf10": 7.705,
+  "medianScoreOutOf10": 7.6,
+  "minimumScoreOutOf10": 7.1,
+  "maximumScoreOutOf10": 8.4,
+  "source23MeanScoreOutOf10": 7.195,
+  "reviews": [
+    {
+      "name": "improve_gate_astra",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "scope": "gate",
+      "scoreOutOf10": 7.5,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_gate_astra/final-rating.json",
+      "ratingSha256": "68e39c1141056c3f30bf0a254c799898c0c9374801f52cbdff33c8e59e519f77",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_gate_astra/final-rating.json",
+          "sha256": "68e39c1141056c3f30bf0a254c799898c0c9374801f52cbdff33c8e59e519f77"
+        },
+        {
+          "file": "reviews/improve_gate_astra/final-verification.json",
+          "sha256": "e057cdd401e10ac71a99ee0a361c5ebcb7d95d79313ca204752fc791ba5ddd89"
+        }
+      ]
+    },
+    {
+      "name": "improve_efuse_astra",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "scope": "efuse",
+      "scoreOutOf10": 7.8,
+      "scoreField": "wholeBoardRoutingScore",
+      "ratingFile": "reviews/improve_efuse_astra/final-rating.json",
+      "ratingSha256": "abf54ce87ab855b08681a05fe2e0604371abf14169744cb8a78e4897f442a6d3",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_efuse_astra/final-output-ground-head.json",
+          "sha256": "a194067ed337758a1edf8d3a716720981e33ad37e0fafe694eca6896719b30cc"
+        },
+        {
+          "file": "reviews/improve_efuse_astra/final-rating.json",
+          "sha256": "abf54ce87ab855b08681a05fe2e0604371abf14169744cb8a78e4897f442a6d3"
+        },
+        {
+          "file": "reviews/improve_efuse_astra/final-verification.json",
+          "sha256": "c625d6943d16405c27b8073e65a0e27221c485d4290ea8e17ba227235c6030ec"
+        }
+      ]
+    },
+    {
+      "name": "improve_analog_astra",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "scope": "analog",
+      "scoreOutOf10": 7.1,
+      "scoreField": "wholeBoardRoutingScoreOutOf10",
+      "ratingFile": "reviews/improve_analog_astra/final-rating.json",
+      "ratingSha256": "be01639278933be11d2bf829f9d05320eed55b7cdc3b53e5cdc59654f10263df",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_analog_astra/final-rating.json",
+          "sha256": "be01639278933be11d2bf829f9d05320eed55b7cdc3b53e5cdc59654f10263df"
+        },
+        {
+          "file": "reviews/improve_analog_astra/final-verification.json",
+          "sha256": "39feb85d8cd75a2c0bb89ee289f76f84fab8f3d8ca7555ebcd49d4ac4c81497b"
+        },
+        {
+          "file": "reviews/improve_analog_astra/final24d-analog-check.json",
+          "sha256": "bed245f467ae9292fcd32e034f9c750fbff063c2e4d562738dedfde552302967"
+        }
+      ]
+    },
+    {
+      "name": "improve_ground_astra",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "scope": "ground",
+      "scoreOutOf10": 7.6,
+      "scoreField": "score",
+      "ratingFile": "reviews/improve_ground_astra/final-rating.json",
+      "ratingSha256": "77e6ca45b28807334a6473852d4a0d31802e1e45839aeb30f3217750c814706a",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_ground_astra/final-ground-review.json",
+          "sha256": "f9dae2cd6cfb8661a7c834d84ec3204ee270344296601184e2a43de28ddd3157"
+        },
+        {
+          "file": "reviews/improve_ground_astra/final-rating.json",
+          "sha256": "77e6ca45b28807334a6473852d4a0d31802e1e45839aeb30f3217750c814706a"
+        },
+        {
+          "file": "reviews/improve_ground_astra/final-verification.json",
+          "sha256": "e9193f1df712dfd67e8f2a95c25d6146df9ab579a7c15fbb27cd1509b50425bf"
+        }
+      ]
+    },
+    {
+      "name": "improve_architect_astra",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "scope": "architect",
+      "scoreOutOf10": 7.8,
+      "scoreField": "rating",
+      "ratingFile": "reviews/improve_architect_astra/final-rating.json",
+      "ratingSha256": "fc418b205affdced273ba3e9694c19094558b8bd8c566af45defe46772666431",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_architect_astra/final-rating.json",
+          "sha256": "fc418b205affdced273ba3e9694c19094558b8bd8c566af45defe46772666431"
+        },
+        {
+          "file": "reviews/improve_architect_astra/final-verification.json",
+          "sha256": "b6c5a891f4e507d6fa819cfbc74595516f6a0e0a65b82aa3e957287e0ee28237"
+        }
+      ]
+    },
+    {
+      "name": "improve_fan_feed",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "fan_feed",
+      "scoreOutOf10": 7.6,
+      "scoreField": "rating",
+      "ratingFile": "reviews/improve_fan_feed/final-rating.json",
+      "ratingSha256": "b630e8fc2413c69e28d64b893431288116d094aa16f36523b4575f51e86cf273",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_fan_feed/final-rating.json",
+          "sha256": "b630e8fc2413c69e28d64b893431288116d094aa16f36523b4575f51e86cf273"
+        },
+        {
+          "file": "reviews/improve_fan_feed/final-verification.json",
+          "sha256": "cb440809c7e319095ae8633c52d14200fbd84170c1c6be8dc2c95e7ba6c1e14c"
+        }
+      ]
+    },
+    {
+      "name": "improve_uart_routes",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "uart_routes",
+      "scoreOutOf10": 7.5,
+      "scoreField": "score",
+      "ratingFile": "reviews/improve_uart_routes/final-rating.json",
+      "ratingSha256": "d311178103e5c195766d42d42abccc45ae8b495ca658dd971b0c3ec0dd7666b4",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_uart_routes/final-rating.json",
+          "sha256": "d311178103e5c195766d42d42abccc45ae8b495ca658dd971b0c3ec0dd7666b4"
+        },
+        {
+          "file": "reviews/improve_uart_routes/final-verification.json",
+          "sha256": "ddc573137cc67560533cf58e7d09ef07d4d3b0ac368cbb6358caf5e2278a13d3"
+        }
+      ]
+    },
+    {
+      "name": "improve_supply_loop",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "supply_loop",
+      "scoreOutOf10": 7.6,
+      "scoreField": "wholeBoardFinalRatingOutOf10",
+      "ratingFile": "reviews/improve_supply_loop/final-rating.json",
+      "ratingSha256": "ffbd335adf904f9aada59637d13af46f2798f4d7b5b02558a71a06d09b2d503c",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_supply_loop/final-clearance.json",
+          "sha256": "eb5ebbabfb9caa9ac503fdefe8b3c95df17f206397971745f7bb097599898c7a"
+        },
+        {
+          "file": "reviews/improve_supply_loop/final-rating.json",
+          "sha256": "ffbd335adf904f9aada59637d13af46f2798f4d7b5b02558a71a06d09b2d503c"
+        },
+        {
+          "file": "reviews/improve_supply_loop/final-verification.json",
+          "sha256": "b188987094c3610b0446a9e57b5defc15941fe659e1bb39121cea75b4b7926aa"
+        }
+      ]
+    },
+    {
+      "name": "improve_debug_routes",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "debug_routes",
+      "scoreOutOf10": 8.1,
+      "scoreField": "wholeBoardFinalRatingOutOf10",
+      "ratingFile": "reviews/improve_debug_routes/final-rating.json",
+      "ratingSha256": "16724a3fd6291883726ae6506c0ff18634049d39137a445296a02ca34e4075d4",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_debug_routes/final-debug-access.json",
+          "sha256": "bf8947c5dba60fb8a25e503a20047eb0d172c65b01570fbd2006932c0b744a14"
+        },
+        {
+          "file": "reviews/improve_debug_routes/final-fixed-paths.json",
+          "sha256": "f5f634adbf09fba06029b1da1496e87df4ca42eb61f299ea3149bbaa2480db4c"
+        },
+        {
+          "file": "reviews/improve_debug_routes/final-ground-obligations.json",
+          "sha256": "8e5b86e90d11278150c06726c4b7b5848a841228983db55c856bc5f2fe6e531f"
+        },
+        {
+          "file": "reviews/improve_debug_routes/final-local-copper.json",
+          "sha256": "4b8a0df613354e9e0332492879b719309fa7c996ed0dd48f0c44608ea4f7b788"
+        },
+        {
+          "file": "reviews/improve_debug_routes/final-rating.json",
+          "sha256": "16724a3fd6291883726ae6506c0ff18634049d39137a445296a02ca34e4075d4"
+        },
+        {
+          "file": "reviews/improve_debug_routes/final-verification.json",
+          "sha256": "7e733335584bd0b8761efb09bd1cf8f9992cd460278c6a6256e23f0a01a31aef"
+        }
+      ]
+    },
+    {
+      "name": "improve_via_margin",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "via_margin",
+      "scoreOutOf10": 8.0,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_via_margin/final-rating.json",
+      "ratingSha256": "3ed09498f28395224222d7146230b7f1ee63b8680d29d57e2a7f87adc830782b",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_via_margin/final-rating.json",
+          "sha256": "3ed09498f28395224222d7146230b7f1ee63b8680d29d57e2a7f87adc830782b"
+        },
+        {
+          "file": "reviews/improve_via_margin/final-verification.json",
+          "sha256": "4fe7d197be98466275c72c0bdb7845b30725c83f8e1de48abb371c05b1dd7ad8"
+        }
+      ]
+    },
+    {
+      "name": "improve_i2c_bus",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "i2c_bus",
+      "scoreOutOf10": 8.0,
+      "scoreField": "wholeBoardScoreOutOf10",
+      "ratingFile": "reviews/improve_i2c_bus/final-rating.json",
+      "ratingSha256": "189c9c3f5278ed8657af74fca1195e885946caa80a7d7d967f124a1949646c24",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_i2c_bus/final-rating.json",
+          "sha256": "189c9c3f5278ed8657af74fca1195e885946caa80a7d7d967f124a1949646c24"
+        },
+        {
+          "file": "reviews/improve_i2c_bus/final-verification.json",
+          "sha256": "c64a89cff4082219471b6204192fdf1955070bd375ce8c554d6eace3ff576d02"
+        }
+      ]
+    },
+    {
+      "name": "improve_geometry_planner",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "geometry_planner",
+      "scoreOutOf10": 7.6,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_geometry_planner/final-rating.json",
+      "ratingSha256": "2ce47a70600699444ebc7a4fa906bb5e7f1b6b38285aca4d8a93cef444226c09",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_geometry_planner/final-rating.json",
+          "sha256": "2ce47a70600699444ebc7a4fa906bb5e7f1b6b38285aca4d8a93cef444226c09"
+        },
+        {
+          "file": "reviews/improve_geometry_planner/final-verification.json",
+          "sha256": "47fbcd2f838cfb586ddcbbf93101a7ead4a05a69976de38eb46d25a5b6c8821b"
+        }
+      ]
+    },
+    {
+      "name": "improve_clearance_validator",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "clearance_validator",
+      "scoreOutOf10": 7.9,
+      "scoreField": "ratingOutOf10",
+      "ratingFile": "reviews/improve_clearance_validator/final-rating.json",
+      "ratingSha256": "d2109e2eb8ab0235e0e0434202d2c9524f943cf15c924068bb680ee3b29badb5",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_clearance_validator/final-rating.json",
+          "sha256": "d2109e2eb8ab0235e0e0434202d2c9524f943cf15c924068bb680ee3b29badb5"
+        },
+        {
+          "file": "reviews/improve_clearance_validator/final-report.json",
+          "sha256": "a855a93dcd4439f9fb7b7ceb3cdb493300320af9f6c09cd2c16104df6a9b3c4d"
+        },
+        {
+          "file": "reviews/improve_clearance_validator/source24d-full-native.json",
+          "sha256": "be866e3ee412bc8a6f4ccf318b9ab4b1691779facd72e4b520c0f72e48c2d76b"
+        }
+      ]
+    },
+    {
+      "name": "improve_short_validator",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "short_validator",
+      "scoreOutOf10": 8.4,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_short_validator/final-rating.json",
+      "ratingSha256": "6d7c87a764a375e9dcb2839e18ad77e4359455948c9b0fb0c09850476d172693",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_short_validator/final-rating.json",
+          "sha256": "6d7c87a764a375e9dcb2839e18ad77e4359455948c9b0fb0c09850476d172693"
+        },
+        {
+          "file": "reviews/improve_short_validator/final-verification.json",
+          "sha256": "78fc3a5fa2dfb1f10e0a7f1a0b5b5bb088568da3391b5cc674c8c8e8e920230d"
+        },
+        {
+          "file": "reviews/improve_short_validator/final24d-crop.json",
+          "sha256": "f54d156582d842b1c726f0c41982c1e9a774752544f4873316f0375279f2bcf3"
+        },
+        {
+          "file": "reviews/improve_short_validator/final24d-drills.json",
+          "sha256": "f69067d7c1f2b1d09c615b593da321ad2fd051eff83c224e5634deeac71aea91"
+        },
+        {
+          "file": "reviews/improve_short_validator/final24d-native-shorts.json",
+          "sha256": "4638beeed97ee060960ac21072c1a90a196c89b831b0f30c74843c7d270d902f"
+        },
+        {
+          "file": "reviews/improve_short_validator/final24d-source-ownership.json",
+          "sha256": "de5de7bde482d5d8317cf1cf951eedbcf941baa08e1d394898baf9721ced8fab"
+        }
+      ]
+    },
+    {
+      "name": "improve_connectivity_validator",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "connectivity_validator",
+      "scoreOutOf10": 7.9,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_connectivity_validator/final-rating.json",
+      "ratingSha256": "2186b8cec2cfb6b1b6c4fcd4651690c88c5b45a0d7871a4d17d2b2828061d730",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_connectivity_validator/final-capture-binding.json",
+          "sha256": "68b10534933ee16e4dfd146a273b11e8293612431ee1db82e4f4d1f970719d85"
+        },
+        {
+          "file": "reviews/improve_connectivity_validator/final-rating.json",
+          "sha256": "2186b8cec2cfb6b1b6c4fcd4651690c88c5b45a0d7871a4d17d2b2828061d730"
+        },
+        {
+          "file": "reviews/improve_connectivity_validator/final-routing-metrics.json",
+          "sha256": "b10d438a824e991bcb3a5d9a984c0b62dcdc0710bebbaeee47a105e6359cd5a3"
+        },
+        {
+          "file": "reviews/improve_connectivity_validator/final-verification.json",
+          "sha256": "1b590de4ffc6b30726bdf67ac61e5b69497348e41ee602c394096e44995cdc1f"
+        },
+        {
+          "file": "reviews/improve_connectivity_validator/final-verification.physical.json",
+          "sha256": "932ff9a0f09c738e268e10bf334558a93e2876a8a0deda619940ad8ef39a3c5a"
+        }
+      ]
+    },
+    {
+      "name": "improve_ground_validator",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "ground_validator",
+      "scoreOutOf10": 7.6,
+      "scoreField": "wholeBoardRoutingScore",
+      "ratingFile": "reviews/improve_ground_validator/final-rating.json",
+      "ratingSha256": "0553b97ae50665f047f8b733abcb8b62c5d60bae46f4f844162c5f546977d7e5",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_ground_validator/final-rating.json",
+          "sha256": "0553b97ae50665f047f8b733abcb8b62c5d60bae46f4f844162c5f546977d7e5"
+        },
+        {
+          "file": "reviews/improve_ground_validator/final-routing-impression-metrics.json",
+          "sha256": "86fa185ed9eb3dc770112dd008b6439bf5ac4715db206ad9ccbfcb9e28f5d2d7"
+        },
+        {
+          "file": "reviews/improve_ground_validator/final-verification.json",
+          "sha256": "8cc88ff5706226f2402ec59b1b251cea4496c8570f80341e9b97286a382dbfa2"
+        },
+        {
+          "file": "reviews/improve_ground_validator/source24d-ground-review-physical-graph.json",
+          "sha256": "27dd58a83db67caaa3163377adf582ffba34250c8c16e52eed30e092fd89cdf4"
+        },
+        {
+          "file": "reviews/improve_ground_validator/source24d-ground-review.json",
+          "sha256": "a15db9e47dfe4c8b8836f15f3c00dc06ca1e1fa74f857de70dcbc5accfb78447"
+        },
+        {
+          "file": "reviews/improve_ground_validator/source24d-ground-successors.json",
+          "sha256": "3a0973c1038539a46b78266cd66611ab52725cfed43a5b119fb1ce7dc255f5ca"
+        }
+      ]
+    },
+    {
+      "name": "improve_jlc_preservation",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "jlc_preservation",
+      "scoreOutOf10": 7.6,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_jlc_preservation/final-rating.json",
+      "ratingSha256": "85cc96b2a92484acf556db76d100e762b8b473b3ebf332d965bd91632d080b03",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_jlc_preservation/final-rating.json",
+          "sha256": "85cc96b2a92484acf556db76d100e762b8b473b3ebf332d965bd91632d080b03"
+        },
+        {
+          "file": "reviews/improve_jlc_preservation/final24d-all-drill-mask.json",
+          "sha256": "4e5bee03fdaba1dbbab238e555ea0a08d02ab8d08e502d1836dd6433afa014b0"
+        },
+        {
+          "file": "reviews/improve_jlc_preservation/final24d-board-metrics.json",
+          "sha256": "08a4c3111b95e6509f5bfcbb31520d37b17e29367912e936f8307c61cdccd7aa"
+        },
+        {
+          "file": "reviews/improve_jlc_preservation/final24d-comparison.json",
+          "sha256": "e9cba6c1e017ba6e2c77ce5ec79e953f0191a36c09bb885136b8c6e4fb7e659c"
+        },
+        {
+          "file": "reviews/improve_jlc_preservation/final24d-copper.json",
+          "sha256": "10ee035e57e5fc2aa1b2689546168a347f3218f524cbf1da935b2147c05d1ba0"
+        }
+      ]
+    },
+    {
+      "name": "improve_toolchain_validator",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "toolchain_validator",
+      "scoreOutOf10": 7.8,
+      "scoreField": "rating",
+      "ratingFile": "reviews/improve_toolchain_validator/final-rating.json",
+      "ratingSha256": "1c764923094cc2ca804c21ff0be044c0ffb02e21d5f9dbf0978c9b58eca9c081",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_toolchain_validator/final-evidence.json",
+          "sha256": "57c8f504c0fafc1081d35a23cd6cb2cad52f2066a7e266f4c4aeb92c329ccfcf"
+        },
+        {
+          "file": "reviews/improve_toolchain_validator/final-rating.json",
+          "sha256": "1c764923094cc2ca804c21ff0be044c0ffb02e21d5f9dbf0978c9b58eca9c081"
+        },
+        {
+          "file": "reviews/improve_toolchain_validator/final-verification.json",
+          "sha256": "57c8f504c0fafc1081d35a23cd6cb2cad52f2066a7e266f4c4aeb92c329ccfcf"
+        },
+        {
+          "file": "reviews/improve_toolchain_validator/source24d-native-bound-correction.json",
+          "sha256": "71d5fc7956e82171f5e1b53496588988cc3cbdd75129456d8fb555bf2b1372f8"
+        },
+        {
+          "file": "reviews/improve_toolchain_validator/source24d-supplemental-metrics.json",
+          "sha256": "58a6748cabc3d77d755ff8aa451fcead02d7f7a228238560e7dc69b9f13c30b2"
+        },
+        {
+          "file": "reviews/improve_toolchain_validator/source24d-toolchain.json",
+          "sha256": "7671c6b31b743d834116b7f396f53b2738e826a61942d9a8bfe4d98bb88e68af"
+        }
+      ]
+    },
+    {
+      "name": "improve_snapshot_visual",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "snapshot_visual",
+      "scoreOutOf10": 7.1,
+      "scoreField": "wholeBoardFinalRatingOutOf10",
+      "ratingFile": "reviews/improve_snapshot_visual/final-rating.json",
+      "ratingSha256": "87508c721a091cb6211defc58138beb316bbcbcedcb1a3321148dadebc431346",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_snapshot_visual/final-rating.json",
+          "sha256": "87508c721a091cb6211defc58138beb316bbcbcedcb1a3321148dadebc431346"
+        },
+        {
+          "file": "reviews/improve_snapshot_visual/final-verification.json",
+          "sha256": "a2ad1dac53c59b9ede0d3de75457f7f54e1585b2d5d5a27d752f5a2c0451f24a"
+        },
+        {
+          "file": "reviews/improve_snapshot_visual/final24d-comparison.json",
+          "sha256": "f2cf9218a46a4eb33960c27225ff7105b9d19a95b6bb5c96db4810fcd8f02626"
+        },
+        {
+          "file": "reviews/improve_snapshot_visual/final24d-highlights.json",
+          "sha256": "91f8b0720fdc1207d3576394e9a6a829b20fc28c5599948a967ebdc13a2b771f"
+        },
+        {
+          "file": "reviews/improve_snapshot_visual/final24d-native-payload-check.json",
+          "sha256": "5b7b6ab23df866ec48296cc00aa349d9b8e0b071434dcc6211065cd481253696"
+        },
+        {
+          "file": "reviews/improve_snapshot_visual/tpg6-label-actual24d-qualification.json",
+          "sha256": "e53759e506e908ebcf42100792d503a8712465ff41112b9e3358fa252ef1a49f"
+        }
+      ]
+    },
+    {
+      "name": "improve_measurement_rating",
+      "model": "parent default",
+      "reasoningEffort": "parent default",
+      "scope": "measurement_rating",
+      "scoreOutOf10": 7.6,
+      "scoreField": "scoreOutOf10",
+      "ratingFile": "reviews/improve_measurement_rating/final-rating.json",
+      "ratingSha256": "5b1f4345dc85539885d77d9fd605efed2cc30ac6b6635e759ca01cb0f3796f68",
+      "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+      "evidence": [
+        {
+          "file": "reviews/improve_measurement_rating/final-rating.json",
+          "sha256": "5b1f4345dc85539885d77d9fd605efed2cc30ac6b6635e759ca01cb0f3796f68"
+        },
+        {
+          "file": "reviews/improve_measurement_rating/final-verification.json",
+          "sha256": "2ac47ada6635ed809ce3ab65935f7d79bf4fa70c0db20647b973fc0a9a94f75a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "inputPath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "source_sha": "a057b27e19d424774c9885ee5015f6899d23a4a6f0f559136b5e2a6a039d7149",
+  "traceCount": 636,
+  "routingComplete": true,
+  "storedErrorCount": 0,
+  "drcErrorCount": 0,
+  "drcWarningCount": 86,
+  "traceLengths": {
+    "valid": true,
+    "findingCount": 0
+  },
+  "viaPadClearance": {
+    "valid": true,
+    "requiredClearanceMm": 0.2,
+    "findingCount": 0
+  },
+  "traceWidths": {
+    "valid": true,
+    "requiredMinWidthMm": 0.2,
+    "minimumActualWidthMm": 0.2,
+    "routeViolationCount": 0,
+    "pointViolationCount": 0
+  },
+  "sourceTraceWidths": {
+    "valid": true,
+    "sourceConstrainedRouteCount": 552,
+    "routeViolationCount": 0,
+    "pointViolationCount": 0,
+    "invalidDeclarationCount": 0,
+    "attributionConflictCount": 0
+  },
+  "schematicStylingWarningCount": 0,
+  "groundPhaseSelection": {
+    "checked": true,
+    "valid": true,
+    "missingCount": 0,
+    "requiredCount": 147,
+    "nativeCount": 120,
+    "manualRequiredCount": 27
+  },
+  "signalPhaseSelection": {
+    "checked": true,
+    "valid": true
+  },
+  "busRouting": {
+    "checked": true,
+    "valid": true
+  },
+  "manualGroundReturns": {
+    "checked": true,
+    "valid": true
+  },
+  "fanFeedbackTap": {
+    "checked": true,
+    "valid": true
+  },
+  "fanOutputBackbone": {
+    "checked": true,
+    "valid": true
+  },
+  "sharedFaultBridge": {
+    "checked": true,
+    "valid": true
+  },
+  "vias": {
+    "count": 434,
+    "nonThroughBarrelCount": 0,
+    "manufacturingDiameterViolationCount": 0,
+    "unknownNetCount": 0,
+    "exposedTopCount": 0,
+    "exposedBottomCount": 0,
+    "groundWithoutInner1ContactCount": 0
+  },
+  "pcbStyle": {
+    "exitCode": 0,
+    "issueCount": 0
+  },
+  "shorts": {
+    "exitCode": 0,
+    "mode": "gerber",
+    "layer": "all"
+  },
+  "routingDifficulty": {
+    "advisory": true,
+    "skipped": true,
+    "reason": "Expensive non-gating advisory omitted; all hard copper gates still run"
+  },
+  "schematicPlacement": {
+    "exitCode": 0,
+    "advisory": true
+  }
+}

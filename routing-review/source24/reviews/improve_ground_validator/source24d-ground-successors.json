@@ -1,0 +1,138 @@
+{
+  "inputSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "scope": "Check fresh local pad-to-barrel copper for changed Ground return origins.",
+  "method": "True ground pads and own source memberships select expected local paths. Swept top copper minus actual drills has finite contact to the true pad and a same-GND barrel. Main-plane/bottom barrel contact and common147 physical connectivity are separate fresh report gates.",
+  "changedGroundOriginResults": [
+    {
+      "target": "TPG6.pin1",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "pcb_trace_194",
+          "name": "TPG6_GROUND",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.6,
+          "finitePadContactMm2": 0.16525478397715276,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_84",
+              "xy": [
+                11.5,
+                2.7
+              ],
+              "contactMm2": 0.04143798877026919
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C35.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_25",
+          "name": null,
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.12275144212722,
+          "finitePadContactMm2": 0.08070793862638564,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_400",
+              "xy": [
+                -2.399,
+                7.475
+              ],
+              "contactMm2": 0.041437988770269316
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C206.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_77",
+          "name": null,
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.186660171779821,
+          "finitePadContactMm2": 0.12466609142809883,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_452",
+              "xy": [
+                -1.924,
+                -20.75
+              ],
+              "contactMm2": 0.04600203599625529
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C_INPUT_OUT.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_6",
+          "name": "C_INPUT_OUT_B",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.2230865786510157,
+          "finitePadContactMm2": 0.11853963039741969,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_381",
+              "xy": [
+                -14.5,
+                18.6
+              ],
+              "contactMm2": 0.04578997842670169
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C_INPUT_DVDT.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "pcb_trace_14",
+          "name": "INPUT_DVDT_LOCAL_GROUND",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 0.9800000000000004,
+          "finitePadContactMm2": 0.09170793862638532,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_13",
+              "xy": [
+                -13.05,
+                18
+              ],
+              "contactMm2": 0.041437988770269156
+            }
+          ],
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "allChangedOriginsHaveFiniteOwnLocalGroundPaths": true
+}

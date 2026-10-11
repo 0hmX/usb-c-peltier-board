@@ -1,0 +1,113 @@
+{
+  "role": "improve_ground_astra",
+  "status": "PASS_SCOPED_FRESH_NATIVE_24D",
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "captureSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "freshRecomputation": true,
+  "reproductionScript": "final_review_24d.py",
+  "exactProposedSignalSegmentsAndOwnershipMatch": true,
+  "nativeAntipadsClearGround": true,
+  "connectedMainGroundRegionCount": 1,
+  "mainGroundAreaMm2": 6636.386718239524,
+  "groundContacts": {
+    "count": 166,
+    "minimumAreaMm2": 0.31037201836234246,
+    "allAbovePoint05": true
+  },
+  "criticalProjectionCount": 22,
+  "newLocalCriticalProjectionLossCount": 0,
+  "localGroundRecoveryMm2": 17.260173245144433,
+  "inner1SignalMm": 289.6865059616385,
+  "scopeAdditionalThroughBarrels": 2,
+  "finalWholeBoardViaCount": 434,
+  "dischargeUnresolved": [
+    {
+      "layer": "top",
+      "segment": [
+        [
+          -23.8,
+          19.6
+        ],
+        [
+          -24.7,
+          19.6
+        ]
+      ],
+      "unsupportedCenterlineMm": 0.8999999999999986
+    },
+    {
+      "layer": "top",
+      "segment": [
+        [
+          -24.7,
+          19.6
+        ],
+        [
+          -24.7,
+          17.5
+        ]
+      ],
+      "unsupportedCenterlineMm": 2.1000000000000014
+    }
+  ],
+  "actualTransferVias": [
+    {
+      "id": "pcb_via_223",
+      "xy": [
+        6.25,
+        -20.55
+      ],
+      "nativePlaneGapMm": 0.20730349124228808,
+      "nativeForeignGroundOverlapMm2": 0.0
+    },
+    {
+      "id": "pcb_via_224",
+      "xy": [
+        -18.4,
+        -25.75
+      ],
+      "nativePlaneGapMm": 0.20730349124228725,
+      "nativeForeignGroundOverlapMm2": 0.0
+    }
+  ],
+  "geometryEqualityWith24b": {
+    "pcb_trace": {
+      "baselineCount": 636,
+      "finalCount": 636,
+      "recordsExactlyEqual": true
+    },
+    "pcb_via": {
+      "baselineCount": 434,
+      "finalCount": 434,
+      "recordsExactlyEqual": true
+    },
+    "pcb_smtpad": {
+      "baselineCount": 552,
+      "finalCount": 552,
+      "recordsExactlyEqual": true
+    },
+    "pcb_plated_hole": {
+      "baselineCount": 22,
+      "finalCount": 22,
+      "recordsExactlyEqual": true
+    },
+    "pcb_hole": {
+      "baselineCount": 6,
+      "finalCount": 6,
+      "recordsExactlyEqual": true
+    },
+    "pcb_copper_pour": {
+      "baselineCount": 31,
+      "finalCount": 31,
+      "recordsExactlyEqual": true
+    },
+    "pcb_board": {
+      "baselineCount": 1,
+      "finalCount": 1,
+      "recordsExactlyEqual": true
+    }
+  },
+  "evidence": "final-ground-review.json",
+  "limits": "Fresh ideal CAD ground geometry and projection verification only; does not claim dynamic return impedance, converter stability, or replace whole-board continuity/clearance signoff."
+}

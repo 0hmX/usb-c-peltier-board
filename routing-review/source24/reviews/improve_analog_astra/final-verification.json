@@ -1,0 +1,1953 @@
+{
+  "capture": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "nativeCounts": {
+    "pcb_trace": 636,
+    "pcb_via": 434,
+    "pcb_copper_pour": 31
+  },
+  "selectedPrimitiveCount": 188,
+  "minima": [
+    {
+      "name": "TEC_FEEDBACK_PICKUP",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.19999999999999973,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "C209.pin2",
+      "otherNet": "GND",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "pcb_via_368",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.20730345563131403,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_27",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124228498,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_26",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124228725,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_26",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124228725,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_94",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124228792,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_11",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124229003,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_12",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124229003,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_95",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124229003,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_367",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124229003,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_368",
+      "layer": "inner1",
+      "kind": "pcb_via",
+      "gapMm": 0.20730349124229008,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_0",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_P",
+      "layer": "bottom",
+      "kind": "pcb_trace",
+      "gapMm": 0.20850704786122876,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_N",
+      "layer": "bottom",
+      "kind": "pcb_trace",
+      "gapMm": 0.20850704786122895,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "layer": "bottom",
+      "kind": "pcb_trace",
+      "gapMm": 0.2085070478612305,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_FB_LOCAL",
+      "layer": "bottom",
+      "kind": "pcb_trace",
+      "gapMm": 0.2085070478612306,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "layer": "bottom",
+      "kind": "pcb_trace",
+      "gapMm": 0.20999985551286926,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_11",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.21267208030145746,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_39",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.2249999999999979,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "U_INPUT.ILM",
+      "otherNet": "INPUT_CURRENT_MON",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "TEC_LOW_INNER2_LOCAL",
+      "layer": "inner2",
+      "kind": "pcb_trace",
+      "gapMm": 0.22999999999999954,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_92",
+      "otherNet": "TEC_FB",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_367",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.23364481893525657,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "U2.VC",
+      "otherNet": "TEC_VC",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "pcb_via_27",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.236777461227431,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "D502_SERIES_TRUNK",
+      "otherNet": "D502_A",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "pcb_via_381",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803305,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_62",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_12",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803402,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_62",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_13",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803402,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_62",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_95",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803402,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_62",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_368",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803488,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_53",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_94",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.24711074281803666,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_62",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_FB_U2_ESCAPE",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.24831446078352398,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_53",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_27",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.249999999999999,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "PD_DISCH_BOTTOM_LOCAL",
+      "otherNet": "PD_DISCH",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "INPUT_SLEW",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.25,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "U_INPUT.GND",
+      "otherNet": "GND",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "FAN_FB_COMPENSATION",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.25,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "C221.pin1",
+      "otherNet": "V12_FAN",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "FAN_FB_DIVIDER",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.2749999999999986,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "R228.pin1",
+      "otherNet": "V12_FAN",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "TEC_VC_R27_ESCAPE",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.2750626000000018,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "D20.anode",
+      "otherNet": "TEC_VCC_INT",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "pcb_via_11",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.28013422519428405,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_16",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_11",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.28013422519428405,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_16",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "TEC_VC_U2_ESCAPE",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.2889087296526014,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "U2.SENSE_NEG",
+      "otherNet": "TEC_SENSE_N_FILTERED",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "pcb_via_27",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.2899494936611669,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_201",
+      "otherNet": "PD_DISCH",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.292905,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_52",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_COMP_RC_LOCAL",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.3000000000000007,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "R27.pin1",
+      "otherNet": "TEC_VC",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_U2",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.32499999999999996,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "U2.SENSE_NEG",
+      "otherNet": "TEC_SENSE_N_FILTERED",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.32781745930520173,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_116",
+      "otherNet": "TEC_PERMISSION_PNP_BASE",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_12",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.3499999999999997,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "INPUT_MON_MAIN_ESCAPE",
+      "otherNet": "INPUT_CURRENT_MON",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "pcb_via_381",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.36317279836452804,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "INPUT_FAULT_PULLUP_INNER2",
+      "otherNet": "INPUT_FAULT_N",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "TEC_VC_LOCAL",
+      "layer": "inner2",
+      "kind": "pcb_trace",
+      "gapMm": 0.38104375510533556,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_35",
+      "otherNet": "TEC_RT",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_26",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.3999999999999986,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_116",
+      "otherNet": "TEC_PERMISSION_PNP_BASE",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_26",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.3999999999999986,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_116",
+      "otherNet": "TEC_PERMISSION_PNP_BASE",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_94",
+      "layer": "top",
+      "kind": "pcb_via",
+      "gapMm": 0.4515611460128464,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "TEC_FILTERED_SENSE_P_U2",
+      "otherNet": "TEC_SENSE_P_FILTERED",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "pcb_via_368",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.47049309391620525,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_244",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_367",
+      "layer": "bottom",
+      "kind": "pcb_via",
+      "gapMm": 0.5000075933039847,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_14",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "pcb_via_367",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.5199369928335675,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_245",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "INPUT_DVDT_FULL_TRUNK",
+      "layer": "inner2",
+      "kind": "pcb_trace",
+      "gapMm": 0.5301215518307921,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_16",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_CAP",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.539949493661169,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_201",
+      "otherNet": "PD_DISCH",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_N",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.5549884713805903,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_239",
+      "otherNet": "GND",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "C_INPUT_DVDT.pin1",
+      "layer": "top",
+      "kind": "pcb_smtpad",
+      "gapMm": 0.5749999999999993,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "R_INPUT_ILIM.pin2",
+      "otherNet": "GND",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_FILTER",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.575,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_52",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_P",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.5986852935746966,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "TEC_LOCAL_COMMUTATION_VIN",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "INPUT_DVDT_CAP_ESCAPE",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.5999999999999996,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "INPUT_MON_MAIN_ESCAPE",
+      "otherNet": "INPUT_CURRENT_MON",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_FILTER",
+      "layer": "top",
+      "kind": "pcb_trace",
+      "gapMm": 0.6206981276467799,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_copper_pour_52",
+      "otherNet": "GND",
+      "otherKind": "pcb_copper_pour"
+    },
+    {
+      "name": "C_INPUT_DVDT.pin2",
+      "layer": "top",
+      "kind": "pcb_smtpad",
+      "gapMm": 0.6799999999999997,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "C_INPUT_DVDT.pin1",
+      "otherNet": "INPUT_DVDT",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "C_INPUT_OUT.pin2",
+      "layer": "top",
+      "kind": "pcb_smtpad",
+      "gapMm": 0.6799999999999997,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "C_INPUT_OUT.pin1",
+      "otherNet": "VBUS_TEC",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "C_INPUT_OUT.pin1",
+      "layer": "top",
+      "kind": "pcb_smtpad",
+      "gapMm": 0.6799999999999997,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "C_INPUT_OUT.pin2",
+      "otherNet": "GND",
+      "otherKind": "pcb_smtpad"
+    },
+    {
+      "name": "pcb_via_94",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 0.754558022366122,
+      "requiredMm": 0.15,
+      "overlapAreaMm2": 0.0,
+      "other": "pcb_via_35",
+      "otherNet": "TEC_RT",
+      "otherKind": "pcb_via"
+    },
+    {
+      "name": "pcb_via_13",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 1.8127416997969514,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "INPUT_FAULT_PULLUP_INNER2",
+      "otherNet": "INPUT_FAULT_N",
+      "otherKind": "pcb_trace"
+    },
+    {
+      "name": "pcb_via_12",
+      "layer": "inner2",
+      "kind": "pcb_via",
+      "gapMm": 4.216904755831214,
+      "requiredMm": 0.2,
+      "overlapAreaMm2": 0.0,
+      "other": "INPUT_FAULT_PULLUP_INNER2",
+      "otherNet": "INPUT_FAULT_N",
+      "otherKind": "pcb_trace"
+    }
+  ],
+  "violations": [],
+  "traceStats": [
+    {
+      "name": "FAN_FB_COMPENSATION",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 6.424163056034265,
+      "lengthMm": 6.3741630560342655,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          34.75,
+          -18
+        ],
+        [
+          34.75,
+          -18
+        ],
+        [
+          34.05,
+          -18.7
+        ],
+        [
+          34.05,
+          -21.5
+        ],
+        [
+          35.22,
+          -21.5
+        ],
+        [
+          36.22,
+          -20.5
+        ],
+        [
+          36.22,
+          -20.5
+        ]
+      ]
+    },
+    {
+      "name": "FAN_FB_DIVIDER",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 6.454163056034266,
+      "lengthMm": 6.404163056034267,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          36.25,
+          -15.5
+        ],
+        [
+          36.25,
+          -15.5
+        ],
+        [
+          35.25,
+          -14.5
+        ],
+        [
+          34.05,
+          -14.5
+        ],
+        [
+          34.05,
+          -17.3
+        ],
+        [
+          34.75,
+          -18
+        ],
+        [
+          34.75,
+          -18
+        ]
+      ]
+    },
+    {
+      "name": "INPUT_DVDT_CAP_ESCAPE",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 1,
+      "lengthMm": 0.9800000000000004,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -13.05,
+          14.6
+        ],
+        [
+          -13.05,
+          14.6
+        ],
+        [
+          -13.05,
+          15.58
+        ],
+        [
+          -13.05,
+          15.58
+        ]
+      ]
+    },
+    {
+      "name": "INPUT_DVDT_FULL_TRUNK",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 3,
+      "lengthMm": 2.9813708498984743,
+      "layers": [
+        "inner2"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -15.7,
+          13.8
+        ],
+        [
+          -15.7,
+          13.8
+        ],
+        [
+          -13.85,
+          13.8
+        ],
+        [
+          -13.05,
+          14.6
+        ],
+        [
+          -13.05,
+          14.6
+        ]
+      ]
+    },
+    {
+      "name": "INPUT_DVDT_LOCAL_GROUND",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 1,
+      "lengthMm": 0.9800000000000004,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -13.05,
+          17.02
+        ],
+        [
+          -13.05,
+          17.02
+        ],
+        [
+          -13.05,
+          18
+        ],
+        [
+          -13.05,
+          18
+        ]
+      ]
+    },
+    {
+      "name": "INPUT_SLEW",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 1.7,
+      "lengthMm": 1.6071067811865496,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -17.1,
+          14.3
+        ],
+        [
+          -17.1,
+          14.3
+        ],
+        [
+          -16.5,
+          14.3
+        ],
+        [
+          -16,
+          13.8
+        ],
+        [
+          -15.7,
+          13.8
+        ],
+        [
+          -15.7,
+          13.8
+        ]
+      ]
+    },
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 3.2,
+      "lengthMm": 3.1735028842544413,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.25
+      ],
+      "points": [
+        [
+          -16.72,
+          17.7
+        ],
+        [
+          -16.72,
+          17.7
+        ],
+        [
+          -16.8,
+          17.7
+        ],
+        [
+          -17.75,
+          16.75
+        ],
+        [
+          -17.75,
+          15
+        ],
+        [
+          -17.75,
+          15
+        ]
+      ]
+    },
+    {
+      "name": "TEC_COMP_RC_LOCAL",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 6,
+      "lengthMm": 5.087741699796954,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -9.25,
+          23
+        ],
+        [
+          -9.25,
+          23
+        ],
+        [
+          -10.05,
+          23.8
+        ],
+        [
+          -12.875,
+          23.8
+        ],
+        [
+          -13.675,
+          23
+        ],
+        [
+          -13.675,
+          23
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FB_LOCAL",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 6.4,
+      "lengthMm": 6.341269837220809,
+      "layers": [
+        "bottom"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -0.65,
+          7.53
+        ],
+        [
+          -0.65,
+          7.53
+        ],
+        [
+          -1.05,
+          7.13
+        ],
+        [
+          -1.05,
+          3.9000000000000004
+        ],
+        [
+          0.75,
+          2.1
+        ],
+        [
+          0.75,
+          2.1
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FB_R29_ESCAPE",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 1.2,
+      "lengthMm": 1.1,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          0.75,
+          2.1
+        ],
+        [
+          0.75,
+          2.1
+        ],
+        [
+          0.75,
+          1
+        ],
+        [
+          0.75,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FB_U2_ESCAPE",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 2.4,
+      "lengthMm": 2.2852543263816596,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -2.0749999999999997,
+          9.225
+        ],
+        [
+          -2.0749999999999997,
+          9.225
+        ],
+        [
+          -1.2000000000000002,
+          8.35
+        ],
+        [
+          -1.2000000000000002,
+          8.08
+        ],
+        [
+          -0.65,
+          7.53
+        ],
+        [
+          -0.65,
+          7.53
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FEEDBACK_PICKUP",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 35,
+      "lengthMm": 33.270131051037836,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -0.75,
+          1
+        ],
+        [
+          -0.75,
+          1
+        ],
+        [
+          -0.75,
+          -1
+        ],
+        [
+          1,
+          -2.75
+        ],
+        [
+          27.080079,
+          -2.75
+        ],
+        [
+          29,
+          -4.669921
+        ],
+        [
+          29,
+          -4.669921
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_FILTER",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 2,
+      "lengthMm": 1.5497056274847723,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -0.7500000000000001,
+          12.68
+        ],
+        [
+          -0.7500000000000001,
+          12.68
+        ],
+        [
+          0.6299999999999997,
+          12.68
+        ],
+        [
+          0.75,
+          12.8
+        ],
+        [
+          0.75,
+          12.8
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "inlineVias": 2,
+      "nativeMaxLengthMm": 9.4,
+      "lengthMm": 5.761370849898477,
+      "layers": [
+        "bottom",
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -2.725,
+          14.775
+        ],
+        [
+          -2.725,
+          14.775
+        ],
+        [
+          -2.725,
+          13.85
+        ],
+        [
+          -2.725,
+          13.85
+        ],
+        [
+          -2.725,
+          13.85
+        ],
+        [
+          -1.5499999999999998,
+          13.85
+        ],
+        [
+          -0.75,
+          13.05
+        ],
+        [
+          -0.75,
+          11.6
+        ],
+        [
+          -0.75,
+          11.6
+        ],
+        [
+          -0.75,
+          11.6
+        ],
+        [
+          -0.7500000000000001,
+          12.68
+        ],
+        [
+          -0.7500000000000001,
+          12.68
+        ]
+      ],
+      "explicitPlanarBoundMm": 5.9,
+      "planarBoundPassed": true,
+      "conservative3dLengthMm": 9.281370849898478,
+      "conservative3dBoundPassed": true
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_FILTER",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 2,
+      "lengthMm": 1.5331370849898462,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -0.7499999999999999,
+          14.120000000000001
+        ],
+        [
+          -0.7499999999999999,
+          14.120000000000001
+        ],
+        [
+          0.6700000000000002,
+          14.120000000000001
+        ],
+        [
+          0.75,
+          14.2
+        ],
+        [
+          0.75,
+          14.2
+        ]
+      ]
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_P_U2",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 6,
+      "lengthMm": 3.884594154601839,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -2.0749999999999997,
+          14.775
+        ],
+        [
+          -2.0749999999999997,
+          14.775
+        ],
+        [
+          -2.075,
+          15.75
+        ],
+        [
+          -1.9,
+          15.925
+        ],
+        [
+          -1.25,
+          15.925
+        ],
+        [
+          -0.75,
+          15.425
+        ],
+        [
+          -0.7499999999999999,
+          14.120000000000001
+        ],
+        [
+          -0.7499999999999999,
+          14.120000000000001
+        ]
+      ]
+    },
+    {
+      "name": "TEC_LOW_INNER2_LOCAL",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 20.45,
+      "lengthMm": 20.408683245815343,
+      "layers": [
+        "inner2"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -8,
+          19.55
+        ],
+        [
+          -8,
+          19.55
+        ],
+        [
+          -8,
+          16.3
+        ],
+        [
+          -3.2,
+          11.5
+        ],
+        [
+          -3.2,
+          10.100000000000001
+        ],
+        [
+          -1.3499999999999996,
+          8.25
+        ],
+        [
+          -1.3499999999999996,
+          7.25
+        ],
+        [
+          -0.9500000000000002,
+          6.850000000000001
+        ],
+        [
+          2,
+          6.850000000000001
+        ],
+        [
+          3.3,
+          5.55
+        ],
+        [
+          3.3,
+          5.55
+        ]
+      ]
+    },
+    {
+      "name": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 2.4,
+      "lengthMm": 2.3520815280171314,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -17.75,
+          27
+        ],
+        [
+          -17.75,
+          27
+        ],
+        [
+          -17.75,
+          28.15
+        ],
+        [
+          -18.6,
+          29
+        ],
+        [
+          -18.6,
+          29
+        ]
+      ]
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_BOTTOM",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 10.5,
+      "lengthMm": 10.428427124746191,
+      "layers": [
+        "bottom"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -18.6,
+          29
+        ],
+        [
+          -18.6,
+          29
+        ],
+        [
+          -16.6,
+          27
+        ],
+        [
+          -16.6,
+          19.4
+        ],
+        [
+          -16.6,
+          19.4
+        ]
+      ]
+    },
+    {
+      "name": "TEC_PERMISSION_PICKUP_CAP",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 1.8,
+      "lengthMm": 1.7497056274847687,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -16.6,
+          19.4
+        ],
+        [
+          -16.6,
+          19.4
+        ],
+        [
+          -16.6,
+          17.82
+        ],
+        [
+          -16.72,
+          17.7
+        ],
+        [
+          -16.72,
+          17.7
+        ]
+      ]
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_N",
+      "inlineVias": 2,
+      "nativeMaxLengthMm": null,
+      "lengthMm": 36.73342712474619,
+      "layers": [
+        "bottom",
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          31.355,
+          12
+        ],
+        [
+          31.355,
+          12
+        ],
+        [
+          29.9,
+          12
+        ],
+        [
+          29.9,
+          12
+        ],
+        [
+          29.9,
+          12
+        ],
+        [
+          29.9,
+          9
+        ],
+        [
+          28.9,
+          8
+        ],
+        [
+          4.399999999999999,
+          8
+        ],
+        [
+          3.3999999999999986,
+          9
+        ],
+        [
+          3.3999999999999986,
+          12.8
+        ],
+        [
+          3.3999999999999986,
+          12.8
+        ],
+        [
+          3.3999999999999986,
+          12.8
+        ],
+        [
+          2.25,
+          12.8
+        ],
+        [
+          2.25,
+          12.8
+        ]
+      ]
+    },
+    {
+      "name": "TEC_SENSE_KELVIN_P",
+      "inlineVias": 2,
+      "nativeMaxLengthMm": null,
+      "lengthMm": 34.333427124746194,
+      "layers": [
+        "bottom",
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          25.645,
+          12
+        ],
+        [
+          25.645,
+          12
+        ],
+        [
+          27.1,
+          12
+        ],
+        [
+          27.1,
+          12
+        ],
+        [
+          27.1,
+          12
+        ],
+        [
+          27.1,
+          9.5
+        ],
+        [
+          26.1,
+          8.5
+        ],
+        [
+          5.199999999999999,
+          8.5
+        ],
+        [
+          5.199999999999999,
+          13.2
+        ],
+        [
+          4.199999999999999,
+          14.2
+        ],
+        [
+          4.199999999999999,
+          14.2
+        ],
+        [
+          4.199999999999999,
+          14.2
+        ],
+        [
+          2.25,
+          14.2
+        ],
+        [
+          2.25,
+          14.2
+        ]
+      ]
+    },
+    {
+      "name": "TEC_VC_LOCAL",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 7.7,
+      "lengthMm": 7.6089357775095126,
+      "layers": [
+        "inner2"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -2.7,
+          16.4
+        ],
+        [
+          -2.7,
+          16.4
+        ],
+        [
+          -3.45,
+          16.4
+        ],
+        [
+          -8.3,
+          21.25
+        ],
+        [
+          -8.3,
+          21.25
+        ]
+      ]
+    },
+    {
+      "name": "TEC_VC_R27_ESCAPE",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 3.3,
+      "lengthMm": 3.174873734152916,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -8.3,
+          21.25
+        ],
+        [
+          -8.3,
+          21.25
+        ],
+        [
+          -9.15,
+          22.1
+        ],
+        [
+          -9.850000000000001,
+          22.1
+        ],
+        [
+          -10.75,
+          23
+        ],
+        [
+          -10.75,
+          23
+        ]
+      ]
+    },
+    {
+      "name": "TEC_VC_U2_ESCAPE",
+      "inlineVias": 0,
+      "nativeMaxLengthMm": 2,
+      "lengthMm": 1.904594154601837,
+      "layers": [
+        "top"
+      ],
+      "widthsMm": [
+        0.2
+      ],
+      "points": [
+        [
+          -3.375,
+          14.775
+        ],
+        [
+          -3.375,
+          14.775
+        ],
+        [
+          -3.375,
+          15.425
+        ],
+        [
+          -2.7,
+          16.1
+        ],
+        [
+          -2.7,
+          16.4
+        ],
+        [
+          -2.7,
+          16.4
+        ]
+      ]
+    }
+  ],
+  "vcShieldedSwitchCrossings": [
+    {
+      "name": "R21.pin1",
+      "net": "TEC_HG",
+      "overlapLengthMm": 0.742462120245877,
+      "unshieldedMm": 0.0
+    },
+    {
+      "name": "C20.pin2",
+      "net": "TEC_SW",
+      "overlapLengthMm": 1.0748023074035495,
+      "unshieldedMm": 0.0
+    },
+    {
+      "name": "TEC_SW_BOOT_RETURN",
+      "net": "TEC_SW",
+      "overlapLengthMm": 0.21792590502418843,
+      "unshieldedMm": 0.0
+    },
+    {
+      "name": "TEC_SW_BOOT_RETURN",
+      "net": "TEC_SW",
+      "overlapLengthMm": 0.19543550444494767,
+      "unshieldedMm": 0.0
+    }
+  ],
+  "viaDrillToPad": [
+    {
+      "viaId": "pcb_via_11",
+      "xy": [
+        -15.7,
+        13.8
+      ],
+      "net": "INPUT_DVDT",
+      "nearestPadDrillGaps": [
+        [
+          0.7800538120193572,
+          "R_INPUT_ILIM.pin1",
+          "INPUT_CURRENT_MON"
+        ],
+        [
+          1.0176671979799436,
+          "U_INPUT.DVDT",
+          "INPUT_DVDT"
+        ]
+      ]
+    },
+    {
+      "viaId": "pcb_via_12",
+      "xy": [
+        -13.05,
+        14.6
+      ],
+      "net": "INPUT_DVDT",
+      "nearestPadDrillGaps": [
+        [
+          0.44999999999999934,
+          "C_INPUT_DVDT.pin1",
+          "INPUT_DVDT"
+        ],
+        [
+          0.8499999999999996,
+          "R_INPUT_ILIM.pin1",
+          "INPUT_CURRENT_MON"
+        ]
+      ]
+    },
+    {
+      "viaId": "pcb_via_13",
+      "xy": [
+        -13.05,
+        18
+      ],
+      "net": "GND",
+      "nearestPadDrillGaps": [
+        [
+          0.45000000000000284,
+          "C_INPUT_DVDT.pin2",
+          "GND"
+        ],
+        [
+          1.5300297900376327,
+          "R_INPUT_ILIM.pin2",
+          "GND"
+        ]
+      ]
+    },
+    {
+      "viaId": "pcb_via_26",
+      "xy": [
+        -18.6,
+        29
+      ],
+      "net": "VBUS_TEC",
+      "nearestPadDrillGaps": [
+        [
+          0.6472610153391478,
+          "R36.pin1",
+          "TEC_PERMISSION_PNP_BASE"
+        ],
+        [
+          1.5339317452880783,
+          "R35.pin1",
+          "VBUS_TEC"
+        ]
+      ]
+    },
+    {
+      "viaId": "pcb_via_27",
+      "xy": [
+        -16.6,
+        19.4
+      ],
+      "net": "VBUS_TEC",
+      "nearestPadDrillGaps": [
+        [
+          1.125,
+          "C_INPUT_OUT.pin1",
+          "VBUS_TEC"
+        ],
+        [
+          1.4340540104732533,
+          "C_INPUT_OUT.pin2",
+          "GND"
+        ]
+      ]
+    },
+    {
+      "viaId": "pcb_via_381",
+      "xy": [
+        -14.5,
+        18.6
+      ],
+      "net": "GND",
+      "nearestPadDrillGaps": [
+        [
+          0.47098713305357287,
+          "C_INPUT_OUT.pin2",
+          "GND"
+        ],
+        [
+          1.428171545337383,
+          "C_INPUT_DVDT.pin2",
+          "GND"
+        ]
+      ]
+    }
+  ],
+  "status": "PASS_SCOPED_ACTUAL_NATIVE_GEOMETRY",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "scope": "Fresh actual Source24d analog, filtered sense, VC, LOW and moved eFuse copper; selected traces/pads and through-vias against all foreign native pads, trace sweeps, barrels and BREP pours on their physical layers. This is a scoped review, not a whole-board clearance certificate.",
+  "method": "Source logical unions establish net ownership; Shapely native shapes establish geometry; through barrels are checked on all four layers; .20mm copper clearance (.15mm via-via),1e-7mm numerical tolerance. Source reader reused for native pad geometry; no prior pass flag substitutes for actual geometry.",
+  "summary": {
+    "selectedCopperPrimitives": 188,
+    "violations": 0,
+    "fullVcMm": 12.688403666264266,
+    "vcBeforeMm": 15.185397179880388,
+    "vcSavedMm": 2.496993513616122,
+    "filteredNegativePlanarMm": 5.761370849898477,
+    "filteredNegativePlanarLimitMm": 5.9,
+    "filteredNegativeConservative3dMm": 9.281370849898478,
+    "filteredNegativeNativeLimitMm": 9.4,
+    "lowGateTrunkMm": 20.408683245815343,
+    "dvdTFullPlanarMm": 5.568477631085024,
+    "outputBypassMm": 3.1735028842544413,
+    "mainFeedbackToControllerMm": 9.726524163602468
+  },
+  "rawInputCapacitors": [
+    {
+      "component": "C_PD_VDD",
+      "center": {
+        "x": -30,
+        "y": 7
+      },
+      "distanceToUInputCenterMm": 14.422205101855958
+    },
+    {
+      "component": "C_USB_IN",
+      "center": {
+        "x": -39,
+        "y": 19
+      },
+      "distanceToUInputCenterMm": 21.377558326431952
+    },
+    {
+      "component": "C200",
+      "center": {
+        "x": -8,
+        "y": -12
+      },
+      "distanceToUInputCenterMm": 28.792360097775934
+    }
+  ],
+  "limitations": [
+    "Static copper geometry cannot establish switching-noise amplitude, current-regulation error, loop gain, phase margin or transient behavior.",
+    "This review does not requalify fabrication mask expansion, assembly courtyard or every whole-board source/bus group.",
+    "Via drill-to-pad numbers are exact nominal copper geometry, not solder-mask or manufactured tolerance measurements."
+  ],
+  "selectedMinWidthCheckPassed": true,
+  "minimumSelectedTraceWidthMm": 0.2
+}

@@ -1,0 +1,1657 @@
+{
+  "role": "Independent measurement and fresh routing rating",
+  "status": "PASS_FOR_MEASURED_METRIC_SCOPE_ON_EXACT_FINAL_24D",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "finalCapturePath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "baselineCapturePath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-23/circuit.json",
+  "comparisonReport": "/Users/ankan/Documents/Codex/2026-10-09/per/work/routing-improvement-source24/improve_measurement_rating/comparison-24d.json",
+  "freshMeasurements": true,
+  "actualCopperGeometryChangedFromBaseline": true,
+  "buildManifestEvidence": {
+    "runId": "ee484fbc-6c80-49d2-ae2c-923607371b45",
+    "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+    "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+    "sourceUnchanged": true,
+    "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+    "errorCount": 0
+  },
+  "overallBefore": {
+    "traceObjects": 633,
+    "totalPlanarCenterlineMm": 4078.5827963297043,
+    "lengthByLayerMm": {
+      "top": 1804.093874325378,
+      "inner2": 1023.15577310074,
+      "bottom": 923.4028456851778,
+      "inner1": 327.9303032184082
+    },
+    "signalLengthByLayerMm": {
+      "top": 811.962240908788,
+      "bottom": 616.8907259694868,
+      "inner2": 918.0082898054018,
+      "inner1": 327.9303032184082
+    },
+    "byLayerNetMm": {
+      "top": {
+        "ARM_CLK": 11.325483399593903,
+        "COLD_ADC": 10.297716446627533,
+        "COLD_RAW": 1.950000000000001,
+        "D501_A": 1.7999999999039855,
+        "D502_A": 1.7999999999039873,
+        "D503_A": 2.399999999903984,
+        "D504_A": 2.3999999999039887,
+        "D505_A": 1.7999999999039868,
+        "D506_A": 2.0606601717798214,
+        "D507_A": 2.0606601717798214,
+        "D508_A": 2.0606601717798214,
+        "DBG_HW_INHIBIT": 8.676955262170047,
+        "DBG_MCU_RUN": 6.149137802864843,
+        "DBG_PD_GATE": 10.7056349186104,
+        "DBG_TEC_PERMIT": 4.281370849898471,
+        "FAN_BST": 2.403553390593273,
+        "FAN_FB": 16.106143571373735,
+        "FAN_PWM": 17.803595636905612,
+        "FAN_PWM_BASE": 6.5083051916579935,
+        "FAN_PWM_DRIVE": 2.5742640687119307,
+        "FAN_SW": 10.550357133746823,
+        "FAN_TACH": 6.6470941032748385,
+        "FAN_TACH_MCU": 2.9813708498984757,
+        "FAULT_NPN_BASE": 4.840853531617382,
+        "FAULT_PNP_BASE": 6.273401871576775,
+        "FAULT_SOURCE": 9.53908729652601,
+        "GND": 324.36646719448794,
+        "HOT_ADC": 5.60992424049175,
+        "HOT_HALF": 9.359472221513641,
+        "HOT_HIGH": 4.860660171779818,
+        "HOT_LOW": 19.824589821842952,
+        "HOT_RAW": 6.089213562373095,
+        "I2C_SCL": 16.580077554195746,
+        "I2C_SDA": 21.835102807365164,
+        "INPUT_ARMED": 17.635281374238566,
+        "INPUT_CLEAR_N": 16.084062043356592,
+        "INPUT_CLEAR_RAW": 8.478275605729687,
+        "INPUT_CURRENT_MON": 9.778731957466684,
+        "INPUT_DVDT": 2.707106781186551,
+        "INPUT_ENABLE": 5.829848480983504,
+        "INPUT_FAULT_N": 16.194453095790603,
+        "INPUT_FAULT_NPN_BASE": 6.002691193458119,
+        "INPUT_ILIM_SWITCH": 2.000660171779821,
+        "INPUT_OVLO": 7.999442635585339,
+        "LOGIC_BST": 1.9000000000000004,
+        "LOGIC_SW": 6.145584412271573,
+        "MCU_ARM": 7.064949493661167,
+        "MCU_NRST": 5.4288582233137666,
+        "MCU_RUN": 4.856370849898476,
+        "PD_1V2": 3.4680613254815986,
+        "PD_2V7": 2.349066376115484,
+        "PD_ALERT": 12.627817459305202,
+        "PD_DISCH": 5.227817459305203,
+        "PD_INHIBIT_BASE": 6.007442994522835,
+        "PD_LATCH_INHIBIT": 8.732031021678296,
+        "PD_RESET": 3.42842712474619,
+        "PD_VALID_N": 9.117945519839775,
+        "PD_VS": 14.818986283848345,
+        "POWER_BUDGET_HIGH": 49.92318843237155,
+        "RUN_CLK": 27.530613254815975,
+        "SWCLK": 2.1392135623730946,
+        "SWDIO": 1.7249999999999996,
+        "TEC_BOOT": 3.4113653562373103,
+        "TEC_CLEAR_N": 9.058727624707801,
+        "TEC_CLEAR_RAW": 7.633473298326141,
+        "TEC_COMP_RC": 5.087741699796954,
+        "TEC_CURRENT_COMMAND": 10.22714898094511,
+        "TEC_DAC": 27.672141751177335,
+        "TEC_EN_UVLO": 4.548528137423855,
+        "TEC_FB": 4.885254326381659,
+        "TEC_HARD_LIMIT": 8.28492424049175,
+        "TEC_HG": 4.5384776310850246,
+        "TEC_HIGH_GATE": 4.845403679018717,
+        "TEC_INDUCTOR_OUT": 10.575710678118659,
+        "TEC_LG": 2.0060660171779823,
+        "TEC_LOW_GATE": 14.39534234078267,
+        "TEC_MON_SENSE_N": 5.7030465325174475,
+        "TEC_MON_SENSE_P": 3.771457069611992,
+        "TEC_PERMISSION_NPN_BASE": 7.54322943214974,
+        "TEC_PERMISSION_PNP_BASE": 6.409188309203677,
+        "TEC_PERMISSION_PNP_DRIVE": 2.654213562373095,
+        "TEC_PERMISSION_SUPPLY": 4.664213562373095,
+        "TEC_POS": 126.78642318610406,
+        "TEC_REQUEST": 7.3677669529663685,
+        "TEC_RT": 1.875,
+        "TEC_SAFE_EN": 9.029898987322332,
+        "TEC_SENSE_N_FILTERED": 3.554705627484773,
+        "TEC_SENSE_P_FILTERED": 5.417731239591685,
+        "TEC_SS": 3.515685424949237,
+        "TEC_SW": 31.360253954689703,
+        "TEC_VC": 5.079467888754753,
+        "TEC_VCC_INT": 26.994962382339132,
+        "TEC_VREF": 12.709671708797583,
+        "UART_RX": 10.134685034699391,
+        "UART_RX_MCU": 11.72517856687341,
+        "UART_TX": 1.426040764008566,
+        "USB_CC1": 2.7928399124746224,
+        "USB_CC2": 2.887814659305202,
+        "V12_FAN": 54.094464099238074,
+        "V3V3": 278.8568119985023,
+        "VBUS_ADC": 15.412970773009196,
+        "VBUS_RAW": 50.2741482630701,
+        "VBUS_TEC": 153.21587659559864,
+        "VOUT_ADC": 11.94208152801713
+      },
+      "inner1": {
+        "HOT_RAW": 31.430129855222066,
+        "INPUT_DVDT": 8.305929291125633,
+        "INPUT_FAULT_N": 51.324830406564054,
+        "MCU_ARM": 14.296498910433053,
+        "PD_VALID_N": 38.842418792657014,
+        "TEC_CLEAR_N": 30.966904755831216,
+        "TEC_CLEAR_RAW": 28.758147545195115,
+        "TEC_SAFE_EN": 124.00544366138004
+      },
+      "inner2": {
+        "ARM_CLK": 37.775914498161484,
+        "COLD_ADC": 6.64144227664784,
+        "D502_A": 44.82041481893164,
+        "D504_A": 91.29274528926794,
+        "D505_A": 75.5748737342887,
+        "DBG_HW_INHIBIT": 7.311879502661796,
+        "DBG_TEC_PERMIT": 2.924873734152914,
+        "FAN_BST": 2.5500000000000007,
+        "FAN_FB": 6.548528137423858,
+        "FAN_PWM_BASE": 5.557716446627535,
+        "FAN_TACH_MCU": 14.525483399593902,
+        "FAULT_SOURCE": 33.4420310216783,
+        "HOT_ADC": 1.9606601717798213,
+        "HOT_RAW": 11.227855287732327,
+        "I2C_SCL": 49.206806589144634,
+        "I2C_SDA": 49.36571531879723,
+        "INPUT_CLEAR_N": 1.6999999999999993,
+        "INPUT_CLEAR_RAW": 8.210660171779821,
+        "INPUT_CURRENT_MON": 4.31776695296637,
+        "INPUT_ENABLE": 33.859801564019655,
+        "INPUT_FAULT_N": 39.746908345206194,
+        "INPUT_FAULT_NPN_BASE": 6.077228714274744,
+        "INPUT_OVLO": 6.0541630560342625,
+        "LOGIC_BST": 3.3742640687119287,
+        "LOGIC_SW": 6.3355339059327385,
+        "MCU_RUN": 43.73721497261418,
+        "PD_DISCH": 8.107106781186548,
+        "PD_VALID_N": 52.22361107568208,
+        "POWER_BUDGET_HIGH": 42.879393923934,
+        "TEC_CLEAR_RAW": 8.899999999999999,
+        "TEC_CURRENT_COMMAND": 11.580918682243588,
+        "TEC_DAC": 11.164955621107545,
+        "TEC_EN_UVLO": 24.392640687119286,
+        "TEC_HARD_LIMIT": 5.961269837220809,
+        "TEC_LOW_GATE": 22.34177848998413,
+        "TEC_MON_SENSE_P": 3.5477922061357847,
+        "TEC_PERMISSION_PNP_BASE": 2.6162950903902265,
+        "TEC_REQUEST": 12.07842712474619,
+        "TEC_VC": 10.105929291125635,
+        "UART_RX_MCU": 28.550104602052652,
+        "UART_TX": 10.34619407771256,
+        "USB_CC1": 18.567487083177085,
+        "USB_CC2": 15.66043249289939,
+        "V3V3": 98.81194938940544,
+        "VBUS_ADC": 18.41190042307233,
+        "VOUT_ADC": 22.767104243115156
+      },
+      "bottom": {
+        "COLD_ADC": 3.84142135623731,
+        "COLD_RAW": 33.48725280104131,
+        "D501_A": 25.869848481023276,
+        "D503_A": 25.918376618503373,
+        "FAN_PWM_DRIVE": 28.297160876900367,
+        "FAN_TACH": 3.7156854249492373,
+        "FAN_TACH_MCU": 28.275409434773145,
+        "HOT_ADC": 6.598401871576773,
+        "HOT_HIGH": 3.094999999999999,
+        "I2C_SCL": 36.028531726798846,
+        "I2C_SDA": 38.1350288425444,
+        "INPUT_CLEAR_N": 28.519090885901,
+        "INPUT_ENABLE": 5.407817459305203,
+        "INPUT_FAULT_N": 6.765411972844538,
+        "MCU_ARM": 26.211500705120542,
+        "MCU_NRST": 23.873149339882605,
+        "MCU_RUN": 26.30782104868019,
+        "PD_2V7": 3.2385490578343874,
+        "PD_ALERT": 40.38305191657993,
+        "PD_DISCH": 21.45182899632297,
+        "SWCLK": 18.937779528224077,
+        "SWDIO": 21.416204996116015,
+        "TEC_BOOT": 6.929294815542512,
+        "TEC_FB": 6.341269837220809,
+        "TEC_HIGH_GATE": 16.153528137423855,
+        "TEC_INDUCTOR_OUT": 36.90121933088198,
+        "TEC_POS": 37.802691193458124,
+        "TEC_RT": 5.052386360737623,
+        "TEC_SAFE_EN": 5.39558441227157,
+        "TEC_SENSE_N_FILTERED": 4.225,
+        "TEC_SW": 15.1675,
+        "TEC_VREF": 6.791295090390226,
+        "UART_RX_MCU": 39.04868504050283,
+        "UART_TX": 56.07935893423776,
+        "USB_CC1": 5.800000000000004,
+        "USB_CC2": 9.3,
+        "VBUS_RAW": 96.40523086789975,
+        "VBUS_TEC": 120.23547832345112
+      }
+    },
+    "economy": {
+      "routeCount": 633,
+      "weighted45DegreeRatio": 1.141054310684187,
+      "median45DegreeRatio": 1.0,
+      "p90Ratio": 1.223784965238582,
+      "above1_5x": 28,
+      "above2x": 9
+    },
+    "economyOver10Mm": {
+      "routeCount": 95,
+      "weighted45DegreeRatio": 1.1905349199841861,
+      "median45DegreeRatio": 1.1440955865077813,
+      "p90Ratio": 1.5633490810968076,
+      "above1_5x": 14,
+      "above2x": 3
+    },
+    "non45SegmentCount": 0,
+    "unresolvedOrAmbiguousNets": [],
+    "largestGeometricExcess": [
+      {
+        "identity": "FAN_PROTECTED_POWER_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 90.59177524949237,
+        "unobstructed45DegreeBoundMm": 40.02015989358223,
+        "ratioTo45DegreeBound": 2.2636535058926635,
+        "excessTo45DegreeBoundMm": 50.57161535591014
+      },
+      {
+        "identity": "LOGIC_RAW_INPUT_FEED",
+        "nets": [
+          "VBUS_RAW"
+        ],
+        "lengthMm": 68.95774169979696,
+        "unobstructed45DegreeBoundMm": 45.71385419847458,
+        "ratioTo45DegreeBound": 1.5084648386986805,
+        "excessTo45DegreeBoundMm": 23.243887501322376
+      },
+      {
+        "identity": "UART_TX_MCU_BOTTOM_HEADER",
+        "nets": [
+          "UART_TX"
+        ],
+        "lengthMm": 56.07935893423776,
+        "unobstructed45DegreeBoundMm": 32.91076043593986,
+        "ratioTo45DegreeBound": 1.7039824723404713,
+        "excessTo45DegreeBoundMm": 23.168598498297904
+      },
+      {
+        "identity": "INPUT_FAULT_PULLUP_INNER2",
+        "nets": [
+          "INPUT_FAULT_N"
+        ],
+        "lengthMm": 30.244826817189065,
+        "unobstructed45DegreeBoundMm": 14.631980515339466,
+        "ratioTo45DegreeBound": 2.067035749909716,
+        "excessTo45DegreeBoundMm": 15.612846301849599
+      },
+      {
+        "identity": "UART_RX_MCU_BOTTOM_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 39.04868504050283,
+        "unobstructed45DegreeBoundMm": 25.13913959755234,
+        "ratioTo45DegreeBound": 1.5533023669714132,
+        "excessTo45DegreeBoundMm": 13.909545442950492
+      },
+      {
+        "identity": "SAFE_R37_TRUNK",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 71.6563058585152,
+        "unobstructed45DegreeBoundMm": 61.193207024971414,
+        "ratioTo45DegreeBound": 1.1709846458819204,
+        "excessTo45DegreeBoundMm": 10.463098833543782
+      },
+      {
+        "identity": "TEC_SENSE_KELVIN_P",
+        "nets": [
+          "TEC_INDUCTOR_OUT"
+        ],
+        "lengthMm": 34.333427124746194,
+        "unobstructed45DegreeBoundMm": 24.30626983722081,
+        "ratioTo45DegreeBound": 1.4125337764567454,
+        "excessTo45DegreeBoundMm": 10.027157287525384
+      },
+      {
+        "identity": "PD_PROTECTED_DISCHARGE_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 24.253300858899106,
+        "unobstructed45DegreeBoundMm": 14.585533905932738,
+        "ratioTo45DegreeBound": 1.6628325720071142,
+        "excessTo45DegreeBoundMm": 9.667766952966367
+      },
+      {
+        "identity": "UART_RX_MCU_INNER2_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.550104602052652,
+        "unobstructed45DegreeBoundMm": 19.010764773832474,
+        "ratioTo45DegreeBound": 1.501786221738469,
+        "excessTo45DegreeBoundMm": 9.539339828220179
+      },
+      {
+        "identity": "TEC_SHUNT_TO_FILTER",
+        "nets": [
+          "TEC_POS"
+        ],
+        "lengthMm": 26.314921,
+        "unobstructed45DegreeBoundMm": 17.64539393938864,
+        "ratioTo45DegreeBound": 1.4913195528754362,
+        "excessTo45DegreeBoundMm": 8.669527060611358
+      },
+      {
+        "identity": "D505_SERIES_TRUNK",
+        "nets": [
+          "D505_A"
+        ],
+        "lengthMm": 75.5748737342887,
+        "unobstructed45DegreeBoundMm": 67.08492424053152,
+        "ratioTo45DegreeBound": 1.1265552520163347,
+        "excessTo45DegreeBoundMm": 8.48994949375718
+      },
+      {
+        "identity": "PD_VALID_DEBUG_TRUNK",
+        "nets": [
+          "PD_VALID_N"
+        ],
+        "lengthMm": 50.80939751330899,
+        "unobstructed45DegreeBoundMm": 42.577164466275356,
+        "ratioTo45DegreeBound": 1.1933485508071877,
+        "excessTo45DegreeBoundMm": 8.232233047033631
+      },
+      {
+        "identity": "HOT_LOW_COMPARATOR_LOCAL",
+        "nets": [
+          "HOT_LOW"
+        ],
+        "lengthMm": 17.577533546995237,
+        "unobstructed45DegreeBoundMm": 9.580584412271573,
+        "ratioTo45DegreeBound": 1.8347036872281546,
+        "excessTo45DegreeBoundMm": 7.996949134723664
+      },
+      {
+        "identity": "PD_PROTECTED_BYPASS_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 23.02577777210913,
+        "unobstructed45DegreeBoundMm": 15.211980515339466,
+        "ratioTo45DegreeBound": 1.5136607458108682,
+        "excessTo45DegreeBoundMm": 7.813797256769664
+      },
+      {
+        "identity": "PD_RAW_MONITOR_FEED",
+        "nets": [
+          "VBUS_RAW"
+        ],
+        "lengthMm": 17.119999999999997,
+        "unobstructed45DegreeBoundMm": 9.362640687119283,
+        "ratioTo45DegreeBound": 1.8285439516602355,
+        "excessTo45DegreeBoundMm": 7.757359312880714
+      }
+    ],
+    "viaCount": 433,
+    "viasByNet": {
+      "GND": 166,
+      "USB_CC1": 3,
+      "USB_CC2": 3,
+      "V3V3": 11,
+      "INPUT_ENABLE": 5,
+      "INPUT_FAULT_N": 7,
+      "INPUT_DVDT": 2,
+      "PD_2V7": 2,
+      "VBUS_TEC": 25,
+      "TEC_RT": 2,
+      "TEC_BOOT": 3,
+      "D501_A": 2,
+      "D502_A": 2,
+      "D503_A": 2,
+      "D504_A": 2,
+      "D505_A": 2,
+      "DBG_HW_INHIBIT": 2,
+      "HOT_ADC": 3,
+      "COLD_ADC": 3,
+      "VBUS_ADC": 3,
+      "VOUT_ADC": 3,
+      "TEC_FB": 2,
+      "TEC_VC": 2,
+      "DBG_TEC_PERMIT": 2,
+      "TEC_DAC": 4,
+      "INPUT_FAULT_NPN_BASE": 2,
+      "HOT_HIGH": 2,
+      "INPUT_CLEAR_RAW": 2,
+      "TEC_CLEAR_RAW": 3,
+      "SWCLK": 1,
+      "SWDIO": 1,
+      "TEC_MON_SENSE_P": 2,
+      "TEC_HIGH_GATE": 2,
+      "TEC_PERMISSION_PNP_BASE": 2,
+      "TEC_REQUEST": 4,
+      "LOGIC_SW": 2,
+      "LOGIC_BST": 2,
+      "FAN_BST": 2,
+      "FAN_FB": 2,
+      "TEC_LOW_GATE": 2,
+      "INPUT_CURRENT_MON": 2,
+      "INPUT_OVLO": 2,
+      "MCU_ARM": 3,
+      "MCU_RUN": 8,
+      "FAULT_SOURCE": 2,
+      "TEC_EN_UVLO": 3,
+      "TEC_VREF": 2,
+      "TEC_CURRENT_COMMAND": 2,
+      "TEC_HARD_LIMIT": 3,
+      "COLD_RAW": 2,
+      "FAN_PWM_BASE": 2,
+      "MCU_NRST": 3,
+      "ARM_CLK": 2,
+      "FAN_TACH": 2,
+      "PD_ALERT": 2,
+      "FAN_TACH_MCU": 4,
+      "PD_VALID_N": 5,
+      "INPUT_CLEAR_N": 4,
+      "FAN_PWM_DRIVE": 2,
+      "TEC_CLEAR_N": 2,
+      "PD_DISCH": 3,
+      "POWER_BUDGET_HIGH": 5,
+      "HOT_RAW": 3,
+      "TEC_SAFE_EN": 4,
+      "UART_RX_MCU": 4,
+      "UART_TX": 2,
+      "I2C_SCL": 3,
+      "I2C_SDA": 3,
+      "TEC_INDUCTOR_OUT": 11,
+      "TEC_POS": 13,
+      "VBUS_RAW": 27,
+      "TEC_SW": 2,
+      "TEC_SENSE_N_FILTERED": 2
+    },
+    "fullFourLayerBarrels": 433,
+    "uniquePlanarCenterlineMm": 3998.2906213273263,
+    "uniqueLengthByLayerMm": {
+      "top": 1725.2885979515665,
+      "inner2": 1022.2557731008692,
+      "bottom": 922.8159470564818,
+      "inner1": 327.9303032184082
+    },
+    "repeatedCollinearSameNetCenterlineMm": 80.29217500237792
+  },
+  "overallAfter": {
+    "traceObjects": 636,
+    "totalPlanarCenterlineMm": 4044.302900039696,
+    "lengthByLayerMm": {
+      "top": 1787.273402437293,
+      "inner2": 1051.7144100242983,
+      "bottom": 915.6285816164658,
+      "inner1": 289.6865059616385
+    },
+    "signalLengthByLayerMm": {
+      "top": 811.6574847749645,
+      "inner2": 946.1059070340392,
+      "bottom": 616.0478327506734,
+      "inner1": 289.6865059616385
+    },
+    "byLayerNetMm": {
+      "top": {
+        "ARM_CLK": 11.325483399593903,
+        "COLD_ADC": 10.297716446627533,
+        "COLD_RAW": 1.950000000000001,
+        "D501_A": 1.7999999999039855,
+        "D502_A": 1.7999999999039873,
+        "D503_A": 2.399999999903984,
+        "D504_A": 2.3999999999039887,
+        "D505_A": 1.7999999999039868,
+        "D506_A": 2.0606601717798214,
+        "D507_A": 2.0606601717798214,
+        "D508_A": 2.0606601717798214,
+        "DBG_HW_INHIBIT": 8.676955262170047,
+        "DBG_MCU_RUN": 6.149137802864843,
+        "DBG_PD_GATE": 10.7056349186104,
+        "DBG_TEC_PERMIT": 4.281370849898471,
+        "FAN_BST": 2.403553390593273,
+        "FAN_FB": 16.106143571373735,
+        "FAN_PWM": 17.803595636905612,
+        "FAN_PWM_BASE": 6.5083051916579935,
+        "FAN_PWM_DRIVE": 2.5742640687119307,
+        "FAN_SW": 10.550357133746823,
+        "FAN_TACH": 6.6470941032748385,
+        "FAN_TACH_MCU": 2.9813708498984757,
+        "FAULT_NPN_BASE": 4.840853531617382,
+        "FAULT_PNP_BASE": 6.273401871576775,
+        "FAULT_SOURCE": 9.53908729652601,
+        "GND": 321.05395420896576,
+        "HOT_ADC": 5.60992424049175,
+        "HOT_HALF": 9.359472221513641,
+        "HOT_HIGH": 4.860660171779818,
+        "HOT_LOW": 19.824589821842952,
+        "HOT_RAW": 6.089213562373095,
+        "I2C_SCL": 16.580077554195746,
+        "I2C_SDA": 21.54220958855171,
+        "INPUT_ARMED": 17.635281374238566,
+        "INPUT_CLEAR_N": 16.084062043356592,
+        "INPUT_CLEAR_RAW": 8.478275605729687,
+        "INPUT_CURRENT_MON": 9.778731957466684,
+        "INPUT_DVDT": 2.58710678118655,
+        "INPUT_ENABLE": 5.829848480983504,
+        "INPUT_FAULT_N": 16.194453095790603,
+        "INPUT_FAULT_NPN_BASE": 6.002691193458119,
+        "INPUT_ILIM_SWITCH": 2.000660171779821,
+        "INPUT_OVLO": 7.999442635585339,
+        "LOGIC_BST": 1.9000000000000004,
+        "LOGIC_SW": 6.145584412271573,
+        "MCU_ARM": 7.064949493661167,
+        "MCU_NRST": 5.4288582233137666,
+        "MCU_RUN": 4.856370849898476,
+        "PD_1V2": 3.4680613254815986,
+        "PD_2V7": 2.349066376115484,
+        "PD_ALERT": 12.627817459305202,
+        "PD_DISCH": 5.227817459305203,
+        "PD_INHIBIT_BASE": 6.007442994522835,
+        "PD_LATCH_INHIBIT": 8.732031021678296,
+        "PD_RESET": 3.42842712474619,
+        "PD_VALID_N": 9.117945519839775,
+        "PD_VS": 14.818986283848345,
+        "POWER_BUDGET_HIGH": 49.92318843237155,
+        "RUN_CLK": 27.530613254815975,
+        "SWCLK": 2.1392135623730946,
+        "SWDIO": 1.7249999999999996,
+        "TEC_BOOT": 3.4113653562373103,
+        "TEC_CLEAR_N": 9.058727624707801,
+        "TEC_CLEAR_RAW": 7.633473298326141,
+        "TEC_COMP_RC": 5.087741699796954,
+        "TEC_CURRENT_COMMAND": 10.292859659063764,
+        "TEC_DAC": 27.71456815804853,
+        "TEC_EN_UVLO": 4.548528137423855,
+        "TEC_FB": 4.885254326381659,
+        "TEC_HARD_LIMIT": 8.28492424049175,
+        "TEC_HG": 4.5384776310850246,
+        "TEC_HIGH_GATE": 4.845403679018717,
+        "TEC_INDUCTOR_OUT": 10.575710678118659,
+        "TEC_LG": 2.0060660171779823,
+        "TEC_LOW_GATE": 14.39534234078267,
+        "TEC_MON_SENSE_N": 5.7030465325174475,
+        "TEC_MON_SENSE_P": 3.771457069611992,
+        "TEC_PERMISSION_NPN_BASE": 7.54322943214974,
+        "TEC_PERMISSION_PNP_BASE": 6.409188309203677,
+        "TEC_PERMISSION_PNP_DRIVE": 2.654213562373095,
+        "TEC_PERMISSION_SUPPLY": 4.664213562373095,
+        "TEC_POS": 126.78642318610406,
+        "TEC_REQUEST": 7.3677669529663685,
+        "TEC_RT": 1.875,
+        "TEC_SAFE_EN": 9.029898987322332,
+        "TEC_SENSE_N_FILTERED": 3.554705627484773,
+        "TEC_SENSE_P_FILTERED": 5.417731239591685,
+        "TEC_SS": 3.515685424949237,
+        "TEC_SW": 31.360253954689703,
+        "TEC_VC": 5.079467888754753,
+        "TEC_VCC_INT": 26.994962382339132,
+        "TEC_VREF": 12.709671708797583,
+        "UART_RX": 10.134685034699391,
+        "UART_RX_MCU": 11.72517856687341,
+        "UART_TX": 1.426040764008566,
+        "USB_CC1": 2.7928399124746224,
+        "USB_CC2": 2.887814659305202,
+        "V12_FAN": 54.094464099238074,
+        "V3V3": 276.6581518267225,
+        "VBUS_ADC": 15.412970773009196,
+        "VBUS_RAW": 50.2741482630701,
+        "VBUS_TEC": 142.21133399863925,
+        "VOUT_ADC": 11.94208152801713
+      },
+      "inner1": {
+        "HOT_RAW": 31.430129855222066,
+        "INPUT_FAULT_N": 51.324830406564054,
+        "MCU_ARM": 14.296498910433053,
+        "PD_VALID_N": 38.842418792657014,
+        "TEC_CLEAR_N": 30.966904755831216,
+        "TEC_CLEAR_RAW": 28.758147545195115,
+        "TEC_SAFE_EN": 94.06757569573601
+      },
+      "inner2": {
+        "ARM_CLK": 37.775914498161484,
+        "COLD_ADC": 6.64144227664784,
+        "D502_A": 44.82041481893164,
+        "D504_A": 91.29274528926794,
+        "D505_A": 75.5748737342887,
+        "DBG_HW_INHIBIT": 7.311879502661796,
+        "DBG_TEC_PERMIT": 2.924873734152914,
+        "FAN_BST": 2.5500000000000007,
+        "FAN_FB": 6.548528137423858,
+        "FAN_PWM_BASE": 5.557716446627535,
+        "FAN_TACH_MCU": 14.525483399593902,
+        "FAULT_SOURCE": 33.4420310216783,
+        "HOT_ADC": 1.9606601717798213,
+        "HOT_RAW": 11.227855287732327,
+        "I2C_SCL": 49.206806589144634,
+        "I2C_SDA": 49.36571531879723,
+        "INPUT_CLEAR_N": 1.6999999999999993,
+        "INPUT_CLEAR_RAW": 8.210660171779821,
+        "INPUT_CURRENT_MON": 4.31776695296637,
+        "INPUT_DVDT": 2.9813708498984743,
+        "INPUT_ENABLE": 33.859801564019655,
+        "INPUT_FAULT_N": 39.746908345206194,
+        "INPUT_FAULT_NPN_BASE": 6.077228714274744,
+        "INPUT_OVLO": 6.0541630560342625,
+        "LOGIC_BST": 3.3742640687119287,
+        "LOGIC_SW": 6.3355339059327385,
+        "MCU_RUN": 43.73721497261418,
+        "PD_DISCH": 8.107106781186548,
+        "PD_VALID_N": 52.22361107568208,
+        "POWER_BUDGET_HIGH": 42.879393923934,
+        "TEC_CLEAR_RAW": 8.899999999999999,
+        "TEC_CURRENT_COMMAND": 11.407253818767382,
+        "TEC_DAC": 11.16424494298889,
+        "TEC_EN_UVLO": 24.392640687119286,
+        "TEC_HARD_LIMIT": 5.961269837220809,
+        "TEC_LOW_GATE": 20.408683245815343,
+        "TEC_MON_SENSE_P": 3.5477922061357847,
+        "TEC_PERMISSION_PNP_BASE": 2.6162950903902265,
+        "TEC_REQUEST": 12.07842712474619,
+        "TEC_SAFE_EN": 29.8278174593052,
+        "TEC_VC": 7.6089357775095126,
+        "UART_RX_MCU": 28.442997820866108,
+        "UART_TX": 10.34619407771256,
+        "USB_CC1": 18.567487083177085,
+        "USB_CC2": 15.66043249289939,
+        "V3V3": 99.27296908432669,
+        "VBUS_ADC": 18.41190042307233,
+        "VOUT_ADC": 22.767104243115156
+      },
+      "bottom": {
+        "COLD_ADC": 3.84142135623731,
+        "COLD_RAW": 33.48725280104131,
+        "D501_A": 25.869848481023276,
+        "D503_A": 25.918376618503373,
+        "FAN_PWM_DRIVE": 28.297160876900367,
+        "FAN_TACH": 3.7156854249492373,
+        "FAN_TACH_MCU": 28.275409434773145,
+        "HOT_ADC": 6.598401871576773,
+        "HOT_HIGH": 3.094999999999999,
+        "I2C_SCL": 36.028531726798846,
+        "I2C_SDA": 38.1350288425444,
+        "INPUT_CLEAR_N": 28.519090885901,
+        "INPUT_ENABLE": 5.407817459305203,
+        "INPUT_FAULT_N": 6.765411972844538,
+        "MCU_ARM": 26.211500705120542,
+        "MCU_NRST": 23.873149339882605,
+        "MCU_RUN": 26.30782104868019,
+        "PD_2V7": 3.2385490578343874,
+        "PD_ALERT": 40.38305191657993,
+        "PD_DISCH": 21.45182899632297,
+        "SWCLK": 18.937779528224077,
+        "SWDIO": 21.416204996116015,
+        "TEC_BOOT": 6.929294815542512,
+        "TEC_FB": 6.341269837220809,
+        "TEC_HIGH_GATE": 16.153528137423855,
+        "TEC_INDUCTOR_OUT": 36.90121933088198,
+        "TEC_POS": 37.802691193458124,
+        "TEC_RT": 5.052386360737623,
+        "TEC_SAFE_EN": 5.39558441227157,
+        "TEC_SENSE_N_FILTERED": 3.7563708498984765,
+        "TEC_SW": 15.1675,
+        "TEC_VREF": 6.791295090390226,
+        "UART_RX_MCU": 39.04868504050283,
+        "UART_TX": 55.70509486552584,
+        "USB_CC1": 5.800000000000004,
+        "USB_CC2": 9.3,
+        "VBUS_RAW": 96.40523086789975,
+        "VBUS_TEC": 113.30410747355263
+      }
+    },
+    "economy": {
+      "routeCount": 636,
+      "weighted45DegreeRatio": 1.1344433408567742,
+      "median45DegreeRatio": 1.0,
+      "p90Ratio": 1.210617581930793,
+      "above1_5x": 26,
+      "above2x": 8
+    },
+    "economyOver10Mm": {
+      "routeCount": 95,
+      "weighted45DegreeRatio": 1.1803139126161033,
+      "median45DegreeRatio": 1.1104231564758222,
+      "p90Ratio": 1.5633490810968076,
+      "above1_5x": 12,
+      "above2x": 3
+    },
+    "non45SegmentCount": 0,
+    "unresolvedOrAmbiguousNets": [],
+    "largestGeometricExcess": [
+      {
+        "identity": "FAN_PROTECTED_POWER_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 81.92213597261417,
+        "unobstructed45DegreeBoundMm": 40.02015989358223,
+        "ratioTo45DegreeBound": 2.0470217058216074,
+        "excessTo45DegreeBoundMm": 41.90197607903194
+      },
+      {
+        "identity": "LOGIC_RAW_INPUT_FEED",
+        "nets": [
+          "VBUS_RAW"
+        ],
+        "lengthMm": 68.95774169979696,
+        "unobstructed45DegreeBoundMm": 45.71385419847458,
+        "ratioTo45DegreeBound": 1.5084648386986805,
+        "excessTo45DegreeBoundMm": 23.243887501322376
+      },
+      {
+        "identity": "UART_TX_MCU_BOTTOM_HEADER",
+        "nets": [
+          "UART_TX"
+        ],
+        "lengthMm": 55.70509486552584,
+        "unobstructed45DegreeBoundMm": 32.91076043593986,
+        "ratioTo45DegreeBound": 1.6926103841919635,
+        "excessTo45DegreeBoundMm": 22.79433442958598
+      },
+      {
+        "identity": "INPUT_FAULT_PULLUP_INNER2",
+        "nets": [
+          "INPUT_FAULT_N"
+        ],
+        "lengthMm": 30.244826817189065,
+        "unobstructed45DegreeBoundMm": 14.631980515339466,
+        "ratioTo45DegreeBound": 2.067035749909716,
+        "excessTo45DegreeBoundMm": 15.612846301849599
+      },
+      {
+        "identity": "UART_RX_MCU_BOTTOM_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 39.04868504050283,
+        "unobstructed45DegreeBoundMm": 25.13913959755234,
+        "ratioTo45DegreeBound": 1.5533023669714132,
+        "excessTo45DegreeBoundMm": 13.909545442950492
+      },
+      {
+        "identity": "SAFE_R37_TRUNK",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 71.6563058585152,
+        "unobstructed45DegreeBoundMm": 61.193207024971414,
+        "ratioTo45DegreeBound": 1.1709846458819204,
+        "excessTo45DegreeBoundMm": 10.463098833543782
+      },
+      {
+        "identity": "TEC_SENSE_KELVIN_P",
+        "nets": [
+          "TEC_INDUCTOR_OUT"
+        ],
+        "lengthMm": 34.333427124746194,
+        "unobstructed45DegreeBoundMm": 24.30626983722081,
+        "ratioTo45DegreeBound": 1.4125337764567454,
+        "excessTo45DegreeBoundMm": 10.027157287525384
+      },
+      {
+        "identity": "PD_PROTECTED_DISCHARGE_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 24.253300858899106,
+        "unobstructed45DegreeBoundMm": 14.585533905932738,
+        "ratioTo45DegreeBound": 1.6628325720071142,
+        "excessTo45DegreeBoundMm": 9.667766952966367
+      },
+      {
+        "identity": "UART_RX_MCU_INNER2_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.442997820866108,
+        "unobstructed45DegreeBoundMm": 19.010764773832474,
+        "ratioTo45DegreeBound": 1.496152214771323,
+        "excessTo45DegreeBoundMm": 9.432233047033634
+      },
+      {
+        "identity": "TEC_SHUNT_TO_FILTER",
+        "nets": [
+          "TEC_POS"
+        ],
+        "lengthMm": 26.314921,
+        "unobstructed45DegreeBoundMm": 17.64539393938864,
+        "ratioTo45DegreeBound": 1.4913195528754362,
+        "excessTo45DegreeBoundMm": 8.669527060611358
+      },
+      {
+        "identity": "D505_SERIES_TRUNK",
+        "nets": [
+          "D505_A"
+        ],
+        "lengthMm": 75.5748737342887,
+        "unobstructed45DegreeBoundMm": 67.08492424053152,
+        "ratioTo45DegreeBound": 1.1265552520163347,
+        "excessTo45DegreeBoundMm": 8.48994949375718
+      },
+      {
+        "identity": "PD_VALID_DEBUG_TRUNK",
+        "nets": [
+          "PD_VALID_N"
+        ],
+        "lengthMm": 50.80939751330899,
+        "unobstructed45DegreeBoundMm": 42.577164466275356,
+        "ratioTo45DegreeBound": 1.1933485508071877,
+        "excessTo45DegreeBoundMm": 8.232233047033631
+      },
+      {
+        "identity": "HOT_LOW_COMPARATOR_LOCAL",
+        "nets": [
+          "HOT_LOW"
+        ],
+        "lengthMm": 17.577533546995237,
+        "unobstructed45DegreeBoundMm": 9.580584412271573,
+        "ratioTo45DegreeBound": 1.8347036872281546,
+        "excessTo45DegreeBoundMm": 7.996949134723664
+      },
+      {
+        "identity": "PD_RAW_MONITOR_FEED",
+        "nets": [
+          "VBUS_RAW"
+        ],
+        "lengthMm": 17.119999999999997,
+        "unobstructed45DegreeBoundMm": 9.362640687119283,
+        "ratioTo45DegreeBound": 1.8285439516602355,
+        "excessTo45DegreeBoundMm": 7.757359312880714
+      },
+      {
+        "identity": "RUN_CLOCK_PULLDOWN_REMAINDER",
+        "nets": [
+          "RUN_CLK"
+        ],
+        "lengthMm": 14.453910524340095,
+        "unobstructed45DegreeBoundMm": 6.939696961966998,
+        "ratioTo45DegreeBound": 2.0827869867452047,
+        "excessTo45DegreeBoundMm": 7.514213562373097
+      }
+    ],
+    "viaCount": 434,
+    "viasByNet": {
+      "GND": 166,
+      "USB_CC1": 3,
+      "USB_CC2": 3,
+      "V3V3": 10,
+      "INPUT_ENABLE": 5,
+      "INPUT_FAULT_N": 7,
+      "INPUT_DVDT": 2,
+      "PD_2V7": 2,
+      "VBUS_TEC": 25,
+      "TEC_RT": 2,
+      "TEC_BOOT": 3,
+      "D501_A": 2,
+      "D502_A": 2,
+      "D503_A": 2,
+      "D504_A": 2,
+      "D505_A": 2,
+      "DBG_HW_INHIBIT": 2,
+      "HOT_ADC": 3,
+      "COLD_ADC": 3,
+      "VBUS_ADC": 3,
+      "VOUT_ADC": 3,
+      "TEC_FB": 2,
+      "TEC_VC": 2,
+      "DBG_TEC_PERMIT": 2,
+      "TEC_DAC": 4,
+      "INPUT_FAULT_NPN_BASE": 2,
+      "HOT_HIGH": 2,
+      "INPUT_CLEAR_RAW": 2,
+      "TEC_CLEAR_RAW": 3,
+      "SWCLK": 1,
+      "SWDIO": 1,
+      "TEC_MON_SENSE_P": 2,
+      "TEC_HIGH_GATE": 2,
+      "TEC_PERMISSION_PNP_BASE": 2,
+      "TEC_REQUEST": 4,
+      "LOGIC_SW": 2,
+      "LOGIC_BST": 2,
+      "FAN_BST": 2,
+      "FAN_FB": 2,
+      "TEC_LOW_GATE": 2,
+      "INPUT_CURRENT_MON": 2,
+      "INPUT_OVLO": 2,
+      "MCU_ARM": 3,
+      "MCU_RUN": 8,
+      "FAULT_SOURCE": 2,
+      "TEC_EN_UVLO": 3,
+      "TEC_VREF": 2,
+      "TEC_CURRENT_COMMAND": 2,
+      "TEC_HARD_LIMIT": 3,
+      "COLD_RAW": 2,
+      "FAN_PWM_BASE": 2,
+      "MCU_NRST": 3,
+      "ARM_CLK": 2,
+      "FAN_TACH": 2,
+      "PD_ALERT": 2,
+      "FAN_TACH_MCU": 4,
+      "PD_VALID_N": 5,
+      "INPUT_CLEAR_N": 4,
+      "FAN_PWM_DRIVE": 2,
+      "TEC_CLEAR_N": 2,
+      "PD_DISCH": 3,
+      "POWER_BUDGET_HIGH": 5,
+      "HOT_RAW": 3,
+      "TEC_SAFE_EN": 6,
+      "UART_RX_MCU": 4,
+      "UART_TX": 2,
+      "I2C_SCL": 3,
+      "I2C_SDA": 3,
+      "TEC_INDUCTOR_OUT": 11,
+      "TEC_POS": 13,
+      "VBUS_RAW": 27,
+      "TEC_SW": 2,
+      "TEC_SENSE_N_FILTERED": 2
+    },
+    "fullFourLayerBarrels": 434,
+    "uniquePlanarCenterlineMm": 3966.2107250373174,
+    "uniqueLengthByLayerMm": {
+      "top": 1710.6681260634816,
+      "inner2": 1050.8144100244278,
+      "bottom": 915.0416829877697,
+      "inner1": 289.68650596163855
+    },
+    "repeatedCollinearSameNetCenterlineMm": 78.09217500237855
+  },
+  "overallDelta": {
+    "planarCenterlineMm": -34.27989629000831,
+    "viaCount": 1,
+    "layerLengthMm": {
+      "top": -16.820471888084967,
+      "inner1": -38.24379725676971,
+      "inner2": 28.55863692355831,
+      "bottom": -7.774264068712
+    },
+    "signalLayerLengthMm": {
+      "top": -0.30475613382350275,
+      "inner1": -38.24379725676971,
+      "inner2": 28.097617228637432,
+      "bottom": -0.8428932188134013
+    }
+  },
+  "changedScopeBefore": {
+    "traceObjects": 24,
+    "totalPlanarCenterlineMm": 361.6099081412608,
+    "lengthByLayerMm": {
+      "top": 113.1772106553099,
+      "bottom": 99.2575840336286,
+      "inner2": 88.52004635833177,
+      "inner1": 60.65506709399048
+    },
+    "signalLengthByLayerMm": {
+      "top": 22.944997820866114,
+      "bottom": 60.30435893423776,
+      "inner2": 74.60459938998754,
+      "inner1": 60.65506709399048
+    },
+    "byLayerNetMm": {
+      "top": {
+        "GND": 9.42501117808026,
+        "I2C_SDA": 6.162741699796953,
+        "INPUT_DVDT": 1.1000000000000014,
+        "TEC_CURRENT_COMMAND": 1.2303452377915596,
+        "TEC_DAC": 12.446910883277598,
+        "TEC_SENSE_N_FILTERED": 2.005000000000001,
+        "V3V3": 2.198660171779823,
+        "VBUS_TEC": 78.60854148458374
+      },
+      "inner1": {
+        "INPUT_DVDT": 8.305929291125633,
+        "TEC_SAFE_EN": 52.349137802864846
+      },
+      "inner2": {
+        "TEC_CURRENT_COMMAND": 11.580918682243588,
+        "TEC_DAC": 2.0258683245815337,
+        "TEC_LOW_GATE": 22.34177848998413,
+        "TEC_VC": 10.105929291125635,
+        "UART_RX_MCU": 28.550104602052652,
+        "V3V3": 13.915446968344227
+      },
+      "bottom": {
+        "TEC_SENSE_N_FILTERED": 4.225,
+        "UART_TX": 56.07935893423776,
+        "VBUS_TEC": 38.95322509939085
+      }
+    },
+    "economy": {
+      "routeCount": 24,
+      "weighted45DegreeRatio": 1.4377294206696325,
+      "median45DegreeRatio": 1.0168136012222517,
+      "p90Ratio": 1.6468859543815901,
+      "above1_5x": 5,
+      "above2x": 2
+    },
+    "economyOver10Mm": {
+      "routeCount": 10,
+      "weighted45DegreeRatio": 1.4869893132279666,
+      "median45DegreeRatio": 1.2620766778849555,
+      "p90Ratio": 1.7599495756956902,
+      "above1_5x": 4,
+      "above2x": 1
+    },
+    "non45SegmentCount": 0,
+    "unresolvedOrAmbiguousNets": [],
+    "largestGeometricExcess": [
+      {
+        "identity": "FAN_PROTECTED_POWER_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 90.59177524949237,
+        "unobstructed45DegreeBoundMm": 40.02015989358223,
+        "ratioTo45DegreeBound": 2.2636535058926635,
+        "excessTo45DegreeBoundMm": 50.57161535591014
+      },
+      {
+        "identity": "UART_TX_MCU_BOTTOM_HEADER",
+        "nets": [
+          "UART_TX"
+        ],
+        "lengthMm": 56.07935893423776,
+        "unobstructed45DegreeBoundMm": 32.91076043593986,
+        "ratioTo45DegreeBound": 1.7039824723404713,
+        "excessTo45DegreeBoundMm": 23.168598498297904
+      },
+      {
+        "identity": "UART_RX_MCU_INNER2_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.550104602052652,
+        "unobstructed45DegreeBoundMm": 19.010764773832474,
+        "ratioTo45DegreeBound": 1.501786221738469,
+        "excessTo45DegreeBoundMm": 9.539339828220179
+      },
+      {
+        "identity": "PD_PROTECTED_BYPASS_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 23.02577777210913,
+        "unobstructed45DegreeBoundMm": 15.211980515339466,
+        "ratioTo45DegreeBound": 1.5136607458108682,
+        "excessTo45DegreeBoundMm": 7.813797256769664
+      },
+      {
+        "identity": "SAFE_EN_DEBUG_INNER1_TRUNK",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 52.349137802864846,
+        "unobstructed45DegreeBoundMm": 46.290916292848976,
+        "ratioTo45DegreeBound": 1.1308727930916274,
+        "excessTo45DegreeBoundMm": 6.058221510015869
+      },
+      {
+        "identity": "TEC_LOW_INNER2_LOCAL",
+        "nets": [
+          "TEC_LOW_GATE"
+        ],
+        "lengthMm": 22.34177848998413,
+        "unobstructed45DegreeBoundMm": 18.680613254815974,
+        "ratioTo45DegreeBound": 1.1959874221058715,
+        "excessTo45DegreeBoundMm": 3.6611652351681556
+      },
+      {
+        "identity": "TEC_FILTERED_SENSE_N_U2",
+        "nets": [
+          "TEC_SENSE_N_FILTERED"
+        ],
+        "lengthMm": 6.23,
+        "unobstructed45DegreeBoundMm": 2.9130717856868635,
+        "ratioTo45DegreeBound": 2.1386359342775516,
+        "excessTo45DegreeBoundMm": 3.316928214313137
+      },
+      {
+        "identity": "TEC_VC_LOCAL",
+        "nets": [
+          "TEC_VC"
+        ],
+        "lengthMm": 10.105929291125635,
+        "unobstructed45DegreeBoundMm": 7.6089357775095126,
+        "ratioTo45DegreeBound": 1.3281659336640395,
+        "excessTo45DegreeBoundMm": 2.4969935136161228
+      },
+      {
+        "identity": "CURRENT_COMMAND_INNER2",
+        "nets": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 11.580918682243588,
+        "unobstructed45DegreeBoundMm": 10.351019694921256,
+        "ratioTo45DegreeBound": 1.118819113823712,
+        "excessTo45DegreeBoundMm": 1.2298989873223327
+      },
+      {
+        "identity": "I2C_SDA_PULLUP_TO_PD_VIA",
+        "nets": [
+          "I2C_SDA"
+        ],
+        "lengthMm": 6.162741699796953,
+        "unobstructed45DegreeBoundMm": 5.0414213562373105,
+        "ratioTo45DegreeBound": 1.2224214689320365,
+        "excessTo45DegreeBoundMm": 1.1213203435596428
+      },
+      {
+        "identity": "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 3.944213562373096,
+        "unobstructed45DegreeBoundMm": 3.211980515339465,
+        "ratioTo45DegreeBound": 1.227969330304684,
+        "excessTo45DegreeBoundMm": 0.7322330470336311
+      },
+      {
+        "identity": "TEC_DAC_SOURCE_HEAD_TOP",
+        "nets": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 11.840783899555515,
+        "unobstructed45DegreeBoundMm": 11.455565286548534,
+        "ratioTo45DegreeBound": 1.0336272024445023,
+        "excessTo45DegreeBoundMm": 0.38521861300698035
+      },
+      {
+        "identity": "C_INPUT_DVDT_B",
+        "nets": [
+          "GND"
+        ],
+        "lengthMm": 4.154233764908628,
+        "unobstructed45DegreeBoundMm": 4.154233764908627,
+        "ratioTo45DegreeBound": 1.0000000000000002,
+        "excessTo45DegreeBoundMm": 8.881784197001252e-16
+      },
+      {
+        "identity": "TP12_DAC_FROM",
+        "nets": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 0.6061269837220827,
+        "unobstructed45DegreeBoundMm": 0.6061269837220821,
+        "ratioTo45DegreeBound": 1.000000000000001,
+        "excessTo45DegreeBoundMm": 6.661338147750939e-16
+      },
+      {
+        "identity": "TPG6_GROUND",
+        "nets": [
+          "GND"
+        ],
+        "lengthMm": 1.6,
+        "unobstructed45DegreeBoundMm": 1.6,
+        "ratioTo45DegreeBound": 1.0,
+        "excessTo45DegreeBoundMm": 0.0
+      }
+    ],
+    "uniquePlanarCenterlineMm": 361.6099081412608,
+    "uniqueLengthByLayerMm": {
+      "top": 113.17721065530993,
+      "bottom": 99.25758403362862,
+      "inner2": 88.52004635833175,
+      "inner1": 60.65506709399048
+    },
+    "repeatedCollinearSameNetCenterlineMm": 0.0
+  },
+  "changedScopeAfter": {
+    "traceObjects": 27,
+    "totalPlanarCenterlineMm": 327.3300118512528,
+    "lengthByLayerMm": {
+      "inner2": 117.07868328189039,
+      "top": 96.35673876722493,
+      "bottom": 91.48331996491669,
+      "inner1": 22.41126983722081
+    },
+    "signalLengthByLayerMm": {
+      "inner2": 102.7022166186249,
+      "top": 22.640241687042504,
+      "bottom": 59.46146571542431,
+      "inner1": 22.41126983722081
+    },
+    "byLayerNetMm": {
+      "top": {
+        "GND": 6.112498192558058,
+        "I2C_SDA": 5.8698484809835,
+        "INPUT_DVDT": 0.9800000000000004,
+        "TEC_CURRENT_COMMAND": 1.2960559159102143,
+        "TEC_DAC": 12.48933729014879,
+        "TEC_SENSE_N_FILTERED": 2.005000000000001,
+        "VBUS_TEC": 67.60399888762434
+      },
+      "inner1": {
+        "TEC_SAFE_EN": 22.41126983722081
+      },
+      "inner2": {
+        "INPUT_DVDT": 2.9813708498984743,
+        "TEC_CURRENT_COMMAND": 11.407253818767382,
+        "TEC_DAC": 2.025157646462879,
+        "TEC_LOW_GATE": 20.408683245815343,
+        "TEC_SAFE_EN": 29.8278174593052,
+        "TEC_VC": 7.6089357775095126,
+        "UART_RX_MCU": 28.442997820866108,
+        "V3V3": 14.376466663265482
+      },
+      "bottom": {
+        "TEC_SENSE_N_FILTERED": 3.7563708498984765,
+        "UART_TX": 55.70509486552584,
+        "VBUS_TEC": 32.02185424949238
+      }
+    },
+    "economy": {
+      "routeCount": 27,
+      "weighted45DegreeRatio": 1.351893794894812,
+      "median45DegreeRatio": 1.0000000000000013,
+      "p90Ratio": 1.5747354825395796,
+      "above1_5x": 3,
+      "above2x": 1
+    },
+    "economyOver10Mm": {
+      "routeCount": 10,
+      "weighted45DegreeRatio": 1.4015949258533882,
+      "median45DegreeRatio": 1.095609428021297,
+      "p90Ratio": 1.7280515163549277,
+      "above1_5x": 2,
+      "above2x": 1
+    },
+    "non45SegmentCount": 0,
+    "unresolvedOrAmbiguousNets": [],
+    "largestGeometricExcess": [
+      {
+        "identity": "FAN_PROTECTED_POWER_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 81.92213597261417,
+        "unobstructed45DegreeBoundMm": 40.02015989358223,
+        "ratioTo45DegreeBound": 2.0470217058216074,
+        "excessTo45DegreeBoundMm": 41.90197607903194
+      },
+      {
+        "identity": "UART_TX_MCU_BOTTOM_HEADER",
+        "nets": [
+          "UART_TX"
+        ],
+        "lengthMm": 55.70509486552584,
+        "unobstructed45DegreeBoundMm": 32.91076043593986,
+        "ratioTo45DegreeBound": 1.6926103841919635,
+        "excessTo45DegreeBoundMm": 22.79433442958598
+      },
+      {
+        "identity": "UART_RX_MCU_INNER2_TRUNK",
+        "nets": [
+          "UART_RX_MCU"
+        ],
+        "lengthMm": 28.442997820866108,
+        "unobstructed45DegreeBoundMm": 19.010764773832474,
+        "ratioTo45DegreeBound": 1.496152214771323,
+        "excessTo45DegreeBoundMm": 9.432233047033634
+      },
+      {
+        "identity": "SAFE_EN_DEBUG_INNER2_MIDDLE",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 29.8278174593052,
+        "unobstructed45DegreeBoundMm": 26.803910524340093,
+        "ratioTo45DegreeBound": 1.1128158867796234,
+        "excessTo45DegreeBoundMm": 3.023906934965108
+      },
+      {
+        "identity": "TEC_FILTERED_SENSE_N_U2",
+        "nets": [
+          "TEC_SENSE_N_FILTERED"
+        ],
+        "lengthMm": 5.761370849898477,
+        "unobstructed45DegreeBoundMm": 2.9130717856868635,
+        "ratioTo45DegreeBound": 1.9777648042202374,
+        "excessTo45DegreeBoundMm": 2.8482990642116137
+      },
+      {
+        "identity": "TEC_LOW_INNER2_LOCAL",
+        "nets": [
+          "TEC_LOW_GATE"
+        ],
+        "lengthMm": 20.408683245815343,
+        "unobstructed45DegreeBoundMm": 18.680613254815974,
+        "ratioTo45DegreeBound": 1.0925060632339714,
+        "excessTo45DegreeBoundMm": 1.7280699909993693
+      },
+      {
+        "identity": "CURRENT_COMMAND_INNER2",
+        "nets": [
+          "TEC_CURRENT_COMMAND"
+        ],
+        "lengthMm": 11.407253818767382,
+        "unobstructed45DegreeBoundMm": 10.382380084614466,
+        "ratioTo45DegreeBound": 1.0987127928086224,
+        "excessTo45DegreeBoundMm": 1.0248737341529157
+      },
+      {
+        "identity": "I2C_SDA_PULLUP_TO_PD_VIA",
+        "nets": [
+          "I2C_SDA"
+        ],
+        "lengthMm": 5.8698484809835,
+        "unobstructed45DegreeBoundMm": 5.0414213562373105,
+        "ratioTo45DegreeBound": 1.1643241193718612,
+        "excessTo45DegreeBoundMm": 0.8284271247461898
+      },
+      {
+        "identity": "SUPPLY_V3_MST29_0_SPAN_1",
+        "nets": [
+          "V3V3"
+        ],
+        "lengthMm": 14.376466663265482,
+        "unobstructed45DegreeBoundMm": 13.767572726577031,
+        "ratioTo45DegreeBound": 1.0442266729786753,
+        "excessTo45DegreeBoundMm": 0.6088939366884514
+      },
+      {
+        "identity": "TEC_DAC_SOURCE_HEAD_TOP",
+        "nets": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 11.841494577674169,
+        "unobstructed45DegreeBoundMm": 11.41485460842988,
+        "ratioTo45DegreeBound": 1.0373758566253848,
+        "excessTo45DegreeBoundMm": 0.42663996924428815
+      },
+      {
+        "identity": "SAFE_EN_DEBUG_INNER1_TAIL",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 19.574873734152916,
+        "unobstructed45DegreeBoundMm": 19.160660171779824,
+        "ratioTo45DegreeBound": 1.0216179170581583,
+        "excessTo45DegreeBoundMm": 0.41421356237309226
+      },
+      {
+        "identity": "SAFE_EN_DEBUG_INNER1_TRUNK",
+        "nets": [
+          "TEC_SAFE_EN"
+        ],
+        "lengthMm": 2.836396103067895,
+        "unobstructed45DegreeBoundMm": 2.7121320343559665,
+        "ratioTo45DegreeBound": 1.0458178536803562,
+        "excessTo45DegreeBoundMm": 0.1242640687119283
+      },
+      {
+        "identity": "PD_PROTECTED_BYPASS_FEED",
+        "nets": [
+          "VBUS_TEC"
+        ],
+        "lengthMm": 3.1735028842544413,
+        "unobstructed45DegreeBoundMm": 3.126639969244288,
+        "ratioTo45DegreeBound": 1.0149882671081827,
+        "excessTo45DegreeBoundMm": 0.04686291501015338
+      },
+      {
+        "identity": "TP12_DAC_FROM",
+        "nets": [
+          "TEC_DAC"
+        ],
+        "lengthMm": 0.647842712474621,
+        "unobstructed45DegreeBoundMm": 0.6478427124746201,
+        "ratioTo45DegreeBound": 1.0000000000000013,
+        "excessTo45DegreeBoundMm": 8.881784197001252e-16
+      },
+      {
+        "identity": "INPUT_DVDT_FULL_TRUNK",
+        "nets": [
+          "INPUT_DVDT"
+        ],
+        "lengthMm": 2.9813708498984743,
+        "unobstructed45DegreeBoundMm": 2.9813708498984743,
+        "ratioTo45DegreeBound": 1.0,
+        "excessTo45DegreeBoundMm": 0.0
+      }
+    ],
+    "uniquePlanarCenterlineMm": 327.3300118512528,
+    "uniqueLengthByLayerMm": {
+      "inner2": 117.07868328189039,
+      "top": 96.3567387672249,
+      "bottom": 91.48331996491667,
+      "inner1": 22.41126983722081
+    },
+    "repeatedCollinearSameNetCenterlineMm": 0.0
+  },
+  "changedSourceIdentityCount": 29,
+  "priorityMeasurements": {
+    "complete_high_gate_driver_to_fet": {
+      "beforeMm": 24.148059159102154,
+      "afterMm": 24.148059159102154,
+      "deltaMm": 0.0,
+      "changePercent": 0.0,
+      "missingSourceNames": []
+    },
+    "complete_low_gate_driver_to_fet": {
+      "beforeMm": 28.335304461028546,
+      "afterMm": 26.40220921685976,
+      "deltaMm": -1.9330952441687863,
+      "changePercent": -6.822214480975499,
+      "missingSourceNames": []
+    },
+    "VC_pin_to_R27": {
+      "beforeMm": 15.185397179880388,
+      "afterMm": 12.688403666264266,
+      "deltaMm": -2.496993513616122,
+      "changePercent": -16.44338626140426,
+      "missingSourceNames": []
+    },
+    "eFuse_output_cap": {
+      "beforeMm": 23.02577777210913,
+      "afterMm": 3.1735028842544413,
+      "deltaMm": -19.85227488785469,
+      "changePercent": -86.21760830116902,
+      "missingSourceNames": []
+    },
+    "eFuse_input_cap_existing_network": {
+      "beforeMm": 43.80553390593273,
+      "afterMm": 43.80553390593273,
+      "deltaMm": 0.0,
+      "changePercent": 0.0,
+      "missingSourceNames": []
+    },
+    "CdVdt_complete": {
+      "beforeMm": 11.013036072312184,
+      "afterMm": 5.568477631085024,
+      "deltaMm": -5.44455844122716,
+      "changePercent": -49.43739769376853,
+      "missingSourceNames": []
+    },
+    "fan_power_feed": {
+      "beforeMm": 90.59177524949237,
+      "afterMm": 81.92213597261417,
+      "deltaMm": -8.6696392768782,
+      "changePercent": -9.570007048655093,
+      "missingSourceNames": []
+    },
+    "UART_TX_bottom_header": {
+      "beforeMm": 56.07935893423776,
+      "afterMm": 55.70509486552584,
+      "deltaMm": -0.3742640687119234,
+      "changePercent": -0.6673829298776567,
+      "missingSourceNames": []
+    },
+    "UART_TX_complete": {
+      "beforeMm": 67.85159377595889,
+      "afterMm": 67.47732970724697,
+      "deltaMm": -0.3742640687119234,
+      "changePercent": -0.5515921555913876,
+      "missingSourceNames": []
+    }
+  },
+  "directPadSeparationMm": {
+    "inputCapU_INPUT_pin5_to_C_USB_IN_pin1": {
+      "before": 21.839434516488744,
+      "after": 21.839434516488744
+    },
+    "outputCapU_INPUT_pin6_to_C_INPUT_OUT_pin1": {
+      "before": 14.456171692394914,
+      "after": 2.8897923800854617
+    },
+    "CdVdtU_INPUT_pin7_to_C_INPUT_DVDT_pin1": {
+      "before": 5.421291359076727,
+      "after": 4.247458063359779
+    }
+  },
+  "actualBrepPourComparison": {
+    "before": {
+      "count": 29,
+      "groundBrepRingAreaByLayerMm2": {
+        "top": 165.68656007314044,
+        "inner1": 6633.613674041876,
+        "inner2": 0,
+        "bottom": 5474.542042155275
+      },
+      "inner1GroundVoids": 164,
+      "method": "Signed-ring area from actual captured BREP pours. Same-net via/PTH drills are not separately subtracted. Per-net pour objects sum and may overlap."
+    },
+    "after": {
+      "count": 31,
+      "groundBrepRingAreaByLayerMm2": {
+        "top": 165.68656007314044,
+        "inner1": 6656.255907546466,
+        "inner2": 0,
+        "bottom": 5477.168940926389
+      },
+      "inner1GroundVoids": 169,
+      "method": "Signed-ring area from actual captured BREP pours. Same-net via/PTH drills are not separately subtracted. Per-net pour objects sum and may overlap."
+    },
+    "physicalObjectsRemovedOrChanged": 7,
+    "physicalObjectsAddedOrChanged": 9,
+    "groundBrepRingAreaDeltaByLayerMm2": {
+      "top": 0.0,
+      "inner1": 22.642233504589967,
+      "inner2": 0,
+      "bottom": 2.6268987711137015
+    }
+  },
+  "physicalViaChanges": {
+    "removedCount": 10,
+    "addedCount": 11
+  },
+  "collateralRoutingCost": {
+    "permissionProtectedPickupOldMm": 3.944213562373096,
+    "permissionProtectedPickupNewMm": 14.530214280248092,
+    "sourceNames": [
+      "TEC_PERMISSION_DIRECT_PROTECTED_PICKUP",
+      "TEC_PERMISSION_PICKUP_BOTTOM",
+      "TEC_PERMISSION_PICKUP_CAP"
+    ],
+    "addedPlanarMm": 10.586000717874995,
+    "interpretation": "The local OUT-cap placement requires a longer protected permission-supply feed. Overall and changed-scope totals include this cost."
+  },
+  "nonzeroPlanarViaOrLayerTransitionAnomalies": [],
+  "objectCountsBefore": {
+    "source_project_metadata": 1,
+    "source_group": 3,
+    "source_net": 104,
+    "source_port": 1343,
+    "source_component": 220,
+    "source_manually_placed_via": 313,
+    "source_board": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1026,
+    "source_bus": 1,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_component": 533,
+    "pcb_group": 2,
+    "pcb_board": 1,
+    "pcb_keepout": 10,
+    "pcb_hole": 6,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_solder_paste": 574,
+    "pcb_silkscreen_path": 665,
+    "pcb_silkscreen_text": 234,
+    "pcb_courtyard_outline": 194,
+    "pcb_via": 433,
+    "pcb_silkscreen_circle": 31,
+    "pcb_fabrication_note_path": 79,
+    "pcb_silkscreen_rect": 5,
+    "pcb_courtyard_rect": 26,
+    "pcb_port": 1343,
+    "cad_component": 194,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_trace": 633,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_copper_pour": 29,
+    "pcb_trace_warning": 44
+  },
+  "objectCountsAfter": {
+    "source_project_metadata": 1,
+    "source_group": 3,
+    "source_net": 104,
+    "source_port": 1354,
+    "source_component": 220,
+    "source_manually_placed_via": 317,
+    "source_board": 1,
+    "source_refdes_convention_warning": 19,
+    "source_trace": 1029,
+    "source_bus": 1,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_component": 537,
+    "pcb_group": 2,
+    "pcb_board": 1,
+    "pcb_keepout": 10,
+    "pcb_hole": 6,
+    "pcb_smtpad": 552,
+    "pcb_plated_hole": 22,
+    "pcb_solder_paste": 574,
+    "pcb_silkscreen_path": 665,
+    "pcb_silkscreen_text": 234,
+    "pcb_courtyard_outline": 194,
+    "pcb_via": 434,
+    "pcb_silkscreen_circle": 31,
+    "pcb_fabrication_note_path": 79,
+    "pcb_silkscreen_rect": 5,
+    "pcb_courtyard_rect": 26,
+    "pcb_port": 1354,
+    "cad_component": 194,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "pcb_trace": 636,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_copper_pour": 31,
+    "pcb_trace_warning": 44
+  },
+  "methodLimits": [
+    "Planar sums count overlapping same-net objects separately; no vertical barrel length or extracted parasitics.",
+    "45-degree bound omits obstacles, electrical isolation and return-path constraints; it does not prove a safe reroute.",
+    "Placement moves and removal of efficient short branches change the detour-ratio denominator. A higher aggregate ratio can coexist with shorter critical paths; it is not a routing-score formula.",
+    "Changed identities use source names, with endpoint display for unnamed copper. Added/removed names require semantic pairing.",
+    "Priority metrics sum listed concrete routes and flag missing names; they are not a Dijkstra analysis of wide copper.",
+    "No DRC, net continuity, width/fabrication compliance, or manufacturing acceptance claim follows from these economy metrics."
+  ],
+  "notClaimed": [
+    "Foreign-net clearance DRC",
+    "Whole-board drilled copper continuity",
+    "Physical ground-plane contact connectivity",
+    "Manufacturing readiness or bench performance"
+  ]
+}

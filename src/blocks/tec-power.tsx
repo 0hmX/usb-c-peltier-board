@@ -211,7 +211,7 @@ export const TecPower = () => (
     <trace name="FAN_PROTECTED_POWER_FEED" from="C28.pin1" to="FAN_INPUT_PICKUP.bottom" thickness={0.8} maxLength={150}
       pcbPathRelativeTo="C28.pin1"
       pcbPath={["C28.pin1", { x: -2.669921, y: 2.3 }, { x: -1.669921, y: 3.3 },
-        { x: 28.8, y: 3.3 }, { x: 29.8, y: 2.3 },
+        { x: 14, y: 3.3 }, { x: 29.8, y: -12.5 },
         { x: 29.8, y: -31.1 }, { x: 29.8, y: -31.1, via: true, fromLayer: "top", toLayer: "bottom" }, { x: 29.8, y: -31.1 },
         { x: 12.5, y: -31.1 }, { x: 12.5, y: -32.565 },
         "FAN_INPUT_PICKUP.bottom"]} />
@@ -279,11 +279,12 @@ export const TecPower = () => (
     <trace name="TEC_FILTERED_SENSE_P_FILTER" from="C32.pin1" to="R25.pin2" thickness={0.2} maxLength={2}
       pcbPathRelativeTo="C32.pin1"
       pcbPath={["C32.pin1", { x: -0.72, y: 1.42 }, "R25.pin2"]} />
-    <trace name="TEC_FILTERED_SENSE_N_U2" from="U2.pin12" to="C32.pin2" thickness={0.2} maxLength={10}
+    {/* 5.762 mm planar plus two conservative 1.76 mm through barrels. */}
+    <trace name="TEC_FILTERED_SENSE_N_U2" from="U2.pin12" to="C32.pin2" thickness={0.2} maxLength={9.4}
       pcbPathRelativeTo="U2.pin12"
       pcbPath={["U2.pin12", { x: 2.275, y: 1.85 },
         { x: 2.275, y: 1.85, via: true, fromLayer: "top", toLayer: "bottom" }, { x: 2.275, y: 1.85 },
-        { x: 4.25, y: 1.85 }, { x: 4.25, y: -0.4 },
+        { x: 3.45, y: 1.85 }, { x: 4.25, y: 1.05 }, { x: 4.25, y: -0.4 },
         { x: 4.25, y: -0.4, via: true, fromLayer: "bottom", toLayer: "top" }, { x: 4.25, y: -0.4 },
         "C32.pin2"]} />
     <trace name="TEC_FILTERED_SENSE_N_FILTER" from="C32.pin2" to="R26.pin2" thickness={0.2} maxLength={2}
@@ -299,10 +300,22 @@ export const TecPower = () => (
     <trace name="TEC_COMP_RC_LOCAL" from="R27.pin2" to="C33.pin1" thickness={0.2} maxLength={6}
       pcbPathRelativeTo="R27.pin2"
       pcbPath={["R27.pin2", { x: -0.05, y: 0.8 }, { x: -2.875, y: 0.8 }, "C33.pin1"]} />
+    <via name="PERMISSION_PICKUP_REMOTE" pcbX={-18.6} pcbY={29} holeDiameter={0.3} outerDiameter={0.7}
+      fromLayer="top" toLayer="bottom" connectsTo="net.VBUS_TEC" tented />
+    <via name="PERMISSION_PICKUP_LOCAL" pcbX={-16.6} pcbY={19.4} holeDiameter={0.3} outerDiameter={0.7}
+      fromLayer="top" toLayer="bottom" connectsTo="net.VBUS_TEC" tented />
     <trace name="TEC_PERMISSION_DIRECT_PROTECTED_PICKUP"
-      from="R35.pin1" to="C_INPUT_OUT.pin1" thickness={0.20} maxLength={5}
+      from="R35.pin1" to="PERMISSION_PICKUP_REMOTE.top" thickness={0.2} maxLength={2.4}
       pcbPathRelativeTo="R35.pin1"
-      pcbPath={["R35.pin1", { x: -0.75, y: 1.28 }, { x: -1.75, y: 2.28 }, "C_INPUT_OUT.pin1"]} />
+      pcbPath={["R35.pin1", { x: -0.75, y: 1.15 }, "PERMISSION_PICKUP_REMOTE.top"]} />
+    <trace name="TEC_PERMISSION_PICKUP_BOTTOM"
+      from="PERMISSION_PICKUP_REMOTE.bottom" to="PERMISSION_PICKUP_LOCAL.bottom" thickness={0.2} maxLength={10.5}
+      pcbPathRelativeTo="PERMISSION_PICKUP_REMOTE.bottom"
+      pcbPath={["PERMISSION_PICKUP_REMOTE.bottom", { x: 2, y: -2 }, "PERMISSION_PICKUP_LOCAL.bottom"]} />
+    <trace name="TEC_PERMISSION_PICKUP_CAP"
+      from="PERMISSION_PICKUP_LOCAL.top" to="C_INPUT_OUT.pin1" thickness={0.2} maxLength={1.8}
+      pcbPathRelativeTo="PERMISSION_PICKUP_LOCAL.top"
+      pcbPath={["PERMISSION_PICKUP_LOCAL.top", { x: 0, y: -1.58 }, "C_INPUT_OUT.pin1"]} />
 
     {/* Local capacitor returns use ordinary plated barrels outside exposed
         pads and component courtyards. Layout owns their broad top collectors. */}

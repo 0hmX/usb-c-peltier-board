@@ -1,0 +1,286 @@
+{
+  "role": "Fresh native Ground and pour topology validator",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "baselineCircuitSha256": "3ac5f3126c9385045571f0d20c2117097c6722c8f6dad9644323e49eea25f872",
+  "input": "work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "method": "Fresh actual native BREP and layer drilling, finite actual copper intersections, newly rerun independent physical graph, own real-pad-to-ground-host successor copper. No prior accepted flags or forecast shapes grant acceptance.",
+  "observedGroundBarrels": 166,
+  "groundBarrelCensusNotHardCodedToSource23": true,
+  "groundRegionCount": 1,
+  "largestDrilledInner1GroundAreaMm2": 6636.386718239524,
+  "baselineLargestDrilledInner1GroundAreaMm2": 6613.744484734938,
+  "largestDrilledGroundAreaGainMm2": 22.64223350458633,
+  "allActualGroundBarrelsDirectlyContactLargestInner1AndBottom": true,
+  "minimumDirectLargestInner1ContactMm2": 0.31037365426272906,
+  "minimumBottomContactMm2": 0.30905950620201184,
+  "minimumRequiredContactMm2": 0.05,
+  "exactCommon147RealPadTargetsPass": true,
+  "actualGroundTargetReferenceLayer": "inner1",
+  "actualGroundPadIslandCount": 1,
+  "allGroundCopperConnectedToRealPads": true,
+  "allNetPhysicalGraphPass": true,
+  "authorizedFiveGroundPoseChangesOnly": true,
+  "removedGroundCenters": [
+    [
+      -26.355999999999998,
+      15.499999999999998
+    ],
+    [
+      -19.024,
+      31.439999999999998
+    ],
+    [
+      -2.4490000000000003,
+      7.675
+    ],
+    [
+      -1.8489999999999998,
+      -20.8
+    ],
+    [
+      18.5,
+      0.9000000000000001
+    ]
+  ],
+  "newGroundCenters": [
+    [
+      -14.5,
+      18.6
+    ],
+    [
+      -13.05,
+      18
+    ],
+    [
+      -2.399,
+      7.475
+    ],
+    [
+      -1.924,
+      -20.75
+    ],
+    [
+      11.5,
+      2.7
+    ]
+  ],
+  "nativeGround0PathCount": 88,
+  "actualNativeGroundTraceObjects": 88,
+  "sourcePourSolverStartCount": 1,
+  "actualNativeMaterializationBindingPass": true,
+  "allChangedGroundOriginsHaveFiniteOwnLocalPadAndBarrelCopper": true,
+  "changedGroundOriginDetails": [
+    {
+      "target": "TPG6.pin1",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "pcb_trace_194",
+          "name": "TPG6_GROUND",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.6,
+          "finitePadContactMm2": 0.16525478397715276,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_84",
+              "xy": [
+                11.5,
+                2.7
+              ],
+              "contactMm2": 0.04143798877026919
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C35.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_25",
+          "name": null,
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.12275144212722,
+          "finitePadContactMm2": 0.08070793862638564,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_400",
+              "xy": [
+                -2.399,
+                7.475
+              ],
+              "contactMm2": 0.041437988770269316
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C206.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_77",
+          "name": null,
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.186660171779821,
+          "finitePadContactMm2": 0.12466609142809883,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_452",
+              "xy": [
+                -1.924,
+                -20.75
+              ],
+              "contactMm2": 0.04600203599625529
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C_INPUT_OUT.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "saved_phase_null_0_6",
+          "name": "C_INPUT_OUT_B",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 1.2230865786510157,
+          "finitePadContactMm2": 0.11853963039741969,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_381",
+              "xy": [
+                -14.5,
+                18.6
+              ],
+              "contactMm2": 0.04578997842670169
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "target": "C_INPUT_DVDT.pin2",
+      "actualPadCount": 1,
+      "pass": true,
+      "localPaths": [
+        {
+          "id": "pcb_trace_14",
+          "name": "INPUT_DVDT_LOCAL_GROUND",
+          "sourceIncludesRealPad": true,
+          "topPlanarLengthMm": 0.9800000000000004,
+          "finitePadContactMm2": 0.09170793862638532,
+          "minimumWidthPoint2Pass": true,
+          "groundBarrelContacts": [
+            {
+              "id": "pcb_via_13",
+              "xy": [
+                -13.05,
+                18
+              ],
+              "contactMm2": 0.041437988770269156
+            }
+          ],
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "baselineInner1SignalLengthMm": 327.9303032184082,
+  "actualInner1SignalLengthMm": 289.68650596163855,
+  "inner1SignalLengthReductionMm": 38.24379725676965,
+  "inner1SignalLengthReductionPercent": 11.662172382800046,
+  "criticalPathCohort": 22,
+  "criticalRetainedPathCount": 20,
+  "noNewRetainedCriticalProjectionLoss": true,
+  "changedCriticalPaths": [
+    {
+      "name": "PD_PROTECTED_BYPASS_FEED",
+      "beforeCount": 1,
+      "afterCount": 1,
+      "actualId": "pcb_trace_31",
+      "retainedExactGeometry": false,
+      "beforeProjectedCopperMm2": 5.781519538407722,
+      "afterProjectedCopperMm2": 0.8417906824987728,
+      "beforeUnsupportedByMainMm2": 1.3838792669820907,
+      "afterUnsupportedByMainMm2": 0.0,
+      "newPlaneSupportLossUnderActualRouteMm2": 0.0,
+      "newPlaneRecoveredSupportUnderActualRouteMm2": 0.0
+    },
+    {
+      "name": "TEC_FILTERED_SENSE_N_U2",
+      "beforeCount": 1,
+      "afterCount": 1,
+      "actualId": "pcb_trace_75",
+      "retainedExactGeometry": false,
+      "beforeProjectedCopperMm2": 1.057123815879156,
+      "afterProjectedCopperMm2": 0.9651137146113878,
+      "beforeUnsupportedByMainMm2": 0.3466072439090436,
+      "afterUnsupportedByMainMm2": 0.3466072439090436,
+      "newPlaneSupportLossUnderActualRouteMm2": 0.0,
+      "newPlaneRecoveredSupportUnderActualRouteMm2": 0.0
+    }
+  ],
+  "changedCriticalPathsHaveNoNewPlaneInducedSupportLoss": true,
+  "retainedCriticalPathsWithRecoveredSupport": [
+    {
+      "name": "PD_PROTECTED_DISCHARGE_FEED",
+      "beforeCount": 1,
+      "afterCount": 1,
+      "actualId": "pcb_trace_30",
+      "retainedExactGeometry": true,
+      "beforeProjectedCopperMm2": 6.104361483491371,
+      "afterProjectedCopperMm2": 6.104361483491371,
+      "beforeUnsupportedByMainMm2": 1.4846255000182946,
+      "afterUnsupportedByMainMm2": 1.3296255000182948,
+      "newPlaneSupportLossUnderActualRouteMm2": 0.0,
+      "newPlaneRecoveredSupportUnderActualRouteMm2": 0.1549999999999998
+    }
+  ],
+  "baselineTopProjectionGapsAbovePoint5Mm": 296,
+  "actualTopProjectionGapsAbovePoint5Mm": 285,
+  "actualTypedErrors": [],
+  "manifestErrorCount": 0,
+  "groundScopeStaticPass": true,
+  "finalCaptureHasNoTypedErrors": true,
+  "boundFiles": [
+    {
+      "path": "work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+      "sha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6"
+    },
+    {
+      "path": "work/board-debug-revision/dist/debug-source-placement-24d/build-manifest.json",
+      "sha256": "5784ea9e87f04652314a2e9290b34c69a4cdb21e7e16400f65e70aedd4b7f0de"
+    },
+    {
+      "path": "work/routing-improvement-source24/improve_ground_validator/source24d-ground-review.json",
+      "sha256": "a15db9e47dfe4c8b8836f15f3c00dc06ca1e1fa74f857de70dcbc5accfb78447"
+    },
+    {
+      "path": "work/routing-improvement-source24/improve_ground_validator/source24d-ground-successors.json",
+      "sha256": "3a0973c1038539a46b78266cd66611ab52725cfed43a5b119fb1ce7dc255f5ca"
+    }
+  ],
+  "limits": [
+    "Plane slots and projected copper support are static geometry. Frequency-dependent return impedance, converter stability and thermal behavior are not established.",
+    "Foreign-copper, drill/mask and courtyard qualification are separate peer gates; passing Ground topology does not waive them.",
+    "Remaining289.69mm of inner1 foreign signal copper includes71.66mm SAFE_R37 and long fault/clear corridors. The main plane remains connected but those slots remain routing-quality limitations.",
+    "Projection gap screens include terminal antipads and deliberate switch exclusions; a gap is not alone proof of a broken return path."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "role": "source-routing-architecture",
+  "capture": "Source24d",
+  "circuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
+  "sourceSha256": "5a186b699e38d2eb77570b0d005fcbfa4ec75a93eacc1499b449ff8de9485923",
+  "runtimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
+  "capturePath": "/Users/ankan/Documents/Codex/2026-10-09/per/work/board-debug-revision/dist/debug-source-placement-24d/circuit.json",
+  "pass": true,
+  "checks": {
+    "targetCjsShaMatches": true,
+    "targetSourceShaMatches": true,
+    "all156ManifestFilesMatch": true,
+    "nativeErrorsZero": true,
+    "preflightPassed": true,
+    "sourceUnchanged": true,
+    "runtimeUnchanged": true,
+    "noTraceSolver": true,
+    "oneFreshPour": true,
+    "ground0Completed88": true,
+    "preservationPassed": true,
+    "strictMetadataPassed": true,
+    "physicalRecordsIdenticalToSupplemental24c": true,
+    "bothMovedCapsNoCourtBoundingBoxOverlap": true,
+    "TPG6LabelAt14point5": true,
+    "actualNativeSenseBound9point4": true,
+    "retainedWarnings117": true
+  },
+  "manifestFileCount": 156,
+  "manifestMismatches": [],
+  "physicalRecordDifferencesFrom24c": 0,
+  "movedCapacitors": {
+    "C_INPUT_DVDT": {
+      "center": {
+        "x": -13.05,
+        "y": 16.299999999999997
+      },
+      "rotation": 90,
+      "courtyardBounds": [
+        -13.75,
+        14.950000000000001,
+        -12.350000000000001,
+        17.650000000000002
+      ],
+      "courtyardSize": [
+        1.3999999999999986,
+        2.700000000000001
+      ]
+    },
+    "C_INPUT_OUT": {
+      "center": {
+        "x": -15.999999999999998,
+        "y": 17.7
+      },
+      "rotation": 0,
+      "courtyardBounds": [
+        -17.35,
+        17,
+        -14.65,
+        18.4
+      ],
+      "courtyardSize": [
+        2.700000000000001,
+        1.3999999999999986
+      ]
+    }
+  },
+  "movedCapCourtyardBoundingBoxOverlaps": [],
+  "TPG6Label": [
+    {
+      "type": "pcb_silkscreen_text",
+      "pcb_silkscreen_text_id": "pcb_silkscreen_text_228",
+      "anchor_alignment": "center",
+      "anchor_position": {
+        "x": 14.5,
+        "y": 2.75
+      },
+      "font": "tscircuit2024",
+      "font_size": 2,
+      "layer": "top",
+      "text": "GND",
+      "ccw_rotation": 0,
+      "pcb_component_id": null,
+      "subcircuit_id": "subcircuit_source_group_2",
+      "pcb_group_id": "pcb_group_1"
+    }
+  ],
+  "nativeSenseMaxLengthMm": 9.4,
+  "warningCounts": {
+    "source_refdes_convention_warning": 19,
+    "source_pin_missing_trace_warning": 6,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 13,
+    "source_component_pins_underspecified_warning": 12,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "supplier_footprint_mismatch_warning": 6,
+    "pcb_trace_warning": 44
+  },
+  "scope": "Independent source/proof architecture, cap courtyard and changed-label-coordinate audit. Physical records exactly equal previously reviewed Source24c; final physical clearance, connectivity and rendered silkscreen checks are separate role evidence. Static CAD only."
+}

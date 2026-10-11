@@ -10,7 +10,7 @@ export const i2cBusTraceNames = ["I2C_MCU_DAC_SCL", "I2C_MCU_DAC_SDA"] as const
 // USB returns retain their physical coverage outside native pad fanout.
 export const requiredGroundPorts=[...groundFanoutPorts,...debugGroundPorts] as const
 export const selectedGroundFanoutPorts=groundFanoutPorts.filter(port=>
-  port!=="C28.pin2"&&port!=="C30.pin2"&&port!=="C31.pin2"
+  port!=="C_INPUT_DVDT.pin2"&&port!=="C28.pin2"&&port!=="C30.pin2"&&port!=="C31.pin2"
   &&port!=="J_USB.EH2"&&port!=="J_USB.EH1"&&port!=="J_USB.GND2"&&port!=="C43.pin2"&&port!=="U_CLEAR_BUFFER.pin2")
 
 // Route small, electrically meaningful net cohorts through the native latest
