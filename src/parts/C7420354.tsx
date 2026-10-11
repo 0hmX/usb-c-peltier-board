@@ -10,7 +10,7 @@ const pinLabels = {
 
 export const MMBT3906 = (props: ChipProps<typeof pinLabels>) => {
   return (
-    <chip
+    <transistor type="pnp"
       pinLabels={pinLabels}
       symbol={
         <symbol>

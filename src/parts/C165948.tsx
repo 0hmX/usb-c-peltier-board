@@ -34,7 +34,8 @@ export const TYPE_C_31_M_12 = (props: ChipProps<typeof pinLabels>) => {
   ]
 }}
       manufacturerPartNumber="TYPE-C-31-M-12"
-      footprint={<footprint>
+      // The mouth faces -Y in this footprint; rotation270 points it west.
+      footprint={<footprint insertionDirection="from_bottom">
         <hole pcbX="-2.899918mm" pcbY="0.9055672mm" diameter="0.5999988mm" />
 <hole pcbX="2.899918mm" pcbY="0.9055672mm" diameter="0.5999988mm" />
 <platedhole  portHints={["pin2"]} pcbX="4.325112mm" pcbY="-2.7741308mm" holeWidth="0.6mm" holeHeight="1.4mm" outerWidth="1.0mm" outerHeight="1.8mm" shape="pill" />

@@ -1,9 +1,12 @@
 import type { BoardProps, PlatformConfig } from "@tscircuit/props"
+import type { RootCircuit } from "@tscircuit/core"
 import type { AnyCircuitElement } from "circuit-json"
+import { withReviewedSupplierFootprint } from "./reviewed-supplier-footprints"
 import supplierFootprints from "./supplier-footprints.json"
 
-// Original supplier geometry is a placement-orientation reference only. The
-// reviewed TSX footprints remain the board's actual copper and stencil source.
+// Supplier snapshots supply orientation and footprint comparisons. Four
+// capacitor references use independently reviewed manufacturer land patterns.
+// Reviewed TSX footprints remain the actual board copper and stencil source.
 // Provenance and original raw-snapshot hashes are saved beside this cache.
 const footprints = supplierFootprints as Record<string, AnyCircuitElement[]>
 export const supplierPartsEngine: NonNullable<BoardProps["partsEngine"]> = {
@@ -11,7 +14,7 @@ export const supplierPartsEngine: NonNullable<BoardProps["partsEngine"]> = {
   findPart: () => ({}),
   fetchPartCircuitJson: ({supplierPartNumber}) => {
     if (!supplierPartNumber || !footprints[supplierPartNumber]) throw new Error(`Missing original supplier orientation footprint ${supplierPartNumber}`)
-    return structuredClone(footprints[supplierPartNumber])
+    return withReviewedSupplierFootprint(supplierPartNumber, footprints[supplierPartNumber])
   },
 }
 
@@ -43,4 +46,14 @@ const orientationCache = new Map<string, string>([
 export const supplierOrientationCache: NonNullable<PlatformConfig["localCacheEngine"]> = {
   getItem: async key => orientationCache.get(key) ?? null,
   setItem: async (key, value) => { orientationCache.set(key, value) },
+}
+
+// Generic viewers do not necessarily load the project's TS configuration.
+export function installSupplierOrientationCache(circuit: RootCircuit) {
+  const existing = circuit.platform?.localCacheEngine
+  if (existing === supplierOrientationCache) return
+  circuit.setPlatform({ localCacheEngine: {
+    getItem: async key => await supplierOrientationCache.getItem(key) ?? await existing?.getItem(key) ?? null,
+    setItem: async (key, value) => { await supplierOrientationCache.setItem(key, value); await existing?.setItem(key, value) },
+  } })
 }

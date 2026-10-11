@@ -11,25 +11,25 @@ type PassiveRow = [name: string, value: string, x: number, y: number, a: string,
 // These coordinates have no effect on the separately reviewed PCB placement.
 const schematicPositions: Record<string, [number, number]> = {
   U_LOGIC: [-14, 10], L_LOGIC: [-10, 11], C200: [-18, 9], C201: [-14, 12], C202: [-10, 9],
-  U_MCU: [0, 9], C203: [-4, 12], C204: [-2, 12], R200: [3, 12], C205: [5, 12],
+  U_MCU: [0, 9], C203: [-4, 12], C204: [-2, 12], R200: [3, 10.5], C205: [5, 12],
   R210: [-5, 5], C209: [-5, 3], R211: [-2, 5], C210: [-2, 3],
   R222: [1, 5], R223: [4, 5], C211: [2.5, 3], R224: [1, 1], R225: [4, 1], C212: [2.5, -1],
   U_DAC: [0, -3], C206: [-3, -3], J_SWD: [-6, -1], J_UART: [-6, -5], R231: [-9, -5],
   U_THERMAL: [-13, -3], J_HOT: [-18, -1], R208: [-18, 2], R212: [-15, 0], R213: [-12, 0],
   R214: [-9, -1], R215: [-9, -3], R216: [-9, -7], R217: [-9, -9], C208: [-13, -6],
   J_COLD: [-18, -8], R209: [-18, -5],
-  U_LATCH: [13, 9], R201: [8, 11], R202: [8, 9], R203: [8, 7], R204: [11, 12], R205: [16, 12], C207: [17, 9],
-  U_INPUT_LATCH: [13, 3], R226: [9, 5], R227: [9, 3], R236: [16, 6], C217: [17, 3], D_INPUT_PERMISSION: [9, 1],
+  U_LATCH: [13, 9], R201: [8, 11], R202: [8, 9], R203: [8, 7], R204: [11, 12], R205: [16, 12], C207: [16, 9],
+  U_INPUT_LATCH: [13, 3], R226: [9, 5], R227: [9, 3], R236: [16, 6], C217: [16, 3], D_INPUT_PERMISSION: [9, 1],
   U_SUPERVISOR: [17, 0], C216: [17, -2], Q_PD_LATCH: [9, -3], R206: [6, -3], R207: [6, -5],
-  Q_FAULT_SOURCE: [14, -3], R232: [11, -5], R233: [14, -5], Q_FAULT_CLEAR: [14, -7], R234: [11, -7], R235: [17, -7],
+  Q_FAULT_SOURCE: [14, -3], R232: [11, -5], R233: [14, -5], Q_FAULT_CLEAR: [14, -7], R234: [11, -7], R235: [12, -8.5],
   U_FAN: [0, -9], L_FAN: [4, -9], C214: [0, -6], C213: [-4, -7], C219: [-4, -9], C220: [-4, -11],
   C215: [4, -7], C218: [7, -7], R228: [1, -12], R229: [4, -12], C221: [7, -12], J_FAN: [7, -10],
-  Q_FAN_PWM: [14, -11], R218: [10, -10], R219: [10, -12], R220: [17, -10], R221: [17, -12],
-  U_CLEAR_BUFFER: [20, 9], C222: [20, 12], U_CLOCK_BUFFER: [20, 3], C223: [20, 6],
+  Q_FAN_PWM: [14, -11], R218: [10, -9.2], R219: [10, -11.2], R220: [17, -10], R221: [17, -12],
+  U_CLEAR_BUFFER: [18, 7.3], C222: [20, 12], U_CLOCK_BUFFER: [18, 4.5], C223: [20, 6],
   Q_INPUT_CLEAR: [20, -4], R237: [20, -1], R238: [20, -7], R239: [20, -9],
-  R240: [9, -13], R241: [12, -13], R242: [15, -13], R243: [20, -12],
+  R240: [9, -13], R241: [12, -13], R242: [15, -13], R243: [20, -11.2],
 }
-const sch = (name: string) => ({ schX: schematicPositions[name][0], schY: schematicPositions[name][1] })
+const sch = (name: string) => ({ schX: schematicPositions[name][0] * .70, schY: schematicPositions[name][1] * .72, ...(["C203", "R235"].includes(name) ? { schRotation: 270 } : {}) })
 
 // Connections are physical pin numbers. In the 20-pin MCU, unused GPIOs
 // internally bonded to PB6/PB7/PB9/PA8/PA14 must remain in analog/input mode.
@@ -113,6 +113,9 @@ const capacitorManualGrounds = new Set(["C200", "C211", "C212", "C213", "C222", 
 
 export function ControlBlock() {
   return <>
+    <netlabel net="VBUS_RAW" schX={-10.8} schY={7.2} anchorSide="right" />
+    <netlabel net="V3V3" schX={10.1} schY={2.46} anchorSide="left" />
+    <netlabel net="VOUT_ADC" schX={1.45} schY={-.72} anchorSide="right" />
     {/* Raw-VBUS logic supply operates at the initial 5 V PD voltage. */}
     <Ap63203 name="U_LOGIC" {...sch("U_LOGIC")} pcbX={-12} pcbY={-11} connections={{
       pin1: "net.V3V3", pin2: "net.VBUS_RAW", pin3: "net.VBUS_RAW",
@@ -147,7 +150,7 @@ export function ControlBlock() {
       pin7: "net.V3V3", pin8: "net.V3V3",
     }} />
     {/* BAT54A common anode pin3: a low input-latch Q clamps eFuse EN. */}
-    <Bat54a name="D_INPUT_PERMISSION" {...sch("D_INPUT_PERMISSION")} pcbX={-10} pcbY={-17.5} connections={{
+    <Bat54a noConnect={["K2"]} name="D_INPUT_PERMISSION" {...sch("D_INPUT_PERMISSION")} pcbX={-10} pcbY={-17.5} connections={{
       pin1: "net.INPUT_ARMED", pin3: "net.INPUT_ENABLE",
     }} />
     <Npn name="Q_PD_LATCH" {...sch("Q_PD_LATCH")} pcbX={8} pcbY={-14} connections={{
@@ -368,6 +371,7 @@ export function ControlBlock() {
     {capacitors.map(([name, capacitance, pcbX, pcbY, a, b, pcbRotation, partId]) =>
       <C key={name} name={name} capacitance={capacitance} pcbX={pcbX} pcbY={pcbY}
         {...sch(name)}
+        schSize={name === "C203" ? "sm" : undefined}
         pcbRotation={pcbRotation} partId={partId}
         maxDecouplingTraceLength={capacitorRouteLimits[name]}
         connections={{ pin1: `net.${a}`,

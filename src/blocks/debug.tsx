@@ -7,6 +7,14 @@ import { attachLogicSupplyInner2Port } from "../logic-supply-links"
 
 type Point = { x: number; y: number }
 type Pair = [number, number]
+const schematicOrder = [
+  ...[...debugRailIndicators, ...debugStatusIndicators].flatMap(item => [item.resistor, item.led]),
+  "U_DBG1", "U_DBG2", "C_DBG1", "C_DBG2", ...debugTestPoints.map(item => item.name), ...debugGroundTestPoints.map(item => item.name),
+]
+const sch = (name: string) => {
+  const index = schematicOrder.indexOf(name)
+  return { schX: (index % 8 - 3.5) * 3.6 - (index % 8 === 7 ? .5 : 0), schY: 8 - Math.floor(index / 8) * 3.2 - (["U_DBG2", "R507", "D507"].includes(name) ? 1.1 : 0) }
+}
 // The current core interprets numeric waypoints relative to the component origin,
 // even when pcbPathRelativeTo names a pin. Invert the component's real rotation.
 const relativePoint = (point: Point, origin: Point, rotation = 0): Point => {
@@ -126,7 +134,9 @@ function FilteredProbeRoutes() {
 
 function Probe({ name, net, x, y, connectedByManualTap = false }: { name: string; net: string; x: number; y: number; connectedByManualTap?: boolean }) {
   return <>
-    <testpoint name={name} footprintVariant="pad" padShape="circle" padDiameter={1.5} doNotPlace
+    <testpoint {...(name.startsWith("TPG") ? { ref: (point: { getRefDesPrefixes: () => string[] } | null) => {
+      if (point) point.getRefDesPrefixes = () => ["TP", "TPG"]
+    } } : {})} name={name} {...sch(name)} footprintVariant="pad" padShape="circle" padDiameter={1.5} doNotPlace
       pcbX={x} pcbY={y} connections={connectedByManualTap ? undefined : { pin1: `net.${net}` }}
       footprint={<footprint>
         <smtpad portHints={["pin1"]} shape="circle" radius={0.75}
@@ -156,9 +166,9 @@ function Indicator({ led, resistor, sourceNet, returnNet = "GND", resistance, x,
   const Led = red ? RedLed : GreenLed
   const resistorOrigin = resistorPosition ?? { x, y: y - 2.5, rotation: 90 }
   return <>
-    <R name={resistor} resistance={resistance} pcbX={resistorOrigin.x} pcbY={resistorOrigin.y} pcbRotation={resistorOrigin.rotation}
+    <R name={resistor} {...sch(resistor)} resistance={resistance} pcbX={resistorOrigin.x} pcbY={resistorOrigin.y} pcbRotation={resistorOrigin.rotation}
       connections={{ pin1: `net.${sourceNet}`, pin2: `net.${led}_A` }} />
-    <Led name={led} pcbX={x} pcbY={y} connections={returnNet === "GND" ? { pin2: `net.${led}_A` } : { pin1: `net.${returnNet}`, pin2: `net.${led}_A` }} />
+    <Led name={led} {...sch(led)} pcbX={x} pcbY={y} connections={returnNet === "GND" ? { pin2: `net.${led}_A` } : { pin1: `net.${returnNet}`, pin2: `net.${led}_A` }} />
     {manualSeries ? <trace name={`${led}_SERIES`} from={`${resistor}.pin2`} to={`${led}.pin2`} thickness={0.2} maxLength={4}
       pcbPathRelativeTo={`${resistor}.pin2`} pcbPath={[
         `${resistor}.pin2`, relativePoint({ x: x + 0.75, y: y - 1 }, resistorOrigin, resistorOrigin.rotation), `${led}.pin2`,
@@ -185,11 +195,11 @@ export function DebugBlock() {
       resistance="2.49k" x={item.x} y={item.y} label={item.label} red={item.led === "D508"} />)}
     <BufferedStatusRoutes />
     <FilteredProbeRoutes />
-    <SchmittBuffer name="U_DBG1" pcbX={-42} pcbY={-24} connections={{
+    <SchmittBuffer name="U_DBG1" {...sch("U_DBG1")} pcbX={-42} pcbY={-24} connections={{
       pin1: "net.PD_VALID_N", pin3: "net.TEC_SAFE_EN",
       pin4: "net.DBG_TEC_PERMIT", pin5: "net.V3V3", pin6: "net.DBG_PD_GATE",
     }} />
-    <SchmittBuffer name="U_DBG2" pcbX={-34} pcbY={-24} connections={{
+    <SchmittBuffer name="U_DBG2" {...sch("U_DBG2")} pcbX={-34} pcbY={-24} connections={{
       pin1: "net.INPUT_CLEAR_N", pin3: "net.MCU_RUN",
       pin4: "net.DBG_MCU_RUN", pin5: "net.V3V3", pin6: "net.DBG_HW_INHIBIT",
     }} />
@@ -201,7 +211,7 @@ export function DebugBlock() {
     {[1, 2].map(index => {
       const x = index === 1 ? -42 : -34
       return <React.Fragment key={index}>
-        <C name={`C_DBG${index}`} capacitance="100nF" pcbX={x} pcbY={-20.5} pcbRotation={90} />
+        <C name={`C_DBG${index}`} {...sch(`C_DBG${index}`)} capacitance="100nF" pcbX={x} pcbY={-20.5} pcbRotation={90} />
         <trace name={`DBG${index}_BYPASS`} from={`C_DBG${index}.pin1`} to={`U_DBG${index}.pin5`}
           thickness={0.2} maxLength={3} pcbPath={[`C_DBG${index}.pin1`, `U_DBG${index}.pin5`]} />
         <GroundStub name={`DBG${index}_BYPASS_GROUND`} from={`C_DBG${index}.pin2`}

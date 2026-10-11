@@ -21,6 +21,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "scripts/**/*.ts",
+    "scripts/**/*.tsx",
     "tscircuit.config.ts",
     "regenerate.config.ts"
   ]

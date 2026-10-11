@@ -8,7 +8,7 @@ import { C, R, Lt3741, PowerNfet, PowerInductor, PowerShunt, Schottky, Pnp, Npn,
  */
 export const TecPower = () => (
   <>
-    <Lt3741 name="U2" pcbX={-5} pcbY={12} schX={0} schY={0}
+    <Lt3741 name="U2" pcbX={-5} pcbY={12} schX={0} schY={0} schPinStyle={Object.fromEntries(Array.from({ length: 21 }, (_, i) => [`pin${i + 1}`, { marginBottom: 0.2 }]))}
       connections={{
         pin1: "net.TEC_VCC_INT", pin3: "net.VBUS_TEC",
         pin4: "net.TEC_EN_UVLO", pin5: "net.TEC_VREF", pin6: "net.TEC_HARD_LIMIT",
@@ -41,11 +41,11 @@ export const TecPower = () => (
       connections={{ pin1: "net.TEC_BOOT", pin2: "net.TEC_VCC_INT" }} />
     <C name="C20" capacitance="220nF" partId="C64705" pcbX={-6.5} pcbY={18.7} pcbRotation={90} schX={-1} schY={-3}
       connections={{ pin1: "net.TEC_BOOT", pin2: "net.TEC_SW" }} />
-    <C name="C21" capacitance="22uF" partId="C45783" maxDecouplingTraceLength={6} pcbX={-11} pcbY={8} pcbRotation={90} schX={-4} schY={-1}
+    <C name="C21" capacitance="22uF" partId="C45783" maxDecouplingTraceLength={6} pcbX={-11} pcbY={8} pcbRotation={90} schX={-4} schY={-1} schRotation={270} schSize="sm"
       connections={{ pin1: "net.TEC_VCC_INT", pin2: "net.GND" }} />
-    <C name="C41" capacitance="22uF" partId="C45783" pcbX={-11} pcbY={4} pcbRotation={90} schX={-6} schY={-1}
+    <C name="C41" capacitance="22uF" partId="C45783" pcbX={-11} pcbY={4} pcbRotation={90} schX={-6} schY={-1} schRotation={270} schSize="sm"
       connections={{ pin1: "net.TEC_VCC_INT", pin2: "net.GND" }} />
-    <C name="C22" capacitance="100nF" pcbX={-8.5} pcbY={5.25} schX={-4} schY={1}
+    <C name="C22" capacitance="100nF" pcbX={-8.5} pcbY={5.25} schX={-4} schY={1.6} schRotation={270} schSize="sm"
       connections={{ pin1: "net.TEC_VCC_INT" }} />
     <C name="C24" capacitance="1uF" partId="C28323" pcbX={-7.25} pcbY={6.95} schX={-3} schY={3}
       connections={{ pin1: "net.VBUS_TEC", pin2: "net.GND" }} />
@@ -105,15 +105,15 @@ export const TecPower = () => (
       connections={{ pin1: "net.TEC_CURRENT_COMMAND", pin2: "net.GND" }} />
 
     {/* Supply absent, reset or latched fault => NPN off => PNP off => EN=0. */}
-    <Pnp name="Q22" pcbX={-13} pcbY={27} schX={-8} schY={2}
+    <Pnp name="Q22" pcbX={-13} pcbY={27} schX={-8} schY={2} schRotation={180}
       connections={{ pin1: "net.TEC_PERMISSION_PNP_BASE", pin2: "net.VBUS_TEC", pin3: "net.TEC_PERMISSION_SUPPLY" }} />
     <Npn name="Q23" pcbX={-13} pcbY={31} schX={-10} schY={4}
       connections={{ pin1: "net.TEC_PERMISSION_NPN_BASE", pin2: "net.GND", pin3: "net.TEC_PERMISSION_PNP_DRIVE" }} />
     <R name="R35" resistance="100k" pcbX={-17} pcbY={27} schX={-8} schY={0}
       connections={{ pin1: "net.VBUS_TEC", pin2: "net.TEC_PERMISSION_PNP_BASE" }} />
-    <R name="R36" resistance="47k" pcbX={-17} pcbY={30} schX={-10} schY={2}
+    <R name="R36" resistance="47k" pcbX={-17} pcbY={30} schX={-10} schY={1}
       connections={{ pin1: "net.TEC_PERMISSION_PNP_BASE", pin2: "net.TEC_PERMISSION_PNP_DRIVE" }} />
-    <R name="R37" resistance="10k" pcbX={-17} pcbY={33} schX={-12} schY={4}
+    <R name="R37" resistance="10k" pcbX={-17} pcbY={33} schX={-11.5} schY={4}
       connections={{ pin1: "net.TEC_SAFE_EN", pin2: "net.TEC_PERMISSION_NPN_BASE" }} />
     <R name="R38" resistance="100k" pcbX={-13} pcbY={34} schX={-10} schY={6}
       connections={{ pin1: "net.TEC_PERMISSION_NPN_BASE", pin2: "net.GND" }} />
@@ -134,7 +134,7 @@ export const TecPower = () => (
       connections={{ pin1: "net.TEC_POS", pin2: "net.TEC_MON_SENSE_N" }} />
     <C name="C42" capacitance="100nF" partId="C14663" pcbX={28.5} pcbY={15.5} schX={12} schY={7.5}
       connections={{ pin1: "net.TEC_MON_SENSE_P", pin2: "net.TEC_MON_SENSE_N" }} />
-    <C name="C43" capacitance="100nF" partId="C14663" pcbX={25} pcbY={20} pcbRotation={90} schX={16} schY={5}
+    <C name="C43" capacitance="100nF" partId="C14663" pcbX={25} pcbY={20} pcbRotation={90} schX={16} schY={3.8}
       connections={{ pin2: "net.GND" }} />
     <via name="TEC_MON_C43_GND" pcbX={25} pcbY={21.65} holeDiameter={0.3} outerDiameter={0.7}
       fromLayer="top" toLayer="bottom" connectsTo="net.GND" tented />

@@ -1,4 +1,5 @@
 import { Port, type Via } from "@tscircuit/core"
+import { Fragment } from "react"
 import type { TraceProps, ViaProps } from "@tscircuit/props"
 import type { SourcePadConnectionPlan } from "./source-pad-connections"
 // Complete work-only Source22 codec. Root installation approval remains required.
@@ -29,6 +30,6 @@ export const source22SameOwnedPdGroundViaProps = source22ViaSpecs.find(spec=>spe
 export const source22ReplacedAdcTraceNames:readonly string[] = ["VBUS_ADC_MCU_LOCAL_ESCAPE","VBUS_ADC_MCU_FILTER_TRUNK","VOUT_ADC_MCU_LOCAL_ESCAPE","VOUT_ADC_MCU_FILTER_TRUNK","HOT_ADC_MCU_FILTER_TRUNK"]
 export const source22ReplacedAdcViaNames:readonly string[] = ["VBUS_ADC_MCU_PICKUP","VOUT_ADC_MCU_PICKUP"]
 export function Source22Routes(){ return <>
-  {source22ViaSpecs.filter(spec=>spec.props.name!=="PD_GROUND_VIA").map(({props,layers})=><via {...props} {...{ref:(via:Via|null)=>attachSource22LayerPorts(via,layers)}} />)}
-  {source22TraceProps.filter(props=>props.name!=="PD_GROUND").map(props=><trace {...props} pcbPath={[...props.pcbPath]} />)}
+  {source22ViaSpecs.filter(spec=>spec.props.name!=="PD_GROUND_VIA").map(({props,layers})=><Fragment key={props.name}><via {...props} {...{ref:(via:Via|null)=>attachSource22LayerPorts(via,layers)}} /></Fragment>)}
+  {source22TraceProps.filter(props=>props.name!=="PD_GROUND").map(props=><Fragment key={props.name}><trace {...props} pcbPath={[...props.pcbPath]} /></Fragment>)}
 </> }

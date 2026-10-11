@@ -1,7 +1,7 @@
 {
-  "scope": "Source24 saved-PCB publication with silkscreen-only cleanup; routing algorithms, copper, pads, drills, placement and netlist preserved.",
-  "publicationSourceSha256": "4ff8766f0f1fe1f6fbd54a3b0fdc49d32a5280ea60b1557471dbce78f1dc50f2",
-  "publicationSourceFileCount": 153,
+  "scope": "Editable TSX with native schematics, saved routes, and the approved BAT54A footprint correction.",
+  "publicationSourceSha256": "02de328647c815f1cc1afc49b5d59d3f0621b5ca13918df32b99a8c991c3d53e",
+  "publicationSourceFileCount": 168,
   "sourceManifest": [
     {
       "file": "bun.lock",
@@ -13,27 +13,39 @@
     },
     {
       "file": "index.tsx",
-      "sha256": "f09f1c2cec146c04c89f209fee28bdd426c26f6d5eb82a2fe29f67b91c9fdfdd"
+      "sha256": "75154795ac2f68e710bd76faa25b86f887b59a717911f2861f9918b209060fc2"
     },
     {
       "file": "package.json",
-      "sha256": "a3f335887e432bf4d3d19635e091e13eed649f236e1a534e39c41358a9f9a726"
+      "sha256": "0815c39b804f73a41342cccafa7fb788f0a878b21d50c076e1664428f45684e8"
     },
     {
       "file": "regenerate.config.ts",
-      "sha256": "e76671293bc8f8bec85434770e770aa65e5fbd7708af4ad105f32548f674901e"
+      "sha256": "1757cb46b0e5a5511224afdcc5dfd34dfa1ad0edbe3e653ca517915d4889220a"
     },
     {
       "file": "regenerate.tsx",
-      "sha256": "8a114a37d1995c7b0b2da1dd1df5b0a045a28041ceb40981928e4c0a9eb6d783"
+      "sha256": "e2ffa6825881df9d253628b55fe9922bec1344b05a959e53feb8a26c2823990c"
+    },
+    {
+      "file": "scripts/assert-saved-circuit.ts",
+      "sha256": "b5c2494787e97811a9de70d92500c27b5cac86cf0e5d13072d2031832580e151"
     },
     {
       "file": "scripts/build-local.ts",
-      "sha256": "0bf11afaf881de04bd0e653ba41f9e2f968c439e484634e3d77f139f6a32a027"
+      "sha256": "1045cde9a11a95e91bb7a987add31835a4508504d96d4cec23dd46c67e7dbb1e"
     },
     {
       "file": "scripts/build-with-watchdog.ts",
       "sha256": "02f78a690f12e71e2782c65781e76a4a886de8b6a9035ac92225d6c940e61a0f"
+    },
+    {
+      "file": "scripts/check-saved-routes.tsx",
+      "sha256": "59a2dc3e84b3a3706e40e6ccf74908871376cc86ce03d6583d80e2f9cc5aff9b"
+    },
+    {
+      "file": "scripts/check-source-evaluator.ts",
+      "sha256": "286f6afcf00e4d04dccbe1c1a7117b00e566d225e39152e0790b5d47a4acb9b8"
     },
     {
       "file": "scripts/phase-checkpoints.ts",
@@ -52,6 +64,10 @@
       "sha256": "a1035117263dff624fe31cab034769d4d829fe860f3bc16c557491d2a5d2d91f"
     },
     {
+      "file": "scripts/schematic-parity.ts",
+      "sha256": "4d01ae3ce0cdaa5c0d6c39ae17919f99692c2e8ff8d7fbac9468e349011314c7"
+    },
+    {
       "file": "scripts/source-ground-materialization-proof.ts",
       "sha256": "e9d120e71c1ae688df10901d50fa9caf1b0bcfe0db81054bd5f9b9a1a431cf1f"
     },
@@ -65,11 +81,15 @@
     },
     {
       "file": "scripts/source-trace-widths.ts",
-      "sha256": "b9b9d99081eeed94218bb963e6eed957d888842ef1f998cd25655ef3e04ceffd"
+      "sha256": "8a1b22d95cd0dd4a9c850ce6c8a1308e3b1d5b4cea1b2279f8b18c2c71c1db9d"
+    },
+    {
+      "file": "scripts/test-saved-circuit.ts",
+      "sha256": "542a1e687e1e38825cf9ac26e8407c1b9b6a945811c6ff27d5442555bfb9de65"
     },
     {
       "file": "src/blocks/control.tsx",
-      "sha256": "19fa6c1a507631c7fc7c1a731c47efbbb47dfeddb5f4066a07cc3c21c2c51835"
+      "sha256": "05dee6e5a4deb74cada01625ae20f66d65af7fea269266ef6e8c490779f9c07c"
     },
     {
       "file": "src/blocks/debug-data.ts",
@@ -77,19 +97,19 @@
     },
     {
       "file": "src/blocks/debug.tsx",
-      "sha256": "d9eb582739ae7d6b0f0aa8e8ae48bed68e9f63643a5766ba9f70da01954458c9"
+      "sha256": "db3ad3282fc55f478e30e23f3698b9cf45b852ef2b6771969ae29df9f9798d23"
     },
     {
       "file": "src/blocks/pd-input.tsx",
-      "sha256": "d33db53737c560e5911439fb17789176acc7b051604ca8084fbf8a5199d38c45"
+      "sha256": "fc0bf83248ca77ed44b68e8ad03d87820248ea1b1e6800a0465141183d0a6071"
     },
     {
       "file": "src/blocks/tec-power.tsx",
-      "sha256": "25cc6c5fed254dbf6199ef42d550f4183c876794e42f63f137ea75c2651450c8"
+      "sha256": "841773025c5c9baabc73918bd1f18ded2cb3b629ca4b9b4ecd3c30bfb36cf7c4"
     },
     {
       "file": "src/bus-routing.tsx",
-      "sha256": "c85154aa2c87e6e2a26346d946d2490e19a54f3e13d9ab80d040fb28c6bc5a4f"
+      "sha256": "110183a9b0dac6b8d50addd3387ae8cb7dbd69592bfb92d984a3c7b116821ffd"
     },
     {
       "file": "src/compact-exact-axis-aligned-obstacles.ts",
@@ -97,15 +117,15 @@
     },
     {
       "file": "src/component-port-anchors.ts",
-      "sha256": "ef038693cf7256acb3d7ed50fa697e90e5399b6812124d1f579a0f0eb279c457"
+      "sha256": "d2e1aff4db1b9a5301fc0f5f9cf018c3b7a127ecfb385253fa8ba60395890596"
     },
     {
       "file": "src/control-local-routes.tsx",
-      "sha256": "e8ee50ef0c623c0177eb020dd3c09228780ea7d736762c7d711d9f47bf3fea30"
+      "sha256": "fc901980ea29dbcba31b3d2547a86716e76985cb0d732161c9f8fa8b1a2b299c"
     },
     {
       "file": "src/control-v3-routes.tsx",
-      "sha256": "448c6f33c181369ddae9752009836cf82aa38b533c1771447156b8431fb76d52"
+      "sha256": "a97e451f91d5d4b4b15dc935c2b24a8b00fd1ff6827057be3f78fa274e3d11e9"
     },
     {
       "file": "src/current-ground-barrels.ts",
@@ -129,7 +149,7 @@
     },
     {
       "file": "src/i2c-branch-routes.tsx",
-      "sha256": "8aeac0228b6da01e0d2b9c719f919047dc45aa776cb0cd288057f584b3b5fc37"
+      "sha256": "75f912b45a7c94f423c43666e6495819284c712925637bf8c184af97e4492189"
     },
     {
       "file": "src/layout.ts",
@@ -153,15 +173,15 @@
     },
     {
       "file": "src/parts/C130910.tsx",
-      "sha256": "76a0b6d3b0c8bc48b322a2c678af39b12caad0bea5237dd2f057429a9fa93d1a"
+      "sha256": "0df246ff1cbac1e4401e447b6b11f7ef43c143f51d0b44f97e500f30c7d353f8"
     },
     {
       "file": "src/parts/C131334.tsx",
-      "sha256": "75c7f0a80a98cb080cddc67680a569d49839ecf4d7aa2d692f588186ce25d895"
+      "sha256": "22bac3157ddfd084655357cd71ba0114990b438263336f9ca851af11535945de"
     },
     {
       "file": "src/parts/C131337.tsx",
-      "sha256": "e33296587ac1a78c2445c432f0ce0aca273e64ac658de57c676951d411ad89f4"
+      "sha256": "72dc74745b27b230b03921d6d50e7476bf3286aa636f0525e14d610dda8e9b9a"
     },
     {
       "file": "src/parts/C132016.tsx",
@@ -209,7 +229,7 @@
     },
     {
       "file": "src/parts/C165948.tsx",
-      "sha256": "88b7ad8fe8c8e4e9413ce872457a4c0873105c3ff885e15c6234fa1c58c81c59"
+      "sha256": "126eb3ac40f969557bd31c148c643ae658c573d80b8e07af6c7219f4c6e83c8c"
     },
     {
       "file": "src/parts/C167874.tsx",
@@ -217,7 +237,7 @@
     },
     {
       "file": "src/parts/C179626.tsx",
-      "sha256": "b22b7821a84608bf43b77319a282d0fa20228220686037e9ddbac1d8525ff981"
+      "sha256": "41e94af58e73798d86ff397c0b8b9ed9ad3fea96aa66db8033d1cbeefb76149b"
     },
     {
       "file": "src/parts/C18739.tsx",
@@ -241,7 +261,7 @@
     },
     {
       "file": "src/parts/C20526.tsx",
-      "sha256": "563534446badb3044a50f646bedb510bd381daddde2534c8f43953fc827947d0"
+      "sha256": "b903b2c9b238b87b08f748615624982fcc0812506fec800634be0b615a74ef20"
     },
     {
       "file": "src/parts/C20527.tsx",
@@ -413,7 +433,7 @@
     },
     {
       "file": "src/parts/C3662799.tsx",
-      "sha256": "fbc3f525028352a4cb218aa0ce98ff483745bc6958268825db981ba45996f9de"
+      "sha256": "26d14fc397a37832e924ec846b56b53b79691c51c0f3e2168074935cce97b640"
     },
     {
       "file": "src/parts/C377773.tsx",
@@ -441,7 +461,7 @@
     },
     {
       "file": "src/parts/C474881.tsx",
-      "sha256": "701ef93107665a477a53ed96d8494360c5bf9794a7ca3e0a2ec5af8f90f60400"
+      "sha256": "54a3f09c0420cdfa708b8cc9ea5d421fee074aa50e330254fdb345af2559f2bc"
     },
     {
       "file": "src/parts/C49073699.tsx",
@@ -501,11 +521,11 @@
     },
     {
       "file": "src/parts/C724040.tsx",
-      "sha256": "7117813bc11e8097de9f66307bd98350aa2f320c7723d12efef0a3d6f75a5ad9"
+      "sha256": "c541bc5748cdae99c3c5b29d1b944fc92dc494471bfe218ccfb59e7c01a579e0"
     },
     {
       "file": "src/parts/C7420354.tsx",
-      "sha256": "46bca8d45c9dc9241903aa9849d6b470a6b8803931848e1f4d4aef69e83a4080"
+      "sha256": "df05955bd790e47a2af9ad22a5bf9f1e6959ce5f6cbff049faf0177803d6bcd2"
     },
     {
       "file": "src/parts/C76589.tsx",
@@ -517,11 +537,11 @@
     },
     {
       "file": "src/parts/C7984.tsx",
-      "sha256": "a446b6ba31632a2184c8ef90f87cec77485f8125b2a101884cd8633b7406723d"
+      "sha256": "48df81f851f6ced6a2e74f24a31d77674cb87fb1bcfd02fad33c694de1fd5924"
     },
     {
       "file": "src/parts/C8545.tsx",
-      "sha256": "c46045d4a7c1ac33cac01c4c15700f7a1b3ee24c622512db0ce25687b9958806"
+      "sha256": "7f4b663069017169cc1102dac9ba2fa8e9452cd59cccf8e8cfda4469daac5593"
     },
     {
       "file": "src/parts/C8591.tsx",
@@ -548,6 +568,10 @@
       "sha256": "743807d18bf2019893335550bcc8463875c3c4cb3a8067b0ece5646ad5f21fa1"
     },
     {
+      "file": "src/parts/reviewed-supplier-footprints.ts",
+      "sha256": "fc7871b97f22bcfb17061f26e5108000a40623ef9e4a06c071ad7ab045b0015a"
+    },
+    {
       "file": "src/parts/supplier-footprints-provenance.json",
       "sha256": "296954369d0d8af37e052f5eff2db2112bed8348e80e838729089e3ceeefd8f5"
     },
@@ -557,15 +581,23 @@
     },
     {
       "file": "src/parts/supplier-parts-engine.ts",
-      "sha256": "fd8452b7388c534e86f3370406ed802a5acbcc6f7eb143e68d708645ecd84812"
+      "sha256": "847e90e4dca982907274e480b12e99e173aa337d017936ff2e28787f07112c06"
     },
     {
       "file": "src/power-budget.ts",
       "sha256": "2e7e6a8bab96e9ed14bfeb3b8312aeb7c187bbb7a4995f077f3384c0811aa621"
     },
     {
+      "file": "src/regeneration-routing.tsx",
+      "sha256": "2f76abd8b352b9cbcca39b858414b0eff9c8967cbc31c07d4f156cd36d244c45"
+    },
+    {
       "file": "src/regional-routing.ts",
       "sha256": "3a15bf8c20d91cd19b20517a6d97694399296ed8d44a16067c2601ffa67f1b90"
+    },
+    {
+      "file": "src/schematic-route-input.ts",
+      "sha256": "856610c5f76d34a3feafc828d334f300a177b033a800e04f9e2aac221e4303d1"
     },
     {
       "file": "src/source-bus-connections.ts",
@@ -580,24 +612,32 @@
       "sha256": "7b53314fb9ee93d3d864d836348478f04c42a0020e25f6c397b799038ce99569"
     },
     {
+      "file": "src/source-trace-widths.ts",
+      "sha256": "b9b9d99081eeed94218bb963e6eed957d888842ef1f998cd25655ef3e04ceffd"
+    },
+    {
+      "file": "src/source-via-metadata.ts",
+      "sha256": "33a5e629e6b7124273b90623053297db930322b2a7d41876907deae186b86b04"
+    },
+    {
       "file": "src/source16-routes.tsx",
-      "sha256": "3c07014384c06d92ff09b3b2d59099252606f5155495dbf2b15f76933ccfb790"
+      "sha256": "286e14bf3e955bc00936fc22a1372fd709aecefd7bc3f8ba59119f6018fa95b9"
     },
     {
       "file": "src/source18-routes.tsx",
-      "sha256": "a35a5ba191477591f67a43bb0817b0b00e99077098459d4f7435eb818b32b629"
+      "sha256": "97daf597edef9f7d43bacb248d2f71106b50bef35fd0a0d8b234114b2d0cbe09"
     },
     {
       "file": "src/source20-routes.tsx",
-      "sha256": "9acd79e2173cc2ac75be18e77a5900464c87eb8f9a0a5b4883594b1a73248854"
+      "sha256": "7c603660dee013429c7532360daa149a942e970e31e6afe751663fd4a1b482ca"
     },
     {
       "file": "src/source21-routes.tsx",
-      "sha256": "fa59a58dc38e01cc12c429ddcf4d7f225d4d947a75752957053c99336eb56d38"
+      "sha256": "8f919ef4d0b4261a1ead7127b48ed9344f73cb95ed2f8b5dd46b80707f07f240"
     },
     {
       "file": "src/source22-routes.tsx",
-      "sha256": "85fcb03c1777c947d80727cfbd44f9b99000b06f4bb4a47452b9f8463bf37b29"
+      "sha256": "8834f10b2918024b58eba527f5dff2d8a8cfeb449499c50613d162e910ff2d20"
     },
     {
       "file": "src/supply-router.ts",
@@ -605,15 +645,35 @@
     },
     {
       "file": "src/supply-source-routes.tsx",
-      "sha256": "94505e0a12968a764fbf1567a24a343f2f09b3fa0650cf83909b8f98b3b24c6b"
+      "sha256": "0413cce86edbbfe4c4c08df948acf3af469209b458470755e50462294f017c9d"
+    },
+    {
+      "file": "src/trace-width-diagnostics.ts",
+      "sha256": "9044dceb5fbf3c762533e475624bf840960a3ac2c32a206afd7132152f612514"
+    },
+    {
+      "file": "tests/schematic-route-input.test.tsx",
+      "sha256": "746cfdfded120e2a4622872453f9efa773cb514ea7da83df3c122a1cb5d53395"
+    },
+    {
+      "file": "tests/symbol-port-selector.test.tsx",
+      "sha256": "d110ee0bc623779bd22de1539e3f0b361e66741a074e02021b5c2a9a6df55b2c"
+    },
+    {
+      "file": "tests/trace-width-diagnostics.test.ts",
+      "sha256": "67449eb5cad4fb8ad63e4f2bce11ba5461494026ef0afbbcfd9994c3f1a1e7c0"
+    },
+    {
+      "file": "tscircuit.config.json",
+      "sha256": "d636f46a3a5fafcb13475710cb821c8365b568e1c6c6a8a41b22f769111e09c3"
     },
     {
       "file": "tscircuit.config.ts",
-      "sha256": "3a7416dcbbbf0bf33069048bf14495d4d4237d2d0fe829bf687659a48cfe174c"
+      "sha256": "3c148313141f96adf61047ad8cb96414bedbfc7773abd7c9e6f98e1a22eab846"
     },
     {
       "file": "tsconfig.json",
-      "sha256": "032385c9ae59c94ff291d0075011cb535bfa7819f78b7e04c895a80838494db8"
+      "sha256": "393b8c1af1461d7b546c5cc609c379c90331179b0d34ef2189470c23c82ab47d"
     }
   ],
   "savedCircuitSha256": "59b2f8178d3ac72f105fce063b2b4b544c3b90d9ac33d97774dca3b3b09806f2",
@@ -621,127 +681,13 @@
   "capturedRuntimeSha256": "bde872769d684edb21b4e560ec27d9caf98fd96dc16c96869dd71f8e96fc7c69",
   "originalRoutingProvenance": "docs/source24-routing-provenance.json",
   "originalNativeBuildManifest": "captured-pcb/build-manifest.json",
-  "defaultPreviewEntrypoint": "captured-pcb/circuit.json",
-  "defaultDataExport": "index.tsx",
+  "defaultPreviewEntrypoint": "index.tsx",
   "regenerationEntrypoint": "regenerate.tsx",
-  "defaultRuntimeRoutingAlgorithms": 0,
-  "importGraphFiles": [
-    "index.tsx",
-    "captured-pcb/circuit.json"
-  ],
-  "unchangedImportedPartFiles": 6,
-  "unchangedRoutingSourceFiles": false,
-  "verification": "publication-checks/silkscreen-cleanup.json",
+  "defaultPcbRoutingAlgorithmImports": 0,
+  "verification": "scripts/check-saved-routes.tsx",
   "hardwareBenchValidated": false,
   "manufacturingAccepted": false,
   "originalSavedCircuitSha256": "0d5dc19177c4f6f4b814da37d24aea3c1c444d68bbb4e384eeb351dbc4e2f3f6",
-  "routingAlgorithmsUnchanged": true,
-  "changedSourceFiles": [
-    "captured-pcb/circuit.json",
-    "package.json",
-    "regenerate.tsx",
-    "src/blocks/control.tsx",
-    "src/blocks/debug.tsx",
-    "src/blocks/pd-input.tsx",
-    "src/blocks/tec-power.tsx",
-    "src/parts/C10429.tsx",
-    "src/parts/C125094.tsx",
-    "src/parts/C12891.tsx",
-    "src/parts/C130910.tsx",
-    "src/parts/C131334.tsx",
-    "src/parts/C131337.tsx",
-    "src/parts/C132016.tsx",
-    "src/parts/C13585.tsx",
-    "src/parts/C138706.tsx",
-    "src/parts/C144198.tsx",
-    "src/parts/C14663.tsx",
-    "src/parts/C14858.tsx",
-    "src/parts/C15127.tsx",
-    "src/parts/C158004.tsx",
-    "src/parts/C15849.tsx",
-    "src/parts/C1591.tsx",
-    "src/parts/C1613.tsx",
-    "src/parts/C165948.tsx",
-    "src/parts/C167874.tsx",
-    "src/parts/C179626.tsx",
-    "src/parts/C18739.tsx",
-    "src/parts/C191884.tsx",
-    "src/parts/C19270707.tsx",
-    "src/parts/C19270709.tsx",
-    "src/parts/C19666.tsx",
-    "src/parts/C20526.tsx",
-    "src/parts/C20527.tsx",
-    "src/parts/C2071044.tsx",
-    "src/parts/C2071868.tsx",
-    "src/parts/C21117.tsx",
-    "src/parts/C21189.tsx",
-    "src/parts/C21190.tsx",
-    "src/parts/C22809.tsx",
-    "src/parts/C22836.tsx",
-    "src/parts/C22858.tsx",
-    "src/parts/C22859.tsx",
-    "src/parts/C22864.tsx",
-    "src/parts/C22875.tsx",
-    "src/parts/C22890.tsx",
-    "src/parts/C22908.tsx",
-    "src/parts/C22939.tsx",
-    "src/parts/C22962.tsx",
-    "src/parts/C22964.tsx",
-    "src/parts/C23003.tsx",
-    "src/parts/C23068.tsx",
-    "src/parts/C23080.tsx",
-    "src/parts/C23091.tsx",
-    "src/parts/C23138.tsx",
-    "src/parts/C23162.tsx",
-    "src/parts/C23186.tsx",
-    "src/parts/C23242.tsx",
-    "src/parts/C23251.tsx",
-    "src/parts/C237304.tsx",
-    "src/parts/C2480.tsx",
-    "src/parts/C25803.tsx",
-    "src/parts/C25819.tsx",
-    "src/parts/C25954.tsx",
-    "src/parts/C2678061.tsx",
-    "src/parts/C2762602.tsx",
-    "src/parts/C28323.tsx",
-    "src/parts/C2906982.tsx",
-    "src/parts/C2930048.tsx",
-    "src/parts/C2933140.tsx",
-    "src/parts/C2933200.tsx",
-    "src/parts/C29823.tsx",
-    "src/parts/C2984759.tsx",
-    "src/parts/C309062.tsx",
-    "src/parts/C31850.tsx",
-    "src/parts/C3662799.tsx",
-    "src/parts/C377773.tsx",
-    "src/parts/C380537.tsx",
-    "src/parts/C397609.tsx",
-    "src/parts/C4184.tsx",
-    "src/parts/C45783.tsx",
-    "src/parts/C466636.tsx",
-    "src/parts/C474881.tsx",
-    "src/parts/C49073699.tsx",
-    "src/parts/C497873.tsx",
-    "src/parts/C51205.tsx",
-    "src/parts/C513643.tsx",
-    "src/parts/C52306.tsx",
-    "src/parts/C53987.tsx",
-    "src/parts/C54315.tsx",
-    "src/parts/C57112.tsx",
-    "src/parts/C576517.tsx",
-    "src/parts/C5824006.tsx",
-    "src/parts/C602037.tsx",
-    "src/parts/C64705.tsx",
-    "src/parts/C671324.tsx",
-    "src/parts/C70285.tsx",
-    "src/parts/C724040.tsx",
-    "src/parts/C7420354.tsx",
-    "src/parts/C76589.tsx",
-    "src/parts/C780769.tsx",
-    "src/parts/C7984.tsx",
-    "src/parts/C8545.tsx",
-    "src/parts/C8591.tsx",
-    "src/parts/C916375.tsx",
-    "src/parts/C94869.tsx"
-  ]
+  "defaultBuildOutput": "dist/index/circuit.json",
+  "savedCircuitReference": "captured-pcb/circuit.json"
 }

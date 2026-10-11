@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import type { SourcePadConnectionPlan } from "./source-pad-connections"
 import { attachLogicSupplyInner2Port } from "./logic-supply-links"
 
@@ -69,8 +70,8 @@ export const source16ReviewedWholePaths = [
 
 export function Source16Routes() {
   return <>
-    {source16ViaProps.map(({ inner2, ...props }) => <via {...props}
-      {...{ key: props.name, ...(inner2 ? { ref: attachLogicSupplyInner2Port } : {}) }} />)}
-    {source16TraceProps.map(props => <trace key={props.name} {...props} pcbPath={[...props.pcbPath]} />)}
+    {source16ViaProps.map(({ inner2, ...props }) => <Fragment key={props.name}><via {...props}
+      {...(inner2 ? { ref: attachLogicSupplyInner2Port } : {})} /></Fragment>)}
+    {source16TraceProps.map(props => <Fragment key={props.name}><trace {...props} pcbPath={[...props.pcbPath]} /></Fragment>)}
   </>
 }

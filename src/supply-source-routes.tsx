@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { attachLogicSupplyInner2Port } from "./logic-supply-links"
 import type { SourcePadConnectionPlan } from "./source-pad-connections"
 
@@ -1341,12 +1342,12 @@ export const supplyCompleteRailPlans: readonly SourcePadConnectionPlan[] = [
 
 export function SupplySourceRoutes() {
   return <>
-    {supplySourceBarrels.map(barrel => <via name={barrel.name}
+    {supplySourceBarrels.map(barrel => <Fragment key={barrel.name}><via name={barrel.name}
       pcbX={barrel.x} pcbY={barrel.y} holeDiameter={barrel.holeDiameter} outerDiameter={barrel.outerDiameter}
       fromLayer="top" toLayer="bottom" connectsTo={`net.${barrel.net}`} tented
-      {...{ key: barrel.name, ref: attachLogicSupplyInner2Port }} />)}
-    {supplySourceSpans.map(span => <trace key={span.name} name={span.name}
+      {...{ ref: attachLogicSupplyInner2Port }} /></Fragment>)}
+    {supplySourceSpans.map(span => <Fragment key={span.name}><trace name={span.name}
       from={span.from} to={span.to} thickness={span.thickness} maxLength={span.maxLength}
-      pcbPathRelativeTo={span.pcbPathRelativeTo} pcbPath={span.pcbPath} />)}
+      pcbPathRelativeTo={span.pcbPathRelativeTo} pcbPath={span.pcbPath} /></Fragment>)}
   </>
 }

@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import type { SourcePadConnectionPlan } from "./source-pad-connections"
 import { attachLogicSupplyInner2Port } from "./logic-supply-links"
 import type { Via } from "@tscircuit/core"
@@ -126,8 +127,8 @@ export const source18ReviewedWholeContracts = {"fault":[],"kelvin":[{"name":"N_C
 
 export function Source18Routes() {
   return <>
-    {source18ViaProps.filter(props=>!source22ReplacedAdcViaNames.includes(props.name)).map(({ inner2, ...props }) => <via {...props}
-      {...{key:props.name,ref:(via:Via|null)=>{if(inner2)attachLogicSupplyInner2Port(via);attachSource22ExistingViaLayers(via)}}} />)}
-    {source18TraceProps.filter(props=>!source22ReplacedAdcTraceNames.includes(props.name)).map(props => <trace key={props.name} {...props} pcbPath={[...props.pcbPath]} />)}
+    {source18ViaProps.filter(props=>!source22ReplacedAdcViaNames.includes(props.name)).map(({ inner2, ...props }) => <Fragment key={props.name}><via {...props}
+      {...{ref:(via:Via|null)=>{if(inner2)attachLogicSupplyInner2Port(via);attachSource22ExistingViaLayers(via)}}} /></Fragment>)}
+    {source18TraceProps.filter(props=>!source22ReplacedAdcTraceNames.includes(props.name)).map(props => <Fragment key={props.name}><trace {...props} pcbPath={[...props.pcbPath]} /></Fragment>)}
   </>
 }
