@@ -1,0 +1,1410 @@
+{
+  "passed": true,
+  "pcbPlacementUnchanged": true,
+  "connectivityUnchanged": true,
+  "routedTraces": 0,
+  "keepoutsPreservedInCircuit": true,
+  "keepoutHatchingExcludedFromPhysicalTextures": true,
+  "board": {
+    "widthMm": 110,
+    "heightMm": 85,
+    "thicknessMm": 1.6
+  },
+  "populatedComponents": 249,
+  "mechanicalComponents": 29,
+  "exposedTestPads": 27,
+  "fetchedSupplierAssets": 0,
+  "models": [
+    {
+      "reference": "U_INPUT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:50dec0fae0cbd3313730cd837463fe7f834926456be60a10f4ae1ba9db74f1fd"
+    },
+    {
+      "reference": "R_PD_SCL",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_PD_SDA",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_RUN",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_OFF",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_OV_TOP",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_OV_BOTTOM",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_ILIM",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R_INPUT_FAULT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C_USB_IN",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C_INPUT_DVDT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C_INPUT_OUT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "U2",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:bc67ab880d5d0881113ce033ee95bfd3bd054c80945828c51914247ba7cd9c74"
+    },
+    {
+      "reference": "Q20",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e62d85acbe2749adf3083feb5a153b59ebc719ae3c69b00e23fac5543794aef9"
+    },
+    {
+      "reference": "Q21",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e62d85acbe2749adf3083feb5a153b59ebc719ae3c69b00e23fac5543794aef9"
+    },
+    {
+      "reference": "L2",
+      "kind": "simplified datasheet envelope",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "R20",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:799fa4558ecfcb741e3f63d55478dc3eb3c5f333d3f4caea2a032972111d86de"
+    },
+    {
+      "reference": "R21",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R22",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R23",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R24",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D20",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:4adad4de91571cbae9f2b144e853b2e53b1f4f810bb1294fb573ea951609e056"
+    },
+    {
+      "reference": "C20",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C21",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:b9c7b10d344d9af78f92b9e39099022e2bdff2ccdeb8392c2fd1b30047fcdd20"
+    },
+    {
+      "reference": "C41",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:b9c7b10d344d9af78f92b9e39099022e2bdff2ccdeb8392c2fd1b30047fcdd20"
+    },
+    {
+      "reference": "C22",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C24",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:b9c7b10d344d9af78f92b9e39099022e2bdff2ccdeb8392c2fd1b30047fcdd20"
+    },
+    {
+      "reference": "C25",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C26",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C27",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C38",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C39",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C40",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C28",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:ce2239a83761e4a0d4d7b547f269d762232b03098fa3bb422b5f0ab676b2aef1"
+    },
+    {
+      "reference": "C29",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:41d250a8583bd571315e79b5bce703c4ce3c8f8f71cbe37b0671ca21d3f636e4"
+    },
+    {
+      "reference": "C30",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C31",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "R25",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R26",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C32",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R27",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C33",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R28",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C34",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C35",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R29",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R30",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R31",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R32",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C36",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R33",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R34",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C37",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "Q22",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "Q23",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "R35",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R36",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R37",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R38",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R39",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R40",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "U_TEC_MON",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e052737698ac3cc40628c70e66c67779805f90fff7b02edf731ce84e0e048a06"
+    },
+    {
+      "reference": "R41",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R42",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C42",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C43",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C44",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R45",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "J_TEC",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:46955b0c6e2d0a0ee47a787ca1674d5c35b7badd9a9dcca54775d8720f1b9a6d"
+    },
+    {
+      "reference": "U_LOGIC",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:caf76334f499ad01a9ec4a5de51dc3476b89decc9c83c07fc342b526bd340b9a"
+    },
+    {
+      "reference": "L_LOGIC",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:df901d9245cb6c5513c85bddeacd9fbb2fde2473a78f1bb5689d06243810cc57"
+    },
+    {
+      "reference": "U_LATCH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:bb3ebd5decf88c7c4d5cbb4be48ac69ffe8353d35f94988b94be4906b75ff9e0"
+    },
+    {
+      "reference": "U_SUPERVISOR",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "U_INPUT_LATCH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:bb3ebd5decf88c7c4d5cbb4be48ac69ffe8353d35f94988b94be4906b75ff9e0"
+    },
+    {
+      "reference": "D_INPUT_PERMISSION",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:82734577cbb992faac186788e80568451cdf1b332e7be889c10b57b10a0aba66"
+    },
+    {
+      "reference": "Q_PD_LATCH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "Q_FAULT_SOURCE",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "Q_FAULT_CLEAR",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "Q_INPUT_CLEAR",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "U_CLEAR_BUFFER",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "U_CLOCK_BUFFER",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "U_DAC",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "U_THERMAL",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e052737698ac3cc40628c70e66c67779805f90fff7b02edf731ce84e0e048a06"
+    },
+    {
+      "reference": "U_FAN",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "L_FAN",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:edf8f133ce95a9a3fcda73d8f0723cbd643b42f37fbcaeed7ff5b7b3ffd45b6e"
+    },
+    {
+      "reference": "Q_FAN_PWM",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "J_FAN",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:a13f83c226977ef3051559508a180d9e2bdd23e05845a9e22965c74c8ddc8762"
+    },
+    {
+      "reference": "J_HOT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:7d74997e94252cf75c488c9ea39c1a376bee9ef114e5c54a97352da78ed673e4"
+    },
+    {
+      "reference": "J_COLD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:7d74997e94252cf75c488c9ea39c1a376bee9ef114e5c54a97352da78ed673e4"
+    },
+    {
+      "reference": "R201",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R202",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R203",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R204",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R205",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R206",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R207",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R208",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R209",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R210",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R211",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R212",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R213",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R214",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R215",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R216",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R217",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R218",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R219",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R220",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R221",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R222",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R223",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R224",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R225",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R226",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R227",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R228",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R229",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R231",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R232",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R233",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R234",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R235",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R236",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R237",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R238",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R239",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R240",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R241",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R242",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "R243",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "C200",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:60fcdfa19aa64b433eb3fba26fc9597787729386cc651e4a117d3ce533b3aea3"
+    },
+    {
+      "reference": "C201",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C202",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:b9c7b10d344d9af78f92b9e39099022e2bdff2ccdeb8392c2fd1b30047fcdd20"
+    },
+    {
+      "reference": "C206",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C207",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C208",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C209",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C210",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C211",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C212",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C213",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C214",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C215",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C216",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C217",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C218",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C219",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C220",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:dd1083511b68d89e04e3f27b71af36dfaaca1a4755d3ba4182b0a706762e3ce3"
+    },
+    {
+      "reference": "C221",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C222",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C223",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "R501",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D501",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R502",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D502",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R503",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D503",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R504",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D504",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R505",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D505",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R506",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D506",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R507",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D507",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:328f3b4e0b03776db1827fc6b2dda8d54a3d18166298631555bc6c433713976e"
+    },
+    {
+      "reference": "R508",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "D508",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:a6c080acf77ef766a402fe975992600730b2d93bc0bf8e90ae67abf183c20ea9"
+    },
+    {
+      "reference": "U_DBG1",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "U_DBG2",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "C_DBG1",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C_DBG2",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "J_USB_PD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:0d1286b62156da4de54626723290efa61c10b2cbefd323114b5e2b924c47ca90"
+    },
+    {
+      "reference": "U_PD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:865f2377dfac33c424c575e545a696ce51185c2bea1e0a87bf57931d8859ae3e"
+    },
+    {
+      "reference": "R_CH_VDD",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:657966315a6f006254756176ea9557de4f41875564ff9869263266ee10037a89"
+    },
+    {
+      "reference": "R_CH_VBUS",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "C_CH_VDD",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:bb937e2c5d2d330996b10cc95fa3cc6f89b32d3a5eb86abcc5439117542908cf"
+    },
+    {
+      "reference": "Q_PD_CFG1",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:3468d8687c77a86d8c4e30468312b739b868ef0372bed51cb520bad7b4ee25da"
+    },
+    {
+      "reference": "R_PD_CFG1",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "Q_PD_CFG2",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:3468d8687c77a86d8c4e30468312b739b868ef0372bed51cb520bad7b4ee25da"
+    },
+    {
+      "reference": "R_PD_CFG2",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "Q_PD_CFG3",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:3468d8687c77a86d8c4e30468312b739b868ef0372bed51cb520bad7b4ee25da"
+    },
+    {
+      "reference": "R_PD_CFG3",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "U_PD_WINDOW",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e052737698ac3cc40628c70e66c67779805f90fff7b02edf731ce84e0e048a06"
+    },
+    {
+      "reference": "R_WINDOW_TOP",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_WINDOW_BOTTOM",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_UV_TOP",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_UV_BOTTOM",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_OV_TOP",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_OV_BOTTOM",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_PD_VALID_PU",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_PG_PU",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_PG_BASE",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_PG_OFF",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "Q_PG_INHIBIT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "C_PD_WINDOW",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:bb937e2c5d2d330996b10cc95fa3cc6f89b32d3a5eb86abcc5439117542908cf"
+    },
+    {
+      "reference": "D_LOGIC_PD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:4adad4de91571cbae9f2b144e853b2e53b1f4f810bb1294fb573ea951609e056"
+    },
+    {
+      "reference": "D_LOGIC_USB",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:4adad4de91571cbae9f2b144e853b2e53b1f4f810bb1294fb573ea951609e056"
+    },
+    {
+      "reference": "J_USB_PROG",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:0d1286b62156da4de54626723290efa61c10b2cbefd323114b5e2b924c47ca90"
+    },
+    {
+      "reference": "R_USB_CC1",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_USB_CC2",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "C_USB_PROG",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:bb937e2c5d2d330996b10cc95fa3cc6f89b32d3a5eb86abcc5439117542908cf"
+    },
+    {
+      "reference": "R_USB_DETECT_TOP",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_USB_DETECT_BOTTOM",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "Q_USB_PRESENT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "R_USB_PRESENT",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_USB_PRESENT_OFF",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "R_USB_BLEED",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:657966315a6f006254756176ea9557de4f41875564ff9869263266ee10037a89"
+    },
+    {
+      "reference": "R_USB_DATA_OFF",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:573475360fe721fb5bc136763bec6d0ab99bc8c8b92a05e35a3f0dce0235121b"
+    },
+    {
+      "reference": "Q_USB_SERVICE",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
+    },
+    {
+      "reference": "J_SERVICE",
+      "kind": "bundled package or supplier model",
+      "asset": "pinrow2_p2.54"
+    },
+    {
+      "reference": "U_MCU",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:60717530401359c6dcced73b131ecfe470bfabb24be44a8134d5a315325b5287"
+    },
+    {
+      "reference": "U_FLASH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:aacc5a60d925e01050a8cb2ee64b286223e3f73908a20065fb4595909ee1adc1"
+    },
+    {
+      "reference": "C_FLASH",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "R_FLASH_CS",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "Y_MCU",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:128df2a736ed3d47bc2b47f0db14d09a5f296660d204c6938bb8241dcc8caeda"
+    },
+    {
+      "reference": "R_XOUT",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "C_XIN",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_XOUT",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO1",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO2",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO3",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO4",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO5",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_IO6",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_USB_VDD",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_VREG_IN",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_VREG_OUT",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_DVDD1",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_DVDD2",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_ADC_AVDD",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "C_MCU_BULK",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "R_ADC_SUPPLY",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_RESET_PU",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_BOOT",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "SW_BOOT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:9679bed8e3b64fd4ae342091cbc7a070437b70e041da68fb0d6e39d40ef7238f"
+    },
+    {
+      "reference": "SW_RESET",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:9679bed8e3b64fd4ae342091cbc7a070437b70e041da68fb0d6e39d40ef7238f"
+    },
+    {
+      "reference": "D_RESET_SAFE",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:4adad4de91571cbae9f2b144e853b2e53b1f4f810bb1294fb573ea951609e056"
+    },
+    {
+      "reference": "J_SWD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:8bece53f8761e9251388ca12708854c6e412db288b7d751b30f71a7948ac6e6c"
+    },
+    {
+      "reference": "J_UART",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:8bece53f8761e9251388ca12708854c6e412db288b7d751b30f71a7948ac6e6c"
+    },
+    {
+      "reference": "R_SWCLK",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_SWDIO",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_UART_TX",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_USB_DP",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_USB_DM",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "R_INPUT_PG",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
+    },
+    {
+      "reference": "U_USB_SWITCH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:e1337c499fc5524cd6d1590ec6cbe2b0c28d10def673abbe231ecc55d7d1cacb"
+    },
+    {
+      "reference": "U_USB_ESD",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "C_USB_SWITCH",
+      "kind": "bundled package or supplier model",
+      "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "CONCEPT_TEC_40x40x3p8",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_HOT_FINNED_HEATSINK_60x60x24",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_60x60x15_12V_MAX1A_INCLUDING_STARTUP_STALL",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_COLD_PLATE_44x44x4",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_COLD_FINNED_HEATSINK_44x44x12",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_HOT_THERMISTOR_BEAD_D2",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_COLD_THERMISTOR_BEAD_D2",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_SCREW_1_D2p8_L18_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_SCREW_2_D2p8_L18_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_SCREW_3_D2p8_L18_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_SCREW_4_D2p8_L18_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_TEC_POSITIVE_LEAD_D1p8",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_TEC_NEGATIVE_LEAD_D1p8",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_GND_LEAD_D0p9_MAX1A_INCLUDING_STARTUP_STALL",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_V12_FAN_LEAD_D0p9_MAX1A_INCLUDING_STARTUP_STALL",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_FAN_TACH_LEAD_D0p9_MAX1A_INCLUDING_STARTUP_STALL",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_FAN_FAN_PWM_LEAD_D0p9_MAX1A_INCLUDING_STARTUP_STALL",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_HOT_THERMISTOR_HOT_RAW_LEAD_D0p65",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_HOT_THERMISTOR_GND_LEAD_D0p65",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_COLD_THERMISTOR_COLD_RAW_LEAD_D0p65",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_COLD_THERMISTOR_GND_LEAD_D0p65",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_STANDOFF_H1_OD6_ID3p2_H12",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_SCREW_H1_D2p8_L5p3_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_STANDOFF_H2_OD6_ID3p2_H12",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_SCREW_H2_D2p8_L5p3_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_STANDOFF_H3_OD6_ID3p2_H12",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_SCREW_H3_D2p8_L5p3_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_STANDOFF_H4_OD6_ID3p2_H12",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    },
+    {
+      "reference": "CONCEPT_PCB_SCREW_H4_D2p8_L5p3_HEAD_D5p5",
+      "kind": "approximate mechanical concept",
+      "asset": "Inline parametric geometry"
+    }
+  ],
+  "scope": "Complete device concept with approximate external TEC, hot/cold thermal hardware, fan, mounting supports and visual harnesses. PCB geometry and electrical connectivity are preserved. No mechanical-fit, collision, thermal, harness or fabrication certification; no qualified enclosure."
+}

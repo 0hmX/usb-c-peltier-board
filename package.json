@@ -5,6 +5,13 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
+    "build:review": "bun run node_modules/tscircuit/cli.mjs build index.tsx --svgs --pcb-png",
+    "check:revision": "bun run scripts/check-revision.ts",
+    "export:review": "bun run scripts/export-review.ts",
+    "build:assembly": "bun run node_modules/tscircuit/cli.mjs build assembly.tsx",
+    "export:assembly": "bun run scripts/export-assembly.ts",
+    "preview:assembly": "bun run build:assembly && bun run scripts/check-revision.ts dist/assembly/circuit.json && bun run export:assembly",
+    "dev:assembly": "bun run node_modules/tscircuit/cli.mjs dev assembly.tsx",
     "typecheck": "tsc --noEmit",
     "build": "bun run node_modules/tscircuit/cli.mjs build index.tsx",
     "build:local": "bun run build",
@@ -23,6 +30,7 @@
     "check:saved-routes": "bun run scripts/check-saved-routes.tsx && bun run scripts/check-source-evaluator.ts"
   },
   "dependencies": {
+    "@tsci/tscircuit.standard-jst-programmer": "^0.8.0",
     "eventemitter3": "5.0.4",
     "tscircuit": "0.0.2809"
   },
@@ -33,6 +41,7 @@
     "@tscircuit/core": "0.0.2124",
     "@types/bun": "1.4.2",
     "@types/clipper-lib": "6.4.0",
+    "@types/three": "0.179.0",
     "circuit-json-to-gltf": "0.0.151",
     "circuit-json-to-kicad": "0.0.230",
     "circuit-to-svg": "0.0.445",
@@ -41,6 +50,7 @@
     "fflate": "0.8.2",
     "polygon-clipping": "0.15.7",
     "poppygl": "0.0.34",
+    "three": "0.179.1",
     "typescript": "5.9.3"
   }
 }

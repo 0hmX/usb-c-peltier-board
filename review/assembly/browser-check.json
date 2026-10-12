@@ -1,0 +1,10 @@
+{
+  "fallbackChecksPassed": true,
+  "interactive3dVerified": false,
+  "reason": "Headless environment has no available GL driver",
+  "browser": "firefox",
+  "version": "157.0.1",
+  "directFileLoading": true,
+  "savedRenderVisible": true,
+  "unavailableControlsDisabled": true
+}

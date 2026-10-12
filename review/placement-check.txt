@@ -1,0 +1,446 @@
+placement summary: 25 suboptimal orientations
+
+worst issues:
+1. R_INPUT_FAULT connections cross the routing path between its pads. Suggested move: rotate R_INPUT_FAULT 180 degrees.
+2. C_USB_IN connections cross the routing path between its pads. Suggested move: rotate C_USB_IN 180 degrees.
+3. R22 connections cross the routing path between its pads. Suggested move: rotate R22 180 degrees.
+4. C20 connections cross the routing path between its pads. Suggested move: rotate C20 180 degrees.
+5. R35 connections cross the routing path between its pads. Suggested move: rotate R35 180 degrees.
+
+board top-layer utilization:
+- occupied: 28.499% (2664.676mm^2 of 9350mm^2)
+- empty spaces over 5% of board area: none
+
+board-edge status:
+- U_INPUT: 18.3mm inside bottom edge
+- R_PD_SCL: 34.425mm inside top edge
+- R_PD_SDA: 34.425mm inside top edge
+- R_INPUT_RUN: 24.05mm inside bottom edge
+- R_INPUT_OFF: 23.425mm inside bottom edge
+- R_INPUT_OV_TOP: 14.1mm inside bottom edge
+- R_INPUT_OV_BOTTOM: 14.05mm inside bottom edge
+- R_INPUT_ILIM: 20.1mm inside bottom edge
+- R_INPUT_FAULT: 27.1mm inside bottom edge
+- C_USB_IN: 8.825mm inside left edge
+- C_INPUT_DVDT: 16.4mm inside bottom edge
+- C_INPUT_OUT: 18.4mm inside bottom edge
+- U2: 15.35mm inside bottom edge
+- Q20: 11.252mm inside bottom edge
+- Q21: 19.252mm inside bottom edge
+- L2: 16.9mm inside right edge
+- R20: 8.32mm inside right edge
+- R21: 13.6mm inside bottom edge
+- R22: 26.6mm inside bottom edge
+- R23: 13.425mm inside bottom edge
+- R24: 21.425mm inside bottom edge
+- D20: 8.16mm inside bottom edge
+- C20: 9.4mm inside bottom edge
+- C21: 11.12mm inside bottom edge
+- C41: 11.12mm inside bottom edge
+- C22: 15.05mm inside bottom edge
+- C24: 21.85mm inside bottom edge
+- C25: 14.245mm inside bottom edge
+- C26: 14.245mm inside bottom edge
+- C27: 14.245mm inside bottom edge
+- C38: 8.245mm inside bottom edge
+- C39: 8.245mm inside bottom edge
+- C40: 8.245mm inside bottom edge
+- C28: 29.9mm inside bottom edge
+- C29: 6.4mm inside right edge
+- C30: 11.625mm inside right edge
+- C31: 15.625mm inside right edge
+- R25: 18.1mm inside bottom edge
+- R26: 18.1mm inside bottom edge
+- C32: 14.65mm inside bottom edge
+- R27: 20.1mm inside bottom edge
+- C33: 21.125mm inside bottom edge
+- R28: 3.6mm inside bottom edge
+- C34: 23.05mm inside bottom edge
+- C35: 26.125mm inside bottom edge
+- R29: 13.6mm inside bottom edge
+- R30: 18.925mm inside right edge
+- R31: 11.1mm inside bottom edge
+- R32: 3.35mm inside bottom edge
+- C36: 9.3mm inside bottom edge
+- R33: 6.1mm inside bottom edge
+- R34: 4.3mm inside bottom edge
+- C37: 5.05mm inside bottom edge
+- Q22: 9.15mm inside bottom edge
+- Q23: 9.25mm inside bottom edge
+- R35: 9.425mm inside bottom edge
+- R36: 14.1mm inside bottom edge
+- R37: 6.05mm inside bottom edge
+- R38: 6.1mm inside bottom edge
+- R39: 6.1mm inside bottom edge
+- R40: 10.1mm inside bottom edge
+- U_TEC_MON: 10.025mm inside bottom edge
+- R41: 14.925mm inside right edge
+- R42: 10.925mm inside right edge
+- C42: 7.55mm inside right edge
+- C43: 12.4mm inside bottom edge
+- C44: 23.05mm inside bottom edge
+- R45: 36.05mm inside bottom edge
+- J_TEC: 3.9mm inside right edge
+- U_LOGIC: 17.7mm inside left edge
+- L_LOGIC: 16.95mm inside left edge
+- U_LATCH: 26.6mm inside top edge
+- U_SUPERVISOR: 13.25mm inside top edge
+- U_INPUT_LATCH: 26.6mm inside top edge
+- D_INPUT_PERMISSION: 17.25mm inside top edge
+- Q_PD_LATCH: 39.25mm inside top edge
+- Q_FAULT_SOURCE: 36.15mm inside top edge
+- Q_FAULT_CLEAR: 29.25mm inside top edge
+- Q_INPUT_CLEAR: 20.25mm inside top edge
+- U_CLEAR_BUFFER: 32.65mm inside top edge
+- U_CLOCK_BUFFER: 32.65mm inside top edge
+- U_DAC: 18.55mm inside top edge
+- U_THERMAL: 19.025mm inside top edge
+- U_FAN: 15.75mm inside right edge
+- L_FAN: 5.35mm inside right edge
+- Q_FAN_PWM: 14.25mm inside top edge
+- J_FAN: 5.15mm inside top edge
+- J_HOT: 5.15mm inside top edge
+- J_COLD: 5.15mm inside top edge
+- R201: 30.85mm inside top edge
+- R202: 29.1mm inside top edge
+- R203: 25.1mm inside top edge
+- R204: 31.1mm inside top edge
+- R205: 24.1mm inside top edge
+- R206: 35.85mm inside left edge
+- R207: 35.925mm inside left edge
+- R208: 13.05mm inside top edge
+- R209: 13.05mm inside top edge
+- R210: 26.675mm inside top edge
+- R211: 26.675mm inside top edge
+- R212: 16.1mm inside top edge
+- R213: 16.1mm inside top edge
+- R214: 22.1mm inside top edge
+- R215: 20.05mm inside top edge
+- R216: 17.05mm inside top edge
+- R217: 15.05mm inside top edge
+- R218: 14.925mm inside right edge
+- R219: 14.1mm inside top edge
+- R220: 9.85mm inside right edge
+- R221: 9.925mm inside right edge
+- R222: 20.175mm inside top edge
+- R223: 17.6mm inside top edge
+- R224: 20.175mm inside top edge
+- R225: 16.85mm inside top edge
+- R226: 23.1mm inside top edge
+- R227: 20.1mm inside top edge
+- R228: 15.925mm inside right edge
+- R229: 11.925mm inside right edge
+- R231: 9.85mm inside top edge
+- R232: 37.05mm inside top edge
+- R233: 35.1mm inside top edge
+- R234: 30.05mm inside top edge
+- R235: 28.1mm inside top edge
+- R236: 23.35mm inside top edge
+- R237: 38.05mm inside top edge
+- R238: 21.05mm inside top edge
+- R239: 19.1mm inside top edge
+- R240: 15.1mm inside top edge
+- R241: 15.1mm inside top edge
+- R242: 15.1mm inside top edge
+- R243: 15.1mm inside top edge
+- C200: 14.125mm inside left edge
+- C201: 14.4mm inside left edge
+- C202: 23.3mm inside left edge
+- C206: 19.4mm inside top edge
+- C207: 26.4mm inside top edge
+- C208: 21.4mm inside top edge
+- C209: 23.4mm inside top edge
+- C210: 23.4mm inside top edge
+- C211: 14.4mm inside top edge
+- C212: 14.4mm inside top edge
+- C213: 19.625mm inside right edge
+- C214: 15.9mm inside right edge
+- C215: 10.625mm inside right edge
+- C216: 13.4mm inside top edge
+- C217: 26.4mm inside top edge
+- C218: 5.625mm inside right edge
+- C219: 19.625mm inside right edge
+- C220: 19.245mm inside top edge
+- C221: 6.9mm inside right edge
+- C222: 33.4mm inside top edge
+- C223: 33.4mm inside top edge
+- R501: 5.425mm inside bottom edge
+- D501: 3.1mm inside bottom edge
+- R502: 4.425mm inside bottom edge
+- D502: 2.6mm inside bottom edge
+- R503: 5.425mm inside bottom edge
+- D503: 3.1mm inside bottom edge
+- R504: 7.925mm inside bottom edge
+- D504: 3.1mm inside bottom edge
+- R505: 5.425mm inside bottom edge
+- D505: 3.1mm inside bottom edge
+- R506: 5.175mm inside bottom edge
+- D506: 3.1mm inside bottom edge
+- R507: 5.425mm inside bottom edge
+- D507: 3.1mm inside bottom edge
+- R508: 5.425mm inside bottom edge
+- D508: 2.6mm inside bottom edge
+- U_DBG1: 4.65mm inside bottom edge
+- U_DBG2: 4.65mm inside bottom edge
+- C_DBG1: 5.4mm inside bottom edge
+- C_DBG2: 5.4mm inside bottom edge
+- TP01: 34mm inside left edge
+- TP02: 39.5mm inside bottom edge
+- TP03: 39.5mm inside bottom edge
+- TP04: 39.5mm inside bottom edge
+- TP05: 39.5mm inside bottom edge
+- TP06: 34mm inside right edge
+- TP07: 26mm inside right edge
+- TP08: 19.25mm inside right edge
+- TP09: 11.25mm inside right edge
+- TP10: 33mm inside left edge
+- TP11: 39.75mm inside top edge
+- TP12: 38.5mm inside top edge
+- TP13: 38.5mm inside top edge
+- TP14: 38.75mm inside top edge
+- TP15: 34mm inside right edge
+- TP16: 26mm inside right edge
+- TP17: 18mm inside right edge
+- TP18: 11.25mm inside right edge
+- TPG1: 4mm inside top edge
+- TPG2: 9mm inside top edge
+- TPG3: 10mm inside top edge
+- TPG4: 9.5mm inside top edge
+- TPG5: 11.75mm inside top edge
+- TPG6: 9.75mm inside top edge
+- TPG7: 9.75mm inside top edge
+- TPG8: 9.75mm inside top edge
+- J_USB_PD: 1.326mm inside left edge
+- U_PD: 14.7mm inside left edge
+- R_CH_VDD: 10.55mm inside left edge
+- R_CH_VBUS: 9.85mm inside left edge
+- C_CH_VDD: 12.05mm inside left edge
+- Q_PD_CFG1: 17.8mm inside bottom edge
+- R_PD_CFG1: 13.2mm inside bottom edge
+- Q_PD_CFG2: 21.8mm inside bottom edge
+- R_PD_CFG2: 12.2mm inside bottom edge
+- Q_PD_CFG3: 7.8mm inside bottom edge
+- R_PD_CFG3: 15.2mm inside bottom edge
+- U_PD_WINDOW: 15.525mm inside left edge
+- R_WINDOW_TOP: 11.85mm inside left edge
+- R_WINDOW_BOTTOM: 8.85mm inside left edge
+- R_UV_TOP: 13.85mm inside left edge
+- R_UV_BOTTOM: 21.85mm inside left edge
+- R_OV_TOP: 25.1mm inside left edge
+- R_OV_BOTTOM: 23.85mm inside left edge
+- R_PD_VALID_PU: 24.85mm inside left edge
+- R_PG_PU: 10.85mm inside left edge
+- R_PG_BASE: 24.6mm inside left edge
+- R_PG_OFF: 27.85mm inside left edge
+- Q_PG_INHIBIT: 28.59mm inside left edge
+- C_PD_WINDOW: 12.8mm inside left edge
+- D_LOGIC_PD: 7.275mm inside left edge
+- D_LOGIC_USB: 6.275mm inside left edge
+- J_USB_PROG: 1.326mm inside left edge
+- R_USB_CC1: 7.55mm inside left edge
+- R_USB_CC2: 7.55mm inside left edge
+- C_USB_PROG: 10.85mm inside left edge
+- R_USB_DETECT_TOP: 14.85mm inside left edge
+- R_USB_DETECT_BOTTOM: 14.85mm inside left edge
+- Q_USB_PRESENT: 14.59mm inside left edge
+- R_USB_PRESENT: 11.85mm inside left edge
+- R_USB_PRESENT_OFF: 15.85mm inside left edge
+- R_USB_BLEED: 8.3mm inside left edge
+- R_USB_DATA_OFF: 18.35mm inside left edge
+- Q_USB_SERVICE: 10.59mm inside left edge
+- J_SERVICE: 7.75mm inside top edge
+- U_MCU: 17.65mm inside top edge
+- U_FLASH: 24.11mm inside left edge
+- C_FLASH: 21.7mm inside left edge
+- R_FLASH_CS: 20.3mm inside left edge
+- Y_MCU: 12.05mm inside top edge
+- R_XOUT: 16.2mm inside top edge
+- C_XIN: 14.2mm inside top edge
+- C_XOUT: 13.2mm inside top edge
+- C_IO1: 24.7mm inside left edge
+- C_IO2: 22.8mm inside top edge
+- C_IO3: 18.8mm inside top edge
+- C_IO4: 15.8mm inside top edge
+- C_IO5: 18.8mm inside top edge
+- C_IO6: 21.95mm inside left edge
+- C_USB_VDD: 26.3mm inside top edge
+- C_VREG_IN: 26.05mm inside top edge
+- C_VREG_OUT: 26.3mm inside top edge
+- C_DVDD1: 26.7mm inside left edge
+- C_DVDD2: 15.3mm inside top edge
+- C_ADC_AVDD: 28.3mm inside top edge
+- C_MCU_BULK: 15.3mm inside top edge
+- R_ADC_SUPPLY: 30.45mm inside top edge
+- R_RESET_PU: 15.2mm inside top edge
+- R_BOOT: 19.05mm inside left edge
+- SW_BOOT: 9.375mm inside left edge
+- SW_RESET: 5.075mm inside top edge
+- D_RESET_SAFE: 8.66mm inside top edge
+- J_SWD: 4.4mm inside top edge
+- J_UART: 4.4mm inside top edge
+- R_SWCLK: 13.2mm inside top edge
+- R_SWDIO: 11.2mm inside top edge
+- R_UART_TX: 11.45mm inside top edge
+- R_USB_DP: 28.55mm inside top edge
+- R_USB_DM: 28.55mm inside top edge
+- R_INPUT_PG: 27.2mm inside bottom edge
+- TP_RESET: 9.5mm inside top edge
+- U_USB_SWITCH: 18.85mm inside left edge
+- U_USB_ESD: 10.784mm inside left edge
+- C_USB_SWITCH: 19.3mm inside left edge
+
+flagged components:
+- R_INPUT_FAULT
+  source placement: placement_mode=none
+  resolved placement: center=(-26mm, 15mm) on top; bounds=(minX=-27.075mm, maxX=-24.925mm, minY=14.6mm, maxY=15.4mm); size=(width=2.15mm, height=0.8mm); anchor_alignment="center"
+  board edge status: 27.1mm inside bottom edge
+  issues:
+  - R_INPUT_FAULT connections cross the routing path between its pads. Suggested move: rotate R_INPUT_FAULT 180 degrees.
+- C_USB_IN
+  source placement: placement_mode=none
+  resolved placement: center=(-45.75mm, 29mm) on top; bounds=(minX=-46.175mm, maxX=-45.325mm, minY=27.9mm, maxY=30.1mm); size=(width=0.85mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 8.825mm inside left edge
+  issues:
+  - C_USB_IN connections cross the routing path between its pads. Suggested move: rotate C_USB_IN 180 degrees.
+- R22
+  source placement: placement_mode=none
+  resolved placement: center=(18.25mm, 15.5mm) on top; bounds=(minX=17.175mm, maxX=19.325mm, minY=15.1mm, maxY=15.9mm); size=(width=2.15mm, height=0.8mm); anchor_alignment="center"
+  board edge status: 26.6mm inside bottom edge
+  issues:
+  - R22 connections cross the routing path between its pads. Suggested move: rotate R22 180 degrees.
+- C20
+  source placement: placement_mode=none
+  resolved placement: center=(18.75mm, 32mm) on top; bounds=(minX=18.325mm, maxX=19.175mm, minY=30.9mm, maxY=33.1mm); size=(width=0.85mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 9.4mm inside bottom edge
+  issues:
+  - C20 connections cross the routing path between its pads. Suggested move: rotate C20 180 degrees.
+- R35
+  source placement: placement_mode=none
+  resolved placement: center=(-19mm, 32mm) on top; bounds=(minX=-19.4mm, maxX=-18.6mm, minY=30.925mm, maxY=33.075mm); size=(width=0.8mm, height=2.15mm); anchor_alignment="center"
+  board edge status: 9.425mm inside bottom edge
+  issues:
+  - R35 connections cross the routing path between its pads. Suggested move: rotate R35 180 degrees.
+- C42
+  source placement: placement_mode=none
+  resolved placement: center=(47mm, 25mm) on top; bounds=(minX=46.55mm, maxX=47.45mm, minY=23.9mm, maxY=26.1mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 7.55mm inside right edge
+  issues:
+  - C42 connections cross the routing path between its pads. Suggested move: rotate C42 180 degrees.
+- R45
+  source placement: placement_mode=none
+  resolved placement: center=(-4mm, 6mm) on top; bounds=(minX=-5.15mm, maxX=-2.85mm, minY=5.55mm, maxY=6.45mm); size=(width=2.3mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 36.05mm inside bottom edge
+  issues:
+  - R45 connections cross the routing path between its pads. Suggested move: rotate R45 180 degrees.
+- R217
+  source placement: placement_mode=none
+  resolved placement: center=(29mm, -27mm) on top; bounds=(minX=27.85mm, maxX=30.15mm, minY=-27.45mm, maxY=-26.55mm); size=(width=2.3mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 15.05mm inside top edge
+  issues:
+  - R217 connections cross the routing path between its pads. Suggested move: rotate R217 180 degrees.
+- R221
+  source placement: placement_mode=none
+  resolved placement: center=(44mm, -28mm) on top; bounds=(minX=42.925mm, maxX=45.075mm, minY=-28.4mm, maxY=-27.6mm); size=(width=2.15mm, height=0.8mm); anchor_alignment="center"
+  board edge status: 9.925mm inside right edge
+  issues:
+  - R221 connections cross the routing path between its pads. Suggested move: rotate R221 180 degrees.
+- R222
+  source placement: placement_mode=none
+  resolved placement: center=(-18mm, -21.25mm) on top; bounds=(minX=-18.4mm, maxX=-17.6mm, minY=-22.325mm, maxY=-20.175mm); size=(width=0.8mm, height=2.15mm); anchor_alignment="center"
+  board edge status: 20.175mm inside top edge
+  issues:
+  - R222 connections cross the routing path between its pads. Suggested move: rotate R222 180 degrees.
+- R224
+  source placement: placement_mode=none
+  resolved placement: center=(-14.5mm, -21.25mm) on top; bounds=(minX=-14.9mm, maxX=-14.1mm, minY=-22.325mm, maxY=-20.175mm); size=(width=0.8mm, height=2.15mm); anchor_alignment="center"
+  board edge status: 20.175mm inside top edge
+  issues:
+  - R224 connections cross the routing path between its pads. Suggested move: rotate R224 180 degrees.
+- R231
+  source placement: placement_mode=none
+  resolved placement: center=(-25mm, -32.25mm) on top; bounds=(minX=-26.075mm, maxX=-23.925mm, minY=-32.65mm, maxY=-31.85mm); size=(width=2.15mm, height=0.8mm); anchor_alignment="center"
+  board edge status: 9.85mm inside top edge
+  issues:
+  - R231 connections cross the routing path between its pads. Suggested move: rotate R231 180 degrees.
+- C208
+  source placement: placement_mode=none
+  resolved placement: center=(18mm, -20mm) on top; bounds=(minX=17.55mm, maxX=18.45mm, minY=-21.1mm, maxY=-18.9mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 21.4mm inside top edge
+  issues:
+  - C208 connections cross the routing path between its pads. Suggested move: rotate C208 180 degrees.
+- C220
+  source placement: placement_mode=none
+  resolved placement: center=(34mm, -21mm) on top; bounds=(minX=32.625mm, maxX=35.375mm, minY=-23.255mm, maxY=-18.745mm); size=(width=2.75mm, height=4.51mm); anchor_alignment="center"
+  board edge status: 19.245mm inside top edge
+  issues:
+  - C220 connections cross the routing path between its pads. Suggested move: rotate C220 180 degrees.
+- C221
+  source placement: placement_mode=none
+  resolved placement: center=(47mm, -23mm) on top; bounds=(minX=45.9mm, maxX=48.1mm, minY=-23.425mm, maxY=-22.575mm); size=(width=2.2mm, height=0.85mm); anchor_alignment="center"
+  board edge status: 6.9mm inside right edge
+  issues:
+  - C221 connections cross the routing path between its pads. Suggested move: rotate C221 180 degrees.
+- C222
+  source placement: placement_mode=none
+  resolved placement: center=(-11mm, -8mm) on top; bounds=(minX=-11.45mm, maxX=-10.55mm, minY=-9.1mm, maxY=-6.9mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 33.4mm inside top edge
+  issues:
+  - C222 connections cross the routing path between its pads. Suggested move: rotate C222 180 degrees.
+- C223
+  source placement: placement_mode=none
+  resolved placement: center=(-3mm, -8mm) on top; bounds=(minX=-3.45mm, maxX=-2.55mm, minY=-9.1mm, maxY=-6.9mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 33.4mm inside top edge
+  issues:
+  - C223 connections cross the routing path between its pads. Suggested move: rotate C223 180 degrees.
+- C_DBG2
+  source placement: placement_mode=none
+  resolved placement: center=(44mm, 36mm) on top; bounds=(minX=43.55mm, maxX=44.45mm, minY=34.9mm, maxY=37.1mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 5.4mm inside bottom edge
+  issues:
+  - C_DBG2 connections cross the routing path between its pads. Suggested move: rotate C_DBG2 180 degrees.
+- R_PD_CFG1
+  source placement: placement_mode=none
+  resolved placement: center=(-34mm, 29mm) on top; bounds=(minX=-34.7mm, maxX=-33.3mm, minY=28.7mm, maxY=29.3mm); size=(width=1.4mm, height=0.6mm); anchor_alignment="center"
+  board edge status: 13.2mm inside bottom edge
+  issues:
+  - R_PD_CFG1 connections cross the routing path between its pads. Suggested move: rotate R_PD_CFG1 180 degrees.
+- R_OV_BOTTOM
+  source placement: placement_mode=none
+  resolved placement: center=(-30mm, 2.25mm) on top; bounds=(minX=-31.15mm, maxX=-28.85mm, minY=1.8mm, maxY=2.7mm); size=(width=2.3mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 23.85mm inside left edge
+  issues:
+  - R_OV_BOTTOM connections cross the routing path between its pads. Suggested move: rotate R_OV_BOTTOM 180 degrees.
+- R_PD_VALID_PU
+  source placement: placement_mode=none
+  resolved placement: center=(-29mm, 13mm) on top; bounds=(minX=-30.15mm, maxX=-27.85mm, minY=12.55mm, maxY=13.45mm); size=(width=2.3mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 24.85mm inside left edge
+  issues:
+  - R_PD_VALID_PU connections cross the routing path between its pads. Suggested move: rotate R_PD_VALID_PU 180 degrees.
+- C_ADC_AVDD
+  source placement: placement_mode=none
+  resolved placement: center=(-21.25mm, -13.5mm) on top; bounds=(minX=-21.55mm, maxX=-20.95mm, minY=-14.2mm, maxY=-12.8mm); size=(width=0.6mm, height=1.4mm); anchor_alignment="center"
+  board edge status: 28.3mm inside top edge
+  issues:
+  - C_ADC_AVDD connections cross the routing path between its pads. Suggested move: rotate C_ADC_AVDD 180 degrees.
+- C_MCU_BULK
+  source placement: placement_mode=none
+  resolved placement: center=(-35.25mm, -26.5mm) on top; bounds=(minX=-35.55mm, maxX=-34.95mm, minY=-27.2mm, maxY=-25.8mm); size=(width=0.6mm, height=1.4mm); anchor_alignment="center"
+  board edge status: 15.3mm inside top edge
+  issues:
+  - C_MCU_BULK connections cross the routing path between its pads. Suggested move: rotate C_MCU_BULK 180 degrees.
+- R_BOOT
+  source placement: placement_mode=none
+  resolved placement: center=(-35.25mm, -11.75mm) on top; bounds=(minX=-35.95mm, maxX=-34.55mm, minY=-12.05mm, maxY=-11.45mm); size=(width=1.4mm, height=0.6mm); anchor_alignment="center"
+  board edge status: 19.05mm inside left edge
+  issues:
+  - R_BOOT connections cross the routing path between its pads. Suggested move: rotate R_BOOT 180 degrees.
+- R_SWCLK
+  source placement: placement_mode=none
+  resolved placement: center=(-22mm, -29mm) on top; bounds=(minX=-22.7mm, maxX=-21.3mm, minY=-29.3mm, maxY=-28.7mm); size=(width=1.4mm, height=0.6mm); anchor_alignment="center"
+  board edge status: 13.2mm inside top edge
+  issues:
+  - R_SWCLK connections cross the routing path between its pads. Suggested move: rotate R_SWCLK 180 degrees.
+
+placement drc:
+Errors: 0
+Warnings: 0

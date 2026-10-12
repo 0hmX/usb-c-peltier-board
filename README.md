@@ -1,68 +1,73 @@
-# USB-C Peltier development board
+# Programmable dual-USB-C Peltier board
 
-A tscircuit prototype targeting **15/20 V USB-C PD input and an 11.2 V TEC output**, with cooling-only control, 8 debug LEDs and 26 test points. All 194 fitted components retain their reviewed JLCPCB mappings, pads, drills, courtyards and placement.
+**Revision B is an unrouted placement-review design, not a fabrication release.**
 
-The default entry displays the checked `captured-pcb/circuit.json` directly. `index.tsx` imports and exports that JSON; the preview uses the native static Circuit JSON viewer. Viewing or building the publication runs no routing algorithms. The saved capture preserves all 636 traces, 434 through vias and 31 actual pours.
+The default `index.tsx` builds a **110 × 85 mm, four-layer** board with:
 
-The editable board is retained in `regenerate.tsx`. Its algorithms, source paths and original configuration remain available for explicit regeneration. Both router helpers use the declared `eventemitter3@5.0.4` runtime dependency.
+- **RP2040** controller, W25Q16 QSPI flash, 12 MHz crystal, BOOT/RESET buttons and local decoupling.
+- **CH224K** PD controller and three open-collector selection buffers, following the referenced motor-controller architecture.
+- Two independent standard USB-C receptacles: **PD POWER** and **USB PROGRAM**.
+- Actual `StandardJstSwdSide` and target-role `StandardJstUartSide` exports from the standard JST programmer package; HOT/COLD and fan use the same side-entry JST SH family.
 
-The current silkscreen has 22 text elements, down from 234. Connector names, TEC and capacitor polarity, eight LED functions, board identity and a short heatsink reminder remain. Component names, probe labels and nonpolar capacitor/inductor outlines were removed; all 7,799 non-silkscreen records are identical to the checked Source24 capture. Labels use 1.7 mm font size, and both alphabet and Gerber geometry checks pass with at least 0.15 mm clearance. [Verification](publication-checks/silkscreen-cleanup.json) records the current hashes and checks.
+The three standard connector exports are included as a connector-only snapshot of v0.8.0 in `src/revision/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
+- Retained LT3741 current-controlled TEC stage, protected input, thermal interlocks, fail-off latches, fan circuit and test access.
 
-![Reduced top silkscreen](captured-pcb/silkscreen-top.png)
+## Review the result
 
-Bottom headers, viewed left to right in the top view:
+Open [the local review page](review/index.html), [placement image](review/placement.png), or [vector placement](review/placement.svg). Eight schematic sheets live in [review/schematics](review/schematics). [Component coordinates](review/placement.csv), [Circuit JSON](review/circuit.json) and [checks](review/checks.json) accompany the previews.
 
-| Header | Pin order |
-|---|---|
-| FAN | PWM, TACH, +12V, GND |
-| SWD | GND, SWCLK, SWDIO, 3V3 |
-| UART | 3V3, RX, TX, GND |
+### Device concept assembly
 
-The small circle marks pin 1, the rightmost header pin. HOT and COLD take two-wire thermistors; TEC+ is the lower output pin. Probe names, nets and coordinates remain in [debug-data.ts](src/blocks/debug-data.ts), with an annotated [probe map](captured-pcb/probe-map.png) for bench work.
+The [published native tscircuit build](https://0hmx--dual-usb-peltier-assembly-v0-1-4.tscircuit.app/#file=assembly.tsx) provides PCB, Schematic and 3D tabs. Select 3D and zoom out to see the complete device.
 
-Source24 connects **450/450 required pad joins, 0 missing**. Fresh all-layer Gerber shorts, independent native copper checks and routing lint pass. Twenty agent reviewers, including five Astra/high agents, give the whole board **7.7/10** on average (range 7.1–8.4); Source23 averaged 7.2/10.
+![Device concept assembly](review/assembly/isometric.png)
 
-| Measured routing | Source23 | Source24 |
-|---|---:|---:|
-| eFuse output-cap feed |23.026 mm|3.174 mm|
-| CdVdt signal path |11.013 mm|5.568 mm|
-| VC compensation path |15.185 mm|12.688 mm|
-| Complete LOW gate path |28.335 mm|26.402 mm|
-| Protected fan feed |90.592 mm|81.922 mm|
-| Signal routing on inner1 |327.930 mm|289.687 mm|
-| Total planar trace |4078.583 mm|4044.303 mm|
-| Through vias |433|434|
+Open the [rotatable 3D assembly](review/assembly/index.html), [isometric preview](review/assembly/isometric.png), [native assembly drawing](review/assembly/assembly.svg), or [GLB model](review/assembly/peltier-assembly.glb). The standalone viewer embeds its renderer and model; it does not require a server or CDN. WebGL is needed for interaction, with saved images available as a fallback.
 
-The output-cap move lengthens its permission pickup by 10.586 mm; this cost is included in the total savings. The shared 3.3 V branch replaces one redundant trace and via. A moved ground probe makes ADC measurements easier; its label clears the actual mask openings and nearby legend. Both moved capacitors retain authentic supplier courtyards.
-
-This remains a static CAD prototype. Hardware bench validation and manufacturing exports/tolerances are pending. Long gate/fan/UART paths, a remote raw-input bypass and remaining inner1 corridors are documented in the reviews. The closest foreign via pair is 0.175 mm against the established 0.15 mm rule; several other routes retain tight nominal margins.
-
-- [Saved JSON export](index.tsx), [checked circuit JSON](captured-pcb/circuit.json), [regeneration board](regenerate.tsx) and [ground-plane view](captured-pcb/19-source-routing-improved-ground-inner1.png)
-- [All 20 exact-capture routing reviews](routing-review/source24/README.md), [qualification](routing-review/source24/qualification.json) and [checks](routing-review/source24/checks)
-- [Source23 review](routing-review/rating-report.txt) and [original crossing annotation](routing-review/suspected-short-net-review.png); the crossing is intentional shared V3V3 copper
-- [Published tscircuit package](https://tscircuit.com/0hmX/tec-usbc-board)
-
-Clone and preview the saved board:
+`index.tsx` and `assembly.tsx` now open the complete device concept in tscircuit's documented [`assembly.device`](https://docs.tscircuit.com/elements/assembly-device), not just the PCB. The native PCB and eight schematic sheets remain available. The 3D view additionally includes a conceptual TEC, hot/cold thermal hardware, fan, mounting supports and visual harnesses beside the unchanged controller board. Supplier component models and their transforms are preserved; test pads remain flat copper. See [assembly scope and regeneration](docs/revision-b-assembly.md) and the [model/parity audit](review/assembly/assembly-report.json).
 
 ```sh
-git clone https://github.com/0hmX/usb-c-peltier-board.git
-cd usb-c-peltier-board
+bun run preview:assembly
+bun run dev:assembly
+```
+
+External mechanical parts are explicitly named `CONCEPT`; their approximate dimensions illustrate arrangement, not supplier identity, thermal performance, harness qualification or fabrication-ready fit. No enclosure or airflow performance is certified. The fan and its harness still need qualification within the JST SH connector's 1 A limit, including startup and stall. The high-current TEC retains its separate power terminal. Visual wires do not add electrical nets or establish a validated wiring harness. Routing and all previous release gates still apply.
+
+![Unrouted placement](review/placement.png)
+
+The board deliberately contains **no PCB traces, vias or copper pours**. Component pads and courtyards are real CAD geometry, not an illustrative mockup. Four 3.2 mm mounting holes have 4 mm-radius washer/copper keepouts. Copper routing, thermal spreading, controlled USB impedance and manufacturing qualification come later.
+
+## Reproduce
+
+```sh
 bun install --frozen-lockfile
 bun run typecheck
+bun run build:review
+bun run check:revision
+bun run export:review
 bun run dev
 ```
 
-The saved preview needs no captured runtime patches. For explicit regeneration, restore the six captured runtime files after installation; the helper verifies package versions and every file hash before copying.
+`build:review` does not route the board. The revision-specific checker verifies retained and critical new pin/net assignments, two standard USB connectors, schematic-sheet coverage, placement errors, courtyards and absence of routed copper. Native tscircuit netlist and placement checks supplement this; none constitutes analogue simulation or bench validation.
 
-`bun run build` also reads and copies the saved JSON. To explicitly regenerate the source routes and pours:
+Geometric DRC passes and schematic placement analysis is clear. The separate [PCB placement analysis](review/placement-check.txt) retains 25 routing-oriented component-flip suggestions for the later routing phase; its advisory exit status is not a geometric DRC failure. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
 
-```sh
-python3 restore-captured-runtime.py
-bun run build:regenerate -- --placement-only --pcb-only --phase-timeout-seconds 900
-```
+PCB coordinates are explicitly editable in `src/revision/clearance-placements.ts`; schematic refinements are in `src/revision/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
 
-A new capture needs fresh geometry checks. Original package scripts are preserved; these aliases require tooling outside this compact repository: `check:guarded`, `check:physical`, `check:routed`, `export:jlcpcb`, `export:kicad`, `export:previews` and `prepare:assembly`.
+## Power and service behavior
 
-The routing algorithms and configuration remain available in `regenerate.tsx` and `regenerate.config.ts`. Regeneration source and imported parts carry the same silkscreen cleanup as the saved preview; all copper geometry and six captured runtime payloads remain unchanged. The default entry retains its two-file browser import graph and builds the current saved JSON unchanged. [Original publication verification](publication-checks/static-preview.json) and historical routing snapshots describe the capture before silkscreen cleanup. [Current provenance](PACKAGE-PROVENANCE.json), [Source24 routing provenance](docs/source24-routing-provenance.json), [Source23 provenance](docs/source23-package-provenance.json) and [original package README](docs/captured-source-package-README.md) distinguish the publication wrapper from the checked CAD capture. Supplier snapshots record stock observed on their stated dates.
+- PD-only: the logic runs at the initial 5 V supply; firmware may request qualified 15/20 V operation. Load permission remains hardware gated.
+- Programming-only: USB supplies logic through a separate OR diode. It does **not** feed the TEC/fan power rail.
+- Programming cable connected: a hardware transistor inhibits **both TEC and fan power**, regardless of MCU/boot-ROM behavior. A USB data switch isolates D+/D− when programming VBUS is absent.
+- SWD servicing: **short the SERVICE header before debugging**. Halting the CPU alone does not guarantee that GPIO permissions are withdrawn.
+- CH224K does not expose negotiated current/capabilities. Do not infer a 3/5 A contract from voltage or PG. Use a qualified ≥3 A adapter and a conservative firmware budget; the former selectable high-current eFuse mode is removed.
 
-The project retains its declared MIT license. Captured runtime packages retain their [upstream license notices](docs/third-party-licenses).
+See [design notes and open qualifications](docs/revision-b-design.md) and [expert-review findings](docs/revision-b-reviews.md). Firmware is not included.
+
+## Sources and history
+
+- [Original Peltier project](https://github.com/0hmX/usb-c-peltier-board), base commit `64439f138ed1e1dc0822179b549ba1345b93a390`.
+- [RP2040 motor-controller reference](https://tscircuit.com/imrishabh18/rp2040-motor-controller), v1.0.42.
+- [Standard JST programmer](https://tscircuit.com/tscircuit/standard-jst-programmer), v0.8.0, installed via the tscircuit registry.
+
+The earlier routed single-USB/STM32/STUSB4500 source is preserved in `legacy.tsx` and `regenerate.tsx`; its saved capture remains in `captured-pcb/`. [Historical documentation](docs/legacy-readme.md) describes that revision only. Its routing measurements, electrical checks and assembly exports do **not** apply to Revision B. No fabrication files or orders are generated for this unrouted design.

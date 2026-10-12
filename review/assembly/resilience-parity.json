@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "unchangedElectricalSchematicAndPcbRecords": {
+    "source_port": 752,
+    "source_net": 139,
+    "source_trace": 732,
+    "schematic_component": 276,
+    "schematic_port": 752,
+    "schematic_trace": 515,
+    "schematic_sheet": 8,
+    "pcb_board": 1,
+    "pcb_component": 276,
+    "pcb_smtpad": 750,
+    "pcb_plated_hole": 12,
+    "pcb_hole": 8,
+    "pcb_keepout": 4,
+    "pcb_port": 752
+  },
+  "populatedPcbModels": 249,
+  "mechanicalModels": 29,
+  "externalCadUrls": 0,
+  "stepFallbacks": 0
+}
