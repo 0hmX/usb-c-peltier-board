@@ -1,6 +1,7 @@
 /node_modules/
 /dist/
 /checks/
+/.tscircuit/
 /.env
 /.env.*
 **/.DS_Store

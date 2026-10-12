@@ -1,0 +1,14 @@
+{
+  "package": "@tsci/tscircuit.standard-jst-programmer",
+  "version": "0.8.0",
+  "sourceUrl": "https://tscircuit.com/tscircuit/standard-jst-programmer",
+  "upstreamIndexSha256": "f4d46394b2a33975f7075dc48130d8d043223087bda21a2c199dff072e00eda1",
+  "snapshotSha256": "b56ad0b4af61115c1175da0cfe5b1e6f5b8144bf39051d8d1db9168a3716bc36",
+  "exports": [
+    "StandardJstPowerSide",
+    "StandardJstSwdSide",
+    "StandardJstUartSide"
+  ],
+  "omitted": "Unrelated programmer board and routing initialization",
+  "license": "MIT"
+}

@@ -17,6 +17,7 @@
   },
   "include": [
     "index.tsx",
+    "assembly.tsx",
     "regenerate.tsx",
     "src/**/*.ts",
     "src/**/*.tsx",
