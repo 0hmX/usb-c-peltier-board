@@ -4,7 +4,7 @@
 
 Placement and electrically connected schematic only. Not fabricated, simulated or bench tested. This review makes no USB-IF, thermal, EMC or manufacturing-compliance claim. The 110 × 85 mm outline is a proposed review form factor, not an enclosure constraint supplied by the user.
 
-Geometric placement DRC reports zero errors and warnings; schematic placement analysis reports no issues. The separate connectivity-based PCB analyzer still suggests 25 component half-turns to simplify future routing, recorded in `review/placement-check.txt`. These are routing-review recommendations, not clearance failures, and remain deliberately unresolved in this unrouted concept.
+Geometric placement DRC reports zero errors and warnings. Schematic and PCB placement checks report no issues. Twenty-four passive components were rotated 180° to resolve the PCB analyzer's orientation suggestions; their centres and electrical connections are preserved. The resulting analysis is recorded in `review/placement-check.txt`.
 
 ## PD / MCU architecture
 
@@ -42,12 +42,9 @@ The bleeder draws 50 mA at 5 V (52.5 mA and 0.276 W at 5.25 V), in addition to l
 
 Programming VBUS asserts hardware service inhibition even if both power cables are present. This disables the shared protected rail: **neither TEC nor fan operates while a programming cable is connected**. Do not assume an automatic fan cooldown mode. Unplugging USB must require a fresh intentional firmware re-arm.
 
-The debug connectors are actual `StandardJstSwdSide` and target-role `StandardJstUartSide` exports from `tscircuit/standard-jst-programmer` v0.8.0, using SM03B-SRSS-TB (C160403). All five JST connectors face the bottom board edge with verified supplier pads and CAD, not imitation pin headers. HOT/COLD reuse the module's SM02B-SRSS-TB (C160402) power-connector geometry with thermistor signal labels; the module has no four-pin fan export, so the fan uses a supplier-imported SM04B-SRSS-TB (C160404) from the same 1 mm-pitch SH family.
+USB-C is the only programming interface. `J_SWD`, `J_UART`, their series resistors (`R_SWCLK`, `R_SWDIO`, `R_UART_TX`, `R231`) and the SWD-only `J_SERVICE` jumper are absent. RP2040 GPIO0/1 and SWCLK/SWD pins are explicitly unconnected; no UART or SWD nets are created. Enter the USB bootloader by holding BOOT while connecting USB PROGRAM, or holding BOOT while pressing and releasing RESET on a powered board.
 
-| Connector | Physical pin 1 | Physical pin 2 | Physical pin 3 |
-|---|---|---|---|
-| SWD target | SWCLK | GND | SWDIO |
-| UART target | RX | GND | TX |
+The three remaining JST connectors face the bottom board edge with verified supplier pads and CAD. HOT/COLD reuse the standard programmer module's SM02B-SRSS-TB (C160402) power-connector geometry with thermistor signal labels; the module has no four-pin fan export, so the fan uses a supplier-imported SM04B-SRSS-TB (C160404) from the same 1 mm-pitch SH family.
 
 HOT and COLD each use pin 1 = thermistor signal, pin 2 = GND. Fan pins 1–4 remain GND, V12_FAN, tachometer, PWM. This SH fan harness is **not directly compatible with a conventional PC-fan plug**; use a pin-verified adapter/harness.
 
@@ -55,7 +52,7 @@ The [JST SH datasheet](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf) rates th
 
 The [Kefa KF301-5.0 supplier drawing](https://datasheet.lcsc.com/datasheet/pdf/dbe48a1bef5e997cc12dba31bc0ac67e.pdf?productCode=C474881) specifies AWG 22–14 wire, 16 A UL use group B / 10 A group D, and 17 A IEC. Treat 10 A as the conservative connector screening ceiling, not an approved board operating current. The drawing lists 0.4 N·m maximum torque; final assembly instructions must use a manufacturer-qualified torque and appropriately sized wire/ferrules.
 
-Neither target connector supplies VOUT/3.3 V. Use the documented standard-programmer voltage configuration, powered logic and shared ground. **Short SERVICE before attaching/halting SWD**, and remove it only after restoring a fail-off firmware state. A debugger halt does not necessarily release GPIO outputs or latch state.
+The USB-VBUS-driven hardware inhibit (`Q_USB_SERVICE`) and reset-to-fault diode remain connected independently of the removed service jumper. Connecting USB PROGRAM still disables both TEC and fan, including during boot-ROM programming.
 
 ## Firmware requirements, not implemented here
 

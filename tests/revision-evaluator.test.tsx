@@ -37,9 +37,17 @@ describe("portable standard connector exports", () => {
         await runner.renderUntilSettled()
         const circuit = await runner.getCircuitJson()
         const pcbIds = new Set(circuit.filter(item => item.type === "pcb_component").map(item => item.source_component_id))
-        expect(circuit.filter(item => item.type === "source_component" && pcbIds.has(item.source_component_id))).toHaveLength(276)
+        expect(circuit.filter(item => item.type === "source_component" && pcbIds.has(item.source_component_id))).toHaveLength(269)
+        expect(circuit.filter(item => item.type === "source_component" && ["J_SWD", "J_UART", "J_SERVICE", "R_SWCLK", "R_SWDIO", "R_UART_TX", "R231"].includes(item.name ?? ""))).toEqual([])
+        expect(circuit.filter(item => item.type === "source_net" && /^(UART_|SWCLK|SWDIO)/.test(item.name ?? ""))).toEqual([])
+        expect(circuit.filter(item => item.type === "source_component" && item.standard === "usb_c").map(item => item.name).sort()).toEqual(["J_USB_PD", "J_USB_PROG"])
+        const mcu = circuit.filter(item => item.type === "source_component").find(item => item.name === "U_MCU")!
+        for (const pin of [2, 3, 24, 25]) {
+          const port = circuit.find(item => item.type === "source_port" && item.source_component_id === mcu.source_component_id && item.pin_number === pin)
+          expect(port?.type === "source_port" && port.do_not_connect).toBe(true)
+        }
         expect(circuit.filter(item => item.type === "source_component" && mechanicalPartNames.includes(item.name ?? ""))).toHaveLength(mechanicalCadCount)
-        expect(circuit.filter(item => item.type === "cad_component" && item.pcb_component_id)).toHaveLength(249)
+        expect(circuit.filter(item => item.type === "cad_component" && item.pcb_component_id)).toHaveLength(242)
         expect(circuit.filter(item => item.type === "cad_component" && !item.pcb_component_id)).toHaveLength(mechanicalCadCount)
         expect(circuit.filter(item => item.type === "cad_component" && item.model_step_url)).toEqual([])
         expect(circuit.filter(item => item.type === "cad_component").every(item => ![item.model_obj_url, item.model_glb_url].some(url => url?.includes("modelcdn.tscircuit.com")))).toBe(true)

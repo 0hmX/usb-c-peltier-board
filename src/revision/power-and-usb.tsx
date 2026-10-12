@@ -93,7 +93,5 @@ export function PowerAndUsb() {
       schX={25} schY={23} {...usb} connections={{ pin1: net("V3V3"), pin2: net("USB_DATA_DISABLE") }} />
     <Npn name="Q_USB_SERVICE" pcbX={-43} pcbY={-8} schX={20} schY={17} {...usb}
       connections={{ pin1: net("USB_PRESENT_BASE"), pin2: net("GND"), pin3: net("INPUT_FAULT_N") }} />
-    <pinheader name="J_SERVICE" pinCount={2} footprint="pinrow2_p2.54" pcbX={-39} pcbY={-34}
-      schX={30} schY={17} {...usb} connections={{ pin1: net("INPUT_FAULT_N"), pin2: net("GND") }} />
   </>
 }

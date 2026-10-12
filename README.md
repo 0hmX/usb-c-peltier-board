@@ -7,10 +7,11 @@ The default `index.tsx` builds a **110 × 85 mm, four-layer** board with:
 - **RP2040** controller, W25Q16 QSPI flash, 12 MHz crystal, BOOT/RESET buttons and local decoupling.
 - **CH224K** PD controller and three open-collector selection buffers, following the referenced motor-controller architecture.
 - Two independent standard USB-C receptacles: **PD POWER** and **USB PROGRAM**.
-- Actual `StandardJstSwdSide` and target-role `StandardJstUartSide` exports from the standard JST programmer package; HOT/COLD and fan use the same side-entry JST SH family.
-
-The three standard connector exports are included as a connector-only snapshot of v0.8.0 in `src/revision/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
+- **USB-C is the only programming interface.** UART/SWD headers, their four series resistors and the SWD SERVICE jumper are removed. BOOT/RESET buttons remain available for USB bootloader access.
+- HOT/COLD and fan use side-entry JST SH connectors.
 - Retained LT3741 current-controlled TEC stage, protected input, thermal interlocks, fail-off latches, fan circuit and test access.
+
+The standard connector helpers are included as a connector-only snapshot of v0.8.0 in `src/revision/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
 
 ## Review the result
 
@@ -18,7 +19,7 @@ Open [the local review page](review/index.html), [placement image](review/placem
 
 ### Device concept assembly
 
-The [published native tscircuit build](https://0hmx--dual-usb-peltier-assembly-v0-1-4.tscircuit.app/#file=assembly.tsx) provides PCB, Schematic and 3D tabs. Select 3D and zoom out to see the complete device.
+The earlier [published native tscircuit build](https://0hmx--dual-usb-peltier-assembly-v0-1-4.tscircuit.app/#file=assembly.tsx) provides PCB, Schematic and 3D tabs for the previous design with UART/SWD headers. The regenerated local previews below show the current USB-C-only programming revision.
 
 ![Device concept assembly](review/assembly/isometric.png)
 
@@ -48,9 +49,9 @@ bun run export:review
 bun run dev
 ```
 
-`build:review` does not route the board. The revision-specific checker verifies retained and critical new pin/net assignments, two standard USB connectors, schematic-sheet coverage, placement errors, courtyards and absence of routed copper. Native tscircuit netlist and placement checks supplement this; none constitutes analogue simulation or bench validation.
+`build:review` does not route the board. The revision-specific checker verifies retained and critical new pin/net assignments, two standard USB connectors, absence of UART/SWD interfaces, the four unconnected MCU pins, schematic-sheet coverage, placement errors, courtyards and absence of routed copper. The [change audit](review/usb-c-programming-change-audit.json) compares this build with the original board and confirms that all other pin/net connections and remaining component centres are preserved. Native tscircuit netlist and placement checks supplement this; none constitutes analogue simulation or bench validation.
 
-Geometric DRC passes and schematic placement analysis is clear. The separate [PCB placement analysis](review/placement-check.txt) retains 25 routing-oriented component-flip suggestions for the later routing phase; its advisory exit status is not a geometric DRC failure. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
+Geometric DRC, schematic placement and [PCB placement analysis](review/placement-check.txt) pass with no placement issues after correcting passive orientations. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
 
 PCB coordinates are explicitly editable in `src/revision/clearance-placements.ts`; schematic refinements are in `src/revision/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
 
@@ -59,7 +60,7 @@ PCB coordinates are explicitly editable in `src/revision/clearance-placements.ts
 - PD-only: the logic runs at the initial 5 V supply; firmware may request qualified 15/20 V operation. Load permission remains hardware gated.
 - Programming-only: USB supplies logic through a separate OR diode. It does **not** feed the TEC/fan power rail.
 - Programming cable connected: a hardware transistor inhibits **both TEC and fan power**, regardless of MCU/boot-ROM behavior. A USB data switch isolates D+/D− when programming VBUS is absent.
-- SWD servicing: **short the SERVICE header before debugging**. Halting the CPU alone does not guarantee that GPIO permissions are withdrawn.
+- USB bootloader access: hold **BOOT** while connecting USB PROGRAM, or hold BOOT while pressing and releasing **RESET** on a powered board. The USB programming cable supplies logic and inhibits both loads.
 - CH224K does not expose negotiated current/capabilities. Do not infer a 3/5 A contract from voltage or PG. Use a qualified ≥3 A adapter and a conservative firmware budget; the former selectable high-current eFuse mode is removed.
 
 See [design notes and open qualifications](docs/revision-b-design.md) and [expert-review findings](docs/revision-b-reviews.md). Firmware is not included.

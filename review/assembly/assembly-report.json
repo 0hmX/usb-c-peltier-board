@@ -10,7 +10,7 @@
     "heightMm": 85,
     "thicknessMm": 1.6
   },
-  "populatedComponents": 249,
+  "populatedComponents": 242,
   "mechanicalComponents": 29,
   "exposedTestPads": 27,
   "fetchedSupplierAssets": 0,
@@ -606,11 +606,6 @@
       "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
     },
     {
-      "reference": "R231",
-      "kind": "supplier CAD",
-      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
-    },
-    {
       "reference": "R232",
       "kind": "supplier CAD",
       "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
@@ -1066,11 +1061,6 @@
       "asset": "Embedded CAD sha256:33658d1f6bd5731a022a83d4d1965d39738fb75b943fa39ba7626bc5ef1aa26d"
     },
     {
-      "reference": "J_SERVICE",
-      "kind": "bundled package or supplier model",
-      "asset": "pinrow2_p2.54"
-    },
-    {
       "reference": "U_MCU",
       "kind": "supplier CAD",
       "asset": "Embedded CAD sha256:60717530401359c6dcced73b131ecfe470bfabb24be44a8134d5a315325b5287"
@@ -1204,31 +1194,6 @@
       "reference": "D_RESET_SAFE",
       "kind": "supplier CAD",
       "asset": "Embedded CAD sha256:4adad4de91571cbae9f2b144e853b2e53b1f4f810bb1294fb573ea951609e056"
-    },
-    {
-      "reference": "J_SWD",
-      "kind": "supplier CAD",
-      "asset": "Embedded CAD sha256:8bece53f8761e9251388ca12708854c6e412db288b7d751b30f71a7948ac6e6c"
-    },
-    {
-      "reference": "J_UART",
-      "kind": "supplier CAD",
-      "asset": "Embedded CAD sha256:8bece53f8761e9251388ca12708854c6e412db288b7d751b30f71a7948ac6e6c"
-    },
-    {
-      "reference": "R_SWCLK",
-      "kind": "bundled package or supplier model",
-      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
-    },
-    {
-      "reference": "R_SWDIO",
-      "kind": "bundled package or supplier model",
-      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
-    },
-    {
-      "reference": "R_UART_TX",
-      "kind": "bundled package or supplier model",
-      "asset": "Embedded CAD sha256:802c22183805837557a18d9f9600fd0f8a9dfcdc32eca7aac91d2f508454861b"
     },
     {
       "reference": "R_USB_DP",

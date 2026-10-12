@@ -62,11 +62,8 @@ export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDi
     <silkscreentext text="HOT" pcbX={16} pcbY={-40} fontSize={1.1} />
     <silkscreentext text="COLD" pcbX={25} pcbY={-40} fontSize={1.1} />
     <silkscreentext text="FAN" pcbX={37} pcbY={-40} fontSize={1.1} />
-    <silkscreentext text="SWD" pcbX={-22} pcbY={-40} fontSize={1.1} />
-    <silkscreentext text="UART" pcbX={-12} pcbY={-40} fontSize={1.1} />
     <silkscreentext text="BOOT" pcbX={-43} pcbY={-26} fontSize={1.1} />
     <silkscreentext text="RESET" pcbX={-33} pcbY={-40} fontSize={1.1} />
-    <silkscreentext text="SHORT BEFORE SWD" pcbX={-40} pcbY={-40.5} fontSize={0.85} />
     </group>
   </board>
 }

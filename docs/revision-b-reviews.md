@@ -1,5 +1,7 @@
 # Expert review integration
 
+The reviews below describe the original Revision B with UART/SWD headers. The current USB-C-only programming change removes those headers, their resistors and the SERVICE jumper; its regenerated validation is in `review/checks.json`.
+
 Six domain reviewers were used during the architecture/layout work. The table records their concrete findings and integration, not a numerical certification or fabrication approval.
 
 | Role | Finding integrated |
