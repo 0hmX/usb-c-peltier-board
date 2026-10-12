@@ -1,0 +1,2 @@
+$ bun run node_modules/tscircuit/cli.mjs check shorts dist/index/circuit.json --mode gerber --layer all
+No shorts detected in circuit.json

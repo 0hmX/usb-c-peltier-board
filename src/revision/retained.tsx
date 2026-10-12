@@ -192,7 +192,6 @@ export const retainedComponents: RetainedComponent[] = [
   {"name":"R227","part":"C25803","connections":{"pin1":"net.POWER_BUDGET_HIGH","pin2":"net.GND"},"noConnect":[],"original":[-7,-23.5,0],"block":"control"},
   {"name":"R228","part":"C25803","connections":{"pin1":"net.V12_FAN","pin2":"net.FAN_FB"},"noConnect":[],"original":[35.5,-15.5,0],"block":"control"},
   {"name":"R229","part":"C23068","connections":{"pin1":"net.FAN_FB","pin2":"net.GND"},"noConnect":[],"original":[35.5,-18,0],"block":"control"},
-  {"name":"R231","part":"C21190","connections":{"pin1":"net.UART_RX","pin2":"net.UART_RX_MCU"},"noConnect":[],"original":[-8,-27,0],"block":"control"},
   {"name":"R232","part":"C2906982","connections":{"pin1":"net.INPUT_FAULT_N","pin2":"net.FAULT_PNP_BASE"},"noConnect":[],"original":[14,-23,0],"block":"control"},
   {"name":"R233","part":"C25803","connections":{"pin1":"net.V3V3","pin2":"net.FAULT_PNP_BASE"},"noConnect":[],"original":[16.5,-21,0],"block":"control"},
   {"name":"R234","part":"C2906982","connections":{"pin1":"net.FAULT_SOURCE","pin2":"net.FAULT_NPN_BASE"},"noConnect":[],"original":[16.5,-19,0],"block":"control"},

@@ -1,4 +1,3 @@
-import { StandardJstSwdSide, StandardJstUartSide } from "./parts/standard-jst-programmer.js"
 import { Schottky } from "../parts"
 import { RP2040 } from "./parts/RP2040"
 import { W25Q16JVUXIQ } from "./parts/W25Q16JVUXIQ"
@@ -11,12 +10,11 @@ const supplyPins = [1, 10, 22, 33, 42, 44, 48, 49]
 
 export const processorConnections: Record<string, string> = {
   ...Object.fromEntries(supplyPins.map(pin => ["pin" + pin, "net.V3V3"])),
-  pin2: "net.UART_TX_MCU", pin3: "net.UART_RX_MCU",
   pin6: "net.PD_CFG1_LOW", pin7: "net.PD_CFG2_LOW", pin8: "net.PD_CFG3_LOW",
   pin11: "net.I2C_SDA", pin12: "net.I2C_SCL", pin13: "net.FAN_PWM_DRIVE", pin14: "net.FAN_TACH_MCU",
   pin15: "net.TEC_REQUEST", pin16: "net.MCU_RUN", pin17: "net.MCU_ARM",
   pin19: "net.GND", pin20: "net.XIN", pin21: "net.XOUT", pin23: "net.V1V1",
-  pin24: "net.SWCLK_MCU", pin25: "net.SWDIO_MCU", pin26: "net.MCU_NRST",
+  pin26: "net.MCU_NRST",
   pin27: "net.PD_VALID_N", pin28: "net.INPUT_FAULT_N", pin29: "net.INPUT_AUXOFF",
   pin36: "net.USB_VBUS_DETECT", pin38: "net.HOT_ADC", pin39: "net.COLD_ADC",
   pin40: "net.VOUT_ADC", pin41: "net.VBUS_ADC", pin43: "net.ADC_AVDD",
@@ -29,7 +27,7 @@ export function Processor() {
   return <>
     <RP2040 name="U_MCU" pcbX={-27} pcbY={-21} schX={0} schY={7} {...mcu}
       connections={processorConnections}
-      noConnect={["GPIO2", "GPIO3", "GPIO7", "GPIO15", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO25"]}
+      noConnect={["GPIO0", "GPIO1", "GPIO2", "GPIO3", "GPIO7", "GPIO15", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO25", "SWCLK", "SWD"]}
       schPinArrangement={{
         leftSide: { pins: [2, 3, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 24, 25, 26], direction: "top-to-bottom" },
         rightSide: { pins: [20, 21, 27, 28, 29, 36, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56], direction: "top-to-bottom" },
@@ -80,14 +78,7 @@ export function Processor() {
       connections={{ pin1: "net.MCU_NRST", pin2: "net.MCU_NRST", pin3: "net.GND", pin4: "net.GND" }} />
     <Schottky name="D_RESET_SAFE" pcbX={-6} pcbY={-32} schX={29} schY={18} {...support}
       connections={{ pin1: "net.MCU_NRST", pin2: "net.INPUT_FAULT_N" }} />
-    <StandardJstSwdSide name="J_SWD" pcbX={-22} pcbY={-36} schX={27} schY={-5} {...support}
-      connections={{ pin1: "net.SWCLK", pin2: "net.GND", pin3: "net.SWDIO" }} />
-    <StandardJstUartSide name="J_UART" role="target" pcbX={-12} pcbY={-36} schX={35} schY={-5} {...support}
-      connections={{ pin1: "net.UART_RX", pin2: "net.GND", pin3: "net.UART_TX" }} />
     {[
-      ["R_SWCLK", "100", -22, -29, "SWCLK", "SWCLK_MCU"],
-      ["R_SWDIO", "100", -21, -31, "SWDIO", "SWDIO_MCU"],
-      ["R_UART_TX", "100", -23, -32, "UART_TX_MCU", "UART_TX"],
       ["R_USB_DP", "27", -26, -13, "USB_DP_SWITCH", "USB_DP_MCU"],
       ["R_USB_DM", "27", -26, -11, "USB_DM_SWITCH", "USB_DM_MCU"],
       ["R_INPUT_PG", "10k", -23, 15, "V3V3", "INPUT_AUXOFF"],

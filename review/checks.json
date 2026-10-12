@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "checkedPins": 571,
-  "components": 276,
+  "checkedPins": 572,
+  "components": 269,
   "mechanicalComponents": 29,
-  "retainedComponents": 198,
+  "retainedComponents": 197,
   "schematicSheets": 8,
   "routedTraces": 0,
   "nativeCheckCounts": {
@@ -15,7 +15,7 @@
     "schematic_sheet_styling_warning": 8,
     "source_refdes_convention_warning": 12,
     "source_no_power_pin_defined_warning": 4,
-    "source_missing_manufacturer_part_number_warning": 80
+    "source_missing_manufacturer_part_number_warning": 76
   },
   "problems": []
 }

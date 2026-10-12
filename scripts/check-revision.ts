@@ -39,9 +39,11 @@ const criticalConnections: Record<string, Record<string, string>> = {
   J_USB_PROG: { VBUS1: "USB_PROG_5V", VBUS2: "USB_PROG_5V", CC1: "USB_PROG_CC1", CC2: "USB_PROG_CC2", DP1: "USB_DP_PORT", DP2: "USB_DP_PORT", DM1: "USB_DM_PORT", DM2: "USB_DM_PORT", GND1: "GND", GND2: "GND" },
   U_USB_SWITCH: { pin1: "USB_DP_SWITCH", pin2: "USB_DM_SWITCH", pin5: "GND", pin6: "USB_DATA_DISABLE", pin7: "USB_DM_PORT", pin8: "USB_DP_PORT", pin9: "GND", pin10: "V3V3" },
   U_FLASH: { pin1: "FLASH_CS", pin2: "FLASH_SD1", pin3: "FLASH_SD2", pin4: "GND", pin5: "FLASH_SD0", pin6: "FLASH_SCLK", pin7: "FLASH_SD3", pin8: "V3V3", pin9: "GND" },
-  J_SWD: { pin1: "SWCLK", pin2: "GND", pin3: "SWDIO" },
-  J_UART: { pin1: "UART_RX", pin2: "GND", pin3: "UART_TX" },
-  J_SERVICE: { pin1: "INPUT_FAULT_N", pin2: "GND" },
+  R_USB_DP: { pin1: "USB_DP_SWITCH", pin2: "USB_DP_MCU" },
+  R_USB_DM: { pin1: "USB_DM_SWITCH", pin2: "USB_DM_MCU" },
+  SW_BOOT: { pin1: "BOOT_BUTTON", pin2: "BOOT_BUTTON", pin3: "GND", pin4: "GND" },
+  SW_RESET: { pin1: "MCU_NRST", pin2: "MCU_NRST", pin3: "GND", pin4: "GND" },
+  Q_USB_SERVICE: { pin1: "USB_PRESENT_BASE", pin2: "GND", pin3: "INPUT_FAULT_N" },
   D_LOGIC_PD: { pin1: "LOGIC_VIN", pin2: "VBUS_RAW" },
   D_LOGIC_USB: { pin1: "LOGIC_VIN", pin2: "USB_PROG_5V" },
   R_USB_BLEED: { pin1: "USB_PROG_5V", pin2: "GND" },
@@ -51,7 +53,16 @@ for (const [name, connections] of Object.entries(criticalConnections)) {
   for (const [pin, expected] of Object.entries(connections)) checkPin(name, pin, expected)
 }
 requireCondition(new Set(allSourceComponents.map(item => item.name)).size === allSourceComponents.length, "Reference designators must be unique")
-requireCondition(sourceComponents.length === 276, "Preserve the 276 electrical PCB components")
+requireCondition(sourceComponents.length === 269, "USB-C-only programming revision must contain 269 electrical PCB components")
+for (const name of ["J_SWD", "J_UART", "J_SERVICE", "R_SWCLK", "R_SWDIO", "R_UART_TX", "R231"]) {
+  requireCondition(!allSourceComponents.some(item => item.name === name), `${name} must not remain in the USB-C-only programming revision`)
+}
+requireCondition(!sourceNets.some(item => /^(UART_|SWCLK|SWDIO)/.test(item.name)), "UART/SWD nets must not remain")
+const mcu = sourceComponents.find(item => item.name === "U_MCU")
+for (const pin of [2, 3, 24, 25]) {
+  const port = sourcePorts.find(item => item.source_component_id === mcu?.source_component_id && item.pin_number === pin)
+  requireCondition(port?.do_not_connect === true && !port.subcircuit_connectivity_map_key, `U_MCU.pin${pin} must be explicitly unconnected`)
+}
 for (const component of mechanicalComponents) {
   requireCondition(!sourcePorts.some(port => port.source_component_id === component.source_component_id), "Mechanical concepts must not create electrical ports")
   requireCondition(!circuit.some(item => item.type === "schematic_component" && item.source_component_id === component.source_component_id), "Mechanical concepts must not create schematic symbols")
@@ -59,7 +70,6 @@ for (const component of mechanicalComponents) {
 requireCondition(!sourceComponents.some(item => /STUSB4500|STM32G030/.test(item.manufacturer_part_number ?? "")), "Legacy CPU/PD parts must not remain in the revision")
 requireCondition(sourceComponents.filter(item => item.standard === "usb_c").length === 2, "Use exactly two standard USB-C connectors")
 for (const [name, pinCount, supplierId] of [
-  ["J_SWD", 3, "C160403"], ["J_UART", 3, "C160403"],
   ["J_HOT", 2, "C160402"], ["J_COLD", 2, "C160402"], ["J_FAN", 4, "C160404"],
 ] as const) {
   const component = sourceComponents.find(item => item.name === name)
