@@ -1,7 +1,6 @@
 import { createElement, type ComponentType } from "react"
 import type { ChipProps } from "@tscircuit/props"
 import { tecInductorCadModel } from "./cad-models"
-import { withPortableCadModels } from "./resolve-cad-models"
 import { StandardJstThermistorSide } from "./parts/StandardJstThermistorSide"
 import { StandardJstFanSide } from "./parts/StandardJstFanSide"
 import { TPS259470ARPWR as C3662799 } from "../parts/C3662799"
@@ -337,8 +336,8 @@ const partComponents: Record<string, ComponentType<any>> = {
 
 export function RetainedPart({ item, ...props }: { item: RetainedComponent } & Omit<ChipProps, "name">) {
   if (item.part === "testpoint") return <testpoint name={item.name} cadModel={null} footprint={<footprint><smtpad shape="circle" radius={1} portHints={["pin1"]} /><courtyardcircle radius={1.3} /></footprint>} {...props} connections={{ pin1: item.connections.pin1! }} />
-  if (["J_HOT", "J_COLD"].includes(item.name)) return withPortableCadModels(<StandardJstThermistorSide name={item.name} connections={item.connections} {...props} />)
-  if (item.name === "J_FAN") return withPortableCadModels(<StandardJstFanSide name={item.name} connections={item.connections} {...props} />)
-  return withPortableCadModels(createElement(partComponents[item.part]!, { name: item.name, connections: item.connections, noConnect: item.noConnect,
-    ...(item.name === "L2" ? { cadModel: tecInductorCadModel } : {}), ...props }))
+  if (["J_HOT", "J_COLD"].includes(item.name)) return <StandardJstThermistorSide name={item.name} connections={item.connections} {...props} />
+  if (item.name === "J_FAN") return <StandardJstFanSide name={item.name} connections={item.connections} {...props} />
+  return createElement(partComponents[item.part]!, { name: item.name, connections: item.connections, noConnect: item.noConnect,
+    ...(item.name === "L2" ? { cadModel: tecInductorCadModel } : {}), ...props })
 }

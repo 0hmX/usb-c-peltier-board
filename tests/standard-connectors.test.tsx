@@ -1,6 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { Circuit } from "@tscircuit/core"
-import { StandardJstSwdSide, StandardJstUartSide } from "@tsci/tscircuit.standard-jst-programmer"
+import { Circuit } from "tscircuit"
 import { StandardJstThermistorSide } from "../src/board/parts/StandardJstThermistorSide"
 import { StandardJstFanSide } from "../src/board/parts/StandardJstFanSide"
 
@@ -8,10 +7,6 @@ async function fixture() {
   const circuit = new Circuit()
   circuit.pcbRoutingDisabled = true
   circuit.add(<board width={60} height={16} schematicDisabled>
-    <StandardJstSwdSide name="J_SWD" pcbX={-20}
-      connections={{ SWCLK: "net.SWCLK", GND: "net.GND", SWDIO: "net.SWDIO" }} />
-    <StandardJstUartSide name="J_UART" role="target" pcbX={-10}
-      connections={{ RX: "net.UART_RX", GND: "net.GND", TX: "net.UART_TX" }} />
     <StandardJstThermistorSide name="J_HOT" pcbX={0}
       connections={{ NTC: "net.HOT", GND: "net.GND" }} />
     <StandardJstThermistorSide name="J_COLD" pcbX={10}
@@ -51,23 +46,7 @@ function expectPinMap(circuit: InstanceType<typeof Circuit>, name: string, expec
   }
 }
 
-describe("installed standard JST target connectors", () => {
-  test("SWD physical pins 1, 2, 3 are SWCLK, GND, SWDIO", async () => {
-    expectPinMap(await fixture(), "J_SWD", [
-      [1, "SWCLK", "SWCLK"],
-      [2, "GND", "GND"],
-      [3, "SWDIO", "SWDIO"],
-    ])
-  })
-
-  test("UART target physical pins 1, 2, 3 are RX, GND, TX", async () => {
-    expectPinMap(await fixture(), "J_UART", [
-      [1, "RX", "UART_RX"],
-      [2, "GND", "GND"],
-      [3, "TX", "UART_TX"],
-    ])
-  })
-
+describe("JST thermistor and fan connectors", () => {
   test("thermistors preserve signal and ground on physical pins 1 and 2", async () => {
     const circuit = await fixture()
     expectPinMap(circuit, "J_HOT", [[1, "NTC", "HOT"], [2, "GND", "GND"]])
@@ -83,12 +62,12 @@ describe("installed standard JST target connectors", () => {
   test("all connectors retain real side-entry JST packages and CAD models", async () => {
     const circuit = await fixture()
     const components = circuit.db.source_component.list()
-    expect(components.map(component => component.name).sort()).toEqual(["J_COLD", "J_FAN", "J_HOT", "J_SWD", "J_UART"])
-    expect(circuit.db.pcb_component.list()).toHaveLength(5)
-    expect(circuit.db.cad_component.list()).toHaveLength(5)
+    expect(components.map(component => component.name).sort()).toEqual(["J_COLD", "J_FAN", "J_HOT"])
+    expect(circuit.db.pcb_component.list()).toHaveLength(3)
+    expect(circuit.db.cad_component.list()).toHaveLength(3)
     for (const component of components) {
-      const pinCount = component.name === "J_FAN" ? 4 : ["J_HOT", "J_COLD"].includes(component.name) ? 2 : 3
-      const supplierId = pinCount === 4 ? "C160404" : pinCount === 2 ? "C160402" : "C160403"
+      const pinCount = component.name === "J_FAN" ? 4 : 2
+      const supplierId = pinCount === 4 ? "C160404" : "C160402"
       expect(component).toMatchObject({
         ftype: "simple_connector",
         standard: "jst_sh",

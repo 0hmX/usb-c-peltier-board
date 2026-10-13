@@ -1,11 +1,74 @@
-import { cloneElement } from "react"
 import type { ChipProps } from "@tscircuit/props"
-import { StandardJstPowerSide } from "./standard-jst-programmer.js"
 
+// SM02B-SRSS-TB(LF)(SN), JLCPCB C160402. Supplier geometry from
+// the standard JST programmer v0.8.0, with thermistor signal labels.
 export function StandardJstThermistorSide(props: Omit<ChipProps, "pinLabels" | "footprint" | "cadModel">) {
-  const standard = StandardJstPowerSide({ name: props.name })
-  const imported = standard.type(standard.props)
-  return <connector {...imported.props} {...props}
-    pinLabels={{ pin1: ["NTC"], pin2: ["GND"] }}
-    footprint={cloneElement(imported.props.footprint, { insertionDirection: "from_bottom" })} />
+  return (
+    <connector
+      standard={"jst_sh"}
+      pinCount={2}
+      pinLabels={{"pin1":["NTC"],"pin2":["GND"]}}
+      supplierPartNumbers={{"jlcpcb":["C160402"]}}
+      manufacturerPartNumber={"SM02B-SRSS-TB(LF)(SN)"}
+      footprint={<footprint
+        insertionDirection={"from_bottom"}>
+        <smtpad
+          portHints={[]}
+          pcbX={"-1.799971mm"}
+          pcbY={"-1.8750153mm"}
+          width={"1.1999976mm"}
+          height={"1.7999964mm"}
+          shape={"rect"}
+        />
+        <smtpad
+          portHints={[]}
+          pcbX={"1.799971mm"}
+          pcbY={"-1.8750153mm"}
+          width={"1.1999976mm"}
+          height={"1.7999964mm"}
+          shape={"rect"}
+        />
+        <smtpad
+          portHints={["pin2"]}
+          pcbX={"0.499999mm"}
+          pcbY={"2.0000087mm"}
+          width={"0.5999988mm"}
+          height={"1.5500096mm"}
+          shape={"rect"}
+        />
+        <smtpad
+          portHints={["pin1"]}
+          pcbX={"-0.499999mm"}
+          pcbY={"2.0000087mm"}
+          width={"0.5999988mm"}
+          height={"1.5500096mm"}
+          shape={"rect"}
+        />
+        <silkscreenpath
+          route={[{"x":-0.9688575999997511,"y":-2.587510699999939},{"x":0.9688576000002058,"y":-2.587510699999939}]}
+        />
+        <silkscreenpath
+          route={[{"x":-1.9999959999997827,"y":-0.13750289999995857},{"x":-1.9999959999997827,"y":-0.7438517000000502}]}
+        />
+        <silkscreenpath
+          route={[{"x":1.0311384000000317,"y":1.7125061000001551},{"x":1.9999960000001238,"y":1.7125061000001551},{"x":1.9999960000001238,"y":-0.7438517000000502}]}
+        />
+        <silkscreenpath
+          route={[{"x":-1.9999959999997827,"y":-0.13750289999995857},{"x":-1.9999959999997827,"y":1.7125061000001551},{"x":-1.031138399999918,"y":1.7125061000001551}]}
+        />
+        <silkscreentext
+          text={"{NAME}"}
+          pcbX={"-0.009271mm"}
+          pcbY={"3.7731847mm"}
+          anchorAlignment={"center"}
+          fontSize={"1mm"}
+        />
+        <courtyardoutline
+          outline={[{"x":-2.6595709999999144,"y":3.0231847000000016},{"x":2.641029000000117,"y":3.0231847000000016},{"x":2.641029000000117,"y":-3.0394152999998596},{"x":-2.6595709999999144,"y":-3.0394152999998596},{"x":-2.6595709999999144,"y":3.0231847000000016}]}
+        />
+      </footprint>}
+      cadModel={{"objUrl":"https://modelcdn.tscircuit.com/easyeda_models/assets/C160402.obj?uuid=b15083895b61401296a20b79cbc50a55","stepUrl":"https://modelcdn.tscircuit.com/easyeda_models/assets/C160402.step?uuid=b15083895b61401296a20b79cbc50a55","pcbRotationOffset":0,"modelOriginPosition":{"x":0.4999999999997726,"y":0.5135125000000245,"z":-0.01}}}
+      {...props}
+    />
+  )
 }

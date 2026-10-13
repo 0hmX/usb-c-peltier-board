@@ -1,29 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "Preserve",
-    "moduleResolution": "bundler",
+    "target": "ES2020",
+    "module": "ESNext",
     "jsx": "react-jsx",
-    "types": [
-      "bun",
-      "tscircuit"
-    ],
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
     "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "skipLibCheck": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "types": [
+      "tscircuit",
+      "bun"
+    ]
   },
   "include": [
-    "index.tsx",
-    "assembly.tsx",
-    "regenerate.tsx",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "scripts/**/*.ts",
-    "scripts/**/*.tsx",
-    "tscircuit.config.ts",
-    "regenerate.config.ts"
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".claude"
   ]
 }

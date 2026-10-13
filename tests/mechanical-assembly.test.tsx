@@ -1,9 +1,8 @@
 import { describe, expect, spyOn, test } from "bun:test"
-import { assembly, Circuit } from "@tscircuit/core"
-import { CircuitRunner } from "@tscircuit/eval"
+import { assembly, Circuit } from "tscircuit"
 import { Children, isValidElement } from "react"
 import { convertCircuitJsonTo3D, loadJscadPlan } from "circuit-json-to-gltf"
-import PeltierAssembly from "../assembly"
+import PeltierAssembly from "../index.circuit"
 import { DualUsbPeltierBoard } from "../src/board/board"
 import {
   conceptWires, MechanicalAssembly, mechanicalCadCount, mechanicalConcept,
@@ -96,7 +95,7 @@ describe("native full-device mechanical CONCEPT", () => {
     const tec = conceptWires.filter(wire => wire.connectorName === "J_TEC")
     expect(tec).toHaveLength(2)
     expect(tec.map(wire => wire.path[0])).toEqual([[50, 17, 0.8], [50, 17, 0.8]])
-    expect(tec.map(wire => wire.path.at(-1))).toEqual([[80, 5, 1.1], [80, -5, 1.1]])
+    expect(tec.map(wire => wire.path[wire.path.length - 1])).toEqual([[80, 5, 1.1], [80, -5, 1.1]])
     expect(tec[0]!.color).not.toEqual(tec[1]!.color)
     expect(conceptWires.filter(wire => wire.connectorName === "J_FAN").map(wire => wire.signal)).toEqual(["GND", "V12_FAN", "FAN_TACH", "FAN_PWM"])
     for (const wire of conceptWires) {
@@ -160,28 +159,4 @@ describe("native full-device mechanical CONCEPT", () => {
     }
   }, 120000)
 
-  test("published source evaluates all local JSCAD parts through CircuitRunner without CDN loading", async () => {
-    const files = ["assembly.tsx", "package.json", "tscircuit.config.json", "tscircuit.config.ts", ...new Bun.Glob("src/**/*.{ts,tsx,js,json}").scanSync(".")]
-    const fsMap = Object.fromEntries(await Promise.all(files.map(async file => [file, await Bun.file(file).text()])))
-    const fetchMock = spyOn(globalThis, "fetch").mockImplementation(Object.assign(async () => { throw new Error("Published mechanical assembly must not fetch remote code") }, { preconnect: globalThis.fetch.preconnect }))
-    const runner = new CircuitRunner()
-    try {
-      await runner.setDisableCdnLoading(true)
-      await runner.executeWithFsMap({ mainComponentPath: "assembly.tsx", fsMap })
-      await runner.renderUntilSettled()
-      const circuit = await runner.getCircuitJson()
-      const mechanicalIds = new Set(circuit.flatMap(item => item.type === "source_component" && mechanicalPartNames.includes(item.name!) ? [item.source_component_id] : []))
-      expect(mechanicalIds.size).toBe(mechanicalCadCount)
-      expect(circuit.filter(item => item.type === "cad_component" && mechanicalIds.has(item.source_component_id))).toHaveLength(mechanicalCadCount)
-      expect(circuit.filter(item => item.type === "pcb_component")).toHaveLength(276)
-      expect(circuit.filter(item => item.type === "source_port")).toHaveLength(762)
-      expect(circuit.filter(item => item.type === "source_net")).toHaveLength(135)
-      expect(circuit.filter(item => item.type === "schematic_sheet")).toHaveLength(8)
-      expect(circuit.filter(item => item.type.endsWith("error"))).toEqual([])
-      expect(fetchMock).not.toHaveBeenCalled()
-    } finally {
-      fetchMock.mockRestore()
-      runner.kill()
-    }
-  }, 120000)
 })

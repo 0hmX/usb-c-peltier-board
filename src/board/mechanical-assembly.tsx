@@ -1,6 +1,6 @@
-import { assembly } from "@tscircuit/core"
+import { assembly } from "tscircuit"
 import type { CadModelJscad } from "@tscircuit/props"
-import { boardLayoutProps } from "../legacy/layout"
+import { boardLayoutProps } from "./layout"
 import { boardDimensions, revisedPlacements } from "./layout"
 
 type Point = [number, number, number]
