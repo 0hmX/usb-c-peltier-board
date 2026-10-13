@@ -1,0 +1,1872 @@
+{
+  "owner": "fan",
+  "status": "route-only-completion-proposal",
+  "units": "mm",
+  "placementSuggestions": {
+    "U_FAN": [
+      38,
+      -10,
+      0
+    ],
+    "L_FAN": [
+      46,
+      -6.75,
+      0
+    ],
+    "C213": [
+      42.35,
+      -12.35,
+      0
+    ],
+    "C214": [
+      35.4,
+      -8.6,
+      270
+    ],
+    "C215": [
+      45.7,
+      -16.6,
+      270
+    ],
+    "C218": [
+      51.825,
+      -6.75,
+      90
+    ],
+    "C219": [
+      40.5,
+      -17.5,
+      0
+    ],
+    "C220": [
+      40.5,
+      -21,
+      0
+    ],
+    "R228": [
+      40.5,
+      -5.8,
+      270
+    ],
+    "R229": [
+      37,
+      -5.8,
+      90
+    ],
+    "C221": [
+      38.75,
+      -5.8,
+      270
+    ],
+    "TP18": [
+      39.9,
+      -2.1,
+      0
+    ]
+  },
+  "retainedPlacements": {
+    "C216": [
+      -12,
+      -28,
+      90
+    ],
+    "C217": [
+      -12.25,
+      -15,
+      90
+    ]
+  },
+  "paths": [
+    {
+      "net": "FAN_SW",
+      "to": "L_FAN.pin1",
+      "width": 0.5,
+      "layer": "top",
+      "points": [
+        {
+          "x": 38,
+          "y": -11.35
+        },
+        {
+          "x": 38,
+          "y": -10.1
+        },
+        {
+          "x": 43.25,
+          "y": -10.1
+        },
+        {
+          "x": 43.25,
+          "y": -6.75
+        }
+      ],
+      "note": "Top-only switch strip passes between the two SOT23 rows; no broad SW pour. C213 remains below this strip.",
+      "from": "U_FAN.pin2",
+      "maxLength": 11
+    },
+    {
+      "net": "FAN_SW",
+      "to": "C214.pin2",
+      "width": 0.25,
+      "layer": "top",
+      "points": [
+        {
+          "x": 38,
+          "y": -11.35
+        },
+        {
+          "x": 38,
+          "y": -10.1
+        },
+        {
+          "x": 35.4,
+          "y": -10.1
+        },
+        {
+          "x": 35.4,
+          "y": -9.3
+        }
+      ],
+      "note": "Bootstrap SW branch uses the same local switch node; stay above U_FAN GND pad and its southward return.",
+      "from": "U_FAN.pin2",
+      "maxLength": 6
+    },
+    {
+      "net": "FAN_BST",
+      "to": "C214.pin1",
+      "width": 0.25,
+      "layer": "top",
+      "points": [
+        {
+          "x": 37.05,
+          "y": -8.65
+        },
+        {
+          "x": 35.4,
+          "y": -7.9
+        }
+      ],
+      "note": "Direct BST path about1.81mm between port centers and0.988mm outside solder-pad metal; no via.",
+      "from": "U_FAN.pin6",
+      "pcbStraightLine": true,
+      "maxLength": 2.3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "V12_FAN",
+      "to": "C218.pin1",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 48.75,
+          "y": -6.75
+        },
+        {
+          "x": 51.825,
+          "y": -8.315
+        }
+      ],
+      "note": "Nearest output capacitor is immediately right of inductor courtyard; approximately3.57mm between port centers.",
+      "from": "L_FAN.pin2",
+      "pcbStraightLine": true,
+      "maxLength": 4,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "V12_FAN",
+      "to": "C215.pin1",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 51.825,
+          "y": -8.315
+        },
+        {
+          "x": 45.7,
+          "y": -8.315
+        },
+        {
+          "x": 45.7,
+          "y": -15.035
+        }
+      ],
+      "note": "Output DC strip passes to the left of C218 GND pad and right of C213 GND pad.",
+      "from": "C218.pin1",
+      "maxLength": 14,
+      "maxExposedLength": 14
+    },
+    {
+      "net": "FAN_FB",
+      "to": "R229.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.5,
+          "y": -6.55
+        },
+        {
+          "x": 37,
+          "y": -6.55
+        }
+      ],
+      "note": "Short divider-junction strip; C221.pin2 lies on the same FB strip.",
+      "from": "R228.pin2"
+    },
+    {
+      "net": "FAN_FB",
+      "to": "C221.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 37,
+          "y": -6.55
+        },
+        {
+          "x": 38.75,
+          "y": -6.52
+        }
+      ],
+      "note": "Feedforward capacitor feedback side.",
+      "from": "R229.pin1",
+      "maxLength": 2.3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "FAN_FB",
+      "to": "U_FAN.pin4",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.5,
+          "y": -6.55
+        },
+        {
+          "x": 40.5,
+          "y": -7.65
+        },
+        {
+          "x": 38.95,
+          "y": -8.65
+        }
+      ],
+      "note": "Local feedback return; does not traverse SW or the power inductor.",
+      "from": "R228.pin2"
+    },
+    {
+      "net": "V12_FAN",
+      "to": "C221.pin1",
+      "width": 0.25,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.5,
+          "y": -5.05
+        },
+        {
+          "x": 38.75,
+          "y": -5.08
+        }
+      ],
+      "note": "Feedforward capacitor input side shares the sensed output node.",
+      "from": "R228.pin1",
+      "maxLength": 2.3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "V12_FAN",
+      "to": "FAN_V12_OUTPUT_TRANSFER.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 45.7,
+          "y": -15.035
+        },
+        {
+          "x": 47.725,
+          "y": -15.035
+        }
+      ],
+      "note": "Broad output pad escape into via array.",
+      "from": "C215.pin1"
+    },
+    {
+      "net": "V12_FAN",
+      "to": "FAN_V12_CONNECTOR_TRANSFER.1.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 48,
+          "y": -24
+        },
+        {
+          "x": 40.7,
+          "y": -30
+        },
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        }
+      ],
+      "note": "Reserved bottom fan load corridor. Pair arrays using1.2mm bars on both outer layers.",
+      "from": "FAN_V12_OUTPUT_TRANSFER.1.bottom"
+    },
+    {
+      "net": "V12_FAN",
+      "to": "J_FAN.pin2",
+      "width": 0.5,
+      "layer": "top",
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 36.500128,
+          "y": -35.4994833
+        }
+      ],
+      "note": "Short connector neck required by0.6mm terminal; keep adjacent GND/tach lands clear.",
+      "from": "FAN_V12_CONNECTOR_TRANSFER.1.top"
+    },
+    {
+      "net": "GND",
+      "to": "FAN_IC_GND_RETURN.1.top",
+      "width": 0.5,
+      "layer": "top",
+      "points": [
+        {
+          "x": 37.05,
+          "y": -11.35
+        },
+        {
+          "x": 37.05,
+          "y": -12.55
+        }
+      ],
+      "note": "Connect the second barrel through0.6mm top/bottom array bars; no thin signal via return.",
+      "from": "U_FAN.pin1",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "GND",
+      "to": "FAN_INPUT_GND_RETURN.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 37.05,
+          "y": -12.55
+        },
+        {
+          "x": 37.05,
+          "y": -16
+        },
+        {
+          "x": 42.375,
+          "y": -16
+        },
+        {
+          "x": 42.375,
+          "y": -14.375
+        }
+      ],
+      "note": "Compact input commutation PGND return; reaches both U_FAN and input capacitor without a distant ground-only path.",
+      "from": "FAN_IC_GND_RETURN.1.bottom"
+    },
+    {
+      "net": "GND",
+      "to": "FAN_INPUT_GND_RETURN.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.915,
+          "y": -12.35
+        },
+        {
+          "x": 43.475,
+          "y": -14.375
+        }
+      ],
+      "note": "Broad bulk-capacitor return to parallel via array; source land supports1.2mm.",
+      "from": "C213.pin2",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "GND",
+      "to": "FAN_INPUT_BANK_GND_219.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 42.065,
+          "y": -17.5
+        },
+        {
+          "x": 43.405,
+          "y": -17
+        }
+      ],
+      "note": "Broad bulk-capacitor return to parallel via array; source land supports1.2mm.",
+      "from": "C219.pin2",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "GND",
+      "to": "FAN_INPUT_BANK_GND_220.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 42.065,
+          "y": -21
+        },
+        {
+          "x": 41.7,
+          "y": -23.025
+        }
+      ],
+      "note": "Broad bulk-capacitor return to parallel via array; source land supports1.2mm.",
+      "from": "C220.pin2",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "GND",
+      "to": "FAN_OUTPUT_GND_215.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 45.7,
+          "y": -18.165
+        },
+        {
+          "x": 45.3,
+          "y": -19.505
+        }
+      ],
+      "note": "Broad bulk-capacitor return to parallel via array; source land supports1.2mm.",
+      "from": "C215.pin2",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "GND",
+      "to": "FAN_OUTPUT_GND_218.1.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 51.825,
+          "y": -5.185
+        },
+        {
+          "x": 51.1,
+          "y": -3.845
+        }
+      ],
+      "note": "Broad bulk-capacitor return to parallel via array; source land supports1.2mm.",
+      "from": "C218.pin2",
+      "maxLength": 3,
+      "maxExposedLength": 1
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_OUTPUT_TRANSFER.1.top",
+      "to": "FAN_V12_OUTPUT_TRANSFER.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 48.825,
+          "y": -15.035
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_OUTPUT_TRANSFER.1.top",
+      "to": "FAN_V12_OUTPUT_TRANSFER.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 47.725,
+          "y": -16.135
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_OUTPUT_TRANSFER.1.bottom",
+      "to": "FAN_V12_OUTPUT_TRANSFER.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 48.825,
+          "y": -15.035
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_OUTPUT_TRANSFER.1.bottom",
+      "to": "FAN_V12_OUTPUT_TRANSFER.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 47.725,
+          "y": -16.135
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_CONNECTOR_TRANSFER.1.top",
+      "to": "FAN_V12_CONNECTOR_TRANSFER.2.top",
+      "width": 0.8,
+      "layer": "top",
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 37.600128,
+          "y": -34.0744785
+        }
+      ],
+      "note": "0.8mm top bar preserves the connector row clearance; bottom current bar remains1.2mm."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_CONNECTOR_TRANSFER.1.top",
+      "to": "FAN_V12_CONNECTOR_TRANSFER.3.top",
+      "width": 0.8,
+      "layer": "top",
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 36.500128,
+          "y": -32.9744785
+        }
+      ],
+      "note": "0.8mm top bar preserves the connector row clearance; bottom current bar remains1.2mm."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_CONNECTOR_TRANSFER.1.bottom",
+      "to": "FAN_V12_CONNECTOR_TRANSFER.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 37.600128,
+          "y": -34.0744785
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "V12_FAN",
+      "from": "FAN_V12_CONNECTOR_TRANSFER.1.bottom",
+      "to": "FAN_V12_CONNECTOR_TRANSFER.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 36.500128,
+          "y": -32.9744785
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_IC_GND_RETURN.1.top",
+      "to": "FAN_IC_GND_RETURN.2.top",
+      "width": 0.6,
+      "layer": "top",
+      "points": [
+        {
+          "x": 37.05,
+          "y": -12.55
+        },
+        {
+          "x": 36.05,
+          "y": -12.55
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_IC_GND_RETURN.1.bottom",
+      "to": "FAN_IC_GND_RETURN.2.bottom",
+      "width": 0.6,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 37.05,
+          "y": -12.55
+        },
+        {
+          "x": 36.05,
+          "y": -12.55
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_GND_RETURN.1.top",
+      "to": "FAN_INPUT_GND_RETURN.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.475,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -14.375
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_GND_RETURN.1.top",
+      "to": "FAN_INPUT_GND_RETURN.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.475,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -15.475
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_GND_RETURN.1.bottom",
+      "to": "FAN_INPUT_GND_RETURN.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 43.475,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -14.375
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_GND_RETURN.1.bottom",
+      "to": "FAN_INPUT_GND_RETURN.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 43.475,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -15.475
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_219.1.top",
+      "to": "FAN_INPUT_BANK_GND_219.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.405,
+          "y": -17
+        },
+        {
+          "x": 43.405,
+          "y": -18.1
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_219.1.top",
+      "to": "FAN_INPUT_BANK_GND_219.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.405,
+          "y": -17
+        },
+        {
+          "x": 43.405,
+          "y": -19.2
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_219.1.bottom",
+      "to": "FAN_INPUT_BANK_GND_219.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 43.405,
+          "y": -17
+        },
+        {
+          "x": 43.405,
+          "y": -18.1
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_219.1.bottom",
+      "to": "FAN_INPUT_BANK_GND_219.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 43.405,
+          "y": -17
+        },
+        {
+          "x": 43.405,
+          "y": -19.2
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_220.1.top",
+      "to": "FAN_INPUT_BANK_GND_220.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 41.7,
+          "y": -23.025
+        },
+        {
+          "x": 42.8,
+          "y": -23.025
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_220.1.top",
+      "to": "FAN_INPUT_BANK_GND_220.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 41.7,
+          "y": -23.025
+        },
+        {
+          "x": 41.7,
+          "y": -24.125
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_220.1.bottom",
+      "to": "FAN_INPUT_BANK_GND_220.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 41.7,
+          "y": -23.025
+        },
+        {
+          "x": 42.8,
+          "y": -23.025
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_INPUT_BANK_GND_220.1.bottom",
+      "to": "FAN_INPUT_BANK_GND_220.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 41.7,
+          "y": -23.025
+        },
+        {
+          "x": 41.7,
+          "y": -24.125
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_215.1.top",
+      "to": "FAN_OUTPUT_GND_215.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 45.3,
+          "y": -19.505
+        },
+        {
+          "x": 46.4,
+          "y": -19.505
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_215.1.top",
+      "to": "FAN_OUTPUT_GND_215.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 45.3,
+          "y": -19.505
+        },
+        {
+          "x": 45.3,
+          "y": -20.605
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_215.1.bottom",
+      "to": "FAN_OUTPUT_GND_215.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 45.3,
+          "y": -19.505
+        },
+        {
+          "x": 46.4,
+          "y": -19.505
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_215.1.bottom",
+      "to": "FAN_OUTPUT_GND_215.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 45.3,
+          "y": -19.505
+        },
+        {
+          "x": 45.3,
+          "y": -20.605
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_218.1.top",
+      "to": "FAN_OUTPUT_GND_218.2.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 51.1,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 52.2,
+          "y": -3.8449999999999998
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_218.1.top",
+      "to": "FAN_OUTPUT_GND_218.3.top",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 51.1,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 53.3,
+          "y": -3.8449999999999998
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_218.1.bottom",
+      "to": "FAN_OUTPUT_GND_218.2.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 51.1,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 52.2,
+          "y": -3.8449999999999998
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "GND",
+      "from": "FAN_OUTPUT_GND_218.1.bottom",
+      "to": "FAN_OUTPUT_GND_218.3.bottom",
+      "width": 1.2,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 51.1,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 53.3,
+          "y": -3.8449999999999998
+        }
+      ],
+      "note": "Parallel array barrel strap; no isolated decorative vias."
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "U_FAN.pin3",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.785,
+          "y": -12.35
+        },
+        {
+          "x": 38.95,
+          "y": -11.35
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 2.5,
+      "note": "Actual exposed VIN bypass is approximately0.962mm outside solder pads; port-center span is2.09mm.",
+      "maxExposedLength": 1
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "C219.pin1",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.785,
+          "y": -12.35
+        },
+        {
+          "x": 39.4,
+          "y": -15.8
+        },
+        {
+          "x": 38.935,
+          "y": -17.5
+        }
+      ],
+      "maxLength": 8,
+      "pcbStraightLine": false,
+      "note": "Input bulk-bank DC branch; preserve local C213 bypass.",
+      "maxExposedLength": 8
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C219.pin1",
+      "to": "C220.pin1",
+      "width": 1.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 38.935,
+          "y": -17.5
+        },
+        {
+          "x": 38.935,
+          "y": -21
+        }
+      ],
+      "maxLength": 4,
+      "pcbStraightLine": true,
+      "note": "Input bulk-bank DC branch; preserve local C213 bypass.",
+      "maxExposedLength": 1
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "FAN_INPUT_VBUS_TRANSFER.1.top",
+      "width": 1,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.785,
+          "y": -12.35
+        },
+        {
+          "x": 39.4,
+          "y": -12.75
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 2,
+      "maxExposedLength": 1,
+      "note": "Broad input-current landing into three-via transfer; actual exposed copper is below1mm."
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "FAN_INPUT_VBUS_TRANSFER.1.top",
+      "to": "FAN_INPUT_VBUS_TRANSFER.2.top",
+      "width": 1,
+      "layer": "top",
+      "points": [
+        {
+          "x": 39.4,
+          "y": -12.75
+        },
+        {
+          "x": 38.4,
+          "y": -12.75
+        }
+      ],
+      "maxLength": 3,
+      "note": "Explicit parallel current-array bar; no isolated signal barrel on fan input."
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "FAN_INPUT_VBUS_TRANSFER.1.top",
+      "to": "FAN_INPUT_VBUS_TRANSFER.3.top",
+      "width": 1,
+      "layer": "top",
+      "points": [
+        {
+          "x": 39.4,
+          "y": -12.75
+        },
+        {
+          "x": 39.4,
+          "y": -13.85
+        }
+      ],
+      "maxLength": 3,
+      "note": "Explicit parallel current-array bar; no isolated signal barrel on fan input."
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "FAN_INPUT_VBUS_TRANSFER.1.bottom",
+      "to": "FAN_INPUT_VBUS_TRANSFER.2.bottom",
+      "width": 1,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 39.4,
+          "y": -12.75
+        },
+        {
+          "x": 38.4,
+          "y": -12.75
+        }
+      ],
+      "maxLength": 3,
+      "note": "Explicit parallel current-array bar; no isolated signal barrel on fan input."
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "FAN_INPUT_VBUS_TRANSFER.1.bottom",
+      "to": "FAN_INPUT_VBUS_TRANSFER.3.bottom",
+      "width": 1,
+      "layer": "bottom",
+      "points": [
+        {
+          "x": 39.4,
+          "y": -12.75
+        },
+        {
+          "x": 39.4,
+          "y": -13.85
+        }
+      ],
+      "maxLength": 3,
+      "note": "Explicit parallel current-array bar; no isolated signal barrel on fan input."
+    },
+    {
+      "net": "FAN_PWM_DRIVE",
+      "from": "FAN_MCU_PWM13_LAUNCH.top",
+      "to": "R218.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -31.476649776901805,
+          "y": -23.87559344724377
+        },
+        {
+          "x": -35.676649776901805,
+          "y": -24.47559344724377
+        },
+        {
+          "x": -36.0766497769018,
+          "y": -25.07559344724377
+        },
+        {
+          "x": -35.87664977690181,
+          "y": -36.27559344724377
+        },
+        {
+          "x": -35.676649776901805,
+          "y": -37.67559344724377
+        },
+        {
+          "x": -34.676649776901805,
+          "y": -37.87559344724377
+        },
+        {
+          "x": 26.523350223098195,
+          "y": -36.87559344724377
+        },
+        {
+          "x": 29.9233502230982,
+          "y": -33.67559344724377
+        },
+        {
+          "x": 33.32335022309819,
+          "y": -26.47559344724377
+        },
+        {
+          "x": 33.723350223098194,
+          "y": -26.27559344724377
+        },
+        {
+          "x": 35.1233502230982,
+          "y": -26.47559344724377
+        },
+        {
+          "x": 35.52335022309819,
+          "y": -26.67559344724377
+        },
+        {
+          "x": 36.52335022309819,
+          "y": -26.67559344724377
+        },
+        {
+          "x": 38.50881904510252,
+          "y": -25.03407417371093
+        },
+        {
+          "x": 38.25,
+          "y": -26
+        }
+      ],
+      "maxLength": 110,
+      "note": "Complete low-frequency PWM drive along the south perimeter. This path clears all 851 current traces/vias, actual pads, every authoritative MCU fanout, and the USB bottom reference region."
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "R221.pin2",
+      "to": "FAN_TACH_FILTER_RETURN.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 43.25,
+          "y": -28
+        },
+        {
+          "x": 42.260050506338835,
+          "y": -27.010050506338832
+        }
+      ],
+      "maxLength": 3,
+      "note": "Reuse the accepted filter-output escape. Signal-only layer transfer."
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "FAN_TACH_FILTER_RETURN.top",
+      "to": "FAN_TACH_PROBE_TRANSFER.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 42.260050506338835,
+          "y": -27.010050506338832
+        },
+        {
+          "x": 43.660050506338834,
+          "y": -26.810050506338833
+        },
+        {
+          "x": 43.86005050633884,
+          "y": -26.610050506338833
+        },
+        {
+          "x": 44.86005050633884,
+          "y": -22.41005050633883
+        },
+        {
+          "x": 47.260050506338835,
+          "y": -20.010050506338832
+        },
+        {
+          "x": 53.660050506338834,
+          "y": -8.810050506338833
+        },
+        {
+          "x": 53.660050506338834,
+          "y": -7.61005050633883
+        },
+        {
+          "x": 53.260050506338835,
+          "y": -7.210050506338831
+        },
+        {
+          "x": 50.260050506338835,
+          "y": -6.210050506338831
+        },
+        {
+          "x": 50.06005050633884,
+          "y": -5.810050506338829
+        },
+        {
+          "x": 50.06005050633884,
+          "y": -5.010050506338832
+        },
+        {
+          "x": 49.660050506338834,
+          "y": -4.61005050633883
+        },
+        {
+          "x": 41.5,
+          "y": -2.1
+        }
+      ],
+      "maxLength": 39.58642530306821,
+      "note": "Union-frozen repair: east-side top probe corridor clears every physical trace/via in replay7/906 and replay8/983 while preserving all fan power arrays and bypasses."
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "FAN_TACH_PROBE_TRANSFER.top",
+      "to": "TP18.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": 41.5,
+          "y": -2.1
+        },
+        {
+          "x": 39.9,
+          "y": -2.1
+        }
+      ],
+      "maxLength": 3.6000000000000014,
+      "note": "Accepted replay8 tach geometry, frozen against all replay7 routes; retained explicitly to avoid the obsolete bottom-trunk rejection."
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "FAN_TACH_FILTER_RETURN.inner2",
+      "to": "FAN_TACH_SOUTH_TRANSFER.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        {
+          "x": 42.260050506338835,
+          "y": -27.010050506338832
+        },
+        {
+          "x": 25.260050506338835,
+          "y": -28.21005050633883
+        },
+        {
+          "x": 23.660050506338834,
+          "y": -29.810050506338833
+        },
+        {
+          "x": 16.260050506338835,
+          "y": -31.810050506338833
+        },
+        {
+          "x": 5.660050506338834,
+          "y": -32.81005050633883
+        },
+        {
+          "x": -28.739949493661165,
+          "y": -32.01005050633883
+        },
+        {
+          "x": -29.339949493661173,
+          "y": -31.610050506338833
+        },
+        {
+          "x": -33.739949493661165,
+          "y": -31.010050506338832
+        }
+      ],
+      "maxLength": 79.18874648157295,
+      "note": "Union-frozen repair: clears every physical trace/via in both replay7/906 and replay8/983; south inner2 corridor reaches the accepted transfer barrel."
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "FAN_TACH_SOUTH_TRANSFER.top",
+      "to": "FAN_MCU_TACH14_LAUNCH.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -33.739949493661165,
+          "y": -31.010050506338832
+        },
+        {
+          "x": -34.539949493661176,
+          "y": -31.010050506338832
+        },
+        {
+          "x": -35.33994949366117,
+          "y": -30.21005050633883
+        },
+        {
+          "x": -34.93994949366117,
+          "y": -29.410050506338834
+        },
+        {
+          "x": -31.25794652111981,
+          "y": -25.582138978577856
+        }
+      ],
+      "maxLength": 10.137111678236042,
+      "note": "Accepted replay8 tach geometry, frozen against all replay7 routes; retained explicitly to avoid the obsolete bottom-trunk rejection."
+    }
+  ],
+  "viaArrays": [
+    {
+      "name": "FAN_V12_OUTPUT_TRANSFER",
+      "net": "V12_FAN",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 47.725,
+          "y": -15.035
+        },
+        {
+          "x": 48.825,
+          "y": -15.035
+        },
+        {
+          "x": 47.725,
+          "y": -16.135
+        }
+      ],
+      "source": "C215.pin1",
+      "purpose": "Parallel output-current layer transfer; every barrel is off solder pads."
+    },
+    {
+      "name": "FAN_V12_CONNECTOR_TRANSFER",
+      "net": "V12_FAN",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 36.500128,
+          "y": -34.0744785
+        },
+        {
+          "x": 37.600128,
+          "y": -34.0744785
+        },
+        {
+          "x": 36.500128,
+          "y": -32.9744785
+        }
+      ],
+      "source": "J_FAN.pin2",
+      "purpose": "Parallel fan-current transfer adjacent to connector; final0.5mm neck remains at the0.6mm connector land."
+    },
+    {
+      "name": "FAN_IC_GND_RETURN",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 37.05,
+          "y": -12.55
+        },
+        {
+          "x": 36.05,
+          "y": -12.55
+        }
+      ],
+      "source": "U_FAN.pin1",
+      "purpose": "Southward off-pad regulator ground pair; keep y=-10.1 clear for SW strip."
+    },
+    {
+      "name": "FAN_INPUT_GND_RETURN",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 43.475,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -14.375
+        },
+        {
+          "x": 42.375,
+          "y": -15.475
+        }
+      ],
+      "source": "C213.pin2",
+      "purpose": "Local input capacitor ground array joins compact bottom PGND strap and continuous inner1 reference."
+    },
+    {
+      "name": "FAN_INPUT_BANK_GND_219",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 43.405,
+          "y": -17
+        },
+        {
+          "x": 43.405,
+          "y": -18.1
+        },
+        {
+          "x": 43.405,
+          "y": -19.2
+        }
+      ],
+      "source": "C219.pin2",
+      "purpose": "Input bulk bank parallel ground return."
+    },
+    {
+      "name": "FAN_INPUT_BANK_GND_220",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 41.7,
+          "y": -23.025
+        },
+        {
+          "x": 42.8,
+          "y": -23.025
+        },
+        {
+          "x": 41.7,
+          "y": -24.125
+        }
+      ],
+      "source": "C220.pin2",
+      "purpose": "Input bulk bank parallel ground return."
+    },
+    {
+      "name": "FAN_OUTPUT_GND_215",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 45.3,
+          "y": -19.505
+        },
+        {
+          "x": 46.4,
+          "y": -19.505
+        },
+        {
+          "x": 45.3,
+          "y": -20.605
+        }
+      ],
+      "source": "C215.pin2",
+      "purpose": "Output reservoir parallel ground return."
+    },
+    {
+      "name": "FAN_OUTPUT_GND_218",
+      "net": "GND",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 51.1,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 52.2,
+          "y": -3.8449999999999998
+        },
+        {
+          "x": 53.3,
+          "y": -3.8449999999999998
+        }
+      ],
+      "source": "C218.pin2",
+      "purpose": "Nearest output capacitor parallel ground return."
+    },
+    {
+      "name": "FAN_INPUT_VBUS_TRANSFER",
+      "net": "VBUS_TEC",
+      "holeDiameter": 0.3,
+      "outerDiameter": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": 39.4,
+          "y": -12.75
+        },
+        {
+          "x": 38.4,
+          "y": -12.75
+        },
+        {
+          "x": 39.4,
+          "y": -13.85
+        }
+      ],
+      "source": "C213.pin1",
+      "purpose": "Parallel input-current transfer from protected-rail bottom feeder; replaces destination signal via and0.2mm current neck."
+    }
+  ],
+  "polygons": [],
+  "supplyHandoff": {
+    "selector": "C213.pin1",
+    "net": "VBUS_TEC",
+    "point": {
+      "x": 40.785,
+      "y": -12.35
+    },
+    "vinBranch": {
+      "from": "C213.pin1",
+      "to": "U_FAN.pin3",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        {
+          "x": 40.785,
+          "y": -12.35
+        },
+        {
+          "x": 38.95,
+          "y": -11.35
+        }
+      ],
+      "maximumLength": 2.2,
+      "maximumOutsidePadLength": 1
+    },
+    "inputBankPaths": [
+      {
+        "from": "C213.pin1",
+        "to": "C219.pin1",
+        "width": 1.2,
+        "layer": "top",
+        "points": [
+          {
+            "x": 40.785,
+            "y": -12.35
+          },
+          {
+            "x": 39.4,
+            "y": -15.8
+          },
+          {
+            "x": 38.935,
+            "y": -17.5
+          }
+        ]
+      },
+      {
+        "from": "C219.pin1",
+        "to": "C220.pin1",
+        "width": 1.2,
+        "layer": "top",
+        "points": [
+          {
+            "x": 38.935,
+            "y": -17.5
+          },
+          {
+            "x": 38.935,
+            "y": -21
+          }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Exact current fan names are U_FAN,L_FAN,R228,R229; inventory has no R230 or L21 selectors. All source pin assignments remain unchanged.",
+    "Fan first-pass inventory has30 owned terminals and21/21 routed tree edges. Parent must retain remote PWM/tach/measurement branches while rebuilding local geometry.",
+    "C216/C217 are supervisor/input-latch bypass capacitors and belong to ground/supply placement work; unchanged here.",
+    "Do not apply inherited blanket1mm capacitor limit to bulk-bank, feedforward or load distribution. Input C213→U_FAN VIN target2.2mm port-center /1mm outside copper; BST target3mm center /1mm outside copper; output nearest capacitor target4mm. Explicit ground capacitor escapes require1.2–2.2mm port-center traces because via copper must remain0.3mm beyond pad edges.",
+    "Only low-current sense/debug branches may use a single signal barrel. Fan load or PGND layer transfers use the declared parallel arrays; no one-via current neck.",
+    "All array barrels require top/bottom1.2mm same-net connecting bars as applicable; the first barrel path alone is not electrical completion of the array.",
+    "No broad FAN_SW polygon is requested. The top SW strip passes between SOT23 pad rows and beneath the component body, with compact local bootstrap branches.",
+    "Root must rerun full native placement, finite-copper clearance, connectivity, shorts and actual trace-length checks after integration. These proposed paths are locally audited against transformed pads but not a whole-board release signoff.",
+    "Via current capacity, copper thickness, fan load rating and thermal rise remain qualification work; declared widths are concrete prototype geometry targets.",
+    "Courtyard-aware revision uses actual native pcb_courtyard outlines and circles. TP18 moves to(39.9,-2.1); capacitor/inductor courtyard overlaps are resolved by moving C218 beside L_FAN. Courtyard outlines retain supplier dimensions and margins without modification.",
+    "Array member spacing is1.1mm (U_FAN GND pair1.0mm), preserving the parent router0.5mm drill-obstacle margin as well as solder-pad clearance.",
+    "maxLength bounds native centerline including un-clipped pad interiors. maxExposedLength independently bounds actual surface copper outside attached land metal and drill voids; VIN/BST/local grounds/nearest output reservoir retain1mm exposed constraints.",
+    "The distant output/input-bank strips are DC distribution, with explicit14mm/8mm exposed limits; those limits must not be mistaken for chip-bypass limits. Fan bottom load transfers and input feed use explicit parallel arrays.",
+    "Pinned core2124 pcbStraightLine clips a pad only when trace width exceeds half its smallest dimension. Stored centerline and cached trace_length may retain pad interiors; scripts/audit-bypass-lengths.ts measures exposed intervals from actual native vertices and physical land/annulus geometry instead.",
+    "Remote GPIO PWM and filtered tach trunks are explicitly reserved after the 851-trace generation left them pending. Their geometry was checked against all 851 generated traces and every native pad/hole/keepout, generated via, authoritative MCU fanout and bottom USB reference polygon. MCU13/14 placement and launch coordinates remain unchanged; mcu-completion.json connects their existing top pad escapes.",
+    "Tach completion is checked against the union of all replay7/906 and replay8/983 physical routes and barrels. The MCU branch uses inner2 along the south edge and one accepted signal transfer at(-33.7399494937,-31.0100505063), then top copper into the unchanged MCU14 barrel. The TP18 branch uses top copper along the east perimeter and the accepted probe barrel(41.5,-2.1). All power-array and bypass geometry is retained."
+  ],
+  "geometryAudit": {
+    "scope": "In-memory courtyard/pad transform and planned path native-vertex fixtures; refresh and independent audit of final dist/routed remain mandatory",
+    "method": "Actual native pcb_courtyard_outline/circle transformation, native placement checks and finite copper geometry audit",
+    "treeNets": 9,
+    "treeEdges": 21,
+    "ownedPorts": 30,
+    "barrels": 31,
+    "proposedPaths": 63,
+    "explicitArrayStrapCount": 34,
+    "supplierCourtyardOverlapErrors": 0,
+    "nativePlacementChecksMethod": "runAllPlacementChecks over fresh dist/routing-placement/circuit.json with candidate component/port/pad/courtyard geometry transformed in memory",
+    "finiteGeometryViolations": 0,
+    "foreignCopperClearanceRequired": 0.2,
+    "viaCopperToSolderPadRequired": 0.3,
+    "minimumForeignPadTraceCopperGap": 0.2242485308441351,
+    "minimumForeignTraceTraceCopperGap": 0.25,
+    "minimumViaCopperToSolderPadGap": 0.3,
+    "auditedPathCountIncludingVBUSProposals": 57,
+    "vinPortCenterLength": 2.089790659372369,
+    "bstPortCenterLength": 1.8124568960391858,
+    "candidateExposedLengthConstraints": 15,
+    "candidateExposedLengthViolations": 0,
+    "maxExposedLengthAuditor": "scripts/audit-bypass-lengths.ts",
+    "actualExposedVinBypassLength": 0.9623286687573035,
+    "actualExposedBstLength": 0.9886128523850104,
+    "actualExposedNearestOutputCapLength": 0.9192483740792129,
+    "localArrayBarrels": 26,
+    "remoteControlAudit": {
+      "generationTraceCount": 851,
+      "pwmCenterlineLength": 99.32399673001174,
+      "currentTraceAndViaGeometryProtected": true,
+      "traceWidth": 0.2,
+      "finiteGeometryViolations": 0,
+      "nativeValidation": "PWM accepted in replay7 and replay8; final native checks mandatory"
+    },
+    "frozen906TachRepair": {
+      "frozenTraceCount": 906,
+      "additionalProtectedReplayTraceCount": 983,
+      "preservedAllExistingTraces": true,
+      "preservedAllExistingVias": true,
+      "bottomUsbReferencePolygonProtected": true,
+      "tachLayers": [
+        "inner2",
+        "top"
+      ],
+      "traceWidth": 0.2,
+      "tachMcuCenterlineLength": 85.32585815980899,
+      "tachProbeCenterlineLength": 39.18642530306821,
+      "newMainTrunkLayerTransfers": 1,
+      "finiteGeometryViolations": 0,
+      "nativeValidation": "awaiting parent replay/native build"
+    }
+  },
+  "vias": [
+    {
+      "name": "FAN_MCU_PWM13_LAUNCH",
+      "net": "FAN_PWM_DRIVE",
+      "x": -31.476649776901805,
+      "y": -23.87559344724377,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "note": "Reuse authoritative MCU pin13 launch; the control path stays on top and carries only GPIO base-drive current."
+    },
+    {
+      "name": "FAN_MCU_TACH14_LAUNCH",
+      "net": "FAN_TACH_MCU",
+      "x": -31.25794652111981,
+      "y": -25.582138978577856,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "note": "Reuse authoritative MCU pin14 launch, with its top escape supplied by mcu-completion.json."
+    },
+    {
+      "name": "FAN_TACH_FILTER_RETURN",
+      "net": "FAN_TACH_MCU",
+      "x": 42.260050506338835,
+      "y": -27.010050506338832,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "note": "Reuse accepted R221 filter output signal barrel; not part of a power feed."
+    },
+    {
+      "name": "FAN_TACH_SOUTH_TRANSFER",
+      "net": "FAN_TACH_MCU",
+      "x": -33.739949493661165,
+      "y": -31.010050506338832,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "note": "Preserve accepted replay8 signal barrel; does not carry fan power current."
+    },
+    {
+      "name": "FAN_TACH_PROBE_TRANSFER",
+      "net": "FAN_TACH_MCU",
+      "x": 41.5,
+      "y": -2.1,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "note": "Preserve accepted replay8 signal barrel; does not carry fan power current."
+    }
+  ]
+}

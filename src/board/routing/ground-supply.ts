@@ -1,6 +1,7 @@
 import type { RoutingPlan } from "./types"
 
-// Ground connectivity is delegated explicitly to the shared plane/escape router.
+// Exact supplemental GND escape and parallel-return geometry is saved in ground-completion.json.
+// The shared router must reserve those branches before routing ordinary signal leaves.
 export const plan: RoutingPlan = {
   "owner": "ground-supply",
   "nets": [
@@ -20,7 +21,7 @@ export const plan: RoutingPlan = {
       "preferredLayers": [
         "top"
       ],
-      "note": "Input bypass to VIN; short direct top route."
+      "note": "Input bypass to VIN; C200 routed-only placement and 0.6 mm direct top copper in ground-completion.json give 0.750 mm exposed length."
     },
     {
       "net": "LOGIC_VIN",
@@ -256,7 +257,7 @@ export const plan: RoutingPlan = {
         "inner2",
         "bottom"
       ],
-      "note": "Local bypass supply tap; route shortest legal escape before distribution."
+      "note": "Supply-held DATA input, not a bypass/VCC pin; connect to local V3V3 distribution."
     },
     {
       "net": "V3V3",
@@ -269,7 +270,7 @@ export const plan: RoutingPlan = {
         "inner2",
         "bottom"
       ],
-      "note": "Local bypass supply tap; route shortest legal escape before distribution."
+      "note": "Supply-held DATA input, not a bypass/VCC pin; connect to local V3V3 distribution."
     },
     {
       "net": "V3V3",
@@ -412,7 +413,7 @@ export const plan: RoutingPlan = {
         "inner2",
         "bottom"
       ],
-      "note": "Local bypass supply tap; route shortest legal escape before distribution."
+      "note": "Supply-held DATA input, not a bypass/VCC pin; connect to local V3V3 distribution."
     },
     {
       "net": "V3V3",
@@ -430,15 +431,15 @@ export const plan: RoutingPlan = {
     {
       "net": "V3V3",
       "from": "C207.pin1",
-      "to": "U_LATCH.pin7",
-      "width": 0.4,
-      "priority": 13,
+      "to": "U_LATCH.pin8",
+      "width": 0.2,
+      "priority": 10,
       "preferredLayers": [
         "top",
         "inner2",
         "bottom"
       ],
-      "note": "Feed tied logic input from local supply bypass."
+      "note": "Dedicated true VCC bypass connection to pin8; reserve direct clipped copper before distribution."
     },
     {
       "net": "V3V3",
@@ -456,15 +457,15 @@ export const plan: RoutingPlan = {
     {
       "net": "V3V3",
       "from": "C217.pin1",
-      "to": "U_INPUT_LATCH.pin7",
-      "width": 0.4,
-      "priority": 13,
+      "to": "U_INPUT_LATCH.pin8",
+      "width": 0.2,
+      "priority": 10,
       "preferredLayers": [
         "top",
         "inner2",
         "bottom"
       ],
-      "note": "Feed tied logic input from local supply bypass."
+      "note": "Dedicated true VCC bypass connection to pin8; reserve direct clipped copper before distribution."
     },
     {
       "net": "V3V3",
@@ -482,15 +483,15 @@ export const plan: RoutingPlan = {
     {
       "net": "V3V3",
       "from": "C_AUX2.pin1",
-      "to": "U_AUX_LOSS_LATCH.pin7",
-      "width": 0.4,
-      "priority": 13,
+      "to": "U_AUX_LOSS_LATCH.pin8",
+      "width": 0.2,
+      "priority": 10,
       "preferredLayers": [
         "top",
         "inner2",
         "bottom"
       ],
-      "note": "Feed tied logic input from local supply bypass."
+      "note": "Dedicated true VCC bypass connection to pin8; reserve direct clipped copper before distribution."
     },
     {
       "net": "V3V3",
@@ -1132,9 +1133,9 @@ export const plan: RoutingPlan = {
   ],
   "notes": [
     "Inventory is Revision B ports.json: GND 191 pads/ports, V3V3 81, LOGIC_VIN 5, LOGIC_SW 3, LOGIC_BST 2. Supply edges span every listed port exactly within its net.",
-    "GND intentionally has no point-to-point edges. Parent MUST synthesize a continuous inner1 GND plane and verify every one of the 191 GND ports is physically connected by a legal surface escape and off-pad via or plated-hole connection. Omission is not a routed-ground claim.",
+    "GND uses the supplemental ground-completion.json finite-geometry plan rather than the point-to-point tree. Reserve its parallel power-return branches, source bridges and missing-pad escapes before ordinary signals; then connect remaining GND ports to the actual inner1 plane and audit all 191 ports through copper intersections and plated barrels.",
     "Ground preferred layers are inner1, top, bottom. Do not place vias directly on fine-pitch pads; find legal escapes against actual pad polygons and all other copper, holes, and board-edge clearances before adding vias. Keep plane antipads clear of unrelated through vias.",
-    "Explicitly connect exposed pads U_MCU.pin57, U_FLASH.pin9, and U2.pin21 with short wide surface copper to multiple legal off-pad GND vias where space permits. Exposed pads must not remain isolated when fine peripheral pins are routed.",
+    "The supplemental geometry gives U2.pin21 four 1.2 mm branches, U_MCU.pin57 one 0.4 mm branch plus its shared MCU19/57 ground return, and U_FLASH.pin9 two 0.2 mm branches to legal off-pad vias. The flash exposed pad is only 0.3 mm high. No via-in-pad fabrication exception is needed for these placement-checked candidates; rerun final copper clearance after reservation.",
     "Give each decoupling capacitor ground pad a nearby individual ground via and short return to its IC ground region. Preserve continuous return under USB, QSPI, clock, ADC and control traces; add nearby GND stitching at signal layer transitions without touching signal pads.",
     "Use multiple GND vias and wide local surface copper for Q21 source pads, U2 power grounds, TEC connector J_TEC.pin2, high-current capacitor returns and both USB connector shell/GND groups. A single thin escape is inadequate for power returns; keep switching and TEC return current local rather than through MCU/analog bypass stubs.",
     "Join analog and digital GND to the continuous plane without splitting it. Keep high-current and buck switch loops away from thermal/ADC and crystal returns. Stitch top/bottom GND copper to inner1 at board edges and connectors only where clearance permits; suppress isolated pour islands.",

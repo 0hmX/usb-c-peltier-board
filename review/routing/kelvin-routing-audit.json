@@ -1,0 +1,5138 @@
+{
+  "circuitSha256": "52c7be159cd094d1e187bd174ebad15fa398b2a8384e7ee34e627eb5fc27b5f3",
+  "passed": false,
+  "method": "Actual native finite swept-width copper and drilled via annuli; all physical drill voids subtracted; shunt-sharing exception clipped to exact native R20 pad outline; no endpoint-label connectivity shortcuts",
+  "approximation": "128-segment inscribed round copper, circumscribed drills; intersection areas <=1e-6 mm2 ignored as numerical slivers",
+  "minimumContactAreaMm2": 0.000001,
+  "missingOrInvalid": [],
+  "unsupported": [],
+  "matches": [
+    {
+      "branch": "R25",
+      "pathId": "KELVIN_R25_head",
+      "pcbTraceId": "pcb_trace_205",
+      "name": "RB_TRACE_206",
+      "generatedEndpoints": {
+        "from": "R20.pin1",
+        "to": "RB_VIA_82.top"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R25",
+      "pathId": "KELVIN_R25_trunk",
+      "pcbTraceId": "pcb_trace_206",
+      "name": "RB_TRACE_207",
+      "generatedEndpoints": {
+        "from": "RB_VIA_82.bottom",
+        "to": "RB_VIA_83.bottom"
+      },
+      "layer": "bottom",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R25",
+      "pathId": "KELVIN_R25_tail",
+      "pcbTraceId": "pcb_trace_207",
+      "name": "RB_TRACE_208",
+      "generatedEndpoints": {
+        "from": "RB_VIA_83.top",
+        "to": "R25.pin1"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R26",
+      "pathId": "KELVIN_R26_head",
+      "pcbTraceId": "pcb_trace_208",
+      "name": "RB_TRACE_209",
+      "generatedEndpoints": {
+        "from": "R20.pin2",
+        "to": "RB_VIA_84.top"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R26",
+      "pathId": "KELVIN_R26_trunk",
+      "pcbTraceId": "pcb_trace_209",
+      "name": "RB_TRACE_210",
+      "generatedEndpoints": {
+        "from": "RB_VIA_84.bottom",
+        "to": "RB_VIA_85.bottom"
+      },
+      "layer": "bottom",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R26",
+      "pathId": "KELVIN_R26_tail",
+      "pcbTraceId": "pcb_trace_210",
+      "name": "RB_TRACE_211",
+      "generatedEndpoints": {
+        "from": "RB_VIA_85.top",
+        "to": "R26.pin1"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R41",
+      "pathId": "KELVIN_R41_head",
+      "pcbTraceId": "pcb_trace_211",
+      "name": "RB_TRACE_212",
+      "generatedEndpoints": {
+        "from": "R20.pin1",
+        "to": "RB_VIA_86.top"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R41",
+      "pathId": "KELVIN_R41_trunk",
+      "pcbTraceId": "pcb_trace_212",
+      "name": "RB_TRACE_213",
+      "generatedEndpoints": {
+        "from": "RB_VIA_86.inner2",
+        "to": "RB_VIA_87.inner2"
+      },
+      "layer": "inner2",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R41",
+      "pathId": "KELVIN_R41_tail",
+      "pcbTraceId": "pcb_trace_213",
+      "name": "RB_TRACE_214",
+      "generatedEndpoints": {
+        "from": "RB_VIA_87.top",
+        "to": "R41.pin1"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R42",
+      "pathId": "KELVIN_R42_head",
+      "pcbTraceId": "pcb_trace_214",
+      "name": "RB_TRACE_215",
+      "generatedEndpoints": {
+        "from": "R20.pin2",
+        "to": "RB_VIA_88.top"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R42",
+      "pathId": "KELVIN_R42_trunk",
+      "pcbTraceId": "pcb_trace_215",
+      "name": "RB_TRACE_216",
+      "generatedEndpoints": {
+        "from": "RB_VIA_88.inner2",
+        "to": "RB_VIA_89.inner2"
+      },
+      "layer": "inner2",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "branch": "R42",
+      "pathId": "KELVIN_R42_tail",
+      "pcbTraceId": "pcb_trace_216",
+      "name": "RB_TRACE_217",
+      "generatedEndpoints": {
+        "from": "RB_VIA_89.top",
+        "to": "R42.pin1"
+      },
+      "layer": "top",
+      "widths": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    }
+  ],
+  "kelvinBarrelContacts": [
+    {
+      "branch": "R25",
+      "viaName": "KELVIN_R25_SHUNT",
+      "pcbViaId": "pcb_via_81",
+      "x": 41.65,
+      "y": 10.1,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_205",
+          "areaMm2": 0.041414892719359386
+        },
+        {
+          "layer": "bottom",
+          "pcbTraceId": "pcb_trace_206",
+          "areaMm2": 0.04140857343978155
+        }
+      ]
+    },
+    {
+      "branch": "R25",
+      "viaName": "KELVIN_R25_FILTER",
+      "pcbViaId": "pcb_via_82",
+      "x": 17.085786437626904,
+      "y": 31.964213562373097,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_207",
+          "areaMm2": 0.04141812120121813
+        },
+        {
+          "layer": "bottom",
+          "pcbTraceId": "pcb_trace_206",
+          "areaMm2": 0.041418057355201654
+        }
+      ]
+    },
+    {
+      "branch": "R26",
+      "viaName": "KELVIN_R26_SHUNT",
+      "pcbViaId": "pcb_via_83",
+      "x": 44.35,
+      "y": 10.1,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_208",
+          "areaMm2": 0.04141489271930254
+        },
+        {
+          "layer": "bottom",
+          "pcbTraceId": "pcb_trace_209",
+          "areaMm2": 0.041418675547987505
+        }
+      ]
+    },
+    {
+      "branch": "R26",
+      "viaName": "KELVIN_R26_FILTER",
+      "pcbViaId": "pcb_via_84",
+      "x": 22.8,
+      "y": 31.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_210",
+          "areaMm2": 0.041411753892646175
+        },
+        {
+          "layer": "bottom",
+          "pcbTraceId": "pcb_trace_209",
+          "areaMm2": 0.04439647996224494
+        },
+        {
+          "layer": "bottom",
+          "pcbTraceId": "pcb_trace_209",
+          "areaMm2": 0.00810570821931833
+        }
+      ]
+    },
+    {
+      "branch": "R41",
+      "viaName": "KELVIN_R41_SHUNT",
+      "pcbViaId": "pcb_via_85",
+      "x": 41.65,
+      "y": 8.9,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_211",
+          "areaMm2": 0.04141489271941623
+        },
+        {
+          "layer": "inner2",
+          "pcbTraceId": "pcb_trace_212",
+          "areaMm2": 0.04141207220342835
+        }
+      ]
+    },
+    {
+      "branch": "R41",
+      "viaName": "KELVIN_R41_FILTER",
+      "pcbViaId": "pcb_via_86",
+      "x": 38.25,
+      "y": 23,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_213",
+          "areaMm2": 0.04141870763692168
+        },
+        {
+          "layer": "inner2",
+          "pcbTraceId": "pcb_trace_212",
+          "areaMm2": 0.041418392541345384
+        }
+      ]
+    },
+    {
+      "branch": "R42",
+      "viaName": "KELVIN_R42_SHUNT",
+      "pcbViaId": "pcb_via_87",
+      "x": 44.35,
+      "y": 8.9,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_214",
+          "areaMm2": 0.04141489271938781
+        },
+        {
+          "layer": "inner2",
+          "pcbTraceId": "pcb_trace_215",
+          "areaMm2": 0.04141207220351362
+        }
+      ]
+    },
+    {
+      "branch": "R42",
+      "viaName": "KELVIN_R42_FILTER",
+      "pcbViaId": "pcb_via_88",
+      "x": 43.75,
+      "y": 23,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "passed": true,
+      "contacts": [
+        {
+          "layer": "top",
+          "pcbTraceId": "pcb_trace_216",
+          "areaMm2": 0.04141870763686484
+        },
+        {
+          "layer": "inner2",
+          "pcbTraceId": "pcb_trace_215",
+          "areaMm2": 0.04141334810327635
+        }
+      ]
+    }
+  ],
+  "branchContinuity": [
+    {
+      "branch": "R25",
+      "passed": true,
+      "startPadPieces": 1,
+      "endPadPieces": 1,
+      "connectedOwnCopperPieces": 21
+    },
+    {
+      "branch": "R26",
+      "passed": true,
+      "startPadPieces": 1,
+      "endPadPieces": 1,
+      "connectedOwnCopperPieces": 26
+    },
+    {
+      "branch": "R41",
+      "passed": true,
+      "startPadPieces": 1,
+      "endPadPieces": 1,
+      "connectedOwnCopperPieces": 16
+    },
+    {
+      "branch": "R42",
+      "passed": true,
+      "startPadPieces": 1,
+      "endPadPieces": 1,
+      "connectedOwnCopperPieces": 17
+    }
+  ],
+  "independenceViolations": [
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_205:top:segment2:0",
+        "elementId": "pcb_trace_205",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "branch": "R25",
+        "traceName": "RB_TRACE_206",
+        "generatedEndpoints": {
+          "from": "R20.pin1",
+          "to": "RB_VIA_82.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_709:top:segment2:0",
+        "elementId": "pcb_trace_709",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "traceName": "RB_TRACE_725",
+        "generatedEndpoints": {
+          "from": "L2.pin2",
+          "to": "R20.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699709304,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464807966,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              40.970000000000006,
+              9.721259218880498
+            ],
+            [
+              41.10603400811392,
+              9.775492046035549
+            ],
+            [
+              41.10194033573221,
+              9.790284677254462
+            ],
+            [
+              41.08654406518303,
+              9.83688985339222
+            ],
+            [
+              41.06887953251129,
+              9.88268343236509
+            ],
+            [
+              41.04898929312345,
+              9.927555093430282
+            ],
+            [
+              41.03201732419773,
+              9.961272604719928
+            ],
+            [
+              40.970000000000006,
+              9.936548090089605
+            ],
+            [
+              40.970000000000006,
+              9.721259218880498
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_205:top:segment2:0",
+        "elementId": "pcb_trace_205",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "branch": "R25",
+        "traceName": "RB_TRACE_206",
+        "generatedEndpoints": {
+          "from": "R20.pin1",
+          "to": "RB_VIA_82.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_709:top:segment3:0",
+        "elementId": "pcb_trace_709",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "traceName": "RB_TRACE_725",
+        "generatedEndpoints": {
+          "from": "L2.pin2",
+          "to": "R20.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699709304,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464807966,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              40.970000000000006,
+              9.721259218880498
+            ],
+            [
+              41.10603400811392,
+              9.775492046035549
+            ],
+            [
+              41.10194033573221,
+              9.790284677254462
+            ],
+            [
+              41.08654406518303,
+              9.83688985339222
+            ],
+            [
+              41.06887953251129,
+              9.88268343236509
+            ],
+            [
+              41.04898929312345,
+              9.927555093430282
+            ],
+            [
+              41.03201732419773,
+              9.961272604719928
+            ],
+            [
+              40.970000000000006,
+              9.936548090089605
+            ],
+            [
+              40.970000000000006,
+              9.721259218880498
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_208:top:segment2:0",
+        "elementId": "pcb_trace_208",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "branch": "R26",
+        "traceName": "RB_TRACE_209",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "RB_VIA_84.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_712:top:segment1:0",
+        "elementId": "pcb_trace_712",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "traceName": "RB_TRACE_728",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "J_TEC.pin1"
+        }
+      },
+      "contactAreaMm2": 0.2153097469971499,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464836387,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              44.89396599188608,
+              9.775492046035549
+            ],
+            [
+              45.029999999999994,
+              9.721259218880498
+            ],
+            [
+              45.029999999999994,
+              9.936548090089605
+            ],
+            [
+              44.96798267580227,
+              9.961272604719928
+            ],
+            [
+              44.95101070687655,
+              9.927555093430282
+            ],
+            [
+              44.93112046748871,
+              9.88268343236509
+            ],
+            [
+              44.91345593481697,
+              9.83688985339222
+            ],
+            [
+              44.89805966426779,
+              9.790284677254462
+            ],
+            [
+              44.89396599188608,
+              9.775492046035549
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_208:top:segment2:0",
+        "elementId": "pcb_trace_208",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "branch": "R26",
+        "traceName": "RB_TRACE_209",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "RB_VIA_84.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_712:top:segment2:0",
+        "elementId": "pcb_trace_712",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "traceName": "RB_TRACE_728",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "J_TEC.pin1"
+        }
+      },
+      "contactAreaMm2": 0.2153097469971499,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464836387,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              44.89396599188608,
+              9.775492046035549
+            ],
+            [
+              45.029999999999994,
+              9.721259218880498
+            ],
+            [
+              45.029999999999994,
+              9.936548090089605
+            ],
+            [
+              44.96798267580227,
+              9.961272604719928
+            ],
+            [
+              44.95101070687655,
+              9.927555093430282
+            ],
+            [
+              44.93112046748871,
+              9.88268343236509
+            ],
+            [
+              44.91345593481697,
+              9.83688985339222
+            ],
+            [
+              44.89805966426779,
+              9.790284677254462
+            ],
+            [
+              44.89396599188608,
+              9.775492046035549
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment2:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment5:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.001299109788305941,
+      "outsideAllowedShuntLandAreaMm2": 0.001299109788305941,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              39.3,
+              20.6
+            ],
+            [
+              39.30012045437948,
+              20.595093232567258
+            ],
+            [
+              39.30048152733278,
+              20.590198285967045
+            ],
+            [
+              39.30108234900352,
+              20.585326952554464
+            ],
+            [
+              39.30192147195967,
+              20.58049096779839
+            ],
+            [
+              39.302996874680545,
+              20.575701982009676
+            ],
+            [
+              39.304305966426774,
+              20.570971532274555
+            ],
+            [
+              39.3058455934817,
+              20.56631101466078
+            ],
+            [
+              39.30761204674887,
+              20.56173165676349
+            ],
+            [
+              39.309601070687656,
+              20.557244490656974
+            ],
+            [
+              39.354772533408514,
+              20.461426236400605
+            ],
+            [
+              39.31961754196653,
+              20.57128558465681
+            ],
+            [
+              39.31769300814788,
+              20.577111231674028
+            ],
+            [
+              39.315484941563916,
+              20.582835429045637
+            ],
+            [
+              39.312998661640435,
+              20.588444386678784
+            ],
+            [
+              39.31024015804355,
+              20.59392459210325
+            ],
+            [
+              39.307216076250036,
+              20.599262843024153
+            ],
+            [
+              39.30393370153782,
+              20.60444627912745
+            ],
+            [
+              39.300451231714156,
+              20.60939100635177
+            ],
+            [
+              39.30012045437948,
+              20.604906767432745
+            ],
+            [
+              39.3,
+              20.6
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment2:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment6:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.0008324564443000781,
+      "outsideAllowedShuntLandAreaMm2": 0.0008324564443000781,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              39.3,
+              20.6
+            ],
+            [
+              39.30012045437948,
+              20.595093232567258
+            ],
+            [
+              39.30048152733278,
+              20.590198285967045
+            ],
+            [
+              39.30108234900352,
+              20.585326952554464
+            ],
+            [
+              39.30192147195967,
+              20.58049096779839
+            ],
+            [
+              39.302996874680545,
+              20.575701982009676
+            ],
+            [
+              39.304305966426774,
+              20.570971532274555
+            ],
+            [
+              39.3058455934817,
+              20.56631101466078
+            ],
+            [
+              39.30761204674887,
+              20.56173165676349
+            ],
+            [
+              39.309601070687656,
+              20.557244490656974
+            ],
+            [
+              39.32459639662763,
+              20.525436223511562
+            ],
+            [
+              39.32484943202565,
+              20.52886654070907
+            ],
+            [
+              39.325,
+              20.535
+            ],
+            [
+              39.32484943202565,
+              20.54113345929093
+            ],
+            [
+              39.32439809083403,
+              20.547252142541197
+            ],
+            [
+              39.323647063745604,
+              20.55334130930692
+            ],
+            [
+              39.322598160050404,
+              20.559386290252018
+            ],
+            [
+              39.32125390664932,
+              20.56537252248791
+            ],
+            [
+              39.31961754196653,
+              20.57128558465681
+            ],
+            [
+              39.31769300814788,
+              20.577111231674028
+            ],
+            [
+              39.315484941563916,
+              20.582835429045637
+            ],
+            [
+              39.312998661640435,
+              20.588444386678784
+            ],
+            [
+              39.31024015804355,
+              20.59392459210325
+            ],
+            [
+              39.307216076250036,
+              20.599262843024153
+            ],
+            [
+              39.30393370153782,
+              20.60444627912745
+            ],
+            [
+              39.300451231714156,
+              20.60939100635177
+            ],
+            [
+              39.30012045437948,
+              20.604906767432745
+            ],
+            [
+              39.3,
+              20.6
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment3:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment5:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.014262220436819462,
+      "outsideAllowedShuntLandAreaMm2": 0.014262220436819462,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              39.11117025389723,
+              20.622924732353326
+            ],
+            [
+              39.33626484990475,
+              20.519262747349863
+            ],
+            [
+              39.31961754196653,
+              20.57128558465681
+            ],
+            [
+              39.31769300814788,
+              20.577111231674028
+            ],
+            [
+              39.315484941563916,
+              20.582835429045637
+            ],
+            [
+              39.312998661640435,
+              20.588444386678784
+            ],
+            [
+              39.31024015804355,
+              20.59392459210325
+            ],
+            [
+              39.307216076250036,
+              20.599262843024153
+            ],
+            [
+              39.30393370153782,
+              20.60444627912745
+            ],
+            [
+              39.300400941435086,
+              20.609462413061554
+            ],
+            [
+              39.29662630667035,
+              20.614299160520456
+            ],
+            [
+              39.292618890669374,
+              20.61894486935588
+            ],
+            [
+              39.28838834764832,
+              20.62338834764832
+            ],
+            [
+              39.28394486935588,
+              20.62761889066937
+            ],
+            [
+              39.27929916052046,
+              20.63162630667034
+            ],
+            [
+              39.274462413061556,
+              20.63540094143508
+            ],
+            [
+              39.26944627912745,
+              20.63893370153782
+            ],
+            [
+              39.264262843024156,
+              20.642216076250033
+            ],
+            [
+              39.258924592103256,
+              20.645240158043546
+            ],
+            [
+              39.25344438667879,
+              20.64799866164043
+            ],
+            [
+              39.24783542904564,
+              20.65048494156391
+            ],
+            [
+              39.24211123167403,
+              20.652693008147878
+            ],
+            [
+              39.23628558465681,
+              20.654617541966527
+            ],
+            [
+              39.23037252248791,
+              20.65625390664932
+            ],
+            [
+              39.22438629025202,
+              20.657598160050405
+            ],
+            [
+              39.21834130930692,
+              20.658647063745597
+            ],
+            [
+              39.212252142541196,
+              20.659398090834024
+            ],
+            [
+              39.20613345929093,
+              20.659849432025645
+            ],
+            [
+              39.2,
+              20.66
+            ],
+            [
+              39.193866540709074,
+              20.659849432025645
+            ],
+            [
+              39.18774785745881,
+              20.659398090834024
+            ],
+            [
+              39.181658690693084,
+              20.658647063745597
+            ],
+            [
+              39.175613709747985,
+              20.657598160050405
+            ],
+            [
+              39.169627477512094,
+              20.65625390664932
+            ],
+            [
+              39.16371441534319,
+              20.654617541966527
+            ],
+            [
+              39.157888768325975,
+              20.652693008147878
+            ],
+            [
+              39.15216457095437,
+              20.65048494156391
+            ],
+            [
+              39.14655561332122,
+              20.64799866164043
+            ],
+            [
+              39.14107540789675,
+              20.645240158043546
+            ],
+            [
+              39.13573715697585,
+              20.642216076250033
+            ],
+            [
+              39.130553720872555,
+              20.63893370153782
+            ],
+            [
+              39.12553758693845,
+              20.63540094143508
+            ],
+            [
+              39.12070083947955,
+              20.63162630667034
+            ],
+            [
+              39.11605513064413,
+              20.62761889066937
+            ],
+            [
+              39.111611652351684,
+              20.62338834764832
+            ],
+            [
+              39.11117025389723,
+              20.622924732353326
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment3:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment6:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.14738463583046268,
+      "outsideAllowedShuntLandAreaMm2": 0.14738463583046268,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              38.32495091986679,
+              21.2051773586764
+            ],
+            [
+              38.762020548099684,
+              20.783717360023246
+            ],
+            [
+              39.32453933483095,
+              20.524662655607536
+            ],
+            [
+              39.32484943202565,
+              20.52886654070907
+            ],
+            [
+              39.325,
+              20.535
+            ],
+            [
+              39.32484943202565,
+              20.54113345929093
+            ],
+            [
+              39.32439809083403,
+              20.547252142541197
+            ],
+            [
+              39.323647063745604,
+              20.55334130930692
+            ],
+            [
+              39.322598160050404,
+              20.559386290252018
+            ],
+            [
+              39.32125390664932,
+              20.56537252248791
+            ],
+            [
+              39.31961754196653,
+              20.57128558465681
+            ],
+            [
+              39.31769300814788,
+              20.577111231674028
+            ],
+            [
+              39.315484941563916,
+              20.582835429045637
+            ],
+            [
+              39.312998661640435,
+              20.588444386678784
+            ],
+            [
+              39.31024015804355,
+              20.59392459210325
+            ],
+            [
+              39.307216076250036,
+              20.599262843024153
+            ],
+            [
+              39.30393370153782,
+              20.60444627912745
+            ],
+            [
+              39.300400941435086,
+              20.609462413061554
+            ],
+            [
+              39.29662630667035,
+              20.614299160520456
+            ],
+            [
+              39.292618890669374,
+              20.61894486935588
+            ],
+            [
+              39.28838834764832,
+              20.62338834764832
+            ],
+            [
+              39.01424810861674,
+              20.887737863857346
+            ],
+            [
+              38.32495091986679,
+              21.2051773586764
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment5:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment8:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.06425168711456308,
+      "outsideAllowedShuntLandAreaMm2": 0.06425168711456308,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              30.475,
+              24.735000000000003
+            ],
+            [
+              30.475150567974357,
+              24.728866540709078
+            ],
+            [
+              30.475601909165977,
+              24.722747857458806
+            ],
+            [
+              30.476352936254404,
+              24.716658690693084
+            ],
+            [
+              30.477401839949597,
+              24.710613709747985
+            ],
+            [
+              30.478746093350683,
+              24.704627477512094
+            ],
+            [
+              30.480382458033475,
+              24.698714415343193
+            ],
+            [
+              30.482306991852123,
+              24.692888768325975
+            ],
+            [
+              30.48451505843609,
+              24.687164570954366
+            ],
+            [
+              30.487001338359573,
+              24.68155561332122
+            ],
+            [
+              30.489759841956456,
+              24.676075407896754
+            ],
+            [
+              30.49278392374997,
+              24.67073715697585
+            ],
+            [
+              30.495327267114398,
+              24.666720778903834
+            ],
+            [
+              30.695094962873533,
+              24.650073470923907
+            ],
+            [
+              30.935899640081455,
+              24.83067697882985
+            ],
+            [
+              30.560905037126467,
+              24.861926529076097
+            ],
+            [
+              30.525537586938448,
+              24.835400941435083
+            ],
+            [
+              30.520700839479545,
+              24.831626306670344
+            ],
+            [
+              30.516055130644123,
+              24.827618890669374
+            ],
+            [
+              30.511611652351682,
+              24.823388347648322
+            ],
+            [
+              30.50738110933063,
+              24.81894486935588
+            ],
+            [
+              30.50337369332966,
+              24.81429916052046
+            ],
+            [
+              30.49959905856492,
+              24.809462413061556
+            ],
+            [
+              30.496066298462182,
+              24.804446279127454
+            ],
+            [
+              30.49278392374997,
+              24.799262843024156
+            ],
+            [
+              30.489759841956456,
+              24.793924592103252
+            ],
+            [
+              30.487001338359573,
+              24.788444386678787
+            ],
+            [
+              30.48451505843609,
+              24.78283542904564
+            ],
+            [
+              30.482306991852123,
+              24.77711123167403
+            ],
+            [
+              30.480382458033475,
+              24.771285584656813
+            ],
+            [
+              30.478746093350683,
+              24.76537252248791
+            ],
+            [
+              30.477401839949597,
+              24.75938629025202
+            ],
+            [
+              30.476352936254404,
+              24.753341309306922
+            ],
+            [
+              30.475601909165977,
+              24.7472521425412
+            ],
+            [
+              30.475150567974357,
+              24.741133459290932
+            ],
+            [
+              30.475,
+              24.735000000000003
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment5:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment9:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.12561992321070647,
+      "outsideAllowedShuntLandAreaMm2": 0.12561992321070647,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              29.999999999999996,
+              24.8
+            ],
+            [
+              30.00012045437948,
+              24.795093232567258
+            ],
+            [
+              30.000481527332777,
+              24.790198285967044
+            ],
+            [
+              30.00108234900352,
+              24.785326952554463
+            ],
+            [
+              30.001921471959676,
+              24.78049096779839
+            ],
+            [
+              30.002996874680544,
+              24.775701982009675
+            ],
+            [
+              30.004305966426777,
+              24.770971532274555
+            ],
+            [
+              30.005845593481695,
+              24.76631101466078
+            ],
+            [
+              30.007612046748868,
+              24.76173165676349
+            ],
+            [
+              30.009601070687655,
+              24.757244490656973
+            ],
+            [
+              30.01180787356516,
+              24.7528603263174
+            ],
+            [
+              30.01422713899997,
+              24.74858972558068
+            ],
+            [
+              30.016853038769742,
+              24.74444297669804
+            ],
+            [
+              30.019679246851933,
+              24.740430069550758
+            ],
+            [
+              30.022698954663724,
+              24.736560671583636
+            ],
+            [
+              30.025904887464502,
+              24.732844104515298
+            ],
+            [
+              30.029289321881343,
+              24.729289321881346
+            ],
+            [
+              30.032844104515295,
+              24.725904887464505
+            ],
+            [
+              30.036560671583633,
+              24.722698954663727
+            ],
+            [
+              30.040430069550755,
+              24.719679246851936
+            ],
+            [
+              30.044442976698036,
+              24.716853038769745
+            ],
+            [
+              30.048589725580676,
+              24.714227138999973
+            ],
+            [
+              30.052860326317397,
+              24.711807873565164
+            ],
+            [
+              30.05724449065697,
+              24.709601070687658
+            ],
+            [
+              30.061731656763488,
+              24.70761204674887
+            ],
+            [
+              30.066311014660776,
+              24.705845593481698
+            ],
+            [
+              30.07097153227455,
+              24.70430596642678
+            ],
+            [
+              30.075701982009672,
+              24.702996874680547
+            ],
+            [
+              30.080490967798386,
+              24.70192147195968
+            ],
+            [
+              30.08532695255446,
+              24.701082349003524
+            ],
+            [
+              30.09019828596704,
+              24.70048152733278
+            ],
+            [
+              30.691934985315363,
+              24.650336802387088
+            ],
+            [
+              30.692618890669372,
+              24.651055130644124
+            ],
+            [
+              30.696626306670343,
+              24.655700839479547
+            ],
+            [
+              30.70040094143508,
+              24.66053758693845
+            ],
+            [
+              30.70393370153782,
+              24.665553720872552
+            ],
+            [
+              30.707216076250035,
+              24.67073715697585
+            ],
+            [
+              30.710240158043547,
+              24.676075407896754
+            ],
+            [
+              30.71299866164043,
+              24.68155561332122
+            ],
+            [
+              30.71548494156391,
+              24.687164570954366
+            ],
+            [
+              30.71769300814788,
+              24.692888768325975
+            ],
+            [
+              30.719617541966528,
+              24.698714415343193
+            ],
+            [
+              30.72125390664932,
+              24.704627477512094
+            ],
+            [
+              30.722598160050406,
+              24.710613709747985
+            ],
+            [
+              30.7236470637456,
+              24.716658690693084
+            ],
+            [
+              30.724398090834026,
+              24.722747857458806
+            ],
+            [
+              30.724849432025646,
+              24.728866540709078
+            ],
+            [
+              30.725,
+              24.735000000000003
+            ],
+            [
+              30.724849432025646,
+              24.741133459290932
+            ],
+            [
+              30.724398090834026,
+              24.7472521425412
+            ],
+            [
+              30.7236470637456,
+              24.753341309306922
+            ],
+            [
+              30.722598160050406,
+              24.75938629025202
+            ],
+            [
+              30.72125390664932,
+              24.76537252248791
+            ],
+            [
+              30.719617541966528,
+              24.771285584656813
+            ],
+            [
+              30.71769300814788,
+              24.77711123167403
+            ],
+            [
+              30.71548494156391,
+              24.78283542904564
+            ],
+            [
+              30.71299866164043,
+              24.788444386678787
+            ],
+            [
+              30.710240158043547,
+              24.793924592103252
+            ],
+            [
+              30.707216076250035,
+              24.799262843024156
+            ],
+            [
+              30.70393370153782,
+              24.804446279127454
+            ],
+            [
+              30.70040094143508,
+              24.809462413061556
+            ],
+            [
+              30.696626306670343,
+              24.81429916052046
+            ],
+            [
+              30.692618890669372,
+              24.81894486935588
+            ],
+            [
+              30.68838834764832,
+              24.823388347648322
+            ],
+            [
+              30.68394486935588,
+              24.827618890669374
+            ],
+            [
+              30.679299160520458,
+              24.831626306670344
+            ],
+            [
+              30.674462413061555,
+              24.835400941435083
+            ],
+            [
+              30.669446279127452,
+              24.838933701537822
+            ],
+            [
+              30.664262843024154,
+              24.842216076250036
+            ],
+            [
+              30.65892459210325,
+              24.84524015804355
+            ],
+            [
+              30.653444386678785,
+              24.847998661640432
+            ],
+            [
+              30.64783542904564,
+              24.850484941563913
+            ],
+            [
+              30.64211123167403,
+              24.85269300814788
+            ],
+            [
+              30.63628558465681,
+              24.85461754196653
+            ],
+            [
+              30.6309740339597,
+              24.85608744600666
+            ],
+            [
+              30.584023386039586,
+              24.860000000000003
+            ],
+            [
+              30.02001487642353,
+              24.860000000000003
+            ],
+            [
+              30.019679246851933,
+              24.859569930449243
+            ],
+            [
+              30.016853038769742,
+              24.855557023301962
+            ],
+            [
+              30.01422713899997,
+              24.851410274419322
+            ],
+            [
+              30.01180787356516,
+              24.8471396736826
+            ],
+            [
+              30.009601070687655,
+              24.84275550934303
+            ],
+            [
+              30.007612046748868,
+              24.83826834323651
+            ],
+            [
+              30.005845593481695,
+              24.833688985339222
+            ],
+            [
+              30.004305966426777,
+              24.829028467725447
+            ],
+            [
+              30.002996874680544,
+              24.824298017990326
+            ],
+            [
+              30.001921471959676,
+              24.819509032201612
+            ],
+            [
+              30.00108234900352,
+              24.814673047445538
+            ],
+            [
+              30.000481527332777,
+              24.809801714032957
+            ],
+            [
+              30.00012045437948,
+              24.804906767432744
+            ],
+            [
+              29.999999999999996,
+              24.8
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment5:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment10:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.015427666691039121,
+      "outsideAllowedShuntLandAreaMm2": 0.015427666691039121,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              29.999999999999996,
+              24.8
+            ],
+            [
+              30.00012045437948,
+              24.795093232567258
+            ],
+            [
+              30.000481527332777,
+              24.790198285967044
+            ],
+            [
+              30.00108234900352,
+              24.785326952554463
+            ],
+            [
+              30.001921471959676,
+              24.78049096779839
+            ],
+            [
+              30.002996874680544,
+              24.775701982009675
+            ],
+            [
+              30.004305966426777,
+              24.770971532274555
+            ],
+            [
+              30.005845593481695,
+              24.76631101466078
+            ],
+            [
+              30.007612046748868,
+              24.76173165676349
+            ],
+            [
+              30.009601070687655,
+              24.757244490656973
+            ],
+            [
+              30.01180787356516,
+              24.7528603263174
+            ],
+            [
+              30.01422713899997,
+              24.74858972558068
+            ],
+            [
+              30.016853038769742,
+              24.74444297669804
+            ],
+            [
+              30.019679246851933,
+              24.740430069550758
+            ],
+            [
+              30.022698954663724,
+              24.736560671583636
+            ],
+            [
+              30.025904887464502,
+              24.732844104515298
+            ],
+            [
+              30.029289321881343,
+              24.729289321881346
+            ],
+            [
+              30.032844104515295,
+              24.725904887464505
+            ],
+            [
+              30.036560671583633,
+              24.722698954663727
+            ],
+            [
+              30.040430069550755,
+              24.719679246851936
+            ],
+            [
+              30.044442976698036,
+              24.716853038769745
+            ],
+            [
+              30.048589725580676,
+              24.714227138999973
+            ],
+            [
+              30.052860326317397,
+              24.711807873565164
+            ],
+            [
+              30.05724449065697,
+              24.709601070687658
+            ],
+            [
+              30.061731656763488,
+              24.70761204674887
+            ],
+            [
+              30.066311014660776,
+              24.705845593481698
+            ],
+            [
+              30.07097153227455,
+              24.70430596642678
+            ],
+            [
+              30.075701982009672,
+              24.702996874680547
+            ],
+            [
+              30.080490967798386,
+              24.70192147195968
+            ],
+            [
+              30.08532695255446,
+              24.701082349003524
+            ],
+            [
+              30.09019828596704,
+              24.70048152733278
+            ],
+            [
+              30.119397474502428,
+              24.698048261621498
+            ],
+            [
+              30.119617541966527,
+              24.698714415343193
+            ],
+            [
+              30.12125390664932,
+              24.704627477512094
+            ],
+            [
+              30.122598160050405,
+              24.710613709747985
+            ],
+            [
+              30.123647063745597,
+              24.716658690693084
+            ],
+            [
+              30.124398090834024,
+              24.722747857458806
+            ],
+            [
+              30.124849432025645,
+              24.728866540709074
+            ],
+            [
+              30.125,
+              24.735000000000003
+            ],
+            [
+              30.124849432025645,
+              24.741133459290932
+            ],
+            [
+              30.124398090834024,
+              24.7472521425412
+            ],
+            [
+              30.123647063745597,
+              24.753341309306922
+            ],
+            [
+              30.122598160050405,
+              24.75938629025202
+            ],
+            [
+              30.12125390664932,
+              24.76537252248791
+            ],
+            [
+              30.119617541966527,
+              24.771285584656813
+            ],
+            [
+              30.117693008147878,
+              24.77711123167403
+            ],
+            [
+              30.11548494156391,
+              24.78283542904564
+            ],
+            [
+              30.11299866164043,
+              24.788444386678787
+            ],
+            [
+              30.110240158043545,
+              24.793924592103252
+            ],
+            [
+              30.107216076250033,
+              24.799262843024156
+            ],
+            [
+              30.10393370153782,
+              24.804446279127454
+            ],
+            [
+              30.049407237210723,
+              24.8862359756181
+            ],
+            [
+              30.048589725580676,
+              24.885772861000028
+            ],
+            [
+              30.044442976698036,
+              24.883146961230256
+            ],
+            [
+              30.040430069550755,
+              24.880320753148066
+            ],
+            [
+              30.036560671583633,
+              24.877301045336274
+            ],
+            [
+              30.032844104515295,
+              24.874095112535496
+            ],
+            [
+              30.029289321881343,
+              24.870710678118655
+            ],
+            [
+              30.025904887464502,
+              24.867155895484704
+            ],
+            [
+              30.022698954663724,
+              24.863439328416366
+            ],
+            [
+              30.019679246851933,
+              24.859569930449243
+            ],
+            [
+              30.016853038769742,
+              24.855557023301962
+            ],
+            [
+              30.01422713899997,
+              24.851410274419322
+            ],
+            [
+              30.01180787356516,
+              24.8471396736826
+            ],
+            [
+              30.009601070687655,
+              24.84275550934303
+            ],
+            [
+              30.007612046748868,
+              24.83826834323651
+            ],
+            [
+              30.005845593481695,
+              24.833688985339222
+            ],
+            [
+              30.004305966426777,
+              24.829028467725447
+            ],
+            [
+              30.002996874680544,
+              24.824298017990326
+            ],
+            [
+              30.001921471959676,
+              24.819509032201612
+            ],
+            [
+              30.00108234900352,
+              24.814673047445538
+            ],
+            [
+              30.000481527332777,
+              24.809801714032957
+            ],
+            [
+              30.00012045437948,
+              24.804906767432744
+            ],
+            [
+              29.999999999999996,
+              24.8
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment6:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment9:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.03292074448080484,
+      "outsideAllowedShuntLandAreaMm2": 0.03292074448080484,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              29.91248249726168,
+              24.824217460927144
+            ],
+            [
+              30.036560671583633,
+              24.722698954663727
+            ],
+            [
+              30.040430069550755,
+              24.719679246851936
+            ],
+            [
+              30.044442976698036,
+              24.716853038769745
+            ],
+            [
+              30.048589725580676,
+              24.714227138999973
+            ],
+            [
+              30.052860326317397,
+              24.711807873565164
+            ],
+            [
+              30.05724449065697,
+              24.709601070687658
+            ],
+            [
+              30.061731656763488,
+              24.70761204674887
+            ],
+            [
+              30.066311014660776,
+              24.705845593481698
+            ],
+            [
+              30.07097153227455,
+              24.70430596642678
+            ],
+            [
+              30.075701982009672,
+              24.702996874680547
+            ],
+            [
+              30.080490967798386,
+              24.70192147195968
+            ],
+            [
+              30.08532695255446,
+              24.701082349003524
+            ],
+            [
+              30.09019828596704,
+              24.70048152733278
+            ],
+            [
+              30.095093232567255,
+              24.700120454379483
+            ],
+            [
+              30.099999999999998,
+              24.7
+            ],
+            [
+              30.10490676743274,
+              24.700120454379483
+            ],
+            [
+              30.109801714032955,
+              24.70048152733278
+            ],
+            [
+              30.114673047445535,
+              24.701082349003524
+            ],
+            [
+              30.11950903220161,
+              24.70192147195968
+            ],
+            [
+              30.124298017990323,
+              24.702996874680547
+            ],
+            [
+              30.129028467725444,
+              24.70430596642678
+            ],
+            [
+              30.13368898533922,
+              24.705845593481698
+            ],
+            [
+              30.138268343236508,
+              24.70761204674887
+            ],
+            [
+              30.142755509343026,
+              24.709601070687658
+            ],
+            [
+              30.1471396736826,
+              24.711807873565164
+            ],
+            [
+              30.15141027441932,
+              24.714227138999973
+            ],
+            [
+              30.15555702330196,
+              24.716853038769745
+            ],
+            [
+              30.15956993044924,
+              24.719679246851936
+            ],
+            [
+              30.163439328416363,
+              24.722698954663727
+            ],
+            [
+              30.1671558954847,
+              24.725904887464505
+            ],
+            [
+              30.170710678118652,
+              24.729289321881346
+            ],
+            [
+              30.174095112535493,
+              24.732844104515298
+            ],
+            [
+              30.17730104533627,
+              24.736560671583636
+            ],
+            [
+              30.180320753148063,
+              24.740430069550758
+            ],
+            [
+              30.183146961230253,
+              24.74444297669804
+            ],
+            [
+              30.185772861000025,
+              24.74858972558068
+            ],
+            [
+              30.188192126434835,
+              24.7528603263174
+            ],
+            [
+              30.19039892931234,
+              24.757244490656973
+            ],
+            [
+              30.192387953251128,
+              24.76173165676349
+            ],
+            [
+              30.1941544065183,
+              24.76631101466078
+            ],
+            [
+              30.19569403357322,
+              24.770971532274555
+            ],
+            [
+              30.19700312531945,
+              24.775701982009675
+            ],
+            [
+              30.19807852804032,
+              24.78049096779839
+            ],
+            [
+              30.198917650996474,
+              24.785326952554463
+            ],
+            [
+              30.19951847266722,
+              24.790198285967044
+            ],
+            [
+              30.199879545620515,
+              24.795093232567258
+            ],
+            [
+              30.2,
+              24.8
+            ],
+            [
+              30.199879545620515,
+              24.804906767432744
+            ],
+            [
+              30.19951847266722,
+              24.809801714032957
+            ],
+            [
+              30.198917650996474,
+              24.814673047445538
+            ],
+            [
+              30.19807852804032,
+              24.819509032201612
+            ],
+            [
+              30.19700312531945,
+              24.824298017990326
+            ],
+            [
+              30.19569403357322,
+              24.829028467725447
+            ],
+            [
+              30.1941544065183,
+              24.833688985339222
+            ],
+            [
+              30.192387953251128,
+              24.83826834323651
+            ],
+            [
+              30.19039892931234,
+              24.84275550934303
+            ],
+            [
+              30.188192126434835,
+              24.8471396736826
+            ],
+            [
+              30.185772861000025,
+              24.851410274419322
+            ],
+            [
+              30.183146961230253,
+              24.855557023301962
+            ],
+            [
+              30.180320753148063,
+              24.859569930449243
+            ],
+            [
+              30.179985123576465,
+              24.860000000000003
+            ],
+            [
+              30,
+              24.860000000000003
+            ],
+            [
+              29.99386654070907,
+              24.859849432025648
+            ],
+            [
+              29.987747857458803,
+              24.859398090834027
+            ],
+            [
+              29.98165869069308,
+              24.8586470637456
+            ],
+            [
+              29.975613709747982,
+              24.857598160050408
+            ],
+            [
+              29.96962747751209,
+              24.85625390664932
+            ],
+            [
+              29.96371441534319,
+              24.85461754196653
+            ],
+            [
+              29.957888768325972,
+              24.85269300814788
+            ],
+            [
+              29.952164570954363,
+              24.850484941563913
+            ],
+            [
+              29.946555613321216,
+              24.847998661640432
+            ],
+            [
+              29.94107540789675,
+              24.84524015804355
+            ],
+            [
+              29.935737156975847,
+              24.842216076250036
+            ],
+            [
+              29.93055372087255,
+              24.838933701537822
+            ],
+            [
+              29.925537586938447,
+              24.835400941435083
+            ],
+            [
+              29.920700839479544,
+              24.831626306670344
+            ],
+            [
+              29.91605513064412,
+              24.827618890669374
+            ],
+            [
+              29.91248249726168,
+              24.824217460927144
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment6:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment10:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.14159215049107843,
+      "outsideAllowedShuntLandAreaMm2": 0.14159215049107843,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              29.475,
+              25.335
+            ],
+            [
+              29.475150567974357,
+              25.328866540709075
+            ],
+            [
+              29.475601909165977,
+              25.322747857458804
+            ],
+            [
+              29.476352936254404,
+              25.31665869069308
+            ],
+            [
+              29.477401839949597,
+              25.310613709747983
+            ],
+            [
+              29.478746093350683,
+              25.304627477512092
+            ],
+            [
+              29.480382458033475,
+              25.29871441534319
+            ],
+            [
+              29.482306991852123,
+              25.292888768325973
+            ],
+            [
+              29.48451505843609,
+              25.287164570954364
+            ],
+            [
+              29.487001338359573,
+              25.281555613321217
+            ],
+            [
+              29.489759841956456,
+              25.27607540789675
+            ],
+            [
+              29.49278392374997,
+              25.270737156975848
+            ],
+            [
+              29.496066298462182,
+              25.26555372087255
+            ],
+            [
+              29.643660041156046,
+              25.04416310683175
+            ],
+            [
+              30.036560671583633,
+              24.722698954663727
+            ],
+            [
+              30.040430069550755,
+              24.719679246851936
+            ],
+            [
+              30.044442976698036,
+              24.716853038769745
+            ],
+            [
+              30.048589725580676,
+              24.714227138999973
+            ],
+            [
+              30.052860326317397,
+              24.711807873565164
+            ],
+            [
+              30.05724449065697,
+              24.709601070687658
+            ],
+            [
+              30.061731656763488,
+              24.70761204674887
+            ],
+            [
+              30.066311014660776,
+              24.705845593481698
+            ],
+            [
+              30.07097153227455,
+              24.70430596642678
+            ],
+            [
+              30.075701982009672,
+              24.702996874680547
+            ],
+            [
+              30.080490967798386,
+              24.70192147195968
+            ],
+            [
+              30.08532695255446,
+              24.701082349003524
+            ],
+            [
+              30.09019828596704,
+              24.70048152733278
+            ],
+            [
+              30.095093232567255,
+              24.700120454379483
+            ],
+            [
+              30.099999999999998,
+              24.7
+            ],
+            [
+              30.10490676743274,
+              24.700120454379483
+            ],
+            [
+              30.109801714032955,
+              24.70048152733278
+            ],
+            [
+              30.114673047445535,
+              24.701082349003524
+            ],
+            [
+              30.11950903220161,
+              24.70192147195968
+            ],
+            [
+              30.120571051589497,
+              24.702159956388268
+            ],
+            [
+              30.12125390664932,
+              24.704627477512094
+            ],
+            [
+              30.122598160050405,
+              24.710613709747985
+            ],
+            [
+              30.123647063745597,
+              24.716658690693084
+            ],
+            [
+              30.124398090834024,
+              24.722747857458806
+            ],
+            [
+              30.124849432025645,
+              24.728866540709074
+            ],
+            [
+              30.125,
+              24.735000000000003
+            ],
+            [
+              30.124849432025645,
+              24.741133459290932
+            ],
+            [
+              30.124398090834024,
+              24.7472521425412
+            ],
+            [
+              30.123647063745597,
+              24.753341309306922
+            ],
+            [
+              30.122598160050405,
+              24.75938629025202
+            ],
+            [
+              30.12125390664932,
+              24.76537252248791
+            ],
+            [
+              30.119617541966527,
+              24.771285584656813
+            ],
+            [
+              30.117693008147878,
+              24.77711123167403
+            ],
+            [
+              30.11548494156391,
+              24.78283542904564
+            ],
+            [
+              30.11299866164043,
+              24.788444386678787
+            ],
+            [
+              30.110240158043545,
+              24.793924592103252
+            ],
+            [
+              30.107216076250033,
+              24.799262843024156
+            ],
+            [
+              30.10393370153782,
+              24.804446279127454
+            ],
+            [
+              29.925673292177297,
+              25.071836893168236
+            ],
+            [
+              29.50491890115916,
+              25.41609048581944
+            ],
+            [
+              29.50337369332966,
+              25.414299160520457
+            ],
+            [
+              29.49959905856492,
+              25.409462413061554
+            ],
+            [
+              29.496066298462182,
+              25.404446279127452
+            ],
+            [
+              29.49278392374997,
+              25.399262843024154
+            ],
+            [
+              29.489759841956456,
+              25.39392459210325
+            ],
+            [
+              29.487001338359573,
+              25.388444386678785
+            ],
+            [
+              29.48451505843609,
+              25.382835429045638
+            ],
+            [
+              29.482306991852123,
+              25.37711123167403
+            ],
+            [
+              29.480382458033475,
+              25.37128558465681
+            ],
+            [
+              29.478746093350683,
+              25.36537252248791
+            ],
+            [
+              29.477401839949597,
+              25.35938629025202
+            ],
+            [
+              29.476352936254404,
+              25.35334130930692
+            ],
+            [
+              29.475601909165977,
+              25.347252142541198
+            ],
+            [
+              29.475150567974357,
+              25.34113345929093
+            ],
+            [
+              29.475,
+              25.335
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_209:bottom:segment6:0",
+        "elementId": "pcb_trace_209",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "branch": "R26",
+        "traceName": "RB_TRACE_210",
+        "generatedEndpoints": {
+          "from": "RB_VIA_84.bottom",
+          "to": "RB_VIA_85.bottom"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_744:bottom:segment11:0",
+        "elementId": "pcb_trace_744",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "traceName": "RB_TRACE_760",
+        "generatedEndpoints": {
+          "from": "RB_VIA_5.bottom",
+          "to": "RB_VIA_408.bottom"
+        }
+      },
+      "contactAreaMm2": 0.02744955837982843,
+      "outsideAllowedShuntLandAreaMm2": 0.02744955837982843,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              29.45512685662664,
+              25.456829431346048
+            ],
+            [
+              29.476352936254404,
+              25.31665869069308
+            ],
+            [
+              29.477401839949597,
+              25.310613709747983
+            ],
+            [
+              29.478746093350683,
+              25.304627477512092
+            ],
+            [
+              29.480382458033475,
+              25.29871441534319
+            ],
+            [
+              29.482306991852123,
+              25.292888768325973
+            ],
+            [
+              29.48451505843609,
+              25.287164570954364
+            ],
+            [
+              29.487001338359573,
+              25.281555613321217
+            ],
+            [
+              29.489759841956456,
+              25.27607540789675
+            ],
+            [
+              29.49278392374997,
+              25.270737156975848
+            ],
+            [
+              29.496066298462182,
+              25.26555372087255
+            ],
+            [
+              29.49959905856492,
+              25.260537586938447
+            ],
+            [
+              29.50337369332966,
+              25.255700839479545
+            ],
+            [
+              29.50738110933063,
+              25.251055130644122
+            ],
+            [
+              29.511611652351682,
+              25.24661165235168
+            ],
+            [
+              29.516055130644123,
+              25.24238110933063
+            ],
+            [
+              29.520700839479545,
+              25.23837369332966
+            ],
+            [
+              29.525537586938448,
+              25.23459905856492
+            ],
+            [
+              29.53055372087255,
+              25.23106629846218
+            ],
+            [
+              29.53573715697585,
+              25.227783923749968
+            ],
+            [
+              29.541075407896752,
+              25.224759841956455
+            ],
+            [
+              29.546555613321217,
+              25.222001338359572
+            ],
+            [
+              29.552164570954364,
+              25.21951505843609
+            ],
+            [
+              29.557888768325974,
+              25.217306991852123
+            ],
+            [
+              29.563714415343192,
+              25.215382458033474
+            ],
+            [
+              29.569627477512093,
+              25.213746093350682
+            ],
+            [
+              29.575613709747984,
+              25.212401839949596
+            ],
+            [
+              29.581658690693082,
+              25.211352936254404
+            ],
+            [
+              29.587747857458805,
+              25.210601909165977
+            ],
+            [
+              29.593866540709072,
+              25.210150567974356
+            ],
+            [
+              29.6,
+              25.21
+            ],
+            [
+              29.606133459290927,
+              25.210150567974356
+            ],
+            [
+              29.612252142541198,
+              25.210601909165977
+            ],
+            [
+              29.61834130930692,
+              25.211352936254404
+            ],
+            [
+              29.62438629025202,
+              25.212401839949596
+            ],
+            [
+              29.63037252248791,
+              25.213746093350682
+            ],
+            [
+              29.63628558465681,
+              25.215382458033474
+            ],
+            [
+              29.64211123167403,
+              25.217306991852123
+            ],
+            [
+              29.64783542904564,
+              25.21951505843609
+            ],
+            [
+              29.653444386678785,
+              25.222001338359572
+            ],
+            [
+              29.65892459210325,
+              25.224759841956455
+            ],
+            [
+              29.664262843024154,
+              25.227783923749968
+            ],
+            [
+              29.669446279127452,
+              25.23106629846218
+            ],
+            [
+              29.674462413061555,
+              25.23459905856492
+            ],
+            [
+              29.679299160520458,
+              25.23837369332966
+            ],
+            [
+              29.68394486935588,
+              25.24238110933063
+            ],
+            [
+              29.68838834764832,
+              25.24661165235168
+            ],
+            [
+              29.692618890669372,
+              25.251055130644122
+            ],
+            [
+              29.696626306670343,
+              25.255700839479545
+            ],
+            [
+              29.698311482141985,
+              25.25786019228804
+            ],
+            [
+              29.45512685662664,
+              25.456829431346048
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_211:top:segment2:0",
+        "elementId": "pcb_trace_211",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "branch": "R41",
+        "traceName": "RB_TRACE_212",
+        "generatedEndpoints": {
+          "from": "R20.pin1",
+          "to": "RB_VIA_86.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_709:top:segment2:0",
+        "elementId": "pcb_trace_709",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "traceName": "RB_TRACE_725",
+        "generatedEndpoints": {
+          "from": "L2.pin2",
+          "to": "R20.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699709304,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464779544,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              40.970000000000006,
+              9.063451909910395
+            ],
+            [
+              41.03201732419773,
+              9.038727395280072
+            ],
+            [
+              41.04898929312345,
+              9.072444906569718
+            ],
+            [
+              41.06887953251129,
+              9.11731656763491
+            ],
+            [
+              41.08654406518303,
+              9.16311014660778
+            ],
+            [
+              41.10194033573221,
+              9.209715322745538
+            ],
+            [
+              41.10603400811392,
+              9.224507953964451
+            ],
+            [
+              40.970000000000006,
+              9.278740781119502
+            ],
+            [
+              40.970000000000006,
+              9.063451909910395
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_211:top:segment2:0",
+        "elementId": "pcb_trace_211",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "branch": "R41",
+        "traceName": "RB_TRACE_212",
+        "generatedEndpoints": {
+          "from": "R20.pin1",
+          "to": "RB_VIA_86.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_709:top:segment3:0",
+        "elementId": "pcb_trace_709",
+        "kind": "pcb_trace",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "top",
+        "traceName": "RB_TRACE_725",
+        "generatedEndpoints": {
+          "from": "L2.pin2",
+          "to": "R20.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699709304,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464779544,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              40.970000000000006,
+              9.063451909910395
+            ],
+            [
+              41.03201732419773,
+              9.038727395280072
+            ],
+            [
+              41.04898929312345,
+              9.072444906569718
+            ],
+            [
+              41.06887953251129,
+              9.11731656763491
+            ],
+            [
+              41.08654406518303,
+              9.16311014660778
+            ],
+            [
+              41.10194033573221,
+              9.209715322745538
+            ],
+            [
+              41.10603400811392,
+              9.224507953964451
+            ],
+            [
+              40.970000000000006,
+              9.278740781119502
+            ],
+            [
+              40.970000000000006,
+              9.063451909910395
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_214:top:segment2:0",
+        "elementId": "pcb_trace_214",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "branch": "R42",
+        "traceName": "RB_TRACE_215",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "RB_VIA_88.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_712:top:segment1:0",
+        "elementId": "pcb_trace_712",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "traceName": "RB_TRACE_728",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "J_TEC.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699712147,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464807966,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              44.89396599188608,
+              9.224507953964451
+            ],
+            [
+              44.89805966426779,
+              9.209715322745538
+            ],
+            [
+              44.91345593481697,
+              9.16311014660778
+            ],
+            [
+              44.93112046748871,
+              9.11731656763491
+            ],
+            [
+              44.95101070687655,
+              9.072444906569718
+            ],
+            [
+              44.96798267580227,
+              9.038727395280072
+            ],
+            [
+              45.029999999999994,
+              9.063451909910395
+            ],
+            [
+              45.029999999999994,
+              9.278740781119502
+            ],
+            [
+              44.89396599188608,
+              9.224507953964451
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "reason": "Load, auxiliary, or other Kelvin branch shares copper outside actual shunt solder land",
+      "kelvin": {
+        "nodeId": "pcb_trace_214:top:segment2:0",
+        "elementId": "pcb_trace_214",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "branch": "R42",
+        "traceName": "RB_TRACE_215",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "RB_VIA_88.top"
+        }
+      },
+      "other": {
+        "nodeId": "pcb_trace_712:top:segment2:0",
+        "elementId": "pcb_trace_712",
+        "kind": "pcb_trace",
+        "net": "TEC_POS",
+        "layer": "top",
+        "traceName": "RB_TRACE_728",
+        "generatedEndpoints": {
+          "from": "R20.pin2",
+          "to": "J_TEC.pin1"
+        }
+      },
+      "contactAreaMm2": 0.21530974699712147,
+      "outsideAllowedShuntLandAreaMm2": 0.021994772464807966,
+      "intersectionPolygons": [
+        [
+          [
+            [
+              44.89396599188608,
+              9.224507953964451
+            ],
+            [
+              44.89805966426779,
+              9.209715322745538
+            ],
+            [
+              44.91345593481697,
+              9.16311014660778
+            ],
+            [
+              44.93112046748871,
+              9.11731656763491
+            ],
+            [
+              44.95101070687655,
+              9.072444906569718
+            ],
+            [
+              44.96798267580227,
+              9.038727395280072
+            ],
+            [
+              45.029999999999994,
+              9.063451909910395
+            ],
+            [
+              45.029999999999994,
+              9.278740781119502
+            ],
+            [
+              44.89396599188608,
+              9.224507953964451
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "actualBranches": [
+    {
+      "branch": "R25",
+      "from": "R20.pin1",
+      "to": "R25.pin1",
+      "nativePathCount": 3,
+      "nativeViaCount": 2,
+      "actualLengthMm": 43.90262940670271,
+      "plannedLengthMm": 43.90262940670271,
+      "sourceEscapeLengthMm": 1.6201928897510895
+    },
+    {
+      "branch": "R26",
+      "from": "R20.pin2",
+      "to": "R26.pin1",
+      "nativePathCount": 3,
+      "nativeViaCount": 2,
+      "actualLengthMm": 44.5581502915234,
+      "plannedLengthMm": 44.55815029152339,
+      "sourceEscapeLengthMm": 1.6201928897510895
+    },
+    {
+      "branch": "R41",
+      "from": "R20.pin1",
+      "to": "R41.pin1",
+      "nativePathCount": 3,
+      "nativeViaCount": 2,
+      "actualLengthMm": 17.254500703432438,
+      "plannedLengthMm": 17.254500703432438,
+      "sourceEscapeLengthMm": 1.6201928897510895
+    },
+    {
+      "branch": "R42",
+      "from": "R20.pin2",
+      "to": "R42.pin1",
+      "nativePathCount": 3,
+      "nativeViaCount": 2,
+      "actualLengthMm": 16.9930584295781,
+      "plannedLengthMm": 16.9930584295781,
+      "sourceEscapeLengthMm": 1.6201928897510895
+    }
+  ],
+  "pairMetrics": {
+    "planned": {
+      "controllerTotalLengthsMm": [
+        43.90262940670271,
+        44.55815029152339
+      ],
+      "controllerSkewMm": 0.6555208848206817,
+      "controllerPrincipalWestCorridorCenterSpacingMm": 0.6,
+      "controllerPrincipalWestCorridor": "P (28.5,25.1) to (18,25.1); N (29,25.7) to (18.6,25.7). Local spacing expands around mandatory ground barrels.",
+      "monitorTotalLengthsMm": [
+        17.254500703432438,
+        16.9930584295781
+      ],
+      "monitorSkewMm": 0.26144227385433894,
+      "interpretation": "Four independent branches; near-paired quiet corridor with local obstacle detours, no full electrical matching qualification."
+    },
+    "actualControllerSkewMm": 0.6555208848206888,
+    "actualMonitorSkewMm": 0.26144227385433894
+  },
+  "powerArrays": [
+    {
+      "id": "USB_pin15_ARRAY",
+      "net": "VBUS_RAW",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -46.5,
+            "y": 19.6
+          },
+          "pcbViaId": "pcb_via_11",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_4",
+                "pcb_trace_5",
+                "pcb_trace_6",
+                "pcb_trace_7",
+                "pcb_trace_8"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_9",
+                "pcb_trace_10",
+                "pcb_trace_11",
+                "pcb_trace_12",
+                "pcb_trace_13"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -46.5,
+            "y": 20.6
+          },
+          "pcbViaId": "pcb_via_12",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_4",
+                "pcb_trace_5",
+                "pcb_trace_7",
+                "pcb_trace_8",
+                "pcb_trace_53"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_9",
+                "pcb_trace_10",
+                "pcb_trace_12",
+                "pcb_trace_13",
+                "pcb_trace_55"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -46.5,
+            "y": 21.6
+          },
+          "pcbViaId": "pcb_via_13",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_5"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_10",
+                "pcb_trace_55"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "point": {
+            "x": -45.5,
+            "y": 19.6
+          },
+          "pcbViaId": "pcb_via_14",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_6",
+                "pcb_trace_7"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_11",
+                "pcb_trace_12",
+                "pcb_trace_55",
+                "pcb_trace_65",
+                "pcb_trace_67"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "point": {
+            "x": -45.5,
+            "y": 20.6
+          },
+          "pcbViaId": "pcb_via_15",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_7",
+                "pcb_trace_8"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_12",
+                "pcb_trace_13",
+                "pcb_trace_55",
+                "pcb_trace_65",
+                "pcb_trace_67"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "point": {
+            "x": -45.5,
+            "y": 21.6
+          },
+          "pcbViaId": "pcb_via_16",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_8"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin15"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_13",
+                "pcb_trace_55"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_19",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "USB_pin16_ARRAY",
+      "net": "VBUS_RAW",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -46.5,
+            "y": 24.4
+          },
+          "pcbViaId": "pcb_via_17",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_14",
+                "pcb_trace_15",
+                "pcb_trace_16",
+                "pcb_trace_17",
+                "pcb_trace_18"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_19",
+                "pcb_trace_20",
+                "pcb_trace_21",
+                "pcb_trace_22",
+                "pcb_trace_23",
+                "pcb_trace_55",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -46.5,
+            "y": 25.4
+          },
+          "pcbViaId": "pcb_via_18",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_14",
+                "pcb_trace_15",
+                "pcb_trace_17",
+                "pcb_trace_18",
+                "pcb_trace_54"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_19",
+                "pcb_trace_20",
+                "pcb_trace_22",
+                "pcb_trace_23",
+                "pcb_trace_55",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -46.5,
+            "y": 26.4
+          },
+          "pcbViaId": "pcb_via_19",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_15"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_20",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "point": {
+            "x": -45.5,
+            "y": 24.4
+          },
+          "pcbViaId": "pcb_via_20",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_16",
+                "pcb_trace_17"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_21",
+                "pcb_trace_22",
+                "pcb_trace_55",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "point": {
+            "x": -45.5,
+            "y": 25.4
+          },
+          "pcbViaId": "pcb_via_21",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_17",
+                "pcb_trace_18"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_22",
+                "pcb_trace_23",
+                "pcb_trace_55",
+                "pcb_trace_56",
+                "pcb_trace_63"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "point": {
+            "x": -45.5,
+            "y": 26.4
+          },
+          "pcbViaId": "pcb_via_22",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_18"
+              ],
+              "reachedPadSelectors": [
+                "J_USB_PD.pin16"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_23",
+                "pcb_trace_55",
+                "pcb_trace_56",
+                "pcb_trace_63"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_23",
+                "pcb_via_24",
+                "pcb_via_25",
+                "pcb_via_43",
+                "pcb_via_37",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_480",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EFUSE_RAW_ARRAY",
+      "net": "VBUS_RAW",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -24.25,
+            "y": 26
+          },
+          "pcbViaId": "pcb_via_23",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_24",
+                "pcb_trace_25",
+                "pcb_trace_757"
+              ],
+              "reachedPadSelectors": [
+                "R_INPUT_OV_TOP.pin1",
+                "U_INPUT.pin5"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_43"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_26",
+                "pcb_trace_27",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_19",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_43",
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -23.25,
+            "y": 26
+          },
+          "pcbViaId": "pcb_via_24",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_24",
+                "pcb_trace_25",
+                "pcb_trace_58"
+              ],
+              "reachedPadSelectors": [
+                "R_INPUT_OV_TOP.pin1",
+                "U_INPUT.pin5"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_43"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_26",
+                "pcb_trace_27",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_19",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_43",
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -22.25,
+            "y": 26
+          },
+          "pcbViaId": "pcb_via_25",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_25"
+              ],
+              "reachedPadSelectors": [
+                "R_INPUT_OV_TOP.pin1",
+                "U_INPUT.pin5"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_43"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_27",
+                "pcb_trace_56"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_17",
+                "pcb_via_18",
+                "pcb_via_19",
+                "pcb_via_20",
+                "pcb_via_21",
+                "pcb_via_22",
+                "pcb_via_43",
+                "pcb_via_12",
+                "pcb_via_13",
+                "pcb_via_14",
+                "pcb_via_15",
+                "pcb_via_16",
+                "pcb_via_37",
+                "pcb_via_480",
+                "pcb_via_11",
+                "pcb_via_38",
+                "pcb_via_39",
+                "pcb_via_8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EFUSE_TEC_ARRAY",
+      "net": "VBUS_TEC",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -23.75,
+            "y": 20
+          },
+          "pcbViaId": "pcb_via_26",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_28",
+                "pcb_trace_29",
+                "pcb_trace_30",
+                "pcb_trace_31",
+                "pcb_trace_32"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_33",
+                "pcb_trace_34",
+                "pcb_trace_35",
+                "pcb_trace_36",
+                "pcb_trace_37",
+                "pcb_trace_61",
+                "pcb_trace_924"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -23.75,
+            "y": 21
+          },
+          "pcbViaId": "pcb_via_27",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_28",
+                "pcb_trace_30"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_33",
+                "pcb_trace_35"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -22.75,
+            "y": 20
+          },
+          "pcbViaId": "pcb_via_28",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_29",
+                "pcb_trace_30",
+                "pcb_trace_31",
+                "pcb_trace_32",
+                "pcb_trace_60"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_34",
+                "pcb_trace_35",
+                "pcb_trace_36",
+                "pcb_trace_37",
+                "pcb_trace_61",
+                "pcb_trace_82",
+                "pcb_trace_924"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "point": {
+            "x": -22.75,
+            "y": 21
+          },
+          "pcbViaId": "pcb_via_29",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_30",
+                "pcb_trace_32",
+                "pcb_trace_59",
+                "pcb_trace_60"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_35",
+                "pcb_trace_37",
+                "pcb_trace_61"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "point": {
+            "x": -21.75,
+            "y": 20
+          },
+          "pcbViaId": "pcb_via_30",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_31"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_36",
+                "pcb_trace_61",
+                "pcb_trace_82",
+                "pcb_trace_924"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "point": {
+            "x": -21.75,
+            "y": 21
+          },
+          "pcbViaId": "pcb_via_31",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_32",
+                "pcb_trace_81"
+              ],
+              "reachedPadSelectors": [
+                "U_INPUT.pin6",
+                "C_INPUT_OUT.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_37",
+                "pcb_trace_61"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C40_ARRAY",
+      "net": "VBUS_TEC",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -1.85,
+            "y": 33
+          },
+          "pcbViaId": "pcb_via_32",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_38",
+                "pcb_trace_39",
+                "pcb_trace_40",
+                "pcb_trace_41",
+                "pcb_trace_62",
+                "pcb_trace_69",
+                "pcb_trace_71",
+                "pcb_trace_72"
+              ],
+              "reachedPadSelectors": [
+                "C40.pin1",
+                "C39.pin1",
+                "C27.pin1",
+                "C26.pin1",
+                "Q20.pin5",
+                "C44.pin1",
+                "C38.pin1",
+                "C25.pin1",
+                "C213.pin1",
+                "U_FAN.pin3",
+                "C219.pin1",
+                "Q22.pin2",
+                "R35.pin1",
+                "C220.pin1",
+                "R502.pin1"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_72",
+                "pcb_via_73",
+                "pcb_via_74"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_42",
+                "pcb_trace_43",
+                "pcb_trace_44",
+                "pcb_trace_45",
+                "pcb_trace_61"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_26",
+                "pcb_via_28",
+                "pcb_via_29",
+                "pcb_via_30",
+                "pcb_via_31",
+                "pcb_via_27",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -0.85,
+            "y": 33
+          },
+          "pcbViaId": "pcb_via_33",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_38",
+                "pcb_trace_40",
+                "pcb_trace_41",
+                "pcb_trace_70",
+                "pcb_trace_72",
+                "pcb_trace_73"
+              ],
+              "reachedPadSelectors": [
+                "C40.pin1",
+                "C39.pin1",
+                "C27.pin1",
+                "C26.pin1",
+                "Q20.pin5",
+                "C44.pin1",
+                "C38.pin1",
+                "C25.pin1",
+                "C213.pin1",
+                "U_FAN.pin3",
+                "C219.pin1",
+                "Q22.pin2",
+                "R35.pin1",
+                "C220.pin1",
+                "R502.pin1"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_72",
+                "pcb_via_73",
+                "pcb_via_74"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_42",
+                "pcb_trace_44",
+                "pcb_trace_45",
+                "pcb_trace_61"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_26",
+                "pcb_via_28",
+                "pcb_via_29",
+                "pcb_via_30",
+                "pcb_via_31",
+                "pcb_via_27",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -1.85,
+            "y": 34
+          },
+          "pcbViaId": "pcb_via_34",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_39",
+                "pcb_trace_40",
+                "pcb_trace_71"
+              ],
+              "reachedPadSelectors": [
+                "C40.pin1",
+                "C39.pin1",
+                "C27.pin1",
+                "C26.pin1",
+                "Q20.pin5",
+                "C44.pin1",
+                "C38.pin1",
+                "C25.pin1",
+                "C213.pin1",
+                "U_FAN.pin3",
+                "C219.pin1",
+                "Q22.pin2",
+                "R35.pin1",
+                "C220.pin1",
+                "R502.pin1"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_72",
+                "pcb_via_73",
+                "pcb_via_74"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_43",
+                "pcb_trace_44",
+                "pcb_trace_61"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_26",
+                "pcb_via_28",
+                "pcb_via_29",
+                "pcb_via_30",
+                "pcb_via_31",
+                "pcb_via_27",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "point": {
+            "x": -0.85,
+            "y": 34
+          },
+          "pcbViaId": "pcb_via_35",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_40",
+                "pcb_trace_72"
+              ],
+              "reachedPadSelectors": [
+                "C40.pin1",
+                "C39.pin1",
+                "C27.pin1",
+                "C26.pin1",
+                "Q20.pin5",
+                "C44.pin1",
+                "C38.pin1",
+                "C25.pin1",
+                "C213.pin1",
+                "U_FAN.pin3",
+                "C219.pin1",
+                "Q22.pin2",
+                "R35.pin1",
+                "C220.pin1",
+                "R502.pin1"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_72",
+                "pcb_via_73",
+                "pcb_via_74"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_44"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_26",
+                "pcb_via_28",
+                "pcb_via_29",
+                "pcb_via_30",
+                "pcb_via_31",
+                "pcb_via_27",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "point": {
+            "x": 0.15,
+            "y": 33
+          },
+          "pcbViaId": "pcb_via_36",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_41",
+                "pcb_trace_73"
+              ],
+              "reachedPadSelectors": [
+                "C40.pin1",
+                "C39.pin1",
+                "C27.pin1",
+                "C26.pin1",
+                "Q20.pin5",
+                "C44.pin1",
+                "C38.pin1",
+                "C25.pin1",
+                "C213.pin1",
+                "U_FAN.pin3",
+                "C219.pin1",
+                "Q22.pin2",
+                "R35.pin1",
+                "C220.pin1",
+                "R502.pin1"
+              ],
+              "reachedExternalBarrels": [
+                "pcb_via_72",
+                "pcb_via_73",
+                "pcb_via_74"
+              ]
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_45"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_26",
+                "pcb_via_28",
+                "pcb_via_29",
+                "pcb_via_30",
+                "pcb_via_31",
+                "pcb_via_27",
+                "pcb_via_40",
+                "pcb_via_41",
+                "pcb_via_42",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C28_ARRAY",
+      "net": "VBUS_TEC",
+      "passed": true,
+      "members": [
+        {
+          "index": 1,
+          "point": {
+            "x": -9.669921,
+            "y": 13.3
+          },
+          "pcbViaId": "pcb_via_40",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_46",
+                "pcb_trace_47",
+                "pcb_trace_83",
+                "pcb_trace_84",
+                "pcb_trace_85"
+              ],
+              "reachedPadSelectors": [
+                "C28.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_48",
+                "pcb_trace_49",
+                "pcb_trace_82"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_28",
+                "pcb_via_30",
+                "pcb_via_26",
+                "pcb_via_27",
+                "pcb_via_29",
+                "pcb_via_31",
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "point": {
+            "x": -10.669921,
+            "y": 13.3
+          },
+          "pcbViaId": "pcb_via_41",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_46",
+                "pcb_trace_84"
+              ],
+              "reachedPadSelectors": [
+                "C28.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_48",
+                "pcb_trace_82"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_28",
+                "pcb_via_30",
+                "pcb_via_26",
+                "pcb_via_27",
+                "pcb_via_29",
+                "pcb_via_31",
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "point": {
+            "x": -8.669921,
+            "y": 13.3
+          },
+          "pcbViaId": "pcb_via_42",
+          "passed": true,
+          "sides": [
+            {
+              "layer": "top",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_47",
+                "pcb_trace_85"
+              ],
+              "reachedPadSelectors": [
+                "C28.pin1"
+              ],
+              "reachedExternalBarrels": []
+            },
+            {
+              "layer": "bottom",
+              "passed": true,
+              "directContacts": [
+                "pcb_trace_49"
+              ],
+              "reachedPadSelectors": [],
+              "reachedExternalBarrels": [
+                "pcb_via_28",
+                "pcb_via_30",
+                "pcb_via_26",
+                "pcb_via_27",
+                "pcb_via_29",
+                "pcb_via_31",
+                "pcb_via_32",
+                "pcb_via_33",
+                "pcb_via_34",
+                "pcb_via_35",
+                "pcb_via_36",
+                "pcb_via_479"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Verifies independent physical sense paths and both-side array participation, not current sharing equality, ampacity, thermal rise, EMI, or fabrication qualification"
+}

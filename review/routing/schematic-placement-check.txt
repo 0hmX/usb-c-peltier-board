@@ -1,0 +1,4 @@
+Command: bun run node_modules/tscircuit/cli.mjs check schematic-placement dist/routing-placement/circuit.json
+Exit status: 0
+Diagnostics: none
+Placement circuit SHA256: f5e95c04c3f086de935a4705a57bd0b66a0110b3b7b8e6995cc56a8e436579c9

@@ -43,22 +43,24 @@ External mechanical parts are explicitly named `CONCEPT`; their approximate dime
 
 ![Unrouted placement](review/placement.png)
 
-The board deliberately contains **no PCB traces, vias or copper pours**. Component pads and courtyards are real CAD geometry, not an illustrative mockup. Four 3.2 mm mounting holes have 4 mm-radius washer/copper keepouts. Copper routing, thermal spreading, controlled USB impedance and manufacturing qualification come later.
+The default placement and assembly entries contain **no PCB traces, vias or copper pours**. The separate routed entry below adds saved copper. Component pads and courtyards are real CAD geometry, not an illustrative mockup. Four 3.2 mm mounting holes have 4 mm-radius washer/copper keepouts. The routed draft is available below; remaining routing and hardware qualification are later work.
 
 ## Reproduce
 
-### Revision B routing in progress
+### Revision B routing
 
-The separate [`routed.tsx`](routed.tsx) entrypoint starts copper routing on the
-current placement. Review [four copper layers](review/routing/index.html),
-[routed and pending endpoints](review/routing/routing-report.json), and
-[routing scope and validation](docs/revision-b-routing.md). Ten routing plans
-cover all 135 nets; three were prepared with Astra agents.
+[`routed.tsx`](routed.tsx) renders explicit four-layer copper with the routing-specific
+placement in [`routing-placement.tsx`](routing-placement.tsx). The original
+`index.tsx` and `assembly.tsx` retain the unrouted review. Ten routing agents,
+including three Astra agents, contributed all 135 net plans.
 
-The first pass is incomplete. Missing connections, ground-plane continuity,
-USB impedance/skew, Kelvin separation, switching-loop geometry and power-via
-ampacity remain explicit release gates. The default placement/assembly entrypoints
-continue to build the original unrouted review.
+Review [four copper layers](review/routing/index.html), [connection results](review/routing/routing-report.json),
+[physical copper connectivity](review/routing/physical-connectivity.json), and
+[routing methods and validation](docs/revision-b-routing.md).
+`check:routed` requires every net and ground pad to connect through actual copper,
+zero geometric errors or shorts, valid exposed bypass lengths, and independent
+shunt sense paths. Fabricator stackup/impedance and bench current/thermal
+qualification remain separate from these CAD checks.
 
 ```sh
 bun run route:revision-b

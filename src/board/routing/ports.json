@@ -1169,7 +1169,7 @@
     "component": "R_INPUT_ILIM",
     "pin": 1,
     "net": "INPUT_CURRENT_MON",
-    "x": -20,
+    "x": -19,
     "y": 20.45,
     "layers": [
       "top"
@@ -1189,7 +1189,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -20,
+        "x": -19,
         "y": 20.45,
         "subcircuit_id": "subcircuit_source_group_1"
       }
@@ -1200,7 +1200,7 @@
     "component": "R_INPUT_ILIM",
     "pin": 2,
     "net": "GND",
-    "x": -20,
+    "x": -19,
     "y": 22.05,
     "layers": [
       "top"
@@ -1220,7 +1220,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -20,
+        "x": -19,
         "y": 22.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
@@ -2765,7 +2765,7 @@
     "pin": 1,
     "net": "TEC_LG",
     "x": 18.65,
-    "y": 20.1,
+    "y": 16.15,
     "layers": [
       "top"
     ],
@@ -2785,7 +2785,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 18.65,
-        "y": 20.1,
+        "y": 16.15,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -2796,7 +2796,7 @@
     "pin": 2,
     "net": "TEC_LOW_GATE",
     "x": 18.65,
-    "y": 18.6,
+    "y": 14.65,
     "layers": [
       "top"
     ],
@@ -2816,7 +2816,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 18.65,
-        "y": 18.6,
+        "y": 14.65,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3078,8 +3078,8 @@
     "component": "C21",
     "pin": 1,
     "net": "TEC_VCC_INT",
-    "x": 30.4,
-    "y": 21.895,
+    "x": 31.195,
+    "y": 21.6,
     "layers": [
       "top"
     ],
@@ -3091,15 +3091,15 @@
         "pcb_port_id": "pcb_port_79",
         "layer": "top",
         "shape": "rect",
-        "width": 1.35,
-        "height": 0.95,
+        "width": 0.95,
+        "height": 1.35,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 30.4,
-        "y": 21.895,
+        "x": 31.195,
+        "y": 21.6,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3109,8 +3109,8 @@
     "component": "C21",
     "pin": 2,
     "net": "GND",
-    "x": 30.4,
-    "y": 23.705000000000002,
+    "x": 33.005,
+    "y": 21.6,
     "layers": [
       "top"
     ],
@@ -3122,15 +3122,15 @@
         "pcb_port_id": "pcb_port_80",
         "layer": "top",
         "shape": "rect",
-        "width": 1.35,
-        "height": 0.95,
+        "width": 0.95,
+        "height": 1.35,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 30.4,
-        "y": 23.705000000000002,
+        "x": 33.005,
+        "y": 21.6,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3140,8 +3140,8 @@
     "component": "C41",
     "pin": 1,
     "net": "TEC_VCC_INT",
-    "x": 32.5,
-    "y": 21.895,
+    "x": 31.195,
+    "y": 19.55,
     "layers": [
       "top"
     ],
@@ -3153,15 +3153,15 @@
         "pcb_port_id": "pcb_port_81",
         "layer": "top",
         "shape": "rect",
-        "width": 1.35,
-        "height": 0.95,
+        "width": 0.95,
+        "height": 1.35,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 32.5,
-        "y": 21.895,
+        "x": 31.195,
+        "y": 19.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3171,8 +3171,8 @@
     "component": "C41",
     "pin": 2,
     "net": "GND",
-    "x": 32.5,
-    "y": 23.705000000000002,
+    "x": 33.005,
+    "y": 19.55,
     "layers": [
       "top"
     ],
@@ -3184,15 +3184,15 @@
         "pcb_port_id": "pcb_port_82",
         "layer": "top",
         "shape": "rect",
-        "width": 1.35,
-        "height": 0.95,
+        "width": 0.95,
+        "height": 1.35,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 32.5,
-        "y": 23.705000000000002,
+        "x": 33.005,
+        "y": 19.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3202,8 +3202,8 @@
     "component": "C22",
     "pin": 1,
     "net": "TEC_VCC_INT",
-    "x": 28.25,
-    "y": 22.25,
+    "x": 28.150000000000002,
+    "y": 22.1,
     "layers": [
       "top"
     ],
@@ -3215,15 +3215,15 @@
         "pcb_port_id": "pcb_port_83",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28.25,
-        "y": 22.25,
+        "x": 28.150000000000002,
+        "y": 22.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3233,8 +3233,8 @@
     "component": "C22",
     "pin": 2,
     "net": "GND",
-    "x": 28.25,
-    "y": 23.65,
+    "x": 29.55,
+    "y": 22.1,
     "layers": [
       "top"
     ],
@@ -3246,15 +3246,15 @@
         "pcb_port_id": "pcb_port_84",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28.25,
-        "y": 23.65,
+        "x": 29.55,
+        "y": 22.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3264,8 +3264,8 @@
     "component": "C24",
     "pin": 1,
     "net": "VBUS_TEC",
-    "x": 28.5,
-    "y": 25.165,
+    "x": 28.215,
+    "y": 23.875,
     "layers": [
       "top"
     ],
@@ -3277,15 +3277,15 @@
         "pcb_port_id": "pcb_port_85",
         "layer": "top",
         "shape": "rect",
-        "width": 1.3,
-        "height": 0.93,
+        "width": 0.93,
+        "height": 1.3,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28.5,
-        "y": 25.165,
+        "x": 28.215,
+        "y": 23.875,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3295,8 +3295,8 @@
     "component": "C24",
     "pin": 2,
     "net": "GND",
-    "x": 28.5,
-    "y": 26.935000000000002,
+    "x": 29.985000000000003,
+    "y": 23.875,
     "layers": [
       "top"
     ],
@@ -3308,15 +3308,15 @@
         "pcb_port_id": "pcb_port_86",
         "layer": "top",
         "shape": "rect",
-        "width": 1.3,
-        "height": 0.93,
+        "width": 0.93,
+        "height": 1.3,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28.5,
-        "y": 26.935000000000002,
+        "x": 29.985000000000003,
+        "y": 23.875,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3943,7 +3943,7 @@
     "pin": 1,
     "net": "TEC_INDUCTOR_OUT",
     "x": 18.5,
-    "y": 30.2,
+    "y": 30.55,
     "layers": [
       "top"
     ],
@@ -3963,7 +3963,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 18.5,
-        "y": 30.2,
+        "y": 30.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -3974,7 +3974,7 @@
     "pin": 2,
     "net": "TEC_SENSE_P_FILTERED",
     "x": 20,
-    "y": 30.2,
+    "y": 30.55,
     "layers": [
       "top"
     ],
@@ -3994,7 +3994,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 20,
-        "y": 30.2,
+        "y": 30.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4066,8 +4066,8 @@
     "component": "C32",
     "pin": 1,
     "net": "TEC_SENSE_P_FILTERED",
-    "x": 18.65,
-    "y": 28.72,
+    "x": 18.55,
+    "y": 29.169999999999998,
     "layers": [
       "top"
     ],
@@ -4086,8 +4086,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 18.65,
-        "y": 28.72,
+        "x": 18.55,
+        "y": 29.169999999999998,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4097,8 +4097,8 @@
     "component": "C32",
     "pin": 2,
     "net": "TEC_SENSE_N_FILTERED",
-    "x": 18.65,
-    "y": 27.28,
+    "x": 18.55,
+    "y": 27.73,
     "layers": [
       "top"
     ],
@@ -4117,8 +4117,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 18.65,
-        "y": 27.28,
+        "x": 18.55,
+        "y": 27.73,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4314,8 +4314,8 @@
     "component": "C34",
     "pin": 1,
     "net": "TEC_SS",
-    "x": 27.55,
-    "y": 30.1,
+    "x": 28.150000000000002,
+    "y": 28.75,
     "layers": [
       "top"
     ],
@@ -4334,8 +4334,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 27.55,
-        "y": 30.1,
+        "x": 28.150000000000002,
+        "y": 28.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4345,8 +4345,8 @@
     "component": "C34",
     "pin": 2,
     "net": "GND",
-    "x": 28.95,
-    "y": 30.1,
+    "x": 29.55,
+    "y": 28.75,
     "layers": [
       "top"
     ],
@@ -4365,8 +4365,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28.95,
-        "y": 30.1,
+        "x": 29.55,
+        "y": 28.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4376,8 +4376,8 @@
     "component": "C35",
     "pin": 1,
     "net": "TEC_VREF",
-    "x": 30.775,
-    "y": 27.25,
+    "x": 28.075,
+    "y": 25.55,
     "layers": [
       "top"
     ],
@@ -4396,8 +4396,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 30.775,
-        "y": 27.25,
+        "x": 28.075,
+        "y": 25.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4407,8 +4407,8 @@
     "component": "C35",
     "pin": 2,
     "net": "GND",
-    "x": 32.125,
-    "y": 27.25,
+    "x": 29.425,
+    "y": 25.55,
     "layers": [
       "top"
     ],
@@ -4427,8 +4427,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 32.125,
-        "y": 27.25,
+        "x": 29.425,
+        "y": 25.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4500,8 +4500,8 @@
     "component": "R30",
     "pin": 1,
     "net": "TEC_FB",
-    "x": 30.5,
-    "y": 29.7,
+    "x": 30.85,
+    "y": 30.3,
     "layers": [
       "top"
     ],
@@ -4520,8 +4520,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 30.5,
-        "y": 29.7,
+        "x": 30.85,
+        "y": 30.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4531,8 +4531,8 @@
     "component": "R30",
     "pin": 2,
     "net": "GND",
-    "x": 32,
-    "y": 29.7,
+    "x": 32.35,
+    "y": 30.3,
     "layers": [
       "top"
     ],
@@ -4551,8 +4551,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 32,
-        "y": 29.7,
+        "x": 32.35,
+        "y": 30.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4686,8 +4686,8 @@
     "component": "C36",
     "pin": 1,
     "net": "TEC_HARD_LIMIT",
-    "x": 34.5,
-    "y": 25.55,
+    "x": 31.45,
+    "y": 26.1,
     "layers": [
       "top"
     ],
@@ -4699,15 +4699,15 @@
         "pcb_port_id": "pcb_port_131",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34.5,
-        "y": 25.55,
+        "x": 31.45,
+        "y": 26.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4717,8 +4717,8 @@
     "component": "C36",
     "pin": 2,
     "net": "GND",
-    "x": 34.5,
-    "y": 26.95,
+    "x": 32.85,
+    "y": 26.1,
     "layers": [
       "top"
     ],
@@ -4730,15 +4730,15 @@
         "pcb_port_id": "pcb_port_132",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34.5,
-        "y": 26.95,
+        "x": 32.85,
+        "y": 26.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4872,8 +4872,8 @@
     "component": "C37",
     "pin": 1,
     "net": "TEC_CURRENT_COMMAND",
-    "x": 30.3,
-    "y": 25.55,
+    "x": 28.150000000000002,
+    "y": 27.15,
     "layers": [
       "top"
     ],
@@ -4892,8 +4892,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 30.3,
-        "y": 25.55,
+        "x": 28.150000000000002,
+        "y": 27.15,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -4903,8 +4903,8 @@
     "component": "C37",
     "pin": 2,
     "net": "GND",
-    "x": 31.7,
-    "y": 25.55,
+    "x": 29.55,
+    "y": 27.15,
     "layers": [
       "top"
     ],
@@ -4923,8 +4923,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 31.7,
-        "y": 25.55,
+        "x": 29.55,
+        "y": 27.15,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -5926,8 +5926,8 @@
     "component": "C43",
     "pin": 1,
     "net": "V3V3",
-    "x": 38,
-    "y": 28.3,
+    "x": 38.5,
+    "y": 26.3,
     "layers": [
       "top"
     ],
@@ -5939,15 +5939,15 @@
         "pcb_port_id": "pcb_port_171",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 38,
-        "y": 28.3,
+        "x": 38.5,
+        "y": 26.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -5957,8 +5957,8 @@
     "component": "C43",
     "pin": 2,
     "net": "GND",
-    "x": 38,
-    "y": 29.7,
+    "x": 37.099999999999994,
+    "y": 26.3,
     "layers": [
       "top"
     ],
@@ -5970,15 +5970,15 @@
         "pcb_port_id": "pcb_port_172",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 38,
-        "y": 29.7,
+        "x": 37.099999999999994,
+        "y": 26.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -8392,7 +8392,7 @@
     "pin": 1,
     "net": "FAN_SW",
     "x": 43.25,
-    "y": -10,
+    "y": -6.75,
     "layers": [
       "top"
     ],
@@ -8412,7 +8412,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 43.25,
-        "y": -10,
+        "y": -6.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -8423,7 +8423,7 @@
     "pin": 2,
     "net": "V12_FAN",
     "x": 48.75,
-    "y": -10,
+    "y": -6.75,
     "layers": [
       "top"
     ],
@@ -8443,7 +8443,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": 48.75,
-        "y": -10,
+        "y": -6.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -8911,7 +8911,7 @@
     "pin": 1,
     "net": "TEC_CLEAR_RAW",
     "x": -5.75,
-    "y": -17,
+    "y": -17.5,
     "layers": [
       "top"
     ],
@@ -8931,7 +8931,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": -5.75,
-        "y": -17,
+        "y": -17.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -8942,7 +8942,7 @@
     "pin": 2,
     "net": "GND",
     "x": -4.25,
-    "y": -17,
+    "y": -17.5,
     "layers": [
       "top"
     ],
@@ -8962,7 +8962,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": -4.25,
-        "y": -17,
+        "y": -17.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -9344,8 +9344,8 @@
     "component": "R210",
     "pin": 1,
     "net": "HOT_RAW",
-    "x": -18,
-    "y": -15.5,
+    "x": -13.25,
+    "y": -23.9,
     "layers": [
       "top"
     ],
@@ -9357,15 +9357,15 @@
         "pcb_port_id": "pcb_port_284",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -15.5,
+        "x": -13.25,
+        "y": -23.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -9375,8 +9375,8 @@
     "component": "R210",
     "pin": 2,
     "net": "HOT_ADC",
-    "x": -18,
-    "y": -14,
+    "x": -14.75,
+    "y": -23.9,
     "layers": [
       "top"
     ],
@@ -9388,15 +9388,15 @@
         "pcb_port_id": "pcb_port_285",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -14,
+        "x": -14.75,
+        "y": -23.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -9406,8 +9406,8 @@
     "component": "R211",
     "pin": 1,
     "net": "COLD_RAW",
-    "x": -15,
-    "y": -15.5,
+    "x": -13.25,
+    "y": -20.4,
     "layers": [
       "top"
     ],
@@ -9419,15 +9419,15 @@
         "pcb_port_id": "pcb_port_286",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -15.5,
+        "x": -13.25,
+        "y": -20.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -9437,8 +9437,8 @@
     "component": "R211",
     "pin": 2,
     "net": "COLD_ADC",
-    "x": -15,
-    "y": -14,
+    "x": -14.75,
+    "y": -20.4,
     "layers": [
       "top"
     ],
@@ -9450,15 +9450,15 @@
         "pcb_port_id": "pcb_port_287",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -14,
+        "x": -14.75,
+        "y": -20.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10088,8 +10088,8 @@
     "component": "R222",
     "pin": 1,
     "net": "VBUS_RAW",
-    "x": -18,
-    "y": -20.5,
+    "x": -13.25,
+    "y": -13.5,
     "layers": [
       "top"
     ],
@@ -10101,15 +10101,15 @@
         "pcb_port_id": "pcb_port_308",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -20.5,
+        "x": -13.25,
+        "y": -13.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10119,8 +10119,8 @@
     "component": "R222",
     "pin": 2,
     "net": "VBUS_ADC",
-    "x": -18,
-    "y": -22,
+    "x": -14.75,
+    "y": -13.5,
     "layers": [
       "top"
     ],
@@ -10132,15 +10132,15 @@
         "pcb_port_id": "pcb_port_309",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -22,
+        "x": -14.75,
+        "y": -13.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10150,8 +10150,8 @@
     "component": "R223",
     "pin": 1,
     "net": "VBUS_ADC",
-    "x": -16.25,
-    "y": -24.55,
+    "x": -10.8,
+    "y": -12,
     "layers": [
       "top"
     ],
@@ -10163,15 +10163,15 @@
         "pcb_port_id": "pcb_port_310",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.7,
+        "width": 0.7,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -16.25,
-        "y": -24.55,
+        "x": -10.8,
+        "y": -12,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10181,8 +10181,8 @@
     "component": "R223",
     "pin": 2,
     "net": "GND",
-    "x": -16.25,
-    "y": -22.95,
+    "x": -9.2,
+    "y": -12,
     "layers": [
       "top"
     ],
@@ -10194,15 +10194,15 @@
         "pcb_port_id": "pcb_port_311",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.7,
+        "width": 0.7,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -16.25,
-        "y": -22.95,
+        "x": -9.2,
+        "y": -12,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10212,8 +10212,8 @@
     "component": "R224",
     "pin": 1,
     "net": "TEC_POS",
-    "x": -14.5,
-    "y": -20.5,
+    "x": -13.25,
+    "y": -17.3,
     "layers": [
       "top"
     ],
@@ -10225,15 +10225,15 @@
         "pcb_port_id": "pcb_port_312",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -14.5,
-        "y": -20.5,
+        "x": -13.25,
+        "y": -17.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10243,8 +10243,8 @@
     "component": "R224",
     "pin": 2,
     "net": "VOUT_ADC",
-    "x": -14.5,
-    "y": -22,
+    "x": -14.75,
+    "y": -17.3,
     "layers": [
       "top"
     ],
@@ -10256,15 +10256,15 @@
         "pcb_port_id": "pcb_port_313",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.65,
+        "width": 0.65,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -14.5,
-        "y": -22,
+        "x": -14.75,
+        "y": -17.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10274,8 +10274,8 @@
     "component": "R225",
     "pin": 1,
     "net": "VOUT_ADC",
-    "x": -13.25,
-    "y": -25.3,
+    "x": -17.3,
+    "y": -18.9,
     "layers": [
       "top"
     ],
@@ -10287,15 +10287,15 @@
         "pcb_port_id": "pcb_port_314",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.7,
+        "width": 0.7,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -13.25,
-        "y": -25.3,
+        "x": -17.3,
+        "y": -18.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10305,8 +10305,8 @@
     "component": "R225",
     "pin": 2,
     "net": "GND",
-    "x": -13.25,
-    "y": -23.7,
+    "x": -15.7,
+    "y": -18.9,
     "layers": [
       "top"
     ],
@@ -10318,15 +10318,15 @@
         "pcb_port_id": "pcb_port_315",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.7,
+        "width": 0.7,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -13.25,
-        "y": -23.7,
+        "x": -15.7,
+        "y": -18.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10460,8 +10460,8 @@
     "component": "R228",
     "pin": 1,
     "net": "V12_FAN",
-    "x": 37.25,
-    "y": -23,
+    "x": 40.5,
+    "y": -5.05,
     "layers": [
       "top"
     ],
@@ -10473,15 +10473,15 @@
         "pcb_port_id": "pcb_port_320",
         "layer": "top",
         "shape": "rect",
-        "width": 0.65,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.65,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 37.25,
-        "y": -23,
+        "x": 40.5,
+        "y": -5.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10491,8 +10491,8 @@
     "component": "R228",
     "pin": 2,
     "net": "FAN_FB",
-    "x": 38.75,
-    "y": -23,
+    "x": 40.5,
+    "y": -6.55,
     "layers": [
       "top"
     ],
@@ -10504,15 +10504,15 @@
         "pcb_port_id": "pcb_port_321",
         "layer": "top",
         "shape": "rect",
-        "width": 0.65,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.65,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 38.75,
-        "y": -23,
+        "x": 40.5,
+        "y": -6.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10522,8 +10522,8 @@
     "component": "R229",
     "pin": 1,
     "net": "FAN_FB",
-    "x": 41.25,
-    "y": -23,
+    "x": 37,
+    "y": -6.55,
     "layers": [
       "top"
     ],
@@ -10535,15 +10535,15 @@
         "pcb_port_id": "pcb_port_322",
         "layer": "top",
         "shape": "rect",
-        "width": 0.65,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.65,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 41.25,
-        "y": -23,
+        "x": 37,
+        "y": -6.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10553,8 +10553,8 @@
     "component": "R229",
     "pin": 2,
     "net": "GND",
-    "x": 42.75,
-    "y": -23,
+    "x": 37,
+    "y": -5.05,
     "layers": [
       "top"
     ],
@@ -10566,15 +10566,15 @@
         "pcb_port_id": "pcb_port_323",
         "layer": "top",
         "shape": "rect",
-        "width": 0.65,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.65,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 42.75,
-        "y": -23,
+        "x": 37,
+        "y": -5.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10832,8 +10832,8 @@
     "component": "R236",
     "pin": 1,
     "net": "INPUT_ARMED",
-    "x": -5.75,
-    "y": -18.75,
+    "x": -7.75,
+    "y": -21.5,
     "layers": [
       "top"
     ],
@@ -10852,8 +10852,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -5.75,
-        "y": -18.75,
+        "x": -7.75,
+        "y": -21.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10863,8 +10863,8 @@
     "component": "R236",
     "pin": 2,
     "net": "GND",
-    "x": -4.25,
-    "y": -18.75,
+    "x": -6.25,
+    "y": -21.5,
     "layers": [
       "top"
     ],
@@ -10883,8 +10883,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -4.25,
-        "y": -18.75,
+        "x": -6.25,
+        "y": -21.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10894,8 +10894,8 @@
     "component": "R237",
     "pin": 1,
     "net": "V3V3",
-    "x": -8.8,
-    "y": -4,
+    "x": -5.8,
+    "y": -5,
     "layers": [
       "top"
     ],
@@ -10914,8 +10914,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -8.8,
-        "y": -4,
+        "x": -5.8,
+        "y": -5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -10925,8 +10925,8 @@
     "component": "R237",
     "pin": 2,
     "net": "INPUT_CLEAR_RAW",
-    "x": -7.2,
-    "y": -4,
+    "x": -4.2,
+    "y": -5,
     "layers": [
       "top"
     ],
@@ -10945,8 +10945,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -7.2,
-        "y": -4,
+        "x": -4.2,
+        "y": -5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11328,8 +11328,8 @@
     "component": "C200",
     "pin": 1,
     "net": "LOGIC_VIN",
-    "x": -40,
-    "y": -3.575,
+    "x": -36,
+    "y": -3.925,
     "layers": [
       "top"
     ],
@@ -11348,8 +11348,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -40,
-        "y": -3.575,
+        "x": -36,
+        "y": -3.925,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11359,8 +11359,8 @@
     "component": "C200",
     "pin": 2,
     "net": "GND",
-    "x": -40,
-    "y": -0.42500000000000004,
+    "x": -36,
+    "y": -7.075,
     "layers": [
       "top"
     ],
@@ -11379,8 +11379,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -40,
-        "y": -0.42500000000000004,
+        "x": -36,
+        "y": -7.075,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11514,8 +11514,8 @@
     "component": "C206",
     "pin": 1,
     "net": "V3V3",
-    "x": -5,
-    "y": -22.7,
+    "x": 0.5,
+    "y": -23.4,
     "layers": [
       "top"
     ],
@@ -11527,15 +11527,15 @@
         "pcb_port_id": "pcb_port_354",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -5,
-        "y": -22.7,
+        "x": 0.5,
+        "y": -23.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11545,8 +11545,8 @@
     "component": "C206",
     "pin": 2,
     "net": "GND",
-    "x": -5,
-    "y": -21.3,
+    "x": 1.9,
+    "y": -23.4,
     "layers": [
       "top"
     ],
@@ -11558,15 +11558,15 @@
         "pcb_port_id": "pcb_port_355",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -5,
-        "y": -21.3,
+        "x": 1.9,
+        "y": -23.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11576,8 +11576,8 @@
     "component": "C207",
     "pin": 1,
     "net": "V3V3",
-    "x": 3.25,
-    "y": -15.7,
+    "x": -2.925,
+    "y": -15.75,
     "layers": [
       "top"
     ],
@@ -11589,15 +11589,15 @@
         "pcb_port_id": "pcb_port_356",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 3.25,
-        "y": -15.7,
+        "x": -2.925,
+        "y": -15.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11607,8 +11607,8 @@
     "component": "C207",
     "pin": 2,
     "net": "GND",
-    "x": 3.25,
-    "y": -14.3,
+    "x": -4.325,
+    "y": -15.75,
     "layers": [
       "top"
     ],
@@ -11620,15 +11620,15 @@
         "pcb_port_id": "pcb_port_357",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 3.25,
-        "y": -14.3,
+        "x": -4.325,
+        "y": -15.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11638,8 +11638,8 @@
     "component": "C208",
     "pin": 1,
     "net": "V3V3",
-    "x": 18,
-    "y": -19.3,
+    "x": 18.55,
+    "y": -17.3,
     "layers": [
       "top"
     ],
@@ -11651,15 +11651,15 @@
         "pcb_port_id": "pcb_port_358",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 18,
-        "y": -19.3,
+        "x": 18.55,
+        "y": -17.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11669,8 +11669,8 @@
     "component": "C208",
     "pin": 2,
     "net": "GND",
-    "x": 18,
-    "y": -20.7,
+    "x": 17.150000000000002,
+    "y": -17.3,
     "layers": [
       "top"
     ],
@@ -11682,15 +11682,15 @@
         "pcb_port_id": "pcb_port_359",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 18,
-        "y": -20.7,
+        "x": 17.150000000000002,
+        "y": -17.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11700,8 +11700,8 @@
     "component": "C209",
     "pin": 1,
     "net": "HOT_ADC",
-    "x": -18,
-    "y": -18.7,
+    "x": -16.3,
+    "y": -23.9,
     "layers": [
       "top"
     ],
@@ -11713,15 +11713,15 @@
         "pcb_port_id": "pcb_port_360",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -18.7,
+        "x": -16.3,
+        "y": -23.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11731,8 +11731,8 @@
     "component": "C209",
     "pin": 2,
     "net": "GND",
-    "x": -18,
-    "y": -17.3,
+    "x": -17.7,
+    "y": -23.9,
     "layers": [
       "top"
     ],
@@ -11744,15 +11744,15 @@
         "pcb_port_id": "pcb_port_361",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -17.3,
+        "x": -17.7,
+        "y": -23.9,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11762,8 +11762,8 @@
     "component": "C210",
     "pin": 1,
     "net": "COLD_ADC",
-    "x": -15,
-    "y": -18.7,
+    "x": -16.3,
+    "y": -21.2,
     "layers": [
       "top"
     ],
@@ -11775,15 +11775,15 @@
         "pcb_port_id": "pcb_port_362",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -18.7,
+        "x": -16.3,
+        "y": -21.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11793,8 +11793,8 @@
     "component": "C210",
     "pin": 2,
     "net": "GND",
-    "x": -15,
-    "y": -17.3,
+    "x": -17.7,
+    "y": -21.2,
     "layers": [
       "top"
     ],
@@ -11806,15 +11806,15 @@
         "pcb_port_id": "pcb_port_363",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -17.3,
+        "x": -17.7,
+        "y": -21.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11824,8 +11824,8 @@
     "component": "C211",
     "pin": 1,
     "net": "VBUS_ADC",
-    "x": -18,
-    "y": -27.7,
+    "x": -16.3,
+    "y": -13.5,
     "layers": [
       "top"
     ],
@@ -11837,15 +11837,15 @@
         "pcb_port_id": "pcb_port_364",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -27.7,
+        "x": -16.3,
+        "y": -13.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11855,8 +11855,8 @@
     "component": "C211",
     "pin": 2,
     "net": "GND",
-    "x": -18,
-    "y": -26.3,
+    "x": -17.7,
+    "y": -13.5,
     "layers": [
       "top"
     ],
@@ -11868,15 +11868,15 @@
         "pcb_port_id": "pcb_port_365",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -18,
-        "y": -26.3,
+        "x": -17.7,
+        "y": -13.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11886,8 +11886,8 @@
     "component": "C212",
     "pin": 1,
     "net": "VOUT_ADC",
-    "x": -15,
-    "y": -27.7,
+    "x": -16.3,
+    "y": -16.2,
     "layers": [
       "top"
     ],
@@ -11899,15 +11899,15 @@
         "pcb_port_id": "pcb_port_366",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -27.7,
+        "x": -16.3,
+        "y": -16.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11917,8 +11917,8 @@
     "component": "C212",
     "pin": 2,
     "net": "GND",
-    "x": -15,
-    "y": -26.3,
+    "x": -17.7,
+    "y": -16.2,
     "layers": [
       "top"
     ],
@@ -11930,15 +11930,15 @@
         "pcb_port_id": "pcb_port_367",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -15,
-        "y": -26.3,
+        "x": -17.7,
+        "y": -16.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11948,8 +11948,8 @@
     "component": "C213",
     "pin": 1,
     "net": "VBUS_TEC",
-    "x": 34,
-    "y": -11.565,
+    "x": 40.785000000000004,
+    "y": -12.35,
     "layers": [
       "top"
     ],
@@ -11961,15 +11961,15 @@
         "pcb_port_id": "pcb_port_368",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -11.565,
+        "x": 40.785000000000004,
+        "y": -12.35,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -11979,8 +11979,8 @@
     "component": "C213",
     "pin": 2,
     "net": "GND",
-    "x": 34,
-    "y": -8.435,
+    "x": 43.915,
+    "y": -12.35,
     "layers": [
       "top"
     ],
@@ -11992,15 +11992,15 @@
         "pcb_port_id": "pcb_port_369",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -8.435,
+        "x": 43.915,
+        "y": -12.35,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12010,8 +12010,8 @@
     "component": "C214",
     "pin": 1,
     "net": "FAN_BST",
-    "x": 37.3,
-    "y": -14,
+    "x": 35.4,
+    "y": -7.8999999999999995,
     "layers": [
       "top"
     ],
@@ -12023,15 +12023,15 @@
         "pcb_port_id": "pcb_port_370",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.9,
+        "width": 0.9,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 37.3,
-        "y": -14,
+        "x": 35.4,
+        "y": -7.8999999999999995,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12041,8 +12041,8 @@
     "component": "C214",
     "pin": 2,
     "net": "FAN_SW",
-    "x": 38.7,
-    "y": -14,
+    "x": 35.4,
+    "y": -9.299999999999999,
     "layers": [
       "top"
     ],
@@ -12054,15 +12054,15 @@
         "pcb_port_id": "pcb_port_371",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.9,
+        "width": 0.9,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 38.7,
-        "y": -14,
+        "x": 35.4,
+        "y": -9.299999999999999,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12072,8 +12072,8 @@
     "component": "C215",
     "pin": 1,
     "net": "V12_FAN",
-    "x": 43,
-    "y": -19.565,
+    "x": 45.7,
+    "y": -15.035000000000002,
     "layers": [
       "top"
     ],
@@ -12092,8 +12092,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 43,
-        "y": -19.565,
+        "x": 45.7,
+        "y": -15.035000000000002,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12103,8 +12103,8 @@
     "component": "C215",
     "pin": 2,
     "net": "GND",
-    "x": 43,
-    "y": -16.435,
+    "x": 45.7,
+    "y": -18.165000000000003,
     "layers": [
       "top"
     ],
@@ -12123,8 +12123,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 43,
-        "y": -16.435,
+        "x": 45.7,
+        "y": -18.165000000000003,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12196,8 +12196,8 @@
     "component": "C217",
     "pin": 1,
     "net": "V3V3",
-    "x": -12.25,
-    "y": -15.7,
+    "x": -11.925,
+    "y": -15.75,
     "layers": [
       "top"
     ],
@@ -12209,15 +12209,15 @@
         "pcb_port_id": "pcb_port_376",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -12.25,
-        "y": -15.7,
+        "x": -11.925,
+        "y": -15.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12227,8 +12227,8 @@
     "component": "C217",
     "pin": 2,
     "net": "GND",
-    "x": -12.25,
-    "y": -14.3,
+    "x": -13.325,
+    "y": -15.75,
     "layers": [
       "top"
     ],
@@ -12240,15 +12240,15 @@
         "pcb_port_id": "pcb_port_377",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -12.25,
-        "y": -14.3,
+        "x": -13.325,
+        "y": -15.75,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12258,8 +12258,8 @@
     "component": "C218",
     "pin": 1,
     "net": "V12_FAN",
-    "x": 48,
-    "y": -19.565,
+    "x": 51.825,
+    "y": -8.315,
     "layers": [
       "top"
     ],
@@ -12278,8 +12278,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 48,
-        "y": -19.565,
+        "x": 51.825,
+        "y": -8.315,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12289,8 +12289,8 @@
     "component": "C218",
     "pin": 2,
     "net": "GND",
-    "x": 48,
-    "y": -16.435,
+    "x": 51.825,
+    "y": -5.1850000000000005,
     "layers": [
       "top"
     ],
@@ -12309,8 +12309,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 48,
-        "y": -16.435,
+        "x": 51.825,
+        "y": -5.1850000000000005,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12320,8 +12320,8 @@
     "component": "C219",
     "pin": 1,
     "net": "VBUS_TEC",
-    "x": 34,
-    "y": -17.065,
+    "x": 38.935,
+    "y": -17.5,
     "layers": [
       "top"
     ],
@@ -12333,15 +12333,15 @@
         "pcb_port_id": "pcb_port_380",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -17.065,
+        "x": 38.935,
+        "y": -17.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12351,8 +12351,8 @@
     "component": "C219",
     "pin": 2,
     "net": "GND",
-    "x": 34,
-    "y": -13.935,
+    "x": 42.065,
+    "y": -17.5,
     "layers": [
       "top"
     ],
@@ -12364,15 +12364,15 @@
         "pcb_port_id": "pcb_port_381",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -13.935,
+        "x": 42.065,
+        "y": -17.5,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12382,8 +12382,8 @@
     "component": "C220",
     "pin": 1,
     "net": "VBUS_TEC",
-    "x": 34,
-    "y": -19.435,
+    "x": 38.935,
+    "y": -21,
     "layers": [
       "top"
     ],
@@ -12395,15 +12395,15 @@
         "pcb_port_id": "pcb_port_382",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -19.435,
+        "x": 38.935,
+        "y": -21,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12413,8 +12413,8 @@
     "component": "C220",
     "pin": 2,
     "net": "GND",
-    "x": 34,
-    "y": -22.565,
+    "x": 42.065,
+    "y": -21,
     "layers": [
       "top"
     ],
@@ -12426,15 +12426,15 @@
         "pcb_port_id": "pcb_port_383",
         "layer": "top",
         "shape": "rect",
-        "width": 2.75,
-        "height": 1.38,
+        "width": 1.38,
+        "height": 2.75,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 34,
-        "y": -22.565,
+        "x": 42.065,
+        "y": -21,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12444,8 +12444,8 @@
     "component": "C221",
     "pin": 1,
     "net": "V12_FAN",
-    "x": 47.72,
-    "y": -23,
+    "x": 38.75,
+    "y": -5.08,
     "layers": [
       "top"
     ],
@@ -12457,15 +12457,15 @@
         "pcb_port_id": "pcb_port_384",
         "layer": "top",
         "shape": "rect",
-        "width": 0.76,
-        "height": 0.85,
+        "width": 0.85,
+        "height": 0.76,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 47.72,
-        "y": -23,
+        "x": 38.75,
+        "y": -5.08,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12475,8 +12475,8 @@
     "component": "C221",
     "pin": 2,
     "net": "FAN_FB",
-    "x": 46.28,
-    "y": -23,
+    "x": 38.75,
+    "y": -6.52,
     "layers": [
       "top"
     ],
@@ -12488,15 +12488,15 @@
         "pcb_port_id": "pcb_port_385",
         "layer": "top",
         "shape": "rect",
-        "width": 0.76,
-        "height": 0.85,
+        "width": 0.85,
+        "height": 0.76,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 46.28,
-        "y": -23,
+        "x": 38.75,
+        "y": -6.52,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12506,8 +12506,8 @@
     "component": "C222",
     "pin": 1,
     "net": "V3V3",
-    "x": -11,
-    "y": -7.3,
+    "x": -8,
+    "y": -5.2,
     "layers": [
       "top"
     ],
@@ -12526,8 +12526,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -11,
-        "y": -7.3,
+        "x": -8,
+        "y": -5.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12537,8 +12537,8 @@
     "component": "C222",
     "pin": 2,
     "net": "GND",
-    "x": -11,
-    "y": -8.7,
+    "x": -8,
+    "y": -3.8,
     "layers": [
       "top"
     ],
@@ -12557,8 +12557,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -11,
-        "y": -8.7,
+        "x": -8,
+        "y": -3.8,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12568,8 +12568,8 @@
     "component": "C223",
     "pin": 1,
     "net": "V3V3",
-    "x": -3,
-    "y": -7.3,
+    "x": -4.286263797015736e-17,
+    "y": -5.2,
     "layers": [
       "top"
     ],
@@ -12588,8 +12588,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -3,
-        "y": -7.3,
+        "x": -4.286263797015736e-17,
+        "y": -5.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -12599,8 +12599,8 @@
     "component": "C223",
     "pin": 2,
     "net": "GND",
-    "x": -3,
-    "y": -8.7,
+    "x": 4.286263797015736e-17,
+    "y": -3.8,
     "layers": [
       "top"
     ],
@@ -12619,8 +12619,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -3,
-        "y": -8.7,
+        "x": 4.286263797015736e-17,
+        "y": -3.8,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -14026,8 +14026,8 @@
     "component": "C_DBG1",
     "pin": 1,
     "net": "V3V3",
-    "x": 28,
-    "y": 36.7,
+    "x": 32,
+    "y": 38.849999999999994,
     "layers": [
       "top"
     ],
@@ -14046,8 +14046,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28,
-        "y": 36.7,
+        "x": 32,
+        "y": 38.849999999999994,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -14057,8 +14057,8 @@
     "component": "C_DBG1",
     "pin": 2,
     "net": "GND",
-    "x": 28,
-    "y": 35.3,
+    "x": 32,
+    "y": 40.25,
     "layers": [
       "top"
     ],
@@ -14077,8 +14077,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 28,
-        "y": 35.3,
+        "x": 32,
+        "y": 40.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -14088,8 +14088,8 @@
     "component": "C_DBG2",
     "pin": 1,
     "net": "V3V3",
-    "x": 44,
-    "y": 36.7,
+    "x": 41,
+    "y": 38.849999999999994,
     "layers": [
       "top"
     ],
@@ -14108,8 +14108,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 44,
-        "y": 36.7,
+        "x": 41,
+        "y": 38.849999999999994,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -14119,8 +14119,8 @@
     "component": "C_DBG2",
     "pin": 2,
     "net": "GND",
-    "x": 44,
-    "y": 35.3,
+    "x": 41,
+    "y": 40.25,
     "layers": [
       "top"
     ],
@@ -14139,8 +14139,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 44,
-        "y": 35.3,
+        "x": 41,
+        "y": 40.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -14643,8 +14643,8 @@
     "component": "TP18",
     "pin": 1,
     "net": "FAN_TACH_MCU",
-    "x": 42.75,
-    "y": -3,
+    "x": 39.9,
+    "y": -2.1,
     "layers": [
       "top"
     ],
@@ -14661,8 +14661,8 @@
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
-        "x": 42.75,
-        "y": -3,
+        "x": 39.9,
+        "y": -2.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -15954,8 +15954,8 @@
     "component": "C_CH_VDD",
     "pin": 1,
     "net": "PD_VDD",
-    "x": -42.5,
-    "y": 23.25,
+    "x": -41.5,
+    "y": 20.4,
     "layers": [
       "top"
     ],
@@ -15967,15 +15967,15 @@
         "pcb_port_id": "pcb_port_495",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -42.5,
-        "y": 23.25,
+        "x": -41.5,
+        "y": 20.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -15985,8 +15985,8 @@
     "component": "C_CH_VDD",
     "pin": 2,
     "net": "GND",
-    "x": -42.5,
-    "y": 24.75,
+    "x": -43,
+    "y": 20.4,
     "layers": [
       "top"
     ],
@@ -15998,15 +15998,15 @@
         "pcb_port_id": "pcb_port_496",
         "layer": "top",
         "shape": "rect",
-        "width": 0.9,
-        "height": 0.8,
+        "width": 0.8,
+        "height": 0.9,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -42.5,
-        "y": 24.75,
+        "x": -43,
+        "y": 20.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -16844,8 +16844,8 @@
     "component": "R_UV_TOP",
     "pin": 1,
     "net": "V3V3",
-    "x": -40.75,
-    "y": 8,
+    "x": -42.75,
+    "y": 8.45,
     "layers": [
       "top"
     ],
@@ -16864,8 +16864,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -40.75,
-        "y": 8,
+        "x": -42.75,
+        "y": 8.45,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -16875,8 +16875,8 @@
     "component": "R_UV_TOP",
     "pin": 2,
     "net": "PD_UV_REF",
-    "x": -39.25,
-    "y": 8,
+    "x": -41.25,
+    "y": 8.45,
     "layers": [
       "top"
     ],
@@ -16895,8 +16895,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -39.25,
-        "y": 8,
+        "x": -41.25,
+        "y": 8.45,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -17155,7 +17155,7 @@
     "pin": 1,
     "net": "PD_VDD",
     "x": -43.75,
-    "y": 19,
+    "y": 18.7,
     "layers": [
       "top"
     ],
@@ -17175,7 +17175,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": -43.75,
-        "y": 19,
+        "y": 18.7,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -17186,7 +17186,7 @@
     "pin": 2,
     "net": "PD_PG_N",
     "x": -42.25,
-    "y": 19,
+    "y": 18.7,
     "layers": [
       "top"
     ],
@@ -17206,7 +17206,7 @@
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
         "x": -42.25,
-        "y": 19,
+        "y": 18.7,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -17433,8 +17433,8 @@
     "component": "C_PD_WINDOW",
     "pin": 1,
     "net": "V3V3",
-    "x": -41.75,
-    "y": 10.25,
+    "x": -39.25,
+    "y": 8.55,
     "layers": [
       "top"
     ],
@@ -17453,8 +17453,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -41.75,
-        "y": 10.25,
+        "x": -39.25,
+        "y": 8.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -17464,8 +17464,8 @@
     "component": "C_PD_WINDOW",
     "pin": 2,
     "net": "GND",
-    "x": -41.75,
-    "y": 11.75,
+    "x": -39.25,
+    "y": 7.05,
     "layers": [
       "top"
     ],
@@ -17484,8 +17484,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -41.75,
-        "y": 11.75,
+        "x": -39.25,
+        "y": 7.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20377,8 +20377,8 @@
     "component": "U_FLASH",
     "pin": 1,
     "net": "FLASH_CS",
-    "x": -30.750062,
-    "y": -11.50749,
+    "x": -29.600062,
+    "y": -12.807490000000001,
     "layers": [
       "top"
     ],
@@ -20396,8 +20396,8 @@
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -30.750062,
-        "y": -11.50749,
+        "x": -29.600062,
+        "y": -12.807490000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20407,8 +20407,8 @@
     "component": "U_FLASH",
     "pin": 2,
     "net": "FLASH_SD1",
-    "x": -30.249936,
-    "y": -11.50749,
+    "x": -29.099936000000003,
+    "y": -12.807490000000001,
     "layers": [
       "top"
     ],
@@ -20426,8 +20426,8 @@
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -30.249936,
-        "y": -11.50749,
+        "x": -29.099936000000003,
+        "y": -12.807490000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20437,8 +20437,8 @@
     "component": "U_FLASH",
     "pin": 3,
     "net": "FLASH_SD2",
-    "x": -29.750064,
-    "y": -11.50749,
+    "x": -28.600064,
+    "y": -12.807490000000001,
     "layers": [
       "top"
     ],
@@ -20456,8 +20456,8 @@
           "pin3"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -29.750064,
-        "y": -11.50749,
+        "x": -28.600064,
+        "y": -12.807490000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20467,8 +20467,8 @@
     "component": "U_FLASH",
     "pin": 4,
     "net": "GND",
-    "x": -29.249938,
-    "y": -11.50749,
+    "x": -28.099938,
+    "y": -12.807490000000001,
     "layers": [
       "top"
     ],
@@ -20486,8 +20486,8 @@
           "pin4"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -29.249938,
-        "y": -11.50749,
+        "x": -28.099938,
+        "y": -12.807490000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20497,8 +20497,8 @@
     "component": "U_FLASH",
     "pin": 5,
     "net": "FLASH_SD0",
-    "x": -29.249938,
-    "y": -8.49251,
+    "x": -28.099938,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20516,8 +20516,8 @@
           "pin5"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -29.249938,
-        "y": -8.49251,
+        "x": -28.099938,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20527,8 +20527,8 @@
     "component": "U_FLASH",
     "pin": 6,
     "net": "FLASH_SCLK",
-    "x": -29.750064,
-    "y": -8.49251,
+    "x": -28.600064,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20546,8 +20546,8 @@
           "pin6"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -29.750064,
-        "y": -8.49251,
+        "x": -28.600064,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20557,8 +20557,8 @@
     "component": "U_FLASH",
     "pin": 7,
     "net": "FLASH_SD3",
-    "x": -30.249936,
-    "y": -8.49251,
+    "x": -29.099936000000003,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20576,8 +20576,8 @@
           "pin7"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -30.249936,
-        "y": -8.49251,
+        "x": -29.099936000000003,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20587,8 +20587,8 @@
     "component": "U_FLASH",
     "pin": 8,
     "net": "V3V3",
-    "x": -30.750062,
-    "y": -8.49251,
+    "x": -29.600062,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20606,8 +20606,8 @@
           "pin8"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -30.750062,
-        "y": -8.49251,
+        "x": -29.600062,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20617,8 +20617,8 @@
     "component": "U_FLASH",
     "pin": 9,
     "net": "GND",
-    "x": -30,
-    "y": -10,
+    "x": -28.85,
+    "y": -11.3,
     "layers": [
       "top"
     ],
@@ -20636,8 +20636,8 @@
           "pin9"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -30,
-        "y": -10,
+        "x": -28.85,
+        "y": -11.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20647,8 +20647,8 @@
     "component": "C_FLASH",
     "pin": 1,
     "net": "V3V3",
-    "x": -33,
-    "y": -10.45,
+    "x": -30.75,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20660,15 +20660,15 @@
         "pcb_port_id": "pcb_port_655",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -33,
-        "y": -10.45,
+        "x": -30.75,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20678,8 +20678,8 @@
     "component": "C_FLASH",
     "pin": 2,
     "net": "GND",
-    "x": -33,
-    "y": -9.55,
+    "x": -31.65,
+    "y": -9.79251,
     "layers": [
       "top"
     ],
@@ -20691,15 +20691,15 @@
         "pcb_port_id": "pcb_port_656",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -33,
-        "y": -9.55,
+        "x": -31.65,
+        "y": -9.79251,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20709,8 +20709,8 @@
     "component": "R_FLASH_CS",
     "pin": 1,
     "net": "V3V3",
-    "x": -34.45,
-    "y": -13.25,
+    "x": -31.95,
+    "y": -12.80749,
     "layers": [
       "top"
     ],
@@ -20729,8 +20729,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -34.45,
-        "y": -13.25,
+        "x": -31.95,
+        "y": -12.80749,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20740,8 +20740,8 @@
     "component": "R_FLASH_CS",
     "pin": 2,
     "net": "FLASH_CS",
-    "x": -33.55,
-    "y": -13.25,
+    "x": -31.05,
+    "y": -12.80749,
     "layers": [
       "top"
     ],
@@ -20760,8 +20760,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -33.55,
-        "y": -13.25,
+        "x": -31.05,
+        "y": -12.80749,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20772,7 +20772,7 @@
     "pin": 1,
     "net": "XIN",
     "x": -31.100074,
-    "y": -29.850011,
+    "y": -30.050010999999998,
     "layers": [
       "top"
     ],
@@ -20791,7 +20791,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "x": -31.100074,
-        "y": -29.850011,
+        "y": -30.050010999999998,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20802,7 +20802,7 @@
     "pin": 3,
     "net": "XOUT_CRYSTAL",
     "x": -28.899926,
-    "y": -28.149989,
+    "y": -28.349989,
     "layers": [
       "top"
     ],
@@ -20821,7 +20821,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "x": -28.899926,
-        "y": -28.149989,
+        "y": -28.349989,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20832,7 +20832,7 @@
     "pin": 4,
     "net": "GND",
     "x": -31.100074,
-    "y": -28.149989,
+    "y": -28.349989,
     "layers": [
       "top"
     ],
@@ -20851,7 +20851,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "x": -31.100074,
-        "y": -28.149989,
+        "y": -28.349989,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20862,7 +20862,7 @@
     "pin": 2,
     "net": "GND",
     "x": -28.899926,
-    "y": -29.850011,
+    "y": -30.050010999999998,
     "layers": [
       "top"
     ],
@@ -20881,7 +20881,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "x": -28.899926,
-        "y": -29.850011,
+        "y": -30.050010999999998,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20891,8 +20891,8 @@
     "component": "R_XOUT",
     "pin": 1,
     "net": "XOUT",
-    "x": -30.45,
-    "y": -26,
+    "x": -27.349999999999998,
+    "y": -28.1,
     "layers": [
       "top"
     ],
@@ -20911,8 +20911,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -30.45,
-        "y": -26,
+        "x": -27.349999999999998,
+        "y": -28.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20922,8 +20922,8 @@
     "component": "R_XOUT",
     "pin": 2,
     "net": "XOUT_CRYSTAL",
-    "x": -29.55,
-    "y": -26,
+    "x": -26.45,
+    "y": -28.1,
     "layers": [
       "top"
     ],
@@ -20942,8 +20942,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -29.55,
-        "y": -26,
+        "x": -26.45,
+        "y": -28.1,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20953,8 +20953,8 @@
     "component": "C_XIN",
     "pin": 1,
     "net": "XIN",
-    "x": -33.95,
-    "y": -28,
+    "x": -32.65,
+    "y": -30.05,
     "layers": [
       "top"
     ],
@@ -20973,8 +20973,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -33.95,
-        "y": -28,
+        "x": -32.65,
+        "y": -30.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -20984,8 +20984,8 @@
     "component": "C_XIN",
     "pin": 2,
     "net": "GND",
-    "x": -33.05,
-    "y": -28,
+    "x": -33.550000000000004,
+    "y": -30.05,
     "layers": [
       "top"
     ],
@@ -21004,8 +21004,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -33.05,
-        "y": -28,
+        "x": -33.550000000000004,
+        "y": -30.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21015,8 +21015,8 @@
     "component": "C_XOUT",
     "pin": 1,
     "net": "XOUT_CRYSTAL",
-    "x": -26.95,
-    "y": -29,
+    "x": -27.349999999999998,
+    "y": -29.4,
     "layers": [
       "top"
     ],
@@ -21035,8 +21035,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -26.95,
-        "y": -29,
+        "x": -27.349999999999998,
+        "y": -29.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21046,8 +21046,8 @@
     "component": "C_XOUT",
     "pin": 2,
     "net": "GND",
-    "x": -26.05,
-    "y": -29,
+    "x": -26.45,
+    "y": -29.4,
     "layers": [
       "top"
     ],
@@ -21066,8 +21066,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -26.05,
-        "y": -29,
+        "x": -26.45,
+        "y": -29.4,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21077,7 +21077,7 @@
     "component": "C_IO1",
     "pin": 1,
     "net": "V3V3",
-    "x": -30,
+    "x": -32,
     "y": -15.95,
     "layers": [
       "top"
@@ -21097,7 +21097,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -30,
+        "x": -32,
         "y": -15.95,
         "subcircuit_id": "subcircuit_source_group_1"
       }
@@ -21108,7 +21108,7 @@
     "component": "C_IO1",
     "pin": 2,
     "net": "GND",
-    "x": -30,
+    "x": -32,
     "y": -15.05,
     "layers": [
       "top"
@@ -21128,7 +21128,7 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -30,
+        "x": -32,
         "y": -15.05,
         "subcircuit_id": "subcircuit_source_group_1"
       }
@@ -21139,8 +21139,8 @@
     "component": "C_IO2",
     "pin": 1,
     "net": "V3V3",
-    "x": -21.5,
-    "y": -19.45,
+    "x": -22.349999999999998,
+    "y": -18.399929,
     "layers": [
       "top"
     ],
@@ -21152,15 +21152,15 @@
         "pcb_port_id": "pcb_port_671",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.5,
-        "y": -19.45,
+        "x": -22.349999999999998,
+        "y": -18.399929,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21170,8 +21170,8 @@
     "component": "C_IO2",
     "pin": 2,
     "net": "GND",
-    "x": -21.5,
-    "y": -18.55,
+    "x": -21.45,
+    "y": -18.399929,
     "layers": [
       "top"
     ],
@@ -21183,15 +21183,15 @@
         "pcb_port_id": "pcb_port_672",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.5,
-        "y": -18.55,
+        "x": -21.45,
+        "y": -18.399929,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21201,8 +21201,8 @@
     "component": "C_IO3",
     "pin": 1,
     "net": "V3V3",
-    "x": -21.5,
-    "y": -23.45,
+    "x": -22.349999999999998,
+    "y": -21.999871,
     "layers": [
       "top"
     ],
@@ -21214,15 +21214,15 @@
         "pcb_port_id": "pcb_port_673",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.5,
-        "y": -23.45,
+        "x": -22.349999999999998,
+        "y": -21.999871,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21232,8 +21232,8 @@
     "component": "C_IO3",
     "pin": 2,
     "net": "GND",
-    "x": -21.5,
-    "y": -22.55,
+    "x": -21.45,
+    "y": -21.999871,
     "layers": [
       "top"
     ],
@@ -21245,15 +21245,15 @@
         "pcb_port_id": "pcb_port_674",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.5,
-        "y": -22.55,
+        "x": -21.45,
+        "y": -21.999871,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21263,8 +21263,8 @@
     "component": "C_IO4",
     "pin": 1,
     "net": "V3V3",
-    "x": -32.25,
-    "y": -26.45,
+    "x": -27.1,
+    "y": -25.650000000000002,
     "layers": [
       "top"
     ],
@@ -21283,8 +21283,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.25,
-        "y": -26.45,
+        "x": -27.1,
+        "y": -25.650000000000002,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21294,8 +21294,8 @@
     "component": "C_IO4",
     "pin": 2,
     "net": "GND",
-    "x": -32.25,
-    "y": -25.55,
+    "x": -27.1,
+    "y": -26.55,
     "layers": [
       "top"
     ],
@@ -21314,8 +21314,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.25,
-        "y": -25.55,
+        "x": -27.1,
+        "y": -26.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21325,8 +21325,8 @@
     "component": "C_IO5",
     "pin": 1,
     "net": "V3V3",
-    "x": -32.75,
-    "y": -23.45,
+    "x": -31.978008,
+    "y": -21.999871,
     "layers": [
       "top"
     ],
@@ -21338,15 +21338,15 @@
         "pcb_port_id": "pcb_port_677",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.75,
-        "y": -23.45,
+        "x": -31.978008,
+        "y": -21.999871,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21356,8 +21356,8 @@
     "component": "C_IO5",
     "pin": 2,
     "net": "GND",
-    "x": -32.75,
-    "y": -22.55,
+    "x": -32.878008,
+    "y": -21.999871,
     "layers": [
       "top"
     ],
@@ -21369,15 +21369,15 @@
         "pcb_port_id": "pcb_port_678",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.75,
-        "y": -22.55,
+        "x": -32.878008,
+        "y": -21.999871,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21387,8 +21387,8 @@
     "component": "C_IO6",
     "pin": 1,
     "net": "V3V3",
-    "x": -32.75,
-    "y": -18.2,
+    "x": -31.978008,
+    "y": -18.399929,
     "layers": [
       "top"
     ],
@@ -21400,15 +21400,15 @@
         "pcb_port_id": "pcb_port_679",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.75,
-        "y": -18.2,
+        "x": -31.978008,
+        "y": -18.399929,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21418,8 +21418,8 @@
     "component": "C_IO6",
     "pin": 2,
     "net": "GND",
-    "x": -32.75,
-    "y": -17.3,
+    "x": -32.878008,
+    "y": -18.399929,
     "layers": [
       "top"
     ],
@@ -21431,15 +21431,15 @@
         "pcb_port_id": "pcb_port_680",
         "layer": "top",
         "shape": "rect",
-        "width": 0.6,
-        "height": 0.5,
+        "width": 0.5,
+        "height": 0.6,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -32.75,
-        "y": -17.3,
+        "x": -32.878008,
+        "y": -18.399929,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21449,8 +21449,8 @@
     "component": "C_USB_VDD",
     "pin": 1,
     "net": "V3V3",
-    "x": -26.5,
-    "y": -15.95,
+    "x": -26.65,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21469,8 +21469,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -26.5,
-        "y": -15.95,
+        "x": -26.65,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21480,8 +21480,8 @@
     "component": "C_USB_VDD",
     "pin": 2,
     "net": "GND",
-    "x": -26.5,
-    "y": -15.05,
+    "x": -26.65,
+    "y": -15.350000000000001,
     "layers": [
       "top"
     ],
@@ -21500,8 +21500,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -26.5,
-        "y": -15.05,
+        "x": -26.65,
+        "y": -15.350000000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21511,8 +21511,8 @@
     "component": "C_VREG_IN",
     "pin": 1,
     "net": "V3V3",
-    "x": -22,
-    "y": -16.2,
+    "x": -23.7,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21531,8 +21531,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -22,
-        "y": -16.2,
+        "x": -23.7,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21542,8 +21542,8 @@
     "component": "C_VREG_IN",
     "pin": 2,
     "net": "GND",
-    "x": -22,
-    "y": -15.3,
+    "x": -23.7,
+    "y": -15.350000000000001,
     "layers": [
       "top"
     ],
@@ -21562,8 +21562,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -22,
-        "y": -15.3,
+        "x": -23.7,
+        "y": -15.350000000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21573,8 +21573,8 @@
     "component": "C_VREG_OUT",
     "pin": 1,
     "net": "V1V1",
-    "x": -24.25,
-    "y": -15.95,
+    "x": -24.9,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21593,8 +21593,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -24.25,
-        "y": -15.95,
+        "x": -24.9,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21604,8 +21604,8 @@
     "component": "C_VREG_OUT",
     "pin": 2,
     "net": "GND",
-    "x": -24.25,
-    "y": -15.05,
+    "x": -24.9,
+    "y": -15.350000000000001,
     "layers": [
       "top"
     ],
@@ -21624,8 +21624,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -24.25,
-        "y": -15.05,
+        "x": -24.9,
+        "y": -15.350000000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21635,8 +21635,8 @@
     "component": "C_DVDD1",
     "pin": 1,
     "net": "V1V1",
-    "x": -28,
-    "y": -14.45,
+    "x": -27.85,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21655,8 +21655,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -28,
-        "y": -14.45,
+        "x": -27.85,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21666,8 +21666,8 @@
     "component": "C_DVDD1",
     "pin": 2,
     "net": "GND",
-    "x": -28,
-    "y": -13.55,
+    "x": -27.85,
+    "y": -15.350000000000001,
     "layers": [
       "top"
     ],
@@ -21686,8 +21686,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -28,
-        "y": -13.55,
+        "x": -27.85,
+        "y": -15.350000000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21697,8 +21697,8 @@
     "component": "C_DVDD2",
     "pin": 1,
     "net": "V1V1",
-    "x": -27,
-    "y": -26.95,
+    "x": -25.9,
+    "y": -25.650000000000002,
     "layers": [
       "top"
     ],
@@ -21717,8 +21717,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -27,
-        "y": -26.95,
+        "x": -25.9,
+        "y": -25.650000000000002,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21728,8 +21728,8 @@
     "component": "C_DVDD2",
     "pin": 2,
     "net": "GND",
-    "x": -27,
-    "y": -26.05,
+    "x": -25.9,
+    "y": -26.55,
     "layers": [
       "top"
     ],
@@ -21748,8 +21748,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -27,
-        "y": -26.05,
+        "x": -25.9,
+        "y": -26.55,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21759,8 +21759,8 @@
     "component": "C_ADC_AVDD",
     "pin": 1,
     "net": "ADC_AVDD",
-    "x": -21.25,
-    "y": -13.05,
+    "x": -22.5,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21779,8 +21779,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.25,
-        "y": -13.05,
+        "x": -22.5,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21790,8 +21790,8 @@
     "component": "C_ADC_AVDD",
     "pin": 2,
     "net": "GND",
-    "x": -21.25,
-    "y": -13.95,
+    "x": -22.5,
+    "y": -15.350000000000001,
     "layers": [
       "top"
     ],
@@ -21810,8 +21810,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.25,
-        "y": -13.95,
+        "x": -22.5,
+        "y": -15.350000000000001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21883,8 +21883,8 @@
     "component": "R_ADC_SUPPLY",
     "pin": 1,
     "net": "V3V3",
-    "x": -21.45,
-    "y": -11.75,
+    "x": -20.400000000000002,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21903,8 +21903,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -21.45,
-        "y": -11.75,
+        "x": -20.400000000000002,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21914,8 +21914,8 @@
     "component": "R_ADC_SUPPLY",
     "pin": 2,
     "net": "ADC_AVDD",
-    "x": -20.55,
-    "y": -11.75,
+    "x": -21.3,
+    "y": -16.25,
     "layers": [
       "top"
     ],
@@ -21934,8 +21934,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -20.55,
-        "y": -11.75,
+        "x": -21.3,
+        "y": -16.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21945,8 +21945,8 @@
     "component": "R_RESET_PU",
     "pin": 1,
     "net": "V3V3",
-    "x": -24.45,
-    "y": -27,
+    "x": -23.45,
+    "y": -28,
     "layers": [
       "top"
     ],
@@ -21965,8 +21965,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -24.45,
-        "y": -27,
+        "x": -23.45,
+        "y": -28,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -21976,8 +21976,8 @@
     "component": "R_RESET_PU",
     "pin": 2,
     "net": "MCU_NRST",
-    "x": -23.55,
-    "y": -27,
+    "x": -22.55,
+    "y": -28,
     "layers": [
       "top"
     ],
@@ -21996,8 +21996,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -23.55,
-        "y": -27,
+        "x": -22.55,
+        "y": -28,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22007,8 +22007,8 @@
     "component": "R_BOOT",
     "pin": 1,
     "net": "FLASH_CS",
-    "x": -34.8,
-    "y": -11.75,
+    "x": -33.25,
+    "y": -12.80749,
     "layers": [
       "top"
     ],
@@ -22027,8 +22027,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -34.8,
-        "y": -11.75,
+        "x": -33.25,
+        "y": -12.80749,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22038,8 +22038,8 @@
     "component": "R_BOOT",
     "pin": 2,
     "net": "BOOT_BUTTON",
-    "x": -35.7,
-    "y": -11.75,
+    "x": -34.150000000000006,
+    "y": -12.80749,
     "layers": [
       "top"
     ],
@@ -22058,8 +22058,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -35.7,
-        "y": -11.75,
+        "x": -34.150000000000006,
+        "y": -12.80749,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22375,8 +22375,8 @@
     "component": "R_USB_DP",
     "pin": 1,
     "net": "USB_DP_SWITCH",
-    "x": -25.75,
-    "y": -13.7,
+    "x": -26.75,
+    "y": -12.8,
     "layers": [
       "top"
     ],
@@ -22395,8 +22395,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -25.75,
-        "y": -13.7,
+        "x": -26.75,
+        "y": -12.8,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22406,8 +22406,8 @@
     "component": "R_USB_DP",
     "pin": 2,
     "net": "USB_DP_MCU",
-    "x": -25.75,
-    "y": -12.8,
+    "x": -26.75,
+    "y": -13.7,
     "layers": [
       "top"
     ],
@@ -22426,8 +22426,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -25.75,
-        "y": -12.8,
+        "x": -26.75,
+        "y": -13.7,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22437,8 +22437,8 @@
     "component": "R_USB_DM",
     "pin": 1,
     "net": "USB_DM_SWITCH",
-    "x": -23.5,
-    "y": -13.7,
+    "x": -25.4,
+    "y": -12.8,
     "layers": [
       "top"
     ],
@@ -22457,8 +22457,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -23.5,
-        "y": -13.7,
+        "x": -25.4,
+        "y": -12.8,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22468,8 +22468,8 @@
     "component": "R_USB_DM",
     "pin": 2,
     "net": "USB_DM_MCU",
-    "x": -23.5,
-    "y": -12.8,
+    "x": -25.4,
+    "y": -13.7,
     "layers": [
       "top"
     ],
@@ -22488,8 +22488,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -23.5,
-        "y": -12.8,
+        "x": -25.4,
+        "y": -13.7,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22590,8 +22590,8 @@
     "component": "U_USB_SWITCH",
     "pin": 1,
     "net": "USB_DP_SWITCH",
-    "x": -35.750062,
-    "y": -20.675132,
+    "x": -35.324868,
+    "y": -19.750062,
     "layers": [
       "top"
     ],
@@ -22603,14 +22603,14 @@
         "pcb_port_id": "pcb_port_718",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -35.750062,
-        "y": -20.675132,
+        "x": -35.324868,
+        "y": -19.750062,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22620,8 +22620,8 @@
     "component": "U_USB_SWITCH",
     "pin": 2,
     "net": "USB_DM_SWITCH",
-    "x": -35.249936,
-    "y": -20.675132,
+    "x": -35.324868,
+    "y": -19.249936,
     "layers": [
       "top"
     ],
@@ -22633,14 +22633,14 @@
         "pcb_port_id": "pcb_port_719",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -35.249936,
-        "y": -20.675132,
+        "x": -35.324868,
+        "y": -19.249936,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22650,8 +22650,8 @@
     "component": "U_USB_SWITCH",
     "pin": 5,
     "net": "GND",
-    "x": -34.1400068,
-    "y": -20,
+    "x": -36,
+    "y": -18.1400068,
     "layers": [
       "top"
     ],
@@ -22663,14 +22663,14 @@
         "pcb_port_id": "pcb_port_722",
         "layer": "top",
         "shape": "rect",
-        "width": 0.580009,
-        "height": 0.2999994,
+        "width": 0.2999994,
+        "height": 0.580009,
         "port_hints": [
           "pin5"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -34.1400068,
-        "y": -20,
+        "x": -36,
+        "y": -18.1400068,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22680,8 +22680,8 @@
     "component": "U_USB_SWITCH",
     "pin": 6,
     "net": "USB_DATA_DISABLE",
-    "x": -34.249938,
-    "y": -19.324868,
+    "x": -36.675132,
+    "y": -18.249938,
     "layers": [
       "top"
     ],
@@ -22693,14 +22693,14 @@
         "pcb_port_id": "pcb_port_723",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin6"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -34.249938,
-        "y": -19.324868,
+        "x": -36.675132,
+        "y": -18.249938,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22710,8 +22710,8 @@
     "component": "U_USB_SWITCH",
     "pin": 7,
     "net": "USB_DM_PORT",
-    "x": -34.750064,
-    "y": -19.324868,
+    "x": -36.675132,
+    "y": -18.750064,
     "layers": [
       "top"
     ],
@@ -22723,14 +22723,14 @@
         "pcb_port_id": "pcb_port_724",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin7"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -34.750064,
-        "y": -19.324868,
+        "x": -36.675132,
+        "y": -18.750064,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22740,8 +22740,8 @@
     "component": "U_USB_SWITCH",
     "pin": 8,
     "net": "USB_DP_PORT",
-    "x": -35.249936,
-    "y": -19.324868,
+    "x": -36.675132,
+    "y": -19.249936,
     "layers": [
       "top"
     ],
@@ -22753,14 +22753,14 @@
         "pcb_port_id": "pcb_port_725",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin8"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -35.249936,
-        "y": -19.324868,
+        "x": -36.675132,
+        "y": -19.249936,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22770,8 +22770,8 @@
     "component": "U_USB_SWITCH",
     "pin": 9,
     "net": "GND",
-    "x": -35.750062,
-    "y": -19.324868,
+    "x": -36.675132,
+    "y": -19.750062,
     "layers": [
       "top"
     ],
@@ -22783,14 +22783,14 @@
         "pcb_port_id": "pcb_port_726",
         "layer": "top",
         "shape": "rect",
-        "width": 0.2500122,
-        "height": 0.5249926,
+        "width": 0.5249926,
+        "height": 0.2500122,
         "port_hints": [
           "pin9"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -35.750062,
-        "y": -19.324868,
+        "x": -36.675132,
+        "y": -19.750062,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22800,8 +22800,8 @@
     "component": "U_USB_SWITCH",
     "pin": 10,
     "net": "V3V3",
-    "x": -35.8599932,
-    "y": -20,
+    "x": -36,
+    "y": -19.8599932,
     "layers": [
       "top"
     ],
@@ -22813,14 +22813,14 @@
         "pcb_port_id": "pcb_port_727",
         "layer": "top",
         "shape": "rect",
-        "width": 0.580009,
-        "height": 0.2999994,
+        "width": 0.2999994,
+        "height": 0.580009,
         "port_hints": [
           "pin10"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -35.8599932,
-        "y": -20,
+        "x": -36,
+        "y": -19.8599932,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22830,8 +22830,8 @@
     "component": "U_USB_ESD",
     "pin": 1,
     "net": "USB_DP_PORT",
-    "x": -43.94996,
-    "y": -23.149096,
+    "x": -42.850904,
+    "y": -19.94996,
     "layers": [
       "top"
     ],
@@ -22843,14 +22843,14 @@
         "pcb_port_id": "pcb_port_728",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -43.94996,
-        "y": -23.149096,
+        "x": -42.850904,
+        "y": -19.94996,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22860,8 +22860,8 @@
     "component": "U_USB_ESD",
     "pin": 2,
     "net": "GND",
-    "x": -43,
-    "y": -23.149096,
+    "x": -42.850904,
+    "y": -19,
     "layers": [
       "top"
     ],
@@ -22873,14 +22873,14 @@
         "pcb_port_id": "pcb_port_729",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -43,
-        "y": -23.149096,
+        "x": -42.850904,
+        "y": -19,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22890,8 +22890,8 @@
     "component": "U_USB_ESD",
     "pin": 3,
     "net": "USB_DM_PORT",
-    "x": -42.05004,
-    "y": -23.149096,
+    "x": -42.850904,
+    "y": -18.05004,
     "layers": [
       "top"
     ],
@@ -22903,14 +22903,14 @@
         "pcb_port_id": "pcb_port_730",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin3"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -42.05004,
-        "y": -23.149096,
+        "x": -42.850904,
+        "y": -18.05004,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22920,8 +22920,8 @@
     "component": "U_USB_ESD",
     "pin": 4,
     "net": "USB_DM_PORT",
-    "x": -42.05004,
-    "y": -20.850904,
+    "x": -45.149096,
+    "y": -18.05004,
     "layers": [
       "top"
     ],
@@ -22933,14 +22933,14 @@
         "pcb_port_id": "pcb_port_731",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin4"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -42.05004,
-        "y": -20.850904,
+        "x": -45.149096,
+        "y": -18.05004,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22950,8 +22950,8 @@
     "component": "U_USB_ESD",
     "pin": 5,
     "net": "USB_PROG_5V",
-    "x": -43,
-    "y": -20.850904,
+    "x": -45.149096,
+    "y": -19,
     "layers": [
       "top"
     ],
@@ -22963,14 +22963,14 @@
         "pcb_port_id": "pcb_port_732",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin5"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -43,
-        "y": -20.850904,
+        "x": -45.149096,
+        "y": -19,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -22980,8 +22980,8 @@
     "component": "U_USB_ESD",
     "pin": 6,
     "net": "USB_DP_PORT",
-    "x": -43.94996,
-    "y": -20.850904,
+    "x": -45.149096,
+    "y": -19.94996,
     "layers": [
       "top"
     ],
@@ -22993,14 +22993,14 @@
         "pcb_port_id": "pcb_port_733",
         "layer": "top",
         "shape": "rect",
-        "width": 0.532003,
-        "height": 1.072007,
+        "width": 1.072007,
+        "height": 0.532003,
         "port_hints": [
           "pin6"
         ],
         "is_covered_with_solder_mask": false,
-        "x": -43.94996,
-        "y": -20.850904,
+        "x": -45.149096,
+        "y": -19.94996,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23010,8 +23010,8 @@
     "component": "C_USB_SWITCH",
     "pin": 1,
     "net": "V3V3",
-    "x": -35.45,
-    "y": -22.5,
+    "x": -36.45,
+    "y": -21.3,
     "layers": [
       "top"
     ],
@@ -23030,8 +23030,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -35.45,
-        "y": -22.5,
+        "x": -36.45,
+        "y": -21.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23041,8 +23041,8 @@
     "component": "C_USB_SWITCH",
     "pin": 2,
     "net": "GND",
-    "x": -34.55,
-    "y": -22.5,
+    "x": -35.55,
+    "y": -21.3,
     "layers": [
       "top"
     ],
@@ -23061,8 +23061,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -34.55,
-        "y": -22.5,
+        "x": -35.55,
+        "y": -21.3,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23627,8 +23627,8 @@
     "component": "Q_AUX_FAULT",
     "pin": 3,
     "net": "INPUT_FAULT_N",
-    "x": 7.350014,
-    "y": 15.999873,
+    "x": -1.949986,
+    "y": 21.899873,
     "layers": [
       "top"
     ],
@@ -23646,8 +23646,8 @@
           "pin3"
         ],
         "is_covered_with_solder_mask": false,
-        "x": 7.350014,
-        "y": 15.999873,
+        "x": -1.949986,
+        "y": 21.899873,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23657,8 +23657,8 @@
     "component": "Q_AUX_FAULT",
     "pin": 2,
     "net": "GND",
-    "x": 8.649986,
-    "y": 16.499999,
+    "x": -0.6500140000000001,
+    "y": 22.399998999999998,
     "layers": [
       "top"
     ],
@@ -23676,8 +23676,8 @@
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
-        "x": 8.649986,
-        "y": 16.499999,
+        "x": -0.6500140000000001,
+        "y": 22.399998999999998,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23687,8 +23687,8 @@
     "component": "Q_AUX_FAULT",
     "pin": 1,
     "net": "INPUT_LOSS_LATCHED",
-    "x": 8.649986,
-    "y": 15.500001,
+    "x": -0.6500140000000001,
+    "y": 21.400001,
     "layers": [
       "top"
     ],
@@ -23706,8 +23706,8 @@
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
-        "x": 8.649986,
-        "y": 15.500001,
+        "x": -0.6500140000000001,
+        "y": 21.400001,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23717,8 +23717,8 @@
     "component": "C_AUX1",
     "pin": 1,
     "net": "V3V3",
-    "x": -10.7,
-    "y": 23,
+    "x": -10,
+    "y": 22.8,
     "layers": [
       "top"
     ],
@@ -23730,15 +23730,15 @@
         "pcb_port_id": "pcb_port_758",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.9,
+        "width": 0.9,
+        "height": 0.8,
         "port_hints": [
           "pin1"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -10.7,
-        "y": 23,
+        "x": -10,
+        "y": 22.8,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23748,8 +23748,8 @@
     "component": "C_AUX1",
     "pin": 2,
     "net": "GND",
-    "x": -9.3,
-    "y": 23,
+    "x": -10,
+    "y": 24.2,
     "layers": [
       "top"
     ],
@@ -23761,15 +23761,15 @@
         "pcb_port_id": "pcb_port_759",
         "layer": "top",
         "shape": "rect",
-        "width": 0.8,
-        "height": 0.9,
+        "width": 0.9,
+        "height": 0.8,
         "port_hints": [
           "pin2"
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": -9.3,
-        "y": 23,
+        "x": -10,
+        "y": 24.2,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23779,8 +23779,8 @@
     "component": "C_AUX2",
     "pin": 1,
     "net": "V3V3",
-    "x": 2.3,
-    "y": 23,
+    "x": 0.07499999999999996,
+    "y": 19.25,
     "layers": [
       "top"
     ],
@@ -23799,8 +23799,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 2.3,
-        "y": 23,
+        "x": 0.07499999999999996,
+        "y": 19.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]
@@ -23810,8 +23810,8 @@
     "component": "C_AUX2",
     "pin": 2,
     "net": "GND",
-    "x": 3.7,
-    "y": 23,
+    "x": -1.325,
+    "y": 19.25,
     "layers": [
       "top"
     ],
@@ -23830,8 +23830,8 @@
         ],
         "is_covered_with_solder_mask": false,
         "soldermask_margin": 0.05,
-        "x": 3.7,
-        "y": 23,
+        "x": -1.325,
+        "y": 19.25,
         "subcircuit_id": "subcircuit_source_group_1"
       }
     ]

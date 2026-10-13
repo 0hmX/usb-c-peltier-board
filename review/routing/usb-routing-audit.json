@@ -1,0 +1,61 @@
+{
+  "circuitSha256": "52c7be159cd094d1e187bd174ebad15fa398b2a8384e7ee34e627eb5fc27b5f3",
+  "ok": true,
+  "problems": [],
+  "skewLimitMm": 0.05,
+  "primarySkewMm": 0,
+  "alternateOrientationSkewMm": 0,
+  "matchedNativeTraceCount": 16,
+  "matchedNativeBarrelCount": 4,
+  "members": {
+    "DP": {
+      "lengthMm": 48.84394910717086,
+      "duplicateBridgeLengthMm": 3.248863600000006,
+      "alternateOrientationLengthMm": 52.092812707170864,
+      "transitionCount": 2,
+      "layerSequence": [
+        "top",
+        "inner2",
+        "top"
+      ],
+      "nativeTraceIds": [
+        "pcb_trace_188",
+        "pcb_trace_190",
+        "pcb_trace_192",
+        "pcb_trace_194",
+        "pcb_trace_195",
+        "pcb_trace_196",
+        "pcb_trace_200"
+      ],
+      "nativeViaIds": [
+        "pcb_via_75",
+        "pcb_via_76"
+      ]
+    },
+    "DM": {
+      "lengthMm": 48.84394910717086,
+      "duplicateBridgeLengthMm": 3.2488636000000035,
+      "alternateOrientationLengthMm": 52.092812707170864,
+      "transitionCount": 2,
+      "layerSequence": [
+        "top",
+        "inner2",
+        "top"
+      ],
+      "nativeTraceIds": [
+        "pcb_trace_189",
+        "pcb_trace_191",
+        "pcb_trace_193",
+        "pcb_trace_197",
+        "pcb_trace_198",
+        "pcb_trace_199",
+        "pcb_trace_201"
+      ],
+      "nativeViaIds": [
+        "pcb_via_77",
+        "pcb_via_78"
+      ]
+    }
+  },
+  "method": "Native wire-vertex centerline sums over connector-to-switch PORT, switch-to-series SWITCH, and series-to-MCU paths; duplicate connector bridge added only for alternate orientation. Actual native barrels establish zero-planar-length layer transitions. Package and vertical barrel lengths excluded equally; no cached length totals used."
+}

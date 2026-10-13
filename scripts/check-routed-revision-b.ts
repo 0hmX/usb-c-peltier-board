@@ -5,6 +5,14 @@ import inventory from "../src/board/routing/ports.json"
 import type { AnyCircuitElement } from "circuit-json"
 import { tracePortCopperContact } from "./source-ground-pad-copper"
 import { pointSegmentDistance } from "./routing-geometry"
+import type { GeneratedCopper } from "../src/board/routing/generated-types"
+import { auditRoutingConnectivity } from "./audit-routing-connectivity"
+import { auditBypassLengths } from "./audit-bypass-lengths"
+import { auditKelvinRouting } from "./audit-kelvin-routing"
+import powerPacket from "../src/board/routing/power-completion.json"
+import usbPacket from "../src/board/routing/usb-completion.json"
+import { auditUsbRouting } from "./audit-usb-routing"
+const copper:GeneratedCopper=generated
 
 const text=await Bun.file("dist/routed/circuit.json").text()
 const circuit:AnyCircuitElement[]=JSON.parse(text)
@@ -12,7 +20,7 @@ const problems:string[]=[]
 const sourceTraces=circuit.filter(p=>p.type==="source_trace")
 const pcbTraces=circuit.filter(p=>p.type==="pcb_trace")
 const vias=circuit.filter(p=>p.type==="pcb_via")
-const baseline:any[]=await Bun.file("dist/index/circuit.json").json()
+const baseline:any[]=await Bun.file("dist/routing-placement/circuit.json").json()
 const sourceComponents=circuit.filter(p=>p.type==="source_component")
 const poses=circuit.filter(p=>p.type==="pcb_component")
 const sourcePorts=circuit.filter(p=>p.type==="source_port")
@@ -30,7 +38,7 @@ for(const p of inventory) {
   if(!port || !nets.some(n=>n.name===p.net&&n.subcircuit_connectivity_map_key===port.subcircuit_connectivity_map_key))
     problems.push(`Net assignment changed: ${p.selector}`)
 }
-for(const t of generated.traces) {
+for(const t of copper.traces) {
   const source=sourceTraces.find(s=>s.name===t.name)
   const trace=pcbTraces.find(p=>p.source_trace_id===source?.source_trace_id)
   if(!trace){problems.push(`Missing physical trace: ${t.name}`);continue}
@@ -38,11 +46,16 @@ for(const t of generated.traces) {
   const points=trace.route.filter(p=>p.route_type==="wire").map(p=>({x:p.x,y:p.y,layer:p.layer,width:p.width}))
     .filter((p,i,a)=>!i||Math.hypot(p.x-a[i-1].x,p.y-a[i-1].y)>1e-6)
   const expected=t.path.filter((p,i,a)=>!i||Math.hypot(p.x-a[i-1].x,p.y-a[i-1].y)>1e-6)
+  if(t.pcbStraightLine) {
+    if(points.length!==2||points.some(p=>pointSegmentDistance(p,expected[0],expected[expected.length-1])>1e-4||
+      p.layer!==t.layer||Math.abs(p.width-t.width)>1e-7))problems.push(`Straight bypass differs from declared corridor: ${t.name}`)
+    continue
+  }
   if(points.length!==expected.length || points.some((p,i)=>!expected[i]||Math.hypot(p.x-expected[i].x,p.y-expected[i].y)>1e-4||p.layer!==t.layer||Math.abs(p.width-t.width)>1e-7))
     problems.push(`Physical path differs from clearance-checked geometry: ${t.name}`)
 }
-if(pcbTraces.length!==generated.traces.length)problems.push("Unexpected implicit trace count")
-if(vias.length!==generated.vias.length)problems.push("Unexpected implicit via count")
+if(pcbTraces.length!==copper.traces.length)problems.push("Unexpected implicit trace count")
+if(vias.length!==copper.vias.length)problems.push("Unexpected implicit via count")
 for(const v of vias)if(v.hole_diameter!==.3||v.outer_diameter!==.7||
   v.layers.length!==4||!["top","inner1","inner2","bottom"].every(l=>v.layers.includes(l as any)))
   problems.push(`Nonstandard or partial-layer barrel: ${v.pcb_via_id}`)
@@ -83,14 +96,30 @@ const geometric=routing.filter(p=>{
 })
 const placementErrors=placement.filter(p=>p.type.endsWith("_error"))
 const netlistErrors=netlist.filter(p=>p.type.endsWith("_error"))
-const report={scope:"Incomplete Revision B routing prototype; pending connectivity is recorded, never waived for release",
-  circuitSha256:createHash("sha256").update(text).digest("hex"),parityProblems:problems,
+console.log("Checking physical copper components, USB reference coverage, exposed bypass lengths and independent Kelvin paths")
+const physical=auditRoutingConnectivity(circuit)
+const bypass=auditBypassLengths(circuit,copper)
+const kelvin=auditKelvinRouting(circuit,copper,powerPacket)
+const usb=auditUsbRouting(circuit,copper,usbPacket)
+const circuitSha256=createHash("sha256").update(text).digest("hex")
+await Bun.write("review/routing/physical-connectivity.json",JSON.stringify({circuitSha256,...physical},null,2)+"\n")
+await Bun.write("review/routing/bypass-length-validation.json",JSON.stringify({circuitSha256,...bypass},null,2)+"\n")
+await Bun.write("review/routing/kelvin-routing-audit.json",JSON.stringify({circuitSha256,...kelvin},null,2)+"\n")
+await Bun.write("review/routing/usb-routing-audit.json",JSON.stringify({circuitSha256,...usb},null,2)+"\n")
+const passed=!(problems.length||placementErrors.length||netlistErrors.length||geometric.length||lengthConstraints.length||connectivity.length)
+  &&physical.passed&&bypass.passed&&kelvin.passed&&usb.ok
+const report={scope:"Revision B CAD routing validation; fabrication stackup and bench qualification are separate",
+  passed,circuitSha256,parityProblems:problems,
   placementErrors,netlistErrors,routingGeometricErrors:geometric,pendingConnectivity:connectivity,
   unmetLengthConstraints:lengthConstraints,geometryExceptions,nativeRoutingChecksPassed:routing.every(p=>!p.type.endsWith("_error")),
   placementDiagnostics:placement,netlistDiagnostics:netlist,routingDiagnostics:routing,
-  groundPlaneConnectivityVerified:false,manufacturingAccepted:false}
+  physicalConnectivityPassed:physical.passed,exposedBypassLengthsPassed:bypass.passed,kelvinRoutingPassed:kelvin.passed,usbRoutingPassed:usb.ok,
+  groundPlaneConnectivityVerified:physical.nets.find(n=>n.net==="GND")?.passed??false,
+  usbBottomReferencePassed:physical.usbBottomReference.passed,manufacturingAccepted:false}
 await Bun.write("review/routing/validation.json",JSON.stringify(report,null,2)+"\n")
 console.log(JSON.stringify({parityProblems:problems.length,placementErrors:placementErrors.length,netlistErrors:netlistErrors.length,
   routingGeometricErrors:geometric.length,pendingConnectivity:connectivity.length,
-  unmetLengthConstraints:lengthConstraints.length,evidenceBackedGeometryExceptions:geometryExceptions.length}))
-if(problems.length||placementErrors.length||netlistErrors.length||geometric.length||lengthConstraints.length)process.exit(1)
+  unmetLengthConstraints:lengthConstraints.length,evidenceBackedGeometryExceptions:geometryExceptions.length,
+  physicalConnectivityPassed:physical.passed,failedPhysicalNets:physical.nets.filter(n=>!n.passed).map(n=>n.net),
+  bypassViolations:bypass.violationCount,kelvinViolations:kelvin.independenceViolations.length,usbSkewMm:usb.primarySkewMm,usbProblems:usb.problems,passed}))
+if(!passed)process.exit(1)

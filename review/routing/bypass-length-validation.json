@@ -1,0 +1,6155 @@
+{
+  "circuitSha256": "52c7be159cd094d1e187bd174ebad15fa398b2a8384e7ee34e627eb5fc27b5f3",
+  "status": "failed",
+  "method": "Exact native centerline interval cuts against attached rectangular/rotated/polygon/circular/pill pad copper and drilled barrel annuli; actual drills reported as voids",
+  "toleranceMm": 0.000001,
+  "nativeTraceCount": 1006,
+  "generatedTraceCount": 1006,
+  "constrainedTraceCount": 101,
+  "unconstrainedTraceCount": 905,
+  "violationCount": 1,
+  "inputErrors": [],
+  "passed": false,
+  "violations": [
+    {
+      "name": "RB_TRACE_845",
+      "net": "GND",
+      "from": "C209.pin2",
+      "to": "RB_VIA_455.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_829"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_364",
+        "pcb_via_439"
+      ],
+      "nativeWireLength": 3.639063199251538,
+      "attachedPadMetalLength": 0.7031152949374528,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 2.785947904314085,
+      "marginMm": -1.7859479043140851,
+      "cachedNativeLengthsIgnored": [
+        3.639063199251538
+      ],
+      "passed": false,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -17.7,
+            "y": -23.9
+          },
+          "end": {
+            "x": -16.9,
+            "y": -22.299999999999997
+          },
+          "length": 1.7888543819998333,
+          "padMetalIntervals": [
+            [
+              0,
+              0.2812499999999998
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.2812499999999998,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -16.9,
+            "y": -22.299999999999997
+          },
+          "end": {
+            "x": -16.5,
+            "y": -22
+          },
+          "length": 0.49999999999999717,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -16.5,
+            "y": -22
+          },
+          "end": {
+            "x": -15.899999999999999,
+            "y": -22.099999999999998
+          },
+          "length": 0.608276253029823,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -15.899999999999999,
+            "y": -22.099999999999998
+          },
+          "end": {
+            "x": -15.27512886940357,
+            "y": -22.5
+          },
+          "length": 0.7419325642218844,
+          "padMetalIntervals": [
+            [
+              0.5282590131798987,
+              0.797825291362814
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.797825291362814,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5282590131798987
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "name": "RB_TRACE_128",
+      "net": "FAN_BST",
+      "from": "U_FAN.pin6",
+      "to": "C214.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_127"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_250",
+        "pcb_smtpad_375"
+      ],
+      "nativeWireLength": 1.812456896039185,
+      "attachedPadMetalLength": 0.8238440436541754,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9886128523850093,
+      "marginMm": 0.011387147614990711,
+      "cachedNativeLengthsIgnored": [
+        1.812456896039185
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_127",
+          "layer": "top",
+          "start": {
+            "x": 37.05,
+            "y": -8.65
+          },
+          "end": {
+            "x": 35.4,
+            "y": -7.8999999999999995
+          },
+          "length": 1.812456896039185,
+          "padMetalIntervals": [
+            [
+              0,
+              0.18181818181818196
+            ],
+            [
+              0.7272727272727271,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.18181818181818196,
+              0.7272727272727271
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_129",
+      "net": "V12_FAN",
+      "from": "L_FAN.pin2",
+      "to": "C218.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_128"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_251",
+        "pcb_smtpad_383"
+      ],
+      "nativeWireLength": 0.9192483740792186,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9192483740792186,
+      "marginMm": 0.08075162592078144,
+      "cachedNativeLengthsIgnored": [
+        0.9192483740792186
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_128",
+          "layer": "top",
+          "start": {
+            "x": 49.65,
+            "y": -7.208048780487804
+          },
+          "end": {
+            "x": 50.46924920127796,
+            "y": -7.625
+          },
+          "length": 0.9192483740792186,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_130",
+      "net": "V12_FAN",
+      "from": "C218.pin1",
+      "to": "C215.pin1",
+      "maxExposedLength": 14,
+      "nativePcbTraceIds": [
+        "pcb_trace_129"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_377",
+        "pcb_smtpad_383"
+      ],
+      "nativeWireLength": 12.845000000000002,
+      "attachedPadMetalLength": 2.0649999999999995,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 10.780000000000003,
+      "marginMm": 3.219999999999997,
+      "cachedNativeLengthsIgnored": [
+        12.845000000000002
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_129",
+          "layer": "top",
+          "start": {
+            "x": 51.825,
+            "y": -8.315
+          },
+          "end": {
+            "x": 45.7,
+            "y": -8.315
+          },
+          "length": 6.125,
+          "padMetalIntervals": [
+            [
+              0,
+              0.22448979591836735
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.22448979591836735,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_129",
+          "layer": "top",
+          "start": {
+            "x": 45.7,
+            "y": -8.315
+          },
+          "end": {
+            "x": 45.7,
+            "y": -15.035000000000002
+          },
+          "length": 6.720000000000002,
+          "padMetalIntervals": [
+            [
+              0.8973214285714287,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.8973214285714287
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_132",
+      "net": "FAN_FB",
+      "from": "R229.pin1",
+      "to": "C221.pin2",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_131"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_327",
+        "pcb_smtpad_388"
+      ],
+      "nativeWireLength": 1.75025712396779,
+      "attachedPadMetalLength": 0.8251212155848154,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9251359083829745,
+      "marginMm": 0.07486409161702545,
+      "cachedNativeLengthsIgnored": [
+        1.75025712396779
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_131",
+          "layer": "top",
+          "start": {
+            "x": 37,
+            "y": -6.55
+          },
+          "end": {
+            "x": 38.75,
+            "y": -6.52
+          },
+          "length": 1.75025712396779,
+          "padMetalIntervals": [
+            [
+              0,
+              0.2285714285714286
+            ],
+            [
+              0.7571428571428571,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.2285714285714286,
+              0.7571428571428571
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_134",
+      "net": "V12_FAN",
+      "from": "R228.pin1",
+      "to": "C221.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_133"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_325",
+        "pcb_smtpad_389"
+      ],
+      "nativeWireLength": 1.75025712396779,
+      "attachedPadMetalLength": 0.8251212155848154,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9251359083829745,
+      "marginMm": 0.07486409161702545,
+      "cachedNativeLengthsIgnored": [
+        1.75025712396779
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_133",
+          "layer": "top",
+          "start": {
+            "x": 40.5,
+            "y": -5.05
+          },
+          "end": {
+            "x": 38.75,
+            "y": -5.08
+          },
+          "length": 1.75025712396779,
+          "padMetalIntervals": [
+            [
+              0,
+              0.2285714285714286
+            ],
+            [
+              0.7571428571428571,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.2285714285714286,
+              0.7571428571428571
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_138",
+      "net": "GND",
+      "from": "U_FAN.pin1",
+      "to": "RB_VIA_56.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_137"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_245",
+        "pcb_via_55"
+      ],
+      "nativeWireLength": 1.200000000000001,
+      "attachedPadMetalLength": 0.7500000000000002,
+      "attachedDrillVoidLength": 0.14999999999999986,
+      "exposedLength": 0.300000000000001,
+      "marginMm": 0.6999999999999991,
+      "cachedNativeLengthsIgnored": [
+        1.200000000000001
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_137",
+          "layer": "top",
+          "start": {
+            "x": 37.05,
+            "y": -11.35
+          },
+          "end": {
+            "x": 37.05,
+            "y": -12.55
+          },
+          "length": 1.200000000000001,
+          "padMetalIntervals": [
+            [
+              0,
+              0.458333333333333
+            ],
+            [
+              0.7083333333333336,
+              0.8750000000000002
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8750000000000002,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.458333333333333,
+              0.7083333333333336
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_140",
+      "net": "GND",
+      "from": "C213.pin2",
+      "to": "RB_VIA_58.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_139"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_372",
+        "pcb_via_57"
+      ],
+      "nativeWireLength": 0.6651670490713212,
+      "attachedPadMetalLength": 0.1999999999999999,
+      "attachedDrillVoidLength": 0.1500000000000001,
+      "exposedLength": 0.3151670490713212,
+      "marginMm": 0.6848329509286788,
+      "cachedNativeLengthsIgnored": [
+        0.6651670490713212
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_139",
+          "layer": "top",
+          "start": {
+            "x": 43.61623456790124,
+            "y": -13.725
+          },
+          "end": {
+            "x": 43.475,
+            "y": -14.375
+          },
+          "length": 0.6651670490713212,
+          "padMetalIntervals": [
+            [
+              0.47381638869716175,
+              0.7744927380130692
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7744927380130692,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.47381638869716175
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_141",
+      "net": "GND",
+      "from": "C219.pin2",
+      "to": "RB_VIA_61.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_140"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_384",
+        "pcb_via_60"
+      ],
+      "nativeWireLength": 0.6937754308183779,
+      "attachedPadMetalLength": 0.19999999999999993,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.3437754308183778,
+      "marginMm": 0.6562245691816222,
+      "cachedNativeLengthsIgnored": [
+        0.6937754308183779
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_140",
+          "layer": "top",
+          "start": {
+            "x": 42.754999999999995,
+            "y": -17.242537313432837
+          },
+          "end": {
+            "x": 43.405,
+            "y": -17
+          },
+          "length": 0.6937754308183779,
+          "padMetalIntervals": [
+            [
+              0.4955139884571296,
+              0.7837917093387696
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7837917093387696,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4955139884571296
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_142",
+      "net": "GND",
+      "from": "C220.pin2",
+      "to": "RB_VIA_64.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_141"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_386",
+        "pcb_via_63"
+      ],
+      "nativeWireLength": 0.6604745122363326,
+      "attachedPadMetalLength": 0.1999999999999999,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.3104745122363326,
+      "marginMm": 0.6895254877636674,
+      "cachedNativeLengthsIgnored": [
+        0.6604745122363326
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_141",
+          "layer": "top",
+          "start": {
+            "x": 41.81716049382716,
+            "y": -22.375
+          },
+          "end": {
+            "x": 41.7,
+            "y": -23.025
+          },
+          "length": 0.6604745122363326,
+          "padMetalIntervals": [
+            [
+              0.4700779613509717,
+              0.772890554864702
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.772890554864702,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4700779613509717
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_143",
+      "net": "GND",
+      "from": "C215.pin2",
+      "to": "RB_VIA_67.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_142"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_376",
+        "pcb_via_66"
+      ],
+      "nativeWireLength": 0.6783417892040949,
+      "attachedPadMetalLength": 0.19999999999999993,
+      "attachedDrillVoidLength": 0.15,
+      "exposedLength": 0.328341789204095,
+      "marginMm": 0.671658210795905,
+      "cachedNativeLengthsIgnored": [
+        0.6783417892040949
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_142",
+          "layer": "top",
+          "start": {
+            "x": 45.494029850746266,
+            "y": -18.855000000000004
+          },
+          "end": {
+            "x": 45.3,
+            "y": -19.505
+          },
+          "length": 0.6783417892040949,
+          "padMetalIntervals": [
+            [
+              0.4840359158608548,
+              0.7788725353689377
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7788725353689377,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4840359158608548
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_144",
+      "net": "GND",
+      "from": "C218.pin2",
+      "to": "RB_VIA_70.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_143"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_382",
+        "pcb_via_69"
+      ],
+      "nativeWireLength": 0.7390386948774579,
+      "attachedPadMetalLength": 0.20000000000000007,
+      "attachedDrillVoidLength": 0.14999999999999997,
+      "exposedLength": 0.38903869487745785,
+      "marginMm": 0.6109613051225422,
+      "cachedNativeLengthsIgnored": [
+        0.7390386948774579
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_143",
+          "layer": "top",
+          "start": {
+            "x": 51.45167910447761,
+            "y": -4.495000000000001
+          },
+          "end": {
+            "x": 51.1,
+            "y": -3.8449999999999998
+          },
+          "length": 0.7390386948774579,
+          "padMetalIntervals": [
+            [
+              0.5264118070867256,
+              0.7970336316085967
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7970336316085967,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5264118070867256
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_173",
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "U_FAN.pin3",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_172"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_247",
+        "pcb_smtpad_373"
+      ],
+      "nativeWireLength": 1.748135510701141,
+      "attachedPadMetalLength": 0.7858068419438333,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9623286687573076,
+      "marginMm": 0.037671331242692396,
+      "cachedNativeLengthsIgnored": [
+        1.748135510701141
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_172",
+          "layer": "top",
+          "start": {
+            "x": 40.785000000000004,
+            "y": -12.35
+          },
+          "end": {
+            "x": 39.25,
+            "y": -11.513487738419617
+          },
+          "length": 1.748135510701141,
+          "padMetalIntervals": [
+            [
+              0,
+              0.44951140065146467
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.44951140065146467,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_174",
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "C219.pin1",
+      "maxExposedLength": 8,
+      "nativePcbTraceIds": [
+        "pcb_trace_173"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_373",
+        "pcb_smtpad_385"
+      ],
+      "nativeWireLength": 5.48007214970475,
+      "attachedPadMetalLength": 2.907171448850719,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 2.57290070085403,
+      "marginMm": 5.42709929914597,
+      "cachedNativeLengthsIgnored": [
+        5.48007214970475
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_173",
+          "layer": "top",
+          "start": {
+            "x": 40.785000000000004,
+            "y": -12.35
+          },
+          "end": {
+            "x": 39.4,
+            "y": -15.8
+          },
+          "length": 3.717623568894519,
+          "padMetalIntervals": [
+            [
+              0,
+              0.39855072463768104
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.39855072463768104,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_173",
+          "layer": "top",
+          "start": {
+            "x": 39.4,
+            "y": -15.8
+          },
+          "end": {
+            "x": 38.935,
+            "y": -17.5
+          },
+          "length": 1.7624485808102301,
+          "padMetalIntervals": [
+            [
+              0.19117647058823495,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.19117647058823495
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_175",
+      "net": "VBUS_TEC",
+      "from": "C219.pin1",
+      "to": "C220.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_174"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_385",
+        "pcb_smtpad_387"
+      ],
+      "nativeWireLength": 0.75,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.75,
+      "marginMm": 0.25,
+      "cachedNativeLengthsIgnored": [
+        0.75
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_174",
+          "layer": "top",
+          "start": {
+            "x": 38.935,
+            "y": -18.875
+          },
+          "end": {
+            "x": 38.935,
+            "y": -19.625
+          },
+          "length": 0.75,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_176",
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "RB_VIA_73.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_175"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_373",
+        "pcb_via_72"
+      ],
+      "nativeWireLength": 0.7234046792629621,
+      "attachedPadMetalLength": 0.2000000000000001,
+      "attachedDrillVoidLength": 0.14999999999999988,
+      "exposedLength": 0.37340467926296217,
+      "marginMm": 0.6265953207370378,
+      "cachedNativeLengthsIgnored": [
+        0.7234046792629621
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_175",
+          "layer": "top",
+          "start": {
+            "x": 40.095000000000006,
+            "y": -12.549277978339349
+          },
+          "end": {
+            "x": 39.4,
+            "y": -12.75
+          },
+          "length": 0.7234046792629621,
+          "padMetalIntervals": [
+            [
+              0.5161767541279992,
+              0.7926471803405712
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7926471803405712,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5161767541279992
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_203",
+      "net": "V3V3",
+      "from": "C_USB_SWITCH.pin1",
+      "to": "U_USB_SWITCH.pin10",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_202"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_723",
+        "pcb_smtpad_730"
+      ],
+      "nativeWireLength": 1.2048464539029209,
+      "attachedPadMetalLength": 0.3143071419690866,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8905393119338344,
+      "marginMm": 0.1094606880661656,
+      "cachedNativeLengthsIgnored": [
+        1.2048464539029209
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_202",
+          "layer": "top",
+          "start": {
+            "x": -36.45,
+            "y": -21.3
+          },
+          "end": {
+            "x": -36.09062597829399,
+            "y": -20.1499977
+          },
+          "length": 1.2048464539029209,
+          "padMetalIntervals": [
+            [
+              0,
+              0.26086904347930423
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.26086904347930423,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_244",
+      "net": "GND",
+      "from": "C28.pin2",
+      "to": "RB_VIA_114.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_243"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_99",
+        "pcb_via_113"
+      ],
+      "nativeWireLength": 0.5500012012977539,
+      "attachedPadMetalLength": 0.19999999999999998,
+      "attachedDrillVoidLength": 0.15000000000000002,
+      "exposedLength": 0.20000120129775387,
+      "marginMm": 0.7999987987022461,
+      "cachedNativeLengthsIgnored": [
+        0.5500012012977539
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_243",
+          "layer": "top",
+          "start": {
+            "x": -4.3300377826911305,
+            "y": 11.4000012
+          },
+          "end": {
+            "x": -4.33,
+            "y": 10.85
+          },
+          "length": 0.5500012012977539,
+          "padMetalIntervals": [
+            [
+              0.36363775356461325,
+              0.7272733229562628
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7272733229562628,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.36363775356461325
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_245",
+      "net": "GND",
+      "from": "C28.pin2",
+      "to": "RB_VIA_115.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_244"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_99",
+        "pcb_via_114"
+      ],
+      "nativeWireLength": 0.7288840229702254,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.37888402297022544,
+      "marginMm": 0.6211159770297745,
+      "cachedNativeLengthsIgnored": [
+        0.7288840229702254
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_244",
+          "layer": "top",
+          "start": {
+            "x": -3.808299695734609,
+            "y": 11.4000012
+          },
+          "end": {
+            "x": -3.33,
+            "y": 10.85
+          },
+          "length": 0.7288840229702254,
+          "padMetalIntervals": [
+            [
+              0.5198138675426869,
+              0.79420594323258
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.79420594323258,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5198138675426869
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_248",
+      "net": "GND",
+      "from": "C_CH_VDD.pin2",
+      "to": "RB_VIA_118.top",
+      "maxExposedLength": 1.1672617529928477,
+      "nativePcbTraceIds": [
+        "pcb_trace_247"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_496",
+        "pcb_via_117"
+      ],
+      "nativeWireLength": 1.1672617529928477,
+      "attachedPadMetalLength": 0.7492996484672538,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 0.267962104525594,
+      "marginMm": 0.8992996484672537,
+      "cachedNativeLengthsIgnored": [
+        1.1672617529928477
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_247",
+          "layer": "top",
+          "start": {
+            "x": -43,
+            "y": 20.4
+          },
+          "end": {
+            "x": -43.84999999999995,
+            "y": 21.20000000000001
+          },
+          "length": 1.1672617529928477,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4705882352941444
+            ],
+            [
+              0.7001529441853094,
+              0.8714941189365614
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8714941189365614,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.4705882352941444,
+              0.7001529441853094
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_249",
+      "net": "GND",
+      "from": "C_PD_WINDOW.pin2",
+      "to": "RB_VIA_119.top",
+      "maxExposedLength": 1.167261752992838,
+      "nativePcbTraceIds": [
+        "pcb_trace_248"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_544",
+        "pcb_via_118"
+      ],
+      "nativeWireLength": 1.167261752992838,
+      "attachedPadMetalLength": 0.7836308764964208,
+      "attachedDrillVoidLength": 0.15000000000000008,
+      "exposedLength": 0.23363087649641695,
+      "marginMm": 0.933630876496421,
+      "cachedNativeLengthsIgnored": [
+        1.167261752992838
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_248",
+          "layer": "top",
+          "start": {
+            "x": -39.25,
+            "y": 7.05
+          },
+          "end": {
+            "x": -40.09999999999995,
+            "y": 6.250000000000003
+          },
+          "length": 1.167261752992838,
+          "padMetalIntervals": [
+            [
+              0,
+              0.5000000000000018
+            ],
+            [
+              0.7001529441853069,
+              0.87149411893656
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.87149411893656,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.5000000000000018,
+              0.7001529441853069
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_251",
+      "net": "GND",
+      "from": "C_USB_VDD.pin2",
+      "to": "RB_VIA_125.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_250"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_678",
+        "pcb_via_124"
+      ],
+      "nativeWireLength": 0.9604686356149296,
+      "attachedPadMetalLength": 0.5201562118716423,
+      "attachedDrillVoidLength": 0.14999999999999986,
+      "exposedLength": 0.29031242374328736,
+      "marginMm": 0.7096875762567126,
+      "cachedNativeLengthsIgnored": [
+        0.9604686356149296
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_250",
+          "layer": "top",
+          "start": {
+            "x": -26.65,
+            "y": -15.350000000000001
+          },
+          "end": {
+            "x": -27.25,
+            "y": -14.6
+          },
+          "length": 0.9604686356149296,
+          "padMetalIntervals": [
+            [
+              0,
+              0.33333333333333254
+            ],
+            [
+              0.6355945555932536,
+              0.8438262381113945
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8438262381113945,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.33333333333333254,
+              0.6355945555932536
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_252",
+      "net": "GND",
+      "from": "C_DVDD1.pin2",
+      "to": "RB_VIA_125.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_251"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_684",
+        "pcb_via_124"
+      ],
+      "nativeWireLength": 0.9604686356149296,
+      "attachedPadMetalLength": 0.5201562118716423,
+      "attachedDrillVoidLength": 0.14999999999999986,
+      "exposedLength": 0.29031242374328736,
+      "marginMm": 0.7096875762567126,
+      "cachedNativeLengthsIgnored": [
+        0.9604686356149296
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_251",
+          "layer": "top",
+          "start": {
+            "x": -27.85,
+            "y": -15.350000000000001
+          },
+          "end": {
+            "x": -27.25,
+            "y": -14.6
+          },
+          "length": 0.9604686356149296,
+          "padMetalIntervals": [
+            [
+              0,
+              0.33333333333333254
+            ],
+            [
+              0.6355945555932536,
+              0.8438262381113945
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8438262381113945,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.33333333333333254,
+              0.6355945555932536
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_253",
+      "net": "LOGIC_VIN",
+      "from": "C200.pin1",
+      "to": "U_LOGIC.pin2",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_252"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_181",
+        "pcb_smtpad_353"
+      ],
+      "nativeWireLength": 0.7499999999999996,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.7499999999999996,
+      "marginMm": 0.25000000000000044,
+      "cachedNativeLengthsIgnored": [
+        0.7499999999999996
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_252",
+          "layer": "top",
+          "start": {
+            "x": -36,
+            "y": -3.3499999999999996
+          },
+          "end": {
+            "x": -36,
+            "y": -2.6
+          },
+          "length": 0.7499999999999996,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_254",
+      "net": "GND",
+      "from": "C200.pin2",
+      "to": "RB_VIA_126.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_253"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_352",
+        "pcb_via_125"
+      ],
+      "nativeWireLength": 0.625,
+      "attachedPadMetalLength": 0.2,
+      "attachedDrillVoidLength": 0.15,
+      "exposedLength": 0.275,
+      "marginMm": 0.725,
+      "cachedNativeLengthsIgnored": [
+        0.625
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_253",
+          "layer": "top",
+          "start": {
+            "x": -36.875,
+            "y": -7.075
+          },
+          "end": {
+            "x": -37.5,
+            "y": -7.075
+          },
+          "length": 0.625,
+          "padMetalIntervals": [
+            [
+              0.44,
+              0.76
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.76,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_258",
+      "net": "V3V3",
+      "from": "U_MCU.pin1",
+      "to": "C_IO6.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_257"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_641",
+        "pcb_smtpad_675"
+      ],
+      "nativeWireLength": 1.1280664999999992,
+      "attachedPadMetalLength": 0.25,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8780664999999992,
+      "marginMm": 0.1219335000000008,
+      "cachedNativeLengthsIgnored": [
+        1.1280664999999992
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_257",
+          "layer": "top",
+          "start": {
+            "x": -30.8499415,
+            "y": -18.399929
+          },
+          "end": {
+            "x": -31.978008,
+            "y": -18.399929
+          },
+          "length": 1.1280664999999992,
+          "padMetalIntervals": [
+            [
+              0.7783818595800867,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.7783818595800867
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_259",
+      "net": "V3V3",
+      "from": "U_MCU.pin10",
+      "to": "C_IO5.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_258"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_632",
+        "pcb_smtpad_673"
+      ],
+      "nativeWireLength": 1.1280664999999992,
+      "attachedPadMetalLength": 0.25,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8780664999999992,
+      "marginMm": 0.1219335000000008,
+      "cachedNativeLengthsIgnored": [
+        1.1280664999999992
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_258",
+          "layer": "top",
+          "start": {
+            "x": -30.8499415,
+            "y": -21.999871
+          },
+          "end": {
+            "x": -31.978008,
+            "y": -21.999871
+          },
+          "length": 1.1280664999999992,
+          "padMetalIntervals": [
+            [
+              0.7783818595800867,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.7783818595800867
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_260",
+      "net": "V3V3",
+      "from": "U_MCU.pin33",
+      "to": "C_IO3.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_259"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_609",
+        "pcb_smtpad_669"
+      ],
+      "nativeWireLength": 0.8000585000000022,
+      "attachedPadMetalLength": 0.25000000000000006,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5500585000000022,
+      "marginMm": 0.4499414999999978,
+      "cachedNativeLengthsIgnored": [
+        0.8000585000000022
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_259",
+          "layer": "top",
+          "start": {
+            "x": -23.1500585,
+            "y": -21.999871
+          },
+          "end": {
+            "x": -22.349999999999998,
+            "y": -21.999871
+          },
+          "length": 0.8000585000000022,
+          "padMetalIntervals": [
+            [
+              0.6875228498916025,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6875228498916025
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_261",
+      "net": "V3V3",
+      "from": "U_MCU.pin42",
+      "to": "C_IO2.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_260"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_600",
+        "pcb_smtpad_667"
+      ],
+      "nativeWireLength": 0.8000585000000022,
+      "attachedPadMetalLength": 0.25000000000000006,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5500585000000022,
+      "marginMm": 0.4499414999999978,
+      "cachedNativeLengthsIgnored": [
+        0.8000585000000022
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_260",
+          "layer": "top",
+          "start": {
+            "x": -23.1500585,
+            "y": -18.399929
+          },
+          "end": {
+            "x": -22.349999999999998,
+            "y": -18.399929
+          },
+          "length": 0.8000585000000022,
+          "padMetalIntervals": [
+            [
+              0.6875228498916025,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6875228498916025
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_262",
+      "net": "V3V3",
+      "from": "U_MCU.pin22",
+      "to": "C_IO4.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_261"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_620",
+        "pcb_smtpad_671"
+      ],
+      "nativeWireLength": 1.290791110850786,
+      "attachedPadMetalLength": 0.7003364593278983,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5904546515228877,
+      "marginMm": 0.4095453484771123,
+      "cachedNativeLengthsIgnored": [
+        1.290791110850786
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_261",
+          "layer": "top",
+          "start": {
+            "x": -26.800102,
+            "y": -24.425063
+          },
+          "end": {
+            "x": -26.800102,
+            "y": -25.000063
+          },
+          "length": 0.5749999999999993,
+          "padMetalIntervals": [
+            [
+              0,
+              0.7391400000000009
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.7391400000000009,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_261",
+          "layer": "top",
+          "start": {
+            "x": -26.800102,
+            "y": -25.000063
+          },
+          "end": {
+            "x": -27.1,
+            "y": -25.650000000000002
+          },
+          "length": 0.7157911108507867,
+          "padMetalIntervals": [
+            [
+              0.6153473336646483,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6153473336646483
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_263",
+      "net": "V1V1",
+      "from": "U_MCU.pin23",
+      "to": "C_DVDD2.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_262"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_619",
+        "pcb_smtpad_685"
+      ],
+      "nativeWireLength": 1.3950427468571385,
+      "attachedPadMetalLength": 0.7404371290875644,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.6546056177695739,
+      "marginMm": 0.34539438223042607,
+      "cachedNativeLengthsIgnored": [
+        1.3950427468571385
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_262",
+          "layer": "top",
+          "start": {
+            "x": -26.400052,
+            "y": -24.425063
+          },
+          "end": {
+            "x": -26.400052,
+            "y": -25.000063
+          },
+          "length": 0.5749999999999993,
+          "padMetalIntervals": [
+            [
+              0,
+              0.7391400000000009
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.7391400000000009,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_262",
+          "layer": "top",
+          "start": {
+            "x": -26.400052,
+            "y": -25.000063
+          },
+          "end": {
+            "x": -25.9,
+            "y": -25.650000000000002
+          },
+          "length": 0.8200427468571391,
+          "padMetalIntervals": [
+            [
+              0.6153473336646483,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6153473336646483
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_264",
+      "net": "ADC_AVDD",
+      "from": "U_MCU.pin43",
+      "to": "C_ADC_AVDD.pin1",
+      "maxExposedLength": 2,
+      "nativePcbTraceIds": [
+        "pcb_trace_263"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_599",
+        "pcb_smtpad_687"
+      ],
+      "nativeWireLength": 2.194480255805029,
+      "attachedPadMetalLength": 0.36573529023233203,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 1.828744965572697,
+      "marginMm": 0.17125503442730294,
+      "cachedNativeLengthsIgnored": [
+        2.194480255805029
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_263",
+          "layer": "top",
+          "start": {
+            "x": -24.3000562,
+            "y": -17.50520566839051
+          },
+          "end": {
+            "x": -22.5,
+            "y": -16.25
+          },
+          "length": 2.194480255805029,
+          "padMetalIntervals": [
+            [
+              0.8333385368745709,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.8333385368745709
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_265",
+      "net": "V3V3",
+      "from": "U_MCU.pin44",
+      "to": "C_VREG_IN.pin1",
+      "maxExposedLength": 2,
+      "nativePcbTraceIds": [
+        "pcb_trace_264"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_598",
+        "pcb_smtpad_679"
+      ],
+      "nativeWireLength": 2.045867391947378,
+      "attachedPadMetalLength": 0.7890646469802676,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 1.2568027449671106,
+      "marginMm": 0.7431972550328894,
+      "cachedNativeLengthsIgnored": [
+        2.045867391947378
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_264",
+          "layer": "top",
+          "start": {
+            "x": -24.800106,
+            "y": -17.574937
+          },
+          "end": {
+            "x": -24.800106,
+            "y": -16.8
+          },
+          "length": 0.7749369999999978,
+          "padMetalIntervals": [
+            [
+              0,
+              0.5484387763134309
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.5484387763134309,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_264",
+          "layer": "top",
+          "start": {
+            "x": -24.800106,
+            "y": -16.8
+          },
+          "end": {
+            "x": -24.5,
+            "y": -16.8
+          },
+          "length": 0.30010599999999954,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_264",
+          "layer": "top",
+          "start": {
+            "x": -24.5,
+            "y": -16.8
+          },
+          "end": {
+            "x": -23.7,
+            "y": -16.25
+          },
+          "length": 0.9708243919473809,
+          "padMetalIntervals": [
+            [
+              0.6250000000000002,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6250000000000002
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_266",
+      "net": "V1V1",
+      "from": "U_MCU.pin45",
+      "to": "C_VREG_OUT.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_265"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_597",
+        "pcb_smtpad_681"
+      ],
+      "nativeWireLength": 1.4493113917061906,
+      "attachedPadMetalLength": 0.7786508264218265,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.6706605652843641,
+      "marginMm": 0.32933943471563587,
+      "cachedNativeLengthsIgnored": [
+        1.4493113917061906
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_265",
+          "layer": "top",
+          "start": {
+            "x": -25.200156,
+            "y": -17.574937
+          },
+          "end": {
+            "x": -25.200156,
+            "y": -16.55
+          },
+          "length": 1.0249369999999978,
+          "padMetalIntervals": [
+            [
+              0,
+              0.41466499892188585
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.41466499892188585,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_265",
+          "layer": "top",
+          "start": {
+            "x": -25.200156,
+            "y": -16.55
+          },
+          "end": {
+            "x": -24.9,
+            "y": -16.25
+          },
+          "length": 0.4243743917061928,
+          "padMetalIntervals": [
+            [
+              0.16666666666666863,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.16666666666666863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_267",
+      "net": "V3V3",
+      "from": "U_MCU.pin48",
+      "to": "C_USB_VDD.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_266"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_594",
+        "pcb_smtpad_677"
+      ],
+      "nativeWireLength": 1.3682266186520757,
+      "attachedPadMetalLength": 0.6904674696672977,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.677759148984778,
+      "marginMm": 0.32224085101522204,
+      "cachedNativeLengthsIgnored": [
+        1.3682266186520757
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_266",
+          "layer": "top",
+          "start": {
+            "x": -26.400052,
+            "y": -17.574937
+          },
+          "end": {
+            "x": -26.400052,
+            "y": -16.949937
+          },
+          "length": 0.625,
+          "padMetalIntervals": [
+            [
+              0,
+              0.6800088
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.6800088,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_266",
+          "layer": "top",
+          "start": {
+            "x": -26.400052,
+            "y": -16.949937
+          },
+          "end": {
+            "x": -26.65,
+            "y": -16.25
+          },
+          "length": 0.7432266186520756,
+          "padMetalIntervals": [
+            [
+              0.6428249971068817,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6428249971068817
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_268",
+      "net": "V3V3",
+      "from": "U_MCU.pin49",
+      "to": "C_USB_VDD.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_267"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_593",
+        "pcb_smtpad_677"
+      ],
+      "nativeWireLength": 1.340850832487466,
+      "attachedPadMetalLength": 0.6806895231647518,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.6601613093227141,
+      "marginMm": 0.3398386906772859,
+      "cachedNativeLengthsIgnored": [
+        1.340850832487466
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_267",
+          "layer": "top",
+          "start": {
+            "x": -26.800102,
+            "y": -17.574937
+          },
+          "end": {
+            "x": -26.800102,
+            "y": -16.949937
+          },
+          "length": 0.625,
+          "padMetalIntervals": [
+            [
+              0,
+              0.6800088
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.6800088,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_267",
+          "layer": "top",
+          "start": {
+            "x": -26.800102,
+            "y": -16.949937
+          },
+          "end": {
+            "x": -26.65,
+            "y": -16.25
+          },
+          "length": 0.715850832487466,
+          "padMetalIntervals": [
+            [
+              0.6428249971068817,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6428249971068817
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_269",
+      "net": "V1V1",
+      "from": "U_MCU.pin50",
+      "to": "C_DVDD1.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_268"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_592",
+        "pcb_smtpad_683"
+      ],
+      "nativeWireLength": 1.5800990666276462,
+      "attachedPadMetalLength": 0.766143011885944,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.813956054741702,
+      "marginMm": 0.18604394525829804,
+      "cachedNativeLengthsIgnored": [
+        1.5800990666276462
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_268",
+          "layer": "top",
+          "start": {
+            "x": -27.200152,
+            "y": -17.574937
+          },
+          "end": {
+            "x": -27.200152,
+            "y": -16.949937
+          },
+          "length": 0.625,
+          "padMetalIntervals": [
+            [
+              0,
+              0.6800088
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.6800088,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_268",
+          "layer": "top",
+          "start": {
+            "x": -27.200152,
+            "y": -16.949937
+          },
+          "end": {
+            "x": -27.85,
+            "y": -16.25
+          },
+          "length": 0.9550990666276461,
+          "padMetalIntervals": [
+            [
+              0.6428249971068817,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6428249971068817
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_272",
+      "net": "XIN",
+      "from": "Y_MCU.pin1",
+      "to": "C_XIN.pin1",
+      "maxExposedLength": 2,
+      "nativePcbTraceIds": [
+        "pcb_trace_271"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_655",
+        "pcb_smtpad_661"
+      ],
+      "nativeWireLength": 1.5499260000390334,
+      "attachedPadMetalLength": 0.9499986000239251,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5999274000151081,
+      "marginMm": 1.4000725999848918,
+      "cachedNativeLengthsIgnored": [
+        1.5499260000390334
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_271",
+          "layer": "top",
+          "start": {
+            "x": -31.100074,
+            "y": -30.050010999999998
+          },
+          "end": {
+            "x": -32.65,
+            "y": -30.05
+          },
+          "length": 1.5499260000390334,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4516335618603729
+            ],
+            [
+              0.8387019767395346,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.4516335618603729,
+              0.8387019767395346
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_273",
+      "net": "XOUT_CRYSTAL",
+      "from": "Y_MCU.pin3",
+      "to": "C_XOUT.pin1",
+      "maxExposedLength": 2,
+      "nativePcbTraceIds": [
+        "pcb_trace_272"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_657",
+        "pcb_smtpad_663"
+      ],
+      "nativeWireLength": 1.872109426715491,
+      "attachedPadMetalLength": 1.1474749984363872,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.7246344282791037,
+      "marginMm": 1.2753655717208963,
+      "cachedNativeLengthsIgnored": [
+        1.872109426715491
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_272",
+          "layer": "top",
+          "start": {
+            "x": -28.899926,
+            "y": -28.349989
+          },
+          "end": {
+            "x": -27.349999999999998,
+            "y": -29.4
+          },
+          "length": 1.872109426715491,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4516335618603719
+            ],
+            [
+              0.838701976739535,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.4516335618603719,
+              0.838701976739535
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_274",
+      "net": "V3V3",
+      "from": "U_FLASH.pin8",
+      "to": "C_FLASH.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_273"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_646",
+        "pcb_smtpad_651"
+      ],
+      "nativeWireLength": 1.009933199999999,
+      "attachedPadMetalLength": 0.25000000000000006,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.7599331999999989,
+      "marginMm": 0.24006680000000113,
+      "cachedNativeLengthsIgnored": [
+        1.009933199999999
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_273",
+          "layer": "top",
+          "start": {
+            "x": -29.7400668,
+            "y": -9.79251
+          },
+          "end": {
+            "x": -30.75,
+            "y": -9.79251
+          },
+          "length": 1.009933199999999,
+          "padMetalIntervals": [
+            [
+              0.7524588754979039,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.7524588754979039
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_276",
+      "net": "V1V1",
+      "from": "C_DVDD1.pin1",
+      "to": "RB_VIA_130.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_275"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_683",
+        "pcb_via_129"
+      ],
+      "nativeWireLength": 1.7202228139447133,
+      "attachedPadMetalLength": 0.5787204585215437,
+      "attachedDrillVoidLength": 0.14999999999999983,
+      "exposedLength": 0.9915023554231697,
+      "marginMm": 0.008497644576830332,
+      "cachedNativeLengthsIgnored": [
+        1.7202228139447133
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_275",
+          "layer": "top",
+          "start": {
+            "x": -27.85,
+            "y": -16.25
+          },
+          "end": {
+            "x": -28.46,
+            "y": -15.78
+          },
+          "length": 0.7700649323271381,
+          "padMetalIntervals": [
+            [
+              0,
+              0.491803278688525
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.491803278688525,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_275",
+          "layer": "top",
+          "start": {
+            "x": -28.46,
+            "y": -15.78
+          },
+          "end": {
+            "x": -28.94,
+            "y": -14.96
+          },
+          "length": 0.9501578816175752,
+          "padMetalIntervals": [
+            [
+              0.6316401655226496,
+              0.8421314995097071
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8421314995097071,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.6316401655226496
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_282",
+      "net": "GND",
+      "from": "C_IO4.pin2",
+      "to": "RB_VIA_134.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_281"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_672",
+        "pcb_via_133"
+      ],
+      "nativeWireLength": 0.8999999999999986,
+      "attachedPadMetalLength": 0.5,
+      "attachedDrillVoidLength": 0.15000000000000002,
+      "exposedLength": 0.24999999999999856,
+      "marginMm": 0.7500000000000014,
+      "cachedNativeLengthsIgnored": [
+        0.8999999999999986
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_281",
+          "layer": "top",
+          "start": {
+            "x": -27.1,
+            "y": -26.55
+          },
+          "end": {
+            "x": -28,
+            "y": -26.55
+          },
+          "length": 0.8999999999999986,
+          "padMetalIntervals": [
+            [
+              0,
+              0.33333333333333387
+            ],
+            [
+              0.6111111111111105,
+              0.833333333333333
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.833333333333333,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.33333333333333387,
+              0.6111111111111105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_283",
+      "net": "GND",
+      "from": "C_VREG_IN.pin2",
+      "to": "RB_VIA_135.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_282"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_680",
+        "pcb_via_134"
+      ],
+      "nativeWireLength": 1.500000000000001,
+      "attachedPadMetalLength": 0.45215724014503866,
+      "attachedDrillVoidLength": 0.1499999999999999,
+      "exposedLength": 0.8978427598549625,
+      "marginMm": 0.10215724014503746,
+      "cachedNativeLengthsIgnored": [
+        1.500000000000001
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_282",
+          "layer": "top",
+          "start": {
+            "x": -23.7,
+            "y": -15.350000000000001
+          },
+          "end": {
+            "x": -23.50421071166992,
+            "y": -13.862832707939285
+          },
+          "length": 1.500000000000001,
+          "padMetalIntervals": [
+            [
+              0,
+              0.1681048267633587
+            ],
+            [
+              0.7666666666666666,
+              0.9000000000000001
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.9000000000000001,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.1681048267633587,
+              0.7666666666666666
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_284",
+      "net": "GND",
+      "from": "C_ADC_AVDD.pin2",
+      "to": "RB_VIA_136.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_283"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_688",
+        "pcb_via_135"
+      ],
+      "nativeWireLength": 0.8999999999999986,
+      "attachedPadMetalLength": 0.5,
+      "attachedDrillVoidLength": 0.15000000000000002,
+      "exposedLength": 0.24999999999999856,
+      "marginMm": 0.7500000000000014,
+      "cachedNativeLengthsIgnored": [
+        0.8999999999999986
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_283",
+          "layer": "top",
+          "start": {
+            "x": -22.5,
+            "y": -15.350000000000001
+          },
+          "end": {
+            "x": -21.6,
+            "y": -15.350000000000001
+          },
+          "length": 0.8999999999999986,
+          "padMetalIntervals": [
+            [
+              0,
+              0.33333333333333387
+            ],
+            [
+              0.6111111111111105,
+              0.833333333333333
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.833333333333333,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.33333333333333387,
+              0.6111111111111105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_285",
+      "net": "GND",
+      "from": "C_IO5.pin2",
+      "to": "RB_VIA_122.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_284"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_674",
+        "pcb_via_121"
+      ],
+      "nativeWireLength": 1.5335300959996983,
+      "attachedPadMetalLength": 0.5278973382081013,
+      "attachedDrillVoidLength": 0.14999999999999947,
+      "exposedLength": 0.8556327577915975,
+      "marginMm": 0.14436724220840247,
+      "cachedNativeLengthsIgnored": [
+        1.5335300959996983
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_284",
+          "layer": "top",
+          "start": {
+            "x": -32.878008,
+            "y": -21.999871
+          },
+          "end": {
+            "x": -33.496992989108534,
+            "y": -20.596812862004587
+          },
+          "length": 1.5335300959996983,
+          "padMetalIntervals": [
+            [
+              0,
+              0.21381865218259472
+            ],
+            [
+              0.771768417905201,
+              0.9021864648165151
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.9021864648165151,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.21381865218259472,
+              0.771768417905201
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_321",
+      "net": "TEC_VCC_INT",
+      "from": "U2.pin1",
+      "to": "C22.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_313"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_32",
+        "pcb_smtpad_84"
+      ],
+      "nativeWireLength": 1.3926464016397029,
+      "attachedPadMetalLength": 0.4126359708562067,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9800104307834961,
+      "marginMm": 0.019989569216503855,
+      "cachedNativeLengthsIgnored": [
+        1.3926464016397029
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_313",
+          "layer": "top",
+          "start": {
+            "x": 26.799999999999997,
+            "y": 22.442
+          },
+          "end": {
+            "x": 28.150000000000002,
+            "y": 22.1
+          },
+          "length": 1.3926464016397029,
+          "padMetalIntervals": [
+            [
+              0.7037037037037048,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.7037037037037048
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_322",
+      "net": "VBUS_TEC",
+      "from": "U2.pin3",
+      "to": "C24.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_314"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_34",
+        "pcb_smtpad_86"
+      ],
+      "nativeWireLength": 1.4150000000000027,
+      "attachedPadMetalLength": 0.4650000000000001,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9500000000000026,
+      "marginMm": 0.04999999999999738,
+      "cachedNativeLengthsIgnored": [
+        1.4150000000000027
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_314",
+          "layer": "top",
+          "start": {
+            "x": 26.799999999999997,
+            "y": 23.875
+          },
+          "end": {
+            "x": 28.215,
+            "y": 23.875
+          },
+          "length": 1.4150000000000027,
+          "padMetalIntervals": [
+            [
+              0.6713780918727921,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6713780918727921
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_323",
+      "net": "TEC_VREF",
+      "from": "U2.pin5",
+      "to": "C35.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_315"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_36",
+        "pcb_smtpad_122"
+      ],
+      "nativeWireLength": 1.8386476008196901,
+      "attachedPadMetalLength": 0.868250255942631,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9703973448770589,
+      "marginMm": 0.029602655122941135,
+      "cachedNativeLengthsIgnored": [
+        1.8386476008196901
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_315",
+          "layer": "top",
+          "start": {
+            "x": 26.275,
+            "y": 25.175
+          },
+          "end": {
+            "x": 28.075,
+            "y": 25.55
+          },
+          "length": 1.8386476008196901,
+          "padMetalIntervals": [
+            [
+              0,
+              0.2916666666666666
+            ],
+            [
+              0.8194444444444445,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.2916666666666666,
+              0.8194444444444445
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_324",
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "U2.pin8",
+      "to": "C37.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_316"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_39",
+        "pcb_smtpad_138"
+      ],
+      "nativeWireLength": 1.8751666592599212,
+      "attachedPadMetalLength": 0.9250822185682258,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.9500844406916952,
+      "marginMm": 0.049915559308304824,
+      "cachedNativeLengthsIgnored": [
+        1.8751666592599212
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_316",
+          "layer": "top",
+          "start": {
+            "x": 26.275,
+            "y": 27.125
+          },
+          "end": {
+            "x": 28.150000000000002,
+            "y": 27.15
+          },
+          "length": 1.8751666592599212,
+          "padMetalIntervals": [
+            [
+              0,
+              0.27999999999999947
+            ],
+            [
+              0.7866666666666671,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.27999999999999947,
+              0.7866666666666671
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_369",
+      "net": "GND",
+      "from": "C22.pin2",
+      "to": "RB_VIA_129.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_361"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_83",
+        "pcb_via_128"
+      ],
+      "nativeWireLength": 1,
+      "attachedPadMetalLength": 0.6499999999999999,
+      "attachedDrillVoidLength": 0.1499999999999999,
+      "exposedLength": 0.20000000000000012,
+      "marginMm": 0.7999999999999998,
+      "cachedNativeLengthsIgnored": [
+        1
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_361",
+          "layer": "top",
+          "start": {
+            "x": 29.55,
+            "y": 22.1
+          },
+          "end": {
+            "x": 29.55,
+            "y": 21.1
+          },
+          "length": 1,
+          "padMetalIntervals": [
+            [
+              0,
+              0.45
+            ],
+            [
+              0.6500000000000001,
+              0.8500000000000001
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8500000000000001,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.45,
+              0.6500000000000001
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_370",
+      "net": "GND",
+      "from": "C24.pin2",
+      "to": "RB_VIA_186.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_362"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_85",
+        "pcb_via_178"
+      ],
+      "nativeWireLength": 1.014999999999997,
+      "attachedPadMetalLength": 0.6649999999999999,
+      "attachedDrillVoidLength": 0.14999999999999994,
+      "exposedLength": 0.1999999999999972,
+      "marginMm": 0.8000000000000028,
+      "cachedNativeLengthsIgnored": [
+        1.014999999999997
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_362",
+          "layer": "top",
+          "start": {
+            "x": 29.985000000000003,
+            "y": 23.875
+          },
+          "end": {
+            "x": 31,
+            "y": 23.875
+          },
+          "length": 1.014999999999997,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4581280788177354
+            ],
+            [
+              0.6551724137931026,
+              0.8522167487684725
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8522167487684725,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.4581280788177354,
+              0.6551724137931026
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_371",
+      "net": "GND",
+      "from": "C37.pin2",
+      "to": "RB_VIA_187.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_363"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_137",
+        "pcb_via_179"
+      ],
+      "nativeWireLength": 0.9499999999999993,
+      "attachedPadMetalLength": 0.6,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.19999999999999926,
+      "marginMm": 0.8000000000000007,
+      "cachedNativeLengthsIgnored": [
+        0.9499999999999993
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_363",
+          "layer": "top",
+          "start": {
+            "x": 29.55,
+            "y": 27.15
+          },
+          "end": {
+            "x": 30.5,
+            "y": 27.15
+          },
+          "length": 0.9499999999999993,
+          "padMetalIntervals": [
+            [
+              0,
+              0.42105263157894773
+            ],
+            [
+              0.6315789473684208,
+              0.8421052631578946
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8421052631578946,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.42105263157894773,
+              0.6315789473684208
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_372",
+      "net": "GND",
+      "from": "C35.pin2",
+      "to": "RB_VIA_188.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_364"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_121",
+        "pcb_via_180"
+      ],
+      "nativeWireLength": 0.9753204601565558,
+      "attachedPadMetalLength": 0.5251068200521861,
+      "attachedDrillVoidLength": 0.14999999999999983,
+      "exposedLength": 0.30021364010436985,
+      "marginMm": 0.6997863598956302,
+      "cachedNativeLengthsIgnored": [
+        0.9753204601565558
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_364",
+          "layer": "top",
+          "start": {
+            "x": 29.425,
+            "y": 25.55
+          },
+          "end": {
+            "x": 30.4,
+            "y": 25.575
+          },
+          "length": 0.9753204601565558,
+          "padMetalIntervals": [
+            [
+              0,
+              0.3333333333333341
+            ],
+            [
+              0.641143588904288,
+              0.846204395244695
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.846204395244695,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.3333333333333341,
+              0.641143588904288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_373",
+      "net": "GND",
+      "from": "C36.pin2",
+      "to": "RB_VIA_189.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_365"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_131",
+        "pcb_via_181"
+      ],
+      "nativeWireLength": 1.1807201192492658,
+      "attachedPadMetalLength": 0.7060229082496852,
+      "attachedDrillVoidLength": 0.1499999999999999,
+      "exposedLength": 0.32469721099958077,
+      "marginMm": 0.6753027890004193,
+      "cachedNativeLengthsIgnored": [
+        1.1807201192492658
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_365",
+          "layer": "top",
+          "start": {
+            "x": 32.85,
+            "y": 26.1
+          },
+          "end": {
+            "x": 33.39,
+            "y": 25.05
+          },
+          "length": 1.1807201192492658,
+          "padMetalIntervals": [
+            [
+              0,
+              0.42857142857142827
+            ],
+            [
+              0.7035707325606176,
+              0.8729588853831219
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8729588853831219,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.42857142857142827,
+              0.7035707325606176
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_374",
+      "net": "PD_VDD",
+      "from": "U_PD.pin1",
+      "to": "C_CH_VDD.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_366"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_489",
+        "pcb_smtpad_495"
+      ],
+      "nativeWireLength": 1.5524525160715834,
+      "attachedPadMetalLength": 0.7244752879182995,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8279772281532841,
+      "marginMm": 0.17202277184671588,
+      "cachedNativeLengthsIgnored": [
+        1.5524525160715834
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_366",
+          "layer": "top",
+          "start": {
+            "x": -39.999996,
+            "y": 19.999879
+          },
+          "end": {
+            "x": -41.5,
+            "y": 20.4
+          },
+          "length": 1.5524525160715834,
+          "padMetalIntervals": [
+            [
+              0,
+              0.19999906666915596
+            ],
+            [
+              0.7333340444425477,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.19999906666915596,
+              0.7333340444425477
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_375",
+      "net": "V3V3",
+      "from": "U_PD_WINDOW.pin8",
+      "to": "C_PD_WINDOW.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_367"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_516",
+        "pcb_smtpad_543"
+      ],
+      "nativeWireLength": 1.6399771339869336,
+      "attachedPadMetalLength": 0.7430317111914907,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8969454227954428,
+      "marginMm": 0.10305457720455724,
+      "cachedNativeLengthsIgnored": [
+        1.6399771339869336
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_367",
+          "layer": "top",
+          "start": {
+            "x": -38.7,
+            "y": 10.095
+          },
+          "end": {
+            "x": -39.25,
+            "y": 8.55
+          },
+          "length": 1.6399771339869336,
+          "padMetalIntervals": [
+            [
+              0,
+              0.1941747572815534
+            ],
+            [
+              0.7411003236245955,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.1941747572815534,
+              0.7411003236245955
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_422",
+      "net": "GND",
+      "from": "C212.pin2",
+      "to": "RB_VIA_210.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_412"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_370",
+        "pcb_via_200"
+      ],
+      "nativeWireLength": 1.5,
+      "attachedPadMetalLength": 0.6499999999999995,
+      "attachedDrillVoidLength": 0.1500000000000003,
+      "exposedLength": 0.7000000000000001,
+      "marginMm": 0.29999999999999993,
+      "cachedNativeLengthsIgnored": [
+        1.5
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_412",
+          "layer": "top",
+          "start": {
+            "x": -17.7,
+            "y": -16.2
+          },
+          "end": {
+            "x": -17.7,
+            "y": -14.7
+          },
+          "length": 1.5,
+          "padMetalIntervals": [
+            [
+              0,
+              0.3
+            ],
+            [
+              0.7666666666666667,
+              0.8999999999999998
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8999999999999998,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.3,
+              0.7666666666666667
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_423",
+      "net": "V3V3",
+      "from": "U_SUPERVISOR.pin3",
+      "to": "C216.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_413"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_195",
+        "pcb_smtpad_379"
+      ],
+      "nativeWireLength": 0.903107535991566,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.903107535991566,
+      "marginMm": 0.09689246400843399,
+      "cachedNativeLengthsIgnored": [
+        0.903107535991566
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_413",
+          "layer": "top",
+          "start": {
+            "x": -10.700000000000001,
+            "y": -28.233333333333334
+          },
+          "end": {
+            "x": -11.55,
+            "y": -28.538461538461537
+          },
+          "length": 0.903107535991566,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_424",
+      "net": "V3V3",
+      "from": "U_DAC.pin3",
+      "to": "C206.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_414"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_233",
+        "pcb_smtpad_359"
+      ],
+      "nativeWireLength": 0.85,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.85,
+      "marginMm": 0.15000000000000002,
+      "cachedNativeLengthsIgnored": [
+        0.85
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_414",
+          "layer": "top",
+          "start": {
+            "x": -0.75,
+            "y": -23.4
+          },
+          "end": {
+            "x": 0.09999999999999998,
+            "y": -23.4
+          },
+          "length": 0.85,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_425",
+      "net": "V3V3",
+      "from": "U_LATCH.pin8",
+      "to": "C207.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_415"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_192",
+        "pcb_smtpad_361"
+      ],
+      "nativeWireLength": 0.9499999999999997,
+      "attachedPadMetalLength": 0.39999999999999997,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5499999999999997,
+      "marginMm": 0.4500000000000003,
+      "cachedNativeLengthsIgnored": [
+        0.9499999999999997
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_415",
+          "layer": "top",
+          "start": {
+            "x": -1.975,
+            "y": -15.75
+          },
+          "end": {
+            "x": -2.925,
+            "y": -15.75
+          },
+          "length": 0.9499999999999997,
+          "padMetalIntervals": [
+            [
+              0.5789473684210525,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210525
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_426",
+      "net": "V3V3",
+      "from": "U_THERMAL.pin8",
+      "to": "C208.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_416"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_241",
+        "pcb_smtpad_363"
+      ],
+      "nativeWireLength": 0.8449999999999989,
+      "attachedPadMetalLength": 0,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8449999999999989,
+      "marginMm": 0.15500000000000114,
+      "cachedNativeLengthsIgnored": [
+        0.8449999999999989
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_416",
+          "layer": "top",
+          "start": {
+            "x": 19.794999999999998,
+            "y": -17.3
+          },
+          "end": {
+            "x": 18.95,
+            "y": -17.3
+          },
+          "length": 0.8449999999999989,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_427",
+      "net": "V3V3",
+      "from": "U_INPUT_LATCH.pin8",
+      "to": "C217.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_417"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_203",
+        "pcb_smtpad_381"
+      ],
+      "nativeWireLength": 0.9499999999999993,
+      "attachedPadMetalLength": 0.4,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5499999999999993,
+      "marginMm": 0.45000000000000073,
+      "cachedNativeLengthsIgnored": [
+        0.9499999999999993
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_417",
+          "layer": "top",
+          "start": {
+            "x": -10.975000000000001,
+            "y": -15.75
+          },
+          "end": {
+            "x": -11.925,
+            "y": -15.75
+          },
+          "length": 0.9499999999999993,
+          "padMetalIntervals": [
+            [
+              0.5789473684210523,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210523
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_428",
+      "net": "V3V3",
+      "from": "U_CLEAR_BUFFER.pin5",
+      "to": "C222.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_418"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_223",
+        "pcb_smtpad_391"
+      ],
+      "nativeWireLength": 0.9500000000000002,
+      "attachedPadMetalLength": 0.4000000000000001,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5500000000000002,
+      "marginMm": 0.44999999999999984,
+      "cachedNativeLengthsIgnored": [
+        0.9500000000000002
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_418",
+          "layer": "top",
+          "start": {
+            "x": -8,
+            "y": -6.15
+          },
+          "end": {
+            "x": -8,
+            "y": -5.2
+          },
+          "length": 0.9500000000000002,
+          "padMetalIntervals": [
+            [
+              0.5789473684210527,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210527
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_429",
+      "net": "V3V3",
+      "from": "U_CLOCK_BUFFER.pin5",
+      "to": "C223.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_419"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_229",
+        "pcb_smtpad_393"
+      ],
+      "nativeWireLength": 0.9500000000000002,
+      "attachedPadMetalLength": 0.4000000000000001,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5500000000000002,
+      "marginMm": 0.44999999999999984,
+      "cachedNativeLengthsIgnored": [
+        0.9500000000000002
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_419",
+          "layer": "top",
+          "start": {
+            "x": -1.5716300589057694e-17,
+            "y": -6.15
+          },
+          "end": {
+            "x": -4.286263797015736e-17,
+            "y": -5.2
+          },
+          "length": 0.9500000000000002,
+          "padMetalIntervals": [
+            [
+              0.5789473684210527,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210527
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_430",
+      "net": "V3V3",
+      "from": "U_AUX_BUFFER.pin5",
+      "to": "C_AUX1.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_420"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_736",
+        "pcb_smtpad_755"
+      ],
+      "nativeWireLength": 0.9499999999999993,
+      "attachedPadMetalLength": 0.4,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5499999999999993,
+      "marginMm": 0.45000000000000073,
+      "cachedNativeLengthsIgnored": [
+        0.9499999999999993
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_420",
+          "layer": "top",
+          "start": {
+            "x": -10,
+            "y": 21.85
+          },
+          "end": {
+            "x": -10,
+            "y": 22.8
+          },
+          "length": 0.9499999999999993,
+          "padMetalIntervals": [
+            [
+              0.5789473684210523,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210523
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_431",
+      "net": "V3V3",
+      "from": "U_AUX_LOSS_LATCH.pin8",
+      "to": "C_AUX2.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_421"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_750",
+        "pcb_smtpad_757"
+      ],
+      "nativeWireLength": 0.95,
+      "attachedPadMetalLength": 0.4000000000000001,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.5499999999999999,
+      "marginMm": 0.45000000000000007,
+      "cachedNativeLengthsIgnored": [
+        0.95
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_421",
+          "layer": "top",
+          "start": {
+            "x": 1.025,
+            "y": 19.25
+          },
+          "end": {
+            "x": 0.07499999999999996,
+            "y": 19.25
+          },
+          "length": 0.95,
+          "padMetalIntervals": [
+            [
+              0.5789473684210525,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.5789473684210525
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_432",
+      "net": "GND",
+      "from": "C216.pin2",
+      "to": "RB_VIA_211.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_422"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_378",
+        "pcb_via_201"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_422",
+          "layer": "top",
+          "start": {
+            "x": -12.45,
+            "y": -27.3
+          },
+          "end": {
+            "x": -13.05,
+            "y": -27.3
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_433",
+      "net": "GND",
+      "from": "C206.pin2",
+      "to": "RB_VIA_212.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_423"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_358",
+        "pcb_via_202"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_423",
+          "layer": "top",
+          "start": {
+            "x": 1.9,
+            "y": -22.95
+          },
+          "end": {
+            "x": 1.9,
+            "y": -22.349999999999998
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_434",
+      "net": "GND",
+      "from": "C207.pin2",
+      "to": "RB_VIA_213.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_424"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_360",
+        "pcb_via_203"
+      ],
+      "nativeWireLength": 0.7499999999999991,
+      "attachedPadMetalLength": 0.2000000000000003,
+      "attachedDrillVoidLength": 0.14999999999999972,
+      "exposedLength": 0.3999999999999991,
+      "marginMm": 0.600000000000001,
+      "cachedNativeLengthsIgnored": [
+        0.7499999999999991
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_424",
+          "layer": "top",
+          "start": {
+            "x": -4.7250000000000005,
+            "y": -15.75
+          },
+          "end": {
+            "x": -5.475,
+            "y": -15.75
+          },
+          "length": 0.7499999999999991,
+          "padMetalIntervals": [
+            [
+              0.5333333333333328,
+              0.8000000000000002
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8000000000000002,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5333333333333328
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_435",
+      "net": "GND",
+      "from": "C208.pin2",
+      "to": "RB_VIA_214.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_425"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_362",
+        "pcb_via_204"
+      ],
+      "nativeWireLength": 0.6500000000000021,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.1500000000000001,
+      "exposedLength": 0.30000000000000215,
+      "marginMm": 0.6999999999999978,
+      "cachedNativeLengthsIgnored": [
+        0.6500000000000021
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_425",
+          "layer": "top",
+          "start": {
+            "x": 16.750000000000004,
+            "y": -17.3
+          },
+          "end": {
+            "x": 16.1,
+            "y": -17.3
+          },
+          "length": 0.6500000000000021,
+          "padMetalIntervals": [
+            [
+              0.46153846153846334,
+              0.7692307692307698
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7692307692307698,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.46153846153846334
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_436",
+      "net": "GND",
+      "from": "C217.pin2",
+      "to": "RB_VIA_215.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_426"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_380",
+        "pcb_via_205"
+      ],
+      "nativeWireLength": 0.662923509868423,
+      "attachedPadMetalLength": 0.19999999999999982,
+      "attachedDrillVoidLength": 0.15000000000000022,
+      "exposedLength": 0.31292350986842293,
+      "marginMm": 0.6870764901315771,
+      "cachedNativeLengthsIgnored": [
+        0.662923509868423
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_426",
+          "layer": "top",
+          "start": {
+            "x": -13.138603896932107,
+            "y": -15.3
+          },
+          "end": {
+            "x": -12.884914052780147,
+            "y": -14.68753853761202
+          },
+          "length": 0.662923509868423,
+          "padMetalIntervals": [
+            [
+              0.47203561981160086,
+              0.7737295513478286
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7737295513478286,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.47203561981160086
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_437",
+      "net": "GND",
+      "from": "C222.pin2",
+      "to": "RB_VIA_216.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_427"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_390",
+        "pcb_via_206"
+      ],
+      "nativeWireLength": 0.5999999999999996,
+      "attachedPadMetalLength": 0.2,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.24999999999999958,
+      "marginMm": 0.7500000000000004,
+      "cachedNativeLengthsIgnored": [
+        0.5999999999999996
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_427",
+          "layer": "top",
+          "start": {
+            "x": -7.55,
+            "y": -3.8
+          },
+          "end": {
+            "x": -6.95,
+            "y": -3.8
+          },
+          "length": 0.5999999999999996,
+          "padMetalIntervals": [
+            [
+              0.41666666666666624,
+              0.7499999999999998
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7499999999999998,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.41666666666666624
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_438",
+      "net": "GND",
+      "from": "C223.pin2",
+      "to": "RB_VIA_217.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_428"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_392",
+        "pcb_via_207"
+      ],
+      "nativeWireLength": 0.6,
+      "attachedPadMetalLength": 0.19999999999999984,
+      "attachedDrillVoidLength": 0.15000000000000013,
+      "exposedLength": 0.25,
+      "marginMm": 0.75,
+      "cachedNativeLengthsIgnored": [
+        0.6
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_428",
+          "layer": "top",
+          "start": {
+            "x": 0.45000000000000007,
+            "y": -3.8
+          },
+          "end": {
+            "x": 1.05,
+            "y": -3.8
+          },
+          "length": 0.6,
+          "padMetalIntervals": [
+            [
+              0.4166666666666667,
+              0.7499999999999998
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7499999999999998,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4166666666666667
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_439",
+      "net": "GND",
+      "from": "C_AUX1.pin2",
+      "to": "RB_VIA_218.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_429"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_754",
+        "pcb_via_208"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_429",
+          "layer": "top",
+          "start": {
+            "x": -9.55,
+            "y": 24.2
+          },
+          "end": {
+            "x": -8.95,
+            "y": 24.2
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_440",
+      "net": "GND",
+      "from": "C_AUX2.pin2",
+      "to": "RB_VIA_219.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_430"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_756",
+        "pcb_via_209"
+      ],
+      "nativeWireLength": 0.6499999999999999,
+      "attachedPadMetalLength": 0.2,
+      "attachedDrillVoidLength": 0.14999999999999994,
+      "exposedLength": 0.29999999999999993,
+      "marginMm": 0.7000000000000001,
+      "cachedNativeLengthsIgnored": [
+        0.6499999999999999
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_430",
+          "layer": "top",
+          "start": {
+            "x": -1.725,
+            "y": 19.25
+          },
+          "end": {
+            "x": -2.375,
+            "y": 19.25
+          },
+          "length": 0.6499999999999999,
+          "padMetalIntervals": [
+            [
+              0.4615384615384615,
+              0.7692307692307693
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7692307692307693,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4615384615384615
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_609",
+      "net": "V3V3",
+      "from": "U_TEC_MON.pin5",
+      "to": "C43.pin1",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_596"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_157",
+        "pcb_smtpad_172"
+      ],
+      "nativeWireLength": 1.2950000000000017,
+      "attachedPadMetalLength": 0.4,
+      "attachedDrillVoidLength": 0,
+      "exposedLength": 0.8950000000000017,
+      "marginMm": 0.10499999999999832,
+      "cachedNativeLengthsIgnored": [
+        1.2950000000000017
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_596",
+          "layer": "top",
+          "start": {
+            "x": 39.795,
+            "y": 26.3
+          },
+          "end": {
+            "x": 38.5,
+            "y": 26.3
+          },
+          "length": 1.2950000000000017,
+          "padMetalIntervals": [
+            [
+              0.6911196911196915,
+              1
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              0.6911196911196915
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_610",
+      "net": "GND",
+      "from": "C43.pin2",
+      "to": "RB_VIA_368.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_597"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_171",
+        "pcb_via_352"
+      ],
+      "nativeWireLength": 0.6355249536871067,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.1500000000000001,
+      "exposedLength": 0.28552495368710673,
+      "marginMm": 0.7144750463128933,
+      "cachedNativeLengthsIgnored": [
+        0.6355249536871067
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_597",
+          "layer": "top",
+          "start": {
+            "x": 36.699999999999996,
+            "y": 26.068421052631578
+          },
+          "end": {
+            "x": 36.15,
+            "y": 25.75
+          },
+          "length": 0.6355249536871067,
+          "padMetalIntervals": [
+            [
+              0.4492741819665536,
+              0.7639746494142371
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7639746494142371,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4492741819665536
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_611",
+      "net": "V3V3",
+      "from": "U_TEC_MON.pin5",
+      "to": "RB_VIA_369.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_598"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_157",
+        "pcb_via_353"
+      ],
+      "nativeWireLength": 0.625,
+      "attachedPadMetalLength": 0.2,
+      "attachedDrillVoidLength": 0.15,
+      "exposedLength": 0.275,
+      "marginMm": 0.725,
+      "cachedNativeLengthsIgnored": [
+        0.625
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_598",
+          "layer": "top",
+          "start": {
+            "x": 40.095,
+            "y": 27.075
+          },
+          "end": {
+            "x": 40.095,
+            "y": 27.7
+          },
+          "length": 0.625,
+          "padMetalIntervals": [
+            [
+              0.44,
+              0.76
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.76,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_782",
+      "net": "GND",
+      "from": "C_USB_IN.pin2",
+      "to": "RB_VIA_412.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_766"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_26",
+        "pcb_via_396"
+      ],
+      "nativeWireLength": 0.5750000000000028,
+      "attachedPadMetalLength": 0.19999999999999996,
+      "attachedDrillVoidLength": 0.15000000000000008,
+      "exposedLength": 0.2250000000000028,
+      "marginMm": 0.7749999999999972,
+      "cachedNativeLengthsIgnored": [
+        0.5750000000000028
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_766",
+          "layer": "top",
+          "start": {
+            "x": -46.175,
+            "y": 28.28
+          },
+          "end": {
+            "x": -46.75,
+            "y": 28.28
+          },
+          "length": 0.5750000000000028,
+          "padMetalIntervals": [
+            [
+              0.3913043478260899,
+              0.7391304347826099
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7391304347826099,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.3913043478260899
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_783",
+      "net": "GND",
+      "from": "C_INPUT_DVDT.pin2",
+      "to": "RB_VIA_413.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_767"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_28",
+        "pcb_via_397"
+      ],
+      "nativeWireLength": 0.620000000000001,
+      "attachedPadMetalLength": 0.1999999999999998,
+      "attachedDrillVoidLength": 0.1500000000000002,
+      "exposedLength": 0.270000000000001,
+      "marginMm": 0.729999999999999,
+      "cachedNativeLengthsIgnored": [
+        0.620000000000001
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_767",
+          "layer": "top",
+          "start": {
+            "x": -19,
+            "y": 26.099999999999998
+          },
+          "end": {
+            "x": -19,
+            "y": 26.72
+          },
+          "length": 0.620000000000001,
+          "padMetalIntervals": [
+            [
+              0.4354838709677429,
+              0.7580645161290324
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7580645161290324,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4354838709677429
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_784",
+      "net": "GND",
+      "from": "C_INPUT_OUT.pin2",
+      "to": "RB_VIA_414.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_768"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_30",
+        "pcb_via_398"
+      ],
+      "nativeWireLength": 1.2065950514441706,
+      "attachedPadMetalLength": 0.2000000000000009,
+      "attachedDrillVoidLength": 0.14999999999999913,
+      "exposedLength": 0.8565950514441705,
+      "marginMm": 0.14340494855582953,
+      "cachedNativeLengthsIgnored": [
+        1.2065950514441706
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_768",
+          "layer": "top",
+          "start": {
+            "x": -17.101820693123827,
+            "y": 24.099999999999998
+          },
+          "end": {
+            "x": -17.414110472164033,
+            "y": 25.26548132206251
+          },
+          "length": 1.2065950514441706,
+          "padMetalIntervals": [
+            [
+              0.7099275356872333,
+              0.8756832295802436
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8756832295802436,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.7099275356872333
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_789",
+      "net": "GND",
+      "from": "C21.pin2",
+      "to": "RB_VIA_415.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_773"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_79",
+        "pcb_via_399"
+      ],
+      "nativeWireLength": 0.7250000000000014,
+      "attachedPadMetalLength": 0.20000000000000015,
+      "attachedDrillVoidLength": 0.14999999999999986,
+      "exposedLength": 0.3750000000000014,
+      "marginMm": 0.6249999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.7250000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_773",
+          "layer": "top",
+          "start": {
+            "x": 33.480000000000004,
+            "y": 21.6
+          },
+          "end": {
+            "x": 34.205000000000005,
+            "y": 21.6
+          },
+          "length": 0.7250000000000014,
+          "padMetalIntervals": [
+            [
+              0.5172413793103458,
+              0.7931034482758627
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7931034482758627,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5172413793103458
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_790",
+      "net": "GND",
+      "from": "C41.pin2",
+      "to": "RB_VIA_416.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_774"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_81",
+        "pcb_via_400"
+      ],
+      "nativeWireLength": 0.6515172442698552,
+      "attachedPadMetalLength": 0.19999999999999993,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.30151724426985527,
+      "marginMm": 0.6984827557301447,
+      "cachedNativeLengthsIgnored": [
+        0.6515172442698552
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_774",
+          "layer": "top",
+          "start": {
+            "x": 33.480000000000004,
+            "y": 19.275758622134926
+          },
+          "end": {
+            "x": 34.04423048454133,
+            "y": 18.95
+          },
+          "length": 0.6515172442698552,
+          "padMetalIntervals": [
+            [
+              0.4627924232577462,
+              0.7697681813961769
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7697681813961769,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4627924232577462
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_791",
+      "net": "GND",
+      "from": "C27.pin2",
+      "to": "RB_VIA_417.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_775"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_91",
+        "pcb_via_401"
+      ],
+      "nativeWireLength": 1.3999999999999986,
+      "attachedPadMetalLength": 0.8900000000000001,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 0.3599999999999985,
+      "marginMm": 0.6400000000000015,
+      "cachedNativeLengthsIgnored": [
+        1.3999999999999986
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_775",
+          "layer": "top",
+          "start": {
+            "x": 1.9499999999999997,
+            "y": 25.035
+          },
+          "end": {
+            "x": 1.9499999999999997,
+            "y": 23.635
+          },
+          "length": 1.3999999999999986,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4928571428571433
+            ],
+            [
+              0.7499999999999997,
+              0.8928571428571429
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8928571428571429,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.4928571428571433,
+              0.7499999999999997
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_792",
+      "net": "GND",
+      "from": "C38.pin2",
+      "to": "RB_VIA_418.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_776"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_93",
+        "pcb_via_402"
+      ],
+      "nativeWireLength": 1.4000000000000026,
+      "attachedPadMetalLength": 0.9143405644829572,
+      "attachedDrillVoidLength": 0.15000000000000022,
+      "exposedLength": 0.33565943551704525,
+      "marginMm": 0.6643405644829548,
+      "cachedNativeLengthsIgnored": [
+        1.4000000000000026
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_776",
+          "layer": "top",
+          "start": {
+            "x": 9.25,
+            "y": 33.135000000000005
+          },
+          "end": {
+            "x": 9.61234666314353,
+            "y": 34.4872961568047
+          },
+          "length": 1.4000000000000026,
+          "padMetalIntervals": [
+            [
+              0,
+              0.5102432603449686
+            ],
+            [
+              0.7500000000000004,
+              0.8928571428571429
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8928571428571429,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.5102432603449686,
+              0.7500000000000004
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_793",
+      "net": "GND",
+      "from": "C39.pin2",
+      "to": "RB_VIA_419.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_777"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_95",
+        "pcb_via_403"
+      ],
+      "nativeWireLength": 1.3999999999999986,
+      "attachedPadMetalLength": 0.8900000000000001,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 0.3599999999999985,
+      "marginMm": 0.6400000000000015,
+      "cachedNativeLengthsIgnored": [
+        1.3999999999999986
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_777",
+          "layer": "top",
+          "start": {
+            "x": 5.95,
+            "y": 27.785
+          },
+          "end": {
+            "x": 5.95,
+            "y": 26.385
+          },
+          "length": 1.3999999999999986,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4928571428571433
+            ],
+            [
+              0.7499999999999997,
+              0.8928571428571429
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8928571428571429,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.4928571428571433,
+              0.7499999999999997
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_794",
+      "net": "GND",
+      "from": "C40.pin2",
+      "to": "RB_VIA_420.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_778"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_97",
+        "pcb_via_404"
+      ],
+      "nativeWireLength": 1.3999999999999986,
+      "attachedPadMetalLength": 0.8900000000000001,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 0.3599999999999985,
+      "marginMm": 0.6400000000000015,
+      "cachedNativeLengthsIgnored": [
+        1.3999999999999986
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_778",
+          "layer": "top",
+          "start": {
+            "x": -1.8500000000000003,
+            "y": 27.785
+          },
+          "end": {
+            "x": -1.8500000000000005,
+            "y": 26.385
+          },
+          "length": 1.3999999999999986,
+          "padMetalIntervals": [
+            [
+              0,
+              0.4928571428571433
+            ],
+            [
+              0.7499999999999997,
+              0.8928571428571429
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8928571428571429,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.4928571428571433,
+              0.7499999999999997
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_795",
+      "net": "GND",
+      "from": "C33.pin2",
+      "to": "RB_VIA_421.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_779"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_115",
+        "pcb_via_405"
+      ],
+      "nativeWireLength": 0.6749999999999972,
+      "attachedPadMetalLength": 0.19999999999999998,
+      "attachedDrillVoidLength": 0.15000000000000002,
+      "exposedLength": 0.3249999999999971,
+      "marginMm": 0.6750000000000029,
+      "cachedNativeLengthsIgnored": [
+        0.6749999999999972
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_779",
+          "layer": "top",
+          "start": {
+            "x": 25.65,
+            "y": 33.5
+          },
+          "end": {
+            "x": 25.65,
+            "y": 34.175
+          },
+          "length": 0.6749999999999972,
+          "padMetalIntervals": [
+            [
+              0.4814814814814793,
+              0.7777777777777768
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7777777777777768,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.4814814814814793
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_797",
+      "net": "GND",
+      "from": "C34.pin2",
+      "to": "RB_VIA_422.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_781"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_119",
+        "pcb_via_406"
+      ],
+      "nativeWireLength": 0.7341257188154631,
+      "attachedPadMetalLength": 0.19999999999999996,
+      "attachedDrillVoidLength": 0.15,
+      "exposedLength": 0.38412571881546315,
+      "marginMm": 0.6158742811845368,
+      "cachedNativeLengthsIgnored": [
+        0.7341257188154631
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_781",
+          "layer": "top",
+          "start": {
+            "x": 29.670577136594005,
+            "y": 29.2
+          },
+          "end": {
+            "x": 29.860582854123024,
+            "y": 29.909110991546882
+          },
+          "length": 0.7341257188154631,
+          "padMetalIntervals": [
+            [
+              0.5232424215232006,
+              0.7956753235099431
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7956753235099431,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5232424215232006
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_807",
+      "net": "GND",
+      "from": "C44.pin2",
+      "to": "RB_VIA_427.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_791"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_173",
+        "pcb_via_411"
+      ],
+      "nativeWireLength": 0.5999999999999996,
+      "attachedPadMetalLength": 0.2,
+      "attachedDrillVoidLength": 0.15000000000000005,
+      "exposedLength": 0.24999999999999958,
+      "marginMm": 0.7500000000000004,
+      "cachedNativeLengthsIgnored": [
+        0.5999999999999996
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_791",
+          "layer": "top",
+          "start": {
+            "x": 9.1,
+            "y": 19
+          },
+          "end": {
+            "x": 9.7,
+            "y": 19
+          },
+          "length": 0.5999999999999996,
+          "padMetalIntervals": [
+            [
+              0.41666666666666624,
+              0.7499999999999998
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7499999999999998,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.41666666666666624
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_844",
+      "net": "GND",
+      "from": "C202.pin2",
+      "to": "RB_VIA_454.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_828"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_356",
+        "pcb_via_438"
+      ],
+      "nativeWireLength": 0.5917096231345252,
+      "attachedPadMetalLength": 0.19999999999999982,
+      "attachedDrillVoidLength": 0.15000000000000013,
+      "exposedLength": 0.2417096231345253,
+      "marginMm": 0.7582903768654747,
+      "cachedNativeLengthsIgnored": [
+        0.5917096231345252
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_828",
+          "layer": "top",
+          "start": {
+            "x": -31.7,
+            "y": 6.3241451884327375
+          },
+          "end": {
+            "x": -32.212435565298215,
+            "y": 6.62
+          },
+          "length": 0.5917096231345252,
+          "padMetalIntervals": [
+            [
+              0.40849364905389174,
+              0.7464972781659533
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7464972781659533,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.40849364905389174
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_845",
+      "net": "GND",
+      "from": "C209.pin2",
+      "to": "RB_VIA_455.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_829"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_364",
+        "pcb_via_439"
+      ],
+      "nativeWireLength": 3.639063199251538,
+      "attachedPadMetalLength": 0.7031152949374528,
+      "attachedDrillVoidLength": 0.14999999999999977,
+      "exposedLength": 2.785947904314085,
+      "marginMm": -1.7859479043140851,
+      "cachedNativeLengthsIgnored": [
+        3.639063199251538
+      ],
+      "passed": false,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -17.7,
+            "y": -23.9
+          },
+          "end": {
+            "x": -16.9,
+            "y": -22.299999999999997
+          },
+          "length": 1.7888543819998333,
+          "padMetalIntervals": [
+            [
+              0,
+              0.2812499999999998
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.2812499999999998,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -16.9,
+            "y": -22.299999999999997
+          },
+          "end": {
+            "x": -16.5,
+            "y": -22
+          },
+          "length": 0.49999999999999717,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -16.5,
+            "y": -22
+          },
+          "end": {
+            "x": -15.899999999999999,
+            "y": -22.099999999999998
+          },
+          "length": 0.608276253029823,
+          "padMetalIntervals": [],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_829",
+          "layer": "top",
+          "start": {
+            "x": -15.899999999999999,
+            "y": -22.099999999999998
+          },
+          "end": {
+            "x": -15.27512886940357,
+            "y": -22.5
+          },
+          "length": 0.7419325642218844,
+          "padMetalIntervals": [
+            [
+              0.5282590131798987,
+              0.797825291362814
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.797825291362814,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5282590131798987
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_846",
+      "net": "GND",
+      "from": "C211.pin2",
+      "to": "RB_VIA_210.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_830"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_368",
+        "pcb_via_200"
+      ],
+      "nativeWireLength": 0.75,
+      "attachedPadMetalLength": 0.20000000000000012,
+      "attachedDrillVoidLength": 0.14999999999999988,
+      "exposedLength": 0.4,
+      "marginMm": 0.6,
+      "cachedNativeLengthsIgnored": [
+        0.75
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_830",
+          "layer": "top",
+          "start": {
+            "x": -17.7,
+            "y": -13.95
+          },
+          "end": {
+            "x": -17.7,
+            "y": -14.7
+          },
+          "length": 0.75,
+          "padMetalIntervals": [
+            [
+              0.5333333333333333,
+              0.8000000000000002
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8000000000000002,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5333333333333333
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_854",
+      "net": "GND",
+      "from": "C_DBG1.pin2",
+      "to": "RB_VIA_463.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_838"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_438",
+        "pcb_via_447"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_838",
+          "layer": "top",
+          "start": {
+            "x": 32,
+            "y": 40.65
+          },
+          "end": {
+            "x": 32,
+            "y": 41.25
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_855",
+      "net": "GND",
+      "from": "C_DBG2.pin2",
+      "to": "RB_VIA_464.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_839"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_440",
+        "pcb_via_448"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_839",
+          "layer": "top",
+          "start": {
+            "x": 41,
+            "y": 40.65
+          },
+          "end": {
+            "x": 41,
+            "y": 41.25
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_880",
+      "net": "GND",
+      "from": "C_USB_PROG.pin2",
+      "to": "RB_VIA_472.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_864"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_566",
+        "pcb_via_456"
+      ],
+      "nativeWireLength": 0.6000000000000014,
+      "attachedPadMetalLength": 0.19999999999999987,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.2500000000000014,
+      "marginMm": 0.7499999999999987,
+      "cachedNativeLengthsIgnored": [
+        0.6000000000000014
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_864",
+          "layer": "top",
+          "start": {
+            "x": -41.85,
+            "y": -27
+          },
+          "end": {
+            "x": -41.25,
+            "y": -27
+          },
+          "length": 0.6000000000000014,
+          "padMetalIntervals": [
+            [
+              0.416666666666668,
+              0.7500000000000003
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7500000000000003,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.416666666666668
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_886",
+      "net": "GND",
+      "from": "C_FLASH.pin2",
+      "to": "RB_VIA_475.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_870"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_652",
+        "pcb_via_459"
+      ],
+      "nativeWireLength": 0.9999999999999992,
+      "attachedPadMetalLength": 0.5105828541230247,
+      "attachedDrillVoidLength": 0.15000000000000002,
+      "exposedLength": 0.33941714587697447,
+      "marginMm": 0.6605828541230255,
+      "cachedNativeLengthsIgnored": [
+        0.9999999999999992
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_870",
+          "layer": "top",
+          "start": {
+            "x": -31.65,
+            "y": -9.79251
+          },
+          "end": {
+            "x": -31.90881904510252,
+            "y": -10.758435826289068
+          },
+          "length": 0.9999999999999992,
+          "padMetalIntervals": [
+            [
+              0,
+              0.31058285412302505
+            ],
+            [
+              0.6499999999999998,
+              0.8499999999999999
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8499999999999999,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0.31058285412302505,
+              0.6499999999999998
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_889",
+      "net": "GND",
+      "from": "C_XIN.pin2",
+      "to": "RB_VIA_477.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_873"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_662",
+        "pcb_via_461"
+      ],
+      "nativeWireLength": 0.5499999999999972,
+      "attachedPadMetalLength": 0.19999999999999993,
+      "attachedDrillVoidLength": 0.15,
+      "exposedLength": 0.19999999999999724,
+      "marginMm": 0.8000000000000027,
+      "cachedNativeLengthsIgnored": [
+        0.5499999999999972
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_873",
+          "layer": "top",
+          "start": {
+            "x": -33.800000000000004,
+            "y": -30.05
+          },
+          "end": {
+            "x": -34.35,
+            "y": -30.05
+          },
+          "length": 0.5499999999999972,
+          "padMetalIntervals": [
+            [
+              0.3636363636363605,
+              0.7272727272727258
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7272727272727258,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.3636363636363605
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_890",
+      "net": "GND",
+      "from": "C_XOUT.pin2",
+      "to": "RB_VIA_478.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_874"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_664",
+        "pcb_via_462"
+      ],
+      "nativeWireLength": 0.5500000000000007,
+      "attachedPadMetalLength": 0.1999999999999999,
+      "attachedDrillVoidLength": 0.15000000000000013,
+      "exposedLength": 0.2000000000000007,
+      "marginMm": 0.7999999999999993,
+      "cachedNativeLengthsIgnored": [
+        0.5500000000000007
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_874",
+          "layer": "top",
+          "start": {
+            "x": -26.2,
+            "y": -29.4
+          },
+          "end": {
+            "x": -25.65,
+            "y": -29.4
+          },
+          "length": 0.5500000000000007,
+          "padMetalIntervals": [
+            [
+              0.3636363636363644,
+              0.7272727272727274
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7272727272727274,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.3636363636363644
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_891",
+      "net": "GND",
+      "from": "C_IO1.pin2",
+      "to": "RB_VIA_479.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_875"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_666",
+        "pcb_via_463"
+      ],
+      "nativeWireLength": 1.2877586219651853,
+      "attachedPadMetalLength": 0.49999999999999983,
+      "attachedDrillVoidLength": 0.15000000000000016,
+      "exposedLength": 0.6377586219651854,
+      "marginMm": 0.3622413780348146,
+      "cachedNativeLengthsIgnored": [
+        1.2877586219651853
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_875",
+          "layer": "top",
+          "start": {
+            "x": -32,
+            "y": -15.05
+          },
+          "end": {
+            "x": -31.560769515458674,
+            "y": -15.05
+          },
+          "length": 0.4392304845413264,
+          "padMetalIntervals": [
+            [
+              0,
+              0.6830127018922193
+            ]
+          ],
+          "attachedDrillIntervals": [],
+          "exposedIntervals": [
+            [
+              0.6830127018922193,
+              1
+            ]
+          ]
+        },
+        {
+          "pcbTraceId": "pcb_trace_875",
+          "layer": "top",
+          "start": {
+            "x": -31.560769515458674,
+            "y": -15.05
+          },
+          "end": {
+            "x": -30.960769515458672,
+            "y": -15.650000000000002
+          },
+          "length": 0.848528137423859,
+          "padMetalIntervals": [
+            [
+              0.5875210443078482,
+              0.8232233047033634
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.8232233047033634,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5875210443078482
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_892",
+      "net": "GND",
+      "from": "C_IO6.pin2",
+      "to": "RB_VIA_121.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_876"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_676",
+        "pcb_via_120"
+      ],
+      "nativeWireLength": 0.8376348922077747,
+      "attachedPadMetalLength": 0.1999999999999998,
+      "attachedDrillVoidLength": 0.1500000000000002,
+      "exposedLength": 0.4876348922077747,
+      "marginMm": 0.5123651077922253,
+      "cachedNativeLengthsIgnored": [
+        0.8376348922077747
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_876",
+          "layer": "top",
+          "start": {
+            "x": -33.02713848736705,
+            "y": -18.699929
+          },
+          "end": {
+            "x": -33.4,
+            "y": -19.45
+          },
+          "length": 0.8376348922077747,
+          "padMetalIntervals": [
+            [
+              0.5821568522802382,
+              0.820924365262959
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.820924365262959,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.5821568522802382
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RB_TRACE_893",
+      "net": "GND",
+      "from": "C_MCU_BULK.pin2",
+      "to": "RB_VIA_480.top",
+      "maxExposedLength": 1,
+      "nativePcbTraceIds": [
+        "pcb_trace_877"
+      ],
+      "attachedCopperIds": [
+        "pcb_smtpad_690",
+        "pcb_via_464"
+      ],
+      "nativeWireLength": 0.5500000000000007,
+      "attachedPadMetalLength": 0.1999999999999999,
+      "attachedDrillVoidLength": 0.15000000000000013,
+      "exposedLength": 0.2000000000000007,
+      "marginMm": 0.7999999999999993,
+      "cachedNativeLengthsIgnored": [
+        0.5500000000000007
+      ],
+      "passed": true,
+      "errors": [],
+      "segments": [
+        {
+          "pcbTraceId": "pcb_trace_877",
+          "layer": "top",
+          "start": {
+            "x": -35.25,
+            "y": -27.2
+          },
+          "end": {
+            "x": -35.25,
+            "y": -27.75
+          },
+          "length": 0.5500000000000007,
+          "padMetalIntervals": [
+            [
+              0.3636363636363644,
+              0.7272727272727274
+            ]
+          ],
+          "attachedDrillIntervals": [
+            [
+              0.7272727272727274,
+              1
+            ]
+          ],
+          "exposedIntervals": [
+            [
+              0,
+              0.3636363636363644
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

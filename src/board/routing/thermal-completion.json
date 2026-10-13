@@ -1,0 +1,3009 @@
+{
+  "owner": "thermal_sensor_routing",
+  "scope": "Accepted thermal source packet plus current authoritative generated-route audit; stale rejected testpoint candidates and duplicate filter spokes are removed. C212 has an early local ground return.",
+  "inventorySha256": "ef378fb7e5032b06dc494447b5bd9bba4e46ff71fe8799ed81be2aed951f180c",
+  "placementSuggestions": {
+    "C209": [
+      -17,
+      -23.9,
+      180
+    ],
+    "C210": [
+      -17,
+      -21.2,
+      180
+    ],
+    "C212": [
+      -17,
+      -16.2,
+      180
+    ],
+    "C211": [
+      -17,
+      -13.5,
+      180
+    ],
+    "R210": [
+      -14,
+      -23.9,
+      180
+    ],
+    "R211": [
+      -14,
+      -20.4,
+      180
+    ],
+    "R222": [
+      -14,
+      -13.5,
+      180
+    ],
+    "R223": [
+      -10,
+      -12,
+      0
+    ],
+    "R224": [
+      -14,
+      -17.3,
+      180
+    ],
+    "R225": [
+      -16.5,
+      -18.9,
+      0
+    ]
+  },
+  "externalPlacementDependencies": {
+    "C217": [
+      -12.625,
+      -15.75,
+      180
+    ]
+  },
+  "externalFanouts": {
+    "U_MCU.pin38": {
+      "name": "MCU_ADC_38",
+      "net": "HOT_ADC",
+      "x": -24.725,
+      "y": -20.5,
+      "topPath": [
+        {
+          "x": -23.575064,
+          "y": -19.999875
+        },
+        {
+          "x": -24.3,
+          "y": -19.999875
+        },
+        {
+          "x": -24.725,
+          "y": -20.5
+        }
+      ]
+    },
+    "U_MCU.pin39": {
+      "name": "MCU_ADC_39",
+      "net": "COLD_ADC",
+      "x": -21.8,
+      "y": -20.3,
+      "topPath": [
+        {
+          "x": -23.575064,
+          "y": -19.600079
+        },
+        {
+          "x": -22.65,
+          "y": -19.600079
+        },
+        {
+          "x": -21.8,
+          "y": -20.3
+        }
+      ]
+    },
+    "U_MCU.pin40": {
+      "name": "MCU_ADC_40",
+      "net": "VOUT_ADC",
+      "x": -20.75,
+      "y": -19.2,
+      "topPath": [
+        {
+          "x": -23.575064,
+          "y": -19.200029
+        },
+        {
+          "x": -20.75,
+          "y": -19.2
+        }
+      ]
+    },
+    "U_MCU.pin41": {
+      "name": "MCU_ADC_41",
+      "net": "VBUS_ADC",
+      "x": -24.725,
+      "y": -18.75,
+      "topPath": [
+        {
+          "x": -23.575064,
+          "y": -18.799979
+        },
+        {
+          "x": -24.3,
+          "y": -18.799979
+        },
+        {
+          "x": -24.725,
+          "y": -18.75
+        }
+      ]
+    }
+  },
+  "physicalRoles": {
+    "C208": "100nF true V3V3-to-GND thermal comparator bypass; retain automatic 1mm limit.",
+    "C209": "100nF HOT_ADC signal-to-GND reservoir; R210=1kΩ gives nominal 100µs RC time constant.",
+    "C210": "100nF COLD_ADC signal-to-GND reservoir; R211=1kΩ gives nominal 100µs RC time constant.",
+    "C211": "100nF VBUS_ADC measurement-divider shunt filter; has no native supply bypass length limit.",
+    "C212": "100nF VOUT_ADC measurement-divider shunt filter; has no native supply bypass length limit."
+  },
+  "constraintPolicy": {
+    "automaticFilterBypassLimitApplied": false,
+    "localSeriesOutputToCapMm": 3,
+    "capToMcuAdcMm": {
+      "HOT_ADC": 12,
+      "COLD_ADC": 12,
+      "VOUT_ADC": 15,
+      "VBUS_ADC": 18
+    },
+    "trueSupplyBypassMm": 1,
+    "remoteTestpointBranches": "No arbitrary 1mm supply-bypass constraint; keep local ADC paths routed first."
+  },
+  "bypassSupport": {
+    "owner": "interlock_completion",
+    "note": "C208 placement and copper are exclusively owned by interlock_completion. Its true bypass constraint remains 1 mm; use the interlock artifact exact capacitor-to-pin8 route and local ground barrel."
+  },
+  "routedEdges": 25,
+  "plannedEdges": 26,
+  "pending": [
+    {
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "TP08.pin1",
+      "reason": "Reconcile the generated TP08 entry branch with the now mandatory R222 feeder."
+    }
+  ],
+  "vias": [
+    {
+      "name": "THERMAL_VIA_1",
+      "net": "COLD_ADC",
+      "x": -16.015299050387227,
+      "y": -20.137481591082025,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_2",
+      "net": "VOUT_ADC",
+      "x": -15.200000000000001,
+      "y": -16.2,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_3",
+      "net": "HOT_ADC",
+      "x": -16.3,
+      "y": -22.799999999999997,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_4",
+      "net": "VBUS_ADC",
+      "x": -16.015299050387227,
+      "y": -12.437481591082024,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_5",
+      "net": "HOT_RAW",
+      "x": 17.7,
+      "y": -29,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_6",
+      "net": "HOT_RAW",
+      "x": -12.472182540694797,
+      "y": -23.122182540694798,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_7",
+      "net": "COLD_RAW",
+      "x": 23.3,
+      "y": -29,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_8",
+      "net": "COLD_RAW",
+      "x": -12.35,
+      "y": -20.4,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_10",
+      "net": "COLD_ADC",
+      "x": 29.7,
+      "y": 2,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_11",
+      "net": "VBUS_ADC",
+      "x": 36.392073904691415,
+      "y": 2.4399923766742853,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_VIA_12",
+      "net": "VOUT_ADC",
+      "x": 44.45,
+      "y": 0.5,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "THERMAL_R222_ADC_CROSSOVER",
+      "net": "VBUS_ADC",
+      "x": -20.415299050387226,
+      "y": -13.237481591082025,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    }
+  ],
+  "traces": [
+    {
+      "name": "THERMAL_TRACE_1",
+      "net": "HOT_ADC",
+      "from": "R210.pin2",
+      "to": "C209.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -23.9
+        },
+        {
+          "x": -16.3,
+          "y": -23.9
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -23.9
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_2",
+      "net": "VBUS_ADC",
+      "from": "R222.pin2",
+      "to": "C211.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -13.5
+        },
+        {
+          "x": -16.3,
+          "y": -13.5
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -13.5
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_3",
+      "net": "COLD_ADC",
+      "from": "R211.pin2",
+      "to": "C210.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -20.4
+        },
+        {
+          "x": -16.3,
+          "y": -21.2
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -20.4
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_4",
+      "net": "VOUT_ADC",
+      "from": "R224.pin2",
+      "to": "C212.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -17.3
+        },
+        {
+          "x": -16.3,
+          "y": -16.2
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -17.3
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_5",
+      "net": "COLD_ADC",
+      "from": "C210.pin1",
+      "to": "THERMAL_VIA_1.top",
+      "path": [
+        {
+          "x": -16.3,
+          "y": -21.2
+        },
+        {
+          "x": -16.015299050387227,
+          "y": -20.137481591082025
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -17,
+        "y": -21.2
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_6",
+      "net": "COLD_ADC",
+      "from": "THERMAL_VIA_1.inner2",
+      "to": "MCU_ADC_39.inner2",
+      "path": [
+        {
+          "x": -16.015299050387227,
+          "y": -20.137481591082025
+        },
+        {
+          "x": -21.8,
+          "y": -20.3
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -16.015299050387227,
+        "y": -20.137481591082025
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_7",
+      "net": "VOUT_ADC",
+      "from": "C212.pin1",
+      "to": "THERMAL_VIA_2.top",
+      "path": [
+        {
+          "x": -16.3,
+          "y": -16.2
+        },
+        {
+          "x": -15.200000000000001,
+          "y": -16.2
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -17,
+        "y": -16.2
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_8",
+      "net": "VOUT_ADC",
+      "from": "THERMAL_VIA_2.inner2",
+      "to": "MCU_ADC_40.inner2",
+      "path": [
+        {
+          "x": -15.200000000000001,
+          "y": -16.2
+        },
+        {
+          "x": -20.75,
+          "y": -19.2
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -15.200000000000001,
+        "y": -16.2
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_9",
+      "net": "HOT_ADC",
+      "from": "C209.pin1",
+      "to": "THERMAL_VIA_3.top",
+      "path": [
+        {
+          "x": -16.3,
+          "y": -23.9
+        },
+        {
+          "x": -16.3,
+          "y": -22.799999999999997
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -17,
+        "y": -23.9
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_10",
+      "net": "HOT_ADC",
+      "from": "THERMAL_VIA_3.inner2",
+      "to": "MCU_ADC_38.inner2",
+      "path": [
+        {
+          "x": -16.3,
+          "y": -22.799999999999997
+        },
+        {
+          "x": -22.425000000000004,
+          "y": -22.799999999999997
+        },
+        {
+          "x": -24.725,
+          "y": -20.5
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -16.3,
+        "y": -22.799999999999997
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_11",
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "THERMAL_VIA_4.top",
+      "path": [
+        {
+          "x": -16.3,
+          "y": -13.5
+        },
+        {
+          "x": -16.015299050387227,
+          "y": -12.437481591082024
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -17,
+        "y": -13.5
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_12",
+      "net": "VBUS_ADC",
+      "from": "THERMAL_VIA_4.bottom",
+      "to": "THERMAL_R222_ADC_CROSSOVER.bottom",
+      "path": [
+        {
+          "x": -16.015299050387227,
+          "y": -12.437481591082024
+        },
+        {
+          "x": -20.415299050387226,
+          "y": -13.237481591082025
+        }
+      ],
+      "layer": "bottom",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -16.015299050387227,
+        "y": -12.437481591082024
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_13",
+      "net": "VOUT_ADC",
+      "from": "R224.pin2",
+      "to": "R225.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -17.3
+        },
+        {
+          "x": -15.700000000000003,
+          "y": -17.3
+        },
+        {
+          "x": -17.3,
+          "y": -18.9
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -17.3
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_14",
+      "net": "VBUS_ADC",
+      "from": "R222.pin2",
+      "to": "R223.pin1",
+      "path": [
+        {
+          "x": -14.75,
+          "y": -13.5
+        },
+        {
+          "x": -13.25,
+          "y": -12
+        },
+        {
+          "x": -10.8,
+          "y": -12
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 180,
+      "origin": {
+        "x": -14,
+        "y": -13.5
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_15",
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "R217.pin1",
+      "path": [
+        {
+          "x": 29.8,
+          "y": -25
+        },
+        {
+          "x": 29.8,
+          "y": -27
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R216.pin2",
+        "component": "R216",
+        "pin": 2,
+        "net": "HOT_HIGH",
+        "x": 29.8,
+        "y": -25,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_300",
+            "pcb_component_id": "pcb_component_104",
+            "pcb_port_id": "pcb_port_297",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.7,
+            "height": 0.9,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 29.8,
+            "y": -25,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_16",
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "R213.pin1",
+      "path": [
+        {
+          "x": 20.75,
+          "y": -26
+        },
+        {
+          "x": 23.25,
+          "y": -26
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R212.pin2",
+        "component": "R212",
+        "pin": 2,
+        "net": "HOT_HALF",
+        "x": 20.75,
+        "y": -26,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_292",
+            "pcb_component_id": "pcb_component_100",
+            "pcb_port_id": "pcb_port_289",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.65,
+            "height": 0.8,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 20.75,
+            "y": -26,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_17",
+      "net": "HOT_LOW",
+      "from": "R214.pin2",
+      "to": "R215.pin1",
+      "path": [
+        {
+          "x": 29.75,
+          "y": -20
+        },
+        {
+          "x": 28.2,
+          "y": -22
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R214.pin2",
+        "component": "R214",
+        "pin": 2,
+        "net": "HOT_LOW",
+        "x": 29.75,
+        "y": -20,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_296",
+            "pcb_component_id": "pcb_component_102",
+            "pcb_port_id": "pcb_port_293",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.65,
+            "height": 0.8,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 29.75,
+            "y": -20,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_18",
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "U_THERMAL.pin3",
+      "path": [
+        {
+          "x": 20.75,
+          "y": -26
+        },
+        {
+          "x": 22.635,
+          "y": -22.7
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R212.pin2",
+        "component": "R212",
+        "pin": 2,
+        "net": "HOT_HALF",
+        "x": 20.75,
+        "y": -26,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_292",
+            "pcb_component_id": "pcb_component_100",
+            "pcb_port_id": "pcb_port_289",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.65,
+            "height": 0.8,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 20.75,
+            "y": -26,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_19",
+      "net": "HOT_HALF",
+      "from": "U_THERMAL.pin3",
+      "to": "U_THERMAL.pin6",
+      "path": [
+        {
+          "x": 22.635,
+          "y": -22.7
+        },
+        {
+          "x": 22.635,
+          "y": -17.3
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "U_THERMAL.pin3",
+        "component": "U_THERMAL",
+        "pin": 3,
+        "net": "HOT_HALF",
+        "x": 22.635,
+        "y": -22.7,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_239",
+            "pcb_component_id": "pcb_component_82",
+            "pcb_port_id": "pcb_port_241",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.6,
+            "height": 1.55,
+            "port_hints": [
+              "pin3"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.07,
+            "x": 22.635,
+            "y": -22.7,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_20",
+      "net": "HOT_LOW",
+      "from": "R215.pin1",
+      "to": "U_THERMAL.pin2",
+      "path": [
+        {
+          "x": 28.2,
+          "y": -22
+        },
+        {
+          "x": 24.3,
+          "y": -25.3
+        },
+        {
+          "x": 24,
+          "y": -25.6
+        },
+        {
+          "x": 23.85,
+          "y": -26.65
+        },
+        {
+          "x": 23.25,
+          "y": -26.8
+        },
+        {
+          "x": 20.4,
+          "y": -26.8
+        },
+        {
+          "x": 20.1,
+          "y": -26.5
+        },
+        {
+          "x": 20.1,
+          "y": -25.45
+        },
+        {
+          "x": 21.365,
+          "y": -22.7
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 28.2,
+        "y": -22
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_21",
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "U_THERMAL.pin5",
+      "path": [
+        {
+          "x": 29.8,
+          "y": -25
+        },
+        {
+          "x": 30.55,
+          "y": -22.15
+        },
+        {
+          "x": 30.400000000000002,
+          "y": -19.45
+        },
+        {
+          "x": 30.25,
+          "y": -19.3
+        },
+        {
+          "x": 23.905,
+          "y": -17.3
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 29.8,
+        "y": -25
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_22",
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "R212.pin1",
+      "path": [
+        {
+          "x": 16.8,
+          "y": -29
+        },
+        {
+          "x": 19.25,
+          "y": -26
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R208.pin2",
+        "component": "R208",
+        "pin": 2,
+        "net": "HOT_RAW",
+        "x": 16.8,
+        "y": -29,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_284",
+            "pcb_component_id": "pcb_component_96",
+            "pcb_port_id": "pcb_port_281",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.7,
+            "height": 0.9,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 16.8,
+            "y": -29,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_23",
+      "net": "COLD_RAW",
+      "from": "J_COLD.pin1",
+      "to": "R209.pin2",
+      "path": [
+        {
+          "x": 24.500001,
+          "y": -35.4999913
+        },
+        {
+          "x": 24.2,
+          "y": -29
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "J_COLD.pin1",
+        "component": "J_COLD",
+        "pin": 1,
+        "net": "COLD_RAW",
+        "x": 24.500001,
+        "y": -35.4999913,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_269",
+            "pcb_component_id": "pcb_component_88",
+            "pcb_port_id": "pcb_port_264",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.5999988,
+            "height": 1.5500096,
+            "port_hints": [
+              "pin1"
+            ],
+            "is_covered_with_solder_mask": false,
+            "x": 24.500001,
+            "y": -35.4999913,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_24",
+      "net": "HOT_RAW",
+      "from": "J_HOT.pin1",
+      "to": "R208.pin2",
+      "path": [
+        {
+          "x": 15.500001,
+          "y": -35.4999913
+        },
+        {
+          "x": 15.500001,
+          "y": -30.299999
+        },
+        {
+          "x": 16.8,
+          "y": -29
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "J_HOT.pin1",
+        "component": "J_HOT",
+        "pin": 1,
+        "net": "HOT_RAW",
+        "x": 15.500001,
+        "y": -35.4999913,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_265",
+            "pcb_component_id": "pcb_component_87",
+            "pcb_port_id": "pcb_port_262",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.5999988,
+            "height": 1.5500096,
+            "port_hints": [
+              "pin1"
+            ],
+            "is_covered_with_solder_mask": false,
+            "x": 15.500001,
+            "y": -35.4999913,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_25",
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "THERMAL_VIA_5.top",
+      "path": [
+        {
+          "x": 16.8,
+          "y": -29
+        },
+        {
+          "x": 17.7,
+          "y": -29
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R208.pin2",
+        "component": "R208",
+        "pin": 2,
+        "net": "HOT_RAW",
+        "x": 16.8,
+        "y": -29,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_284",
+            "pcb_component_id": "pcb_component_96",
+            "pcb_port_id": "pcb_port_281",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.7,
+            "height": 0.9,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 16.8,
+            "y": -29,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_26",
+      "net": "HOT_RAW",
+      "from": "THERMAL_VIA_5.inner2",
+      "to": "THERMAL_VIA_6.inner2",
+      "path": [
+        {
+          "x": 17.7,
+          "y": -29
+        },
+        {
+          "x": -5.800000000000001,
+          "y": -25
+        },
+        {
+          "x": -7.800000000000001,
+          "y": -23.25
+        },
+        {
+          "x": -12.472182540694797,
+          "y": -23.122182540694798
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 17.7,
+        "y": -29
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_27",
+      "net": "HOT_RAW",
+      "from": "THERMAL_VIA_6.top",
+      "to": "R210.pin1",
+      "path": [
+        {
+          "x": -12.472182540694797,
+          "y": -23.122182540694798
+        },
+        {
+          "x": -13.25,
+          "y": -23.9
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -12.472182540694797,
+        "y": -23.122182540694798
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_28",
+      "net": "COLD_RAW",
+      "from": "R209.pin2",
+      "to": "THERMAL_VIA_7.top",
+      "path": [
+        {
+          "x": 24.2,
+          "y": -29
+        },
+        {
+          "x": 23.3,
+          "y": -29
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "selector": "R209.pin2",
+        "component": "R209",
+        "pin": 2,
+        "net": "COLD_RAW",
+        "x": 24.2,
+        "y": -29,
+        "layers": [
+          "top"
+        ],
+        "pads": [
+          {
+            "type": "pcb_smtpad",
+            "pcb_smtpad_id": "pcb_smtpad_286",
+            "pcb_component_id": "pcb_component_97",
+            "pcb_port_id": "pcb_port_283",
+            "layer": "top",
+            "shape": "rect",
+            "width": 0.7,
+            "height": 0.9,
+            "port_hints": [
+              "pin2"
+            ],
+            "is_covered_with_solder_mask": false,
+            "soldermask_margin": 0.05,
+            "x": 24.2,
+            "y": -29,
+            "subcircuit_id": "subcircuit_source_group_1"
+          }
+        ]
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_29",
+      "net": "COLD_RAW",
+      "from": "THERMAL_VIA_7.bottom",
+      "to": "THERMAL_VIA_8.bottom",
+      "path": [
+        {
+          "x": 23.3,
+          "y": -29
+        },
+        {
+          "x": -12.35,
+          "y": -20.4
+        }
+      ],
+      "layer": "bottom",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 23.3,
+        "y": -29
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_30",
+      "net": "COLD_RAW",
+      "from": "THERMAL_VIA_8.top",
+      "to": "R211.pin1",
+      "path": [
+        {
+          "x": -12.35,
+          "y": -20.4
+        },
+        {
+          "x": -13.25,
+          "y": -20.4
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -12.35,
+        "y": -20.4
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_35",
+      "net": "COLD_ADC",
+      "from": "THERMAL_VIA_1.inner2",
+      "to": "THERMAL_VIA_10.inner2",
+      "path": [
+        {
+          "x": -16.015299050387227,
+          "y": -20.137481591082025
+        },
+        {
+          "x": -24.265299050387227,
+          "y": -19.887481591082025
+        },
+        {
+          "x": -24.765299050387227,
+          "y": -19.637481591082025
+        },
+        {
+          "x": -25.265299050387227,
+          "y": -19.887481591082025
+        },
+        {
+          "x": -25.515299050387227,
+          "y": -20.387481591082025
+        },
+        {
+          "x": -25.515299050387227,
+          "y": -22.387481591082025
+        },
+        {
+          "x": -25.015299050387227,
+          "y": -22.887481591082025
+        },
+        {
+          "x": -22.515299050387227,
+          "y": -24.387481591082025
+        },
+        {
+          "x": 17.734700949612773,
+          "y": -30.387481591082025
+        },
+        {
+          "x": 18.734700949612773,
+          "y": -29.887481591082025
+        },
+        {
+          "x": 18.984700949612773,
+          "y": -29.387481591082025
+        },
+        {
+          "x": 29.7,
+          "y": 2
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -16.015299050387227,
+        "y": -20.137481591082025
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_36",
+      "net": "COLD_ADC",
+      "from": "THERMAL_VIA_10.top",
+      "to": "TP07.pin1",
+      "path": [
+        {
+          "x": 29.7,
+          "y": 2
+        },
+        {
+          "x": 28,
+          "y": 2
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 29.7,
+        "y": 2
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_39",
+      "net": "VBUS_ADC",
+      "from": "THERMAL_VIA_11.top",
+      "to": "TP08.pin1",
+      "path": [
+        {
+          "x": 36.392073904691415,
+          "y": 2.4399923766742853
+        },
+        {
+          "x": 34.75,
+          "y": 2
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 36.392073904691415,
+        "y": 2.4399923766742853
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_42",
+      "net": "VOUT_ADC",
+      "from": "THERMAL_VIA_12.top",
+      "to": "TP09.pin1",
+      "path": [
+        {
+          "x": 44.45,
+          "y": 0.5
+        },
+        {
+          "x": 42.75,
+          "y": 0.5
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": 44.45,
+        "y": 0.5
+      },
+      "pcbStraightLine": false
+    },
+    {
+      "name": "THERMAL_TRACE_43",
+      "net": "VBUS_ADC",
+      "from": "THERMAL_R222_ADC_CROSSOVER.inner2",
+      "to": "MCU_ADC_41.inner2",
+      "path": [
+        {
+          "x": -20.415299050387226,
+          "y": -13.237481591082025
+        },
+        {
+          "x": -22.915299050387226,
+          "y": -15.537481591082024
+        },
+        {
+          "x": -24.725,
+          "y": -18.75
+        }
+      ],
+      "layer": "inner2",
+      "width": 0.2,
+      "rotation": 0,
+      "origin": {
+        "x": -20.415299050387226,
+        "y": -13.237481591082025
+      },
+      "pcbStraightLine": false
+    }
+  ],
+  "routed": [
+    {
+      "net": "HOT_ADC",
+      "from": "R210.pin2",
+      "to": "C209.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local 1 kΩ/100 nF input filter: realize before the remote testpoint trunk.",
+      "maxLength": 3,
+      "lengthMm": 1.5500000000000007,
+      "traceNames": [
+        "THERMAL_TRACE_1"
+      ],
+      "actualLengthMm": 1.5500000000000007,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_382"
+      ]
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "R222.pin2",
+      "to": "C211.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Join the measurement divider to its capacitor at the upper-resistor output.",
+      "maxLength": 3,
+      "lengthMm": 1.5500000000000007,
+      "traceNames": [
+        "THERMAL_TRACE_2"
+      ],
+      "actualLengthMm": 1.5500000000000007,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_383"
+      ]
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "R211.pin2",
+      "to": "C210.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local 1 kΩ/100 nF input filter: realize before the remote testpoint trunk.",
+      "maxLength": 3,
+      "lengthMm": 1.7442763542512418,
+      "traceNames": [
+        "THERMAL_TRACE_3"
+      ],
+      "actualLengthMm": 1.7442763542512418,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_384"
+      ]
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "R224.pin2",
+      "to": "C212.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Join the measurement divider to its capacitor at the upper-resistor output.",
+      "maxLength": 3,
+      "lengthMm": 1.9006577808748226,
+      "traceNames": [
+        "THERMAL_TRACE_4"
+      ],
+      "actualLengthMm": 1.9006577808748226,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_385"
+      ]
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "C210.pin1",
+      "to": "U_MCU.pin39",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Terminate at the pin39 fanout; preserve the local reservoir capacitor-to-ADC branch.",
+      "maxLength": 12,
+      "lengthMm": 6.886983437827357,
+      "traceNames": [
+        "THERMAL_TRACE_5",
+        "THERMAL_TRACE_6"
+      ],
+      "externalFanoutLengthMm": 2.026149558093013,
+      "totalLengthIncludingMcuFanoutMm": 8.913132995920371,
+      "actualLengthMm": 8.913132995920371,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_386",
+        "RB_TRACE_387",
+        "RB_TRACE_307"
+      ]
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "C212.pin1",
+      "to": "U_MCU.pin40",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Terminate at the pin40 fanout; keep the capacitor-to-ADC branch ahead of testpoint routing.",
+      "maxLength": 15,
+      "lengthMm": 7.408922253443926,
+      "traceNames": [
+        "THERMAL_TRACE_7",
+        "THERMAL_TRACE_8"
+      ],
+      "externalFanoutLengthMm": 2.8250640001488474,
+      "totalLengthIncludingMcuFanoutMm": 10.233986253592773,
+      "actualLengthMm": 10.233986253592773,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_388",
+        "RB_TRACE_389",
+        "RB_TRACE_308"
+      ]
+    },
+    {
+      "net": "HOT_ADC",
+      "from": "C209.pin1",
+      "to": "U_MCU.pin38",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Terminate at the pin38 fanout; preserve the local reservoir capacitor-to-ADC branch.",
+      "maxLength": 12,
+      "lengthMm": 10.477691193458119,
+      "traceNames": [
+        "THERMAL_TRACE_9",
+        "THERMAL_TRACE_10"
+      ],
+      "externalFanoutLengthMm": 1.3812514848279909,
+      "totalLengthIncludingMcuFanoutMm": 11.858942678286109,
+      "actualLengthMm": 11.858942678286109,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_390",
+        "RB_TRACE_391",
+        "RB_TRACE_306"
+      ]
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "U_MCU.pin41",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Terminate at the pin41 fanout; keep the capacitor-to-ADC branch ahead of testpoint routing.",
+      "maxLength": 18,
+      "lengthMm": 12.656372922498004,
+      "traceNames": [
+        "THERMAL_TRACE_11",
+        "THERMAL_TRACE_12",
+        "THERMAL_TRACE_43"
+      ],
+      "externalFanoutLengthMm": 1.1528646160576321,
+      "totalLengthIncludingMcuFanoutMm": 13.809237538555637,
+      "actualLengthMm": 13.0095731876707,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_392",
+        "RB_TRACE_393",
+        "RB_TRACE_309"
+      ]
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "R224.pin2",
+      "to": "R225.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local output-voltage measurement divider junction.",
+      "lengthMm": 3.212741699796952,
+      "traceNames": [
+        "THERMAL_TRACE_13"
+      ],
+      "actualLengthMm": 3.212741699796952,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_394"
+      ]
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "R222.pin2",
+      "to": "R223.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local VBUS measurement divider junction.",
+      "lengthMm": 4.571320343559641,
+      "traceNames": [
+        "THERMAL_TRACE_14"
+      ],
+      "actualLengthMm": 4.571320343559641,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_395"
+      ]
+    },
+    {
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "R217.pin1",
+      "width": 0.2,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local upper-temperature threshold divider junction.",
+      "lengthMm": 2,
+      "traceNames": [
+        "THERMAL_TRACE_15"
+      ],
+      "actualLengthMm": 2,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_396"
+      ]
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "R213.pin1",
+      "width": 0.2,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local half-temperature divider junction.",
+      "lengthMm": 2.5,
+      "traceNames": [
+        "THERMAL_TRACE_16"
+      ],
+      "actualLengthMm": 2.5,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_397"
+      ]
+    },
+    {
+      "net": "HOT_LOW",
+      "from": "R214.pin2",
+      "to": "R215.pin1",
+      "width": 0.2,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local lower-temperature threshold divider junction.",
+      "lengthMm": 2.5303161857759995,
+      "traceNames": [
+        "THERMAL_TRACE_17"
+      ],
+      "actualLengthMm": 2.5303161857759995,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_398"
+      ]
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "U_THERMAL.pin3",
+      "width": 0.2,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short divider-to-comparator input branch.",
+      "lengthMm": 3.800424318414986,
+      "traceNames": [
+        "THERMAL_TRACE_18"
+      ],
+      "actualLengthMm": 3.800424318414986,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_399"
+      ]
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "U_THERMAL.pin3",
+      "to": "U_THERMAL.pin6",
+      "width": 0.2,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Shared half-temperature signal between both comparator inputs; route around pads.",
+      "lengthMm": 5.399999999999999,
+      "traceNames": [
+        "THERMAL_TRACE_19"
+      ],
+      "actualLengthMm": 5.399999999999999,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_400"
+      ]
+    },
+    {
+      "net": "HOT_LOW",
+      "from": "R215.pin1",
+      "to": "U_THERMAL.pin2",
+      "width": 0.2,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Reference input; keep clear of the power stage and thermistor ADC trunks.",
+      "lengthMm": 14.56346940210399,
+      "traceNames": [
+        "THERMAL_TRACE_20"
+      ],
+      "actualLengthMm": 14.56346940210399,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_401"
+      ]
+    },
+    {
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "U_THERMAL.pin5",
+      "width": 0.2,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Upper-threshold reference; avoid parallel routing beside switching conductors.",
+      "lengthMm": 12.516073570392344,
+      "traceNames": [
+        "THERMAL_TRACE_21"
+      ],
+      "actualLengthMm": 12.516073570392344,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_402"
+      ]
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "R212.pin1",
+      "width": 0.2,
+      "priority": 14,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local branch to the hardware temperature protection divider.",
+      "lengthMm": 3.873306081372862,
+      "traceNames": [
+        "THERMAL_TRACE_22"
+      ],
+      "actualLengthMm": 3.873306081372862,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_403"
+      ]
+    },
+    {
+      "net": "COLD_RAW",
+      "from": "J_COLD.pin1",
+      "to": "R209.pin2",
+      "width": 0.2,
+      "priority": 14,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+      "lengthMm": 6.506910749355385,
+      "traceNames": [
+        "THERMAL_TRACE_23"
+      ],
+      "actualLengthMm": 6.506910749355385,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_404"
+      ]
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "J_HOT.pin1",
+      "to": "R208.pin2",
+      "width": 0.2,
+      "priority": 14,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+      "lengthMm": 7.03846851687146,
+      "traceNames": [
+        "THERMAL_TRACE_24"
+      ],
+      "actualLengthMm": 7.03846851687146,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_405"
+      ]
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "R210.pin1",
+      "width": 0.2,
+      "priority": 45,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+      "lengthMm": 33.16946190779622,
+      "traceNames": [
+        "THERMAL_TRACE_25",
+        "THERMAL_TRACE_26",
+        "THERMAL_TRACE_27"
+      ],
+      "actualLengthMm": 33.16946190779622,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_406",
+        "RB_TRACE_407",
+        "RB_TRACE_408"
+      ]
+    },
+    {
+      "net": "COLD_RAW",
+      "from": "R209.pin2",
+      "to": "R211.pin1",
+      "width": 0.2,
+      "priority": 45,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+      "lengthMm": 38.47263966501457,
+      "traceNames": [
+        "THERMAL_TRACE_28",
+        "THERMAL_TRACE_29",
+        "THERMAL_TRACE_30"
+      ],
+      "actualLengthMm": 38.47263966501457,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_409",
+        "RB_TRACE_410",
+        "RB_TRACE_411"
+      ]
+    },
+    {
+      "net": "HOT_ADC",
+      "from": "C209.pin1",
+      "to": "TP06.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+      "lengthMm": 70.33908729153184,
+      "traceNames": [],
+      "actualLengthMm": 89.3722340279202,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_390",
+        "RB_TRACE_391",
+        "RB_TRACE_1029",
+        "RB_TRACE_1030",
+        "RB_TRACE_1031",
+        "RB_TRACE_1032",
+        "RB_TRACE_1033"
+      ],
+      "realization": "authoritative_generated_routes"
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "C210.pin1",
+      "to": "TP07.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+      "lengthMm": 93.89134130952236,
+      "traceNames": [
+        "THERMAL_TRACE_35",
+        "THERMAL_TRACE_36"
+      ],
+      "actualLengthMm": 93.89134130952236,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_386",
+        "RB_TRACE_412",
+        "RB_TRACE_413"
+      ]
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "TP08.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long VBUS measurement debug branch; keep separated from VBUS power copper.",
+      "lengthMm": 57.27817885827292,
+      "traceNames": [
+        "THERMAL_TRACE_39"
+      ],
+      "actualLengthMm": 91.45144956253351,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_392",
+        "RB_TRACE_393",
+        "RB_TRACE_1034",
+        "RB_TRACE_1035",
+        "RB_TRACE_1036",
+        "RB_TRACE_1037",
+        "RB_TRACE_1038",
+        "RB_TRACE_414"
+      ],
+      "realization": "authoritative_generated_routes"
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "C212.pin1",
+      "to": "TP09.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long output-voltage measurement debug branch; avoid coupling to TEC power copper.",
+      "lengthMm": 64.74362356207459,
+      "traceNames": [
+        "THERMAL_TRACE_42"
+      ],
+      "actualLengthMm": 94.75347249103241,
+      "actualGeneratedTraceNames": [
+        "RB_TRACE_388",
+        "RB_TRACE_389",
+        "RB_TRACE_1039",
+        "RB_TRACE_1040",
+        "RB_TRACE_1041",
+        "RB_TRACE_415"
+      ],
+      "realization": "authoritative_generated_routes"
+    }
+  ],
+  "portSuggestions": {
+    "R210.pin1": {
+      "net": "HOT_RAW",
+      "x": -13.25,
+      "y": -23.9
+    },
+    "R210.pin2": {
+      "net": "HOT_ADC",
+      "x": -14.75,
+      "y": -23.9
+    },
+    "R211.pin1": {
+      "net": "COLD_RAW",
+      "x": -13.25,
+      "y": -20.4
+    },
+    "R211.pin2": {
+      "net": "COLD_ADC",
+      "x": -14.75,
+      "y": -20.4
+    },
+    "R222.pin1": {
+      "net": "VBUS_RAW",
+      "x": -13.25,
+      "y": -13.5
+    },
+    "R222.pin2": {
+      "net": "VBUS_ADC",
+      "x": -14.75,
+      "y": -13.5
+    },
+    "R223.pin1": {
+      "net": "VBUS_ADC",
+      "x": -10.8,
+      "y": -12
+    },
+    "R223.pin2": {
+      "net": "GND",
+      "x": -9.2,
+      "y": -12
+    },
+    "R224.pin1": {
+      "net": "TEC_POS",
+      "x": -13.25,
+      "y": -17.3
+    },
+    "R224.pin2": {
+      "net": "VOUT_ADC",
+      "x": -14.75,
+      "y": -17.3
+    },
+    "R225.pin1": {
+      "net": "VOUT_ADC",
+      "x": -17.3,
+      "y": -18.9
+    },
+    "R225.pin2": {
+      "net": "GND",
+      "x": -15.7,
+      "y": -18.9
+    },
+    "C209.pin1": {
+      "net": "HOT_ADC",
+      "x": -16.3,
+      "y": -23.9
+    },
+    "C209.pin2": {
+      "net": "GND",
+      "x": -17.7,
+      "y": -23.9
+    },
+    "C210.pin1": {
+      "net": "COLD_ADC",
+      "x": -16.3,
+      "y": -21.2
+    },
+    "C210.pin2": {
+      "net": "GND",
+      "x": -17.7,
+      "y": -21.2
+    },
+    "C211.pin1": {
+      "net": "VBUS_ADC",
+      "x": -16.3,
+      "y": -13.5
+    },
+    "C211.pin2": {
+      "net": "GND",
+      "x": -17.7,
+      "y": -13.5
+    },
+    "C212.pin1": {
+      "net": "VOUT_ADC",
+      "x": -16.3,
+      "y": -16.2
+    },
+    "C212.pin2": {
+      "net": "GND",
+      "x": -17.7,
+      "y": -16.2
+    }
+  },
+  "validation": {
+    "staticForeignPadClearanceBelowPoint2Mm": 0,
+    "thermalOnlyGeometry": "All emitted paths checked against actual fresh pad geometry, mounting holes, locked MCU barrels and the complete thermal copper proposal.",
+    "mcuFanoutStatus": "Coordinates locked by MCU agent; thermal geometry was rechecked against all four locked barrel positions. MCU top fanout routes remain separately owned and validated.",
+    "globalCopperChecked": true,
+    "adcTotalLengthsMm": [
+      {
+        "net": "COLD_ADC",
+        "total": 8.913132995920371,
+        "bound": 12
+      },
+      {
+        "net": "VOUT_ADC",
+        "total": 10.233986253592773,
+        "bound": 15
+      },
+      {
+        "net": "HOT_ADC",
+        "total": 11.858942678286109,
+        "bound": 12
+      },
+      {
+        "net": "VBUS_ADC",
+        "total": 13.0095731876707,
+        "bound": 18
+      }
+    ],
+    "completeEmittedGeometryConflictCount": 0,
+    "completeEmittedGeometryConflicts": [],
+    "completeRoutingTreesValidated": true,
+    "actualCourtyardChecks": true,
+    "actualCourtyardConflicts": [],
+    "minimumThermalForeignPadClearanceMm": 0.5999999999999985,
+    "minimumThermalForeignPadClearanceParts": [
+      "R211",
+      "R226"
+    ],
+    "nativePadBboxConflictsBelowPoint15Mm": [],
+    "courtyardPrimitivesChecked": [
+      "pcb_courtyard_outline",
+      "pcb_courtyard_rect",
+      "pcb_courtyard_circle"
+    ],
+    "courtyardCheckMethod": "Transformed actual native outlines and rectangle/circle bounds, compared against every board courtyard. Circle bounds are conservative.",
+    "polygonPadBoundsIncluded": true,
+    "earlierIntegratedReservationsChecked": true,
+    "reservationGeneratedSha256": "65b9e84975542494797cd76d2729e65d138987c773c2d958fdb4b2a15c305101",
+    "reservationTraceCount": 293,
+    "reservationViaCount": 144,
+    "omittedLaterGenericControl": true,
+    "staleReservationReplacement": {
+      "usbPacket": "usb-completion.json",
+      "removedUsbNets": [
+        "USB_DP_PORT",
+        "USB_DM_PORT",
+        "USB_DP_SWITCH",
+        "USB_DM_SWITCH",
+        "USB_DP_MCU",
+        "USB_DM_MCU"
+      ],
+      "removedEpBarrels": [
+        "RB_VIA_83",
+        "RB_VIA_103"
+      ],
+      "groundPacket": "ground-completion.json",
+      "authoritativeMcu38": {
+        "name": "MCU_ADC_38",
+        "net": "HOT_ADC",
+        "x": -24.725,
+        "y": -20.5,
+        "topPath": [
+          {
+            "x": -23.575064,
+            "y": -19.999875
+          },
+          {
+            "x": -24.3,
+            "y": -19.999875
+          },
+          {
+            "x": -24.725,
+            "y": -20.5
+          }
+        ]
+      }
+    },
+    "authoritativeGeneratedTraceCount": 983,
+    "authoritativeGeneratedViaCount": 509,
+    "all26ThermalEdgesConnected": false,
+    "actualAdcFilterLengths": [
+      {
+        "net": "HOT_ADC",
+        "lengthMm": 1.5500000000000007,
+        "maxLengthMm": 3
+      },
+      {
+        "net": "COLD_ADC",
+        "lengthMm": 1.7442763542512418,
+        "maxLengthMm": 3
+      },
+      {
+        "net": "VBUS_ADC",
+        "lengthMm": 1.5500000000000007,
+        "maxLengthMm": 3
+      },
+      {
+        "net": "VOUT_ADC",
+        "lengthMm": 1.9006577808748226,
+        "maxLengthMm": 3
+      }
+    ],
+    "actualAdcPinLengths": [
+      {
+        "net": "HOT_ADC",
+        "lengthMm": 11.858942678286109,
+        "maxLengthMm": 12
+      },
+      {
+        "net": "COLD_ADC",
+        "lengthMm": 8.913132995920371,
+        "maxLengthMm": 12
+      },
+      {
+        "net": "VBUS_ADC",
+        "lengthMm": 13.0095731876707,
+        "maxLengthMm": 18
+      },
+      {
+        "net": "VOUT_ADC",
+        "lengthMm": 10.233986253592773,
+        "maxLengthMm": 15
+      }
+    ],
+    "barrelAndPadEndpointContactErrors": [],
+    "newC28PowerReturnsChecked": true,
+    "newC28ThermalCopperConflicts": [],
+    "c212GroundReturn": {
+      "viaLegal": true,
+      "traceLegal": true,
+      "centerPathLengthMm": 1.5,
+      "exposedCopperLengthMm": 0.7,
+      "maximumExposedLengthMm": 1,
+      "reusedExistingGroundBarrel": "RB_VIA_464"
+    },
+    "removedHistoricalCandidates": [
+      "THERMAL_TRACE_32",
+      "THERMAL_TRACE_33",
+      "THERMAL_TRACE_38",
+      "THERMAL_TRACE_41",
+      "THERMAL_TRACE_31",
+      "THERMAL_TRACE_34",
+      "THERMAL_TRACE_37",
+      "THERMAL_TRACE_40"
+    ],
+    "removedIllegalHotTestpointVia": true,
+    "r222AdcDetourStatus": "verified-ready",
+    "r222AdcDetourViaLegal": true,
+    "r222AdcDetourPathsLegal": true,
+    "r222AdcDetourTotalLengthMm": 13.809237538555637,
+    "r222AdcDetourBoundMm": 18,
+    "r222MandatoryPowerFeedReserved": true,
+    "r222FeedCollisionsAfterOmittingBlockedControlSegments": [],
+    "generatedAuthorityRequiresListedDetours": true,
+    "partialRoutingScopeAccepted": true,
+    "freezeAfterVerifiedRepairs": true,
+    "detourValidationGeneratedSha256": "fa59cd129760d372b6c4330a42d7cbd040dc68d6d2a1f305314a265d30b26cfc"
+  },
+  "notes": [
+    "Only thermal.ts and this JSON are edited by this agent. No global build or copper mutation was performed.",
+    "POWER_BUDGET_HIGH contains only R227.pin1; singleton requires no edge.",
+    "Native filter capacitors C209–C212 have no max_decoupling_trace_length. No blanket capacitor constraint waiver is requested.",
+    "Native true bypass constraints apply per physical trace declaration. True C208 should connect locally to U_THERMAL.pin8 and its local ground barrel; the remote supply trunk should connect on the IC/junction side.",
+    "Courtyard correction uses actual pcb_courtyard_outline geometry from the fresh native placement, including coordinated C217. R210/R211/R222/R224/R225 have shifted; earlier exact paths are replaced here.",
+    "Global-trunk correction preserves earlier installed reservations, replaces only root-authorized stale USB/MCU-EP ground geometry with current packets, and uses the MCU owner authoritative barrel coordinates.",
+    "Global-trunk correction preserves earlier installed reservations, replaces only root-authorized stale USB/MCU-EP ground geometry with current packets, and uses the MCU owner authoritative barrel coordinates.",
+    "Replay8 actual generated copper completes all26 thermal edges. Removed historical rejected HOT/VBUS/VOUT testpoint candidate paths, their illegal HOT barrel, and duplicate filter spokes; accepted generated trunks remain authoritative and unchanged. Added a 1.5mm centerline C212 ground return with0.7mm exposed copper and0.4mm width to an existing legal0.7/0.3mm barrel before full control routing.",
+    "User accepts a reviewable partial routing snapshot. Frozen after the verified mandatory-R222-feeder ADC detour; no additional global co-design or unverified testpoint copper is introduced. TP08 entry-branch obligation remains explicit."
+  ],
+  "baselinePlacementSha256": "f02ed2fe0145d0b4e1bf16cc52c314880d71b905e89c93325f535800c51cb361",
+  "baselinePlacementPath": "dist/routing-placement/circuit.json",
+  "groundEscapes": [
+    {
+      "fromSelector": "C212.pin2",
+      "net": "GND",
+      "width": 0.4,
+      "layer": "top",
+      "path": [
+        {
+          "x": -17.7,
+          "y": -16.2
+        },
+        {
+          "x": -17.7,
+          "y": -14.7
+        }
+      ],
+      "via": {
+        "name": "THERMAL_C212_GND",
+        "net": "GND",
+        "x": -17.7,
+        "y": -14.7,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3
+      },
+      "pcbStraightLine": true,
+      "maxLength": 1,
+      "maxLengthMm": 1,
+      "maxExposedLength": 1,
+      "lengthMm": 1.5,
+      "exposedCopperLengthMm": 0.7,
+      "role": "Local ADC shunt-filter ground return; installed before full fixed controls and generic ground escape generation."
+    }
+  ],
+  "authoritativeGeometry": {
+    "file": "src/board/routing/generated.json",
+    "sha256": "fa59cd129760d372b6c4330a42d7cbd040dc68d6d2a1f305314a265d30b26cfc",
+    "traceCount": 983,
+    "viaCount": 509,
+    "all26ThermalEdgesConnected": false,
+    "edges": [
+      {
+        "net": "HOT_LOW",
+        "from": "R214.pin2",
+        "to": "R215.pin1",
+        "width": 0.2,
+        "priority": 12,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local lower-temperature threshold divider junction.",
+        "actualLengthMm": 2.5303161857759995,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_398"
+        ]
+      },
+      {
+        "net": "HOT_LOW",
+        "from": "R215.pin1",
+        "to": "U_THERMAL.pin2",
+        "width": 0.2,
+        "priority": 13,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Reference input; keep clear of the power stage and thermistor ADC trunks.",
+        "actualLengthMm": 14.56346940210399,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_401"
+        ]
+      },
+      {
+        "net": "HOT_HALF",
+        "from": "R212.pin2",
+        "to": "R213.pin1",
+        "width": 0.2,
+        "priority": 12,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local half-temperature divider junction.",
+        "actualLengthMm": 2.5,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_397"
+        ]
+      },
+      {
+        "net": "HOT_HALF",
+        "from": "R212.pin2",
+        "to": "U_THERMAL.pin3",
+        "width": 0.2,
+        "priority": 13,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Short divider-to-comparator input branch.",
+        "actualLengthMm": 3.800424318414986,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_399"
+        ]
+      },
+      {
+        "net": "HOT_HALF",
+        "from": "U_THERMAL.pin3",
+        "to": "U_THERMAL.pin6",
+        "width": 0.2,
+        "priority": 13,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Shared half-temperature signal between both comparator inputs; route around pads.",
+        "actualLengthMm": 5.399999999999999,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_400"
+        ]
+      },
+      {
+        "net": "HOT_HIGH",
+        "from": "R216.pin2",
+        "to": "R217.pin1",
+        "width": 0.2,
+        "priority": 12,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local upper-temperature threshold divider junction.",
+        "actualLengthMm": 2,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_396"
+        ]
+      },
+      {
+        "net": "HOT_HIGH",
+        "from": "R216.pin2",
+        "to": "U_THERMAL.pin5",
+        "width": 0.2,
+        "priority": 13,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Upper-threshold reference; avoid parallel routing beside switching conductors.",
+        "actualLengthMm": 12.516073570392344,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_402"
+        ]
+      },
+      {
+        "net": "HOT_RAW",
+        "from": "J_HOT.pin1",
+        "to": "R208.pin2",
+        "width": 0.2,
+        "priority": 14,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+        "actualLengthMm": 7.03846851687146,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_405"
+        ]
+      },
+      {
+        "net": "HOT_RAW",
+        "from": "R208.pin2",
+        "to": "R212.pin1",
+        "width": 0.2,
+        "priority": 14,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local branch to the hardware temperature protection divider.",
+        "actualLengthMm": 3.873306081372862,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_403"
+        ]
+      },
+      {
+        "net": "HOT_RAW",
+        "from": "R208.pin2",
+        "to": "R210.pin1",
+        "width": 0.2,
+        "priority": 45,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+        "actualLengthMm": 33.16946190779622,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_406",
+          "RB_TRACE_407",
+          "RB_TRACE_408"
+        ]
+      },
+      {
+        "net": "COLD_RAW",
+        "from": "J_COLD.pin1",
+        "to": "R209.pin2",
+        "width": 0.2,
+        "priority": 14,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+        "actualLengthMm": 6.506910749355385,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_404"
+        ]
+      },
+      {
+        "net": "COLD_RAW",
+        "from": "R209.pin2",
+        "to": "R211.pin1",
+        "width": 0.2,
+        "priority": 45,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+        "actualLengthMm": 38.47263966501457,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_409",
+          "RB_TRACE_410",
+          "RB_TRACE_411"
+        ]
+      },
+      {
+        "net": "HOT_ADC",
+        "from": "R210.pin2",
+        "to": "C209.pin1",
+        "width": 0.2,
+        "priority": 8,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local 1 kΩ/100 nF input filter: realize before the remote testpoint trunk.",
+        "maxLength": 3,
+        "actualLengthMm": 1.5500000000000007,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_382"
+        ]
+      },
+      {
+        "net": "HOT_ADC",
+        "from": "C209.pin1",
+        "to": "U_MCU.pin38",
+        "width": 0.2,
+        "priority": 9,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Terminate at the pin38 fanout; preserve the local reservoir capacitor-to-ADC branch.",
+        "maxLength": 12,
+        "actualLengthMm": 11.858942678286109,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_390",
+          "RB_TRACE_391",
+          "RB_TRACE_306"
+        ]
+      },
+      {
+        "net": "HOT_ADC",
+        "from": "C209.pin1",
+        "to": "TP06.pin1",
+        "width": 0.2,
+        "priority": 60,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+        "actualLengthMm": 89.3722340279202,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_390",
+          "RB_TRACE_391",
+          "RB_TRACE_1029",
+          "RB_TRACE_1030",
+          "RB_TRACE_1031",
+          "RB_TRACE_1032",
+          "RB_TRACE_1033"
+        ]
+      },
+      {
+        "net": "COLD_ADC",
+        "from": "R211.pin2",
+        "to": "C210.pin1",
+        "width": 0.2,
+        "priority": 8,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local 1 kΩ/100 nF input filter: realize before the remote testpoint trunk.",
+        "maxLength": 3,
+        "actualLengthMm": 1.7442763542512418,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_384"
+        ]
+      },
+      {
+        "net": "COLD_ADC",
+        "from": "C210.pin1",
+        "to": "U_MCU.pin39",
+        "width": 0.2,
+        "priority": 9,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Terminate at the pin39 fanout; preserve the local reservoir capacitor-to-ADC branch.",
+        "maxLength": 12,
+        "actualLengthMm": 8.913132995920371,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_386",
+          "RB_TRACE_387",
+          "RB_TRACE_307"
+        ]
+      },
+      {
+        "net": "COLD_ADC",
+        "from": "C210.pin1",
+        "to": "TP07.pin1",
+        "width": 0.2,
+        "priority": 60,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+        "actualLengthMm": 93.89134130952236,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_386",
+          "RB_TRACE_412",
+          "RB_TRACE_413"
+        ]
+      },
+      {
+        "net": "VBUS_ADC",
+        "from": "R222.pin2",
+        "to": "R223.pin1",
+        "width": 0.2,
+        "priority": 10,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local VBUS measurement divider junction.",
+        "actualLengthMm": 4.571320343559641,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_395"
+        ]
+      },
+      {
+        "net": "VBUS_ADC",
+        "from": "R222.pin2",
+        "to": "C211.pin1",
+        "width": 0.2,
+        "priority": 8,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Join the measurement divider to its capacitor at the upper-resistor output.",
+        "maxLength": 3,
+        "actualLengthMm": 1.5500000000000007,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_383"
+        ]
+      },
+      {
+        "net": "VBUS_ADC",
+        "from": "C211.pin1",
+        "to": "U_MCU.pin41",
+        "width": 0.2,
+        "priority": 9,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Terminate at the pin41 fanout; keep the capacitor-to-ADC branch ahead of testpoint routing.",
+        "maxLength": 18,
+        "actualLengthMm": 13.0095731876707,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_392",
+          "RB_TRACE_393",
+          "RB_TRACE_309"
+        ]
+      },
+      {
+        "net": "VBUS_ADC",
+        "from": "C211.pin1",
+        "to": "TP08.pin1",
+        "width": 0.2,
+        "priority": 60,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Long VBUS measurement debug branch; keep separated from VBUS power copper.",
+        "actualLengthMm": 91.45144956253351,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_392",
+          "RB_TRACE_393",
+          "RB_TRACE_1034",
+          "RB_TRACE_1035",
+          "RB_TRACE_1036",
+          "RB_TRACE_1037",
+          "RB_TRACE_1038",
+          "RB_TRACE_414"
+        ]
+      },
+      {
+        "net": "VOUT_ADC",
+        "from": "R224.pin2",
+        "to": "R225.pin1",
+        "width": 0.2,
+        "priority": 10,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Local output-voltage measurement divider junction.",
+        "actualLengthMm": 3.212741699796952,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_394"
+        ]
+      },
+      {
+        "net": "VOUT_ADC",
+        "from": "R224.pin2",
+        "to": "C212.pin1",
+        "width": 0.2,
+        "priority": 8,
+        "preferredLayers": [
+          "top",
+          "inner2",
+          "bottom"
+        ],
+        "note": "Join the measurement divider to its capacitor at the upper-resistor output.",
+        "maxLength": 3,
+        "actualLengthMm": 1.9006577808748226,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_385"
+        ]
+      },
+      {
+        "net": "VOUT_ADC",
+        "from": "C212.pin1",
+        "to": "U_MCU.pin40",
+        "width": 0.2,
+        "priority": 9,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Terminate at the pin40 fanout; keep the capacitor-to-ADC branch ahead of testpoint routing.",
+        "maxLength": 15,
+        "actualLengthMm": 10.233986253592773,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_388",
+          "RB_TRACE_389",
+          "RB_TRACE_308"
+        ]
+      },
+      {
+        "net": "VOUT_ADC",
+        "from": "C212.pin1",
+        "to": "TP09.pin1",
+        "width": 0.2,
+        "priority": 60,
+        "preferredLayers": [
+          "inner2",
+          "bottom",
+          "top"
+        ],
+        "note": "Long output-voltage measurement debug branch; avoid coupling to TEC power copper.",
+        "actualLengthMm": 94.75347249103241,
+        "actualGeneratedTraceNames": [
+          "RB_TRACE_388",
+          "RB_TRACE_389",
+          "RB_TRACE_1039",
+          "RB_TRACE_1040",
+          "RB_TRACE_1041",
+          "RB_TRACE_415"
+        ]
+      }
+    ],
+    "previousAuditStatus": "Historical replay8 baseline completed all26 edges; current mandatory R222 feed requires the listed ADC detour and leaves TP08 pending."
+  },
+  "generatedRouteReplacements": [
+    {
+      "status": "verified-ready",
+      "oldTraceMatch": {
+        "net": "VBUS_ADC",
+        "layer": "inner2",
+        "fromPoint": {
+          "x": -16.015299050387227,
+          "y": -12.437481591082024
+        },
+        "toPoint": {
+          "x": -24.725,
+          "y": -18.75
+        }
+      },
+      "oldGeneratedTraceNames": [
+        "RB_TRACE_393"
+      ],
+      "newVia": {
+        "name": "THERMAL_R222_ADC_CROSSOVER",
+        "net": "VBUS_ADC",
+        "x": -20.415299050387226,
+        "y": -13.237481591082025,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3
+      },
+      "replaceWith": [
+        {
+          "name": "THERMAL_TRACE_12",
+          "net": "VBUS_ADC",
+          "from": "THERMAL_VIA_4.bottom",
+          "to": "THERMAL_R222_ADC_CROSSOVER.bottom",
+          "path": [
+            {
+              "x": -16.015299050387227,
+              "y": -12.437481591082024
+            },
+            {
+              "x": -20.415299050387226,
+              "y": -13.237481591082025
+            }
+          ],
+          "layer": "bottom",
+          "width": 0.2,
+          "rotation": 0,
+          "origin": {
+            "x": -16.015299050387227,
+            "y": -12.437481591082024
+          },
+          "pcbStraightLine": false
+        },
+        {
+          "name": "THERMAL_TRACE_43",
+          "net": "VBUS_ADC",
+          "from": "THERMAL_R222_ADC_CROSSOVER.inner2",
+          "to": "MCU_ADC_41.inner2",
+          "path": [
+            {
+              "x": -20.415299050387226,
+              "y": -13.237481591082025
+            },
+            {
+              "x": -22.915299050387226,
+              "y": -15.537481591082024
+            },
+            {
+              "x": -24.725,
+              "y": -18.75
+            }
+          ],
+          "layer": "inner2",
+          "width": 0.2,
+          "rotation": 0,
+          "origin": {
+            "x": -20.415299050387226,
+            "y": -13.237481591082025
+          },
+          "pcbStraightLine": false
+        }
+      ],
+      "totalCapToMcuLengthMm": 13.809237538555637,
+      "maxTotalCapToMcuLengthMm": 18
+    },
+    {
+      "status": "pending",
+      "oldTraceMatch": {
+        "net": "VBUS_ADC",
+        "layer": "inner2",
+        "fromPoint": {
+          "x": -24.725,
+          "y": -18.75
+        },
+        "toPoint": {
+          "x": -16.725,
+          "y": -11.55
+        }
+      },
+      "oldGeneratedTraceNames": [
+        "RB_TRACE_1034"
+      ],
+      "reason": "The previous TP08 entry branch intersects the mandatory R222 VBUS_RAW feeder. No new unverified TP08 branch is added; partial-routing review scope accepts this remaining obligation."
+    }
+  ],
+  "status": "frozen-reviewable-partial"
+}

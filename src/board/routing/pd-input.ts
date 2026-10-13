@@ -43,7 +43,8 @@ export const plan: RoutingPlan = {
     edge("PD_VBUS_SENSE", "R_CH_VBUS.pin2", "U_PD.pin8", 0.2, 5, bottom),
 
     // Feed the controller through its nearby decoupling pad, then branch to pullups.
-    edge("PD_VDD", "U_PD.pin1", "C_CH_VDD.pin1", 0.4, 5, top),
+    { ...edge("PD_VDD", "U_PD.pin1", "C_CH_VDD.pin1", 0.2, 0, top,
+      "Direct bypass copper is 0.8280 mm after actual-pad clipping at C_CH_VDD placement [-42.25,20.4,180]; use pcbStraightLine with maxLength 1 mm."), maxLength: 1 },
     edge("PD_VDD", "C_CH_VDD.pin1", "R_CH_VDD.pin2", 0.4, 5, top),
     edge("PD_VDD", "C_CH_VDD.pin1", "R_PG_PU.pin1", 0.4, 25, top),
     edge("PD_VDD", "R_CH_VDD.pin2", "R_PD_CFG1.pin1", 0.4, 25, top),
@@ -96,7 +97,8 @@ export const plan: RoutingPlan = {
     edge("INPUT_OVLO", "R_INPUT_OV_TOP.pin2", "R_INPUT_OV_BOTTOM.pin1", 0.2, 5, top),
     edge("INPUT_OVLO", "R_INPUT_OV_TOP.pin2", "U_INPUT.pin2", 0.2, 5, top,
       "The 0.25 mm eFuse pad requires a horizontal escape before changing direction."),
-    edge("INPUT_DVDT", "U_INPUT.pin7", "C_INPUT_DVDT.pin1", 0.2, 5, top),
+    { ...edge("INPUT_DVDT", "U_INPUT.pin7", "C_INPUT_DVDT.pin1", 0.2, 5, top,
+      "Explicit top escape in pd-completion.json clears the actual concave eFuse pad and reserved GND barrel after R_INPUT_ILIM moves to [-19,21.25,90]."), maxLength: 5 },
     edge("INPUT_CURRENT_MON", "U_INPUT.pin9", "R_INPUT_ILIM.pin1", 0.2, 5, top,
       "Keep this current-limit resistor connection local to the eFuse."),
     edge("INPUT_AUXOFF", "U_INPUT.pin3", "R_INPUT_PG.pin2", 0.2, 5, top),
@@ -105,10 +107,12 @@ export const plan: RoutingPlan = {
   ],
   notes: [
     "23 nets, 74 connected pad selectors, 51 tree edges; every endpoint is checked against ports.json.",
-    "Control traces are 0.20 mm; PD_VDD and USB_PROG_5V traces are 0.40 mm, within the corresponding pad widths.",
+    "Control traces and the short PD bypass supply link are 0.20 mm; PD_VDD distribution and USB_PROG_5V trunks are 0.40 mm. USB connector pin16 has a finite 0.20 mm launch neck in pd-completion.json.",
     "U_INPUT signal pads are 0.25 mm tall on 0.45 mm pitch; escape outward before turns or vias. MCU control pads are nominally 0.20 mm.",
     "Priority 5 reserves local PD sensing, decoupling, reference, and eFuse control routes. Configuration, status distribution, and USB supply taps use priority 25.",
     "All terminals are on top. Preferred inner/bottom layers require clearance-checked top-pad escapes and vias in the route realization.",
-    "Inherited placement requires long MCU configuration/status runs and an approximately 62 mm PD_VALID_N debug branch; no connectivity or placement is changed.",
+    "pd-completion.json provides all ten pending PD/input edges as finite paths, ordinary 0.70/0.30 mm full-through barrels, and five routed-only passive placement changes. Connectivity and IC pin mapping are unchanged.",
+    "Reserve the coordinated MCU pin6/pin8/pin29 escapes and the external PD configuration trunks before general signal fanout. Validate integrated copper after refreshing placement; do not reuse traces with stale endpoints.",
+    "The C_CH_VDD and C_PD_WINDOW supply copper links are 0.8280 mm and 0.8969 mm after actual-pad clipping with pcbStraightLine; preserve the 1 mm copper length limit. Native courtyards determine their final placement and the R_PG_PU/R_UV_TOP positions.",
   ],
 }

@@ -1,0 +1,2582 @@
+{
+  "owner": "mcu",
+  "status": "prototype-ready-for-review-incomplete-routing",
+  "placementSuggestions": {
+    "U_FLASH": [
+      -28.85,
+      -11.3,
+      0
+    ],
+    "C_FLASH": [
+      -31.2,
+      -9.79251,
+      180
+    ],
+    "R_FLASH_CS": [
+      -31.5,
+      -12.80749,
+      0
+    ],
+    "R_BOOT": [
+      -33.7,
+      -12.80749,
+      180
+    ],
+    "C_IO6": [
+      -32.428008,
+      -18.399929,
+      180
+    ],
+    "C_IO5": [
+      -32.428008,
+      -21.999871,
+      180
+    ],
+    "C_IO3": [
+      -21.9,
+      -21.999871,
+      0
+    ],
+    "C_IO2": [
+      -21.9,
+      -18.399929,
+      0
+    ],
+    "C_IO4": [
+      -27.1,
+      -26.1,
+      270
+    ],
+    "C_DVDD2": [
+      -25.9,
+      -26.1,
+      270
+    ],
+    "C_USB_VDD": [
+      -26.65,
+      -15.8,
+      90
+    ],
+    "C_IO1": [
+      -32,
+      -15.5,
+      90
+    ],
+    "C_DVDD1": [
+      -27.85,
+      -15.8,
+      90
+    ],
+    "C_VREG_OUT": [
+      -24.9,
+      -15.8,
+      90
+    ],
+    "C_VREG_IN": [
+      -23.7,
+      -15.8,
+      90
+    ],
+    "C_ADC_AVDD": [
+      -22.5,
+      -15.8,
+      90
+    ],
+    "R_ADC_SUPPLY": [
+      -20.85,
+      -16.25,
+      180
+    ],
+    "R_XOUT": [
+      -26.9,
+      -28.1,
+      0
+    ],
+    "C_XIN": [
+      -33.1,
+      -30.05,
+      180
+    ],
+    "C_XOUT": [
+      -26.9,
+      -29.4,
+      0
+    ],
+    "Y_MCU": [
+      -30,
+      -29.2,
+      0
+    ],
+    "R_RESET_PU": [
+      -23,
+      -28,
+      0
+    ]
+  },
+  "externalPlacementDependencies": {
+    "R_USB_DP": [
+      -26.75,
+      -13.25,
+      270
+    ],
+    "U_USB_ESD": [
+      -44,
+      -19,
+      90
+    ],
+    "U_USB_SWITCH": [
+      -36,
+      -19,
+      90
+    ],
+    "R_USB_DM": [
+      -25.4,
+      -13.25,
+      270
+    ],
+    "C209": [
+      -17,
+      -23.9,
+      0
+    ],
+    "C210": [
+      -17,
+      -21.2,
+      0
+    ],
+    "C212": [
+      -17,
+      -18.5,
+      0
+    ],
+    "C211": [
+      -17,
+      -15.8,
+      0
+    ]
+  },
+  "fanout": [
+    {
+      "selector": "U_FLASH.pin1",
+      "net": "FLASH_CS",
+      "via": {
+        "x": -30.65,
+        "y": -13.9
+      },
+      "path": [
+        {
+          "x": -29.600062,
+          "y": -12.80749
+        },
+        {
+          "x": -30.65,
+          "y": -13.9
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal",
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_FLASH.pin2",
+      "net": "FLASH_SD1",
+      "via": {
+        "x": -29.6,
+        "y": -13.9
+      },
+      "path": [
+        {
+          "x": -29.099936,
+          "y": -12.80749
+        },
+        {
+          "x": -29.099936,
+          "y": -13.35
+        },
+        {
+          "x": -29.6,
+          "y": -13.9
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal",
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_FLASH.pin3",
+      "net": "FLASH_SD2",
+      "via": {
+        "x": -28.5,
+        "y": -13.8
+      },
+      "path": [
+        {
+          "x": -28.600064,
+          "y": -12.80749
+        },
+        {
+          "x": -28.5,
+          "y": -13.8
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal",
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_FLASH.pin4",
+      "net": "GND",
+      "via": {
+        "x": -27.72416697508023,
+        "y": -10.65
+      },
+      "path": [
+        {
+          "x": -28.099938,
+          "y": -12.80749
+        },
+        {
+          "x": -27.72416697508023,
+          "y": -10.65
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "flash-signal"
+    },
+    {
+      "selector": "U_FLASH.pin5",
+      "net": "FLASH_SD0",
+      "via": {
+        "x": -27.6,
+        "y": -8.5
+      },
+      "path": [
+        {
+          "x": -28.099938,
+          "y": -9.79251
+        },
+        {
+          "x": -28.099938,
+          "y": -9.1
+        },
+        {
+          "x": -27.6,
+          "y": -8.5
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "flash-signal"
+    },
+    {
+      "selector": "U_FLASH.pin6",
+      "net": "FLASH_SCLK",
+      "via": {
+        "x": -28.600064,
+        "y": -7.2
+      },
+      "path": [
+        {
+          "x": -28.600064,
+          "y": -9.79251
+        },
+        {
+          "x": -28.600064,
+          "y": -7.2
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "flash-signal"
+    },
+    {
+      "selector": "U_FLASH.pin7",
+      "net": "FLASH_SD3",
+      "via": {
+        "x": -29.4,
+        "y": -8.5
+      },
+      "path": [
+        {
+          "x": -29.099936,
+          "y": -9.79251
+        },
+        {
+          "x": -29.099936,
+          "y": -9.1
+        },
+        {
+          "x": -29.4,
+          "y": -8.5
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "flash-signal"
+    },
+    {
+      "selector": "U_FLASH.pin8",
+      "net": "V3V3",
+      "via": null,
+      "path": [
+        {
+          "x": -29.600062,
+          "y": -9.79251
+        },
+        {
+          "x": -30.75,
+          "y": -9.79251
+        }
+      ],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_FLASH.pin9",
+      "net": "GND",
+      "via": {
+        "x": -27.72416697508023,
+        "y": -10.65
+      },
+      "path": [
+        {
+          "x": -28.85,
+          "y": -11.3
+        },
+        {
+          "x": -27.72416697508023,
+          "y": -10.65
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "reuse-ground-barrel"
+    },
+    {
+      "selector": "U_MCU.pin1",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin2",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin3",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin4",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin5",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin6",
+      "net": "PD_CFG1_LOW",
+      "via": {
+        "x": -29.275,
+        "y": -19.85
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -20.399925
+        },
+        {
+          "x": -29.275,
+          "y": -20.399925
+        },
+        {
+          "x": -29.275,
+          "y": -19.85
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin7",
+      "net": "PD_CFG2_LOW",
+      "via": {
+        "x": -31.5,
+        "y": -20.05
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -20.799975
+        },
+        {
+          "x": -31.1,
+          "y": -20.799975
+        },
+        {
+          "x": -31.5,
+          "y": -20.05
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin8",
+      "net": "PD_CFG3_LOW",
+      "via": {
+        "x": -29.275,
+        "y": -21.3
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -21.200025
+        },
+        {
+          "x": -29.275,
+          "y": -21.200025
+        },
+        {
+          "x": -29.275,
+          "y": -21.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin9",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin10",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin11",
+      "net": "I2C_SDA",
+      "via": {
+        "x": -29.275,
+        "y": -22.3
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -22.399921
+        },
+        {
+          "x": -29.275,
+          "y": -22.399921
+        },
+        {
+          "x": -29.275,
+          "y": -22.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin12",
+      "net": "I2C_SCL",
+      "via": {
+        "x": -33.2,
+        "y": -23.3
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -22.799971
+        },
+        {
+          "x": -33.2,
+          "y": -22.799971
+        },
+        {
+          "x": -33.2,
+          "y": -23.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin13",
+      "net": "FAN_PWM_DRIVE",
+      "via": {
+        "x": -31.476649776901805,
+        "y": -23.87559344724377
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin13",
+          "component": "U_MCU",
+          "net": "FAN_PWM_DRIVE",
+          "x": -30.424936,
+          "y": -23.200021
+        },
+        {
+          "x": -31.476649776901805,
+          "y": -23.200021
+        },
+        {
+          "x": -31.476649776901805,
+          "y": -23.87559344724377
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin14",
+      "net": "FAN_TACH_MCU",
+      "via": {
+        "x": -31.25794652111981,
+        "y": -25.582138978577856
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin14",
+          "component": "U_MCU",
+          "net": "FAN_TACH_MCU",
+          "x": -30.424936,
+          "y": -23.600071
+        },
+        {
+          "x": -31.25794652111981,
+          "y": -25.582138978577856
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin15",
+      "net": "TEC_REQUEST",
+      "via": {
+        "x": -30.265032188623497,
+        "y": -25.301223773690264
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin15",
+          "component": "U_MCU",
+          "net": "TEC_REQUEST",
+          "x": -29.599944,
+          "y": -24.425063
+        },
+        {
+          "x": -30.265032188623497,
+          "y": -25.301223773690264
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin16",
+      "net": "MCU_RUN",
+      "via": {
+        "x": -28.85,
+        "y": -23.3
+      },
+      "path": [
+        {
+          "x": -29.200148,
+          "y": -24.425063
+        },
+        {
+          "x": -29.200148,
+          "y": -23.8
+        },
+        {
+          "x": -28.85,
+          "y": -23.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin17",
+      "net": "MCU_ARM",
+      "via": {
+        "x": -29.3,
+        "y": -25.6
+      },
+      "path": [
+        {
+          "x": -28.800098,
+          "y": -24.425063
+        },
+        {
+          "x": -28.800098,
+          "y": -25.05
+        },
+        {
+          "x": -29.3,
+          "y": -25.6
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin18",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin19",
+      "net": "GND",
+      "via": {
+        "x": -27.8,
+        "y": -23.3
+      },
+      "path": [
+        {
+          "x": -27.999998,
+          "y": -24.425063
+        },
+        {
+          "x": -27.999998,
+          "y": -23.8
+        },
+        {
+          "x": -27.8,
+          "y": -23.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin20",
+      "net": "XIN",
+      "via": null,
+      "path": [
+        {
+          "x": -27.599948,
+          "y": -24.425063
+        },
+        {
+          "x": -27.599948,
+          "y": -25.05
+        },
+        {
+          "x": -30,
+          "y": -27.45
+        },
+        {
+          "x": -30,
+          "y": -30.050011
+        },
+        {
+          "x": -31.100074,
+          "y": -30.050010999999998
+        }
+      ],
+      "role": "direct-local-route"
+    },
+    {
+      "selector": "U_MCU.pin21",
+      "net": "XOUT",
+      "via": {
+        "x": -26.5,
+        "y": -23.3
+      },
+      "path": [
+        {
+          "x": -27.200152,
+          "y": -24.425063
+        },
+        {
+          "x": -27.200152,
+          "y": -23.8
+        },
+        {
+          "x": -26.5,
+          "y": -23.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin22",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin23",
+      "net": "V1V1",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin24",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin25",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin26",
+      "net": "MCU_NRST",
+      "via": {
+        "x": -24.725,
+        "y": -22.1
+      },
+      "path": [
+        {
+          "x": -25.200156,
+          "y": -24.425063
+        },
+        {
+          "x": -25.200156,
+          "y": -23.8
+        },
+        {
+          "x": -24.725,
+          "y": -22.1
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin27",
+      "net": "PD_VALID_N",
+      "via": {
+        "x": -24.8,
+        "y": -26.5
+      },
+      "path": [
+        {
+          "x": -24.800106,
+          "y": -24.425063
+        },
+        {
+          "x": -24.8,
+          "y": -26.5
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin28",
+      "net": "INPUT_FAULT_N",
+      "via": {
+        "x": -23.734967811376503,
+        "y": -25.301223773690264
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin28",
+          "component": "U_MCU",
+          "net": "INPUT_FAULT_N",
+          "x": -24.400056,
+          "y": -24.425063
+        },
+        {
+          "x": -23.734967811376503,
+          "y": -25.301223773690264
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin29",
+      "net": "INPUT_AUXOFF",
+      "via": {
+        "x": -22.25,
+        "y": -23.600071
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -23.600071
+        },
+        {
+          "x": -22.25,
+          "y": -23.600071
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin30",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin31",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin32",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin33",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin34",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin35",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin36",
+      "net": "USB_VBUS_DETECT",
+      "via": {
+        "x": -22.497754040935433,
+        "y": -21.02224342353402
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin36",
+          "component": "U_MCU",
+          "net": "USB_VBUS_DETECT",
+          "x": -23.575064,
+          "y": -20.799975
+        },
+        {
+          "x": -22.497754040935433,
+          "y": -20.799975
+        },
+        {
+          "x": -22.497754040935433,
+          "y": -21.02224342353402
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin37",
+      "net": null,
+      "via": null,
+      "path": [],
+      "role": "no-connect"
+    },
+    {
+      "selector": "U_MCU.pin38",
+      "net": "HOT_ADC",
+      "via": {
+        "x": -24.725,
+        "y": -20.5
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -19.999875
+        },
+        {
+          "x": -24.3,
+          "y": -19.999875
+        },
+        {
+          "x": -24.725,
+          "y": -20.5
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin39",
+      "net": "COLD_ADC",
+      "via": {
+        "x": -21.8,
+        "y": -20.3
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -19.600079
+        },
+        {
+          "x": -22.65,
+          "y": -19.600079
+        },
+        {
+          "x": -21.8,
+          "y": -20.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin40",
+      "net": "VOUT_ADC",
+      "via": {
+        "x": -20.75,
+        "y": -19.2
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -19.200029
+        },
+        {
+          "x": -20.75,
+          "y": -19.2
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin41",
+      "net": "VBUS_ADC",
+      "via": {
+        "x": -24.725,
+        "y": -18.75
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -18.799979
+        },
+        {
+          "x": -24.3,
+          "y": -18.799979
+        },
+        {
+          "x": -24.725,
+          "y": -18.75
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin42",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin43",
+      "net": "ADC_AVDD",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin44",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin45",
+      "net": "V1V1",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin46",
+      "net": "USB_DM_MCU",
+      "via": null,
+      "path": [
+        {
+          "x": -25.599952000000002,
+          "y": -17.574937
+        },
+        {
+          "x": -25.599952,
+          "y": -14.6
+        },
+        {
+          "x": -25.4,
+          "y": -14.400048
+        },
+        {
+          "x": -25.4,
+          "y": -13.7
+        }
+      ],
+      "role": "direct-local-route"
+    },
+    {
+      "selector": "U_MCU.pin47",
+      "net": "USB_DP_MCU",
+      "via": null,
+      "path": [
+        {
+          "x": -26.000002,
+          "y": -17.574937
+        },
+        {
+          "x": -26.000002,
+          "y": -14.6
+        },
+        {
+          "x": -26.75,
+          "y": -13.850002
+        },
+        {
+          "x": -26.75,
+          "y": -13.7
+        }
+      ],
+      "role": "direct-local-route"
+    },
+    {
+      "selector": "U_MCU.pin48",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin49",
+      "net": "V3V3",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin50",
+      "net": "V1V1",
+      "via": null,
+      "path": [],
+      "role": "direct-local-bypass"
+    },
+    {
+      "selector": "U_MCU.pin51",
+      "net": "FLASH_SD3",
+      "via": {
+        "x": -26.9,
+        "y": -18.75
+      },
+      "path": [
+        {
+          "x": -27.599948,
+          "y": -17.574937
+        },
+        {
+          "x": -27.599948,
+          "y": -18.3
+        },
+        {
+          "x": -26.9,
+          "y": -18.75
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin52",
+      "net": "FLASH_SCLK",
+      "via": {
+        "x": -28.29655544833611,
+        "y": -18.789249019143504
+      },
+      "path": [
+        {
+          "selector": "U_MCU.pin52",
+          "component": "U_MCU",
+          "net": "FLASH_SCLK",
+          "x": -27.999998,
+          "y": -17.574937
+        },
+        {
+          "x": -27.999998,
+          "y": -18.789249019143504
+        },
+        {
+          "x": -28.29655544833611,
+          "y": -18.789249019143504
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin53",
+      "net": "FLASH_SD0",
+      "via": {
+        "x": -30,
+        "y": -15.3
+      },
+      "path": [
+        {
+          "x": -28.400048,
+          "y": -17.574937
+        },
+        {
+          "x": -28.400048,
+          "y": -16.75
+        },
+        {
+          "x": -28.8,
+          "y": -16.25
+        },
+        {
+          "x": -28.9,
+          "y": -15.85
+        },
+        {
+          "x": -30,
+          "y": -15.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal",
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_MCU.pin54",
+      "net": "FLASH_SD2",
+      "via": {
+        "x": -29.6,
+        "y": -16.35
+      },
+      "path": [
+        {
+          "x": -28.800098,
+          "y": -17.574937
+        },
+        {
+          "x": -28.800098,
+          "y": -16.95
+        },
+        {
+          "x": -29.6,
+          "y": -16.35
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal",
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_MCU.pin55",
+      "net": "FLASH_SD1",
+      "via": {
+        "x": -29.4,
+        "y": -18.8
+      },
+      "path": [
+        {
+          "x": -29.200148,
+          "y": -17.574937
+        },
+        {
+          "x": -29.200148,
+          "y": -18.3
+        },
+        {
+          "x": -29.4,
+          "y": -18.8
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin56",
+      "net": "FLASH_CS",
+      "via": {
+        "x": -30.5,
+        "y": -17.25
+      },
+      "path": [
+        {
+          "x": -29.599944,
+          "y": -17.574937
+        },
+        {
+          "x": -30.5,
+          "y": -17.25
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "signal"
+    },
+    {
+      "selector": "U_MCU.pin57",
+      "net": "GND",
+      "via": {
+        "x": -27.8,
+        "y": -23.3
+      },
+      "path": [
+        {
+          "x": -27,
+          "y": -20.999873
+        },
+        {
+          "x": -27.8,
+          "y": -22.6
+        },
+        {
+          "x": -27.8,
+          "y": -23.3
+        }
+      ],
+      "width": 0.2,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "role": "reuse-ground-barrel"
+    }
+  ],
+  "localRoutes": [
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin1",
+      "to": "C_IO6.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -30.424936,
+          "y": -18.399929
+        },
+        {
+          "x": -31.978008,
+          "y": -18.399929
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.5530720000000002,
+      "exposedCopperLengthMm": 0.8780664999999992,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin10",
+      "to": "C_IO5.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -30.424936,
+          "y": -21.999871
+        },
+        {
+          "x": -31.978008,
+          "y": -21.999871
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.5530720000000002,
+      "exposedCopperLengthMm": 0.8780664999999992,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin33",
+      "to": "C_IO3.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -23.575064,
+          "y": -21.999871
+        },
+        {
+          "x": -22.349999999999998,
+          "y": -21.999871
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.2250640000000033,
+      "exposedCopperLengthMm": 0.5500585000000022,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin42",
+      "to": "C_IO2.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -23.575064,
+          "y": -18.399929
+        },
+        {
+          "x": -22.349999999999998,
+          "y": -18.399929
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.2250640000000033,
+      "exposedCopperLengthMm": 0.5500585000000022,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin22",
+      "to": "C_IO4.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -26.800102,
+          "y": -24.425063
+        },
+        {
+          "x": -26.800102,
+          "y": -25.000063
+        },
+        {
+          "x": -27.1,
+          "y": -25.650000000000002
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.290791110850786,
+      "exposedCopperLengthMm": 0.5904546515228865,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin23",
+      "to": "C_DVDD2.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -26.400052,
+          "y": -24.425063
+        },
+        {
+          "x": -26.400052,
+          "y": -25.000063
+        },
+        {
+          "x": -25.9,
+          "y": -25.650000000000002
+        }
+      ],
+      "maxLength": 1,
+      "owner": "mcu",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.3950427468571385,
+      "exposedCopperLengthMm": 0.654605617769573,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "ADC_AVDD",
+      "from": "U_MCU.pin43",
+      "to": "C_ADC_AVDD.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -24.400056,
+          "y": -17.574937
+        },
+        {
+          "x": -22.5,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 2,
+      "owner": "mcu",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 2.3163917753922787,
+      "exposedCopperLengthMm": 1.8287449655726964,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin44",
+      "to": "C_VREG_IN.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -24.800106,
+          "y": -17.574937
+        },
+        {
+          "x": -24.800106,
+          "y": -16.8
+        },
+        {
+          "x": -24.5,
+          "y": -16.8
+        },
+        {
+          "x": -23.7,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 2,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 2.045867391947378,
+      "exposedCopperLengthMm": 1.2568027449671086,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin45",
+      "to": "C_VREG_OUT.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -25.200156,
+          "y": -17.574937
+        },
+        {
+          "x": -25.200156,
+          "y": -16.55
+        },
+        {
+          "x": -24.9,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 1,
+      "owner": "mcu",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.4493113917061906,
+      "exposedCopperLengthMm": 0.6706605652843631,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin48",
+      "to": "C_USB_VDD.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -26.400052,
+          "y": -17.574937
+        },
+        {
+          "x": -26.400052,
+          "y": -16.949937
+        },
+        {
+          "x": -26.65,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.3682266186520757,
+      "exposedCopperLengthMm": 0.677759148984777,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin49",
+      "to": "C_USB_VDD.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -26.800102,
+          "y": -17.574937
+        },
+        {
+          "x": -26.800102,
+          "y": -16.949937
+        },
+        {
+          "x": -26.65,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.340850832487466,
+      "exposedCopperLengthMm": 0.6601613093227131,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin50",
+      "to": "C_DVDD1.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -27.200152,
+          "y": -17.574937
+        },
+        {
+          "x": -27.200152,
+          "y": -16.949937
+        },
+        {
+          "x": -27.85,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 1,
+      "owner": "mcu",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.5800990666276462,
+      "exposedCopperLengthMm": 0.8139560547417011,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "XIN",
+      "from": "U_MCU.pin20",
+      "to": "Y_MCU.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -27.599948,
+          "y": -24.425063
+        },
+        {
+          "x": -27.599948,
+          "y": -25.05
+        },
+        {
+          "x": -30,
+          "y": -27.45
+        },
+        {
+          "x": -30,
+          "y": -30.050011
+        },
+        {
+          "x": -31.100074,
+          "y": -30.050010999999998
+        }
+      ],
+      "maxLength": 10,
+      "owner": "mcu",
+      "scope": "local-signal",
+      "centerPathLengthMm": 7.719171319447215,
+      "exposedCopperLengthMm": 6.594167219447213
+    },
+    {
+      "net": "XOUT_CRYSTAL",
+      "from": "R_XOUT.pin2",
+      "to": "Y_MCU.pin3",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -26.45,
+          "y": -28.1
+        },
+        {
+          "x": -26.45,
+          "y": -28.7
+        },
+        {
+          "x": -28.899926,
+          "y": -28.7
+        },
+        {
+          "x": -28.899926,
+          "y": -28.349989
+        }
+      ],
+      "maxLength": 4,
+      "owner": "mcu",
+      "scope": "local-signal",
+      "centerPathLengthMm": 3.3999369999999978,
+      "exposedCopperLengthMm": 2.7499259999999985
+    },
+    {
+      "net": "XIN",
+      "from": "Y_MCU.pin1",
+      "to": "C_XIN.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -31.100074,
+          "y": -30.050010999999998
+        },
+        {
+          "x": -32.65,
+          "y": -30.05
+        }
+      ],
+      "maxLength": 2,
+      "owner": "mcu",
+      "scope": "local-signal",
+      "centerPathLengthMm": 1.5499260000390334,
+      "exposedCopperLengthMm": 0.5999274000151074,
+      "pcbStraightLine": true
+    },
+    {
+      "net": "XOUT_CRYSTAL",
+      "from": "Y_MCU.pin3",
+      "to": "C_XOUT.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -28.899926,
+          "y": -28.349989
+        },
+        {
+          "x": -27.349999999999998,
+          "y": -29.4
+        }
+      ],
+      "maxLength": 2,
+      "owner": "mcu",
+      "scope": "local-signal",
+      "centerPathLengthMm": 1.872109426715491,
+      "exposedCopperLengthMm": 0.7246344282791031,
+      "pcbStraightLine": true
+    },
+    {
+      "net": "V3V3",
+      "from": "U_FLASH.pin8",
+      "to": "C_FLASH.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -29.600062,
+          "y": -9.79251
+        },
+        {
+          "x": -30.75,
+          "y": -9.79251
+        }
+      ],
+      "maxLength": 1,
+      "owner": "ground-supply",
+      "scope": "local-bypass",
+      "centerPathLengthMm": 1.1499379999999988,
+      "exposedCopperLengthMm": 0.759933199999999,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-clipping"
+    },
+    {
+      "net": "ADC_AVDD",
+      "from": "C_ADC_AVDD.pin1",
+      "to": "R_ADC_SUPPLY.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -22.5,
+          "y": -16.25
+        },
+        {
+          "x": -21.3,
+          "y": -16.25
+        }
+      ],
+      "maxLength": 3,
+      "owner": "mcu",
+      "scope": "local-signal",
+      "centerPathLengthMm": 1.1999999999999993,
+      "exposedCopperLengthMm": 0.6499999999999986,
+      "pcbStraightLine": true
+    },
+    {
+      "net": "V1V1",
+      "from": "C_DVDD1.pin1",
+      "to": "MCU_DVDD1_FEED.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -27.85,
+          "y": -16.25
+        },
+        {
+          "x": -28.46,
+          "y": -15.78
+        },
+        {
+          "x": -28.94,
+          "y": -14.96
+        }
+      ],
+      "maxLength": 2,
+      "maxExposedLength": 1,
+      "scope": "core-distribution-escape",
+      "exposedCopperLengthMm": 0.991502,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-and-via-pad-clipping"
+    },
+    {
+      "net": "V1V1",
+      "from": "C_VREG_OUT.pin1",
+      "to": "MCU_VREG_OUT_FEED.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -24.9,
+          "y": -16.25
+        },
+        {
+          "x": -24.299999999999997,
+          "y": -15.75
+        },
+        {
+          "x": -24.299999999999997,
+          "y": -14.55
+        },
+        {
+          "x": -24.40824381430521,
+          "y": -14.41474093005077
+        }
+      ],
+      "centerPathLengthMm": 2.1542639335852476,
+      "scope": "core-distribution-escape",
+      "maxLength": 4,
+      "lengthMeasurement": "full-center-path-network-distribution"
+    },
+    {
+      "net": "V1V1",
+      "from": "C_DVDD2.pin1",
+      "to": "MCU_DVDD2_FEED.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -25.9,
+          "y": -25.650000000000002
+        },
+        {
+          "x": -26.5,
+          "y": -26.150000000000002
+        },
+        {
+          "x": -26.5,
+          "y": -26.950000000000003
+        },
+        {
+          "x": -26.299999999999997,
+          "y": -27.150000000000002
+        },
+        {
+          "x": -25.40824381430521,
+          "y": -27.485259069949233
+        }
+      ],
+      "centerPathLengthMm": 2.8165626673031454,
+      "scope": "core-distribution-escape",
+      "maxLength": 4,
+      "lengthMeasurement": "full-center-path-network-distribution"
+    },
+    {
+      "net": "V1V1",
+      "from": "MCU_VREG_OUT_FEED.inner2",
+      "to": "MCU_DVDD1_FEED.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        {
+          "x": -24.40824381430521,
+          "y": -14.41474093005077
+        },
+        {
+          "x": -27.308243814305207,
+          "y": -15.41474093005077
+        },
+        {
+          "x": -28.94,
+          "y": -14.96
+        }
+      ],
+      "scope": "core-distribution-trunk",
+      "maxLength": 15,
+      "centerPathLengthMm": 4.761507855082712,
+      "lengthMeasurement": "full-center-path-network-distribution"
+    },
+    {
+      "net": "V1V1",
+      "from": "MCU_DVDD1_FEED.inner2",
+      "to": "MCU_DVDD2_FEED.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        {
+          "x": -28.94,
+          "y": -14.96
+        },
+        {
+          "x": -28.84,
+          "y": -16.46
+        },
+        {
+          "x": -29.240000000000002,
+          "y": -17.560000000000002
+        },
+        {
+          "x": -30.14,
+          "y": -18.46
+        },
+        {
+          "x": -30.240000000000002,
+          "y": -18.86
+        },
+        {
+          "x": -30.040000000000003,
+          "y": -22.560000000000002
+        },
+        {
+          "x": -29.44,
+          "y": -23.86
+        },
+        {
+          "x": -25.40824381430521,
+          "y": -27.485259069949233
+        }
+      ],
+      "scope": "core-distribution-trunk",
+      "maxLength": 15,
+      "centerPathLengthMm": 14.918037761464449,
+      "lengthMeasurement": "full-center-path-network-distribution"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_MCU.pin48",
+      "to": "MCU_USB_VDD_FEED.top",
+      "points": [
+        {
+          "x": -26.400052,
+          "y": -17.574937
+        },
+        {
+          "x": -26.400052,
+          "y": -18.124937
+        },
+        {
+          "x": -26.000052,
+          "y": -18.524936999999998
+        },
+        {
+          "x": -25.800051999999997,
+          "y": -18.614167484541326
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "maxLength": 4,
+      "scope": "logic-supply-distribution-feed",
+      "lengthMeasurement": "full-center-path-network-distribution",
+      "centerPathLengthMm": 1.3346878892538225
+    },
+    {
+      "net": "GND",
+      "from": "C_IO4.pin2",
+      "to": "MCU_C_IO4_pin2_GROUND.top",
+      "points": [
+        {
+          "selector": "C_IO4.pin2",
+          "component": "C_IO4",
+          "net": "GND",
+          "x": -27.1,
+          "y": -26.55
+        },
+        {
+          "x": -28,
+          "y": -26.55
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "maxLength": 2,
+      "scope": "local-cap-ground-return",
+      "maxExposedLength": 1,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-and-via-pad-clipping",
+      "centerPathLengthMm": 0.8999999999999986
+    },
+    {
+      "net": "GND",
+      "from": "C_VREG_IN.pin2",
+      "to": "MCU_C_VREG_IN_pin2_GROUND.top",
+      "points": [
+        {
+          "selector": "C_VREG_IN.pin2",
+          "component": "C_VREG_IN",
+          "net": "GND",
+          "x": -23.7,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -23.50421071166992,
+          "y": -13.862832707939285
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "maxLength": 2,
+      "scope": "local-cap-ground-return",
+      "maxExposedLength": 1,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-and-via-pad-clipping",
+      "centerPathLengthMm": 1.500000000000001
+    },
+    {
+      "net": "GND",
+      "from": "C_ADC_AVDD.pin2",
+      "to": "MCU_C_ADC_AVDD_pin2_GROUND.top",
+      "points": [
+        {
+          "selector": "C_ADC_AVDD.pin2",
+          "component": "C_ADC_AVDD",
+          "net": "GND",
+          "x": -22.5,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -21.6,
+          "y": -15.350000000000001
+        }
+      ],
+      "layer": "top",
+      "width": 0.2,
+      "maxLength": 2,
+      "scope": "local-cap-ground-return",
+      "maxExposedLength": 1,
+      "pcbStraightLine": true,
+      "lengthMeasurement": "exposed-copper-after-solder-pad-and-via-pad-clipping",
+      "centerPathLengthMm": 0.8999999999999986
+    },
+    {
+      "net": "GND",
+      "from": "C_IO5.pin2",
+      "to": "MCU_C_IO5_SHORT_GROUND.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        {
+          "x": -32.878008,
+          "y": -21.999871
+        },
+        {
+          "x": -33.496992989108534,
+          "y": -20.596812862004587
+        }
+      ],
+      "maxLength": 2,
+      "maxExposedLength": 1,
+      "pcbStraightLine": true,
+      "scope": "local-cap-ground-return",
+      "lengthMeasurement": "exposed-copper-after-solder-pad-and-via-pad-clipping",
+      "centerPathLengthMm": 1.5335300959996983
+    }
+  ],
+  "localLengthBudgets": [
+    {
+      "from": "U_MCU.pin43",
+      "to": "C_ADC_AVDD.pin1",
+      "maximumExposedLengthMm": 2,
+      "reason": "Three distinct supply capacitors on0.4mm-pitch north pins require1.1mm-wide real courtyards and coexist with USB top corridor. Final top path exposes1.828mm;2mm is specific to ADC43 branch.",
+      "minimumExposedLengthLowerBoundMm": 1.6348026051639046,
+      "minimumProof": "At courtyard-clear final poses, the closest MCU43/ADC-cap pad bounding-box points are1.634803mm apart. Actual rounded pads and foreign copper cannot reduce this Euclidean lower bound; the implemented path exposes1.828745mm."
+    },
+    {
+      "from": "U_MCU.pin44",
+      "to": "C_VREG_IN.pin1",
+      "maximumExposedLengthMm": 2,
+      "reason": "VREG_IN bypass expands east beside neighboring VREG_OUT capacitor courtyard. Final top path exposes1.257mm;2mm is specific to VREG44 branch.",
+      "minimumExposedLengthLowerBoundMm": 1.0722949699832078,
+      "minimumProof": "With final courtyard-clear VREG_IN pose, MCU44 must pass the foreign MCU43 northwest pad corner at0.3mm centerline distance (.1mm trace radius+.2mm gap). The shortest tangent-and-arc path from its north pad tip to the closest VREG_IN pad corner is1.072295mm before other obstacles; implemented exposed path is1.256803mm."
+    }
+  ],
+  "validation": {
+    "mcuPadsDescribed": 57,
+    "connectedPadsDescribed": 43,
+    "flashPadsDescribed": 9,
+    "unresolvedFanoutCount": 0,
+    "localForeignCopperConflicts": 0,
+    "mcuOwnedCourtyardOverlaps": 0,
+    "criticalReservationFanoutConflicts": 0,
+    "localBypassMeasurements": [
+      {
+        "from": "U_MCU.pin1",
+        "to": "C_IO6.pin1",
+        "centerPathLengthMm": 1.5530720000000002,
+        "exposedCopperLengthMm": 0.8780664999999992,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin10",
+        "to": "C_IO5.pin1",
+        "centerPathLengthMm": 1.5530720000000002,
+        "exposedCopperLengthMm": 0.8780664999999992,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin33",
+        "to": "C_IO3.pin1",
+        "centerPathLengthMm": 1.2250640000000033,
+        "exposedCopperLengthMm": 0.5500585000000022,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin42",
+        "to": "C_IO2.pin1",
+        "centerPathLengthMm": 1.2250640000000033,
+        "exposedCopperLengthMm": 0.5500585000000022,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin22",
+        "to": "C_IO4.pin1",
+        "centerPathLengthMm": 1.290791110850786,
+        "exposedCopperLengthMm": 0.5904546515228865,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin23",
+        "to": "C_DVDD2.pin1",
+        "centerPathLengthMm": 1.3950427468571385,
+        "exposedCopperLengthMm": 0.654605617769573,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin43",
+        "to": "C_ADC_AVDD.pin1",
+        "centerPathLengthMm": 2.3163917753922787,
+        "exposedCopperLengthMm": 1.8287449655726964,
+        "maximumExposedLengthMm": 2
+      },
+      {
+        "from": "U_MCU.pin44",
+        "to": "C_VREG_IN.pin1",
+        "centerPathLengthMm": 2.045867391947378,
+        "exposedCopperLengthMm": 1.2568027449671086,
+        "maximumExposedLengthMm": 2
+      },
+      {
+        "from": "U_MCU.pin45",
+        "to": "C_VREG_OUT.pin1",
+        "centerPathLengthMm": 1.4493113917061906,
+        "exposedCopperLengthMm": 0.6706605652843631,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin48",
+        "to": "C_USB_VDD.pin1",
+        "centerPathLengthMm": 1.3682266186520757,
+        "exposedCopperLengthMm": 0.677759148984777,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin49",
+        "to": "C_USB_VDD.pin1",
+        "centerPathLengthMm": 1.340850832487466,
+        "exposedCopperLengthMm": 0.6601613093227131,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_MCU.pin50",
+        "to": "C_DVDD1.pin1",
+        "centerPathLengthMm": 1.5800990666276462,
+        "exposedCopperLengthMm": 0.8139560547417011,
+        "maximumExposedLengthMm": 1
+      },
+      {
+        "from": "U_FLASH.pin8",
+        "to": "C_FLASH.pin1",
+        "centerPathLengthMm": 1.1499379999999988,
+        "exposedCopperLengthMm": 0.759933199999999,
+        "maximumExposedLengthMm": 1
+      }
+    ],
+    "rules": {
+      "traceWidth": 0.2,
+      "foreignCopperGap": 0.2,
+      "viaDrill": 0.3,
+      "viaPad": 0.7,
+      "viaLayers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "drillGap": 0.5,
+      "importedCoordinateTolerance": 0.0003
+    },
+    "testedAgainst": "All native courtyard outlines/rectangles from dist/routing-placement/circuit.json transformed to this map; baseline top pads including no-connect MCU pads; all listed local paths and mutually reserved full-through fanout barrels. Validated fanouts also include the accepted first power/fan reservations, fresh USB packet paths/vias, and current ground powerReturns. Native full board build remains parent integration check.",
+    "jointBypassReturnRedesign": {
+      "changedFanoutSelectors": [
+        "U_FLASH.pin1",
+        "U_FLASH.pin2",
+        "U_FLASH.pin3",
+        "U_MCU.pin54",
+        "U_MCU.pin53"
+      ],
+      "positiveFeedVia": {
+        "name": "MCU_DVDD1_FEED",
+        "net": "V1V1",
+        "x": -28.94,
+        "y": -14.96,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "positiveEscapeExposedLengthMm": 0.991502,
+      "sharedGroundVia": {
+        "x": -27.25,
+        "y": -14.6
+      },
+      "eachGroundEscapeExposedLengthMm": 0.290312,
+      "geometrySource": "ground-completion.json sequential exact native geometry audit; five fanouts and positive feed adopted together"
+    },
+    "coreDistribution": {
+      "feeds": [
+        "MCU_VREG_OUT_FEED",
+        "MCU_DVDD1_FEED",
+        "MCU_DVDD2_FEED"
+      ],
+      "routes": [
+        {
+          "from": "C_VREG_OUT.pin1",
+          "to": "MCU_VREG_OUT_FEED.top",
+          "layer": "top",
+          "centerPathLengthMm": 2.1542639335852476,
+          "maxLength": 4
+        },
+        {
+          "from": "C_DVDD2.pin1",
+          "to": "MCU_DVDD2_FEED.top",
+          "layer": "top",
+          "centerPathLengthMm": 2.8165626673031454,
+          "maxLength": 4
+        },
+        {
+          "from": "MCU_VREG_OUT_FEED.inner2",
+          "to": "MCU_DVDD1_FEED.inner2",
+          "layer": "inner2",
+          "centerPathLengthMm": 4.761507855082712,
+          "maxLength": 15
+        },
+        {
+          "from": "MCU_DVDD1_FEED.inner2",
+          "to": "MCU_DVDD2_FEED.inner2",
+          "layer": "inner2",
+          "centerPathLengthMm": 14.918037761464449,
+          "maxLength": 15
+        }
+      ],
+      "nativePadCount": 768,
+      "testedPacketFiles": [
+        "power-completion.json",
+        "fan-completion.json",
+        "usb-completion.json",
+        "ground-completion.json",
+        "mcu-completion.json"
+      ],
+      "foreignCopperConflicts": 0,
+      "laterControlReservationDependencies": [
+        {
+          "owner": "i2c-debug",
+          "net": "I2C_SDA",
+          "via": [
+            -24,
+            -14.55
+          ]
+        },
+        {
+          "owner": "interlock",
+          "net": "TEC_REQUEST",
+          "via": [
+            -23.75,
+            -14.4
+          ]
+        }
+      ]
+    },
+    "usbLogicSupplyFeed": {
+      "net": "V3V3",
+      "via": {
+        "x": -25.800052,
+        "y": -18.614167484541326
+      },
+      "from": "U_MCU.pin48",
+      "centerPathLengthMm": 1.3346878892538225,
+      "foreignCopperConflicts": 0,
+      "requiredGroundReturnReplacement": "Ground powerReturns57 .4mm branch reuses19/57 barrel(-27.8,-23.3); old north GND barrel removed.",
+      "primaryBypassBoundsUnchanged": true
+    },
+    "explicitLocalCapGroundReturns": {
+      "selectors": [
+        "C_IO4.pin2",
+        "C_VREG_IN.pin2",
+        "C_ADC_AVDD.pin2"
+      ],
+      "nominalWidth": 0.2,
+      "maximumExposedLengthMm": 1,
+      "foreignEarlyCopperConflicts": 0,
+      "remaining": [
+        "C_VREG_OUT.pin2",
+        "C_DVDD2.pin2"
+      ]
+    },
+    "C_IO5_ground": {
+      "via": {
+        "x": -33.496992989108534,
+        "y": -20.596812862004587
+      },
+      "centerPathLengthMm": 1.5335300959996983,
+      "estimatedExposedLengthMm": 0.8556327577915978,
+      "testedFrozenTraceCount": 983,
+      "foreignCopperConflicts": 0
+    }
+  },
+  "integrationNotes": [
+    "Reserve every non-null fanout barrel and top path before any trunk routing. QSPI51/52/55 and several GPIO pins use the legally spaced ring under the QFN body, outside all solder pads. GND57 reuses pin19 barrel.",
+    "USB lower-layer connector/switch trunks need detours around MCU pin6 and pin7 through barrels. Moving pin6 to a long north ring tail blocks QSPI55 and is incompatible.",
+    "USB pin46/47 top paths have been jointly checked against external R_USB_DM/DP placements. Preserve these placements or revalidate MCU north bypass routes.",
+    "I2C SDA11 final barrel(-29.275,-22.3) replaces old outside(-32,-21); C_IO5 final(-32.428008,-21.999871,180) exposes0.878mm frompin10 and clears actual MCU courtyard by0.1mm. SCL12 keeps outsidebarrel(-33.2,-23.3).",
+    "PD input29 final outsidebarrel(-22.25,-23.600071) frees reset26 ringbarrel(-24.725,-22.1). Final inputfault28 barrel is(-23.7349678114,-25.3012237737), so older28 coordinates must not be used.",
+    "Supply48 and49 both reach C_USB_VDD positive pad. C_IO1 is additional same-net rail decoupling tied by supply owner; its rail distribution trunk is not a primary direct MCU bypass branch.",
+    "Each primary bypass length is measured after clipping solder pads. All are\u22641mm except explicitly scoped ADC43 and VREG44 branches at2mm. Do not blanket waive capacitor length checks.",
+    "All9 flash pad selectors are described. FLASHGND4/9 reuse the critical ground-power EP barrel(-27.72416697508023,-10.65), eliminating the former conflicting extra(-26.8,-11.7) barrel.",
+    "All57 MCU pad selectors are described; no-connect pins have no copper. Logic and pin assignments remain unchanged. Only this artifact and mcu.ts are MCU-owned edits.",
+    "Joint north-bypass redesign: FLASH1/2/3 and MCU53/54 use ground packet exact paths. C_DVDD1 positive feed barrel(-28.94,-14.96) exposes0.991502mm. The paired C_USB_VDD/C_DVDD1 shared ground barrel(-27.25,-14.6) is owned by ground packet; each return exposes0.290312mm. Preserve all seven paths together.",
+    "Install the three V1V1 feed escapes and two inner2 distribution trunks before later controls. C_VREG_OUT/DVDD2 cap-to-barrel paths are declared 4mm network-distribution escapes, separate from their existing \u22641mm primary MCU-to-cap bypasses. C_DVDD1 feed keeps its stricter \u22641mm exposed bound. Later I2C_SDA(-24,-14.55) and TEC_REQUEST(-23.75,-14.4) barrel reservations conflict with VREG_OUT feed and must reroute after early core geometry is reserved.",
+    "USB48/49/C_USB_VDD supply component has explicit V3V3 inward feed from48 to(-25.800052,-18.6141674845), max4mm distribution stem; its primary cap branches remain\u22641mm exposed. Ground owner replaces north EP barrel with .4mm EP\u2192shared19/57 barrel(-27.8,-23.3). No MCU/ADC/QSPI/control fanout coordinates change."
+  ],
+  "reviewRemainder": {
+    "routingReportPhysicalTraceCount": 983,
+    "remainingMcuSignalEdges": [
+      {
+        "net": "XOUT",
+        "from": "U_MCU.pin21",
+        "to": "R_XOUT.pin1",
+        "maxLength": 10
+      },
+      {
+        "net": "FLASH_SD0",
+        "from": "U_MCU.pin53",
+        "to": "U_FLASH.pin5",
+        "maxLength": 16
+      },
+      {
+        "net": "MCU_NRST",
+        "from": "U_MCU.pin26",
+        "to": "R_RESET_PU.pin2",
+        "maxLength": 10
+      },
+      {
+        "net": "BOOT_BUTTON",
+        "from": "R_BOOT.pin2",
+        "to": "SW_BOOT.pin2",
+        "maxLength": 27
+      },
+      {
+        "net": "MCU_NRST",
+        "from": "TP_RESET.pin1",
+        "to": "TP13.pin1",
+        "maxLength": 45
+      }
+    ],
+    "groundPortsPendingInReplay8": [
+      "C_IO2.pin2",
+      "C_IO3.pin2",
+      "C_VREG_OUT.pin2",
+      "C_DVDD2.pin2"
+    ],
+    "logicPowerPortsPendingInReplay8": [
+      "C_IO3.pin1",
+      "C_IO4.pin1",
+      "U_MCU.pin22",
+      "U_MCU.pin33"
+    ],
+    "readyRepairNotYetReplayed": "C_IO5.pin2 short .2mm path to existing GND barrel(-33.4969929891,-20.5968128620), estimated exposed0.855633mm; verified against all983 frozen traces/vias.",
+    "physicalVerificationLimit": "Replay7 physical audit found C_IO2,C_IO4,C_VREG_OUT,C_DVDD2 on isolated top GND islands. C_IO4 repair is saved; final native rebuild/audit determines remaining physical islands. Prototype is not fabrication accepted."
+  }
+}

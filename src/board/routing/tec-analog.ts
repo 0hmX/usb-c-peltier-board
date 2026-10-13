@@ -1,4 +1,5 @@
-import type { RoutingPlan } from "./types"
+import type { RoutingEdge, RoutingLayer, RoutingPlan } from "./types"
+import completion from "./analog-completion.json"
 
 export const plan: RoutingPlan = {
   owner: "tec-analog",
@@ -219,7 +220,7 @@ export const plan: RoutingPlan = {
       priority: 15,
       preferredLayers: ["top", "inner2", "bottom"],
       maxLength: 10,
-      note: "Escape left from U2 before turning toward compensation resistor; the direct diagonal crosses the sense pads.",
+      note: "Use the checked inward x=21.62 corridor between the controller's left pad row and exposed ground pad, then transfer at (21.62,29.1) to inner2. This stays clear of the accepted 1.2 mm exposed-pad ground return.",
     },
     {
       net: "TEC_COMP_RC",
@@ -239,7 +240,7 @@ export const plan: RoutingPlan = {
       priority: 15,
       preferredLayers: ["inner2", "top", "bottom"],
       maxLength: 13,
-      note: "The vertical straight line crosses VC and both sense pads; escape west or use inner2 to reach the upper timing resistor.",
+      note: "Escape west before turning toward (19.5,26.9), then use inner2 to reach the upper timing resistor without crossing VC or sense pads.",
     },
     {
       net: "TEC_DAC",
@@ -248,7 +249,7 @@ export const plan: RoutingPlan = {
       width: 0.2,
       priority: 15,
       preferredLayers: ["inner2", "bottom", "top"],
-      note: "Low-bandwidth DAC feed spans the control area; keep away from digital clocks, USB and converter switch nodes.",
+      note: "Low-bandwidth DAC feed spans the control area on inner2. The waypoint at (-3.95,-8) clears the accepted ground barrel at (-4.95,-10.35). Keep away from digital clocks, USB and converter switch nodes.",
     },
     {
       net: "TEC_DAC",
@@ -263,10 +264,47 @@ export const plan: RoutingPlan = {
   notes: [
     "Every owned net has a concrete spanning tree. All traces are 0.2 mm. Filtered sense nets have priority 2; other analog nets have priority 15.",
     "R20.pin1 at (40.145,9.5) is the true positive shunt pickup; R20.pin2 at (45.855,9.5) is the negative pickup. The power route owner must branch R25.pin1 and R41.pin1 directly from R20.pin1, and R26.pin1 and R42.pin1 directly from R20.pin2, without using L2, capacitor or connector copper as a sense source.",
-    "Unfiltered controller Kelvin branches span approximately 29.95 mm and 30.80 mm before detours. Route them as a close pair outside the Q20/Q21/L2 switching region, then separate only at the R25/R26 filter inputs. The monitor pair spans approximately 14.62 mm and 14.65 mm and also requires independent shunt-pad pickups.",
+    "The native courtyard-clean placement in analog-completion.json puts controller Kelvin destinations at R25.pin1 (18.5,30.55) and R26.pin1 (23.05,30.2). R25's positive Kelvin land clears the adjacent R23 high-gate land by 0.675 mm. Preserve independent direct shunt-pad pickups and route the pair outside the Q20/Q21/L2 switching region. The monitor pair also requires independent direct shunt-pad pickups.",
     "Keep filtered sense, VC, COMP_RC, RT, FB and DAC copper at least 0.5 mm from switching/gate copper where the preserved placement permits; route on a quiet alternate layer where this cannot be met on top. These are analog separation goals in addition to normal copper clearance.",
-    "C32 and C42 should connect directly to their respective input pads with short branches. The priority-2 sense routes consume the left controller escape corridor before VC and RT. Left-side U2 pads must escape left before turning; direct northbound diagonals through the row are invalid.",
+    "C32 and C42 connect directly to their respective input pads with short branches. C32 is at (18.55,28.45,270), R25 at (19.25,30.55,0), and R26 at its original (22.3,30.2,180). The filtered N resistor branch transfers at (19.7,29.08) to bottom, while C32 remains directly connected to both U2 inputs. VC uses the checked inward corridor x=21.62; RT uses the outward via (19.5,26.9) and an inner2 detour around the N barrel.",
     "Length limits are routing targets for compact local links. The solver must still verify every pad escape, via, copper clearance and connection on the complete board.",
     "C32 differential filtering is local, but the switching-node R23.pin2 at (18.65,33.45) lies near R25/R26/R28. Keep its power route outside the analog corridor and use layer separation rather than sending sense/compensation signals alongside it.",
+    "All 26 owned edges have finite realizations in analog-completion.json: 46 physical paths and 19 through-via sites pass checks against the fresh native placement geometry. All 12 moved components pass native placement checks using all 276 courtyards, and pad/via/path checks use 0.2 mm trace/clearance and 0.7/0.3 mm vias. Apply the placement map and reroute stale copper before full-board verification.",
+    "Native pcbStraightLine suggestions preserve the actual 1 mm exposed bypass limits: C22 bias copper is 0.980 mm, C24 VIN copper is 0.950 mm, C35 reference copper is 0.970 mm, and C37 command copper is 0.950 mm after clipping to actual pad boundaries. Route maxLength values bound authored center paths; explicit exposed-copper constraints in the completion JSON bound the physical bypass. Ground return exposed copper is 0.2 mm for C22/C24. Distribution/bulk branches retain independent limits.",
+    "Integration fixes in the completion JSON are checked against the latest accepted early power/fan/USB/MCU/critical-ground reservations, the four mandatory 1.2 mm exposed-pad returns and the repaired Kelvin packet. Snapshot counts and hashes are in the JSON validation. VC clears the wide U2 ground return. EN uses x=25.4 inside the right pad row, detours below the exposed-pad ground barrels on inner2, and ends at (-6.2,34.2). The long DAC continuation uses inner2 through (28.5,19) and (28.5,29.5), leaving the bottom controller Kelvin convergence corridor free. Later ordinary foreign traces are excluded from this reservation scope.",
+    "The ground packet connects U2.pin2 rightward through (27.15,23.225), (27.15,22.9) and (29.55,22.9) to the reused C22 GND barrel at (29.55,21.1). This checked 0.2 mm branch clears the wider native bias/VIN bypasses, preserves the EN head and requires no additional barrel. Preserve all four wide exposed-pad returns.",
+    "C37's formerly trapped ground land now has a checked 0.95 mm center-span / 0.2 mm exposed return to the GND via at (30.5,27.15). HARD_LIMIT transfers at (31.6,27.2) with a short diagonal from C36.pin1; this opens the required ground corridor while preserving normal copper and barrel clearance.",
+    "C35 has a local off-pad 0.7/0.3 mm GND via at (30.4,25.575), reached in 0.975 mm center span / 0.300 mm exposed copper. C36 moves 0.55 mm east to (32.15,26.1,0), and the VREF continuation uses y=24.825 to open the barrel corridor. The controller-to-C36 filter path is 5.9 mm center / 4.75 mm exposed copper; all true 1 mm local bias/reference/command bypass limits remain unchanged. All revised native courtyard checks pass.",
+    "C36.pin2 has an explicit 0.2 mm top return to the off-pad GND barrel at (33.39,25.05): 1.181 mm center span and 0.325 mm pad/annulus-clipped exposed copper. This return passes the complete accepted copper snapshot, including later ordinary routes; its true 1 mm exposed limit remains enforced.",
   ],
 }
+
+// Every hint is an absolute, finite-width path checked against the proposed
+// actual pad geometry. Repeated coordinates on different layers are intentional
+// transitions at a 0.7 mm full-through via, never an implicit layer jump.
+const localLimits: Record<string, Partial<RoutingEdge>> = {
+  "U2.pin4>R40.pin1": { priority: 3 },
+  "U2.pin5>C35.pin1": { priority: 3, maxLength: 2.1 },
+  "C35.pin1>R31.pin1": { priority: 4, maxLength: 15 },
+  "U2.pin6>C36.pin1": { priority: 3, maxLength: 6.2 },
+  "C36.pin1>R31.pin2": { priority: 4, maxLength: 15 },
+  "U2.pin8>C37.pin1": { priority: 3, maxLength: 2.1 },
+  "C37.pin1>R33.pin2": { priority: 4, maxLength: 12 },
+  "U2.pin9>C34.pin1": { priority: 3 },
+  "U2.pin10>R29.pin2": { priority: 3 },
+  "U2.pin13>R27.pin1": { priority: 3 },
+  "R27.pin2>C33.pin1": { priority: 3 },
+  "U2.pin14>R28.pin1": { priority: 3 },
+}
+
+plan.edges = plan.edges.map(edge => {
+  const hint = completion.routeHints.find(h => h.from === edge.from && h.to === edge.to)
+  return {
+    ...edge,
+    ...localLimits[`${edge.from}>${edge.to}`],
+    ...(hint ? {
+      waypoints: hint.waypoints.map(p => ({ ...p, layer: p.layer as RoutingLayer })),
+      note: `${edge.note ?? "Local analog connection."} Checked proposed route ${hint.expectedLengthMm.toFixed(3)} mm; honor layer-transition waypoints and analog-completion.json placement prerequisites.`,
+    } : {}),
+  }
+})

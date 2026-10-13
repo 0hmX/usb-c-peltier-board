@@ -10,6 +10,7 @@ import { PowerAndUsb } from "./power-and-usb"
 import { Processor } from "./processor"
 import { UsbDataPath } from "./usb-data-path"
 import { InputLossInterlock } from "./input-loss-interlock"
+import { placeForRouting, routingPlacement } from "./routing/placement"
 
 const partsEngine: NonNullable<BoardProps["partsEngine"]> = {
   findPart: ({ sourceComponent }) => "manufacturer_part_number" in sourceComponent && sourceComponent.manufacturer_part_number === "TYPE-C-31-M-12" ? { jlcpcb: ["C165948"] } : {},
@@ -19,8 +20,8 @@ const partsEngine: NonNullable<BoardProps["partsEngine"]> = {
 
 const namedNets = [...new Set(retainedComponents.flatMap(item => Object.values(item.connections)).map(selector => selector.slice(4)))].filter(name => name !== "GND")
 
-export function DualUsbPeltierBoard({ schematicDisabled = false, routing }: { schematicDisabled?: boolean; routing?: ReactNode } = {}) {
-  return <board {...boardLayoutProps} {...boardDimensions} title={routing ? "RP2040 + CH224K dual-USB Peltier controller · routing in progress" : "RP2040 + CH224K dual-USB Peltier controller · placement review"}
+export function DualUsbPeltierBoard({ schematicDisabled = false, routing, routingLayout = false }: { schematicDisabled?: boolean; routing?: ReactNode; routingLayout?:boolean } = {}) {
+  return <board {...boardLayoutProps} {...boardDimensions} title={routing ? "RP2040 + CH224K dual-USB Peltier controller · routing review" : "RP2040 + CH224K dual-USB Peltier controller · placement review"}
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled} partsEngine={partsEngine} schLayout={{ layoutMode: "none" }}
     schTraceAutoLabelEnabled schMaxTraceDistance={0.25} pcbStyle={{ silkscreenTextVisibility: "hidden" }}>
     <net name="GND" isGroundNet />
@@ -48,13 +49,13 @@ export function DualUsbPeltierBoard({ schematicDisabled = false, routing }: { sc
       </>}
     </schematicsheet></Fragment>)}
     {retainedComponents.map(item => <RetainedPart key={item.name} item={item}
-      {...placementFor(item)} {...schematicFor(item, retainedComponents.filter(peer => sheetFor(peer) === sheetFor(item)))}
+      {...routingPlacement(item.name,placementFor(item),routingLayout)} {...schematicFor(item, retainedComponents.filter(peer => sheetFor(peer) === sheetFor(item)))}
       {...(item.name === "U_INPUT" ? { noConnect: ["ITIMER"], connections: { ...item.connections, pin3: "net.INPUT_AUXOFF" } } : {})}
       {...(item.name === "Q_FAN_PWM" ? { connections: Object.fromEntries(Object.entries(item.connections).filter(([pin]) => pin !== "pin2")) } : {})} />)}
-    {positionSchematic(PowerAndUsb())}
-    {positionSchematic(Processor())}
-    {positionSchematic(UsbDataPath())}
-    {positionSchematic(InputLossInterlock())}
+    {placeForRouting(positionSchematic(PowerAndUsb()),routingLayout)}
+    {placeForRouting(positionSchematic(Processor()),routingLayout)}
+    {placeForRouting(positionSchematic(UsbDataPath()),routingLayout)}
+    {placeForRouting(positionSchematic(InputLossInterlock()),routingLayout)}
     {routing}
     {[[-49, 36], [49, 36], [-49, -36], [49, -36]].map(([pcbX, pcbY], index) => <Fragment key={index}><hole name={"H" + (index + 1)} diameter={3.2} pcbX={pcbX} pcbY={pcbY} />{createElement("keepout", { shape: "circle", radius: 4, pcbX, pcbY, layers: ["top", "inner1", "inner2", "bottom"] })}</Fragment>)}
     <group name="LEGEND" pcbStyle={{ silkscreenTextVisibility: "visible" }}>

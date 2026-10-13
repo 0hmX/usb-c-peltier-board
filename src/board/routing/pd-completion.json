@@ -1,0 +1,1071 @@
+{
+  "owner": "pd-input",
+  "baselineSha256": "5603ec83993ac5c438e18a1313b937cf3e956fd66fa07075afa828fb42f653d8",
+  "status": "Frozen routing-review draft packet. Existing verified placements/escapes retained; eFuse power-pocket and GND8 proposals are unimplemented. The current whole-board replay still has missing PD connections listed in reviewPendingEdges.",
+  "placementSuggestions": {
+    "C_CH_VDD": [
+      -42.25,
+      20.4,
+      180
+    ],
+    "C_PD_WINDOW": [
+      -39.25,
+      7.8,
+      270
+    ],
+    "R_INPUT_ILIM": [
+      -19,
+      21.25,
+      90
+    ],
+    "R_PG_PU": [
+      -43,
+      18.7,
+      0
+    ],
+    "R_UV_TOP": [
+      -42,
+      8.45,
+      0
+    ]
+  },
+  "paths": [
+    {
+      "net": "PD_VDD",
+      "from": "U_PD.pin1",
+      "to": "C_CH_VDD.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -39.999996,
+          19.999879
+        ],
+        [
+          -41.5,
+          20.4
+        ]
+      ],
+      "note": "Direct bypass; maxLength1 applies to metal-clipped pcbStraightLine copper, not pad-center distance.",
+      "pcbStraightLine": true,
+      "maxLength": 1,
+      "padCenterDistanceMm": 1.5524525160715834,
+      "clippedMetalLengthMm": 0.8279772281532882,
+      "metalPath": [
+        [
+          -40.2999954,
+          20.07990282655473
+        ],
+        [
+          -41.1,
+          20.293301351196394
+        ]
+      ]
+    },
+    {
+      "net": "V3V3",
+      "from": "U_PD_WINDOW.pin8",
+      "to": "C_PD_WINDOW.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -38.7,
+          10.095
+        ],
+        [
+          -39.25,
+          8.55
+        ]
+      ],
+      "note": "Direct bypass; maxLength1 applies to metal-clipped pcbStraightLine copper, coordinated with ground-supply net owner.",
+      "pcbStraightLine": true,
+      "maxLength": 1,
+      "padCenterDistanceMm": 1.6399771339869336,
+      "clippedMetalLengthMm": 0.8969454227954434,
+      "metalPath": [
+        [
+          -38.806796116504856,
+          9.795
+        ],
+        [
+          -39.10760517799353,
+          8.95
+        ]
+      ]
+    },
+    {
+      "net": "INPUT_DVDT",
+      "from": "U_INPUT.pin7",
+      "to": "C_INPUT_DVDT.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -22.1,
+          22.125
+        ],
+        [
+          -21.2,
+          22.025
+        ],
+        [
+          -20.8,
+          22.025
+        ],
+        [
+          -19.4,
+          23.325
+        ],
+        [
+          -19,
+          24.28
+        ]
+      ],
+      "note": "R_INPUT_ILIM relocation opens eFuse escape; actual concave pad intersects launch copper."
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "PD_USB_VBUS15.top",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -21.4001603
+        ],
+        [
+          -46.7,
+          -21.4
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin16",
+      "to": "PD_USB_VBUS16.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -16.6000429
+        ],
+        [
+          -47.50022397936241,
+          -16.6000429
+        ],
+        [
+          -46.7244328,
+          -16.6000429
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "U_USB_ESD.pin5",
+      "to": "PD_USB_ESD5.top",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        [
+          -45.149096,
+          -19.0
+        ],
+        [
+          -44.04,
+          -19
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "R_USB_DETECT_TOP.pin1",
+      "to": "PD_USB_DETECT.top",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        [
+          -39.75,
+          -21
+        ],
+        [
+          -40.9,
+          -21
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "R_USB_PRESENT.pin1",
+      "to": "PD_USB_PRESENT.top",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        [
+          -42.75,
+          -12
+        ],
+        [
+          -43.95,
+          -12
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "PD_USB_VBUS15.bottom",
+      "to": "PD_USB_VBUS16.bottom",
+      "width": 0.4,
+      "layer": "bottom",
+      "points": [
+        [
+          -46.7,
+          -21.4
+        ],
+        [
+          -46.7244328,
+          -16.6000429
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "PD_USB_VBUS15.bottom",
+      "to": "PD_USB_ESD5.bottom",
+      "width": 0.4,
+      "layer": "bottom",
+      "points": [
+        [
+          -46.7,
+          -21.4
+        ],
+        [
+          -44.04,
+          -19
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "PD_USB_ESD5.bottom",
+      "to": "PD_USB_DETECT.bottom",
+      "width": 0.4,
+      "layer": "bottom",
+      "points": [
+        [
+          -44.04,
+          -19
+        ],
+        [
+          -40.9,
+          -21
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "PD_USB_VBUS16.bottom",
+      "to": "PD_USB_PRESENT.bottom",
+      "width": 0.4,
+      "layer": "bottom",
+      "points": [
+        [
+          -46.7244328,
+          -16.6000429
+        ],
+        [
+          -43.95,
+          -12
+        ]
+      ]
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "C_USB_PROG.pin1",
+      "width": 0.4,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -21.4001603
+        ],
+        [
+          -45.5244328,
+          -21.6001603
+        ],
+        [
+          -45.0244328,
+          -22.2001603
+        ],
+        [
+          -43.75,
+          -27
+        ]
+      ]
+    },
+    {
+      "net": "PD_CFG1_LOW",
+      "from": "Q_PD_CFG1.pin1",
+      "to": "PD_CFG1_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -27.350014,
+          23.500001
+        ],
+        [
+          -26.450014,
+          23.500001
+        ]
+      ]
+    },
+    {
+      "net": "PD_CFG1_LOW",
+      "from": "U_MCU.pin6",
+      "to": "PD_CFG1_B.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -30.424936,
+          -20.399925
+        ],
+        [
+          -29.275,
+          -20.399925
+        ],
+        [
+          -29.275,
+          -19.85
+        ]
+      ]
+    },
+    {
+      "net": "PD_CFG3_LOW",
+      "from": "Q_PD_CFG3.pin1",
+      "to": "PD_CFG3_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -28.350014,
+          33.500001
+        ],
+        [
+          -27.450014,
+          33.500001
+        ]
+      ]
+    },
+    {
+      "net": "PD_CFG3_LOW",
+      "from": "U_MCU.pin8",
+      "to": "PD_CFG3_B.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -30.424936,
+          -21.200025
+        ],
+        [
+          -29.275,
+          -21.200025
+        ],
+        [
+          -29.275,
+          -21.3
+        ]
+      ]
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "R_INPUT_PG.pin2",
+      "to": "PD_AUX_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -22.55,
+          15
+        ],
+        [
+          -21.65,
+          15
+        ]
+      ]
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "U_MCU.pin29",
+      "to": "PD_AUX_B.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -23.575064,
+          -23.600071
+        ],
+        [
+          -22.25,
+          -23.600071
+        ]
+      ]
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "R_INPUT_OFF.pin1",
+      "to": "PD_ENABLE_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -21,
+          17.25
+        ],
+        [
+          -19.9,
+          17.25
+        ]
+      ]
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "D_INPUT_PERMISSION.pin3",
+      "to": "PD_ENABLE_B.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -9,
+          -24
+        ],
+        [
+          -8.1,
+          -24
+        ]
+      ]
+    },
+    {
+      "net": "PD_CFG1_LOW",
+      "from": "PD_CFG1_A.bottom",
+      "to": "PD_CFG1_B.bottom",
+      "width": 0.2,
+      "layer": "bottom",
+      "points": [
+        [
+          -26.450014,
+          23.500001
+        ],
+        [
+          -26.850013999999998,
+          -14.499998999999999
+        ],
+        [
+          -30.250014,
+          -18.499999
+        ],
+        [
+          -30.050014,
+          -19.299999000000003
+        ],
+        [
+          -29.275,
+          -19.85
+        ]
+      ],
+      "note": "Reserve this digital trunk before general fanouts; refreshed copper must be rerouted around it."
+    },
+    {
+      "net": "PD_CFG3_LOW",
+      "from": "PD_CFG3_A.inner2",
+      "to": "PD_CFG3_B.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        [
+          -27.450014,
+          33.500001
+        ],
+        [
+          -26.650014,
+          -11.099999000000004
+        ],
+        [
+          -23.650014,
+          -14.099999000000004
+        ],
+        [
+          -23.650014,
+          -14.899999000000008
+        ],
+        [
+          -26.450014,
+          -19.499999000000003
+        ],
+        [
+          -29.275,
+          -21.3
+        ]
+      ],
+      "note": "Reserve this digital trunk before general fanouts; refreshed copper must be rerouted around it."
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "PD_AUX_A.bottom",
+      "to": "PD_AUX_B.bottom",
+      "width": 0.2,
+      "layer": "bottom",
+      "points": [
+        [
+          -21.65,
+          15.0
+        ],
+        [
+          -23.25,
+          -21.0
+        ],
+        [
+          -23.25,
+          -21.4
+        ],
+        [
+          -22.25,
+          -23.600071
+        ]
+      ],
+      "note": "Reserve this digital trunk before general fanouts; refreshed copper must be rerouted around it."
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "PD_ENABLE_A.inner2",
+      "to": "PD_ENABLE_B.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        [
+          -19.9,
+          17.25
+        ],
+        [
+          -14,
+          17.25
+        ],
+        [
+          -14,
+          -24
+        ],
+        [
+          -8.1,
+          -24
+        ]
+      ],
+      "note": "Reserve this digital trunk before general fanouts; refreshed copper must be rerouted around it."
+    }
+  ],
+  "vias": [
+    {
+      "name": "PD_USB_VBUS15",
+      "net": "USB_PROG_5V",
+      "x": -46.7,
+      "y": -21.4,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_USB_VBUS16",
+      "net": "USB_PROG_5V",
+      "x": -46.7244328,
+      "y": -16.6000429,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_USB_ESD5",
+      "net": "USB_PROG_5V",
+      "x": -44.04,
+      "y": -19,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_USB_DETECT",
+      "net": "USB_PROG_5V",
+      "x": -40.9,
+      "y": -21,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_USB_PRESENT",
+      "net": "USB_PROG_5V",
+      "x": -43.95,
+      "y": -12,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_CFG1_A",
+      "net": "PD_CFG1_LOW",
+      "x": -26.450014,
+      "y": 23.500001,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_CFG1_B",
+      "net": "PD_CFG1_LOW",
+      "x": -29.275,
+      "y": -19.85,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_CFG3_A",
+      "net": "PD_CFG3_LOW",
+      "x": -27.450014,
+      "y": 33.500001,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_CFG3_B",
+      "net": "PD_CFG3_LOW",
+      "x": -29.275,
+      "y": -21.3,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_AUX_A",
+      "net": "INPUT_AUXOFF",
+      "x": -21.65,
+      "y": 15,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_AUX_B",
+      "net": "INPUT_AUXOFF",
+      "x": -22.25,
+      "y": -23.600071,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_ENABLE_A",
+      "net": "INPUT_ENABLE",
+      "x": -19.9,
+      "y": 17.25,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "PD_ENABLE_B",
+      "net": "INPUT_ENABLE",
+      "x": -8.1,
+      "y": -24,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    }
+  ],
+  "escapes": [
+    {
+      "selector": "Q_PD_CFG1.pin1",
+      "net": "PD_CFG1_LOW",
+      "width": 0.2,
+      "via": {
+        "name": "PD_CFG1_A",
+        "x": -26.450014,
+        "y": 23.500001
+      },
+      "path": [
+        {
+          "x": -27.350014,
+          "y": 23.500001
+        },
+        {
+          "x": -26.450014,
+          "y": 23.500001
+        }
+      ]
+    },
+    {
+      "selector": "U_MCU.pin6",
+      "net": "PD_CFG1_LOW",
+      "width": 0.2,
+      "via": {
+        "name": "PD_CFG1_B",
+        "x": -29.275,
+        "y": -19.85
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -20.399925
+        },
+        {
+          "x": -29.275,
+          "y": -20.399925
+        },
+        {
+          "x": -29.275,
+          "y": -19.85
+        }
+      ]
+    },
+    {
+      "selector": "Q_PD_CFG3.pin1",
+      "net": "PD_CFG3_LOW",
+      "width": 0.2,
+      "via": {
+        "name": "PD_CFG3_A",
+        "x": -27.450014,
+        "y": 33.500001
+      },
+      "path": [
+        {
+          "x": -28.350014,
+          "y": 33.500001
+        },
+        {
+          "x": -27.450014,
+          "y": 33.500001
+        }
+      ]
+    },
+    {
+      "selector": "U_MCU.pin8",
+      "net": "PD_CFG3_LOW",
+      "width": 0.2,
+      "via": {
+        "name": "PD_CFG3_B",
+        "x": -29.275,
+        "y": -21.3
+      },
+      "path": [
+        {
+          "x": -30.424936,
+          "y": -21.200025
+        },
+        {
+          "x": -29.275,
+          "y": -21.200025
+        },
+        {
+          "x": -29.275,
+          "y": -21.3
+        }
+      ]
+    },
+    {
+      "selector": "R_INPUT_PG.pin2",
+      "net": "INPUT_AUXOFF",
+      "width": 0.2,
+      "via": {
+        "name": "PD_AUX_A",
+        "x": -21.65,
+        "y": 15
+      },
+      "path": [
+        {
+          "x": -22.55,
+          "y": 15
+        },
+        {
+          "x": -21.65,
+          "y": 15
+        }
+      ]
+    },
+    {
+      "selector": "U_MCU.pin29",
+      "net": "INPUT_AUXOFF",
+      "width": 0.2,
+      "via": {
+        "name": "PD_AUX_B",
+        "x": -22.25,
+        "y": -23.600071
+      },
+      "path": [
+        {
+          "x": -23.575064,
+          "y": -23.600071
+        },
+        {
+          "x": -22.25,
+          "y": -23.600071
+        }
+      ]
+    },
+    {
+      "selector": "R_INPUT_OFF.pin1",
+      "net": "INPUT_ENABLE",
+      "width": 0.2,
+      "via": {
+        "name": "PD_ENABLE_A",
+        "x": -19.9,
+        "y": 17.25
+      },
+      "path": [
+        {
+          "x": -21,
+          "y": 17.25
+        },
+        {
+          "x": -19.9,
+          "y": 17.25
+        }
+      ]
+    },
+    {
+      "selector": "D_INPUT_PERMISSION.pin3",
+      "net": "INPUT_ENABLE",
+      "width": 0.2,
+      "via": {
+        "name": "PD_ENABLE_B",
+        "x": -8.1,
+        "y": -24
+      },
+      "path": [
+        {
+          "x": -9,
+          "y": -24
+        },
+        {
+          "x": -8.1,
+          "y": -24
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "signalMinimumWidthMm": 0.2,
+    "foreignCopperGapMm": 0.2,
+    "throughViaOuterDiameterMm": 0.7,
+    "throughViaHoleDiameterMm": 0.3,
+    "viaPadRule": "Own-net pads stay at least0.55mm from barrel center for0.20mm copper gap and no via-in-pad; foreign pads stay at least0.65mm from center to preserve0.50mm drill gap."
+  },
+  "notes": [
+    "Local routes use refreshed positions after placementSuggestions. Connectivity and every IC pin mapping are unchanged.",
+    "The INPUT_ENABLE pin1 selector lies in its concave pad recess; existing copper nevertheless intersects physical EN pad by approximately .0518mm2. Preserve physical-contact validation rather than moving that IC port.",
+    "Reserve under-package MCU pin6/pin8/pin29 launches with MCU owner; pin7 and PD_VALID_N existing tree remain unchanged.",
+    "This finite candidate is not manufacturing acceptance. Route all remaining nets around it, then validate integrated copper, connectivity, shorts and trace lengths.",
+    "Five passive placement changes eliminate every native courtyard intersection involving these moved components; checked against dist/routing-placement/circuit.json.",
+    "Reserve authoritative MCU fanout first: PD pins6/8/29 use exactly its locked barrel coordinates. USB inner2 pair trunks must be detoured around these barrels.",
+    "Use pcbStraightLine=true for the two direct bypass links, preserve maxLength=1mm on actual clipped copper; raw pad-center distance exceeds1mm and must not be used as fabricated copper length.",
+    "Ground fanout at C_CH_VDD.pin2(-43,20.4) may use barrel(-43,21.5); C_PD_WINDOW.pin2(-39.25,7.05) may use barrel(-40.4,7.05), subject to integrated copper checks.",
+    "ESD5 feed barrel is(-44.04,-19): foreign GND pad drill gap exceeds0.50mm; own supply pad retains0.223mm copper clearance without via-in-pad.",
+    "Review draft only: current replay retains the verified six-member eFuse power array and broad VBUS_TEC corridors. Do not implement proposed eFuse pocket/ground8 changes from scratch work; INPUT_DVDT, INPUT_CURRENT_MON and INPUT_ENABLE remain unresolved."
+  ],
+  "validation": {
+    "allBaselinePadsIncludingUnconnectedPadsChecked": true,
+    "nativeCourtyardOverlapsForSuggestedMoves": 0,
+    "courtyardSource": "dist/routing-placement/circuit.json",
+    "MCUFanoutReserved": true,
+    "reservedUSBTopCopperChecked": true,
+    "USBInner2TrunksRequireMCUFanoutDetours": true,
+    "candidateTraceCount": 25,
+    "candidateThroughViaCount": 13,
+    "supplyLinkLengthMm": {
+      "C_CH_VDD": 0.8279772281532882,
+      "C_PD_WINDOW": 0.8969454227954434
+    },
+    "INPUT_DVDTLengthMm": 4.2514222325694915,
+    "finalCandidateGeometryErrors": [],
+    "foreignDrillToPadGapMm": 0.5,
+    "foreignViaDrillPadErrors": [],
+    "mandatoryMCUCoreRoutesSeeded": true,
+    "mandatoryMCUCoreFeedBarrelsSeeded": [
+      "MCU_DVDD1_FEED",
+      "MCU_VREG_OUT_FEED",
+      "MCU_DVDD2_FEED"
+    ],
+    "reservationPacketSha256": {
+      "mcu": "234148b90c873e7b3d348548316172a00f5397f73caaea9c2d6f154cff669614",
+      "usb": "30a88ab32d2c6b631d57321db0b800388e8ee12b6dd506cfc61cbbd0009c31e8"
+    },
+    "originalPendingPDEdgesCovered": 10,
+    "latestReportPendingPDEdgesCovered": 6,
+    "latestReportPendingPDEdgesOutsideOriginalPacket": [
+      {
+        "net": "INPUT_CURRENT_MON",
+        "from": "U_INPUT.pin9",
+        "to": "R_INPUT_ILIM.pin1"
+      },
+      {
+        "net": "INPUT_ENABLE",
+        "from": "U_INPUT.pin1",
+        "to": "R_INPUT_RUN.pin2"
+      },
+      {
+        "net": "INPUT_AUXOFF",
+        "from": "U_INPUT.pin3",
+        "to": "R_INPUT_PG.pin2"
+      },
+      {
+        "net": "PD_CFG3",
+        "from": "U_PD.pin3",
+        "to": "R_PD_CFG3.pin2"
+      }
+    ],
+    "latestReplayPendingPDCount": 11,
+    "latestReplayPendingPDConnections": [
+      {
+        "net": "INPUT_DVDT",
+        "from": "U_INPUT.pin7",
+        "to": "C_INPUT_DVDT.pin1"
+      },
+      {
+        "net": "INPUT_CURRENT_MON",
+        "from": "U_INPUT.pin9",
+        "to": "R_INPUT_ILIM.pin1"
+      },
+      {
+        "net": "INPUT_ENABLE",
+        "from": "U_INPUT.pin1",
+        "to": "R_INPUT_RUN.pin2"
+      },
+      {
+        "net": "PD_VDD",
+        "from": "C_CH_VDD.pin1",
+        "to": "R_PG_PU.pin1"
+      },
+      {
+        "net": "USB_PROG_5V",
+        "from": "J_USB_PROG.pin15",
+        "to": "U_USB_ESD.pin5"
+      },
+      {
+        "net": "USB_PROG_5V",
+        "from": "U_USB_ESD.pin5",
+        "to": "R_USB_DETECT_TOP.pin1"
+      },
+      {
+        "net": "PD_CFG2",
+        "from": "U_PD.pin2",
+        "to": "Q_PD_CFG2.pin3"
+      },
+      {
+        "net": "PD_CFG3",
+        "from": "U_PD.pin3",
+        "to": "R_PD_CFG3.pin2"
+      },
+      {
+        "net": "INPUT_ENABLE",
+        "from": "R_INPUT_OFF.pin1",
+        "to": "D_INPUT_PERMISSION.pin3"
+      },
+      {
+        "net": "PD_CFG3_LOW",
+        "from": "Q_PD_CFG3.pin1",
+        "to": "U_MCU.pin8"
+      },
+      {
+        "net": "PD_VALID_N",
+        "from": "R206.pin1",
+        "to": "U_DBG1.pin1"
+      }
+    ]
+  },
+  "reviewPendingEdges": [
+    {
+      "net": "INPUT_DVDT",
+      "from": "U_INPUT.pin7",
+      "to": "C_INPUT_DVDT.pin1"
+    },
+    {
+      "net": "INPUT_CURRENT_MON",
+      "from": "U_INPUT.pin9",
+      "to": "R_INPUT_ILIM.pin1"
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "U_INPUT.pin1",
+      "to": "R_INPUT_RUN.pin2"
+    },
+    {
+      "net": "PD_VDD",
+      "from": "C_CH_VDD.pin1",
+      "to": "R_PG_PU.pin1"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "U_USB_ESD.pin5"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "U_USB_ESD.pin5",
+      "to": "R_USB_DETECT_TOP.pin1"
+    },
+    {
+      "net": "PD_CFG2",
+      "from": "U_PD.pin2",
+      "to": "Q_PD_CFG2.pin3"
+    },
+    {
+      "net": "PD_CFG3",
+      "from": "U_PD.pin3",
+      "to": "R_PD_CFG3.pin2"
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "R_INPUT_OFF.pin1",
+      "to": "D_INPUT_PERMISSION.pin3"
+    },
+    {
+      "net": "PD_CFG3_LOW",
+      "from": "Q_PD_CFG3.pin1",
+      "to": "U_MCU.pin8"
+    },
+    {
+      "net": "PD_VALID_N",
+      "from": "R206.pin1",
+      "to": "U_DBG1.pin1"
+    }
+  ]
+}

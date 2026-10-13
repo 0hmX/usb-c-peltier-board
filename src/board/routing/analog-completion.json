@@ -1,0 +1,2502 @@
+{
+  "owner": "tec-analog",
+  "status": "locally validated all-owned routing geometry",
+  "coordinateFrame": "Absolute PCB mm; generated against proposed placements. Existing copper attached to moved components must be regenerated.",
+  "rules": {
+    "traceWidthMm": 0.2,
+    "copperClearanceMm": 0.2,
+    "viaOuterDiameterMm": 0.7,
+    "viaDrillMm": 0.3,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "quietRoutingLayer": "inner2"
+  },
+  "placementSuggestions": {
+    "C22": [
+      28.85,
+      22.1,
+      0
+    ],
+    "C21": [
+      32.1,
+      21.6,
+      0
+    ],
+    "C41": [
+      32.1,
+      19.55,
+      0
+    ],
+    "C24": [
+      29.1,
+      23.875,
+      0
+    ],
+    "C35": [
+      28.75,
+      25.55,
+      0
+    ],
+    "C36": [
+      32.15,
+      26.1,
+      0
+    ],
+    "C37": [
+      28.85,
+      27.15,
+      0
+    ],
+    "C34": [
+      28.85,
+      28.75,
+      0
+    ],
+    "C32": [
+      18.55,
+      28.45,
+      270
+    ],
+    "R25": [
+      19.25,
+      30.55,
+      0
+    ],
+    "R26": [
+      22.3,
+      30.2,
+      180
+    ],
+    "R30": [
+      31.6,
+      30.3,
+      0
+    ]
+  },
+  "retained": [
+    "U2",
+    "R27",
+    "C33",
+    "R28",
+    "R29",
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "U_TEC_MON",
+    "R41",
+    "R42",
+    "C42"
+  ],
+  "vias": [
+    {
+      "name": "AN_VC_HEAD",
+      "net": "TEC_VC",
+      "x": 21.62,
+      "y": 29.1
+    },
+    {
+      "name": "AN_VC_TAIL",
+      "net": "TEC_VC",
+      "x": 24.5,
+      "y": 31.4
+    },
+    {
+      "name": "AN_RT_HEAD",
+      "net": "TEC_RT",
+      "x": 19.5,
+      "y": 26.9
+    },
+    {
+      "name": "AN_RT_TAIL",
+      "net": "TEC_RT",
+      "x": 20.15,
+      "y": 31.95
+    },
+    {
+      "name": "AN_EN_HEAD",
+      "net": "TEC_EN_UVLO",
+      "x": 26,
+      "y": 21.6
+    },
+    {
+      "name": "AN_EN_TAIL",
+      "net": "TEC_EN_UVLO",
+      "x": -6.2,
+      "y": 34.2
+    },
+    {
+      "name": "AN_COMMAND_HEAD",
+      "net": "TEC_CURRENT_COMMAND",
+      "x": 31.05,
+      "y": 28.5
+    },
+    {
+      "name": "AN_COMMAND_TAIL",
+      "net": "TEC_CURRENT_COMMAND",
+      "x": 32.4,
+      "y": 33.2
+    },
+    {
+      "name": "AN_DAC_HEAD",
+      "net": "TEC_DAC",
+      "x": -3.95,
+      "y": -24.5
+    },
+    {
+      "name": "AN_DAC_TAIL",
+      "net": "TEC_DAC",
+      "x": -5.8,
+      "y": -3
+    },
+    {
+      "name": "AN_SS_HEAD",
+      "net": "TEC_SS",
+      "x": 25.2,
+      "y": 29
+    },
+    {
+      "name": "AN_SS_TAIL",
+      "net": "TEC_SS",
+      "x": 27.45,
+      "y": 29.8
+    },
+    {
+      "name": "AN_REF_HEAD",
+      "net": "TEC_VREF",
+      "x": 32.4,
+      "y": 24.65
+    },
+    {
+      "name": "AN_REF_TAIL",
+      "net": "TEC_VREF",
+      "x": 33.75,
+      "y": 28.8
+    },
+    {
+      "name": "AN_LIMIT_HEAD",
+      "net": "TEC_HARD_LIMIT",
+      "x": 31.6,
+      "y": 27.2
+    },
+    {
+      "name": "AN_LIMIT_TAIL",
+      "net": "TEC_HARD_LIMIT",
+      "x": 36.7,
+      "y": 30.1
+    },
+    {
+      "name": "AN_DAC_FILTER",
+      "net": "TEC_DAC",
+      "x": 29.6,
+      "y": 33.2
+    },
+    {
+      "name": "AN_SENSE_N_HEAD",
+      "net": "TEC_SENSE_N_FILTERED",
+      "x": 19.7,
+      "y": 29.08
+    },
+    {
+      "name": "AN_SENSE_N_TAIL",
+      "net": "TEC_SENSE_N_FILTERED",
+      "x": 21.55,
+      "y": 31.35
+    }
+  ],
+  "paths": [
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "fromSelector": "U2.pin11",
+      "toSelector": "C32.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 28.425
+        },
+        {
+          "x": 20.725,
+          "y": 29.85
+        },
+        {
+          "x": 18.55,
+          "y": 29.85
+        },
+        {
+          "x": 18.55,
+          "y": 29.17
+        }
+      ]
+    },
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "fromSelector": "U2.pin11",
+      "toSelector": "R25.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 28.425
+        },
+        {
+          "x": 20.725,
+          "y": 30.55
+        },
+        {
+          "x": 20,
+          "y": 30.55
+        }
+      ]
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "fromSelector": "U2.pin12",
+      "toSelector": "C32.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 27.775
+        },
+        {
+          "x": 18.55,
+          "y": 27.73
+        }
+      ]
+    },
+    {
+      "net": "TEC_VREF",
+      "fromSelector": "U2.pin5",
+      "toSelector": "C35.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 25.175
+        },
+        {
+          "x": 28.075,
+          "y": 25.55
+        }
+      ]
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "fromSelector": "U2.pin6",
+      "toSelector": "C36.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 25.825
+        },
+        {
+          "x": 27.325,
+          "y": 25.825
+        },
+        {
+          "x": 27.325,
+          "y": 26.325
+        },
+        {
+          "x": 31.45,
+          "y": 26.325
+        },
+        {
+          "x": 31.45,
+          "y": 26.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "fromSelector": "U2.pin8",
+      "toSelector": "C37.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 27.125
+        },
+        {
+          "x": 28.15,
+          "y": 27.15
+        }
+      ]
+    },
+    {
+      "net": "TEC_FB",
+      "fromSelector": "U2.pin10",
+      "toSelector": "R29.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 28.425
+        },
+        {
+          "x": 26.65,
+          "y": 28.85
+        },
+        {
+          "x": 26.65,
+          "y": 31.75
+        },
+        {
+          "x": 28.25,
+          "y": 31.75
+        }
+      ]
+    },
+    {
+      "net": "TEC_VC",
+      "fromSelector": "U2.pin13",
+      "toSelector": "AN_VC_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 27.125
+        },
+        {
+          "x": 21.62,
+          "y": 27.125
+        },
+        {
+          "x": 21.62,
+          "y": 29.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_VC",
+      "fromSelector": "AN_VC_HEAD.inner2",
+      "toSelector": "AN_VC_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 21.62,
+          "y": 29.1
+        },
+        {
+          "x": 24.5,
+          "y": 31.4
+        }
+      ]
+    },
+    {
+      "net": "TEC_VC",
+      "fromSelector": "AN_VC_TAIL.top",
+      "toSelector": "R27.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 24.5,
+          "y": 31.4
+        },
+        {
+          "x": 24.5,
+          "y": 30.2
+        }
+      ]
+    },
+    {
+      "net": "TEC_RT",
+      "fromSelector": "U2.pin14",
+      "toSelector": "AN_RT_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 26.475
+        },
+        {
+          "x": 19.7,
+          "y": 26.475
+        },
+        {
+          "x": 19.5,
+          "y": 26.9
+        }
+      ]
+    },
+    {
+      "net": "TEC_RT",
+      "fromSelector": "AN_RT_HEAD.inner2",
+      "toSelector": "AN_RT_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 19.5,
+          "y": 26.9
+        },
+        {
+          "x": 18.7,
+          "y": 28.6
+        },
+        {
+          "x": 18.7,
+          "y": 30.4
+        },
+        {
+          "x": 20.15,
+          "y": 31.95
+        }
+      ]
+    },
+    {
+      "net": "TEC_RT",
+      "fromSelector": "AN_RT_TAIL.top",
+      "toSelector": "R28.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.15,
+          "y": 31.95
+        },
+        {
+          "x": 20.15,
+          "y": 33.15
+        }
+      ]
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "fromSelector": "U2.pin4",
+      "toSelector": "AN_EN_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 24.525
+        },
+        {
+          "x": 25.4,
+          "y": 24.525
+        },
+        {
+          "x": 25.4,
+          "y": 22.2
+        },
+        {
+          "x": 26,
+          "y": 21.6
+        }
+      ]
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "fromSelector": "AN_EN_HEAD.inner2",
+      "toSelector": "AN_EN_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26,
+          "y": 21.6
+        },
+        {
+          "x": 26.5,
+          "y": 20.5
+        },
+        {
+          "x": 21,
+          "y": 20.5
+        },
+        {
+          "x": -6.65,
+          "y": 33.5
+        },
+        {
+          "x": -6.2,
+          "y": 34.2
+        }
+      ]
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "fromSelector": "AN_EN_TAIL.top",
+      "toSelector": "R40.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -6.2,
+          "y": 34.2
+        },
+        {
+          "x": -5.25,
+          "y": 33.5
+        }
+      ]
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "fromSelector": "C37.pin1",
+      "toSelector": "AN_COMMAND_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 28.15,
+          "y": 27.15
+        },
+        {
+          "x": 28.15,
+          "y": 27.95
+        },
+        {
+          "x": 31.05,
+          "y": 27.95
+        },
+        {
+          "x": 31.05,
+          "y": 28.5
+        }
+      ]
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "fromSelector": "AN_COMMAND_HEAD.inner2",
+      "toSelector": "AN_COMMAND_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 31.05,
+          "y": 28.5
+        },
+        {
+          "x": 32.4,
+          "y": 33.2
+        }
+      ]
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "fromSelector": "AN_COMMAND_TAIL.top",
+      "toSelector": "R33.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 32.4,
+          "y": 33.2
+        },
+        {
+          "x": 32.4,
+          "y": 32.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "U_DAC.pin1",
+      "toSelector": "AN_DAC_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -2.95,
+          "y": -23.4
+        },
+        {
+          "x": -3.95,
+          "y": -24.5
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "AN_DAC_HEAD.inner2",
+      "toSelector": "AN_DAC_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -3.95,
+          "y": -24.5
+        },
+        {
+          "x": -3.95,
+          "y": -8
+        },
+        {
+          "x": -5.8,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "AN_DAC_TAIL.top",
+      "toSelector": "TP12.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -5.8,
+          "y": -3
+        },
+        {
+          "x": -4,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "net": "TEC_SS",
+      "fromSelector": "U2.pin9",
+      "toSelector": "AN_SS_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 27.775
+        },
+        {
+          "x": 25.25,
+          "y": 27.775
+        },
+        {
+          "x": 25.25,
+          "y": 28.9
+        },
+        {
+          "x": 25.2,
+          "y": 29
+        }
+      ]
+    },
+    {
+      "net": "TEC_SS",
+      "fromSelector": "AN_SS_HEAD.inner2",
+      "toSelector": "AN_SS_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 25.2,
+          "y": 29
+        },
+        {
+          "x": 27.45,
+          "y": 29.8
+        }
+      ]
+    },
+    {
+      "net": "TEC_SS",
+      "fromSelector": "AN_SS_TAIL.top",
+      "toSelector": "C34.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 27.45,
+          "y": 29.8
+        },
+        {
+          "x": 28.15,
+          "y": 28.75
+        }
+      ]
+    },
+    {
+      "net": "TEC_VREF",
+      "fromSelector": "C35.pin1",
+      "toSelector": "AN_REF_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 28.075,
+          "y": 25.55
+        },
+        {
+          "x": 28.075,
+          "y": 24.825
+        },
+        {
+          "x": 31.8,
+          "y": 24.825
+        },
+        {
+          "x": 32.4,
+          "y": 24.65
+        }
+      ]
+    },
+    {
+      "net": "TEC_VREF",
+      "fromSelector": "AN_REF_HEAD.inner2",
+      "toSelector": "AN_REF_TAIL.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 32.4,
+          "y": 24.65
+        },
+        {
+          "x": 33.75,
+          "y": 28.8
+        }
+      ]
+    },
+    {
+      "net": "TEC_VREF",
+      "fromSelector": "AN_REF_TAIL.top",
+      "toSelector": "R31.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 33.75,
+          "y": 28.8
+        },
+        {
+          "x": 33.75,
+          "y": 30.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "fromSelector": "C36.pin1",
+      "toSelector": "AN_LIMIT_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 31.45,
+          "y": 26.1
+        },
+        {
+          "x": 31.6,
+          "y": 27.2
+        }
+      ]
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "fromSelector": "AN_LIMIT_HEAD.bottom",
+      "toSelector": "AN_LIMIT_TAIL.bottom",
+      "layer": "bottom",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 31.6,
+          "y": 27.2
+        },
+        {
+          "x": 36.7,
+          "y": 27.2
+        },
+        {
+          "x": 36.7,
+          "y": 30.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "fromSelector": "AN_LIMIT_TAIL.top",
+      "toSelector": "R31.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 36.7,
+          "y": 30.1
+        },
+        {
+          "x": 35.25,
+          "y": 30.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "TP12.pin1",
+      "toSelector": "AN_DAC_TAIL.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -4,
+          "y": -3
+        },
+        {
+          "x": -5.8,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "AN_DAC_TAIL.inner2",
+      "toSelector": "AN_DAC_FILTER.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -5.8,
+          "y": -3
+        },
+        {
+          "x": 28.5,
+          "y": 19
+        },
+        {
+          "x": 28.5,
+          "y": 29.5
+        },
+        {
+          "x": 29.6,
+          "y": 33.2
+        }
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "fromSelector": "AN_DAC_FILTER.top",
+      "toSelector": "R33.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 29.6,
+          "y": 33.2
+        },
+        {
+          "x": 30.9,
+          "y": 32.1
+        }
+      ]
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "fromSelector": "U_TEC_MON.pin8",
+      "toSelector": "C42.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 43.905,
+          "y": 26.3
+        },
+        {
+          "x": 47,
+          "y": 25.7
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "fromSelector": "U_TEC_MON.pin8",
+      "toSelector": "R41.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 43.905,
+          "y": 26.3
+        },
+        {
+          "x": 42.905,
+          "y": 24.1
+        },
+        {
+          "x": 42.905,
+          "y": 23.5
+        },
+        {
+          "x": 42.705,
+          "y": 23.3
+        },
+        {
+          "x": 41.105000000000004,
+          "y": 23.3
+        },
+        {
+          "x": 39.75,
+          "y": 24
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "fromSelector": "U_TEC_MON.pin7",
+      "toSelector": "C42.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 42.635,
+          "y": 26.3
+        },
+        {
+          "x": 43.434999999999995,
+          "y": 27.5
+        },
+        {
+          "x": 44.235,
+          "y": 27.5
+        },
+        {
+          "x": 47.835,
+          "y": 26.3
+        },
+        {
+          "x": 47.835,
+          "y": 25.1
+        },
+        {
+          "x": 47,
+          "y": 24.3
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "fromSelector": "U_TEC_MON.pin7",
+      "toSelector": "R42.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 42.635,
+          "y": 26.3
+        },
+        {
+          "x": 42.25,
+          "y": 24
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "fromSelector": "R40.pin1",
+      "toSelector": "R39.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -5.25,
+          "y": 33.5
+        },
+        {
+          "x": -6.65,
+          "y": 36.7
+        },
+        {
+          "x": -13.25,
+          "y": 36.9
+        },
+        {
+          "x": -14.5,
+          "y": 36
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "fromSelector": "R31.pin2",
+      "toSelector": "R32.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 35.25,
+          "y": 30.1
+        },
+        {
+          "x": 33.75,
+          "y": 31.75
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "fromSelector": "R33.pin2",
+      "toSelector": "R34.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 32.4,
+          "y": 32.1
+        },
+        {
+          "x": 35.7,
+          "y": 33.7
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_FB",
+      "fromSelector": "R29.pin2",
+      "toSelector": "R30.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 28.25,
+          "y": 31.75
+        },
+        {
+          "x": 30.85,
+          "y": 30.3
+        }
+      ]
+    },
+    {
+      "net": "TEC_COMP_RC",
+      "fromSelector": "R27.pin2",
+      "toSelector": "C33.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 26,
+          "y": 30.2
+        },
+        {
+          "x": 25.65,
+          "y": 31.825
+        }
+      ],
+      "retainedFinitePath": true
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "fromSelector": "U2.pin12",
+      "toSelector": "AN_SENSE_N_HEAD.top",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 20.725,
+          "y": 27.775
+        },
+        {
+          "x": 19.7,
+          "y": 27.775
+        },
+        {
+          "x": 19.7,
+          "y": 29.08
+        }
+      ]
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "fromSelector": "AN_SENSE_N_HEAD.bottom",
+      "toSelector": "AN_SENSE_N_TAIL.bottom",
+      "layer": "bottom",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 19.7,
+          "y": 29.08
+        },
+        {
+          "x": 21.55,
+          "y": 31.35
+        }
+      ]
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "fromSelector": "AN_SENSE_N_TAIL.top",
+      "toSelector": "R26.pin2",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": 21.55,
+          "y": 31.35
+        },
+        {
+          "x": 21.55,
+          "y": 30.2
+        }
+      ]
+    }
+  ],
+  "powerOwnerCoordination": {
+    "kelvinPositiveDestination": {
+      "selector": "R25.pin1",
+      "x": 18.5,
+      "y": 30.55
+    },
+    "kelvinNegativeDestination": {
+      "selector": "R26.pin1",
+      "x": 23.05,
+      "y": 30.2
+    },
+    "positiveSource": "R20.pin1",
+    "negativeSource": "R20.pin2",
+    "senseSourceTapsForbidden": [
+      "L2",
+      "capacitor",
+      "connector",
+      "merged power trunk"
+    ],
+    "controllerBypass": {
+      "from": "U2.pin1",
+      "to": "C22.pin1",
+      "maxLengthMm": 2.1,
+      "path": [
+        {
+          "x": 26.275,
+          "y": 22.575
+        },
+        {
+          "x": 28.15,
+          "y": 22.1
+        }
+      ],
+      "exposedCopperMaxLengthMm": 1
+    },
+    "controllerVinBypass": {
+      "from": "C24.pin1",
+      "to": "U2.pin3",
+      "maxLengthMm": 2.1,
+      "path": [
+        {
+          "x": 28.215,
+          "y": 23.875
+        },
+        {
+          "x": 26.275,
+          "y": 23.875
+        }
+      ],
+      "exposedCopperMaxLengthMm": 1
+    }
+  },
+  "lengthConstraints": [
+    {
+      "from": "U2.pin1",
+      "to": "C22.pin1",
+      "maxLengthMm": 1,
+      "measurement": "pad-clipped exposed copper",
+      "centerPathMaximumMm": 2.1,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass."
+    },
+    {
+      "from": "U2.pin3",
+      "to": "C24.pin1",
+      "maxLengthMm": 1,
+      "measurement": "pad-clipped exposed copper",
+      "centerPathMaximumMm": 2.1,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass."
+    },
+    {
+      "from": "U2.pin5",
+      "to": "C35.pin1",
+      "maxLengthMm": 1,
+      "measurement": "pad-clipped exposed copper",
+      "centerPathMaximumMm": 2.1,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass."
+    },
+    {
+      "from": "U2.pin8",
+      "to": "C37.pin1",
+      "maxLengthMm": 1,
+      "measurement": "pad-clipped exposed copper",
+      "centerPathMaximumMm": 2.1,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass."
+    },
+    {
+      "from": "U2.pin6",
+      "to": "C36.pin1",
+      "maxLengthMm": 6.2,
+      "measurement": "authored center path",
+      "reason": "C36 moves0.55mm east to open the adjacent reference-bypass ground barrel. Checked authored route5.9mm; exposed pad-clipped filter copper4.75mm. Other local bypass limits unchanged.",
+      "exposedCopperMaxLengthMm": 5
+    },
+    {
+      "from": "U2.pin9",
+      "to": "C34.pin1",
+      "maxLengthMm": 6,
+      "measurement": "authored center path",
+      "reason": "Checked soft-start crossing remains under6mm."
+    },
+    {
+      "from": "R27.pin2",
+      "to": "C33.pin1",
+      "maxLengthMm": 4,
+      "measurement": "authored center path",
+      "reason": "Preserved compensation RC branch is1.662mm."
+    },
+    {
+      "from": "C22.pin2",
+      "to": "AN_GND_C22.top",
+      "maxLengthMm": 1,
+      "measurement": "pad/via clipped exposed copper",
+      "exposedCopperLengthMm": 0.2,
+      "reason": "0.7mm off-pad ground via is0.55mm from the pad edge; finite trace between pad and via annulus is0.2mm."
+    },
+    {
+      "from": "C24.pin2",
+      "to": "AN_GND_C24.top",
+      "maxLengthMm": 1,
+      "measurement": "pad/via clipped exposed copper",
+      "exposedCopperLengthMm": 0.2,
+      "reason": "0.7mm off-pad ground via is0.55mm from the pad edge; finite trace between pad and via annulus is0.2mm."
+    },
+    {
+      "from": "C37.pin2",
+      "to": "AN_GND_C37.top",
+      "maxLengthMm": 1,
+      "measurement": "pad/via clipped exposed copper",
+      "exposedCopperLengthMm": 0.2,
+      "reason": "Short0.95mm center-span ground escape opens after shifting hard-limit via0.5mm east. Actual pad-to-annulus copper is0.2mm."
+    },
+    {
+      "from": "C35.pin2",
+      "to": "AN_GND_C35.top",
+      "maxLengthMm": 1,
+      "measurement": "authored center path and pad/via clipped exposed copper",
+      "centerPathLengthMm": 0.97532046,
+      "exposedCopperLengthMm": 0.3002136,
+      "reason": "Ordinary0.7/0.3mm off-pad ground via. Source-pad to annulus trace~0.30mm; authored center path remains under1mm."
+    },
+    {
+      "from": "C36.pin2",
+      "to": "AN_GND_C36.top",
+      "maxLengthMm": 1,
+      "measurement": "pad/via clipped exposed copper",
+      "centerPathLengthMm": 1.1807201192492658,
+      "exposedCopperLengthMm": 0.3246972109995808,
+      "reason": "Explicit .2 mm native straight return to an ordinary .7/.3 mm off-pad GND barrel. Checked against full accepted copper; no true local bypass constraint is waived."
+    }
+  ],
+  "constraintAttribution": {
+    "realLocalConstraints": [
+      "C22.pin1 to U2.pin1",
+      "C22.pin2 to local GND via",
+      "C24.pin1 to U2.pin3",
+      "C24.pin2 to local GND via"
+    ],
+    "falseGlobalInheritance": [
+      "C22.pin1 to C21.pin1 reservoir continuation",
+      "C22.pin1 to D20.pin2 charging distribution",
+      "C24.pin1 to Q20.pin5 protected power rail feeder"
+    ],
+    "reason": "The source components classify C22/C24 as 1 mm decouplers and source_trace max_length propagates to every explicit branch touching their pins. Preserve actual IC bypass/ground lengths, but assign distribution/bulk edges their own limits rather than apply the local bypass limit across the global rail."
+  },
+  "validation": {
+    "allBoardRoutingValidated": false,
+    "existingCopperClearanceValidated": false,
+    "manufacturingAccepted": false,
+    "localPadClearanceIssues": [],
+    "proposedViaClearanceIssues": [],
+    "proposedTraceClearanceIssues": [],
+    "endpointsMismatched": [],
+    "localProposedGeometryPassed": true,
+    "method": "All 46 analog physical paths/19 signal vias plus 4 local ground returns checked against fresh native pads, each other, 304 accepted critical traces/154 barrels, mandatory EP4, and the latest Kelvin packet. Native straight bypasses and the right-side pin2 shared-ground branch also pass. Earlier native courtyard checks remain valid because no placement changed. Later ordinary foreign copper excluded; all true 1 mm exposed bypass limits retained.",
+    "groundEscapeIssues": [],
+    "ownedLogicalEdges": 26,
+    "physicalPathCount": 46,
+    "viaCount": 19,
+    "ownedCoverageComplete": true,
+    "expectedLengthConstraintsMet": true,
+    "componentBoundingBoxOverlaps": [],
+    "analogNoiseSeparationNotes": [
+      "R25 positive Kelvin land has0.675mm actual pad clearance to R23 high-gate land.",
+      "R26 uses its original native courtyard-clean placement. Its filtered N resistor branch crosses on bottom; the differential capacitor remains directly connected to U2 inputs."
+    ],
+    "allOriginallyPendingEdgesCovered": true,
+    "nativeCourtyardOverlapIssues": [],
+    "nativeCourtyardOutlineCheckedCount": 196,
+    "nativeCourtyardValidationPassed": true,
+    "nativePlacementChecksForMovedComponents": [],
+    "nativePlacementCheckedElementCount": 7938,
+    "nativeCourtyardGeometryCheckedCount": 276,
+    "nativePlacementPassedForMovedComponents": true,
+    "sourceNativePlacementSha256": "f5e95c04c3f086de935a4705a57bd0b66a0110b3b7b8e6995cc56a8e436579c9",
+    "nativeExposedBypassesWithin1mm": true,
+    "nativeStraightBypassClearanceIssues": [],
+    "nativeStraightBypassClearancePassed": true,
+    "earlyAcceptedCriticalTraceCount": 304,
+    "earlyAcceptedCriticalViaCount": 154,
+    "acceptedCriticalCopperValidated": true,
+    "acceptedCriticalCopperSha256": "cf403aa51ff75a11286bbf16bd080de078bb9aaf48a820c2d623db88c94b2711",
+    "criticalReservationScope": "Only accepted early power/fan/USB/MCU/critical-ground traces and barrels installed before analog. Later ordinary foreign traces excluded. All proposed analog paths checked mutually.",
+    "c37GroundReturnValidated": true,
+    "groundEscapesCheckedCount": 5,
+    "c35GroundReturnValidated": true,
+    "c35GroundReturnCenterLengthMm": 0.9753204601565579,
+    "c35GroundReturnExposedLengthMm": 0.300213640104372,
+    "pin2RightGroundBridgeIssues": [],
+    "latestKelvinReservationSha256": "4710d9e4aa157961e9a89eec1516ca2d69cf693c06dfff06a966824b67e26fce",
+    "latestKelvinPathCount": 12,
+    "latestKelvinViaCount": 8,
+    "mandatoryEpGroundBranchesChecked": 4,
+    "c36GroundReturnValidated": true,
+    "c36GroundReturnCenterLengthMm": 1.1807201192492658,
+    "c36GroundReturnExposedLengthMm": 0.3246972109995808,
+    "c36GroundReturnFullAcceptedTraceCount": 983,
+    "c36GroundReturnFullAcceptedViaCount": 509,
+    "c36GroundReturnFullAcceptedCopperSha256": "8e356f7684243548a3d017e6461ca845d03da7a1cb59b61aa04d60d6a709a22e",
+    "c36GroundReturnFullCopperIssues": [],
+    "c36GroundReturnMinimumConservativeViaMarginMm": 0.06557443748564384
+  },
+  "routeHints": [
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "from": "U2.pin11",
+      "to": "C32.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 20.725,
+          "y": 29.85,
+          "layer": "top"
+        },
+        {
+          "x": 18.55,
+          "y": 29.85,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 4.280000000000001,
+      "physicalPathIndices": [
+        0
+      ],
+      "maxLengthMm": 5
+    },
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "from": "U2.pin11",
+      "to": "R25.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 20.725,
+          "y": 30.55,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 2.8500000000000014,
+      "physicalPathIndices": [
+        1
+      ],
+      "maxLengthMm": 6
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "from": "U2.pin12",
+      "to": "C32.pin2",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 2.175465467434499,
+      "physicalPathIndices": [
+        2
+      ],
+      "maxLengthMm": 5
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "from": "U2.pin12",
+      "to": "R26.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 19.7,
+          "y": 27.775,
+          "layer": "top"
+        },
+        {
+          "x": 19.7,
+          "y": 29.08,
+          "layer": "top"
+        },
+        {
+          "x": 19.7,
+          "y": 29.08,
+          "layer": "bottom"
+        },
+        {
+          "x": 21.55,
+          "y": 31.35,
+          "layer": "bottom"
+        },
+        {
+          "x": 21.55,
+          "y": 31.35,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 6.40837839085048,
+      "physicalPathIndices": [
+        43,
+        44,
+        45
+      ],
+      "maxLengthMm": 8
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "from": "U_TEC_MON.pin8",
+      "to": "C42.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 3.152621924684277,
+      "physicalPathIndices": [
+        34
+      ],
+      "maxLengthMm": 7
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "from": "U_TEC_MON.pin8",
+      "to": "R41.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 42.905,
+          "y": 24.1,
+          "layer": "top"
+        },
+        {
+          "x": 42.905,
+          "y": 23.5,
+          "layer": "top"
+        },
+        {
+          "x": 42.705,
+          "y": 23.3,
+          "layer": "top"
+        },
+        {
+          "x": 41.105000000000004,
+          "y": 23.3,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 6.424583049095763,
+      "physicalPathIndices": [
+        35
+      ],
+      "maxLengthMm": 10
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "from": "U_TEC_MON.pin7",
+      "to": "C42.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 43.434999999999995,
+          "y": 27.5,
+          "layer": "top"
+        },
+        {
+          "x": 44.235,
+          "y": 27.5,
+          "layer": "top"
+        },
+        {
+          "x": 47.835,
+          "y": 26.3,
+          "layer": "top"
+        },
+        {
+          "x": 47.835,
+          "y": 25.1,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 8.393338154029927,
+      "physicalPathIndices": [
+        36
+      ],
+      "maxLengthMm": 10
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "from": "U_TEC_MON.pin7",
+      "to": "R42.pin2",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 2.332000214408224,
+      "physicalPathIndices": [
+        37
+      ],
+      "maxLengthMm": 6
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "from": "U2.pin4",
+      "to": "R40.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 25.4,
+          "y": 24.525,
+          "layer": "top"
+        },
+        {
+          "x": 25.4,
+          "y": 22.2,
+          "layer": "top"
+        },
+        {
+          "x": 26,
+          "y": 21.6,
+          "layer": "top"
+        },
+        {
+          "x": 26,
+          "y": 21.6,
+          "layer": "inner2"
+        },
+        {
+          "x": 26.5,
+          "y": 20.5,
+          "layer": "inner2"
+        },
+        {
+          "x": 21,
+          "y": 20.5,
+          "layer": "inner2"
+        },
+        {
+          "x": -6.65,
+          "y": 33.5,
+          "layer": "inner2"
+        },
+        {
+          "x": -6.2,
+          "y": 34.2,
+          "layer": "inner2"
+        },
+        {
+          "x": -6.2,
+          "y": 34.2,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 43.32264139825962,
+      "physicalPathIndices": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "from": "R40.pin1",
+      "to": "R39.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": -6.65,
+          "y": 36.7,
+          "layer": "top"
+        },
+        {
+          "x": -13.25,
+          "y": 36.9,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 11.636171627077204,
+      "physicalPathIndices": [
+        38
+      ]
+    },
+    {
+      "net": "TEC_VREF",
+      "from": "U2.pin5",
+      "to": "C35.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 1.8386476008196901,
+      "physicalPathIndices": [
+        3
+      ],
+      "maxLengthMm": 2.1
+    },
+    {
+      "net": "TEC_VREF",
+      "from": "C35.pin1",
+      "to": "R31.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 28.075,
+          "y": 24.825,
+          "layer": "top"
+        },
+        {
+          "x": 31.8,
+          "y": 24.825,
+          "layer": "top"
+        },
+        {
+          "x": 32.4,
+          "y": 24.65,
+          "layer": "top"
+        },
+        {
+          "x": 32.4,
+          "y": 24.65,
+          "layer": "inner2"
+        },
+        {
+          "x": 33.75,
+          "y": 28.8,
+          "layer": "inner2"
+        },
+        {
+          "x": 33.75,
+          "y": 28.8,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 10.739057744805862,
+      "physicalPathIndices": [
+        25,
+        26,
+        27
+      ],
+      "maxLengthMm": 15
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "U2.pin6",
+      "to": "C36.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 27.325,
+          "y": 25.825,
+          "layer": "top"
+        },
+        {
+          "x": 27.325,
+          "y": 26.325,
+          "layer": "top"
+        },
+        {
+          "x": 31.45,
+          "y": 26.325,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 5.899999999999999,
+      "physicalPathIndices": [
+        4
+      ],
+      "maxLengthMm": 6.2
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "C36.pin1",
+      "to": "R31.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 31.6,
+          "y": 27.2,
+          "layer": "top"
+        },
+        {
+          "x": 31.6,
+          "y": 27.2,
+          "layer": "bottom"
+        },
+        {
+          "x": 36.7,
+          "y": 27.2,
+          "layer": "bottom"
+        },
+        {
+          "x": 36.7,
+          "y": 30.1,
+          "layer": "bottom"
+        },
+        {
+          "x": 36.7,
+          "y": 30.1,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 10.56018016555873,
+      "physicalPathIndices": [
+        28,
+        29,
+        30
+      ],
+      "maxLengthMm": 15
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "R31.pin2",
+      "to": "R32.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 2.2299103120977746,
+      "physicalPathIndices": [
+        39
+      ]
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "U2.pin8",
+      "to": "C37.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 1.8751666592599177,
+      "physicalPathIndices": [
+        5
+      ],
+      "maxLengthMm": 2.1
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "C37.pin1",
+      "to": "R33.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 28.15,
+          "y": 27.95,
+          "layer": "top"
+        },
+        {
+          "x": 31.05,
+          "y": 27.95,
+          "layer": "top"
+        },
+        {
+          "x": 31.05,
+          "y": 28.5,
+          "layer": "top"
+        },
+        {
+          "x": 31.05,
+          "y": 28.5,
+          "layer": "inner2"
+        },
+        {
+          "x": 32.4,
+          "y": 33.2,
+          "layer": "inner2"
+        },
+        {
+          "x": 32.4,
+          "y": 33.2,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 10.240040899624468,
+      "physicalPathIndices": [
+        16,
+        17,
+        18
+      ],
+      "maxLengthMm": 12
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "R33.pin2",
+      "to": "R34.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 3.667424164178454,
+      "physicalPathIndices": [
+        40
+      ]
+    },
+    {
+      "net": "TEC_SS",
+      "from": "U2.pin9",
+      "to": "C34.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 25.25,
+          "y": 27.775,
+          "layer": "top"
+        },
+        {
+          "x": 25.25,
+          "y": 28.9,
+          "layer": "top"
+        },
+        {
+          "x": 25.2,
+          "y": 29,
+          "layer": "top"
+        },
+        {
+          "x": 25.2,
+          "y": 29,
+          "layer": "inner2"
+        },
+        {
+          "x": 27.45,
+          "y": 29.8,
+          "layer": "inner2"
+        },
+        {
+          "x": 27.45,
+          "y": 29.8,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 5.911737132539297,
+      "physicalPathIndices": [
+        22,
+        23,
+        24
+      ],
+      "maxLengthMm": 6
+    },
+    {
+      "net": "TEC_FB",
+      "from": "U2.pin10",
+      "to": "R29.pin2",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 26.65,
+          "y": 28.85,
+          "layer": "top"
+        },
+        {
+          "x": 26.65,
+          "y": 31.75,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 5.066789202437732,
+      "physicalPathIndices": [
+        6
+      ],
+      "maxLengthMm": 8
+    },
+    {
+      "net": "TEC_FB",
+      "from": "R29.pin2",
+      "to": "R30.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 2.97699512932084,
+      "physicalPathIndices": [
+        41
+      ],
+      "maxLengthMm": 7
+    },
+    {
+      "net": "TEC_VC",
+      "from": "U2.pin13",
+      "to": "R27.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 21.62,
+          "y": 27.125,
+          "layer": "top"
+        },
+        {
+          "x": 21.62,
+          "y": 29.1,
+          "layer": "top"
+        },
+        {
+          "x": 21.62,
+          "y": 29.1,
+          "layer": "inner2"
+        },
+        {
+          "x": 24.5,
+          "y": 31.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 24.5,
+          "y": 31.4,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 7.75570210407732,
+      "physicalPathIndices": [
+        7,
+        8,
+        9
+      ],
+      "maxLengthMm": 10
+    },
+    {
+      "net": "TEC_COMP_RC",
+      "from": "R27.pin2",
+      "to": "C33.pin1",
+      "width": 0.2,
+      "waypoints": [],
+      "expectedLengthMm": 1.6622650209879293,
+      "physicalPathIndices": [
+        42
+      ],
+      "maxLengthMm": 4
+    },
+    {
+      "net": "TEC_RT",
+      "from": "U2.pin14",
+      "to": "R28.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": 19.7,
+          "y": 26.475,
+          "layer": "top"
+        },
+        {
+          "x": 19.5,
+          "y": 26.9,
+          "layer": "top"
+        },
+        {
+          "x": 19.5,
+          "y": 26.9,
+          "layer": "inner2"
+        },
+        {
+          "x": 18.7,
+          "y": 28.6,
+          "layer": "inner2"
+        },
+        {
+          "x": 18.7,
+          "y": 30.4,
+          "layer": "inner2"
+        },
+        {
+          "x": 20.15,
+          "y": 31.95,
+          "layer": "inner2"
+        },
+        {
+          "x": 20.15,
+          "y": 31.95,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 8.496035306186103,
+      "physicalPathIndices": [
+        10,
+        11,
+        12
+      ],
+      "maxLengthMm": 13
+    },
+    {
+      "net": "TEC_DAC",
+      "from": "U_DAC.pin1",
+      "to": "TP12.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": -3.95,
+          "y": -24.5,
+          "layer": "top"
+        },
+        {
+          "x": -3.95,
+          "y": -24.5,
+          "layer": "inner2"
+        },
+        {
+          "x": -3.95,
+          "y": -8,
+          "layer": "inner2"
+        },
+        {
+          "x": -5.8,
+          "y": -3,
+          "layer": "inner2"
+        },
+        {
+          "x": -5.8,
+          "y": -3,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 25.117882519453293,
+      "physicalPathIndices": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "net": "TEC_DAC",
+      "from": "TP12.pin1",
+      "to": "R33.pin1",
+      "width": 0.2,
+      "waypoints": [
+        {
+          "x": -5.8,
+          "y": -3,
+          "layer": "top"
+        },
+        {
+          "x": -5.8,
+          "y": -3,
+          "layer": "inner2"
+        },
+        {
+          "x": 28.5,
+          "y": 19,
+          "layer": "inner2"
+        },
+        {
+          "x": 28.5,
+          "y": 29.5,
+          "layer": "inner2"
+        },
+        {
+          "x": 29.6,
+          "y": 33.2,
+          "layer": "inner2"
+        },
+        {
+          "x": 29.6,
+          "y": 33.2,
+          "layer": "top"
+        }
+      ],
+      "expectedLengthMm": 58.612100869454395,
+      "physicalPathIndices": [
+        31,
+        32,
+        33
+      ]
+    }
+  ],
+  "groundEscapes": [
+    {
+      "fromSelector": "C22.pin2",
+      "net": "GND",
+      "via": {
+        "name": "AN_GND_C22",
+        "x": 29.55,
+        "y": 21.1
+      },
+      "path": [
+        {
+          "x": 29.55,
+          "y": 22.1
+        },
+        {
+          "x": 29.55,
+          "y": 21.1
+        }
+      ],
+      "width": 0.2,
+      "maxLengthMm": 1,
+      "exactCopperClearanceMm": 0.2,
+      "maxExposedCopperLengthMm": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      },
+      "exposedCopperLengthMm": 0.2
+    },
+    {
+      "fromSelector": "C24.pin2",
+      "net": "GND",
+      "via": {
+        "name": "AN_GND_C24",
+        "x": 31,
+        "y": 23.875
+      },
+      "path": [
+        {
+          "x": 29.985,
+          "y": 23.875
+        },
+        {
+          "x": 31,
+          "y": 23.875
+        }
+      ],
+      "width": 0.2,
+      "maxLengthMm": 1.1,
+      "exactCopperClearanceMm": 0.2,
+      "maxExposedCopperLengthMm": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      },
+      "exposedCopperLengthMm": 0.2
+    },
+    {
+      "fromSelector": "C37.pin2",
+      "net": "GND",
+      "via": {
+        "name": "AN_GND_C37",
+        "x": 30.5,
+        "y": 27.15
+      },
+      "path": [
+        {
+          "x": 29.55,
+          "y": 27.15
+        },
+        {
+          "x": 30.5,
+          "y": 27.15
+        }
+      ],
+      "width": 0.2,
+      "maxLengthMm": 1,
+      "maxExposedCopperLengthMm": 1,
+      "exposedCopperLengthMm": 0.2,
+      "exactCopperClearanceMm": 0.2,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      }
+    },
+    {
+      "fromSelector": "C35.pin2",
+      "net": "GND",
+      "via": {
+        "name": "AN_GND_C35",
+        "x": 30.4,
+        "y": 25.575
+      },
+      "path": [
+        {
+          "x": 29.425,
+          "y": 25.55
+        },
+        {
+          "x": 30.4,
+          "y": 25.575
+        }
+      ],
+      "width": 0.2,
+      "maxLengthMm": 1,
+      "maxExposedCopperLengthMm": 1,
+      "exposedCopperLengthMm": 0.3002136,
+      "exactCopperClearanceMm": 0.2,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      }
+    },
+    {
+      "fromSelector": "C36.pin2",
+      "net": "GND",
+      "via": {
+        "name": "AN_GND_C36",
+        "x": 33.39,
+        "y": 25.05
+      },
+      "path": [
+        {
+          "x": 32.85,
+          "y": 26.1
+        },
+        {
+          "x": 33.39,
+          "y": 25.05
+        }
+      ],
+      "width": 0.2,
+      "maxLengthMm": 1.3,
+      "maxExposedCopperLengthMm": 1,
+      "exposedCopperLengthMm": 0.3246972109995808,
+      "exactCopperClearanceMm": 0.2,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      },
+      "clippedPath": [
+        {
+          "x": 33.081428571428575,
+          "y": 25.650000000000002
+        },
+        {
+          "x": 33.22992819558274,
+          "y": 25.361250730811353
+        }
+      ]
+    }
+  ],
+  "nativeStraightLineSuggestions": [
+    {
+      "from": "U2.pin1",
+      "to": "C22.pin1",
+      "net": "TEC_VCC_INT",
+      "width": 0.4,
+      "pcbStraightLine": true,
+      "maxExposedCopperLengthMm": 1,
+      "centerPath": [
+        {
+          "x": 26.275,
+          "y": 22.575
+        },
+        {
+          "x": 28.15,
+          "y": 22.1
+        }
+      ],
+      "clippedPath": [
+        {
+          "x": 26.8,
+          "y": 22.442
+        },
+        {
+          "x": 27.75,
+          "y": 22.201333333333
+        }
+      ],
+      "authoredCenterDistanceMm": 1.9342311133884693,
+      "exposedCopperCenterlineLengthMm": 0.9800104307835725,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass.",
+      "maxLength": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.4
+      }
+    },
+    {
+      "from": "U2.pin3",
+      "to": "C24.pin1",
+      "net": "VBUS_TEC",
+      "width": 0.4,
+      "pcbStraightLine": true,
+      "maxExposedCopperLengthMm": 1,
+      "centerPath": [
+        {
+          "x": 26.275,
+          "y": 23.875
+        },
+        {
+          "x": 28.215,
+          "y": 23.875
+        }
+      ],
+      "clippedPath": [
+        {
+          "x": 26.8,
+          "y": 23.875
+        },
+        {
+          "x": 27.75,
+          "y": 23.875
+        }
+      ],
+      "authoredCenterDistanceMm": 1.9400000000000013,
+      "exposedCopperCenterlineLengthMm": 0.9499999999999993,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass.",
+      "maxLength": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.4
+      }
+    },
+    {
+      "from": "U2.pin5",
+      "to": "C35.pin1",
+      "net": "TEC_VREF",
+      "width": 0.2,
+      "pcbStraightLine": true,
+      "maxExposedCopperLengthMm": 1,
+      "centerPath": [
+        {
+          "x": 26.275,
+          "y": 25.175
+        },
+        {
+          "x": 28.075,
+          "y": 25.55
+        }
+      ],
+      "clippedPath": [
+        {
+          "x": 26.8,
+          "y": 25.284375
+        },
+        {
+          "x": 27.75,
+          "y": 25.482291666667
+        }
+      ],
+      "authoredCenterDistanceMm": 1.8386476008196901,
+      "exposedCopperCenterlineLengthMm": 0.9703973448771253,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass.",
+      "maxLength": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      }
+    },
+    {
+      "from": "U2.pin8",
+      "to": "C37.pin1",
+      "net": "TEC_CURRENT_COMMAND",
+      "width": 0.2,
+      "pcbStraightLine": true,
+      "maxExposedCopperLengthMm": 1,
+      "centerPath": [
+        {
+          "x": 26.275,
+          "y": 27.125
+        },
+        {
+          "x": 28.15,
+          "y": 27.15
+        }
+      ],
+      "clippedPath": [
+        {
+          "x": 26.8,
+          "y": 27.132
+        },
+        {
+          "x": 27.75,
+          "y": 27.144666666667
+        }
+      ],
+      "authoredCenterDistanceMm": 1.8751666592599177,
+      "exposedCopperCenterlineLengthMm": 0.9500844406916953,
+      "reason": "Native straight traces clip their exposed route to the real solder-pad boundaries. The1mm limit is retained on the exposed local bypass.",
+      "maxLength": 1,
+      "nativeTraceProps": {
+        "pcbStraightLine": true,
+        "maxLength": 1,
+        "thickness": 0.2
+      }
+    }
+  ],
+  "integrationFixes": [
+    {
+      "via": "AN_VC_HEAD",
+      "position": {
+        "x": 21.62,
+        "y": 29.1
+      },
+      "reason": "Clear accepted wide U2 exposed-pad ground return and its left barrel. Inward corridor shifted to x21.62."
+    },
+    {
+      "via": "AN_EN_TAIL",
+      "position": {
+        "x": -6.2,
+        "y": 34.2
+      },
+      "reason": "Clear bottom2mm protected-rail trunk and Q23 ground pad; top tail remains short."
+    },
+    {
+      "from": "U2.pin4",
+      "to": "AN_EN_HEAD.top",
+      "reason": "Shift interior escape to x25.4, maintaining0.2mm clearance from wide right ground branch and adjacent fine-pad row."
+    },
+    {
+      "from": "AN_EN_HEAD.inner2",
+      "to": "AN_EN_TAIL.inner2",
+      "reason": "Detour below controller ground barrels then west of protected-rail via."
+    },
+    {
+      "from": "AN_DAC_TAIL.inner2",
+      "to": "AN_DAC_FILTER.inner2",
+      "reason": "Long DAC continuation moved to inner2 through(28.5,19)/(28.5,29.5), freeing paired bottom Kelvin convergence through(28.5,23)/(29,23.6). Monitor Kelvin inner2 trunks remain east ofx38."
+    },
+    {
+      "via": "AN_LIMIT_HEAD",
+      "position": {
+        "x": 31.6,
+        "y": 27.2
+      },
+      "reason": "Short direct diagonal from C36.pin1 opens C37 ground exit."
+    },
+    {
+      "via": "AN_GND_C37",
+      "position": {
+        "x": 30.5,
+        "y": 27.15
+      },
+      "reason": "Checked0.95mm center-span/0.2mm exposed ground return from C37.pin2."
+    },
+    {
+      "component": "C36",
+      "placement": [
+        32.15,
+        26.1,
+        0
+      ],
+      "reason": "0.55mm east shift opens adjacent C35 ground barrel; actual native courtyards remain clear."
+    },
+    {
+      "from": "C35.pin1",
+      "to": "AN_REF_HEAD.top",
+      "reason": "Horizontal continuation lowered0.05mm to y24.825, preserving0.2mm copper clearance to C24 and new C35 ground barrel."
+    },
+    {
+      "via": "AN_GND_C35",
+      "position": {
+        "x": 30.4,
+        "y": 25.575
+      },
+      "reason": "Checked ordinary0.7/0.3mm off-pad ground via;0.975mm authored center span /0.300mm exposed return from C35.pin2."
+    },
+    {
+      "from": "AN_DAC_HEAD.inner2",
+      "to": "AN_DAC_TAIL.inner2",
+      "reason": "Inner2 waypoint at (-3.95,-8) clears accepted GND barrel (-4.95,-10.35), preserving the remote DAC feed and bottom Kelvin corridor."
+    },
+    {
+      "via": "AN_GND_C36",
+      "position": {
+        "x": 33.39,
+        "y": 25.05
+      },
+      "reason": "C36 ground return shortened from generic 1.184 mm exposed copper to 0.325 mm. Direct top stem and through barrel clear all 983 accepted traces/509 barrels, all analog paths, mandatory EP4 and latest Kelvin geometry."
+    }
+  ]
+}
