@@ -1,7 +1,7 @@
 {
   "name": "@tsci/0hmX.usb-c-peltier-board",
-  "version": "0.1.5",
-  "description": "Dual-USB-C Peltier controller with RP2040 and CH224K",
+  "version": "0.2.0",
+  "description": "USB-C PD power adapter for one TEC1-12706 Peltier module",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -18,11 +18,10 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "tscircuit": "^0.0.2868",
-    "typescript": "^5.0.0",
-    "@types/react": "^19.0.8",
     "@types/bun": "^1.4.2",
-    "circuit-json-to-gltf": "^0.0.151"
+    "@types/react": "^19.0.8",
+    "tscircuit": "^0.0.2868",
+    "typescript": "^5.0.0"
   },
   "author": "0hmX",
   "private": true,
