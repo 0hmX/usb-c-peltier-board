@@ -40,7 +40,7 @@ export function AdjustablePowerStage({ pcbX = 0, pcbY = 14 }: {
       pin16: "net.DRIVER_CURRENT_MONITOR", pin17: "net.GND",
       // The external 5 V auxiliary supply stays available with EN low,
       // so live MCU I2C pull-ups do not exceed the VCC + 0.3 V rating.
-      pin18: "net.AUX_5V", pin19: "net.DRIVER_BOOT2",
+      pin18: "net.LOGIC_5V", pin19: "net.DRIVER_BOOT2",
       pin20: "net.DRIVER_BOOT1", pin21: "net.GND",
     }} />
     <SRP1265A_4R7M name="L_OUT" {...at(13, 0)} connections={{
@@ -63,9 +63,9 @@ export function AdjustablePowerStage({ pcbX = 0, pcbY = 14 }: {
     <SourcedCapacitor name="C_DRIVER_BOOT2" capacitance="100nF" {...at(3, 4)}
       connections={{ pin1: "net.DRIVER_BOOT2", pin2: "net.DRIVER_SW2" }} />
     <SourcedCapacitor name="C_DRIVER_VCC" capacitance="10uF" {...at(3, 10)}
-      connections={{ pin1: "net.AUX_5V", pin2: "net.GND" }} />
+      connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
     <SourcedCapacitor name="C_DRIVER_VCC_HF" capacitance="100nF" {...at(-2, 10)}
-      connections={{ pin1: "net.AUX_5V", pin2: "net.GND" }} />
+      connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
     {[[24, 0], [24, 6], [24, 12], [31, 0]].map(([x, y], i) => <GRM32ER71E226KE15L key={i}
       name={"C_DRIVER_OUT" + (i + 1)} maxVoltageRating="25V" {...at(x!, y!)}
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />)}

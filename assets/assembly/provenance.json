@@ -2,37 +2,18 @@
   "units": "mm",
   "pcb": {
     "source": "dist/index/circuit.json",
-    "geometry": "Actual unrouted tscircuit PCB and its component placement; supplied component OBJ models where available. Generic or datasheet-derived bodies remain approximate.",
+    "geometry": "Actual unrouted tscircuit PCB and its component placement; supplied component OBJ models where available. Drawing-derived bodies remain approximate. DNP copper test pads appear in the PCB surface texture with no artificial component bodies.",
     "routing": "No copper routing. Wires in this assembly are external connection illustrations."
   },
   "peltier": {
     "description": "HiLetgo TEC1-12706 2-pack; the board drives one module",
     "source": "https://www.amazon.com/dp/B00M1PM7H6",
-    "bodyDimensionsMm": [40, 40, 3.6],
+    "bodyDimensionsMm": [
+      40,
+      40,
+      3.6
+    ],
     "geometry": "Amazon listing dimensional envelope, not manufacturer CAD. Ceramic plates and core are visual approximations; lead routing, diameter and length are illustrative. Confirm purchased samples before mechanical manufacture."
-  },
-  "usbCable": {
-    "description": "Cable Matters 201440, USB-C to USB-C, 240 W / 5 A cable, 1 m option",
-    "source": "https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx",
-    "geometry": "Connection illustration. Only a short cable segment and the board-side plug are shown. Manufacturer does not publish plug/jacket CAD or dimensions; these are indicative, not fit-qualified geometry. The charger-side end is omitted.",
-    "electricalRating": "Up to 48 V / 5 A. This board uses SPR USB-C PD, not the cable's 240 W EPR capability."
-  },
-  "display": {
-    "description": "Waveshare 0.91inch OLED Module, SKU 14657, SSD1306, 128 x 32 pixels",
-    "source": "https://www.waveshare.com/product/ai/0.91inch-oled-module.htm",
-    "schematicSource": "https://files.waveshare.com/upload/2/2a/0.91inch_OLED_Module_Schematic.pdf",
-    "pcbOutlineMm": [36, 12.5],
-    "activeAreaMm": [22.38, 5.58],
-    "geometry": "Manufacturer-published PCB outline and active-area dimensions. PCB thickness, glass package envelope, connector placement and height are approximations; no official 3D file found. Floating position illustrates an external module and does not specify a mounting system.",
-    "connectorPinout": { "1": "SCL", "2": "SDA", "3": "GND", "4": "VCC / 3.3 V" }
-  },
-  "displayCable": {
-    "description": "Adafruit 3568, 4-pin JST-PH female/female cable, 150 mm / 26 AWG",
-    "source": "https://www.adafruit.com/product/3568",
-    "publishedDimensionsMm": [177, 10, 4],
-    "connectorDrawingSource": "https://www.jst.com/wp-content/uploads/2021/09/ePH.pdf",
-    "geometry": "Connection illustration with simplified PHR-4 mating housings based on the JST drawing. Harness path, wire diameters, connector details and exact slack are illustrative, not official CAD. The displayed path is a partial segment; excess cable slack is omitted.",
-    "electricalRequirement": "Pin 1 to pin 1, 2 to 2, 3 to 3, 4 to 4. Verify cable continuity and manufacturer pin numbering before powering. This custom OLED pinout is not the STEMMA device pinout; wire colors do not indicate these signal names. The included Waveshare cable is not assumed to mate to the board."
   },
   "officialCadAttempts": [
     {
@@ -49,5 +30,24 @@
       "drawingSource": "https://www.ti.com/lit/pdf/MPQF641"
     }
   ],
-  "assemblyLimitations": "Connection and packaging visualization only. No heatsink, cold plate, clamping mechanism or thermal interface is specified by this assembly. Do not power a bare Peltier without an appropriate hot-side thermal assembly."
+  "assemblyLimitations": "Connection and packaging visualization only. No heatsink, cold plate, clamping mechanism or thermal interface is specified by this assembly. Do not power a bare Peltier without an appropriate hot-side thermal assembly.",
+  "usbCables": {
+    "description": "Two Cable Matters 201440 USB-C to USB-C USB 2.0 data / 240 W / 5 A cables, 1 m option",
+    "source": "https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx",
+    "quantity": 2,
+    "roles": [
+      {
+        "boardPort": "J_USB",
+        "role": "PD power from 100 W USB-C charger",
+        "illustrationColor": "black"
+      },
+      {
+        "boardPort": "J_PROGRAM",
+        "role": "Program/debug USB 2.0 connection to PC",
+        "illustrationColor": "light gray"
+      }
+    ],
+    "electricalRating": "Manufacturer specifies up to 48 V / 5 A power delivery, an E-Marker, and USB 2.0 data up to 480 Mbps. Both roles can use this same cable product. Board data speed is determined by its USB implementation.",
+    "geometry": "Connection illustrations. Only short segments and board-side plugs are shown. Manufacturer does not publish plug/jacket CAD or dimensions; shapes and role colors are indicative, not fit-qualified geometry. Cable slack, charger end and PC end are omitted."
+  }
 }

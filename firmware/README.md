@@ -1,6 +1,47 @@
-# Driver firmware
+# USB control and firmware
 
-The application uses ST's official STM32CubeG0 HAL/CMSIS. PlatformIO downloads the pinned SDK and ARM GCC packages instead of vendoring them. Target: **STM32G030F6P6, 32 KB flash / 8 KB RAM**, internal 16 MHz HSI clock, no crystal. The application cross-builds, but the unrouted prototype has not been flashed or bench-tested.
+The board has **PD IN** for Peltier power and **PROGRAM** for USB data, configuration, and firmware updates. PROGRAM can power the logic by itself; it cannot energize the Peltier without qualified PD power. There is no display or button UI.
+
+The application targets **STM32G0B1KBT6, 128 KB flash / 144 KB RAM**. It uses ST's official STM32CubeG0 HAL/CMSIS and pinned TinyUSB 0.18.0 for native USB CDC. HSI48 plus CRS synchronized to USB SOF supplies the USB clock without a crystal. USB attaches only when PROGRAM VBUS is detected. The PCB remains unrouted: USB enumeration, flash programming, and converter operation have not been bench-tested.
+
+## Configure once, then use PD alone
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r host/requirements.txt
+.venv/bin/python host/control.py configure 12.0 5.5
+```
+
+This sends STOP → SET → SAVE, storing the nominal **12 V / 5.5 A** TEC1-12706 profile. On a subsequent PD connection the saved profile starts after approximately one second of stable qualified input. Add `--run` to start immediately after saving when PD is already connected. Unplugging PROGRAM leaves an operating output running on PD.
+
+```sh
+.venv/bin/python host/control.py configure 12.0 5.5 --run
+.venv/bin/python host/control.py status
+.venv/bin/python host/control.py stop
+.venv/bin/python host/control.py run
+```
+
+The host tool selects a single connected driver automatically. Use `--port /dev/cu.usbmodem…` or `--port COM…` before the command when needed. Any serial terminal also works, with newline-terminated commands; USB CDC does not depend on the selected baud rate.
+
+| Command | Behavior |
+|---|---|
+| `SET 12000 5500` | Set millivolts and milliamperes atomically, only while OFF |
+| `SAVE` | Save the current profile, only while OFF; acknowledge only after flash readback |
+| `RUN` | Start with the current limits after PD and register checks |
+| `STOP` | Stop and cancel pending automatic start for this PD session |
+| `STATUS` | Report run/CC/PD/fault, limits, approximate readings, saved-profile validity, and DFU readiness as JSON |
+| `CLEAR` | Stay OFF and clear a protective fault latch; RUN remains explicit for the current connection |
+| `BOOT` | Disable output, then reset into ST's native USB DFU bootloader |
+
+Limits are **2.1–15 V in 0.1 V steps**, **0.50–6.00 A in 0.05 A steps**, and **72 W maximum nominal**. Invalid commands, overflow, unsupported steps, and excessive power are rejected without changing settings. The factory default is 12 V / 5.5 A but **OFF until a valid profile has been saved or RUN is requested**.
+
+SAVE writes a versioned, CRC32-checked 16-byte record in the final 2 KB flash page at `0x0801F800`. The linker reserves that page, and the firmware checks the 128 KB device and unswapped bank layout before erasing it. Saving an identical valid profile does not erase flash again. Interrupted or invalid records cannot enable automatic output; a failed save returns an error. No automatic flash writes occur.
+
+A source interruption shorter than one second stops output and requires RUN. After PD has been absent for at least one second, a new qualified connection can start the saved profile. SC/OVP, ADC, converter communication, and excessive measured-limit faults latch OFF. They do not automatically retry following another PD negotiation; clear the fault or request RUN explicitly. The protective latch also survives watchdog/software reset in retained RAM. A full logic power cycle clears that RAM latch. A healthy saved profile still starts on a fresh power connection.
+
+POWER indicates logic supply, RUN indicates enabled output, and FAULT indicates a latched fault. Normal constant-current limiting is permitted and appears as `cc=1` in STATUS. The selected voltage is regulated before the 10 mΩ shunt, so load voltage is approximately 10 mV lower per ampere. ADC readings use factory VREFINT calibration but remain approximate because the divider, shunt, and monitor are uncalibrated.
+
+## Build
 
 From this directory:
 
@@ -10,49 +51,53 @@ python3 -m venv .venv
 .venv/bin/pio run
 ```
 
-The build produces `.pio/build/general-pd/firmware.bin` and `firmware.elf`. Flash using an ST-LINK connected to the board's labeled 3V3-reference, SWDIO, SWCLK, GND, and NRST connector:
+Outputs are `.pio/build/general-pd/firmware.bin` and `firmware.elf`. SDK/toolchain dependencies download outside the tracked source. The build derives a linker script from the pinned official ST script: 126 KB for application code, 2 KB for the saved profile, and a retained `.noinit` RAM section for boot/fault requests.
 
-```sh
-.venv/bin/pio run -t upload
-```
-
-Power the board through USB-C; the programming header's 3V3 is a voltage reference. Avoid powering the board simultaneously from an unknown programmer supply. Firmware is necessary for output operation. The release MOSFET's GPIO pull-down holds the converter disabled while the MCU is blank, reset, or without 3V3; the NPN kill is biased independently from AUX_5V. A failure of AUX_5V itself remains a separate supply fault requiring bench qualification.
-
-Native policy checks, covering every permitted V/I combination and the exact converter encodings:
+Native checks:
 
 ```sh
 mkdir -p .pio
-cc -std=c11 -Wall -Wextra -Werror -Iinclude src/policy.c test/policy_test.c -o .pio/policy-test
+cc -std=c11 -Wall -Wextra -Werror -Iinclude src/policy.c src/command.c test/policy_test.c -o .pio/policy-test
 .pio/policy-test
+cc -std=c11 -Wall -Wextra -Werror -Iinclude src/policy.c src/profile.c src/session.c test/profile_session_test.c -o .pio/profile-session-test
+.pio/profile-session-test
+python3 -m unittest discover -s host -p 'test_*.py'
 ```
 
-The default is **12.0 V / 5.50 A, output OFF**. While OFF, press SET briefly to select voltage or current and press or hold − / + to adjust it. Hold SET for 0.8 seconds to RUN. While running, press SET to STOP immediately after button debounce; holding it afterwards does not restart output. The range is **2.1–15 V, 0.50–6.00 A, at most 72 W nominal**. Increasing voltage reduces the current setting when needed to stay within the power budget. There is no automatic restart or settings persistence across power cycles.
+## USB programming and recovery
 
-The display shows selected limits and approximate measured voltage/current with a `~` marker. CV means voltage regulation; CC means the converter is limiting current. The selected voltage is regulated before the 10 mΩ current shunt; the load sees approximately 10 mV less per ampere. The 2.1 V floor provides nominal margin above the converter's 2 V current-sense common-mode minimum at 6 A. The ADC uses the MCU's factory VREFINT calibration to account for the 3V3 supply, but the shunt, amplifier, and divider remain uncalibrated. Settings and readings are nominal; analog component tolerances still apply.
+Use [ST's official STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html). A blank MCU enters its ROM loader following a cold power-on. Connect PROGRAM, select USB DFU, and program the binary at `0x08000000`. The ROM's empty-flash reset limitation means a blank device may require complete power removal and reconnection instead of a reset pulse; disconnect both USB sources for a cold start.
 
-RUN requires a healthy PD fault signal and an approximately 18–22 V qualified input. The standalone PD sink and hardware UVLO enforce the intended 20 V / 5 A source contract. A 100 W USB-C PD source and a 5 A e-marked cable are required. This firmware does not negotiate PD itself.
+During factory programming configure and verify **`nBOOT_SEL=0`, `nBOOT1=1`, `BOOT_LOCK=0`, `IWDG_SW=0`**. These enable BOOT0 recovery and the hardware watchdog mode that ST documents as refreshed in the ROM loader. Keep bank swapping disabled. The application reports `dfu_ready=1` only when the boot/watchdog settings match; BOOT refuses an incomplete factory configuration.
 
-Startup holds release permission LOW, asserting hardware kill. On an explicit RUN request it resets the converter through EN, verifies qualified input, drives permission HIGH with the converter's reset OE=0, writes and reads back every V/I and protection setting, verifies input again, and writes OE=1 last. SC/OVP, driver communication failure, missing PD, ADC failure, or screen communication failure asserts hardware kill and latches OFF. Ordinary current limiting is allowed. An independent watchdog resets the MCU after approximately 500 ms without refresh; the hardware pull-down disables output during reset. Normal STOP clears OE and retains EN for the converter's output discharge. Supplemental ADC checks stop sustained readings more than 0.6 V / 0.6 A above the selected limits; these are not a replacement for the hardware regulation loop.
+With one target selected, an illustrative official CLI sequence is:
 
-GPIO contract:
+```sh
+STM32_Programmer_CLI -l usb
+STM32_Programmer_CLI -c port=USB1 -w .pio/build/general-pd/firmware.bin 0x08000000 -v
+STM32_Programmer_CLI -c port=USB1 -ob nBOOT_SEL=0 nBOOT1=1 BOOT_LOCK=0 IWDG_SW=0
+```
 
-| MCU pin | Signal |
+Select the actual target shown by the tool; option programming resets the device. After successful programming, cold power-cycle if needed to leave empty-check boot mode. Later use `.venv/bin/python host/control.py boot`, then update the application over the same PROGRAM USB-C port. Avoid mass erase to preserve the saved profile; verify the profile with STATUS after an update. A factory erase intentionally removes it.
+
+If the application cannot respond, hold the **BOOT0** test pad at 3V3 while asserting/releasing **NRST**, or cold-power it with BOOT0 held HIGH, to enter ROM DFU. Remove the BOOT0 link for normal boot. BOOT0 shares SWCLK; the board supplies a pull-down. SWDIO, SWCLK, NRST, 3V3-reference, and GND test pads provide an independent ST-LINK recovery path. These are test pads, not fitted buttons. PB0 output permission stays LOW in reset and is not used by any ROM boot interface, so programming cannot enable the converter through a bootloader UART pin.
+
+The BOOT command holds output disabled, acknowledges over CDC, records a retained RAM request, and performs a system reset. Early startup jumps to the G0B1 system-memory vectors at `0x1FFF0000` with reset clocks and output permission LOW. It does not jump to the separate secure-memory entry address.
+
+## Pin and control contract
+
+| MCU signal / physical pin | Use |
 |---|---|
-| PA0 / physical 7 | Output current ADC: nominal 0.2 V/A |
-| PA1 / physical 8 | Output voltage ADC: 100k/20k divider, gain 1/6 |
-| PA2 / physical 9 | LOW = hardware kill, HIGH = release converter EN |
-| PA3 / physical 10 | Converter SC/OVP indication, active LOW |
-| PA4 / physical 11 | − button, active LOW |
-| PA5 / physical 12 | SET/RUN button, active LOW |
-| PA6 / physical 13 | + button, active LOW |
-| PA7 / physical 14 | PD fault, active HIGH |
-| PA11 / physical 16 | I2C2 SCL, AF6, no remap |
-| PA12 / physical 17 | I2C2 SDA, AF6, no remap |
-| PB7 / physical 1 | Qualified input voltage ADC11: 150k/22k divider |
-| PA13 / physical 18; PA14 / physical 19 | SWDIO / SWCLK |
+| PB0 / 15 | HIGH grants output permission; LOW/reset/Hi-Z disables |
+| PA0 / 7; PA1 / 8 | Current ADC0 (0.2 V/A); output ADC1 (100k/20k) |
+| PA3 / 10 | Qualified PD input ADC3 (150k/22k) |
+| PA4 / 11 | PROGRAM VBUS presence (15k/20k), no internal pull |
+| PA5 / 12; PA7 / 14 | Driver SC/OVP active LOW; PD fault active HIGH |
+| PB1 / 16; PB2 / 17 | RUN / FAULT LEDs, active HIGH |
+| PB6 / 30; PB7 / 31 | I2C1 SCL/SDA AF6, converter address 0x75 |
+| PA11 / 22; PA12 / 23 | Native USB DM/DP, no pin remap |
+| PA13 / 24; PA14 / 25; NRST / 6 | SWDIO / SWCLK-BOOT0 / reset |
 
-PB8 shares physical pin1 with PB7 and is kept analog. TPS55289 address is 0x75; Waveshare 0.91-inch SSD1306 OLED (SKU14657) is 0x3C. The I2C timing is designed for 16 MHz PCLK and approximately 100 kHz; validate rise times and transaction timing on routed hardware.
+RUN holds the converter reset through EN, verifies approximately 18–22 V qualified input and the PD fault signal, releases EN with reset OE=0, writes and reads back every voltage/current/protection register, checks PD again, and writes OE=1 last. SC/OVP and communication failure drive hardware permission LOW. The independent watchdog resets after approximately 500 ms without refresh; the hardware pull-down disables output during reset. Native USB detach does not change PD permission.
 
-The converter uses feedback ratio 0.0752 (register04=0x02), the exact 0.5645 mV reference DAC step, 10 mΩ current shunt / 50 mA limit steps, shortest 128 µs current-loop delay, hiccup, and output discharge. Register05=0xA0 enables SC/OVP indications and disables OCP indication; STATUS register07 is still polled for normal CC operation. TI's indication-mask bits use **1 = indication enabled**.
-
-Primary references: [ST datasheet](https://www.st.com/resource/en/datasheet/stm32g030f6.pdf), [ST HAL/CMSIS source](https://github.com/STMicroelectronics/STM32CubeG0), [TI TPS55289 datasheet](https://www.ti.com/lit/ds/symlink/tps55289.pdf), [Waveshare display](https://www.waveshare.com/0.91inch-oled-module.htm). No temperature regulation, hot-side fan control, or polarity reversal is implemented. Fit an appropriate heatsink before energizing the Peltier.
+Primary references: [ST G0B1 datasheet](https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf), [ST AN2606 bootloader §50 / watchdog §4.8](https://www.st.com/content/ccc/resource/technical/document/application_note/b9/9b/16/3a/12/1e/40/0c/CD00167594.pdf/files/CD00167594.pdf/jcr:content/translations/en.CD00167594.pdf), [ST HAL/CMSIS source](https://github.com/STMicroelectronics/STM32CubeG0), [TinyUSB 0.18.0](https://github.com/hathach/tinyusb/tree/0.18.0), [TI converter datasheet](https://www.ti.com/lit/ds/symlink/tps55289.pdf). USB uses TinyUSB's development VID/PID; assign a product identity before distributing units. The firmware implements power regulation without temperature control, fan control, or polarity reversal. Mount and cool the Peltier appropriately before RUN.

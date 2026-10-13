@@ -1,10 +1,28 @@
 {
-  "audit_recorded_at_utc": "2026-10-13T21:27:02Z",
+  "audit_recorded_at_utc": "2026-10-13T21:57:42Z",
   "observed_date_local": "2026-10-14",
   "timezone": "Asia/Calcutta",
-  "scope": "Public JLCPCB product-page componentInfo payload, overseasStockCount field. Counts can change; they are not a reservation, quote or guarantee of an assembled order. Assembly-service eligibility and final BOM must be checked when ordering.",
-  "unique_parts": 41,
-  "placements": 85,
+  "scope": "Public JLCPCB product-page componentInfo payload, overseasStockCount field. Counts can change; they are not a reservation, quote or guarantee of an assembled order. Assembly-service eligibility and final BOM must be checked when ordering. Bare copper test pads are PCB features and are excluded from purchased placements.",
+  "unique_parts": 45,
+  "placements": 95,
+  "source_components": 110,
+  "pcb_features": [
+    "TP_3V3",
+    "TP_5V",
+    "TP_BOOT0",
+    "TP_EN",
+    "TP_GND",
+    "TP_ISN",
+    "TP_ISP",
+    "TP_NRST",
+    "TP_OUT",
+    "TP_QUAL_PD",
+    "TP_RAW_PD",
+    "TP_SCL",
+    "TP_SDA",
+    "TP_SWDIO",
+    "TP_TEC"
+  ],
   "parts": [
     {
       "code": "C106218",
@@ -54,10 +72,12 @@
       "designators": [
         "C_LDO_IN",
         "C_LDO_OUT",
+        "C_LOGIC_MUX_OUT",
         "C_PD_3V3",
-        "C_PD_CORE"
+        "C_PD_CORE",
+        "C_PROGRAM_IN"
       ],
-      "quantity_per_board": 4
+      "quantity_per_board": 6
     },
     {
       "code": "C107033",
@@ -135,56 +155,6 @@
       "quantity_per_board": 1
     },
     {
-      "code": "C131334",
-      "requested_mpn": "B4B-PH-K-S(LF)(SN)",
-      "url": "https://jlcpcb.com/partdetail/B4B-PH-K-S%28LF%29%28SN%29/C131334",
-      "observed_date": "2026-10-14",
-      "componentCode": "C131334",
-      "componentModelEn": "B4B-PH-K-S(LF)(SN)",
-      "componentBrandEn": "JST",
-      "componentSpecificationEn": "Plugin,P=2mm",
-      "overseasStockCount": 209259,
-      "canPresaleNumber": 176905,
-      "preMinPurchaseNum": 242,
-      "lossNumber": 1,
-      "leastPatchNumber": 2,
-      "componentLibraryType": "expand",
-      "isBuyComponent": "1",
-      "allowPostFlag": true,
-      "noBuyReason": null,
-      "initialPrice": 0.0454,
-      "status": "public_page_payload_verified",
-      "designators": [
-        "J_DISPLAY"
-      ],
-      "quantity_per_board": 1
-    },
-    {
-      "code": "C138801",
-      "requested_mpn": "2.54-1*5P\u53cd\u5f2f\u9488",
-      "url": "https://jlcpcb.com/partdetail/2.54-1%2A5P%E5%8F%8D%E5%BC%AF%E9%92%88/C138801",
-      "observed_date": "2026-10-14",
-      "componentCode": "C138801",
-      "componentModelEn": "2.54-1*5PReverse bent pin",
-      "componentBrandEn": "BOOMELE(Boom Precision Elec)",
-      "componentSpecificationEn": "Push-Pull,P=2.54mm",
-      "overseasStockCount": 2956,
-      "canPresaleNumber": 2898,
-      "preMinPurchaseNum": 311,
-      "lossNumber": 0,
-      "leastPatchNumber": 2,
-      "componentLibraryType": "expand",
-      "isBuyComponent": "1",
-      "allowPostFlag": true,
-      "noBuyReason": null,
-      "initialPrice": 0.0369,
-      "status": "public_page_payload_verified",
-      "designators": [
-        "J_SWD"
-      ],
-      "quantity_per_board": 1
-    },
-    {
       "code": "C14663",
       "requested_mpn": "CC0603KRX7R9BB104",
       "url": "https://jlcpcb.com/partdetail/CC0603KRX7R9BB104/C14663",
@@ -220,9 +190,11 @@
         "C_PD_3V3_HF2",
         "C_PD_ADC",
         "C_PD_VBUS",
+        "C_PROGRAM_ESD",
+        "C_PROGRAM_SENSE",
         "C_V_ADC"
       ],
-      "quantity_per_board": 16
+      "quantity_per_board": 18
     },
     {
       "code": "C15850",
@@ -401,9 +373,12 @@
         "R_DC_SENSE",
         "R_GATE",
         "R_I_ADC",
-        "R_KILL_DRIVE"
+        "R_KILL_DRIVE",
+        "R_LED_FAULT",
+        "R_LED_POWER",
+        "R_LED_RUN"
       ],
-      "quantity_per_board": 4
+      "quantity_per_board": 7
     },
     {
       "code": "C21397",
@@ -484,6 +459,31 @@
       "quantity_per_board": 1
     },
     {
+      "code": "C22809",
+      "requested_mpn": "0603WAF1502T5E",
+      "url": "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809",
+      "observed_date": "2026-10-14",
+      "componentCode": "C22809",
+      "componentModelEn": "0603WAF1502T5E",
+      "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+      "componentSpecificationEn": "0603",
+      "overseasStockCount": 4267179,
+      "canPresaleNumber": 3889730,
+      "preMinPurchaseNum": 4102,
+      "lossNumber": 10,
+      "leastPatchNumber": 20,
+      "componentLibraryType": "base",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 0.0029,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "R_PROGRAM_SENSE_TOP"
+      ],
+      "quantity_per_board": 1
+    },
+    {
       "code": "C22859",
       "requested_mpn": "0603WAF100JT5E",
       "url": "https://jlcpcb.com/partdetail/0603WAF100JT5E/C22859",
@@ -508,6 +508,81 @@
         "R_ISP_FILTER"
       ],
       "quantity_per_board": 2
+    },
+    {
+      "code": "C2286",
+      "requested_mpn": "KT-0603R",
+      "url": "https://jlcpcb.com/partdetail/KT-0603R/C2286",
+      "observed_date": "2026-10-14",
+      "componentCode": "C2286",
+      "componentModelEn": "KT-0603R",
+      "componentBrandEn": "Hubei KENTO Elec",
+      "componentSpecificationEn": "0603",
+      "overseasStockCount": 7011732,
+      "canPresaleNumber": 6368780,
+      "preMinPurchaseNum": 1556,
+      "lossNumber": 10,
+      "leastPatchNumber": 20,
+      "componentLibraryType": "base",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 0.0076,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "LED_FAULT"
+      ],
+      "quantity_per_board": 1
+    },
+    {
+      "code": "C2287",
+      "requested_mpn": "KT-0603Y",
+      "url": "https://jlcpcb.com/partdetail/KT-0603Y/C2287",
+      "observed_date": "2026-10-14",
+      "componentCode": "C2287",
+      "componentModelEn": "KT-0603Y",
+      "componentBrandEn": "Hubei KENTO Elec",
+      "componentSpecificationEn": "0603",
+      "overseasStockCount": 56286,
+      "canPresaleNumber": 53061,
+      "preMinPurchaseNum": 1101,
+      "lossNumber": 10,
+      "leastPatchNumber": 20,
+      "componentLibraryType": "expand",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 0.0104,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "LED_POWER"
+      ],
+      "quantity_per_board": 1
+    },
+    {
+      "code": "C2289",
+      "requested_mpn": "KT-0603YG",
+      "url": "https://jlcpcb.com/partdetail/KT-0603YG/C2289",
+      "observed_date": "2026-10-14",
+      "componentCode": "C2289",
+      "componentModelEn": "KT-0603YG",
+      "componentBrandEn": "Hubei KENTO Elec",
+      "componentSpecificationEn": "0603",
+      "overseasStockCount": 17709,
+      "canPresaleNumber": 15588,
+      "preMinPurchaseNum": 1101,
+      "lossNumber": 10,
+      "leastPatchNumber": 20,
+      "componentLibraryType": "expand",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 0.0104,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "LED_RUN"
+      ],
+      "quantity_per_board": 1
     },
     {
       "code": "C22964",
@@ -588,6 +663,32 @@
       "quantity_per_board": 2
     },
     {
+      "code": "C23186",
+      "requested_mpn": "0603WAF5101T5E",
+      "url": "https://jlcpcb.com/partdetail/0603WAF5101T5E/C23186",
+      "observed_date": "2026-10-14",
+      "componentCode": "C23186",
+      "componentModelEn": "0603WAF5101T5E",
+      "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+      "componentSpecificationEn": "0603",
+      "overseasStockCount": 24067894,
+      "canPresaleNumber": 22840823,
+      "preMinPurchaseNum": 5000,
+      "lossNumber": 10,
+      "leastPatchNumber": 20,
+      "componentLibraryType": "base",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 0.0015,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "R_PROGRAM_CC1",
+        "R_PROGRAM_CC2"
+      ],
+      "quantity_per_board": 2
+    },
+    {
       "code": "C237304",
       "requested_mpn": "GRM31CC72A475KE11L",
       "url": "https://jlcpcb.com/partdetail/GRM31CC72A475KE11L/C237304",
@@ -660,15 +761,13 @@
       "initialPrice": 0.0052,
       "status": "public_page_payload_verified",
       "designators": [
-        "R_BUTTON_MINUS",
-        "R_BUTTON_PLUS",
-        "R_BUTTON_SET_RUN",
+        "R_BOOT0",
         "R_DRIVER_EN_BOTTOM",
         "R_FAULT_BASE",
         "R_PD_FAULT_SENSE",
         "R_RESET"
       ],
-      "quantity_per_board": 7
+      "quantity_per_board": 5
     },
     {
       "code": "C25819",
@@ -771,31 +870,29 @@
       "quantity_per_board": 1
     },
     {
-      "code": "C318884",
-      "requested_mpn": "TS-1187A-B-A-B",
-      "url": "https://jlcpcb.com/partdetail/TS-1187A-B-A-B/C318884",
+      "code": "C3235557",
+      "requested_mpn": "TPS2116DRLR",
+      "url": "https://jlcpcb.com/partdetail/TPS2116DRLR/C3235557",
       "observed_date": "2026-10-14",
-      "componentCode": "C318884",
-      "componentModelEn": "TS-1187A-B-A-B",
-      "componentBrandEn": "XKB Connection",
-      "componentSpecificationEn": "SMD-4P,5.1x5.1mm",
-      "overseasStockCount": 337954,
-      "canPresaleNumber": 266585,
-      "preMinPurchaseNum": 568,
-      "lossNumber": 5,
-      "leastPatchNumber": 5,
-      "componentLibraryType": "base",
+      "componentCode": "C3235557",
+      "componentModelEn": "TPS2116DRLR",
+      "componentBrandEn": "Texas Instruments",
+      "componentSpecificationEn": "SOT-583",
+      "overseasStockCount": 72694,
+      "canPresaleNumber": 72117,
+      "preMinPurchaseNum": 35,
+      "lossNumber": 0,
+      "leastPatchNumber": 2,
+      "componentLibraryType": "expand",
       "isBuyComponent": "1",
       "allowPostFlag": true,
       "noBuyReason": null,
-      "initialPrice": 0.0206,
+      "initialPrice": 0.398,
       "status": "public_page_payload_verified",
       "designators": [
-        "SW_MINUS",
-        "SW_PLUS",
-        "SW_SET_RUN"
+        "U_LOGIC_MUX"
       ],
-      "quantity_per_board": 3
+      "quantity_per_board": 1
     },
     {
       "code": "C404027",
@@ -843,9 +940,10 @@
       "initialPrice": 0.0022,
       "status": "public_page_payload_verified",
       "designators": [
+        "R_PROGRAM_SENSE_BOTTOM",
         "R_V_ADC_BOTTOM"
       ],
-      "quantity_per_board": 1
+      "quantity_per_board": 2
     },
     {
       "code": "C454360",
@@ -894,6 +992,31 @@
       "status": "public_page_payload_verified",
       "designators": [
         "J_TEC"
+      ],
+      "quantity_per_board": 1
+    },
+    {
+      "code": "C5270165",
+      "requested_mpn": "STM32G0B1KBT6",
+      "url": "https://jlcpcb.com/partdetail/STM32G0B1KBT6/C5270165",
+      "observed_date": "2026-10-14",
+      "componentCode": "C5270165",
+      "componentModelEn": "STM32G0B1KBT6",
+      "componentBrandEn": "STMicroelectronics",
+      "componentSpecificationEn": "LQFP-32(7x7)",
+      "overseasStockCount": 277,
+      "canPresaleNumber": 264,
+      "preMinPurchaseNum": 2,
+      "lossNumber": 0,
+      "leastPatchNumber": 0,
+      "componentLibraryType": "expand",
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "noBuyReason": null,
+      "initialPrice": 4.8979,
+      "status": "public_page_payload_verified",
+      "designators": [
+        "U_MCU"
       ],
       "quantity_per_board": 1
     },
@@ -968,32 +1091,33 @@
       "initialPrice": 1.406,
       "status": "public_page_payload_verified",
       "designators": [
+        "J_PROGRAM",
         "J_USB"
       ],
-      "quantity_per_board": 1
+      "quantity_per_board": 2
     },
     {
-      "code": "C724040",
-      "requested_mpn": "STM32G030F6P6",
-      "url": "https://jlcpcb.com/partdetail/STM32G030F6P6/C724040",
+      "code": "C7519",
+      "requested_mpn": "USBLC6-2SC6",
+      "url": "https://jlcpcb.com/partdetail/USBLC6-2SC6/C7519",
       "observed_date": "2026-10-14",
-      "componentCode": "C724040",
-      "componentModelEn": "STM32G030F6P6",
+      "componentCode": "C7519",
+      "componentModelEn": "USBLC6-2SC6",
       "componentBrandEn": "STMicroelectronics",
-      "componentSpecificationEn": "TSSOP-20",
-      "overseasStockCount": 8351,
-      "canPresaleNumber": 8197,
-      "preMinPurchaseNum": 7,
-      "lossNumber": 0,
-      "leastPatchNumber": 0,
+      "componentSpecificationEn": "SOT-23-6L",
+      "overseasStockCount": 41238,
+      "canPresaleNumber": 35431,
+      "preMinPurchaseNum": 67,
+      "lossNumber": 2,
+      "leastPatchNumber": 5,
       "componentLibraryType": "expand",
       "isBuyComponent": "1",
       "allowPostFlag": true,
       "noBuyReason": null,
-      "initialPrice": 1.481,
+      "initialPrice": 0.1772,
       "status": "public_page_payload_verified",
       "designators": [
-        "U_MCU"
+        "U_PROGRAM_ESD"
       ],
       "quantity_per_board": 1
     },
