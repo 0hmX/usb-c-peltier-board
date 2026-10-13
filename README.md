@@ -10,6 +10,7 @@ The default `index.tsx` builds a **110 × 85 mm, four-layer** board with:
 - **USB-C is the only programming interface.** UART/SWD headers, their four series resistors and the SWD SERVICE jumper are removed. BOOT/RESET buttons remain available for USB bootloader access.
 - HOT/COLD and fan use side-entry JST SH connectors.
 - Retained LT3741 current-controlled TEC stage, protected input, thermal interlocks, fail-off latches, fan circuit and test access.
+- Hardware input-loss memory prevents automatic recovery after an established eFuse input drops out, including overvoltage shutdown. Deliberately taking RUN low is required to clear it; see [interlock behavior and validation](docs/revision-b-interlock.md).
 
 The standard connector helpers are included as a connector-only snapshot of v0.8.0 in `src/board/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
 
@@ -51,15 +52,18 @@ bun install --frozen-lockfile
 bun run typecheck
 bun run build:review
 bun run check:revision
+bun run check:source-evaluator
 bun run export:review
 bun run dev
 ```
 
-`build:review` does not route the board. The revision-specific checker verifies retained and critical new pin/net assignments, two standard USB connectors, absence of UART/SWD interfaces, the four unconnected MCU pins, schematic-sheet coverage, placement errors, courtyards and absence of routed copper. The [change audit](review/usb-c-programming-change-audit.json) compares this build with the original board and confirms that all other pin/net connections and remaining component centres are preserved. Native tscircuit netlist and placement checks supplement this; none constitutes analogue simulation or bench validation.
+`build:review` does not route the board. The revision-specific checker verifies retained and critical new pin/net assignments, the input-loss interlock, two standard USB connectors, absence of UART/SWD interfaces, the four unconnected MCU pins, schematic-sheet coverage, placement errors, courtyards and absence of routed copper. The [change audit](review/usb-c-programming-change-audit.json) records the earlier USB-C-only programming change; subsequent input-loss and LT3741 placement changes are described in the design notes and regenerated review artifacts. Native tscircuit netlist and placement checks supplement this; none constitutes analogue simulation or bench validation.
 
 Geometric DRC, schematic placement and [PCB placement analysis](review/placement-check.txt) pass with no placement issues after correcting passive orientations. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
 
 PCB coordinates are explicitly editable in `src/board/clearance-placements.ts`; schematic refinements are in `src/board/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
+
+`check:source-evaluator` evaluates both current entrypoints offline and repeats the revision checks. `check:saved-routes` separately validates the historical routed board through `scripts/legacy-saved-board.tsx`; its copper counts do not describe Revision B. Both commands remove their previous success report before validation starts. Run `bun test tests` for the regression suite, including the input-loss latch behavior.
 
 ## Power and service behavior
 

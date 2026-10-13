@@ -10,7 +10,7 @@
     "heightMm": 85,
     "thicknessMm": 1.6
   },
-  "populatedComponents": 242,
+  "populatedComponents": 249,
   "mechanicalComponents": 29,
   "exposedTestPads": 27,
   "fetchedSupplierAssets": 0,
@@ -1224,6 +1224,41 @@
       "reference": "C_USB_SWITCH",
       "kind": "bundled package or supplier model",
       "asset": "Embedded CAD sha256:a17519f6412374f755ad10f79f0f16ac2214e7998d725a038d8a6333330e0a12"
+    },
+    {
+      "reference": "U_AUX_BUFFER",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:39748f8e9c984057b60f088556e677f896ff94c68456e0b54ee73ac8a75b72fd"
+    },
+    {
+      "reference": "Q_AUX_INVERT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:3468d8687c77a86d8c4e30468312b739b868ef0372bed51cb520bad7b4ee25da"
+    },
+    {
+      "reference": "R_AUX_LOSS_PU",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:65816359a28c9f5de02abe53bc8239b779d810b9ddcbb3b2e60c000cb0b30ef3"
+    },
+    {
+      "reference": "U_AUX_LOSS_LATCH",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:bb3ebd5decf88c7c4d5cbb4be48ac69ffe8353d35f94988b94be4906b75ff9e0"
+    },
+    {
+      "reference": "Q_AUX_FAULT",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:3468d8687c77a86d8c4e30468312b739b868ef0372bed51cb520bad7b4ee25da"
+    },
+    {
+      "reference": "C_AUX1",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
+    },
+    {
+      "reference": "C_AUX2",
+      "kind": "supplier CAD",
+      "asset": "Embedded CAD sha256:028c290f8629f14e3b4d528021fe607e790133cb464fff8443eacbe95d5ca749"
     },
     {
       "reference": "CONCEPT_TEC_40x40x3p8",

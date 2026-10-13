@@ -1,24 +1,26 @@
 import { deepStrictEqual, equal, throws } from "node:assert/strict"
-import { mkdirSync } from "node:fs"
+import { mkdirSync, rmSync } from "node:fs"
 import { Circuit } from "@tscircuit/core"
 import { runAllSchematicChecks } from "@tscircuit/checks"
-import Board from "../index"
+import Board from "./legacy-saved-board"
 import { supplierOrientationCache } from "../src/parts/supplier-parts-engine"
 import { assertSavedCircuit, assertSavedRecordTypes } from "./assert-saved-circuit"
 import { assertSchematicParity } from "./schematic-parity"
 
+// A failed fresh run must not leave an older success report looking current.
+rmSync("checks/tsx-preview.json", { force: true })
 const circuit = new Circuit({ platform: { localCacheEngine: supplierOrientationCache } })
 const replayedPhases: string[] = []
 let pourSolvers = 0
 let schematicSolvers = 0
 circuit.on("autorouting:start", event => {
-  equal(event.autorouterName, "precomputed", "Default preview must replay saved routes")
+  equal(event.autorouterName, "precomputed", "Legacy entrypoint must replay saved routes")
   equal(event.phaseName, "GROUND_ESCAPES")
   replayedPhases.push(event.phaseName)
 })
 circuit.on("solver:started", event => {
   if (event.solverName === "SchematicTracePipelineSolver") { schematicSolvers++; return }
-  equal(event.solverName, "CopperPourPipelineSolver", "Default preview must not solve routes")
+  equal(event.solverName, "CopperPourPipelineSolver", "Legacy entrypoint must not solve PCB routes")
   pourSolvers++
 })
 const consoleDiagnostics: unknown[][] = []
@@ -26,8 +28,8 @@ const originalWarn = console.warn, originalError = console.error
 console.warn = (...args) => { consoleDiagnostics.push(args); originalWarn(...args) }
 console.error = (...args) => { consoleDiagnostics.push(args); originalError(...args) }
 const board = Board()
-equal(board.type, "board", "Default entry must return real TSX")
-equal(board.props.schematicDisabled, false, "Default entry must render native schematics")
+equal(board.type, "board", "Legacy saved-route entry must return real TSX")
+equal(board.props.schematicDisabled, false, "Legacy saved-route entry must render native schematics")
 circuit.add(board)
 await circuit.renderUntilSettled()
 const rendered: ReturnType<typeof circuit.getCircuitJson> = JSON.parse(JSON.stringify(circuit.getCircuitJson()))
@@ -72,7 +74,7 @@ circuit.db.pcb_trace.update(trace.pcb_trace_id, { route: original })
 assertSavedCircuit(JSON.parse(JSON.stringify(circuit.getCircuitJson())))
 deepStrictEqual(consoleDiagnostics, [], "Repeated lifecycle passes emitted console warnings or errors")
 console.warn = originalWarn; console.error = originalError
-const report = { pass: true, entrypoint: "index.tsx", requiresCapturedRuntime: false, replayedPhases,
+const report = { pass: true, entrypoint: "scripts/legacy-saved-board.tsx", revision: "legacy", scope: "Historical saved-route replay and capture parity; not Revision B validation", requiresCapturedRuntime: false, replayedPhases,
   routingSolverStarts: 0, pourSolvers, schematicSolvers, schematic, warnings: 0, errors: 0,
   consoleDiagnostics: 0, nativeSchematicValidatorDiagnostics: 0, comparedRecordCounts: counts, comparedRecordTypes: Object.keys(counts).length,
   comparedRecords: rendered.length, silkscreenTextUnchanged: true, restoredMemberships,

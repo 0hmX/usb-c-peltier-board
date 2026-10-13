@@ -4,7 +4,7 @@
 
 Placement and electrically connected schematic only. Not fabricated, simulated or bench tested. This review makes no USB-IF, thermal, EMC or manufacturing-compliance claim. The 110 × 85 mm outline is a proposed review form factor, not an enclosure constraint supplied by the user.
 
-Geometric placement DRC reports zero errors and warnings. Schematic and PCB placement checks report no issues. Twenty-four passive components were rotated 180° to resolve the PCB analyzer's orientation suggestions; their centres and electrical connections are preserved. The resulting analysis is recorded in `review/placement-check.txt`.
+Geometric placement DRC reports zero errors and warnings. Schematic and PCB placement checks report no issues. Component orientations account for the PCB analyzer's connection-distance suggestions. The resulting analysis is recorded in `review/placement-check.txt`.
 
 ## PD / MCU architecture
 
@@ -23,6 +23,8 @@ These are voltage requests, not proof of a source contract or available current.
 The LMV393 window uses a 150 kΩ/10 kΩ raw-VBUS divider. Nominal lower threshold is 13.47 V (29.2 kΩ/10 kΩ reference), nominal upper threshold 22.66 V (13.3 kΩ/10 kΩ reference). The inherited eFuse has its own approximately 22 V overvoltage shutdown. Resistor tolerance, 3.3 V accuracy, comparator offset, ripple and hysteresis need bench characterization. The wider upper window avoids rejecting an otherwise valid 20 V source solely because of tolerance.
 
 The TPS259470A pin 3 is AUXOFF, not a power-good indication. It is named `INPUT_AUXOFF`; firmware must not treat it as a negotiated-contract confirmation. The eFuse's 1.27 kΩ current limit remains fixed. The previous parallel high-current limit branch is removed.
+
+An added hardware input-loss latch captures a falling AUXOFF edge after the input has been established. It holds the shared fault asserted until MCU_RUN is deliberately taken low, closing the eFuse OVLO recovery gap even when CH224K PG remains asserted. See [the circuit, startup sequence and timing qualifications](revision-b-interlock.md). AUXOFF must still assert within a firmware startup timeout; initial inrush with AUXOFF never high is not an input-loss edge.
 
 ## MCU support
 
@@ -60,7 +62,7 @@ The USB-VBUS-driven hardware inhibit (`Q_USB_SERVICE`) and reset-to-fault diode 
 2. Check raw VBUS, active-low PD qualification/fault signals, thermistors and current-monitor communication before permitting power.
 3. Request only a qualified 15/20 V mode, wait for measured-voltage stability and PG, and use a conservative fixed input-current budget below the characterized eFuse limit. Do not reuse the legacy STUSB4500 capability/current-reading logic.
 4. Program a zero/limited DAC setpoint before issuing fresh latch-arm edges. The DAC's previous nonvolatile state is not a safe firmware default.
-5. Require renewed intentional arming after detach, voltage change, reset, service, overtemperature, sensor fault or programming-cable activity. Fault-handling must not auto-restart the TEC.
+5. Require renewed intentional arming after detach, voltage change, reset, service, overtemperature, sensor fault or programming-cable activity. Drive MCU_RUN low to clear the input-loss latch, wait for fault-clear propagation, requalify the input/sensors and then issue fresh RUN/ARM edges. Fault-handling must not auto-restart the TEC. Require AUXOFF assertion within a characterized startup timeout and disarm if it never asserts.
 6. Define fan/probe/watchdog fault policy and a safe hot-side cooling procedure; shared power shutdown cannot maintain fan cooldown.
 
 ## Placement intent
@@ -71,6 +73,34 @@ The USB-VBUS-driven hardware inhibit (`Q_USB_SERVICE`) and reset-to-fault diode 
 - Thermal/sensor circuitry stays below the switching stage; the fan converter has a distinct right-hand island.
 - Test points remain accessible rather than buried in courtyards. The mounting keepouts reserve screw-head space; actual enclosure/washer compatibility remains unverified.
 - Component-to-component envelopes are checked with authentic courtyards and explicit generic-passive courtyards. Reference labels are intentionally mostly omitted from board silkscreen; `placement.csv` and the schematic are the assembly-review reference.
+
+### LT3741 placement revision
+
+U2 is now at (23.5, 25.5) mm. Its bootstrap, sense filter, gate resistors,
+local bypass and compensation parts are clustered around their corresponding
+pins; the ceramic input bank sits closer to the half bridge. Q20/Q21, L2,
+the current shunt and the TEC terminal retain their locations and connections.
+
+These are straight-line distances between actual connected pad centres,
+compared with commit `b5f3e20`, not routed trace lengths:
+
+| Connection | Before (mm) | After (mm) |
+|---|---:|---:|
+| CBOOT (U2.19) → C20.1 | 11.01 | 2.10 |
+| SW (U2.18) → C20.2 | 8.92 | 3.17 |
+| VCC_INT (U2.1) → 100 nF C22.1 | 6.35 | 2.00 |
+| SENSE+ (U2.11) → C32.1 | 11.06 | 2.10 |
+| SENSE− (U2.12) → C32.2 | 11.09 | 2.13 |
+| High-gate path through R21, sum of two legs | 10.34 | 4.18 |
+| Q20 drain → input ceramic C25.1 | 7.88 | 6.06 |
+| Q21 source → input ceramic C25.2 | 9.26 | 6.04 |
+
+The low-gate resistor-to-FET leg increases from 1.95 to 2.41 mm, while the
+complete two-leg low-gate path decreases from 7.53 to 5.64 mm. Shunt-to-controller
+separation remains approximately 27.1/31.1 mm. This placement still needs
+dedicated Kelvin routing from the shunt, a compact power-current
+return, local ground vias and a routed switching-loop/thermal review. Pad
+proximity alone does not establish converter stability or EMI performance.
 
 ## Remaining release gates
 

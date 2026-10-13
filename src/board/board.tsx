@@ -9,6 +9,7 @@ import { positionSchematic, schematicFor, schematicSheets, sheetFor } from "./sc
 import { PowerAndUsb } from "./power-and-usb"
 import { Processor } from "./processor"
 import { UsbDataPath } from "./usb-data-path"
+import { InputLossInterlock } from "./input-loss-interlock"
 
 const partsEngine: NonNullable<BoardProps["partsEngine"]> = {
   findPart: ({ sourceComponent }) => "manufacturer_part_number" in sourceComponent && sourceComponent.manufacturer_part_number === "TYPE-C-31-M-12" ? { jlcpcb: ["C165948"] } : {},
@@ -38,6 +39,7 @@ export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDi
       </>}
       <schematicsection name={name + "_ACTIVE"} />
       <schematicsection name={name + "_PASSIVE"} />
+      {name === "SAFE" && <schematicsection name="SAFE_INPUT_LOSS" />}
       {(name === "PD" || name === "USB") && <schematicsection name={name + "_NEW"} />}
       {name === "MCU" && <>
         <schematicsection name="MCU_CORE" />
@@ -52,6 +54,7 @@ export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDi
     {positionSchematic(PowerAndUsb())}
     {positionSchematic(Processor())}
     {positionSchematic(UsbDataPath())}
+    {positionSchematic(InputLossInterlock())}
     {[[-49, 36], [49, 36], [-49, -36], [49, -36]].map(([pcbX, pcbY], index) => <Fragment key={index}><hole name={"H" + (index + 1)} diameter={3.2} pcbX={pcbX} pcbY={pcbY} />{createElement("keepout", { shape: "circle", radius: 4, pcbX, pcbY, layers: ["top", "inner1", "inner2", "bottom"] })}</Fragment>)}
     <group name="LEGEND" pcbStyle={{ silkscreenTextVisibility: "visible" }}>
     <silkscreentext text="PD POWER" pcbX={-48} pcbY={32} fontSize={1.5} />
