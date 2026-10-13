@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, test } from "bun:test"
-import { Circuit } from "@tscircuit/core"
+import { Circuit } from "tscircuit"
 import { InputLossInterlock } from "../src/board/input-loss-interlock"
 import { positionSchematic } from "../src/board/schematic"
 
@@ -17,7 +17,7 @@ beforeAll(async () => {
   const nets = records.filter(item => item.type === "source_net")
   devices = records.filter(item => item.type === "source_component").map(component => ({
     name: component.name!, mpn: "manufacturer_part_number" in component ? component.manufacturer_part_number ?? "" : "",
-    pin: Object.fromEntries(records.filter(item => item.type === "source_port" && item.source_component_id === component.source_component_id)
+    pin: Object.fromEntries(records.filter(item => item.type === "source_port").filter(port => port.source_component_id === component.source_component_id)
       .map(port => [port.pin_number!, nets.find(net => net.subcircuit_connectivity_map_key === port.subcircuit_connectivity_map_key)?.name ?? "NC"])),
   }))
 }, 30000)

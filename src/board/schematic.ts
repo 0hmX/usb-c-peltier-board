@@ -4,7 +4,6 @@ import { revisedPlacements } from "./layout"
 import { passiveFootprint } from "./passive-footprint"
 import { schematicRefinements } from "./schematic-refinements"
 import { passiveCadModel } from "./cad-models"
-import { withPortableCadModels } from "./resolve-cad-models"
 
 export const schematicSheets = [
   ["PD", "01 · USB-C PD power and voltage qualification"],
@@ -59,7 +58,7 @@ export function positionSchematic(node: ReactNode): ReactNode {
     if (!isValidElement<Record<string, any>>(child)) return child
     const props = child.props
     const pose = revisedPlacements[props.name]
-    return withPortableCadModels(cloneElement(child, {
+    return cloneElement(child, {
       ...(props.schSheetName ? sheetCoordinates(props.schSheetName, props.schX ?? 0, props.schY ?? 0) : {}),
       ...(props.name === "U_MCU" ? { ...sheetCoordinates("MCU", -10, 7), schWidth: 11, schHeight: 8 } : {}),
       ...(props.name === "U_PD" ? { schWidth: 2.6, schHeight: 1.8 } : {}),
@@ -68,6 +67,6 @@ export function positionSchematic(node: ReactNode): ReactNode {
       ...(typeof props.footprint === "string" && ["resistor", "capacitor"].includes(String(child.type)) && passiveFootprint(props.footprint)
         ? { footprint: passiveFootprint(props.footprint), cadModel: props.cadModel ?? passiveCadModel(String(child.type), props.footprint) } : {}),
       ...(props.children ? { children: positionSchematic(props.children) } : {}),
-    }))
+    })
   })
 }

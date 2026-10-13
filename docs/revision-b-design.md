@@ -4,8 +4,6 @@
 
 Placement and electrically connected schematic only. Not fabricated, simulated or bench tested. This review makes no USB-IF, thermal, EMC or manufacturing-compliance claim. The 110 × 85 mm outline is a proposed review form factor, not an enclosure constraint supplied by the user.
 
-Geometric placement DRC reports zero errors and warnings. Schematic and PCB placement checks report no issues. Component orientations account for the PCB analyzer's connection-distance suggestions. The resulting analysis is recorded in `review/placement-check.txt`.
-
 ## PD / MCU architecture
 
 CH224K pin mapping: VDD=1, CFG2=2, CFG3=3, DP=4, DM=5, CC2=6, CC1=7, VBUS=8, CFG1=9, active-low PG=10, exposed ground=11. Its local D+/D− pins are shorted; the PD receptacle's data contacts are intentionally unconnected. VDD has a 1 kΩ, 0.75 W series resistor and local bypass; VBUS sensing uses a separate 10 kΩ resistor.

@@ -1,4 +1,4 @@
-import { assembly } from "@tscircuit/core"
+import { assembly } from "tscircuit"
 import { DualUsbPeltierBoard } from "./src/board/board"
 import { MechanicalAssembly } from "./src/board/mechanical-assembly"
 

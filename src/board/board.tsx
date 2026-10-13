@@ -1,27 +1,17 @@
 import { Fragment, createElement } from "react"
-import type { BoardProps } from "@tscircuit/props"
-import { boardLayoutProps } from "../legacy/layout"
-import { supplierPartsEngine } from "../parts/supplier-parts-engine"
-import supplierFootprints from "../parts/supplier-footprints.json"
+import { boardLayoutProps, placementFor } from "./layout"
 import { RetainedPart, retainedComponents } from "./retained"
-import { boardDimensions, placementFor } from "./layout"
 import { positionSchematic, schematicFor, schematicSheets, sheetFor } from "./schematic"
 import { PowerAndUsb } from "./power-and-usb"
 import { Processor } from "./processor"
 import { UsbDataPath } from "./usb-data-path"
 import { InputLossInterlock } from "./input-loss-interlock"
 
-const partsEngine: NonNullable<BoardProps["partsEngine"]> = {
-  findPart: ({ sourceComponent }) => "manufacturer_part_number" in sourceComponent && sourceComponent.manufacturer_part_number === "TYPE-C-31-M-12" ? { jlcpcb: ["C165948"] } : {},
-  fetchPartCircuitJson: args => args.supplierPartNumber && args.supplierPartNumber in supplierFootprints
-    ? supplierPartsEngine.fetchPartCircuitJson!(args) : [],
-}
-
 const namedNets = [...new Set(retainedComponents.flatMap(item => Object.values(item.connections)).map(selector => selector.slice(4)))].filter(name => name !== "GND")
 
 export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
-  return <board {...boardLayoutProps} {...boardDimensions} title="RP2040 + CH224K dual-USB Peltier controller · placement review"
-    routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled} partsEngine={partsEngine} schLayout={{ layoutMode: "none" }}
+  return <board {...boardLayoutProps} title="RP2040 + CH224K dual-USB Peltier controller · placement review"
+    routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled} schLayout={{ layoutMode: "none" }}
     schTraceAutoLabelEnabled schMaxTraceDistance={0.25} pcbStyle={{ silkscreenTextVisibility: "hidden" }}>
     <net name="GND" isGroundNet />
     {namedNets.map(name => <Fragment key={name}><net name={name} /></Fragment>)}

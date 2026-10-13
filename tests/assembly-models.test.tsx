@@ -21,7 +21,7 @@ describe("assembly CAD models", () => {
     const [capacitor] = Children.toArray(positionSchematic(<capacitor name="C_TEST" capacitance="100nF" footprint="0402" />))
     expect(isValidElement(capacitor)).toBe(true)
     if (!isValidElement<Record<string, unknown>>(capacitor)) throw new Error("Missing capacitor")
-    expect((capacitor.props.cadModel as { glbUrl: string }).glbUrl).toBeTruthy()
+    expect((capacitor.props.cadModel as { props: { model: string } }).props.model).toBe("cap0402")
     expect(isValidElement(capacitor.props.footprint)).toBe(true)
   })
 
