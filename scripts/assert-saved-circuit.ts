@@ -1,6 +1,6 @@
 import { deepStrictEqual, equal, match, ok } from "node:assert/strict"
 import { guessCableInsertCenter } from "@tscircuit/infer-cable-insertion-point"
-import saved from "../captured-pcb/circuit.json"
+import saved from "../archive/captured-pcb/circuit.json"
 import { assertSchematicParity, assertNoDiagnostics, sourceConnectivity, type Element } from "./schematic-parity"
 
 export function canonical(value: unknown): unknown {

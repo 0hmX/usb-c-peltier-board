@@ -1,6 +1,6 @@
 import {PrimitiveComponent, type Board, type Port, type RootCircuit} from "@tscircuit/core"
 import type {CircuitJson} from "circuit-json"
-import {tps25947CornerPortAnchors} from "./parts/C3662799"
+import {tps25947CornerPortAnchors} from "../parts/C3662799"
 
 type Point={x:number;y:number}
 export type PortAnchorCorrection={reference:string;jlcpcbPartNumber:string;pin:number;

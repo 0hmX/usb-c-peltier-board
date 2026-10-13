@@ -3,8 +3,8 @@ import hashlib
 import json
 import shutil
 
-root = Path(__file__).resolve().parent
-captured = root / '.captured-runtime'
+root = Path(__file__).resolve().parent.parent
+captured = root / 'archive/runtime'
 manifest = json.loads((captured / 'manifest.json').read_text())
 records = manifest['runtimeManifest']
 assert len(records) == 6

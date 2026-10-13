@@ -11,7 +11,13 @@ The default `index.tsx` builds a **110 × 85 mm, four-layer** board with:
 - HOT/COLD and fan use side-entry JST SH connectors.
 - Retained LT3741 current-controlled TEC stage, protected input, thermal interlocks, fail-off latches, fan circuit and test access.
 
-The standard connector helpers are included as a connector-only snapshot of v0.8.0 in `src/revision/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
+The standard connector helpers are included as a connector-only snapshot of v0.8.0 in `src/board/parts/standard-jst-programmer.js`. This avoids the upstream full-programmer module's unrelated `fanoutTracePath` initialization, which fails in the browser evaluator's bundled props version. Geometry, pin labels and supplier CAD are unchanged and compared with the installed module in tests; hashes and provenance accompany the snapshot. Both source entry points are also tested with registry/CDN loading unavailable.
+
+## Repository layout
+
+`src/board/` contains Revision B; `src/legacy/` contains the original board and routing; `src/parts/` contains shared supplier parts and `imported/` components. Root entry points are `index.tsx`, `assembly.tsx` and `regenerate.tsx`. Build/export tools live in `scripts/`, regression tests in `tests/`, design notes in `docs/`, and current previews in `review/`.
+
+Historical captures, routing reviews and publication checks live under `archive/` in their original directory names. Publication manifests are in `archive/publication/`; captured runtime files are in `archive/runtime/` and `archive/runtime.zip`. These records retain their original bytes, hashes and historical paths. To restore that runtime after installing dependencies, run `python3 scripts/restore-captured-runtime.py` from the repository root.
 
 ## Review the result
 
@@ -53,7 +59,7 @@ bun run dev
 
 Geometric DRC, schematic placement and [PCB placement analysis](review/placement-check.txt) pass with no placement issues after correcting passive orientations. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
 
-PCB coordinates are explicitly editable in `src/revision/clearance-placements.ts`; schematic refinements are in `src/revision/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
+PCB coordinates are explicitly editable in `src/board/clearance-placements.ts`; schematic refinements are in `src/board/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
 
 ## Power and service behavior
 
@@ -71,4 +77,4 @@ See [design notes and open qualifications](docs/revision-b-design.md) and [exper
 - [RP2040 motor-controller reference](https://tscircuit.com/imrishabh18/rp2040-motor-controller), v1.0.42.
 - [Standard JST programmer](https://tscircuit.com/tscircuit/standard-jst-programmer), v0.8.0, installed via the tscircuit registry.
 
-The earlier routed single-USB/STM32/STUSB4500 source is preserved in `legacy.tsx` and `regenerate.tsx`; its saved capture remains in `captured-pcb/`. [Historical documentation](docs/legacy-readme.md) describes that revision only. Its routing measurements, electrical checks and assembly exports do **not** apply to Revision B. No fabrication files or orders are generated for this unrouted design.
+The earlier routed single-USB/STM32/STUSB4500 source is preserved in `src/legacy/board.tsx` and `regenerate.tsx`; its saved capture remains in `archive/captured-pcb/`. [Historical documentation](docs/legacy-readme.md) describes that revision only. Its routing measurements, electrical checks and assembly exports do **not** apply to Revision B. No fabrication files or orders are generated for this unrouted design.

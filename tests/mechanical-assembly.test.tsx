@@ -4,11 +4,11 @@ import { CircuitRunner } from "@tscircuit/eval"
 import { Children, isValidElement } from "react"
 import { convertCircuitJsonTo3D, loadJscadPlan } from "circuit-json-to-gltf"
 import PeltierAssembly from "../assembly"
-import { DualUsbPeltierBoard } from "../src/revision/board"
+import { DualUsbPeltierBoard } from "../src/board/board"
 import {
   conceptWires, MechanicalAssembly, mechanicalCadCount, mechanicalConcept,
   mechanicalPartNames, mechanicalParts,
-} from "../src/revision/mechanical-assembly"
+} from "../src/board/mechanical-assembly"
 
 function nativeBounds(name: string) {
   const component = mechanicalParts.find(part => part.name === name)!
@@ -161,7 +161,7 @@ describe("native full-device mechanical CONCEPT", () => {
   }, 120000)
 
   test("published source evaluates all local JSCAD parts through CircuitRunner without CDN loading", async () => {
-    const files = ["assembly.tsx", "package.json", "tscircuit.config.json", "tscircuit.config.ts", ...new Bun.Glob("{src,imports}/**/*.{ts,tsx,js,json}").scanSync(".")]
+    const files = ["assembly.tsx", "package.json", "tscircuit.config.json", "tscircuit.config.ts", ...new Bun.Glob("src/**/*.{ts,tsx,js,json}").scanSync(".")]
     const fsMap = Object.fromEntries(await Promise.all(files.map(async file => [file, await Bun.file(file).text()])))
     const fetchMock = spyOn(globalThis, "fetch").mockImplementation(Object.assign(async () => { throw new Error("Published mechanical assembly must not fetch remote code") }, { preconnect: globalThis.fetch.preconnect }))
     const runner = new CircuitRunner()

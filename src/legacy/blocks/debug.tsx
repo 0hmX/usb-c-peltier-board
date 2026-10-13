@@ -1,7 +1,7 @@
 import React from "react"
-import { SchmittBuffer, R, C } from "../parts"
-import { LTST_C190KGKT as GreenLed } from "../parts/C125094"
-import { LTST_C190KRKT as RedLed } from "../parts/C94869"
+import { SchmittBuffer, R, C } from "../../parts"
+import { LTST_C190KGKT as GreenLed } from "../../parts/C125094"
+import { LTST_C190KRKT as RedLed } from "../../parts/C94869"
 import { debugRailIndicators, debugStatusIndicators, debugTestPoints, debugGroundTestPoints } from "./debug-data"
 import { attachLogicSupplyInner2Port } from "../logic-supply-links"
 

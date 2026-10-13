@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import { C, Npn, R, Stusb4500, Tps259470, TwoN7002, UsbC } from "../parts"
+import { C, Npn, R, Stusb4500, Tps259470, TwoN7002, UsbC } from "../../parts"
 import { attachLogicSupplyInner2Port } from "../logic-supply-links"
 import { attachSource22ExistingViaLayers, source22SameOwnedPdGroundTraceProps, source22SameOwnedPdGroundViaProps } from "../source22-routes"
 

@@ -2,7 +2,7 @@ import {
   Stm32, Mcp4725, Lmv393, FaultLatch, VoltageSupervisor,
   Ap63203, Tps54202, Npn, Pnp, Bat54a, LogicInductor, FanInductor,
   FanConnector, NtcConnector, SchmittBuffer, R, C,
-} from "../parts"
+} from "../../parts"
 import { attachLogicSupplyInner2Port } from "../logic-supply-links"
 
 type PassiveRow = [name: string, value: string, x: number, y: number, a: string, b: string, rotation?: number]

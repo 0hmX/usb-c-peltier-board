@@ -5,7 +5,7 @@ import { createHash } from "node:crypto"
 import * as core from "@tscircuit/core"
 import { CircuitRunner } from "@tscircuit/eval"
 import { runAllSchematicChecks } from "@tscircuit/checks"
-import saved from "../captured-pcb/circuit.json"
+import saved from "../archive/captured-pcb/circuit.json"
 import { assertSavedCircuit, assertSavedPrePourSnapshot, expectedSavedCircuit } from "./assert-saved-circuit"
 import { assertSchematicParity, sourceConnectivity } from "./schematic-parity"
 

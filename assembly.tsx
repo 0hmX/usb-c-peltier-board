@@ -1,6 +1,6 @@
 import { assembly } from "@tscircuit/core"
-import { DualUsbPeltierBoard } from "./src/revision/board"
-import { MechanicalAssembly } from "./src/revision/mechanical-assembly"
+import { DualUsbPeltierBoard } from "./src/board/board"
+import { MechanicalAssembly } from "./src/board/mechanical-assembly"
 
 export default function PeltierAssembly() {
   return <assembly.device name="DUAL_USB_PELTIER_CONCEPT">

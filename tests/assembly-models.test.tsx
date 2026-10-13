@@ -1,10 +1,10 @@
 import { describe, expect, test } from "bun:test"
 import { Children, isValidElement } from "react"
 import { loadJscadPlan } from "circuit-json-to-gltf"
-import { StandardUsbC } from "../src/revision/parts/StandardUsbC"
-import { passiveCadModel, tecInductorCadModel } from "../src/revision/cad-models"
-import { RetainedPart, retainedComponents } from "../src/revision/retained"
-import { positionSchematic } from "../src/revision/schematic"
+import { StandardUsbC } from "../src/board/parts/StandardUsbC"
+import { passiveCadModel, tecInductorCadModel } from "../src/board/cad-models"
+import { RetainedPart, retainedComponents } from "../src/board/retained"
+import { positionSchematic } from "../src/board/schematic"
 
 describe("assembly CAD models", () => {
   test("standard USB-C forwards the supplier model and its orientation", () => {

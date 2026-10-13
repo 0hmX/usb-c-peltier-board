@@ -2,8 +2,8 @@ import { describe, expect, spyOn, test } from "bun:test"
 import { CircuitRunner } from "@tscircuit/eval"
 import type { ReactElement } from "react"
 import * as installed from "@tsci/tscircuit.standard-jst-programmer"
-import * as portable from "../src/revision/parts/standard-jst-programmer.js"
-import { mechanicalCadCount, mechanicalPartNames } from "../src/revision/mechanical-assembly"
+import * as portable from "../src/board/parts/standard-jst-programmer.js"
+import { mechanicalCadCount, mechanicalPartNames } from "../src/board/mechanical-assembly"
 
 function connectorProps(element: ReactElement<any>): unknown {
   let resolved = element
@@ -25,7 +25,7 @@ describe("portable standard connector exports", () => {
   for (const entrypoint of ["index.tsx", "assembly.tsx"]) {
     test(`${entrypoint} evaluates from published source without registry/CDN imports`, async () => {
       const files = ["index.tsx", "assembly.tsx", "package.json", "tscircuit.config.json", "tscircuit.config.ts",
-        ...new Bun.Glob("{src,imports}/**/*.{ts,tsx,js,json}").scanSync(".")]
+        ...new Bun.Glob("src/**/*.{ts,tsx,js,json}").scanSync(".")]
       const fsMap = Object.fromEntries(await Promise.all(files.map(async file => [file, await Bun.file(file).text()])))
       const fetchMock = spyOn(globalThis, "fetch").mockImplementation(async () => {
         throw new Error("Source evaluation must not fetch remote code or supplier footprints")

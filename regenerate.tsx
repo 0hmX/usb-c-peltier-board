@@ -1,5 +1,5 @@
-import TecUsbCBoard from "./legacy"
-import { PhasedSignalRouting, RegeneratedBusRouting } from "./src/regeneration-routing"
+import TecUsbCBoard from "./src/legacy/board"
+import { PhasedSignalRouting, RegeneratedBusRouting } from "./src/legacy/regeneration-routing"
 
 export default function RegenerateTecUsbCBoard() {
   return TecUsbCBoard({

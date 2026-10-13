@@ -1,8 +1,8 @@
 import { describe, expect, test } from "bun:test"
 import { Circuit } from "@tscircuit/core"
 import { StandardJstSwdSide, StandardJstUartSide } from "@tsci/tscircuit.standard-jst-programmer"
-import { StandardJstThermistorSide } from "../src/revision/parts/StandardJstThermistorSide"
-import { StandardJstFanSide } from "../src/revision/parts/StandardJstFanSide"
+import { StandardJstThermistorSide } from "../src/board/parts/StandardJstThermistorSide"
+import { StandardJstFanSide } from "../src/board/parts/StandardJstFanSide"
 
 async function fixture() {
   const circuit = new Circuit()

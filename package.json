@@ -18,13 +18,6 @@
     "dev": "bun run node_modules/tscircuit/cli.mjs dev index.tsx",
     "check:style": "bun run node_modules/tscircuit/cli.mjs check pcb-style dist/index/circuit.json --json --svg dist/index/pcb-style.svg",
     "check:shorts": "bun run node_modules/tscircuit/cli.mjs check shorts dist/index/circuit.json --mode gerber --layer all",
-    "export:jlcpcb": "bun run scripts/export-manufacturing.ts",
-    "export:kicad": "bun run scripts/export-kicad.ts",
-    "check:routed": "bun run scripts/check-routed-board.ts",
-    "check:guarded": "bun run scripts/test-guarded-router.ts",
-    "prepare:assembly": "bun run scripts/prepare-assembly.ts",
-    "export:previews": "bun run scripts/export-previews.ts",
-    "check:physical": "bun run scripts/check-physical.ts",
     "build:regenerate": "bun run scripts/build-with-watchdog.ts",
     "build:regenerate:cli": "bun run node_modules/tscircuit/cli.mjs build regenerate.tsx --svgs --autorouter-debug --autorouter-dump-srj all --autorouter-timeout 6m",
     "check:saved-routes": "bun run scripts/check-saved-routes.tsx && bun run scripts/check-source-evaluator.ts"

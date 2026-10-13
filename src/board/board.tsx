@@ -1,6 +1,6 @@
 import { Fragment, createElement } from "react"
 import type { BoardProps } from "@tscircuit/props"
-import { boardLayoutProps } from "../layout"
+import { boardLayoutProps } from "../legacy/layout"
 import { supplierPartsEngine } from "../parts/supplier-parts-engine"
 import supplierFootprints from "../parts/supplier-footprints.json"
 import { RetainedPart, retainedComponents } from "./retained"

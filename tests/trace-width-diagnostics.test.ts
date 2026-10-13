@@ -2,11 +2,11 @@ import { describe, expect, test } from "bun:test"
 import { readFileSync } from "node:fs"
 import { RootCircuit } from "@tscircuit/core"
 import type { CircuitJson } from "circuit-json"
-import { installTraceWidthDiagnostics } from "../src/trace-width-diagnostics"
+import { installTraceWidthDiagnostics } from "../src/legacy/trace-width-diagnostics"
 
 // Historical copper is the current board's preserved routing and retains the
 // 44 native attribution warnings, so this fixture survives a corrected build.
-const saved: CircuitJson = JSON.parse(readFileSync(new URL("../captured-pcb/circuit.json", import.meta.url), "utf8"))
+const saved: CircuitJson = JSON.parse(readFileSync(new URL("../archive/captured-pcb/circuit.json", import.meta.url), "utf8"))
 const clone = () => structuredClone(saved)
 const event = { effectName: "board:drc-checks", phase: "PcbDesignRuleChecks", asyncEffectId: "fixture:drc" }
 const finishDrc = (circuit: RootCircuit) => {

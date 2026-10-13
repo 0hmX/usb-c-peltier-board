@@ -9,8 +9,8 @@ import { CircuitRunner } from "@tscircuit/eval"
 import { COORDINATE_TRANSFORMS, loadOBJ } from "circuit-json-to-gltf"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
 import { bundleCadAssets, validateEmbeddedGlb, validateSupplierObj, type BundledCadAssets } from "../scripts/bundle-cad-assets"
-import { canonicalCadUrl, portableCadModel, portablePackageCadModel } from "../src/revision/portable-cad"
-import bundledJson from "../src/revision/bundled-cad-assets.json"
+import { canonicalCadUrl, portableCadModel, portablePackageCadModel } from "../src/board/portable-cad"
+import bundledJson from "../src/board/bundled-cad-assets.json"
 
 const bundle = bundledJson as BundledCadAssets
 const supplierUrl = Object.keys(bundle.sources).find(url => url.includes("C160403.obj"))!
@@ -143,9 +143,9 @@ describe("portable CAD assets", () => {
 
   test("published source evaluates at different browser origins without network imports or STEP", async () => {
     const fsMap = {
-      "src/revision/portable-cad.ts": await Bun.file("src/revision/portable-cad.ts").text(),
-      "src/revision/bundled-cad-assets.json": await Bun.file("src/revision/bundled-cad-assets.json").text(),
-      "fixture.tsx": `import { portableCadModel } from './src/revision/portable-cad'
+      "src/board/portable-cad.ts": await Bun.file("src/board/portable-cad.ts").text(),
+      "src/board/bundled-cad-assets.json": await Bun.file("src/board/bundled-cad-assets.json").text(),
+      "fixture.tsx": `import { portableCadModel } from './src/board/portable-cad'
         export default () => <board width={60} height={40} routingDisabled partsEngineDisabled>
           <resistor name="R_SUPPLIER" resistance="1k" footprint="0402" pcbX={-15} cadModel={portableCadModel(${JSON.stringify({ objUrl: supplierUrl, stepUrl: "https://modelcdn.tscircuit.com/unused.step", ...poses })})} />
           {${JSON.stringify(Object.keys(bundle.packages))}.map((model, index) => <resistor name={'R_PACKAGE_' + index} key={model} resistance="1k" footprint="0402" pcbX={index * 5 - 10} pcbY={8} layer={index % 2 ? 'bottom' : 'top'} cadModel={portableCadModel(<cadmodel model={model} />)} />)}

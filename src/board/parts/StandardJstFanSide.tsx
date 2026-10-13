@@ -1,6 +1,6 @@
 import type { ChipProps } from "@tscircuit/props"
 import { cloneElement } from "react"
-import { SM04B_SRSS_TB_LF__SN_ } from "../../../imports/SM04B_SRSS_TB_LF__SN_"
+import { SM04B_SRSS_TB_LF__SN_ } from "../../parts/imported/SM04B_SRSS_TB_LF__SN_"
 
 const pinLabels = {
   pin1: ["GND"],

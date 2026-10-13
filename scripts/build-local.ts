@@ -7,20 +7,20 @@ import { convertCircuitJsonToPcbSvg, convertCircuitJsonToStackedSchematicSheetsS
 import type { PlatformConfig } from "@tscircuit/props"
 import Board from "../regenerate"
 import { supplierOrientationCache } from "../src/parts/supplier-parts-engine"
-import { setSupplyRoutingAuditHook, type SupplyRoutingEvidence } from "../src/supply-router"
-import { setGuardedRoutingAuditHook,setGuardedRoutingInputAuditHook,setGuardedRoutingLifecycleAuditHook,createGuardedNativeRegionalRouter,createGuardedNativePolyRegionalRouter,guardedSolverNames,guardedSolverPreprocessing,guardedNativeSolverOptions,setGuardedCurrentBarrelProof,setGuardedSourceCopperProof,type GuardedRoutingEvidence,type GuardedRoutingInputEvidence,type GuardedRoutingLifecycleEvent } from "../src/guarded-router"
-import {installSupplierPortAnchors,verifySupplierPortAnchors}from"../src/component-port-anchors"
-import {GroundPlaneFanout} from "../src/bus-routing"
-import {RegeneratedBusRouting as BusRouting,PhasedSignalRouting} from "../src/regeneration-routing"
-import {sourceTerminalEscapePlans} from "../src/source-terminal-escapes"
-import {sourcePadConnectionPlans} from "../src/source-pad-connections"
+import { setSupplyRoutingAuditHook, type SupplyRoutingEvidence } from "../src/legacy/supply-router"
+import { setGuardedRoutingAuditHook,setGuardedRoutingInputAuditHook,setGuardedRoutingLifecycleAuditHook,createGuardedNativeRegionalRouter,createGuardedNativePolyRegionalRouter,guardedSolverNames,guardedSolverPreprocessing,guardedNativeSolverOptions,setGuardedCurrentBarrelProof,setGuardedSourceCopperProof,type GuardedRoutingEvidence,type GuardedRoutingInputEvidence,type GuardedRoutingLifecycleEvent } from "../src/legacy/guarded-router"
+import {installSupplierPortAnchors,verifySupplierPortAnchors}from"../src/legacy/component-port-anchors"
+import {GroundPlaneFanout} from "../src/legacy/bus-routing"
+import {RegeneratedBusRouting as BusRouting,PhasedSignalRouting} from "../src/legacy/regeneration-routing"
+import {sourceTerminalEscapePlans} from "../src/legacy/source-terminal-escapes"
+import {sourcePadConnectionPlans} from "../src/legacy/source-pad-connections"
 import {loadPhaseCheckpoint,verifyLivePhaseReplay,selectPrefixPhases,verifyPrefixRoutingEvent,declaredRoutingPlan} from "./phase-checkpoints"
 import {captureInitialCopper,verifyManualPreloads,verifyPreservedManualCopper,type InitialCopper} from "./preserved-manual-copper"
 import {inspectSourcePreflight} from "./source-preflight"
 import {parsePhaseTimeoutMs} from "./build-with-watchdog"
 import {loadSourceGroundMaterialization} from "./source-ground-materialization-proof"
 import {bindPhase6RoutingRegion,phase6RoutingRegion} from "./phase6-region-override"
-import {restrictRoutingBounds} from "../src/regional-routing"
+import {restrictRoutingBounds} from "../src/legacy/regional-routing"
 
 const option=(name:string,fallback:string)=>{
   const index=process.argv.indexOf(name)
@@ -58,7 +58,7 @@ const writeHeartbeat=(state:string,event?:AutoroutingStartEvent)=>{
 writeHeartbeat("INITIAL_RENDER")
 const sha256=(text:string|Uint8Array)=>createHash("sha256").update(text).digest("hex")
 const captureSource=async()=>{
-  const files=["index.tsx","regenerate.tsx","regenerate.config.ts","captured-pcb/circuit.json","tscircuit.config.ts","tsconfig.json","package.json","bun.lock","scripts/build-local.ts","scripts/build-with-watchdog.ts","scripts/phase-checkpoints.ts","scripts/preserved-manual-copper.ts","scripts/resolve-source-trace-endpoints.ts","scripts/source-ground-pad-copper.ts","scripts/source-trace-widths.ts","scripts/source-preflight.ts","scripts/source-ground-materialization-proof.ts","scripts/phase6-region-override.ts",...await Array.fromAsync(new Bun.Glob("src/**/*.{ts,tsx,json}").scan("."))].sort()
+  const files=["index.tsx","regenerate.tsx","regenerate.config.ts","archive/captured-pcb/circuit.json","tscircuit.config.ts","tsconfig.json","package.json","bun.lock","scripts/build-local.ts","scripts/build-with-watchdog.ts","scripts/phase-checkpoints.ts","scripts/preserved-manual-copper.ts","scripts/resolve-source-trace-endpoints.ts","scripts/source-ground-pad-copper.ts","scripts/source-trace-widths.ts","scripts/source-preflight.ts","scripts/source-ground-materialization-proof.ts","scripts/phase6-region-override.ts",...await Array.fromAsync(new Bun.Glob("src/**/*.{ts,tsx,json}").scan("."))].sort()
   return Promise.all(files.map(async file=>({file,sha256:sha256(await Bun.file(file).bytes())})))
 }
 const sourceManifest=await captureSource()
