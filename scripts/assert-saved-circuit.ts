@@ -160,6 +160,11 @@ function compare(actual: Element[], types?: string[], cli = false, allowSubset =
   const normalize = (elements: Element[], isActual: boolean) => elements.map(element => {
     const copy = isActual ? remap(element) as Element : { ...element }
     if (copy.type === "source_project_metadata") delete copy.source_project_metadata_id
+    // Native source-length calculations can differ by a floating-point ULP
+    // between JS runtimes. Compare this computed limit to 1e-12 mm precision;
+    // all copper coordinates, widths, via sizes and other fields stay exact.
+    if (copy.type === "source_trace" && typeof copy.max_length === "number")
+      copy.max_length = Number(copy.max_length.toFixed(12))
     return signature(copy)
   }).sort()
   if (cli) {

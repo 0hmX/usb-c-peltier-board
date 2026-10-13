@@ -48,12 +48,20 @@ const criticalConnections: Record<string, Record<string, string>> = {
   D_LOGIC_USB: { pin1: "LOGIC_VIN", pin2: "USB_PROG_5V" },
   R_USB_BLEED: { pin1: "USB_PROG_5V", pin2: "GND" },
   D_RESET_SAFE: { pin1: "MCU_NRST", pin2: "INPUT_FAULT_N" },
+  U_INPUT: { pin3: "INPUT_AUXOFF" },
+  U_AUX_BUFFER: { pin1: "INPUT_AUXOFF", pin2: "GND", pin3: "AUX_LOSS_RAW", pin4: "AUX_LOSS_CLK", pin5: "V3V3", pin6: "AUX_VALID" },
+  Q_AUX_INVERT: { pin1: "AUX_VALID", pin2: "GND", pin3: "AUX_LOSS_RAW" },
+  R_AUX_LOSS_PU: { pin1: "V3V3", pin2: "AUX_LOSS_RAW" },
+  U_AUX_LOSS_LATCH: { pin1: "AUX_LOSS_CLK", pin2: "V3V3", pin4: "GND", pin5: "INPUT_LOSS_LATCHED", pin6: "RUN_CLK", pin7: "V3V3", pin8: "V3V3" },
+  Q_AUX_FAULT: { pin1: "INPUT_LOSS_LATCHED", pin2: "GND", pin3: "INPUT_FAULT_N" },
+  C_AUX1: { pin1: "V3V3", pin2: "GND" },
+  C_AUX2: { pin1: "V3V3", pin2: "GND" },
 }
 for (const [name, connections] of Object.entries(criticalConnections)) {
   for (const [pin, expected] of Object.entries(connections)) checkPin(name, pin, expected)
 }
 requireCondition(new Set(allSourceComponents.map(item => item.name)).size === allSourceComponents.length, "Reference designators must be unique")
-requireCondition(sourceComponents.length === 269, "USB-C-only programming revision must contain 269 electrical PCB components")
+requireCondition(sourceComponents.length === 276, "Revision B with input-loss interlock must contain 276 electrical PCB components")
 for (const name of ["J_SWD", "J_UART", "J_SERVICE", "R_SWCLK", "R_SWDIO", "R_UART_TX", "R231"]) {
   requireCondition(!allSourceComponents.some(item => item.name === name), `${name} must not remain in the USB-C-only programming revision`)
 }

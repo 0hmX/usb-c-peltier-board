@@ -1,4 +1,6 @@
 export const schematicRefinements: Record<string, { schX?: number; schY?: number; schRotation?: number; schWidth?: number; schHeight?: number }> = {
+  C_AUX1: { schRotation: 270, schX: -2.4, schY: -19 },
+  C_AUX2: { schRotation: 270, schX: -0.8, schY: -19 },
   R201: {"schRotation":270},
   R203: {"schRotation":270},
   R204: {"schRotation":270},
