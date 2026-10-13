@@ -1,6 +1,7 @@
 /node_modules/
 /dist/
 /checks/
+/work/
 /.tscircuit/
 /.env
 /.env.*

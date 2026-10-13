@@ -21,7 +21,11 @@
     "build:regenerate": "bun run scripts/build-with-watchdog.ts",
     "build:regenerate:cli": "bun run node_modules/tscircuit/cli.mjs build regenerate.tsx --svgs --autorouter-debug --autorouter-dump-srj all --autorouter-timeout 6m",
     "check:saved-routes": "bun run scripts/check-saved-routes.tsx",
-    "check:source-evaluator": "bun run scripts/check-source-evaluator.ts"
+    "check:source-evaluator": "bun run scripts/check-source-evaluator.ts",
+    "route:revision-b": "bun run build:review && bun run scripts/route-revision-b.ts",
+    "build:routed": "bun run node_modules/tscircuit/cli.mjs build routed.tsx --pcb-svgs --pcb-png",
+    "check:routed": "bun run scripts/check-routed-revision-b.ts",
+    "export:routed": "bun run scripts/export-routing.ts"
   },
   "dependencies": {
     "@tsci/tscircuit.standard-jst-programmer": "^0.8.0",

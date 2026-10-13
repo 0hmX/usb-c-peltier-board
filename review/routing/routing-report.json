@@ -1,0 +1,6808 @@
+{
+  "status": "routing-in-progress",
+  "baselineSha256": "2daa5355775073a8cb65764a4a175ed574cffc767b3821857401661fd5d1c9b0",
+  "agents": 10,
+  "astraAgents": 3,
+  "planCount": 10,
+  "netCount": 135,
+  "plannedEdges": 408,
+  "routedEdges": 322,
+  "pendingEdges": 86,
+  "physicalTraceCount": 694,
+  "throughViaCount": 313,
+  "groundPorts": 191,
+  "groundPortsReachingInner1": 185,
+  "groundEscapedSelectors": [
+    "R_INPUT_OFF.pin2",
+    "R_INPUT_OV_BOTTOM.pin2",
+    "C_USB_IN.pin2",
+    "C_INPUT_DVDT.pin2",
+    "C_INPUT_OUT.pin2",
+    "U2.pin2",
+    "U2.pin7",
+    "U2.pin15",
+    "U2.pin16",
+    "U2.pin21",
+    "Q21.pin1",
+    "Q21.pin2",
+    "Q21.pin3",
+    "R24.pin2",
+    "C21.pin2",
+    "C41.pin2",
+    "C24.pin2",
+    "C25.pin2",
+    "C26.pin2",
+    "C27.pin2",
+    "C38.pin2",
+    "C39.pin2",
+    "C40.pin2",
+    "C28.pin2",
+    "C29.pin2",
+    "C30.pin2",
+    "C31.pin2",
+    "C33.pin2",
+    "R28.pin2",
+    "C34.pin2",
+    "C35.pin2",
+    "R30.pin2",
+    "R32.pin2",
+    "C36.pin2",
+    "R34.pin2",
+    "C37.pin2",
+    "Q23.pin2",
+    "R38.pin2",
+    "R40.pin2",
+    "U_TEC_MON.pin1",
+    "U_TEC_MON.pin2",
+    "U_TEC_MON.pin6",
+    "C43.pin2",
+    "C44.pin2",
+    "R45.pin2",
+    "J_TEC.pin2",
+    "U_LOGIC.pin4",
+    "U_LATCH.pin4",
+    "U_SUPERVISOR.pin1",
+    "U_INPUT_LATCH.pin4",
+    "Q_PD_LATCH.pin2",
+    "Q_FAULT_CLEAR.pin2",
+    "Q_INPUT_CLEAR.pin2",
+    "U_CLEAR_BUFFER.pin2",
+    "U_CLOCK_BUFFER.pin2",
+    "U_DAC.pin2",
+    "U_DAC.pin6",
+    "U_THERMAL.pin4",
+    "Q_FAN_PWM.pin2",
+    "J_FAN.pin1",
+    "J_HOT.pin2",
+    "J_COLD.pin2",
+    "R201.pin2",
+    "R203.pin2",
+    "R204.pin2",
+    "R205.pin2",
+    "R207.pin2",
+    "R213.pin2",
+    "R215.pin2",
+    "R217.pin2",
+    "R219.pin2",
+    "R223.pin2",
+    "R225.pin2",
+    "R226.pin2",
+    "R227.pin2",
+    "R229.pin2",
+    "R235.pin2",
+    "R236.pin2",
+    "R239.pin2",
+    "R240.pin2",
+    "R241.pin2",
+    "R242.pin2",
+    "R243.pin2",
+    "C200.pin2",
+    "C202.pin2",
+    "C206.pin2",
+    "C207.pin2",
+    "C208.pin2",
+    "C209.pin2",
+    "C210.pin2",
+    "C211.pin2",
+    "C212.pin2",
+    "C213.pin2",
+    "C215.pin2",
+    "C216.pin2",
+    "C217.pin2",
+    "C218.pin2",
+    "C219.pin2",
+    "C220.pin2",
+    "C222.pin2",
+    "C223.pin2",
+    "D501.pin1",
+    "D502.pin1",
+    "D503.pin1",
+    "D504.pin1",
+    "D505.pin1",
+    "D507.pin1",
+    "U_DBG1.pin2",
+    "U_DBG2.pin2",
+    "C_DBG1.pin2",
+    "C_DBG2.pin2",
+    "TPG1.pin1",
+    "TPG2.pin1",
+    "TPG3.pin1",
+    "TPG4.pin1",
+    "TPG5.pin1",
+    "TPG6.pin1",
+    "TPG7.pin1",
+    "TPG8.pin1",
+    "J_USB_PD.pin1",
+    "J_USB_PD.pin2",
+    "J_USB_PD.pin3",
+    "J_USB_PD.pin4",
+    "J_USB_PD.pin13",
+    "J_USB_PD.pin14",
+    "U_PD.pin11",
+    "C_CH_VDD.pin2",
+    "Q_PD_CFG1.pin2",
+    "Q_PD_CFG2.pin2",
+    "Q_PD_CFG3.pin2",
+    "U_PD_WINDOW.pin4",
+    "R_WINDOW_BOTTOM.pin2",
+    "R_UV_BOTTOM.pin2",
+    "R_OV_BOTTOM.pin2",
+    "R_PG_OFF.pin2",
+    "Q_PG_INHIBIT.pin2",
+    "C_PD_WINDOW.pin2",
+    "J_USB_PROG.pin1",
+    "J_USB_PROG.pin2",
+    "J_USB_PROG.pin3",
+    "J_USB_PROG.pin4",
+    "J_USB_PROG.pin13",
+    "J_USB_PROG.pin14",
+    "R_USB_CC1.pin2",
+    "R_USB_CC2.pin2",
+    "C_USB_PROG.pin2",
+    "R_USB_DETECT_BOTTOM.pin2",
+    "Q_USB_PRESENT.pin2",
+    "R_USB_PRESENT_OFF.pin2",
+    "R_USB_BLEED.pin2",
+    "Q_USB_SERVICE.pin2",
+    "U_MCU.pin19",
+    "U_MCU.pin57",
+    "U_FLASH.pin4",
+    "U_FLASH.pin9",
+    "C_FLASH.pin2",
+    "Y_MCU.pin4",
+    "Y_MCU.pin2",
+    "C_XIN.pin2",
+    "C_XOUT.pin2",
+    "C_IO1.pin2",
+    "C_IO2.pin2",
+    "C_IO3.pin2",
+    "C_IO4.pin2",
+    "C_IO5.pin2",
+    "C_IO6.pin2",
+    "C_VREG_IN.pin2",
+    "C_VREG_OUT.pin2",
+    "C_DVDD2.pin2",
+    "C_ADC_AVDD.pin2",
+    "C_MCU_BULK.pin2",
+    "SW_BOOT.pin3",
+    "SW_BOOT.pin4",
+    "SW_RESET.pin3",
+    "SW_RESET.pin4",
+    "U_USB_SWITCH.pin5",
+    "U_USB_SWITCH.pin9",
+    "U_USB_ESD.pin2",
+    "C_USB_SWITCH.pin2",
+    "U_AUX_BUFFER.pin2",
+    "Q_AUX_INVERT.pin2",
+    "U_AUX_LOSS_LATCH.pin4",
+    "Q_AUX_FAULT.pin2",
+    "C_AUX1.pin2",
+    "C_AUX2.pin2"
+  ],
+  "groundPlaneConnectivityVerified": false,
+  "groundPendingPorts": [
+    "U_INPUT.pin8",
+    "R_INPUT_ILIM.pin2",
+    "C22.pin2",
+    "U_FAN.pin1",
+    "C_USB_VDD.pin2",
+    "C_DVDD1.pin2"
+  ],
+  "routeLengthMm": 3763.420627704061,
+  "manufacturingAccepted": false,
+  "usbImpedanceQualified": false,
+  "kelvinSeparationQualified": false,
+  "routed": [
+    {
+      "net": "TEC_SW",
+      "from": "Q20.pin2",
+      "to": "Q20.pin1",
+      "width": 0.65,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Unite adjacent high-side source pads locally.",
+      "owner": "tec-power",
+      "length": 1.2699999999999996,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SW",
+      "from": "Q20.pin2",
+      "to": "Q20.pin3",
+      "width": 0.65,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Unite adjacent high-side source pads locally; do not encroach on gate pad4.",
+      "owner": "tec-power",
+      "length": 1.2699999999999996,
+      "vias": 0
+    },
+    {
+      "net": "FLASH_CS",
+      "from": "R_FLASH_CS.pin2",
+      "to": "R_BOOT.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "Existing 1k boot resistor branch; 1.953 mm direct distance.",
+      "owner": "mcu",
+      "length": 1.9525624189766635,
+      "vias": 0
+    },
+    {
+      "net": "TEC_HG",
+      "from": "U2.pin17",
+      "to": "R21.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Shortest fine-pad high-side gate-driver output.",
+      "owner": "tec-power",
+      "length": 2.0787616505987434,
+      "vias": 0
+    },
+    {
+      "net": "TEC_BOOT",
+      "from": "C20.pin1",
+      "to": "U2.pin19",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap capacitor to fine-pitch BOOT pin; preserve local BOOT/SW loop.",
+      "owner": "tec-power",
+      "length": 2.097295878029615,
+      "vias": 0
+    },
+    {
+      "net": "TEC_HIGH_GATE",
+      "from": "R21.pin2",
+      "to": "Q20.pin4",
+      "width": 0.3,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Short gate-resistor-to-high-side-gate path; no via if possible.",
+      "owner": "tec-power",
+      "length": 2.0974463640341288,
+      "vias": 0
+    },
+    {
+      "net": "XOUT_CRYSTAL",
+      "from": "Y_MCU.pin3",
+      "to": "C_XOUT.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "Load capacitor branches at crystal pin3; 2.127 mm direct distance.",
+      "owner": "mcu",
+      "length": 2.1271412989260967,
+      "vias": 0
+    },
+    {
+      "net": "XOUT_CRYSTAL",
+      "from": "R_XOUT.pin2",
+      "to": "Y_MCU.pin3",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "Resistor-to-crystal segment; 2.246 mm direct distance.",
+      "owner": "mcu",
+      "length": 2.2461186312385655,
+      "vias": 0
+    },
+    {
+      "net": "TEC_LOW_GATE",
+      "from": "R22.pin2",
+      "to": "Q21.pin4",
+      "width": 0.3,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Short gate-resistor-to-low-side-gate path; no via if possible.",
+      "owner": "tec-power",
+      "length": 2.4074428861345787,
+      "vias": 0
+    },
+    {
+      "net": "TEC_LG",
+      "from": "U2.pin20",
+      "to": "R22.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Shortest fine-pad low-side gate-driver output.",
+      "owner": "tec-power",
+      "length": 5.180240709194928,
+      "vias": 0
+    },
+    {
+      "net": "FLASH_CS",
+      "from": "U_FLASH.pin1",
+      "to": "R_FLASH_CS.pin2",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "note": "Existing 10k select pullup branch; 3.298 mm direct distance.",
+      "owner": "mcu",
+      "length": 3.297877181452333,
+      "vias": 0
+    },
+    {
+      "net": "XIN",
+      "from": "Y_MCU.pin1",
+      "to": "C_XIN.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "Load capacitor branches at crystal pin1; 3.398 mm direct distance.",
+      "owner": "mcu",
+      "length": 4.699937000000002,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SW",
+      "from": "Q20.pin2",
+      "to": "Q21.pin5",
+      "width": 1.5,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Shortest high-side source to low-side drain commutation path; broaden beyond source pad neck.",
+      "owner": "tec-power",
+      "length": 4.316957840887492,
+      "vias": 0
+    },
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "from": "L2.pin2",
+      "to": "R20.pin1",
+      "width": 2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Full output current to shunt; taper into 1.65 mm shunt terminal.",
+      "owner": "tec-power",
+      "length": 4.378815479099347,
+      "vias": 0
+    },
+    {
+      "net": "USB_DP_MCU",
+      "from": "U_MCU.pin47",
+      "to": "R_USB_DP.pin2",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "maxLength": 12,
+      "note": "Northward MCU escape; approach resistor pin2 from north/side, never cross pin1. Pair with USB_DM_MCU; compare total DP/DM lengths across all three net segments.",
+      "owner": "usb-routing-astra-1",
+      "length": 5.351798499697374,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C26.pin1",
+      "to": "Q20.pin5",
+      "width": 1.5,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Critical commutation supply: ceramic directly to high-side drain, shortest top-layer path.",
+      "owner": "tec-power",
+      "length": 5.360462316815594,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "Q20.pin5",
+      "to": "C25.pin1",
+      "width": 1.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Second close ceramic joins directly at drain; minimize high di/dt loop with capacitor ground and Q21 source.",
+      "owner": "tec-power",
+      "length": 6.119566796992105,
+      "vias": 0
+    },
+    {
+      "net": "FLASH_SD2",
+      "from": "U_MCU.pin54",
+      "to": "U_FLASH.pin3",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 13,
+      "note": "QSPI SD2/WP; 6.141 mm direct distance.",
+      "owner": "mcu",
+      "length": 6.33121296093214,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "R20.pin2",
+      "to": "J_TEC.pin1",
+      "width": 2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Main shunt-to-TEC terminal current corridor; 1.65 mm pad neck widens immediately.",
+      "owner": "tec-power",
+      "length": 6.4946959128218635,
+      "vias": 0
+    },
+    {
+      "net": "FLASH_SD0",
+      "from": "U_MCU.pin53",
+      "to": "U_FLASH.pin5",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 16,
+      "note": "QSPI SD0/DI; 9.122 mm direct distance.",
+      "owner": "mcu",
+      "length": 9.953103457865792,
+      "vias": 0
+    },
+    {
+      "net": "FLASH_SCLK",
+      "from": "U_MCU.pin52",
+      "to": "U_FLASH.pin6",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 16,
+      "note": "QSPI clock; 9.250 mm direct distance. Keep near the data paths and avoid stubs.",
+      "owner": "mcu",
+      "length": 13.5971255063463,
+      "vias": 2
+    },
+    {
+      "net": "TEC_VCC_INT",
+      "from": "U2.pin1",
+      "to": "C22.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Local internal regulator bypass with fine-pad escape.",
+      "owner": "tec-power",
+      "length": 2.001561890124811,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SW",
+      "from": "C20.pin2",
+      "to": "U2.pin18",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Fine-pad switch reference adjacent to bootstrap/gate-drive loop.",
+      "owner": "tec-power",
+      "length": 5.437116159063062,
+      "vias": 0
+    },
+    {
+      "net": "TEC_VCC_INT",
+      "from": "C22.pin1",
+      "to": "D20.pin2",
+      "width": 0.4,
+      "priority": 1,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap charging supply from local bypass bank.",
+      "owner": "tec-power",
+      "length": 4.257833829911168,
+      "vias": 0
+    },
+    {
+      "net": "USB_DP_SWITCH",
+      "from": "U_USB_SWITCH.pin1",
+      "to": "R_USB_DP.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 26,
+      "note": "Escape switch pin1 south before turning east; track alongside DM_SWITCH, enter resistor pin1 from south. Avoid switch input pads on north edge.",
+      "owner": "usb-routing-astra-1",
+      "length": 15.576061092655658,
+      "vias": 2
+    },
+    {
+      "net": "USB_DM_SWITCH",
+      "from": "U_USB_SWITCH.pin2",
+      "to": "R_USB_DM.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 26,
+      "note": "Escape switch pin2 south; preserve pairing and equal via count with DP_SWITCH wherever clearance permits.",
+      "owner": "usb-routing-astra-1",
+      "length": 17.70873477761527,
+      "vias": 2
+    },
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "from": "R20.pin1",
+      "to": "R41.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Independent monitor Kelvin positive takeoff directly at shunt pad, paired with R42 negative takeoff; no shared load-current segment.",
+      "owner": "tec-power",
+      "length": 17.78074520568737,
+      "vias": 2
+    },
+    {
+      "net": "TEC_POS",
+      "from": "R20.pin2",
+      "to": "R42.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Independent monitor Kelvin negative takeoff directly at shunt pad; pair with R41 branch and carry no load current.",
+      "owner": "tec-power",
+      "length": 17.314789329106958,
+      "vias": 2
+    },
+    {
+      "net": "TEC_INDUCTOR_OUT",
+      "from": "R20.pin1",
+      "to": "R25.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Dedicated Kelvin positive branch directly from shunt land, no power or capacitor taps. Avoid TEC_SW/gate copper and use the same quiet layer/corridor as R20.pin2 to R26.pin1.",
+      "owner": "tec-power",
+      "length": 34.20311026861654,
+      "vias": 2
+    },
+    {
+      "net": "TEC_POS",
+      "from": "R20.pin2",
+      "to": "R26.pin1",
+      "width": 0.2,
+      "priority": 1,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Dedicated Kelvin negative branch directly from shunt land; pair with positive R25 branch, avoid all switching power and gate copper, carry no load current.",
+      "owner": "tec-power",
+      "length": 48.705,
+      "vias": 2
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "J_USB_PROG.pin8",
+      "to": "J_USB_PROG.pin10",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "Join duplicate D+ contacts using eastward pad escape; detour outside pad tips x>-47.454433. Never run vertically through D- pin9.",
+      "owner": "usb-routing-astra-1",
+      "length": 2.671834720626822,
+      "vias": 0
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "J_USB_PROG.pin7",
+      "to": "J_USB_PROG.pin9",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "maxLength": 6,
+      "note": "Interleaved duplicate D- contacts require a clearance-checked crossover relative to D+ join; bottom bridge preferred with vias beyond connector pad tips. Never cross D+ pin8 on top.",
+      "owner": "usb-routing-astra-1",
+      "length": 4.242006824697597,
+      "vias": 2
+    },
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "from": "U2.pin11",
+      "to": "R25.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "note": "Keep the filtered pickup beside the N route, outside the TEC_SW and high-gate copper.",
+      "owner": "tec-analog",
+      "length": 1.9173549488814003,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SENSE_P_FILTERED",
+      "from": "U2.pin11",
+      "to": "C32.pin1",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "Direct local differential-filter capacitor branch; escape west from the left-side controller pad.",
+      "owner": "tec-analog",
+      "length": 2.095864976566957,
+      "vias": 0
+    },
+    {
+      "net": "TEC_VCC_INT",
+      "from": "C21.pin1",
+      "to": "C41.pin1",
+      "width": 0.5,
+      "priority": 2,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Parallel reservoir capacitor connection.",
+      "owner": "tec-power",
+      "length": 2.1000000000000014,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "from": "U2.pin12",
+      "to": "C32.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "Direct local differential-filter capacitor branch; avoid the adjacent VC pad below and P pad above.",
+      "owner": "tec-analog",
+      "length": 2.2800357133746836,
+      "vias": 0
+    },
+    {
+      "net": "TEC_VCC_INT",
+      "from": "C22.pin1",
+      "to": "C21.pin1",
+      "width": 0.5,
+      "priority": 2,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Internal regulator reservoir bank.",
+      "owner": "tec-power",
+      "length": 2.179111057289186,
+      "vias": 0
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "U_USB_ESD.pin1",
+      "to": "U_USB_ESD.pin6",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top"
+      ],
+      "maxLength": 4,
+      "note": "Direct vertical ESD flow-through at x=-43.949960; paired with pin3-to-pin4 at x=-42.050040.",
+      "owner": "usb-routing-astra-1",
+      "length": 2.2981920000000002,
+      "vias": 0
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "U_USB_ESD.pin3",
+      "to": "U_USB_ESD.pin4",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top"
+      ],
+      "maxLength": 4,
+      "note": "Direct vertical ESD flow-through; physical pad-to-pad length is 2.298192 mm, equal to D+.",
+      "owner": "usb-routing-astra-1",
+      "length": 2.2981920000000002,
+      "vias": 0
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "from": "U_TEC_MON.pin7",
+      "to": "R42.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "note": "Short local monitor-input branch; exit the monitor pad outward before approaching its filter resistor.",
+      "owner": "tec-analog",
+      "length": 2.332000214408224,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SENSE_N_FILTERED",
+      "from": "U2.pin12",
+      "to": "R26.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 8,
+      "note": "Escape west before turning north. A straight diagonal intersects U2.pin11; use a short inner-layer crossing if necessary.",
+      "owner": "tec-analog",
+      "length": 3.25,
+      "vias": 0
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "from": "U_TEC_MON.pin8",
+      "to": "C42.pin1",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 7,
+      "note": "Connect the differential capacitor directly to the monitor input; keep outside the monitor supply/I2C pad row.",
+      "owner": "tec-analog",
+      "length": 3.152621924684277,
+      "vias": 0
+    },
+    {
+      "net": "LOGIC_BST",
+      "from": "U_LOGIC.pin6",
+      "to": "C201.pin1",
+      "width": 0.4,
+      "priority": 2,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap capacitor lead; top only and minimize loop area.",
+      "owner": "ground-supply",
+      "length": 5.049082314913089,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C39.pin1",
+      "to": "C26.pin1",
+      "width": 1.5,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Input ceramic-bank current corridor.",
+      "owner": "tec-power",
+      "length": 3.8,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "C30.pin1",
+      "to": "C31.pin1",
+      "width": 1.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Output ceramic-bank connection.",
+      "owner": "tec-power",
+      "length": 4.589389937671455,
+      "vias": 0
+    },
+    {
+      "net": "TEC_MON_SENSE_P",
+      "from": "U_TEC_MON.pin8",
+      "to": "R41.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 10,
+      "note": "Paired filtered monitor pickup; stay clear of the other monitor input and unfiltered R42 pad.",
+      "owner": "tec-analog",
+      "length": 6.424583049095763,
+      "vias": 0
+    },
+    {
+      "net": "TEC_MON_SENSE_N",
+      "from": "U_TEC_MON.pin7",
+      "to": "C42.pin2",
+      "width": 0.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 10,
+      "note": "Direct capacitor branch; use an inner layer if the P branch blocks the return to the right-side capacitor.",
+      "owner": "tec-analog",
+      "length": 8.393338154029927,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "C30.pin1",
+      "to": "C29.pin1",
+      "width": 1,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Output bulk capacitor branch.",
+      "owner": "tec-power",
+      "length": 7.131648891823055,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "R20.pin2",
+      "to": "C30.pin1",
+      "width": 1.2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Output capacitor supply from shunt output.",
+      "owner": "tec-power",
+      "length": 10.169999999999996,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C40.pin1",
+      "to": "C39.pin1",
+      "width": 1.5,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Input ceramic-bank current corridor.",
+      "owner": "tec-power",
+      "length": 7.8,
+      "vias": 0
+    },
+    {
+      "net": "LOGIC_SW",
+      "from": "U_LOGIC.pin5",
+      "to": "C201.pin2",
+      "width": 0.4,
+      "priority": 3,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap return to SW; keep compact and away from feedback.",
+      "owner": "ground-supply",
+      "length": 4.875376354940283,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C39.pin1",
+      "to": "C27.pin1",
+      "width": 1.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Lower ceramic-bank feed.",
+      "owner": "tec-power",
+      "length": 4.8541219597369,
+      "vias": 0
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "J_USB_PROG.pin10",
+      "to": "U_USB_ESD.pin1",
+      "width": 0.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "maxLength": 14,
+      "note": "Connector to southern ESD D+ pad; keep paired with connector-to-ESD D-.",
+      "owner": "usb-routing-astra-1",
+      "length": 12.234503278225668,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C26.pin1",
+      "to": "C38.pin1",
+      "width": 1.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Upper ceramic-bank feed.",
+      "owner": "tec-power",
+      "length": 8.199344681513733,
+      "vias": 0
+    },
+    {
+      "net": "TEC_LOW_GATE",
+      "from": "Q21.pin4",
+      "to": "R24.pin1",
+      "width": 0.25,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Pull-down attaches at MOSFET gate, not controller side of R22.",
+      "owner": "tec-power",
+      "length": 6.769258868997565,
+      "vias": 0
+    },
+    {
+      "net": "TEC_HIGH_GATE",
+      "from": "Q20.pin4",
+      "to": "R23.pin1",
+      "width": 0.25,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Pull-down attaches at MOSFET gate, not controller side of R21.",
+      "owner": "tec-power",
+      "length": 10.167356786987503,
+      "vias": 2
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "J_USB_PROG.pin9",
+      "to": "U_USB_ESD.pin3",
+      "width": 0.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "maxLength": 14,
+      "note": "Connector to southern ESD D- pad; avoid VBUS/GND pads and connector shell.",
+      "owner": "usb-routing-astra-1",
+      "length": 9.873552799999995,
+      "vias": 0
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "U_USB_ESD.pin4",
+      "to": "U_USB_SWITCH.pin7",
+      "width": 0.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 18,
+      "note": "Approach switch pin7 from north, perpendicular to pad. Avoid switch pin6 disable control.",
+      "owner": "usb-routing-astra-1",
+      "length": 9.518908443748934,
+      "vias": 2
+    },
+    {
+      "net": "TEC_SW",
+      "from": "Q20.pin3",
+      "to": "R23.pin2",
+      "width": 0.25,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "High-side gate pull-down source return; keep local to Q20 and away from Kelvin sense.",
+      "owner": "tec-power",
+      "length": 14.195262509497336,
+      "vias": 2
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "U_USB_ESD.pin6",
+      "to": "U_USB_SWITCH.pin8",
+      "width": 0.2,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 18,
+      "note": "Leave north ESD pad toward switch north input row; approach switch pin8 from north. Pair with DM_PORT pin4-to-pin7.",
+      "owner": "usb-routing-astra-1",
+      "length": 12.18761517459909,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C24.pin1",
+      "to": "U2.pin3",
+      "width": 0.2,
+      "priority": 4,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Fine-pad controller VIN feed from its local capacitor.",
+      "owner": "tec-power",
+      "length": 2.631446751515915,
+      "vias": 0
+    },
+    {
+      "net": "LOGIC_SW",
+      "from": "U_LOGIC.pin5",
+      "to": "L_LOGIC.pin1",
+      "width": 0.6,
+      "priority": 4,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Switch node to inductor; top only, minimize area and avoid unrelated signals below.",
+      "owner": "ground-supply",
+      "length": 5.521320343559642,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "U_INPUT.pin6",
+      "to": "C_INPUT_OUT.pin1",
+      "width": 0.2,
+      "priority": 4,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Local eFuse output bypass; fine-pad escape must remain short and clear adjacent eFuse pads.",
+      "owner": "tec-power",
+      "length": 7.371824597903331,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "Q20.pin5",
+      "to": "C24.pin1",
+      "width": 0.6,
+      "priority": 4,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Controller VIN bypass branch; keep outside gate traces.",
+      "owner": "tec-power",
+      "length": 26.104823040152922,
+      "vias": 2
+    },
+    {
+      "net": "PD_DATA_SHORT",
+      "from": "U_PD.pin4",
+      "to": "U_PD.pin5",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "note": "Adjacent controller pads; join locally without a remote branch.",
+      "owner": "pd-input",
+      "length": 0.999998000000005,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "R_INPUT_RUN.pin2",
+      "to": "R_INPUT_OFF.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 2.324327859833891,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_OVLO",
+      "from": "R_INPUT_OV_TOP.pin2",
+      "to": "R_INPUT_OV_BOTTOM.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 2.4499999999999993,
+      "vias": 0
+    },
+    {
+      "net": "FAN_SW",
+      "from": "U_FAN.pin2",
+      "to": "C214.pin2",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap return branches at regulator switch pin; keep this branch local to the buck.",
+      "owner": "fan",
+      "length": 2.74089401473315,
+      "vias": 0
+    },
+    {
+      "net": "V12_FAN",
+      "from": "C218.pin1",
+      "to": "C221.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Feedforward capacitor positive land remains on reservoir rail.",
+      "owner": "fan",
+      "length": 3.446393042007831,
+      "vias": 0
+    },
+    {
+      "net": "PD_WINDOW_SENSE",
+      "from": "R_WINDOW_TOP.pin2",
+      "to": "U_PD_WINDOW.pin6",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 4.914999999999997,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_CURRENT_MON",
+      "from": "U_INPUT.pin9",
+      "to": "R_INPUT_ILIM.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "note": "Keep this current-limit resistor connection local to the eFuse.",
+      "owner": "pd-input",
+      "length": 11.071578016407644,
+      "vias": 0
+    },
+    {
+      "net": "PD_VDD",
+      "from": "U_PD.pin1",
+      "to": "C_CH_VDD.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 4.1004032136677715,
+      "vias": 0
+    },
+    {
+      "net": "LOGIC_VIN",
+      "from": "C200.pin1",
+      "to": "U_LOGIC.pin2",
+      "width": 0.6,
+      "priority": 5,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Input bypass to VIN; short direct top route.",
+      "owner": "ground-supply",
+      "length": 5.475,
+      "vias": 0
+    },
+    {
+      "net": "PD_VALID_N",
+      "from": "U_PD_WINDOW.pin1",
+      "to": "R_PD_VALID_PU.pin2",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 4.753290398693839,
+      "vias": 0
+    },
+    {
+      "net": "PD_UV_REF",
+      "from": "R_UV_BOTTOM.pin1",
+      "to": "U_PD_WINDOW.pin3",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 6.222300795123578,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_OVLO",
+      "from": "R_INPUT_OV_TOP.pin2",
+      "to": "U_INPUT.pin2",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "note": "The 0.25 mm eFuse pad requires a horizontal escape before changing direction.",
+      "owner": "pd-input",
+      "length": 6.125,
+      "vias": 0
+    },
+    {
+      "net": "V12_FAN",
+      "from": "C218.pin1",
+      "to": "C215.pin1",
+      "width": 0.8,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Join the two output reservoir positive lands on the same local rail.",
+      "owner": "fan",
+      "length": 5,
+      "vias": 0
+    },
+    {
+      "net": "FAN_BST",
+      "from": "U_FAN.pin6",
+      "to": "C214.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap path must escape around U_FAN.pin1 GND below pin6; do not pass through that land.",
+      "owner": "fan",
+      "length": 5.755663441178932,
+      "vias": 0
+    },
+    {
+      "net": "PD_WINDOW_SENSE",
+      "from": "R_WINDOW_TOP.pin2",
+      "to": "R_WINDOW_BOTTOM.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 5.565058220832201,
+      "vias": 0
+    },
+    {
+      "net": "FAN_SW",
+      "from": "U_FAN.pin2",
+      "to": "L_FAN.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Short local switch path; escape the 0.6 mm regulator land before passing adjacent VBUS_TEC pin3.",
+      "owner": "fan",
+      "length": 6.6,
+      "vias": 0
+    },
+    {
+      "net": "PD_WINDOW_SENSE",
+      "from": "U_PD_WINDOW.pin6",
+      "to": "U_PD_WINDOW.pin2",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "note": "Both comparator channels share this sense signal; avoid the adjacent reference pads.",
+      "owner": "pd-input",
+      "length": 11.536536149970685,
+      "vias": 2
+    },
+    {
+      "net": "PD_OV_REF",
+      "from": "R_OV_TOP.pin2",
+      "to": "R_OV_BOTTOM.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 5.640257086339239,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "U_INPUT.pin1",
+      "to": "R_INPUT_RUN.pin2",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 9.23644009555221,
+      "vias": 2
+    },
+    {
+      "net": "PD_UV_REF",
+      "from": "R_UV_TOP.pin2",
+      "to": "R_UV_BOTTOM.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 6.504805915628844,
+      "vias": 0
+    },
+    {
+      "net": "V12_FAN",
+      "from": "C215.pin1",
+      "to": "R228.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Sense rail from output reservoir rather than switch copper.",
+      "owner": "fan",
+      "length": 7.17282358675158,
+      "vias": 0
+    },
+    {
+      "net": "PD_VDD",
+      "from": "C_CH_VDD.pin1",
+      "to": "R_CH_VDD.pin2",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.298514710343005,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "U_INPUT.pin3",
+      "to": "R_INPUT_PG.pin2",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 8.780905160190676,
+      "vias": 0
+    },
+    {
+      "net": "V12_FAN",
+      "from": "L_FAN.pin2",
+      "to": "C218.pin1",
+      "width": 0.8,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Wide output path from inductor to its nearest output reservoir; avoid C218.pin2 GND above pin1.",
+      "owner": "fan",
+      "length": 10.484852910988957,
+      "vias": 0
+    },
+    {
+      "net": "PD_VBUS_SENSE",
+      "from": "R_CH_VBUS.pin2",
+      "to": "U_PD.pin8",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 13.890484534095117,
+      "vias": 2
+    },
+    {
+      "net": "USB_CC1",
+      "from": "J_USB_PD.pin6",
+      "to": "U_PD.pin7",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "note": "Escape the 0.30 mm USB CC pad toward the board interior before turning.",
+      "owner": "pd-input",
+      "length": 16.58217124342367,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "R_INPUT_PG.pin2",
+      "to": "U_AUX_BUFFER.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 12.175795661885921,
+      "vias": 0
+    },
+    {
+      "net": "PD_OV_REF",
+      "from": "R_OV_TOP.pin2",
+      "to": "U_PD_WINDOW.pin5",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "note": "Existing placement separates the OV reference from its comparator input by 12.3 mm.",
+      "owner": "pd-input",
+      "length": 18.786140267230024,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C_INPUT_OUT.pin1",
+      "to": "C28.pin1",
+      "width": 0.6,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Bulk reservoir branch; avoid routing through the small capacitor pad as a mandatory trunk bottleneck.",
+      "owner": "tec-power",
+      "length": 16.723499291243083,
+      "vias": 2
+    },
+    {
+      "net": "USB_CC2",
+      "from": "J_USB_PD.pin12",
+      "to": "U_PD.pin6",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "note": "Use a separate layer when crossing the CC1 corridor.",
+      "owner": "pd-input",
+      "length": 27.977467558454187,
+      "vias": 2
+    },
+    {
+      "net": "V12_FAN",
+      "from": "C215.pin1",
+      "to": "J_FAN.pin2",
+      "width": 0.5,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "note": "Fan load branch; 0.5 mm accommodates the connector's 0.5999988 mm land.",
+      "owner": "fan",
+      "length": 18.144582025733065,
+      "vias": 0
+    },
+    {
+      "net": "V12_FAN",
+      "from": "TP04.pin1",
+      "to": "R504.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "inner2",
+        "top"
+      ],
+      "note": "Low-current debug indicator shares the measurement trunk, independent of fan load branch.",
+      "owner": "fan",
+      "length": 37.331326357381634,
+      "vias": 2
+    },
+    {
+      "net": "V12_FAN",
+      "from": "C215.pin1",
+      "to": "TP04.pin1",
+      "width": 0.4,
+      "priority": 5,
+      "preferredLayers": [
+        "bottom",
+        "inner2",
+        "top"
+      ],
+      "note": "Remote measurement branch; use a buried or bottom trunk to leave the buck switch region.",
+      "owner": "fan",
+      "length": 47.05526450724017,
+      "vias": 2
+    },
+    {
+      "net": "LOGIC_VIN",
+      "from": "U_LOGIC.pin2",
+      "to": "U_LOGIC.pin3",
+      "width": 0.4,
+      "priority": 6,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Local VIN/enable tie.",
+      "owner": "ground-supply",
+      "length": 0.9500000000000028,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C27.pin1",
+      "to": "C44.pin1",
+      "width": 0.4,
+      "priority": 6,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Local protected supply bypass branch.",
+      "owner": "tec-power",
+      "length": 11.381042558696063,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C219.pin1",
+      "to": "C220.pin1",
+      "width": 1,
+      "priority": 7,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Fan input ceramic-bank branch.",
+      "owner": "tec-power",
+      "length": 2.3699999999999974,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "L_LOGIC.pin2",
+      "to": "C202.pin1",
+      "width": 0.8,
+      "priority": 7,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Inductor output to output bypass; main regulated output feed.",
+      "owner": "ground-supply",
+      "length": 3.618894858931384,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "U_FAN.pin3",
+      "width": 0.4,
+      "priority": 7,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Short fan regulator VIN feed with local pad neck.",
+      "owner": "tec-power",
+      "length": 10.929757018176792,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C213.pin1",
+      "to": "C219.pin1",
+      "width": 1,
+      "priority": 7,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Fan input ceramic-bank branch.",
+      "owner": "tec-power",
+      "length": 7.549005207870357,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C40.pin1",
+      "to": "C213.pin1",
+      "width": 1,
+      "priority": 7,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Fan input feed independently from protected rail; avoid TEC_SW and sense-pair corridor.",
+      "owner": "tec-power",
+      "length": 59.04439166974092,
+      "vias": 2
+    },
+    {
+      "net": "USB_PROG_CC1",
+      "from": "J_USB_PROG.pin6",
+      "to": "R_USB_CC1.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 15,
+      "note": "Escape connector east before turning north; VBUS pin16 and shell are obstacles.",
+      "owner": "usb-routing-astra-1",
+      "length": 8.504435184933538,
+      "vias": 0
+    },
+    {
+      "net": "USB_PROG_CC2",
+      "from": "J_USB_PROG.pin12",
+      "to": "R_USB_CC2.pin1",
+      "width": 0.2,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "maxLength": 16,
+      "note": "Escape connector east before turning south; clear VBUS pin15 and shell.",
+      "owner": "usb-routing-astra-1",
+      "length": 9.566291812719413,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C202.pin1",
+      "to": "U_LOGIC.pin1",
+      "width": 0.4,
+      "priority": 8,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Quiet output sense from capacitor side; keep away from LOGIC_SW.",
+      "owner": "ground-supply",
+      "length": 13.149553253385234,
+      "vias": 2
+    },
+    {
+      "net": "TEC_POS",
+      "from": "C30.pin1",
+      "to": "R29.pin1",
+      "width": 0.25,
+      "priority": 8,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Quiet output-voltage feedback tap; never join on a Kelvin trace.",
+      "owner": "tec-power",
+      "length": 46.70320584978071,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "C_USB_IN.pin1",
+      "to": "R_CH_VDD.pin1",
+      "width": 0.4,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "PD controller bias feed from raw input.",
+      "owner": "tec-power",
+      "length": 2.019504889818294,
+      "vias": 0
+    },
+    {
+      "net": "USB_PRESENT_BASE",
+      "from": "R_USB_PRESENT.pin2",
+      "to": "R_USB_PRESENT_OFF.pin1",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "usb-routing-astra-1",
+      "length": 2.5,
+      "vias": 0
+    },
+    {
+      "net": "USB_PRESENT_BASE",
+      "from": "R_USB_PRESENT.pin2",
+      "to": "Q_USB_SERVICE.pin1",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "usb-routing-astra-1",
+      "length": 3.1384868965793067,
+      "vias": 0
+    },
+    {
+      "net": "USB_VBUS_DETECT",
+      "from": "R_USB_DETECT_TOP.pin2",
+      "to": "R_USB_DETECT_BOTTOM.pin1",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "usb-routing-astra-1",
+      "length": 3.3541019662496847,
+      "vias": 0
+    },
+    {
+      "net": "USB_DATA_DISABLE",
+      "from": "R_USB_DATA_OFF.pin2",
+      "to": "U_USB_SWITCH.pin6",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Approach switch pin6 from north; do not cut across adjacent D-/D+ input pads.",
+      "owner": "usb-routing-astra-1",
+      "length": 4.825245691911706,
+      "vias": 0
+    },
+    {
+      "net": "USB_DATA_DISABLE",
+      "from": "Q_USB_PRESENT.pin3",
+      "to": "R_USB_DATA_OFF.pin2",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "usb-routing-astra-1",
+      "length": 6.088427124746188,
+      "vias": 0
+    },
+    {
+      "net": "USB_PRESENT_BASE",
+      "from": "R_USB_PRESENT_OFF.pin1",
+      "to": "Q_USB_PRESENT.pin1",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "usb-routing-astra-1",
+      "length": 8.682632202926424,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "U_INPUT.pin5",
+      "to": "R_INPUT_OV_TOP.pin1",
+      "width": 0.2,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Fine-pad overvoltage-divider tap, separate from high-current pad exit.",
+      "owner": "tec-power",
+      "length": 13.515041599477701,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C40.pin1",
+      "to": "Q22.pin2",
+      "width": 0.4,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Enable network supply tap.",
+      "owner": "tec-power",
+      "length": 12.701567528097858,
+      "vias": 0
+    },
+    {
+      "net": "ADC_AVDD",
+      "from": "C_ADC_AVDD.pin1",
+      "to": "R_ADC_SUPPLY.pin2",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "Filtered side of the existing 200-ohm resistor; 1.476 mm direct distance.",
+      "owner": "mcu",
+      "length": 1.4764823060233403,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_USB_VDD.pin1",
+      "to": "U_MCU.pin48",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 1.6280079412192674,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO2.pin1",
+      "to": "U_MCU.pin42",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 2.498161127685612,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO6.pin1",
+      "to": "U_MCU.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 2.3336439765176276,
+      "vias": 0
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin23",
+      "to": "C_DVDD2.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "DVDD2 to its nearest 100nF bypass; 2.595 mm direct distance.",
+      "owner": "mcu",
+      "length": 2.9167557133325426,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "R_CH_VBUS.pin1",
+      "to": "R_WINDOW_TOP.pin1",
+      "width": 0.3,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Voltage-window divider feed.",
+      "owner": "tec-power",
+      "length": 2.8284271247461903,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_VREG_IN.pin1",
+      "to": "U_MCU.pin44",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 5.439249299750422,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO1.pin1",
+      "to": "U_MCU.pin49",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 12.355591049763698,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "Q22.pin2",
+      "to": "R35.pin1",
+      "width": 0.3,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Enable bias resistor supply.",
+      "owner": "tec-power",
+      "length": 5.0039984012787215,
+      "vias": 0
+    },
+    {
+      "net": "ADC_AVDD",
+      "from": "U_MCU.pin43",
+      "to": "C_ADC_AVDD.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 9,
+      "note": "ADC supply pin directly to its bypass; 5.513 mm direct distance.",
+      "owner": "mcu",
+      "length": 8.167108323867394,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO4.pin1",
+      "to": "U_MCU.pin22",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "length": 7.850774642197874,
+      "vias": 2
+    },
+    {
+      "net": "USB_VBUS_DETECT",
+      "from": "R_USB_DETECT_TOP.pin2",
+      "to": "U_MCU.pin36",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Low-speed divider sense; yield top routing corridor to USB data and approach east-facing MCU pin36 from east.",
+      "owner": "usb-routing-astra-1",
+      "length": 18.174058969822422,
+      "vias": 2
+    },
+    {
+      "net": "HOT_ADC",
+      "from": "C209.pin1",
+      "to": "TP06.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+      "owner": "thermal_sensor_routing",
+      "length": 46.600114155102375,
+      "vias": 2
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "C210.pin1",
+      "to": "TP07.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long debug branch; preserve the local filter-to-MCU path and avoid switch-node copper.",
+      "owner": "thermal_sensor_routing",
+      "length": 51.064376096661604,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "TP08.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long VBUS measurement debug branch; keep separated from VBUS power copper.",
+      "owner": "thermal_sensor_routing",
+      "length": 65.56834316112838,
+      "vias": 2
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "C212.pin1",
+      "to": "TP09.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long output-voltage measurement debug branch; avoid coupling to TEC power copper.",
+      "owner": "thermal_sensor_routing",
+      "length": 66.46444594374178,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_AUX1.pin1",
+      "to": "U_AUX_BUFFER.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 1.8393823871896187,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C216.pin1",
+      "to": "U_SUPERVISOR.pin3",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 2.0718349355100654,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_USB_SWITCH.pin1",
+      "to": "U_USB_SWITCH.pin10",
+      "width": 0.2,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 5.337071209570798,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C43.pin1",
+      "to": "U_TEC_MON.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 2.896381363011438,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C208.pin1",
+      "to": "U_THERMAL.pin8",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 2.896381363011438,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_FLASH.pin1",
+      "to": "U_FLASH.pin8",
+      "width": 0.2,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 4.625063027426401,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_PD_WINDOW.pin1",
+      "to": "U_PD_WINDOW.pin8",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 3.0539359849217504,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_DBG2.pin1",
+      "to": "U_DBG2.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 4.357168890796876,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C222.pin1",
+      "to": "U_CLEAR_BUFFER.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 3.738336082458493,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C223.pin1",
+      "to": "U_CLOCK_BUFFER.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 3.7383360824584937,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C206.pin1",
+      "to": "U_DAC.pin3",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 7.082008378573208,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_DBG1.pin1",
+      "to": "U_DBG1.pin5",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "length": 4.720976381084221,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "TP05.pin1",
+      "to": "R45.pin1",
+      "width": 0.35,
+      "priority": 11,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Output bleeder branch, not a Kelvin branch.",
+      "owner": "tec-power",
+      "length": 15.7175061635108,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "C31.pin1",
+      "to": "TP05.pin1",
+      "width": 0.35,
+      "priority": 11,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Output test branch clear of sense routing.",
+      "owner": "tec-power",
+      "length": 26.339357158710367,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "C28.pin1",
+      "to": "TP02.pin1",
+      "width": 0.3,
+      "priority": 12,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Protected-rail test branch.",
+      "owner": "tec-power",
+      "length": 11.722786226100064,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "C_USB_IN.pin1",
+      "to": "R501.pin1",
+      "width": 0.3,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Indicator branch.",
+      "owner": "tec-power",
+      "length": 11.209076679191735,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "Q22.pin2",
+      "to": "R502.pin1",
+      "width": 0.3,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Protected-input indicator supply.",
+      "owner": "tec-power",
+      "length": 14.383671297690308,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "D_LOGIC_PD.pin2",
+      "to": "TP01.pin1",
+      "width": 0.3,
+      "priority": 12,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Raw-input test branch.",
+      "owner": "tec-power",
+      "length": 27.16474841962163,
+      "vias": 2
+    },
+    {
+      "net": "TEC_POS",
+      "from": "TP05.pin1",
+      "to": "R224.pin1",
+      "width": 0.25,
+      "priority": 12,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "ADC divider feed from quiet output branch.",
+      "owner": "tec-power",
+      "length": 35.83678865449949,
+      "vias": 0
+    },
+    {
+      "net": "TEC_POS",
+      "from": "C30.pin1",
+      "to": "R505.pin1",
+      "width": 0.25,
+      "priority": 12,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "Output indicator feed; avoid routing alongside gate/switch traces.",
+      "owner": "tec-power",
+      "length": 57.5957161035749,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "TP01.pin1",
+      "to": "R222.pin1",
+      "width": 0.25,
+      "priority": 13,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "note": "ADC divider supply tap, route away from switch node.",
+      "owner": "tec-power",
+      "length": 25.631370849898477,
+      "vias": 2
+    },
+    {
+      "net": "TEC_COMP_RC",
+      "from": "R27.pin2",
+      "to": "C33.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "Local compensation RC connection; keep this ~1.66 mm endpoint span compact and clear of Kelvin pickup routes.",
+      "owner": "tec-analog",
+      "length": 1.6622650209879293,
+      "vias": 0
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "R31.pin2",
+      "to": "R32.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 2.2299103120977746,
+      "vias": 0
+    },
+    {
+      "net": "TEC_FB",
+      "from": "R29.pin2",
+      "to": "R30.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 7,
+      "owner": "tec-analog",
+      "length": 3.070046727951636,
+      "vias": 0
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "R33.pin2",
+      "to": "R34.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 3.667424164178454,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R233.pin1",
+      "to": "Q_FAULT_SOURCE.pin2",
+      "width": 0.4,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local supply leaf; no other load is routed through this IC/transistor pad.",
+      "owner": "ground-supply",
+      "length": 3.7101212918178295,
+      "vias": 0
+    },
+    {
+      "net": "TEC_FB",
+      "from": "U2.pin10",
+      "to": "R29.pin2",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 8,
+      "note": "Feedback divider midpoint should reach FB without following switching or high-current output copper.",
+      "owner": "tec-analog",
+      "length": 4.133007222492316,
+      "vias": 0
+    },
+    {
+      "net": "TEC_VREF",
+      "from": "C35.pin1",
+      "to": "R31.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 5.615400021522102,
+      "vias": 0
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "C36.pin1",
+      "to": "R31.pin2",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 4.860660171779822,
+      "vias": 0
+    },
+    {
+      "net": "TEC_SAFE_EN",
+      "from": "U_LATCH.pin5",
+      "to": "R205.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.281538571897172,
+      "vias": 0
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "C37.pin1",
+      "to": "R33.pin2",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 21.29394723265881,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_CLEAR_N",
+      "from": "U_INPUT_LATCH.pin6",
+      "to": "U_CLEAR_BUFFER.pin4",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 10.010124218810462,
+      "vias": 0
+    },
+    {
+      "net": "ARM_CLK",
+      "from": "U_LATCH.pin1",
+      "to": "U_CLOCK_BUFFER.pin6",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 21.555009879913452,
+      "vias": 2
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "from": "R40.pin1",
+      "to": "R39.pin2",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "owner": "tec-analog",
+      "length": 11.636171627077204,
+      "vias": 0
+    },
+    {
+      "net": "TEC_CLEAR_N",
+      "from": "U_LATCH.pin6",
+      "to": "U_CLEAR_BUFFER.pin6",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 14.21633016588012,
+      "vias": 2
+    },
+    {
+      "net": "ARM_CLK",
+      "from": "U_LATCH.pin1",
+      "to": "R242.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 12.732589518770723,
+      "vias": 0
+    },
+    {
+      "net": "RUN_CLK",
+      "from": "U_INPUT_LATCH.pin1",
+      "to": "U_CLOCK_BUFFER.pin4",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 13.536238735754296,
+      "vias": 0
+    },
+    {
+      "net": "TEC_CLEAR_N",
+      "from": "U_LATCH.pin6",
+      "to": "R240.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 14.639789629857214,
+      "vias": 0
+    },
+    {
+      "net": "AUX_LOSS_CLK",
+      "from": "U_AUX_BUFFER.pin4",
+      "to": "U_AUX_LOSS_LATCH.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 14.430506853685806,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R214.pin1",
+      "to": "U_FAN.pin5",
+      "width": 0.4,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local supply leaf; no other load is routed through this IC/transistor pad.",
+      "owner": "ground-supply",
+      "length": 20.568213339910415,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_CLEAR_N",
+      "from": "U_INPUT_LATCH.pin6",
+      "to": "R241.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 23.250000000000004,
+      "vias": 2
+    },
+    {
+      "net": "RUN_CLK",
+      "from": "U_INPUT_LATCH.pin1",
+      "to": "R243.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 20.734251895099646,
+      "vias": 2
+    },
+    {
+      "net": "RUN_CLK",
+      "from": "U_CLOCK_BUFFER.pin4",
+      "to": "U_AUX_LOSS_LATCH.pin6",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 29.693370417509282,
+      "vias": 2
+    },
+    {
+      "net": "TEC_SAFE_EN",
+      "from": "R37.pin1",
+      "to": "U_DBG1.pin3",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 50.47352863639916,
+      "vias": 2
+    },
+    {
+      "net": "TEC_DAC",
+      "from": "TP12.pin1",
+      "to": "R33.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long pre-filter DAC continuation; its ~49.5 mm direct span requires a quiet layer before the local R33/C37 filter.",
+      "owner": "tec-analog",
+      "length": 59.04167627603588,
+      "vias": 2
+    },
+    {
+      "net": "TEC_SAFE_EN",
+      "from": "R37.pin1",
+      "to": "U_LATCH.pin5",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 54.83352544361523,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_CLEAR_N",
+      "from": "U_CLEAR_BUFFER.pin4",
+      "to": "U_DBG2.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 67.93363228127018,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_THERMAL.pin1",
+      "to": "U_THERMAL.pin7",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 5.547332692384691,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "R_INPUT_FAULT.pin2",
+      "to": "Q_PG_INHIBIT.pin3",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 7.039005611590318,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "R_INPUT_FAULT.pin2",
+      "to": "U_PD_WINDOW.pin7",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 13.532414781513769,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "Q_PG_INHIBIT.pin3",
+      "to": "Q_PD_LATCH.pin3",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 22,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "D_RESET_SAFE.pin2",
+      "to": "U_THERMAL.pin1",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 15.913147349381768,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_THERMAL.pin7",
+      "to": "R232.pin1",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 16.280363849492485,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_MCU.pin28",
+      "to": "U_SUPERVISOR.pin2",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 18.32688349570655,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_SUPERVISOR.pin2",
+      "to": "D_RESET_SAFE.pin2",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 16.990819359970136,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_PD_WINDOW.pin7",
+      "to": "Q_USB_SERVICE.pin3",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 23.295656951739865,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "Q_PD_LATCH.pin3",
+      "to": "U_MCU.pin28",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 28.10896144065684,
+      "vias": 0
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "R210.pin1",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+      "owner": "thermal_sensor_routing",
+      "length": 53.35699495223443,
+      "vias": 2
+    },
+    {
+      "net": "COLD_RAW",
+      "from": "R209.pin2",
+      "to": "R211.pin1",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Raw thermistor trunk to the MCU-side series filter; route away from switch nodes.",
+      "owner": "thermal_sensor_routing",
+      "length": 42.47866985288529,
+      "vias": 2
+    },
+    {
+      "net": "TEC_REQUEST",
+      "from": "R201.pin1",
+      "to": "R202.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 1.75,
+      "vias": 0
+    },
+    {
+      "net": "PD_LATCH_INHIBIT",
+      "from": "R206.pin2",
+      "to": "R207.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 2.5303161857759995,
+      "vias": 0
+    },
+    {
+      "net": "BOOT_BUTTON",
+      "from": "SW_BOOT.pin2",
+      "to": "SW_BOOT.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 8,
+      "note": "Bridge same-side switch terminals; 4.200 mm direct distance.",
+      "owner": "mcu",
+      "length": 4.200000000000003,
+      "vias": 0
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "SW_RESET.pin2",
+      "to": "SW_RESET.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 8,
+      "note": "Bridge same-side reset-switch terminals; 4.200 mm direct distance.",
+      "owner": "mcu",
+      "length": 4.200000000000003,
+      "vias": 0
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "TP_RESET.pin1",
+      "to": "D_RESET_SAFE.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 9,
+      "note": "Existing safe-reset diode connection; 5.133 mm direct distance.",
+      "owner": "mcu",
+      "length": 5.133399353560562,
+      "vias": 0
+    },
+    {
+      "net": "PD_LATCH_INHIBIT",
+      "from": "Q_PD_LATCH.pin1",
+      "to": "R206.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 7.489462795802538,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_ARMED",
+      "from": "R236.pin1",
+      "to": "D_INPUT_PERMISSION.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.394103071176472,
+      "vias": 0
+    },
+    {
+      "net": "AUX_VALID",
+      "from": "U_AUX_BUFFER.pin6",
+      "to": "Q_AUX_INVERT.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.822982328255363,
+      "vias": 0
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "R_RESET_PU.pin2",
+      "to": "SW_RESET.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 18,
+      "note": "Nearest reset-switch terminal; 10.640 mm direct distance.",
+      "owner": "mcu",
+      "length": 15.024999999999995,
+      "vias": 0
+    },
+    {
+      "net": "MCU_RUN",
+      "from": "U_CLOCK_BUFFER.pin3",
+      "to": "R226.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 38.24923881248335,
+      "vias": 2
+    },
+    {
+      "net": "BOOT_BUTTON",
+      "from": "R_BOOT.pin2",
+      "to": "SW_BOOT.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 27,
+      "note": "Nearest boot-switch terminal; 17.945 mm direct distance.",
+      "owner": "mcu",
+      "length": 18.091504442565114,
+      "vias": 2
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "R_RESET_PU.pin2",
+      "to": "TP_RESET.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 36,
+      "note": "Reset backbone to safety/test cluster; 23.098 mm direct distance.",
+      "owner": "mcu",
+      "length": 24.748639526829006,
+      "vias": 0
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "R208.pin2",
+      "to": "R212.pin1",
+      "width": 0.2,
+      "priority": 22,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local branch to the hardware temperature protection divider.",
+      "owner": "thermal_sensor_routing",
+      "length": 3.873306081372862,
+      "vias": 0
+    },
+    {
+      "net": "COLD_RAW",
+      "from": "J_COLD.pin1",
+      "to": "R209.pin2",
+      "width": 0.2,
+      "priority": 22,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+      "owner": "thermal_sensor_routing",
+      "length": 6.506910749355385,
+      "vias": 0
+    },
+    {
+      "net": "HOT_RAW",
+      "from": "J_HOT.pin1",
+      "to": "R208.pin2",
+      "width": 0.2,
+      "priority": 22,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Thermistor connector to its local pull-up; preserve paired sensor ground return.",
+      "owner": "thermal_sensor_routing",
+      "length": 7.03846851687146,
+      "vias": 0
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "U_THERMAL.pin3",
+      "width": 0.2,
+      "priority": 23,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short divider-to-comparator input branch.",
+      "owner": "thermal_sensor_routing",
+      "length": 3.800424318414986,
+      "vias": 0
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "U_THERMAL.pin3",
+      "to": "U_THERMAL.pin6",
+      "width": 0.2,
+      "priority": 23,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Shared half-temperature signal between both comparator inputs; route around pads.",
+      "owner": "thermal_sensor_routing",
+      "length": 5.399999999999999,
+      "vias": 0
+    },
+    {
+      "net": "HOT_LOW",
+      "from": "R215.pin1",
+      "to": "U_THERMAL.pin2",
+      "width": 0.2,
+      "priority": 23,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Reference input; keep clear of the power stage and thermistor ADC trunks.",
+      "owner": "thermal_sensor_routing",
+      "length": 8.044915636999185,
+      "vias": 2
+    },
+    {
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "U_THERMAL.pin5",
+      "width": 0.2,
+      "priority": 23,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Upper-threshold reference; avoid parallel routing beside switching conductors.",
+      "owner": "thermal_sensor_routing",
+      "length": 9.97287907370335,
+      "vias": 0
+    },
+    {
+      "net": "HOT_HIGH",
+      "from": "R216.pin2",
+      "to": "R217.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local upper-temperature threshold divider junction.",
+      "owner": "thermal_sensor_routing",
+      "length": 2,
+      "vias": 0
+    },
+    {
+      "net": "HOT_HALF",
+      "from": "R212.pin2",
+      "to": "R213.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local half-temperature divider junction.",
+      "owner": "thermal_sensor_routing",
+      "length": 2.5,
+      "vias": 0
+    },
+    {
+      "net": "HOT_LOW",
+      "from": "R214.pin2",
+      "to": "R215.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local lower-temperature threshold divider junction.",
+      "owner": "thermal_sensor_routing",
+      "length": 2.5303161857759995,
+      "vias": 0
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "R225.pin1",
+      "to": "C212.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Divider output to the local output-voltage ADC filter capacitor.",
+      "owner": "thermal_sensor_routing",
+      "length": 3.124873734152915,
+      "vias": 0
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "R222.pin2",
+      "to": "R223.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local VBUS measurement divider junction.",
+      "owner": "thermal_sensor_routing",
+      "length": 5.292733418838426,
+      "vias": 2
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "R224.pin2",
+      "to": "R225.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local output-voltage measurement divider junction.",
+      "owner": "thermal_sensor_routing",
+      "length": 10.21776695296637,
+      "vias": 2
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "R223.pin1",
+      "to": "C211.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Divider output to the local VBUS ADC filter capacitor.",
+      "owner": "thermal_sensor_routing",
+      "length": 3.874873734152915,
+      "vias": 0
+    },
+    {
+      "net": "HOT_ADC",
+      "from": "R210.pin2",
+      "to": "C209.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Keep the series-resistor output local to its shunt filter capacitor.",
+      "owner": "thermal_sensor_routing",
+      "length": 7.811269837220813,
+      "vias": 2
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "R211.pin2",
+      "to": "C210.pin1",
+      "width": 0.2,
+      "priority": 24,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Keep the series-resistor output local to its shunt filter capacitor.",
+      "owner": "thermal_sensor_routing",
+      "length": 6.252377301712228,
+      "vias": 0
+    },
+    {
+      "net": "FAN_TACH",
+      "from": "R220.pin2",
+      "to": "R221.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Join tach pullup and filter input locally.",
+      "owner": "fan",
+      "length": 2.0006249023742555,
+      "vias": 0
+    },
+    {
+      "net": "FAN_PWM_BASE",
+      "from": "Q_FAN_PWM.pin1",
+      "to": "R219.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Short base-to-pulldown branch.",
+      "owner": "fan",
+      "length": 2.240557966221809,
+      "vias": 0
+    },
+    {
+      "net": "FAN_FB",
+      "from": "R228.pin2",
+      "to": "R229.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Local feedback divider junction.",
+      "owner": "fan",
+      "length": 5.399191032160304,
+      "vias": 2
+    },
+    {
+      "net": "FAN_PWM_BASE",
+      "from": "R219.pin1",
+      "to": "R218.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Connect drive series resistor to the transistor base junction.",
+      "owner": "fan",
+      "length": 2.5,
+      "vias": 0
+    },
+    {
+      "net": "PD_VDD",
+      "from": "R_PD_CFG2.pin1",
+      "to": "R_PD_CFG3.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 3,
+      "vias": 0
+    },
+    {
+      "net": "AUX_LOSS_RAW",
+      "from": "Q_AUX_INVERT.pin3",
+      "to": "R_AUX_LOSS_PU.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.080272156177448,
+      "vias": 2
+    },
+    {
+      "net": "PD_VDD",
+      "from": "R_PD_CFG1.pin1",
+      "to": "R_PD_CFG2.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 3.2572994949804643,
+      "vias": 0
+    },
+    {
+      "net": "PD_PG_BASE",
+      "from": "Q_PG_INHIBIT.pin1",
+      "to": "R_PG_OFF.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 3.609137802864846,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_SUPPLY",
+      "from": "Q22.pin3",
+      "to": "R39.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.200000000000003,
+      "vias": 2
+    },
+    {
+      "net": "PD_VDD",
+      "from": "C_CH_VDD.pin1",
+      "to": "R_PG_PU.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 4.430011286667337,
+      "vias": 0
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "R_USB_BLEED.pin1",
+      "to": "D_LOGIC_USB.pin2",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 9.375787710011682,
+      "vias": 2
+    },
+    {
+      "net": "FAN_FB",
+      "from": "R229.pin1",
+      "to": "C221.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Route around R229.pin2 GND between these lands; keep the feedforward branch on feedback copper.",
+      "owner": "fan",
+      "length": 5.457957275248198,
+      "vias": 0
+    },
+    {
+      "net": "PD_CFG1",
+      "from": "U_PD.pin9",
+      "to": "R_PD_CFG1.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.549876999999995,
+      "vias": 0
+    },
+    {
+      "net": "AUX_LOSS_RAW",
+      "from": "U_AUX_BUFFER.pin3",
+      "to": "Q_AUX_INVERT.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 6.671993755512868,
+      "vias": 0
+    },
+    {
+      "net": "PD_VDD",
+      "from": "R_CH_VDD.pin2",
+      "to": "R_PD_CFG1.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.700000000000003,
+      "vias": 0
+    },
+    {
+      "net": "PD_CFG3",
+      "from": "R_PD_CFG3.pin2",
+      "to": "Q_PD_CFG3.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.187722257414573,
+      "vias": 0
+    },
+    {
+      "net": "PD_PG_N",
+      "from": "U_PD.pin10",
+      "to": "R_PG_PU.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.441625465879244,
+      "vias": 2
+    },
+    {
+      "net": "PD_CFG1",
+      "from": "R_PD_CFG1.pin2",
+      "to": "Q_PD_CFG1.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 7.684230887776986,
+      "vias": 0
+    },
+    {
+      "net": "FAULT_SOURCE",
+      "from": "Q_FAULT_SOURCE.pin3",
+      "to": "R234.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 8.200552505986192,
+      "vias": 0
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "R_USB_PRESENT.pin1",
+      "to": "R_USB_BLEED.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 9.346194077712559,
+      "vias": 0
+    },
+    {
+      "net": "FAULT_SOURCE",
+      "from": "R234.pin1",
+      "to": "R238.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 9.206257547751093,
+      "vias": 0
+    },
+    {
+      "net": "FAN_PWM",
+      "from": "Q_FAN_PWM.pin3",
+      "to": "J_FAN.pin4",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Open-collector output to four-wire fan PWM pin.",
+      "owner": "fan",
+      "length": 14.547502140016997,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_PNP_DRIVE",
+      "from": "Q23.pin3",
+      "to": "R36.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "length": 9.839720524486456,
+      "vias": 0
+    },
+    {
+      "net": "PD_PG_BASE",
+      "from": "R_PG_BASE.pin2",
+      "to": "Q_PG_INHIBIT.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 12.98423212371556,
+      "vias": 2
+    },
+    {
+      "net": "PD_CFG2",
+      "from": "Q_PD_CFG2.pin3",
+      "to": "R_PD_CFG2.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 13.989406671124538,
+      "vias": 2
+    },
+    {
+      "net": "PD_CFG2",
+      "from": "U_PD.pin2",
+      "to": "Q_PD_CFG2.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 11.216999791163586,
+      "vias": 0
+    },
+    {
+      "net": "FAN_TACH",
+      "from": "R221.pin1",
+      "to": "J_FAN.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Raw fan tach input; remain distinct from filtered FAN_TACH_MCU.",
+      "owner": "fan",
+      "length": 10.972036669551523,
+      "vias": 0
+    },
+    {
+      "net": "PD_CFG3",
+      "from": "U_PD.pin3",
+      "to": "R_PD_CFG3.pin2",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 21.389819405215647,
+      "vias": 2
+    },
+    {
+      "net": "VOUT_ADC",
+      "from": "C212.pin1",
+      "to": "U_MCU.pin40",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Prioritize the capacitor-to-ADC connection, approximately 12.1 mm direct distance.",
+      "owner": "thermal_sensor_routing",
+      "length": 15.969731747233176,
+      "vias": 2
+    },
+    {
+      "net": "PD_PG_N",
+      "from": "R_PG_PU.pin2",
+      "to": "R_PG_BASE.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "length": 17.83724242295199,
+      "vias": 2
+    },
+    {
+      "net": "FAN_FB",
+      "from": "R228.pin2",
+      "to": "U_FAN.pin4",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "note": "Feedback return is approximately 14.35 mm before obstacle detours; keep it separate from FAN_SW.",
+      "owner": "fan",
+      "length": 21.427462309965627,
+      "vias": 2
+    },
+    {
+      "net": "PD_VALID_N",
+      "from": "R_PD_VALID_PU.pin2",
+      "to": "R206.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "length": 21.3493698753926,
+      "vias": 2
+    },
+    {
+      "net": "PD_VALID_N",
+      "from": "R206.pin1",
+      "to": "U_MCU.pin27",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "length": 27.345145276113886,
+      "vias": 2
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "R221.pin2",
+      "to": "TP18.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "inner2",
+        "top"
+      ],
+      "note": "Filtered tach measurement branch; avoid the buck switch/feedback area above the filter bank.",
+      "owner": "fan",
+      "length": 28.41871526863268,
+      "vias": 2
+    },
+    {
+      "net": "PD_CFG2_LOW",
+      "from": "Q_PD_CFG2.pin1",
+      "to": "U_MCU.pin7",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "length": 44.50039965666242,
+      "vias": 2
+    },
+    {
+      "net": "PD_VALID_N",
+      "from": "R206.pin1",
+      "to": "U_DBG1.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Debug-buffer branch spans about 62 mm; share the R206 tree junction instead of extending the analog input routes.",
+      "owner": "pd-input",
+      "length": 65.90830213838206,
+      "vias": 2
+    },
+    {
+      "net": "FAN_PWM_DRIVE",
+      "from": "U_MCU.pin13",
+      "to": "R218.pin1",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "inner2",
+        "top"
+      ],
+      "note": "Long MCU drive trunk; launch along the 0.85 mm MCU pad axis with a 0.2 mm trace.",
+      "owner": "fan",
+      "length": 71.39931937217125,
+      "vias": 2
+    },
+    {
+      "net": "FAN_TACH_MCU",
+      "from": "R221.pin2",
+      "to": "U_MCU.pin14",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "inner2",
+        "top"
+      ],
+      "note": "Filtered tach return; launch along MCU pad axis and maintain clearance from adjacent PWM pin13.",
+      "owner": "fan",
+      "length": 76.70534805567095,
+      "vias": 2
+    },
+    {
+      "net": "FAULT_PNP_BASE",
+      "from": "R233.pin2",
+      "to": "R232.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 2.0006249023742555,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_NPN_BASE",
+      "from": "R38.pin1",
+      "to": "R37.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 2.4499999999999993,
+      "vias": 0
+    },
+    {
+      "net": "FAULT_NPN_BASE",
+      "from": "Q_FAULT_CLEAR.pin1",
+      "to": "R235.pin1",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 6.3933939690213455,
+      "vias": 2
+    },
+    {
+      "net": "INPUT_FAULT_NPN_BASE",
+      "from": "Q_INPUT_CLEAR.pin1",
+      "to": "R239.pin1",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 2.473883586590121,
+      "vias": 0
+    },
+    {
+      "net": "FAULT_NPN_BASE",
+      "from": "R235.pin1",
+      "to": "R234.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 2.5303161857759995,
+      "vias": 0
+    },
+    {
+      "net": "INPUT_FAULT_NPN_BASE",
+      "from": "R239.pin1",
+      "to": "R238.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 2.5303161857759995,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_PNP_BASE",
+      "from": "R35.pin2",
+      "to": "R36.pin1",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 3.2882366094914763,
+      "vias": 0
+    },
+    {
+      "net": "FAULT_PNP_BASE",
+      "from": "Q_FAULT_SOURCE.pin1",
+      "to": "R233.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 9.377271205001161,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_PNP_BASE",
+      "from": "Q22.pin1",
+      "to": "R35.pin2",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 5.0039984012787215,
+      "vias": 0
+    },
+    {
+      "net": "TEC_PERMISSION_NPN_BASE",
+      "from": "Q23.pin1",
+      "to": "R38.pin1",
+      "width": 0.2,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short local transistor bias connection.",
+      "owner": "interlock",
+      "length": 6.142407540468745,
+      "vias": 2
+    },
+    {
+      "net": "LOGIC_VIN",
+      "from": "D_LOGIC_PD.pin1",
+      "to": "D_LOGIC_USB.pin1",
+      "width": 0.8,
+      "priority": 30,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "ORed input bus; preserve diode isolation through their opposite pads.",
+      "owner": "ground-supply",
+      "length": 6.082762530298219,
+      "vias": 0
+    },
+    {
+      "net": "LOGIC_VIN",
+      "from": "D_LOGIC_USB.pin1",
+      "to": "C200.pin1",
+      "width": 0.8,
+      "priority": 31,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "ORed input bus into input bypass.",
+      "owner": "ground-supply",
+      "length": 14.28423511656884,
+      "vias": 2
+    },
+    {
+      "net": "I2C_SCL",
+      "from": "R_PD_SCL.pin2",
+      "to": "TP10.pin1",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short SCL testpoint branch from the pullup.",
+      "owner": "i2c-debug",
+      "length": 4.422951503238533,
+      "vias": 0
+    },
+    {
+      "net": "I2C_SDA",
+      "from": "R_PD_SDA.pin2",
+      "to": "TP11.pin1",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Short SDA testpoint branch from the pullup.",
+      "owner": "i2c-debug",
+      "length": 7.3954552268649465,
+      "vias": 0
+    },
+    {
+      "net": "I2C_SCL",
+      "from": "R_PD_SCL.pin2",
+      "to": "U_MCU.pin12",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "MCU leaf; branch at the pullup, never at the fine-pitch MCU pad.",
+      "owner": "i2c-debug",
+      "length": 24.116179639510165,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R_INPUT_FAULT.pin1",
+      "to": "R_INPUT_PG.pin1",
+      "width": 0.4,
+      "priority": 41.8,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 1.8000000000000007,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_UV_TOP.pin1",
+      "to": "C_PD_WINDOW.pin1",
+      "width": 0.4,
+      "priority": 42.462,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 2.462214450449026,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_USB_DATA_OFF.pin1",
+      "to": "R_FLASH_CS.pin1",
+      "width": 0.4,
+      "priority": 42.51,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 2.5104780421266364,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO5.pin1",
+      "to": "C_USB_SWITCH.pin1",
+      "width": 0.4,
+      "priority": 42.862,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 3.650000000000002,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_PD_SCL.pin1",
+      "to": "R_PD_SDA.pin1",
+      "width": 0.4,
+      "priority": 43,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 5.503358632211438,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO4.pin1",
+      "to": "C_MCU_BULK.pin1",
+      "width": 0.4,
+      "priority": 43.027,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 3.026549190084311,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO4.pin1",
+      "to": "C_IO5.pin1",
+      "width": 0.4,
+      "priority": 43.041,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 3.624912729409519,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_FLASH.pin1",
+      "to": "R_FLASH_CS.pin1",
+      "width": 0.4,
+      "priority": 43.153,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 5.452831342962069,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO2.pin1",
+      "to": "C_VREG_IN.pin1",
+      "width": 0.4,
+      "priority": 43.288,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 5.0882366094914735,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO1.pin1",
+      "to": "C_IO6.pin1",
+      "width": 0.4,
+      "priority": 43.553,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 3.681980515339464,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_INPUT_FAULT.pin1",
+      "to": "R_PD_VALID_PU.pin1",
+      "width": 0.4,
+      "priority": 43.606,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 7.78822509939086,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C202.pin1",
+      "to": "R_OV_TOP.pin1",
+      "width": 0.4,
+      "priority": 43.965,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 4.291320343559642,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R237.pin1",
+      "to": "C222.pin1",
+      "width": 0.4,
+      "priority": 43.966,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 4.301086597921588,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_PD_SDA.pin1",
+      "to": "C222.pin1",
+      "width": 0.4,
+      "priority": 44.025,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 4.025232912515746,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_VREG_IN.pin1",
+      "to": "R_ADC_SUPPLY.pin1",
+      "width": 0.4,
+      "priority": 44.484,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 7.161436374704072,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R209.pin1",
+      "to": "R216.pin1",
+      "width": 0.4,
+      "priority": 44.665,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 6.326393146415032,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_USB_DATA_OFF.pin1",
+      "to": "C_IO6.pin1",
+      "width": 0.4,
+      "priority": 44.742,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 8.155616235193095,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R214.pin1",
+      "to": "R216.pin1",
+      "width": 0.4,
+      "priority": 45,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 16.05388834087576,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_PD_SCL.pin1",
+      "to": "R_ADC_SUPPLY.pin1",
+      "width": 0.4,
+      "priority": 45.282,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 5.429036790187178,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_OV_TOP.pin1",
+      "to": "R_PD_VALID_PU.pin1",
+      "width": 0.4,
+      "priority": 45.397,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 5.3967582862307255,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_AUX_LOSS_PU.pin1",
+      "to": "C_AUX1.pin1",
+      "width": 0.4,
+      "priority": 45.95,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 6.508687963291072,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R237.pin1",
+      "to": "C223.pin1",
+      "width": 0.4,
+      "priority": 46.673,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 6.72418135427287,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "L_LOGIC.pin2",
+      "to": "R_UV_TOP.pin1",
+      "width": 0.4,
+      "priority": 46.933,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 7.6731166054147835,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_AUX_LOSS_PU.pin1",
+      "to": "C_AUX2.pin1",
+      "width": 0.4,
+      "priority": 47.05,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 7.566520671978136,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R237.pin1",
+      "to": "TP03.pin1",
+      "width": 0.4,
+      "priority": 47.684,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 7.683749084919419,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R_PD_SDA.pin1",
+      "to": "C217.pin1",
+      "width": 0.6,
+      "priority": 48.412,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 17.456750364265304,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R208.pin1",
+      "to": "C208.pin1",
+      "width": 0.6,
+      "priority": 50.096000000000004,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 12.296038827183661,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R214.pin1",
+      "to": "C208.pin1",
+      "width": 0.6,
+      "priority": 50.274,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 11.525368625421734,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C43.pin1",
+      "to": "C_DBG2.pin1",
+      "width": 0.6,
+      "priority": 50.323,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 14.380311982868099,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R508.pin1",
+      "to": "C_DBG1.pin1",
+      "width": 0.6,
+      "priority": 51.591,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 11.591052583782027,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R233.pin1",
+      "to": "C207.pin1",
+      "width": 0.6,
+      "priority": 51.819,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 13.024782868743014,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R506.pin1",
+      "to": "R508.pin1",
+      "width": 0.6,
+      "priority": 52.502,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 13.704049957018244,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R506.pin1",
+      "to": "C_AUX2.pin1",
+      "width": 0.6,
+      "priority": 52.615,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 15.042640687119285,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "C43.pin1",
+      "to": "C_DBG1.pin1",
+      "width": 0.6,
+      "priority": 53.06,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 22.954588144709103,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R233.pin1",
+      "to": "C208.pin1",
+      "width": 0.6,
+      "priority": 54.03,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 14.128602071860726,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "C202.pin1",
+      "to": "C_FLASH.pin1",
+      "width": 0.6,
+      "priority": 54.667,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 15.44855140235767,
+      "vias": 0
+    },
+    {
+      "net": "V3V3",
+      "from": "R216.pin1",
+      "to": "R220.pin1",
+      "width": 0.6,
+      "priority": 55.033,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 17.49705854077836,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R_INPUT_PG.pin1",
+      "to": "C_AUX1.pin1",
+      "width": 0.6,
+      "priority": 55.052,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 21.073210809957665,
+      "vias": 2
+    },
+    {
+      "net": "V3V3",
+      "from": "R503.pin1",
+      "to": "C_AUX1.pin1",
+      "width": 0.6,
+      "priority": 55.38,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "length": 16.746551211459384,
+      "vias": 2
+    },
+    {
+      "net": "D502_A",
+      "from": "R502.pin2",
+      "to": "D502.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 1.9039432764659772,
+      "vias": 0
+    },
+    {
+      "net": "D506_A",
+      "from": "R506.pin2",
+      "to": "D506.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 2.1360009363293826,
+      "vias": 0
+    },
+    {
+      "net": "D501_A",
+      "from": "R501.pin2",
+      "to": "D501.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 2.3717082451262845,
+      "vias": 0
+    },
+    {
+      "net": "D503_A",
+      "from": "R503.pin2",
+      "to": "D503.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 2.3717082451262845,
+      "vias": 0
+    },
+    {
+      "net": "D505_A",
+      "from": "R505.pin2",
+      "to": "D505.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 2.3717082451262845,
+      "vias": 0
+    },
+    {
+      "net": "D507_A",
+      "from": "R507.pin2",
+      "to": "D507.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; prefer a short top-layer route.",
+      "owner": "i2c-debug",
+      "length": 9.160274711000822,
+      "vias": 2
+    },
+    {
+      "net": "D504_A",
+      "from": "R504.pin2",
+      "to": "D504.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link across the 4.75 mm row offset.",
+      "owner": "i2c-debug",
+      "length": 9.584383380708779,
+      "vias": 0
+    },
+    {
+      "net": "D508_A",
+      "from": "R508.pin2",
+      "to": "D508.pin2",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local LED series link; retain the existing 4.25 mm horizontal offset.",
+      "owner": "i2c-debug",
+      "length": 5.389087296526011,
+      "vias": 0
+    },
+    {
+      "net": "DBG_HW_INHIBIT",
+      "from": "U_DBG2.pin6",
+      "to": "D508.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Buffer output to the LED cathode along the upper row.",
+      "owner": "i2c-debug",
+      "length": 21.311213223793576,
+      "vias": 0
+    },
+    {
+      "net": "DBG_TEC_PERMIT",
+      "from": "U_DBG1.pin4",
+      "to": "R507.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Buffer output to the local LED series resistor.",
+      "owner": "i2c-debug",
+      "length": 27.598576606538945,
+      "vias": 2
+    }
+  ],
+  "pending": [
+    {
+      "net": "XOUT",
+      "from": "U_MCU.pin21",
+      "to": "R_XOUT.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "note": "Preserve the existing 1k series resistor; 3.611 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_DM_MCU",
+      "from": "U_MCU.pin46",
+      "to": "R_USB_DM.pin2",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "maxLength": 12,
+      "note": "Northward MCU escape at x=-25.599952; maintain adjacent DP/DM escapes with equal layer transitions.",
+      "owner": "usb-routing-astra-1",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "FLASH_SD1",
+      "from": "U_MCU.pin55",
+      "to": "U_FLASH.pin2",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 13,
+      "note": "QSPI SD1/DO; 6.158 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "FLASH_CS",
+      "from": "U_MCU.pin56",
+      "to": "U_FLASH.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 13,
+      "note": "Main QSPI select path; 6.175 mm direct distance. Pullup and boot resistor branch at flash end.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "XIN",
+      "from": "U_MCU.pin20",
+      "to": "Y_MCU.pin1",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 9,
+      "note": "6.456 mm direct distance; use top with a short outward escape from pin20.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "FLASH_SD3",
+      "from": "U_MCU.pin51",
+      "to": "U_FLASH.pin7",
+      "width": 0.2,
+      "priority": 0,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 16,
+      "note": "QSPI SD3/HOLD; 9.461 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_SW",
+      "from": "Q21.pin5",
+      "to": "L2.pin1",
+      "width": 2,
+      "priority": 0,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Broad compact switch-node-to-inductor corridor. No distant switch-node plane or internal GND-layer route.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_BOOT",
+      "from": "D20.pin1",
+      "to": "C20.pin1",
+      "width": 0.4,
+      "priority": 1,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Bootstrap diode to capacitor, shortest local charging path.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_SW",
+      "from": "Q21.pin5",
+      "to": "C20.pin2",
+      "width": 0.4,
+      "priority": 1,
+      "preferredLayers": [
+        "top"
+      ],
+      "note": "Local bootstrap return from bridge, not from far inductor end.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "J_USB_PD.pin15",
+      "to": "J_USB_PD.pin16",
+      "width": 1.5,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Parallel receptacle VBUS contacts; short broad local connection with pad-sized necks.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_TEC",
+      "from": "U_INPUT.pin6",
+      "to": "C40.pin1",
+      "width": 2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Protected input trunk; use minimum-length 0.20 mm neck at 0.30 mm-wide eFuse pad, then broaden. Layer changes need an ampacity-qualified via array.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "J_USB_PD.pin16",
+      "to": "U_INPUT.pin5",
+      "width": 2,
+      "priority": 2,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Main input current corridor. U_INPUT pin5 is only 0.30 mm wide: use a short 0.20 mm neck, widen immediately outside its pad clearance.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "J_USB_PD.pin16",
+      "to": "C_USB_IN.pin1",
+      "width": 0.6,
+      "priority": 3,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Local input bypass branch.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_DVDT",
+      "from": "U_INPUT.pin7",
+      "to": "C_INPUT_DVDT.pin1",
+      "width": 0.2,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "J_USB_PD.pin15",
+      "to": "D_LOGIC_PD.pin2",
+      "width": 0.8,
+      "priority": 5,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Logic supply source branch; keep off TEC switched-current path.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_RAW",
+      "from": "J_USB_PD.pin15",
+      "to": "R_CH_VBUS.pin1",
+      "width": 0.3,
+      "priority": 9,
+      "preferredLayers": [
+        "top",
+        "bottom"
+      ],
+      "note": "Independent PD voltage-sense branch.",
+      "owner": "tec-power",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin45",
+      "to": "C_VREG_OUT.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 4,
+      "note": "VREG_VOUT to its 1uF output capacitor; 1.882 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin45",
+      "to": "U_MCU.pin50",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "VREG_VOUT feeds DVDD1; 2.000 mm direct distance along the north edge.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO3.pin1",
+      "to": "U_MCU.pin33",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO5.pin1",
+      "to": "U_MCU.pin10",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Dedicated RP2040 local bypass tap; exit fine pad before widening.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin50",
+      "to": "C_DVDD1.pin1",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 5,
+      "note": "DVDD1 to its nearest 100nF bypass; 3.226 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V1V1",
+      "from": "U_MCU.pin50",
+      "to": "U_MCU.pin23",
+      "width": 0.2,
+      "priority": 10,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 13,
+      "note": "Core rail backbone; 6.897 mm direct distance. Use inner2 or bottom around the exposed GND pad.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C207.pin1",
+      "to": "U_LATCH.pin2",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_AUX2.pin1",
+      "to": "U_AUX_LOSS_LATCH.pin2",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C217.pin1",
+      "to": "U_INPUT_LATCH.pin2",
+      "width": 0.4,
+      "priority": 11,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Local bypass supply tap; route shortest legal escape before distribution.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_LATCH.pin7",
+      "to": "U_LATCH.pin8",
+      "width": 0.4,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Adjacent tied logic supply/input pads; local strap.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_INPUT_LATCH.pin7",
+      "to": "U_INPUT_LATCH.pin8",
+      "width": 0.4,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Adjacent tied logic supply/input pads; local strap.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "U_AUX_LOSS_LATCH.pin7",
+      "to": "U_AUX_LOSS_LATCH.pin8",
+      "width": 0.4,
+      "priority": 12,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Adjacent tied logic supply/input pads; local strap.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C217.pin1",
+      "to": "U_INPUT_LATCH.pin7",
+      "width": 0.4,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Feed tied logic input from local supply bypass.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_AUX2.pin1",
+      "to": "U_AUX_LOSS_LATCH.pin7",
+      "width": 0.4,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Feed tied logic input from local supply bypass.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C207.pin1",
+      "to": "U_LATCH.pin7",
+      "width": 0.4,
+      "priority": 13,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Feed tied logic input from local supply bypass.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_SS",
+      "from": "U2.pin9",
+      "to": "C34.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_CURRENT_COMMAND",
+      "from": "U2.pin8",
+      "to": "C37.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Attach controller current command directly to its local filter capacitor.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_VC",
+      "from": "U2.pin13",
+      "to": "R27.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 10,
+      "note": "Escape left from U2 before turning toward compensation resistor; the direct diagonal crosses the sense pads.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_VREF",
+      "from": "U2.pin5",
+      "to": "C35.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Reference decoupler first; take the hard-limit divider branch from the decoupled node.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_RT",
+      "from": "U2.pin14",
+      "to": "R28.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "inner2",
+        "top",
+        "bottom"
+      ],
+      "maxLength": 13,
+      "note": "The vertical straight line crosses VC and both sense pads; escape west or use inner2 to reach the upper timing resistor.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_HARD_LIMIT",
+      "from": "U2.pin6",
+      "to": "C36.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Filtered hard-limit voltage to controller; avoid VBUS_TEC decoupling pads along the direct corridor.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_DAC",
+      "from": "U_DAC.pin1",
+      "to": "TP12.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Low-bandwidth DAC feed spans the control area; keep away from digital clocks, USB and converter switch nodes.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_EN_UVLO",
+      "from": "U2.pin4",
+      "to": "R40.pin1",
+      "width": 0.2,
+      "priority": 15,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "note": "Long DC enable threshold connection: use a quiet layer and avoid parallel travel beside TEC_SW or gate signals.",
+      "owner": "tec-analog",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "U_INPUT.pin4",
+      "to": "R_INPUT_FAULT.pin2",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_LOSS_LATCHED",
+      "from": "U_AUX_LOSS_LATCH.pin5",
+      "to": "Q_AUX_FAULT.pin1",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_FAULT_N",
+      "from": "R232.pin1",
+      "to": "Q_AUX_FAULT.pin3",
+      "width": 0.2,
+      "priority": 18,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "U_MCU.pin26",
+      "to": "R_RESET_PU.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 6,
+      "note": "RP2040 RUN/reset to local pullup; 3.058 mm direct distance.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_CLEAR_RAW",
+      "from": "R202.pin2",
+      "to": "R203.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_ARM",
+      "from": "U_CLOCK_BUFFER.pin1",
+      "to": "R204.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_CLEAR_RAW",
+      "from": "U_CLEAR_BUFFER.pin3",
+      "to": "R237.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_CLEAR_RAW",
+      "from": "R202.pin2",
+      "to": "U_CLEAR_BUFFER.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_ARMED",
+      "from": "U_INPUT_LATCH.pin5",
+      "to": "R236.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_CLEAR_RAW",
+      "from": "Q_FAULT_CLEAR.pin3",
+      "to": "R202.pin2",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_RUN",
+      "from": "R226.pin1",
+      "to": "U_MCU.pin16",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_CLEAR_RAW",
+      "from": "Q_INPUT_CLEAR.pin3",
+      "to": "U_CLEAR_BUFFER.pin3",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "TEC_REQUEST",
+      "from": "R202.pin1",
+      "to": "U_MCU.pin15",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_NRST",
+      "from": "TP_RESET.pin1",
+      "to": "TP13.pin1",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "maxLength": 45,
+      "note": "Include remote reset testpoint TP13; 29.428 mm direct distance. No oscillator-region detour.",
+      "owner": "mcu",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_ARM",
+      "from": "U_CLOCK_BUFFER.pin1",
+      "to": "U_MCU.pin17",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_RUN",
+      "from": "R_INPUT_RUN.pin1",
+      "to": "U_CLOCK_BUFFER.pin3",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "MCU_RUN",
+      "from": "U_CLOCK_BUFFER.pin3",
+      "to": "U_DBG2.pin3",
+      "width": 0.2,
+      "priority": 20,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Hardware interlock signal; route all branches continuously.",
+      "owner": "interlock",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "U_USB_ESD.pin5",
+      "to": "R_USB_DETECT_TOP.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "J_USB_PROG.pin16",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "bottom",
+        "top",
+        "inner2"
+      ],
+      "note": "Escape each VBUS pad toward the interior and cross the USB data/CC row on another layer.",
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "U_USB_ESD.pin5",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "HOT_ADC",
+      "from": "C209.pin1",
+      "to": "U_MCU.pin38",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Prioritize the capacitor-to-ADC connection, approximately 5.7 mm direct distance.",
+      "owner": "thermal_sensor_routing",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin16",
+      "to": "R_USB_PRESENT.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "USB_PROG_5V",
+      "from": "J_USB_PROG.pin15",
+      "to": "C_USB_PROG.pin1",
+      "width": 0.4,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "bottom",
+        "inner2"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "COLD_ADC",
+      "from": "C210.pin1",
+      "to": "U_MCU.pin39",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Prioritize the capacitor-to-ADC connection, approximately 8.6 mm direct distance.",
+      "owner": "thermal_sensor_routing",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "VBUS_ADC",
+      "from": "C211.pin1",
+      "to": "U_MCU.pin41",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Prioritize the capacitor-to-ADC connection, approximately 10.5 mm direct distance.",
+      "owner": "thermal_sensor_routing",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_AUXOFF",
+      "from": "R_INPUT_PG.pin2",
+      "to": "U_MCU.pin29",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "INPUT_ENABLE",
+      "from": "R_INPUT_OFF.pin1",
+      "to": "D_INPUT_PERMISSION.pin3",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "PD_CFG1_LOW",
+      "from": "Q_PD_CFG1.pin1",
+      "to": "U_MCU.pin6",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "PD_CFG3_LOW",
+      "from": "Q_PD_CFG3.pin1",
+      "to": "U_MCU.pin8",
+      "width": 0.2,
+      "priority": 25,
+      "preferredLayers": [
+        "inner2",
+        "bottom",
+        "top"
+      ],
+      "owner": "pd-input",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "I2C_SDA",
+      "from": "R_PD_SDA.pin2",
+      "to": "U_DAC.pin4",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "DAC branch from the SDA pullup.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "I2C_SCL",
+      "from": "R_PD_SCL.pin2",
+      "to": "U_DAC.pin5",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "DAC branch from the SCL pullup.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "I2C_SDA",
+      "from": "R_PD_SDA.pin2",
+      "to": "U_MCU.pin11",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "MCU leaf; branch at the pullup, never at the fine-pitch MCU pad.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "I2C_SDA",
+      "from": "R_PD_SDA.pin2",
+      "to": "U_TEC_MON.pin3",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Long SDA trunk; follow the SCL corridor when clearance permits.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "I2C_SCL",
+      "from": "R_PD_SCL.pin2",
+      "to": "U_TEC_MON.pin4",
+      "width": 0.2,
+      "priority": 40,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Long SCL trunk; use inner2 as needed to clear power and switching copper.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO1.pin1",
+      "to": "C_USB_VDD.pin1",
+      "width": 0.4,
+      "priority": 43.5,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO2.pin1",
+      "to": "C_IO3.pin1",
+      "width": 0.4,
+      "priority": 44,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_USB_VDD.pin1",
+      "to": "C_VREG_IN.pin1",
+      "width": 0.4,
+      "priority": 44.507,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO3.pin1",
+      "to": "R_RESET_PU.pin1",
+      "width": 0.4,
+      "priority": 44.616,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C_IO6.pin1",
+      "to": "C_USB_SWITCH.pin1",
+      "width": 0.4,
+      "priority": 45.077,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C206.pin1",
+      "to": "C216.pin1",
+      "width": 0.6,
+      "priority": 49.22,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C206.pin1",
+      "to": "C217.pin1",
+      "width": 0.6,
+      "priority": 50.078,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "V3V3",
+      "from": "C207.pin1",
+      "to": "C223.pin1",
+      "width": 0.6,
+      "priority": 50.47,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Passive-endpoint rail distribution; neck at pads as required by clearance.",
+      "owner": "ground-supply",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "DBG_PD_GATE",
+      "from": "U_DBG1.pin6",
+      "to": "D506.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Buffer output to LED cathode along the upper LED row.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "DBG_TEC_PERMIT",
+      "from": "R507.pin1",
+      "to": "TP15.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Testpoint branch at the series-resistor endpoint; avoid a second buffer-pad escape.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "DBG_MCU_RUN",
+      "from": "U_DBG2.pin4",
+      "to": "TP17.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Single buffer-to-testpoint connection; prefer inner2 for the long vertical run when top is blocked.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "DBG_HW_INHIBIT",
+      "from": "U_DBG2.pin6",
+      "to": "TP16.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Buffer-to-testpoint trunk; use inner2 as needed away from switching copper.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    },
+    {
+      "net": "DBG_PD_GATE",
+      "from": "D506.pin1",
+      "to": "TP14.pin1",
+      "width": 0.2,
+      "priority": 60,
+      "preferredLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "note": "Testpoint branch from the LED-side trunk; inner2 may carry the long vertical run.",
+      "owner": "i2c-debug",
+      "reason": "No legal path within width, layer and length constraints in bounded first-pass search"
+    }
+  ],
+  "notes": [
+    {
+      "owner": "usb-routing-astra-1",
+      "nets": [
+        "USB_DP_PORT",
+        "USB_DM_PORT",
+        "USB_DP_SWITCH",
+        "USB_DM_SWITCH",
+        "USB_DP_MCU",
+        "USB_DM_MCU",
+        "USB_PROG_CC1",
+        "USB_PROG_CC2",
+        "USB_VBUS_DETECT",
+        "USB_PRESENT_BASE",
+        "USB_DATA_DISABLE"
+      ],
+      "notes": [
+        "USB differential impedance is UNQUALIFIED pending the manufacturer's four-layer stackup, dielectric properties, copper thickness and field-solver calculation. The 0.20 mm route width is a routing constraint, not a 90-ohm claim.",
+        "Reserve inner1 for an uninterrupted GND reference. Prefer top USB paths over inner1; any bottom/inner2 fallback requires reference-plane review and nearby ground stitching for return paths.",
+        "Route paired branches adjacently, with equal transition counts where possible. Review total connector-to-MCU DP and DM lengths across PORT, SWITCH and MCU nets; maxLength values are detour caps, not verified skew limits.",
+        "The fixed interleaved connector pads and reversed north-facing MCU-side resistor terminals require detours; clearance-aware realization must not replace these endpoint trees with straight segments through intervening pads.",
+        "All eleven owned nets have explicit spanning trees. ESD pin1/pin6 and pin3/pin4 are connected through PCB copper so protection can remain in the routed path. Physical ESD/package behavior still requires component validation."
+      ]
+    },
+    {
+      "owner": "tec-power",
+      "nets": [
+        "VBUS_RAW",
+        "VBUS_TEC",
+        "TEC_SW",
+        "TEC_INDUCTOR_OUT",
+        "TEC_POS",
+        "TEC_HG",
+        "TEC_LG",
+        "TEC_HIGH_GATE",
+        "TEC_LOW_GATE",
+        "TEC_BOOT",
+        "TEC_VCC_INT"
+      ],
+      "notes": [
+        "Routing intent is not fabrication qualified: clearance, completed copper, thermal rise, stackup, via current capacity and switching behavior need validation.",
+        "Reserve inner1 for continuous GND. Prefer top for bridge/driver/bootstrap; bottom is available for quiet Kelvin branches and remote DC feeds.",
+        "Nominal 1–2 mm power corridors require short pad necks. U_INPUT pin5/pin6 polygon lands are 0.30 mm wide; use 0.20 mm escape only locally. Never silently accept long 0.20 mm power runs.",
+        "Kelvin pairs originate at R20 lands and carry no power. Keep R25/R26 and R41/R42 branches away from TEC_SW, gates, inductor and high-current corridors; same-net geometric merging must not collapse these into power trunks.",
+        "Q20/Q21/L2 and the input capacitors define the commutation loop. Ground routing owner must return the nearby input ceramics to Q21 sources over a short broad path with stitching; avoid making the commutation return depend on distant ground copper.",
+        "Keep switch-node area small and on top; do not create a broad TEC_SW pour. Any bottom power transition requires suitably sized parallel vias, not a single signal via."
+      ]
+    },
+    {
+      "owner": "ground-supply",
+      "nets": [
+        "GND",
+        "V3V3",
+        "LOGIC_VIN",
+        "LOGIC_SW",
+        "LOGIC_BST"
+      ],
+      "notes": [
+        "Inventory is Revision B ports.json: GND 191 pads/ports, V3V3 81, LOGIC_VIN 5, LOGIC_SW 3, LOGIC_BST 2. Supply edges span every listed port exactly within its net.",
+        "GND intentionally has no point-to-point edges. Parent MUST synthesize a continuous inner1 GND plane and verify every one of the 191 GND ports is physically connected by a legal surface escape and off-pad via or plated-hole connection. Omission is not a routed-ground claim.",
+        "Ground preferred layers are inner1, top, bottom. Do not place vias directly on fine-pitch pads; find legal escapes against actual pad polygons and all other copper, holes, and board-edge clearances before adding vias. Keep plane antipads clear of unrelated through vias.",
+        "Explicitly connect exposed pads U_MCU.pin57, U_FLASH.pin9, and U2.pin21 with short wide surface copper to multiple legal off-pad GND vias where space permits. Exposed pads must not remain isolated when fine peripheral pins are routed.",
+        "Give each decoupling capacitor ground pad a nearby individual ground via and short return to its IC ground region. Preserve continuous return under USB, QSPI, clock, ADC and control traces; add nearby GND stitching at signal layer transitions without touching signal pads.",
+        "Use multiple GND vias and wide local surface copper for Q21 source pads, U2 power grounds, TEC connector J_TEC.pin2, high-current capacitor returns and both USB connector shell/GND groups. A single thin escape is inadequate for power returns; keep switching and TEC return current local rather than through MCU/analog bypass stubs.",
+        "Join analog and digital GND to the continuous plane without splitting it. Keep high-current and buck switch loops away from thermal/ADC and crystal returns. Stitch top/bottom GND copper to inner1 at board edges and connectors only where clearance permits; suppress isolated pour islands.",
+        "V3V3 has explicit local bypass leaves and a constrained passive-endpoint minimum-distance distribution tree. IC fine-pitch pads are never transit nodes. RP2040, flash and USB-switch taps are 0.2 mm; ordinary supply taps are 0.4 mm and distribution trunks 0.6–0.8 mm. Parent must narrow local pad escapes where actual pad clearances require it.",
+        "LOGIC_BST and LOGIC_SW request top-only routing. Other V3V3 distribution prefers top, inner2, bottom to preserve inner1 as a GND return plane. Priorities place bootstrap/switch loops and local bypass taps before distribution trunks.",
+        "This is a connectivity and layer-preference plan, not a completed route or DRC result. Parent must synthesize legal geometry, ground plane/vias, verify all copper connectivity, enforce manufacturer clearances, and run shorts checks. No placement or source-net edits were made."
+      ]
+    },
+    {
+      "owner": "mcu",
+      "nets": [
+        "XIN",
+        "XOUT",
+        "XOUT_CRYSTAL",
+        "V1V1",
+        "ADC_AVDD",
+        "FLASH_SD3",
+        "FLASH_SCLK",
+        "FLASH_SD0",
+        "FLASH_SD2",
+        "FLASH_SD1",
+        "FLASH_CS",
+        "BOOT_BUTTON",
+        "MCU_NRST"
+      ],
+      "notes": [
+        "All selectors and pin functions are taken from ports.json and processor.tsx; no pin assignments or placements are changed.",
+        "13 complete spanning trees, 28 edges, 0.2 mm width. Crystal/QSPI priority 0; local supply priority 10; boot/reset priority 20.",
+        "Prefer top for oscillator and bypass branches. Reserve inner1 for GND; permit inner2/bottom for crossing QSPI signals and the V1V1 backbone.",
+        "Length budgets are routing targets in mm, allowing pad escape and obstacle clearance; they are not verified routed lengths or a timing/impedance signoff.",
+        "Keep oscillator copper clear of QSPI clock, USB, and switching power routes. Avoid extra oscillator vias and leave bypass return routing to the GND owner."
+      ]
+    },
+    {
+      "owner": "pd-input",
+      "nets": [
+        "USB_CC1",
+        "USB_CC2",
+        "PD_VDD",
+        "PD_CFG2",
+        "PD_CFG3",
+        "PD_DATA_SHORT",
+        "PD_VBUS_SENSE",
+        "PD_CFG1",
+        "PD_PG_N",
+        "PD_CFG1_LOW",
+        "PD_CFG2_LOW",
+        "PD_CFG3_LOW",
+        "PD_WINDOW_SENSE",
+        "PD_UV_REF",
+        "PD_OV_REF",
+        "PD_PG_BASE",
+        "PD_VALID_N",
+        "USB_PROG_5V",
+        "INPUT_ENABLE",
+        "INPUT_OVLO",
+        "INPUT_DVDT",
+        "INPUT_CURRENT_MON",
+        "INPUT_AUXOFF"
+      ],
+      "notes": [
+        "23 nets, 74 connected pad selectors, 51 tree edges; every endpoint is checked against ports.json.",
+        "Control traces are 0.20 mm; PD_VDD and USB_PROG_5V traces are 0.40 mm, within the corresponding pad widths.",
+        "U_INPUT signal pads are 0.25 mm tall on 0.45 mm pitch; escape outward before turns or vias. MCU control pads are nominally 0.20 mm.",
+        "Priority 5 reserves local PD sensing, decoupling, reference, and eFuse control routes. Configuration, status distribution, and USB supply taps use priority 25.",
+        "All terminals are on top. Preferred inner/bottom layers require clearance-checked top-pad escapes and vias in the route realization.",
+        "Inherited placement requires long MCU configuration/status runs and an approximately 62 mm PD_VALID_N debug branch; no connectivity or placement is changed."
+      ]
+    },
+    {
+      "owner": "tec-analog",
+      "nets": [
+        "TEC_EN_UVLO",
+        "TEC_VREF",
+        "TEC_HARD_LIMIT",
+        "TEC_CURRENT_COMMAND",
+        "TEC_SS",
+        "TEC_FB",
+        "TEC_SENSE_P_FILTERED",
+        "TEC_SENSE_N_FILTERED",
+        "TEC_VC",
+        "TEC_RT",
+        "TEC_COMP_RC",
+        "TEC_DAC",
+        "TEC_MON_SENSE_N",
+        "TEC_MON_SENSE_P"
+      ],
+      "notes": [
+        "Every owned net has a concrete spanning tree. All traces are 0.2 mm. Filtered sense nets have priority 2; other analog nets have priority 15.",
+        "R20.pin1 at (40.145,9.5) is the true positive shunt pickup; R20.pin2 at (45.855,9.5) is the negative pickup. The power route owner must branch R25.pin1 and R41.pin1 directly from R20.pin1, and R26.pin1 and R42.pin1 directly from R20.pin2, without using L2, capacitor or connector copper as a sense source.",
+        "Unfiltered controller Kelvin branches span approximately 29.95 mm and 30.80 mm before detours. Route them as a close pair outside the Q20/Q21/L2 switching region, then separate only at the R25/R26 filter inputs. The monitor pair spans approximately 14.62 mm and 14.65 mm and also requires independent shunt-pad pickups.",
+        "Keep filtered sense, VC, COMP_RC, RT, FB and DAC copper at least 0.5 mm from switching/gate copper where the preserved placement permits; route on a quiet alternate layer where this cannot be met on top. These are analog separation goals in addition to normal copper clearance.",
+        "C32 and C42 should connect directly to their respective input pads with short branches. The priority-2 sense routes consume the left controller escape corridor before VC and RT. Left-side U2 pads must escape left before turning; direct northbound diagonals through the row are invalid.",
+        "Length limits are routing targets for compact local links. The solver must still verify every pad escape, via, copper clearance and connection on the complete board.",
+        "C32 differential filtering is local, but the switching-node R23.pin2 at (18.65,33.45) lies near R25/R26/R28. Keep its power route outside the analog corridor and use layer separation rather than sending sense/compensation signals alongside it."
+      ]
+    },
+    {
+      "owner": "interlock",
+      "nets": [
+        "MCU_RUN",
+        "MCU_ARM",
+        "ARM_CLK",
+        "TEC_CLEAR_N",
+        "RUN_CLK",
+        "INPUT_ARMED",
+        "INPUT_CLEAR_N",
+        "PD_LATCH_INHIBIT",
+        "FAULT_SOURCE",
+        "FAULT_PNP_BASE",
+        "TEC_CLEAR_RAW",
+        "FAULT_NPN_BASE",
+        "INPUT_CLEAR_RAW",
+        "INPUT_FAULT_NPN_BASE",
+        "INPUT_FAULT_N",
+        "AUX_LOSS_RAW",
+        "AUX_LOSS_CLK",
+        "AUX_VALID",
+        "INPUT_LOSS_LATCHED",
+        "TEC_PERMISSION_SUPPLY",
+        "TEC_PERMISSION_PNP_BASE",
+        "TEC_PERMISSION_PNP_DRIVE",
+        "TEC_PERMISSION_NPN_BASE",
+        "TEC_SAFE_EN",
+        "TEC_REQUEST"
+      ],
+      "notes": [
+        "25 interlock nets use 0.2 mm signal traces and exact physical pad selectors.",
+        "Tree branch points are existing same-net pads; no electrical or placement changes.",
+        "Prefer top for local bias and pad escape, inner2 for cross-board interlock runs, bottom as the final routing alternative.",
+        "Priorities 15–30 reserve early routing for clock, clear, fault, and hardware permission paths.",
+        "No maximum signal length is imposed; the shared engine must verify clearance, connectivity, and shorts for the complete board."
+      ]
+    },
+    {
+      "owner": "thermal_sensor_routing",
+      "nets": [
+        "HOT_LOW",
+        "HOT_HALF",
+        "HOT_HIGH",
+        "HOT_RAW",
+        "COLD_RAW",
+        "HOT_ADC",
+        "COLD_ADC",
+        "VBUS_ADC",
+        "VOUT_ADC",
+        "POWER_BUDGET_HIGH"
+      ],
+      "notes": [
+        "Exact inventory selectors cover 36 pads using 26 edges across nine connected nets and one singleton.",
+        "POWER_BUDGET_HIGH contains only R227.pin1 in the inventory, so it intentionally has no routing edge.",
+        "All traces are 0.2 mm wide. Local divider and ADC branches prefer top; long raw and testpoint branches prefer inner2 then bottom.",
+        "Ground is owned separately. J_HOT.pin2/J_COLD.pin2, lower divider returns, and C209-C212 ground pads need local low-impedance returns to the shared reference plane.",
+        "Remote testpoints lie at x=20 to 42.75 mm, y=0.5 to 2 mm; ADC circuitry is at x=-23.58 to -13.25 mm, y=-14 to -27.7 mm. Their long branches must not displace local capacitor-to-MCU connections.",
+        "No hard maximum lengths are imposed: the inventory provides geometry but no timing, settling-time, or manufacturer limits. The common clearance-aware solver determines legal escapes and vias."
+      ]
+    },
+    {
+      "owner": "fan",
+      "nets": [
+        "FAN_SW",
+        "FAN_FB",
+        "FAN_BST",
+        "V12_FAN",
+        "FAN_PWM",
+        "FAN_PWM_BASE",
+        "FAN_TACH",
+        "FAN_PWM_DRIVE",
+        "FAN_TACH_MCU"
+      ],
+      "notes": [
+        "All 30 owned terminal selectors were checked against ports.json; none share a physical pad ID. Each net has exactly N-1 edges and all terminals are included.",
+        "Only the local FAN_SW and FAN_BST edges require top routing; power reservoirs use 0.8 mm, smaller power lands 0.4-0.5 mm, and controls 0.2 mm.",
+        "Current placement puts the bootstrap capacitor about 5.36 mm from U_FAN.pin6 and the feedback divider about 14.35 mm from U_FAN.pin4 before detours. Geometry must honor intervening pads; electrical loop optimization would require a separate placement change.",
+        "U_MCU pins13/14 have 0.1999996 mm pad height and 0.40005 mm pitch. Their 0.2 mm escapes must follow the horizontal pad axis; larger traces or vias placed between the pins are unsuitable.",
+        "Remote V12_FAN debug branches extend to TP04 (4,2) and R504 (-12,32.75); FAN_PWM_DRIVE and filtered tach traverse over 68 mm to the MCU. The common clearance router must add layer transitions and avoid other net copper."
+      ]
+    },
+    {
+      "owner": "i2c-debug",
+      "nets": [
+        "I2C_SCL",
+        "I2C_SDA",
+        "D501_A",
+        "D502_A",
+        "D503_A",
+        "D504_A",
+        "D505_A",
+        "D506_A",
+        "DBG_PD_GATE",
+        "DBG_TEC_PERMIT",
+        "D507_A",
+        "D508_A",
+        "DBG_HW_INHIBIT",
+        "DBG_MCU_RUN"
+      ],
+      "notes": [
+        "Owns exactly 14 nets, 37 pads and 23 spanning-tree edges; selectors are copied from ports.json.",
+        "All traces are 0.2 mm; I2C priority is 40 and LED/debug priority is 60; layer preference is top, inner2, bottom.",
+        "SCL and SDA each use a four-edge pullup-rooted tree, keeping the MCU pad a leaf and the nearby testpoint stub short.",
+        "The eight resistor-to-LED anode links stay local on top; do not change LED or resistor placements.",
+        "Use the parent clearance-aware solver for pad escapes, layer transitions and final copper geometry; these trees add no component moves or connectivity changes."
+      ]
+    }
+  ]
+}

@@ -47,6 +47,28 @@ The board deliberately contains **no PCB traces, vias or copper pours**. Compone
 
 ## Reproduce
 
+### Revision B routing in progress
+
+The separate [`routed.tsx`](routed.tsx) entrypoint starts copper routing on the
+current placement. Review [four copper layers](review/routing/index.html),
+[routed and pending endpoints](review/routing/routing-report.json), and
+[routing scope and validation](docs/revision-b-routing.md). Ten routing plans
+cover all 135 nets; three were prepared with Astra agents.
+
+The first pass is incomplete. Missing connections, ground-plane continuity,
+USB impedance/skew, Kelvin separation, switching-loop geometry and power-via
+ampacity remain explicit release gates. The default placement/assembly entrypoints
+continue to build the original unrouted review.
+
+```sh
+bun run route:revision-b
+bun run build:routed
+bun run check:routed
+bun run node_modules/tscircuit/cli.mjs check shorts dist/routed/circuit.json --mode gerber --layer all
+bun run export:routed
+bun run node_modules/tscircuit/cli.mjs dev routed.tsx
+```
+
 ```sh
 bun install --frozen-lockfile
 bun run typecheck

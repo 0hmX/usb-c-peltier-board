@@ -1,0 +1,4 @@
+$ bun run scripts/check-routed-revision-b.ts
+Compared 694 native traces, 313 barrels and all retained placements/net assignments
+{"parityProblems":0,"placementErrors":0,"netlistErrors":0,"routingGeometricErrors":0,"pendingConnectivity":108,"unmetLengthConstraints":65,"evidenceBackedGeometryExceptions":4}
+error: script "check:routed" exited with code 1

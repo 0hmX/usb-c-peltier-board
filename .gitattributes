@@ -1,2 +1,4 @@
 review/** linguist-generated=true -whitespace
 src/board/bundled-cad-assets.json linguist-generated=true
+src/board/routing/generated.json linguist-generated=true
+src/board/routing/ports.json linguist-generated=true

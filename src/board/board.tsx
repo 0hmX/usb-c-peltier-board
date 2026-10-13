@@ -1,4 +1,4 @@
-import { Fragment, createElement } from "react"
+import { Fragment, createElement, type ReactNode } from "react"
 import type { BoardProps } from "@tscircuit/props"
 import { boardLayoutProps } from "../legacy/layout"
 import { supplierPartsEngine } from "../parts/supplier-parts-engine"
@@ -19,8 +19,8 @@ const partsEngine: NonNullable<BoardProps["partsEngine"]> = {
 
 const namedNets = [...new Set(retainedComponents.flatMap(item => Object.values(item.connections)).map(selector => selector.slice(4)))].filter(name => name !== "GND")
 
-export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
-  return <board {...boardLayoutProps} {...boardDimensions} title="RP2040 + CH224K dual-USB Peltier controller · placement review"
+export function DualUsbPeltierBoard({ schematicDisabled = false, routing }: { schematicDisabled?: boolean; routing?: ReactNode } = {}) {
+  return <board {...boardLayoutProps} {...boardDimensions} title={routing ? "RP2040 + CH224K dual-USB Peltier controller · routing in progress" : "RP2040 + CH224K dual-USB Peltier controller · placement review"}
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled} partsEngine={partsEngine} schLayout={{ layoutMode: "none" }}
     schTraceAutoLabelEnabled schMaxTraceDistance={0.25} pcbStyle={{ silkscreenTextVisibility: "hidden" }}>
     <net name="GND" isGroundNet />
@@ -55,6 +55,7 @@ export function DualUsbPeltierBoard({ schematicDisabled = false }: { schematicDi
     {positionSchematic(Processor())}
     {positionSchematic(UsbDataPath())}
     {positionSchematic(InputLossInterlock())}
+    {routing}
     {[[-49, 36], [49, 36], [-49, -36], [49, -36]].map(([pcbX, pcbY], index) => <Fragment key={index}><hole name={"H" + (index + 1)} diameter={3.2} pcbX={pcbX} pcbY={pcbY} />{createElement("keepout", { shape: "circle", radius: 4, pcbX, pcbY, layers: ["top", "inner1", "inner2", "bottom"] })}</Fragment>)}
     <group name="LEGEND" pcbStyle={{ silkscreenTextVisibility: "visible" }}>
     <silkscreentext text="PD POWER" pcbX={-48} pcbY={32} fontSize={1.5} />
