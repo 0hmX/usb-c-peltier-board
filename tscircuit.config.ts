@@ -1,7 +1,7 @@
 import { supplierOrientationCache } from "./src/parts/supplier-parts-engine"
+import projectConfig from "./tscircuit.config.json"
 
 export default {
-  mainEntrypoint: "index.tsx",
-  includeBoardFiles: ["index.tsx"],
+  ...projectConfig,
   platformConfig: { localCacheEngine: supplierOrientationCache },
 }

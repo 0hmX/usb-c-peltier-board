@@ -87,6 +87,12 @@ Geometric DRC, schematic placement and [PCB placement analysis](review/placement
 
 PCB coordinates are explicitly editable in `src/board/clearance-placements.ts`; schematic refinements are in `src/board/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
 
+The hosted build package includes circuit source and its assets. `tscircuit.config.json`
+excludes review outputs, archives, documentation, tooling and tests from package
+uploads, selects `index.tsx` explicitly, and uses the pinned dependency versions.
+The TypeScript configuration shares those settings and adds the supplier cache.
+All review files remain available in this repository.
+
 `check:source-evaluator` evaluates both current entrypoints offline and repeats the revision checks. `check:saved-routes` separately validates the historical routed board through `scripts/legacy-saved-board.tsx`; its copper counts do not describe Revision B. Both commands remove their previous success report before validation starts. Run `bun test tests` for the regression suite, including the input-loss latch behavior.
 
 ## Power and service behavior
