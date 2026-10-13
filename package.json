@@ -24,6 +24,7 @@
     "tscircuit": "^0.0.2868",
     "typescript": "^5.0.0",
     "circuit-json-to-gltf": "0.0.151",
+    "jscad-planner": "0.0.19",
     "poppygl": "0.0.34",
     "three": "0.179.1"
   },

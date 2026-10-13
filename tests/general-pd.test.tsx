@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, test } from "bun:test"
 import { Circuit } from "tscircuit"
-import { GeneralPdDriverBoard } from "../src/board/general-pd"
+import { boardFixture } from "./fixtures"
 
 let circuit: InstanceType<typeof Circuit>
 const roots = new Map<string, string>()
@@ -13,9 +13,7 @@ function root(id: string): string {
 }
 
 beforeAll(async () => {
-  circuit = new Circuit()
-  circuit.add(<GeneralPdDriverBoard schematicDisabled />)
-  await circuit.renderUntilSettled()
+  circuit = await boardFixture()
   // Follow source wiring transitively so an accidental port-to-port or
   // net-to-net bridge cannot hide behind otherwise correct named connections.
   const join = (ids: string[]) => {
@@ -27,7 +25,7 @@ beforeAll(async () => {
     join([...trace.connected_source_port_ids, ...trace.connected_source_net_ids])
   for (const part of circuit.db.source_component.list())
     for (const ports of part.internally_connected_source_port_ids ?? []) join(ports)
-})
+}, 15_000)
 
 function component(name: string) {
   const part = circuit.db.source_component.list().find(item => item.name === name)

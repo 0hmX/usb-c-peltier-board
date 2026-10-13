@@ -2,7 +2,7 @@
   "units": "mm",
   "pcb": {
     "source": "dist/index/circuit.json",
-    "geometry": "Actual unrouted tscircuit PCB and its component placement; supplied component OBJ models where available. Drawing-derived bodies remain approximate. DNP copper test pads appear in the PCB surface texture with no artificial component bodies.",
+    "geometry": "Actual unrouted tscircuit PCB and its component placement, inside native assembly.device; supplied component OBJ models where available. Drawing-derived bodies remain approximate. DNP copper test pads appear in the PCB surface texture with no artificial component bodies.",
     "routing": "No copper routing. Wires in this assembly are external connection illustrations."
   },
   "peltier": {
@@ -13,7 +13,24 @@
       40,
       3.6
     ],
-    "geometry": "Amazon listing dimensional envelope, not manufacturer CAD. Ceramic plates and core are visual approximations; lead routing, diameter and length are illustrative. Confirm purchased samples before mechanical manufacture."
+    "geometry": "Amazon listing dimensional envelope, not manufacturer CAD. Ceramic plates and core are visual approximations; lead routing, diameter and length are illustrative. Confirm purchased samples before mechanical manufacture.",
+    "nativePart": "TEC_DEFAULT",
+    "leadParts": [
+      {
+        "nativePart": "TEC_POS_LEAD",
+        "boardConnector": "J_TEC",
+        "pin": "pin1",
+        "polarity": "positive",
+        "illustrationColor": "red"
+      },
+      {
+        "nativePart": "TEC_NEG_LEAD",
+        "boardConnector": "J_TEC",
+        "pin": "pin2",
+        "polarity": "negative",
+        "illustrationColor": "black"
+      }
+    ]
   },
   "officialCadAttempts": [
     {
@@ -39,15 +56,24 @@
       {
         "boardPort": "J_USB",
         "role": "PD power from 100 W USB-C charger",
-        "illustrationColor": "black"
+        "illustrationColor": "black",
+        "nativePart": "USB_PD_CABLE"
       },
       {
         "boardPort": "J_PROGRAM",
         "role": "Program/debug USB 2.0 connection to PC",
-        "illustrationColor": "light gray"
+        "illustrationColor": "light gray",
+        "nativePart": "USB_PROGRAM_CABLE"
       }
     ],
     "electricalRating": "Manufacturer specifies up to 48 V / 5 A power delivery, an E-Marker, and USB 2.0 data up to 480 Mbps. Both roles can use this same cable product. Board data speed is determined by its USB implementation.",
     "geometry": "Connection illustrations. Only short segments and board-side plugs are shown. Manufacturer does not publish plug/jacket CAD or dimensions; shapes and role colors are indicative, not fit-qualified geometry. Cable slack, charger end and PC end are omitted."
+  },
+  "nativeAssembly": {
+    "source": "src/assembly/general-pd-assembly.tsx",
+    "geometrySource": "src/assembly/models.ts",
+    "connectorMappingSource": "src/assembly/connector-placement.ts",
+    "api": "https://docs.tscircuit.com/elements/assembly-part",
+    "geometry": "Native assembly.device + five CAD-only assembly.part models; no accessory PCB components, electrical ports or JLCPCB BOM entries. The supported assembly.cable API cannot resolve generic assembly.part or loose-wire ends, so native JSCAD parts show the external paths. Board-side XY points derive from the real shared connector placements and exact supplier-footprint insertion/pin offsets. USB mating-axis and TEC wire-channel heights, cable diameters and plugs are illustrative."
   }
 }

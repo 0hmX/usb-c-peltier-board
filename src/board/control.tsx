@@ -13,6 +13,7 @@ import { KT_0603Y } from "../../imports/KT_0603Y"
 import { MMBT3904_RANGE_100_300_ } from "../parts/C20526"
 import { CC0805KKX7R9BB225 } from "../../imports/CC0805KKX7R9BB225"
 import { SourcedCapacitor, SourcedResistor } from "./sourced-passive"
+import { connectorPlacements } from "../assembly/connector-placement"
 
 export const controlDesign = {
   mcu: "STM32G0B1KBT6",
@@ -83,7 +84,7 @@ export const debugTestpoints = [
 
 export function ControlBlock() {
   return <>
-    <USB4085_GF_A name="J_PROGRAM" pcbX={-33} pcbY={-20} pcbRotation={270} {...control}
+    <USB4085_GF_A name="J_PROGRAM" {...connectorPlacements.J_PROGRAM} {...control}
       connections={{ pin1: "net.PROGRAM_CC1", pin14: "net.PROGRAM_CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
         pin3: "net.PROGRAM_VBUS", pin7: "net.PROGRAM_VBUS", pin10: "net.PROGRAM_VBUS", pin15: "net.PROGRAM_VBUS",

@@ -1,1 +1,1 @@
-export { GeneralPdDriverBoard as default } from "./src/board/general-pd"
+export { GeneralPdDriverAssembly as default } from "./src/assembly/general-pd-assembly"

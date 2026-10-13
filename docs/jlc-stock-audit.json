@@ -1,8 +1,8 @@
 {
-  "audit_recorded_at_utc": "2026-10-13T21:57:42Z",
+  "audit_recorded_at_utc": "2026-10-13T22:18:58Z",
   "observed_date_local": "2026-10-14",
   "timezone": "Asia/Calcutta",
-  "scope": "Public JLCPCB product-page componentInfo payload, overseasStockCount field. Counts can change; they are not a reservation, quote or guarantee of an assembled order. Assembly-service eligibility and final BOM must be checked when ordering. Bare copper test pads are PCB features and are excluded from purchased placements.",
+  "scope": "Fresh requests to all selected public JLCPCB product pages; stock read from the componentInfo.overseasStockCount field and exact componentCode/componentModelEn matched to the current native board. Counts can change; this is not a reservation, quote or guarantee of an assembled order. Assembly-service eligibility and final BOM must be checked when ordering. Bare copper test pads are PCB features and are excluded from purchased placements.",
   "unique_parts": 45,
   "placements": 95,
   "source_components": 110,
@@ -44,6 +44,7 @@
       "noBuyReason": null,
       "initialPrice": 0.007,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:51Z",
       "designators": [
         "C_COMP_ZERO"
       ],
@@ -58,8 +59,8 @@
       "componentModelEn": "CC0603KRX7R8BB105",
       "componentBrandEn": "YAGEO",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 233451,
-      "canPresaleNumber": 189868,
+      "overseasStockCount": 233431,
+      "canPresaleNumber": 189848,
       "preMinPurchaseNum": 443,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -69,6 +70,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0252,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:46Z",
       "designators": [
         "C_LDO_IN",
         "C_LDO_OUT",
@@ -99,6 +101,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0101,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:45Z",
       "designators": [
         "C_COMP_POLE"
       ],
@@ -124,6 +127,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0152,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:45Z",
       "designators": [
         "C_CURRENT_FILTER"
       ],
@@ -149,6 +153,7 @@
       "noBuyReason": null,
       "initialPrice": 0.1374,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:46Z",
       "designators": [
         "C_AUX_IN"
       ],
@@ -163,8 +168,8 @@
       "componentModelEn": "CC0603KRX7R9BB104",
       "componentBrandEn": "YAGEO",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 53309621,
-      "canPresaleNumber": 36703741,
+      "overseasStockCount": 53309180,
+      "canPresaleNumber": 36704858,
       "preMinPurchaseNum": 852,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -174,6 +179,7 @@
       "noBuyReason": null,
       "initialPrice": 0.014,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:46Z",
       "designators": [
         "C_AUX_BOOT",
         "C_AUX_HF",
@@ -205,8 +211,8 @@
       "componentModelEn": "CL21A106KAYNNNE",
       "componentBrandEn": "Samsung Electro-Mechanics",
       "componentSpecificationEn": "0805",
-      "overseasStockCount": 3998625,
-      "canPresaleNumber": 2836581,
+      "overseasStockCount": 3998231,
+      "canPresaleNumber": 2836137,
       "preMinPurchaseNum": 131,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -216,6 +222,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0689,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:47Z",
       "designators": [
         "C_AUX_OUT",
         "C_DRIVER_VCC"
@@ -242,6 +249,7 @@
       "noBuyReason": null,
       "initialPrice": 0.3505,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:47Z",
       "designators": [
         "Q_INPUT",
         "Q_REVERSE"
@@ -268,6 +276,7 @@
       "noBuyReason": null,
       "initialPrice": 0.2135,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:47Z",
       "designators": [
         "C_TEC_BULK"
       ],
@@ -283,7 +292,7 @@
       "componentBrandEn": "Samsung Electro-Mechanics",
       "componentSpecificationEn": "0603",
       "overseasStockCount": 1803104,
-      "canPresaleNumber": 1613892,
+      "canPresaleNumber": 1613582,
       "preMinPurchaseNum": 885,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -293,6 +302,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0131,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:48Z",
       "designators": [
         "C_MCU_BULK"
       ],
@@ -318,6 +328,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0646,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:48Z",
       "designators": [
         "R_SENSE"
       ],
@@ -332,8 +343,8 @@
       "componentModelEn": "MMBT3904(RANGE:100-300)",
       "componentBrandEn": "Jiangsu Changjing Electronics Technology Co., Ltd.",
       "componentSpecificationEn": "SOT-23",
-      "overseasStockCount": 604484,
-      "canPresaleNumber": 493746,
+      "overseasStockCount": 603459,
+      "canPresaleNumber": 492696,
       "preMinPurchaseNum": 981,
       "lossNumber": 5,
       "leastPatchNumber": 10,
@@ -343,6 +354,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0116,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:48Z",
       "designators": [
         "Q_MCU_KILL",
         "Q_PD_FAULT"
@@ -358,8 +370,8 @@
       "componentModelEn": "0603WAF1001T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 25544283,
-      "canPresaleNumber": 19256623,
+      "overseasStockCount": 25541937,
+      "canPresaleNumber": 19255137,
       "preMinPurchaseNum": 5000,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -369,6 +381,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0019,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:48Z",
       "designators": [
         "R_DC_SENSE",
         "R_GATE",
@@ -389,8 +402,8 @@
       "componentModelEn": "GRM32ER71E226KE15L",
       "componentBrandEn": "Murata Electronics",
       "componentSpecificationEn": "1210",
-      "overseasStockCount": 57038,
-      "canPresaleNumber": 46065,
+      "overseasStockCount": 57022,
+      "canPresaleNumber": 46049,
       "preMinPurchaseNum": 25,
       "lossNumber": 0,
       "leastPatchNumber": 5,
@@ -400,6 +413,7 @@
       "noBuyReason": null,
       "initialPrice": 0.46,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:49Z",
       "designators": [
         "C_DRIVER_OUT1",
         "C_DRIVER_OUT2",
@@ -428,6 +442,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0014,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:49Z",
       "designators": [
         "R_DRIVER_EN_TOP"
       ],
@@ -453,6 +468,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0015,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:49Z",
       "designators": [
         "R_PD_ADC_TOP"
       ],
@@ -467,8 +483,8 @@
       "componentModelEn": "0603WAF1502T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 4267179,
-      "canPresaleNumber": 3889730,
+      "overseasStockCount": 4267159,
+      "canPresaleNumber": 3889710,
       "preMinPurchaseNum": 4102,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -478,6 +494,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0029,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:50Z",
       "designators": [
         "R_PROGRAM_SENSE_TOP"
       ],
@@ -492,8 +509,8 @@
       "componentModelEn": "0603WAF100JT5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 6533104,
-      "canPresaleNumber": 5511091,
+      "overseasStockCount": 6533002,
+      "canPresaleNumber": 5510969,
       "preMinPurchaseNum": 4102,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -503,6 +520,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0032,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:50Z",
       "designators": [
         "R_ISN_FILTER",
         "R_ISP_FILTER"
@@ -518,8 +536,8 @@
       "componentModelEn": "KT-0603R",
       "componentBrandEn": "Hubei KENTO Elec",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 7011732,
-      "canPresaleNumber": 6368780,
+      "overseasStockCount": 7011432,
+      "canPresaleNumber": 6368180,
       "preMinPurchaseNum": 1556,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -529,6 +547,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0076,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:50Z",
       "designators": [
         "LED_FAULT"
       ],
@@ -554,6 +573,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0104,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:51Z",
       "designators": [
         "LED_POWER"
       ],
@@ -579,6 +599,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0104,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:51Z",
       "designators": [
         "LED_RUN"
       ],
@@ -593,8 +614,8 @@
       "componentModelEn": "0603WAF2742T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 14661,
-      "canPresaleNumber": 14325,
+      "overseasStockCount": 14681,
+      "canPresaleNumber": 14345,
       "preMinPurchaseNum": 5000,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -604,6 +625,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0023,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:51Z",
       "designators": [
         "R_COMP"
       ],
@@ -618,8 +640,8 @@
       "componentModelEn": "0603WAF4701T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 20057324,
-      "canPresaleNumber": 16983366,
+      "overseasStockCount": 20057554,
+      "canPresaleNumber": 16983531,
       "preMinPurchaseNum": 4102,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -629,6 +651,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0028,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:51Z",
       "designators": [
         "R_DRIVER_FAULT",
         "R_SCL",
@@ -656,6 +679,7 @@
       "noBuyReason": null,
       "initialPrice": 0.003,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:52Z",
       "designators": [
         "R_DRIVER_FSW",
         "R_GATE_OFF"
@@ -671,8 +695,8 @@
       "componentModelEn": "0603WAF5101T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 24067894,
-      "canPresaleNumber": 22840823,
+      "overseasStockCount": 24068804,
+      "canPresaleNumber": 22841293,
       "preMinPurchaseNum": 5000,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -682,6 +706,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0015,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:52Z",
       "designators": [
         "R_PROGRAM_CC1",
         "R_PROGRAM_CC2"
@@ -708,6 +733,7 @@
       "noBuyReason": null,
       "initialPrice": 0.3522,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:52Z",
       "designators": [
         "C_USB"
       ],
@@ -722,8 +748,8 @@
       "componentModelEn": "0603WAF1003T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 20293672,
-      "canPresaleNumber": 18065531,
+      "overseasStockCount": 20292319,
+      "canPresaleNumber": 18063923,
       "preMinPurchaseNum": 3760,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -733,6 +759,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0031,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:57Z",
       "designators": [
         "R_FAULT_OFF",
         "R_RELEASE_OFF",
@@ -749,8 +776,8 @@
       "componentModelEn": "0603WAF1002T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 31979856,
-      "canPresaleNumber": 22609717,
+      "overseasStockCount": 31978004,
+      "canPresaleNumber": 22607747,
       "preMinPurchaseNum": 2099,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -760,6 +787,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0052,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:54Z",
       "designators": [
         "R_BOOT0",
         "R_DRIVER_EN_BOTTOM",
@@ -778,8 +806,8 @@
       "componentModelEn": "0603WAF4702T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 2091132,
-      "canPresaleNumber": 1448987,
+      "overseasStockCount": 2090701,
+      "canPresaleNumber": 1448556,
       "preMinPurchaseNum": 5000,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -789,6 +817,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0021,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:53Z",
       "designators": [
         "R_KILL_RESET"
       ],
@@ -814,6 +843,7 @@
       "noBuyReason": null,
       "initialPrice": 1.375,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:53Z",
       "designators": [
         "U_AUX"
       ],
@@ -839,6 +869,7 @@
       "noBuyReason": null,
       "initialPrice": 1.7012,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:53Z",
       "designators": [
         "U_PD"
       ],
@@ -853,8 +884,8 @@
       "componentModelEn": "0603WAF2202T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 3498890,
-      "canPresaleNumber": 3193464,
+      "overseasStockCount": 3498670,
+      "canPresaleNumber": 3193244,
       "preMinPurchaseNum": 2911,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -864,6 +895,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0041,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:54Z",
       "designators": [
         "R_PD_ADC_BOTTOM"
       ],
@@ -889,6 +921,7 @@
       "noBuyReason": null,
       "initialPrice": 0.398,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:54Z",
       "designators": [
         "U_LOGIC_MUX"
       ],
@@ -903,8 +936,8 @@
       "componentModelEn": "TLV75533PDBVR",
       "componentBrandEn": "Texas Instruments",
       "componentSpecificationEn": "SOT-23-5",
-      "overseasStockCount": 129132,
-      "canPresaleNumber": 127866,
+      "overseasStockCount": 129117,
+      "canPresaleNumber": 127841,
       "preMinPurchaseNum": 87,
       "lossNumber": 0,
       "leastPatchNumber": 5,
@@ -914,6 +947,7 @@
       "noBuyReason": null,
       "initialPrice": 0.1333,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:54Z",
       "designators": [
         "U_CTRL_LDO"
       ],
@@ -928,8 +962,8 @@
       "componentModelEn": "0603WAF2002T5E",
       "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
       "componentSpecificationEn": "0603",
-      "overseasStockCount": 8011709,
-      "canPresaleNumber": 7126948,
+      "overseasStockCount": 8011669,
+      "canPresaleNumber": 7126860,
       "preMinPurchaseNum": 5000,
       "lossNumber": 10,
       "leastPatchNumber": 20,
@@ -939,6 +973,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0022,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:54Z",
       "designators": [
         "R_PROGRAM_SENSE_BOTTOM",
         "R_V_ADC_BOTTOM"
@@ -965,6 +1000,7 @@
       "noBuyReason": null,
       "initialPrice": 0.84,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:55Z",
       "designators": [
         "C_DRIVER_INPUT_BULK"
       ],
@@ -979,8 +1015,8 @@
       "componentModelEn": "KF301-5.0-2P",
       "componentBrandEn": "Cixi Kefa Elec",
       "componentSpecificationEn": "Plugin,P=5mm",
-      "overseasStockCount": 47460,
-      "canPresaleNumber": 41826,
+      "overseasStockCount": 47520,
+      "canPresaleNumber": 41886,
       "preMinPurchaseNum": 109,
       "lossNumber": 1,
       "leastPatchNumber": 2,
@@ -990,6 +1026,7 @@
       "noBuyReason": null,
       "initialPrice": 0.1012,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:58Z",
       "designators": [
         "J_TEC"
       ],
@@ -1015,6 +1052,7 @@
       "noBuyReason": null,
       "initialPrice": 4.8979,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:55Z",
       "designators": [
         "U_MCU"
       ],
@@ -1040,6 +1078,7 @@
       "noBuyReason": null,
       "initialPrice": 5.7933,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:55Z",
       "designators": [
         "U_DRIVER"
       ],
@@ -1065,6 +1104,7 @@
       "noBuyReason": null,
       "initialPrice": 0.057,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:55Z",
       "designators": [
         "L_AUX"
       ],
@@ -1090,6 +1130,7 @@
       "noBuyReason": null,
       "initialPrice": 1.406,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:55Z",
       "designators": [
         "J_PROGRAM",
         "J_USB"
@@ -1105,8 +1146,8 @@
       "componentModelEn": "USBLC6-2SC6",
       "componentBrandEn": "STMicroelectronics",
       "componentSpecificationEn": "SOT-23-6L",
-      "overseasStockCount": 41238,
-      "canPresaleNumber": 35431,
+      "overseasStockCount": 41204,
+      "canPresaleNumber": 35385,
       "preMinPurchaseNum": 67,
       "lossNumber": 2,
       "leastPatchNumber": 5,
@@ -1116,6 +1157,7 @@
       "noBuyReason": null,
       "initialPrice": 0.1772,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:56Z",
       "designators": [
         "U_PROGRAM_ESD"
       ],
@@ -1141,6 +1183,7 @@
       "noBuyReason": null,
       "initialPrice": 1.0096,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:56Z",
       "designators": [
         "L_OUT"
       ],
@@ -1155,8 +1198,8 @@
       "componentModelEn": "2N7002",
       "componentBrandEn": "Jiangsu Changjing Electronics Technology Co., Ltd.",
       "componentSpecificationEn": "SOT-23",
-      "overseasStockCount": 1881896,
-      "canPresaleNumber": 1719285,
+      "overseasStockCount": 1881521,
+      "canPresaleNumber": 1718910,
       "preMinPurchaseNum": 645,
       "lossNumber": 5,
       "leastPatchNumber": 10,
@@ -1166,6 +1209,7 @@
       "noBuyReason": null,
       "initialPrice": 0.0175,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:56Z",
       "designators": [
         "Q_MCU_RELEASE"
       ],
@@ -1191,6 +1235,7 @@
       "noBuyReason": null,
       "initialPrice": 0.334,
       "status": "public_page_payload_verified",
+      "observed_at_utc": "2026-10-13T22:18:56Z",
       "designators": [
         "C_DRIVER_IN1",
         "C_DRIVER_IN2",

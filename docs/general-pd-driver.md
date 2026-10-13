@@ -59,7 +59,7 @@ The first-pass switching network uses approximately 395 kHz, a 4.7 µH coil, fou
 | POWER / RUN / FAULT | Yellow KT-0603Y C2287 / green KT-0603YG C2289 / red KT-0603R C2286 |
 | Both USB cables | [Cable Matters 201440](https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx), 1 m, 5 A, e-marked, USB 2.0 data |
 
-[Inventory](component-sourcing.csv) records **95 purchased placements across 45 exact JLC SKUs**. The separate [direct JLC stock snapshot](jlc-stock-audit.json) records positive overseas warehouse stock for every SKU at the audit time. Stock and pricing change; the tscircuit parts engine's cached availability warnings are separate from that snapshot and from netlist validation. No fabrication or component order has been placed.
+[Inventory](component-sourcing.csv) records **95 purchased placements across 45 exact JLC SKUs**. Fresh direct JLC requests on **14 October 2026 at 03:48 IST** found positive overseas warehouse stock for every exact SKU, with purchasing enabled and no catalog purchase restriction. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain each product URL and observation time. Lowest stocks were 277 MCU units and 494 main inductors. Stock and pricing change; the tscircuit parts engine's availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
 
 Use factory Peltier leads in the terminal; seller lengths/gauges vary. Cable extensions require their own current/temperature qualification. Both selected USB cables support data, although PD POWER uses only power/CC. The model distinguishes their roles by color and labels; these are illustrative cable shapes.
 
@@ -67,7 +67,9 @@ POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indic
 
 ## Assembly and qualification
 
-The assembly is generated from the final circuit JSON and actual placement. Imported supplier meshes are used where available and identified as supplier CAD. Public manufacturer CAD exports were sought for GCT/TI; unavailable bodies use documented drawing-derived envelopes. The Amazon module uses its listed envelope; cable geometry illustrates connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
+The default entrypoint contains a native `assembly.device`, with the board and `assembly.part` CAD geometry visible together in the local dev server's **3D** tab. This follows the [tscircuit assembly API](https://docs.tscircuit.com/guides/advanced-assembly). Peltier and cable geometry add no PCB footprints or electrical nets. The installed `assembly.cable` API requires PCB connector or motor endpoints; these external accessories use explicit geometry tied to the actual board connectors without introducing artificial peripheral PCBs.
+
+The assembly export consumes the final circuit JSON and actual placement. Imported supplier meshes are identified as supplier CAD. Public manufacturer CAD exports were sought for GCT/TI; unavailable bodies use documented drawing-derived envelopes. The Amazon module uses its listed envelope; cable geometry illustrates connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
 
 The preview omits the required hot-side heatsink, cold plate, clamping and thermal interface. Fit these before operation. The board is a power driver rather than a complete refrigeration assembly.
 

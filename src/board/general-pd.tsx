@@ -7,6 +7,7 @@ import { GRM31CC72A475KE11L } from "../parts/C237304"
 import { AdjustablePowerStage, powerStage } from "./power-stage"
 import { ControlBlock } from "./control"
 import { SourcedCapacitor, SourcedResistor } from "./sourced-passive"
+import { connectorPlacements } from "../assembly/connector-placement"
 
 export const design = {
   defaultModule: "TEC1-12706",
@@ -38,7 +39,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <schematicsheet name="PD" displayName="100 W USB-C PD input" sheetIndex={1} />
     <schematicsheet name="POWER" displayName="Adjustable voltage and current limits" sheetIndex={2} />
     <schematicsheet name="CONTROL" displayName="USB programming, debug and status" sheetIndex={3} sheetSize="ANSI_B" />
-    <USB4085_GF_A name="J_USB" pcbX={-33} pcbY={10} pcbRotation={270} {...pd}
+    <USB4085_GF_A name="J_USB" {...connectorPlacements.J_USB} {...pd}
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
         pin3: "net.VBUS_RAW", pin7: "net.VBUS_RAW", pin10: "net.VBUS_RAW", pin15: "net.VBUS_RAW" }}
@@ -74,7 +75,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
       connections={{ pin1: "net." + first, pin2: "net." + second }} />)}
     <AdjustablePowerStage />
     <ControlBlock />
-    <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schSheetName="POWER"
+    <KF301_5_0_2P name="J_TEC" {...connectorPlacements.J_TEC} schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="USB-C PD / CC-CV" pcbX={5} pcbY={27.8} fontSize={1.3} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
