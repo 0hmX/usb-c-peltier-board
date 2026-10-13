@@ -1,0 +1,701 @@
+{
+  "status": "Final candidate passes global fresh-pad plus complete MCU/flash fanout and local-route geometry audit; integration with other owners still required.",
+  "placementSuggestions": {
+    "U_USB_ESD": [
+      -44,
+      -19,
+      90
+    ],
+    "U_USB_SWITCH": [
+      -36,
+      -19,
+      90
+    ],
+    "R_USB_DP": [
+      -26.75,
+      -13.25,
+      270
+    ],
+    "R_USB_DM": [
+      -25.4,
+      -13.25,
+      270
+    ],
+    "C_USB_SWITCH": [
+      -36,
+      -21.3,
+      0
+    ]
+  },
+  "paths": [
+    {
+      "net": "USB_DP_PORT",
+      "from": "J_USB_PROG.pin8",
+      "to": "J_USB_PROG.pin10",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -18.750064
+        ],
+        [
+          -49.08673356564404,
+          -18.750064
+        ],
+        [
+          -49.23673356564404,
+          -18.900064
+        ],
+        [
+          -49.23673356564404,
+          -19.600062
+        ],
+        [
+          -49.08673356564404,
+          -19.750062
+        ],
+        [
+          -48.0244328,
+          -19.750062
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "J_USB_PROG.pin7",
+      "to": "J_USB_PROG.pin9",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -18.249938
+        ],
+        [
+          -46.9,
+          -18.249938
+        ],
+        [
+          -46.9,
+          -19.249936
+        ],
+        [
+          -48.0244328,
+          -19.249936
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "J_USB_PROG.pin10",
+      "to": "U_USB_ESD.pin6",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -19.750062
+        ],
+        [
+          -46.7,
+          -19.750062
+        ],
+        [
+          -46.5,
+          -19.95004
+        ],
+        [
+          -45.149096,
+          -19.94996
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "J_USB_PROG.pin9",
+      "to": "U_USB_ESD.pin4",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -48.0244328,
+          -19.249936
+        ],
+        [
+          -46.65,
+          -19.249936
+        ],
+        [
+          -46.65,
+          -18.45004
+        ],
+        [
+          -46.25,
+          -18.05004
+        ],
+        [
+          -45.149096,
+          -18.05004
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "U_USB_ESD.pin6",
+      "to": "U_USB_ESD.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -45.149096,
+          -19.94996
+        ],
+        [
+          -42.850904,
+          -19.94996
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "U_USB_ESD.pin4",
+      "to": "U_USB_ESD.pin3",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -45.149096,
+          -18.05004
+        ],
+        [
+          -42.850904,
+          -18.05004
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_PORT",
+      "from": "U_USB_ESD.pin1",
+      "to": "U_USB_SWITCH.pin8",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -42.850904,
+          -19.94996
+        ],
+        [
+          -42.2,
+          -19.94996
+        ],
+        [
+          -41.65,
+          -19.39996
+        ],
+        [
+          -37.3,
+          -19.39996
+        ],
+        [
+          -37.15,
+          -19.24996
+        ],
+        [
+          -36.675132,
+          -19.249936
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_PORT",
+      "from": "U_USB_ESD.pin3",
+      "to": "U_USB_SWITCH.pin7",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -42.850904,
+          -18.05004
+        ],
+        [
+          -42.2,
+          -18.05004
+        ],
+        [
+          -41.25,
+          -19.00004
+        ],
+        [
+          -37.9,
+          -19.00004
+        ],
+        [
+          -37.65,
+          -18.75004
+        ],
+        [
+          -36.675132,
+          -18.750064
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_SWITCH",
+      "from": "U_USB_SWITCH.pin1",
+      "to": "USB_DP_SW_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -35.324868,
+          -19.750062
+        ],
+        [
+          -34.3,
+          -20
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_SWITCH",
+      "from": "USB_DP_SW_A.inner2",
+      "to": "USB_DP_SW_B.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        [
+          -34.3,
+          -20
+        ],
+        [
+          -35.5,
+          -20
+        ],
+        [
+          -35.5,
+          -6.0
+        ],
+        [
+          -25.95,
+          -6.0
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_SWITCH",
+      "from": "USB_DP_SW_B.top",
+      "to": "R_USB_DP.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -25.95,
+          -6
+        ],
+        [
+          -25.95,
+          -12.0
+        ],
+        [
+          -26.75,
+          -12.8
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_SWITCH",
+      "from": "U_USB_SWITCH.pin2",
+      "to": "USB_DM_SW_A.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -35.324868,
+          -19.249936
+        ],
+        [
+          -34.75,
+          -19.249936
+        ],
+        [
+          -34.3,
+          -18.9
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_SWITCH",
+      "from": "USB_DM_SW_A.inner2",
+      "to": "USB_DM_SW_B.inner2",
+      "width": 0.2,
+      "layer": "inner2",
+      "points": [
+        [
+          -34.3,
+          -18.9
+        ],
+        [
+          -35.1,
+          -18.9
+        ],
+        [
+          -35.1,
+          -16.5
+        ],
+        [
+          -34.98741435088412,
+          -16.5
+        ],
+        [
+          -34.98741435088412,
+          -15.5
+        ],
+        [
+          -35.1,
+          -15.5
+        ],
+        [
+          -35.1,
+          -6.4
+        ],
+        [
+          -26.8,
+          -6.4
+        ],
+        [
+          -26.4,
+          -6.8
+        ],
+        [
+          -24.4,
+          -6.8
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_SWITCH",
+      "from": "USB_DM_SW_B.top",
+      "to": "R_USB_DM.pin1",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -24.4,
+          -6.8
+        ],
+        [
+          -25.55,
+          -7.95
+        ],
+        [
+          -25.55,
+          -12.25
+        ],
+        [
+          -25.4,
+          -12.4
+        ],
+        [
+          -25.4,
+          -12.8
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP_MCU",
+      "from": "U_MCU.pin47",
+      "to": "R_USB_DP.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -26.000002,
+          -17.574937
+        ],
+        [
+          -26.000002,
+          -14.6
+        ],
+        [
+          -26.75,
+          -13.850002
+        ],
+        [
+          -26.75,
+          -13.7
+        ]
+      ]
+    },
+    {
+      "net": "USB_DM_MCU",
+      "from": "U_MCU.pin46",
+      "to": "R_USB_DM.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -25.599952,
+          -17.574937
+        ],
+        [
+          -25.599952,
+          -14.6
+        ],
+        [
+          -25.4,
+          -14.400048
+        ],
+        [
+          -25.4,
+          -13.7
+        ]
+      ]
+    }
+  ],
+  "vias": [
+    {
+      "name": "USB_DP_SW_A",
+      "net": "USB_DP_SWITCH",
+      "x": -34.3,
+      "y": -20
+    },
+    {
+      "name": "USB_DP_SW_B",
+      "net": "USB_DP_SWITCH",
+      "x": -25.95,
+      "y": -6.0
+    },
+    {
+      "name": "USB_DM_SW_A",
+      "net": "USB_DM_SWITCH",
+      "x": -34.3,
+      "y": -18.9
+    },
+    {
+      "name": "USB_DM_SW_B",
+      "net": "USB_DM_SWITCH",
+      "x": -24.4,
+      "y": -6.8
+    }
+  ],
+  "lowSpeedPolicy": "Keep existing low-speed plan edges; reroute affected U_USB_SWITCH.pin6 and moved ESD power/GND from refreshed inventory. Existing low-speed generated traces cannot be copied after moves.",
+  "pair": {
+    "primaryContactDP": "J_USB_PROG.pin10",
+    "primaryContactDM": "J_USB_PROG.pin9",
+    "primaryLengthsMm": {
+      "DP": 48.843949,
+      "DM": 48.843949
+    },
+    "primarySkewMm": 0.0,
+    "viaCountsPrimary": {
+      "DP": 2,
+      "DM": 2
+    },
+    "layerSequencePrimary": [
+      "top",
+      "inner2",
+      "top"
+    ],
+    "nominalWidthMm": 0.2,
+    "nominalCoupledGapMm": 0.2,
+    "impedance": "UNQUALIFIED; nominal width/gap is geometry, not a verified impedance",
+    "duplicateBridgeLengthMm": {
+      "DP": 3.248864,
+      "DM": 3.248864
+    },
+    "evidence": "Centerline sums of fixed candidate paths exclude package internal lengths. Primary paths match and both duplicate connector bridges are equal, so both connector orientations have equal board-copper lengths. Local DM inner2 tuning adds the required differential length. Pair fanouts at package transitions are uncoupled.",
+    "acceptanceBudget": {
+      "primarySkewMm": 0.15,
+      "duplicateOrientationSkewMm": 0.15,
+      "samePrimaryViaCount": true
+    }
+  },
+  "stackupProposal": {
+    "layers": [
+      "L1 signals/components",
+      "L2 continuous GND",
+      "L3 signals/power with USB corridor over L2",
+      "L4 signals/components"
+    ],
+    "targetTotalThicknessMm": 1.6,
+    "targetOuterCopperUm": 35,
+    "targetInnerCopperUm": 18,
+    "targetL1L2DielectricMm": 0.12,
+    "targetL2L3CoreMm": 1.2,
+    "targetL3L4DielectricMm": 0.12,
+    "note": "Provisional construction target only. Finished thickness accounting, copper, dielectric Dk/Df and 90-ohm differential width/gap must be manufacturer-confirmed and field-solved. L3 USB path references L2 through core; impedance will differ from L1 and needs independent width/gap optimization. No fabrication qualification claimed."
+  },
+  "notes": [
+    "Use these paths as priority-reserved fixed geometry only after independent collision checks.",
+    "Both connector duplicate bridges are top-layer: D+ west of pad tails, D- east of pad tips; there is no need for a data crossover via at this connector.",
+    "Four placement overrides preserve schematic connectivity. Updated top MCU bypass placement is coordinated with MCU agent.",
+    "Ground stitching adjacent to both pair transition locations is required but must be collision-checked and assigned to GND by integration.",
+    "The broad inner2 switch-output U-turn preserves pair order and equal via counts; it is intentionally reviewable geometry, not claimed clearance-clean routing.",
+    "Final USB resistor centers: DP(-26.75,-13.25), DM(-25.4,-13.25), both270deg. Rotated1.1x1.9mm courts have0.25mm inter-resistor gap; DPcourt to FLASHcourt gap0.216944mm. MCUtop escapes stay vertical untily=-14.6, above nearby cap solder pads.",
+    "Inner2 pair runs northwest around every reserved MCU/FLASH barrel, horizontal upper pair corridors y=-6.0/-6.4 then DMfans to-6.8 at itsreturnvia. Two top returntails approach resistorpin1 fromnorth; these are reviewed fixed paths, not independent autorouter curves.",
+    "C_USB_SWITCH moved to(-36,-21.3,0); its direct top bypass to native switchpin10 has0.890539mm exposed copper. localRoutes/localVias are supply/ground-owned integration geometry and do not alter the16matchedUSBpairpaths or4signalvias."
+  ],
+  "validation": {
+    "checkedAtUtc": "2026-10-13T09:51:48.561759+00:00",
+    "baseline": "dist/routing-placement/circuit.json",
+    "baselineSha256": "c8803ff001f8835acb42ea77d4c599290dc08e81f08a22e73089feecd3fc7e59",
+    "mcuPacketSha256": "5880c8fd9d3bcbe50be6274e52b29a898c88f9ca204c78515a6c8c1a3eaf8db7",
+    "transformedPlacementOverrides": {
+      "U_USB_ESD": [
+        -44,
+        -19,
+        90
+      ],
+      "U_USB_SWITCH": [
+        -36,
+        -19,
+        90
+      ],
+      "R_USB_DP": [
+        -26.75,
+        -13.25,
+        270
+      ],
+      "R_USB_DM": [
+        -25.4,
+        -13.25,
+        270
+      ]
+    },
+    "globalPadHoleKeepoutAndReservedMcuForeignCopperConflicts": 0,
+    "usbOwnedCourtyardBoundingBoxOverlaps": [],
+    "reservedFanoutEntries": 66,
+    "reservedLocalRouteEntries": 18,
+    "fixedPaths": 16,
+    "fixedVias": 4,
+    "rules": "Same CopperGeometry obstacle extraction and clearance as scripts/route-revision-b.ts. All fresh global pads including NC pads, holes and keepouts; all MCU/FLASH packet fanout vias/top paths and localRoutes; candidate USB paths/vias against each other. Courtyard check transforms global courtyard bounding boxes using candidate placement offsets, conservatively covering polygon outlines. No claim of validation against other-owner trunk copper yet.",
+    "fullBoardCopperValidation": "Root must integrate all owner packets and run native shorts/clearance/routing checks."
+  },
+  "localRoutes": [
+    {
+      "net": "V3V3",
+      "from": "C_USB_SWITCH.pin1",
+      "to": "U_USB_SWITCH.pin10",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -36.45,
+          -21.3
+        ],
+        [
+          -36,
+          -19.8599932
+        ]
+      ],
+      "scope": "local-bypass",
+      "maxExposedLength": 1.0
+    },
+    {
+      "net": "V3V3",
+      "from": "C_USB_SWITCH.pin1",
+      "to": "USB_SWITCH_V3V3_LOCAL.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -36.45,
+          -21.3
+        ],
+        [
+          -37.25,
+          -21.3
+        ]
+      ],
+      "scope": "positive-plane-attachment"
+    },
+    {
+      "net": "GND",
+      "from": "C_USB_SWITCH.pin2",
+      "to": "USB_SWITCH_GND_LOCAL.top",
+      "width": 0.2,
+      "layer": "top",
+      "points": [
+        [
+          -35.55,
+          -21.3
+        ],
+        [
+          -34.65,
+          -21.3
+        ]
+      ],
+      "scope": "local-ground-return"
+    }
+  ],
+  "localVias": [
+    {
+      "name": "USB_SWITCH_V3V3_LOCAL",
+      "net": "V3V3",
+      "x": -37.25,
+      "y": -21.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    },
+    {
+      "name": "USB_SWITCH_GND_LOCAL",
+      "net": "GND",
+      "x": -34.65,
+      "y": -21.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3
+    }
+  ],
+  "localBypass": {
+    "component": "C_USB_SWITCH",
+    "powerPin": "U_USB_SWITCH.pin10",
+    "centerlineLengthMm": 1.508681405746833,
+    "exposedCopperLengthMm": 0.890539311933833,
+    "limitMm": 1,
+    "lengthMeasurement": "Exact straight segment clipped against native C0402 pin1 halfsize(0.25,0.30) and rotated SC70-10 pin10 halfsize(0.1499997,0.2900045).",
+    "capGroundCenterTailMm": 0.9,
+    "capGroundExposedTailToViaCopperMm": 0.3,
+    "positiveSupplyPlane": "inner2 V3V3 distribution by root; attach through USB_SWITCH_V3V3_LOCAL",
+    "logicChanges": false,
+    "positiveCapCenterTailMm": 0.8,
+    "validation": {
+      "checkedAtUtc": "2026-10-13T10:16:04.118475+00:00",
+      "globalCourtyardOverlaps": [],
+      "globalPadsMcu66AndUsbPairCopperConflicts": 0,
+      "referenceStitchesChecked": [
+        [
+          -33.4,
+          -19.45
+        ],
+        [
+          -33.496993,
+          -20.596813
+        ],
+        [
+          -24.538604,
+          -5.763604
+        ],
+        [
+          -25.400743,
+          -5.11975
+        ]
+      ],
+      "baselineSha256": "e175217b0a2707c65f63ac2b66242ee8d85aac553b11ab5f53d61e01d98acd8f",
+      "mcuPacketSha256": "c583951858810199a83ad6152fdf41e7a9b5d30f4d68a172871662b2d0232357",
+      "rules": "Same native pad/hole/keepout extraction and CopperGeometry clearances as parent routing engine. Includes all current66 MCU/FLASH fanouts, MCUlocalRoutes,16USBpair paths,4USBsignal vias,4reservedGNDstitches and new localbypass copper. Width0.2,viaouter0.7,drill0.3; via-off-pad and foreignnet clearance enforced."
+    }
+  }
+}

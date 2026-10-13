@@ -1,0 +1,87 @@
+bun test v1.3.10 (30e609e0)
+
+tests/revision-evaluator.test.tsx:
+(pass) portable standard connector exports > connector-only snapshot preserves the installed standard's complete geometry, CAD and labels [49.00ms]
+(pass) portable standard connector exports > index.tsx evaluates from published source without registry/CDN imports [46456.52ms]
+(pass) portable standard connector exports > assembly.tsx evaluates from published source without registry/CDN imports [45141.53ms]
+
+tests/portable-cad.test.ts:
+(pass) portable CAD assets > all 68 supplier OBJs and six original package GLBs are content-addressed and self-contained [34.00ms]
+(skip) portable CAD assets > decoded supplier geometry/material bytes equal every existing original cache
+(pass) portable CAD assets > URL matching ignores only origin cachebusting, not supplier identity
+(pass) portable CAD assets > supplier OBJ remapping preserves every CAD pose property without mutating input [1.00ms]
+(pass) portable CAD assets > package objects and cadmodel React elements preserve native CAD pose [1.00ms]
+(pass) portable CAD assets > native package GLBs parse without fetching external geometry or textures [5.00ms]
+(pass) portable CAD assets > OBJ loader bounding boxes and asymmetric vertices retain the original coordinate convention [10.00ms]
+(pass) portable CAD assets > published source evaluates at different browser origins without network imports or STEP [138.00ms]
+{"sourceUrls":74,"uniqueAssets":40,"bundleBytes":8635038,"staticCircuitJsonBytes":2,"staticCircuitGzipBytes":22,"outputPath":"/tmp/portable-cad-8mckwd/bundle.json","checked":true}
+(pass) portable CAD assets > regeneration needs neither a legacy Site URL map nor external caches or network [131.00ms]
+
+tests/routing-geometry.test.ts:
+(pass) routing geometry > crossing diagonal copper and disjoint collinear segments
+(pass) routing geometry > the middle of a route must clear a foreign pad
+(pass) routing geometry > ordinary through vias must clear every layer and stay off same-net pads
+(pass) routing geometry > foreign traces clear the drill as well as the annulus
+(pass) routing geometry > mounting washers and board edges remain clear
+
+tests/input-loss-interlock.test.tsx:
+(pass) eFuse input-loss hardware latch > inrush's initially low AUXOFF does not deadlock startup [1.00ms]
+(pass) eFuse input-loss hardware latch > a running OVLO event remains latched through input recovery and chatter
+(pass) eFuse input-loss hardware latch > RUN low clears the fault and a deliberate second startup succeeds
+(pass) eFuse input-loss hardware latch > intentional shutdown clears the latch regardless of AUXOFF edge order
+(pass) eFuse input-loss hardware latch > new fault output cannot mask the existing wired-OR faults
+
+tests/saved-circuit-parity.test.ts:
+(pass) historical parity accepts host rounding of a computed source length [483.00ms]
+(pass) historical parity still rejects a changed length limit and copper coordinate [885.99ms]
+
+tests/schematic-route-input.test.tsx:
+(pass) public solver hook repairs the merge order without changing edges [4.00ms]
+(pass) only the schematic solver is changed and conflicting pin positions fail
+(pass) AUXOFF display correction preserves source and PCB identities and is part-specific [36.00ms]
+
+tests/standard-connectors.test.tsx:
+(pass) installed standard JST target connectors > SWD physical pins 1, 2, 3 are SWCLK, GND, SWDIO [44.00ms]
+(pass) installed standard JST target connectors > UART target physical pins 1, 2, 3 are RX, GND, TX [38.00ms]
+(pass) installed standard JST target connectors > thermistors preserve signal and ground on physical pins 1 and 2 [39.00ms]
+(pass) installed standard JST target connectors > fan preserves ground, supply, tach and PWM on physical pins 1 through 4 [32.00ms]
+(pass) installed standard JST target connectors > all connectors retain real side-entry JST packages and CAD models [35.00ms]
+
+tests/mechanical-assembly.test.tsx:
+(pass) native full-device mechanical CONCEPT > 29 flat native parts carry explicit concept identity and no remote models
+(pass) native full-device mechanical CONCEPT > every JSCAD plan produces finite colored native triangles at its nominal dimensions [215.00ms]
+(pass) native full-device mechanical CONCEPT > the side-mounted thermal stack contacts both TEC faces without exploding or covering the PCB [62.00ms]
+(pass) native full-device mechanical CONCEPT > ten physical conductors include separate red/black TEC leads from J_TEC to the ceramic edge [110.00ms]
+(pass) native full-device mechanical CONCEPT > standoffs align with the four existing holes and seat under the unchanged board [98122.99ms]
+(pass) native full-device mechanical CONCEPT > all board/electrical/schematic records and board CAD poses stay identical [8.00ms]
+(pass) native full-device mechanical CONCEPT > installed native 3D conversion includes every mechanical model without fetching assets [179.00ms]
+(pass) native full-device mechanical CONCEPT > published source evaluates all local JSCAD parts through CircuitRunner without CDN loading [57892.41ms]
+
+tests/symbol-port-selector.test.tsx:
+(pass) symbol PCB selectors resolve the original port without changing circuit records [75.00ms]
+(pass) the public attachment lifecycle repairs selectors before routing [97.00ms]
+
+tests/assembly-models.test.tsx:
+(pass) assembly CAD models > standard USB-C forwards the supplier model and its orientation
+(pass) assembly CAD models > new passives have correctly sized models without replacing their pads
+(pass) assembly CAD models > TEC inductor envelope follows the APS1360 package dimensions [4.00ms]
+(pass) assembly CAD models > test pads do not turn into imaginary components
+
+tests/trace-width-diagnostics.test.ts:
+(pass) source-owned trace width diagnostics > corrects the actual board's 44 net-wide attribution mistakes with receipts [157.00ms]
+(pass) source-owned trace width diagnostics > detects an actual owned USB ground route below its unchanged .5 mm requirement [155.00ms]
+(pass) source-owned trace width diagnostics > detects the 3 mm TEC hot-loop undersize hidden by native neckdown allowances [207.00ms]
+(pass) source-owned trace width diagnostics > creates the missing strict TEC diagnostic when native DRC reports none [138.00ms]
+(pass) source-owned trace width diagnostics > a fresh native diagnostic replaces only the repair's generated duplicate [306.00ms]
+(pass) source-owned trace width diagnostics > preserves an unrelated trace warning and every other native DRC record [148.00ms]
+(pass) source-owned trace width diagnostics > retains a legitimate native width warning without replacing or duplicating it [192.00ms]
+(pass) source-owned trace width diagnostics > installation and repeated DRC events are idempotent, unrelated effects are ignored [198.00ms]
+
+1 tests skipped:
+(skip) portable CAD assets > decoded supplier geometry/material bytes equal every existing original cache
+
+ 53 pass
+ 1 skip
+ 0 fail
+ 28847 expect() calls
+Ran 54 tests across 11 files. [253.62s]

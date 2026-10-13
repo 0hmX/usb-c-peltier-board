@@ -43,9 +43,33 @@ External mechanical parts are explicitly named `CONCEPT`; their approximate dime
 
 ![Unrouted placement](review/placement.png)
 
-The board deliberately contains **no PCB traces, vias or copper pours**. Component pads and courtyards are real CAD geometry, not an illustrative mockup. Four 3.2 mm mounting holes have 4 mm-radius washer/copper keepouts. Copper routing, thermal spreading, controlled USB impedance and manufacturing qualification come later.
+The default placement and assembly entries contain **no PCB traces, vias or copper pours**. The separate routed entry below adds saved copper. Component pads and courtyards are real CAD geometry, not an illustrative mockup. Four 3.2 mm mounting holes have 4 mm-radius washer/copper keepouts. The routed draft is available below; remaining routing and hardware qualification are later work.
 
 ## Reproduce
+
+### Revision B routing
+
+[`routed.tsx`](routed.tsx) renders explicit four-layer copper with the routing-specific
+placement in [`routing-placement.tsx`](routing-placement.tsx). The original
+`index.tsx` and `assembly.tsx` retain the unrouted review. Ten routing agents,
+including three Astra agents, contributed all 135 net plans.
+
+Review [four copper layers](review/routing/index.html), [connection results](review/routing/routing-report.json),
+[physical copper connectivity](review/routing/physical-connectivity.json), and
+[routing methods and validation](docs/revision-b-routing.md).
+`check:routed` requires every net and ground pad to connect through actual copper,
+zero geometric errors or shorts, valid exposed bypass lengths, and independent
+shunt sense paths. Fabricator stackup/impedance and bench current/thermal
+qualification remain separate from these CAD checks.
+
+```sh
+bun run route:revision-b
+bun run build:routed
+bun run check:routed
+bun run node_modules/tscircuit/cli.mjs check shorts dist/routed/circuit.json --mode gerber --layer all
+bun run export:routed
+bun run node_modules/tscircuit/cli.mjs dev routed.tsx
+```
 
 ```sh
 bun install --frozen-lockfile
@@ -62,6 +86,12 @@ bun run dev
 Geometric DRC, schematic placement and [PCB placement analysis](review/placement-check.txt) pass with no placement issues after correcting passive orientations. Generic-passive sourcing and schematic-sheet-format warnings remain in the validation report.
 
 PCB coordinates are explicitly editable in `src/board/clearance-placements.ts`; schematic refinements are in `src/board/schematic-refinements.ts`. Changing a footprint or coordinate requires fresh checks and preview exports.
+
+The hosted build package includes circuit source and its assets. `tscircuit.config.json`
+excludes review outputs, archives, documentation, tooling and tests from package
+uploads, selects `index.tsx` explicitly, and uses the pinned dependency versions.
+The TypeScript configuration shares those settings and adds the supplier cache.
+All review files remain available in this repository.
 
 `check:source-evaluator` evaluates both current entrypoints offline and repeats the revision checks. `check:saved-routes` separately validates the historical routed board through `scripts/legacy-saved-board.tsx`; its copper counts do not describe Revision B. Both commands remove their previous success report before validation starts. Run `bun test tests` for the regression suite, including the input-loss latch behavior.
 

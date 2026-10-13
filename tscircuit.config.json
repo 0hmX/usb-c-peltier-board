@@ -1,3 +1,17 @@
 {
-  "ignoredFiles": ["checks", "dist"]
+  "ignoredFiles": [
+    "checks",
+    "dist",
+    "work",
+    "archive",
+    "review",
+    "docs",
+    "scripts",
+    "tests"
+  ],
+  "mainEntrypoint": "index.tsx",
+  "includeBoardFiles": [
+    "index.tsx"
+  ],
+  "alwaysUseLatestTscircuitOnCloud": false
 }

@@ -18,6 +18,8 @@
   "include": [
     "index.tsx",
     "assembly.tsx",
+    "routed.tsx",
+    "routing-placement.tsx",
     "regenerate.tsx",
     "src/**/*.ts",
     "src/**/*.tsx",

@@ -1,0 +1,1912 @@
+{
+  "schemaVersion": 1,
+  "owner": "tec-power",
+  "status": "concrete-candidate-geometry-requires-global-replay",
+  "units": "mm",
+  "validation": {
+    "method": "CopperGeometry against actual Revision B pad polygons as conservative bounds, holes, keepouts; explicit probes with .2mm copper gap and .5mm drill gap",
+    "existingCopper": "Current 322-edge result was probed and blocks escape access. Candidate paths validated against baseline placement, NOT accepted against current foreign traces. Replay power reservations before ordinary copper and reroute displaced traces.",
+    "manufacturingAccepted": false,
+    "kelvinSeparationQualified": false
+  },
+  "requiredCapabilities": [
+    "Variable-width contiguous segments without signal-width fallback for whole power trunk",
+    "Off-pad multi-via arrays joined electrically on top and bottom; .7mm outer/.3mm drill, >=1mm pitch",
+    "Reserve these paths and array sites before ordinary signal routing; existing copper must be rerouted",
+    "Apply R22 placement override, regenerate exact inventory, then replay all paths",
+    "Group Kelvin paired paths as no-load-tap protected copper rather than ignoring all same-net copper"
+  ],
+  "placementSuggestions": [
+    {
+      "component": "R22",
+      "oldCenter": {
+        "x": 18.65,
+        "y": 19.35
+      },
+      "newCenter": {
+        "x": 18.65,
+        "y": 15.4
+      },
+      "rotation": "preserve",
+      "newPads": {
+        "R22.pin1": {
+          "x": 18.65,
+          "y": 16.15
+        },
+        "R22.pin2": {
+          "x": 18.65,
+          "y": 14.65
+        }
+      },
+      "reason": "Only R22 obstructs compact 2mm Q21 drain-to-L2 corridor. Replacement pads tested clear with enclosing 1.04mm-diameter bound; full component placement check still required."
+    }
+  ],
+  "paths": [
+    {
+      "id": "sw-main",
+      "net": "TEC_SW",
+      "to": "L2.pin1",
+      "layer": "top",
+      "width": 2,
+      "points": [
+        {
+          "x": 14.75,
+          "y": 20.9825
+        },
+        {
+          "x": 16.4675,
+          "y": 20.9825
+        },
+        {
+          "x": 25.45,
+          "y": 12
+        }
+      ],
+      "validation": "Clear with R22 new pads included; old R22 removed. Existing foreign traces require replay.",
+      "from": "Q21.pin5"
+    },
+    {
+      "id": "bootstrap-charge",
+      "net": "TEC_BOOT",
+      "to": "C20.pin1",
+      "layer": "top",
+      "width": 0.4,
+      "points": [
+        {
+          "x": 20.535056,
+          "y": 20.3
+        },
+        {
+          "x": 20.535056,
+          "y": 21.034944
+        },
+        {
+          "x": 18.65,
+          "y": 22.92
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "D20.pin1"
+    },
+    {
+      "id": "bootstrap-return",
+      "net": "TEC_SW",
+      "to": "C20.pin2",
+      "layer": "top",
+      "width": 0.4,
+      "points": [
+        {
+          "x": 14.75,
+          "y": 20.9825
+        },
+        {
+          "x": 18.65,
+          "y": 21.48
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "Q21.pin5"
+    },
+    {
+      "id": "usb-pin15-neck",
+      "net": "VBUS_RAW",
+      "to": "USB_pin15_ARRAY",
+      "layer": "top",
+      "width": 0.5,
+      "points": [
+        {
+          "x": -48.0244328,
+          "y": 20.5998397
+        },
+        {
+          "x": -46.5,
+          "y": 20.5998397
+        }
+      ],
+      "validation": "Width .5mm baseline clear; .6mm fails. Widen immediately at array. Exact connector pad extends partway along neck.",
+      "from": "J_USB_PD.pin15"
+    },
+    {
+      "id": "usb-pin16-neck",
+      "net": "VBUS_RAW",
+      "to": "USB_pin16_ARRAY",
+      "layer": "top",
+      "width": 0.5,
+      "points": [
+        {
+          "x": -48.0244328,
+          "y": 25.3999571
+        },
+        {
+          "x": -46.5,
+          "y": 25.3999571
+        }
+      ],
+      "validation": "Width .5mm baseline clear; .6mm fails. Widen immediately at array. Exact connector pad extends partway along neck.",
+      "from": "J_USB_PD.pin16"
+    },
+    {
+      "id": "usb-join",
+      "net": "VBUS_RAW",
+      "to": "USB_pin16_ARRAY",
+      "layer": "bottom",
+      "width": 2,
+      "points": [
+        {
+          "x": -45.5,
+          "y": 20.6
+        },
+        {
+          "x": -45.5,
+          "y": 25.4
+        }
+      ],
+      "validation": "Baseline through-hole obstacles clear; array-to-trunk copper integration required",
+      "from": "USB_pin15_ARRAY"
+    },
+    {
+      "id": "raw-trunk",
+      "net": "VBUS_RAW",
+      "to": "EFUSE_RAW_ARRAY",
+      "layer": "bottom",
+      "width": 2,
+      "points": [
+        {
+          "x": -46.5,
+          "y": 25.4
+        },
+        {
+          "x": -23.25,
+          "y": 26
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "USB_pin16_ARRAY"
+    },
+    {
+      "id": "efuse-input-neck",
+      "net": "VBUS_RAW",
+      "to": "EFUSE_RAW_NECK",
+      "layer": "top",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -23.25,
+          "y": 23
+        },
+        {
+          "x": -23.25,
+          "y": 25
+        }
+      ],
+      "validation": "Actual .30mm pad-width stem passes .20mm foreign-copper clearance with early reservations. Narrow exposed length .8mm, immediately joins .8mm widening and parallel vias. Main trunk2mm; no .2mm current fallback.",
+      "from": "U_INPUT.pin5"
+    },
+    {
+      "id": "efuse-input-widen",
+      "net": "VBUS_RAW",
+      "to": "EFUSE_RAW_ARRAY",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -23.25,
+          "y": 25
+        },
+        {
+          "x": -23.25,
+          "y": 26
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "EFUSE_RAW_NECK"
+    },
+    {
+      "id": "efuse-output-neck",
+      "net": "VBUS_TEC",
+      "to": "EFUSE_TEC_NECK",
+      "layer": "top",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -22.75,
+          "y": 23
+        },
+        {
+          "x": -22.75,
+          "y": 21
+        }
+      ],
+      "validation": "Actual .30mm pad-width stem passes .20mm foreign-copper clearance with early reservations. Narrow exposed length .8mm, immediately joins .8mm widening and parallel vias. Main trunk2mm; no .2mm current fallback.",
+      "from": "U_INPUT.pin6"
+    },
+    {
+      "id": "efuse-output-widen",
+      "net": "VBUS_TEC",
+      "to": "EFUSE_TEC_ARRAY",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -22.75,
+          "y": 21
+        },
+        {
+          "x": -22.75,
+          "y": 20
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "EFUSE_TEC_NECK"
+    },
+    {
+      "id": "protected-trunk",
+      "net": "VBUS_TEC",
+      "to": "C40_ARRAY",
+      "layer": "bottom",
+      "width": 2,
+      "points": [
+        {
+          "x": -22.75,
+          "y": 20
+        },
+        {
+          "x": -1.85,
+          "y": 33
+        }
+      ],
+      "validation": "baseline placement clear",
+      "from": "EFUSE_TEC_ARRAY"
+    },
+    {
+      "id": "ceramic-array-entry",
+      "net": "VBUS_TEC",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 1,
+      "points": [
+        {
+          "x": -1.85,
+          "y": 33
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Baseline clear; three or more parallel array branches into ceramic-bank copper, no sole narrow via bottleneck",
+      "from": "C40_ARRAY"
+    },
+    {
+      "id": "raw-branch-1-trunk",
+      "net": "VBUS_RAW",
+      "from": "USB_pin16_ARRAY",
+      "to": "RAW_BRANCH_1",
+      "layer": "bottom",
+      "width": 0.6,
+      "points": [
+        {
+          "x": -45.5,
+          "y": 25.4
+        },
+        {
+          "x": -45.27164570954364,
+          "y": 30.87484941563911
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "raw-branch-1-tail",
+      "net": "VBUS_RAW",
+      "from": "RAW_BRANCH_1",
+      "to": "C_USB_IN.pin1",
+      "layer": "top",
+      "width": 0.6,
+      "points": [
+        {
+          "x": -45.27164570954364,
+          "y": 30.87484941563911
+        },
+        {
+          "x": -45.75,
+          "y": 29.72
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "raw-branch-2-trunk",
+      "net": "VBUS_RAW",
+      "from": "USB_pin15_ARRAY",
+      "to": "RAW_BRANCH_2",
+      "layer": "bottom",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -45.5,
+          "y": 20.6
+        },
+        {
+          "x": -41.535056,
+          "y": 6
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "raw-branch-2-tail",
+      "net": "VBUS_RAW",
+      "from": "RAW_BRANCH_2",
+      "to": "D_LOGIC_PD.pin2",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -41.535056,
+          "y": 6
+        },
+        {
+          "x": -43.035056,
+          "y": 6
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "raw-branch-3-trunk",
+      "net": "VBUS_RAW",
+      "from": "USB_pin15_ARRAY",
+      "to": "RAW_BRANCH_3",
+      "layer": "bottom",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -45.5,
+          "y": 20.6
+        },
+        {
+          "x": -44.75,
+          "y": 18.25
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "raw-branch-3-tail",
+      "net": "VBUS_RAW",
+      "from": "RAW_BRANCH_3",
+      "to": "R_CH_VBUS.pin1",
+      "layer": "top",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -44.75,
+          "y": 18.25
+        },
+        {
+          "x": -44.75,
+          "y": 17
+        }
+      ],
+      "validation": "Baseline pads/holes/keepouts clear; reserve before ordinary foreign traces"
+    },
+    {
+      "id": "c40-explicit-strap-1",
+      "net": "VBUS_TEC",
+      "from": "C40_ARRAY.1.top",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -1.85,
+          "y": 33
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Clear against final pads/holes/keepouts and current generated trace/via obstacles; each array barrel has its own real top-side current-transfer connection."
+    },
+    {
+      "id": "c40-explicit-strap-2",
+      "net": "VBUS_TEC",
+      "from": "C40_ARRAY.2.top",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -0.85,
+          "y": 33
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Clear against final pads/holes/keepouts and current generated trace/via obstacles; each array barrel has its own real top-side current-transfer connection."
+    },
+    {
+      "id": "c40-explicit-strap-3",
+      "net": "VBUS_TEC",
+      "from": "C40_ARRAY.3.top",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -1.85,
+          "y": 34
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Clear against final pads/holes/keepouts and current generated trace/via obstacles; each array barrel has its own real top-side current-transfer connection."
+    },
+    {
+      "id": "c40-explicit-strap-4",
+      "net": "VBUS_TEC",
+      "from": "C40_ARRAY.4.top",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": -0.85,
+          "y": 34
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Clear against final pads/holes/keepouts and current generated trace/via obstacles; each array barrel has its own real top-side current-transfer connection."
+    },
+    {
+      "id": "c40-explicit-strap-5",
+      "net": "VBUS_TEC",
+      "from": "C40_ARRAY.5.top",
+      "to": "C40.pin1",
+      "layer": "top",
+      "width": 0.8,
+      "points": [
+        {
+          "x": 0.15,
+          "y": 33
+        },
+        {
+          "x": -1.85,
+          "y": 30.915
+        }
+      ],
+      "validation": "Clear against final pads/holes/keepouts and current generated trace/via obstacles; each array barrel has its own real top-side current-transfer connection."
+    },
+    {
+      "id": "PWR_C31_AUX_escape",
+      "net": "TEC_POS",
+      "from": "PWR_C31_AUX.top",
+      "to": "C31.pin1",
+      "layer": "top",
+      "width": 0.35,
+      "points": [
+        {
+          "x": 38,
+          "y": -0.465
+        },
+        {
+          "x": 38,
+          "y": 0.935
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_TP05_AUX_escape",
+      "net": "TEC_POS",
+      "from": "PWR_TP05_AUX.top",
+      "to": "TP05.pin1",
+      "layer": "top",
+      "width": 0.35,
+      "points": [
+        {
+          "x": 13.6,
+          "y": 2
+        },
+        {
+          "x": 12,
+          "y": 2
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_R45_AUX_escape",
+      "net": "TEC_POS",
+      "from": "PWR_R45_AUX.top",
+      "to": "R45.pin1",
+      "layer": "top",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -2.2,
+          "y": 6
+        },
+        {
+          "x": -3.2,
+          "y": 6
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_R224_AUX_escape",
+      "net": "TEC_POS",
+      "from": "PWR_R224_AUX.top",
+      "to": "R224.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "points": [
+        {
+          "x": -12.326120467488714,
+          "y": -16.91731656763491
+        },
+        {
+          "x": -13.25,
+          "y": -17.3
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_C31_AUX_PWR_TP05_AUX",
+      "net": "TEC_POS",
+      "from": "PWR_C31_AUX.bottom",
+      "to": "PWR_TP05_AUX.bottom",
+      "layer": "bottom",
+      "width": 0.35,
+      "points": [
+        {
+          "x": 38,
+          "y": -0.465
+        },
+        {
+          "x": 13.6,
+          "y": 2
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_TP05_AUX_PWR_R45_AUX",
+      "net": "TEC_POS",
+      "from": "PWR_TP05_AUX.bottom",
+      "to": "PWR_R45_AUX.bottom",
+      "layer": "bottom",
+      "width": 0.3,
+      "points": [
+        {
+          "x": 13.6,
+          "y": 2
+        },
+        {
+          "x": -2.2,
+          "y": 6
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "PWR_TP05_AUX_PWR_R224_AUX",
+      "net": "TEC_POS",
+      "from": "PWR_TP05_AUX.bottom",
+      "to": "PWR_R224_AUX.bottom",
+      "layer": "bottom",
+      "width": 0.25,
+      "points": [
+        {
+          "x": 13.6,
+          "y": 2
+        },
+        {
+          "x": -1.4000000000000004,
+          "y": -9.4
+        },
+        {
+          "x": -2.4000000000000004,
+          "y": -9.4
+        },
+        {
+          "x": -12.326120467488714,
+          "y": -16.91731656763491
+        }
+      ],
+      "validation": "Final placement + early422trace/231via reservations checked, protected Kelvin treated as foreign obstacles."
+    },
+    {
+      "id": "efuse-output-cap-array-feed",
+      "net": "VBUS_TEC",
+      "from": "EFUSE_TEC_ARRAY.6.top",
+      "to": "C_INPUT_OUT.pin1",
+      "layer": "top",
+      "width": 0.6,
+      "points": [
+        {
+          "x": -21.75,
+          "y": 21
+        },
+        {
+          "x": -19.65,
+          "y": 22.95
+        },
+        {
+          "x": -18.3,
+          "y": 22.95
+        },
+        {
+          "x": -17,
+          "y": 22.28
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "protected-bulk-trunk",
+      "net": "VBUS_TEC",
+      "from": "EFUSE_TEC_ARRAY.3.bottom",
+      "to": "C28_ARRAY.1.bottom",
+      "layer": "bottom",
+      "width": 1.2,
+      "points": [
+        {
+          "x": -22.75,
+          "y": 20
+        },
+        {
+          "x": -9.669921,
+          "y": 13.3
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "bulk-c28-top-strap-1",
+      "net": "VBUS_TEC",
+      "from": "C28_ARRAY.1.top",
+      "to": "C28.pin1",
+      "layer": "top",
+      "width": 1,
+      "points": [
+        {
+          "x": -9.669921,
+          "y": 13.3
+        },
+        {
+          "x": -9.669921,
+          "y": 12
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "bulk-c28-top-strap-2",
+      "net": "VBUS_TEC",
+      "from": "C28_ARRAY.2.top",
+      "to": "C28.pin1",
+      "layer": "top",
+      "width": 1,
+      "points": [
+        {
+          "x": -10.669921,
+          "y": 13.3
+        },
+        {
+          "x": -9.669921,
+          "y": 12
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "bulk-c28-top-strap-3",
+      "net": "VBUS_TEC",
+      "from": "C28_ARRAY.3.top",
+      "to": "C28.pin1",
+      "layer": "top",
+      "width": 1,
+      "points": [
+        {
+          "x": -8.669921,
+          "y": 13.3
+        },
+        {
+          "x": -9.669921,
+          "y": 12
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "raw-tp01-tail",
+      "net": "VBUS_RAW",
+      "from": "PWR_TP01_AUX.top",
+      "to": "TP01.pin1",
+      "layer": "top",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -18.4,
+          "y": 2
+        },
+        {
+          "x": -20,
+          "y": 2
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "raw-tp01-trunk",
+      "net": "VBUS_RAW",
+      "from": "RAW_BRANCH_2.1.bottom",
+      "to": "PWR_TP01_AUX.bottom",
+      "layer": "bottom",
+      "width": 0.3,
+      "points": [
+        {
+          "x": -41.535056,
+          "y": 6
+        },
+        {
+          "x": -37.535056,
+          "y": 2
+        },
+        {
+          "x": -18.4,
+          "y": 2
+        }
+      ],
+      "validation": "Final placement+early422trace/231via reservations checked, protected Kelvin excluded."
+    },
+    {
+      "id": "raw-adc-sense-source",
+      "net": "VBUS_RAW",
+      "from": "PWR_TP01_AUX.top",
+      "to": "PWR_R222_HOP.top",
+      "layer": "top",
+      "width": 0.2,
+      "points": [
+        {
+          "x": -18.4,
+          "y": 2
+        },
+        {
+          "x": -22.05,
+          "y": -2.2
+        },
+        {
+          "x": -23.55,
+          "y": -4.5
+        },
+        {
+          "x": -23.65,
+          "y": -5
+        },
+        {
+          "x": -20.25,
+          "y": -12
+        }
+      ],
+      "validation": "Low-current divider feeder only; checked against frozen983 except VBUS_ADC inner2 RB_TRACE_393 and RB_TRACE_1034, rerouted by thermal/root after this reservation. Main current widths and Kelvin geometry unchanged."
+    },
+    {
+      "id": "raw-adc-sense-trunk",
+      "net": "VBUS_RAW",
+      "from": "PWR_R222_HOP.inner2",
+      "to": "PWR_R222_AUX.inner2",
+      "layer": "inner2",
+      "width": 0.2,
+      "points": [
+        {
+          "x": -20.25,
+          "y": -12
+        },
+        {
+          "x": -14.85,
+          "y": -14.5
+        }
+      ],
+      "validation": "Low-current divider feeder only; checked against frozen983 except VBUS_ADC inner2 RB_TRACE_393 and RB_TRACE_1034, rerouted by thermal/root after this reservation. Main current widths and Kelvin geometry unchanged."
+    },
+    {
+      "id": "raw-adc-sense-tail",
+      "net": "VBUS_RAW",
+      "from": "PWR_R222_AUX.top",
+      "to": "R222.pin1",
+      "layer": "top",
+      "width": 0.2,
+      "points": [
+        {
+          "x": -14.85,
+          "y": -14.5
+        },
+        {
+          "x": -14.25,
+          "y": -14.2
+        },
+        {
+          "x": -13.25,
+          "y": -13.5
+        }
+      ],
+      "validation": "Low-current divider feeder only; checked against frozen983 except VBUS_ADC inner2 RB_TRACE_393 and RB_TRACE_1034, rerouted by thermal/root after this reservation. Main current widths and Kelvin geometry unchanged."
+    }
+  ],
+  "viaArrays": [
+    {
+      "id": "USB_pin15_ARRAY",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -46.5,
+          "y": 19.6
+        },
+        {
+          "x": -46.5,
+          "y": 20.6
+        },
+        {
+          "x": -46.5,
+          "y": 21.6
+        },
+        {
+          "x": -45.5,
+          "y": 19.6
+        },
+        {
+          "x": -45.5,
+          "y": 20.6
+        },
+        {
+          "x": -45.5,
+          "y": 21.6
+        }
+      ],
+      "validation": "Each proposed via center baseline-clear under conservative full-through via test; validate pairwise with other new arrays and local copper before accepting",
+      "joining": "Connect each member by >=.8mm same-net spoke to array bus on top and bottom; do not create independent unconnected barrels; grounded plane antipads required"
+    },
+    {
+      "id": "USB_pin16_ARRAY",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -46.5,
+          "y": 24.4
+        },
+        {
+          "x": -46.5,
+          "y": 25.4
+        },
+        {
+          "x": -46.5,
+          "y": 26.4
+        },
+        {
+          "x": -45.5,
+          "y": 24.4
+        },
+        {
+          "x": -45.5,
+          "y": 25.4
+        },
+        {
+          "x": -45.5,
+          "y": 26.4
+        }
+      ],
+      "validation": "Each proposed via center baseline-clear under conservative full-through via test; validate pairwise with other new arrays and local copper before accepting",
+      "joining": "Connect each member by >=.8mm same-net spoke to array bus on top and bottom; do not create independent unconnected barrels; grounded plane antipads required"
+    },
+    {
+      "id": "EFUSE_RAW_ARRAY",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -24.25,
+          "y": 26
+        },
+        {
+          "x": -23.25,
+          "y": 26
+        },
+        {
+          "x": -22.25,
+          "y": 26
+        }
+      ],
+      "validation": "Each proposed via center baseline-clear under conservative full-through via test; validate pairwise with other new arrays and local copper before accepting",
+      "joining": "Connect each member by >=.8mm same-net spoke to array bus on top and bottom; do not create independent unconnected barrels; grounded plane antipads required"
+    },
+    {
+      "id": "EFUSE_TEC_ARRAY",
+      "net": "VBUS_TEC",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -23.75,
+          "y": 20
+        },
+        {
+          "x": -23.75,
+          "y": 21
+        },
+        {
+          "x": -22.75,
+          "y": 20
+        },
+        {
+          "x": -22.75,
+          "y": 21
+        },
+        {
+          "x": -21.75,
+          "y": 20
+        },
+        {
+          "x": -21.75,
+          "y": 21
+        }
+      ],
+      "validation": "Each proposed via center baseline-clear under conservative full-through via test; validate pairwise with other new arrays and local copper before accepting",
+      "joining": "Connect each member by >=.8mm same-net spoke to array bus on top and bottom; do not create independent unconnected barrels; grounded plane antipads required"
+    },
+    {
+      "id": "C40_ARRAY",
+      "net": "VBUS_TEC",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -1.85,
+          "y": 33
+        },
+        {
+          "x": -0.85,
+          "y": 33
+        },
+        {
+          "x": -1.85,
+          "y": 34
+        },
+        {
+          "x": -0.85,
+          "y": 34
+        },
+        {
+          "x": 0.15,
+          "y": 33
+        }
+      ],
+      "validation": "All five sites and .8mm direct top-to-C40 straps checked against final routing-placement and current generated foreign copper. Removed former(-2.85,33) member obstructed by moved R37 pad; first member now exactly coincides with C40_ARRAY trunk anchor(-1.85,33).",
+      "joining": "Connect each member by >=.8mm same-net spoke to array bus on top and bottom; do not create independent unconnected barrels; grounded plane antipads required"
+    },
+    {
+      "id": "RAW_BRANCH_1",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -45.27164570954364,
+          "y": 30.87484941563911
+        }
+      ],
+      "validation": "Single low-current branch via baseline clear. Main input current stays in separately specified arrays."
+    },
+    {
+      "id": "RAW_BRANCH_2",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -41.535056,
+          "y": 6
+        }
+      ],
+      "validation": "Single low-current branch via baseline clear. Main input current stays in separately specified arrays."
+    },
+    {
+      "id": "RAW_BRANCH_3",
+      "net": "VBUS_RAW",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -44.75,
+          "y": 18.25
+        }
+      ],
+      "validation": "Single low-current branch via baseline clear. Main input current stays in separately specified arrays."
+    },
+    {
+      "id": "C28_ARRAY",
+      "net": "VBUS_TEC",
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "points": [
+        {
+          "x": -9.669921,
+          "y": 13.3
+        },
+        {
+          "x": -10.669921,
+          "y": 13.3
+        },
+        {
+          "x": -8.669921,
+          "y": 13.3
+        }
+      ],
+      "validation": "All3sites,1mm top spokes and1.2mm bottom trunk checked against final placement+early422traces/231vias. Bulk feed independent of small C_INPUT_OUT land."
+    }
+  ],
+  "edgeResolutions": [
+    {
+      "to": "L2.pin1",
+      "paths": [
+        "sw-main"
+      ],
+      "from": "Q21.pin5"
+    },
+    {
+      "to": "C20.pin1",
+      "paths": [
+        "bootstrap-charge"
+      ],
+      "from": "D20.pin1"
+    },
+    {
+      "to": "C20.pin2",
+      "paths": [
+        "bootstrap-return"
+      ],
+      "from": "Q21.pin5"
+    },
+    {
+      "to": "J_USB_PD.pin16",
+      "paths": [
+        "usb-pin15-neck",
+        "usb-join",
+        "usb-pin16-neck"
+      ],
+      "from": "J_USB_PD.pin15"
+    },
+    {
+      "to": "U_INPUT.pin5",
+      "paths": [
+        "usb-pin16-neck",
+        "raw-trunk",
+        "efuse-input-widen",
+        "efuse-input-neck"
+      ],
+      "from": "J_USB_PD.pin16"
+    },
+    {
+      "to": "C40.pin1",
+      "paths": [
+        "efuse-output-neck",
+        "efuse-output-widen",
+        "protected-trunk",
+        "ceramic-array-entry"
+      ],
+      "from": "U_INPUT.pin6"
+    },
+    {
+      "to": "C_USB_IN.pin1",
+      "reuseSourceEscape": "USB_pin16_ARRAY",
+      "trunkWidth": 0.6,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "from": "J_USB_PD.pin16",
+      "paths": [
+        "usb-pin16-neck",
+        "raw-branch-1-trunk",
+        "raw-branch-1-tail"
+      ]
+    },
+    {
+      "to": "D_LOGIC_PD.pin2",
+      "reuseSourceEscape": "USB_pin15_ARRAY",
+      "trunkWidth": 0.8,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "from": "J_USB_PD.pin15",
+      "paths": [
+        "usb-pin15-neck",
+        "raw-branch-2-trunk",
+        "raw-branch-2-tail"
+      ]
+    },
+    {
+      "to": "R_CH_VBUS.pin1",
+      "reuseSourceEscape": "USB_pin15_ARRAY",
+      "trunkWidth": 0.3,
+      "preferredLayers": [
+        "bottom",
+        "top"
+      ],
+      "from": "J_USB_PD.pin15",
+      "paths": [
+        "usb-pin15-neck",
+        "raw-branch-3-trunk",
+        "raw-branch-3-tail"
+      ]
+    }
+  ],
+  "kelvinConstraints": [
+    {
+      "pair": [
+        "R20.pin1->R25.pin1",
+        "R20.pin2->R26.pin1"
+      ],
+      "width": 0.2,
+      "layer": "bottom",
+      "maxPairSpacing": 1,
+      "sourceTakeoff": "Distinct direct shunt-land takeoffs; no segment may carry load/capacitor/indicator current",
+      "forbidden": "TEC_SW projection and L2 body; preserve 1mm lateral margin where feasible; route equal layer and comparable length; current source has unmatched via counts so replace both together"
+    },
+    {
+      "pair": [
+        "R20.pin1->R41.pin1",
+        "R20.pin2->R42.pin1"
+      ],
+      "width": 0.2,
+      "layer": "top",
+      "sourceTakeoff": "Independent monitor takeoffs from actual shunt lands",
+      "forbidden": "No merging with main R20/J_TEC or L2 current corridor outside terminal copper"
+    }
+  ],
+  "groundRecommendations": [
+    "Coordinate with ground_completion: Q21 source three .65mm adjacent-pad bridges, multiple .6mm short escape fingers into 1.5\u20132mm return corridor or parallel plane vias; source arrays south/west of Q21 preserve proposed SW diagonal to east.",
+    "C25.pin2 and C26.pin2 each >=3 vias with >=1.2mm branches to continuous inner1 ground. R24 at10.75,19.25/20.75 blocks direct broad west-side surface return; use plane immediately or request relocation with validated gate return.",
+    "J_TEC.pin2 through-hole annulus plus output capacitor ground arrays; do not send output return via U2 analog ground."
+  ],
+  "shuntKelvin": {
+    "status": "Rerouted around all four mandatory U2 EP ground barrels and 1.2mm top returns; controller corridor at y25.1/y25.7",
+    "sourcePlacementSha256": "f5e95c04c3f086de935a4705a57bd0b66a0110b3b7b8e6995cc56a8e436579c9",
+    "analogPacketSha256": "9400d4673b133ca4ee74713029bb0844a3a3f2a307c6e7e290ddf41a1b57c98f",
+    "viaOuterDiameter": 0.7,
+    "viaHoleDiameter": 0.3,
+    "vias": [
+      {
+        "name": "KELVIN_R25_SHUNT",
+        "net": "TEC_INDUCTOR_OUT",
+        "x": 41.65,
+        "y": 10.1
+      },
+      {
+        "name": "KELVIN_R25_FILTER",
+        "net": "TEC_INDUCTOR_OUT",
+        "x": 17.085786437626904,
+        "y": 31.964213562373097
+      },
+      {
+        "name": "KELVIN_R26_SHUNT",
+        "net": "TEC_POS",
+        "x": 44.35,
+        "y": 10.1
+      },
+      {
+        "name": "KELVIN_R26_FILTER",
+        "net": "TEC_POS",
+        "x": 22.8,
+        "y": 31.7
+      },
+      {
+        "name": "KELVIN_R41_SHUNT",
+        "net": "TEC_INDUCTOR_OUT",
+        "x": 41.65,
+        "y": 8.9
+      },
+      {
+        "name": "KELVIN_R41_FILTER",
+        "net": "TEC_INDUCTOR_OUT",
+        "x": 38.25,
+        "y": 23
+      },
+      {
+        "name": "KELVIN_R42_SHUNT",
+        "net": "TEC_POS",
+        "x": 44.35,
+        "y": 8.9
+      },
+      {
+        "name": "KELVIN_R42_FILTER",
+        "net": "TEC_POS",
+        "x": 43.75,
+        "y": 23
+      }
+    ],
+    "paths": [
+      {
+        "id": "KELVIN_R25_head",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "R20.pin1",
+        "to": "KELVIN_R25_SHUNT.top",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 40.145,
+            "y": 9.5
+          },
+          {
+            "x": 41.65,
+            "y": 10.1
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R25",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R25.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R25_trunk",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "KELVIN_R25_SHUNT.bottom",
+        "to": "KELVIN_R25_FILTER.bottom",
+        "layer": "bottom",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 41.65,
+            "y": 10.1
+          },
+          {
+            "x": 38.85,
+            "y": 20.1
+          },
+          {
+            "x": 33.5,
+            "y": 20.1
+          },
+          {
+            "x": 28.5,
+            "y": 25.1
+          },
+          {
+            "x": 18,
+            "y": 25.1
+          },
+          {
+            "x": 18,
+            "y": 27.5
+          },
+          {
+            "x": 17.085786437626904,
+            "y": 31.964213562373097
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R25",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R25.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R25_tail",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "KELVIN_R25_FILTER.top",
+        "to": "R25.pin1",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 17.085786437626904,
+            "y": 31.964213562373097
+          },
+          {
+            "x": 17.885786437626905,
+            "y": 31.364213562373095
+          },
+          {
+            "x": 18.5,
+            "y": 30.55
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R25",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R25.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R26_head",
+        "net": "TEC_POS",
+        "from": "R20.pin2",
+        "to": "KELVIN_R26_SHUNT.top",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 45.855,
+            "y": 9.5
+          },
+          {
+            "x": 44.35,
+            "y": 10.1
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R26",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R26.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R26_trunk",
+        "net": "TEC_POS",
+        "from": "KELVIN_R26_SHUNT.bottom",
+        "to": "KELVIN_R26_FILTER.bottom",
+        "layer": "bottom",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 44.35,
+            "y": 10.1
+          },
+          {
+            "x": 39.4,
+            "y": 20.6
+          },
+          {
+            "x": 31.799999999999997,
+            "y": 24.1
+          },
+          {
+            "x": 31.299999999999997,
+            "y": 24.700000000000003
+          },
+          {
+            "x": 30.099999999999998,
+            "y": 24.8
+          },
+          {
+            "x": 29,
+            "y": 25.7
+          },
+          {
+            "x": 18.6,
+            "y": 25.7
+          },
+          {
+            "x": 18.6,
+            "y": 26.9
+          },
+          {
+            "x": 18.900000000000002,
+            "y": 27.4
+          },
+          {
+            "x": 20.3,
+            "y": 28.599999999999998
+          },
+          {
+            "x": 21.200000000000003,
+            "y": 29.799999999999997
+          },
+          {
+            "x": 22.8,
+            "y": 31.599999999999998
+          },
+          {
+            "x": 22.8,
+            "y": 31.7
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R26",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R26.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R26_tail",
+        "net": "TEC_POS",
+        "from": "KELVIN_R26_FILTER.top",
+        "to": "R26.pin1",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 22.8,
+            "y": 31.7
+          },
+          {
+            "x": 23.05,
+            "y": 30.2
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R26",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R26.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R41_head",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "R20.pin1",
+        "to": "KELVIN_R41_SHUNT.top",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 40.145,
+            "y": 9.5
+          },
+          {
+            "x": 41.65,
+            "y": 8.9
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R41",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R41.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R41_trunk",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "KELVIN_R41_SHUNT.inner2",
+        "to": "KELVIN_R41_FILTER.inner2",
+        "layer": "inner2",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 41.65,
+            "y": 8.9
+          },
+          {
+            "x": 40.949999999999996,
+            "y": 9.700000000000001
+          },
+          {
+            "x": 38.25,
+            "y": 23
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R41",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R41.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R41_tail",
+        "net": "TEC_INDUCTOR_OUT",
+        "from": "KELVIN_R41_FILTER.top",
+        "to": "R41.pin1",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 38.25,
+            "y": 23
+          },
+          {
+            "x": 38.25,
+            "y": 24
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R41",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin1",
+          "R41.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R42_head",
+        "net": "TEC_POS",
+        "from": "R20.pin2",
+        "to": "KELVIN_R42_SHUNT.top",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 45.855,
+            "y": 9.5
+          },
+          {
+            "x": 44.35,
+            "y": 8.9
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R42",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R42.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R42_trunk",
+        "net": "TEC_POS",
+        "from": "KELVIN_R42_SHUNT.inner2",
+        "to": "KELVIN_R42_FILTER.inner2",
+        "layer": "inner2",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 44.35,
+            "y": 8.9
+          },
+          {
+            "x": 43.65,
+            "y": 9.700000000000001
+          },
+          {
+            "x": 43.550000000000004,
+            "y": 10.3
+          },
+          {
+            "x": 43.75,
+            "y": 23
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R42",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R42.pin1"
+        ]
+      },
+      {
+        "id": "KELVIN_R42_tail",
+        "net": "TEC_POS",
+        "from": "KELVIN_R42_FILTER.top",
+        "to": "R42.pin1",
+        "layer": "top",
+        "width": 0.2,
+        "points": [
+          {
+            "x": 43.75,
+            "y": 23
+          },
+          {
+            "x": 43.75,
+            "y": 24
+          }
+        ],
+        "exclusiveSenseBranch": "KELVIN_R42",
+        "allowSameNetMergeOnlyAt": [
+          "R20.pin2",
+          "R42.pin1"
+        ]
+      }
+    ],
+    "branches": [
+      {
+        "from": "R20.pin1",
+        "to": "R25.pin1",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "bottom",
+        "pathIds": [
+          "KELVIN_R25_head",
+          "KELVIN_R25_trunk",
+          "KELVIN_R25_tail"
+        ],
+        "viaNames": [
+          "KELVIN_R25_SHUNT",
+          "KELVIN_R25_FILTER"
+        ],
+        "sourceEscapeLengthMm": 1.6201928897510895,
+        "trunkLengthMm": 40.26253356796317,
+        "totalLengthMm": 43.90262940670271
+      },
+      {
+        "from": "R20.pin2",
+        "to": "R26.pin1",
+        "net": "TEC_POS",
+        "layer": "bottom",
+        "pathIds": [
+          "KELVIN_R26_head",
+          "KELVIN_R26_trunk",
+          "KELVIN_R26_tail"
+        ],
+        "viaNames": [
+          "KELVIN_R26_SHUNT",
+          "KELVIN_R26_FILTER"
+        ],
+        "sourceEscapeLengthMm": 1.6201928897510895,
+        "trunkLengthMm": 41.417266769197745,
+        "totalLengthMm": 44.55815029152339
+      },
+      {
+        "from": "R20.pin1",
+        "to": "R41.pin1",
+        "net": "TEC_INDUCTOR_OUT",
+        "layer": "inner2",
+        "pathIds": [
+          "KELVIN_R41_head",
+          "KELVIN_R41_trunk",
+          "KELVIN_R41_tail"
+        ],
+        "viaNames": [
+          "KELVIN_R41_SHUNT",
+          "KELVIN_R41_FILTER"
+        ],
+        "sourceEscapeLengthMm": 1.6201928897510895,
+        "trunkLengthMm": 14.634307813681348,
+        "totalLengthMm": 17.254500703432438
+      },
+      {
+        "from": "R20.pin2",
+        "to": "R42.pin1",
+        "net": "TEC_POS",
+        "layer": "inner2",
+        "pathIds": [
+          "KELVIN_R42_head",
+          "KELVIN_R42_trunk",
+          "KELVIN_R42_tail"
+        ],
+        "viaNames": [
+          "KELVIN_R42_SHUNT",
+          "KELVIN_R42_FILTER"
+        ],
+        "sourceEscapeLengthMm": 1.6201928897510895,
+        "trunkLengthMm": 14.372865539827009,
+        "totalLengthMm": 16.9930584295781
+      }
+    ],
+    "validation": {
+      "padAndHoleClearance": true,
+      "analogPacketCopperReserved": true,
+      "existingPowerPacketReserved": true,
+      "mutualBranchClearance": true,
+      "allViaSitesChecked": true,
+      "scope": "Final routing-placement circuit, analog paths/vias/ground escapes, power completion paths/arrays; NOT latest integrated global routes. All 4 candidates checked in insertion order.",
+      "quietProjectionExclusions": [
+        "L2 bounding corridor x23.5..38.5,y4.5..19.5 on bottom/inner2",
+        "TEC_SW paths inflated by 1mm per side on bottom/inner2"
+      ],
+      "controllerLengthMatchingQualified": false,
+      "manufacturingAccepted": false,
+      "mandatoryGroundReturnsReserved": {
+        "selector": "U2.pin21",
+        "width": 1.2,
+        "sitesFromPacket": [
+          {
+            "x": 23.717889356869144,
+            "y": 27.99048674522936,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          },
+          {
+            "x": 23.282110643130853,
+            "y": 23.00951325477064,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          },
+          {
+            "x": 22.593646620186977,
+            "y": 27.990185445082655,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          },
+          {
+            "x": 24.40635337981302,
+            "y": 23.009814554917345,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        ],
+        "additionalRequestedSiteEnvelopes": [
+          {
+            "x": 23.7266,
+            "y": 28.0901
+          },
+          {
+            "x": 23.2734,
+            "y": 22.9099
+          },
+          {
+            "x": 22.5423,
+            "y": 28.1311
+          },
+          {
+            "x": 24.4577,
+            "y": 22.8689
+          }
+        ],
+        "all12KelvinPathsClear": true,
+        "all8KelvinSitesClear": true,
+        "allOtherPowerPacketPathsClear": true
+      }
+    },
+    "constraints": [
+      "Two separate off-pad source vias per shunt land, with equal 1.62mm top source traces directed into shunt center gap. Main power copper must exit outer sides of R20 lands.",
+      "Never merge branch copper with same-net load/current/feedback traces except inside actual R20 solder land. Generic same-net obstacle skipping is insufficient.",
+      "Reserve all 8 barrels and 12 paths before ordinary routing; keep destination R25 at(18.5,30.55), R26 at(23.05,30.2).",
+      "Requires TEC_DAC long trunk on inner2 per final analog packet. Controller pair follows adjacent bottom corridors and fans out only at source/destination; reserve complete paths without simplifying across the paired route.",
+      "Monitor pair uses inner2 with equal source and destination top escape lengths and near-matched quiet trunks.",
+      "Mandatory U2 EP: reserve all four .7/.3 barrels and full 1.2mm top returns before power/Kelvin installation. R26 filter-side barrel relocated to (22.8,31.7) to clear the northern ground return. Never drop a rejected EP branch to accommodate sense routing."
+    ],
+    "pairMetrics": {
+      "controllerTotalLengthsMm": [
+        43.90262940670271,
+        44.55815029152339
+      ],
+      "controllerSkewMm": 0.6555208848206817,
+      "controllerPrincipalWestCorridorCenterSpacingMm": 0.6,
+      "controllerPrincipalWestCorridor": "P (28.5,25.1) to (18,25.1); N (29,25.7) to (18.6,25.7). Local spacing expands around mandatory ground barrels.",
+      "monitorTotalLengthsMm": [
+        17.254500703432438,
+        16.9930584295781
+      ],
+      "monitorSkewMm": 0.26144227385433894,
+      "interpretation": "Four independent branches; near-paired quiet corridor with local obstacle detours, no full electrical matching qualification."
+    },
+    "groundPacketSha256": "5dcae22cd340640ddd9e9805fe7d8f2ca92253af959010e90563f917b3774de7"
+  },
+  "vias": [
+    {
+      "name": "PWR_C31_AUX",
+      "net": "TEC_POS",
+      "x": 38,
+      "y": -0.465
+    },
+    {
+      "name": "PWR_TP05_AUX",
+      "net": "TEC_POS",
+      "x": 13.6,
+      "y": 2
+    },
+    {
+      "name": "PWR_R45_AUX",
+      "net": "TEC_POS",
+      "x": -2.2,
+      "y": 6
+    },
+    {
+      "name": "PWR_R224_AUX",
+      "net": "TEC_POS",
+      "x": -12.326120467488714,
+      "y": -16.91731656763491
+    },
+    {
+      "name": "PWR_TP01_AUX",
+      "net": "VBUS_RAW",
+      "x": -18.4,
+      "y": 2
+    },
+    {
+      "name": "PWR_R222_AUX",
+      "net": "VBUS_RAW",
+      "x": -14.85,
+      "y": -14.5
+    },
+    {
+      "name": "PWR_R222_HOP",
+      "net": "VBUS_RAW",
+      "x": -20.25,
+      "y": -12
+    }
+  ],
+  "completionUpdate": {
+    "referenceStage": "first i2c-debug-completion reservation traceEnd422,231barrels",
+    "completedAuxEdges": [
+      "C31.pin1->TP05.pin1",
+      "TP05.pin1->R45.pin1",
+      "TP05.pin1->R224.pin1",
+      "D_LOGIC_PD.pin2->TP01.pin1"
+    ],
+    "reinforcedCurrentBranches": [
+      "U_INPUT.pin6->C_INPUT_OUT.pin1 via .6mm array feed",
+      "C_INPUT_OUT.pin1->C28.pin1 completed via independent1.2mm protected-array feed,3vias,1mm spokes"
+    ],
+    "mainCurrentTopology": "USB.5mm pad exits\u2192parallel arrays\u21922mm bottom trunk\u2192eFuse.3mm actual-pad-width stem\u2192.8mm widening\u2192parallel arrays\u21922mm trunk\u2192C40/39/26 bank\u2192Q20.1.5mm top\u2192Q21.1.5mm top\u2192L2.2mm top\u2192R20.2mm top\u2192J_TEC.2mm top. Main current must not rely on auxiliary.2mm branch or single.3mm drilled barrel. Thermal/via current qualification pending."
+  }
+}

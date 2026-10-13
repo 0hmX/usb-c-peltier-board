@@ -1,0 +1,1645 @@
+{
+  "owner": "ground-supply",
+  "net": "GND",
+  "baselineSha256": "c8803ff001f8835acb42ea77d4c599290dc08e81f08a22e73089feecd3fc7e59",
+  "status": "Finite ground geometry with joint MCU fanout/positive-feed dependencies; all proposed short MCU cap returns pass sequential critical-copper probes. Final native build and physical audits remain required.",
+  "groundEscapes": [
+    {
+      "selector": "U_INPUT.pin8",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -22.1,
+          "y": 22.775
+        },
+        {
+          "x": -21.34999999999999,
+          "y": 22.825
+        },
+        {
+          "x": -21.24999999999999,
+          "y": 22.925
+        }
+      ],
+      "via": {
+        "x": -21.24999999999999,
+        "y": 22.925,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      }
+    },
+    {
+      "selector": "R_INPUT_ILIM.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -19,
+          "y": 22.05
+        },
+        {
+          "x": -17.999999999999986,
+          "y": 20.999999999999986
+        }
+      ],
+      "via": {
+        "x": -17.999999999999986,
+        "y": 20.999999999999986,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      }
+    },
+    {
+      "selector": "C_CH_VDD.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -43,
+          "y": 20.4
+        },
+        {
+          "x": -43.84999999999995,
+          "y": 21.20000000000001
+        }
+      ],
+      "via": {
+        "x": -43.84999999999995,
+        "y": 21.20000000000001,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      }
+    },
+    {
+      "selector": "C_PD_WINDOW.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -39.25,
+          "y": 7.05
+        },
+        {
+          "x": -40.09999999999995,
+          "y": 6.250000000000003
+        }
+      ],
+      "via": {
+        "x": -40.09999999999995,
+        "y": 6.250000000000003,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      }
+    },
+    {
+      "selector": "U_USB_ESD.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -42.850904,
+          "y": -19
+        },
+        {
+          "x": -43.95090399999994,
+          "y": -19
+        }
+      ],
+      "via": {
+        "x": -43.95090399999994,
+        "y": -19,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      }
+    },
+    {
+      "selector": "C_USB_VDD.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -26.65,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -27.25,
+          "y": -14.6
+        }
+      ],
+      "via": {
+        "x": -27.25,
+        "y": -14.6,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "viaName": "GROUND_MCU_UPPER_BYPASS",
+      "dependency": "Adopt all five requiredMcuFanoutChanges and requiredV1V1Escape together.",
+      "maxExposedLength": 1,
+      "exposedCopperLengthMm": 0.29031242374328736
+    },
+    {
+      "selector": "C_DVDD1.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -27.85,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -27.25,
+          "y": -14.6
+        }
+      ],
+      "via": {
+        "x": -27.25,
+        "y": -14.6,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "viaName": "GROUND_MCU_UPPER_BYPASS",
+      "dependency": "Adopt all five requiredMcuFanoutChanges and requiredV1V1Escape together.",
+      "maxExposedLength": 1,
+      "exposedCopperLengthMm": 0.29031242374328736
+    },
+    {
+      "selector": "C200.pin2",
+      "width": 0.6,
+      "layer": "top",
+      "path": [
+        {
+          "x": -36,
+          "y": -7.075
+        },
+        {
+          "x": -37.5,
+          "y": -7.075
+        }
+      ],
+      "via": {
+        "x": -37.5,
+        "y": -7.075,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "note": "Verified against all local critical geometry; reserve before long control trunks.",
+      "maxExposedLength": 1,
+      "pcbStraightLine": true
+    },
+    {
+      "selector": "U_CLOCK_BUFFER.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": 0,
+          "y": -9.3
+        },
+        {
+          "x": 0,
+          "y": -10.5
+        }
+      ],
+      "via": {
+        "x": 0,
+        "y": -10.5,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "note": "Verified against all local critical geometry; reserve before long control trunks."
+    },
+    {
+      "selector": "R201.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": -4.25,
+          "y": -11.25
+        },
+        {
+          "x": -4.95,
+          "y": -10.35
+        }
+      ],
+      "via": {
+        "x": -4.95,
+        "y": -10.35,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "note": "Verified against all local critical geometry; reserve before long control trunks."
+    },
+    {
+      "selector": "U2.pin2",
+      "width": 0.2,
+      "layer": "top",
+      "path": [
+        {
+          "x": 26.275,
+          "y": 23.225
+        },
+        {
+          "x": 27.15,
+          "y": 23.225
+        },
+        {
+          "x": 27.15,
+          "y": 22.9
+        },
+        {
+          "x": 29.55,
+          "y": 22.9
+        },
+        {
+          "x": 29.55,
+          "y": 21.1
+        }
+      ],
+      "via": {
+        "name": "AN_GND_C22",
+        "x": 29.55,
+        "y": 21.1,
+        "outerDiameter": 0.7,
+        "holeDiameter": 0.3,
+        "fromLayer": "top",
+        "toLayer": "bottom",
+        "tented": true
+      },
+      "note": "Reuses existing C22 ground barrel; preserves EN corridor and four wide EP returns. IC ground branch has no capacitor bypass length constraint; C22 retains its separate local short branch. Analog joint copper proof passed."
+    }
+  ],
+  "powerReturns": [
+    {
+      "selector": "Q21.pin1",
+      "requestedViaCount": 2,
+      "branches": [
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 12.845,
+              "y": 17.2525
+            },
+            {
+              "x": 11.895,
+              "y": 17.2525
+            }
+          ],
+          "via": {
+            "x": 11.895,
+            "y": 17.2525,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 12.845,
+              "y": 17.2525
+            },
+            {
+              "x": 12.845,
+              "y": 16.2025
+            }
+          ],
+          "via": {
+            "x": 12.845,
+            "y": 16.2025,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "Q21.pin2",
+      "requestedViaCount": 2,
+      "branches": [
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 14.115,
+              "y": 17.2525
+            },
+            {
+              "x": 14.115,
+              "y": 16.2025
+            }
+          ],
+          "via": {
+            "x": 14.115,
+            "y": 16.2025,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 14.115,
+              "y": 17.2525
+            },
+            {
+              "x": 15.175660171779821,
+              "y": 16.19183982822018
+            }
+          ],
+          "via": {
+            "x": 15.175660171779821,
+            "y": 16.19183982822018,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "Q21.pin3",
+      "requestedViaCount": 2,
+      "branches": [
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 15.385,
+              "y": 17.2525
+            },
+            {
+              "x": 16.16,
+              "y": 15.910160624134122
+            }
+          ],
+          "via": {
+            "x": 16.16,
+            "y": 15.910160624134122,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 0.6,
+          "layer": "top",
+          "path": [
+            {
+              "x": 15.385,
+              "y": 17.2525
+            },
+            {
+              "x": 15.385,
+              "y": 15.2025
+            }
+          ],
+          "via": {
+            "x": 15.385,
+            "y": 15.2025,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C25.pin2",
+      "requestedViaCount": 3,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 22.435
+            },
+            {
+              "x": 9.858944678434574,
+              "y": 23.68024337261468
+            }
+          ],
+          "via": {
+            "x": 9.858944678434574,
+            "y": 23.68024337261468,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 22.435
+            },
+            {
+              "x": 9.641055321565426,
+              "y": 21.189756627385318
+            }
+          ],
+          "via": {
+            "x": 9.641055321565426,
+            "y": 21.189756627385318,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 22.435
+            },
+            {
+              "x": 8.832277701838326,
+              "y": 23.745643270862388
+            }
+          ],
+          "via": {
+            "x": 8.832277701838326,
+            "y": 23.745643270862388,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C26.pin2",
+      "requestedViaCount": 3,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 27.785
+            },
+            {
+              "x": 9.858944678434574,
+              "y": 29.03024337261468
+            }
+          ],
+          "via": {
+            "x": 9.858944678434574,
+            "y": 29.03024337261468,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 27.785
+            },
+            {
+              "x": 8.832277701838326,
+              "y": 29.09564327086239
+            }
+          ],
+          "via": {
+            "x": 8.832277701838326,
+            "y": 29.09564327086239,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 9.75,
+              "y": 27.785
+            },
+            {
+              "x": 10.874878316951445,
+              "y": 29.12557777545821
+            }
+          ],
+          "via": {
+            "x": 10.874878316951445,
+            "y": 29.12557777545821,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C29.pin2",
+      "requestedViaCount": 3,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 48,
+              "y": 4.669921
+            },
+            {
+              "x": 49.15,
+              "y": 4.669921
+            }
+          ],
+          "via": {
+            "x": 49.15,
+            "y": 4.669921,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 48,
+              "y": 4.669921
+            },
+            {
+              "x": 46.85,
+              "y": 4.669921
+            }
+          ],
+          "via": {
+            "x": 46.85,
+            "y": 4.669921,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 48,
+              "y": 4.669921
+            },
+            {
+              "x": 49.22567110899037,
+              "y": 5.698381175498463
+            }
+          ],
+          "via": {
+            "x": 49.22567110899037,
+            "y": 5.698381175498463,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C30.pin2",
+      "requestedViaCount": 3,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 42,
+              "y": 6.3149999999999995
+            },
+            {
+              "x": 42.108944678434575,
+              "y": 7.560243372614682
+            }
+          ],
+          "via": {
+            "x": 42.108944678434575,
+            "y": 7.560243372614682,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 42,
+              "y": 6.3149999999999995
+            },
+            {
+              "x": 41.891055321565425,
+              "y": 5.069756627385317
+            }
+          ],
+          "via": {
+            "x": 41.891055321565425,
+            "y": 5.069756627385317,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 42,
+              "y": 6.3149999999999995
+            },
+            {
+              "x": 42.91772229816167,
+              "y": 5.004356729137612
+            }
+          ],
+          "via": {
+            "x": 42.91772229816167,
+            "y": 5.004356729137612,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C31.pin2",
+      "requestedViaCount": 3,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 38,
+              "y": 4.0649999999999995
+            },
+            {
+              "x": 38.108944678434575,
+              "y": 5.310243372614682
+            }
+          ],
+          "via": {
+            "x": 38.108944678434575,
+            "y": 5.310243372614682,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 38,
+              "y": 4.0649999999999995
+            },
+            {
+              "x": 37.891055321565425,
+              "y": 2.819756627385317
+            }
+          ],
+          "via": {
+            "x": 37.891055321565425,
+            "y": 2.819756627385317,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 38,
+              "y": 4.0649999999999995
+            },
+            {
+              "x": 37.08227770183833,
+              "y": 5.375643270862387
+            }
+          ],
+          "via": {
+            "x": 37.08227770183833,
+            "y": 5.375643270862387,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "U2.pin21",
+      "requestedViaCount": 4,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 23.5,
+              "y": 25.5
+            },
+            {
+              "x": 23.717889356869144,
+              "y": 27.99048674522936
+            }
+          ],
+          "via": {
+            "x": 23.717889356869144,
+            "y": 27.99048674522936,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 23.5,
+              "y": 25.5
+            },
+            {
+              "x": 23.282110643130853,
+              "y": 23.00951325477064
+            }
+          ],
+          "via": {
+            "x": 23.282110643130853,
+            "y": 23.00951325477064,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 23.5,
+              "y": 25.5
+            },
+            {
+              "x": 22.593646620186977,
+              "y": 27.990185445082655
+            }
+          ],
+          "via": {
+            "x": 22.593646620186977,
+            "y": 27.990185445082655,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": 23.5,
+              "y": 25.5
+            },
+            {
+              "x": 24.40635337981302,
+              "y": 23.009814554917345
+            }
+          ],
+          "via": {
+            "x": 24.40635337981302,
+            "y": 23.009814554917345,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "U_MCU.pin57",
+      "requestedViaCount": 1,
+      "branches": [
+        {
+          "width": 0.4,
+          "layer": "top",
+          "path": [
+            {
+              "x": -27,
+              "y": -20.999873
+            },
+            {
+              "x": -27.8,
+              "y": -22.6
+            },
+            {
+              "x": -27.8,
+              "y": -23.3
+            }
+          ],
+          "via": {
+            "x": -27.8,
+            "y": -23.3,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ],
+      "additionalReturn": "Uses the existing MCU 19/57 shared ground barrel; the former north EP barrel is removed to preserve the jointly validated pin48 V3V3 feed."
+    },
+    {
+      "selector": "U_FLASH.pin9",
+      "requestedViaCount": 2,
+      "branches": [
+        {
+          "width": 0.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": -28.85,
+              "y": -11.3
+            },
+            {
+              "x": -27.72416697508023,
+              "y": -10.65
+            }
+          ],
+          "via": {
+            "x": -27.72416697508023,
+            "y": -10.65,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 0.2,
+          "layer": "top",
+          "path": [
+            {
+              "x": -28.85,
+              "y": -11.3
+            },
+            {
+              "x": -29.975833024919773,
+              "y": -10.65
+            }
+          ],
+          "via": {
+            "x": -29.975833024919773,
+            "y": -10.65,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ]
+    },
+    {
+      "selector": "C28.pin2",
+      "requestedViaCount": 2,
+      "branches": [
+        {
+          "width": 1.2,
+          "layer": "top",
+          "maxExposedLength": 1,
+          "path": [
+            {
+              "x": -4.330079,
+              "y": 12
+            },
+            {
+              "x": -4.33,
+              "y": 10.85
+            }
+          ],
+          "via": {
+            "x": -4.33,
+            "y": 10.85,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        },
+        {
+          "width": 1.2,
+          "layer": "top",
+          "maxExposedLength": 1,
+          "path": [
+            {
+              "x": -4.330079,
+              "y": 12
+            },
+            {
+              "x": -3.33,
+              "y": 10.85
+            }
+          ],
+          "via": {
+            "x": -3.33,
+            "y": 10.85,
+            "outerDiameter": 0.7,
+            "holeDiameter": 0.3,
+            "fromLayer": "top",
+            "toLayer": "bottom",
+            "tented": true
+          }
+        }
+      ],
+      "note": "Two independent wide direct bulk-input returns; off-pad vias clear actual pads and wide power copper. Reserve before long I2C_SCL/RUN_CLK/TEC_SAFE_EN trunks. Exposed centerline lengths0.200 and0.379mm. Third neighboring barrel conflicts with existing power corridors."
+    }
+  ],
+  "localSourceBridges": [
+    {
+      "from": "Q21.pin1",
+      "to": "Q21.pin2",
+      "width": 0.65,
+      "layer": "top",
+      "path": [
+        {
+          "x": 12.845,
+          "y": 17.2525
+        },
+        {
+          "x": 14.115,
+          "y": 17.2525
+        }
+      ],
+      "baselineClear": true
+    },
+    {
+      "from": "Q21.pin2",
+      "to": "Q21.pin3",
+      "width": 0.65,
+      "layer": "top",
+      "path": [
+        {
+          "x": 14.115,
+          "y": 17.2525
+        },
+        {
+          "x": 15.385,
+          "y": 17.2525
+        }
+      ],
+      "baselineClear": true
+    }
+  ],
+  "placementSuggestions": {
+    "C200": [
+      -36,
+      -5.5,
+      270
+    ]
+  },
+  "thermalViaPolicy": {
+    "viaInPadExceptions": [],
+    "process": "Standard tented off-pad through vias only. U2 retains four 1.2 mm off-pad branches. MCU uses one 0.4 mm branch plus shared pin 19/57 ground barrel to preserve fine-pitch fanout corridors; flash uses two 0.2 mm branches matching its 0.3 mm high EP. No via-in-pad exceptions."
+  },
+  "audit": {
+    "geometry": "Use actual BREP outer and inner rings, polygon/rect/circle/pill pads, swept trace copper with minimum local width, annuli with drills subtracted. Never use projected plane rectangle or a net label as connectivity evidence.",
+    "sameLayerEdges": "Positive finite copper area intersection >1e-6 mm2. Union touching GND traces/pads/pours/annuli per layer; each actual BREP island is its own node.",
+    "verticalEdges": "Only actual plated-hole/via barrels join layer annuli. For a via, require finite annulus contact with actual plane BREP, and preserve drill void. SMT pads never join layers themselves.",
+    "acceptance": "All 191 named GND ports must reach one physical connected component including J_TEC.pin2 and both USB GND PTH groups. Count every distinct top/bottom/inner1 pour island and reject unconnected islands. Track the widest connected return branch for power pads; a .2mm fine escape does not satisfy power-return acceptance.",
+    "existingHelpers": "scripts/source-ground-pad-copper.ts exports groundOriginPadContact and viaMainPlaneContact; generalize largest-plane-only check to graph over all actual regions and barrels."
+  },
+  "integrationNotes": [
+    "All saved starts reference refreshed routing-placement, including relocated flash, C22, MCU bypasses, PD bypasses and ILIM resistor.",
+    "Fan ground returns are exclusively installed by fan-completion.json; no duplicate stale fan coordinates remain here.",
+    "Install fixed power/fan/USB/MCU fanout/analog barrel reservations before wide GND returns, then this packet vias/paths before general signal fanout.",
+    "Pad joins and final plane connectivity must pass scripts/audit-routing-connectivity.ts. Selector/graph-router completion is not physical connectivity proof.",
+    "Append bottomReference pour and reserve its polygon from bottom foreign copper. Four named USB transition stitches are included in ordinary vias schema.",
+    "C_USB_VDD/C_DVDD1 now share a short local GND barrel; adopt requiredMcuFanoutChanges and requiredV1V1Escape before replay. The old long capacitor ground escapes were removed. All replacement fanouts and the positive/GND paths passed sequential geometry checks together."
+  ],
+  "relocatedDecouplingReturns": [],
+  "vias": [
+    {
+      "name": "GROUND_ESCAPE_U_INPUT_pin8",
+      "net": "GND",
+      "x": -21.24999999999999,
+      "y": 22.925,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_ESCAPE_R_INPUT_ILIM_pin2",
+      "net": "GND",
+      "x": -17.999999999999986,
+      "y": 20.999999999999986,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_ESCAPE_C_CH_VDD_pin2",
+      "net": "GND",
+      "x": -43.84999999999995,
+      "y": 21.20000000000001,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_ESCAPE_C_PD_WINDOW_pin2",
+      "net": "GND",
+      "x": -40.09999999999995,
+      "y": 6.250000000000003,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_ESCAPE_U_USB_ESD_pin2",
+      "net": "GND",
+      "x": -43.95090399999994,
+      "y": -19,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_USB_REFERENCE_A_1",
+      "net": "GND",
+      "x": -33.4,
+      "y": -19.45,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_USB_REFERENCE_A_2",
+      "net": "GND",
+      "x": -33.496992989108534,
+      "y": -20.596812862004587,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_USB_REFERENCE_B_1",
+      "net": "GND",
+      "x": -24.53860389693211,
+      "y": -5.763603896932108,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_USB_REFERENCE_B_2",
+      "net": "GND",
+      "x": -25.40074263096701,
+      "y": -5.1197499210841295,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    {
+      "name": "GROUND_MCU_UPPER_BYPASS",
+      "net": "GND",
+      "x": -27.25,
+      "y": -14.6,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    }
+  ],
+  "paths": [
+    {
+      "from": "U_INPUT.pin8",
+      "to": "GROUND_ESCAPE_U_INPUT_pin8.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -22.1,
+          "y": 22.775
+        },
+        {
+          "x": -21.34999999999999,
+          "y": 22.825
+        },
+        {
+          "x": -21.24999999999999,
+          "y": 22.925
+        }
+      ],
+      "pcbStraightLine": false,
+      "maxLength": 1
+    },
+    {
+      "from": "R_INPUT_ILIM.pin2",
+      "to": "GROUND_ESCAPE_R_INPUT_ILIM_pin2.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -19,
+          "y": 22.05
+        },
+        {
+          "x": -17.999999999999986,
+          "y": 20.999999999999986
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1.4500000000000206
+    },
+    {
+      "from": "C_CH_VDD.pin2",
+      "to": "GROUND_ESCAPE_C_CH_VDD_pin2.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -43,
+          "y": 20.4
+        },
+        {
+          "x": -43.84999999999995,
+          "y": 21.20000000000001
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1.1672617529928477
+    },
+    {
+      "from": "C_PD_WINDOW.pin2",
+      "to": "GROUND_ESCAPE_C_PD_WINDOW_pin2.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -39.25,
+          "y": 7.05
+        },
+        {
+          "x": -40.09999999999995,
+          "y": 6.250000000000003
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1.167261752992838
+    },
+    {
+      "from": "U_USB_ESD.pin2",
+      "to": "GROUND_ESCAPE_U_USB_ESD_pin2.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -42.850904,
+          "y": -19
+        },
+        {
+          "x": -43.95090399999994,
+          "y": -19
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1.0999999999999375
+    },
+    {
+      "from": "C_USB_VDD.pin2",
+      "to": "GROUND_MCU_UPPER_BYPASS.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -26.65,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -27.25,
+          "y": -14.6
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1,
+      "maxExposedLength": 1,
+      "exposedCopperLengthMm": 0.29031242374328736
+    },
+    {
+      "from": "C_DVDD1.pin2",
+      "to": "GROUND_MCU_UPPER_BYPASS.top",
+      "net": "GND",
+      "layer": "top",
+      "width": 0.2,
+      "path": [
+        {
+          "x": -27.85,
+          "y": -15.350000000000001
+        },
+        {
+          "x": -27.25,
+          "y": -14.6
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxLength": 1,
+      "maxExposedLength": 1,
+      "exposedCopperLengthMm": 0.29031242374328736
+    },
+    {
+      "net": "LOGIC_VIN",
+      "from": "C200.pin1",
+      "to": "U_LOGIC.pin2",
+      "width": 0.6,
+      "layer": "top",
+      "path": [
+        {
+          "x": -36,
+          "y": -3.925
+        },
+        {
+          "x": -36,
+          "y": -2.1
+        }
+      ],
+      "pcbStraightLine": true,
+      "maxExposedLength": 1,
+      "note": "Compact input bypass: 0.750 mm exposed copper after actual pad clipping; native courtyards pass."
+    }
+  ],
+  "bottomReference": {
+    "net": "GND",
+    "layer": "bottom",
+    "name": "REV_B_USB_BOTTOM_REFERENCE",
+    "clearance": 0.25,
+    "useThermalReliefs": false,
+    "coveredWithSolderMask": true,
+    "outline": [
+      {
+        "x": -36.6,
+        "y": -21.1
+      },
+      {
+        "x": -33.2,
+        "y": -21.1
+      },
+      {
+        "x": -33.2,
+        "y": -7.9
+      },
+      {
+        "x": -23.3,
+        "y": -7.9
+      },
+      {
+        "x": -23.3,
+        "y": -4.4
+      },
+      {
+        "x": -36.6,
+        "y": -4.4
+      }
+    ],
+    "foreignCopperExclusion": "Reserve this L-shaped bottom region from non-GND routing; its projection covers both complete inner2 USB traces. Do not let ordinary bottom control trunks cut the return region.",
+    "stitchNames": [
+      "GROUND_USB_REFERENCE_A_1",
+      "GROUND_USB_REFERENCE_A_2",
+      "GROUND_USB_REFERENCE_B_1",
+      "GROUND_USB_REFERENCE_B_2"
+    ],
+    "stackup": "L3 inner2 is adjacent to L4 bottom over proposed 0.12 mm dielectric; use this actual continuous GND reference region rather than relying only on L2 through 1.2 mm core.",
+    "physicalAcceptance": "Actual bottom BREP copper, after clearances/drill holes, must cover the complete projection of both inner2 USB centerlines except transition antipads; every surviving reference region must connect through plated GND stitches to the single main inner1 GND component. The physical audit checks connectivity; explicitly check swept USB projection vs bottom BREP for uninterrupted coverage."
+  },
+  "delegatedGroundEscapes": [
+    {
+      "selector": "C37.pin2",
+      "owner": "analog-completion.json",
+      "via": "AN_GND_C37",
+      "viaPoint": {
+        "x": 30.5,
+        "y": 27.15
+      },
+      "note": "Verified 0.2 mm top path from (29.55, 27.15); HARD_LIMIT head moved to (31.6, 27.2) to make exit. Install analog groundEscapes before ordinary routing."
+    },
+    {
+      "selector": "U_FAN.pin1",
+      "owner": "fan-completion.json"
+    },
+    {
+      "selector": "U_MCU.pin19",
+      "owner": "mcu-completion.json",
+      "note": "Shared 19/57 GND barrel and additional EP branch coexist."
+    },
+    {
+      "selector": "C22.pin2",
+      "owner": "analog-completion.json",
+      "via": "AN_GND_C22",
+      "viaPoint": {
+        "x": 29.55,
+        "y": 21.1
+      },
+      "note": "Use analog owner verified 0.2 mm exposed ground branch; duplicate ground packet barrel removed."
+    }
+  ],
+  "requiredMcuFanoutChanges": [
+    {
+      "selector": "U_FLASH.pin1",
+      "net": "FLASH_CS",
+      "via": {
+        "x": -30.65,
+        "y": -13.9
+      },
+      "path": [
+        {
+          "x": -29.600062,
+          "y": -12.80749
+        },
+        {
+          "x": -30.65,
+          "y": -13.9
+        }
+      ],
+      "width": 0.2,
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_FLASH.pin2",
+      "net": "FLASH_SD1",
+      "via": {
+        "x": -29.6,
+        "y": -13.9
+      },
+      "path": [
+        {
+          "x": -29.099936,
+          "y": -12.80749
+        },
+        {
+          "x": -29.099936,
+          "y": -13.35
+        },
+        {
+          "x": -29.6,
+          "y": -13.9
+        }
+      ],
+      "width": 0.2,
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_FLASH.pin3",
+      "net": "FLASH_SD2",
+      "via": {
+        "x": -28.5,
+        "y": -13.8
+      },
+      "path": [
+        {
+          "x": -28.600064,
+          "y": -12.80749
+        },
+        {
+          "x": -28.5,
+          "y": -13.8
+        }
+      ],
+      "width": 0.2,
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_MCU.pin54",
+      "net": "FLASH_SD2",
+      "via": {
+        "x": -29.6,
+        "y": -16.35
+      },
+      "path": [
+        {
+          "x": -28.800098,
+          "y": -17.574937
+        },
+        {
+          "x": -28.800098,
+          "y": -16.95
+        },
+        {
+          "x": -29.6,
+          "y": -16.35
+        }
+      ],
+      "width": 0.2,
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    },
+    {
+      "selector": "U_MCU.pin53",
+      "net": "FLASH_SD0",
+      "via": {
+        "x": -30,
+        "y": -15.3
+      },
+      "path": [
+        {
+          "x": -28.400048,
+          "y": -17.574937
+        },
+        {
+          "x": -28.400048,
+          "y": -16.75
+        },
+        {
+          "x": -28.8,
+          "y": -16.25
+        },
+        {
+          "x": -28.9,
+          "y": -15.85
+        },
+        {
+          "x": -30,
+          "y": -15.3
+        }
+      ],
+      "width": 0.2,
+      "verification": "Sequentially checked against all other current power/fan/USB/analog/ground/MCU packet copper plus replacement fanouts and cap positive/GND returns."
+    }
+  ],
+  "requiredV1V1Escape": {
+    "net": "V1V1",
+    "from": "C_DVDD1.pin1",
+    "to": "MCU_DVDD1_FEED.top",
+    "via": {
+      "name": "MCU_DVDD1_FEED",
+      "net": "V1V1",
+      "x": -28.94,
+      "y": -14.96,
+      "outerDiameter": 0.7,
+      "holeDiameter": 0.3,
+      "fromLayer": "top",
+      "toLayer": "bottom",
+      "tented": true
+    },
+    "path": [
+      {
+        "x": -27.85,
+        "y": -16.25
+      },
+      {
+        "x": -28.46,
+        "y": -15.78
+      },
+      {
+        "x": -28.94,
+        "y": -14.96
+      }
+    ],
+    "layer": "top",
+    "width": 0.2,
+    "maxExposedLength": 1,
+    "estimatedExposedLengthMm": 0.9915023554231697,
+    "note": "Pair with requiredMcuFanoutChanges; this positive escape and both short ground returns were checked together.",
+    "lengthMeasurement": "Exact interval clipping against current real capacitor pad and proposed 0.7 mm via outer copper; repeat on final native trace vertices."
+  }
+}
