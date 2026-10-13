@@ -1,180 +1,105 @@
-#include "stm32g0xx_hal.h"
+#include "pico/stdlib.h"
+#include "pico/bootrom.h"
+#include "hardware/adc.h"
+#include "hardware/i2c.h"
+#include "hardware/flash.h"
+#include "hardware/watchdog.h"
+#include "hardware/structs/adc.h"
+#include "hardware/structs/watchdog.h"
+#include "hardware/sync.h"
 #include "tusb.h"
 #include "command.h"
 #include "profile.h"
 #include "session.h"
+#include "usb_identity.h"
 #include <stdio.h>
 #include <string.h>
 
-#define PERMISSION_PIN GPIO_PIN_0 /* PB0 is unused by every ROM boot interface. */
-#define RUN_LED_PIN GPIO_PIN_1
-#define FAULT_LED_PIN GPIO_PIN_2
-#define USB_PRESENT_PIN GPIO_PIN_4
-#define DRIVER_FAULT_PIN GPIO_PIN_5
-#define PD_FAULT_PIN GPIO_PIN_7
-#define BOOT_MAGIC 0x44465531u
 #define FAULT_MAGIC 0x53414645u
-#define I2C_TIMEOUT_MS 10u
+#define FAULT_SCRATCH_INDEX 2u /* ROM USB uses0/1; SDK/ROM reboot uses4–7. */
+#define I2C_TIMEOUT_US 10000u
+#define PROFILE_OFFSET (PD_PROFILE_ADDRESS - XIP_BASE)
+_Static_assert(PICO_FLASH_SIZE_BYTES == 16u * 1024u * 1024u, "W25Q128JVSIQ is 16 MiB");
+_Static_assert(PROFILE_OFFSET + FLASH_SECTOR_SIZE == PICO_FLASH_SIZE_BYTES, "Profile reserves the final sector");
 
-static I2C_HandleTypeDef bus;
-static ADC_HandleTypeDef adc;
-static IWDG_HandleTypeDef watchdog;
 static pd_settings settings, saved_settings;
 static pd_session session;
-static bool running, constant_current, measurement_ok, saved_valid, usb_started, usb_attached;
-static uint16_t measured_mv, measured_ma, input_mv;
+static bool running, constant_current, measurement_ok, saved_valid, usb_started, usb_attached, flash_valid;
+static uint16_t measured_mv, measured_ma, input_mv, program_mv;
 static uint8_t excessive_samples;
 static const char *fault;
 static uint32_t boot_deadline;
-static bool boot_pending;
-static volatile uint32_t boot_request __attribute__((section(".noinit")));
-static volatile uint32_t fault_latch __attribute__((section(".noinit")));
-
+static bool boot_pending, program_present;
+static uint32_t milliseconds(void) { return (uint32_t)to_ms_since_boot(get_absolute_time()); }
+uint32_t tusb_time_millis_api(void) { return milliseconds(); }
 static void kill(void) {
-  HAL_GPIO_WritePin(GPIOB, PERMISSION_PIN | RUN_LED_PIN, GPIO_PIN_RESET);
+  gpio_put(PD_PERMISSION_PIN, false); gpio_put(PD_RUN_LED_PIN, false);
   running = false; constant_current = false;
 }
 static void fail(const char *reason, bool protective) {
   kill(); fault = reason; pd_session_fault(&session, protective);
-  if (protective) fault_latch = FAULT_MAGIC;
-  HAL_GPIO_WritePin(GPIOB, FAULT_LED_PIN, GPIO_PIN_SET);
+  if (protective) watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = FAULT_MAGIC;
+  gpio_put(PD_FAULT_LED_PIN, true);
 }
-void SysTick_Handler(void) { HAL_IncTick(); }
-void USB_UCPD1_2_IRQHandler(void) { tud_int_handler(0); }
-void HardFault_Handler(void) { kill(); fault_latch = FAULT_MAGIC; while (1) {} }
-
-static void early_boot(void) {
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  GPIOB->BSRR = (uint32_t)PERMISSION_PIN << 16;
-  MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE0, GPIO_MODER_MODE0_0);
-  bool power_reset = __HAL_RCC_GET_FLAG(RCC_FLAG_PWRRST) != RESET;
-  bool requested = !power_reset && __HAL_RCC_GET_FLAG(RCC_FLAG_SFTRST) != RESET && boot_request == BOOT_MAGIC;
-  boot_request = 0;
-  if (power_reset) fault_latch = 0;
-  if (__HAL_RCC_GET_FLAG(RCC_FLAG_IWDGRST) != RESET || __HAL_RCC_GET_FLAG(RCC_FLAG_WWDGRST) != RESET)
-    fault_latch = FAULT_MAGIC;
-  __HAL_RCC_CLEAR_RESET_FLAGS();
-  if (!requested) return;
-  /* Fresh reset clocks; PB0 remains LOW. AN2606 G0B1 system-memory vectors. */
-  const uint32_t *rom = (const uint32_t *)0x1FFF0000u;
-  __disable_irq();
-  SysTick->CTRL = 0; SysTick->LOAD = 0; SysTick->VAL = 0;
-  NVIC->ICER[0] = 0xFFFFFFFFu; NVIC->ICPR[0] = 0xFFFFFFFFu;
-  SCB->VTOR = 0x1FFF0000u;
-  __set_CONTROL(0); __DSB(); __ISB();
-  __asm volatile("msr msp, %0\n cpsie i\n bx %1" : : "r"(rom[0]), "r"(rom[1]) : "memory");
-  __builtin_unreachable();
+void isr_hardfault(void) {
+  kill(); watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = FAULT_MAGIC;
+  while (1) tight_loop_contents();
 }
-
-static bool clock_init(void) {
-  __HAL_RCC_PWR_CLK_ENABLE();
-  RCC_OscInitTypeDef osc = {0};
-  osc.OscillatorType = RCC_OSCILLATORTYPE_HSI | RCC_OSCILLATORTYPE_LSI | RCC_OSCILLATORTYPE_HSI48;
-  osc.HSIState = RCC_HSI_ON; osc.HSIDiv = RCC_HSI_DIV1;
-  osc.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  osc.LSIState = RCC_LSI_ON; osc.HSI48State = RCC_HSI48_ON; osc.PLL.PLLState = RCC_PLL_NONE;
-  if (HAL_RCC_OscConfig(&osc) != HAL_OK) return false;
-  RCC_ClkInitTypeDef clocks = {0};
-  clocks.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1;
-  clocks.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
-  clocks.AHBCLKDivider = RCC_SYSCLK_DIV1; clocks.APB1CLKDivider = RCC_HCLK_DIV1;
-  if (HAL_RCC_ClockConfig(&clocks, FLASH_LATENCY_0) != HAL_OK) return false;
-  RCC_PeriphCLKInitTypeDef usb_clock = {0};
-  usb_clock.PeriphClockSelection = RCC_PERIPHCLK_USB; usb_clock.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
-  if (HAL_RCCEx_PeriphCLKConfig(&usb_clock) != HAL_OK) return false;
-  __HAL_RCC_CRS_CLK_ENABLE();
-  RCC_CRSInitTypeDef crs = {0};
-  crs.Prescaler = RCC_CRS_SYNC_DIV1; crs.Source = RCC_CRS_SYNC_SOURCE_USB;
-  crs.Polarity = RCC_CRS_SYNC_POLARITY_RISING;
-  crs.ReloadValue = __HAL_RCC_CRS_RELOADVALUE_CALCULATE(48000000, 1000);
-  crs.ErrorLimitValue = 34; crs.HSI48CalibrationValue = 32;
-  HAL_RCCEx_CRSConfig(&crs);
-  return true;
-}
-
-static void gpio_init(void) {
-  __HAL_RCC_GPIOA_CLK_ENABLE(); __HAL_RCC_GPIOB_CLK_ENABLE(); __HAL_RCC_SYSCFG_CLK_ENABLE();
-  HAL_GPIO_WritePin(GPIOB, PERMISSION_PIN | RUN_LED_PIN | FAULT_LED_PIN, GPIO_PIN_RESET);
-  GPIO_InitTypeDef pin = {0};
-  pin.Pin = PERMISSION_PIN | RUN_LED_PIN | FAULT_LED_PIN;
-  pin.Mode = GPIO_MODE_OUTPUT_PP; pin.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &pin);
-  pin.Pin = DRIVER_FAULT_PIN; pin.Mode = GPIO_MODE_INPUT; pin.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOA, &pin);
-  pin.Pin = PD_FAULT_PIN | USB_PRESENT_PIN; pin.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &pin);
-  pin.Pin = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_3; pin.Mode = GPIO_MODE_ANALOG;
-  HAL_GPIO_Init(GPIOA, &pin);
-  HAL_SYSCFG_DisableRemap(SYSCFG_REMAP_PA11 | SYSCFG_REMAP_PA12);
-  pin.Pin = GPIO_PIN_11 | GPIO_PIN_12; pin.Mode = GPIO_MODE_INPUT;
-  HAL_GPIO_Init(GPIOA, &pin);
-  pin.Pin = GPIO_PIN_6 | GPIO_PIN_7; pin.Mode = GPIO_MODE_AF_OD;
-  pin.Alternate = GPIO_AF6_I2C1;
-  HAL_GPIO_Init(GPIOB, &pin);
-}
-
-static bool peripherals_init(void) {
-  __HAL_RCC_I2C1_CLK_ENABLE();
-  bus.Instance = I2C1; bus.Init.Timing = 0x10921F27; /* 16 MHz PCLK, approximately 100 kHz. */
-  bus.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  bus.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE; bus.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  bus.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE; bus.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&bus) != HAL_OK || HAL_I2CEx_ConfigAnalogFilter(&bus, I2C_ANALOGFILTER_ENABLE) != HAL_OK ||
-      HAL_I2CEx_ConfigDigitalFilter(&bus, 0) != HAL_OK) return false;
-  __HAL_RCC_ADC_CLK_ENABLE();
-  adc.Instance = ADC1; adc.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
-  adc.Init.Resolution = ADC_RESOLUTION_12B; adc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  adc.Init.ScanConvMode = ADC_SCAN_DISABLE; adc.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
-  adc.Init.NbrOfConversion = 1; adc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  adc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE; adc.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
-  adc.Init.SamplingTimeCommon1 = ADC_SAMPLETIME_160CYCLES_5;
-  adc.Init.SamplingTimeCommon2 = ADC_SAMPLETIME_160CYCLES_5;
-  if (HAL_ADC_Init(&adc) != HAL_OK || HAL_ADCEx_Calibration_Start(&adc) != HAL_OK) return false;
-  __HAL_RCC_USB_CLK_ENABLE(); HAL_PWREx_EnableVddUSB();
-  HAL_NVIC_SetPriority(USB_UCPD1_2_IRQn, 1, 0); HAL_NVIC_EnableIRQ(USB_UCPD1_2_IRQn);
-  return true;
-}
-static bool adc_read(uint32_t channel, uint16_t *value) {
-  ADC_ChannelConfTypeDef config = {0};
-  config.Channel = channel; config.Rank = ADC_REGULAR_RANK_1; config.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
-  if (HAL_ADC_ConfigChannel(&adc, &config) != HAL_OK) return false;
-  if (channel == ADC_CHANNEL_VREFINT) HAL_Delay(1);
-  if (HAL_ADC_Start(&adc) != HAL_OK || HAL_ADC_PollForConversion(&adc, 5) != HAL_OK) {
-    HAL_ADC_Stop(&adc); return false;
+static void gpio_init_safe(void) {
+  const unsigned outputs[] = {PD_PERMISSION_PIN, PD_RUN_LED_PIN, PD_FAULT_LED_PIN};
+  for (unsigned i = 0; i < count_of(outputs); ++i) {
+    gpio_init(outputs[i]); gpio_put(outputs[i], false); gpio_set_dir(outputs[i], GPIO_OUT);
   }
-  *value = (uint16_t)HAL_ADC_GetValue(&adc);
-  return HAL_ADC_Stop(&adc) == HAL_OK;
+  gpio_init(PD_DRIVER_FAULT_PIN); gpio_set_dir(PD_DRIVER_FAULT_PIN, GPIO_IN); gpio_pull_up(PD_DRIVER_FAULT_PIN);
+  gpio_init(PD_PD_FAULT_PIN); gpio_set_dir(PD_PD_FAULT_PIN, GPIO_IN); gpio_disable_pulls(PD_PD_FAULT_PIN);
+  i2c_init(i2c0, 100000);
+  gpio_set_function(PD_I2C_SDA_PIN, GPIO_FUNC_I2C); gpio_set_function(PD_I2C_SCL_PIN, GPIO_FUNC_I2C);
+  gpio_disable_pulls(PD_I2C_SDA_PIN); gpio_disable_pulls(PD_I2C_SCL_PIN); /* Board has external pull-ups. */
+  adc_init();
+  adc_gpio_init(PD_CURRENT_ADC_PIN); adc_gpio_init(PD_VOLTAGE_ADC_PIN);
+  adc_gpio_init(PD_INPUT_ADC_PIN); adc_gpio_init(PD_PROGRAM_ADC_PIN);
+}
+static bool flash_identify(void) {
+  uint8_t tx[] = {0x9F,0,0,0}, rx[4];
+  uint32_t interrupts = save_and_disable_interrupts();
+  flash_do_cmd(tx, rx, sizeof tx);
+  restore_interrupts(interrupts);
+  return rx[1] == 0xEF && rx[2] == 0x40 && rx[3] == 0x18;
+}
+static bool sample(unsigned channel, uint16_t *value) {
+  adc_select_input(channel); *value = adc_read();
+  return !(adc_hw->cs & ADC_CS_ERR_BITS); /* Inspect each conversion before selecting another. */
 }
 static bool measure(void) {
-  uint16_t reference, voltage, current, input;
-  if (!adc_read(ADC_CHANNEL_VREFINT, &reference) || !reference || !adc_read(ADC_CHANNEL_1, &voltage) ||
-      !adc_read(ADC_CHANNEL_0, &current) || !adc_read(ADC_CHANNEL_3, &input)) return false;
-  uint32_t supply_mv = __HAL_ADC_CALC_VREFANALOG_VOLTAGE(reference, ADC_RESOLUTION_12B);
-  if (supply_mv < 2800 || supply_mv > 3600) return false;
-  measured_mv = (uint16_t)((uint32_t)voltage * supply_mv * 6u / 4095u);
-  measured_ma = (uint16_t)((uint32_t)current * supply_mv * 5u / 4095u);
-  input_mv = (uint16_t)((uint32_t)input * supply_mv * 172u / (4095u * 22u));
+  uint16_t current, voltage, input, program;
+  if (!sample(0, &current) || !sample(1, &voltage) || !sample(2, &input) || !sample(3, &program)) return false;
+  measured_mv = (uint16_t)((uint32_t)voltage * PD_ADC_REFERENCE_MV * 6u / 4095u);
+  measured_ma = (uint16_t)((uint32_t)current * PD_ADC_REFERENCE_MV * 5u / 4095u);
+  input_mv = (uint16_t)((uint32_t)input * PD_ADC_REFERENCE_MV * 172u / (4095u * 22u));
+  program_mv = (uint16_t)((uint32_t)program * PD_ADC_REFERENCE_MV * 7u / (4095u * 4u));
+  if (program_mv >= PD_USB_ATTACH_MV) program_present = true;
+  else if (program_mv <= PD_USB_DETACH_MV) program_present = false;
   return true;
 }
 static bool pd_ready(void) {
-  return measurement_ok && input_mv >= 18000u && input_mv <= 22000u &&
-         HAL_GPIO_ReadPin(GPIOA, PD_FAULT_PIN) == GPIO_PIN_RESET;
+  return measurement_ok && input_mv >= 18000u && input_mv <= 22000u && !gpio_get(PD_PD_FAULT_PIN);
 }
 static bool driver_read(uint8_t reg, uint8_t *value) {
-  return HAL_I2C_Mem_Read(&bus, TPS_ADDRESS << 1, reg, I2C_MEMADD_SIZE_8BIT, value, 1, I2C_TIMEOUT_MS) == HAL_OK;
+  return i2c_write_timeout_us(i2c0, TPS_ADDRESS, &reg, 1, true, I2C_TIMEOUT_US) == 1 &&
+         i2c_read_timeout_us(i2c0, TPS_ADDRESS, value, 1, false, I2C_TIMEOUT_US) == 1;
 }
 static bool driver_write_verified(uint8_t reg, uint8_t value) {
-  uint8_t observed;
-  return HAL_I2C_Mem_Write(&bus, TPS_ADDRESS << 1, reg, I2C_MEMADD_SIZE_8BIT, &value, 1, I2C_TIMEOUT_MS) == HAL_OK &&
+  uint8_t data[] = {reg,value}, observed;
+  return i2c_write_timeout_us(i2c0, TPS_ADDRESS, data, sizeof data, false, I2C_TIMEOUT_US) == sizeof data &&
          driver_read(reg, &observed) && observed == value;
 }
 static void start_output(void) {
-  kill(); pd_session_cancel(&session); HAL_Delay(2); /* EN low resets OE to zero. */
+  kill(); pd_session_cancel(&session); sleep_ms(2); /* EN low resets OE to zero. */
   measurement_ok = measure();
   if (!measurement_ok) { fail("ADC", true); return; }
   if (!pd_ready()) { fail("PD", false); return; }
   if (!pd_valid(&settings)) { fail("SETTINGS", true); return; }
-  HAL_GPIO_WritePin(GPIOB, PERMISSION_PIN, GPIO_PIN_SET); HAL_Delay(5);
+  gpio_put(PD_PERMISSION_PIN, true); sleep_ms(5);
   uint16_t ref = pd_reference_code(settings.voltage_mv);
   if (!driver_write_verified(6, TPS_MODE_OFF) || !driver_write_verified(4, TPS_INTERNAL_FB) ||
       !driver_write_verified(0, (uint8_t)ref) || !driver_write_verified(1, (uint8_t)(ref >> 8)) ||
@@ -188,20 +113,17 @@ static void start_output(void) {
   if (status & TPS_FATAL_STATUS) { fail("LOAD", true); return; }
   if (!driver_write_verified(6, TPS_MODE_ON)) { fail("BUS", true); return; }
   running = true; fault = NULL; constant_current = false; excessive_samples = 0;
-  pd_session_clear(&session); fault_latch = 0;
-  HAL_GPIO_WritePin(GPIOB, RUN_LED_PIN, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GPIOB, FAULT_LED_PIN, GPIO_PIN_RESET);
+  pd_session_clear(&session); watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = 0;
+  gpio_put(PD_RUN_LED_PIN, true); gpio_put(PD_FAULT_LED_PIN, false);
 }
 static void stop_output(void) {
   pd_session_cancel(&session);
   if (running && !driver_write_verified(6, TPS_MODE_OFF)) { fail("BUS", true); return; }
-  /* Retain EN after a healthy RUN for 100 mA output discharge. */
-  running = false; constant_current = false;
-  HAL_GPIO_WritePin(GPIOB, RUN_LED_PIN, GPIO_PIN_RESET);
+  running = false; constant_current = false; gpio_put(PD_RUN_LED_PIN, false);
 }
 static void check_output(void) {
   if (!pd_ready()) { fail("PD", false); return; }
-  if (HAL_GPIO_ReadPin(GPIOA, DRIVER_FAULT_PIN) == GPIO_PIN_RESET) { fail("LOAD", true); return; }
+  if (!gpio_get(PD_DRIVER_FAULT_PIN)) { fail("LOAD", true); return; }
   uint8_t status, mode;
   if (!driver_read(7, &status) || !driver_read(6, &mode)) { fail("BUS", true); return; }
   if ((status & TPS_FATAL_STATUS) || mode != TPS_MODE_ON) { fail("LOAD", true); return; }
@@ -210,43 +132,32 @@ static void check_output(void) {
     if (++excessive_samples >= 3) fail("LIMIT", true);
   } else excessive_samples = 0;
 }
-static bool factory_ready(void) {
-  uint32_t mask = FLASH_OPTR_IWDG_SW | FLASH_OPTR_nBOOT_SEL | FLASH_OPTR_nBOOT1;
-  return (FLASH->OPTR & mask) == FLASH_OPTR_nBOOT1 && !(FLASH->SECR & FLASH_SECR_BOOT_LOCK);
-}
-static bool storage_layout_valid(void) {
-  return FLASH_SIZE == 128u * 1024u && FLASH_PAGE_SIZE == 2048u &&
-         (FLASH_BANK_NB == 1u || (FLASH->OPTR & FLASH_OPTR_nSWAP_BANK));
-}
 static bool save_profile(void) {
-  if (running || !storage_layout_valid()) return false;
+  if (running || !flash_valid) return false;
   pd_profile record; pd_profile_make(&record, &settings);
   const pd_profile *stored = (const pd_profile *)PD_PROFILE_ADDRESS;
   if (saved_valid && memcmp(&record, stored, sizeof record) == 0) return true;
   kill(); pd_session_cancel(&session); saved_valid = false;
-  if (HAL_FLASH_Unlock() != HAL_OK) return false;
-  FLASH_EraseInitTypeDef erase = {0};
-  erase.TypeErase = FLASH_TYPEERASE_PAGES;
-  erase.Banks = FLASH_BANK_NB > 1u ? FLASH_BANK_2 : FLASH_BANK_1;
-  erase.Page = FLASH_PAGE_NB - 1u; erase.NbPages = 1;
-  uint32_t page_error;
-  bool ok = HAL_FLASHEx_Erase(&erase, &page_error) == HAL_OK;
-  for (unsigned offset = 0; ok && offset < sizeof record; offset += 8) {
-    uint64_t word; memcpy(&word, (const uint8_t *)&record + offset, sizeof word);
-    ok = HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, PD_PROFILE_ADDRESS + offset, word) == HAL_OK;
-  }
-  ok = HAL_FLASH_Lock() == HAL_OK && ok;
-  saved_valid = ok && memcmp(&record, stored, sizeof record) == 0 && pd_profile_read(stored, &saved_settings);
+  uint8_t page[FLASH_PAGE_SIZE]; memset(page, 0xFF, sizeof page); memcpy(page, &record, sizeof record);
+  /* Core1 is never launched. SDK flash routines execute from RAM and restore
+   * XIP; mask all core0 IRQs while flash is unavailable. Refresh before erase. */
+  watchdog_update();
+  uint32_t interrupts = save_and_disable_interrupts();
+  flash_range_erase(PROFILE_OFFSET, FLASH_SECTOR_SIZE);
+  flash_range_program(PROFILE_OFFSET, page, sizeof page);
+  restore_interrupts(interrupts);
+  watchdog_update();
+  saved_valid = memcmp(page, stored, sizeof page) == 0 && pd_profile_read(stored, &saved_settings);
   return saved_valid;
 }
 static void reply(const char *text) { tud_cdc_write_str(text); tud_cdc_write_str("\r\n"); tud_cdc_write_flush(); }
 static void status(void) {
   char response[256];
   snprintf(response, sizeof response,
-    "{\"run\":%u,\"cc\":%u,\"pd\":%u,\"fault\":\"%s\",\"set_mv\":%u,\"limit_ma\":%u,\"approx_mv\":%u,\"approx_ma\":%u,\"input_mv\":%u,\"saved\":%u,\"dfu_ready\":%u}",
+    "{\"run\":%u,\"cc\":%u,\"pd\":%u,\"fault\":\"%s\",\"set_mv\":%u,\"limit_ma\":%u,\"approx_mv\":%u,\"approx_ma\":%u,\"input_mv\":%u,\"saved\":%u,\"boot_ready\":1}",
     (unsigned)running, (unsigned)constant_current, (unsigned)pd_ready(), fault ? fault : "NONE",
     (unsigned)settings.voltage_mv, (unsigned)settings.current_ma, (unsigned)measured_mv,
-    (unsigned)measured_ma, (unsigned)input_mv, (unsigned)saved_valid, (unsigned)factory_ready());
+    (unsigned)measured_ma, (unsigned)input_mv, (unsigned)saved_valid);
   reply(response);
 }
 static void command(const char *line) {
@@ -255,8 +166,7 @@ static void command(const char *line) {
   switch (c.kind) {
   case CMD_SET:
     if (running) { reply("ERR STOP_FIRST"); return; }
-    pd_set(&settings, c.voltage_mv, c.current_ma); pd_session_cancel(&session);
-    reply("OK SET"); break;
+    pd_set(&settings, c.voltage_mv, c.current_ma); pd_session_cancel(&session); reply("OK SET"); break;
   case CMD_RUN: if (!running) start_output(); reply(running ? "OK RUN" : "ERR RUN_CHECK_STATUS"); break;
   case CMD_STOP: stop_output(); reply(running ? "ERR STOP" : "OK STOP"); break;
   case CMD_SAVE:
@@ -268,32 +178,29 @@ static void command(const char *line) {
     }
     break;
   case CMD_CLEAR:
-    kill(); pd_session_clear(&session); fault_latch = 0; fault = NULL;
-    HAL_GPIO_WritePin(GPIOB, FAULT_LED_PIN, GPIO_PIN_RESET); reply("OK CLEAR"); break;
+    kill(); pd_session_clear(&session); watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = 0; fault = NULL;
+    gpio_put(PD_FAULT_LED_PIN, false); reply("OK CLEAR"); break;
   case CMD_STATUS: status(); break;
   case CMD_BOOT:
-    kill(); pd_session_cancel(&session);
-    if (!factory_ready()) { reply("ERR DFU_FACTORY_OPTIONS"); return; }
-    reply("OK BOOT"); boot_pending = true; boot_deadline = HAL_GetTick() + 50u; break;
+    kill(); pd_session_cancel(&session); reply("OK BOOT");
+    boot_pending = true; boot_deadline = milliseconds() + 50u; break;
   case CMD_HELP: reply("SET <mV> <mA> | SAVE | RUN | STOP | STATUS | CLEAR | BOOT"); break;
   default: reply("ERR COMMAND"); break;
   }
 }
 static void usb_task(void) {
   static char line[64]; static unsigned length; static bool overflow;
-  bool present = HAL_GPIO_ReadPin(GPIOA, USB_PRESENT_PIN) == GPIO_PIN_SET;
-  if (present && !usb_started) {
+  if (program_present && !usb_started) {
     tusb_rhport_init_t init = {.role = TUSB_ROLE_DEVICE, .speed = TUSB_SPEED_FULL};
     usb_started = tusb_init(0, &init); usb_attached = usb_started;
-  } else if (usb_started && present != usb_attached) {
-    if (present) tud_connect(); else tud_disconnect();
-    usb_attached = present;
+  } else if (usb_started && program_present != usb_attached) {
+    if (program_present) tud_connect(); else tud_disconnect();
+    usb_attached = program_present;
   }
-  if (!present) { length = 0; overflow = false; }
+  if (!program_present) { length = 0; overflow = false; }
   if (!usb_started) return;
-  tud_task();
-  /* Programming-port detach does not change qualified PD operation. */
-  if (!present || !tud_cdc_connected()) { length = 0; overflow = false; return; }
+  tud_task(); /* USB detach does not change an operating PD output. */
+  if (!program_present || !tud_cdc_connected()) { length = 0; overflow = false; return; }
   if (tud_cdc_write_available() < 256u || boot_pending) return;
   unsigned budget = 64;
   while (budget-- && tud_cdc_available()) {
@@ -308,30 +215,28 @@ static void usb_task(void) {
     if (length < sizeof line - 1) line[length++] = ch; else overflow = true;
   }
 }
-
 int main(void) {
-  early_boot(); HAL_Init(); gpio_init(); kill();
-  if (!clock_init()) while (1) {}
-  watchdog.Instance = IWDG; watchdog.Init.Prescaler = IWDG_PRESCALER_32;
-  watchdog.Init.Reload = 499; watchdog.Init.Window = IWDG_WINDOW_DISABLE;
-  if (HAL_IWDG_Init(&watchdog) != HAL_OK || !peripherals_init()) while (1) {}
-  pd_defaults(&settings); saved_valid = storage_layout_valid() &&
-    pd_profile_read((const pd_profile *)PD_PROFILE_ADDRESS, &saved_settings);
+  gpio_init_safe(); kill();
+  bool latched = watchdog_enable_caused_reboot() || watchdog_hw->scratch[FAULT_SCRATCH_INDEX] == FAULT_MAGIC;
+  if (latched) watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = FAULT_MAGIC;
+  watchdog_enable(500, false);
+  flash_valid = flash_identify(); pd_usb_identity_init();
+  pd_defaults(&settings);
+  saved_valid = flash_valid && pd_profile_read((const pd_profile *)PD_PROFILE_ADDRESS, &saved_settings);
   if (saved_valid) settings = saved_settings;
-  bool latched = fault_latch == FAULT_MAGIC;
   pd_session_init(&session, saved_valid, latched);
-  if (latched) { fault = "RESET_OR_PROTECTION"; HAL_GPIO_WritePin(GPIOB, FAULT_LED_PIN, GPIO_PIN_SET); }
+  if (latched) { fault = "RESET_OR_PROTECTION"; gpio_put(PD_FAULT_LED_PIN, true); }
   while (1) {
     measurement_ok = measure();
     if (!measurement_ok) fail("ADC", true);
     if (running) check_output();
     usb_task();
-    if (boot_pending && (int32_t)(HAL_GetTick() - boot_deadline) >= 0) {
-      kill(); HAL_IWDG_Refresh(&watchdog); boot_request = BOOT_MAGIC; __DSB(); NVIC_SystemReset();
+    if (boot_pending && (int32_t)(milliseconds() - boot_deadline) >= 0) {
+      kill(); watchdog_disable(); reset_usb_boot(0, 0); /* No ROM activity GPIO. */
     }
-    if (!boot_pending && pd_session_tick(&session, pd_ready(), saved_valid, HAL_GetTick())) {
+    if (!boot_pending && pd_session_tick(&session, pd_ready(), saved_valid, milliseconds())) {
       settings = saved_settings; start_output();
     }
-    HAL_IWDG_Refresh(&watchdog); HAL_Delay(10);
+    watchdog_update(); sleep_ms(10);
   }
 }

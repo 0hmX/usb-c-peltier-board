@@ -3,6 +3,7 @@ import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E"
 import { CC0603KRX7R8BB105 } from "../../imports/CC0603KRX7R8BB105"
 import { CL21A106KAYNNNE } from "../../imports/CL21A106KAYNNNE"
 import { CL10A475KP8NNNC } from "../../imports/CL10A475KP8NNNC"
+import { CL10C150JB8NNNC } from "../../imports/CL10C150JB8NNNC"
 import { CC0603KRX7R9BB472 } from "../../imports/CC0603KRX7R9BB472"
 import { CC0603JRNPO0BN101 } from "../../imports/CC0603JRNPO0BN101"
 import { CC0603KRX7R9BB224 } from "../../imports/CC0603KRX7R9BB224"
@@ -12,6 +13,8 @@ import { CC0603KRX7R9BB104 } from "../parts/C14663"
 // supplier body model; the exact purchasing identifier follows the value.
 export const sourcedResistors = {
   "10": ["C22859", "0603WAF100JT5E"],
+  "27": ["C25190", "0603WAF270JT5E"],
+  "200": ["C8218", "0603WAF2000T5E"],
   "1k": ["C21190", "0603WAF1001T5E"],
   "2.2k": ["C4190", "0603WAF2201T5E"],
   "4.7k": ["C23162", "0603WAF4701T5E"],
@@ -37,6 +40,7 @@ export function SourcedResistor(props: Omit<ResistorProps, "resistance"> & {
 }
 
 export const sourcedCapacitors = {
+  "15pF": { component: CL10C150JB8NNNC, voltage: "50V", part: "C1644" },
   "100pF": { component: CC0603JRNPO0BN101, voltage: "100V", part: "C107033" },
   "4.7nF": { component: CC0603KRX7R9BB472, voltage: "50V", part: "C106218" },
   "100nF": { component: CC0603KRX7R9BB104, voltage: "50V", part: "C14663" },

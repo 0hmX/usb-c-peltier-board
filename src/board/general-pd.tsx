@@ -34,11 +34,12 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
   return <board width={design.boardWidthMm} height={design.boardHeightMm} layers={4} thickness={1.6}
     title="USB-C PD Peltier driver · adjustable CC/CV · unrouted prototype"
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled}
+    pcbSx={{ "& footprint silkscreentext": { visibility: "hidden" } }}
     schTraceAutoLabelEnabled schMaxTraceDistance={0.5}>
     <net name="GND" isGroundNet />
     <schematicsheet name="PD" displayName="100 W USB-C PD input" sheetIndex={1} />
     <schematicsheet name="POWER" displayName="Adjustable voltage and current limits" sheetIndex={2} />
-    <schematicsheet name="CONTROL" displayName="USB programming, debug and status" sheetIndex={3} sheetSize="ANSI_B" />
+    <schematicsheet name="CONTROL" displayName="USB programming, debug and status" sheetIndex={3} sheetSize="ANSI_B" sheetWidth={279.4} sheetHeight={431.8} />
     <USB4085_GF_A name="J_USB" {...connectorPlacements.J_USB} {...pd}
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
@@ -77,12 +78,8 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <ControlBlock />
     <KF301_5_0_2P name="J_TEC" {...connectorPlacements.J_TEC} schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
-    <silkscreentext text="USB-C PD / CC-CV" pcbX={5} pcbY={27.8} fontSize={1.3} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
     <silkscreentext text="+" pcbX={28.5} pcbY={21.5} fontSize={1} />
     <silkscreentext text="−" pcbX={28.5} pcbY={26.5} fontSize={1} />
-    <silkscreentext text="2.1-15V" pcbX={30.5} pcbY={-17} fontSize={0.8} />
-    <silkscreentext text="0.5-6A" pcbX={30.5} pcbY={-20} fontSize={0.8} />
-    <silkscreentext text="72W MAX" pcbX={30.5} pcbY={-23} fontSize={0.8} />
   </board>
 }

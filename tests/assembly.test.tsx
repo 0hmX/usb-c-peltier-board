@@ -85,8 +85,9 @@ describe("native Peltier assembly", () => {
 
   test("the mechanical assembly preserves the entire physical PCB and its electrical connections", () => {
     expect(device.db.pcb_board.list()).toHaveLength(1)
-    expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(95)
-    expect(device.db.pcb_component.list().filter(part => part.do_not_place)).toHaveLength(15)
+    expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(
+      board.db.pcb_component.list().filter(part => !part.do_not_place).length)
+    expect(device.db.pcb_component.list().filter(part => part.do_not_place)).toHaveLength(16)
     expect(device.db.pcb_trace.list()).toHaveLength(0)
     expect(device.db.pcb_via.list()).toHaveLength(0)
     expect(physicalSignature(device)).toEqual(physicalSignature(board))

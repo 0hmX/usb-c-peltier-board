@@ -1,6 +1,9 @@
 #include "tusb.h"
-#include "stm32g0xx_hal.h"
+#include "pico/unique_id.h"
 #include <string.h>
+#include "usb_identity.h"
+static char usb_serial[17];
+void pd_usb_identity_init(void) { pico_get_unique_board_id_string(usb_serial, sizeof usb_serial); }
 /* TinyUSB development VID/PID; allocate a product VID/PID before distribution. */
 static const tusb_desc_device_t device = {
   .bLength = sizeof(tusb_desc_device_t), .bDescriptorType = TUSB_DESC_DEVICE,
@@ -20,19 +23,13 @@ const uint16_t *tud_descriptor_string_cb(uint8_t index, uint16_t language) {
   (void)language;
   static uint16_t descriptor[33];
   const char *strings[] = {"", "0hmX", "USB-C Peltier PD Driver", "", "Control"};
-  char serial[25];
   unsigned count;
   if (index == 0) { descriptor[1] = 0x0409; count = 1; }
   else {
     if (index >= sizeof strings / sizeof strings[0]) return NULL;
     const char *value = strings[index];
     if (index == 3) {
-      const uint8_t *id = (const uint8_t *)UID_BASE;
-      for (unsigned i = 0; i < 12; ++i) {
-        serial[i * 2] = "0123456789ABCDEF"[id[i] >> 4];
-        serial[i * 2 + 1] = "0123456789ABCDEF"[id[i] & 15];
-      }
-      serial[24] = 0; value = serial;
+      value = usb_serial;
     }
     count = (unsigned)strlen(value); if (count > 32) count = 32;
     for (unsigned i = 0; i < count; ++i) descriptor[1 + i] = (uint8_t)value[i];

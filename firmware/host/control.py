@@ -67,7 +67,7 @@ def main():
             time.sleep(0.15)  # Allow CDC line state to reach the device.
             connection.reset_input_buffer()
             identity = json.loads(exchange(connection, "STATUS"))
-            if not isinstance(identity, dict) or not {"set_mv", "limit_ma", "input_mv", "saved", "dfu_ready"} <= identity.keys():
+            if not isinstance(identity, dict) or not {"set_mv", "limit_ma", "input_mv", "saved", "boot_ready"} <= identity.keys():
                 raise RuntimeError("The selected serial port is not a compatible PD driver")
             if selected == ["STATUS"]:
                 print(json.dumps(identity, indent=2))
@@ -76,7 +76,7 @@ def main():
                 response = exchange(connection, command)
                 print(json.dumps(json.loads(response), indent=2) if response.startswith("{") else response)
         if args.action == "boot":
-            print("Output disabled. The port now re-enumerates as STM32 USB DFU; use STM32CubeProgrammer.")
+            print("Output disabled. The port now re-enumerates as RPI-RP2; copy general_pd.uf2 to its USB drive.")
     except (ImportError, OSError, ValueError, RuntimeError) as error:
         print(str(error), file=sys.stderr)
         return 1

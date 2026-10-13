@@ -49,6 +49,12 @@ function resistance(name: string) {
   return Number(part.resistance)
 }
 
+function capacitance(name: string) {
+  const part = component(name)
+  if (!("capacitance" in part)) throw new Error(`Missing capacitance for ${name}`)
+  return Number(part.capacitance)
+}
+
 function directCapacitance(rail: string) {
   return circuit.db.source_component.list().reduce((sum, part) => {
     if (!("capacitance" in part)) return sum
@@ -173,8 +179,7 @@ describe("general USB-C PD Peltier driver", () => {
     expect(pinNet("R_KILL_RESET", 1)).toBe("LOGIC_5V")
     expect(pinNet("R_KILL_RESET", 2)).toBe("DRIVER_KILL_BASE")
     expect(resistance("R_KILL_RESET")).toBe(47_000)
-    expect(pinNet("U_MCU", 15)).toBe("MCU_DRIVER_PERMISSION")
-    expect(pinNet("U_MCU", 9)).toBeUndefined() // ROM USART2 TX must never release the load.
+    expect(pinNet("U_MCU", 4)).toBe("MCU_DRIVER_PERMISSION") // GP2 defaults to an input; external pull-down holds OFF.
     expect(pinNet("R_KILL_DRIVE", 1)).toBe("MCU_DRIVER_PERMISSION")
     expect(pinNet("R_KILL_DRIVE", 2)).toBe("DRIVER_RELEASE_GATE")
     expect(resistance("R_KILL_DRIVE")).toBe(1_000)
@@ -204,16 +209,22 @@ describe("general USB-C PD Peltier driver", () => {
     expect(pinNet("U_CTRL_LDO", 1)).toBe("LOGIC_5V")
     expect(pinNet("U_CTRL_LDO", 3)).toBe("LOGIC_5V")
     expect(pinNet("U_CTRL_LDO", 5)).toBe("CTRL_3V3")
-    expect(pinNet("U_MCU", 4)).toBe("CTRL_3V3")
-    expect(pinNet("U_MCU", 5)).toBe("GND")
+    for (const pin of [1, 10, 22, 33, 42, 43, 44, 48, 49])
+      expect(pinNet("U_MCU", pin)).toBe("CTRL_3V3")
+    for (const pin of [23, 45, 50]) expect(pinNet("U_MCU", pin)).toBe("RP_CORE_1V1")
+    expect(directCapacitance("RP_CORE_1V1")).toBeGreaterThanOrEqual(1e-6)
+    expect(pinNet("U_MCU", 19)).toBe("GND") // TESTEN must not float.
+    expect(pinNet("U_MCU", 57)).toBe("GND")
+    expect(pinNet("U_MCU", 5)).toBe("DRIVER_FAULT")
+    expect(pinNet("U_MCU", 6)).toBe("PD_FAULT_SENSE")
     expect(pinNet("R_SCL", 1)).toBe("CTRL_3V3")
     expect(pinNet("R_SDA", 1)).toBe("CTRL_3V3")
-    expect(pinNet("U_MCU", 30)).toBe("I2C_SCL")
-    expect(pinNet("U_MCU", 31)).toBe("I2C_SDA")
+    expect(pinNet("U_MCU", 3)).toBe("I2C_SCL")
+    expect(pinNet("U_MCU", 2)).toBe("I2C_SDA")
     // ADC conversion factors must describe the installed sense network.
     for (const [top, bottom, rail, sense, pin, topOhms, bottomOhms] of [
-      ["R_V_ADC_TOP", "R_V_ADC_BOTTOM", "TEC_POS", "OUTPUT_VOLTAGE_ADC", 8, 100_000, 20_000],
-      ["R_PD_ADC_TOP", "R_PD_ADC_BOTTOM", "VBUS_QUALIFIED", "INPUT_VOLTAGE_ADC", 10, 150_000, 22_000],
+      ["R_V_ADC_TOP", "R_V_ADC_BOTTOM", "TEC_POS", "OUTPUT_VOLTAGE_ADC", 39, 100_000, 20_000],
+      ["R_PD_ADC_TOP", "R_PD_ADC_BOTTOM", "VBUS_QUALIFIED", "INPUT_VOLTAGE_ADC", 40, 150_000, 22_000],
     ] as const) {
       expect(resistance(top)).toBe(topOhms)
       expect(resistance(bottom)).toBe(bottomOhms)
@@ -225,11 +236,11 @@ describe("general USB-C PD Peltier driver", () => {
     }
     expect(pinNet("R_I_ADC", 1)).toBe("DRIVER_CURRENT_MONITOR")
     expect(pinNet("R_I_ADC", 2)).toBe("OUTPUT_CURRENT_ADC")
-    expect(pinNet("U_MCU", 7)).toBe("OUTPUT_CURRENT_ADC")
+    expect(pinNet("U_MCU", 38)).toBe("OUTPUT_CURRENT_ADC")
   })
 
   test("programming USB powers logic through a reverse-blocking mux and exposes real recovery pads", () => {
-    expect(component("U_MCU").manufacturer_part_number).toBe("STM32G0B1KBT6")
+    expect(component("U_MCU").manufacturer_part_number).toBe("RP2040")
     expect(component("U_LOGIC_MUX").manufacturer_part_number).toBe("TPS2116DRLR")
     expect(directCapacitance("PROGRAM_VBUS")).toBeGreaterThan(0)
     expect(directCapacitance("PROGRAM_VBUS") * 1.2).toBeLessThanOrEqual(10e-6)
@@ -242,13 +253,15 @@ describe("general USB-C PD Peltier driver", () => {
       expect(pinNet("J_PROGRAM", pin)).toBe(net)
     }
     for (const pin of [3, 7, 10, 15]) expect(pinNet("J_PROGRAM", pin)).toBe("PROGRAM_VBUS")
-    for (const [connectorPins, mcuPin, esdPins, net] of [
-      [[4, 13], 23, [3, 4], "PROGRAM_USB_DP"],
-      [[5, 12], 22, [1, 6], "PROGRAM_USB_DM"],
+    for (const [connectorPins, mcuPin, esdPins, net, series, mcuNet] of [
+      [[4, 13], 47, [3, 4], "PROGRAM_USB_DP", "R_USB_DP", "RP_USB_DP"],
+      [[5, 12], 46, [1, 6], "PROGRAM_USB_DM", "R_USB_DM", "RP_USB_DM"],
     ] as const) {
       for (const pin of connectorPins) expect(pinNet("J_PROGRAM", pin)).toBe(net)
       for (const pin of esdPins) expect(pinNet("U_PROGRAM_ESD", pin)).toBe(net)
-      expect(pinNet("U_MCU", mcuPin)).toBe(net)
+      expect(resistance(series)).toBe(27)
+      expect([pinNet(series, 1), pinNet(series, 2)].sort()).toEqual([net, mcuNet].sort())
+      expect(pinNet("U_MCU", mcuPin)).toBe(mcuNet)
     }
     for (const pin of [6, 11]) expect(pinNet("J_PROGRAM", pin)).toBeUndefined()
     for (const [pin, net] of [[1, "GND"], [2, "LOGIC_5V"], [3, "AUX_5V"],
@@ -257,19 +270,66 @@ describe("general USB-C PD Peltier driver", () => {
     // This ESD clamp must not steer self-powered ROM D+ into an unplugged PC VBUS.
     expect(pinNet("U_PROGRAM_ESD", 5)).toBe("LOGIC_5V")
     expect(pinNet("U_PROGRAM_ESD", 2)).toBe("GND")
-    expect(pinNet("U_MCU", 11)).toBe("PROGRAM_VBUS_SENSE")
+    expect(pinNet("U_MCU", 41)).toBe("PROGRAM_VBUS_SENSE")
     expect(pinNet("R_PROGRAM_SENSE_TOP", 1)).toBe("PROGRAM_VBUS")
     expect(pinNet("R_PROGRAM_SENSE_TOP", 2)).toBe("PROGRAM_VBUS_SENSE")
     expect(resistance("R_PROGRAM_SENSE_TOP")).toBe(15_000)
     expect(resistance("R_PROGRAM_SENSE_BOTTOM")).toBe(20_000)
-    expect(pinNet("R_BOOT0", 1)).toBe("SWCLK_BOOT0")
-    expect(pinNet("R_BOOT0", 2)).toBe("GND")
-    expect(pinNet("U_MCU", 24)).toBe("SWDIO")
-    expect(pinNet("U_MCU", 25)).toBe("SWCLK_BOOT0")
-    expect(pinNet("U_MCU", 6)).toBe("MCU_RESET")
+    expect(pinNet("U_MCU", 24)).toBe("SWCLK")
+    expect(pinNet("U_MCU", 25)).toBe("SWDIO")
+    expect(pinNet("U_MCU", 26)).toBe("MCU_RUN")
+    expect(pinNet("R_RUN", 1)).toBe("CTRL_3V3")
+    expect(pinNet("R_RUN", 2)).toBe("MCU_RUN")
+    expect(resistance("R_RUN")).toBe(10_000)
+    expect(pinNet("C_MCU_RUN", 1)).toBe("MCU_RUN")
+    expect(pinNet("C_MCU_RUN", 2)).toBe("GND")
+
+    // ROM USB recovery needs a real 12 MHz clock and a bootable external flash.
+    expect(component("Y_MCU").manufacturer_part_number).toBe("ABM8-272-T3")
+    expect(pinNet("U_MCU", 20)).toBe("XIN")
+    expect(pinNet("U_MCU", 21)).toBe("XOUT")
+    expect(pinNet("Y_MCU", 1)).toBe("XIN")
+    expect(pinNet("Y_MCU", 3)).toBe("XOUT_CRYSTAL")
+    for (const pin of [2, 4]) expect(pinNet("Y_MCU", pin)).toBe("GND")
+    expect(resistance("R_XOUT")).toBe(1_000)
+    expect(pinNet("R_XOUT", 1)).toBe("XOUT")
+    expect(pinNet("R_XOUT", 2)).toBe("XOUT_CRYSTAL")
+    for (const [name, rail] of [["C_XIN", "XIN"], ["C_XOUT", "XOUT_CRYSTAL"]]) {
+      expect(capacitance(name!)).toBeCloseTo(15e-12, 15)
+      expect(pinNet(name!, 1)).toBe(rail)
+      expect(pinNet(name!, 2)).toBe("GND")
+    }
+    expect(component("U_FLASH").manufacturer_part_number).toBe("W25Q128JVSIQ")
+    for (const [flashPin, mcuPin, rail] of [
+      [1, 56, "QSPI_SS"], [2, 55, "QSPI_SD1"], [3, 54, "QSPI_SD2"],
+      [5, 53, "QSPI_SD0"], [6, 52, "QSPI_SCLK"], [7, 51, "QSPI_SD3"],
+    ] as const) {
+      expect(pinNet("U_FLASH", flashPin)).toBe(rail)
+      expect(pinNet("U_MCU", mcuPin)).toBe(rail)
+    }
+    expect(pinNet("U_FLASH", 8)).toBe("CTRL_3V3")
+    expect(pinNet("U_FLASH", 4)).toBe("GND")
+    expect(resistance("R_FLASH_CS")).toBe(10_000)
+    expect(pinNet("R_FLASH_CS", 1)).toBe("CTRL_3V3")
+    expect(pinNet("R_FLASH_CS", 2)).toBe("QSPI_SS")
+    expect(resistance("R_BOOTSEL")).toBe(1_000)
+    expect(pinNet("R_BOOTSEL", 1)).toBe("BOOTSEL_PAD")
+    expect(pinNet("R_BOOTSEL", 2)).toBe("QSPI_SS")
+    // Holding BOOTSEL to GND must override the CS pull-up during reset.
+    expect(3.3 * resistance("R_BOOTSEL") / (resistance("R_BOOTSEL") + resistance("R_FLASH_CS"))).toBeLessThan(0.8)
+    for (const [name, rail, farads] of [
+      ...[1, 10, 22, 33, 42, 49].map(pin => [`C_IOVDD${pin}`, "CTRL_3V3", 100e-9] as const),
+      ["C_ADC_AVDD", "CTRL_3V3", 100e-9], ["C_USB_VDD", "CTRL_3V3", 100e-9],
+      ["C_DVDD23", "RP_CORE_1V1", 100e-9], ["C_DVDD50", "RP_CORE_1V1", 100e-9],
+      ["C_VREG_IN", "CTRL_3V3", 1e-6], ["C_VREG_OUT", "RP_CORE_1V1", 1e-6],
+    ] as const) {
+      expect(capacitance(name)).toBeCloseTo(farads, 12)
+      expect(pinNet(name, 1)).toBe(rail)
+      expect(pinNet(name, 2)).toBe("GND")
+    }
 
     const probes = {
-      TP_SWDIO: "SWDIO", TP_BOOT0: "SWCLK_BOOT0", TP_NRST: "MCU_RESET",
+      TP_SWDIO: "SWDIO", TP_SWCLK: "SWCLK", TP_BOOTSEL: "BOOTSEL_PAD", TP_RUN: "MCU_RUN",
       TP_3V3: "CTRL_3V3", TP_GND: "GND", TP_RAW_PD: "VBUS_RAW", TP_QUAL_PD: "VBUS_QUALIFIED",
       TP_5V: "LOGIC_5V", TP_TEC: "TEC_POS", TP_OUT: "DRIVER_OUT", TP_EN: "DRIVER_ENABLE",
       TP_ISP: "DRIVER_ISP", TP_ISN: "DRIVER_ISN", TP_SCL: "I2C_SCL", TP_SDA: "I2C_SDA",
@@ -292,8 +352,8 @@ describe("general USB-C PD Peltier driver", () => {
     }
     for (const [name, anode, cathode, drive, mcuPin] of [
       ["POWER", 1, 2, "CTRL_3V3", undefined],
-      ["RUN", 2, 1, "LED_RUN_DRIVE", 16],
-      ["FAULT", 1, 2, "LED_FAULT_DRIVE", 17],
+      ["RUN", 2, 1, "LED_RUN_DRIVE", 8],
+      ["FAULT", 1, 2, "LED_FAULT_DRIVE", 9],
     ] as const) {
       expect(pinNet(`LED_${name}`, anode)).toBe(`LED_${name}_ANODE`)
       expect(pinNet(`LED_${name}`, cathode)).toBe("GND")

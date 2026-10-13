@@ -1,1 +1,1 @@
-platformio==6.1.18
+cmake==3.31.6

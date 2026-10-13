@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile, rm } from "node:fs/promises"
+import { mkdir, readFile, writeFile } from "node:fs/promises"
 import { resolve } from "node:path"
 import { createHash } from "node:crypto"
 import { convertCircuitJsonTo3D, convertSceneToGLTF } from "circuit-json-to-gltf"
@@ -8,7 +8,6 @@ import { assemblyConnections } from "../src/assembly/models"
 // Consume the actual build; do not duplicate board/component geometry here.
 const output = resolve(process.argv[2] ?? "dist/assembly")
 await mkdir(output, { recursive: true })
-await rm(resolve(output, "display-default.png"), { force: true })
 const circuitSource = await readFile("dist/index/circuit.json", "utf8")
 const circuit = JSON.parse(circuitSource)
 const provenance = JSON.parse(await readFile("assets/assembly/provenance.json", "utf8"))
@@ -40,8 +39,12 @@ provenance.nativeAssembly = {
   })),
   mapping: "Connector attachment points derive from the same connectorPlacements used by the real board, with exact supplier-footprint XY insertion/pin offsets. USB Z=2.5 mm and TEC wire-channel Z=6 mm are illustrative; cable and plug fit is not qualified.",
 }
-if (provenance.pcb.components.length !== 95 || provenance.pcb.copperTestPads.length !== 15 || provenance.nativeAssembly.components.length !== 5)
-  throw new Error("Expected 95 purchased PCB components, 15 copper test pads and five native accessories")
+if (!purchasedIds.size || provenance.pcb.components.length !== purchasedIds.size || provenance.pcb.copperTestPads.some((pad: any) => !pad.reference) || provenance.nativeAssembly.components.length !== 5)
+  throw new Error("Expected a complete PCB source inventory and five native accessories")
+for (const reference of ["TP_BOOTSEL", "TP_SWCLK", "TP_RUN", "TP_SWDIO", "TP_OUT"])
+  if (!provenance.pcb.copperTestPads.some((pad: any) => pad.reference === reference)) throw new Error(`Missing required copper feature ${reference}`)
+for (const part of provenance.pcb.components)
+  if (!part.jlcpcb?.some((code: string) => /^C\d+$/.test(code))) throw new Error(`Missing JLCPCB code for ${part.reference}`)
 // DNP copper test pads remain in the PCB texture, with no artificial component bodies.
 const renderCircuit = circuit.filter((e: any) => e.type !== "cad_component" || (!dnpPcbIds.has(e.pcb_component_id) && !dnpSourceIds.has(e.source_component_id)))
 const scene = await convertCircuitJsonTo3D(renderCircuit, { renderBoardTextures: true, textureResolution: 2048 })
