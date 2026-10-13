@@ -1,0 +1,53 @@
+{
+  "units": "mm",
+  "pcb": {
+    "source": "dist/index/circuit.json",
+    "geometry": "Actual unrouted tscircuit PCB and its component placement; supplied component OBJ models where available. Generic or datasheet-derived bodies remain approximate.",
+    "routing": "No copper routing. Wires in this assembly are external connection illustrations."
+  },
+  "peltier": {
+    "description": "HiLetgo TEC1-12706 2-pack; the board drives one module",
+    "source": "https://www.amazon.com/dp/B00M1PM7H6",
+    "bodyDimensionsMm": [40, 40, 3.6],
+    "geometry": "Amazon listing dimensional envelope, not manufacturer CAD. Ceramic plates and core are visual approximations; lead routing, diameter and length are illustrative. Confirm purchased samples before mechanical manufacture."
+  },
+  "usbCable": {
+    "description": "Cable Matters 201440, USB-C to USB-C, 240 W / 5 A cable, 1 m option",
+    "source": "https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx",
+    "geometry": "Connection illustration. Only a short cable segment and the board-side plug are shown. Manufacturer does not publish plug/jacket CAD or dimensions; these are indicative, not fit-qualified geometry. The charger-side end is omitted.",
+    "electricalRating": "Up to 48 V / 5 A. This board uses SPR USB-C PD, not the cable's 240 W EPR capability."
+  },
+  "display": {
+    "description": "Waveshare 0.91inch OLED Module, SKU 14657, SSD1306, 128 x 32 pixels",
+    "source": "https://www.waveshare.com/product/ai/0.91inch-oled-module.htm",
+    "schematicSource": "https://files.waveshare.com/upload/2/2a/0.91inch_OLED_Module_Schematic.pdf",
+    "pcbOutlineMm": [36, 12.5],
+    "activeAreaMm": [22.38, 5.58],
+    "geometry": "Manufacturer-published PCB outline and active-area dimensions. PCB thickness, glass package envelope, connector placement and height are approximations; no official 3D file found. Floating position illustrates an external module and does not specify a mounting system.",
+    "connectorPinout": { "1": "SCL", "2": "SDA", "3": "GND", "4": "VCC / 3.3 V" }
+  },
+  "displayCable": {
+    "description": "Adafruit 3568, 4-pin JST-PH female/female cable, 150 mm / 26 AWG",
+    "source": "https://www.adafruit.com/product/3568",
+    "publishedDimensionsMm": [177, 10, 4],
+    "connectorDrawingSource": "https://www.jst.com/wp-content/uploads/2021/09/ePH.pdf",
+    "geometry": "Connection illustration with simplified PHR-4 mating housings based on the JST drawing. Harness path, wire diameters, connector details and exact slack are illustrative, not official CAD. The displayed path is a partial segment; excess cable slack is omitted.",
+    "electricalRequirement": "Pin 1 to pin 1, 2 to 2, 3 to 3, 4 to 4. Verify cable continuity and manufacturer pin numbering before powering. This custom OLED pinout is not the STEMMA device pinout; wire colors do not indicate these signal names. The included Waveshare cable is not assumed to mate to the board."
+  },
+  "officialCadAttempts": [
+    {
+      "part": "GCT USB4085-GF-A",
+      "source": "https://gct.co/connector/usb4085",
+      "cadSource": "https://www.traceparts.com/els/gct/en/api/viewer/3d?EnablePresentationMode=true&MenuAlwaysVisible=true&MergeUIMenu=true&PartNumber=USB4085-GF-A&SupplierID=GLOBAL_431202195",
+      "result": "Manufacturer offers CAD through TraceParts; no downloadable mesh obtained. Board uses the exact-part EasyEDA supplier mesh, which is not claimed to be manufacturer-authored."
+    },
+    {
+      "part": "TI TPS55289RYQR",
+      "source": "https://www.ti.com/product/TPS55289",
+      "cadSource": "https://vendor.ultralibrarian.com/TI/embedded/?gpn=TPS55289&package=RYQ&pin=21",
+      "result": "Manufacturer-linked CAD export requires registered authorization. Use TI RYQ0021A drawing-derived 5 x 3 x 1 mm maximum-height package envelope where no supplier mesh is present.",
+      "drawingSource": "https://www.ti.com/lit/pdf/MPQF641"
+    }
+  ],
+  "assemblyLimitations": "Connection and packaging visualization only. No heatsink, cold plate, clamping mechanism or thermal interface is specified by this assembly. Do not power a bare Peltier without an appropriate hot-side thermal assembly."
+}

@@ -1,1 +1,1 @@
-export { Tec12706PdBoard as default } from "./src/board/tec1-12706"
+export { GeneralPdDriverBoard as default } from "./src/board/general-pd"

@@ -1,19 +1,31 @@
-# USB-C power for one TEC1-12706
+# Simple USB-C PD Peltier driver
 
-Power the common **40 × 40 mm TEC1-12706 Peltier module** from a **100 W USB-C PD charger or power bank** and a **5 A electronically marked USB-C cable**. One USB-C input and one fixed-polarity, nominal 12 V screw-terminal output. Plugging in power starts the module once the input qualifies.
+An adjustable **voltage and current limited power driver** for two-wire DC Peltier modules. The default design target is one **HiLetgo TEC1-12706 from Amazon**, at **12 V / 5.5 A**, with output **OFF** at startup. Other modules can be used within the specified range after checking their ratings and qualifying the thermal installation.
 
-The design target is a 6 A output. A standalone CYPD3177 PD sink requests 20 V / 5 A and feeds a TPS56837 buck converter. A PFET pair gates the power path; PD fault and input undervoltage inhibit the converter. No firmware or programming connector is needed.
+The nominal settings cover **2.1–15 V**, **0.50–6.00 A**, and **72 W maximum V × I**. A **100 W, 20 V / 5 A USB-C PD source** and **5 A electronically marked cable** are required. Current limiting is performed by the converter's hardware feedback loop. The firmware sets the limits and refuses combinations exceeding the power budget.
 
-The old processor, flash, crystal, programming USB port, DAC, current monitor, thermistor interfaces, fan controller and assembly model have been removed. The supplied TEC leads go into the two-pin output terminal; use a heatsink and suitable airflow.
+## Simple controls
 
-**Prototype status:** the 60 × 40 mm, four-layer board is an unrouted schematic and placement design. The 6 A target, source rejection, startup, output ripple, copper, connector temperature and thermal performance require routed-board and bench validation before manufacture. Converter short-circuit protection is not a precise 6 A TEC current limiter. An inadequate charger is rejected; there is no reduced-power mode.
+1. Connect the Peltier's two leads to `J_TEC`, with the intended cooling polarity. Fit its hot-side heatsink before powering it.
+2. Connect the small Waveshare OLED using the specified keyed cable. Apply USB-C power; the output starts OFF with the TEC1-12706 defaults.
+3. While OFF, tap **SET** to select voltage or current and use **− / +** to adjust its limit.
+4. Hold **SET** for 0.8 seconds to RUN. While running, press **SET** to stop. Stop before editing limits.
+
+The screen shows the selected limits, approximate measured V/A, OFF/RUN, and CV/CC regulation state. Settings reset to the default on every power cycle. The board supplies a fixed polarity; temperature regulation and automatic heating/cooling reversal are outside this revision.
+
+## Board and build
+
+The **80 × 60 mm, four-layer board is deliberately unrouted**. Source/netlist checks, placement checks, and an ARM firmware cross-build pass; electrical operation has not been bench-tested. The range and power figures are prototype design targets, with analog tolerances and thermal qualification still required. This source is not a manufacturing release.
 
 ```sh
 bun install --frozen-lockfile
 bun run typecheck
 bun test
 bun run build
+bun run assembly
 bun run dev
 ```
 
-See [design and sourcing notes](docs/tec1-12706-pd.md) for component references, wiring and qualifications. `index.circuit.tsx` is the entry point. Build output goes to `dist/` and is ignored by Git.
+`index.circuit.tsx` builds the single board. `dist/assembly/index.html` is a self-contained interactive assembly view with the actual PCB/component placement, the selected Peltier, OLED and cable connections. `dist/assembly/assembly.glb` and `assembly.png` are generated alongside it.
+
+All placed PCB components carry concrete JLCPCB catalog identifiers. See [design and sources](docs/general-pd-driver.md), [component inventory](docs/component-sourcing.csv), and [firmware build/flash instructions](firmware/README.md). The OLED, Peltier and cables are separately purchased accessories. Supplier CAD and manufacturer drawing-derived envelopes are distinguished in [assembly model provenance](assets/assembly/provenance.json).

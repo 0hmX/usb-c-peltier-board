@@ -1,7 +1,7 @@
 {
   "name": "@tsci/0hmX.usb-c-peltier-board",
-  "version": "0.2.0",
-  "description": "USB-C PD power adapter for one TEC1-12706 Peltier module",
+  "version": "0.3.0",
+  "description": "Simple USB-C PD CC/CV Peltier driver with TEC1-12706 defaults",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -15,13 +15,17 @@
     "snapshot": "tsci snapshot",
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "assembly": "bun run build && bun run scripts/build-assembly.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.4.2",
     "@types/react": "^19.0.8",
     "tscircuit": "^0.0.2868",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "circuit-json-to-gltf": "0.0.151",
+    "poppygl": "0.0.34",
+    "three": "0.179.1"
   },
   "author": "0hmX",
   "private": true,
