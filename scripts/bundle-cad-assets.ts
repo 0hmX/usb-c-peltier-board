@@ -4,7 +4,7 @@ import { readFile, writeFile } from "node:fs/promises"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 import { gzipSync } from "node:zlib"
-import { canonicalCadUrl } from "../src/revision/portable-cad"
+import { canonicalCadUrl } from "../src/board/portable-cad"
 
 export interface BundledCadAssets {
   format: "cad-data-uri-v1"
@@ -46,7 +46,7 @@ export async function bundleCadAssets(options: {
 } = {}): Promise<BundledCadAssets> {
   const manifestPath = options.manifestPath ?? resolve(projectDirectory, "../../sites/peltier-build-preview/dist/viewer/model-assets.json")
   const cacheDirectory = options.cacheDirectory ?? resolve(projectDirectory, ".tscircuit/assembly-model-cache")
-  const outputPath = options.outputPath ?? resolve(projectDirectory, "src/revision/bundled-cad-assets.json")
+  const outputPath = options.outputPath ?? resolve(projectDirectory, "src/board/bundled-cad-assets.json")
   const circuitPath = options.circuitPath ?? resolve(projectDirectory, "dist/assembly/circuit.json")
   let previous: BundledCadAssets | undefined
   try {

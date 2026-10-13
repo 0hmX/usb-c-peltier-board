@@ -1,1 +1,1 @@
-export { auditSourceTraceWidths, type AttributedPcbTrace } from "../src/source-trace-widths"
+export { auditSourceTraceWidths, type AttributedPcbTrace } from "../src/legacy/source-trace-widths"

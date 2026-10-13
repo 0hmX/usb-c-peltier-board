@@ -2,7 +2,7 @@ import type {CircuitJson,PcbTrace,PcbVia} from "circuit-json"
 import type {SimpleRouteJson,Obstacle} from "@tscircuit/capacity-autorouter"
 import type {AutoroutingStartEvent} from "@tscircuit/core"
 import {getFullConnectivityMapFromCircuitJson} from "circuit-json-to-connectivity-map"
-import {captureInitialCopper,verifyPreservedManualCopper} from "../scripts/preserved-manual-copper"
+import {captureInitialCopper,verifyPreservedManualCopper} from "../../scripts/preserved-manual-copper"
 
 export type GuardedCurrentBarrelProof={circuitJson:CircuitJson;initialCircuitJson:CircuitJson;
   materializedGroundCircuitJson:CircuitJson;materializedInitialCircuitJson:CircuitJson;

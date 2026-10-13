@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { TPS259470ARPWR } from "../src/parts/C3662799"
 import { Circuit } from "@tscircuit/core"
 import { SchematicTracePipelineSolver } from "@tscircuit/schematic-trace-solver"
-import { installSchematicRouteInput } from "../src/schematic-route-input"
+import { installSchematicRouteInput } from "../src/legacy/schematic-route-input"
 
 function fixture() {
   return new SchematicTracePipelineSolver({

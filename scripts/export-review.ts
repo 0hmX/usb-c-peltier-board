@@ -2,7 +2,7 @@ import { mkdir, copyFile } from "node:fs/promises"
 import { convertCircuitJsonToPcbSvg, convertCircuitJsonToSchematicSvg } from "circuit-to-svg"
 import { Resvg } from "@resvg/resvg-js"
 import type { AnyCircuitElement } from "circuit-json"
-import { schematicSheets } from "../src/revision/schematic"
+import { schematicSheets } from "../src/board/schematic"
 
 const circuit: AnyCircuitElement[] = await Bun.file("dist/index/circuit.json").json()
 await mkdir("review/schematics", { recursive: true })

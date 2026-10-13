@@ -1,7 +1,7 @@
 import { expect, test } from "bun:test"
 import { Circuit, type Port } from "@tscircuit/core"
 import { Npn } from "../src/parts"
-import { installSupplierPortAnchors, repairSymbolPortSelectors } from "../src/component-port-anchors"
+import { installSupplierPortAnchors, repairSymbolPortSelectors } from "../src/legacy/component-port-anchors"
 
 function fixture(install = false) {
   const circuit = new Circuit()

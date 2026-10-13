@@ -1,5 +1,5 @@
-import { TS3USB221ARSER } from "../../imports/TS3USB221ARSER"
-import { USBLC6_2SC6 } from "../../imports/USBLC6_2SC6"
+import { TS3USB221ARSER } from "../parts/imported/TS3USB221ARSER"
+import { USBLC6_2SC6 } from "../parts/imported/USBLC6_2SC6"
 
 const usb = { schSheetName: "USB", schSectionName: "USB_NEW" }
 

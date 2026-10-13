@@ -36,7 +36,7 @@ bun run dev:assembly
 
 Open the standalone HTML directly for viewing or use the tscircuit dev server's 3D view. The HTML viewer needs WebGL; software-rendered PNGs and the downloadable GLB remain usable if browser 3D is unavailable.
 
-The export script compares every PCB component pose and pin/net connection with the existing layout review, rejects routed copper/errors, and requires a rendered mesh for every populated PCB and mechanical part. Original supplier OBJ bytes and package GLBs are embedded in `src/revision/bundled-cad-assets.json`. Installed-dependency builds and offline asset regeneration need no model CDN or STEP conversion.
+The export script compares every PCB component pose and pin/net connection with the existing layout review, rejects routed copper/errors, and requires a rendered mesh for every populated PCB and mechanical part. Original supplier OBJ bytes and package GLBs are embedded in `src/board/bundled-cad-assets.json`. Installed-dependency builds and offline asset regeneration need no model CDN or STEP conversion.
 
 The four targeted tests cover supplier-USB CAD forwarding, passive package models, inductor dimensions and pad-only testpoints. The revision checker still verifies the circuit connectivity. These checks do **not** certify physical clearance between 3D bodies, enclosure fit, solder joints, thermal performance, component tolerances, USB behavior or fabrication readiness.
 

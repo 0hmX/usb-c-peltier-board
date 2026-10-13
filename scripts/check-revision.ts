@@ -1,6 +1,6 @@
 import { mkdir } from "node:fs/promises"
-import { retainedComponents } from "../src/revision/retained"
-import { processorConnections } from "../src/revision/processor"
+import { retainedComponents } from "../src/board/retained"
+import { processorConnections } from "../src/board/processor"
 import { runAllNetlistChecks, runAllSchematicChecks, runAllPlacementChecks } from "@tscircuit/checks"
 
 const circuit: any[] = await Bun.file(process.argv[2] ?? "dist/index/circuit.json").json()

@@ -1,5 +1,5 @@
 import type { SourcePadConnectionPlan } from "../source-pad-connections"
-import { C, R, Lt3741, PowerNfet, PowerInductor, PowerShunt, Schottky, Pnp, Npn, Ina219, TecTerminal } from "../parts"
+import { C, R, Lt3741, PowerNfet, PowerInductor, PowerShunt, Schottky, Pnp, Npn, Ina219, TecTerminal } from "../../parts"
 
 /** Filtered, unidirectional CC/CV buck. All parts use audited JLCPCB-sourced footprints.
  *  Nominal v0: 11.21 V ceiling, ~5 A commanded; hardware current-limit target
