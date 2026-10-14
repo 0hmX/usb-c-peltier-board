@@ -2,7 +2,7 @@
   "name": "@tsci/0hmX.usb-c-peltier-board",
   "version": "0.4.0",
   "description": "USB-C PD Peltier driver with USB programming and saved CC/CV profiles",
-  "main": "index.circuit.tsx",
+  "main": "dist/index.js",
   "keywords": [
     "tscircuit",
     "circuit",
