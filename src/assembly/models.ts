@@ -1,5 +1,4 @@
-import * as modeling from "@jscad/modeling"
-import { executeJscadOperations, type JscadOperation, type JscadImplementation } from "jscad-planner"
+import type { JscadOperation, JscadPolygon3 } from "jscad-planner"
 import { connectorPlacements, connectorPoint, sensorPinLocal, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
 
 // Circuit coordinates: X/Y follow the PCB, Z is height. Accessory geometry is
@@ -11,16 +10,41 @@ const union = (shapes: JscadOperation[]): JscadOperation => ({ type: "union", sh
 const colored = (color: Point3, shape: JscadOperation): JscadOperation => ({ type: "colorize", color, shape })
 const cuboid = (size: Point3, center: Point3): JscadOperation => ({ type: "translate", vector: center, shape: { type: "cuboid", size } })
 
-function wire(points: Point3[], radius: number, color: Point3, segments?: number): JscadOperation {
-  const shapes: JscadOperation[] = points.map(center => ({ type: "sphere", radius, center, resolution: 12, ...(segments ? { segments } : {}) }))
+function wire(points: Point3[], radius: number, color: Point3): JscadOperation {
+  const shapes: JscadOperation[] = points.map(center => ({ type: "sphere", radius, center, resolution: 12 }))
   for (let i = 1; i < points.length; i++) {
     const delta = subtract(points[i]!, points[i - 1]!), length = Math.hypot(...delta)
     const center = scaled(add(points[i]!, points[i - 1]!), 0.5)
     shapes.push({ type: "translate", vector: center, shape: { type: "rotateZ", angle: Math.atan2(delta[1], delta[0]),
       shape: { type: "rotateY", angle: Math.acos(delta[2] / length),
-        shape: { type: "cylinder", radius, height: length, resolution: 12, ...(segments ? { segments } : {}) } } } })
+        shape: { type: "cylinder", radius, height: length, resolution: 12 } } } })
   }
   return colored(color, union(shapes))
+}
+
+// Colored native polygons avoid a browser-incompatible CSG runtime import.
+// Each cable is a closed tube through its authored path, with 12-sided rings.
+function wirePolygons(points: Point3[], radius: number, color: Point3): JscadPolygon3[] {
+  const cross = (a: Point3, b: Point3): Point3 => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]
+  const normalize = (a: Point3) => scaled(a, 1 / Math.hypot(...a))
+  const rings = points.map((point, i) => {
+    const tangent = normalize(subtract(points[Math.min(i + 1, points.length - 1)]!, points[Math.max(0, i - 1)]!))
+    const u = normalize(cross(tangent, Math.abs(tangent[2]) < 0.9 ? [0, 0, 1] : [0, 1, 0]))
+    const v = cross(tangent, u)
+    return Array.from({ length: 12 }, (_, j) => {
+      const angle = j * Math.PI / 6
+      return add(point, add(scaled(u, radius * Math.cos(angle)), scaled(v, radius * Math.sin(angle))))
+    })
+  })
+  const polygons: JscadPolygon3[] = [{ vertices: [...rings[0]!].reverse(), color }, { vertices: rings[rings.length - 1]!, color }]
+  for (let i = 1; i < rings.length; i++) {
+    const a = rings[i - 1]!, b = rings[i]!
+    for (let j = 0; j < 12; j++) {
+      const next = (j + 1) % 12
+      polygons.push({ vertices: [a[j]!, a[next]!, b[next]!], color }, { vertices: [a[j]!, b[next]!, b[j]!], color })
+    }
+  }
+  return polygons
 }
 
 export const moduleCenter: Point3 = [112, 24, 1.8]
@@ -90,11 +114,8 @@ function probeCable(boardConnector: "J_HOT_SENSOR" | "J_COLD_SENSOR", partName: 
   // vendor wire colors in one cable part, with no invented electrical anchors.
   const jacketColor: Point3 = [0.05, 0.055, 0.06]
   const pieces = [{ path, radius: 1.5, color: jacketColor }, ...conductors.map(c => ({ path: c.path, radius: 0.35, color: c.color }))]
-  const polygons = pieces.flatMap(piece => {
-    const shape = executeJscadOperations(modeling as unknown as JscadImplementation, wire(piece.path.map(point => subtract(point, boardPoint)), piece.radius, piece.color, 12))
-    return modeling.geometries.geom3.toPolygons(shape).map(polygon => ({ ...polygon, color: piece.color }))
-  })
-  return { partName, boardConnector, boardPoint, path, probePoint, conductors, model: { type: "createGeom3", polygons } as JscadOperation }
+  const polygons = pieces.flatMap(piece => wirePolygons(piece.path.map(point => subtract(point, boardPoint)), piece.radius, piece.color))
+  return { partName, boardConnector, boardPoint, path, probePoint, conductors, model: { type: "createGeom3", polygons } satisfies JscadOperation }
 }
 
 export const hotProbeCable = probeCable("J_HOT_SENSOR", "HOT_PROBE_CABLE", hotProbe.cableEndPoint)

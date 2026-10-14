@@ -19,7 +19,6 @@
     "assembly": "bun run build && bun run scripts/build-assembly.ts"
   },
   "devDependencies": {
-    "@jscad/modeling": "2.13.0",
     "@types/bun": "^1.4.2",
     "@types/react": "^19.0.8",
     "circuit-json-to-gltf": "0.0.151",
