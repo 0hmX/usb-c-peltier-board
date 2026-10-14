@@ -26,12 +26,12 @@ The **100 × 80 mm, four-layer board is deliberately unrouted**. It extends to t
 bun install --frozen-lockfile
 bun run typecheck
 bun test ./tests
-bun run build
+bun run build --site --preview-images --use-cdn-javascript
 bun run scripts/build-assembly.ts
 bun run dev
 ```
 
-Cloud builds run `bun run build` to generate `dist/index/circuit.json` from the TypeScript source. The dev server displays the PCB, schematic and native 3D assembly directly from source. Run `bun run assembly` locally for standalone 3D exports.
+Cloud builds use tscircuit’s default pipeline to generate the preview site (`dist/index.html`), preview images, circuit JSON and JavaScript library exports from source. The dev server displays the PCB, schematic and native 3D assembly directly from source. Run `bun run assembly` locally for standalone 3D exports.
 
 Circuit TSX uses explicit parts, coordinates, purchasing identifiers and pin connections. Small files group the programming supply, RP2040, sensing, fan power and status/debug circuitry; CAD geometry calculations stay in the assembly model file.
 
