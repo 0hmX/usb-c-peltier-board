@@ -19,6 +19,15 @@ export const LMR50410XDBVR = (props: ChipProps<typeof pinLabels>) => {
     <chip
       pinLabels={pinLabels}
       pinAttributes={pinAttributes}
+      schWidth={2.2}
+      schHeight={2.4}
+      schPinArrangement={{
+        leftSide: { pins: [5, 4], direction: "top-to-bottom" },
+        rightSide: { pins: [6, 1, 3], direction: "top-to-bottom" },
+        bottomSide: [2],
+      }}
+      schPinStyle={{ pin5: { marginBottom: 1 }, pin6: { marginBottom: 0.5 },
+        pin1: { marginBottom: 0.5 } }}
       supplierPartNumbers={{
   "jlcpcb": [
     "C2841056"

@@ -14,34 +14,50 @@ import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E
 // cycle-by-cycle protection do not implement a precision 0.5 A current limit.
 export function FanPowerBlock() {
   return <>
+    <group name="FAN_NOTES" schSheetName="FAN" schX={0} schY={0}>
+      <schematictext text="Qualified 20 V PD → fixed 12 V fan supply" schX={3} schY={4} fontSize={0.3} />
+      <schematictext text="700 kHz synchronous buck / 1 A regulator" schX={-0.8} schY={3.1} fontSize={0.25} />
+      <schematictext text="12 V / 0.5 A fan budget" schX={10} schY={3} fontSize={0.25} />
+      <schematictext text="1 V × (1 + 110k / 10k) = 12 V" schX={5} schY={-5} fontSize={0.25} />
+      <schematictext text="Fan stays powered when TEC is off" schX={0} schY={-5.8} fontSize={0.25} />
+      <schematictext text="Pin 3: tach unmonitored / pin 4: PWM open → full speed" schX={10} schY={-2} fontSize={0.25} />
+      <netlabel net="GND" connectsTo=".U_FAN > .pin2" schX={0} schY={-0.9} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".C_FAN_IN > .pin2" schX={-5} schY={-0.4} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".C_FAN_IN_HF > .pin2" schX={-2.8} schY={-0.4} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".C_FAN_OUT1 > .pin2" schX={6} schY={-0.6} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".C_FAN_OUT2 > .pin2" schX={8.2} schY={-0.6} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".R_FAN_FB_BOTTOM > .pin2" schX={4.5} schY={-4.2} anchorSide="top" />
+      <netlabel net="GND" connectsTo=".J_FAN > .pin1" schX={10.5} schY={0.2} anchorSide="top" />
+      <netlabel net="FAN_BOOT" connectsTo={[".U_FAN > .pin1", ".C_FAN_BOOT > .pin1"]} inline />
+    </group>
     {/* Fan power remains on while qualified PD is present, including TEC Off.
         It is independent of the variable TEC output. */}
-    <LMR50410XDBVR name="U_FAN" pcbX={-13} pcbY={-33} schSheetName="FAN"
+    <LMR50410XDBVR name="U_FAN" schX={0} schY={1} schRotation={0} pcbX={-13} pcbY={-33} schSheetName="FAN"
       connections={{ pin1: "net.FAN_BOOT", pin2: "net.GND", pin3: "net.FAN_FB",
         pin4: "net.VBUS_QUALIFIED", pin5: "net.VBUS_QUALIFIED", pin6: "net.FAN_SW" }} />
-    <SWPA8040S330MT name="L_FAN" pcbX={-3} pcbY={-34} schSheetName="FAN"
+    <SWPA8040S330MT name="L_FAN" schX={4} schY={1.7} schRotation={0} pcbX={-3} pcbY={-34} schSheetName="FAN"
       connections={{ pin1: "net.FAN_SW", pin2: "net.FAN_12V" }} />
-    <Capacitor10uF50V name="C_FAN_IN" maxVoltageRating="50V" pcbX={-22} pcbY={-33} schSheetName="FAN"
+    <Capacitor10uF50V name="C_FAN_IN" schX={-5} schY={0.5} schRotation={270} maxVoltageRating="50V" pcbX={-22} pcbY={-33} schSheetName="FAN"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <Capacitor100nF50V name="C_FAN_IN_HF" maxVoltageRating="50V" pcbX={-19} pcbY={-36} schSheetName="FAN"
+    <Capacitor100nF50V name="C_FAN_IN_HF" schX={-2.8} schY={0.5} schRotation={270} maxVoltageRating="50V" pcbX={-19} pcbY={-36} schSheetName="FAN"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <Capacitor100nF50V name="C_FAN_BOOT" maxVoltageRating="50V" pcbX={-13} pcbY={-38} schSheetName="FAN"
+    <Capacitor100nF50V name="C_FAN_BOOT" schX={2.4} schY={2.4} schRotation={0} maxVoltageRating="50V" pcbX={-13} pcbY={-38} schSheetName="FAN"
       connections={{ pin1: "net.FAN_BOOT", pin2: "net.FAN_SW" }} />
-    <Capacitor22uF25V name="C_FAN_OUT1" maxVoltageRating="25V" pcbX={14} pcbY={-31} schSheetName="FAN"
+    <Capacitor22uF25V name="C_FAN_OUT1" schX={6} schY={0.3} schRotation={270} maxVoltageRating="25V" pcbX={14} pcbY={-31} schSheetName="FAN"
       connections={{ pin1: "net.FAN_12V", pin2: "net.GND" }} />
-    <Capacitor22uF25V name="C_FAN_OUT2" maxVoltageRating="25V" pcbX={14} pcbY={-36} schSheetName="FAN"
+    <Capacitor22uF25V name="C_FAN_OUT2" schX={8.2} schY={0.3} schRotation={270} maxVoltageRating="25V" pcbX={14} pcbY={-36} schSheetName="FAN"
       connections={{ pin1: "net.FAN_12V", pin2: "net.GND" }} />
-    <Resistor0603 name="R_FAN_FB_TOP" resistance="110k" manufacturerPartNumber="0603WAF1103T5E"
+    <Resistor0603 name="R_FAN_FB_TOP" schX={4.5} schY={-1.7} schRotation={270} resistance="110k" manufacturerPartNumber="0603WAF1103T5E"
       supplierPartNumbers={{ jlcpcb: ["C25805"] }} pcbX={5} pcbY={-31} schSheetName="FAN"
       connections={{ pin1: "net.FAN_12V", pin2: "net.FAN_FB" }} />
-    <Resistor0603 name="R_FAN_FB_BOTTOM" resistance="10k" manufacturerPartNumber="0603WAF1002T5E"
+    <Resistor0603 name="R_FAN_FB_BOTTOM" schX={4.5} schY={-3.4} schRotation={270} resistance="10k" manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }} pcbX={5} pcbY={-36} schSheetName="FAN"
       connections={{ pin1: "net.FAN_FB", pin2: "net.GND" }} />
     {/* Molex 47053-1000 is a standard keyed PC fan header. Compatible 12 V
         3-pin fans use pins 1-3; 4-pin fans run at full speed with PWM unconnected.
         Tach is not monitored. Noctua's PWM whitepaper specifies this header.
         https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf */}
-    <PcFanHeader name="J_FAN" pcbX={44} pcbY={-29} pcbRotation={90} schSheetName="FAN"
+    <PcFanHeader name="J_FAN" schX={11.5} schY={1.2} schRotation={0} pcbX={44} pcbY={-29} pcbRotation={90} schSheetName="FAN"
       connections={{ pin1: "net.GND", pin2: "net.FAN_12V" }} noConnect={["pin3", "pin4"]} />
     <silkscreentext text="FAN 12V / 0.5A" pcbX={29} pcbY={-34} fontSize={0.9} />
   </>

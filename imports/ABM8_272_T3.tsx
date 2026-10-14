@@ -1,38 +1,34 @@
 
-import type { ChipProps } from "@tscircuit/props"
-
-const pinLabels = {
-  pin1: ["pin1"],
-  pin2: ["GND1"],
-  pin3: ["pin3"],
-  pin4: ["GND2"]
-} as const
+import type { CrystalProps } from "@tscircuit/props"
 
 const pinAttributes = {
   pin2: {requiresGround: true},
   pin4: {requiresGround: true}
 } as const
 
-export const ABM8_272_T3 = (props: ChipProps<typeof pinLabels>) => {
+export const ABM8_272_T3 = (props: Omit<CrystalProps, "frequency" | "loadCapacitance" | "pinVariant">) => {
   return (
-    <chip
-      pinLabels={pinLabels}
+    <crystal
+      frequency="12MHz"
+      loadCapacitance="10pF"
+      pinVariant="four_pin"
       pinAttributes={pinAttributes}
       symbol={
         <symbol>
-          <schematictext text={props.name ?? "Y1"} schX={0} schY={0.65} fontSize={0.18} />
-          <schematictext text="12MHz" schX={0} schY={-0.65} fontSize={0.18} />
-          <port name="pin1" pinNumber={1} aliases={["1"]} direction="left" schX={-0.6} schY={-0.2} schStemLength={0.2} schPinLabelFontSize={0.08} />
-          <port name="pin3" pinNumber={3} aliases={["3"]} direction="right" schX={0.6} schY={0.2} schStemLength={0.2} schPinLabelFontSize={0.08} />
-          <port name="pin4" pinNumber={4} aliases={["GND2"]} direction="left" schX={-0.6} schY={0.2} schStemLength={0.2} schPinLabelFontSize={0.08} />
-          <port name="pin2" pinNumber={2} aliases={["GND1"]} direction="right" schX={0.6} schY={-0.2} schStemLength={0.2} schPinLabelFontSize={0.08} />
-          <schematicrect schX={0} schY={0} width={0.8} height={0.8} strokeWidth={0.02} color="#880000" />
-          <schematiccircle center={{ x: -0.3, y: -0.3 }} radius={0.03} strokeWidth={0.02} color="#880000" isFilled fillColor="#880000" />
-          <schematicpath points={[{"x":-0.1,"y":-0.14},{"x":-0.1,"y":0.14}]} strokeColor="#881100" />
-          <schematicpath points={[{"x":0.1,"y":-0.14},{"x":0.1,"y":0.14}]} strokeColor="#881100" />
-          <schematicpath points={[{"x":-0.4,"y":-0.2},{"x":-0.2,"y":-0.2},{"x":-0.2,"y":0},{"x":-0.1,"y":0}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.4,"y":0.2},{"x":0.2,"y":0.2},{"x":0.2,"y":0},{"x":0.1,"y":0}]} strokeColor="#880000" />
-          <schematicrect schX={0} schY={0} width={0.08} height={0.28} strokeWidth={0.02} color="#880000" />
+          <schematictext text={props.name ?? "Y_MCU"} schX={0} schY={0.85} fontSize={0.18} />
+          <schematictext text="12 MHz" schX={0} schY={0.55} fontSize={0.18} />
+          <port name="pin1" pinNumber={1} aliases={["1", "X1"]} direction="left" schX={-0.6} schY={0} schStemLength={0.2} schPinLabelFontSize={0.08} />
+          <port name="pin3" pinNumber={3} aliases={["3", "X2"]} direction="right" schX={0.6} schY={0} schStemLength={0.2} schPinLabelFontSize={0.08} />
+          <port name="pin2" pinNumber={2} aliases={["GND1"]} direction="down" schX={-0.4} schY={-0.8} schStemLength={0.2} schPinLabelFontSize={0.08} />
+          <port name="pin4" pinNumber={4} aliases={["GND2"]} direction="down" schX={0.4} schY={-0.8} schStemLength={0.2} schPinLabelFontSize={0.08} />
+          <schematicrect schX={0} schY={0} width={0.16} height={0.36} strokeWidth={0.02} color="#880000" />
+          <schematicpath points={[{x:-0.18,y:-0.18},{x:-0.18,y:0.18}]} strokeColor="#880000" />
+          <schematicpath points={[{x:0.18,y:-0.18},{x:0.18,y:0.18}]} strokeColor="#880000" />
+          <schematicpath points={[{x:-0.4,y:0},{x:-0.18,y:0}]} strokeColor="#880000" />
+          <schematicpath points={[{x:0.18,y:0},{x:0.4,y:0}]} strokeColor="#880000" />
+          <schematicpath points={[{x:-0.5,y:0.3},{x:-0.5,y:-0.3},{x:0.5,y:-0.3},{x:0.5,y:0.3}]} strokeColor="#880000" />
+          <schematicpath points={[{x:-0.4,y:-0.3},{x:-0.4,y:-0.6}]} strokeColor="#880000" />
+          <schematicpath points={[{x:0.4,y:-0.3},{x:0.4,y:-0.6}]} strokeColor="#880000" />
         </symbol>
       }
       supplierPartNumbers={{

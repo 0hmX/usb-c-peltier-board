@@ -36,6 +36,26 @@ export const TPS55289RYQR = (props: ChipProps<typeof pinLabels>) => {
     <chip
       pinLabels={pinLabels}
       pinAttributes={pinAttributes}
+      schWidth={4.6}
+      schHeight={6.4}
+      schPinArrangement={{
+        leftSide: { pins: [7, 1, 3, 4, 6], direction: "top-to-bottom" },
+        topSide: { pins: [20, 8, 10, 19], direction: "left-to-right" },
+        rightSide: { pins: [11, 14, 16, 12, 13, 15], direction: "top-to-bottom" },
+        bottomSide: { pins: [18, 21, 2, 5, 9, 17], direction: "left-to-right" },
+      }}
+      schPinStyle={{
+        pin7: { marginBottom: 1.4 }, pin1: { marginBottom: 0.4 },
+        pin3: { marginBottom: 0.4 }, pin4: { marginBottom: 1.4 },
+        pin11: { marginBottom: 1.2 }, pin12: { marginBottom: 0.6 },
+        pin13: { marginBottom: 1 }, pin14: { marginBottom: 0.4 },
+        pin16: { marginBottom: 0.6 },
+        pin20: { marginRight: 0.8 }, pin8: { marginRight: 0.8 },
+        pin10: { marginRight: 0.8 },
+        pin18: { marginRight: 0.6 }, pin21: { marginRight: 0.2 },
+        pin2: { marginRight: 0.2 }, pin5: { marginRight: 0.2 },
+        pin9: { marginRight: 0.2 },
+      }}
       supplierPartNumbers={{
   "jlcpcb": [
     "C5942077"

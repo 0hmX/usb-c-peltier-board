@@ -8,29 +8,37 @@ import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E
 // suitable firmware. Existing SDA/SCL debug pads expose the shared I2C bus.
 export function TemperaturePorts() {
   return <>
-    <SensorTerminal name="J_HOT_SENSOR" pcbX={44} pcbY={12} pcbRotation={90} schSheetName="SENSORS"
-      connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA", pin3: "net.GND" }} />
-    <SensorTerminal name="J_COLD_SENSOR" pcbX={44} pcbY={-8} pcbRotation={90} schSheetName="SENSORS"
-      connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA", pin3: "net.GND" }} />
-    <Resistor0603 name="R_HOT_PULLUP" resistance="4.7k" pcbX={55} pcbY={14} schSheetName="SENSORS"
+    <SensorTerminal name="J_HOT_SENSOR" pcbX={44} pcbY={12} pcbRotation={90} schX={10} schY={3} schRotation={0} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA", pin3: "net.GND" }}>
+      <schematictext text="HOT · DS18B20 · GP8" schX={-15} schY={4.5} anchor="center" fontSize={0.5} />
+    </SensorTerminal>
+    <SensorTerminal name="J_COLD_SENSOR" pcbX={44} pcbY={-8} pcbRotation={90} schX={10} schY={-3} schRotation={0} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA", pin3: "net.GND" }}>
+      <schematictext text="COLD · DS18B20 · GP9" schX={-15} schY={4.5} anchor="center" fontSize={0.5} />
+    </SensorTerminal>
+    <Resistor0603 name="R_HOT_PULLUP" resistance="4.7k" pcbX={55} pcbY={14} schX={0} schY={5.5} schRotation={270} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA" }} />
-    <Resistor0603 name="R_COLD_PULLUP" resistance="4.7k" pcbX={55} pcbY={-6} schSheetName="SENSORS"
+    <Resistor0603 name="R_COLD_PULLUP" resistance="4.7k" pcbX={55} pcbY={-6} schX={0} schY={-0.5} schRotation={270} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA" }} />
-    <Resistor0603 name="R_HOT_SERIES" resistance="100" pcbX={55} pcbY={10} schSheetName="SENSORS"
+    <Resistor0603 name="R_HOT_SERIES" resistance="100" pcbX={55} pcbY={10} schX={-5} schY={3} schRotation={0} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
       connections={{ pin1: "net.HOT_DATA_MCU", pin2: "net.HOT_SENSOR_DATA" }} />
-    <Resistor0603 name="R_COLD_SERIES" resistance="100" pcbX={55} pcbY={-10} schSheetName="SENSORS"
+    <Resistor0603 name="R_COLD_SERIES" resistance="100" pcbX={55} pcbY={-10} schX={-5} schY={-3} schRotation={0} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
       connections={{ pin1: "net.COLD_DATA_MCU", pin2: "net.COLD_SENSOR_DATA" }} />
-    <Capacitor100nF name="C_HOT_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={18} schSheetName="SENSORS"
+    <Capacitor100nF name="C_HOT_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={18} schX={5} schY={5.5} schRotation={270} schSheetName="SENSORS"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_COLD_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={-2} schSheetName="SENSORS"
+    <Capacitor100nF name="C_COLD_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={-2} schX={5} schY={-0.5} schRotation={270} schSheetName="SENSORS"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <USBLC6_2SC6 name="U_SENSOR_ESD" pcbX={55} pcbY={4} schSheetName="SENSORS"
+    <USBLC6_2SC6 name="U_SENSOR_ESD" pcbX={55} pcbY={4} schX={0} schY={-8} schRotation={0} schSheetName="SENSORS"
       connections={{ pin1: "net.HOT_SENSOR_DATA", pin6: "net.HOT_SENSOR_DATA",
-        pin3: "net.COLD_SENSOR_DATA", pin4: "net.COLD_SENSOR_DATA", pin2: "net.GND", pin5: "net.CTRL_3V3" }} />
+        pin3: "net.COLD_SENSOR_DATA", pin4: "net.COLD_SENSOR_DATA", pin2: "net.GND", pin5: "net.CTRL_3V3" }}>
+      <schematictext text="SHARED ESD PROTECTION" schX={0} schY={2.6} fontSize={0.4} />
+      <schematictext text="HOT: pins 1/6 · COLD: pins 3/4" schX={0} schY={-2} fontSize={0.3} />
+      <schematictext text="Powered probes · 3V3 / DATA / GND · no parasite power" schX={0} schY={-3.4} fontSize={0.3} />
+    </USBLC6_2SC6>
     <silkscreentext text="HOT" pcbX={44} pcbY={21} fontSize={0.8} />
     <silkscreentext text="3V3" pcbX={39} pcbY={8.500007} fontSize={0.55} />
     <silkscreentext text="DATA" pcbX={39} pcbY={12} fontSize={0.55} />

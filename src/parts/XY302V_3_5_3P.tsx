@@ -10,6 +10,17 @@ export const XY302V_3_5_3P = (props: ConnectorProps) => {
   return (
     <connector
       pinLabels={pinLabels}
+      symbol={<symbol>
+        <schematicpath points={[{ x: -2, y: 1.8 }, { x: 2, y: 1.8 }, { x: 2, y: -1.8 }, { x: -2, y: -1.8 }, { x: -2, y: 1.8 }]}
+          strokeWidth={0.04} strokeColor="#880000" />
+        <port name="pin1" pinNumber={1} direction="left" schX={-2.5} schY={1.2} schStemLength={0.5} />
+        <port name="pin2" pinNumber={2} direction="left" schX={-2.5} schY={0} schStemLength={0.5} />
+        <port name="pin3" pinNumber={3} direction="left" schX={-2.5} schY={-1.2} schStemLength={0.5} />
+        <schematictext text="1  3V3 / RED" schX={-1.65} schY={1.2} anchor="center_left" fontSize={0.28} />
+        <schematictext text="2  DATA / YELLOW" schX={-1.65} schY={0} anchor="center_left" fontSize={0.28} />
+        <schematictext text="3  GND / BLACK" schX={-1.65} schY={-1.2} anchor="center_left" fontSize={0.28} />
+        <schematictext text="{NAME}" schX={0} schY={2.1} anchor="bottom_center" fontSize={0.3} />
+      </symbol>}
       supplierPartNumbers={{
   "jlcpcb": [
     "C784941"

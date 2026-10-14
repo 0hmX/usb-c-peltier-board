@@ -14,8 +14,8 @@ export const CC0603KRX7R9BB472 = (props: Omit<CapacitorProps, "capacitance">) =>
 }}
       manufacturerPartNumber="CC0603KRX7R9BB472"
       footprint={<footprint>
-        <smtpad portHints={["pin2"]} pcbX="0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
-<smtpad portHints={["pin1"]} pcbX="-0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
+        <smtpad portHints={["pin2", "neg"]} pcbX="0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
+<smtpad portHints={["pin1", "pos"]} pcbX="-0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
 <silkscreenpath route={[{"x":-0.2801873999999316,"y":-0.7095743999998376},{"x":-1.080160400000068,"y":-0.7095743999998376}]} />
 <silkscreenpath route={[{"x":0.28026359999989836,"y":-0.7100315999998656},{"x":1.080236599999921,"y":-0.7100315999998656}]} />
 <silkscreenpath route={[{"x":-0.2801873999999316,"y":0.7101078000000598},{"x":-1.080160400000068,"y":0.7101078000000598}]} />

@@ -9,7 +9,21 @@ import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E
 
 export function Rp2040Control() {
   return <>
-    <RP2040 name="U_MCU" pcbX={0} pcbY={-15} schSheetName="CONTROL"
+    <group name="MCU_POWER_NOTES" schSheetName="MCU_POWER" schX={0} schY={0}>
+      <schematictext text="IOVDD 3.3 V: local bypass at each package supply pin" schX={-4} schY={9} fontSize={0.35} />
+      <schematictext text="ADC / USB 3.3 V supplies" schX={-4.5} schY={4.5} fontSize={0.32} anchor="left" />
+      <schematictext text="Internal regulator: 3.3 V → 1.1 V" schX={-4.5} schY={0} fontSize={0.32} anchor="left" />
+      <schematictext text="Both DVDD pins use RP_CORE_1V1" schX={2.5} schY={-4.5} fontSize={0.32} />
+    </group>
+    <group name="MCU_NOTES" schSheetName="MCU" schX={0} schY={0}>
+      <schematictext text="Digital I/O: interlocks, sensors and I2C" schX={-10} schY={9.5} fontSize={0.35} />
+      <schematictext text="ADC inputs from MONITOR" schX={-11} schY={2} fontSize={0.32} />
+      <schematictext text="USB data, SWD and reset" schX={-11} schY={-4} fontSize={0.32} />
+      <netlabel net="GND" connectsTo=".C_FLASH > .pin2" schX={13} schY={6} anchorSide="top" />
+      <schematictext text="QSPI boot flash / 12 MHz crystal" schX={6} schY={9.5} fontSize={0.35} />
+      <schematictext text="Unused GPIO: intentionally NC" schX={10} schY={-2.7} fontSize={0.32} />
+    </group>
+    <RP2040 name="U_MCU" noSchematicRepresentation pcbX={0} pcbY={-15} schSheetName="MCU"
       noConnect={["GPIO5", "GPIO10", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15",
         "GPIO16", "GPIO17", "GPIO18", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO24", "GPIO25"]}
       connections={{
@@ -25,69 +39,112 @@ export function Rp2040Control() {
         pin46: "net.RP_USB_DM", pin47: "net.RP_USB_DP", pin51: "net.QSPI_SD3", pin52: "net.QSPI_SCLK",
         pin53: "net.QSPI_SD0", pin54: "net.QSPI_SD2", pin55: "net.QSPI_SD1", pin56: "net.QSPI_SS",
       }} />
+    <schematicbox name="U_MCU_IO" chipRef=".U_MCU" width={3.4} height={2.4} schX={-11} schY={6} schSheetName="MCU"
+      pinLabels={{ pin2: ["GP0_SDA", "GPIO0"], pin3: ["GP1_SCL", "GPIO1"], pin4: ["GP2_ALLOW", "GPIO2"],
+        pin5: ["GP3_FAULT", "GPIO3"], pin6: ["GP4_PD", "GPIO4"], pin8: ["GP6_RUN_LED", "GPIO6"],
+        pin9: ["GP7_FAULT_LED", "GPIO7"], pin11: ["GP8_HOT", "GPIO8"], pin12: ["GP9_COLD", "GPIO9"] }}
+      schPinArrangement={{ leftSide: [5, 6, 11, 12], rightSide: [2, 3, 4, 8, 9] }}
+      schPinStyle={{ pin5: { marginBottom: 0.2 }, pin6: { marginBottom: 0.3 }, pin11: { marginBottom: 0.2 },
+        pin2: { marginBottom: 0.2 }, pin3: { marginBottom: 0.2 }, pin4: { marginBottom: 0.3 }, pin8: { marginBottom: 0.2 } }} />
+    <schematicbox name="U_MCU_ADC" chipRef=".U_MCU" width={3.4} height={1.8} schX={-11} schY={0} schSheetName="MCU"
+      pinLabels={{ pin38: ["GP26_ADC0", "GPIO26_ADC0"], pin39: ["GP27_ADC1", "GPIO27_ADC1"],
+        pin40: ["GP28_ADC2", "GPIO28_ADC2"], pin41: ["GP29_ADC3", "GPIO29_ADC3"] }}
+      schPinArrangement={{ leftSide: [38, 39, 40, 41], rightSide: [] }}
+      schPinStyle={{ pin38: { marginBottom: 0.2 }, pin39: { marginBottom: 0.2 }, pin40: { marginBottom: 0.2 } }} />
+    <schematicbox name="U_MCU_USB_DEBUG" chipRef=".U_MCU" width={3.4} height={2.2} schX={-11} schY={-6} schSheetName="MCU"
+      pinLabels={{ pin24: "SWCLK", pin25: "SWD", pin26: "RUN", pin46: "USB_DM", pin47: "USB_DP" }}
+      schPinArrangement={{ leftSide: [26, 24, 25], rightSide: [46, 47] }}
+      schPinStyle={{ pin46: { marginBottom: 0.8 } }} />
+    <schematicbox name="U_MCU_BOOT" chipRef=".U_MCU" width={3.4} height={3} schX={1.5} schY={4} schSheetName="MCU"
+      pinLabels={{ pin20: "XIN", pin21: "XOUT", pin51: "QSPI_SD3", pin52: "QSPI_SCLK", pin53: "QSPI_SD0",
+        pin54: "QSPI_SD2", pin55: "QSPI_SD1", pin56: "QSPI_SS" }}
+      schPinArrangement={{ leftSide: [20, 21], rightSide: [56, 52, 53, 55, 54, 51] }}
+      schPinStyle={{ pin20: { marginBottom: 0.8 }, pin56: { marginBottom: 0.3 }, pin52: { marginBottom: 0.3 },
+        pin53: { marginBottom: 0.3 }, pin55: { marginBottom: 0.3 }, pin54: { marginBottom: 0.3 } }} />
+    <schematicbox name="U_MCU_NC" chipRef=".U_MCU" width={3.4} height={3.2} schX={10} schY={-5.5} schSheetName="MCU"
+      pinLabels={{ pin7: "GPIO5", pin13: "GPIO10", pin14: "GPIO11", pin15: "GPIO12", pin16: "GPIO13",
+        pin17: "GPIO14", pin18: "GPIO15", pin27: "GPIO16", pin28: "GPIO17", pin29: "GPIO18", pin30: "GPIO19",
+        pin31: "GPIO20", pin32: "GPIO21", pin34: "GPIO22", pin35: "GPIO23", pin36: "GPIO24", pin37: "GPIO25" }}
+      schPinArrangement={{ leftSide: [7, 13, 14, 15, 16, 17, 18, 27, 28], rightSide: [29, 30, 31, 32, 34, 35, 36, 37] }}
+      schPinStyle={{ pin7: { marginBottom: 0.1 }, pin13: { marginBottom: 0.1 }, pin14: { marginBottom: 0.1 }, pin15: { marginBottom: 0.1 },
+        pin16: { marginBottom: 0.1 }, pin17: { marginBottom: 0.1 }, pin18: { marginBottom: 0.1 }, pin27: { marginBottom: 0.1 },
+        pin29: { marginBottom: 0.1 }, pin30: { marginBottom: 0.1 }, pin31: { marginBottom: 0.1 }, pin32: { marginBottom: 0.1 },
+        pin34: { marginBottom: 0.1 }, pin35: { marginBottom: 0.1 }, pin36: { marginBottom: 0.1 } }} />
+    <schematicbox name="U_MCU_POWER" chipRef=".U_MCU" width={4} height={3.2} schX={-9} schY={0} schSheetName="MCU_POWER"
+      pinLabels={{ pin1: "IOVDD6", pin10: "IOVDD5", pin22: "IOVDD4", pin33: "IOVDD3", pin42: "IOVDD2", pin49: "IOVDD1",
+        pin43: "ADC_AVDD", pin48: "USB_VDD", pin44: "VREG_IN", pin45: "VREG_VOUT", pin23: "DVDD2", pin50: "DVDD1",
+        pin19: "TESTEN", pin57: "GND" }}
+      schPinArrangement={{ leftSide: [1, 10, 22, 33, 42, 49], rightSide: [43, 48, 44, 45, 23, 50], bottomSide: [19, 57] }}
+      schPinStyle={{ pin1: { marginBottom: 0.3 }, pin10: { marginBottom: 0.3 }, pin22: { marginBottom: 0.3 },
+        pin33: { marginBottom: 0.3 }, pin42: { marginBottom: 0.3 }, pin43: { marginBottom: 0.3 }, pin48: { marginBottom: 0.3 },
+        pin44: { marginBottom: 0.3 }, pin45: { marginBottom: 0.3 }, pin23: { marginBottom: 0.3 } }} />
     {/* Winbond flash matches Raspberry Pi's reference circuit. The protected
         BOOTSEL pad can be grounded during RUN reset to enter the ROM USB loader. */}
-    <W25Q128JVSIQ name="U_FLASH" pcbX={0} pcbY={-4} pcbRotation={90} schSheetName="CONTROL"
+    <W25Q128JVSIQ name="U_FLASH" schX={9} schY={4} schRotation={0} pcbX={0} pcbY={-4} pcbRotation={90} schSheetName="MCU"
+      schWidth={3.4} schHeight={3}
+      schPinArrangement={{ leftSide: [1, 6, 5, 2, 3, 7], rightSide: [], topSide: [8], bottomSide: [4] }}
+      schPinStyle={{ pin1: { marginBottom: 0.3 }, pin6: { marginBottom: 0.3 }, pin5: { marginBottom: 0.3 },
+        pin2: { marginBottom: 0.3 }, pin3: { marginBottom: 0.3 } }}
       connections={{ pin1: "net.QSPI_SS", pin2: "net.QSPI_SD1", pin3: "net.QSPI_SD2", pin4: "net.GND",
         pin5: "net.QSPI_SD0", pin6: "net.QSPI_SCLK", pin7: "net.QSPI_SD3", pin8: "net.CTRL_3V3" }} />
-    <ABM8_272_T3 name="Y_MCU" pcbX={0} pcbY={-23} schSheetName="CONTROL"
+    <ABM8_272_T3 name="Y_MCU" schX={-3} schY={0.5} schRotation={0} pcbX={0} pcbY={-23} schSheetName="MCU"
       connections={{ pin1: "net.XIN", pin2: "net.GND", pin3: "net.XOUT_CRYSTAL", pin4: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD1" maxVoltageRating="50V" pcbX={-6} pcbY={-11.5} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD1" schX={-12} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={-6} pcbY={-11.5} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD10" maxVoltageRating="50V" pcbX={-6} pcbY={-15.5} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD10" schX={-9} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={-6} pcbY={-15.5} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD22" maxVoltageRating="50V" pcbX={-3.5} pcbY={-20.5} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD22" schX={-6} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={-3.5} pcbY={-20.5} pcbRotation={0} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD33" maxVoltageRating="50V" pcbX={6} pcbY={-18.5} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD33" schX={-3} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={6} pcbY={-18.5} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD42" maxVoltageRating="50V" pcbX={6} pcbY={-15.5} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD42" schX={0} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={6} pcbY={-15.5} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_IOVDD49" maxVoltageRating="50V" pcbX={-3.5} pcbY={-9.1} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_IOVDD49" schX={3} schY={6.5} schRotation={270} maxVoltageRating="50V" pcbX={-3.5} pcbY={-9.1} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_ADC_AVDD" maxVoltageRating="50V" pcbX={6} pcbY={-12.5} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_ADC_AVDD" schX={8} schY={2.5} schRotation={270} maxVoltageRating="50V" pcbX={6} pcbY={-12.5} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_USB_VDD" maxVoltageRating="50V" pcbX={0.5} pcbY={-9.1} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_USB_VDD" schX={11} schY={2.5} schRotation={270} maxVoltageRating="50V" pcbX={0.5} pcbY={-9.1} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DVDD23" maxVoltageRating="50V" pcbX={0} pcbY={-20.5} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor100nF name="C_DVDD23" schX={8} schY={-6.5} schRotation={270} maxVoltageRating="50V" pcbX={0} pcbY={-20.5} pcbRotation={0} schSheetName="MCU_POWER"
       connections={{ pin1: "net.RP_CORE_1V1", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DVDD50" maxVoltageRating="50V" pcbX={-1.5} pcbY={-9.1} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_DVDD50" schX={11} schY={-6.5} schRotation={270} maxVoltageRating="50V" pcbX={-1.5} pcbY={-9.1} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.RP_CORE_1V1", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_VREG_IN" maxVoltageRating="25V" pcbX={4.5} pcbY={-9.1} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor1uF name="C_VREG_IN" schX={8} schY={-2} schRotation={270} maxVoltageRating="25V" pcbX={4.5} pcbY={-9.1} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_VREG_OUT" maxVoltageRating="25V" pcbX={2.5} pcbY={-9.1} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor1uF name="C_VREG_OUT" schX={11} schY={-2} schRotation={270} maxVoltageRating="25V" pcbX={2.5} pcbY={-9.1} pcbRotation={90} schSheetName="MCU_POWER"
       connections={{ pin1: "net.RP_CORE_1V1", pin2: "net.GND" }} />
-    <Capacitor10uF name="C_MCU_BULK" maxVoltageRating="25V" pcbX={-8} pcbY={-25} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor10uF name="C_MCU_BULK" schX={8} schY={6.5} schRotation={270} maxVoltageRating="25V" pcbX={-8} pcbY={-25} pcbRotation={0} schSheetName="MCU_POWER"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_MCU_RUN" maxVoltageRating="50V" pcbX={8} pcbY={-26} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor100nF name="C_MCU_RUN" schX={-16} schY={-8} schRotation={270} maxVoltageRating="50V" pcbX={8} pcbY={-26} pcbRotation={0} schSheetName="MCU"
       connections={{ pin1: "net.MCU_RUN", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_FLASH" maxVoltageRating="50V" pcbX={-7} pcbY={-4} pcbRotation={90} schSheetName="CONTROL"
+    <Capacitor100nF name="C_FLASH" schX={13} schY={7} schRotation={270} maxVoltageRating="50V" pcbX={-7} pcbY={-4} pcbRotation={90} schSheetName="MCU"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor15pF name="C_XIN" maxVoltageRating="50V" pcbX={-3.5} pcbY={-23} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor15pF name="C_XIN" schX={-6} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={-3.5} pcbY={-23} pcbRotation={0} schSheetName="MCU"
       connections={{ pin1: "net.XIN", pin2: "net.GND" }} />
-    <Capacitor15pF name="C_XOUT" maxVoltageRating="50V" pcbX={3.5} pcbY={-25} pcbRotation={0} schSheetName="CONTROL"
+    <Capacitor15pF name="C_XOUT" schX={-0.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={3.5} pcbY={-25} pcbRotation={0} schSheetName="MCU"
       connections={{ pin1: "net.XOUT_CRYSTAL", pin2: "net.GND" }} />
-    <Resistor0603 name="R_SCL" resistance="4.7k" pcbX={-8.5} pcbY={-8} schSheetName="CONTROL"
+    <Resistor0603 name="R_SCL" schX={-3} schY={7.7} schRotation={270} resistance="4.7k" pcbX={-8.5} pcbY={-8} schSheetName="MCU"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.I2C_SCL" }} />
-    <Resistor0603 name="R_SDA" resistance="4.7k" pcbX={-8.5} pcbY={-10.5} schSheetName="CONTROL"
+    <Resistor0603 name="R_SDA" schX={-6} schY={7.7} schRotation={270} resistance="4.7k" pcbX={-8.5} pcbY={-10.5} schSheetName="MCU"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.I2C_SDA" }} />
-    <Resistor0603 name="R_RUN" resistance="10k" pcbX={12} pcbY={-26} schSheetName="CONTROL"
+    <Resistor0603 name="R_RUN" schX={-16} schY={-5.7} schRotation={270} resistance="10k" pcbX={12} pcbY={-26} schSheetName="MCU"
       manufacturerPartNumber="0603WAF1002T5E" supplierPartNumbers={{ jlcpcb: ["C25804"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.MCU_RUN" }} />
-    <Resistor0603 name="R_USB_DM" resistance="27" pcbX={8.5} pcbY={-11.5} schSheetName="CONTROL"
+    <Resistor0603 name="R_USB_DM" schX={-5} schY={-5.5} schRotation={180} resistance="27" pcbX={8.5} pcbY={-11.5} schSheetName="MCU"
       manufacturerPartNumber="0603WAF270JT5E" supplierPartNumbers={{ jlcpcb: ["C25190"] }}
       connections={{ pin1: "net.PROGRAM_USB_DM", pin2: "net.RP_USB_DM" }} />
-    <Resistor0603 name="R_USB_DP" resistance="27" pcbX={8.5} pcbY={-13.5} schSheetName="CONTROL"
+    <Resistor0603 name="R_USB_DP" schX={-5} schY={-6.5} schRotation={180} resistance="27" pcbX={8.5} pcbY={-13.5} schSheetName="MCU"
       manufacturerPartNumber="0603WAF270JT5E" supplierPartNumbers={{ jlcpcb: ["C25190"] }}
       connections={{ pin1: "net.PROGRAM_USB_DP", pin2: "net.RP_USB_DP" }} />
-    <Resistor0603 name="R_XOUT" resistance="1k" pcbX={3.5} pcbY={-23} schSheetName="CONTROL"
+    <Resistor0603 name="R_XOUT" schX={-2.8} schY={3.5} schRotation={0} resistance="1k" pcbX={3.5} pcbY={-23} schSheetName="MCU"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.XOUT", pin2: "net.XOUT_CRYSTAL" }} />
-    <Resistor0603 name="R_BOOTSEL" resistance="1k" pcbX={7} pcbY={-5} schSheetName="CONTROL"
+    <Resistor0603 name="R_BOOTSEL" schX={-1.5} schY={7} schRotation={0} resistance="1k" pcbX={7} pcbY={-5} schSheetName="MCU"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.BOOTSEL_PAD", pin2: "net.QSPI_SS" }} />
-    <Resistor0603 name="R_FLASH_CS" resistance="10k" pcbX={7} pcbY={-2} schSheetName="CONTROL"
+    <Resistor0603 name="R_FLASH_CS" schX={5} schY={7} schRotation={270} resistance="10k" pcbX={7} pcbY={-2} schSheetName="MCU"
       manufacturerPartNumber="0603WAF1002T5E" supplierPartNumbers={{ jlcpcb: ["C25804"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.QSPI_SS" }} />
   </>
