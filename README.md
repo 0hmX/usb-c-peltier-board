@@ -1,24 +1,32 @@
-# Dual-USB-C Peltier controller
+# Simple USB-C PD Peltier driver
 
-A tscircuit project with an RP2040 controller, CH224K USB-C PD input, a separate USB-C programming port, an LT3741 TEC stage, thermistor inputs and fan control.
+An adjustable **voltage and current limited power driver** for two-wire DC Peltier modules, with two USB-C ports: **PD POWER** for the load and **USB PROGRAM** for firmware and serial configuration. The default module is one **HiLetgo TEC1-12706 from Amazon**, at **12 V / 5.5 A**. Control uses an **RP2040** with a 12 MHz crystal and 16 MiB QSPI flash. There are no display or buttons.
 
-The 110 × 85 mm, four-layer board is an **unrouted placement design**. Its schematic and device assembly are available in the normal tscircuit preview. Mechanical parts marked `CONCEPT` use approximate dimensions.
+Nominal settings cover **2.1–15 V**, **0.50–6.00 A**, and **72 W maximum V × I**. Use a **100 W, 20 V / 5 A USB-C PD source** and **5 A electronically marked cable**. The converter's hardware feedback loop limits current; firmware sets the limits and rejects combinations exceeding the power budget.
+
+## Configure once, connect PD to run
+
+1. Fit the Peltier's hot-side heatsink and connect its two factory leads to `J_TEC`, with the intended cooling polarity.
+2. Connect a computer to **USB PROGRAM**. Install the host tool's requirements, then run `python3 firmware/host/control.py configure 12.0 5.5` from the repository root.
+3. Connect **PD POWER**. A valid saved profile starts after approximately one second of qualified PD power. The programming cable can be removed while the output runs.
+
+**POWER**, **RUN**, and **FAULT** LEDs show supply, output and fault state. USB commands change/save limits, stop/start output and enter the RP2040's ROM BOOTSEL loader for drag-and-drop UF2 flashing. A blank board defaults to 12 V / 5.5 A with output OFF until configured or explicitly started. Protective faults latch OFF; see [firmware and recovery instructions](firmware/README.md).
+
+For another module, configure limits within its ratings before connecting PD. The board provides fixed output polarity; temperature regulation, fan control and automatic reversal are outside this revision. Programming USB alone powers the control electronics and cannot energize the Peltier.
+
+## Board and build
+
+The **80 × 60 mm, four-layer board is deliberately unrouted**. It has **115 purchased component placements**, all with concrete JLCPCB identifiers, plus **16 labeled copper debug pads** for SWD, boot/reset, rails, enable, current sensing and I²C. The pads are PCB features, excluded from the purchased BOM. Silkscreen retains connector, polarity, LED and debug labels; component reference text is hidden.
 
 ```sh
-bun install
+bun install --frozen-lockfile
+bun run typecheck
+bun test
+bun run build
+bun run scripts/build-assembly.ts
 bun run dev
 ```
 
-Open the URL printed by the development server to view the PCB, schematic and 3D assembly.
+`index.circuit.tsx` opens the complete native assembly in the dev server's **3D** tab: the board, selected Peltier and two USB cables. The **PCB** and **Schematic** tabs show the driver circuitry. External accessories use `assembly.device` / `assembly.part` CAD geometry and do not add purchased PCB parts or electrical nets. The export also produces `dist/assembly/assembly.html`, `assembly.glb` and `assembly.png`. Supplier component CAD, manufacturer drawing-derived envelopes and illustrative cable geometry are distinguished in [model provenance](assets/assembly/provenance.json).
 
-```sh
-bun run build
-bun run typecheck
-bun test
-```
-
-The project uses the scripts and configuration from `tsci init`. `index.circuit.tsx` is the entry point, `src/board/` contains the board and assembly, and `src/parts/` contains component definitions. Build output goes to `dist/` and is ignored by Git. Supplier CAD models load through tscircuit's standard model URLs.
-
-The programming port powers logic and inhibits TEC/fan operation. BOOT and RESET provide USB bootloader access. The input-loss interlock requires RUN to go low before recovery.
-
-See the [design notes](docs/revision-b-design.md) and [input-loss interlock](docs/revision-b-interlock.md) for circuit behavior and remaining hardware qualifications. Firmware and PCB routing are not included.
+See [design and sources](docs/general-pd-driver.md), [JLC inventory](docs/component-sourcing.csv), [stock snapshot](docs/jlc-stock-audit.json), and [firmware build/flash instructions](firmware/README.md). The Peltier and cables are separately purchased accessories. Source/netlist checks and an ARM cross-build pass; USB, power regulation and thermal performance have not been bench-tested. This unrouted prototype is not a manufacturing release.

@@ -1,0 +1,22 @@
+// Shared by the real PCB and its native CAD-only accessories. Millimetres / degrees.
+export const connectorPlacements = {
+  J_USB: { pcbX: -33, pcbY: 10, pcbRotation: 270 },
+  J_PROGRAM: { pcbX: -33, pcbY: -20, pcbRotation: 270 },
+  J_TEC: { pcbX: 34, pcbY: 24, pcbRotation: 90 },
+} as const
+
+export type Point3 = [number, number, number]
+export type ConnectorPlacement = { pcbX: number; pcbY: number; pcbRotation: number }
+
+export function connectorPoint(placement: ConnectorPlacement, local: readonly [number, number, number]): Point3 {
+  const angle = placement.pcbRotation * Math.PI / 180
+  return [placement.pcbX + Math.cos(angle) * local[0] - Math.sin(angle) * local[1],
+    placement.pcbY + Math.sin(angle) * local[0] + Math.cos(angle) * local[1], local[2]]
+}
+
+// The USB face offset is the insertion centre inferred from the exact C7095263
+// imported footprint, relative to its authored placement anchor (not its pad bounds).
+// Tests compare this contract with the actual rendered pcb_component insertion centre.
+export const usbFaceLocal: Point3 = [0, -7.237483112, 2.5]
+// Exact C474881 / KF301 footprint pin centres. Z=6 is an illustrative wire channel.
+export const tecPinLocal = { pin1: [-2.499995, 0, 6], pin2: [2.499995, 0, 6] } as const
