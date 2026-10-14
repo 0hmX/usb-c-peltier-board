@@ -17,11 +17,13 @@ The [Hebei reference datasheet](https://www.hebeiltd.com.cn/peltier.datasheet/TE
 | Power ceiling | 72 W nominal selected V × I |
 | Power input | Qualified 20 V / 5 A contract; 100 W source and 5 A e-marked cable |
 | Programming input | USB 2.0 data and 5 V logic supply |
-| Board | 80 × 60 mm, 1.6 mm, four layers, no traces or vias |
+| Fan output | Fixed 12 V, 0.5 A / 6 W continuous budget; qualified PD only |
+| Temperature ports | Two independent powered DS18B20 inputs on GPIO8 / GPIO9 |
+| Board | 100 × 80 mm, 1.6 mm, four layers, no traces or vias |
 
 Voltage is regulated **before the 10 mΩ shunt**, which drops approximately 55 mV at 5.5 A plus wiring losses. USB STATUS reports approximate voltage at the TEC terminal. The 2.1 V setting floor provides nominal margin above the converter's 2 V current-sense common-mode accuracy boundary after the shunt. Current regulation under overload can reduce output below that boundary; low-voltage accuracy and short-circuit behavior need bench validation. IC, shunt and divider tolerances remain uncalibrated.
 
-For other modules, set ceilings within their allowed operating limits, allowing for tolerances. A two-wire Peltier provides no identity or ratings to the driver. This revision does not regulate temperature, power a fan or reverse polarity.
+For other modules, set ceilings within their allowed operating limits, allowing for tolerances. A two-wire Peltier provides no identity or ratings to the driver. This revision monitors both temperatures and powers a fan; it does not regulate temperature or reverse polarity.
 
 ## Power and control architecture
 
@@ -36,15 +38,31 @@ For other modules, set ceilings within their allowed operating limits, allowing 
 - **Startup:** valid saved settings start after one second of qualified input. Before OE=1, firmware verifies PD, releases EN into reset-OFF state, writes and reads back voltage/current/protection registers, and checks PD again. A CRC/version-checked profile occupies the reserved final 4 KiB flash sector at XIP address 0x10FFF000, excluded by the linker; saving requires OFF and readback verification. No profile or invalid flash leaves output OFF. Unplugging USB PROGRAM does not stop an operating load.
 - **Faults:** SC/OVP, ADC, measured-limit and converter-communication failures latch OFF. STOP cancels automatic start for the current PD session. Source detach stops output; after at least one second without PD, a new qualified connection can use the saved profile unless a protective fault remains latched. Explicit RUN retries all startup checks; CLEAR resets the latch while remaining OFF. [Firmware instructions](../firmware/README.md) explain watchdog/reset behavior.
 
-Internal feedback ratio 0.0752 caps converter DAC full-scale at about 15.96 V. Software selects at most 15 V and enforces V × I ≤72 W. This budget is not an independent input-current limit; the PD controller requests current but does not itself measure/enforce it.
+Internal feedback ratio 0.0752 caps converter DAC full-scale at about 15.96 V. Software selects at most 15 V and enforces V × I ≤72 W. Allow a further 6 W for the fan plus both converters' losses and logic power under the 100 W input budget. This budget is not an independent input-current limit; the PD controller requests current but does not itself measure/enforce it.
 
 The first-pass switching network uses approximately 395 kHz, a 4.7 µH coil, four 10 µF / 50 V input MLCCs plus 100 µF / 35 V bulk, four 22 µF / 25 V pre-shunt MLCCs, and 100 µF / 25 V post-shunt bulk. Sense filtering is 10 Ω per tap plus 220 nF differential. Compensation starts with TI EVM values of 27.4 kΩ / 4.7 nF / 100 pF. Validate these over the full range and actual capacitor DC bias. At assumed 90% efficiency, 72 W output requires 80 W before auxiliary/connector losses; continuous capability is unmeasured. Lower-power PD contracts are rejected.
+
+## Temperature probes and fan power
+
+The default probes are two units from the [HiLetgo DS18B20 five-pack, Amazon B00M1PM55K](https://www.amazon.com/dp/B00M1PM55K), with 1 m factory cables. The live Amazon selection showed **In Stock**, **Amazon's Choice**, **100+ bought in the past month**, **378 ratings**, and **4.5/5**. The [selection snapshot](sensor-sourcing.json) records the observation and geometry limits. These are popularity signals for the selected listing.
+
+Both XY302V-3.5-3P terminals use **pin1=3V3/red, pin2=DATA/yellow, pin3=GND/black**. Separate 4.7 kΩ pull-ups and 100 Ω series resistors connect HOT to RP2040 GPIO8 (physical pin11) and COLD to GPIO9 (physical pin12), with local bypassing and USBLC6-2SC6 data-line protection. The selected terminal accepts 16–26 AWG wire. Use one externally powered probe per port; parasite power is unsupported. Check the wire assignments when substituting another seller's probe.
+
+The [DS18B20 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf) specifies the 1-Wire protocol, ROM and scratchpad CRC, and up to 750 ms conversion time. Firmware schedules conversions in the background and reports `hot_c`, `cold_c`, validity, age and status through USB. Missing or invalid probes report null values and do not block saved-profile startup. This is temperature monitoring, with no thermal cutoff or setpoint control. Other 3.3 V digital probes can use the GPIO ports with appropriate firmware; compatible I²C devices can use the existing SDA/SCL/3V3/GND debug pads. The I²C converter uses address 0x75.
+
+A dedicated [TI LMR50410XDBVR](https://www.ti.com/lit/ds/symlink/lmr50410.pdf) buck converts qualified PD to fixed 12 V. Its 1 V feedback reference and 110 kΩ / 10 kΩ divider set nominal 12.0 V. A 33 µH coil and two 22 µF / 25 V output capacitors follow the manufacturer's 12 V reference topology. VIN and EN both use `VBUS_QUALIFIED`, so programming-only power cannot run the fan. The fan stays powered when the TEC output is stopped. The regulator is rated 1 A; the user-facing continuous fan budget is 0.5 A and is not a precision hardware current clamp.
+
+The keyed **Molex 47053-1000** header connects **pin1=GND, pin2=12V, pin3=tach NC, pin4=PWM NC**. [Noctua's primary PC fan specification](https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf) identifies this header and describes compatible fans' full-speed behavior without a PWM signal. Use a 12 V fan within the continuous and startup supply ratings; 24 V fans and high-current server fans are outside this output's intended range.
 
 ## Parts, cables and debug
 
 | Role | Selected source |
 | --- | --- |
 | Peltier | [HiLetgo TEC1-12706, Amazon B00M1PM7H6](https://www.amazon.com/dp/B00M1PM7H6) |
+| Both temperature probes | [HiLetgo DS18B20 five-pack, Amazon B00M1PM55K](https://www.amazon.com/dp/B00M1PM55K); two used, 1 m factory leads |
+| Both probe terminals | Xinlaiya XY302V-3.5-3P, C784941; three positions, 3.5 mm pitch, 16–26 AWG |
+| Fixed 12 V fan supply | TI LMR50410XDBVR, C2841056 / Sunlord SWPA8040S330MT, C83467 |
+| PC fan header | Molex 47053-1000, C240840; [manufacturer drawing](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/470/47053/470531000_sd.pdf) |
 | PD sink | CYPD3177-24LQXQT, C2952489; [Infineon datasheet](https://www.infineon.com/assets/row/public/documents/24/49/infineon-cypd3177-24lqxq-datasheet-en.pdf) |
 | Both USB receptacles | GCT USB4085-GF-A, C7095263; [manufacturer](https://gct.co/connector/usb4085), 5 A rating |
 | PD PFET pair | AO4407A, C16072; [AOS datasheet](https://www.aosmd.com/sites/default/files/res/datasheets/AO4407A.pdf) |
@@ -60,7 +78,7 @@ The first-pass switching network uses approximately 395 kHz, a 4.7 µH coil, fou
 | POWER / RUN / FAULT | Yellow KT-0603Y C2287 / green KT-0603YG C2289 / red KT-0603R C2286 |
 | Both USB cables | [Cable Matters 201440](https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx), 1 m, 5 A, e-marked, USB 2.0 data |
 
-[Inventory](component-sourcing.csv) records **115 purchased placements across 48 exact JLC SKUs**. Fresh direct JLC requests on **14 October 2026 at 04:40 IST** found positive overseas warehouse stock for every exact SKU, with purchasing enabled and no catalog purchase restriction. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain each product URL and observation time. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
+[Inventory](component-sourcing.csv) records **134 purchased placements across 54 exact JLC SKUs**. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain direct JLC product URLs, stock and observation times for the current board. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
 
 Use factory Peltier leads in the terminal; seller lengths/gauges vary. Cable extensions require their own current/temperature qualification. Both selected USB cables support data, although PD POWER uses only power/CC. The model distinguishes their roles by color and labels; these are illustrative cable shapes.
 
@@ -70,7 +88,7 @@ POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indic
 
 The default entrypoint contains a native `assembly.device`, with the board and `assembly.part` CAD geometry visible together in the local dev server's **3D** tab. This follows the [tscircuit assembly API](https://docs.tscircuit.com/guides/advanced-assembly). Peltier and cable geometry add no PCB footprints or electrical nets. The installed `assembly.cable` API requires PCB connector or motor endpoints; these external accessories use explicit geometry tied to the actual board connectors without introducing artificial peripheral PCBs.
 
-The assembly export consumes the final circuit JSON and actual placement. Imported supplier meshes are identified as supplier CAD. Public manufacturer CAD exports were sought for GCT/TI; unavailable bodies use documented drawing-derived envelopes. The Amazon module uses its listed envelope; cable geometry illustrates connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
+The assembly export consumes the final circuit JSON and actual placement. Imported supplier meshes are identified as supplier CAD. Public manufacturer CAD exports were sought for GCT/TI; unavailable bodies use documented drawing-derived envelopes. Nine native accessories show the Peltier, two USB cables, two TEC leads, both probe bodies and both probe cables. The Amazon module uses its listed envelope; probe housings and cable routes illustrate connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
 
 The preview omits the required hot-side heatsink, cold plate, clamping and thermal interface. Fit these before operation. The board is a power driver rather than a complete refrigeration assembly.
 

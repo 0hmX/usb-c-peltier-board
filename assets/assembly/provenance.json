@@ -45,6 +45,11 @@
       "cadSource": "https://vendor.ultralibrarian.com/TI/embedded/?gpn=TPS55289&package=RYQ&pin=21",
       "result": "Manufacturer-linked CAD export requires registered authorization. Use TI RYQ0021A drawing-derived 5 x 3 x 1 mm maximum-height package envelope where no supplier mesh is present.",
       "drawingSource": "https://www.ti.com/lit/pdf/MPQF641"
+    },
+    {
+      "part": "HiLetgo DS18B20 wired probe B00M1PM55K",
+      "source": "https://hiletgo.com/ProductDetail/2169579.html",
+      "result": "No manufacturer CAD or selected-SKU housing drawing located. The primary product page is sparse and contains lead-color variants; the selected Amazon SKU is the authority for its cable length/color map. Housing remains an explicitly illustrative envelope."
     }
   ],
   "assemblyLimitations": "Connection and packaging visualization only. No heatsink, cold plate, clamping mechanism or thermal interface is specified by this assembly. Do not power a bare Peltier without an appropriate hot-side thermal assembly.",
@@ -74,6 +79,53 @@
     "geometrySource": "src/assembly/models.ts",
     "connectorMappingSource": "src/assembly/connector-placement.ts",
     "api": "https://docs.tscircuit.com/elements/assembly-part",
-    "geometry": "Native assembly.device + five CAD-only assembly.part models; no accessory PCB components, electrical ports or JLCPCB BOM entries. The supported assembly.cable API cannot resolve generic assembly.part or loose-wire ends, so native JSCAD parts show the external paths. Board-side XY points derive from the real shared connector placements and exact supplier-footprint insertion/pin offsets. USB mating-axis and TEC wire-channel heights, cable diameters and plugs are illustrative."
+    "geometry": "Native assembly.device + nine literal CAD-only assembly.part models; no accessory PCB components, electrical ports or JLCPCB BOM entries. The supported assembly.cable API cannot resolve generic assembly.part or loose-wire ends, so native JSCAD parts show the external paths. Board-side XY points derive from the real shared connector placements and exact supplier-footprint insertion/pin offsets. Probe cable polygons preserve the three vendor lead colors. Cable/mating heights, diameters and probe housing dimensions are explicitly illustrative."
+  },
+  "temperatureProbes": {
+    "description": "Two HiLetgo DS18B20 wired stainless probes, from the selected five-pack",
+    "source": "https://www.amazon.com/dp/B00M1PM55K",
+    "quantityUsed": 2,
+    "cableLengthMm": 1000,
+    "housingDimensionsVerified": false,
+    "illustrativeHousingEnvelopeMm": {
+      "diameter": 6,
+      "length": 50
+    },
+    "housingDimensionEvidence": "The selected Amazon listing provides cable length and lead colors, but no verified metal-housing dimensions. Package dimensions and specifications for other sellers are not used as probe dimensions.",
+    "wireMap": [
+      {
+        "pin": "pin1",
+        "signal": "CTRL_3V3",
+        "color": "red"
+      },
+      {
+        "pin": "pin2",
+        "signal": "HOT_SENSOR_DATA / COLD_SENSOR_DATA",
+        "color": "yellow"
+      },
+      {
+        "pin": "pin3",
+        "signal": "GND",
+        "color": "black"
+      }
+    ],
+    "roles": [
+      {
+        "role": "HOT",
+        "boardPort": "J_HOT_SENSOR",
+        "nativePart": "HOT_PROBE",
+        "cableNativePart": "HOT_PROBE_CABLE",
+        "gpio": "GP8"
+      },
+      {
+        "role": "COLD",
+        "boardPort": "J_COLD_SENSOR",
+        "nativePart": "COLD_PROBE",
+        "cableNativePart": "COLD_PROBE_CABLE",
+        "gpio": "GP9"
+      }
+    ],
+    "geometry": "Native CAD-only probe parts use explicitly illustrative diameter 6 mm by length 50 mm metal cylinders, not verified seller dimensions or manufacturer CAD. Factory cable length 1 m and red VCC / yellow DATA / black GND follow the selected Amazon listing. Only short jacket paths and three colored conductor fanouts are shown. Jacket diameter 3 mm, conductor diameter 0.7 mm, wire-channel height 3 mm and routing are illustrative and not fit-qualified.",
+    "placement": "HOT is shown near the upper TEC face and COLD near the opposite lower face, laterally offset so both can be inspected. These positions illustrate roles; actual thermal contact, clamps and module face orientation must be established in the physical thermal assembly."
   }
 }

@@ -33,10 +33,22 @@ function component(name: string) {
   return part
 }
 
-function pinNet(name: string, pin: number) {
+function sourcePin(name: string, pin: number) {
   const port = circuit.db.source_port.list().find(item =>
     item.source_component_id === component(name).source_component_id && item.pin_number === pin)
   if (!port) throw new Error(`Missing physical pin ${name}.${pin}`)
+  return port
+}
+
+function physicalPin(name: string, pin: number) {
+  const port = sourcePin(name, pin)
+  const placed = circuit.db.pcb_port.list().find(item => item.source_port_id === port.source_port_id)
+  if (!placed) throw new Error(`Missing PCB port ${name}.${pin}`)
+  return placed
+}
+
+function pinNet(name: string, pin: number) {
+  const port = sourcePin(name, pin)
   const nets = circuit.db.source_net.list().filter(net =>
     root(net.source_net_id) === root(port.source_port_id))
   if (nets.length > 1) throw new Error(`Conflicting nets on ${name}.${pin}: ${nets.map(net => net.name)}`)
@@ -79,7 +91,10 @@ describe("general USB-C PD Peltier driver", () => {
     const board = circuit.db.pcb_board.list()[0]!
     if (!board.width || !board.height) throw new Error("Missing rectangular board dimensions")
     const width = board.width, height = board.height
-    const placed = circuit.db.pcb_component.list().filter(part => !part.do_not_place)
+    expect([width, height]).toEqual([100, 80])
+    expect(board.center.x - width / 2).toBe(-40) // Preserve the original USB mating edge.
+    // Copper-only DNP test pads need board area and probe access too.
+    const placed = circuit.db.pcb_component.list()
     const nameOf = (id: string) => parts.find(part => part.source_component_id === id)?.name ?? id
     const outOfBounds = placed.filter(part =>
       Math.abs(part.center.x - board.center.x) + part.width / 2 > width / 2 + 0.01 ||
@@ -89,9 +104,11 @@ describe("general USB-C PD Peltier driver", () => {
     for (let i = 0; i < placed.length; i++) {
       for (let j = i + 1; j < placed.length; j++) {
         const a = placed[i]!, b = placed[j]!
+        const clearance = a.do_not_place || b.do_not_place
+          ? board.min_pad_edge_to_pad_edge_clearance ?? 0.1 : -0.01
         if (a.layer === b.layer &&
-          Math.abs(a.center.x - b.center.x) < (a.width + b.width) / 2 - 0.01 &&
-          Math.abs(a.center.y - b.center.y) < (a.height + b.height) / 2 - 0.01) {
+          Math.abs(a.center.x - b.center.x) < (a.width + b.width) / 2 + clearance &&
+          Math.abs(a.center.y - b.center.y) < (a.height + b.height) / 2 + clearance) {
           overlaps.push(`${nameOf(a.source_component_id)} / ${nameOf(b.source_component_id)}`)
         }
       }
@@ -165,6 +182,116 @@ describe("general USB-C PD Peltier driver", () => {
     expect(pinNet("C_COMP_ZERO", 2)).toBe("GND")
     expect(pinNet("C_COMP_POLE", 1)).toBe("DRIVER_COMP")
     expect(pinNet("C_COMP_POLE", 2)).toBe("GND")
+  })
+
+  test("fixed 12 V fan power is qualified-PD-only and matches the keyed PC fan header", () => {
+    expect(component("U_FAN").manufacturer_part_number).toBe("LMR50410XDBVR")
+    expect(component("U_FAN").supplier_part_numbers?.jlcpcb).toEqual(["C2841056"])
+    // EN follows the qualified input, so MCU reset/TEC Off cannot turn cooling off.
+    for (const pin of [4, 5]) expect(pinNet("U_FAN", pin)).toBe("VBUS_QUALIFIED")
+    expect(pinNet("U_FAN", 2)).toBe("GND")
+    expect(pinNet("U_FAN", 6)).toBe("FAN_SW")
+    expect(pinNet("U_FAN", 1)).toBe("FAN_BOOT")
+    expect(pinNet("C_FAN_BOOT", 1)).toBe("FAN_BOOT")
+    expect(pinNet("C_FAN_BOOT", 2)).toBe("FAN_SW")
+    expect(capacitance("C_FAN_BOOT")).toBeCloseTo(100e-9, 12)
+    expect(pinNet("L_FAN", 1)).toBe("FAN_SW")
+    expect(pinNet("L_FAN", 2)).toBe("FAN_12V")
+    const coil = component("L_FAN")
+    expect(String("inductance" in coil && coil.inductance)).toBe("33uH")
+    expect(coil.manufacturer_part_number).toBe("SWPA8040S330MT")
+
+    expect(pinNet("U_FAN", 3)).toBe("FAN_FB")
+    expect(pinNet("R_FAN_FB_TOP", 1)).toBe("FAN_12V")
+    expect(pinNet("R_FAN_FB_TOP", 2)).toBe("FAN_FB")
+    expect(pinNet("R_FAN_FB_BOTTOM", 1)).toBe("FAN_FB")
+    expect(pinNet("R_FAN_FB_BOTTOM", 2)).toBe("GND")
+    expect(resistance("R_FAN_FB_TOP")).toBe(110_000)
+    expect(resistance("R_FAN_FB_BOTTOM")).toBe(10_000)
+    // TI's 1 V reference sets the fan rail independently of programmable TEC voltage.
+    expect(1 + resistance("R_FAN_FB_TOP") / resistance("R_FAN_FB_BOTTOM")).toBeCloseTo(12, 6)
+    for (const [name, rail, farads, minRating] of [
+      ["C_FAN_IN", "VBUS_QUALIFIED", 10e-6, 25],
+      ["C_FAN_IN_HF", "VBUS_QUALIFIED", 100e-9, 25],
+      ["C_FAN_OUT1", "FAN_12V", 22e-6, 16],
+      ["C_FAN_OUT2", "FAN_12V", 22e-6, 16],
+    ] as const) {
+      expect(pinNet(name, 1)).toBe(rail)
+      expect(pinNet(name, 2)).toBe("GND")
+      expect(capacitance(name)).toBeCloseTo(farads, 10)
+      const capacitor = component(name)
+      expect("max_voltage_rating" in capacitor && capacitor.max_voltage_rating).toBeGreaterThanOrEqual(minRating)
+    }
+
+    expect(component("J_FAN").manufacturer_part_number).toBe("470531000")
+    expect(component("J_FAN").supplier_part_numbers?.jlcpcb).toEqual(["C240840"])
+    expect(pinNet("J_FAN", 1)).toBe("GND")
+    expect(pinNet("J_FAN", 2)).toBe("FAN_12V")
+    for (const pin of [3, 4]) {
+      expect(pinNet("J_FAN", pin)).toBeUndefined()
+      expect(sourcePin("J_FAN", pin).do_not_connect).toBe(true)
+    }
+    // Check actual drilled contacts: the rotated keyed header presents GND,
+    // +12 V, tach, PWM in descending Y order at the official 2.54 mm pitch.
+    const contacts = [1, 2, 3, 4].map(pin => physicalPin("J_FAN", pin))
+    const holes = circuit.db.pcb_plated_hole.list().filter(hole =>
+      contacts.some(port => port.pcb_port_id === hole.pcb_port_id))
+    expect(holes).toHaveLength(4)
+    for (let i = 0; i < contacts.length; i++) {
+      const contact = contacts[i]!
+      expect(contact.x).toBeCloseTo(contacts[0]!.x, 5)
+      if (i) expect(contacts[i - 1]!.y - contact.y).toBeCloseTo(2.54, 5)
+      const hole = holes.find(hole => hole.pcb_port_id === contact.pcb_port_id)!
+      expect(hole.x).toBeCloseTo(contact.x, 6)
+      expect(hole.y).toBeCloseTo(contact.y, 6)
+      expect("hole_diameter" in hole && hole.hole_diameter).toBeCloseTo(1.02, 5)
+    }
+    expect(circuit.db.pcb_silkscreen_text.list().some(text => text.text === "FAN 12V / 0.5A")).toBe(true)
+  })
+
+  test("each powered probe has its own protected 1-Wire input and correctly numbered screw contacts", () => {
+    expect(component("U_SENSOR_ESD").manufacturer_part_number).toBe("USBLC6-2SC6")
+    expect(pinNet("U_SENSOR_ESD", 2)).toBe("GND")
+    expect(pinNet("U_SENSOR_ESD", 5)).toBe("CTRL_3V3")
+    for (const [side, mcuPin, esdPins] of [["HOT", 11, [1, 6]], ["COLD", 12, [3, 4]]] as const) {
+      const connector = `J_${side}_SENSOR`, data = `${side}_SENSOR_DATA`, mcuData = `${side}_DATA_MCU`
+      expect(component(connector).manufacturer_part_number).toBe("XY302V-3.5-3P")
+      expect(component(connector).supplier_part_numbers?.jlcpcb).toEqual(["C784941"])
+      expect(pinNet(connector, 1)).toBe("CTRL_3V3")
+      expect(pinNet(connector, 2)).toBe(data)
+      expect(pinNet(connector, 3)).toBe("GND")
+      expect(pinNet("U_MCU", mcuPin)).toBe(mcuData)
+      expect(resistance(`R_${side}_SERIES`)).toBe(100)
+      expect(pinNet(`R_${side}_SERIES`, 1)).toBe(mcuData)
+      expect(pinNet(`R_${side}_SERIES`, 2)).toBe(data)
+      expect(resistance(`R_${side}_PULLUP`)).toBe(4_700)
+      expect(pinNet(`R_${side}_PULLUP`, 1)).toBe("CTRL_3V3")
+      expect(pinNet(`R_${side}_PULLUP`, 2)).toBe(data)
+      expect(capacitance(`C_${side}_SENSOR`)).toBeCloseTo(100e-9, 12)
+      expect(pinNet(`C_${side}_SENSOR`, 1)).toBe("CTRL_3V3")
+      expect(pinNet(`C_${side}_SENSOR`, 2)).toBe("GND")
+      for (const pin of esdPins) expect(pinNet("U_SENSOR_ESD", pin)).toBe(data)
+      const contacts = [1, 2, 3].map(pin => physicalPin(connector, pin))
+      const holes = circuit.db.pcb_plated_hole.list().filter(hole =>
+        contacts.some(port => port.pcb_port_id === hole.pcb_port_id))
+      expect(holes).toHaveLength(3)
+      for (let i = 0; i < contacts.length; i++) {
+        const contact = contacts[i]!, hole = holes.find(hole => hole.pcb_port_id === contact.pcb_port_id)!
+        expect(hole.x).toBeCloseTo(contact.x, 6)
+        expect(hole.y).toBeCloseTo(contact.y, 6)
+        if (i) expect(Math.hypot(contact.x - contacts[i - 1]!.x, contact.y - contacts[i - 1]!.y)).toBeCloseTo(3.5, 4)
+        // Pin numbers are user-visible wiring: check labels beside real holes.
+        expect(circuit.db.pcb_silkscreen_text.list().some(text =>
+          text.text === ["3V3", "DATA", "GND"][i] &&
+          Math.abs(text.anchor_position.y - contact.y) < 1e-4 &&
+          text.anchor_position.x < contact.x)).toBe(true)
+      }
+    }
+    // Read-ROM is valid for one device per port: no direct HOT/COLD bus bridge.
+    expect(root(sourcePin("J_HOT_SENSOR", 2).source_port_id)).not.toBe(
+      root(sourcePin("J_COLD_SENSOR", 2).source_port_id))
+    expect(root(sourcePin("U_MCU", 11).source_port_id)).not.toBe(
+      root(sourcePin("U_MCU", 12).source_port_id))
   })
 
   test("reset and PD fault independently disable output while live logic has a 5 V driver bias", () => {

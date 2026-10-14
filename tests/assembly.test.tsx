@@ -3,12 +3,15 @@ import { Circuit } from "tscircuit"
 import { loadJscadPlan } from "circuit-json-to-gltf"
 import Device from "../index.circuit"
 import { boardFixture, renderFixture } from "./fixtures"
-import { assemblyConnections } from "../src/assembly/models"
+import { assemblyConnections, hotProbe, coldProbe, hotProbeCable, coldProbeCable } from "../src/assembly/models"
 import provenance from "../assets/assembly/provenance.json"
 
 type RenderedCircuit = InstanceType<typeof Circuit>
+type MeshVertex = ReturnType<typeof loadJscadPlan>["triangles"][number]["vertices"][number]
 let board: RenderedCircuit, device: RenderedCircuit
-const externalNames = ["TEC_DEFAULT", "USB_PD_CABLE", "USB_PROGRAM_CABLE", "TEC_POS_LEAD", "TEC_NEG_LEAD"]
+const originalNames = ["TEC_DEFAULT", "USB_PD_CABLE", "USB_PROGRAM_CABLE", "TEC_POS_LEAD", "TEC_NEG_LEAD"]
+const externalNames = [...originalNames, "HOT_PROBE", "COLD_PROBE", "HOT_PROBE_CABLE", "COLD_PROBE_CABLE"]
+const originalConnections = assemblyConnections.filter(connection => originalNames.includes(connection.partName))
 const meshes = new Map<string, ReturnType<typeof loadJscadPlan>>()
 
 beforeAll(async () => {
@@ -31,7 +34,7 @@ function externalGeometry(name: string) {
 }
 
 function physicalSignature(c: RenderedCircuit) {
-  return c.getCircuitJson().filter(item => ["pcb_component", "pcb_smtpad", "pcb_plated_hole", "pcb_port"].includes(item.type))
+  return c.getCircuitJson().filter(item => item.type.startsWith("pcb_"))
     .map(item => {
       const value = item as unknown as Record<string, unknown>
       const pcb = c.db.pcb_component.list().find(part => part.pcb_component_id === value.pcb_component_id)
@@ -62,12 +65,13 @@ function electricalSignature(c: RenderedCircuit) {
 }
 
 describe("native Peltier assembly", () => {
-  test("the default entry contains visible native models for the module, two USB cables and two TEC leads", () => {
+  test("the default entry contains visible native models for the module, USB/TEC cables and both temperature probes", () => {
     expect(device.firstChild?.componentName).toBe("AssemblyDevice")
     expect(device.getCircuitJson().filter(item => item.type.endsWith("_error"))).toEqual([])
     const external = device.db.source_component.list().filter(part => part.ftype === "subassembly")
     expect(external.map(part => part.name).sort()).toEqual([...externalNames].sort())
     for (const part of external) {
+      expect(part.supplier_part_numbers?.jlcpcb).toBeUndefined()
       expect(device.db.pcb_component.list().filter(pcb => pcb.source_component_id === part.source_component_id)).toHaveLength(0)
       expect(device.db.source_port.list().filter(port => port.source_component_id === part.source_component_id)).toHaveLength(0)
       const cad = device.db.cad_component.list().find(model => model.source_component_id === part.source_component_id)!
@@ -95,7 +99,7 @@ describe("native Peltier assembly", () => {
   })
 
   test("accessory solids meet the real connector endpoints with correct TEC polarity and documented dimensions", () => {
-    expect(assemblyConnections.map(connection => [connection.partName, connection.boardConnector,
+    expect(originalConnections.map(connection => [connection.partName, connection.boardConnector,
       "pin" in connection ? connection.pin : undefined])).toEqual([
       ["USB_PD_CABLE", "J_USB", undefined], ["USB_PROGRAM_CABLE", "J_PROGRAM", undefined],
       ["TEC_POS_LEAD", "J_TEC", "pin1"], ["TEC_NEG_LEAD", "J_TEC", "pin2"],
@@ -109,12 +113,12 @@ describe("native Peltier assembly", () => {
     expect(provenance.peltier.source).toBe("https://www.amazon.com/dp/B00M1PM7H6")
     expect(provenance.peltier.nativePart).toBe(tecSource.name)
     expect(provenance.peltier.leadParts.map(lead => [lead.nativePart, lead.boardConnector, lead.pin])).toEqual(
-      assemblyConnections.flatMap(connection => "pin" in connection
+      originalConnections.flatMap(connection => "pin" in connection
         ? [[connection.partName, connection.boardConnector, connection.pin]] : []))
     expect(provenance.usbCables.quantity).toBe(2)
     expect(provenance.usbCables.roles.map(role => role.boardPort).sort()).toEqual(["J_PROGRAM", "J_USB"])
     expect(provenance.usbCables.roles.map(role => [role.nativePart, role.boardPort])).toEqual(
-      assemblyConnections.filter(connection => !("pin" in connection)).map(connection => [connection.partName, connection.boardConnector]))
+      originalConnections.filter(connection => !("pin" in connection)).map(connection => [connection.partName, connection.boardConnector]))
     // Verify the rendered lead colors agree with their electrical polarity.
     for (const [name, positive] of [["TEC_POS_LEAD", true], ["TEC_NEG_LEAD", false]] as const) {
       const triangles = externalGeometry(name).mesh.triangles
@@ -126,7 +130,7 @@ describe("native Peltier assembly", () => {
       })).toBe(true)
     }
 
-    for (const connection of assemblyConnections) {
+    for (const connection of originalConnections) {
       const part = device.db.source_component.list().find(part => part.name === connection.boardConnector)!
       const pcb = device.db.pcb_component.list().find(pcb => pcb.source_component_id === part.source_component_id)!
       if ("pin" in connection) {
@@ -160,6 +164,78 @@ describe("native Peltier assembly", () => {
           expect(point[axis]).toBeLessThanOrEqual(mesh.boundingBox.max[axis] + offset[axis] + 0.01)
         }
       }
+    }
+  })
+
+  test("both factory probe cables render three correctly colored conductors at the actual sensor terminals", () => {
+    const details = provenance.temperatureProbes
+    expect(details.source).toBe("https://www.amazon.com/dp/B00M1PM55K")
+    expect(details.quantityUsed).toBe(2)
+    expect(details.cableLengthMm).toBe(1_000)
+    expect(details.housingDimensionsVerified).toBe(false)
+    expect(details.roles.map(role => [role.role, role.boardPort, role.nativePart, role.cableNativePart, role.gpio])).toEqual([
+      ["HOT", "J_HOT_SENSOR", "HOT_PROBE", "HOT_PROBE_CABLE", "GP8"],
+      ["COLD", "J_COLD_SENSOR", "COLD_PROBE", "COLD_PROBE_CABLE", "GP9"],
+    ])
+    expect(assemblyConnections.filter(connection => "conductors" in connection).map(connection =>
+      [connection.partName, connection.boardConnector])).toEqual([
+      ["HOT_PROBE_CABLE", "J_HOT_SENSOR"], ["COLD_PROBE_CABLE", "J_COLD_SENSOR"],
+    ])
+    const pins = new Map(electricalSignature(device).map(json => {
+      const pin = JSON.parse(json) as { name: string; pin: number; nets: string[] }
+      return [`${pin.name}.${pin.pin}`, pin.nets] as const
+    }))
+    for (const [probe, cable, side] of [[hotProbe, hotProbeCable, "HOT"], [coldProbe, coldProbeCable, "COLD"]] as const) {
+      const { source: probeSource, cad: probeCad, mesh: probeMesh } = externalGeometry(probe.partName)
+      expect(probeSource.display_name).toContain("HiLetgo DS18B20")
+      expect(probeSource.display_name).toContain("illustrative")
+      expect(probeCad.position).toEqual({ x: probe.position[0], y: probe.position[1], z: probe.position[2] })
+      expect(probeMesh.boundingBox.max.x - probeMesh.boundingBox.min.x).toBeCloseTo(details.illustrativeHousingEnvelopeMm.length, 5)
+      for (const axis of ["y", "z"] as const)
+        expect(probeMesh.boundingBox.max[axis] - probeMesh.boundingBox.min[axis]).toBeCloseTo(details.illustrativeHousingEnvelopeMm.diameter, 5)
+      // The jacket joins the rear center of the actual rendered cylinder.
+      expect(cable.probePoint).toEqual(probe.cableEndPoint)
+      expect(cable.probePoint[0]).toBeCloseTo(probeCad.position.x + probeMesh.boundingBox.min.x, 5)
+      expect(cable.probePoint[1]).toBe(probeCad.position.y)
+      expect(cable.probePoint[2]).toBe(probeCad.position.z)
+      expect(cable.path[cable.path.length - 1]).toEqual(cable.probePoint)
+      expect(cable.conductors.map(conductor => [conductor.pin, conductor.signal, conductor.colorName])).toEqual([
+        ["pin1", "CTRL_3V3", "red"], ["pin2", `${side}_SENSOR_DATA`, "yellow"], ["pin3", "GND", "black"],
+      ])
+      const { cad, mesh } = externalGeometry(cable.partName)
+      expect(cad.rotation).toEqual({ x: 0, y: 0, z: 0 })
+      const offset = { x: cad.position.x, y: cad.position.z, z: cad.position.y }
+      const nearPoint = (vertices: MeshVertex[], point: readonly number[], radius: number) =>
+        vertices.some(vertex => Math.hypot(vertex.x + offset.x - point[0]!,
+          vertex.y + offset.y - point[2]!, vertex.z + offset.z - point[1]!) <= radius)
+      const connector = device.db.source_component.list().find(part => part.name === cable.boardConnector)!
+      for (const conductor of cable.conductors) {
+        const pin = Number(conductor.pin.slice(3))
+        const sourcePort = device.db.source_port.list().find(port =>
+          port.source_component_id === connector.source_component_id && port.pin_number === pin)!
+        const physicalPort = device.db.pcb_port.list().find(port => port.source_port_id === sourcePort.source_port_id)!
+        expect(conductor.boardPoint[0]).toBeCloseTo(physicalPort.x, 5)
+        expect(conductor.boardPoint[1]).toBeCloseTo(physicalPort.y, 5)
+        expect(pins.get(`${cable.boardConnector}.${pin}`)).toEqual([conductor.signal])
+        expect(conductor.path[0]).toEqual(conductor.boardPoint)
+        expect(conductor.path[conductor.path.length - 1]).toEqual(cable.path[0])
+        const [r, g, b] = conductor.color
+        expect(conductor.colorName === "red" ? r > g + 0.3 && r > b + 0.3 :
+          conductor.colorName === "yellow" ? r > 0.6 && g > 0.5 && b < 0.2 : Math.max(r, g, b) < 0.2).toBe(true)
+        const coloredVertices = mesh.triangles.filter(triangle => {
+          const color = triangle.material?.color
+          return Array.isArray(color) && conductor.color.every((value, i) => Math.abs(color[i]! - value) < 1e-6)
+        }).flatMap(triangle => triangle.vertices)
+        expect(coloredVertices.length).toBeGreaterThan(0)
+        // Matching-color polygons must physically reach every wire endpoint;
+        // a colored metadata label or a broad overall bounding box is insufficient.
+        for (const point of conductor.path) expect(nearPoint(coloredVertices, point, 0.36)).toBe(true)
+      }
+      const blackVertices = mesh.triangles.filter(triangle => {
+        const color = triangle.material?.color
+        return Array.isArray(color) && Math.max(...color.slice(0, 3)) < 0.2
+      }).flatMap(triangle => triangle.vertices)
+      for (const point of cable.path) expect(nearPoint(blackVertices, point, 1.51)).toBe(true)
     }
   })
 })

@@ -3,6 +3,7 @@
 import argparse
 from decimal import Decimal, InvalidOperation
 import json
+import math
 import sys
 import time
 
@@ -41,6 +42,28 @@ def exchange(connection, command):
     return line
 
 
+def parse_status(text):
+    result = json.loads(text)
+    required = {"set_mv", "limit_ma", "input_mv", "saved", "boot_ready"}
+    if not isinstance(result, dict) or not required <= result.keys():
+        raise ValueError("The selected serial port is not a compatible PD driver")
+    statuses = {"WARMUP", "CONVERTING", "OK", "MISSING", "BUS", "ROM_CRC",
+                "FAMILY", "PARASITE", "CONVERSION", "CRC", "DATA", "STALE"}
+    for name in ("hot", "cold"):
+        temperature, valid, age, status = (result.get(name + suffix) for suffix in
+                                          ("_c", "_valid", "_age_ms", "_status"))
+        if valid not in (0, 1) or status not in statuses:
+            raise ValueError(f"Invalid {name} probe status")
+        if age is not None and (type(age) is not int or not 0 <= age <= 0xFFFFFFFF):
+            raise ValueError(f"Invalid {name} probe age")
+        if valid:
+            if type(temperature) not in (int, float) or not math.isfinite(temperature) or not -55 <= temperature <= 125 or age is None:
+                raise ValueError(f"Invalid {name} temperature")
+        elif temperature is not None:
+            raise ValueError(f"Invalid {name} probe must report null temperature")
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", help="Serial port; detected automatically when exactly one driver is connected")
@@ -66,15 +89,13 @@ def main():
         with serial.Serial(port, 115200, timeout=2, write_timeout=2) as connection:
             time.sleep(0.15)  # Allow CDC line state to reach the device.
             connection.reset_input_buffer()
-            identity = json.loads(exchange(connection, "STATUS"))
-            if not isinstance(identity, dict) or not {"set_mv", "limit_ma", "input_mv", "saved", "boot_ready"} <= identity.keys():
-                raise RuntimeError("The selected serial port is not a compatible PD driver")
+            identity = parse_status(exchange(connection, "STATUS"))
             if selected == ["STATUS"]:
                 print(json.dumps(identity, indent=2))
                 return 0
             for command in selected:
                 response = exchange(connection, command)
-                print(json.dumps(json.loads(response), indent=2) if response.startswith("{") else response)
+                print(json.dumps(parse_status(response), indent=2) if response.startswith("{") else response)
         if args.action == "boot":
             print("Output disabled. The port now re-enumerates as RPI-RP2; copy general_pd.uf2 to its USB drive.")
     except (ImportError, OSError, ValueError, RuntimeError) as error:

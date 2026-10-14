@@ -1,5 +1,6 @@
-import type { JscadOperation } from "jscad-planner"
-import { connectorPlacements, connectorPoint, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
+import * as modeling from "@jscad/modeling"
+import { executeJscadOperations, type JscadOperation, type JscadImplementation } from "jscad-planner"
+import { connectorPlacements, connectorPoint, sensorPinLocal, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
 
 // Circuit coordinates: X/Y follow the PCB, Z is height. Accessory geometry is
 // a documented dimensional envelope, not manufacturer CAD or a cable fit test.
@@ -10,14 +11,14 @@ const union = (shapes: JscadOperation[]): JscadOperation => ({ type: "union", sh
 const colored = (color: Point3, shape: JscadOperation): JscadOperation => ({ type: "colorize", color, shape })
 const cuboid = (size: Point3, center: Point3): JscadOperation => ({ type: "translate", vector: center, shape: { type: "cuboid", size } })
 
-function wire(points: Point3[], radius: number, color: Point3): JscadOperation {
-  const shapes: JscadOperation[] = points.map(center => ({ type: "sphere", radius, center, resolution: 12 }))
+function wire(points: Point3[], radius: number, color: Point3, segments?: number): JscadOperation {
+  const shapes: JscadOperation[] = points.map(center => ({ type: "sphere", radius, center, resolution: 12, ...(segments ? { segments } : {}) }))
   for (let i = 1; i < points.length; i++) {
     const delta = subtract(points[i]!, points[i - 1]!), length = Math.hypot(...delta)
     const center = scaled(add(points[i]!, points[i - 1]!), 0.5)
     shapes.push({ type: "translate", vector: center, shape: { type: "rotateZ", angle: Math.atan2(delta[1], delta[0]),
       shape: { type: "rotateY", angle: Math.acos(delta[2] / length),
-        shape: { type: "cylinder", radius, height: length, resolution: 12 } } } })
+        shape: { type: "cylinder", radius, height: length, resolution: 12, ...(segments ? { segments } : {}) } } } })
   }
   return colored(color, union(shapes))
 }
@@ -61,4 +62,41 @@ export const usbProgramCable = usbCable("J_PROGRAM", "USB_PROGRAM_CABLE", -1, [0
 export const tecPositiveLead = tecLead("pin1", "TEC_POS_LEAD", -3, [0.78, 0.17, 0.21])
 export const tecNegativeLead = tecLead("pin2", "TEC_NEG_LEAD", 3, [0.125, 0.14, 0.17])
 
-export const assemblyConnections = [usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead]
+// Selected HiLetgo B00M1PM55K housing dimensions are not published/verified.
+// These cylinders are explicitly illustrative, not seller-specified dimensions.
+const probeBodyLengthMm = 50, probeBodyDiameterMm = 6
+const probeModel: JscadOperation = { type: "rotateY", angle: Math.PI / 2,
+  shape: { type: "cylinder", height: probeBodyLengthMm, radius: probeBodyDiameterMm / 2 },
+  material: { color: [0.72, 0.75, 0.77], metalness: 0.8, roughness: 0.3 } }
+export const hotProbe = { partName: "HOT_PROBE", position: [112, 50, 9.6] as Point3, model: probeModel,
+  cableEndPoint: [87, 50, 9.6] as Point3, bodyLengthMm: probeBodyLengthMm, bodyDiameterMm: probeBodyDiameterMm }
+export const coldProbe = { partName: "COLD_PROBE", position: [112, -8, -6] as Point3, model: probeModel,
+  cableEndPoint: [87, -8, -6] as Point3, bodyLengthMm: probeBodyLengthMm, bodyDiameterMm: probeBodyDiameterMm }
+
+function probeCable(boardConnector: "J_HOT_SENSOR" | "J_COLD_SENSOR", partName: string, probePoint: Point3) {
+  const placement = connectorPlacements[boardConnector]
+  const boardPoint = connectorPoint(placement, sensorPinLocal.pin2)
+  const join: Point3 = [66, placement.pcbY, 8]
+  const path: Point3[] = [join, [77, boardConnector === "J_HOT_SENSOR" ? 42 : -24, boardConnector === "J_HOT_SENSOR" ? 12 : 2], probePoint]
+  const conductors = [
+    { pin: "pin1", signal: "CTRL_3V3", colorName: "red", color: [0.82, 0.06, 0.04] as Point3 },
+    { pin: "pin2", signal: boardConnector === "J_HOT_SENSOR" ? "HOT_SENSOR_DATA" : "COLD_SENSOR_DATA", colorName: "yellow", color: [0.95, 0.76, 0.05] as Point3 },
+    { pin: "pin3", signal: "GND", colorName: "black", color: [0.03, 0.03, 0.035] as Point3 },
+  ].map(conductor => {
+    const point = connectorPoint(placement, sensorPinLocal[conductor.pin as keyof typeof sensorPinLocal])
+    return { ...conductor, boardPoint: point, path: [point, [52, point[1], 3], [58, point[1], 8], join] as Point3[] }
+  })
+  // Union discards child shape colors. Colored native polygons keep all three
+  // vendor wire colors in one cable part, with no invented electrical anchors.
+  const jacketColor: Point3 = [0.05, 0.055, 0.06]
+  const pieces = [{ path, radius: 1.5, color: jacketColor }, ...conductors.map(c => ({ path: c.path, radius: 0.35, color: c.color }))]
+  const polygons = pieces.flatMap(piece => {
+    const shape = executeJscadOperations(modeling as unknown as JscadImplementation, wire(piece.path.map(point => subtract(point, boardPoint)), piece.radius, piece.color, 12))
+    return modeling.geometries.geom3.toPolygons(shape).map(polygon => ({ ...polygon, color: piece.color }))
+  })
+  return { partName, boardConnector, boardPoint, path, probePoint, conductors, model: { type: "createGeom3", polygons } as JscadOperation }
+}
+
+export const hotProbeCable = probeCable("J_HOT_SENSOR", "HOT_PROBE_CABLE", hotProbe.cableEndPoint)
+export const coldProbeCable = probeCable("J_COLD_SENSOR", "COLD_PROBE_CABLE", coldProbe.cableEndPoint)
+export const assemblyConnections = [usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbeCable, coldProbeCable]

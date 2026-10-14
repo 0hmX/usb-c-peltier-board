@@ -16,6 +16,7 @@ if (!board) throw new Error("Build the PCB first: bun run build")
 if (circuit.some((e: any) => e.type === "pcb_trace" || e.type === "pcb_via")) throw new Error("Assembly expects an unrouted PCB")
 provenance.pcb.circuitSha256 = createHash("sha256").update(circuitSource).digest("hex")
 provenance.pcb.dimensionsMm = [board.width, board.height, board.thickness]
+provenance.pcb.centerMm = board.center
 const dnpPads = circuit.filter((e: any) => e.type === "pcb_component" && e.do_not_place)
 const dnpPcbIds = new Set(dnpPads.map((e: any) => e.pcb_component_id)), dnpSourceIds = new Set(dnpPads.map((e: any) => e.source_component_id))
 const purchasedIds = new Set(circuit.filter((e: any) => e.type === "pcb_component" && !e.do_not_place).map((e: any) => e.source_component_id))
@@ -28,7 +29,7 @@ provenance.nativeAssembly = {
   ...provenance.nativeAssembly,
   source: "src/assembly/general-pd-assembly.tsx",
   api: "https://docs.tscircuit.com/elements/assembly-part",
-  geometry: "Native assembly.device + five CAD-only assembly.part models. They add no PCB components, electrical ports or JLCPCB BOM entries. assembly.cable currently cannot attach to generic parts or loose TEC leads; these external connection paths are documented JSCAD envelopes.",
+  geometry: "Native assembly.device + nine CAD-only assembly.part models. They add no PCB components, electrical ports or JLCPCB BOM entries. assembly.cable currently cannot attach to generic parts or loose probe/TEC leads; these external connection paths are documented JSCAD envelopes.",
   components: circuit.filter((e: any) => e.type === "source_component" && e.ftype === "subassembly").map((e: any) => {
     const cad = circuit.find((c: any) => c.type === "cad_component" && c.source_component_id === e.source_component_id)
     if (!cad?.model_jscad || cad.pcb_component_id) throw new Error(`Missing native accessory geometry: ${e.name}`)
@@ -36,11 +37,13 @@ provenance.nativeAssembly = {
   }),
   connections: assemblyConnections.map(({ partName, boardConnector, boardPoint, path, ...part }) => ({
     reference: partName, boardConnector, pin: "pin" in part ? part.pin : undefined, boardPointMm: boardPoint, pathMm: path,
+    conductors: "conductors" in part ? part.conductors : undefined,
+    probePointMm: "probePoint" in part ? part.probePoint : undefined,
   })),
-  mapping: "Connector attachment points derive from the same connectorPlacements used by the real board, with exact supplier-footprint XY insertion/pin offsets. USB Z=2.5 mm and TEC wire-channel Z=6 mm are illustrative; cable and plug fit is not qualified.",
+  mapping: "Connector attachment points derive from the same connectorPlacements used by the real board, with exact supplier-footprint XY insertion/pin offsets. USB Z=2.5 mm, TEC wire-channel Z=6 mm and probe wire-channel Z=3 mm are illustrative; cable and plug fit is not qualified.",
 }
-if (!purchasedIds.size || provenance.pcb.components.length !== purchasedIds.size || provenance.pcb.copperTestPads.some((pad: any) => !pad.reference) || provenance.nativeAssembly.components.length !== 5)
-  throw new Error("Expected a complete PCB source inventory and five native accessories")
+if (!purchasedIds.size || provenance.pcb.components.length !== purchasedIds.size || provenance.pcb.copperTestPads.some((pad: any) => !pad.reference) || provenance.nativeAssembly.components.length !== 9)
+  throw new Error("Expected a complete PCB source inventory and nine native accessories")
 for (const reference of ["TP_BOOTSEL", "TP_SWCLK", "TP_RUN", "TP_SWDIO", "TP_OUT"])
   if (!provenance.pcb.copperTestPads.some((pad: any) => pad.reference === reference)) throw new Error(`Missing required copper feature ${reference}`)
 for (const part of provenance.pcb.components)

@@ -1,6 +1,6 @@
 import { assembly } from "tscircuit"
 import { GeneralPdDriverBoard } from "../board/general-pd"
-import { moduleModel, usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead } from "./models"
+import { moduleModel, usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbe, coldProbe, hotProbeCable, coldProbeCable } from "./models"
 
 // CAD-only accessories do not add PCB components, electrical ports or JLC BOM
 // entries. Native assembly.cable cannot attach to generic parts/loose TEC leads.
@@ -25,6 +25,20 @@ export function GeneralPdDriverAssembly({ schematicDisabled = false }: { schemat
     <assembly.part name="TEC_NEG_LEAD" displayName="TEC negative lead · black · path illustration"
       cadModel={{ jscad: tecNegativeLead.model,
         positionOffset: { x: tecNegativeLead.boardPoint[0], y: tecNegativeLead.boardPoint[1], z: tecNegativeLead.boardPoint[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="HOT_PROBE" displayName="HiLetgo DS18B20 · HOT · illustrative Ø6 × 50 mm housing"
+      cadModel={{ jscad: hotProbe.model, positionOffset: { x: hotProbe.position[0], y: hotProbe.position[1], z: hotProbe.position[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="COLD_PROBE" displayName="HiLetgo DS18B20 · COLD · illustrative Ø6 × 50 mm housing"
+      cadModel={{ jscad: coldProbe.model, positionOffset: { x: coldProbe.position[0], y: coldProbe.position[1], z: coldProbe.position[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="HOT_PROBE_CABLE" displayName="HiLetgo factory cable · HOT · red VCC / yellow DATA / black GND"
+      cadModel={{ jscad: hotProbeCable.model,
+        positionOffset: { x: hotProbeCable.boardPoint[0], y: hotProbeCable.boardPoint[1], z: hotProbeCable.boardPoint[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="COLD_PROBE_CABLE" displayName="HiLetgo factory cable · COLD · red VCC / yellow DATA / black GND"
+      cadModel={{ jscad: coldProbeCable.model,
+        positionOffset: { x: coldProbeCable.boardPoint[0], y: coldProbeCable.boardPoint[1], z: coldProbeCable.boardPoint[2] },
         modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
   </assembly.device>
 }

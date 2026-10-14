@@ -29,7 +29,7 @@ The host tool selects a single connected driver and checks its STATUS response b
 | `SAVE` | Save the current profile only while OFF; acknowledge only after flash readback |
 | `RUN` | Start after full PD, limit, and register checks |
 | `STOP` | Stop and cancel pending automatic start for this PD connection |
-| `STATUS` | JSON run/CC/PD/fault, limits, approximate readings, saved-profile validity, and `boot_ready` |
+| `STATUS` | JSON run/CC/PD/fault, limits, approximate readings, saved-profile validity, `boot_ready`, and HOT/COLD probe telemetry |
 | `CLEAR` | Stay OFF and clear the protective fault latch |
 | `BOOT` | Disable output, then enter the built-in RP2040 USB BOOTSEL loader |
 
@@ -40,6 +40,18 @@ A source interruption shorter than one second stops output and requires RUN. Aft
 POWER indicates logic supply, RUN indicates enabled output, and FAULT indicates a latched fault. Normal current limiting is permitted (`cc=1`). Voltage is regulated before the 10 mΩ shunt, so load voltage is approximately 10 mV lower per ampere.
 
 RP2040 has no factory VREFINT calibration equivalent. Conversions explicitly assume **3300 mV ADC_AVDD**; LDO, filter, ADC, shunt, and divider tolerances make readings approximate. Measure ADC_AVDD and change `PD_ADC_REFERENCE_MV` if calibration is needed. Current limiting itself uses the converter's analog loop. PD eligibility uses an approximate 18–22 V reading plus the standalone PD fault and hardware UVLO protections. PROGRAM attachment uses its ADC3 reading with **4.2 V attach / 3.8 V detach** hysteresis, so a self-powered board keeps D+ disconnected when PROGRAM VBUS is absent.
+
+## Optional HOT and COLD probes
+
+Connect **one three-wire, externally powered DS18B20** to each port: **3V3 / DATA / GND**, using the connector's marked order. HOT uses GP8 and COLD uses GP9. The buses are independent; each has a 4.7 kΩ pull-up to 3V3. Check a probe's actual wire mapping rather than assuming cable colors. Parasite-powered two-wire probes and multiple probes on one port are unsupported. These GPIO ports can also carry other 3.3 V digital signals with application firmware changes; this firmware speaks DS18B20 only.
+
+The driver checks presence, ROM family 0x28 and ROM CRC, external power, conversion busy/completion, and scratchpad CRC/configuration before publishing a reading. Conversion waits are scheduled for 800 ms, including setup margin above the sensor's 750 ms maximum; the application continues USB, PD, and watchdog work during that interval. Reset and data transactions are bounded GPIO operations, with interrupts masked only for individual timing-sensitive slots, at most approximately 70 µs. No sensor EEPROM is written. Nominal updates arrive about once per second. Missing or faulty probes do not stop the general power driver.
+
+STATUS reports `hot_c` / `cold_c` in Celsius, `hot_valid` / `cold_valid` as 0 or 1, `hot_age_ms` / `cold_age_ms` since the last successful sample, and `hot_status` / `cold_status`. Invalid temperatures are **null**; age is null until a successful sample exists. A previous good reading stays valid during the next conversion, but errors invalidate it and readings older than two seconds become stale. Status values include WARMUP, CONVERTING, OK, MISSING, BUS, ROM_CRC, FAMILY, PARASITE, CONVERSION, CRC, DATA, and STALE. The host tool validates these fields and prints them with the rest of the JSON.
+
+The sensor's initial +85 °C register is withheld until a conversion is observed busy and then complete; an actual completed +85 °C reading remains valid. A sensor brownout or reconnect during conversion can still produce a CRC-valid reset reading. Temperature telemetry has no thermostat, shutdown threshold, or independent safety guarantee. Place probes and cool the Peltier appropriately before RUN. The saved voltage/current record is unchanged.
+
+The fixed **12 V fan output** is powered from qualified PD independently of TEC RUN/STOP; there is no firmware fan PWM. Allow **6 W maximum nominal fan load (12 V / 0.5 A)** beside the 72 W TEC ceiling. Their 78 W nominal output total leaves 22 W of a 100 W source for conversion losses and logic; actual efficiency, cable voltage drop and regulator thermals require bench qualification.
 
 ## Saved profile and flash safety
 
@@ -71,6 +83,8 @@ cc -std=c11 -Wall -Wextra -Werror -Iinclude src/policy.c src/command.c test/poli
 build/native/policy-test
 cc -std=c11 -Wall -Wextra -Werror -Iinclude src/policy.c src/profile.c src/session.c test/profile_session_test.c -o build/native/profile-session-test
 build/native/profile-session-test
+cc -std=c11 -Wall -Wextra -Werror -Iinclude src/temperature.c test/temperature_test.c -o build/native/temperature-test
+build/native/temperature-test
 python3 -m unittest discover -s host -p 'test_*.py'
 python3 test/check_uf2.py build/general_pd.uf2
 ```
@@ -92,6 +106,7 @@ The build's custom board header is `include/general_pd_rp2040.h`.
 | Output permission: HIGH grants, LOW/reset/Hi-Z disables | GP2 / 4 |
 | Driver SC/OVP active LOW; PD fault active HIGH | GP3 / 5; GP4 / 6 |
 | RUN / FAULT LEDs, active HIGH | GP6 / 8; GP7 / 9 |
+| HOT / COLD 1-Wire DATA | GP8 / 11; GP9 / 12 |
 | I2C0 SDA / SCL, converter address 0x75 | GP0 / 2; GP1 / 3 |
 | Current ADC0, nominal 0.2 V/A | GP26 / 38 |
 | Output ADC1, divider 100k/20k | GP27 / 39 |
@@ -103,4 +118,4 @@ The build's custom board header is `include/general_pd_rp2040.h`.
 
 RUN first resets converter EN, verifies input and PD fault, releases EN with reset OE=0, writes and reads back every voltage/current/protection register, checks PD again, and writes OE=1 last. Any ADC conversion error or protective fault drives permission LOW. USB detach does not change PD operation.
 
-Primary references: [official Pico SDK 2.2.0](https://github.com/raspberrypi/pico-sdk/tree/2.2.0), [RP2040 datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf), [official hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf), [ROM USB and scratch-register source](https://github.com/raspberrypi/pico-bootrom-rp2040/blob/ef22cd8ede5bc007f81d7f2416b48db90f313434/bootrom/bootrom_main.c), [watchdog source](https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c), [TI converter datasheet](https://www.ti.com/lit/ds/symlink/tps55289.pdf). USB uses a development VID/PID. The firmware implements power regulation without temperature, fan, or polarity control; cool the Peltier appropriately before RUN.
+Primary references: [official Pico SDK 2.2.0](https://github.com/raspberrypi/pico-sdk/tree/2.2.0), [RP2040 datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf), [official hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf), [ROM USB and scratch-register source](https://github.com/raspberrypi/pico-bootrom-rp2040/blob/ef22cd8ede5bc007f81d7f2416b48db90f313434/bootrom/bootrom_main.c), [watchdog source](https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c), [TI converter datasheet](https://www.ti.com/lit/ds/symlink/tps55289.pdf), [Analog Devices DS18B20 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf). USB uses a development VID/PID. The firmware implements power regulation and optional temperature monitoring without thermostat or polarity control.

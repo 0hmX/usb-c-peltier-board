@@ -10,7 +10,7 @@ import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E
 export function Rp2040Control() {
   return <>
     <RP2040 name="U_MCU" pcbX={0} pcbY={-15} schSheetName="CONTROL"
-      noConnect={["GPIO5", "GPIO8", "GPIO9", "GPIO10", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15",
+      noConnect={["GPIO5", "GPIO10", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15",
         "GPIO16", "GPIO17", "GPIO18", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO24", "GPIO25"]}
       connections={{
         pin1: "net.CTRL_3V3", pin10: "net.CTRL_3V3", pin22: "net.CTRL_3V3",
@@ -19,6 +19,7 @@ export function Rp2040Control() {
         pin19: "net.GND", pin57: "net.GND", pin23: "net.RP_CORE_1V1", pin50: "net.RP_CORE_1V1", pin45: "net.RP_CORE_1V1",
         pin2: "net.I2C_SDA", pin3: "net.I2C_SCL", pin4: "net.MCU_DRIVER_PERMISSION",
         pin5: "net.DRIVER_FAULT", pin6: "net.PD_FAULT_SENSE", pin8: "net.LED_RUN_DRIVE", pin9: "net.LED_FAULT_DRIVE",
+        pin11: "net.HOT_DATA_MCU", pin12: "net.COLD_DATA_MCU",
         pin20: "net.XIN", pin21: "net.XOUT", pin24: "net.SWCLK", pin25: "net.SWDIO", pin26: "net.MCU_RUN",
         pin38: "net.OUTPUT_CURRENT_ADC", pin39: "net.OUTPUT_VOLTAGE_ADC", pin40: "net.INPUT_VOLTAGE_ADC", pin41: "net.PROGRAM_VBUS_SENSE",
         pin46: "net.RP_USB_DM", pin47: "net.RP_USB_DP", pin51: "net.QSPI_SD3", pin52: "net.QSPI_SCLK",

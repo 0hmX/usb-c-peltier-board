@@ -6,12 +6,14 @@ import { MMBT3904_RANGE_100_300_ } from "../parts/C20526"
 import { GRM31CC72A475KE11L } from "../parts/C237304"
 import { AdjustablePowerStage } from "./power-stage"
 import { ControlBlock } from "./control"
+import { FanPowerBlock } from "./fan-power"
+import { TemperaturePorts } from "./temperature-ports"
 import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E"
 import { CC0603KRX7R9BB104 as Capacitor100nF } from "../parts/C14663"
 import { CC0603KRX7R8BB105 as Capacitor1uF } from "../../imports/CC0603KRX7R8BB105"
 
 export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
-  return <board width={80} height={60} layers={4} thickness={1.6}
+  return <board width={100} height={80} outlineOffsetX={10} outlineOffsetY={-10} layers={4} thickness={1.6}
     title="USB-C PD Peltier driver · adjustable CC/CV · unrouted prototype"
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled}
     pcbSx={{ "& footprint silkscreentext": { visibility: "hidden" } }}
@@ -20,6 +22,8 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <schematicsheet name="PD" displayName="100 W USB-C PD input" sheetIndex={1} />
     <schematicsheet name="POWER" displayName="Adjustable voltage and current limits" sheetIndex={2} />
     <schematicsheet name="CONTROL" displayName="USB programming, debug and status" sheetIndex={3} sheetSize="ANSI_B" sheetWidth={279.4} sheetHeight={431.8} />
+    <schematicsheet name="FAN" displayName="Fixed 12 V fan power" sheetIndex={4} />
+    <schematicsheet name="SENSORS" displayName="Hot- and cold-side temperature probes" sheetIndex={5} />
     <USB4085_GF_A name="J_USB" pcbX={-33} pcbY={10} pcbRotation={270} schSheetName="PD"
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
@@ -83,6 +87,8 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
       connections={{ pin1: "net.PD_FAULT_BASE", pin2: "net.GND" }} />
     <AdjustablePowerStage />
     <ControlBlock />
+    <FanPowerBlock />
+    <TemperaturePorts />
     <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
