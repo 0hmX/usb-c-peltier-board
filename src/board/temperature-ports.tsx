@@ -1,0 +1,43 @@
+import { XY302V_3_5_3P as SensorTerminal } from "../parts/XY302V_3_5_3P"
+import { USBLC6_2SC6 } from "../../imports/USBLC6_2SC6"
+import { CC0603KRX7R9BB104 as Capacitor100nF } from "../parts/C14663"
+import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E"
+
+// One powered DS18B20 per port: red=3V3, yellow=DATA, black=GND.
+// The two independent 3.3 V GPIO lines can support other digital probes with
+// suitable firmware. Existing SDA/SCL debug pads expose the shared I2C bus.
+export function TemperaturePorts() {
+  return <>
+    <SensorTerminal name="J_HOT_SENSOR" pcbX={44} pcbY={12} pcbRotation={90} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA", pin3: "net.GND" }} />
+    <SensorTerminal name="J_COLD_SENSOR" pcbX={44} pcbY={-8} pcbRotation={90} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA", pin3: "net.GND" }} />
+    <Resistor0603 name="R_HOT_PULLUP" resistance="4.7k" pcbX={55} pcbY={14} schSheetName="SENSORS"
+      manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA" }} />
+    <Resistor0603 name="R_COLD_PULLUP" resistance="4.7k" pcbX={55} pcbY={-6} schSheetName="SENSORS"
+      manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA" }} />
+    <Resistor0603 name="R_HOT_SERIES" resistance="100" pcbX={55} pcbY={10} schSheetName="SENSORS"
+      manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
+      connections={{ pin1: "net.HOT_DATA_MCU", pin2: "net.HOT_SENSOR_DATA" }} />
+    <Resistor0603 name="R_COLD_SERIES" resistance="100" pcbX={55} pcbY={-10} schSheetName="SENSORS"
+      manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
+      connections={{ pin1: "net.COLD_DATA_MCU", pin2: "net.COLD_SENSOR_DATA" }} />
+    <Capacitor100nF name="C_HOT_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={18} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
+    <Capacitor100nF name="C_COLD_SENSOR" maxVoltageRating="50V" pcbX={55} pcbY={-2} schSheetName="SENSORS"
+      connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
+    <USBLC6_2SC6 name="U_SENSOR_ESD" pcbX={55} pcbY={4} schSheetName="SENSORS"
+      connections={{ pin1: "net.HOT_SENSOR_DATA", pin6: "net.HOT_SENSOR_DATA",
+        pin3: "net.COLD_SENSOR_DATA", pin4: "net.COLD_SENSOR_DATA", pin2: "net.GND", pin5: "net.CTRL_3V3" }} />
+    <silkscreentext text="HOT" pcbX={44} pcbY={21} fontSize={0.8} />
+    <silkscreentext text="3V3" pcbX={39} pcbY={8.500007} fontSize={0.55} />
+    <silkscreentext text="DATA" pcbX={39} pcbY={12} fontSize={0.55} />
+    <silkscreentext text="GND" pcbX={39} pcbY={15.499993} fontSize={0.55} />
+    <silkscreentext text="COLD" pcbX={44} pcbY={1} fontSize={0.8} />
+    <silkscreentext text="3V3" pcbX={39} pcbY={-11.499993} fontSize={0.55} />
+    <silkscreentext text="DATA" pcbX={39} pcbY={-8} fontSize={0.55} />
+    <silkscreentext text="GND" pcbX={39} pcbY={-4.500007} fontSize={0.55} />
+  </>
+}

@@ -3,6 +3,9 @@ export const connectorPlacements = {
   J_USB: { pcbX: -33, pcbY: 10, pcbRotation: 270 },
   J_PROGRAM: { pcbX: -33, pcbY: -20, pcbRotation: 270 },
   J_TEC: { pcbX: 34, pcbY: 24, pcbRotation: 90 },
+  J_HOT_SENSOR: { pcbX: 44, pcbY: 12, pcbRotation: 90 },
+  J_COLD_SENSOR: { pcbX: 44, pcbY: -8, pcbRotation: 90 },
+  J_FAN: { pcbX: 44, pcbY: -29, pcbRotation: 90 },
 } as const
 
 export type Point3 = [number, number, number]
@@ -20,3 +23,9 @@ export function connectorPoint(placement: ConnectorPlacement, local: readonly [n
 export const usbFaceLocal: Point3 = [0, -7.237483112, 2.5]
 // Exact C474881 / KF301 footprint pin centres. Z=6 is an illustrative wire channel.
 export const tecPinLocal = { pin1: [-2.499995, 0, 6], pin2: [2.499995, 0, 6] } as const
+// Exact C784941 plated-hole centres; Z=3 approximates the visible wire channel.
+export const sensorPinLocal = { pin1: [-3.499993, 0, 3], pin2: [0, 0, 3], pin3: [3.499993, 0, 3] } as const
+// Exact C240840 contacts/locator. Mating/contact Z is illustrative.
+export const fanPinLocal = { pin1: [3.81, 0.98001455, 6.8], pin2: [1.27, 0.98001455, 6.8],
+  pin3: [-1.27, 0.98001455, 6.8], pin4: [-3.81, 0.98001455, 6.8] } as const
+export const fanLocatorLocal = [-1.27, -1.18000145, 0] as const

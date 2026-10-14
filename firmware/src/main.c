@@ -12,6 +12,7 @@
 #include "profile.h"
 #include "session.h"
 #include "usb_identity.h"
+#include "temperature.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -24,6 +25,7 @@ _Static_assert(PROFILE_OFFSET + FLASH_SECTOR_SIZE == PICO_FLASH_SIZE_BYTES, "Pro
 
 static pd_settings settings, saved_settings;
 static pd_session session;
+static pd_temperature hot_sensor, cold_sensor;
 static bool running, constant_current, measurement_ok, saved_valid, usb_started, usb_attached, flash_valid;
 static uint16_t measured_mv, measured_ma, input_mv, program_mv;
 static uint8_t excessive_samples;
@@ -152,12 +154,15 @@ static bool save_profile(void) {
 }
 static void reply(const char *text) { tud_cdc_write_str(text); tud_cdc_write_str("\r\n"); tud_cdc_write_flush(); }
 static void status(void) {
-  char response[256];
+  char response[480], hot[128], cold[128]; /* Plus CRLF fits the reserved 512-byte CDC space. */
+  uint32_t now = milliseconds();
+  pd_temp_json(&hot_sensor, now, "hot", hot, sizeof hot);
+  pd_temp_json(&cold_sensor, now, "cold", cold, sizeof cold);
   snprintf(response, sizeof response,
-    "{\"run\":%u,\"cc\":%u,\"pd\":%u,\"fault\":\"%s\",\"set_mv\":%u,\"limit_ma\":%u,\"approx_mv\":%u,\"approx_ma\":%u,\"input_mv\":%u,\"saved\":%u,\"boot_ready\":1}",
+    "{\"run\":%u,\"cc\":%u,\"pd\":%u,\"fault\":\"%s\",\"set_mv\":%u,\"limit_ma\":%u,\"approx_mv\":%u,\"approx_ma\":%u,\"input_mv\":%u,\"saved\":%u,\"boot_ready\":1,%s,%s}",
     (unsigned)running, (unsigned)constant_current, (unsigned)pd_ready(), fault ? fault : "NONE",
     (unsigned)settings.voltage_mv, (unsigned)settings.current_ma, (unsigned)measured_mv,
-    (unsigned)measured_ma, (unsigned)input_mv, (unsigned)saved_valid);
+    (unsigned)measured_ma, (unsigned)input_mv, (unsigned)saved_valid, hot, cold);
   reply(response);
 }
 static void command(const char *line) {
@@ -201,7 +206,7 @@ static void usb_task(void) {
   if (!usb_started) return;
   tud_task(); /* USB detach does not change an operating PD output. */
   if (!program_present || !tud_cdc_connected()) { length = 0; overflow = false; return; }
-  if (tud_cdc_write_available() < 256u || boot_pending) return;
+  if (tud_cdc_write_available() < 512u || boot_pending) return;
   unsigned budget = 64;
   while (budget-- && tud_cdc_available()) {
     char ch; tud_cdc_read(&ch, 1);
@@ -217,6 +222,9 @@ static void usb_task(void) {
 }
 int main(void) {
   gpio_init_safe(); kill();
+  pd_onewire_init(PD_HOT_SENSOR_PIN); pd_onewire_init(PD_COLD_SENSOR_PIN);
+  pd_temp_init(&hot_sensor, PD_HOT_SENSOR_PIN, milliseconds());
+  pd_temp_init(&cold_sensor, PD_COLD_SENSOR_PIN, milliseconds());
   bool latched = watchdog_enable_caused_reboot() || watchdog_hw->scratch[FAULT_SCRATCH_INDEX] == FAULT_MAGIC;
   if (latched) watchdog_hw->scratch[FAULT_SCRATCH_INDEX] = FAULT_MAGIC;
   watchdog_enable(500, false);
@@ -236,6 +244,10 @@ int main(void) {
     }
     if (!boot_pending && pd_session_tick(&session, pd_ready(), saved_valid, milliseconds())) {
       settings = saved_settings; start_output();
+    }
+    if (!boot_pending) {
+      pd_temp_tick(&hot_sensor, &pd_onewire_bus, milliseconds());
+      pd_temp_tick(&cold_sensor, &pd_onewire_bus, milliseconds());
     }
     watchdog_update(); sleep_ms(10);
   }

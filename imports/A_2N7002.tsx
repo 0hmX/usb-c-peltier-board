@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -7,8 +6,7 @@ const pinLabels = {
   pin3: ["D"]
 } as const
 
-export const A_2N7002 = (props: ChipProps<typeof pinLabels>) => {
-  const { connections, children, ...partProps } = props
+export const A_2N7002 = (props: Omit<ChipProps<typeof pinLabels>, "connections">) => {
   return (
     <mosfet channelType="n" mosfetMode="enhancement"
       pinLabels={pinLabels}
@@ -54,12 +52,7 @@ export const A_2N7002 = (props: ChipProps<typeof pinLabels>) => {
         pcbRotationOffset: 180,
         modelOriginPosition: { x: 0.000012700000070253736, y: -0.000012699999956566899, z: 0.050795 },
       }}
-      {...partProps}
-    >
-      {children}
-      {Object.entries(connections ?? {}).flatMap(([pin, targets]) =>
-        (typeof targets === "string" ? [targets] : targets ?? []).map((to, index) =>
-          <Fragment key={pin + index}><trace from={`.${props.name} > .${pin}`} to={to} /></Fragment>))}
-    </mosfet>
+      {...props}
+    />
   )
 }

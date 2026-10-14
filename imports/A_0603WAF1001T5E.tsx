@@ -1,12 +1,12 @@
 import type { ResistorProps } from "@tscircuit/props"
 
-export const A_0603WAF1001T5E = (props: Omit<ResistorProps, "resistance">) => {
-  const { name = "R1", ...restProps } = props
+export const A_0603WAF1001T5E = (props: ResistorProps) => {
+  const { name = "R1", resistance = "1kohm", ...restProps } = props
 
   return (
     <resistor
       name={name}
-      resistance="1kohm"
+      resistance={resistance}
       supplierPartNumbers={{
   "jlcpcb": [
     "C21190"
