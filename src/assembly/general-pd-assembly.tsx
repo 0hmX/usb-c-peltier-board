@@ -1,6 +1,6 @@
 import { assembly } from "tscircuit"
 import { GeneralPdDriverBoard } from "../board/general-pd"
-import { moduleModel, usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbe, coldProbe, hotProbeCable, coldProbeCable } from "./models"
+import { moduleModel, usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbe, coldProbe, hotProbeCable, coldProbeCable, fan, fanCable } from "./models"
 
 // CAD-only accessories do not add PCB components, electrical ports or JLC BOM
 // entries. Native assembly.cable cannot attach to generic parts/loose TEC leads.
@@ -39,6 +39,13 @@ export function GeneralPdDriverAssembly({ schematicDisabled = false }: { schemat
     <assembly.part name="COLD_PROBE_CABLE" displayName="HiLetgo factory cable · COLD · red VCC / yellow DATA / black GND"
       cadModel={{ jscad: coldProbeCable.model,
         positionOffset: { x: coldProbeCable.boardPoint[0], y: coldProbeCable.boardPoint[1], z: coldProbeCable.boardPoint[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="FAN_DEFAULT" displayName="Noctua NF-A8 PWM · official NF-A8 family CAD"
+      cadModel={{ jscad: fan.model, positionOffset: { x: fan.position[0], y: fan.position[1], z: fan.position[2] },
+        modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
+    <assembly.part name="FAN_CABLE" displayName="Noctua factory 200 mm sleeved cable · GND / 12 V / tach NC / PWM NC"
+      cadModel={{ jscad: fanCable.model,
+        positionOffset: { x: fanCable.boardPoint[0], y: fanCable.boardPoint[1], z: fanCable.boardPoint[2] },
         modelOriginPosition: { x: 0, y: 0, z: 0 }, modelUnitToMmScale: 1 }} />
   </assembly.device>
 }

@@ -29,7 +29,7 @@ provenance.nativeAssembly = {
   ...provenance.nativeAssembly,
   source: "src/assembly/general-pd-assembly.tsx",
   api: "https://docs.tscircuit.com/elements/assembly-part",
-  geometry: "Native assembly.device + nine CAD-only assembly.part models. They add no PCB components, electrical ports or JLCPCB BOM entries. assembly.cable currently cannot attach to generic parts or loose probe/TEC leads; these external connection paths are documented JSCAD envelopes.",
+  geometry: "Native assembly.device + eleven literal CAD-only assembly.part models. They add no PCB components, electrical ports or JLCPCB BOM entries. The fan uses official NF-A8 family CAD; other peripheral bodies/cables use documented envelopes. assembly.cable currently cannot attach to generic parts or loose leads; these external connection paths are native geometry.",
   components: circuit.filter((e: any) => e.type === "source_component" && e.ftype === "subassembly").map((e: any) => {
     const cad = circuit.find((c: any) => c.type === "cad_component" && c.source_component_id === e.source_component_id)
     if (!cad?.model_jscad || cad.pcb_component_id) throw new Error(`Missing native accessory geometry: ${e.name}`)
@@ -39,11 +39,13 @@ provenance.nativeAssembly = {
     reference: partName, boardConnector, pin: "pin" in part ? part.pin : undefined, boardPointMm: boardPoint, pathMm: path,
     conductors: "conductors" in part ? part.conductors : undefined,
     probePointMm: "probePoint" in part ? part.probePoint : undefined,
+    fanPointMm: "fanPoint" in part ? part.fanPoint : undefined,
+    locatorPointMm: "locatorPoint" in part ? part.locatorPoint : undefined,
   })),
-  mapping: "Connector attachment points derive from the same connectorPlacements used by the real board, with exact supplier-footprint XY insertion/pin offsets. USB Z=2.5 mm, TEC wire-channel Z=6 mm and probe wire-channel Z=3 mm are illustrative; cable and plug fit is not qualified.",
+  mapping: "Connector attachment points derive from shared connector placements and exact supplier-footprint XY insertion/pin offsets. Fan contacts/locator match the actual Molex47053-1000 footprint. USB Z=2.5 mm, TEC Z=6 mm, probe Z=3 mm and fan mating Z=6.8 mm are illustrative; cable bends, plug envelopes and fan exit location are not fit-qualified.",
 }
-if (!purchasedIds.size || provenance.pcb.components.length !== purchasedIds.size || provenance.pcb.copperTestPads.some((pad: any) => !pad.reference) || provenance.nativeAssembly.components.length !== 9)
-  throw new Error("Expected a complete PCB source inventory and nine native accessories")
+if (!purchasedIds.size || provenance.pcb.components.length !== purchasedIds.size || provenance.pcb.copperTestPads.some((pad: any) => !pad.reference) || provenance.nativeAssembly.components.length !== 11)
+  throw new Error("Expected a complete PCB source inventory and eleven native accessories")
 for (const reference of ["TP_BOOTSEL", "TP_SWCLK", "TP_RUN", "TP_SWDIO", "TP_OUT"])
   if (!provenance.pcb.copperTestPads.some((pad: any) => pad.reference === reference)) throw new Error(`Missing required copper feature ${reference}`)
 for (const part of provenance.pcb.components)

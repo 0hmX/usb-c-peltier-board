@@ -10,7 +10,7 @@
   "inventory_sha256": "4c696fe302a953ecbae2b9e88d243c2c0d1fa76fc7e452840901d7a79f1927dd",
   "unique_parts": 54,
   "placements": 134,
-  "source_components": 159,
+  "source_components": 161,
   "pcb_features": [
     "TP_3V3",
     "TP_5V",
@@ -32,6 +32,8 @@
   "external_accessories": [
     "COLD_PROBE",
     "COLD_PROBE_CABLE",
+    "FAN_CABLE",
+    "FAN_DEFAULT",
     "HOT_PROBE",
     "HOT_PROBE_CABLE",
     "TEC_DEFAULT",

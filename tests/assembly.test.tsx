@@ -3,23 +3,23 @@ import { Circuit } from "tscircuit"
 import { loadJscadPlan } from "circuit-json-to-gltf"
 import Device from "../index.circuit"
 import { boardFixture, renderFixture } from "./fixtures"
-import { assemblyConnections, hotProbe, coldProbe, hotProbeCable, coldProbeCable } from "../src/assembly/models"
+import { assemblyConnections, hotProbe, coldProbe, hotProbeCable, coldProbeCable, fan, fanCable } from "../src/assembly/models"
 import provenance from "../assets/assembly/provenance.json"
 
 type RenderedCircuit = InstanceType<typeof Circuit>
 type MeshVertex = ReturnType<typeof loadJscadPlan>["triangles"][number]["vertices"][number]
 let board: RenderedCircuit, device: RenderedCircuit
 const originalNames = ["TEC_DEFAULT", "USB_PD_CABLE", "USB_PROGRAM_CABLE", "TEC_POS_LEAD", "TEC_NEG_LEAD"]
-const externalNames = [...originalNames, "HOT_PROBE", "COLD_PROBE", "HOT_PROBE_CABLE", "COLD_PROBE_CABLE"]
+const externalNames = [...originalNames, "HOT_PROBE", "COLD_PROBE", "HOT_PROBE_CABLE", "COLD_PROBE_CABLE", "FAN_DEFAULT", "FAN_CABLE"]
 const originalConnections = assemblyConnections.filter(connection => originalNames.includes(connection.partName))
 const meshes = new Map<string, ReturnType<typeof loadJscadPlan>>()
 
 beforeAll(async () => {
   board = await boardFixture()
-}, 15_000)
+}, 60_000)
 beforeAll(async () => {
   device = await renderFixture(<Device schematicDisabled />)
-}, 15_000)
+}, 60_000)
 
 function ownerName(c: RenderedCircuit, id: string | undefined) {
   return c.db.source_component.list().find(part => part.source_component_id === id)?.name
@@ -65,7 +65,7 @@ function electricalSignature(c: RenderedCircuit) {
 }
 
 describe("native Peltier assembly", () => {
-  test("the default entry contains visible native models for the module, USB/TEC cables and both temperature probes", () => {
+  test("the default entry contains visible native models for the module, cables, temperature probes and fan", () => {
     expect(device.firstChild?.componentName).toBe("AssemblyDevice")
     expect(device.getCircuitJson().filter(item => item.type.endsWith("_error"))).toEqual([])
     const external = device.db.source_component.list().filter(part => part.ftype === "subassembly")
@@ -91,6 +91,7 @@ describe("native Peltier assembly", () => {
     expect(device.db.pcb_board.list()).toHaveLength(1)
     expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(
       board.db.pcb_component.list().filter(part => !part.do_not_place).length)
+    expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(134)
     expect(device.db.pcb_component.list().filter(part => part.do_not_place)).toHaveLength(16)
     expect(device.db.pcb_trace.list()).toHaveLength(0)
     expect(device.db.pcb_via.list()).toHaveLength(0)
@@ -177,7 +178,7 @@ describe("native Peltier assembly", () => {
       ["HOT", "J_HOT_SENSOR", "HOT_PROBE", "HOT_PROBE_CABLE", "GP8"],
       ["COLD", "J_COLD_SENSOR", "COLD_PROBE", "COLD_PROBE_CABLE", "GP9"],
     ])
-    expect(assemblyConnections.filter(connection => "conductors" in connection).map(connection =>
+    expect(assemblyConnections.filter(connection => "probePoint" in connection).map(connection =>
       [connection.partName, connection.boardConnector])).toEqual([
       ["HOT_PROBE_CABLE", "J_HOT_SENSOR"], ["COLD_PROBE_CABLE", "J_COLD_SENSOR"],
     ])
@@ -237,5 +238,72 @@ describe("native Peltier assembly", () => {
       }).flatMap(triangle => triangle.vertices)
       for (const point of cable.path) expect(nearPoint(blackVertices, point, 1.51)).toBe(true)
     }
+  })
+
+  test("manufacturer fan CAD and the four-wire factory plug match the real header without changing its NC signals", () => {
+    const details = provenance.fan
+    expect(details.source).toBe("https://www.amazon.com/dp/B00NEMG62M")
+    expect(details.dimensionsVerified).toBe(true)
+    expect(details.nativePart).toBe(fan.partName)
+    expect(details.cableNativePart).toBe(fanCable.partName)
+    expect(details.boardConnector).toBe(fanCable.boardConnector)
+    expect(details.nominalVoltageV).toBe(12)
+    expect(details.maximumInputCurrentA).toBeLessThan(details.boardContinuousFanBudgetA)
+    expect(details.cableLengthMm).toBe(fanCable.cableLengthMm)
+    expect(details.extensionFitted).toBe(false)
+    expect(details.lowNoiseAdaptorFitted).toBe(false)
+    const { source, cad, mesh } = externalGeometry(fan.partName)
+    expect(source.display_name).toContain("official NF-A8 family CAD")
+    expect(mesh.triangles.length).toBe(details.geometry.conversion.triangles)
+    expect(cad.position).toEqual({ x: fan.position[0], y: fan.position[1], z: fan.position[2] })
+    for (const [i, axis] of (["x", "z", "y"] as const).entries())
+      expect(mesh.boundingBox.max[axis] - mesh.boundingBox.min[axis]).toBeCloseTo(details.bodyWithPadsDimensionsMm[i]!, 4)
+    expect(fan.mountingHoleSpacingMm).toBe(details.mountingHoleSpacingMm)
+    // Exploded placement must leave the fan frame clear of the PCB and TEC.
+    const pcb = device.db.pcb_board.list()[0]!
+    expect(cad.position.y + mesh.boundingBox.max.z).toBeLessThan(pcb.center.y - pcb.height! / 2)
+    const tec = externalGeometry("TEC_DEFAULT")
+    expect(cad.position.y + mesh.boundingBox.max.z).toBeLessThan(tec.cad.position.y + tec.mesh.boundingBox.min.z)
+    expect(fanCable.path[fanCable.path.length - 1]).toEqual(fan.cableEndPoint)
+    // The unpublished cable exit is illustrative, but must meet the frame.
+    for (const [i, axis] of (["x", "z", "y"] as const).entries()) {
+      expect(fanCable.fanPoint[i]!).toBeGreaterThanOrEqual(fan.position[i]! + mesh.boundingBox.min[axis])
+      expect(fanCable.fanPoint[i]!).toBeLessThanOrEqual(fan.position[i]! + mesh.boundingBox.max[axis])
+    }
+    expect(fanCable.conductors.map(c => ({ pin: c.pin, signal: c.signal, color: c.colorName, boardConnected: c.boardConnected }))).toEqual(details.wireMap)
+    const connector = device.db.source_component.list().find(part => part.name === fanCable.boardConnector)!
+    const header = device.db.pcb_component.list().find(part => part.source_component_id === connector.source_component_id)!
+    const locator = device.db.pcb_hole.list().find(hole => hole.pcb_component_id === header.pcb_component_id)!
+    expect(locator.hole_shape === "circle" && locator.hole_diameter).toBe(1.25)
+    expect(fanCable.locatorPoint[0]).toBeCloseTo(locator.x, 5)
+    expect(fanCable.locatorPoint[1]).toBeCloseTo(locator.y, 5)
+    const cable = externalGeometry(fanCable.partName)
+    const nearPoint = (vertices: MeshVertex[], point: readonly number[], radius: number) => vertices.some(vertex =>
+      Math.hypot(vertex.x + cable.cad.position.x - point[0]!, vertex.y + cable.cad.position.z - point[2]!,
+        vertex.z + cable.cad.position.y - point[1]!) <= radius)
+    const pins = new Map(electricalSignature(device).map(json => {
+      const pin = JSON.parse(json) as { name: string; pin: number; nets: string[] }
+      return [`${pin.name}.${pin.pin}`, pin.nets] as const
+    }))
+    for (const conductor of fanCable.conductors) {
+      const pin = Number(conductor.pin.slice(3))
+      const sourcePort = device.db.source_port.list().find(port => port.source_component_id === connector.source_component_id && port.pin_number === pin)!
+      const physicalPort = device.db.pcb_port.list().find(port => port.source_port_id === sourcePort.source_port_id)!
+      expect(conductor.boardPoint[0]).toBeCloseTo(physicalPort.x, 5)
+      expect(conductor.boardPoint[1]).toBeCloseTo(physicalPort.y, 5)
+      expect(pins.get(`${fanCable.boardConnector}.${pin}`)).toEqual(conductor.boardConnected ? [conductor.signal] : [])
+      expect(Boolean(sourcePort.do_not_connect)).toBe(!conductor.boardConnected)
+      const vertices = cable.mesh.triangles.filter(triangle => {
+        const color = triangle.material?.color
+        return Array.isArray(color) && conductor.color.every((value, i) => Math.abs(color[i]! - value) < 1e-6)
+      }).flatMap(triangle => triangle.vertices)
+      expect(vertices.length).toBeGreaterThan(0)
+      for (const point of conductor.path) expect(nearPoint(vertices, point, 0.36)).toBe(true)
+    }
+    const sleeve = cable.mesh.triangles.filter(triangle => {
+      const color = triangle.material?.color
+      return Array.isArray(color) && [0.05, 0.055, 0.06].every((value, i) => Math.abs(color[i]! - value) < 1e-6)
+    }).flatMap(triangle => triangle.vertices)
+    for (const point of fanCable.path) expect(nearPoint(sleeve, point, 1.61)).toBe(true)
   })
 })

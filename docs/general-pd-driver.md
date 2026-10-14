@@ -54,12 +54,15 @@ A dedicated [TI LMR50410XDBVR](https://www.ti.com/lit/ds/symlink/lmr50410.pdf) b
 
 The keyed **Molex 47053-1000** header connects **pin1=GND, pin2=12V, pin3=tach NC, pin4=PWM NC**. [Noctua's primary PC fan specification](https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf) identifies this header and describes compatible fans' full-speed behavior without a PWM signal. Use a 12 V fan within the continuous and startup supply ratings; 24 V fans and high-current server fans are outside this output's intended range.
 
+The selected fan is the **[Noctua NF-A8 PWM, Amazon B00NEMG62M](https://www.amazon.com/dp/B00NEMG62M)**, the standard beige/brown 12 V model. [Noctua's specifications](https://www.noctua.at/en/products/nf-a8-pwm/specifications) give **0.08 A maximum / 0.96 W**, a factory 4-pin plug and 200 mm sleeved cable, **2200 rpm**, **32.67 CFM**, an SSO2 bearing and **six-year warranty**. It plugs directly into the existing header and runs at full speed with PWM unconnected; use the direct cable without the Low-Noise Adaptor. The 80 × 80 × 25 mm frame is 81 × 81 × 27 mm with its anti-vibration pads. Amazon US showed **In Stock**, **$17.95**, **500+ bought in the past month**, **4.9/5 with 2,269 ratings**, sold by **Noctua Cooling Solutions** and shipped by **Amazon**, checked 14 October 2026. [The selection record](fan-sourcing.json) distinguishes US availability from other delivery regions. The fan and cable are external accessories; the PCB circuit and purchased JLC BOM are unchanged. The assembly shows connectivity and does not specify the hot-side heatsink or establish thermal performance.
+
 ## Parts, cables and debug
 
 | Role | Selected source |
 | --- | --- |
 | Peltier | [HiLetgo TEC1-12706, Amazon B00M1PM7H6](https://www.amazon.com/dp/B00M1PM7H6) |
 | Both temperature probes | [HiLetgo DS18B20 five-pack, Amazon B00M1PM55K](https://www.amazon.com/dp/B00M1PM55K); two used, 1 m factory leads |
+| Fan and factory cable | [Noctua NF-A8 PWM 12 V, Amazon B00NEMG62M](https://www.amazon.com/dp/B00NEMG62M); one used, 200 mm factory cable, 0.08 A maximum |
 | Both probe terminals | Xinlaiya XY302V-3.5-3P, C784941; three positions, 3.5 mm pitch, 16–26 AWG |
 | Fixed 12 V fan supply | TI LMR50410XDBVR, C2841056 / Sunlord SWPA8040S330MT, C83467 |
 | PC fan header | Molex 47053-1000, C240840; [manufacturer drawing](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/470/47053/470531000_sd.pdf) |
@@ -88,7 +91,7 @@ POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indic
 
 The default entrypoint contains a native `assembly.device`, with the board and `assembly.part` CAD geometry visible together in the local dev server's **3D** tab. This follows the [tscircuit assembly API](https://docs.tscircuit.com/guides/advanced-assembly). Peltier and cable geometry add no PCB footprints or electrical nets. The installed `assembly.cable` API requires PCB connector or motor endpoints; these external accessories use explicit geometry tied to the actual board connectors without introducing artificial peripheral PCBs.
 
-The assembly export consumes the final circuit JSON and actual placement. Imported supplier meshes are identified as supplier CAD. Public manufacturer CAD exports were sought for GCT/TI; unavailable bodies use documented drawing-derived envelopes. Nine native accessories show the Peltier, two USB cables, two TEC leads, both probe bodies and both probe cables. The Amazon module uses its listed envelope; probe housings and cable routes illustrate connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
+The assembly export consumes the final circuit JSON and actual placement. Imported supplier meshes are identified as supplier CAD. Eleven native accessories show the Peltier, two USB cables, two TEC leads, both probe bodies and cables, and the Noctua fan with its factory cable. The fan uses manufacturer CAD; the Amazon Peltier uses its listed envelope, while probe housings and cable routes illustrate connectivity. [Provenance](../assets/assembly/provenance.json) records sources and fallbacks, and generated provenance includes the circuit JSON hash. These models are not fit-qualified mechanical CAD.
 
 The preview omits the required hot-side heatsink, cold plate, clamping and thermal interface. Fit these before operation. The board is a power driver rather than a complete refrigeration assembly.
 

@@ -1,8 +1,9 @@
 import type { JscadOperation, JscadPolygon3 } from "jscad-planner"
-import { connectorPlacements, connectorPoint, sensorPinLocal, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
+import fanMesh from "./assets/noctua-nf-a8-pwm.mesh.json"
+import { connectorPlacements, connectorPoint, fanLocatorLocal, fanPinLocal, sensorPinLocal, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
 
 // Circuit coordinates: X/Y follow the PCB, Z is height. Accessory geometry is
-// a documented dimensional envelope, not manufacturer CAD or a cable fit test.
+// documented peripheral geometry; cable routes are not a mechanical fit test.
 const add = (a: Point3, b: Point3): Point3 => a.map((v, i) => v + b[i]!) as Point3
 const subtract = (a: Point3, b: Point3): Point3 => a.map((v, i) => v - b[i]!) as Point3
 const scaled = (a: Point3, scale: number): Point3 => a.map(v => v * scale) as Point3
@@ -120,4 +121,45 @@ function probeCable(boardConnector: "J_HOT_SENSOR" | "J_COLD_SENSOR", partName: 
 
 export const hotProbeCable = probeCable("J_HOT_SENSOR", "HOT_PROBE_CABLE", hotProbe.cableEndPoint)
 export const coldProbeCable = probeCable("J_COLD_SENSOR", "COLD_PROBE_CABLE", coldProbe.cableEndPoint)
-export const assemblyConnections = [usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbeCable, coldProbeCable]
+// Offline tessellation of Noctua's NF-A8 family public STEP: manufacturer
+// external/mounting geometry, including pads. Noctua modifies internal details.
+export const fan = { partName: "FAN_DEFAULT", position: [112, -92, 20] as Point3,
+  cableEndPoint: [72, -68, 20] as Point3, bodyDimensionsMm: [81, 81, 27], mountingHoleSpacingMm: 71.5,
+  model: { type: "createGeom3", polygons: fanMesh.meshes.flatMap(mesh => mesh.triangles.map(indices => ({
+    vertices: indices.map(index => mesh.vertices[index]!) as Point3[], color: mesh.color as Point3,
+  }))) } satisfies JscadOperation }
+
+const fanBoardPoint = connectorPoint(connectorPlacements.J_FAN, [0, 0.98001455, 6.8])
+const fanJoin: Point3 = [fanBoardPoint[0], fanBoardPoint[1], 22]
+const fanColors = [
+  { pin: "pin1", signal: "GND", colorName: "black", boardConnected: true, color: [0.03, 0.03, 0.035] as Point3 },
+  { pin: "pin2", signal: "FAN_12V", colorName: "yellow", boardConnected: true, color: [0.95, 0.76, 0.05] as Point3 },
+  { pin: "pin3", signal: "TACH_NC", colorName: "green", boardConnected: false, color: [0.04, 0.5, 0.12] as Point3 },
+  { pin: "pin4", signal: "PWM_NC", colorName: "blue", boardConnected: false, color: [0.04, 0.18, 0.85] as Point3 },
+]
+const fanConductors = fanColors.map(conductor => {
+  const boardPoint = connectorPoint(connectorPlacements.J_FAN, fanPinLocal[conductor.pin as keyof typeof fanPinLocal])
+  return { ...conductor, boardPoint, path: [boardPoint, [boardPoint[0], boardPoint[1], 11.6], fanJoin] as Point3[] }
+})
+// Approximate slack for the nominal 200 mm factory cable, with no extension or
+// LNA. The shown sleeve plus connector-exit fanout is about 200 mm; the plug's
+// internal leads are separate. Noctua does not specify these bends/exit points.
+const fanPath: Point3[] = [fanJoin, [67, -36, 28], [58, -70, 28],
+  [42, -120.3971, 22], [69, -116, 20], fan.cableEndPoint]
+const plugColor: Point3 = [0.77, 0.74, 0.64]
+function boxPolygons(center: Point3, size: Point3): JscadPolygon3[] {
+  const vertices = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]].map(v =>
+    add(center, v.map((n, i) => n * size[i]! / 2) as Point3))
+  return [[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[0,1,5,4],[3,7,6,2]].map(face => ({ vertices: face.map(i => vertices[i]!), color: plugColor }))
+}
+const fanLocatorPoint = connectorPoint(connectorPlacements.J_FAN, fanLocatorLocal)
+export const fanCable = { partName: "FAN_CABLE", boardConnector: "J_FAN", boardPoint: fanBoardPoint,
+  locatorPoint: fanLocatorPoint, path: fanPath, fanPoint: fan.cableEndPoint, cableLengthMm: 200,
+  conductors: fanConductors,
+  model: { type: "createGeom3", polygons: [
+    ...boxPolygons([0, 0, 0.55], [4.2, 10.2, 8.5]),
+    ...boxPolygons([fanLocatorPoint[0] - fanBoardPoint[0], fanLocatorPoint[1] - fanBoardPoint[1], 0.55], [0.6, 7.62, 4]),
+    ...wirePolygons(fanPath.map(p => subtract(p, fanBoardPoint)), 1.6, [0.05, 0.055, 0.06]),
+    ...fanConductors.flatMap(c => wirePolygons(c.path.map(p => subtract(p, fanBoardPoint)), 0.35, c.color)),
+  ] } satisfies JscadOperation }
+export const assemblyConnections = [usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead, hotProbeCable, coldProbeCable, fanCable]
