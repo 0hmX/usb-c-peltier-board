@@ -1,5 +1,4 @@
 import type { JscadOperation } from "jscad-planner"
-import { design } from "../board/general-pd"
 import { connectorPlacements, connectorPoint, tecPinLocal, usbFaceLocal, type Point3 } from "./connector-placement"
 
 // Circuit coordinates: X/Y follow the PCB, Z is height. Accessory geometry is
@@ -23,8 +22,8 @@ function wire(points: Point3[], radius: number, color: Point3): JscadOperation {
   return colored(color, union(shapes))
 }
 
-export const moduleCenter: Point3 = [design.boardWidthMm / 2 + 72, connectorPlacements.J_TEC.pcbY, 1.8]
-const moduleModel = colored([0.965, 0.969, 0.965], union([
+export const moduleCenter: Point3 = [112, 24, 1.8]
+export const moduleModel = colored([0.965, 0.969, 0.965], union([
   cuboid([38.5, 38.5, 2.2], [0, 0, 0]),
   ...[-1.45, 1.45].map(z => cuboid([40, 40, 0.7], [0, 0, z])),
 ]))
@@ -57,14 +56,9 @@ function tecLead(pin: "pin1" | "pin2", partName: string, offset: number, color: 
     model: wire(path.map(point => subtract(point, boardPoint)), 0.75, color) }
 }
 
-export const assemblyConnections = [
-  usbCable("J_USB", "USB_PD_CABLE", 1, [0.19, 0.21, 0.25]),
-  usbCable("J_PROGRAM", "USB_PROGRAM_CABLE", -1, [0.68, 0.73, 0.79]),
-  tecLead("pin1", "TEC_POS_LEAD", -3, [0.78, 0.17, 0.21]),
-  tecLead("pin2", "TEC_NEG_LEAD", 3, [0.125, 0.14, 0.17]),
-]
+export const usbPdCable = usbCable("J_USB", "USB_PD_CABLE", 1, [0.19, 0.21, 0.25])
+export const usbProgramCable = usbCable("J_PROGRAM", "USB_PROGRAM_CABLE", -1, [0.68, 0.73, 0.79])
+export const tecPositiveLead = tecLead("pin1", "TEC_POS_LEAD", -3, [0.78, 0.17, 0.21])
+export const tecNegativeLead = tecLead("pin2", "TEC_NEG_LEAD", 3, [0.125, 0.14, 0.17])
 
-export const assemblyModels = [
-  { partName: "TEC_DEFAULT", displayName: "HiLetgo TEC1-12706 · 40 × 40 × 3.6 mm listing envelope", position: moduleCenter, model: moduleModel },
-  ...assemblyConnections,
-]
+export const assemblyConnections = [usbPdCable, usbProgramCable, tecPositiveLead, tecNegativeLead]

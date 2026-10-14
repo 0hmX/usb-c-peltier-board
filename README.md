@@ -29,6 +29,8 @@ bun run dev
 
 Cloud builds run `bun run build` to generate `dist/index/circuit.json` from the TypeScript source. The dev server displays the PCB, schematic and native 3D assembly directly from source. Run `bun run assembly` locally for standalone 3D exports.
 
+Circuit TSX uses explicit parts, coordinates, purchasing identifiers and pin connections. Small files group the programming supply, RP2040, sensing and status/debug circuitry; CAD geometry calculations stay in the assembly model file.
+
 `index.circuit.tsx` opens the complete native assembly in the dev server's **3D** tab: the board, selected Peltier and two USB cables. The **PCB** and **Schematic** tabs show the driver circuitry. External accessories use `assembly.device` / `assembly.part` CAD geometry and do not add purchased PCB parts or electrical nets. The export also produces `dist/assembly/assembly.html`, `assembly.glb` and `assembly.png`. Supplier component CAD, manufacturer drawing-derived envelopes and illustrative cable geometry are distinguished in [model provenance](assets/assembly/provenance.json).
 
 See [design and sources](docs/general-pd-driver.md), [JLC inventory](docs/component-sourcing.csv), [stock snapshot](docs/jlc-stock-audit.json), and [firmware build/flash instructions](firmware/README.md). The Peltier and cables are separately purchased accessories. Source/netlist checks and an ARM cross-build pass; USB, power regulation and thermal performance have not been bench-tested. This unrouted prototype is not a manufacturing release.

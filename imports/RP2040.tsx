@@ -61,7 +61,17 @@ const pinLabels = {
 } as const
 
 const pinAttributes = {
-  ...Object.fromEntries([1, 10, 22, 23, 33, 42, 43, 44, 48, 49, 50].map(pin => ["pin" + pin, { requiresPower: true }])),
+  pin1: { requiresPower: true },
+  pin10: { requiresPower: true },
+  pin22: { requiresPower: true },
+  pin23: { requiresPower: true },
+  pin33: { requiresPower: true },
+  pin42: { requiresPower: true },
+  pin43: { requiresPower: true },
+  pin44: { requiresPower: true },
+  pin48: { requiresPower: true },
+  pin49: { requiresPower: true },
+  pin50: { requiresPower: true },
   pin19: { requiresGround: true },
   pin57: { requiresGround: true },
 } as const

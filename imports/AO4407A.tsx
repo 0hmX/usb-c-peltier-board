@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -12,13 +11,19 @@ const pinLabels = {
   pin8: ["D4"]
 } as const
 
-export const AO4407A = (props: ChipProps<typeof pinLabels>) => {
-  // MOSFET connections accept three logical pins; preserve all eight package
-  // pins with explicit native traces, including every parallel source/drain.
-  const { connections, children, ...partProps } = props
+export const AO4407A = (props: Omit<ChipProps<typeof pinLabels>, "connections">) => {
   return (
     <mosfet channelType="p" mosfetMode="enhancement"
-      pinAttributes={Object.fromEntries([1, 2, 3, 4, 5, 6, 7, 8].map(pin => ["pin" + pin, { isPassive: true }]))}
+      pinAttributes={{
+        pin1: { isPassive: true },
+        pin2: { isPassive: true },
+        pin3: { isPassive: true },
+        pin4: { isPassive: true },
+        pin5: { isPassive: true },
+        pin6: { isPassive: true },
+        pin7: { isPassive: true },
+        pin8: { isPassive: true },
+      }}
       pinLabels={pinLabels}
       symbol={
         <symbol>
@@ -92,12 +97,7 @@ export const AO4407A = (props: ChipProps<typeof pinLabels>) => {
         pcbRotationOffset: 0,
         modelOriginPosition: { x: -0.000012700000070253736, y: 0, z: 0 },
       }}
-      {...partProps}
-    >
-      {children}
-      {Object.entries(connections ?? {}).flatMap(([pin, targets]) =>
-        (typeof targets === "string" ? [targets] : targets ?? []).map((to, index) =>
-          <Fragment key={pin + index}><trace from={`.${props.name} > .${pin}`} to={to} /></Fragment>))}
-    </mosfet>
+      {...props}
+    />
   )
 }
