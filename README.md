@@ -27,7 +27,7 @@ bun run scripts/build-assembly.ts
 bun run dev
 ```
 
-Cloud builds use `bunx tscircuit build --ci --concurrency 4`. The configured `build:ci` command generates the circuit/site/previews first, then bundles ESM and CommonJS with Bun while keeping package dependencies external. Bun keeps compiler memory use low. The package points to compiled JavaScript and retains its TypeScript source entry for types; `bun run typecheck` still checks the whole project.
+Cloud builds run `bun run build` to generate `dist/index/circuit.json` from the TypeScript source. The dev server displays the PCB, schematic and native 3D assembly directly from source. Run `bun run assembly` locally for standalone 3D exports.
 
 `index.circuit.tsx` opens the complete native assembly in the dev server's **3D** tab: the board, selected Peltier and two USB cables. The **PCB** and **Schematic** tabs show the driver circuitry. External accessories use `assembly.device` / `assembly.part` CAD geometry and do not add purchased PCB parts or electrical nets. The export also produces `dist/assembly/assembly.html`, `assembly.glb` and `assembly.png`. Supplier component CAD, manufacturer drawing-derived envelopes and illustrative cable geometry are distinguished in [model provenance](assets/assembly/provenance.json).
 
