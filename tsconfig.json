@@ -23,12 +23,5 @@
   "include": [
     "**/*.ts",
     "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "work",
-    "firmware/build",
-    ".claude"
   ]
 }
