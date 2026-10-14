@@ -27,33 +27,20 @@ export const AO4407A = (props: Omit<ChipProps<typeof pinLabels>, "connections">)
       pinLabels={pinLabels}
       symbol={
         <symbol>
-          <port name="pin1" pinNumber={1} aliases={["S3"]} direction="down" schX={0} schY={-0.6} schStemLength={0.2} />
-          <port name="pin5" pinNumber={5} aliases={["D1"]} direction="up" schX={0} schY={0.6} schStemLength={0.2} />
-          <port name="pin2" pinNumber={2} aliases={["S2"]} direction="down" schX={0.2} schY={-0.6} schStemLength={0.2} />
-          <port name="pin6" pinNumber={6} aliases={["D2"]} direction="up" schX={0.2} schY={0.6} schStemLength={0.2} />
-          <port name="pin8" pinNumber={8} aliases={["D4"]} direction="up" schX={0.4} schY={0.6} schStemLength={0.2} />
-          <schematicpath points={[{"x":-0.4,"y":0},{"x":-0.24,"y":0}]} strokeColor="#880000" />
-          <port name="pin7" pinNumber={7} aliases={["D3"]} direction="up" schX={-0.2} schY={0.6} schStemLength={0.2} />
-          <port name="pin4" pinNumber={4} aliases={["G"]} direction="left" schX={-0.6} schY={0} schStemLength={0.2} />
-          <port name="pin3" pinNumber={3} aliases={["S1"]} direction="down" schX={-0.2} schY={-0.6} schStemLength={0.2} />
-          <schematicpath points={[{"x":0.2,"y":0.2},{"x":0.2,"y":0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.4,"y":0.4},{"x":-0.2,"y":0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.2,"y":-0.4},{"x":-0.2,"y":-0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.2,"y":-0.4},{"x":0.2,"y":-0.2}]} strokeColor="#880000" />
-          <schematicrect schX={0.1} schY={0} width={1} height={0.8} strokeWidth={0.02} color="#880000" />
-          <schematicpath points={[{"x":0,"y":0},{"x":-0.12,"y":0.04},{"x":-0.12,"y":-0.04},{"x":0,"y":0}]} strokeColor="#880000" isFilled fillColor="#FEFEFE" />
-          <schematicpath points={[{"x":0.2,"y":-0.04},{"x":0.26,"y":0.06},{"x":0.14,"y":0.06},{"x":0.2,"y":-0.04}]} strokeColor="#880000" isFilled fillColor="#FEFEFE" />
-          <schematicpath points={[{"x":0,"y":-0.2},{"x":0.2,"y":-0.2},{"x":0.2,"y":-0.04}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0,"y":0.14},{"x":0,"y":0.2},{"x":0.2,"y":0.2},{"x":0.2,"y":0.06}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0,"y":0.14},{"x":-0.2,"y":0.14}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":0},{"x":0,"y":0},{"x":0,"y":-0.2}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0,"y":-0.14},{"x":-0.2,"y":-0.14}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.24,"y":0.18},{"x":-0.24,"y":-0.18}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":0.1},{"x":-0.2,"y":0.18}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":-0.04},{"x":-0.2,"y":0.04}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":-0.18},{"x":-0.2,"y":-0.1}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.26,"y":-0.04},{"x":0.24,"y":-0.04},{"x":0.16,"y":-0.04},{"x":0.14,"y":-0.04}]} strokeColor="#880000" />
-          <schematictext schX={-0.01} schY={0.82} text="{NAME}" fontSize={0.2} anchor="bottom_center" />
+          <port name="pin1" pinNumber={1} aliases={["S3"]} direction="down" schX={-0.6} schY={-1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin2" pinNumber={2} aliases={["S2"]} direction="down" schX={0} schY={-1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin3" pinNumber={3} aliases={["S1"]} direction="down" schX={0.6} schY={-1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin4" pinNumber={4} aliases={["G"]} direction="left" schX={-1.6} schY={0} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin5" pinNumber={5} aliases={["D1"]} direction="up" schX={-0.9} schY={1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin6" pinNumber={6} aliases={["D2"]} direction="up" schX={-0.3} schY={1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin7" pinNumber={7} aliases={["D3"]} direction="up" schX={0.3} schY={1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          <port name="pin8" pinNumber={8} aliases={["D4"]} direction="up" schX={0.9} schY={1.4} schStemLength={0.25} schPinLabelFontSize="sm" />
+          {/* Package terminal banks join the same P-MOS source and drain. */}
+          <schematicpath svgPath="M -0.9 1.15 H 0.9 M -0.6 -1.15 H 0.6 M 0 1.15 V 0.5 M 0 -1.15 V -0.5 M -1.35 0 H -0.6 M -0.6 -0.45 V 0.45 M -0.5 -0.45 V -0.25 M -0.5 -0.1 V 0.1 M -0.5 0.25 V 0.45" strokeColor="#880000" />
+          <schematicpath svgPath="M -0.5 0.35 H 0 V 0.5 H 0.5 V 0.15 M -0.5 -0.35 H 0 V -0.5 H 0.5 V -0.1 M -0.5 0 H 0 V -0.35 M 0.35 -0.1 H 0.65" strokeColor="#880000" />
+          <schematicpath svgPath="M 0 0 L -0.3 0.1 V -0.1 Z M 0.5 -0.1 L 0.65 0.15 H 0.35 Z" strokeColor="#880000" isFilled fillColor="#FEFEFE" />
+          <schematictext schX={1.3} schY={0.3} text="{NAME}" fontSize={0.2} anchor="left" />
+          <schematictext schX={1.3} schY={-0.1} text="AO4407A" fontSize={0.18} anchor="left" />
         </symbol>
       }
       supplierPartNumbers={{

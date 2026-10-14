@@ -17,8 +17,8 @@ export const GRM31CC72A475KE11L = (props: Omit<CapacitorProps, "capacitance">) =
 }}
       manufacturerPartNumber="GRM31CC72A475KE11L"
       footprint={<footprint>
-        <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="1.575mm" pcbY="0mm" width="1.15mm" height="1.75mm" shape="rect" solderMaskMargin="0.05mm" />
-<smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-1.575mm" pcbY="0mm" width="1.15mm" height="1.75mm" shape="rect" solderMaskMargin="0.05mm" />
+        <smtpad solderPasteMargin={0} portHints={["pin2", "neg"]} pcbX="1.575mm" pcbY="0mm" width="1.15mm" height="1.75mm" shape="rect" solderMaskMargin="0.05mm" />
+<smtpad solderPasteMargin={0} portHints={["pin1", "pos"]} pcbX="-1.575mm" pcbY="0mm" width="1.15mm" height="1.75mm" shape="rect" solderMaskMargin="0.05mm" />
 <courtyardoutline outline={[{"x":-2.4,"y":1.2},{"x":2.4,"y":1.2},{"x":2.4,"y":-1.2},{"x":-2.4,"y":-1.2},{"x":-2.4,"y":1.2}]} />
       </footprint>}
       cadModel={{

@@ -14,8 +14,8 @@ export const UMK325BJ106KM_T = (props: Omit<CapacitorProps, "capacitance">) => {
 }}
       manufacturerPartNumber="UMK325BJ106KM-T"
       footprint={<footprint>
-        <smtpad portHints={["pin2"]} pcbX="1.517396mm" pcbY="0mm" width="1.634998mm" height="2.6999946mm" shape="rect" />
-<smtpad portHints={["pin1"]} pcbX="-1.517396mm" pcbY="0mm" width="1.634998mm" height="2.6999946mm" shape="rect" />
+        <smtpad portHints={["pin2", "neg"]} pcbX="1.517396mm" pcbY="0mm" width="1.634998mm" height="2.6999946mm" shape="rect" />
+<smtpad portHints={["pin1", "pos"]} pcbX="-1.517396mm" pcbY="0mm" width="1.634998mm" height="2.6999946mm" shape="rect" />
 <silkscreenpath route={[{"x":2.5635965999999826,"y":-1.4262099999999691},{"x":2.5635965999999826,"y":1.4262100000000828}]} />
 <silkscreenpath route={[{"x":2.4111966000000393,"y":1.578610000000026},{"x":0.7761985999999297,"y":1.578610000000026}]} />
 <silkscreenpath route={[{"x":0.7761985999999297,"y":-1.578610000000026},{"x":2.4111966000000393,"y":-1.578610000000026}]} />

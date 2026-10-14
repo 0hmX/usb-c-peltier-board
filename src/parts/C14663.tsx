@@ -18,8 +18,8 @@ export const CC0603KRX7R9BB104 = (props: Omit<CapacitorProps, "capacitance">) =>
 }}
       manufacturerPartNumber="CC0603KRX7R9BB104"
       footprint={<footprint>
-        <smtpad solderPasteMargin={0} portHints={["pin2"]} pcbX="0.7mm" pcbY="0mm" width="0.8mm" height="0.9mm" shape="rect" solderMaskMargin="0.05mm" />
-<smtpad solderPasteMargin={0} portHints={["pin1"]} pcbX="-0.7mm" pcbY="0mm" width="0.8mm" height="0.9mm" shape="rect" solderMaskMargin="0.05mm" />
+        <smtpad solderPasteMargin={0} portHints={["pin2", "neg"]} pcbX="0.7mm" pcbY="0mm" width="0.8mm" height="0.9mm" shape="rect" solderMaskMargin="0.05mm" />
+<smtpad solderPasteMargin={0} portHints={["pin1", "pos"]} pcbX="-0.7mm" pcbY="0mm" width="0.8mm" height="0.9mm" shape="rect" solderMaskMargin="0.05mm" />
 <courtyardoutline outline={[{"x":-1.35,"y":0.75},{"x":1.35,"y":0.75},{"x":1.35,"y":-0.75},{"x":-1.35,"y":-0.75},{"x":-1.35,"y":0.75}]} />
       </footprint>}
       cadModel={{

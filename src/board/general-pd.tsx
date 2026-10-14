@@ -17,19 +17,34 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     title="USB-C PD Peltier driver · adjustable CC/CV · unrouted prototype"
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled}
     pcbSx={{ "& footprint silkscreentext": { visibility: "hidden" } }}
-    schTraceAutoLabelEnabled schMaxTraceDistance={0.5}>
+    schTraceAutoLabelEnabled schMaxTraceDistance={8}>
     <net name="GND" isGroundNet />
+    <net name="TEC_POS" isPowerNet />
+    <net name="OUTPUT_CURRENT_ADC" isPowerNet={false} />
+    <net name="OUTPUT_VOLTAGE_ADC" isPowerNet={false} />
+    <net name="INPUT_VOLTAGE_ADC" isPowerNet={false} />
+    <net name="PROGRAM_VBUS_SENSE" isPowerNet={false} />
     <schematicsheet name="PD" displayName="100 W USB-C PD input" sheetIndex={1} />
     <schematicsheet name="POWER" displayName="Adjustable voltage and current limits" sheetIndex={2} />
-    <schematicsheet name="CONTROL" displayName="USB programming, debug and status" sheetIndex={3} sheetSize="ANSI_B" sheetWidth={279.4} sheetHeight={431.8} />
-    <schematicsheet name="FAN" displayName="Fixed 12 V fan power" sheetIndex={4} />
-    <schematicsheet name="SENSORS" displayName="Hot- and cold-side temperature probes" sheetIndex={5} />
-    <USB4085_GF_A name="J_USB" pcbX={-33} pcbY={10} pcbRotation={270} schSheetName="PD"
+    <schematicsheet name="LOGIC" displayName="USB programming and logic supplies" sheetIndex={3} />
+    <schematicsheet name="MCU" displayName="RP2040 signals, flash and clock" sheetIndex={4} />
+    <schematicsheet name="MCU_POWER" displayName="RP2040 power and decoupling" sheetIndex={5} />
+    <schematicsheet name="MONITOR" displayName="Output permission and voltage/current monitoring" sheetIndex={6} />
+    <schematicsheet name="DEBUG" displayName="Status LEDs and debug test pads" sheetIndex={7} />
+    <schematicsheet name="FAN" displayName="Fixed 12 V fan power" sheetIndex={8} />
+    <schematicsheet name="SENSORS" displayName="Hot- and cold-side temperature probes" sheetIndex={9} />
+    <USB4085_GF_A name="J_USB" pcbX={-33} pcbY={10} pcbRotation={270} schX={-11} schY={4.2} schRotation={0} schSheetName="PD"
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
         pin3: "net.VBUS_RAW", pin7: "net.VBUS_RAW", pin10: "net.VBUS_RAW", pin15: "net.VBUS_RAW" }}
       noConnect={["pin4", "pin5", "pin6", "pin11", "pin12", "pin13"]} />
-    <CYPD3177_24LQXQT name="U_PD" pcbX={-29} pcbY={19} schSheetName="PD"
+    <CYPD3177_24LQXQT name="U_PD" pcbX={-29} pcbY={19} schX={-2} schY={2.5} schRotation={0} schSheetName="PD" schWidth={4.5} schHeight={4.8}
+      schPinArrangement={{
+        leftSide: { direction: "top-to-bottom", pins: ["CC1", "CC2", "D_NEG", "D_POS", "HPI_INT", "GPIO_1", "FLIP", "HPI_SDA", "HPI_SCL"] },
+        rightSide: { direction: "top-to-bottom", pins: ["VBUS_FET_EN", "VDC_OUT", "FAULT", "SAFE_PWR_EN", "DNU1", "DNU2"] },
+        topSide: { direction: "left-to-right", pins: ["VBUS_IN", "VBUS_MIN", "VBUS_MAX", "ISNK_COARSE", "ISNK_FINE"] },
+        bottomSide: { direction: "left-to-right", pins: ["VDDD", "VCCD", "GND1", "GND2", "EP"] },
+      }}
       connections={{
         // Datasheet tables 2–4: MIN=MAX=20 V, COARSE=5 A, FINE=0 A.
         pin1: "net.PD_3V3", pin2: "net.PD_3V3", pin3: "net.PD_GATE_DRIVE",
@@ -38,7 +53,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
         pin22: "net.GND", pin23: "net.PD_3V3", pin24: "net.PD_CORE", pin25: "net.GND",
       }} noConnect={["SAFE_PWR_EN", "HPI_INT", "GPIO_1", "FLIP", "HPI_SDA", "HPI_SCL", "DNU1", "DNU2", "D_NEG", "D_POS"]} />
     {/* Every parallel MOSFET source and drain pin is wired explicitly. */}
-    <AO4407A name="Q_INPUT" pcbX={-31} pcbY={1} schSheetName="PD" />
+    <AO4407A name="Q_INPUT" pcbX={-31} pcbY={1} schX={7.5} schY={5} schRotation={0} schSheetName="PD" />
     <trace from=".Q_INPUT > .pin1" to="net.PFET_SOURCE" />
     <trace from=".Q_INPUT > .pin2" to="net.PFET_SOURCE" />
     <trace from=".Q_INPUT > .pin3" to="net.PFET_SOURCE" />
@@ -47,7 +62,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <trace from=".Q_INPUT > .pin6" to="net.VBUS_RAW" />
     <trace from=".Q_INPUT > .pin7" to="net.VBUS_RAW" />
     <trace from=".Q_INPUT > .pin8" to="net.VBUS_RAW" />
-    <AO4407A name="Q_REVERSE" pcbX={-21} pcbY={1} schSheetName="PD" />
+    <AO4407A name="Q_REVERSE" pcbX={-21} pcbY={1} schX={13} schY={5} schRotation={0} schSheetName="PD" />
     <trace from=".Q_REVERSE > .pin1" to="net.PFET_SOURCE" />
     <trace from=".Q_REVERSE > .pin2" to="net.PFET_SOURCE" />
     <trace from=".Q_REVERSE > .pin3" to="net.PFET_SOURCE" />
@@ -56,40 +71,58 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <trace from=".Q_REVERSE > .pin6" to="net.VBUS_QUALIFIED" />
     <trace from=".Q_REVERSE > .pin7" to="net.VBUS_QUALIFIED" />
     <trace from=".Q_REVERSE > .pin8" to="net.VBUS_QUALIFIED" />
-    <GRM31CC72A475KE11L name="C_USB" pcbX={-35} pcbY={23} schSheetName="PD"
+    <GRM31CC72A475KE11L name="C_USB" pcbX={-35} pcbY={23} schX={-8} schY={7} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_PD_VBUS" maxVoltageRating="50V" pcbX={-27} pcbY={13} schSheetName="PD"
+    <Capacitor100nF name="C_PD_VBUS" maxVoltageRating="50V" pcbX={-27} pcbY={13} schX={-5.5} schY={7} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_PD_3V3" maxVoltageRating="25V" pcbX={-31} pcbY={26} schSheetName="PD"
+    <Capacitor1uF name="C_PD_3V3" maxVoltageRating="25V" pcbX={-31} pcbY={26} schX={-7} schY={-1.5} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.PD_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_PD_3V3_HF1" maxVoltageRating="50V" pcbX={-27} pcbY={26} schSheetName="PD"
+    <Capacitor100nF name="C_PD_3V3_HF1" maxVoltageRating="50V" pcbX={-27} pcbY={26} schX={-4} schY={-1.5} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.PD_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_PD_3V3_HF2" maxVoltageRating="50V" pcbX={-23} pcbY={26} schSheetName="PD"
+    <Capacitor100nF name="C_PD_3V3_HF2" maxVoltageRating="50V" pcbX={-23} pcbY={26} schX={-1} schY={-1.5} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.PD_3V3", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_PD_CORE" maxVoltageRating="25V" pcbX={-24} pcbY={18} schSheetName="PD"
+    <Capacitor1uF name="C_PD_CORE" maxVoltageRating="25V" pcbX={-24} pcbY={18} schX={2} schY={-1.5} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.PD_CORE", pin2: "net.GND" }} />
-    <MMBT3904_RANGE_100_300_ name="Q_PD_FAULT" pcbX={-14} pcbY={-4} schSheetName="PD"
+    <MMBT3904_RANGE_100_300_ name="Q_PD_FAULT" pcbX={-14} pcbY={-4} schX={-2} schY={-6} schRotation={0} schSheetName="PD"
       connections={{ pin1: "net.PD_FAULT_BASE", pin2: "net.GND", pin3: "net.DRIVER_ENABLE" }} />
-    <Resistor0603 name="R_GATE" resistance="1k" pcbX={-33} pcbY={-5} schSheetName="PD"
+    <Resistor0603 name="R_GATE" resistance="1k" pcbX={-33} pcbY={-5} schX={3.5} schY={5} schRotation={0} schSheetName="PD"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.PD_GATE_DRIVE", pin2: "net.PD_GATE" }} />
-    <Resistor0603 name="R_GATE_OFF" resistance="49.9k" pcbX={-28} pcbY={-5} schSheetName="PD"
+    <Resistor0603 name="R_GATE_OFF" resistance="49.9k" pcbX={-28} pcbY={-5} schX={10.5} schY={2} schRotation={90} schSheetName="PD"
       manufacturerPartNumber="0603WAF4992T5E" supplierPartNumbers={{ jlcpcb: ["C23184"] }}
       connections={{ pin1: "net.PFET_SOURCE", pin2: "net.PD_GATE" }} />
-    <Resistor0603 name="R_DC_SENSE" resistance="1k" pcbX={-25} pcbY={8} schSheetName="PD"
+    <Resistor0603 name="R_DC_SENSE" resistance="1k" pcbX={-25} pcbY={8} schX={13} schY={0} schRotation={270} schSheetName="PD"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.PD_VDC_OUT" }} />
-    <Resistor0603 name="R_FAULT_BASE" resistance="10k" pcbX={-21} pcbY={-4} schSheetName="PD"
+    <Resistor0603 name="R_FAULT_BASE" resistance="10k" pcbX={-21} pcbY={-4} schX={-6} schY={-6} schRotation={0} schSheetName="PD"
       manufacturerPartNumber="0603WAF1002T5E" supplierPartNumbers={{ jlcpcb: ["C25804"] }}
       connections={{ pin1: "net.PD_FAULT", pin2: "net.PD_FAULT_BASE" }} />
-    <Resistor0603 name="R_FAULT_OFF" resistance="100k" pcbX={-25} pcbY={-4} schSheetName="PD"
+    <Resistor0603 name="R_FAULT_OFF" resistance="100k" pcbX={-25} pcbY={-4} schX={-3.5} schY={-8} schRotation={270} schSheetName="PD"
       manufacturerPartNumber="0603WAF1003T5E" supplierPartNumbers={{ jlcpcb: ["C25803"] }}
       connections={{ pin1: "net.PD_FAULT_BASE", pin2: "net.GND" }} />
+    <group schSheetName="PD">
+      <schematictext text="100 W USB-C PD INPUT" schX={-11} schY={9.5} fontSize={0.35} anchor="left" />
+      <schematictext text="20 V / 5 A contract - use a 5 A e-marked cable" schX={-11} schY={8.7} fontSize={0.22} anchor="left" />
+      <schematictext text="Back-to-back P-FETs" schX={7.5} schY={8.5} fontSize={0.25} anchor="left" />
+      <schematictext text="Straps: MIN = MAX = 20 V; COARSE = 5 A; FINE = 0 A" schX={-10} schY={-3.8} fontSize={0.22} anchor="left" />
+      <schematictext text="PD FAULT disables the load converter" schX={-10} schY={-5} fontSize={0.25} anchor="left" />
+      <netlabel net="GND" connection=".J_USB > .pin2" schX={-10.3} schY={1.4} anchorSide="top" />
+      <netlabel net="GND" connection=".U_PD > .pin19" schX={-1.6} schY={-0.8} anchorSide="top" />
+      <netlabel net="GND" connection=".C_USB > .pin2" schX={-8} schY={5.3} anchorSide="top" />
+      <netlabel net="GND" connection=".C_PD_VBUS > .pin2" schX={-5.5} schY={5.3} anchorSide="top" />
+      <netlabel net="GND" connection=".C_PD_3V3 > .pin2" schX={-7} schY={-2.7} anchorSide="top" />
+      <netlabel net="GND" connection=".C_PD_3V3_HF1 > .pin2" schX={-4} schY={-2.7} anchorSide="top" />
+      <netlabel net="GND" connection=".C_PD_3V3_HF2 > .pin2" schX={-1} schY={-2.7} anchorSide="top" />
+      <netlabel net="GND" connection=".C_PD_CORE > .pin2" schX={2} schY={-2.7} anchorSide="top" />
+      <netlabel net="GND" connection=".Q_PD_FAULT > .pin2" schX={-2} schY={-7.1} anchorSide="top" />
+      <netlabel net="GND" connection=".R_FAULT_OFF > .pin2" schX={-3.5} schY={-9.1} anchorSide="top" />
+    </group>
     <AdjustablePowerStage />
     <ControlBlock />
     <FanPowerBlock />
     <TemperaturePorts />
-    <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schSheetName="POWER"
+    <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schX={19.5} schY={3} schSheetName="POWER"
+      schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
     <silkscreentext text="+" pcbX={28.5} pcbY={21.5} fontSize={1} />

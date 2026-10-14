@@ -15,8 +15,8 @@ export const OVZ101M1ETR_0606 = (props: Omit<CapacitorProps, "capacitance">) => 
 }}
       manufacturerPartNumber="OVZ101M1ETR-0606"
       footprint={<footprint>
-        <smtpad portHints={["pin2"]} pcbX="2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
-<smtpad portHints={["pin1"]} pcbX="-2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
+        <smtpad portHints={["pin2", "neg"]} pcbX="2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
+<smtpad portHints={["pin1", "pos"]} pcbX="-2.669921mm" pcbY="0mm" width="3.499993mm" height="1.1999976mm" shape="rect" />
 <silkscreenpath route={[{"x":3.3555685999999696,"y":-0.7392924000000676},{"x":3.3755837999999585,"y":-3.3757108000000926},{"x":-1.9812762000001385,"y":-3.3757108000000926},{"x":-3.3757362000001194,"y":-1.9812508000001117},{"x":-3.362350400000082,"y":-0.6858508000001393}]} />
 <silkscreenpath route={[{"x":3.369386200000008,"y":0.7076185999999325},{"x":3.376091799999813,"y":3.3761171999998396},{"x":-1.9801078000000416,"y":3.3761171999998396},{"x":-3.3762442000000874,"y":1.9799807999999075},{"x":-3.3762442000000874,"y":0.6857491999999183}]} />
 <silkscreentext text="{NAME}" pcbX="-0.013081mm" pcbY="4.375152mm" anchorAlignment="center" fontSize="1mm" />
