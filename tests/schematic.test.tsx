@@ -1,6 +1,7 @@
 import { beforeAll, describe, expect, test } from "bun:test"
 import { Circuit } from "tscircuit"
 import { GeneralPdDriverBoard } from "../src/board/general-pd"
+import { placedComponents, FIXTURE_RENDER_TIMEOUT } from "./fixtures"
 
 let circuit: InstanceType<typeof Circuit>
 const functionalSheets = {
@@ -15,7 +16,7 @@ beforeAll(async () => {
   circuit = new Circuit({ platform: { partsEngineDisabled: true } })
   circuit.add(<GeneralPdDriverBoard />)
   await circuit.renderUntilSettled()
-}, 60_000)
+}, FIXTURE_RENDER_TIMEOUT)
 
 describe("readable functional schematics", () => {
   test("all functional sheets use A4 styling and render without errors or schematic warnings", () => {
@@ -41,7 +42,7 @@ describe("readable functional schematics", () => {
     const sources = new Map(circuit.db.source_component.list().map(part => [part.source_component_id, part.name]))
     const symbols = circuit.db.schematic_component.list()
     const represented = new Set(symbols.map(symbol => symbol.source_component_id))
-    expect(circuit.db.pcb_component.list().filter(part => !represented.has(part.source_component_id))
+    expect(placedComponents(circuit).filter(part => !represented.has(part.source_component_id))
       .map(part => sources.get(part.source_component_id))).toEqual([])
     const sheets = new Set(circuit.db.schematic_sheet.list().map(sheet => sheet.schematic_sheet_id))
     const sheetNames = new Map(circuit.db.schematic_sheet.list().map(sheet => [sheet.schematic_sheet_id, sheet.name]))

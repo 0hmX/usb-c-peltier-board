@@ -27,7 +27,7 @@ export const XY302V_3_5_3P = (props: ConnectorProps) => {
   ]
 }}
       manufacturerPartNumber="XY302V-3.5-3P"
-      footprint={<footprint>
+      footprint={<footprint insertionDirection="from_bottom">
         <platedhole  portHints={["pin1"]} pcbX="-3.499993mm" pcbY="0mm" outerDiameter="1.6999966mm" holeDiameter="1.1000232mm" shape="circle" />
 <platedhole  portHints={["pin2"]} pcbX="0mm" pcbY="0mm" outerDiameter="1.6999966mm" holeDiameter="1.1000232mm" shape="circle" />
 <platedhole  portHints={["pin3"]} pcbX="3.499993mm" pcbY="0mm" outerDiameter="1.6999966mm" holeDiameter="1.1000232mm" shape="circle" />

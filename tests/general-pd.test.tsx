@@ -1,6 +1,7 @@
 import { beforeAll, describe, expect, test } from "bun:test"
 import { Circuit } from "tscircuit"
-import { boardFixture } from "./fixtures"
+import { computeGapBetweenCopper } from "@tscircuit/circuit-json-util"
+import { boardFixture, FIXTURE_RENDER_TIMEOUT, placedComponents } from "./fixtures"
 
 let circuit: InstanceType<typeof Circuit>
 const roots = new Map<string, string>()
@@ -25,7 +26,7 @@ beforeAll(async () => {
     join([...trace.connected_source_port_ids, ...trace.connected_source_net_ids])
   for (const part of circuit.db.source_component.list())
     for (const ports of part.internally_connected_source_port_ids ?? []) join(ports)
-}, 15_000)
+}, FIXTURE_RENDER_TIMEOUT)
 
 function component(name: string) {
   const part = circuit.db.source_component.list().find(item => item.name === name)
@@ -77,14 +78,12 @@ function directCapacitance(rail: string) {
 }
 
 describe("general USB-C PD Peltier driver", () => {
-  test("every placed part is sourced, with an error-free, unrouted and separated placement", () => {
+  test("every placed part is sourced, with an error-free and separated placement", () => {
     const parts = circuit.db.source_component.list()
     const purchased = parts.filter(part => !(part.ftype === "simple_test_point" &&
       "footprint_variant" in part && part.footprint_variant === "pad"))
     expect(purchased.filter(part => !part.manufacturer_part_number ||
       !part.supplier_part_numbers?.jlcpcb?.some(number => /^C\d+$/.test(number))).map(part => part.name)).toEqual([])
-    expect(circuit.db.pcb_trace.list()).toHaveLength(0)
-    expect(circuit.db.pcb_via.list()).toHaveLength(0)
     expect(circuit.getCircuitJson().filter(item => item.type.endsWith("_error")).map(item =>
       "message" in item ? item.message : item.type)).toEqual([])
 
@@ -94,12 +93,13 @@ describe("general USB-C PD Peltier driver", () => {
     expect([width, height]).toEqual([100, 80])
     expect(board.center.x - width / 2).toBe(-40) // Preserve the original USB mating edge.
     // Copper-only DNP test pads need board area and probe access too.
-    const placed = circuit.db.pcb_component.list()
+    const placed = placedComponents(circuit)
     const nameOf = (id: string) => parts.find(part => part.source_component_id === id)?.name ?? id
     const outOfBounds = placed.filter(part =>
       Math.abs(part.center.x - board.center.x) + part.width / 2 > width / 2 + 0.01 ||
       Math.abs(part.center.y - board.center.y) + part.height / 2 > height / 2 + 0.01)
     expect(outOfBounds.map(part => nameOf(part.source_component_id))).toEqual([])
+    const pads = [...circuit.db.pcb_smtpad.list(), ...circuit.db.pcb_plated_hole.list()]
     const overlaps: string[] = []
     for (let i = 0; i < placed.length; i++) {
       for (let j = i + 1; j < placed.length; j++) {
@@ -109,6 +109,13 @@ describe("general USB-C PD Peltier driver", () => {
         if (a.layer === b.layer &&
           Math.abs(a.center.x - b.center.x) < (a.width + b.width) / 2 + clearance &&
           Math.abs(a.center.y - b.center.y) < (a.height + b.height) / 2 + clearance) {
+          if (a.do_not_place || b.do_not_place) {
+            // Round probe pads can clear a pad corner while their square bounds do not.
+            const aPads = pads.filter(pad => pad.pcb_component_id === a.pcb_component_id)
+            const bPads = pads.filter(pad => pad.pcb_component_id === b.pcb_component_id)
+            if (aPads.length && bPads.length && aPads.every(pad =>
+              bPads.every(other => computeGapBetweenCopper(pad, other) >= clearance))) continue
+          }
           overlaps.push(`${nameOf(a.source_component_id)} / ${nameOf(b.source_component_id)}`)
         }
       }

@@ -132,5 +132,31 @@
     {"code": "C8545", "requested_mpn": "2N7002", "url": "https://jlcpcb.com/partdetail/2N7002/C8545", "componentCode": "C8545", "componentModelEn": "2N7002", "componentBrandEn": "Jiangsu Changjing Electronics Technology Co., Ltd.", "componentSpecificationEn": "SOT-23", "overseasStockCount": 1860851, "canPresaleNumber": 1698661, "preMinPurchaseNum": 645, "lossNumber": 5, "leastPatchNumber": 10, "componentLibraryType": "base", "assemblyComponentFlag": false, "isBuyComponent": "1", "allowPostFlag": true, "noBuyReason": null, "status": "public_page_payload_verified", "observed_at_utc": "2026-10-14T12:08:43Z", "designators": ["Q_MCU_RELEASE"], "quantity_per_board": 1},
     {"code": "C92856", "requested_mpn": "UMK325BJ106KM-T", "url": "https://jlcpcb.com/partdetail/UMK325BJ106KM-T/C92856", "componentCode": "C92856", "componentModelEn": "UMK325BJ106KM-T", "componentBrandEn": "Taiyo Yuden", "componentSpecificationEn": "1210", "overseasStockCount": 116613, "canPresaleNumber": 116175, "preMinPurchaseNum": 28, "lossNumber": 2, "leastPatchNumber": 5, "componentLibraryType": "expand", "assemblyComponentFlag": false, "isBuyComponent": "1", "allowPostFlag": true, "noBuyReason": null, "status": "public_page_payload_verified", "observed_at_utc": "2026-10-14T12:08:43Z", "designators": ["C_DRIVER_IN1", "C_DRIVER_IN2", "C_DRIVER_IN3", "C_DRIVER_IN4", "C_FAN_IN"], "quantity_per_board": 5},
     {"code": "C97521", "requested_mpn": "W25Q128JVSIQ", "url": "https://jlcpcb.com/partdetail/W25Q128JVSIQ/C97521", "componentCode": "C97521", "componentModelEn": "W25Q128JVSIQ", "componentBrandEn": "Winbond Elec", "componentSpecificationEn": "SOIC-8-208mil", "overseasStockCount": 40850, "canPresaleNumber": 23678, "preMinPurchaseNum": 4, "lossNumber": 0, "leastPatchNumber": 0, "componentLibraryType": "base", "assemblyComponentFlag": false, "isBuyComponent": "1", "allowPostFlag": true, "noBuyReason": null, "status": "public_page_payload_verified", "observed_at_utc": "2026-10-14T12:08:44Z", "designators": ["U_FLASH"], "quantity_per_board": 1}
-  ]
+  ],
+  "current_bom_status": {
+    "status": "historic_snapshot_requires_refresh",
+    "changed_on": "2026-10-17",
+    "reason": "MCU and flash decouplers changed to manufacturer-sourced 0402 parts for compact routing. Original observed stock records remain historical evidence, not current BOM qualification.",
+    "replacement_groups": [
+      {
+        "designators": [
+          "C_ADC_AVDD",
+          "C_DVDD23",
+          "C_DVDD50",
+          "C_FLASH",
+          "C_IOVDD1",
+          "C_IOVDD10",
+          "C_IOVDD22",
+          "C_IOVDD33",
+          "C_IOVDD42",
+          "C_IOVDD49",
+          "C_USB_VDD"
+        ],
+        "manufacturer_part_number": "CL05B104KB5NNNC",
+        "jlcpcb_part_number": "C960916",
+        "rating": "100nF 50V X7R"
+      }
+    ],
+    "current_bom": "docs/component-sourcing.csv"
+  }
 }

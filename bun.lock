@@ -5,9 +5,11 @@
     "": {
       "name": "tec-usbc-board",
       "devDependencies": {
+        "@flatten-js/core": "1.6.14",
         "@types/bun": "^1.4.2",
         "@types/react": "^19.0.8",
         "circuit-json-to-gltf": "0.0.151",
+        "flatbush": "4.6.2",
         "jscad-planner": "0.0.19",
         "poppygl": "0.0.34",
         "three": "0.179.1",

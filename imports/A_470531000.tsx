@@ -20,7 +20,7 @@ export const A_470531000 = (props: ConnectorProps) => {
       // Molex SD-47053-001 C4: contact holes 1.02 +/-0.05 mm,
       // locator hole 1.25 +/-0.05 mm, 2.54 mm contact pitch.
       // https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/470/47053/470531000_sd.pdf
-      footprint={<footprint>
+      footprint={<footprint insertionDirection="from_above">
         <hole pcbX="-1.27mm" pcbY="-1.18000145mm" diameter="1.25mm" />
 <platedhole  portHints={["pin1"]} pcbX="3.81mm" pcbY="0.98001455mm" outerDiameter="1.6999966mm" holeDiameter="1.02mm" shape="circle" />
 <platedhole  portHints={["pin2"]} pcbX="1.27mm" pcbY="0.98001455mm" outerDiameter="1.6999966mm" holeDiameter="1.02mm" shape="circle" />
