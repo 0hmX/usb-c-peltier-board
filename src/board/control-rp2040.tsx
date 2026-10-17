@@ -119,7 +119,7 @@ export function Rp2040Control() {
       connections={{ pin1: "net.MCU_RUN", pin2: "net.GND" }} />
     <Capacitor100nF name="C_FLASH" schX={13} schY={7} schRotation={270} maxVoltageRating="50V" pcbX={-7} pcbY={-4} pcbRotation={90} schSheetName="MCU"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor15pF name="C_XIN" schX={-6} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={-3.5} pcbY={-23} pcbRotation={0} schSheetName="MCU"
+    <Capacitor15pF name="C_XIN" schX={-6} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={-3.5} pcbY={-23} pcbRotation={180} schSheetName="MCU"
       connections={{ pin1: "net.XIN", pin2: "net.GND" }} />
     <Capacitor15pF name="C_XOUT" schX={-0.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={3.5} pcbY={-25} pcbRotation={0} schSheetName="MCU"
       connections={{ pin1: "net.XOUT_CRYSTAL", pin2: "net.GND" }} />
@@ -138,7 +138,7 @@ export function Rp2040Control() {
     <Resistor0603 name="R_USB_DP" schX={-5} schY={-6.5} schRotation={180} resistance="27" pcbX={8.5} pcbY={-13.5} schSheetName="MCU"
       manufacturerPartNumber="0603WAF270JT5E" supplierPartNumbers={{ jlcpcb: ["C25190"] }}
       connections={{ pin1: "net.PROGRAM_USB_DP", pin2: "net.RP_USB_DP" }} />
-    <Resistor0603 name="R_XOUT" schX={-2.8} schY={3.5} schRotation={0} resistance="1k" pcbX={3.5} pcbY={-23} schSheetName="MCU"
+    <Resistor0603 name="R_XOUT" schX={-2.8} schY={3.5} schRotation={0} resistance="1k" pcbX={3.5} pcbY={-23} pcbRotation={180} schSheetName="MCU"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.XOUT", pin2: "net.XOUT_CRYSTAL" }} />
     <Resistor0603 name="R_BOOTSEL" schX={-1.5} schY={7} schRotation={0} resistance="1k" pcbX={7} pcbY={-5} schSheetName="MCU"

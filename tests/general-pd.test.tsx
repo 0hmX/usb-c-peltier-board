@@ -77,14 +77,12 @@ function directCapacitance(rail: string) {
 }
 
 describe("general USB-C PD Peltier driver", () => {
-  test("every placed part is sourced, with an error-free, unrouted and separated placement", () => {
+  test("every placed part is sourced, with an error-free and separated placement", () => {
     const parts = circuit.db.source_component.list()
     const purchased = parts.filter(part => !(part.ftype === "simple_test_point" &&
       "footprint_variant" in part && part.footprint_variant === "pad"))
     expect(purchased.filter(part => !part.manufacturer_part_number ||
       !part.supplier_part_numbers?.jlcpcb?.some(number => /^C\d+$/.test(number))).map(part => part.name)).toEqual([])
-    expect(circuit.db.pcb_trace.list()).toHaveLength(0)
-    expect(circuit.db.pcb_via.list()).toHaveLength(0)
     expect(circuit.getCircuitJson().filter(item => item.type.endsWith("_error")).map(item =>
       "message" in item ? item.message : item.type)).toEqual([])
 

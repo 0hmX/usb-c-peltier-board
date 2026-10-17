@@ -8,13 +8,14 @@ import { AdjustablePowerStage } from "./power-stage"
 import { ControlBlock } from "./control"
 import { FanPowerBlock } from "./fan-power"
 import { TemperaturePorts } from "./temperature-ports"
+import { InitialRouting } from "./routing"
 import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E"
 import { CC0603KRX7R9BB104 as Capacitor100nF } from "../parts/C14663"
 import { CC0603KRX7R8BB105 as Capacitor1uF } from "../../imports/CC0603KRX7R8BB105"
 
 export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
   return <board width={100} height={80} outlineOffsetX={10} outlineOffsetY={-10} layers={4} thickness={1.6}
-    title="USB-C PD Peltier driver · adjustable CC/CV · unrouted prototype"
+    title="USB-C PD Peltier driver · adjustable CC/CV · routing in progress"
     routingDisabled routeRemaining={false} schematicDisabled={schematicDisabled}
     pcbSx={{ "& footprint silkscreentext": { visibility: "hidden" } }}
     schTraceAutoLabelEnabled schMaxTraceDistance={8}>
@@ -121,6 +122,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <ControlBlock />
     <FanPowerBlock />
     <TemperaturePorts />
+    <InitialRouting />
     <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schX={19.5} schY={3} schSheetName="POWER"
       schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
