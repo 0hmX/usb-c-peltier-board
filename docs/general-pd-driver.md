@@ -19,7 +19,7 @@ The [Hebei reference datasheet](https://www.hebeiltd.com.cn/peltier.datasheet/TE
 | Programming input | USB 2.0 data and 5 V logic supply |
 | Fan output | Fixed 12 V, 0.5 A / 6 W continuous budget; qualified PD only |
 | Temperature ports | Two independent powered DS18B20 inputs on GPIO8 / GPIO9 |
-| Board | 100 × 80 mm, 1.6 mm, four layers, no traces or vias |
+| Board | 100 × 80 mm, nominal 1.6 mm, four layers, routed power/signals and ground pours |
 
 Voltage is regulated **before the 10 mΩ shunt**, which drops approximately 55 mV at 5.5 A plus wiring losses. USB STATUS reports approximate voltage at the TEC terminal. The 2.1 V setting floor provides nominal margin above the converter's 2 V current-sense common-mode accuracy boundary after the shunt. Current regulation under overload can reduce output below that boundary; low-voltage accuracy and short-circuit behavior need bench validation. IC, shunt and divider tolerances remain uncalibrated.
 
@@ -40,7 +40,7 @@ For other modules, set ceilings within their allowed operating limits, allowing 
 
 Internal feedback ratio 0.0752 caps converter DAC full-scale at about 15.96 V. Software selects at most 15 V and enforces V × I ≤72 W. Allow a further 6 W for the fan plus both converters' losses and logic power under the 100 W input budget. This budget is not an independent input-current limit; the PD controller requests current but does not itself measure/enforce it.
 
-The first-pass switching network uses approximately 395 kHz, a 4.7 µH coil, four 10 µF / 50 V input MLCCs plus 100 µF / 35 V bulk, four 22 µF / 25 V pre-shunt MLCCs, and 100 µF / 25 V post-shunt bulk. Sense filtering is 10 Ω per tap plus 220 nF differential. Compensation starts with TI EVM values of 27.4 kΩ / 4.7 nF / 100 pF. Validate these over the full range and actual capacitor DC bias. At assumed 90% efficiency, 72 W output requires 80 W before auxiliary/connector losses; continuous capability is unmeasured. Lower-power PD contracts are rejected.
+The switching network uses approximately 395 kHz, a 4.7 µH coil, four 10 µF / 50 V input MLCCs plus 100 µF / 35 V bulk, four 22 µF / 25 V pre-shunt MLCCs, and 100 µF / 25 V post-shunt bulk. Sense filtering is 10 Ω per tap plus 220 nF differential. Compensation starts with TI EVM values of 27.4 kΩ / 4.7 nF / 100 pF. Validate these over the full range and actual capacitor DC bias. At assumed 90% efficiency, 72 W output requires 80 W before auxiliary/connector losses; continuous capability is unmeasured. Lower-power PD contracts are rejected.
 
 ## Temperature probes and fan power
 
@@ -81,11 +81,19 @@ The selected fan is the **[Noctua NF-A8 PWM, Amazon B00NEMG62M](https://www.amaz
 | POWER / RUN / FAULT | Yellow KT-0603Y C2287 / green KT-0603YG C2289 / red KT-0603R C2286 |
 | Both USB cables | [Cable Matters 201440](https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx), 1 m, 5 A, e-marked, USB 2.0 data |
 
-[Inventory](component-sourcing.csv) records **134 purchased placements across 54 exact JLC SKUs**. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain direct JLC product URLs, stock and observation times for the current board. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
+[Inventory](component-sourcing.csv) records **134 purchased placements across 55 exact JLC SKUs**. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain historical observations for the original 54 SKUs; stock for the added C960916 capacitor still needs checking. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
 
 Use factory Peltier leads in the terminal; seller lengths/gauges vary. Cable extensions require their own current/temperature qualification. Both selected USB cables support data, although PD POWER uses only power/CC. The model distinguishes their roles by color and labels; these are illustrative cable shapes.
 
 POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indicates a latched fault. The **16 debug pads** expose SWDIO, SWCLK, BOOTSEL, RUN/reset, 3V3, GND, raw PD, qualified PD, LOGIC5V, TEC terminal, pre-shunt output, driver EN, ISP, ISN, SCL and SDA. They are 1.5 mm copper pads, with no fitted component or JLC SKU. BOOTSEL connects to QSPI chip-select through 1 kΩ; hold it to GND during reset to enter the ROM loader without buttons. Silkscreen keeps these functional labels, port names, polarity and LED labels; automatic component reference text is hidden.
+
+## PCB routing and fabrication
+
+The four-layer layout combines broad top power copper, local inner2 power areas, a whole-board inner1 ground plane and a separate inner2 ground reference beneath USB. Capacitor ground banks and nearby ground stitches connect the return copper. Separate Kelvin branches leave the inner edges of the shunt lands; power-pour notches keep load current out of those branches. USB, QSPI, clock, control, fan and sensor signals retain their original logical connections and no-connect assignments.
+
+Physical checks inspect rendered pads, wires, plated holes, vias and pours, alongside the original electrical net partition. They cover missing connections, shorts, floating copper, clearances, minimum widths and drills; narrowly identified thermal via-in-pad exceptions require the specified fabrication process. Validation results belong to the final rendered artifact and do not substitute for electrical or thermal measurements.
+
+Specify **JLC041621-7628**, nominal **1.6 mm**, **2 oz outer / 1 oz inner copper**, and **epoxy-filled, planarized, copper-capped POFV** for exposed-pad thermal vias. [PCB fabrication requirements](pcb-fabrication.md) contain the exact layer thicknesses, 90 Ω USB geometry, local power-width exceptions and acceptance checks. The 6 A / 72 W setting remains a design target until the assembled board is qualified at the intended ambient and airflow.
 
 ## Assembly and qualification
 
@@ -95,4 +103,4 @@ The assembly export consumes the final circuit JSON and actual placement. Import
 
 The preview omits the required hot-side heatsink, cold plate, clamping and thermal interface. Fit these before operation. The board is a power driver rather than a complete refrigeration assembly.
 
-Before manufacture, route/review power and return copper, Kelvin sensing, decoupling, gate drive, USB data, EMI/ESD and heat spreading. Bench-check USB enumeration/UF2/recovery; both orientations and simultaneous supplies; backfeed/inrush; saved-profile startup and corrupt/interrupted saves; PD detach/reset; current/voltage tolerances and compensation; short circuit and output-off discharge; watchdog/control-supply loss; and sustained connector/cable/board temperatures. Native tests and a firmware cross-build do not establish these measurements.
+Before manufacture, review the generated copper and drill files against the [fabrication requirements](pcb-fabrication.md), including stackup, exposed-pad via treatment, power transitions and USB references. Bench-check USB enumeration/UF2/recovery; both orientations and simultaneous supplies; backfeed/inrush; saved-profile startup and corrupt/interrupted saves; PD detach/reset; current/voltage tolerances and compensation; short circuit and output-off discharge; watchdog/control-supply loss; and sustained connector/cable/board temperatures. Native tests and a firmware cross-build do not establish these measurements.

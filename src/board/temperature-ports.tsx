@@ -1,3 +1,4 @@
+import { TemperatureRouting } from "./temperature-routes"
 import { XY302V_3_5_3P as SensorTerminal } from "../parts/XY302V_3_5_3P"
 import { USBLC6_2SC6 } from "../../imports/USBLC6_2SC6"
 import { CC0603KRX7R9BB104 as Capacitor100nF } from "../parts/C14663"
@@ -8,6 +9,7 @@ import { A_0603WAF1001T5E as Resistor0603 } from "../../imports/A_0603WAF1001T5E
 // suitable firmware. Existing SDA/SCL debug pads expose the shared I2C bus.
 export function TemperaturePorts() {
   return <>
+    <TemperatureRouting />
     <SensorTerminal name="J_HOT_SENSOR" pcbX={44} pcbY={12} pcbRotation={90} schX={10} schY={3} schRotation={0} schSheetName="SENSORS"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA", pin3: "net.GND" }}>
       <schematictext text="HOT · DS18B20 · GP8" schX={-15} schY={4.5} anchor="center" fontSize={0.5} />

@@ -20,7 +20,7 @@ For another module, configure limits within its ratings before connecting PD. Th
 
 ## Board and build
 
-The **100 × 80 mm, four-layer board has initial manual routing**. It extends to the right and bottom, keeping the USB mating edge and existing circuit placement. It has **134 purchased component placements**, all with concrete JLCPCB identifiers, plus **16 labeled copper debug pads** for SWD, boot/reset, rails, enable, current sensing and I²C. The pads are PCB features, excluded from the purchased BOM. Silkscreen retains connector, polarity, LED and debug labels; component reference text is hidden.
+The **100 × 80 mm, four-layer board** routes power and signals with broad power copper, Kelvin shunt sensing, a whole-board inner1 ground plane and an inner2 ground reference beneath USB. It retains the original electrical net partition and separate PD/programming supply paths. It has **134 purchased component placements**, all with concrete JLCPCB identifiers, plus **16 labeled copper debug pads** for SWD, boot/reset, rails, enable, current sensing and I²C. The pads are PCB features, excluded from the purchased BOM. Silkscreen retains connector, polarity, LED and debug labels; component reference text is hidden.
 
 ```sh
 bun install --frozen-lockfile
@@ -33,9 +33,11 @@ bun run dev
 
 Cloud builds use tscircuit’s default pipeline to generate the preview site (`dist/index.html`), preview images, circuit JSON and JavaScript library exports from source. The dev server displays the PCB, schematic and native 3D assembly directly from source. Run `bun run assembly` locally for standalone 3D exports.
 
-The first routing pass adds 64 top-layer traces for PD control, the crystal/reset network, LEDs, ADC filters, permission logic, local supplies, fan and sensor circuitry. C_XIN and R_XOUT rotate 180° to keep clock traces on the top layer. `tests/routing.test.tsx` checks endpoint connectivity, trace widths and copper geometry explicitly because `routingDisabled` also disables native routing DRC. Whole-board connectivity remains incomplete.
+Routing checks compare the original net partition and inspect actual pads, traces, vias and pours for connectivity, shorts, clearances and legal dimensions. `tests/routing.test.tsx` invokes physical and native checks explicitly for the saved copper. These checks do not establish thermal performance or USB compliance.
 
-Next, revise bypass-capacitor placement to satisfy existing 1 mm limits, tighten switching loops, route the 6 A power path and Kelvin sense taps, establish ground planes, then finish USB/QSPI and the remaining signals. The initial routing is not an ampacity or signal-integrity sign-off.
+After editing source order or saved routes, run `bun run routing:rebind` to regenerate source associations without changing copper geometry, then rerun the routing tests. An optional output path, such as `bun run routing:rebind work/final.circuit.json`, saves the same circuit render for further audits without rendering again. Preserve `sourcePort` on local constrained branches; leave it unset on global supply trunks so they do not inherit a bypass capacitor's short-route limit.
+
+Fabrication targets **JLC041621-7628**, nominal **1.6 mm**, **2 oz outer / 1 oz inner copper**, with **epoxy-filled, copper-capped vias (POFV)** wherever thermal vias intersect exposed solder lands. The USB pair uses a calculator-derived 90 Ω target. [Fabrication requirements](docs/pcb-fabrication.md) record the exact stack, via process, measured local power-width exceptions and required bench qualification.
 
 Circuit TSX uses explicit parts, coordinates, purchasing identifiers and pin connections. Small files group the programming supply, RP2040, sensing, fan power and status/debug circuitry; CAD geometry calculations stay in the assembly model file.
 
@@ -43,4 +45,4 @@ In **Schematic**, use the **Sheet** menu to follow the nine A4 pages: PD input, 
 
 `index.circuit.tsx` opens the complete native assembly in the dev server's **3D** tab: the board, selected Peltier, two USB cables, both temperature probes, the Noctua fan and their factory cables. The **PCB** and **Schematic** tabs show the driver circuitry. External accessories use `assembly.device` / `assembly.part` CAD geometry and do not add purchased PCB parts or electrical nets. The export also produces `dist/assembly/assembly.html`, `assembly.glb` and `assembly.png`. Supplier component CAD, manufacturer fan CAD and illustrative probe/cable geometry are distinguished in [model provenance](assets/assembly/provenance.json).
 
-See [design and sources](docs/general-pd-driver.md), [JLC inventory](docs/component-sourcing.csv), [stock snapshot](docs/jlc-stock-audit.json), [Amazon probe selection](docs/sensor-sourcing.json), [Amazon fan selection](docs/fan-sourcing.json), and [firmware build/flash instructions](firmware/README.md). The Peltier, probes, fan and cables are separately purchased accessories. Source/netlist checks and an ARM cross-build pass; USB, power regulation and thermal performance have not been bench-tested. Routing is incomplete; this prototype is not a manufacturing release.
+See [design and sources](docs/general-pd-driver.md), [JLC inventory](docs/component-sourcing.csv), [stock snapshot](docs/jlc-stock-audit.json), [Amazon probe selection](docs/sensor-sourcing.json), [Amazon fan selection](docs/fan-sourcing.json), and [firmware build/flash instructions](firmware/README.md). The Peltier, probes, fan and cables are separately purchased accessories. USB, power regulation and thermal performance have not been bench-tested. Fabricator acceptance of the stack and via process, followed by hardware qualification, remains necessary before manufacturing release.

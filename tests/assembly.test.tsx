@@ -2,7 +2,7 @@ import { beforeAll, describe, expect, test } from "bun:test"
 import { Circuit } from "tscircuit"
 import { loadJscadPlan } from "circuit-json-to-gltf"
 import Device from "../index.circuit"
-import { boardFixture, renderFixture } from "./fixtures"
+import { boardFixture, renderFixture, placedComponents, FIXTURE_RENDER_TIMEOUT } from "./fixtures"
 import { assemblyConnections, hotProbe, coldProbe, hotProbeCable, coldProbeCable, fan, fanCable } from "../src/assembly/models"
 import provenance from "../assets/assembly/provenance.json"
 
@@ -16,10 +16,10 @@ const meshes = new Map<string, ReturnType<typeof loadJscadPlan>>()
 
 beforeAll(async () => {
   board = await boardFixture()
-}, 60_000)
+}, FIXTURE_RENDER_TIMEOUT)
 beforeAll(async () => {
   device = await renderFixture(<Device schematicDisabled />)
-}, 60_000)
+}, FIXTURE_RENDER_TIMEOUT)
 
 function ownerName(c: RenderedCircuit, id: string | undefined) {
   return c.db.source_component.list().find(part => part.source_component_id === id)?.name
@@ -89,10 +89,10 @@ describe("native Peltier assembly", () => {
 
   test("the mechanical assembly preserves the entire physical PCB and its electrical connections", () => {
     expect(device.db.pcb_board.list()).toHaveLength(1)
-    expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(
-      board.db.pcb_component.list().filter(part => !part.do_not_place).length)
-    expect(device.db.pcb_component.list().filter(part => !part.do_not_place)).toHaveLength(134)
-    expect(device.db.pcb_component.list().filter(part => part.do_not_place)).toHaveLength(16)
+    expect(placedComponents(device).filter(part => !part.do_not_place)).toHaveLength(
+      placedComponents(board).filter(part => !part.do_not_place).length)
+    expect(placedComponents(device).filter(part => !part.do_not_place)).toHaveLength(134)
+    expect(placedComponents(device).filter(part => part.do_not_place)).toHaveLength(16)
     expect(physicalSignature(device)).toEqual(physicalSignature(board))
     expect(electricalSignature(device)).toEqual(electricalSignature(board))
   })

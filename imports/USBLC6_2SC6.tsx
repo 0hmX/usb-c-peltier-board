@@ -13,6 +13,7 @@ export const USBLC6_2SC6 = (props: ChipProps<typeof pinLabels>) => {
   return (
     <chip
       pinLabels={pinLabels}
+      internallyConnectedPins={[["pin1", "pin6"], ["pin3", "pin4"]]}
       pinAttributes={{ pin1: { isPassive: true }, pin2: { requiresGround: true, isPassive: true },
         pin3: { isPassive: true }, pin4: { isPassive: true }, pin5: { isPassive: true, requiresPower: true }, pin6: { isPassive: true } }}
       symbol={

@@ -26,12 +26,12 @@ export function ProgrammingAndLogicPower() {
         pin3: "net.PROGRAM_VBUS", pin7: "net.PROGRAM_VBUS", pin10: "net.PROGRAM_VBUS", pin15: "net.PROGRAM_VBUS",
         pin4: "net.PROGRAM_USB_DP", pin13: "net.PROGRAM_USB_DP", pin5: "net.PROGRAM_USB_DM", pin12: "net.PROGRAM_USB_DM" }}
       noConnect={["SBU1", "SBU2"]} />
-    <USBLC6_2SC6 name="U_PROGRAM_ESD" schX={-2} schY={7} schRotation={0} pcbX={-26} pcbY={-25} schSheetName="LOGIC"
+    <USBLC6_2SC6 name="U_PROGRAM_ESD" schX={-2} schY={7} schRotation={0} pcbX={-27.7} pcbY={-20} pcbRotation={90} schSheetName="LOGIC"
       schWidth={2.5} schHeight={2}
       schPinArrangement={{ leftSide: [1, 3], rightSide: [6, 4], topSide: [5], bottomSide: [2] }}
       connections={{ pin1: "net.PROGRAM_USB_DM", pin6: "net.PROGRAM_USB_DM", pin3: "net.PROGRAM_USB_DP",
         pin4: "net.PROGRAM_USB_DP", pin2: "net.GND", pin5: "net.LOGIC_5V" }} />
-    <Capacitor100nF name="C_PROGRAM_ESD" schX={2} schY={9} schRotation={270} maxVoltageRating="50V" pcbX={-26} pcbY={-28} schSheetName="LOGIC"
+    <Capacitor100nF name="C_PROGRAM_ESD" schX={2} schY={9} schRotation={270} maxVoltageRating="50V" pcbX={-27.7} pcbY={-23} pcbRotation={0} schSheetName="LOGIC"
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
     {/* Program USB powers only logic. TPS2116 prevents either USB source feeding
         the other, and avoids a Schottky drop on the main converter's VCC supply. */}
@@ -40,38 +40,38 @@ export function ProgrammingAndLogicPower() {
       schPinArrangement={{ leftSide: [3, 6], rightSide: [2, 7], topSide: [8], bottomSide: [1, 4, 5] }}
       connections={{ pin1: "net.GND", pin2: "net.LOGIC_5V", pin7: "net.LOGIC_5V", pin3: "net.AUX_5V",
         pin4: "net.GND", pin5: "net.GND", pin6: "net.PROGRAM_VBUS" }} />
-    <Capacitor1uF name="C_PROGRAM_IN" schX={0} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-26} pcbY={-20} schSheetName="LOGIC"
+    <Capacitor1uF name="C_PROGRAM_IN" schX={0} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-18.750064} pcbY={-14.35} pcbRotation={90} schSheetName="LOGIC"
       connections={{ pin1: "net.PROGRAM_VBUS", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_LOGIC_MUX_OUT" schX={8} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-16} pcbY={-20} schSheetName="LOGIC"
+    <Capacitor1uF name="C_LOGIC_MUX_OUT" schX={8} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-20.4} pcbY={-19.7} pcbRotation={270} schSheetName="LOGIC"
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
-    <LMR50410Y5FQDBVRQ1 name="U_AUX" schX={-10} schY={-4} schRotation={0} pcbX={-21} pcbY={-8} schSheetName="LOGIC"
+    <LMR50410Y5FQDBVRQ1 name="U_AUX" schX={-10} schY={-4} schRotation={0} pcbX={-21} pcbY={-9} pcbRotation={180} schSheetName="LOGIC"
       schWidth={3} schHeight={2.5}
       schPinArrangement={{ leftSide: [5, 4], rightSide: [6, 3], topSide: [1], bottomSide: [2] }}
       connections={{ pin1: "net.AUX_BOOT", pin2: "net.GND", pin3: "net.AUX_5V",
         pin4: "net.VBUS_RAW", pin5: "net.VBUS_RAW", pin6: "net.AUX_SW" }} />
-    <SWPA4018S4R7MT name="L_AUX" schX={-5} schY={-4} schRotation={0} pcbX={-14} pcbY={-8} schSheetName="LOGIC"
+    <SWPA4018S4R7MT name="L_AUX" schX={-5} schY={-4} schRotation={0} pcbX={-15} pcbY={-10.2} pcbRotation={0} schSheetName="LOGIC"
       connections={{ pin1: "net.AUX_SW", pin2: "net.AUX_5V" }} />
     {/* Raw PD capacitance remains below USB-C's 10 uF attachment limit. */}
-    <Capacitor2u2F name="C_AUX_IN" schX={-15} schY={-6} schRotation={270} pcbX={-26} pcbY={-8} schSheetName="LOGIC"
+    <Capacitor2u2F name="C_AUX_IN" schX={-15} schY={-6} schRotation={270} pcbX={-22} pcbY={-13.8} pcbRotation={180} schSheetName="LOGIC"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_AUX_HF" schX={-13} schY={-6} schRotation={270} maxVoltageRating="50V" pcbX={-26} pcbY={-11} schSheetName="LOGIC"
+    <Capacitor100nF name="C_AUX_HF" schX={-13} schY={-6} schRotation={270} maxVoltageRating="50V" pcbX={-21.7} pcbY={-11.9} pcbRotation={180} schSheetName="LOGIC"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_AUX_BOOT" schX={-8} schY={-1.5} schRotation={0} maxVoltageRating="50V" pcbX={-21} pcbY={-12} schSheetName="LOGIC"
+    <Capacitor100nF name="C_AUX_BOOT" schX={-8} schY={-1.5} schRotation={0} maxVoltageRating="50V" pcbX={-18.5} pcbY={-9} pcbRotation={270} schSheetName="LOGIC"
       connections={{ pin1: "net.AUX_BOOT", pin2: "net.AUX_SW" }} />
-    <Capacitor10uF name="C_AUX_OUT" schX={-2} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-13} pcbY={-12} schSheetName="LOGIC"
+    <Capacitor10uF name="C_AUX_OUT" schX={-2} schY={-6} schRotation={270} maxVoltageRating="25V" pcbX={-13.400054} pcbY={-14.5} pcbRotation={270} schSheetName="LOGIC"
       connections={{ pin1: "net.AUX_5V", pin2: "net.GND" }} />
-    <TLV75533PDBVR name="U_CTRL_LDO" schX={12} schY={-4} schRotation={0} pcbX={-12} pcbY={-18} schSheetName="LOGIC" noConnect={["NC"]}
+    <TLV75533PDBVR name="U_CTRL_LDO" schX={12} schY={-4} schRotation={0} pcbX={-12} pcbY={-21.1} pcbRotation={180} schSheetName="LOGIC" noConnect={["NC"]}
       schWidth={2.5} schHeight={2}
       schPinArrangement={{ leftSide: [1, 3], rightSide: [5], topSide: [4], bottomSide: [2] }}
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND", pin3: "net.LOGIC_5V", pin5: "net.CTRL_3V3" }} />
-    <Capacitor1uF name="C_LDO_IN" schX={10} schY={-7} schRotation={270} maxVoltageRating="25V" pcbX={-12} pcbY={-22} schSheetName="LOGIC"
+    <Capacitor1uF name="C_LDO_IN" schX={10} schY={-7} schRotation={270} maxVoltageRating="25V" pcbX={-13.300099} pcbY={-18} pcbRotation={90} schSheetName="LOGIC"
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
-    <Capacitor1uF name="C_LDO_OUT" schX={15} schY={-7} schRotation={270} maxVoltageRating="25V" pcbX={-8} pcbY={-22} schSheetName="LOGIC"
+    <Capacitor1uF name="C_LDO_OUT" schX={15} schY={-7} schRotation={270} maxVoltageRating="25V" pcbX={-10.699901} pcbY={-18} pcbRotation={90} schSheetName="LOGIC"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Resistor0603 name="R_PROGRAM_CC1" schX={-7} schY={6.7} schRotation={270} resistance="5.1k" pcbX={-27} pcbY={-14} schSheetName="LOGIC"
+    <Resistor0603 name="R_PROGRAM_CC1" schX={-7} schY={6.7} schRotation={270} resistance="5.1k" pcbX={-28} pcbY={-14} pcbRotation={0} schSheetName="LOGIC"
       manufacturerPartNumber="0603WAF5101T5E" supplierPartNumbers={{ jlcpcb: ["C23186"] }}
       connections={{ pin1: "net.PROGRAM_CC1", pin2: "net.GND" }} />
-    <Resistor0603 name="R_PROGRAM_CC2" schX={-5} schY={6.7} schRotation={270} resistance="5.1k" pcbX={-27} pcbY={-17} schSheetName="LOGIC"
+    <Resistor0603 name="R_PROGRAM_CC2" schX={-5} schY={6.7} schRotation={270} resistance="5.1k" pcbX={-28} pcbY={-16.5} pcbRotation={0} schSheetName="LOGIC"
       manufacturerPartNumber="0603WAF5101T5E" supplierPartNumbers={{ jlcpcb: ["C23186"] }}
       connections={{ pin1: "net.PROGRAM_CC2", pin2: "net.GND" }} />
     <silkscreentext text="USB PROGRAM" pcbX={-33} pcbY={-12.5} fontSize={0.75} />

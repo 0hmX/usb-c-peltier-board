@@ -1,3 +1,4 @@
+import { PowerStageRouting } from "./power-routing"
 import { TPS55289RYQR } from "../../imports/TPS55289RYQR"
 import { SRP1265A_4R7M } from "../../imports/SRP1265A_4R7M"
 import { RLM25FEER010 } from "../../imports/RLM25FEER010"
@@ -13,10 +14,11 @@ import { CC0603KRX7R9BB472 as Capacitor4n7F } from "../../imports/CC0603KRX7R9BB
 import { CC0603JRNPO0BN101 as Capacitor100pF } from "../../imports/CC0603JRNPO0BN101"
 
 // TPS55289 datasheet pin table and TI EVM SLVUCF2 figure 5-1.
-// This is an unrouted first-pass CC/CV stage, requiring compensation,
-// ripple, thermal and transient qualification after a power PCB is routed.
+// Compact switching copper and Kelvin sensing use a four-layer, 2 oz outer
+// copper target. Compensation, ripple, thermal and transient qualification remain required.
 export function AdjustablePowerStage() {
   return <>
+    <PowerStageRouting />
     <group name="POWER_NOTES" schSheetName="POWER" schX={0} schY={0}>
       <schematictext text="20 V PD input / bypass" schX={-7} schY={3.8} fontSize={0.28} />
       <schematictext text="Four-switch buck-boost / 400 kHz" schX={0} schY={7.5} fontSize={0.28} />
@@ -50,7 +52,7 @@ export function AdjustablePowerStage() {
       <netlabel net="DRIVER_COMP_ZERO" connectsTo={[".R_COMP > .pin2", ".C_COMP_ZERO > .pin1"]} inline />
       <netlabel net="GND" connectsTo=".J_TEC > .pin2" schX={18.3} schY={1.7} anchorSide="top" />
     </group>
-    <TPS55289RYQR name="U_DRIVER" schX={0} schY={0} schRotation={0} pcbX={0} pcbY={14} schSheetName="POWER" connections={{
+    <TPS55289RYQR name="U_DRIVER" schX={0} schY={0} schRotation={0} pcbX={0} pcbY={12} pcbRotation={0} layer="top" schSheetName="POWER" connections={{
       pin1: "net.DRIVER_ENABLE", pin2: "net.GND",
       pin3: "net.I2C_SCL", pin4: "net.I2C_SDA", pin5: "net.GND",
       pin6: "net.DRIVER_FSW", pin7: "net.VBUS_QUALIFIED",
@@ -63,77 +65,77 @@ export function AdjustablePowerStage() {
       pin18: "net.LOGIC_5V", pin19: "net.DRIVER_BOOT2",
       pin20: "net.DRIVER_BOOT1", pin21: "net.GND",
     }} />
-    <SRP1265A_4R7M name="L_OUT" schX={0} schY={6} schRotation={0} pcbX={13} pcbY={14} schSheetName="POWER" connections={{
+    <SRP1265A_4R7M name="L_OUT" schX={0} schY={6} schRotation={0} pcbX={0} pcbY={22.5} pcbRotation={0} layer="top" schSheetName="POWER" connections={{
       pin1: "net.DRIVER_SW1", pin2: "net.DRIVER_SW2",
     }} />
-    <RLM25FEER010 name="R_SENSE" schX={15.3} schY={2.5} schRotation={0} pcbX={25} pcbY={6} schSheetName="POWER" connections={{
+    <RLM25FEER010 name="R_SENSE" schX={15.3} schY={2.5} schRotation={0} pcbX={20} pcbY={15} pcbRotation={0} layer="top" schSheetName="POWER" connections={{
       pin1: "net.DRIVER_OUT", pin2: "net.TEC_POS",
     }} />
-    <UMK325BJ106KM_T name="C_DRIVER_IN1" schX={-9.2} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-8} pcbY={19} schSheetName="POWER"
+    <UMK325BJ106KM_T name="C_DRIVER_IN1" schX={-9.2} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-10} pcbY={7.5} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <UMK325BJ106KM_T name="C_DRIVER_IN2" schX={-7.4} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-8} pcbY={25} schSheetName="POWER"
+    <UMK325BJ106KM_T name="C_DRIVER_IN2" schX={-7.4} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-6.5} pcbY={7.5} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <UMK325BJ106KM_T name="C_DRIVER_IN3" schX={-5.6} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-15} pcbY={19} schSheetName="POWER"
+    <UMK325BJ106KM_T name="C_DRIVER_IN3" schX={-5.6} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-10} pcbY={13} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <UMK325BJ106KM_T name="C_DRIVER_IN4" schX={-3.8} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-15} pcbY={25} schSheetName="POWER"
+    <UMK325BJ106KM_T name="C_DRIVER_IN4" schX={-3.8} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={-6.5} pcbY={13} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
     {/* Bulk for upstream cable transients; the ceramic bank carries HF ripple.
         PD load-switch inrush with this capacitance still needs qualification. */}
-    <EEHZK1V101XP name="C_DRIVER_INPUT_BULK" schX={-9.2} schY={-1.3} schRotation={270} maxVoltageRating="35V" pcbX={-18} pcbY={12} schSheetName="POWER"
+    <EEHZK1V101XP name="C_DRIVER_INPUT_BULK" schX={-9.2} schY={-1.3} schRotation={270} maxVoltageRating="35V" pcbX={-8} pcbY={-0.5} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DRIVER_INPUT_HF" schX={-6.4} schY={-1.3} schRotation={270} maxVoltageRating="50V" pcbX={-6} pcbY={14} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_INPUT_HF" schX={-6.4} schY={-1.3} schRotation={270} maxVoltageRating="50V" pcbX={-1.4} pcbY={8.1} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DRIVER_BOOT1" schX={-2.6} schY={4.7} schRotation={0} maxVoltageRating="50V" pcbX={-1} pcbY={18} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_BOOT1" schX={-2.6} schY={4.7} schRotation={0} maxVoltageRating="50V" pcbX={-2} pcbY={14.9} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_BOOT1", pin2: "net.DRIVER_SW1" }} />
-    <Capacitor100nF name="C_DRIVER_BOOT2" schX={2.6} schY={4.7} schRotation={180} maxVoltageRating="50V" pcbX={3} pcbY={18} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_BOOT2" schX={2.6} schY={4.7} schRotation={180} maxVoltageRating="50V" pcbX={2} pcbY={14.9} pcbRotation={180} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_BOOT2", pin2: "net.DRIVER_SW2" }} />
-    <Capacitor10uF name="C_DRIVER_VCC" schX={-1.8} schY={-5.5} schRotation={270} maxVoltageRating="25V" pcbX={3} pcbY={24} schSheetName="POWER"
+    <Capacitor10uF name="C_DRIVER_VCC" schX={-1.8} schY={-5.5} schRotation={270} maxVoltageRating="25V" pcbX={5.6} pcbY={13.8} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DRIVER_VCC_HF" schX={0.7} schY={-5.5} schRotation={270} maxVoltageRating="50V" pcbX={-2} pcbY={24} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_VCC_HF" schX={0.7} schY={-5.5} schRotation={270} maxVoltageRating="50V" pcbX={5.6} pcbY={11.6} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.GND" }} />
-    <GRM32ER71E226KE15L name="C_DRIVER_OUT1" schX={4.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={24} pcbY={14} schSheetName="POWER"
+    <GRM32ER71E226KE15L name="C_DRIVER_OUT1" schX={4.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={10.5} pcbY={7.5} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
-    <GRM32ER71E226KE15L name="C_DRIVER_OUT2" schX={6.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={24} pcbY={20} schSheetName="POWER"
+    <GRM32ER71E226KE15L name="C_DRIVER_OUT2" schX={6.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={14} pcbY={7.5} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
-    <GRM32ER71E226KE15L name="C_DRIVER_OUT3" schX={8.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={24} pcbY={26} schSheetName="POWER"
+    <GRM32ER71E226KE15L name="C_DRIVER_OUT3" schX={8.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={10.5} pcbY={13} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
-    <GRM32ER71E226KE15L name="C_DRIVER_OUT4" schX={10.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={31} pcbY={14} schSheetName="POWER"
+    <GRM32ER71E226KE15L name="C_DRIVER_OUT4" schX={10.3} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={14} pcbY={13} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DRIVER_OUTPUT_HF" schX={12.3} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={3} pcbY={11} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_OUTPUT_HF" schX={12.3} schY={1.1} schRotation={270} maxVoltageRating="50V" pcbX={1.4} pcbY={8.1} pcbRotation={270} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
     {/* Post-shunt bulk follows TI's EVM topology. Capacitor transients are
         distinct from the slow average current limit delivered to the TEC. */}
-    <OVZ101M1ETR_0606 name="C_TEC_BULK" schX={18.6} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={30} pcbY={-2} schSheetName="POWER"
+    <OVZ101M1ETR_0606 name="C_TEC_BULK" schX={18.6} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={26} pcbY={22.5} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
-    {/* Kelvin-route both sense taps after routing is commissioned. */}
+    {/* Separate bottom-side Kelvin taps terminate at the shunt lands. */}
     <Resistor0603 name="R_ISP_FILTER" schX={7} schY={-0.9} schRotation={180} resistance="10"
-      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={9} pcbY={6} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5} pcbY={10} pcbRotation={0} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.DRIVER_ISP" }} />
     <Resistor0603 name="R_ISN_FILTER" schX={7} schY={-2.1} schRotation={180} resistance="10"
-      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={9} pcbY={4} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5} pcbY={8.2} pcbRotation={0} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.DRIVER_ISN" }} />
-    <Capacitor220nF name="C_CURRENT_FILTER" schX={4.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={5} pcbY={6} schSheetName="POWER"
+    <Capacitor220nF name="C_CURRENT_FILTER" schX={4.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={2.6} pcbY={10.3} pcbRotation={90} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_ISP", pin2: "net.DRIVER_ISN" }} />
     <Resistor0603 name="R_DRIVER_FSW" schX={-4} schY={-3.8} schRotation={270} resistance="49.9k"
-      manufacturerPartNumber="0603WAF4992T5E" supplierPartNumbers={{ jlcpcb: ["C23184"] }} pcbX={-5} pcbY={10} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF4992T5E" supplierPartNumbers={{ jlcpcb: ["C23184"] }} pcbX={-3.6} pcbY={10} pcbRotation={0} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_FSW", pin2: "net.GND" }} />
     {/* Initial compensation is TI EVM's 27.4k / 4.7nF / 100pF network. */}
     <Resistor0603 name="R_COMP" schX={4.8} schY={-4.8} schRotation={270} resistance="27.4k"
-      manufacturerPartNumber="0603WAF2742T5E" supplierPartNumbers={{ jlcpcb: ["C22964"] }} pcbX={1} pcbY={9} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF2742T5E" supplierPartNumbers={{ jlcpcb: ["C22964"] }} pcbX={4.5} pcbY={12.55} pcbRotation={180} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP", pin2: "net.DRIVER_COMP_ZERO" }} />
-    <Capacitor4n7F name="C_COMP_ZERO" schX={4.8} schY={-6.7} schRotation={270} maxVoltageRating="50V" pcbX={1} pcbY={6} schSheetName="POWER"
+    <Capacitor4n7F name="C_COMP_ZERO" schX={4.8} schY={-6.7} schRotation={270} maxVoltageRating="50V" pcbX={7.4} pcbY={12.55} pcbRotation={180} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP_ZERO", pin2: "net.GND" }} />
-    <Capacitor100pF name="C_COMP_POLE" schX={8} schY={-4.8} schRotation={270} maxVoltageRating="100V" pcbX={1} pcbY={3} schSheetName="POWER"
+    <Capacitor100pF name="C_COMP_POLE" schX={8} schY={-4.8} schRotation={270} maxVoltageRating="100V" pcbX={4.5} pcbY={14.2} pcbRotation={180} layer="bottom" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP", pin2: "net.GND" }} />
     {/* Independent UVLO rejects 5 V even if the MCU releases its reset clamp.
         PD fault and the reset/watchdog clamp pull DRIVER_ENABLE low. */}
     <Resistor0603 name="R_DRIVER_EN_TOP" schX={-10} schY={-3.8} schRotation={270} resistance="130k"
-      manufacturerPartNumber="0603WAF1303T5E" supplierPartNumbers={{ jlcpcb: ["C22795"] }} pcbX={-5} pcbY={6} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF1303T5E" supplierPartNumbers={{ jlcpcb: ["C22795"] }} pcbX={4} pcbY={3} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.VBUS_QUALIFIED", pin2: "net.DRIVER_ENABLE" }} />
     <Resistor0603 name="R_DRIVER_EN_BOTTOM" schX={-10} schY={-5.6} schRotation={270} resistance="10k"
-      manufacturerPartNumber="0603WAF1002T5E" supplierPartNumbers={{ jlcpcb: ["C25804"] }} pcbX={-5} pcbY={3} schSheetName="POWER"
+      manufacturerPartNumber="0603WAF1002T5E" supplierPartNumbers={{ jlcpcb: ["C25804"] }} pcbX={4} pcbY={1} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_ENABLE", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_DRIVER_EN" schX={-7} schY={-5.6} schRotation={270} maxVoltageRating="50V" pcbX={-5} pcbY={0} schSheetName="POWER"
+    <Capacitor100nF name="C_DRIVER_EN" schX={-7} schY={-5.6} schRotation={270} maxVoltageRating="50V" pcbX={4} pcbY={-1} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_ENABLE", pin2: "net.GND" }} />
   </>
 }
