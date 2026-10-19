@@ -12,7 +12,7 @@ export function TemperatureRouting() {
     <trace from=".U_SENSOR_ESD > .pin1" to=".J_HOT_SENSOR > .pin2" width={0.2} pcbPath={[{ x: -3.7, y: 1.600944 }, { x: -3.7, y: 4.4 }, { x: -0.1, y: 8 }]} />
     <trace from=".R_COLD_PULLUP > .pin2" to=".R_COLD_SERIES > .pin2" width={0.2} pcbPath={[]} />
     <trace from=".R_COLD_PULLUP > .pin2" to=".U_SENSOR_ESD > .pin4" width={0.2} pcbPath={[{ x: 2.2, y: 1.446636 }, { x: 2.2, y: 9.899056 }]} />
-    <trace from=".U_SENSOR_ESD > .pin3" to=".J_COLD_SENSOR > .pin2" width={0.2} pcbPath={[{ x: 0.94996, y: -3.1 }, { x: -2, y: -3.1 }, { x: -4, y: -5.1 }, { x: -4, y: -11 }, { x: -5, y: -12 }]} />
+    <trace from=".U_SENSOR_ESD > .pin3" to=".J_COLD_SENSOR > .pin2" width={0.2} pcbPath={[{ x: 0.94996, y: -3.94996 }]} />
     <trace from=".R_HOT_PULLUP > .pin1" to=".C_HOT_SENSOR > .pin1" width={0.4} pcbPath={[]} />
     <trace from=".R_COLD_PULLUP > .pin1" to=".C_COLD_SENSOR > .pin1" width={0.4} pcbPath={[]} />
     <trace from=".R_HOT_PULLUP > .pin1" to=".V_SENSOR_HOT_3V3 > .top" width={0.4} pcbPath={[]} />
