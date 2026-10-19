@@ -46,7 +46,7 @@ The fitted logic and two selected probes have an initial 100–200 mA load alloc
 
 Screen the separate `RP_CORE_1V1` distribution at the RP2040 regulator's 100 mA rating. Its nominal 1.1 V output, −3% regulator corner and 1.05 V DVDD minimum leave 17 mV for distribution, return and transient losses. Target no more than 10 mV of trace and barrel drop to either DVDD pin at 100 mA. Use the actual traversed via spans and 30 µm inner copper in this calculation; the remaining static allowance does not establish transient margin. These limits follow the [RP2040 datasheet's regulator and supply specifications](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf).
 
-The final rendered paths give the following conductor drops at 70 °C copper temperature, including the traversed barrel spans with 18 µm plating. Each destination is screened independently at the total rail current; these are not simultaneous per-pin current assignments.
+The paths before the 19 October 2026 `CTRL_3V3` cleanup give the following conservative conductor-drop bounds at 70 °C copper temperature, including the traversed barrel spans with 18 µm plating. The cleanup shortens branches and removes staircase bends while retaining widths, vias, supply junctions and local bypass connections. Each destination is screened independently at the total rail current; these are not simultaneous per-pin current assignments.
 
 | Source-to-load path | Screening current | Trace and barrel drop |
 | --- | ---: | ---: |
@@ -55,7 +55,7 @@ The final rendered paths give the following conductor drops at 70 °C copper tem
 | RP2040 regulator to DVDD23 | 100 mA | 5.90 mV |
 | RP2040 regulator to DVDD50 | 100 mA | 1.05 mV |
 
-The longest MCU 3.3 V path is 56.86 mm equivalent trace length. The core's worst conductor drop leaves 11.10 mV of its 17 mV static corner allowance. These calculations exclude ground-return resistance and land/pour spreading resistance; verify dynamic margins on hardware.
+The recorded pre-cleanup longest MCU 3.3 V path is 56.86 mm equivalent trace length, retained as an upper bound. The core's worst conductor drop leaves 11.10 mV of its 17 mV static corner allowance. These calculations exclude ground-return resistance and land/pour spreading resistance; verify dynamic margins on hardware.
 
 ## USB differential pair
 
