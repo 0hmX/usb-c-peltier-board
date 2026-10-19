@@ -1,4 +1,5 @@
 import { LMR50410XDBVR } from "../../imports/LMR50410XDBVR"
+import { connectorPlacements } from "../assembly/connector-placement"
 import { SWPA8040S330MT } from "../../imports/SWPA8040S330MT"
 import { A_470531000 as PcFanHeader } from "../../imports/A_470531000"
 import { UMK325BJ106KM_T as Capacitor10uF50V } from "../../imports/UMK325BJ106KM_T"
@@ -58,9 +59,9 @@ export function FanPowerBlock() {
         3-pin fans use pins 1-3; 4-pin fans run at full speed with PWM unconnected.
         Tach is not monitored. Noctua's PWM whitepaper specifies this header.
         https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf */}
-    <PcFanHeader name="J_FAN" schX={11.5} schY={1.2} schRotation={0} pcbX={44} pcbY={-29} pcbRotation={90} schSheetName="FAN"
+    <PcFanHeader name="J_FAN" {...connectorPlacements.J_FAN} schX={11.5} schY={1.2} schRotation={0} schSheetName="FAN"
       connections={{ pin1: "net.GND", pin2: "net.FAN_12V" }} noConnect={["pin3", "pin4"]} />
-    <silkscreentext text="FAN 12V / 0.5A" pcbX={29} pcbY={-34} fontSize={0.9} />
+    <silkscreentext text="FAN 12V / 0.5A" pcbX={48} pcbY={-36} fontSize={0.9} />
     <FanRouting />
   </>
 }

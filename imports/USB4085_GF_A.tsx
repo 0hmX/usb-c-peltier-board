@@ -33,6 +33,8 @@ export const USB4085_GF_A = (props: ChipProps<typeof pinLabels>) => {
   ]
 }}
       manufacturerPartNumber="USB4085-GF-A"
+      // GCT USB4085 drawing, sheet 2: 16 through-hole contacts, not SMT lands.
+      // https://gct.co/connector/usb4085 (0.40 mm drills, 0.65 mm lands, 0.85/1.35 mm pitch).
       footprint={<footprint>
         <platedhole  portHints={["pin1"]} pcbX="-1.27508mm" pcbY="2.180082mm" holeWidth="0.40005mm" holeHeight="0.399796mm" outerWidth="0.649986mm" outerHeight="0.649986mm" shape="pill" />
 <platedhole  portHints={["pin2"]} pcbX="-2.975102mm" pcbY="2.180082mm" holeWidth="0.40005mm" holeHeight="0.399796mm" outerWidth="0.649986mm" outerHeight="0.649986mm" shape="pill" />

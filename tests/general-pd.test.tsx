@@ -123,6 +123,47 @@ describe("general USB-C PD Peltier driver", () => {
     expect(overlaps).toEqual([])
   })
 
+  test("output connectors reach the board edge with their full bodies clear of other parts", () => {
+    const board = circuit.db.pcb_board.list()[0]!
+    const courtyards = circuit.db.pcb_courtyard_outline.list()
+    for (const name of ["J_TEC", "J_HOT_SENSOR", "J_COLD_SENSOR", "J_FAN"]) {
+      const placed = circuit.db.pcb_component.list().find(part => part.source_component_id === component(name).source_component_id)!
+      const outline = courtyards.find(court => court.pcb_component_id === placed.pcb_component_id)!.outline
+      const left = Math.min(...outline.map(p => p.x)), right = Math.max(...outline.map(p => p.x))
+      const bottom = Math.min(...outline.map(p => p.y)), top = Math.max(...outline.map(p => p.y))
+      const gap = board.center.x + board.width! / 2 - right
+      expect(gap).toBeGreaterThanOrEqual(0)
+      expect(gap).toBeLessThan(1)
+      // Imported component bounds cover copper, so also check the connector's body envelope.
+      expect(placedComponents(circuit).filter(other => other.layer === placed.layer &&
+        other.pcb_component_id !== placed.pcb_component_id &&
+        other.center.x + other.width / 2 > left && other.center.x - other.width / 2 < right &&
+        other.center.y + other.height / 2 > bottom && other.center.y - other.height / 2 < top)
+        .map(other => other.source_component_id)).toEqual([])
+    }
+  })
+
+  test("both USB4085 footprints retain the manufacturer's two rows of through-hole contacts", () => {
+    // GCT drawing, sheet 2: 0.85 mm contact pitch, 1.35 mm rows, 0.40/0.65 mm drill/land.
+    for (const name of ["J_USB", "J_PROGRAM"]) {
+      expect(component(name).manufacturer_part_number).toBe("USB4085-GF-A")
+      const rows = [[2, 3, 1, 4, 5, 6, 7, 8], [9, 10, 11, 12, 13, 14, 15, 16]]
+      for (const row of rows) for (const [index, pin] of row.entries()) {
+        const port = physicalPin(name, pin)
+        const hole = circuit.db.pcb_plated_hole.list().find(hole => hole.pcb_port_id === port.pcb_port_id)!
+        expect(hole.shape).toBe("pill")
+        if (hole.shape !== "pill") throw new Error("Missing USB through-hole contact")
+        expect(hole.hole_width).toBeCloseTo(0.4, 3)
+        expect(hole.hole_height).toBeCloseTo(0.4, 3)
+        expect(hole.outer_width).toBeCloseTo(0.65, 3)
+        expect(hole.outer_height).toBeCloseTo(0.65, 3)
+        expect(port.x).toBeCloseTo(physicalPin(name, row[0]!).x, 3)
+        if (index) expect(physicalPin(name, row[index - 1]!).y - port.y).toBeCloseTo(0.85, 1)
+      }
+      expect(physicalPin(name, 2).x - physicalPin(name, 9).x).toBeCloseTo(1.35, 3)
+    }
+  })
+
   test("20 V / 5 A PD qualification is the only input to the load converter", () => {
     // Count the complete directly exposed capacitor bank, rather than one
     // designator: USB-C legacy attachment allows at most 10uF on raw VBUS.

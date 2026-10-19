@@ -1,6 +1,7 @@
 import { CYPD3177_24LQXQT } from "../../imports/CYPD3177_24LQXQT"
 import { AO4407A } from "../../imports/AO4407A"
 import { USB4085_GF_A } from "../../imports/USB4085_GF_A"
+import { connectorPlacements } from "../assembly/connector-placement"
 import { KF301_5_0_2P } from "../parts/C474881"
 import { MMBT3904_RANGE_100_300_ } from "../parts/C20526"
 import { GRM31CC72A475KE11L } from "../parts/C237304"
@@ -40,7 +41,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <schematicsheet name="DEBUG" displayName="Status LEDs and debug test pads" sheetIndex={7} />
     <schematicsheet name="FAN" displayName="Fixed 12 V fan power" sheetIndex={8} />
     <schematicsheet name="SENSORS" displayName="Hot- and cold-side temperature probes" sheetIndex={9} />
-    <USB4085_GF_A name="J_USB" pcbX={-33} pcbY={10} pcbRotation={270} schX={-11} schY={4.2} schRotation={0} schSheetName="PD"
+    <USB4085_GF_A name="J_USB" {...connectorPlacements.J_USB} schX={-11} schY={4.2} schRotation={0} schSheetName="PD"
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
         pin3: "net.VBUS_RAW", pin7: "net.VBUS_RAW", pin10: "net.VBUS_RAW", pin15: "net.VBUS_RAW" }}
@@ -128,12 +129,12 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <ControlBlock />
     <FanPowerBlock />
     <TemperaturePorts />
-    <KF301_5_0_2P name="J_TEC" pcbX={34} pcbY={24} pcbRotation={90} schX={19.5} schY={3} schSheetName="POWER"
+    <KF301_5_0_2P name="J_TEC" {...connectorPlacements.J_TEC} schX={19.5} schY={3} schSheetName="POWER"
       schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
-    <silkscreentext text="+" pcbX={28.5} pcbY={21.5} fontSize={1} />
-    <silkscreentext text="−" pcbX={28.5} pcbY={26.5} fontSize={1} />
+    <silkscreentext text="+" pcbX={50.5} pcbY={21.5} fontSize={1} />
+    <silkscreentext text="−" pcbX={50.5} pcbY={26.5} fontSize={1} />
     <RoutedCopper {...routingData as RoutedCopperData} />
   </board>
 }

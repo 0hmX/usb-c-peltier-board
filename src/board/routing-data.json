@@ -2613,11 +2613,12 @@
         { "route_type": "wire", "x": 27.1, "y": -15.2, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 33.9, "y": -8.4, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 35.8, "y": -8.4, "width": 0.2, "layer": "bottom" },
-        { "route_type": "wire", "x": 52, "y": 7.8, "width": 0.2, "layer": "bottom" },
-        { "route_type": "via", "x": 52, "y": 7.8, "from_layer": "bottom", "to_layer": "top" },
-        { "route_type": "wire", "x": 52, "y": 7.8, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 54.2, "y": 10, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 54.246636, "y": 10, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 44, "y": -0.2, "width": 0.2, "layer": "bottom" },
+        { "route_type": "wire", "x": 44, "y": 7.8, "width": 0.2, "layer": "bottom" },
+        { "route_type": "via", "x": 44, "y": 7.8, "from_layer": "bottom", "to_layer": "top" },
+        { "route_type": "wire", "x": 44, "y": 7.8, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 46.2, "y": 10, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 46.246636, "y": 10, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_521",
       "sourceTraceKey": "[[\"R_HOT_SERIES.pin1\"],[\"HOT_DATA_MCU\"],null,null]"
@@ -3073,7 +3074,7 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 53.2, "y": -6, "width": 0.2, "layer": "bottom" },
+        { "route_type": "wire", "x": 45.2, "y": -6, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 43.1, "y": -6, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 43, "y": -6.1, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 42.8, "y": -6.1, "width": 0.2, "layer": "bottom" },
@@ -4055,8 +4056,8 @@
         { "route_type": "wire", "x": 19.3, "y": -21.4, "layer": "bottom", "width": 0.2 },
         { "route_type": "via", "x": 19.3, "y": -21.4, "from_layer": "bottom", "to_layer": "top" },
         { "route_type": "wire", "x": 19.3, "y": -21.4, "layer": "top", "width": 0.2 },
-        { "route_type": "wire", "x": 42.846636, "y": -21.4, "layer": "top", "width": 0.2 },
-        { "route_type": "wire", "x": 54.246636, "y": -10, "layer": "top", "width": 0.2 }
+        { "route_type": "wire", "x": 34.846636, "y": -21.4, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 46.246636, "y": -10, "layer": "top", "width": 0.2 }
       ],
       "sourceTraceId": "source_trace_523",
       "sourceTraceKey": "[[\"R_COLD_SERIES.pin1\"],[\"COLD_DATA_MCU\"],null,null]"
@@ -4250,7 +4251,7 @@
     { "net": "PD_FAULT_SENSE", "x": 6.5, "y": -3.3, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "PD_FAULT_SENSE", "x": 16, "y": -6.4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "HOT_DATA_MCU", "x": -2, "y": -25.4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "HOT_DATA_MCU", "x": 52, "y": 7.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "HOT_DATA_MCU", "x": 44, "y": 7.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -5.6, "y": 16.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -1.5, "y": 16.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -0.1, "y": 14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },

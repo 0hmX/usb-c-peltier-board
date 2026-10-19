@@ -39,7 +39,7 @@ const routes: { from: string; to: string; width: number; maxLength?: number; poi
   { from: ".C_FAN_OUT2 > .pin1", to: ".J_FAN > .pin2", width: 1,
     points: [{ x: 1.282604, y: -43 }, { x: 2.782604, y: -44.5 },
       { x: 38.5, y: -44.5 }, { x: 40, y: -43 }, { x: 40, y: -29.25 },
-      { x: 41.52, y: -27.73 }] },
+      { x: 54.52, y: -27.73 }] },
 ]
 
 export function FanRouting() {
