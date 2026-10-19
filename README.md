@@ -39,6 +39,8 @@ After editing source order or saved routes, run `bun run routing:rebind` to rege
 
 Fabrication targets **JLC041621-7628**, nominal **1.6 mm**, **2 oz outer / 1 oz inner copper**, with **epoxy-filled, copper-capped vias (POFV)** wherever thermal vias intersect exposed solder lands. The USB pair uses a calculator-derived 90 Ω target. [Fabrication requirements](docs/pcb-fabrication.md) record the exact stack, via process, measured local power-width exceptions and required bench qualification.
 
+TEC, HOT, COLD and FAN sit along the right board edge, with the sensor protection parts inboard and the assembly cables following the same connector placements. Both USB ports use the [GCT USB4085-GF-A through-hole receptacle](https://gct.co/connector/usb4085): its two rows of eight drilled contacts are intentional. The small via arrays around the converter connect VIN, VOUT and ground copper between layers and help spread heat; they are not mounting holes. Retain these arrays and the exposed-pad fill/cap process described above.
+
 Circuit TSX uses explicit parts, coordinates, purchasing identifiers and pin connections. Small files group the programming supply, RP2040, sensing, fan power and status/debug circuitry; CAD geometry calculations stay in the assembly model file.
 
 In **Schematic**, use the **Sheet** menu to follow the nine A4 pages: PD input, adjustable TEC power, USB/logic supplies, RP2040 signals, RP2040 power, permission/measurements, LEDs/debug, fan power, and temperature probes. The MCU units share one physical RP2040; labels carry signals between pages. `tests/schematic.test.tsx` renders the schematics with native rule checks and verifies symbol separation and all 57 MCU package pins.

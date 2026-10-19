@@ -218,6 +218,8 @@ describe("native Peltier assembly", () => {
         expect(pins.get(`${cable.boardConnector}.${pin}`)).toEqual([conductor.signal])
         expect(conductor.path[0]).toEqual(conductor.boardPoint)
         expect(conductor.path[conductor.path.length - 1]).toEqual(cable.path[0])
+        for (let i = 1; i < conductor.path.length; i++)
+          expect(conductor.path[i]![0]).toBeGreaterThanOrEqual(conductor.path[i - 1]![0])
         const [r, g, b] = conductor.color
         expect(conductor.colorName === "red" ? r > g + 0.3 && r > b + 0.3 :
           conductor.colorName === "yellow" ? r > 0.6 && g > 0.5 && b < 0.2 : Math.max(r, g, b) < 0.2).toBe(true)

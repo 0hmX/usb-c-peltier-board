@@ -1,12 +1,12 @@
 // Sensor supplies join on the bottom layer; each ground via reaches the inner ground plane.
 export function TemperatureRouting() {
   return <>
-    <via name="V_SENSOR_HOT_3V3" pcbX={53.2} pcbY={14} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
-    <via name="V_SENSOR_COLD_3V3" pcbX={53.2} pcbY={-6} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
-    <via name="V_SENSOR_ESD_3V3" pcbX={55.4} pcbY={6.4} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
-    <via name="V_SENSOR_HOT_GND" pcbX={56.5} pcbY={18} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
-    <via name="V_SENSOR_COLD_GND" pcbX={56.4} pcbY={-2} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
-    <via name="V_SENSOR_ESD_GND" pcbX={55} pcbY={1.8} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
+    <via name="V_SENSOR_HOT_3V3" pcbX={45.2} pcbY={14} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
+    <via name="V_SENSOR_COLD_3V3" pcbX={45.2} pcbY={-6} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
+    <via name="V_SENSOR_ESD_3V3" pcbX={47.4} pcbY={6.4} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.CTRL_3V3" />
+    <via name="V_SENSOR_HOT_GND" pcbX={48.5} pcbY={18} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
+    <via name="V_SENSOR_COLD_GND" pcbX={48.4} pcbY={-2} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
+    <via name="V_SENSOR_ESD_GND" pcbX={47} pcbY={1.8} holeDiameter={0.3} outerDiameter={0.6} connectsTo="net.GND" />
     <trace from=".R_HOT_PULLUP > .pin2" to=".R_HOT_SERIES > .pin2" width={0.2} pcbPath={[]} />
     <trace from=".R_HOT_SERIES > .pin2" to=".U_SENSOR_ESD > .pin6" width={0.2} pcbPath={[{ x: -0.94996, y: -1.703324 }]} />
     <trace from=".U_SENSOR_ESD > .pin1" to=".J_HOT_SENSOR > .pin2" width={0.2} pcbPath={[{ x: -4, y: 1.900944 }, { x: -4, y: 6 }, { x: -6, y: 8 }]} />

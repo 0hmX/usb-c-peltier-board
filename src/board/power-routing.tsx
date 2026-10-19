@@ -20,11 +20,12 @@ export function PowerStageRouting() {
     <copperpour name="POWER_OUTPUT" layer="top" connectsTo="net.DRIVER_OUT" clearance={0.2} useThermalReliefs={false} boardEdgeMargin={0}
       outline={outline([[.93,10.5],[1.15,10.5],[1.15,9.95],[2.4,9.2],[4.3,9.2],[7.8,9.2],[7.8,16.8],[19.2,16.8],[19.2,6.8],[17.9,6.8],[17.9,13.3],[16.9,13.3],[16.9,6.8],[4,6.8],[2.5,8.2],[1,8.25],[.93,9.8]])} />
     <copperpour name="POWER_TEC" layer="top" connectsTo="net.TEC_POS" clearance={0.2} useThermalReliefs={false} boardEdgeMargin={0}
-      outline={outline([[23,13],[34.8,13],[36,15],[36,22.8],[24.2,22.8],[24.2,18],[22.3,18],[22.3,14],[23,14]])} />
+      outline={outline([[23,13],[34.8,13],[36,15],[36,19],[57.1,19],[57.1,23],[24.2,23],[24.2,18],[22.3,18],[22.3,14],[23,14]])} />
     <copperpour name="POWER_INPUT_THERMAL" layer="inner2" connectsTo="net.VBUS_QUALIFIED" clearance={0.2} useThermalReliefs={false} boardEdgeMargin={0}
       outline={outline([[-11.8,4.8],[-3,4.8],[-3,12.2],[-11.8,12.2]])} />
     <copperpour name="POWER_OUTPUT_THERMAL" layer="inner2" connectsTo="net.DRIVER_OUT" clearance={0.2} useThermalReliefs={false} boardEdgeMargin={0}
       outline={outline([[7.6,7],[16.9,7],[16.9,13.3],[17.9,13.3],[17.9,7],[19.2,7],[19.2,17.2],[7.6,17.2]])} />
+    {/* Power/thermal via banks join the outer copper to the inner power islands. */}
     {[-3.5,-4.3].flatMap((x,j) => [5.2,6,6.8,7.6,8.4].map((y,i) => <via name={`V_DRIVER_IN_${j}_${i}`} pcbX={x} pcbY={y} connectsTo="net.VBUS_QUALIFIED" holeDiameter={0.3} outerDiameter={0.6} layers={["top","inner1","inner2","bottom"]} />))}
     {[18.25,18.8].flatMap((x,j) => [8.5,9.3,10.1,10.9,11.7].map((y,i) => <via name={`V_DRIVER_OUT_${j}_${i}`} pcbX={x} pcbY={y} connectsTo="net.DRIVER_OUT" holeDiameter={0.3} outerDiameter={0.6} layers={["top","inner1","inner2","bottom"]} />))}
     <trace from=".U_DRIVER > .pin8" to=".L_OUT > .pin1" thickness={0.22} pcbPath={[{x:-.539877,y:2.15},{x:-5.55,y:7}]} />

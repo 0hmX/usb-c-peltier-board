@@ -109,7 +109,7 @@ function probeCable(boardConnector: "J_HOT_SENSOR" | "J_COLD_SENSOR", partName: 
     { pin: "pin3", signal: "GND", colorName: "black", color: [0.03, 0.03, 0.035] as Point3 },
   ].map(conductor => {
     const point = connectorPoint(placement, sensorPinLocal[conductor.pin as keyof typeof sensorPinLocal])
-    return { ...conductor, boardPoint: point, path: [point, [52, point[1], 3], [58, point[1], 8], join] as Point3[] }
+    return { ...conductor, boardPoint: point, path: [point, [placement.pcbX + 4, point[1], 3], [placement.pcbX + 7, point[1], 8], join] as Point3[] }
   })
   // Union discards child shape colors. Colored native polygons keep all three
   // vendor wire colors in one cable part, with no invented electrical anchors.

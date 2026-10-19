@@ -1,4 +1,5 @@
 import { USB4085_GF_A } from "../../imports/USB4085_GF_A"
+import { connectorPlacements } from "../assembly/connector-placement"
 import { USBLC6_2SC6 } from "../../imports/USBLC6_2SC6"
 import { TPS2116DRLR } from "../../imports/TPS2116DRLR"
 import { LMR50410Y5FQDBVRQ1 } from "../../imports/LMR50410Y5FQDBVRQ1"
@@ -18,7 +19,7 @@ export function ProgrammingAndLogicPower() {
       <netlabel net="PROGRAM_VBUS" connectsTo={[".U_LOGIC_MUX > .pin6", ".C_PROGRAM_IN > .pin1"]} schX={0} schY={-3.4} anchorSide="bottom" />
       <schematictext text="TPS2116: MODE = 0, PR1 = 0 → higher-voltage 5 V source, reverse blocking" schX={0} schY={0} fontSize={0.28} />
     </group>
-    <USB4085_GF_A name="J_PROGRAM" schX={-12} schY={7} schRotation={0} pcbX={-33} pcbY={-20} pcbRotation={270} schSheetName="LOGIC"
+    <USB4085_GF_A name="J_PROGRAM" {...connectorPlacements.J_PROGRAM} schX={-12} schY={7} schRotation={0} schSheetName="LOGIC"
       schWidth={4} schHeight={4.4}
       schPinArrangement={{ leftSide: [], rightSide: [3, 7, 10, 15, 1, 14, 4, 13, 5, 12, 2, 8, 9, 16, 17, 6, 11] }}
       connections={{ pin1: "net.PROGRAM_CC1", pin14: "net.PROGRAM_CC2",
