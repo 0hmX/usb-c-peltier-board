@@ -19,7 +19,7 @@ The [Hebei reference datasheet](https://www.hebeiltd.com.cn/peltier.datasheet/TE
 | Programming input | USB 2.0 data and 5 V logic supply |
 | Fan output | Fixed 12 V, 0.5 A / 6 W continuous budget; qualified PD only |
 | Temperature ports | Two independent powered DS18B20 inputs on GPIO8 / GPIO9 |
-| Board | 100 × 80 mm, nominal 1.6 mm, four layers, routed power/signals and ground pours |
+| Board | 82 × 75 mm, nominal 1.6 mm, four layers, routed power/signals and ground pours |
 
 Voltage is regulated **before the 10 mΩ shunt**, which drops approximately 55 mV at 5.5 A plus wiring losses. USB STATUS reports approximate voltage at the TEC terminal. The 2.1 V setting floor provides nominal margin above the converter's 2 V current-sense common-mode accuracy boundary after the shunt. Current regulation under overload can reduce output below that boundary; low-voltage accuracy and short-circuit behavior need bench validation. IC, shunt and divider tolerances remain uncalibrated.
 

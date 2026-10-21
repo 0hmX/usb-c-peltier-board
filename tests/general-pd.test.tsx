@@ -90,10 +90,11 @@ describe("general USB-C PD Peltier driver", () => {
     const board = circuit.db.pcb_board.list()[0]!
     if (!board.width || !board.height) throw new Error("Missing rectangular board dimensions")
     const width = board.width, height = board.height
-    expect([width, height]).toEqual([100, 80])
+    expect([width, height]).toEqual([82, 75])
     expect(board.center.x - width / 2).toBe(-40) // Preserve the original USB mating edge.
     // Copper-only DNP test pads need board area and probe access too.
     const placed = placedComponents(circuit)
+    expect([...new Set(placed.map(part => part.layer))]).toEqual(["top"])
     const nameOf = (id: string) => parts.find(part => part.source_component_id === id)?.name ?? id
     const outOfBounds = placed.filter(part =>
       Math.abs(part.center.x - board.center.x) + part.width / 2 > width / 2 + 0.01 ||

@@ -107,25 +107,25 @@ export function AdjustablePowerStage() {
         distinct from the slow average current limit delivered to the TEC. */}
     <OVZ101M1ETR_0606 name="C_TEC_BULK" schX={18.6} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={26} pcbY={22.5} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
-    {/* Separate bottom-side Kelvin taps terminate at the shunt lands. */}
+    {/* Separate top-side Kelvin taps terminate at the shunt lands. */}
     <Resistor0603 name="R_ISP_FILTER" schX={7} schY={-0.9} schRotation={180} resistance="10"
-      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5} pcbY={10} pcbRotation={0} layer="bottom" schSheetName="POWER"
+      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5.3} pcbY={10} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.DRIVER_ISP" }} />
     <Resistor0603 name="R_ISN_FILTER" schX={7} schY={-2.1} schRotation={180} resistance="10"
-      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5} pcbY={8.2} pcbRotation={0} layer="bottom" schSheetName="POWER"
+      manufacturerPartNumber="0603WAF100JT5E" supplierPartNumbers={{ jlcpcb: ["C22859"] }} pcbX={5} pcbY={5.5} pcbRotation={180} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.DRIVER_ISN" }} />
-    <Capacitor220nF name="C_CURRENT_FILTER" schX={4.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={2.6} pcbY={10.3} pcbRotation={90} layer="bottom" schSheetName="POWER"
+    <Capacitor220nF name="C_CURRENT_FILTER" schX={4.5} schY={-1.5} schRotation={270} maxVoltageRating="50V" pcbX={8} pcbY={3.5} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_ISP", pin2: "net.DRIVER_ISN" }} />
     <Resistor0603 name="R_DRIVER_FSW" schX={-4} schY={-3.8} schRotation={270} resistance="49.9k"
-      manufacturerPartNumber="0603WAF4992T5E" supplierPartNumbers={{ jlcpcb: ["C23184"] }} pcbX={-3.6} pcbY={10} pcbRotation={0} layer="bottom" schSheetName="POWER"
+      manufacturerPartNumber="0603WAF4992T5E" supplierPartNumbers={{ jlcpcb: ["C23184"] }} pcbX={16.2} pcbY={18} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_FSW", pin2: "net.GND" }} />
     {/* Initial compensation is TI EVM's 27.4k / 4.7nF / 100pF network. */}
     <Resistor0603 name="R_COMP" schX={4.8} schY={-4.8} schRotation={270} resistance="27.4k"
-      manufacturerPartNumber="0603WAF2742T5E" supplierPartNumbers={{ jlcpcb: ["C22964"] }} pcbX={4.5} pcbY={12.55} pcbRotation={180} layer="bottom" schSheetName="POWER"
+      manufacturerPartNumber="0603WAF2742T5E" supplierPartNumbers={{ jlcpcb: ["C22964"] }} pcbX={9.5} pcbY={18.8} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP", pin2: "net.DRIVER_COMP_ZERO" }} />
-    <Capacitor4n7F name="C_COMP_ZERO" schX={4.8} schY={-6.7} schRotation={270} maxVoltageRating="50V" pcbX={7.4} pcbY={12.55} pcbRotation={180} layer="bottom" schSheetName="POWER"
+    <Capacitor4n7F name="C_COMP_ZERO" schX={4.8} schY={-6.7} schRotation={270} maxVoltageRating="50V" pcbX={12.7} pcbY={18.8} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP_ZERO", pin2: "net.GND" }} />
-    <Capacitor100pF name="C_COMP_POLE" schX={8} schY={-4.8} schRotation={270} maxVoltageRating="100V" pcbX={4.5} pcbY={14.2} pcbRotation={180} layer="bottom" schSheetName="POWER"
+    <Capacitor100pF name="C_COMP_POLE" schX={8} schY={-4.8} schRotation={270} maxVoltageRating="100V" pcbX={9.5} pcbY={16.8} pcbRotation={0} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.DRIVER_COMP", pin2: "net.GND" }} />
     {/* Independent UVLO rejects 5 V even if the MCU releases its reset clamp.
         PD fault and the reset/watchdog clamp pull DRIVER_ENABLE low. */}
