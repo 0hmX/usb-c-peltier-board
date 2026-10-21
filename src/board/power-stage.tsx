@@ -105,7 +105,7 @@ export function AdjustablePowerStage() {
       connections={{ pin1: "net.DRIVER_OUT", pin2: "net.GND" }} />
     {/* Post-shunt bulk follows TI's EVM topology. Capacitor transients are
         distinct from the slow average current limit delivered to the TEC. */}
-    <OVZ101M1ETR_0606 name="C_TEC_BULK" schX={18.6} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={26} pcbY={22.5} pcbRotation={90} layer="top" schSheetName="POWER"
+    <OVZ101M1ETR_0606 name="C_TEC_BULK" schX={18.6} schY={1.1} schRotation={270} maxVoltageRating="25V" pcbX={22} pcbY={23} pcbRotation={90} layer="top" schSheetName="POWER"
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     {/* Separate top-side Kelvin taps terminate at the shunt lands. */}
     <Resistor0603 name="R_ISP_FILTER" schX={7} schY={-0.9} schRotation={180} resistance="10"

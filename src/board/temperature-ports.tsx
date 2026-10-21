@@ -19,36 +19,36 @@ export function TemperaturePorts() {
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA", pin3: "net.GND" }}>
       <schematictext text="COLD · DS18B20 · GP9" schX={-15} schY={4.5} anchor="center" fontSize={0.5} />
     </SensorTerminal>
-    <Resistor0603 name="R_HOT_PULLUP" resistance="4.7k" pcbX={29} pcbY={14} schX={0} schY={5.5} schRotation={270} schSheetName="SENSORS"
+    <Resistor0603 name="R_HOT_PULLUP" resistance="4.7k" pcbX={24.4} pcbY={10} schX={0} schY={5.5} schRotation={270} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.HOT_SENSOR_DATA" }} />
-    <Resistor0603 name="R_COLD_PULLUP" resistance="4.7k" pcbX={29} pcbY={-6} schX={0} schY={-0.5} schRotation={270} schSheetName="SENSORS"
+    <Resistor0603 name="R_COLD_PULLUP" resistance="4.7k" pcbX={24.4} pcbY={-6} schX={0} schY={-0.5} schRotation={270} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF4701T5E" supplierPartNumbers={{ jlcpcb: ["C23162"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.COLD_SENSOR_DATA" }} />
-    <Resistor0603 name="R_HOT_SERIES" resistance="100" pcbX={29} pcbY={10} schX={-5} schY={3} schRotation={0} schSheetName="SENSORS"
+    <Resistor0603 name="R_HOT_SERIES" resistance="100" pcbX={24.4} pcbY={6} schX={-5} schY={3} schRotation={0} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
       connections={{ pin1: "net.HOT_DATA_MCU", pin2: "net.HOT_SENSOR_DATA" }} />
-    <Resistor0603 name="R_COLD_SERIES" resistance="100" pcbX={29} pcbY={-10} schX={-5} schY={-3} schRotation={0} schSheetName="SENSORS"
+    <Resistor0603 name="R_COLD_SERIES" resistance="100" pcbX={24.4} pcbY={-10} schX={-5} schY={-3} schRotation={0} schSheetName="SENSORS"
       manufacturerPartNumber="0603WAF1000T5E" supplierPartNumbers={{ jlcpcb: ["C22775"] }}
       connections={{ pin1: "net.COLD_DATA_MCU", pin2: "net.COLD_SENSOR_DATA" }} />
-    <Capacitor100nF name="C_HOT_SENSOR" maxVoltageRating="50V" pcbX={29} pcbY={17} schX={5} schY={5.5} schRotation={270} schSheetName="SENSORS"
+    <Capacitor100nF name="C_HOT_SENSOR" maxVoltageRating="50V" pcbX={24.4} pcbY={12} schX={5} schY={5.5} schRotation={270} schSheetName="SENSORS"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <Capacitor100nF name="C_COLD_SENSOR" maxVoltageRating="50V" pcbX={29} pcbY={-2} schX={5} schY={-0.5} schRotation={270} schSheetName="SENSORS"
+    <Capacitor100nF name="C_COLD_SENSOR" maxVoltageRating="50V" pcbX={24.4} pcbY={-2} schX={5} schY={-0.5} schRotation={270} schSheetName="SENSORS"
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.GND" }} />
-    <USBLC6_2SC6 name="U_SENSOR_ESD" pcbX={29} pcbY={4} schX={0} schY={-8} schRotation={0} schSheetName="SENSORS"
+    <USBLC6_2SC6 name="U_SENSOR_ESD" pcbX={24.4} pcbY={3} schX={0} schY={-8} schRotation={0} schSheetName="SENSORS"
       connections={{ pin1: "net.HOT_SENSOR_DATA", pin6: "net.HOT_SENSOR_DATA",
         pin3: "net.COLD_SENSOR_DATA", pin4: "net.COLD_SENSOR_DATA", pin2: "net.GND", pin5: "net.CTRL_3V3" }}>
       <schematictext text="SHARED ESD PROTECTION" schX={0} schY={2.6} fontSize={0.4} />
       <schematictext text="HOT: pins 1/6 · COLD: pins 3/4" schX={0} schY={-2} fontSize={0.3} />
       <schematictext text="Powered probes · 3V3 / DATA / GND · no parasite power" schX={0} schY={-3.4} fontSize={0.3} />
     </USBLC6_2SC6>
-    <silkscreentext text="HOT" pcbX={30.5} pcbY={19.5} fontSize={0.8} />
-    <silkscreentext text="3V3" pcbX={33} pcbY={8.500007} fontSize={0.55} />
-    <silkscreentext text="DATA" pcbX={33} pcbY={12} fontSize={0.55} />
-    <silkscreentext text="GND" pcbX={33} pcbY={15.499993} fontSize={0.55} />
-    <silkscreentext text="COLD" pcbX={38} pcbY={1} fontSize={0.8} />
-    <silkscreentext text="3V3" pcbX={33} pcbY={-11.499993} fontSize={0.55} />
-    <silkscreentext text="DATA" pcbX={33} pcbY={-8} fontSize={0.55} />
-    <silkscreentext text="GND" pcbX={33} pcbY={-4.500007} fontSize={0.55} />
+    <silkscreentext text="HOT" pcbX={30} pcbY={4.5} fontSize={0.8} />
+    <silkscreentext text="COLD" pcbX={30} pcbY={0.5} fontSize={0.8} />
+    <silkscreentext text="3V3" pcbX={25} pcbY={7.500007} fontSize={0.55} />
+    <silkscreentext text="DATA" pcbX={25} pcbY={11} fontSize={0.55} />
+    <silkscreentext text="GND" pcbX={25} pcbY={14.499993} fontSize={0.55} />
+    <silkscreentext text="3V3" pcbX={25} pcbY={-11.499993} fontSize={0.55} />
+    <silkscreentext text="DATA" pcbX={25} pcbY={-8} fontSize={0.55} />
+    <silkscreentext text="GND" pcbX={25} pcbY={-4.500007} fontSize={0.55} />
   </>
 }

@@ -19,24 +19,24 @@ export function StatusAndDebug() {
       <schematictext text="BOOTSEL: short to GND during MCU_RUN reset, then release when RPI-RP2 appears." schX={-9.75} schY={-10.5} fontSize={0.25} anchor="left" />
       <schematictext text="All testpoints are fitted 1.5 mm copper pads; doNotPlace excludes them from the purchased BOM." schX={-9.75} schY={-11.1} fontSize={0.25} anchor="left" />
     </group>
-    <Resistor0603 name="R_LED_POWER" schX={-7.5} schY={4.5} schRotation={270} resistance="1k" pcbX={26} pcbY={-19} schSheetName="DEBUG"
+    <Resistor0603 name="R_LED_POWER" schX={-7.5} schY={4.5} schRotation={270} resistance="1k" pcbX={23} pcbY={-19} schSheetName="DEBUG"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.CTRL_3V3", pin2: "net.LED_POWER_ANODE" }} />
-    <KT_0603Y name="LED_POWER" schX={-7.5} schY={3} schRotation={270} pcbX={26} pcbY={-16} schSheetName="DEBUG"
+    <KT_0603Y name="LED_POWER" schX={-7.5} schY={3} schRotation={270} pcbX={23} pcbY={-16} schSheetName="DEBUG"
       connections={{ pin1: "net.LED_POWER_ANODE", pin2: "net.GND" }} />
-    <Resistor0603 name="R_LED_RUN" schX={0} schY={4.5} schRotation={270} resistance="1k" pcbX={31} pcbY={-19} schSheetName="DEBUG"
+    <Resistor0603 name="R_LED_RUN" schX={0} schY={4.5} schRotation={270} resistance="1k" pcbX={26.5} pcbY={-19} schSheetName="DEBUG"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.LED_RUN_DRIVE", pin2: "net.LED_RUN_ANODE" }} />
-    <KT_0603YG name="LED_RUN" schX={0} schY={3} schRotation={270} pcbX={31} pcbY={-16} schSheetName="DEBUG"
+    <KT_0603YG name="LED_RUN" schX={0} schY={3} schRotation={270} pcbX={26.5} pcbY={-16} schSheetName="DEBUG"
       connections={{ pin2: "net.LED_RUN_ANODE", pin1: "net.GND" }} />
-    <Resistor0603 name="R_LED_FAULT" schX={7.5} schY={4.5} schRotation={270} resistance="1k" pcbX={36} pcbY={-19} schSheetName="DEBUG"
+    <Resistor0603 name="R_LED_FAULT" schX={7.5} schY={4.5} schRotation={270} resistance="1k" pcbX={30} pcbY={-19} schSheetName="DEBUG"
       manufacturerPartNumber="0603WAF1001T5E" supplierPartNumbers={{ jlcpcb: ["C21190"] }}
       connections={{ pin1: "net.LED_FAULT_DRIVE", pin2: "net.LED_FAULT_ANODE" }} />
-    <KT_0603R name="LED_FAULT" schX={7.5} schY={3} schRotation={270} pcbX={36} pcbY={-16} schSheetName="DEBUG"
+    <KT_0603R name="LED_FAULT" schX={7.5} schY={3} schRotation={270} pcbX={30} pcbY={-16} schSheetName="DEBUG"
       connections={{ pin1: "net.LED_FAULT_ANODE", pin2: "net.GND" }} />
-    <silkscreentext text="3V3" pcbX={26} pcbY={-14} fontSize={0.8} />
-    <silkscreentext text="RUN" pcbX={31} pcbY={-14} fontSize={0.8} />
-    <silkscreentext text="FAULT" pcbX={36} pcbY={-14} fontSize={0.8} />
+    <silkscreentext text="3V3" pcbX={23} pcbY={-14} fontSize={0.8} />
+    <silkscreentext text="RUN" pcbX={26.5} pcbY={-14} fontSize={0.8} />
+    <silkscreentext text="FAULT" pcbX={30} pcbY={-14} fontSize={0.8} />
     <testpoint name="TP_SWDIO" schX={-8.25} schY={0} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
       pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={4.5} pcbY={-29} schSheetName="DEBUG"
       connections={{ pin1: "net.SWDIO" }} />
