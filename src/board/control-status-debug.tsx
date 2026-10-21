@@ -38,29 +38,29 @@ export function StatusAndDebug() {
     <silkscreentext text="RUN" pcbX={26.5} pcbY={-14} fontSize={0.8} />
     <silkscreentext text="FAULT" pcbX={30} pcbY={-14} fontSize={0.8} />
     <testpoint name="TP_SWDIO" schX={-8.25} schY={0} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
-      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={4.5} pcbY={-29} schSheetName="DEBUG"
+      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={4.5} pcbY={-28.5} schSheetName="DEBUG"
       connections={{ pin1: "net.SWDIO" }} />
-    <silkscreentext text="SWDIO" pcbX={4.5} pcbY={-30.25} fontSize={0.55} />
+    <silkscreentext text="SWDIO" pcbX={4.5} pcbY={-29.65} fontSize={0.55} />
     <testpoint name="TP_SWCLK" schX={-3.75} schY={0} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
-      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={1.5} pcbY={-29} schSheetName="DEBUG"
+      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={1.5} pcbY={-28.5} schSheetName="DEBUG"
       connections={{ pin1: "net.SWCLK" }} />
-    <silkscreentext text="SWCLK" pcbX={1.5} pcbY={-30.25} fontSize={0.55} />
+    <silkscreentext text="SWCLK" pcbX={1.5} pcbY={-29.65} fontSize={0.55} />
     <testpoint name="TP_BOOTSEL" schX={0.75} schY={0} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
       pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={-9.5} pcbY={-5.5} schSheetName="DEBUG"
       connections={{ pin1: "net.BOOTSEL_PAD" }} />
     <silkscreentext text="BOOTSEL" pcbX={-9.5} pcbY={-6.75} fontSize={0.55} />
     <testpoint name="TP_RUN" schX={5.25} schY={0} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
-      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={7.5} pcbY={-29} schSheetName="DEBUG"
+      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={7.5} pcbY={-28.5} schSheetName="DEBUG"
       connections={{ pin1: "net.MCU_RUN" }} />
-    <silkscreentext text="RESET" pcbX={7.5} pcbY={-30.25} fontSize={0.55} />
+    <silkscreentext text="RESET" pcbX={7.5} pcbY={-29.65} fontSize={0.55} />
     <testpoint name="TP_3V3" schX={-8.25} schY={-3} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
       pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={-8.9} pcbY={-18.149976} schSheetName="DEBUG"
       connections={{ pin1: "net.CTRL_3V3" }} />
     <silkscreentext text="3V3" pcbX={-8.9} pcbY={-19.399976} fontSize={0.55} />
     <testpoint name="TP_GND" schX={-3.75} schY={-3} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
-      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={10.5} pcbY={-29} schSheetName="DEBUG"
+      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={10.5} pcbY={-28.5} schSheetName="DEBUG"
       connections={{ pin1: "net.GND" }} />
-    <silkscreentext text="GND" pcbX={10.5} pcbY={-30.25} fontSize={0.55} />
+    <silkscreentext text="GND" pcbX={10.5} pcbY={-29.65} fontSize={0.55} />
     <testpoint name="TP_RAW_PD" schX={0.75} schY={-3} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
       pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={-29.5} pcbY={9} schSheetName="DEBUG"
       connections={{ pin1: "net.VBUS_RAW" }} />

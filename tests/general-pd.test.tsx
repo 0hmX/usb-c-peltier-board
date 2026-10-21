@@ -90,7 +90,7 @@ describe("general USB-C PD Peltier driver", () => {
     const board = circuit.db.pcb_board.list()[0]!
     if (!board.width || !board.height) throw new Error("Missing rectangular board dimensions")
     const width = board.width, height = board.height
-    expect([width, height]).toEqual([72.5, 60])
+    expect([width, height]).toEqual([72.5, 59])
     expect(board.center.x - width / 2).toBe(-40) // Preserve the original USB mating edge.
     // Copper-only DNP test pads need board area and probe access too.
     const placed = placedComponents(circuit)
@@ -132,7 +132,8 @@ describe("general USB-C PD Peltier driver", () => {
       const outline = courtyards.find(court => court.pcb_component_id === placed.pcb_component_id)!.outline
       const left = Math.min(...outline.map(p => p.x)), right = Math.max(...outline.map(p => p.x))
       const bottom = Math.min(...outline.map(p => p.y)), top = Math.max(...outline.map(p => p.y))
-      const gap = board.center.x + board.width! / 2 - right
+      const gap = name === "J_FAN" ? bottom - (board.center.y - board.height! / 2)
+        : board.center.x + board.width! / 2 - right
       expect(gap).toBeGreaterThanOrEqual(0)
       expect(gap).toBeLessThan(1)
       // Imported component bounds cover copper, so also check the connector's body envelope.
@@ -281,15 +282,15 @@ describe("general USB-C PD Peltier driver", () => {
       expect(sourcePin("J_FAN", pin).do_not_connect).toBe(true)
     }
     // Check actual drilled contacts: the rotated keyed header presents GND,
-    // +12 V, tach, PWM in descending Y order at the official 2.54 mm pitch.
+    // +12 V, tach, PWM in ascending X order at the official 2.54 mm pitch.
     const contacts = [1, 2, 3, 4].map(pin => physicalPin("J_FAN", pin))
     const holes = circuit.db.pcb_plated_hole.list().filter(hole =>
       contacts.some(port => port.pcb_port_id === hole.pcb_port_id))
     expect(holes).toHaveLength(4)
     for (let i = 0; i < contacts.length; i++) {
       const contact = contacts[i]!
-      expect(contact.x).toBeCloseTo(contacts[0]!.x, 5)
-      if (i) expect(contacts[i - 1]!.y - contact.y).toBeCloseTo(2.54, 5)
+      expect(contact.y).toBeCloseTo(contacts[0]!.y, 5)
+      if (i) expect(contact.x - contacts[i - 1]!.x).toBeCloseTo(2.54, 5)
       const hole = holes.find(hole => hole.pcb_port_id === contact.pcb_port_id)!
       expect(hole.x).toBeCloseTo(contact.x, 6)
       expect(hole.y).toBeCloseTo(contact.y, 6)

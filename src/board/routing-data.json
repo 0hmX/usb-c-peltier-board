@@ -747,10 +747,10 @@
     {
       "net": "SWCLK",
       "route": [
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 1.5, "y": -29 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 1.5, "y": -27.8 },
-        { "route_type": "via", "from_layer": "top", "to_layer": "bottom", "x": 1.5, "y": -27.8 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1.5, "y": -27.8 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 1.5, "y": -28.5 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 1.5, "y": -27.3 },
+        { "route_type": "via", "from_layer": "top", "to_layer": "bottom", "x": 1.5, "y": -27.3 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1.5, "y": -27.3 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1.5, "y": -21.5 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.65, "y": -20.65 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.65, "y": -17.35 },
@@ -765,10 +765,10 @@
     {
       "net": "SWDIO",
       "route": [
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 4.5, "y": -29 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 4.5, "y": -27.8 },
-        { "route_type": "via", "from_layer": "top", "to_layer": "bottom", "x": 4.5, "y": -27.8 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 4.5, "y": -27.8 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 4.5, "y": -28.5 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 4.5, "y": -27.3 },
+        { "route_type": "via", "from_layer": "top", "to_layer": "bottom", "x": 4.5, "y": -27.3 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 4.5, "y": -27.3 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 4.5, "y": -20.35 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1.5, "y": -17.35 },
         { "route_type": "via", "from_layer": "bottom", "to_layer": "top", "x": 1.5, "y": -17.35 },
@@ -782,7 +782,7 @@
     {
       "net": "MCU_RUN",
       "route": [
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 7.5, "y": -29 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 7.5, "y": -28.5 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 7.3, "y": -28.8 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 7.3, "y": -26 }
       ],
@@ -2185,8 +2185,8 @@
     {
       "net": "GND",
       "route": [
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 10.5, "y": -29 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 11.65, "y": -29 }
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 10.5, "y": -28.5 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 11.65, "y": -27.5 }
       ],
       "sourceTraceId": "source_trace_433",
       "sourceTraceKey": "[[\"TP_GND.pin1\"],[\"GND\"],null,null]"
@@ -2513,10 +2513,10 @@
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.8, "y": -25 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.8, "y": -25.3 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.9, "y": -25.4 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.9, "y": -28.3 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1, "y": -28.4 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5, "y": -28.4 },
-        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5.1, "y": -28.3 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 0.9, "y": -28.1 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 1, "y": -28.2 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5, "y": -28.2 },
+        { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5.1, "y": -28.1 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5.1, "y": -26.5 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5.8, "y": -25.8 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 5.8, "y": -18.5 },
@@ -2582,11 +2582,11 @@
         { "route_type": "wire", "x": -2, "y": -25.4, "width": 0.2, "layer": "inner2" },
         { "route_type": "wire", "x": -2, "y": -27, "width": 0.2, "layer": "inner2" },
         { "route_type": "wire", "x": -0.7, "y": -28.4, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 23, "y": -28.4, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 27, "y": -24.7, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 27, "y": 7.5, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 21.6, "y": 7.5, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 21.6, "y": 5.2, "width": 0.2, "layer": "inner2" },
+        { "route_type": "wire", "x": 23, "y": -28.4, "layer": "inner2", "width": 0.2 },
+        { "route_type": "wire", "x": 32, "y": -28.4, "layer": "inner2", "width": 0.2 },
+        { "route_type": "wire", "x": 32, "y": 6, "layer": "inner2", "width": 0.2 },
+        { "route_type": "wire", "x": 21.6, "y": 6, "layer": "inner2", "width": 0.2 },
+        { "route_type": "wire", "x": 21.6, "y": 5.2, "layer": "inner2", "width": 0.2 },
         { "route_type": "via", "x": 21.6, "y": 5.2, "from_layer": "inner2", "to_layer": "top" },
         { "route_type": "wire", "x": 21.6, "y": 5.2, "width": 0.2, "layer": "top" },
         { "route_type": "wire", "x": 21.646636, "y": 6, "width": 0.2, "layer": "top" }
@@ -2857,10 +2857,8 @@
       "route": [
         { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": -28.4, "y": -22.1 },
         { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": -21.9, "y": -22.1 },
-        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": -15.2, "y": -28.8 },
-        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": -0.4, "y": -28.8 },
-        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 0.1, "y": -29.3 },
-        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 5.9, "y": -29.3 },
+        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": -15.2, "y": -28.7 },
+        { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 5.9, "y": -28.7 },
         { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 8, "y": -27.2 },
         { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 8.1, "y": -27.2 },
         { "route_type": "wire", "width": 0.4, "layer": "bottom", "x": 8.6, "y": -26.7 },
@@ -3095,8 +3093,8 @@
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 17.9, "y": -19.8 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 18.1, "y": -20 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 18.1, "y": -23.5 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 11.5, "y": -30.1 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 0.6, "y": -30.1 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 11.5, "y": -29.58 },
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 0.6, "y": -29.58 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": -2.8, "y": -26.7 },
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": -2.8, "y": -26.6 },
         { "route_type": "via", "from_layer": "top", "to_layer": "bottom", "x": -2.8, "y": -26.6 },
@@ -4360,10 +4358,9 @@
         { "route_type": "wire", "x": -23.5, "y": -23.5, "width": 0.6, "layer": "top" },
         { "route_type": "via", "x": -23.5, "y": -23.5, "from_layer": "top", "to_layer": "bottom" },
         { "route_type": "wire", "x": -23.5, "y": -23.5, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": -23.5, "y": -30, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 26, "y": -30, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 26, "y": -24.23, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 28.51998545, "y": -24.23, "width": 0.6, "layer": "bottom" }
+        { "route_type": "wire", "x": -23.5, "y": -29.39, "layer": "bottom", "width": 0.6 },
+        { "route_type": "wire", "x": 25.53, "y": -29.39, "layer": "bottom", "width": 0.6 },
+        { "route_type": "wire", "x": 25.53, "y": -25.98001455, "layer": "bottom", "width": 0.6 }
       ],
       "sourceTraceId": "source_trace_492",
       "sourceTraceKey": "[[\"C_FAN_OUT2.pin1\",\"J_FAN.pin2\"],[],null,null]"
@@ -4712,9 +4709,9 @@
     { "net": "GND", "x": -14.45, "y": -21.1, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -14.3, "y": -17.299976, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -9.89, "y": -17.299976, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "SWCLK", "x": 1.5, "y": -27.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "SWCLK", "x": 1.5, "y": -27.3, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "SWCLK", "x": 0.65, "y": -17.35, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "SWDIO", "x": 4.5, "y": -27.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "SWDIO", "x": 4.5, "y": -27.3, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "SWDIO", "x": 1.5, "y": -17.35, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "PROGRAM_USB_DP", "x": -25, "y": -19.4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "PROGRAM_USB_DM", "x": -25, "y": -20.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
@@ -4842,7 +4839,7 @@
     { "net": "GND", "x": 22.249938, "y": -14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 25.749998, "y": -14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 28.399938, "y": -16, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 11.65, "y": -29, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 11.65, "y": -27.5, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -25, "y": -21, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 4.8, "y": -3.933975, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 6.512436, "y": -9.1, "holeDiameter": 0.3, "outerDiameter": 0.6 },

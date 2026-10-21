@@ -17,7 +17,7 @@ import { CC0603KRX7R8BB105 as Capacitor1uF } from "../../imports/CC0603KRX7R8BB1
 
 export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
   // Exposed-pad thermal arrays require POFV; routing tests allow only the 13 exact pairs.
-  return <board width={72.5} height={60} outlineOffsetX={-3.75} outlineOffsetY={-1} layers={4} thickness={1.6}
+  return <board width={72.5} height={59} outlineOffsetX={-3.75} outlineOffsetY={-0.5} layers={4} thickness={1.6}
     title="USB-C PD Peltier driver · adjustable CC/CV"
     minTraceWidth={0.2} minTraceToPadEdgeClearance={0.17} minPadEdgeToPadEdgeClearance={0.17}
     minViaEdgeToPadEdgeClearance={0.17} minViaHoleDiameter={0.3} minViaPadDiameter={0.6}
