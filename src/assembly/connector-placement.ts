@@ -5,7 +5,7 @@ export const connectorPlacements = {
   J_TEC: { pcbX: 28.5, pcbY: 23, pcbRotation: 90 },
   J_HOT_SENSOR: { pcbX: 28.5, pcbY: 11, pcbRotation: 90 },
   J_COLD_SENSOR: { pcbX: 28.5, pcbY: -8, pcbRotation: 90 },
-  J_FAN: { pcbX: 26.8, pcbY: -25, pcbRotation: 180 },
+  J_FAN: { pcbX: 26.8, pcbY: -27.5, pcbRotation: 180 },
 } as const
 
 export type Point3 = [number, number, number]

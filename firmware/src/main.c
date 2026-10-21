@@ -48,7 +48,7 @@ void isr_hardfault(void) {
   while (1) tight_loop_contents();
 }
 static void gpio_init_safe(void) {
-  const unsigned outputs[] = {PD_PERMISSION_PIN, PD_RUN_LED_PIN, PD_FAULT_LED_PIN};
+  const unsigned outputs[] = {PD_PERMISSION_PIN, PD_RUN_LED_PIN, PD_FAULT_LED_PIN, PD_BUZZER_PIN, PD_RGB_LED_PIN};
   for (unsigned i = 0; i < count_of(outputs); ++i) {
     gpio_init(outputs[i]); gpio_put(outputs[i], false); gpio_set_dir(outputs[i], GPIO_OUT);
   }

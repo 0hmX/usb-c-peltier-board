@@ -22,10 +22,10 @@ export function Rp2040Control() {
       <schematictext text="USB data, SWD and reset" schX={-11} schY={-4} fontSize={0.32} />
       <netlabel net="GND" connectsTo=".C_FLASH > .pin2" schX={13} schY={6} anchorSide="top" />
       <schematictext text="QSPI boot flash / 12 MHz crystal" schX={6} schY={9.5} fontSize={0.35} />
-      <schematictext text="Unused GPIO: intentionally NC" schX={10} schY={-2.7} fontSize={0.32} />
+      <schematictext text="Unused GPIO: intentionally NC (GP11/GP12: INDICATORS sheet)" schX={10} schY={-2.7} fontSize={0.32} />
     </group>
     <RP2040 name="U_MCU" noSchematicRepresentation pcbX={0} pcbY={-15} schSheetName="MCU"
-      noConnect={["GPIO5", "GPIO10", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15",
+      noConnect={["GPIO5", "GPIO10", "GPIO13", "GPIO14", "GPIO15",
         "GPIO16", "GPIO17", "GPIO18", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO24", "GPIO25"]}
       connections={{
         pin1: "net.CTRL_3V3", pin10: "net.CTRL_3V3", pin22: "net.CTRL_3V3",
@@ -35,6 +35,7 @@ export function Rp2040Control() {
         pin2: "net.I2C_SDA", pin3: "net.I2C_SCL", pin4: "net.MCU_DRIVER_PERMISSION",
         pin5: "net.DRIVER_FAULT", pin6: "net.PD_FAULT_SENSE", pin8: "net.LED_RUN_DRIVE", pin9: "net.LED_FAULT_DRIVE",
         pin11: "net.HOT_DATA_MCU", pin12: "net.COLD_DATA_MCU",
+        pin14: "net.BUZZER_DRIVE", pin15: "net.RGB_DATA",
         pin20: "net.XIN", pin21: "net.XOUT", pin24: "net.SWCLK", pin25: "net.SWDIO", pin26: "net.MCU_RUN",
         pin38: "net.OUTPUT_CURRENT_ADC", pin39: "net.OUTPUT_VOLTAGE_ADC", pin40: "net.INPUT_VOLTAGE_ADC", pin41: "net.PROGRAM_VBUS_SENSE",
         pin46: "net.RP_USB_DM", pin47: "net.RP_USB_DP", pin51: "net.QSPI_SD3", pin52: "net.QSPI_SCLK",
@@ -62,15 +63,19 @@ export function Rp2040Control() {
       schPinArrangement={{ leftSide: [20, 21], rightSide: [56, 52, 53, 55, 54, 51] }}
       schPinStyle={{ pin20: { marginBottom: 0.8 }, pin56: { marginBottom: 0.3 }, pin52: { marginBottom: 0.3 },
         pin53: { marginBottom: 0.3 }, pin55: { marginBottom: 0.3 }, pin54: { marginBottom: 0.3 } }} />
-    <schematicbox name="U_MCU_NC" chipRef=".U_MCU" width={3.4} height={3.2} schX={10} schY={-5.5} schSheetName="MCU"
-      pinLabels={{ pin7: "GPIO5", pin13: "GPIO10", pin14: "GPIO11", pin15: "GPIO12", pin16: "GPIO13",
-        pin17: "GPIO14", pin18: "GPIO15", pin27: "GPIO16", pin28: "GPIO17", pin29: "GPIO18", pin30: "GPIO19",
-        pin31: "GPIO20", pin32: "GPIO21", pin34: "GPIO22", pin35: "GPIO23", pin36: "GPIO24", pin37: "GPIO25" }}
-      schPinArrangement={{ leftSide: [7, 13, 14, 15, 16, 17, 18, 27, 28], rightSide: [29, 30, 31, 32, 34, 35, 36, 37] }}
-      schPinStyle={{ pin7: { marginBottom: 0.1 }, pin13: { marginBottom: 0.1 }, pin14: { marginBottom: 0.1 }, pin15: { marginBottom: 0.1 },
-        pin16: { marginBottom: 0.1 }, pin17: { marginBottom: 0.1 }, pin18: { marginBottom: 0.1 }, pin27: { marginBottom: 0.1 },
+    <schematicbox name="U_MCU_NC" chipRef=".U_MCU" width={3.4} height={3} schX={10} schY={-5.5} schSheetName="MCU"
+      pinLabels={{ pin7: "GPIO5", pin13: "GPIO10", pin16: "GPIO13", pin17: "GPIO14", pin18: "GPIO15", pin27: "GPIO16",
+        pin28: "GPIO17", pin29: "GPIO18", pin30: "GPIO19", pin31: "GPIO20", pin32: "GPIO21", pin34: "GPIO22", pin35: "GPIO23",
+        pin36: "GPIO24", pin37: "GPIO25" }}
+      schPinArrangement={{ leftSide: [7, 13, 16, 17, 18, 27, 28], rightSide: [29, 30, 31, 32, 34, 35, 36, 37] }}
+      schPinStyle={{ pin7: { marginBottom: 0.1 }, pin13: { marginBottom: 0.1 }, pin16: { marginBottom: 0.1 }, pin17: { marginBottom: 0.1 },
+        pin18: { marginBottom: 0.1 }, pin27: { marginBottom: 0.1 },
         pin29: { marginBottom: 0.1 }, pin30: { marginBottom: 0.1 }, pin31: { marginBottom: 0.1 }, pin32: { marginBottom: 0.1 },
         pin34: { marginBottom: 0.1 }, pin35: { marginBottom: 0.1 }, pin36: { marginBottom: 0.1 } }} />
+    <schematicbox name="U_MCU_INDICATORS" chipRef=".U_MCU" width={3.4} height={1.4} schX={-12} schY={1.5} schSheetName="INDICATORS"
+      pinLabels={{ pin14: ["GP11_BUZZER", "GPIO11"], pin15: ["GP12_RGB_DATA", "GPIO12"] }}
+      schPinArrangement={{ leftSide: [], rightSide: [15, 14] }}
+      schPinStyle={{ pin15: { marginBottom: 0.6 } }} />
     <schematicbox name="U_MCU_POWER" chipRef=".U_MCU" width={4} height={3.2} schX={-9} schY={0} schSheetName="MCU_POWER"
       pinLabels={{ pin1: "IOVDD6", pin10: "IOVDD5", pin22: "IOVDD4", pin33: "IOVDD3", pin42: "IOVDD2", pin49: "IOVDD1",
         pin43: "ADC_AVDD", pin48: "USB_VDD", pin44: "VREG_IN", pin45: "VREG_VOUT", pin23: "DVDD2", pin50: "DVDD1",

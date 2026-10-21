@@ -7,7 +7,7 @@ let circuit: InstanceType<typeof Circuit>
 const functionalSheets = {
   PD: "U_PD", POWER: "U_DRIVER", LOGIC: "U_AUX", MCU: "U_MCU",
   MCU_POWER: "C_MCU_BULK", MONITOR: "R_V_ADC_TOP", DEBUG: "TP_SWDIO",
-  FAN: "U_FAN", SENSORS: "J_HOT_SENSOR",
+  FAN: "U_FAN", SENSORS: "J_HOT_SENSOR", INDICATORS: "LED_RGB",
 }
 
 beforeAll(async () => {

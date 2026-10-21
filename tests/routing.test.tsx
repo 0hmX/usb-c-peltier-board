@@ -24,13 +24,14 @@ beforeAll(async () => {
 
 describe("complete PCB routing", () => {
   test("routing preserves the original named pins, NC pins and electrical net partition", () => {
-    // Hash of canonical {net names, component.pin groups} from the original
-    // unrouted board. Copper IDs, placements and generated via ports are absent.
-    const originalNetlist = "2df111c39b7d3294a0155048451ab575d62202339edb9e6157b2c3a0de41d77b"
+    // Hash of canonical {net names, component.pin groups} from the unrouted
+    // board, including the RGB/buzzer indicator nets. Copper IDs, placements
+    // and generated via ports are absent.
+    const originalNetlist = "7727c233ba8ad3725483507e4c7adaa4f9d993cf72dc7a1e3d57383049afb5d3"
     expect(createHash("sha256").update(sourceConnectivity(circuit.getCircuitJson()).signature).digest("hex"))
       .toBe(originalNetlist)
-    expect(physical.requiredPortCount).toBe(430)
-    expect(physical.groups).toHaveLength(76)
+    expect(physical.requiredPortCount).toBe(450)
+    expect(physical.groups).toHaveLength(82)
     expect(physical.ignoredNcPortCount).toBe(39)
     // Physical package metal is limited to the original connector shells and
     // verified USBLC6 flow-through conductors; it cannot stand in for PCB wires.

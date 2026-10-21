@@ -1,6 +1,6 @@
 # PCB fabrication and routing basis
 
-Design basis recorded 2026-10-17. The 72.5 × 59 mm board uses top-side assembly, four layers, a nominal 1.6 mm finished thickness, 2 oz outer copper and 1 oz inner copper. Specify **JLC041621-7628** when ordering; substituting another 1.6 mm stack changes the USB impedance.
+Design basis recorded 2026-10-17. The 72.5 × 61.5 mm board uses top-side assembly, four layers, a nominal 1.6 mm finished thickness, 2 oz outer copper and 1 oz inner copper. Specify **JLC041621-7628** when ordering; substituting another 1.6 mm stack changes the USB impedance.
 
 | Layer or dielectric | Vendor thickness | Function / dielectric constant |
 | --- | ---: | --- |

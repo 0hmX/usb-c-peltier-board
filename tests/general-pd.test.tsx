@@ -90,7 +90,7 @@ describe("general USB-C PD Peltier driver", () => {
     const board = circuit.db.pcb_board.list()[0]!
     if (!board.width || !board.height) throw new Error("Missing rectangular board dimensions")
     const width = board.width, height = board.height
-    expect([width, height]).toEqual([72.5, 59])
+    expect([width, height]).toEqual([72.5, 61.5])
     expect(board.center.x - width / 2).toBe(-40) // Preserve the original USB mating edge.
     // Copper-only DNP test pads need board area and probe access too.
     const placed = placedComponents(circuit)
@@ -539,5 +539,36 @@ describe("general USB-C PD Peltier driver", () => {
       expect(resistance(`R_LED_${name}`)).toBeGreaterThanOrEqual(1_000)
       if (mcuPin) expect(pinNet("U_MCU", mcuPin)).toBe(drive)
     }
+  })
+  test("RGB status LED and buzzer use spare GPIO with in-spec drive levels", () => {
+    expect(component("LED_RGB").manufacturer_part_number).toBe("WS2812B-2020")
+    expect(component("LED_RGB").supplier_part_numbers?.jlcpcb).toEqual(["C965555"])
+    expect(pinNet("U_MCU", 15)).toBe("RGB_DATA")
+    expect(pinNet("R_RGB_DATA", 1)).toBe("RGB_DATA")
+    expect(pinNet("R_RGB_DATA", 2)).toBe("RGB_DIN")
+    expect(pinNet("LED_RGB", 3)).toBe("RGB_DIN")
+    expect(pinNet("LED_RGB", 2)).toBe("GND")
+    expect(sourcePin("LED_RGB", 1).do_not_connect).toBe(true)
+    // DIN high threshold is 0.7 × VDD: one diode drop from 5 V keeps 3.3 V data valid.
+    expect(pinNet("D_RGB_SUPPLY", 2)).toBe("LOGIC_5V")
+    expect(pinNet("D_RGB_SUPPLY", 1)).toBe("RGB_VDD")
+    expect(pinNet("LED_RGB", 4)).toBe("RGB_VDD")
+    expect(capacitance("C_RGB")).toBeCloseTo(100e-9, 12)
+    expect([pinNet("C_RGB", 1), pinNet("C_RGB", 2)]).toEqual(["RGB_VDD", "GND"])
+
+    expect(component("BZ_STATUS").manufacturer_part_number).toBe("MLT-5020")
+    expect(pinNet("U_MCU", 14)).toBe("BUZZER_DRIVE")
+    expect(pinNet("R_BUZZER_BASE", 1)).toBe("BUZZER_DRIVE")
+    expect(pinNet("R_BUZZER_BASE", 2)).toBe("BUZZER_BASE")
+    expect(resistance("R_BUZZER_BASE")).toBe(1_000)
+    expect(pinNet("Q_BUZZER", 1)).toBe("BUZZER_BASE")
+    expect(pinNet("Q_BUZZER", 2)).toBe("GND")
+    expect(pinNet("Q_BUZZER", 3)).toBe("BUZZER_COIL")
+    expect(pinNet("BZ_STATUS", 1)).toBe("CTRL_3V3")
+    expect(pinNet("BZ_STATUS", 2)).toBe("BUZZER_COIL")
+    expect(sourcePin("BZ_STATUS", 3).do_not_connect).toBe(true)
+    // Flyback diode: cathode to the coil supply, anode to the switched node.
+    expect(pinNet("D_BUZZER", 1)).toBe("CTRL_3V3")
+    expect(pinNet("D_BUZZER", 2)).toBe("BUZZER_COIL")
   })
 })
