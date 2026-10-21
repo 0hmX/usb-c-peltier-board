@@ -322,11 +322,13 @@
     {
       "net": "DRIVER_RELEASE_GATE",
       "route": [
-        { "route_type": "wire", "x": 19.246636, "y": -18, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 20, "y": -17.25, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 21.45, "y": -17.25, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 21.45, "y": -10, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 21.999998, "y": -8.94996, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 19.246636, "y": -18, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20, "y": -17.25, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 21.45, "y": -17.25, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 21.45, "y": -12.5, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20, "y": -12.5, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20, "y": -9.8, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 21.999998, "y": -8.94996, "layer": "top", "width": 0.2 }
       ],
       "sourceTraceId": "source_trace_381",
       "sourceTraceKey": "[[\"Q_MCU_RELEASE.pin1\"],[\"DRIVER_RELEASE_GATE\"],null,null]"
@@ -868,13 +870,14 @@
     {
       "net": "TEC_POS",
       "route": [
-        { "route_type": "wire", "x": 22, "y": 10, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 22.5, "y": 10.5, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 22.5, "y": 14, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 23.066288, "y": 15, "width": 0.3, "layer": "top" }
+        { "route_type": "wire", "x": 18.5, "y": -0.5, "layer": "top", "width": 0.3 },
+        { "route_type": "wire", "x": 18.5, "y": 1, "layer": "top", "width": 0.3 },
+        { "route_type": "via", "x": 18.5, "y": 1, "from_layer": "top", "to_layer": "bottom" },
+        { "route_type": "wire", "x": 18.5, "y": 1, "layer": "bottom", "width": 0.3 },
+        { "route_type": "wire", "x": 15.2, "y": 0.7, "layer": "bottom", "width": 0.3 }
       ],
-      "sourceTraceId": "source_trace_93",
-      "sourceTraceKey": "[[\"R_ISN_FILTER.pin1\",\"R_SENSE.pin2\"],[],null,null]"
+      "sourceTraceId": "source_trace_437",
+      "sourceTraceKey": "[[\"TP_TEC.pin1\"],[\"TEC_POS\"],null,null]"
     },
     {
       "net": "DRIVER_ENABLE",
@@ -2138,7 +2141,7 @@
       "net": "GND",
       "route": [
         { "route_type": "wire", "width": 0.2, "layer": "top", "x": 21.999998, "y": -7.05004 },
-        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 21.999998, "y": -6.1 }
+        { "route_type": "wire", "width": 0.2, "layer": "top", "x": 22.15, "y": -6.35 }
       ],
       "sourceTraceId": "source_trace_382",
       "sourceTraceKey": "[[\"Q_MCU_RELEASE.pin2\"],[\"GND\"],null,null]"
@@ -2580,13 +2583,13 @@
         { "route_type": "wire", "x": -2, "y": -27, "width": 0.2, "layer": "inner2" },
         { "route_type": "wire", "x": -0.7, "y": -28.4, "width": 0.2, "layer": "inner2" },
         { "route_type": "wire", "x": 23, "y": -28.4, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 26.7, "y": -24.7, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 26.7, "y": 7.5, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 23.6, "y": 7.5, "width": 0.2, "layer": "inner2" },
-        { "route_type": "wire", "x": 23.6, "y": 5.2, "width": 0.2, "layer": "inner2" },
-        { "route_type": "via", "x": 23.6, "y": 5.2, "from_layer": "inner2", "to_layer": "top" },
-        { "route_type": "wire", "x": 23.6, "y": 5.2, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 23.646636, "y": 6, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 27, "y": -24.7, "width": 0.2, "layer": "inner2" },
+        { "route_type": "wire", "x": 27, "y": 7.5, "width": 0.2, "layer": "inner2" },
+        { "route_type": "wire", "x": 21.6, "y": 7.5, "width": 0.2, "layer": "inner2" },
+        { "route_type": "wire", "x": 21.6, "y": 5.2, "width": 0.2, "layer": "inner2" },
+        { "route_type": "via", "x": 21.6, "y": 5.2, "from_layer": "inner2", "to_layer": "top" },
+        { "route_type": "wire", "x": 21.6, "y": 5.2, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 21.646636, "y": 6, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_521",
       "sourceTraceKey": "[[\"R_HOT_SERIES.pin1\"],[\"HOT_DATA_MCU\"],null,null]"
@@ -2994,11 +2997,12 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 22.85, "y": -5.1, "width": 0.2, "layer": "bottom" },
-        { "route_type": "wire", "x": 24, "y": -7.3, "width": 0.2, "layer": "bottom" },
-        { "route_type": "wire", "x": 24, "y": -18.2, "width": 0.2, "layer": "bottom" },
-        { "route_type": "wire", "x": 23.2, "y": -19, "width": 0.2, "layer": "bottom" },
-        { "route_type": "wire", "x": 21.2, "y": -19, "width": 0.2, "layer": "bottom" }
+        { "route_type": "wire", "x": 20.85, "y": -5.1, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 20.85, "y": -11.7, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 23.5, "y": -11.7, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 24, "y": -18.2, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 23.2, "y": -19, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 21.2, "y": -19, "layer": "bottom", "width": 0.2 }
       ],
       "sourceTraceId": "source_trace_500",
       "sourceTraceKey": "[[\"C_COLD_SENSOR.pin1\",\"R_COLD_PULLUP.pin1\"],[],null,null]"
@@ -3788,7 +3792,7 @@
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 10.3, "y": -20.6 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 17.2, "y": -20.6 },
         { "route_type": "wire", "width": 0.2, "layer": "bottom", "x": 17.4, "y": -20.8 },
-        { "route_type": "wire", "x": 27, "y": -20.8, "width": 0.2, "layer": "bottom" },
+        { "route_type": "wire", "x": 26, "y": -20.8, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 28.2, "y": -19.6, "width": 0.2, "layer": "bottom" },
         { "route_type": "wire", "x": 28.2, "y": -19, "width": 0.2, "layer": "bottom" }
       ],
@@ -3814,10 +3818,11 @@
         { "route_type": "via", "from_layer": "bottom", "to_layer": "top", "x": 19.3, "y": -21.4 },
         { "route_type": "wire", "x": 19.3, "y": -21.4, "width": 0.2, "layer": "top" },
         { "route_type": "wire", "x": 19.3, "y": -20, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 32.6, "y": -20, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 32.6, "y": -14.5, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 29.5, "y": -14.5, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 23.646636, "y": -10, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 32.09, "y": -20, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 32.09, "y": -14.5, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 29.5, "y": -15, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 21.646636, "y": -11.8, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 21.646636, "y": -10.7, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_523",
       "sourceTraceKey": "[[\"R_COLD_SERIES.pin1\"],[\"COLD_DATA_MCU\"],null,null]"
@@ -4356,9 +4361,9 @@
         { "route_type": "via", "x": -23.5, "y": -23.5, "from_layer": "top", "to_layer": "bottom" },
         { "route_type": "wire", "x": -23.5, "y": -23.5, "width": 0.6, "layer": "bottom" },
         { "route_type": "wire", "x": -23.5, "y": -30, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 27, "y": -30, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 27, "y": -24.23, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": 30.01998545, "y": -24.23, "width": 0.6, "layer": "bottom" }
+        { "route_type": "wire", "x": 26, "y": -30, "width": 0.6, "layer": "bottom" },
+        { "route_type": "wire", "x": 26, "y": -24.23, "width": 0.6, "layer": "bottom" },
+        { "route_type": "wire", "x": 28.51998545, "y": -24.23, "width": 0.6, "layer": "bottom" }
       ],
       "sourceTraceId": "source_trace_492",
       "sourceTraceKey": "[[\"C_FAN_OUT2.pin1\",\"J_FAN.pin2\"],[],null,null]"
@@ -4366,8 +4371,8 @@
     {
       "net": "HOT_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 25.153364, "y": 10, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 25.153364, "y": 6, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 23.153364, "y": 10, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 23.153364, "y": 6, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_493",
       "sourceTraceKey": "[[\"R_HOT_PULLUP.pin2\",\"R_HOT_SERIES.pin2\"],[],null,null]"
@@ -4375,11 +4380,11 @@
     {
       "net": "HOT_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 25.153364, "y": 6, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 25.153364, "y": 6.8, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 22.4, "y": 6.8, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 22.4, "y": 4.149096, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 23.45004, "y": 4.149096, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 23.153364, "y": 6, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 23.153364, "y": 6.8, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 20.4, "y": 6.8, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 20.4, "y": 4.149096, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 21.45004, "y": 4.149096, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_494",
       "sourceTraceKey": "[[\"R_HOT_SERIES.pin2\",\"U_SENSOR_ESD.pin6\"],[],null,null]"
@@ -4387,14 +4392,18 @@
     {
       "net": "HOT_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 23.45004, "y": 1.850904, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 21.1, "y": 4.200944, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 21.1, "y": 5, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 22.4, "y": 6.3, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 22.4, "y": 7.7, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.1, "y": 7.7, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.1, "y": 8.2, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 30, "y": 11, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 21.45004, "y": 1.850904, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20.4, "y": 1.850904, "layer": "top", "width": 0.2 },
+        { "route_type": "via", "x": 20.4, "y": 1.850904, "from_layer": "top", "to_layer": "bottom" },
+        { "route_type": "wire", "x": 20.4, "y": 1.850904, "layer": "bottom", "width": 0.2 },
+        { "route_type": "wire", "x": 19.6, "y": 4, "layer": "bottom", "width": 0.2 },
+        { "route_type": "via", "x": 19.6, "y": 4, "from_layer": "bottom", "to_layer": "top" },
+        { "route_type": "wire", "x": 19.6, "y": 4, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20.4, "y": 4.8, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 20.4, "y": 7.7, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 24.1, "y": 7.7, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 24.1, "y": 8.2, "layer": "top", "width": 0.2 },
+        { "route_type": "wire", "x": 28.5, "y": 11, "layer": "top", "width": 0.2 }
       ],
       "sourceTraceId": "source_trace_495",
       "sourceTraceKey": "[[\"J_HOT_SENSOR.pin2\",\"U_SENSOR_ESD.pin1\"],[],null,null]"
@@ -4402,8 +4411,8 @@
     {
       "net": "COLD_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 25.153364, "y": -6, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 25.153364, "y": -10, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 23.153364, "y": -5.3, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 23.153364, "y": -10.7, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_496",
       "sourceTraceKey": "[[\"R_COLD_PULLUP.pin2\",\"R_COLD_SERIES.pin2\"],[],null,null]"
@@ -4411,10 +4420,10 @@
     {
       "net": "COLD_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 25.153364, "y": -6, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.599999999999998, "y": -4.553364, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.599999999999998, "y": 2.899056, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 25.34996, "y": 4.149096, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 23.153364, "y": -5.3, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 24.599999999999998, "y": -4.553364, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 24.599999999999998, "y": 2.899056, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 23.34996, "y": 4.149096, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_497",
       "sourceTraceKey": "[[\"R_COLD_PULLUP.pin2\",\"U_SENSOR_ESD.pin4\"],[],null,null]"
@@ -4422,10 +4431,10 @@
     {
       "net": "COLD_SENSOR_DATA",
       "route": [
-        { "route_type": "wire", "x": 25.34996, "y": 1.850904, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.3, "y": 0.900864, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 26.3, "y": -2, "width": 0.2, "layer": "top" },
-        { "route_type": "wire", "x": 30, "y": -8, "width": 0.2, "layer": "top" }
+        { "route_type": "wire", "x": 23.34996, "y": 1.850904, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 24.3, "y": 0.900864, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 24.3, "y": -2, "width": 0.2, "layer": "top" },
+        { "route_type": "wire", "x": 28.5, "y": -8, "width": 0.2, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_498",
       "sourceTraceKey": "[[\"J_COLD_SENSOR.pin2\",\"U_SENSOR_ESD.pin3\"],[],null,null]"
@@ -4433,8 +4442,8 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 23.646635999999997, "y": 10, "width": 0.4, "layer": "top" },
-        { "route_type": "wire", "x": 23.7, "y": 12, "width": 0.4, "layer": "top" }
+        { "route_type": "wire", "x": 18.3, "y": 3, "layer": "top", "width": 0.4 },
+        { "route_type": "wire", "x": 18.3, "y": 1.9, "layer": "top", "width": 0.4 }
       ],
       "sourceTraceId": "source_trace_499",
       "sourceTraceKey": "[[\"C_HOT_SENSOR.pin1\",\"R_HOT_PULLUP.pin1\"],[],null,null]"
@@ -4442,8 +4451,8 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 23.646635999999997, "y": -6, "width": 0.4, "layer": "top" },
-        { "route_type": "wire", "x": 23.7, "y": -2, "width": 0.4, "layer": "top" }
+        { "route_type": "wire", "x": 21.646635999999997, "y": -5.3, "width": 0.4, "layer": "top" },
+        { "route_type": "wire", "x": 21.7, "y": -2, "width": 0.4, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_500",
       "sourceTraceKey": "[[\"C_COLD_SENSOR.pin1\",\"R_COLD_PULLUP.pin1\"],[],null,null]"
@@ -4451,8 +4460,9 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 23.646635999999997, "y": 10, "width": 0.4, "layer": "top" },
-        { "route_type": "wire", "x": 23.9, "y": 11.2, "width": 0.4, "layer": "top" }
+        { "route_type": "wire", "x": 21.646636, "y": 10, "layer": "top", "width": 0.4 },
+        { "route_type": "wire", "x": 21.646636, "y": 10.9, "layer": "top", "width": 0.4 },
+        { "route_type": "wire", "x": 23.9, "y": 11.2, "layer": "top", "width": 0.4 }
       ],
       "sourceTraceId": "source_trace_499",
       "sourceTraceKey": "[[\"C_HOT_SENSOR.pin1\",\"R_HOT_PULLUP.pin1\"],[],null,null]"
@@ -4460,8 +4470,8 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 23.646635999999997, "y": -6, "width": 0.4, "layer": "top" },
-        { "route_type": "wire", "x": 22.85, "y": -5.1, "width": 0.4, "layer": "top" }
+        { "route_type": "wire", "x": 21.646635999999997, "y": -5.3, "width": 0.4, "layer": "top" },
+        { "route_type": "wire", "x": 20.85, "y": -5.1, "width": 0.4, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_500",
       "sourceTraceKey": "[[\"C_COLD_SENSOR.pin1\",\"R_COLD_PULLUP.pin1\"],[],null,null]"
@@ -4469,8 +4479,8 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 24.4, "y": 4.149096, "width": 0.4, "layer": "top" },
-        { "route_type": "wire", "x": 24.4, "y": 5.2, "width": 0.4, "layer": "top" }
+        { "route_type": "wire", "x": 22.4, "y": 4.149096, "width": 0.4, "layer": "top" },
+        { "route_type": "wire", "x": 22.4, "y": 5.2, "width": 0.4, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_534",
       "sourceTraceKey": "[[\"U_SENSOR_ESD.pin5\"],[\"CTRL_3V3\"],null,null]"
@@ -4484,8 +4494,8 @@
         { "route_type": "wire", "x": 24.4, "y": 5.2, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 25, "y": 4.6, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 25, "y": 3, "width": 0.4, "layer": "bottom" },
-        { "route_type": "wire", "x": 22.85, "y": 0.85, "width": 0.4, "layer": "bottom" },
-        { "route_type": "wire", "x": 22.85, "y": -5.1, "width": 0.4, "layer": "bottom" }
+        { "route_type": "wire", "x": 20.85, "y": 0.85, "width": 0.4, "layer": "bottom" },
+        { "route_type": "wire", "x": 20.85, "y": -5.1, "width": 0.4, "layer": "bottom" }
       ],
       "sourceTraceId": "source_trace_500",
       "sourceTraceKey": "[[\"C_COLD_SENSOR.pin1\",\"R_COLD_PULLUP.pin1\"],[],null,null]"
@@ -4493,7 +4503,7 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 24.4, "y": 5.2, "width": 0.4, "layer": "bottom" },
+        { "route_type": "wire", "x": 22.4, "y": 5.2, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 24.7, "y": 5.2, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 24.7, "y": 10.4, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 23.9, "y": 11.2, "width": 0.4, "layer": "bottom" }
@@ -4506,7 +4516,7 @@
       "route": [
         { "route_type": "wire", "x": 23.9, "y": 11.2, "width": 0.4, "layer": "bottom" },
         { "route_type": "wire", "x": 23.9, "y": 7.500007, "width": 0.4, "layer": "bottom" },
-        { "route_type": "wire", "x": 30, "y": 7.500007, "width": 0.4, "layer": "bottom" }
+        { "route_type": "wire", "x": 28.5, "y": 7.500007, "width": 0.4, "layer": "bottom" }
       ],
       "sourceTraceId": "source_trace_511",
       "sourceTraceKey": "[[\"J_HOT_SENSOR.pin1\"],[\"CTRL_3V3\"],null,null]"
@@ -4514,9 +4524,9 @@
     {
       "net": "CTRL_3V3",
       "route": [
-        { "route_type": "wire", "x": 22.85, "y": -5.1, "width": 0.4, "layer": "bottom" },
-        { "route_type": "wire", "x": 22.599999999999998, "y": -11.499993, "width": 0.4, "layer": "bottom" },
-        { "route_type": "wire", "x": 30, "y": -11.499993, "width": 0.4, "layer": "bottom" }
+        { "route_type": "wire", "x": 20.85, "y": -5.1, "width": 0.4, "layer": "bottom" },
+        { "route_type": "wire", "x": 20.599999999999998, "y": -11.499993, "width": 0.4, "layer": "bottom" },
+        { "route_type": "wire", "x": 28.5, "y": -11.499993, "width": 0.4, "layer": "bottom" }
       ],
       "sourceTraceId": "source_trace_514",
       "sourceTraceKey": "[[\"J_COLD_SENSOR.pin1\"],[\"CTRL_3V3\"],null,null]"
@@ -4524,8 +4534,8 @@
     {
       "net": "GND",
       "route": [
-        { "route_type": "wire", "x": 25.099999999999998, "y": 12, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 25.9, "y": 12, "width": 0.3, "layer": "top" }
+        { "route_type": "wire", "x": 19.7, "y": 3, "layer": "top", "width": 0.3 },
+        { "route_type": "wire", "x": 20.8, "y": 3, "layer": "top", "width": 0.3 }
       ],
       "sourceTraceId": "source_trace_526",
       "sourceTraceKey": "[[\"C_HOT_SENSOR.pin2\"],[\"GND\"],null,null]"
@@ -4533,8 +4543,8 @@
     {
       "net": "GND",
       "route": [
-        { "route_type": "wire", "x": 25.099999999999998, "y": -2, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 25.099999999999998, "y": -3.1, "width": 0.3, "layer": "top" }
+        { "route_type": "wire", "x": 23.099999999999998, "y": -2, "width": 0.3, "layer": "top" },
+        { "route_type": "wire", "x": 23.099999999999998, "y": -3.1, "width": 0.3, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_528",
       "sourceTraceKey": "[[\"C_COLD_SENSOR.pin2\"],[\"GND\"],null,null]"
@@ -4542,8 +4552,8 @@
     {
       "net": "GND",
       "route": [
-        { "route_type": "wire", "x": 24.4, "y": 1.850904, "width": 0.3, "layer": "top" },
-        { "route_type": "wire", "x": 24.4, "y": 0.8, "width": 0.3, "layer": "top" }
+        { "route_type": "wire", "x": 22.4, "y": 1.850904, "width": 0.3, "layer": "top" },
+        { "route_type": "wire", "x": 22.4, "y": 0.8, "width": 0.3, "layer": "top" }
       ],
       "sourceTraceId": "source_trace_533",
       "sourceTraceKey": "[[\"U_SENSOR_ESD.pin2\"],[\"GND\"],null,null]"
@@ -4604,6 +4614,21 @@
       ],
       "sourceTraceId": "source_trace_167",
       "sourceTraceKey": "[[\"C_DRIVER_INPUT_BULK.pin1\"],[\"VBUS_QUALIFIED\"],null,null]"
+    },
+    {
+      "net": "CTRL_3V3",
+      "route": [
+        { "route_type": "wire", "x": 18.3, "y": 1.9, "layer": "top", "width": 0.4 },
+        { "route_type": "via", "x": 18.3, "y": 1.9, "from_layer": "top", "to_layer": "inner2" },
+        { "route_type": "wire", "x": 18.3, "y": 1.9, "layer": "inner2", "width": 0.4 },
+        { "route_type": "wire", "x": 18.3, "y": 4.8, "layer": "inner2", "width": 0.4 },
+        { "route_type": "wire", "x": 20.6, "y": 4.8, "layer": "inner2", "width": 0.4 },
+        { "route_type": "wire", "x": 20.6, "y": 4, "layer": "inner2", "width": 0.4 },
+        { "route_type": "wire", "x": 22.4, "y": 4, "layer": "inner2", "width": 0.4 },
+        { "route_type": "wire", "x": 22.4, "y": 5.2, "layer": "inner2", "width": 0.4 }
+      ],
+      "sourceTraceId": "source_trace_500",
+      "sourceTraceKey": "[[\"C_COLD_SENSOR.pin1\",\"R_COLD_PULLUP.pin1\"],[],null,null]"
     }
   ],
   "vias": [
@@ -4651,11 +4676,11 @@
     { "net": "GND", "x": -11.5, "y": -3.6999999999999957, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "FAN_GND_6" },
     { "net": "GND", "x": -11.5, "y": -4.699999999999996, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "FAN_GND_7" },
     { "net": "CTRL_3V3", "x": 23.9, "y": 11.2, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_HOT_3V3" },
-    { "net": "CTRL_3V3", "x": 22.85, "y": -5.1, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_COLD_3V3" },
-    { "net": "CTRL_3V3", "x": 24.4, "y": 5.2, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_ESD_3V3" },
-    { "net": "GND", "x": 25.9, "y": 12, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_HOT_GND" },
-    { "net": "GND", "x": 25.099999999999998, "y": -3.1, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_COLD_GND" },
-    { "net": "GND", "x": 24.4, "y": 0.8, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_ESD_GND" },
+    { "net": "CTRL_3V3", "x": 20.85, "y": -5.1, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_COLD_3V3" },
+    { "net": "CTRL_3V3", "x": 22.4, "y": 5.2, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_ESD_3V3" },
+    { "net": "GND", "x": 20.8, "y": 3, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_HOT_GND" },
+    { "net": "GND", "x": 23.099999999999998, "y": -3.1, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_COLD_GND" },
+    { "net": "GND", "x": 22.4, "y": 0.8, "holeDiameter": 0.3, "outerDiameter": 0.6, "name": "V_SENSOR_ESD_GND" },
     { "net": "GND", "x": 13.5, "y": -19, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 20.7, "y": -13.9, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -10.5, "y": -25, "holeDiameter": 0.3, "outerDiameter": 0.6 },
@@ -4767,16 +4792,16 @@
     { "net": "GND", "x": 14, "y": 12.780103, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 13.2, "y": 12.780103, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 14.8, "y": 12.780103, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.920001, "y": 25.669921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.920001, "y": 24.869921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.920001, "y": 26.469921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.120001, "y": 25.669921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.920001, "y": 24.069921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.920001, "y": 27.269921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.120001, "y": 24.869921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.120001, "y": 26.469921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.120001, "y": 24.069921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 20.120001, "y": 27.269921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 19.420001, "y": 26.169921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 19.420001, "y": 25.369921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 19.420001, "y": 26.969921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 18.620001, "y": 26.169921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 19.420001, "y": 24.569921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 19.420001, "y": 27.769921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 18.620001, "y": 25.369921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 18.620001, "y": 26.969921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 18.620001, "y": 24.569921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 18.620001, "y": 27.769921, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -34.1, "y": -0.08010299999999404, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -34.9, "y": -0.08010299999999404, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": -33.3, "y": -0.08010299999999404, "holeDiameter": 0.3, "outerDiameter": 0.6 },
@@ -4812,7 +4837,7 @@
     { "net": "GND", "x": -5.050024, "y": -23.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 5.150024, "y": -25.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 13.01, "y": -6.1, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "GND", "x": 21.999998, "y": -6.1, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "GND", "x": 22.15, "y": -6.35, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 21.65, "y": -18, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 22.249938, "y": -14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "GND", "x": 25.749998, "y": -14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
@@ -4843,7 +4868,7 @@
     { "net": "PD_FAULT_SENSE", "x": 6.5, "y": -3.3, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "PD_FAULT_SENSE", "x": 16, "y": -6.4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "HOT_DATA_MCU", "x": -2, "y": -25.4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "HOT_DATA_MCU", "x": 23.6, "y": 5.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "HOT_DATA_MCU", "x": 21.6, "y": 5.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -5.6, "y": 16.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -1.5, "y": 16.2, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "DRIVER_ENABLE", "x": -0.1, "y": 14.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
@@ -4947,7 +4972,11 @@
     { "net": "VBUS_RAW", "x": -20.15, "y": -12.6, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "FAN_12V", "x": -16.87, "y": -3.7, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "FAN_12V", "x": -25, "y": -18, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "FAN_12V", "x": -23.5, "y": -23.5, "holeDiameter": 0.3, "outerDiameter": 0.6 }
+    { "net": "FAN_12V", "x": -23.5, "y": -23.5, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "CTRL_3V3", "x": 18.3, "y": 1.9, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "HOT_SENSOR_DATA", "x": 20.4, "y": 1.850904, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "HOT_SENSOR_DATA", "x": 19.6, "y": 4, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "TEC_POS", "x": 18.5, "y": 1, "holeDiameter": 0.3, "outerDiameter": 0.6 }
   ],
   "pours": [
     {
@@ -5052,11 +5081,11 @@
         { "x": 23, "y": 13 },
         { "x": 26.4, "y": 13 },
         { "x": 26.4, "y": 18.5 },
-        { "x": 31.1, "y": 18.5 },
-        { "x": 31.1, "y": 23.2 },
-        { "x": 20.5, "y": 23.2 },
-        { "x": 20.5, "y": 18 },
-        { "x": 22.3, "y": 18 },
+        { "x": 29.6, "y": 18.5 },
+        { "x": 29.6, "y": 23.7 },
+        { "x": 19, "y": 23.7 },
+        { "x": 19, "y": 18.5 },
+        { "x": 22.3, "y": 18.5 },
         { "x": 22.3, "y": 14 },
         { "x": 23, "y": 14 }
       ]
@@ -5965,131 +5994,131 @@
       "boardEdgeMargin": 0,
       "useThermalReliefs": false,
       "outline": [
-        { "x": 20.178528, "y": 23.775685 },
-        { "x": 20.120001, "y": 23.769921 },
-        { "x": 20.061474, "y": 23.775685 },
-        { "x": 20.005196, "y": 23.792757 },
-        { "x": 19.95333, "y": 23.82048 },
-        { "x": 19.907869, "y": 23.857789 },
-        { "x": 19.87056, "y": 23.90325 },
-        { "x": 19.842837, "y": 23.955116 },
-        { "x": 19.825765, "y": 24.011394 },
-        { "x": 19.820001, "y": 24.069921 },
-        { "x": 19.825765, "y": 24.128448 },
-        { "x": 19.842837, "y": 24.184726 },
-        { "x": 19.87056, "y": 24.236592 },
-        { "x": 19.907869, "y": 24.282053 },
-        { "x": 19.926471, "y": 24.297319 },
-        { "x": 19.860753, "y": 24.374537 },
-        { "x": 20.093408, "y": 24.57254 },
-        { "x": 20.061474, "y": 24.575685 },
-        { "x": 20.005196, "y": 24.592757 },
-        { "x": 19.95333, "y": 24.62048 },
-        { "x": 19.907869, "y": 24.657789 },
-        { "x": 19.87056, "y": 24.70325 },
-        { "x": 19.842837, "y": 24.755116 },
-        { "x": 19.825765, "y": 24.811394 },
-        { "x": 19.820001, "y": 24.869921 },
-        { "x": 19.825765, "y": 24.928448 },
-        { "x": 19.842837, "y": 24.984726 },
-        { "x": 19.87056, "y": 25.036592 },
-        { "x": 19.907869, "y": 25.082053 },
-        { "x": 19.95333, "y": 25.119362 },
-        { "x": 20.00264, "y": 25.145719 },
-        { "x": 19.963379, "y": 25.237983 },
-        { "x": 20.120001, "y": 25.304631 },
-        { "x": 20.120001, "y": 25.369921 },
-        { "x": 20.061474, "y": 25.375685 },
-        { "x": 20.005196, "y": 25.392757 },
-        { "x": 19.95333, "y": 25.42048 },
-        { "x": 19.907869, "y": 25.457789 },
-        { "x": 19.87056, "y": 25.50325 },
-        { "x": 19.842837, "y": 25.555116 },
-        { "x": 19.825765, "y": 25.611394 },
-        { "x": 19.820001, "y": 25.669921 },
-        { "x": 19.825765, "y": 25.728448 },
-        { "x": 19.842837, "y": 25.784726 },
-        { "x": 19.87056, "y": 25.836592 },
-        { "x": 19.907869, "y": 25.882053 },
-        { "x": 19.95333, "y": 25.919362 },
-        { "x": 20.005196, "y": 25.947085 },
-        { "x": 20.061474, "y": 25.964157 },
-        { "x": 20.120001, "y": 25.969921 },
-        { "x": 20.120001, "y": 26.035211 },
-        { "x": 19.963379, "y": 26.101859 },
-        { "x": 20.00264, "y": 26.194123 },
-        { "x": 19.95333, "y": 26.22048 },
-        { "x": 19.907869, "y": 26.257789 },
-        { "x": 19.87056, "y": 26.30325 },
-        { "x": 19.842837, "y": 26.355116 },
-        { "x": 19.825765, "y": 26.411394 },
-        { "x": 19.820001, "y": 26.469921 },
-        { "x": 19.825765, "y": 26.528448 },
-        { "x": 19.842837, "y": 26.584726 },
-        { "x": 19.87056, "y": 26.636592 },
-        { "x": 19.907869, "y": 26.682053 },
-        { "x": 19.95333, "y": 26.719362 },
-        { "x": 20.005196, "y": 26.747085 },
-        { "x": 20.061474, "y": 26.764157 },
-        { "x": 20.093408, "y": 26.767302 },
-        { "x": 19.860753, "y": 26.965305 },
-        { "x": 19.926471, "y": 27.042523 },
-        { "x": 19.907869, "y": 27.057789 },
-        { "x": 19.87056, "y": 27.10325 },
-        { "x": 19.842837, "y": 27.155116 },
-        { "x": 19.825765, "y": 27.211394 },
-        { "x": 19.820001, "y": 27.269921 },
-        { "x": 19.825765, "y": 27.328448 },
-        { "x": 19.842837, "y": 27.384726 },
-        { "x": 19.87056, "y": 27.436592 },
-        { "x": 19.907869, "y": 27.482053 },
-        { "x": 19.95333, "y": 27.519362 },
-        { "x": 20.005196, "y": 27.547085 },
-        { "x": 20.061474, "y": 27.564157 },
-        { "x": 20.120001, "y": 27.569921 },
-        { "x": 20.178528, "y": 27.564157 },
-        { "x": 20.234806, "y": 27.547085 },
-        { "x": 20.286672, "y": 27.519362 },
-        { "x": 20.313531, "y": 27.497319 },
-        { "x": 20.379249, "y": 27.574537 },
-        { "x": 20.634514, "y": 27.357289 },
-        { "x": 20.642837, "y": 27.384726 },
-        { "x": 20.67056, "y": 27.436592 },
-        { "x": 20.707869, "y": 27.482053 },
-        { "x": 20.75333, "y": 27.519362 },
-        { "x": 20.805196, "y": 27.547085 },
-        { "x": 20.861474, "y": 27.564157 },
-        { "x": 20.920001, "y": 27.569921 },
-        { "x": 20.978528, "y": 27.564157 },
-        { "x": 21.034806, "y": 27.547085 },
-        { "x": 21.086672, "y": 27.519362 },
-        { "x": 21.132133, "y": 27.482053 },
-        { "x": 21.168543, "y": 27.437687 },
-        { "x": 21.251541, "y": 27.49371 },
-        { "x": 21.400001, "y": 27.273768 },
-        { "x": 21.400001, "y": 27.419917 },
-        { "x": 22.599999, "y": 27.419917 },
-        { "x": 22.599999, "y": 23.919925 },
-        { "x": 21.400001, "y": 23.919925 },
-        { "x": 21.400001, "y": 24.066074 },
-        { "x": 21.251541, "y": 23.846132 },
-        { "x": 21.168543, "y": 23.902155 },
-        { "x": 21.132133, "y": 23.857789 },
-        { "x": 21.086672, "y": 23.82048 },
-        { "x": 21.034806, "y": 23.792757 },
-        { "x": 20.978528, "y": 23.775685 },
-        { "x": 20.920001, "y": 23.769921 },
-        { "x": 20.861474, "y": 23.775685 },
-        { "x": 20.805196, "y": 23.792757 },
-        { "x": 20.75333, "y": 23.82048 },
-        { "x": 20.707869, "y": 23.857789 },
-        { "x": 20.67056, "y": 23.90325 },
-        { "x": 20.642837, "y": 23.955116 },
-        { "x": 20.634514, "y": 23.982553 },
-        { "x": 20.379249, "y": 23.765305 },
-        { "x": 20.313531, "y": 23.842523 },
-        { "x": 20.286672, "y": 23.82048 },
-        { "x": 20.234806, "y": 23.792757 }
+        { "x": 18.678528, "y": 24.275685 },
+        { "x": 18.620001, "y": 24.269921 },
+        { "x": 18.561474, "y": 24.275685 },
+        { "x": 18.505196, "y": 24.292757 },
+        { "x": 18.45333, "y": 24.32048 },
+        { "x": 18.407869, "y": 24.357789 },
+        { "x": 18.37056, "y": 24.40325 },
+        { "x": 18.342837, "y": 24.455116 },
+        { "x": 18.325765, "y": 24.511394 },
+        { "x": 18.320001, "y": 24.569921 },
+        { "x": 18.325765, "y": 24.628448 },
+        { "x": 18.342837, "y": 24.684726 },
+        { "x": 18.37056, "y": 24.736592 },
+        { "x": 18.407869, "y": 24.782053 },
+        { "x": 18.426471, "y": 24.797319 },
+        { "x": 18.360753, "y": 24.874537 },
+        { "x": 18.593408, "y": 25.07254 },
+        { "x": 18.561474, "y": 25.075685 },
+        { "x": 18.505196, "y": 25.092757 },
+        { "x": 18.45333, "y": 25.12048 },
+        { "x": 18.407869, "y": 25.157789 },
+        { "x": 18.37056, "y": 25.20325 },
+        { "x": 18.342837, "y": 25.255116 },
+        { "x": 18.325765, "y": 25.311394 },
+        { "x": 18.320001, "y": 25.369921 },
+        { "x": 18.325765, "y": 25.428448 },
+        { "x": 18.342837, "y": 25.484726 },
+        { "x": 18.37056, "y": 25.536592 },
+        { "x": 18.407869, "y": 25.582053 },
+        { "x": 18.45333, "y": 25.619362 },
+        { "x": 18.50264, "y": 25.645719 },
+        { "x": 18.463379, "y": 25.737983 },
+        { "x": 18.620001, "y": 25.804631 },
+        { "x": 18.620001, "y": 25.869921 },
+        { "x": 18.561474, "y": 25.875685 },
+        { "x": 18.505196, "y": 25.892757 },
+        { "x": 18.45333, "y": 25.92048 },
+        { "x": 18.407869, "y": 25.957789 },
+        { "x": 18.37056, "y": 26.00325 },
+        { "x": 18.342837, "y": 26.055116 },
+        { "x": 18.325765, "y": 26.111394 },
+        { "x": 18.320001, "y": 26.169921 },
+        { "x": 18.325765, "y": 26.228448 },
+        { "x": 18.342837, "y": 26.284726 },
+        { "x": 18.37056, "y": 26.336592 },
+        { "x": 18.407869, "y": 26.382053 },
+        { "x": 18.45333, "y": 26.419362 },
+        { "x": 18.505196, "y": 26.447085 },
+        { "x": 18.561474, "y": 26.464157 },
+        { "x": 18.620001, "y": 26.469921 },
+        { "x": 18.620001, "y": 26.535211 },
+        { "x": 18.463379, "y": 26.601859 },
+        { "x": 18.50264, "y": 26.694123 },
+        { "x": 18.45333, "y": 26.72048 },
+        { "x": 18.407869, "y": 26.757789 },
+        { "x": 18.37056, "y": 26.80325 },
+        { "x": 18.342837, "y": 26.855116 },
+        { "x": 18.325765, "y": 26.911394 },
+        { "x": 18.320001, "y": 26.969921 },
+        { "x": 18.325765, "y": 27.028448 },
+        { "x": 18.342837, "y": 27.084726 },
+        { "x": 18.37056, "y": 27.136592 },
+        { "x": 18.407869, "y": 27.182053 },
+        { "x": 18.45333, "y": 27.219362 },
+        { "x": 18.505196, "y": 27.247085 },
+        { "x": 18.561474, "y": 27.264157 },
+        { "x": 18.593408, "y": 27.267302 },
+        { "x": 18.360753, "y": 27.465305 },
+        { "x": 18.426471, "y": 27.542523 },
+        { "x": 18.407869, "y": 27.557789 },
+        { "x": 18.37056, "y": 27.60325 },
+        { "x": 18.342837, "y": 27.655116 },
+        { "x": 18.325765, "y": 27.711394 },
+        { "x": 18.320001, "y": 27.769921 },
+        { "x": 18.325765, "y": 27.828448 },
+        { "x": 18.342837, "y": 27.884726 },
+        { "x": 18.37056, "y": 27.936592 },
+        { "x": 18.407869, "y": 27.982053 },
+        { "x": 18.45333, "y": 28.019362 },
+        { "x": 18.505196, "y": 28.047085 },
+        { "x": 18.561474, "y": 28.064157 },
+        { "x": 18.620001, "y": 28.069921 },
+        { "x": 18.678528, "y": 28.064157 },
+        { "x": 18.734806, "y": 28.047085 },
+        { "x": 18.786672, "y": 28.019362 },
+        { "x": 18.813531, "y": 27.997319 },
+        { "x": 18.879249, "y": 28.074537 },
+        { "x": 19.134514, "y": 27.857289 },
+        { "x": 19.142837, "y": 27.884726 },
+        { "x": 19.17056, "y": 27.936592 },
+        { "x": 19.207869, "y": 27.982053 },
+        { "x": 19.25333, "y": 28.019362 },
+        { "x": 19.305196, "y": 28.047085 },
+        { "x": 19.361474, "y": 28.064157 },
+        { "x": 19.420001, "y": 28.069921 },
+        { "x": 19.478528, "y": 28.064157 },
+        { "x": 19.534806, "y": 28.047085 },
+        { "x": 19.586672, "y": 28.019362 },
+        { "x": 19.632133, "y": 27.982053 },
+        { "x": 19.668543, "y": 27.937687 },
+        { "x": 19.751541, "y": 27.99371 },
+        { "x": 19.900001, "y": 27.773768 },
+        { "x": 19.900001, "y": 27.919917 },
+        { "x": 21.099999, "y": 27.919917 },
+        { "x": 21.099999, "y": 24.419925 },
+        { "x": 19.900001, "y": 24.419925 },
+        { "x": 19.900001, "y": 24.566074 },
+        { "x": 19.751541, "y": 24.346132 },
+        { "x": 19.668543, "y": 24.402155 },
+        { "x": 19.632133, "y": 24.357789 },
+        { "x": 19.586672, "y": 24.32048 },
+        { "x": 19.534806, "y": 24.292757 },
+        { "x": 19.478528, "y": 24.275685 },
+        { "x": 19.420001, "y": 24.269921 },
+        { "x": 19.361474, "y": 24.275685 },
+        { "x": 19.305196, "y": 24.292757 },
+        { "x": 19.25333, "y": 24.32048 },
+        { "x": 19.207869, "y": 24.357789 },
+        { "x": 19.17056, "y": 24.40325 },
+        { "x": 19.142837, "y": 24.455116 },
+        { "x": 19.134514, "y": 24.482553 },
+        { "x": 18.879249, "y": 24.265305 },
+        { "x": 18.813531, "y": 24.342523 },
+        { "x": 18.786672, "y": 24.32048 },
+        { "x": 18.734806, "y": 24.292757 }
       ]
     },
     {

@@ -61,7 +61,7 @@ export function FanPowerBlock() {
         https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf */}
     <PcFanHeader name="J_FAN" {...connectorPlacements.J_FAN} schX={11.5} schY={1.2} schRotation={0} schSheetName="FAN"
       connections={{ pin1: "net.GND", pin2: "net.FAN_12V" }} noConnect={["pin3", "pin4"]} />
-    <silkscreentext text="FAN 12V / 0.5A" pcbX={24} pcbY={-23.5} fontSize={0.6} />
+    <silkscreentext text="FAN 12V / 0.5A" pcbX={22} pcbY={-23.5} fontSize={0.6} />
     <FanRouting />
   </>
 }

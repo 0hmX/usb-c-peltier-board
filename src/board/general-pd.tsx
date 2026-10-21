@@ -17,7 +17,7 @@ import { CC0603KRX7R8BB105 as Capacitor1uF } from "../../imports/CC0603KRX7R8BB1
 
 export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
   // Exposed-pad thermal arrays require POFV; routing tests allow only the 13 exact pairs.
-  return <board width={74} height={60} outlineOffsetX={-3} outlineOffsetY={-1} layers={4} thickness={1.6}
+  return <board width={72.5} height={60} outlineOffsetX={-3.75} outlineOffsetY={-1} layers={4} thickness={1.6}
     title="USB-C PD Peltier driver · adjustable CC/CV"
     minTraceWidth={0.2} minTraceToPadEdgeClearance={0.17} minPadEdgeToPadEdgeClearance={0.17}
     minViaEdgeToPadEdgeClearance={0.17} minViaHoleDiameter={0.3} minViaPadDiameter={0.6}
@@ -133,9 +133,9 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
       schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
-    <silkscreentext text="+" pcbX={24.7} pcbY={17.5} fontSize={1} />
-    <silkscreentext text="−" pcbX={24.7} pcbY={28.2} fontSize={1} />
-    <silkscreentext text="TEC" pcbX={29} pcbY={17.4} fontSize={0.6} />
+    <silkscreentext text="+" pcbX={22.7} pcbY={17.5} fontSize={1} />
+    <silkscreentext text="−" pcbX={22.7} pcbY={28.2} fontSize={1} />
+    <silkscreentext text="TEC" pcbX={27.5} pcbY={17.4} fontSize={0.6} />
     <RoutedCopper {...routingData as RoutedCopperData} />
   </board>
 }

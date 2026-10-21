@@ -2,10 +2,10 @@
 export const connectorPlacements = {
   J_USB: { pcbX: -33, pcbY: 10, pcbRotation: 270 },
   J_PROGRAM: { pcbX: -33, pcbY: -20, pcbRotation: 270 },
-  J_TEC: { pcbX: 30, pcbY: 23, pcbRotation: 90 },
-  J_HOT_SENSOR: { pcbX: 30, pcbY: 11, pcbRotation: 90 },
-  J_COLD_SENSOR: { pcbX: 30, pcbY: -8, pcbRotation: 90 },
-  J_FAN: { pcbX: 31, pcbY: -25.5, pcbRotation: 90 },
+  J_TEC: { pcbX: 28.5, pcbY: 23, pcbRotation: 90 },
+  J_HOT_SENSOR: { pcbX: 28.5, pcbY: 11, pcbRotation: 90 },
+  J_COLD_SENSOR: { pcbX: 28.5, pcbY: -8, pcbRotation: 90 },
+  J_FAN: { pcbX: 29.5, pcbY: -25.5, pcbRotation: 90 },
 } as const
 
 export type Point3 = [number, number, number]

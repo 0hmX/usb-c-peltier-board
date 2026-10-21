@@ -20,7 +20,7 @@ For another module, configure limits within its ratings before connecting PD. Th
 
 ## Board and build
 
-The **74 × 60 mm, four-layer board** routes power and signals with broad power copper, Kelvin shunt sensing, a whole-board inner1 ground plane and an inner2 ground reference beneath USB. It retains the original electrical net partition and separate PD/programming supply paths. All purchased parts and copper debug pads are on the top side. It has **134 purchased component placements**, all with concrete JLCPCB identifiers, plus **16 labeled copper debug pads** for SWD, boot/reset, rails, enable, current sensing and I²C. The pads are PCB features, excluded from the purchased BOM. Silkscreen retains connector, polarity, LED and debug labels; component reference text is hidden.
+The **72.5 × 60 mm, four-layer board** routes power and signals with broad power copper, Kelvin shunt sensing, a whole-board inner1 ground plane and an inner2 ground reference beneath USB. It retains the original electrical net partition and separate PD/programming supply paths. All purchased parts and copper debug pads are on the top side. It has **134 purchased component placements**, all with concrete JLCPCB identifiers, plus **16 labeled copper debug pads** for SWD, boot/reset, rails, enable, current sensing and I²C. The pads are PCB features, excluded from the purchased BOM. Silkscreen retains connector, polarity, LED and debug labels; component reference text is hidden.
 
 ```sh
 bun install --frozen-lockfile

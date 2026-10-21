@@ -74,9 +74,9 @@ export function StatusAndDebug() {
       connections={{ pin1: "net.LOGIC_5V" }} />
     <silkscreentext text="5V" pcbX={-22} pcbY={-19.949976} fontSize={0.55} />
     <testpoint name="TP_TEC" schX={-8.25} schY={-6} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
-      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={22} pcbY={10} schSheetName="DEBUG"
+      pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={18.5} pcbY={-0.5} schSheetName="DEBUG"
       connections={{ pin1: "net.TEC_POS" }} />
-    <silkscreentext text="TEC +" pcbX={22} pcbY={8.75} fontSize={0.55} />
+    <silkscreentext text="TEC +" pcbX={18.5} pcbY={-1.75} fontSize={0.55} />
     <testpoint name="TP_OUT" schX={-3.75} schY={-6} schRotation={0} footprintVariant="pad" padDiameter={1.5} doNotPlace
       pcbStyle={{ silkscreenTextVisibility: "hidden" }} pcbX={20.1} pcbY={10} schSheetName="DEBUG"
       connections={{ pin1: "net.DRIVER_OUT" }} />
