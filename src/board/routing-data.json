@@ -4347,8 +4347,15 @@
         { "route_type": "wire", "x": -16.87, "y": -3.7, "width": 0.6, "layer": "top" },
         { "route_type": "via", "x": -16.87, "y": -3.7, "from_layer": "top", "to_layer": "bottom" },
         { "route_type": "wire", "x": -16.87, "y": -3.7, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": -38, "y": -3.7, "width": 0.6, "layer": "bottom" },
-        { "route_type": "wire", "x": -38, "y": -30, "width": 0.6, "layer": "bottom" },
+        { "route_type": "wire", "x": -25, "y": -3.7, "width": 0.6, "layer": "bottom" },
+        { "route_type": "wire", "x": -25, "y": -18, "width": 0.6, "layer": "bottom" },
+        { "route_type": "via", "x": -25, "y": -18, "from_layer": "bottom", "to_layer": "top" },
+        { "route_type": "wire", "x": -25, "y": -18, "width": 0.6, "layer": "top" },
+        { "route_type": "wire", "x": -23.5, "y": -18, "width": 0.6, "layer": "top" },
+        { "route_type": "wire", "x": -23.5, "y": -23.5, "width": 0.6, "layer": "top" },
+        { "route_type": "via", "x": -23.5, "y": -23.5, "from_layer": "top", "to_layer": "bottom" },
+        { "route_type": "wire", "x": -23.5, "y": -23.5, "width": 0.6, "layer": "bottom" },
+        { "route_type": "wire", "x": -23.5, "y": -30, "width": 0.6, "layer": "bottom" },
         { "route_type": "wire", "x": 27, "y": -30, "width": 0.6, "layer": "bottom" },
         { "route_type": "wire", "x": 27, "y": -24.23, "width": 0.6, "layer": "bottom" },
         { "route_type": "wire", "x": 30.01998545, "y": -24.23, "width": 0.6, "layer": "bottom" }
@@ -4938,7 +4945,9 @@
     { "net": "DRIVER_COMP", "x": 7.8, "y": 18.8, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "VBUS_RAW", "x": -25.275, "y": 6.3, "holeDiameter": 0.3, "outerDiameter": 0.6 },
     { "net": "VBUS_RAW", "x": -20.15, "y": -12.6, "holeDiameter": 0.3, "outerDiameter": 0.6 },
-    { "net": "FAN_12V", "x": -16.87, "y": -3.7, "holeDiameter": 0.3, "outerDiameter": 0.6 }
+    { "net": "FAN_12V", "x": -16.87, "y": -3.7, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "FAN_12V", "x": -25, "y": -18, "holeDiameter": 0.3, "outerDiameter": 0.6 },
+    { "net": "FAN_12V", "x": -23.5, "y": -23.5, "holeDiameter": 0.3, "outerDiameter": 0.6 }
   ],
   "pours": [
     {
