@@ -106,6 +106,8 @@ The build's custom board header is `include/general_pd_rp2040.h`.
 | Output permission: HIGH grants, LOW/reset/Hi-Z disables | GP2 / 4 |
 | Driver SC/OVP active LOW; PD fault active HIGH | GP3 / 5; GP4 / 6 |
 | RUN / FAULT LEDs, active HIGH | GP6 / 8; GP7 / 9 |
+| Buzzer switch, active HIGH (drive ~4 kHz square wave) | GP11 / 14 |
+| WS2812B RGB LED data (800 kHz one-wire) | GP12 / 15 |
 | HOT / COLD 1-Wire DATA | GP8 / 11; GP9 / 12 |
 | I2C0 SDA / SCL, converter address 0x75 | GP0 / 2; GP1 / 3 |
 | Current ADC0, nominal 0.2 V/A | GP26 / 38 |

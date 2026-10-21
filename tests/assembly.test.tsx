@@ -91,7 +91,7 @@ describe("native Peltier assembly", () => {
     expect(device.db.pcb_board.list()).toHaveLength(1)
     expect(placedComponents(device).filter(part => !part.do_not_place)).toHaveLength(
       placedComponents(board).filter(part => !part.do_not_place).length)
-    expect(placedComponents(device).filter(part => !part.do_not_place)).toHaveLength(134)
+    expect(placedComponents(device).filter(part => !part.do_not_place)).toHaveLength(142)
     expect(placedComponents(device).filter(part => part.do_not_place)).toHaveLength(16)
     expect(physicalSignature(device)).toEqual(physicalSignature(board))
     expect(electricalSignature(device)).toEqual(electricalSignature(board))

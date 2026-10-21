@@ -2,7 +2,7 @@
 
 ## Scope and limits
 
-One two-wire output with adjustable constant-voltage and constant-current limits. **PD POWER** supplies the load; **USB PROGRAM** provides native USB configuration, firmware updates and logic power. There are no display, buttons or display headers. Three status LEDs and 16 bare copper debug pads support setup and development.
+One two-wire output with adjustable constant-voltage and constant-current limits. **PD POWER** supplies the load; **USB PROGRAM** provides native USB configuration, firmware updates and logic power. There are no display, buttons or display headers. Three status LEDs, an addressable RGB status LED, a buzzer and 16 bare copper debug pads support setup and development.
 
 The default module is [HiLetgo TEC1-12706, Amazon ASIN B00M1PM7H6](https://www.amazon.com/dp/B00M1PM7H6). Its listing specifies 40 × 40 × 3.6 mm and two modules per package; this board drives one. During selection, that listing showed 50+ purchases in the past month, 564 ratings and 4.3/5; [diymore's TEC1-12706 listing](https://www.amazon.com/dp/B01IUVSSHW) showed 100+, 354 ratings and 4.4/5. These changing, potentially pooled listing statistics support choosing a familiar consumer module, without establishing the world's best-selling Peltier.
 
@@ -19,7 +19,8 @@ The [Hebei reference datasheet](https://www.hebeiltd.com.cn/peltier.datasheet/TE
 | Programming input | USB 2.0 data and 5 V logic supply |
 | Fan output | Fixed 12 V, 0.5 A / 6 W continuous budget; qualified PD only |
 | Temperature ports | Two independent powered DS18B20 inputs on GPIO8 / GPIO9 |
-| Board | 100 × 80 mm, nominal 1.6 mm, four layers, routed power/signals and ground pours |
+| Indicators | WS2812B-2020 RGB LED on GPIO12; MLT-5020 buzzer on GPIO11 |
+| Board | 74 × 60 mm, nominal 1.6 mm, four layers, routed power/signals and ground pours |
 
 Voltage is regulated **before the 10 mΩ shunt**, which drops approximately 55 mV at 5.5 A plus wiring losses. USB STATUS reports approximate voltage at the TEC terminal. The 2.1 V setting floor provides nominal margin above the converter's 2 V current-sense common-mode accuracy boundary after the shunt. Current regulation under overload can reduce output below that boundary; low-voltage accuracy and short-circuit behavior need bench validation. IC, shunt and divider tolerances remain uncalibrated.
 
@@ -81,11 +82,13 @@ The selected fan is the **[Noctua NF-A8 PWM, Amazon B00NEMG62M](https://www.amaz
 | POWER / RUN / FAULT | Yellow KT-0603Y C2287 / green KT-0603YG C2289 / red KT-0603R C2286 |
 | Both USB cables | [Cable Matters 201440](https://www.cablematters.com/pc-1532-123-usb-c-20-charging-cable-with-240w-power-delivery.aspx), 1 m, 5 A, e-marked, USB 2.0 data |
 
-[Inventory](component-sourcing.csv) records **134 purchased placements across 55 exact JLC SKUs**. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain historical observations for the original 54 SKUs; stock for the added C960916 capacitor still needs checking. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
+[Inventory](component-sourcing.csv) records **142 purchased placements across 59 exact JLC SKUs**. The [timestamped stock snapshot](jlc-stock-audit.json) and CSV retain historical observations for the original 54 SKUs; stock for the added C960916 capacitor and the indicator parts (C965555, C94598, C2128, C23140) still needs checking. Stock and pricing change; the tscircuit parts engine’s availability warnings are separate from these direct catalog observations and netlist validation. No fabrication or component order has been placed.
 
 Use factory Peltier leads in the terminal; seller lengths/gauges vary. Cable extensions require their own current/temperature qualification. Both selected USB cables support data, although PD POWER uses only power/CC. The model distinguishes their roles by color and labels; these are illustrative cable shapes.
 
-POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indicates a latched fault. The **16 debug pads** expose SWDIO, SWCLK, BOOTSEL, RUN/reset, 3V3, GND, raw PD, qualified PD, LOGIC5V, TEC terminal, pre-shunt output, driver EN, ISP, ISN, SCL and SDA. They are 1.5 mm copper pads, with no fitted component or JLC SKU. BOOTSEL connects to QSPI chip-select through 1 kΩ; hold it to GND during reset to enter the ROM loader without buttons. Silkscreen keeps these functional labels, port names, polarity and LED labels; automatic component reference text is hidden.
+POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indicates a latched fault.
+
+**RGB LED and buzzer.** `LED_RGB` is a WS2812B-2020 driven from GPIO12 (physical pin 15) through 33 Ω. Its DIN high threshold is 0.7 × VDD, so VDD comes from LOGIC_5V through a 1N4148WS (`D_RGB_SUPPLY`, about 4.0–4.4 V across USB tolerance and LED load): 3.3 V data is a valid high and VDD stays above the 3.7 V minimum, on either USB port. `C_RGB` (100 nF) bypasses the LED, and DOUT is unconnected. `BZ_STATUS` is an MLT-5020 4 kHz magnetic transducer: it needs a square wave, not DC. GPIO11 (physical pin 14) drives an MMBT3904 low-side switch through 1 kΩ, the coil runs from CTRL_3V3, and a 1N4148WS clamps the flyback. RP2040 pads reset with pull-downs, so the buzzer is silent through reset and boot. Both parts sit along the bottom edge below USB PROGRAM, so the board is 2.5 mm taller than the previous 59 mm layout. Firmware support is limited to holding both outputs LOW. The **16 debug pads** expose SWDIO, SWCLK, BOOTSEL, RUN/reset, 3V3, GND, raw PD, qualified PD, LOGIC5V, TEC terminal, pre-shunt output, driver EN, ISP, ISN, SCL and SDA. They are 1.5 mm copper pads, with no fitted component or JLC SKU. BOOTSEL connects to QSPI chip-select through 1 kΩ; hold it to GND during reset to enter the ROM loader without buttons. Silkscreen keeps these functional labels, port names, polarity and LED labels; automatic component reference text is hidden.
 
 ## PCB routing and fabrication
 

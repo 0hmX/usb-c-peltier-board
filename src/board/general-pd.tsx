@@ -17,7 +17,7 @@ import { CC0603KRX7R8BB105 as Capacitor1uF } from "../../imports/CC0603KRX7R8BB1
 
 export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicDisabled?: boolean } = {}) {
   // Exposed-pad thermal arrays require POFV; routing tests allow only the 13 exact pairs.
-  return <board width={100} height={80} outlineOffsetX={10} outlineOffsetY={-10} layers={4} thickness={1.6}
+  return <board width={72.5} height={61.5} outlineOffsetX={-3.75} outlineOffsetY={-1.75} layers={4} thickness={1.6}
     title="USB-C PD Peltier driver · adjustable CC/CV"
     minTraceWidth={0.2} minTraceToPadEdgeClearance={0.17} minPadEdgeToPadEdgeClearance={0.17}
     minViaEdgeToPadEdgeClearance={0.17} minViaHoleDiameter={0.3} minViaPadDiameter={0.6}
@@ -41,6 +41,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <schematicsheet name="DEBUG" displayName="Status LEDs and debug test pads" sheetIndex={7} />
     <schematicsheet name="FAN" displayName="Fixed 12 V fan power" sheetIndex={8} />
     <schematicsheet name="SENSORS" displayName="Hot- and cold-side temperature probes" sheetIndex={9} />
+    <schematicsheet name="INDICATORS" displayName="RGB status LED and buzzer" sheetIndex={10} />
     <USB4085_GF_A name="J_USB" {...connectorPlacements.J_USB} schX={-11} schY={4.2} schRotation={0} schSheetName="PD"
       connections={{ pin1: "net.CC1", pin14: "net.CC2",
         pin2: "net.GND", pin8: "net.GND", pin9: "net.GND", pin16: "net.GND", pin17: "net.GND",
@@ -79,7 +80,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <trace from=".Q_REVERSE > .pin6" to="net.VBUS_QUALIFIED" />
     <trace from=".Q_REVERSE > .pin7" to="net.VBUS_QUALIFIED" />
     <trace from=".Q_REVERSE > .pin8" to="net.VBUS_QUALIFIED" />
-    <GRM31CC72A475KE11L name="C_USB" pcbX={-28} pcbY={3} pcbRotation={0} schX={-8} schY={7} schRotation={270} schSheetName="PD"
+    <GRM31CC72A475KE11L name="C_USB" pcbX={-23.7} pcbY={4.5} pcbRotation={0} schX={-8} schY={7} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
     <Capacitor100nF name="C_PD_VBUS" maxVoltageRating="50V" pcbX={-27.96} pcbY={17.250066} pcbRotation={180} schX={-5.5} schY={7} schRotation={270} schSheetName="PD"
       connections={{ pin1: "net.VBUS_RAW", pin2: "net.GND" }} />
@@ -133,8 +134,9 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
       schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
     <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
-    <silkscreentext text="+" pcbX={50.5} pcbY={21.5} fontSize={1} />
-    <silkscreentext text="−" pcbX={50.5} pcbY={26.5} fontSize={1} />
+    <silkscreentext text="+" pcbX={22.7} pcbY={17.5} fontSize={1} />
+    <silkscreentext text="−" pcbX={22.7} pcbY={28.2} fontSize={1} />
+    <silkscreentext text="TEC" pcbX={27.5} pcbY={17.4} fontSize={0.6} />
     <RoutedCopper {...routingData as RoutedCopperData} />
   </board>
 }

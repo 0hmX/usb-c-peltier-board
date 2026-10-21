@@ -16,6 +16,8 @@ pico_board_cmake_set_default(PICO_FLASH_SIZE_BYTES, (16 * 1024 * 1024))
 #define PD_FAULT_LED_PIN 7
 #define PD_HOT_SENSOR_PIN 8
 #define PD_COLD_SENSOR_PIN 9
+#define PD_BUZZER_PIN 11
+#define PD_RGB_LED_PIN 12
 #define PD_CURRENT_ADC_PIN 26
 #define PD_VOLTAGE_ADC_PIN 27
 #define PD_INPUT_ADC_PIN 28

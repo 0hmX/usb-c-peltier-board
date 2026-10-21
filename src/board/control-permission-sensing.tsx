@@ -33,7 +33,7 @@ export function PermissionAndSensing() {
     <Resistor0603 name="R_KILL_RESET" schX={-4.2} schY={5.6} schRotation={270} resistance="47k" pcbX={12} pcbY={-11} schSheetName="MONITOR"
       manufacturerPartNumber="0603WAF4702T5E" supplierPartNumbers={{ jlcpcb: ["C25819"] }}
       connections={{ pin1: "net.LOGIC_5V", pin2: "net.DRIVER_KILL_BASE" }} />
-    <Resistor0603 name="R_RELEASE_OFF" schX={-7.35} schY={2.24} schRotation={270} resistance="100k" pcbX={20} pcbY={-19} schSheetName="MONITOR"
+    <Resistor0603 name="R_RELEASE_OFF" schX={-7.35} schY={2.24} schRotation={270} resistance="100k" pcbX={20} pcbY={-18} schSheetName="MONITOR"
       manufacturerPartNumber="0603WAF1003T5E" supplierPartNumbers={{ jlcpcb: ["C25803"] }}
       connections={{ pin1: "net.DRIVER_RELEASE_GATE", pin2: "net.GND" }} />
     <Resistor0603 name="R_PD_FAULT_SENSE" schX={4.2} schY={3.15} schRotation={0} resistance="10k" pcbX={16} pcbY={-8} schSheetName="MONITOR"
