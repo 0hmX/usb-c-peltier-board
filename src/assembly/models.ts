@@ -145,11 +145,15 @@ const fanConductors = fanColors.map(conductor => {
 // LNA. The shown sleeve plus connector-exit fanout is about 200 mm; the plug's
 // internal leads are separate. Noctua does not specify these bends/exit points.
 const fanPath: Point3[] = [fanJoin, [67, -36, 28], [58, -70, 28],
-  [42, -120.3971, 22], [69, -116, 20], fan.cableEndPoint]
+  [42, -109, 22], [69, -105, 20], fan.cableEndPoint]
 const plugColor: Point3 = [0.77, 0.74, 0.64]
 function boxPolygons(center: Point3, size: Point3): JscadPolygon3[] {
-  const vertices = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]].map(v =>
-    add(center, v.map((n, i) => n * size[i]! / 2) as Point3))
+  // These envelopes were authored for the original 90-degree header.
+  const angle = (connectorPlacements.J_FAN.pcbRotation - 90) * Math.PI / 180
+  const vertices = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]].map(v => {
+    const [x, y, z] = v.map((n, i) => n * size[i]! / 2) as Point3
+    return add(center, [x * Math.cos(angle) - y * Math.sin(angle), x * Math.sin(angle) + y * Math.cos(angle), z])
+  })
   return [[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[0,1,5,4],[3,7,6,2]].map(face => ({ vertices: face.map(i => vertices[i]!), color: plugColor }))
 }
 const fanLocatorPoint = connectorPoint(connectorPlacements.J_FAN, fanLocatorLocal)

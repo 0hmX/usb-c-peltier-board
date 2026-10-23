@@ -8,7 +8,7 @@ export interface CopperRoute {
   /** Binds a local branch to this endpoint; required for single-pin constraints. Omit for supply trunks. */
   sourcePort?: string
 }
-export interface CopperVia { net: string; x: number; y: number; holeDiameter: number; outerDiameter: number; tented?: ViaProps["tented"] }
+export interface CopperVia { name?: string; net: string; x: number; y: number; holeDiameter: number; outerDiameter: number; tented?: ViaProps["tented"] }
 export interface RoutedCopperData {
   routes: CopperRoute[]
   vias: CopperVia[]
@@ -22,8 +22,8 @@ export function RoutedCopper({ routes, vias, pours = [] }: RoutedCopperData) {
     {routes.map(({ route, sourceTraceId }, index) => <Fragment key={index}>
       <pcbtrace route={route} {...{ source_trace_id: sourceTraceId }} />
     </Fragment>)}
-    {vias.map(({ net, x, y, holeDiameter, outerDiameter, tented }, index) =>
-      <Fragment key={index}><via pcbX={x} pcbY={y} fromLayer="top" toLayer="bottom"
+    {vias.map(({ name, net, x, y, holeDiameter, outerDiameter, tented }, index) =>
+      <Fragment key={index}><via name={name} pcbX={x} pcbY={y} fromLayer="top" toLayer="bottom"
         holeDiameter={holeDiameter} outerDiameter={outerDiameter} tented={tented} connectsTo={`net.${net}`} /></Fragment>)}
     {pours.map((pour, index) => <Fragment key={index}><copperpour {...pour} /></Fragment>)}
   </>
