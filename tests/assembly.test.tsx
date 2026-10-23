@@ -305,5 +305,25 @@ describe("native Peltier assembly", () => {
       return Array.isArray(color) && [0.05, 0.055, 0.06].every((value, i) => Math.abs(color[i]! - value) < 1e-6)
     }).flatMap(triangle => triangle.vertices)
     for (const point of fanCable.path) expect(nearPoint(sleeve, point, 1.61)).toBe(true)
+    // The plug's long side must follow the actual header pin row after rotation.
+    const plug = cable.mesh.triangles.filter(triangle => {
+      const color = triangle.material?.color
+      return Array.isArray(color) && [0.77, 0.74, 0.64].every((value, i) => Math.abs(color[i]! - value) < 1e-6)
+    }).flatMap(triangle => triangle.vertices)
+    expect(plug.length).toBeGreaterThan(0)
+    const [first, last] = [1, 4].map(pin => {
+      const port = device.db.source_port.list().find(port => port.source_component_id === connector.source_component_id && port.pin_number === pin)!
+      return device.db.pcb_port.list().find(p => p.source_port_id === port.source_port_id)!
+    })
+    const distance = Math.hypot(last!.x - first!.x, last!.y - first!.y)
+    const axis = [(last!.x - first!.x) / distance, (last!.y - first!.y) / distance]
+    const span = (values: number[]) => Math.max(...values) - Math.min(...values)
+    expect(span(plug.map(v => v.x * axis[0]! + v.z * axis[1]!))).toBeCloseTo(10.2, 5)
+    expect(span(plug.map(v => -v.x * axis[1]! + v.z * axis[0]!))).toBeLessThan(5)
+    const pathLength = (path: number[][]) => path.slice(1).reduce((sum, point, i) =>
+      sum + Math.hypot(...point.map((value, axis) => value - path[i]![axis]!)), 0)
+    const cableLength = pathLength(fanCable.path) + Math.max(...fanCable.conductors.map(c => pathLength(c.path)))
+    expect(cableLength).toBeLessThanOrEqual(fanCable.cableLengthMm)
+    expect(cableLength).toBeGreaterThan(fanCable.cableLengthMm - 2)
   })
 })
