@@ -85,7 +85,7 @@ The selected fan is the **[Noctua NF-A8 PWM, Amazon B00NEMG62M](https://www.amaz
 
 Use factory Peltier leads in the terminal; seller lengths/gauges vary. Cable extensions require their own current/temperature qualification. Both selected USB cables support data, although PD POWER uses only power/CC. The model distinguishes their roles by color and labels; these are illustrative cable shapes.
 
-POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indicates a latched fault. The **16 debug pads** expose SWDIO, SWCLK, BOOTSEL, RUN/reset, 3V3, GND, raw PD, qualified PD, LOGIC5V, TEC terminal, pre-shunt output, driver EN, ISP, ISN, SCL and SDA. They are 1.5 mm copper pads, with no fitted component or JLC SKU. BOOTSEL connects to QSPI chip-select through 1 kΩ; hold it to GND during reset to enter the ROM loader without buttons. Silkscreen keeps these functional labels, port names, polarity and LED labels; automatic component reference text is hidden.
+POWER indicates 3.3 V logic supply, RUN indicates enabled output and FAULT indicates a latched fault. The **16 debug pads** expose SWDIO, SWCLK, BOOTSEL, RUN/reset, 3V3, GND, raw PD, qualified PD, LOGIC5V, TEC terminal, pre-shunt output, driver EN, ISP, ISN, SCL and SDA. They are 1.5 mm copper pads, with no fitted component or JLC SKU. BOOTSEL connects to QSPI chip-select through 1 kΩ; hold it to GND during reset to enter the ROM loader without buttons. All silkscreen is intentionally omitted; identify these pads, port roles and polarity using the schematic and a separate assembly/wiring guide, not board markings.
 
 ## PCB routing and fabrication
 

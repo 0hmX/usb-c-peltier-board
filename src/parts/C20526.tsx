@@ -35,9 +35,7 @@ export const MMBT3904_RANGE_100_300_ = (props: ChipProps<typeof pinLabels>) => {
         <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin1"]} pcbX="1.01mm" pcbY="-0.95mm" width="0.8mm" height="0.6mm" shape="rect" />
 <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin2"]} pcbX="1.01mm" pcbY="0.95mm" width="0.8mm" height="0.6mm" shape="rect" />
 <smtpad solderMaskMargin="0.05mm" solderPasteMargin={0} portHints={["pin3"]} pcbX="-1.01mm" pcbY="0mm" width="0.8mm" height="0.6mm" shape="rect" />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":0.726211400000011,"y":1.65},{"x":-0.726211400000011,"y":1.65},{"x":-0.726211400000011,"y":0.7}]} />
-<silkscreenpath strokeWidth="0.15mm" route={[{"x":0.726211400000011,"y":-1.65},{"x":-0.726211400000011,"y":-1.65},{"x":-0.726211400000011,"y":-0.7}]} />
-<silkscreencircle pcbX="0mm" pcbY="-0.95mm" radius="0.075mm" strokeWidth="0.15mm" />
+
 <courtyardoutline outline={[{"x":-1.75,"y":1.75},{"x":1.75,"y":1.75},{"x":1.75,"y":-1.75},{"x":-1.75,"y":-1.75},{"x":-1.75,"y":1.75}]} />
       </footprint>}
       cadModel={{

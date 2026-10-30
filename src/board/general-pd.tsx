@@ -24,7 +24,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     minTraceToHoleEdgeClearance={0.25} minViaHoleEdgeToViaHoleEdgeClearance={0.25} minBoardEdgeClearance={0.3}
     pcbStyle={{ viaHoleDiameter: 0.3, viaPadDiameter: 0.6 }}
     isViaInPadAllowed routeRemaining={false} schematicDisabled={schematicDisabled}
-    pcbSx={{ "& footprint silkscreentext": { visibility: "hidden" } }}
+    pcbSx={{ "& silkscreentext": { visibility: "hidden" } }}
     schTraceAutoLabelEnabled schMaxTraceDistance={8}>
     <net name="GND" isGroundNet />
     <net name="TEC_POS" isPowerNet />
@@ -132,10 +132,7 @@ export function GeneralPdDriverBoard({ schematicDisabled = false }: { schematicD
     <KF301_5_0_2P name="J_TEC" {...connectorPlacements.J_TEC} schX={19.5} schY={3} schSheetName="POWER"
       schPinArrangement={{ leftSide: [1, 2], rightSide: [] }}
       connections={{ pin1: "net.TEC_POS", pin2: "net.GND" }} />
-    <silkscreentext text="PD POWER" pcbX={-35} pcbY={16.8} fontSize={0.8} />
-    <silkscreentext text="+" pcbX={22.7} pcbY={17.5} fontSize={1} />
-    <silkscreentext text="−" pcbX={22.7} pcbY={28.2} fontSize={1} />
-    <silkscreentext text="TEC" pcbX={27.5} pcbY={17.4} fontSize={0.6} />
+
     <RoutedCopper {...routingData as RoutedCopperData} />
   </board>
 }

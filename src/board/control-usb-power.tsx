@@ -75,6 +75,6 @@ export function ProgrammingAndLogicPower() {
     <Resistor0603 name="R_PROGRAM_CC2" schX={-5} schY={6.7} schRotation={270} resistance="5.1k" pcbX={-28} pcbY={-16.5} pcbRotation={0} schSheetName="LOGIC"
       manufacturerPartNumber="0603WAF5101T5E" supplierPartNumbers={{ jlcpcb: ["C23186"] }}
       connections={{ pin1: "net.PROGRAM_CC2", pin2: "net.GND" }} />
-    <silkscreentext text="USB PROGRAM" pcbX={-33} pcbY={-12.5} fontSize={0.75} />
+
   </>
 }

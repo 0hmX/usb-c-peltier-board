@@ -19,7 +19,8 @@ export function connectorPoint(placement: ConnectorPlacement, local: readonly [n
 
 // The USB face offset is the insertion centre inferred from the exact C7095263
 // imported footprint, relative to its authored placement anchor (not its pad bounds).
-// Tests compare this contract with the actual rendered pcb_component insertion centre.
+// Retain this face contract without silkscreen: the renderer's outline-based
+// insertion inference is not reliable for the intentionally unmarked board.
 export const usbFaceLocal: Point3 = [0, -7.237483112, 2.5]
 // Exact C474881 / KF301 footprint pin centres. Z=6 is an illustrative wire channel.
 export const tecPinLocal = { pin1: [-2.499995, 0, 6], pin2: [2.499995, 0, 6] } as const

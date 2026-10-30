@@ -42,10 +42,7 @@ export const TPS2116DRLR = (props: ChipProps<typeof pinLabels>) => {
 <smtpad portHints={["pin6"]} pcbX="0.249936mm" pcbY="0.64008mm" width="0.2800096mm" height="0.6800088mm" shape="rect" />
 <smtpad portHints={["pin7"]} pcbX="-0.249936mm" pcbY="0.64008mm" width="0.2800096mm" height="0.6800088mm" shape="rect" />
 <smtpad portHints={["pin8"]} pcbX="-0.750062mm" pcbY="0.64008mm" width="0.2800096mm" height="0.6800088mm" shape="rect" />
-<silkscreenpath route={[{"x":1.1430000000000007,"y":-0.5080000000000098},{"x":1.1430000000000007,"y":-0.5080000000000098},{"x":1.1430000000000007,"y":0.5079999999999956},{"x":1.1430000000000007,"y":0.5079999999999956}]} />
-<silkscreenpath route={[{"x":-1.1430000000000007,"y":0.5079999999999956},{"x":-1.1430000000000007,"y":-0.5080000000000098}]} />
-<silkscreencircle pcbX="-1.1999976mm" pcbY="-0.850011mm" radius="0.0750062mm" />
-<silkscreentext text="{NAME}" pcbX="-0.0635mm" pcbY="1.9906mm" anchorAlignment="center" fontSize="1mm" />
+
 <courtyardoutline outline={[{"x":-1.300010599999979,"y":1.2300843999999813},{"x":1.2999851999999947,"y":1.2300843999999813},{"x":1.2999851999999947,"y":-1.2300843999999955},{"x":-1.300010599999979,"y":-1.2300843999999955},{"x":-1.300010599999979,"y":1.2300843999999813}]} />
       </footprint>}
       cadModel={{
