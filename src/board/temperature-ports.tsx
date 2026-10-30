@@ -42,13 +42,6 @@ export function TemperaturePorts() {
       <schematictext text="HOT: pins 1/6 · COLD: pins 3/4" schX={0} schY={-2} fontSize={0.3} />
       <schematictext text="Powered probes · 3V3 / DATA / GND · no parasite power" schX={0} schY={-3.4} fontSize={0.3} />
     </USBLC6_2SC6>
-    <silkscreentext text="HOT" pcbX={28.5} pcbY={4.5} fontSize={0.8} />
-    <silkscreentext text="COLD" pcbX={28.5} pcbY={0.5} fontSize={0.8} />
-    <silkscreentext text="3V3" pcbX={23} pcbY={7.500007} fontSize={0.55} />
-    <silkscreentext text="DATA" pcbX={23} pcbY={11} fontSize={0.55} />
-    <silkscreentext text="GND" pcbX={23} pcbY={14.499993} fontSize={0.55} />
-    <silkscreentext text="3V3" pcbX={23} pcbY={-11.499993} fontSize={0.55} />
-    <silkscreentext text="DATA" pcbX={23} pcbY={-8} fontSize={0.55} />
-    <silkscreentext text="GND" pcbX={23} pcbY={-4.500007} fontSize={0.55} />
+
   </>
 }

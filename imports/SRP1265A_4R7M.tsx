@@ -17,13 +17,7 @@ export const SRP1265A_4R7M = (props: Omit<InductorProps, "inductance">) => {
       footprint={<footprint>
         <smtpad portHints={["pin1"]} pcbX="-5.55mm" pcbY="0mm" width="3.1mm" height="5mm" shape="rect" solderMaskMargin="0.05mm" solderPasteMargin={0} />
 <smtpad portHints={["pin2"]} pcbX="5.55mm" pcbY="0mm" width="3.1mm" height="5mm" shape="rect" solderMaskMargin="0.05mm" solderPasteMargin={0} />
-<silkscreenpath route={[{"x":-6.7002405999999155,"y":6.2999620000000505},{"x":6.699732600000061,"y":6.299987399999964}]} />
-<silkscreenpath route={[{"x":-6.7002405999999155,"y":-6.299961999999937},{"x":6.699732600000061,"y":-6.299987399999964}]} />
-<silkscreenpath route={[{"x":-6.7002405999999155,"y":6.2999620000000505},{"x":-6.7002405999999155,"y":2.7311349999999948}]} />
-<silkscreenpath route={[{"x":-6.7002405999999155,"y":-2.7311349999999948},{"x":-6.7002405999999155,"y":-6.299961999999937}]} />
-<silkscreenpath route={[{"x":6.699732600000061,"y":-6.299987399999964},{"x":6.699732600000061,"y":-2.7311349999999948}]} />
-<silkscreenpath route={[{"x":6.699732600000061,"y":2.7311349999999948},{"x":6.699732600000061,"y":6.299987399999964}]} />
-<silkscreentext text="{NAME}" pcbX="0.012446mm" pcbY="7.3754mm" anchorAlignment="center" fontSize="1mm" />
+
 <courtyardrect width="14.8mm" height="13.4mm" />
       </footprint>}
       cadModel={{

@@ -26,13 +26,7 @@ export const A_470531000 = (props: ConnectorProps) => {
 <platedhole  portHints={["pin2"]} pcbX="1.27mm" pcbY="0.98001455mm" outerDiameter="1.6999966mm" holeDiameter="1.02mm" shape="circle" />
 <platedhole  portHints={["pin3"]} pcbX="-1.27mm" pcbY="0.98001455mm" outerDiameter="1.6999966mm" holeDiameter="1.02mm" shape="circle" />
 <platedhole  portHints={["pin4"]} pcbX="-3.81mm" pcbY="0.98001455mm" outerDiameter="1.6999966mm" holeDiameter="1.02mm" shape="circle" />
-<silkscreenpath route={[{"x":-5.079999999999927,"y":4.280033350000167},{"x":5.079999999999927,"y":4.2800079500000265}]} />
-<silkscreenpath route={[{"x":5.079999999999927,"y":4.2800079500000265},{"x":5.079999999999927,"y":-1.5599854499998855}]} />
-<silkscreenpath route={[{"x":-5.079999999999927,"y":4.2800079500000265},{"x":-5.079999999999927,"y":-1.5599854499998855}]} />
-<silkscreenpath route={[{"x":-5.079999999999927,"y":2.885014550000051},{"x":5.079999999999927,"y":2.885014550000051}]} />
-<silkscreenpath route={[{"x":5.079999999999927,"y":-1.5599854499998855},{"x":-0.5177535999998781,"y":-1.5599854499998855}]} />
-<silkscreenpath route={[{"x":-2.022246399999972,"y":-1.5599854499998855},{"x":-5.079999999999927,"y":-1.5599854499998855}]} />
-<silkscreentext text="{NAME}" pcbX="0.0127mm" pcbY="5.43441455mm" anchorAlignment="center" fontSize="1mm" />
+
 <courtyardoutline outline={[{"x":-5.349989800000003,"y":4.550023150000129},{"x":5.349989800000003,"y":4.550023150000129},{"x":5.349989800000003,"y":-2.080012850000003},{"x":-5.349989800000003,"y":-2.080012850000003},{"x":-5.349989800000003,"y":4.550023150000129}]} />
       </footprint>}
       cadModel={{

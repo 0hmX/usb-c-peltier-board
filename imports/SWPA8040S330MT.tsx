@@ -16,13 +16,7 @@ export const SWPA8040S330MT = (props: Omit<InductorProps, "inductance">) => {
       footprint={<footprint>
         <smtpad portHints={["pin1"]} pcbX="-3mm" pcbY="0mm" width="2.2mm" height="7.5mm" shape="rect" />
 <smtpad portHints={["pin2"]} pcbX="3mm" pcbY="0mm" width="2.2mm" height="7.5mm" shape="rect" />
-<silkscreenpath route={[{"x":-4.150004399999943,"y":4.450029200000017},{"x":4.150004399999943,"y":4.450003799999877}]} />
-<silkscreenpath route={[{"x":-4.150004399999943,"y":-4.45000379999999},{"x":4.150004399999943,"y":-4.450029200000017}]} />
-<silkscreenpath route={[{"x":-4.150004399999943,"y":4.450029200000017},{"x":-4.150004399999943,"y":4.331131800000094}]} />
-<silkscreenpath route={[{"x":-4.150004399999943,"y":-4.33113179999998},{"x":-4.150004399999943,"y":-4.45000379999999}]} />
-<silkscreenpath route={[{"x":4.150004399999943,"y":-4.450029200000017},{"x":4.150004399999943,"y":-4.33113179999998}]} />
-<silkscreenpath route={[{"x":4.150004399999943,"y":4.331131800000094},{"x":4.150004399999943,"y":4.450003799999877}]} />
-<silkscreentext text="{NAME}" pcbX="-0.001397mm" pcbY="5.445mm" anchorAlignment="center" fontSize="1mm" />
+
 <courtyardrect width="8.8mm" height="8.8mm" />
       </footprint>}
       cadModel={{

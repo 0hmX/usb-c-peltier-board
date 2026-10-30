@@ -146,9 +146,12 @@ describe("native Peltier assembly", () => {
         expect(point[1]).toBeGreaterThan(tecCad.position.y + tecMesh.boundingBox.min.z)
         expect(point[1]).toBeLessThan(tecCad.position.y + tecMesh.boundingBox.max.z)
       } else {
-        expect(pcb.cable_insertion_center).toBeDefined()
-        expect(connection.boardPoint[0]).toBeCloseTo(pcb.cable_insertion_center!.x, 5)
-        expect(connection.boardPoint[1]).toBeCloseTo(pcb.cable_insertion_center!.y, 5)
+        // tscircuit infers this metadata from silk outlines. With intentionally
+        // no silk, keep the established physical USB face/anchor contract, not
+        // the now outline-free inference (which points at the wrong edge).
+        expect(pcb.rotation).toBe(270)
+        expect(connection.boardPoint[0]).toBeCloseTo(Number(pcb.display_offset_x) - 7.237483112, 5)
+        expect(connection.boardPoint[1]).toBeCloseTo(Number(pcb.display_offset_y), 5)
         expect(externalGeometry(connection.partName).source.display_name).toContain("Cable Matters 201440")
       }
       const { cad, mesh } = externalGeometry(connection.partName)

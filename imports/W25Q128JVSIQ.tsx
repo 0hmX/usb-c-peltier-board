@@ -36,10 +36,7 @@ export const W25Q128JVSIQ = (props: ChipProps<typeof pinLabels>) => {
 <smtpad portHints={["pin7"]} pcbX="-0.635mm" pcbY="3.530092mm" width="0.6299962mm" height="2.2500082mm" radius="0.3149981mm" shape="pill" />
 <smtpad portHints={["pin6"]} pcbX="0.635mm" pcbY="3.530092mm" width="0.6299962mm" height="2.2500082mm" radius="0.3149981mm" shape="pill" />
 <smtpad portHints={["pin5"]} pcbX="1.905mm" pcbY="3.530092mm" width="0.6299962mm" height="2.2500082mm" radius="0.3149981mm" shape="pill" />
-<silkscreenpath route={[{"x":-2.6387044000000515,"y":-2.1763989999999467},{"x":-2.6387044000000515,"y":2.1763990000000604},{"x":2.6387044000000515,"y":2.1763990000000604},{"x":2.6387044000000515,"y":-2.1763989999999467},{"x":-2.6387044000000515,"y":-2.1763989999999467}]} />
-<silkscreencircle pcbX="-1.905mm" pcbY="-1.423924mm" radius="0.150114mm" />
-<silkscreencircle pcbX="-2.672334mm" pcbY="-3.530092mm" radius="0.150114mm" />
-<silkscreentext text="{NAME}" pcbX="-0.0889mm" pcbY="5.3434mm" anchorAlignment="center" fontSize="1mm" />
+
 <courtyardoutline outline={[{"x":-2.9000074000000495,"y":4.905096100000037},{"x":2.8999820000000227,"y":4.905096100000037},{"x":2.8999820000000227,"y":-4.905096100000037},{"x":-2.9000074000000495,"y":-4.905096100000037},{"x":-2.9000074000000495,"y":4.905096100000037}]} />
       </footprint>}
       cadModel={{

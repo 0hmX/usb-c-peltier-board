@@ -296,7 +296,6 @@ describe("general USB-C PD Peltier driver", () => {
       expect(hole.y).toBeCloseTo(contact.y, 6)
       expect("hole_diameter" in hole && hole.hole_diameter).toBeCloseTo(1.02, 5)
     }
-    expect(circuit.db.pcb_silkscreen_text.list().some(text => text.text === "FAN 12V / 0.5A")).toBe(true)
   })
 
   test("each powered probe has its own protected 1-Wire input and correctly numbered screw contacts", () => {
@@ -330,11 +329,7 @@ describe("general USB-C PD Peltier driver", () => {
         expect(hole.x).toBeCloseTo(contact.x, 6)
         expect(hole.y).toBeCloseTo(contact.y, 6)
         if (i) expect(Math.hypot(contact.x - contacts[i - 1]!.x, contact.y - contacts[i - 1]!.y)).toBeCloseTo(3.5, 4)
-        // Pin numbers are user-visible wiring: check labels beside real holes.
-        expect(circuit.db.pcb_silkscreen_text.list().some(text =>
-          text.text === ["3V3", "DATA", "GND"][i] &&
-          Math.abs(text.anchor_position.y - contact.y) < 1e-4 &&
-          text.anchor_position.x < contact.x)).toBe(true)
+
       }
     }
     // Read-ROM is valid for one device per port: no direct HOT/COLD bus bridge.
@@ -540,4 +535,9 @@ describe("general USB-C PD Peltier driver", () => {
       if (mcuPin) expect(pinNet("U_MCU", mcuPin)).toBe(drive)
     }
   })
+})
+
+test("all board and footprint silkscreen is intentionally absent", () => {
+  expect(circuit.getCircuitJson().filter(element =>
+    element.type.startsWith("pcb_silkscreen_"))).toEqual([])
 })
